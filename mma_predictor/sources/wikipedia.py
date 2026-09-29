@@ -118,7 +118,7 @@ def resolve(names: Iterable[str], roster: Dict[str, Tuple[str, str]], aliases: O
         # in exactly one roster name.
         mine = set(match_key(n).split())
         if len(mine) >= 2:
-            partial = [r for k, rs in by_key.items() if mine <= set(k.split()) for r in rs]
+            partial = [r for k, rs in by_key.items() if len(set(k.split())) >= 2 and mine <= set(k.split()) for r in rs]
             if len(partial) == 1:
                 out[n] = roster[partial[0]]
     return out

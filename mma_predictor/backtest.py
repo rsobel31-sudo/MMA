@@ -12,7 +12,7 @@ import math
 from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 
-from .data import devig
+from .data import Fight, devig
 from .history import FightHistory
 from .model import WinModel
 from .predictor import build_training_set
@@ -58,6 +58,8 @@ class BacktestResult:
     model_on_market: Scores = field(default_factory=Scores)
     calibration: List[Tuple[float, int, int]] = field(default_factory=list)  # (bin lower, n, wins)
     high_conf: Scores = field(default_factory=Scores)
+    # Out-of-sample prediction for every scored bout: (fight, P(fighter_a wins), features).
+    predictions: List[Tuple[Fight, float, dict]] = field(default_factory=list)
 
     def report(self) -> str:
         lines = ["Walk-forward backtest", "---------------------", self.model.line("model"), self.overall.line("overall rating"), self.elo.line("classic elo")]
@@ -105,6 +107,7 @@ def walk_forward(
         assert model is not None
         p = model.predict(X[i])
         result.model.add(p, y[i])
+        result.predictions.append((f, p, X[i]))
         classic = history.classic_elo
         result.elo.add(expected_score(classic.rating_before(f.fighter_a, f.date), classic.rating_before(f.fighter_b, f.date)), y[i])
         skills = history.skills

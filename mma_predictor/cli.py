@@ -22,7 +22,9 @@ from .adjustments import Adjustments
 from .backtest import walk_forward
 from .data import load_card, load_dataset
 from .history import FightHistory
-from .model import WinModel
+import math
+
+from .model import WinModel, fit_scale, sigmoid
 from .predictor import FightPredictor, build_training_set
 from .scouting import Scouting
 from .skills import CATEGORIES, SUB_LABELS
@@ -288,6 +290,33 @@ def cmd_compare(args) -> int:
     return 0
 
 
+def cmd_analyze(args) -> int:
+    """Regression of past results on every factor, and model accuracy by matchup pattern."""
+    from .analysis import insights
+
+    h = _history(args)
+    res = walk_forward(h, event_prefix=args.events)
+    scale = fit_scale((math.log(p / (1 - p)), int(f.winner == f.fighter_a)) for f, p, _ in res.predictions) if args.calibrate else 1.0
+    preds = [(f, sigmoid(scale * math.log(p / (1 - p))), x) for f, p, x in res.predictions]
+    X, y, used = build_training_set(h)
+    keep = [i for i, f in enumerate(used) if not args.events or f.event.lower().startswith(args.events.lower())]
+    st = insights(h, preds, [X[i] for i in keep], [y[i] for i in keep])
+    print(f"Confidence calibration scale: {scale}" + ("" if args.calibrate else " (off)"))
+    print(f"Regression on {st['n_regression']} bouts (effect of +1 standard deviation, in log-odds)")
+    for r in st["regression"]:
+        stars = "***" if r["p"] < 0.001 else "**" if r["p"] < 0.01 else "*" if r["p"] < 0.05 else ""
+        print(f"  {r['label']:<50} {r['coef_per_sd']:+.3f} ± {r['se']:.3f}  OR {r['odds_ratio_per_sd']:.2f}  p={r['p']:.3f} {stars}")
+    print(f"\nModel accuracy by confidence ({st['n_bouts']} out-of-sample bouts)")
+    for b in st["calibration"]:
+        print(f"  {b['from']:.0%}-{b['to']:.0%}: n={b['n']:<4} favourite won {b['hit_rate']:.0%}")
+    print("\nMatchup patterns: actual win rate of the side with the edge vs what the model expected")
+    for p in sorted(st["patterns"], key=lambda r: -abs(r.get("z", 0))):
+        if not p["n"]:
+            continue
+        print(f"  {p['label']:<42} n={p['n']:<4} won {p['win_rate']:.0%}  model {p['expected']:.0%}  gap {p['gap'] * 100:+5.1f}  z={p['z']:+.1f}  {p['verdict']}")
+    return 0
+
+
 def cmd_merge(args) -> int:
     from .sources.merge import merge_datasets
 
@@ -306,12 +335,24 @@ def cmd_export(args) -> int:
         X, y, _ = build_training_set(h)
         model.fit(X, y)
     summary = None
+    study = None
     if not args.no_backtest:
+        from .analysis import insights
+
         res = walk_forward(h, event_prefix=args.events)
         summary = {
             "n": res.model.n, "accuracy": res.model.accuracy, "log_loss": res.model.log_loss,
             "elo_accuracy": res.elo.accuracy, "scope": args.events or "",
+            "high_conf_n": res.high_conf.n, "high_conf_accuracy": res.high_conf.accuracy,
         }
+        # Calibrate confidence on the out-of-sample predictions only, then judge
+        # patterns and confidence bands against the calibrated predictions.
+        model.scale = fit_scale((math.log(p / (1 - p)), int(f.winner == f.fighter_a)) for f, p, _ in res.predictions)
+        summary["calibration_scale"] = model.scale
+        calibrated = [(f, sigmoid(model.scale * math.log(p / (1 - p))), x) for f, p, x in res.predictions]
+        X, y, used = build_training_set(h)
+        keep = [i for i, f in enumerate(used) if not args.events or f.event.lower().startswith(args.events.lower())]
+        study = insights(h, calibrated, [X[i] for i in keep], [y[i] for i in keep])
     import json
 
     upcoming = json.loads(Path(args.upcoming).read_text()) if args.upcoming and Path(args.upcoming).exists() else None
@@ -320,7 +361,22 @@ def cmd_export(args) -> int:
     if args.rankings and Path(args.rankings).exists():
         rankings = json.loads(Path(args.rankings).read_text()).get("rankings")
     data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary,
-                  source=args.source or Path(args.data).name, upcoming=upcoming, aliases=aliases, rankings=rankings)
+                  source=args.source or Path(args.data).name, upcoming=upcoming, aliases=aliases, rankings=rankings,
+                  insights=study)
+    if args.log and data["upcoming"]["events"]:
+        from . import predlog
+        from .predictor import FightPredictor
+
+        fp = FightPredictor(h, model)
+
+        def _predict(a, b, rounds):
+            pr = fp.predict(a, b, scheduled_rounds=rounds)
+            f_, m_, mp = pr.most_likely_outcome
+            return {"p_a": round(pr.prob_a, 4), "pick": pr.pick, "method": f"{f_} by {m_}", "method_p": round(mp, 4)}
+
+        log = predlog.update(Path(args.log), h, data["upcoming"]["events"], _predict,
+                             {"scale": model.scale, "trained_on": model.trained_on})
+        data["prediction_log"] = {"scorecard": log["scorecard"], "entries": list(log["entries"].values())}
     write(data, Path(args.out))
     print(f"Exported {data['meta']['fighters_exported']} fighters to {args.out}")
     return 0
@@ -444,12 +500,19 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--upcoming", default="data/upcoming.json", help="scheduled cards from the upcoming command")
     p.add_argument("--rankings", default="data/ranked_fighters.json", help="official UFC rankings, for comparison")
     p.add_argument("--aliases", default="data/name_aliases.json")
+    p.add_argument("--log", default="data/predictions/log.json", help="prediction log to update ('' to skip)")
     p.set_defaults(func=cmd_export)
 
     p = sub.add_parser("serve", help="open the web interface locally")
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--dir", help="directory holding index.html, engine.js and data.json (default: app/)")
     p.set_defaults(func=cmd_serve)
+
+    p = sub.add_parser("analyze", help="regression of past results and model accuracy by matchup pattern")
+    data_arg(p)
+    p.add_argument("--events", default="UFC")
+    p.add_argument("--no-calibrate", dest="calibrate", action="store_false", help="judge patterns against raw predictions")
+    p.set_defaults(func=cmd_analyze)
 
     p = sub.add_parser("compare", help="compare our division order with the official UFC rankings")
     data_arg(p)

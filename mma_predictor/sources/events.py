@@ -141,7 +141,11 @@ def link_names(names, dataset_names, aliases: Optional[Dict[str, str]] = None) -
             continue
         mine = set(match_key(n).split())
         if len(mine) >= 2:
-            partial = [d for k, ds in by_key.items() if mine <= set(k.split()) or set(k.split()) <= mine and len(k.split()) >= 2 for d in ds]
+            # Both directions ("Ian Garry" in "Ian Machado Garry" and back), but only
+            # with two distinct name parts, so "Francisco Francisco" can't match
+            # every Francisco.
+            partial = [d for k, ds in by_key.items()
+                       if len(set(k.split())) >= 2 and (mine <= set(k.split()) or set(k.split()) <= mine) for d in ds]
             if len(set(partial)) == 1:
                 out[n] = partial[0]
     return out

@@ -17,6 +17,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from .features import FEATURE_LABELS, FEATURES
 from .history import DEFAULT_PRIORS, FightHistory, FighterSnapshot
 from .model import PRIOR_WEIGHTS, WinModel
+from .analysis import upcoming_flags
 from .bios import division_label, write_bio
 from .sources.events import link_names
 from .skills import CATEGORIES, SUB_LABELS
@@ -92,6 +93,7 @@ def export(
     upcoming: Optional[Dict[str, Any]] = None,
     aliases: Optional[Dict[str, str]] = None,
     rankings: Optional[List[Dict[str, str]]] = None,
+    insights: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     model = model or WinModel()
     as_of = as_of or history.default_date()
@@ -148,9 +150,16 @@ def export(
             by_name[target].setdefault("official", {})[r["system"]] = {"rank": r["rank"], "division": r["division"]}
     cards = []
     for e in (upcoming or {}).get("events", []):
-        bouts = [dict(b, a_id=linked.get(str(b["a"])) if linked.get(str(b["a"])) in by_name else None,
-                      b_id=linked.get(str(b["b"])) if linked.get(str(b["b"])) in by_name else None)
-                 for b in e.get("bouts", [])]
+        bouts = []
+        for b in e.get("bouts", []):
+            a_id = linked.get(str(b["a"])) if linked.get(str(b["a"])) in by_name else None
+            b_id = linked.get(str(b["b"])) if linked.get(str(b["b"])) in by_name else None
+            row = dict(b, a_id=a_id, b_id=b_id)
+            if a_id and b_id:
+                # Which historical matchup patterns this bout fits ("a"/"b" = who has the edge).
+                row["patterns"] = [{"key": k, "side": "a" if s > 0 else "b"}
+                                   for k, s in upcoming_flags(history, a_id, b_id, int(b.get("rounds") or 3), as_of)]
+            bouts.append(row)
         cards.append(dict(e, bouts=bouts))
     return {
         "meta": {
@@ -167,10 +176,12 @@ def export(
         "features": FEATURES,
         "feature_labels": FEATURE_LABELS,
         "weights": model.weights,
+        "calibration_scale": model.scale,
         "prior_weights": PRIOR_WEIGHTS,
         "rating_categories": {k: list(v) for k, v in CATEGORIES.items()},
         "rating_labels": SUB_LABELS,
         "category_weights": history.skills.config.category_weights,
+        "insights": insights,
         "upcoming": {"fetched": (upcoming or {}).get("fetched"), "source": (upcoming or {}).get("source"), "events": cards},
         "fighters": fighters,
     }

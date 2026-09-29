@@ -106,7 +106,7 @@ class FightPredictor:
         self.adjustments = adjustments or Adjustments()
         base = model or WinModel()
         # Your weight overrides sit on top of the trained (or prior) weights.
-        self.model = WinModel({**base.weights, **self.adjustments.weights}, base.trained_on)
+        self.model = WinModel({**base.weights, **self.adjustments.weights}, base.trained_on, base.scale)
 
     def features(self, a: str, b: str, when: date, ctx: BoutContext) -> Tuple[FighterSnapshot, FighterSnapshot, Dict[str, float]]:
         sa = self.adjustments.apply(self.history.snapshot(a, when))

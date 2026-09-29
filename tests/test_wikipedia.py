@@ -41,3 +41,11 @@ def test_gender_spreads_from_nearest_seed_and_survives_a_bad_edge():
     got = propagate_gender(bouts, {"W1": "F", "M1": "M"})
     assert got["W2"] == "F" and got["M2"] == "M"
     assert got["W3"] == "F" and got["M3"] == "M"  # nearest seed wins near the bad edge
+
+
+def test_link_names_needs_two_distinct_name_parts():
+    from mma_predictor.sources.events import link_names
+
+    got = link_names(["Francisco Prado", "Ian Machado Garry"], {"Francisco Francisco", "Ian Garry"})
+    assert "Francisco Prado" not in got
+    assert got["Ian Machado Garry"] == "Ian Garry"

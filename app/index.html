@@ -187,6 +187,22 @@ ul.journal .jt { white-space: pre-wrap; }
 table.bouts td { vertical-align: middle; }
 .mini { display: inline-block; width: 90px; height: 10px; background: var(--blue); border-radius: 2px; position: relative; overflow: hidden; vertical-align: middle; }
 .mini i { position: absolute; inset: 0 auto 0 0; background: var(--red); }
+.tier { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 9px; margin-top: 3px; white-space: nowrap; }
+.tier-best { background: var(--good); color: var(--surface); }
+.tier-sure { background: color-mix(in srgb, var(--good) 18%, var(--surface)); color: var(--good); }
+.tier-watch { background: var(--edit-soft); color: var(--edit); }
+.tier-toss { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
+tr.hl-best td { background: color-mix(in srgb, var(--good) 7%, transparent); }
+tr.hl-watch td { background: color-mix(in srgb, var(--edit) 7%, transparent); }
+ul.hltags { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 2px; font-size: 12px; }
+ul.hltags li::before { content: "● "; }
+ul.hltags .k-sure::before, ul.hltags .k-backed::before { color: var(--good); }
+ul.hltags .k-upset::before, ul.hltags .k-caution::before { color: var(--edit); }
+ul.hltags .k-info::before, ul.hltags .k-toss::before { color: var(--muted); }
+.verdict { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 9px; background: var(--surface-2); white-space: nowrap; }
+.verdict.v-model-underrates, .verdict.v-model-overrates { background: var(--edit-soft); color: var(--edit); font-weight: 600; }
+.verdict.v-leaning-underrated, .verdict.v-leaning-overrated { color: var(--edit); }
+.verdict.v-well-calibrated { color: var(--good); }
 .bg p { margin: 0 0 6px; }
 .bg ul { margin: 0 0 6px; padding-left: 0; list-style: none; display: grid; gap: 4px; font-size: 13.5px; }
 .bg a, .notes a { color: var(--blue); }
@@ -255,6 +271,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="matchup" aria-selected="true">Matchup</button>
     <button role="tab" data-tab="card" aria-selected="false">Upcoming cards <span class="count" id="card-count" hidden></span></button>
+    <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
     <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
@@ -466,7 +483,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, roster: renderRoster, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -795,6 +812,44 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     return (x > y ? 1 : -1) * (at.better === "low" ? -1 : 1);
   }
 
+  // --------------------------------------------------------------- highlights
+  // Uses the backtest: how often picks at this confidence won, and how the
+  // side with each matched pattern has done against the model's expectation.
+  function patternStat(key) {
+    const ins = state.data.insights;
+    return ins ? ins.patterns.find((p) => p.key === key) : null;
+  }
+  function highlightsFor(bt, r) {
+    const ins = state.data.insights;
+    if (!ins || !r) return { tier: null, tags: [] };
+    const pickSide = r.p >= 0.5 ? "a" : "b", pp = Math.max(r.p, 1 - r.p);
+    const band = ins.calibration.find((b) => pp >= b.from && pp < b.to + 1e-9);
+    const tags = [];
+    const sure = pp >= 0.7 && band && band.n >= 40 && band.hit_rate >= 0.78;
+    if (sure) tags.push({ kind: "sure", text: `High certainty: picks at ${pct(band.from, 0)}–${pct(band.to, 0)} won ${pct(band.hit_rate, 0)} of ${band.n} past bouts` });
+    let backed = 0, caution = 0, upset = 0;
+    for (const pt of bt.patterns || []) {
+      const st = patternStat(pt.key);
+      if (!st || st.n < 50) continue;
+      const overrates = /overrate/.test(st.verdict), underrates = /underrate/.test(st.verdict);
+      if (pt.side === pickSide) {
+        if (overrates) { caution++; tags.push({ kind: "caution", text: `${st.label}: the model has overrated this side (won ${pct(st.win_rate, 0)} vs ${pct(st.expected, 0)} expected)`, key: st.key }); }
+        else if (st.win_rate >= 0.65) { backed++; tags.push({ kind: "backed", text: `${st.label}: that side won ${pct(st.win_rate, 0)} of ${st.n}`, key: st.key }); }
+        else tags.push({ kind: "info", text: `${st.label} (that side won ${pct(st.win_rate, 0)} of ${st.n})`, key: st.key });
+      } else {
+        if (underrates || (st.win_rate >= 0.65 && pp < 0.62)) { upset++; tags.push({ kind: "upset", text: `Underdog has ${st.label.toLowerCase()}: that side won ${pct(st.win_rate, 0)} of ${st.n}${underrates ? ", more than the model expected" : ""}`, key: st.key }); }
+        else tags.push({ kind: "info", text: `Underdog: ${st.label.toLowerCase()} (won ${pct(st.win_rate, 0)} of ${st.n})`, key: st.key });
+      }
+    }
+    if (pp < 0.56) tags.push({ kind: "toss", text: "Toss-up: picks this close have won about half the time" });
+    const tier = sure && backed && !caution && !upset ? "best" : sure && !caution ? "sure" : upset || caution ? "watch" : pp < 0.56 ? "toss" : null;
+    // Most telling reasons first; plain pattern matches are left out.
+    const rank = { sure: 0, caution: 1, upset: 2, backed: 3, toss: 4 };
+    const shown = tags.filter((t) => t.kind in rank).sort((x, y) => rank[x.kind] - rank[y.kind]).slice(0, 3);
+    return { tier, tags: shown, all: tags };
+  }
+  const TIER_LABEL = { best: "Best bet", sure: "High certainty", watch: "Upset watch", toss: "Toss-up" };
+
   // ---------------------------------------------------------- upcoming cards
   const SEGMENT_ORDER = ["Fight card", "Main card", "Preliminary card", "Early preliminary card", "Announced"];
   function boutRow(bt) {
@@ -802,6 +857,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const who = (id, raw, color) => `<span style="color:var(--${color})">${id ? nameLink(id) : `${esc(raw)} <span class="muted" title="No record for this fighter in the data yet">(no data)</span>`}</span>`;
     const tags = `${bt.title ? '<span class="pill">Title</span> ' : ""}${bt.rounds === 5 ? '<span class="pill">5 rds</span>' : ""}`;
     if (!a || !b) {
+      if (state.upOnlyHighlights) return "";
       return `<tr><td class="muted">${esc(bt.weight_class)} ${tags}</td><td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}</td>
         <td colspan="3" class="muted" style="font-size:13px">Can't predict until both fighters are in the data</td><td></td></tr>`;
     }
@@ -810,8 +866,11 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const best = [["a", a], ["b", b]].flatMap(([s, n]) => Object.entries(r.methods[s]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];
     const touched = state.adj.fighters[a] || state.adj.fighters[b] || manualFor(a, b);
     const fa = fighter(a), fb = fighter(b);
-    return `<tr><td class="muted">${esc(bt.weight_class)} ${tags}</td>
-      <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}</td>
+    const hl = highlightsFor(bt, r);
+    if (state.upOnlyHighlights && !hl.tier) return "";
+    return `<tr class="${hl.tier ? "hl hl-" + hl.tier : ""}"><td class="muted">${esc(bt.weight_class)} ${tags}${hl.tier ? `<div><span class="tier tier-${hl.tier}">${TIER_LABEL[hl.tier]}</span></div>` : ""}</td>
+      <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}
+        ${hl.tags.length ? `<ul class="hltags">${hl.tags.map((t) => `<li class="k-${t.kind}">${esc(t.text)}</li>`).join("")}</ul>` : ""}</td>
       <td><span class="mini num" title="${esc(a)} ${pct(p)} / ${esc(b)} ${pct(1 - p)}"><i style="width:${(p * 100).toFixed(1)}%"></i></span></td>
       <td><strong>${esc(pick)}</strong> <span class="num">${pct(Math.max(p, 1 - p), 0)}</span><div class="muted" style="font-size:12px">${confidence(p, fa, fb)}</div></td>
       <td>${esc(best[0].split(" ").slice(-1)[0])} by ${best[1]} <span class="muted num">(${pct(best[2], 0)})</span></td>
@@ -829,18 +888,111 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     </section>`;
     if (ev) {
       const predictable = ev.bouts.filter((b) => b.a_id && b.b_id).length;
+      const tiers = {};
+      for (const bt of ev.bouts) {
+        if (!bt.a_id || !bt.b_id) continue;
+        const t = highlightsFor(bt, predict(bt.a_id, bt.b_id, bt.rounds || 3)).tier;
+        if (t) tiers[t] = (tiers[t] || 0) + 1;
+      }
+      const tierLine = Object.keys(TIER_LABEL).filter((k) => tiers[k]).map((k) => `<span class="tier tier-${k}">${TIER_LABEL[k]} ${tiers[k]}</span>`).join(" ");
       const segs = [...new Set(ev.bouts.map((b) => b.segment))].sort((x, y) => SEGMENT_ORDER.indexOf(x) - SEGMENT_ORDER.indexOf(y));
       html += `<section class="panel stack">
         <div><h2 style="font-size:28px;text-transform:uppercase">${esc(ev.name)}</h2>
-          <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p></div>
-        ${segs.map((sg) => `<div><div class="label" style="margin-bottom:4px">${esc(sg === "Fight card" ? "Card" : sg === "Announced" ? "Announced, not yet placed on the card" : sg)}</div>
+          <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p>
+          <div class="toolbar" style="margin:10px 0 0">${tierLine || '<span class="muted" style="font-size:13px">No highlighted bouts on this card.</span>'}
+            <label class="check" style="font-size:13px"><input type="checkbox" id="up-only" ${state.upOnlyHighlights ? "checked" : ""}> Show highlighted bouts only</label></div></div>
+        ${segs.map((sg) => {
+          const rows = ev.bouts.filter((b) => b.segment === sg).map(boutRow).join("");
+          if (!rows) return "";
+          return `<div><div class="label" style="margin-bottom:4px">${esc(sg === "Fight card" ? "Card" : sg === "Announced" ? "Announced, not yet placed on the card" : sg)}</div>
           <div class="table-wrap"><table class="list bouts"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Pick</th><th>Most likely</th><th></th></tr></thead><tbody>
-          ${ev.bouts.filter((b) => b.segment === sg).map(boutRow).join("")}</tbody></table></div></div>`).join("")}
+          ${rows}</tbody></table></div></div>`;
+        }).join("")}
       </section>`;
     }
     html += savedMatchups() + "</div>";
     view.innerHTML = html;
   }
+  // ------------------------------------------------------------------ insights
+  function renderInsights(view) {
+    const ins = state.data.insights, meta = state.data.meta, bt = meta.backtest || {};
+    if (!ins) { view.innerHTML = `<div class="empty">No analysis in this data. Export without <code>--no-backtest</code>.</div>`; return; }
+    const stars = (p) => (p < 0.001 ? "***" : p < 0.01 ? "**" : p < 0.05 ? "*" : "");
+    const verdictChip = (v) => `<span class="verdict v-${v.replace(/\s+/g, "-")}">${esc(v)}</span>`;
+    const events = (state.data.upcoming || { events: [] }).events;
+    // Flagged upcoming bouts, across every card.
+    const flagged = [];
+    for (const e of events) for (const b of e.bouts) {
+      if (!b.a_id || !b.b_id) continue;
+      const r = predict(b.a_id, b.b_id, b.rounds || 3), hl = highlightsFor(b, r);
+      if (hl.tier && hl.tier !== "toss") flagged.push({ e, b, r, hl });
+    }
+    const order = { best: 0, sure: 1, watch: 2, toss: 3 };
+    flagged.sort((x, y) => order[x.hl.tier] - order[y.hl.tier] || Math.max(y.r.p, 1 - y.r.p) - Math.max(x.r.p, 1 - x.r.p));
+    const upcomingCount = (key) => events.reduce((t, e) => t + e.bouts.filter((b) => (b.patterns || []).some((p) => p.key === key)).length, 0);
+    const maxCoef = Math.max(...ins.regression.map((r) => Math.abs(r.coef_per_sd)), 0.5);
+    const log = state.data.prediction_log;
+    view.innerHTML = `<div class="stack">
+      <section class="panel">
+        <h3>How the model has done</h3>
+        <p class="num" style="margin:6px 0 0">Walk-forward backtest on ${bt.n ? bt.n.toLocaleString() : "?"} past UFC bouts, each predicted using only what was known beforehand: picked the winner <strong>${bt.accuracy ? pct(bt.accuracy) : "?"}</strong>${bt.high_conf_n ? `, and <strong>${pct(bt.high_conf_accuracy)}</strong> of the ${bt.high_conf_n} fights where it was at least 65% sure` : ""}. Confidence is calibrated (logits × ${state.data.calibration_scale || 1}) because the raw model hedged toward 50/50.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Upcoming bouts worth a look</h3>
+        <p class="muted" style="margin:4px 0 10px;font-size:13px">Best bet = high certainty and backed by a pattern with a strong record. Upset watch = the underdog has an edge that has historically won, or the pick's edge has been overrated.</p>
+        ${flagged.length ? `<div class="table-wrap"><table class="list"><thead><tr><th></th><th>Bout</th><th>Pick</th><th>Why</th><th></th></tr></thead><tbody>
+          ${flagged.map(({ e, b, r, hl }) => `<tr><td><span class="tier tier-${hl.tier}">${TIER_LABEL[hl.tier]}</span><div class="muted" style="font-size:12px">${esc(e.date)}</div></td>
+            <td>${nameLink(b.a_id)} vs ${nameLink(b.b_id)}<div class="muted" style="font-size:12px">${esc(e.name)} · ${esc(b.weight_class)}</div></td>
+            <td class="num"><strong>${esc(r.p >= 0.5 ? b.a_id : b.b_id)}</strong> ${pct(Math.max(r.p, 1 - r.p), 0)}</td>
+            <td><ul class="hltags">${hl.tags.map((t) => `<li class="k-${t.kind}">${esc(t.text)}</li>`).join("")}</ul></td>
+            <td><button class="btn small" type="button" data-open-bout="${esc(b.a_id)}|${esc(b.b_id)}|${b.rounds || 3}">Open</button></td></tr>`).join("")}
+          </tbody></table></div>` : '<p class="muted">No highlighted upcoming bouts yet.</p>'}
+      </section>
+
+      <div class="grid2">
+        <section class="panel">
+          <h3>Confidence vs results</h3>
+          <p class="muted" style="margin:4px 0 10px;font-size:13px">When the model gave its pick this chance, how often did the pick win? The tick marks the stated confidence; a bar past it means the model was too cautious there.</p>
+          <div class="rbars">${ins.calibration.map((b) => `<div class="rbar"><span class="num">${pct(b.from, 0)}–${pct(b.to, 0)}</span>
+            <span class="track"><i class="med" style="left:${((b.from + b.to) / 2 * 100).toFixed(1)}%"></i><b style="width:${(b.hit_rate * 100).toFixed(1)}%"></b></span>
+            <span class="num">${pct(b.hit_rate, 0)} <span class="muted" style="font-size:11px">${b.n}</span></span></div>`).join("")}</div>
+        </section>
+        <section class="panel">
+          <h3>What decided past fights</h3>
+          <p class="muted" style="margin:4px 0 10px;font-size:13px">Logistic regression on ${ins.n_regression.toLocaleString()} UFC bouts: the effect of one standard deviation more of each factor on the log-odds of winning. * p&lt;0.05, ** p&lt;0.01, *** p&lt;0.001. The rating factors overlap, so read them together.</p>
+          <div class="factors">${ins.regression.map((r) => {
+            const w = (Math.abs(r.coef_per_sd) / maxCoef) * 50, left = r.coef_per_sd > 0 ? 50 : 50 - w;
+            return `<div class="frow num"><span>${esc(r.label)} <span style="color:var(--edit)">${stars(r.p)}</span></span>
+              <span class="fbar"><div style="left:${left}%;width:${w}%;background:var(--${r.coef_per_sd > 0 ? "good" : "red"})"></div></span>
+              <span style="text-align:right">${r.coef_per_sd > 0 ? "+" : "−"}${Math.abs(r.coef_per_sd).toFixed(2)}</span></div>`;
+          }).join("")}</div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h3>Matchup patterns</h3>
+        <p class="muted" style="margin:4px 0 10px;font-size:13px">For each situation: how often the fighter with the edge won, versus what the model predicted before those fights. Gaps beyond noise (z ≥ 2) mark where the formula needs work; the Upcoming column counts scheduled bouts that fit.</p>
+        <div class="table-wrap"><table class="list num"><thead><tr><th>Situation</th><th>Side</th><th>Bouts</th><th>Won</th><th>Model expected</th><th>Gap</th><th>Verdict</th><th>Upcoming</th></tr></thead><tbody>
+          ${ins.patterns.filter((p) => p.n).sort((x, y) => y.n - x.n).map((p) => `<tr><td>${esc(p.label)}</td><td class="muted">${esc(p.side)}</td><td>${p.n}</td>
+            <td><strong>${pct(p.win_rate, 0)}</strong> <span class="muted" style="font-size:11px">${pct(p.ci[0], 0)}–${pct(p.ci[1], 0)}</span></td><td>${pct(p.expected, 0)}</td>
+            <td>${p.gap >= 0 ? "+" : "−"}${Math.abs(p.gap * 100).toFixed(1)} pts</td><td>${verdictChip(p.verdict)}</td><td>${upcomingCount(p.key) || "—"}</td></tr>`).join("")}
+        </tbody></table></div>
+      </section>
+
+      <section class="panel">
+        <h3>Prediction log</h3>
+        ${log ? `<p class="num" style="margin:4px 0 10px">${log.scorecard.graded ? `Graded <strong>${log.scorecard.graded}</strong> picks made before the fight: <strong>${log.scorecard.correct}</strong> correct (${pct(log.scorecard.accuracy)}), log-loss ${log.scorecard.log_loss.toFixed(3)}. ` : "No logged fights have happened yet. "}${log.scorecard.pending} picks waiting on results.</p>
+          <p class="muted" style="font-size:13px;margin:0 0 8px">Each scheduled bout's first pick is frozen when it's logged, so grades reflect what the model said beforehand.</p>
+          <div class="table-wrap"><table class="list num"><thead><tr><th>Date</th><th>Bout</th><th>Logged pick</th><th>Result</th></tr></thead><tbody>
+          ${log.entries.slice().sort((x, y) => (x.result ? 0 : 1) - (y.result ? 0 : 1) || y.date.localeCompare(x.date)).slice(0, 40).map((en) => `<tr><td>${esc(en.date)}</td><td>${nameLink(en.a)} vs ${nameLink(en.b)}</td>
+            <td>${esc(en.first.pick)} ${pct(Math.max(en.first.p_a, 1 - en.first.p_a), 0)} <span class="muted" style="font-size:12px">${esc(en.first.made)}</span></td>
+            <td>${en.result ? (en.result.correct === null ? "Draw/NC" : `<span class="${en.result.correct ? "res-W" : "res-L"}">${en.result.correct ? "✓" : "✗"}</span> ${esc(en.result.winner || "")} (${esc(en.result.method)})`) : '<span class="muted">pending</span>'}</td></tr>`).join("")}
+          </tbody></table></div>` : '<p class="muted">No prediction log in this data.</p>'}
+      </section>
+    </div>`;
+  }
+
   function savedMatchups() {
     if (!state.card.length) return "";
     const rows = state.card.map((c) => {
@@ -1171,6 +1323,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     if (t.type === "range") { render(); return; }
     if (t.dataset.elo) { const n = t.dataset.elo, v = parseFloat(t.value) || 0; setFighterAdj(n, (c) => { c.elo = v; }); render(); return; }
+    if (t.id === "up-only") { state.upOnlyHighlights = t.checked; render(); return; }
     if (t.dataset.rfilter) {
       const k = t.dataset.rfilter;
       state.roster[k] = t.type === "checkbox" ? t.checked : t.value;

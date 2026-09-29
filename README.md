@@ -84,6 +84,30 @@ uncertainty penalty. With full careers for every ranked fighter the
 mean rank correlation is 0.79, and the model picks 68.4% of 1,501 UFC bouts
 (79.8% when it's at least 65% confident).
 
+### Analysis and highlights
+
+```bash
+python -m mma_predictor analyze --data data/sherdog
+```
+
+- **Regression**: logistic regression of UFC results on every factor
+  (point-in-time), standardised, with standard errors and p-values.
+- **Confidence vs results**: out-of-sample hit rate by the model's stated
+  confidence. The raw model hedged toward 50/50 (its 70–85% picks won 80–86%),
+  so exports fit a logit stretch on the out-of-sample predictions (≈1.14;
+  fitted on either half of history it improves the other half).
+- **Matchup patterns**: 17 readable situations (clear wrestling edge, big
+  age gap, opponent off a KO loss, long layoff, veteran vs newcomer…). For
+  each, the actual win rate of the side with the edge vs the model's
+  pre-fight expectation; z ≥ 2 marks where the formula needs work.
+- **Highlights on upcoming cards**: *Best bet* (high-certainty band with a
+  strong historical hit rate, backed by a pattern, nothing against it),
+  *High certainty*, *Upset watch* (the underdog has an edge the model has
+  underrated, or a strong edge against a shaky pick), *Toss-up*.
+- **Prediction log** (`data/predictions/log.json`): every export records
+  the pick for each scheduled bout, keeps the first one frozen, and grades it
+  once the result is in the data. The Insights tab shows the scorecard.
+
 ### Scouting: background and fight commentary
 
 `data/scouting/backgrounds.json` records martial-arts pedigree (discipline,

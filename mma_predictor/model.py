@@ -61,9 +61,13 @@ class FitReport:
 class WinModel:
     weights: Dict[str, float] = field(default_factory=lambda: dict(PRIOR_WEIGHTS))
     trained_on: int = 0
+    # Confidence calibration: the backtest showed the fitted model hedges toward
+    # 50/50 (its 70-85% picks won 80-86%), so logits are stretched by a factor
+    # fitted on out-of-sample predictions. Contributions are shown unscaled.
+    scale: float = 1.0
 
     def logit(self, x: Dict[str, float]) -> float:
-        return sum(self.weights.get(k, 0.0) * v for k, v in x.items())
+        return self.scale * sum(self.weights.get(k, 0.0) * v for k, v in x.items())
 
     def predict(self, x: Dict[str, float]) -> float:
         return sigmoid(self.logit(x))
@@ -111,12 +115,12 @@ class WinModel:
 
     # ------------------------------------------------------------ persistence
     def save(self, path: Path) -> None:
-        Path(path).write_text(json.dumps({"weights": self.weights, "trained_on": self.trained_on}, indent=2))
+        Path(path).write_text(json.dumps({"weights": self.weights, "trained_on": self.trained_on, "scale": self.scale}, indent=2))
 
     @classmethod
     def load(cls, path: Path) -> "WinModel":
         data = json.loads(Path(path).read_text())
-        return cls(weights={**PRIOR_WEIGHTS, **data["weights"]}, trained_on=data.get("trained_on", 0))
+        return cls(weights={**PRIOR_WEIGHTS, **data["weights"]}, trained_on=data.get("trained_on", 0), scale=data.get("scale", 1.0))
 
 
 def _log_loss(rows: List[List[float]], y: Sequence[int], w: Sequence[float]) -> float:
@@ -129,3 +133,25 @@ def _log_loss(rows: List[List[float]], y: Sequence[int], w: Sequence[float]) -> 
 
 def ranked_contributions(model: WinModel, x: Dict[str, float]) -> List[Tuple[str, float]]:
     return sorted(model.contributions(x).items(), key=lambda kv: -abs(kv[1]))
+
+
+def fit_scale(logits_and_labels, lo: float = 0.8, hi: float = 2.0) -> float:
+    """Logit stretch that maximises likelihood of out-of-sample predictions (1-D search)."""
+    pairs = list(logits_and_labels)
+    if len(pairs) < 50:
+        return 1.0
+
+    def nll(s: float) -> float:
+        total = 0.0
+        for z, y in pairs:
+            p = min(1 - 1e-9, max(1e-9, sigmoid(s * z)))
+            total -= y * math.log(p) + (1 - y) * math.log(1 - p)
+        return total
+
+    for _ in range(40):  # golden-section search
+        a, b = lo + 0.382 * (hi - lo), lo + 0.618 * (hi - lo)
+        if nll(a) < nll(b):
+            hi = b
+        else:
+            lo = a
+    return round((lo + hi) / 2, 3)

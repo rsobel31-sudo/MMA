@@ -189,7 +189,7 @@
         logit += contrib[k];
       }
       const manual = opts.manual || 0;
-      const p = sigmoid(logit + manual);
+      const p = sigmoid((data.calibration_scale || 1) * logit + manual);
       const da = methodDistribution(a, b, rounds), db = methodDistribution(b, a, rounds);
       const methods = { a: {}, b: {} };
       for (const m of BUCKETS) {
@@ -199,7 +199,7 @@
       const factors = Object.entries(contrib);
       if (manual) factors.push(["manual", manual]);
       factors.sort((u, v) => Math.abs(v[1]) - Math.abs(u[1]));
-      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: logit + manual };
+      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual };
     }
 
     return { features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };

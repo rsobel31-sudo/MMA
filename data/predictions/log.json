@@ -1,0 +1,1809 @@
+{
+ "entries": {
+  "2026-10-03|cong wang|natalia silva": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Natalia Silva",
+   "b": "Cong Wang",
+   "weight_class": "Women's Flyweight",
+   "first": {
+    "p_a": 0.6847,
+    "pick": "Natalia Silva",
+    "method": "Natalia Silva by SUB",
+    "method_p": 0.4426,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6847,
+    "pick": "Natalia Silva",
+    "method": "Natalia Silva by SUB",
+    "method_p": 0.4426,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|deiveson figueiredo|payton talbott": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Deiveson Figueiredo",
+   "b": "Payton Talbott",
+   "weight_class": "Bantamweight",
+   "first": {
+    "p_a": 0.3263,
+    "pick": "Payton Talbott",
+    "method": "Payton Talbott by KO/TKO",
+    "method_p": 0.3176,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3263,
+    "pick": "Payton Talbott",
+    "method": "Payton Talbott by KO/TKO",
+    "method_p": 0.3176,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|esteban ribovics|king green": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "King Green",
+   "b": "Esteban Ribovics",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.1642,
+    "pick": "Esteban Ribovics",
+    "method": "Esteban Ribovics by KO/TKO",
+    "method_p": 0.5222,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.1642,
+    "pick": "Esteban Ribovics",
+    "method": "Esteban Ribovics by KO/TKO",
+    "method_p": 0.5222,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|ateba abega gautier|roman kopylov": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Ateba Abega Gautier",
+   "b": "Roman Kopylov",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.7546,
+    "pick": "Ateba Abega Gautier",
+    "method": "Ateba Abega Gautier by DEC",
+    "method_p": 0.3098,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7546,
+    "pick": "Ateba Abega Gautier",
+    "method": "Ateba Abega Gautier by DEC",
+    "method_p": 0.3098,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|andrey pulyaev|damian pinas": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Damian Pinas",
+   "b": "Andrey Pulyaev",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.6706,
+    "pick": "Damian Pinas",
+    "method": "Damian Pinas by DEC",
+    "method_p": 0.2668,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6706,
+    "pick": "Damian Pinas",
+    "method": "Damian Pinas by DEC",
+    "method_p": 0.2668,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|johnny walker|mick parkin": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Johnny Walker",
+   "b": "Mick Parkin",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.4049,
+    "pick": "Mick Parkin",
+    "method": "Mick Parkin by KO/TKO",
+    "method_p": 0.4554,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4049,
+    "pick": "Mick Parkin",
+    "method": "Mick Parkin by KO/TKO",
+    "method_p": 0.4554,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|alexander hernandez|rafael dos anjos": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Rafael dos Anjos",
+   "b": "Alexander Hernandez",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.5104,
+    "pick": "Rafael dos Anjos",
+    "method": "Alexander Hernandez by KO/TKO",
+    "method_p": 0.2435,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5104,
+    "pick": "Rafael dos Anjos",
+    "method": "Alexander Hernandez by KO/TKO",
+    "method_p": 0.2435,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|ismail naurdiev|marvin vettori": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Marvin Vettori",
+   "b": "Ismail Naurdiev",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.662,
+    "pick": "Marvin Vettori",
+    "method": "Marvin Vettori by DEC",
+    "method_p": 0.5718,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.662,
+    "pick": "Marvin Vettori",
+    "method": "Marvin Vettori by DEC",
+    "method_p": 0.5718,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-03|court mcgee|eric nolan": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Court McGee",
+   "b": "Eric Nolan",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.5889,
+    "pick": "Court McGee",
+    "method": "Court McGee by DEC",
+    "method_p": 0.4798,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5889,
+    "pick": "Court McGee",
+    "method": "Court McGee by DEC",
+    "method_p": 0.4798,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|brendan allen|christian leroy duncan": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Brendan Allen",
+   "b": "Christian Leroy Duncan",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.5119,
+    "pick": "Brendan Allen",
+    "method": "Christian Leroy Duncan by KO/TKO",
+    "method_p": 0.2777,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5119,
+    "pick": "Brendan Allen",
+    "method": "Christian Leroy Duncan by KO/TKO",
+    "method_p": 0.2777,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|alice pereira|darya zheleznyakova": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Darya Zheleznyakova",
+   "b": "Alice Pereira",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.5853,
+    "pick": "Darya Zheleznyakova",
+    "method": "Darya Zheleznyakova by DEC",
+    "method_p": 0.3123,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5853,
+    "pick": "Darya Zheleznyakova",
+    "method": "Darya Zheleznyakova by DEC",
+    "method_p": 0.3123,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|ernesta kareckaite|melissa gatto": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Melissa Gatto",
+   "b": "Ernesta Kareckaite",
+   "weight_class": "Women's Flyweight",
+   "first": {
+    "p_a": 0.4895,
+    "pick": "Ernesta Kareckaite",
+    "method": "Ernesta Kareckaite by DEC",
+    "method_p": 0.3971,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4895,
+    "pick": "Ernesta Kareckaite",
+    "method": "Ernesta Kareckaite by DEC",
+    "method_p": 0.3971,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|alexander poppeck|felipe franco": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Felipe Franco",
+   "b": "Alexander Poppeck",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.2961,
+    "pick": "Alexander Poppeck",
+    "method": "Alexander Poppeck by DEC",
+    "method_p": 0.3815,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.2961,
+    "pick": "Alexander Poppeck",
+    "method": "Alexander Poppeck by DEC",
+    "method_p": 0.3815,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|gerald meerschaert|julius walker": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Gerald Meerschaert",
+   "b": "Julius Walker",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.6077,
+    "pick": "Gerald Meerschaert",
+    "method": "Julius Walker by KO/TKO",
+    "method_p": 0.2234,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6077,
+    "pick": "Gerald Meerschaert",
+    "method": "Julius Walker by KO/TKO",
+    "method_p": 0.2234,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-10|ketlen souza|lupita godinez": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Ketlen Souza",
+   "b": "Lupita Godinez",
+   "weight_class": "Women's Strawweight",
+   "first": {
+    "p_a": 0.269,
+    "pick": "Lupita Godinez",
+    "method": "Lupita Godinez by DEC",
+    "method_p": 0.4735,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.269,
+    "pick": "Lupita Godinez",
+    "method": "Lupita Godinez by DEC",
+    "method_p": 0.4735,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|joaquin buckley|mike malott": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Joaquin Buckley",
+   "b": "Mike Malott",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.4545,
+    "pick": "Mike Malott",
+    "method": "Joaquin Buckley by KO/TKO",
+    "method_p": 0.401,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4545,
+    "pick": "Mike Malott",
+    "method": "Joaquin Buckley by KO/TKO",
+    "method_p": 0.401,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|erin blanchfield|jasmine jasudavicius": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Erin Blanchfield",
+   "b": "Jasmine Jasudavicius",
+   "weight_class": "Women's Flyweight",
+   "first": {
+    "p_a": 0.6738,
+    "pick": "Erin Blanchfield",
+    "method": "Erin Blanchfield by DEC",
+    "method_p": 0.5109,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6738,
+    "pick": "Erin Blanchfield",
+    "method": "Erin Blanchfield by DEC",
+    "method_p": 0.5109,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|cristian perez|kyle nelson": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Kyle Nelson",
+   "b": "Cristian Perez",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.461,
+    "pick": "Cristian Perez",
+    "method": "Cristian Perez by KO/TKO",
+    "method_p": 0.4039,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.461,
+    "pick": "Cristian Perez",
+    "method": "Cristian Perez by KO/TKO",
+    "method_p": 0.4039,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|kyle daukaus|marc-andre barriault": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Marc-Andre Barriault",
+   "b": "Kyle Daukaus",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.3847,
+    "pick": "Kyle Daukaus",
+    "method": "Kyle Daukaus by KO/TKO",
+    "method_p": 0.2951,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3847,
+    "pick": "Kyle Daukaus",
+    "method": "Kyle Daukaus by KO/TKO",
+    "method_p": 0.2951,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|jhonata diniz|tanner boser": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Tanner Boser",
+   "b": "Jhonata Diniz",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.4734,
+    "pick": "Jhonata Diniz",
+    "method": "Jhonata Diniz by DEC",
+    "method_p": 0.3428,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4734,
+    "pick": "Jhonata Diniz",
+    "method": "Jhonata Diniz by DEC",
+    "method_p": 0.3428,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|chelsea chandler|melissa croden": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Melissa Croden",
+   "b": "Chelsea Chandler",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.6349,
+    "pick": "Melissa Croden",
+    "method": "Melissa Croden by DEC",
+    "method_p": 0.4271,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6349,
+    "pick": "Melissa Croden",
+    "method": "Melissa Croden by DEC",
+    "method_p": 0.4271,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-17|gilbert urbina|julien leblanc": {
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "date": "2026-10-17",
+   "a": "Julien Leblanc",
+   "b": "Gilbert Urbina",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.2025,
+    "pick": "Gilbert Urbina",
+    "method": "Gilbert Urbina by SUB",
+    "method_p": 0.4458,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.2025,
+    "pick": "Gilbert Urbina",
+    "method": "Gilbert Urbina by SUB",
+    "method_p": 0.4458,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|alexander volkanovski|movsar evloev": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Alexander Volkanovski",
+   "b": "Movsar Evloev",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.3266,
+    "pick": "Movsar Evloev",
+    "method": "Movsar Evloev by DEC",
+    "method_p": 0.3551,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3266,
+    "pick": "Movsar Evloev",
+    "method": "Movsar Evloev by DEC",
+    "method_p": 0.3551,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|merab dvalishvili|petr yan": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Petr Yan",
+   "b": "Merab Dvalishvili",
+   "weight_class": "Bantamweight",
+   "first": {
+    "p_a": 0.51,
+    "pick": "Petr Yan",
+    "method": "Merab Dvalishvili by DEC",
+    "method_p": 0.4532,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.51,
+    "pick": "Petr Yan",
+    "method": "Merab Dvalishvili by DEC",
+    "method_p": 0.4532,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|alexander volkov|rizvan kuniev": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Alexander Volkov",
+   "b": "Rizvan Kuniev",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.5438,
+    "pick": "Alexander Volkov",
+    "method": "Alexander Volkov by DEC",
+    "method_p": 0.3602,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5438,
+    "pick": "Alexander Volkov",
+    "method": "Alexander Volkov by DEC",
+    "method_p": 0.3602,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|azamat murzakanov|dominick reyes": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Azamat Murzakanov",
+   "b": "Dominick Reyes",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.6578,
+    "pick": "Azamat Murzakanov",
+    "method": "Azamat Murzakanov by KO/TKO",
+    "method_p": 0.5877,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6578,
+    "pick": "Azamat Murzakanov",
+    "method": "Azamat Murzakanov by KO/TKO",
+    "method_p": 0.5877,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|abus magomedov|cameron rowston": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Abus Magomedov",
+   "b": "Cameron Rowston",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.7205,
+    "pick": "Abus Magomedov",
+    "method": "Abus Magomedov by KO/TKO",
+    "method_p": 0.3236,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7205,
+    "pick": "Abus Magomedov",
+    "method": "Abus Magomedov by KO/TKO",
+    "method_p": 0.3236,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|aaron pico|losene keita": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Aaron Pico",
+   "b": "Losene Keita",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.3986,
+    "pick": "Losene Keita",
+    "method": "Losene Keita by KO/TKO",
+    "method_p": 0.5347,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3986,
+    "pick": "Losene Keita",
+    "method": "Losene Keita by KO/TKO",
+    "method_p": 0.5347,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-24|abubakar vagaev|jacob malkoun": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Jacob Malkoun",
+   "b": "Abubakar Vagaev",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.1059,
+    "pick": "Abubakar Vagaev",
+    "method": "Abubakar Vagaev by DEC",
+    "method_p": 0.773,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.1059,
+    "pick": "Abubakar Vagaev",
+    "method": "Abubakar Vagaev by DEC",
+    "method_p": 0.773,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|renato carneiro|tom nolan": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Renato Carneiro",
+   "b": "Tom Nolan",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.385,
+    "pick": "Tom Nolan",
+    "method": "Tom Nolan by KO/TKO",
+    "method_p": 0.3322,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.385,
+    "pick": "Tom Nolan",
+    "method": "Tom Nolan by KO/TKO",
+    "method_p": 0.3322,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|lucia szabova|tainara lisboa": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Lucia Szabova",
+   "b": "Tainara Lisboa",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.6113,
+    "pick": "Lucia Szabova",
+    "method": "Lucia Szabova by SUB",
+    "method_p": 0.3275,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6113,
+    "pick": "Lucia Szabova",
+    "method": "Lucia Szabova by SUB",
+    "method_p": 0.3275,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|luana santos|yana santos": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Yana Santos",
+   "b": "Luana Santos",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.2394,
+    "pick": "Luana Santos",
+    "method": "Luana Santos by SUB",
+    "method_p": 0.3535,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.2394,
+    "pick": "Luana Santos",
+    "method": "Luana Santos by SUB",
+    "method_p": 0.3535,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|andre petroski|azamat bekoev": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Andre Petroski",
+   "b": "Azamat Bekoev",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.6541,
+    "pick": "Andre Petroski",
+    "method": "Azamat Bekoev by DEC",
+    "method_p": 0.2691,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6541,
+    "pick": "Andre Petroski",
+    "method": "Azamat Bekoev by DEC",
+    "method_p": 0.2691,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|rodrigo sezinando|theodor berggren": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Theodor Berggren",
+   "b": "Rodrigo Sezinando",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.5064,
+    "pick": "Theodor Berggren",
+    "method": "Theodor Berggren by KO/TKO",
+    "method_p": 0.2964,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5064,
+    "pick": "Theodor Berggren",
+    "method": "Theodor Berggren by KO/TKO",
+    "method_p": 0.2964,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|francis marshall|gaston bolanos": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Gaston Bolanos",
+   "b": "Francis Marshall",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.532,
+    "pick": "Gaston Bolanos",
+    "method": "Gaston Bolanos by DEC",
+    "method_p": 0.3463,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.532,
+    "pick": "Gaston Bolanos",
+    "method": "Gaston Bolanos by DEC",
+    "method_p": 0.3463,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|piera rodriguez|talita alencar": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Talita Alencar",
+   "b": "Piera Rodriguez",
+   "weight_class": "Women's Strawweight",
+   "first": {
+    "p_a": 0.8598,
+    "pick": "Talita Alencar",
+    "method": "Talita Alencar by SUB",
+    "method_p": 0.6374,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.8598,
+    "pick": "Talita Alencar",
+    "method": "Talita Alencar by SUB",
+    "method_p": 0.6374,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-10-31|carlos leal|randy brown": {
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "date": "2026-10-31",
+   "a": "Randy Brown",
+   "b": "Carlos Leal",
+   "weight_class": "Welteweight",
+   "first": {
+    "p_a": 0.5004,
+    "pick": "Randy Brown",
+    "method": "Randy Brown by KO/TKO",
+    "method_p": 0.3704,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5004,
+    "pick": "Randy Brown",
+    "method": "Randy Brown by KO/TKO",
+    "method_p": 0.3704,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|gabriel bonfim|sean brady": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Gabriel Bonfim",
+   "b": "Sean Brady",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.5486,
+    "pick": "Gabriel Bonfim",
+    "method": "Gabriel Bonfim by KO/TKO",
+    "method_p": 0.2677,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5486,
+    "pick": "Gabriel Bonfim",
+    "method": "Gabriel Bonfim by KO/TKO",
+    "method_p": 0.2677,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|gabriella fernandes|karine silva": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Karine Silva",
+   "b": "Gabriella Fernandes",
+   "weight_class": "Women's Flyweight",
+   "first": {
+    "p_a": 0.7161,
+    "pick": "Karine Silva",
+    "method": "Karine Silva by KO/TKO",
+    "method_p": 0.4747,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7161,
+    "pick": "Karine Silva",
+    "method": "Karine Silva by KO/TKO",
+    "method_p": 0.4747,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|davey grant|elijah smith": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Davey Grant",
+   "b": "Elijah Smith",
+   "weight_class": "Bantamweight",
+   "first": {
+    "p_a": 0.4655,
+    "pick": "Elijah Smith",
+    "method": "Elijah Smith by DEC",
+    "method_p": 0.3147,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4655,
+    "pick": "Elijah Smith",
+    "method": "Elijah Smith by DEC",
+    "method_p": 0.3147,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|seok hyeon ko|wellington turman": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Wellington Turman",
+   "b": "Seok Hyeon Ko",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.2111,
+    "pick": "Seok Hyeon Ko",
+    "method": "Seok Hyeon Ko by KO/TKO",
+    "method_p": 0.3813,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.2111,
+    "pick": "Seok Hyeon Ko",
+    "method": "Seok Hyeon Ko by KO/TKO",
+    "method_p": 0.3813,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|tatiana suarez|virna jandiroba": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Tatiana Suarez",
+   "b": "Virna Jandiroba",
+   "weight_class": "Women's Strawweight",
+   "first": {
+    "p_a": 0.5094,
+    "pick": "Tatiana Suarez",
+    "method": "Tatiana Suarez by DEC",
+    "method_p": 0.3827,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5094,
+    "pick": "Tatiana Suarez",
+    "method": "Tatiana Suarez by DEC",
+    "method_p": 0.3827,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|billy elekana|lucas fernando": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Billy Elekana",
+   "b": "Lucas Fernando",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.1101,
+    "pick": "Lucas Fernando",
+    "method": "Lucas Fernando by SUB",
+    "method_p": 0.3833,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.1101,
+    "pick": "Lucas Fernando",
+    "method": "Lucas Fernando by SUB",
+    "method_p": 0.3833,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-07|nina nikolija milosevic|priscila cachoeira": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Nina Nikolija Milosevic",
+   "b": "Priscila Cachoeira",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.8517,
+    "pick": "Nina Nikolija Milosevic",
+    "method": "Nina Nikolija Milosevic by SUB",
+    "method_p": 0.535,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.8517,
+    "pick": "Nina Nikolija Milosevic",
+    "method": "Nina Nikolija Milosevic by SUB",
+    "method_p": 0.535,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|ciryl gane|josh hokit": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Ciryl Gane",
+   "b": "Josh Hokit",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.4594,
+    "pick": "Josh Hokit",
+    "method": "Josh Hokit by SUB",
+    "method_p": 0.2754,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4594,
+    "pick": "Josh Hokit",
+    "method": "Josh Hokit by SUB",
+    "method_p": 0.2754,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|amanda nunes|kayla harrison": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Kayla Harrison",
+   "b": "Amanda Nunes",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.7632,
+    "pick": "Kayla Harrison",
+    "method": "Kayla Harrison by SUB",
+    "method_p": 0.5716,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7632,
+    "pick": "Kayla Harrison",
+    "method": "Kayla Harrison by SUB",
+    "method_p": 0.5716,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|caio borralho|yousri belgaroui": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Caio Borralho",
+   "b": "Yousri Belgaroui",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.6112,
+    "pick": "Caio Borralho",
+    "method": "Caio Borralho by DEC",
+    "method_p": 0.4954,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6112,
+    "pick": "Caio Borralho",
+    "method": "Caio Borralho by DEC",
+    "method_p": 0.4954,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|kevin holland|uros medic": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Uros Medic",
+   "b": "Kevin Holland",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.6526,
+    "pick": "Uros Medic",
+    "method": "Uros Medic by KO/TKO",
+    "method_p": 0.313,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6526,
+    "pick": "Uros Medic",
+    "method": "Uros Medic by KO/TKO",
+    "method_p": 0.313,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|bilal hasan|luis gurule": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Bilal Hasan",
+   "b": "Luis Gurule",
+   "weight_class": "Flyweight",
+   "first": {
+    "p_a": 0.8979,
+    "pick": "Bilal Hasan",
+    "method": "Bilal Hasan by KO/TKO",
+    "method_p": 0.4263,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.8979,
+    "pick": "Bilal Hasan",
+    "method": "Bilal Hasan by KO/TKO",
+    "method_p": 0.4263,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|chris duncan|drew dober": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Drew Dober",
+   "b": "Chris Duncan",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.5621,
+    "pick": "Drew Dober",
+    "method": "Drew Dober by KO/TKO",
+    "method_p": 0.2154,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5621,
+    "pick": "Drew Dober",
+    "method": "Drew Dober by KO/TKO",
+    "method_p": 0.2154,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|charles radtke|stephen thompson": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Stephen Thompson",
+   "b": "Charles Radtke",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.7619,
+    "pick": "Stephen Thompson",
+    "method": "Stephen Thompson by KO/TKO",
+    "method_p": 0.6232,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7619,
+    "pick": "Stephen Thompson",
+    "method": "Stephen Thompson by KO/TKO",
+    "method_p": 0.6232,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|baisangur susurkaev|donte johnson": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Donte Johnson",
+   "b": "Baisangur Susurkaev",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.6881,
+    "pick": "Donte Johnson",
+    "method": "Donte Johnson by KO/TKO",
+    "method_p": 0.4306,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.6881,
+    "pick": "Donte Johnson",
+    "method": "Donte Johnson by KO/TKO",
+    "method_p": 0.4306,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|jim miller|terrance mckinney": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Jim Miller",
+   "b": "Terrance McKinney",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.5282,
+    "pick": "Jim Miller",
+    "method": "Jim Miller by KO/TKO",
+    "method_p": 0.3616,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.5282,
+    "pick": "Jim Miller",
+    "method": "Jim Miller by KO/TKO",
+    "method_p": 0.3616,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-14|beatriz mesquita|macy chiasson": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Macy Chiasson",
+   "b": "Beatriz Mesquita",
+   "weight_class": "Women's Bantamweight",
+   "first": {
+    "p_a": 0.2869,
+    "pick": "Beatriz Mesquita",
+    "method": "Beatriz Mesquita by SUB",
+    "method_p": 0.399,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.2869,
+    "pick": "Beatriz Mesquita",
+    "method": "Beatriz Mesquita by SUB",
+    "method_p": 0.399,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|jiri prochazka|navajo stirling": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.4618,
+    "pick": "Navajo Stirling",
+    "method": "Navajo Stirling by KO/TKO",
+    "method_p": 0.4831,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4618,
+    "pick": "Navajo Stirling",
+    "method": "Navajo Stirling by KO/TKO",
+    "method_p": 0.4831,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|alessandro costa|amir albazi": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Amir Albazi",
+   "b": "Alessandro Costa",
+   "weight_class": "Flyweight",
+   "first": {
+    "p_a": 0.8453,
+    "pick": "Amir Albazi",
+    "method": "Amir Albazi by KO/TKO",
+    "method_p": 0.4346,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.8453,
+    "pick": "Amir Albazi",
+    "method": "Amir Albazi by KO/TKO",
+    "method_p": 0.4346,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|asu almabayev|kyoji horiguchi": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Kyoji Horiguchi",
+   "b": "Asu Almabayev",
+   "weight_class": "Flyweight",
+   "first": {
+    "p_a": 0.4316,
+    "pick": "Asu Almabayev",
+    "method": "Asu Almabayev by DEC",
+    "method_p": 0.2516,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4316,
+    "pick": "Asu Almabayev",
+    "method": "Asu Almabayev by DEC",
+    "method_p": 0.2516,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|aljamain sterling|kevin vallejos": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.3861,
+    "pick": "Kevin Vallejos",
+    "method": "Kevin Vallejos by KO/TKO",
+    "method_p": 0.4075,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3861,
+    "pick": "Kevin Vallejos",
+    "method": "Kevin Vallejos by KO/TKO",
+    "method_p": 0.4075,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|brian ortega|dan hooker": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Dan Hooker",
+   "b": "Brian Ortega",
+   "weight_class": "Lightweight",
+   "first": {
+    "p_a": 0.3305,
+    "pick": "Brian Ortega",
+    "method": "Brian Ortega by SUB",
+    "method_p": 0.3775,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.3305,
+    "pick": "Brian Ortega",
+    "method": "Brian Ortega by SUB",
+    "method_p": 0.3775,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|ikram aliskerov|jared cannonier": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Jared Cannonier",
+   "b": "Ikram Aliskerov",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.1638,
+    "pick": "Ikram Aliskerov",
+    "method": "Ikram Aliskerov by DEC",
+    "method_p": 0.4832,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.1638,
+    "pick": "Ikram Aliskerov",
+    "method": "Ikram Aliskerov by DEC",
+    "method_p": 0.4832,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-11-21|shamil gaziev|tallison teixeira": {
+   "event": "UFC Fight Night 294",
+   "date": "2026-11-21",
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.7827,
+    "pick": "Shamil Gaziev",
+    "method": "Shamil Gaziev by KO/TKO",
+    "method_p": 0.6955,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.7827,
+    "pick": "Shamil Gaziev",
+    "method": "Shamil Gaziev by KO/TKO",
+    "method_p": 0.6955,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  },
+  "2026-12-12|nassourdine imavov|sean strickland": {
+   "event": "UFC 335",
+   "date": "2026-12-12",
+   "a": "Sean Strickland",
+   "b": "Nassourdine Imavov",
+   "weight_class": "UFC Middleweight Championship",
+   "first": {
+    "p_a": 0.4023,
+    "pick": "Nassourdine Imavov",
+    "method": "Nassourdine Imavov by DEC",
+    "method_p": 0.3236,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   },
+   "latest": {
+    "p_a": 0.4023,
+    "pick": "Nassourdine Imavov",
+    "method": "Nassourdine Imavov by DEC",
+    "method_p": 0.3236,
+    "made": "2026-09-29",
+    "model": {
+     "scale": 1.142,
+     "trained_on": 2986
+    }
+   }
+  }
+ },
+ "scorecard": {
+  "graded": 0,
+  "correct": 0,
+  "accuracy": null,
+  "log_loss": null,
+  "pending": 62
+ }
+}
