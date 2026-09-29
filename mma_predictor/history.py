@@ -15,7 +15,9 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional
 
-from .data import METHOD_BUCKETS, FighterBio, Fight, Method
+import dataclasses
+
+from .data import METHOD_BUCKETS, CornerStats, FighterBio, Fight, Method
 from .ratings import EloConfig, EloRatings
 from .scouting import Scouting
 from .skills import SkillConfig, SkillRatings
@@ -153,12 +155,16 @@ class FightHistory:
         skill_config: SkillConfig = SkillConfig(),
         scouting: Optional[Scouting] = None,
         adjust_for_opponents: bool = True,
+        recency_window_days: int = 548,
+        recency_half_life_days: int = 730,
     ) -> None:
         self.bios = dict(bios)
         self.fights = sorted(fights, key=lambda f: f.date)
         self.priors = priors
         self.scouting = scouting or Scouting()
         self.adjust_for_opponents = adjust_for_opponents
+        self.recency_window_days = recency_window_days
+        self.recency_half_life_days = recency_half_life_days
         self.skills = SkillRatings(self.fights, self.bios, skill_config, self.scouting.boosts(), self.scouting.notes)
         self._raw_cache: Dict[tuple, Dict[str, float]] = {}
         # Classic single-number Elo, kept only as a backtest baseline.
@@ -214,6 +220,11 @@ class FightHistory:
             self._cache[key] = self._build(name, as_of)
         return self._cache[key]
 
+    def recency_weight(self, days_ago: int) -> float:
+        """1.0 within the recent window (18 months), then halves every half-life (2 years)."""
+        extra = days_ago - self.recency_window_days
+        return 1.0 if extra <= 0 else 0.5 ** (extra / self.recency_half_life_days)
+
     def _raw_rates(self, name: str, as_of: date) -> Dict[str, float]:
         """Unadjusted, shrunk striking/takedown rates (the baseline for opponent adjustment)."""
         key = (name, as_of)
@@ -256,36 +267,47 @@ class FightHistory:
         td = td_att = opp_td = opp_td_att = 0.0
         subs = kd = kd_abs = ctrl = ctrl_against = td_raw = ko_losses = sig_absorbed = 0
         wins = losses = 0
-        win_m: Dict[str, int] = defaultdict(int)
-        loss_m: Dict[str, int] = defaultdict(int)
+        win_m: Dict[str, float] = defaultdict(float)
+        loss_m: Dict[str, float] = defaultdict(float)
         late_wins = late_total = five_rounders = 0
         opp_elos: List[float] = []
         win_elos: List[float] = []
 
+        wb = 0.0  # recency-weighted count of decided bouts
+        kd_abs_w = 0.0
         for app in apps:
             f = app.fight
             mins = f.duration_seconds / 60.0
             minutes += mins
+            # Tendencies (rates, finish habits, late-round record) weight the last
+            # 18 months fully and fade older bouts. Records and damage totals don't.
+            w = self.recency_weight((as_of - f.date).days)
             opp_elos.append(app.opp_elo)
             if f.scheduled_rounds >= 5:
                 five_rounders += 1
             if app.result is True:
                 wins += 1
-                win_m[f.method.bucket] += 1
+                wb += w
+                win_m[f.method.bucket] += w
                 win_elos.append(app.opp_elo)
             elif app.result is False:
                 losses += 1
-                loss_m[f.method.bucket] += 1
+                wb += w
+                loss_m[f.method.bucket] += w
             if f.end_round >= 3 and app.result is not None:
-                late_total += 1
-                late_wins += int(app.result)
+                late_total += w
+                late_wins += w * int(app.result)
             if app.result is False and f.method is Method.KO:
                 ko_losses += 1
             own, opp = f.stats_for(name)
             if own is None or opp is None:
                 continue
-            stat_minutes += mins
             sig_absorbed += opp.sig_landed
+            kd_abs += opp.knockdowns
+            # From here on every count is recency-weighted.
+            stat_minutes += w * mins
+            own, opp = _scaled(own, w), _scaled(opp, w)
+            mins *= w
             # Opponent adjustment: judge each bout against what this opponent
             # usually allows / does. Landing 5 a minute on a fighter who
             # normally absorbs 2 is worth more than on one who absorbs 6.
@@ -306,15 +328,15 @@ class FightHistory:
             td_raw += own.td_landed
             subs += own.sub_attempts
             kd += own.knockdowns
-            kd_abs += opp.knockdowns
+            kd_abs_w += opp.knockdowns
             ctrl += own.ctrl_seconds
             ctrl_against += opp.ctrl_seconds
 
         mw = p.minutes_weight
         per15 = lambda count, prior: _shrink(count, stat_minutes / 15.0, prior, mw / 15.0)  # noqa: E731
-        bouts = wins + losses
+        bouts = wb
         fw = p.fights_weight
-        ko_losses = loss_m.get("KO/TKO", 0)
+        ko_losses_w = loss_m.get("KO/TKO", 0)
         sub_losses = loss_m.get("SUB", 0)
         finish_wins = win_m.get("KO/TKO", 0) + win_m.get("SUB", 0)
         prior_finish = p.method_share["KO/TKO"] + p.method_share["SUB"]
@@ -338,7 +360,7 @@ class FightHistory:
             str_acc=_unit(_shrink(sl_acc, sig_att, p.str_acc, p.strikes_weight)),
             str_def=_unit(1.0 - _shrink(opp_sl, opp_att, 1.0 - p.str_def, p.strikes_weight)),
             kd_per15=per15(kd, p.kd_per15),
-            kd_absorbed_per15=per15(kd_abs, p.kd_per15),
+            kd_absorbed_per15=per15(kd_abs_w, p.kd_per15),
             td_per15=per15(td_raw, p.td_per15),
             td_acc=_unit(_shrink(td, td_att, p.td_acc, p.td_weight)),
             td_def=_unit(1.0 - _shrink(opp_td, opp_td_att, 1.0 - p.td_def, p.td_weight)),
@@ -347,8 +369,8 @@ class FightHistory:
             ctrl_against_share=_shrink(ctrl_against / 60.0, stat_minutes, p.ctrl_share, mw),
             win_methods=_dirichlet(win_m, p.method_share, fw),
             loss_methods=_dirichlet(loss_m, p.method_share, fw),
-            finish_rate=_shrink(finish_wins, wins, prior_finish, fw),
-            ko_loss_rate=_shrink(ko_losses, bouts, 0.5 * p.method_share["KO/TKO"], fw),
+            finish_rate=_shrink(finish_wins, sum(win_m.values()), prior_finish, fw),
+            ko_loss_rate=_shrink(ko_losses_w, bouts, 0.5 * p.method_share["KO/TKO"], fw),
             sub_loss_rate=_shrink(sub_losses, bouts, 0.5 * p.method_share["SUB"], fw),
             recent_ko_losses=sum(1 for a in apps[-3:] if a.result is False and a.method is Method.KO),
             late_win_rate=_shrink(late_wins, late_total, 0.5, fw),
@@ -372,6 +394,12 @@ class FightHistory:
             recent=apps[-5:],
             all_appearances=apps,
         )
+
+
+def _scaled(c: CornerStats, w: float) -> CornerStats:
+    if w == 1.0:
+        return c
+    return CornerStats(**{k: (v * w if isinstance(v, (int, float)) else v) for k, v in dataclasses.asdict(c).items()})
 
 
 def _unit(x: float) -> float:

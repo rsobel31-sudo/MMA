@@ -148,6 +148,11 @@ class SkillConfig:
     mismatch_free_gap: float = 100.0
     mismatch_full_gap: float = 300.0
     mismatch_min_weight: float = 0.35
+    # Recency: an uncertain rating (new, or after a layoff) moves faster, so the
+    # latest results outweigh old ones. K is scaled by (RD / rd_k_ref)^2, clamped.
+    rd_k_ref: float = 110.0
+    rd_k_min: float = 0.8
+    rd_k_max: float = 1.6
 
 
 Ratings = Dict[str, float]
@@ -277,6 +282,10 @@ class SkillRatings:
     def proven(self, overall: float, rd: float) -> float:
         """Conservative rating for rankings: you have to prove it to be ranked by it."""
         return overall - self.config.rank_sigmas * (rd - self.config.rd_floor)
+
+    def _rd_k(self, rd: float) -> float:
+        cfg = self.config
+        return max(cfg.rd_k_min, min(cfg.rd_k_max, (rd / cfg.rd_k_ref) ** 2))
 
     def _mismatch_weight(self, gap: float) -> float:
         cfg = self.config
@@ -435,10 +444,10 @@ class SkillRatings:
         # Expectations use the effective ratings (evidence + fading pedigree).
         ra = self.effective(a, raw_a, self._counts[a])
         rb = self.effective(b, raw_b, self._counts[b])
-        ka, kb = self._k(a), self._k(b)
-        deltas: Dict[str, Dict[str, float]] = {a: defaultdict(float), b: defaultdict(float)}
         oa, ob = self.overall(ra), self.overall(rb)
         rd_a, rd_b = self.rd_before(a, f.date), self.rd_before(b, f.date)
+        ka, kb = self._k(a) * self._rd_k(rd_a), self._k(b) * self._rd_k(rd_b)
+        deltas: Dict[str, Dict[str, float]] = {a: defaultdict(float), b: defaultdict(float)}
 
         # Dominating someone far below you says little about how you'd fare
         # against your peers, so that stat evidence counts for less.

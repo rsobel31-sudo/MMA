@@ -331,7 +331,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
     tab: "matchup",
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
-    roster: { view: "table", sort: "proven", dir: -1, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
+    roster: { view: "table", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
   };
 
@@ -527,7 +527,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     view.innerHTML = `<div class="stack">
       <section class="panel profile-hd">
         <div><button class="btn small" type="button" id="profile-back">← Back</button></div>
-        <div class="ph-main"><h2>${esc(n)}</h2><div class="ph-record num">${record(f)}</div></div>
+        <div class="ph-main"><h2>${esc(n)}</h2><div class="ph-record num">${record(f)}</div>${f.aka ? `<div class="muted">also known as ${esc(f.aka.join(", "))}</div>` : ""}</div>
         <p class="muted">${facts.join(" · ")}</p>
         <p class="num"><strong>Ranking ${Math.round(f.proven)}</strong> <span class="muted">(overall ${Math.round(f.elo)} ± ${Math.round(f.rd)} uncertainty)</span>${officialRank(f) !== null ? ` · <strong>UFC ${officialLabel(f)}</strong> <span class="muted">${esc((f.official.media || f.official.meta).division)}</span>` : ""}${peers.length >= 5 ? ` · <strong>#${peers.slice().sort((x, y) => y.proven - x.proven).findIndex((x) => x.name === n) + 1}</strong> <span class="muted">of ${peers.length} in ${esc(f.division)} by our ranking</span>` : ""}</p>
         <div class="ph-actions"><button class="btn" type="button" data-corner="a">Put in red corner</button><button class="btn" type="button" data-corner="b">Put in blue corner</button>
@@ -1058,7 +1058,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const r = state.roster, q = r.q.toLowerCase();
     const ageMin = parseFloat(r.ageMin), ageMax = parseFloat(r.ageMax), minF = parseInt(r.minFights, 10) || 0;
     return state.data.fighters.map((f) => fighter(f.name)).filter((f) =>
-      (!q || f.name.toLowerCase().includes(q) || (f.team || "").toLowerCase().includes(q)) &&
+      (!q || f.name.toLowerCase().includes(q) || (f.team || "").toLowerCase().includes(q) || (f.aka || []).some((x) => x.toLowerCase().includes(q))) &&
+      (!r.ufcOnly || f.weight_class_source === "ufc-roster") &&
       (!r.wc || f.division === r.wc) &&
       (!r.gender || f.gender === r.gender) &&
       (r.inferred || !f.weight_class_inferred) &&
@@ -1080,6 +1081,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const filters = `<div class="filters">
       <input type="search" id="roster-q" placeholder="Search fighter or team" value="${esc(r.q)}">
       <label>Division <select data-rfilter="wc">${opts(classes, r.wc, "All")}</select></label>
+      <label class="check"><input type="checkbox" data-rfilter="ufcOnly" ${r.ufcOnly ? "checked" : ""}> Current UFC roster only</label>
       <label>Gender <select data-rfilter="gender"><option value="">Any</option><option value="M" ${r.gender === "M" ? "selected" : ""}>Men</option><option value="F" ${r.gender === "F" ? "selected" : ""}>Women</option></select></label>
       </div><details class="more-filters" ${narrowOpen || window.innerWidth > 820 ? "open" : ""}><summary>More filters</summary><div class="filters" style="margin-top:8px">
       <label>Style <select data-rfilter="style">${opts(styles, r.style, "Any")}</select></label>
@@ -1103,7 +1105,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     </div>`;
     view.innerHTML = `<section class="panel stack">${head}${filters}${r.view === "classes" ? classBreakout(list) : rosterTable(list)}</section>`;
   }
-  const ROSTER_FILTERS = { q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true };
+  const ROSTER_FILTERS = { ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true };
   function rosterTable(list) {
     const r = state.roster;
     const sorted = list.slice().sort((x, y) => {
@@ -1314,7 +1316,9 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const t = e.target;
     if (t.id === "in-a" || t.id === "in-b") {
       const v = t.value.trim();
-      const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === v.toLowerCase()) || v);
+      const low = v.toLowerCase();
+      const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === low)
+        || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || v);
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
     }
     if (t.dataset.attr) {
@@ -1378,7 +1382,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     state.engine = MMAEngine.makeEngine(data);
     RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
-    $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">`).join("");
+    $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">` + (f.aka || []).map((x) => `<option value="${esc(x)}" label="${esc(f.name)}">`).join("")).join("");
     const m = data.meta;
     $("#meta").textContent = `${m.fighters_exported.toLocaleString()} fighters · ${m.bouts.toLocaleString()} bouts through ${m.last_fight}`;
     state.tab = ls.get(LOCAL_KEY + ":tab") || "matchup";

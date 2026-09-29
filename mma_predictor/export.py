@@ -145,6 +145,10 @@ def export(
     fighters.sort(key=lambda f: -f["elo"])
     # Official UFC rank(s), for comparing our order with the UFC's.
     by_name = {f["name"]: f for f in fighters}
+    # Other names a fighter goes by (e.g. Bobby Green -> King Green), for search.
+    for other, canonical in (aliases or {}).items():
+        if not other.startswith("_") and canonical in by_name:
+            by_name[canonical].setdefault("aka", []).append(other)
     for r in rankings or []:
         target = linked.get(r["name"])
         if target in by_name:

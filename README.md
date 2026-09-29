@@ -108,6 +108,17 @@ python -m mma_predictor analyze --data data/sherdog
   the pick for each scheduled bout, keeps the first one frozen, and grades it
   once the result is in the data. The Insights tab shows the scorecard.
 
+### Recency
+
+Fighter tendencies (strike and takedown rates, accuracy and defence, finish
+habits, late-round record) weight bouts from the last 18 months fully; older
+bouts fade, halving every two years beyond that. Records and damage totals
+(KO losses, knockdowns absorbed) stay cumulative. Ratings move faster while
+uncertain (K × (RD/110)², clamped 0.8–1.6), so a new fighter or one returning
+from a layoff is judged mostly on their latest results. Together these raised
+agreement with the official rankings from 0.78 to 0.82 and slightly improved
+the backtest log-loss.
+
 ### Scouting: background and fight commentary
 
 `data/scouting/backgrounds.json` records martial-arts pedigree (discipline,

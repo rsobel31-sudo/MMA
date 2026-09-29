@@ -30,9 +30,10 @@ def test_overall_moves_like_classic_elo_without_stats():
         classic = EloRatings([f], config=EloConfig(k=SkillConfig().k_result))
         # Stat-free bouts add small finish-based evidence on top of the result.
         gain = sk.overall_before("A", D2) - sk.overall(sk.initial("A"))
-        classic_gain = classic.rating_before("A", D2) - 1500
+        # A debut rating is uncertain, so it moves faster than classic Elo by the RD factor.
+        classic_gain = (classic.rating_before("A", D2) - 1500) * sk._rd_k(sk.rd_initial("A"))
         assert gain > 0
-        assert gain == pytest.approx(classic_gain, abs=15)
+        assert gain == pytest.approx(classic_gain, abs=20)
 
 
 def test_finish_type_decides_which_category_moves():

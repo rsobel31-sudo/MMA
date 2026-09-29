@@ -114,7 +114,8 @@ def cmd_rankings(args) -> int:
     key = {"overall": "proven", "raw": "elo"}.get(args.by, args.by)
     wc = (args.weight_class or "").lower()
     rows = sorted(
-        (s for s in snaps if s.fights >= args.min_fights and (not wc or s.bio.weight_class.lower() == wc)),
+        (s for s in snaps if s.fights >= args.min_fights and (not wc or s.bio.weight_class.lower() == wc)
+         and (args.active_years <= 0 or (s.layoff_days is not None and s.layoff_days <= args.active_years * 365))),
         key=lambda s: -getattr(s, key),
     )
     print(f"{'':>4} {'Fighter':<28} {'Proven':>7} {'Overall':>7} {'±':>4} {'Strike':>7} {'Wrestle':>7} {'Grapple':>7} {'Record':>8}")
@@ -458,6 +459,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--min-fights", type=int, default=3)
     p.add_argument("--by", choices=["overall", "raw", "striking", "wrestling", "grappling"], default="overall",
                    help="overall = proven rating (overall minus uncertainty); raw = overall without the uncertainty penalty")
+    p.add_argument("--active-years", type=float, default=2.0, help="only fighters who fought within this many years (0 = everyone)")
     p.add_argument("--class", dest="weight_class", help="only this weight class, e.g. Lightweight (listed classes only)")
     p.set_defaults(func=cmd_rankings)
 
