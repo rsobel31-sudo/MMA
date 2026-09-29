@@ -31,6 +31,7 @@ PRIOR_WEIGHTS: Dict[str, float] = {
     "submission_threat": 0.12,
     "reach": 0.06,
     "age_curve": 0.30,
+    "wear_and_tear": 0.20,
     "experience": 0.12,
     "form": 0.20,
     "layoff": 0.10,

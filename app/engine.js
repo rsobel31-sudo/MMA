@@ -4,7 +4,7 @@
 (function (root) {
   "use strict";
   const BUCKETS = ["KO/TKO", "SUB", "DEC"];
-  const INT_FIELDS = new Set(["recent_ko_losses", "streak", "layoff_days"]);
+  const INT_FIELDS = new Set(["recent_ko_losses", "streak", "layoff_days", "ko_losses", "kd_absorbed", "sig_absorbed"]);
 
   const clip = (x, lo = -3, hi = 3) => Math.max(lo, Math.min(hi, x));
   const sigmoid = (z) => (z >= 0 ? 1 / (1 + Math.exp(-z)) : Math.exp(z) / (1 + Math.exp(z)));
@@ -15,6 +15,15 @@
     let p = Math.pow(Math.max(0, age - 32), 1.5) / 10;
     if (age < 24) p += (24 - age) * 0.05;
     return p;
+  }
+  function wearIndex(s) {
+    const mileage = (0.5 * totalFights(s)) / 20 + (0.5 * s.minutes) / 150;
+    const damage = 0.6 * s.ko_losses + 0.25 * s.kd_absorbed + s.sig_absorbed / 1000;
+    return mileage + damage;
+  }
+  function wearPenalty(s) {
+    const age = s.age === null || s.age === undefined ? 30 : s.age;
+    return wearIndex(s) * (1 + Math.max(0, age - 30) / 8);
   }
   function layoffPenalty(days) {
     if (days === null || days === undefined) return 0;
@@ -55,6 +64,7 @@
         submission_threat: clip((subA - subB) / 1.5),
         reach: clip(reach, -2, 2),
         age_curve: clip(agePenalty(b.age) - agePenalty(a.age)),
+        wear_and_tear: clip((wearPenalty(b) - wearPenalty(a)) / 3),
         experience: clip(Math.log1p(totalFights(a)) - Math.log1p(totalFights(b))),
         form: a.form - b.form,
         layoff: layoffPenalty(b.layoff_days) - layoffPenalty(a.layoff_days),
@@ -198,7 +208,7 @@
     return pa / (pa + pb);
   }
 
-  const api = { makeEngine, sigmoid, devig, agePenalty, layoffPenalty, BUCKETS };
+  const api = { makeEngine, sigmoid, devig, agePenalty, layoffPenalty, wearIndex, wearPenalty, BUCKETS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.MMAEngine = api;
 })(typeof window !== "undefined" ? window : globalThis);

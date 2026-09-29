@@ -134,6 +134,11 @@ table.tape tr.group td span { display: block; font-family: var(--body); font-wei
 table.tape tr.cat td { background: var(--surface-2); font-size: 15px; }
 table.tape tr.cat td.attr { color: var(--ink); }
 .catval .muted { font-size: 12px; font-weight: 400; }
+.bg p { margin: 0 0 6px; }
+.bg ul { margin: 0 0 6px; padding-left: 0; list-style: none; display: grid; gap: 4px; font-size: 13.5px; }
+.bg a, .notes a { color: var(--blue); }
+.judge { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px; background: var(--edit-soft); border-radius: 4px; font-size: 13px; }
+.judge input[type="text"] { flex: 1 1 200px; }
 
 .notes { display: grid; gap: 6px; padding-left: 18px; margin: 0; }
 .notes li.mine { color: var(--edit); }
@@ -240,6 +245,10 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     { k: "streak", label: "Streak (+W / −L)", kind: "int", better: "high" },
     { k: "layoff_days", label: "Days since last fight", kind: "int", better: "low" },
     { k: "sos", label: "Avg opponent rating", kind: "int", better: "high" },
+    { k: "minutes", label: "Cage time (in data)", kind: "num", d: 0, unit: "min", better: "low", wear: true },
+    { k: "ko_losses", label: "KO/TKO losses (career)", kind: "int", better: "low", wear: true },
+    { k: "kd_absorbed", label: "Knockdowns absorbed", kind: "int", better: "low", wear: true, stat: true },
+    { k: "sig_absorbed", label: "Sig. strikes absorbed (total)", kind: "int", better: "low", wear: true, stat: true },
   ];
   const WEIGHT_RANGE = { overall: [0, 2.5] };
   // Sub-rating rows (r_<key>), built from data.json at boot.
@@ -248,7 +257,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
 
   const state = {
     data: null, engine: null, byName: new Map(),
-    adj: { fighters: {}, matchups: {}, weights: {} }, card: [],
+    adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null,
     tab: "matchup",
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { q: "", sort: "elo" },
@@ -260,15 +269,17 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   const LOCAL_KEY = "mma-fight-lab";
   function localStore() {
     const saved = ls.get(LOCAL_KEY) || {};
-    const persist = () => ls.set(LOCAL_KEY, { adj: state.adj, card: state.card });
+    const persist = () => ls.set(LOCAL_KEY, { adj: state.adj, card: state.card, commentary: state.commentary });
     if (saved.adj) state.adj = Object.assign({ fighters: {}, matchups: {}, weights: {} }, saved.adj);
     if (saved.card) state.card = saved.card;
+    if (saved.commentary) state.commentary = saved.commentary;
     return {
       kind: "local",
       async saveFighter() { persist(); }, async deleteFighter() { persist(); },
       async saveMatchup() { persist(); }, async deleteMatchup() { persist(); },
       async saveWeights() { persist(); },
       async saveCard() { persist(); }, async deleteCard() { persist(); },
+      async saveComment() { persist(); }, async deleteComment() { persist(); },
     };
   }
   function dbStore(db) {
@@ -301,6 +312,9 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       if (keep("settings/weights")) return;
       state.adj.weights = (d.exists && d.data().weights) || {}; renderSoon();
     }, () => {});
+    db.collection("commentary").onSnapshot((snap) => {
+      state.commentary = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
+    }, () => {});
     db.collection("card").orderBy("order").onSnapshot((snap) => {
       state.card = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
     }, () => {});
@@ -312,6 +326,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       deleteMatchup(id) { return write("matchups/" + id, () => db.doc("matchups/" + id).delete()); },
       saveWeights(w) { return write("settings/weights", () => db.doc("settings/weights").set({ weights: w })); },
       saveCard(item) { const { id, ...body } = item; return write("card/" + id, () => db.doc("card/" + id).set(body)); },
+      saveComment(item) { const { id, ...body } = item; return write("commentary/" + id, () => db.doc("commentary/" + id).set(body)); },
+      deleteComment(id) { return write("commentary/" + id, () => db.doc("commentary/" + id).delete()); },
       deleteCard(id) { return write("card/" + id, () => db.doc("card/" + id).delete()); },
     };
   }
@@ -370,7 +386,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     return thin ? "Low, thin data" : "Coin-flip range";
   }
   function adjCount() {
-    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note).length + Object.keys(state.adj.weights).length;
+    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note).length + Object.keys(state.adj.weights).length + state.commentary.length;
   }
   function fmt(attr, v) {
     if (v === null || v === undefined) return "—";
@@ -523,7 +539,11 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
               <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong></td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
               ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
             <tr class="group"><td colspan="3">Career stats</td></tr>
-            ${ATTRS.map((at) => tapeRow(at, a, fa, b, fb)).join("")}
+            ${ATTRS.filter((at) => !at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
+            <tr class="group"><td colspan="3">Wear and tear <span>Mileage and damage, weighted more heavily past 30. A 30-year-old with 50 fights is older than one with 5.</span></td></tr>
+            <tr><td class="va">${fa.wins + fa.losses + fa.prior_wins + fa.prior_losses}</td><td class="attr">Pro fights</td><td class="vb">${fb.wins + fb.losses + fb.prior_wins + fb.prior_losses}</td></tr>
+            ${ATTRS.filter((at) => at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
+            <tr class="cat"><td class="va">${wearCell(fa, fb)}</td><td class="attr"><strong>Wear index</strong></td><td class="vb">${wearCell(fb, fa)}</td></tr>
           </tbody>
         </table></div>
       </section>
@@ -533,10 +553,15 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
           <div class="panel fnote">
             <div class="hd"><h3 style="color:var(--${c})">${esc(n)}</h3>
               ${state.adj.fighters[n] ? `<button class="btn small" data-clear-fighter="${esc(n)}" type="button">Clear all edits</button>` : ""}</div>
+            ${backgroundBlock(f)}
             <textarea id="note-${c}" data-note="${esc(n)}" placeholder="Your scouting note on ${esc(n)} (camp, injuries, how they've looked)">${esc((state.adj.fighters[n] || {}).note || "")}</textarea>
+            <div class="label">Recent fights · judge how they performed</div>
             <table class="recent num"><tbody>
-              ${f.recent.map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${esc(x.opponent)}</td><td>${esc(x.method)} R${x.round}</td></tr>`).join("")}
+              ${f.recent.map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${esc(x.opponent)}</td><td>${esc(x.method)} R${x.round}</td>
+                <td><button class="btn small" type="button" data-judge="${esc(n)}" data-date="${esc(x.date)}" data-opp="${esc(x.opponent)}">Judge</button></td></tr>
+                ${state.judging && state.judging.fighter === n && state.judging.date === x.date ? `<tr><td colspan="5">${judgeForm(c)}</td></tr>` : ""}`).join("")}
             </tbody></table>
+            ${commentaryList(n, f)}
           </div>`).join("")}
       </section>
     </div>`;
@@ -556,6 +581,44 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         <span style="text-align:right">${c > 0 ? "+" : "−"}${Math.abs(c).toFixed(2)}</span></div>`;
     }).join("")}
       <div class="faxis"><span></span><span><span>${esc(state.m.a)}</span><span>${esc(state.m.b)}</span></span><span></span></div></div>`;
+  }
+
+  function wearCell(me, other) {
+    const w = MMAEngine.wearIndex(me), aged = MMAEngine.wearPenalty(me);
+    const less = aged < MMAEngine.wearPenalty(other) - 1e-9;
+    return `<span class="catval ${less ? "better" : ""}">${w.toFixed(1)}<span class="muted"> (×age ${aged.toFixed(1)})</span></span>`;
+  }
+  function backgroundBlock(f) {
+    const bg = f.background;
+    const ped = Object.entries(f.pedigree || {}).filter(([, v]) => v >= 1).sort((u, v) => v[1] - u[1]);
+    if (!bg && !ped.length) return `<p class="muted" style="font-size:13px;margin:0">No background researched yet.</p>`;
+    return `<div class="bg">
+      ${bg && bg.summary ? `<p>${esc(bg.summary)}</p>` : ""}
+      ${bg && bg.credentials.length ? `<ul>${bg.credentials.map((c) => `<li><span class="pill">${esc(c.discipline.replace("_", " "))} · ${esc(c.level)}</span> ${esc(c.detail)}${c.source ? ` <a href="${esc(c.source)}" target="_blank" rel="noopener">source</a>` : ""}</li>`).join("")}</ul>` : ""}
+      ${ped.length ? `<p class="muted" style="font-size:13px">Pedigree still adds: ${ped.map(([k, v]) => `${esc(state.data.rating_labels[k])} +${Math.round(v)}`).join(", ")} (fades as MMA fights accumulate)</p>` : ""}
+    </div>`;
+  }
+  const RATING_WORDS = { "-2": "Dominated", "-1": "Lost it", "0": "Even", "1": "Won it", "2": "Dominant" };
+  function judgeForm(c) {
+    const j = state.judging;
+    return `<div class="judge">
+      <span>${esc(j.fighter)} vs ${esc(j.opp)}: in</span>
+      <select id="judge-cat-${c}">${["striking", "wrestling", "grappling"].map((k) => `<option value="${k}">${k}</option>`).join("")}</select>
+      <select id="judge-rating-${c}">${[2, 1, 0, -1, -2].map((v) => `<option value="${v}" ${v === 0 ? "selected" : ""}>${RATING_WORDS[v]}</option>`).join("")}</select>
+      <input id="judge-note-${c}" type="text" placeholder="What did you see? (e.g. survived back mount for a full round)">
+      <button class="btn small primary" type="button" data-judge-save="${c}">Save</button>
+      <button class="btn small" type="button" data-judge-cancel="1">Cancel</button>
+    </div>`;
+  }
+  function commentaryList(n, f) {
+    const mine = state.commentary.filter((x) => x.fighter === n);
+    const theirs = (f.notes || []).filter((x) => x.fighter === n);
+    if (!mine.length && !theirs.length) return "";
+    const row = (x, own) => `<li><span class="pill ${own ? "edit" : ""}">${esc(x.category)}: ${RATING_WORDS[String(Math.round(x.rating))] || x.rating}</span> vs ${esc(x.opponent)} (${esc(x.date)})${x.note ? `: ${esc(x.note)}` : ""}
+      ${x.source ? ` <a href="${esc(x.source)}" target="_blank" rel="noopener">source</a>` : ""}${own ? ` <button class="btn link" type="button" data-del-comment="${esc(x.id)}">remove</button>` : ""}</li>`;
+    return `<div><div class="label">Fight commentary</div><ul class="notes" style="margin-top:4px">
+      ${theirs.map((x) => row(x, false)).join("")}${mine.map((x) => row(x, true)).join("")}</ul>
+      ${mine.length ? `<p class="muted" style="font-size:12px;margin:4px 0 0">Your judgments (amber) are saved now and feed the ratings when the data is next rebuilt.</p>` : ""}</div>`;
   }
 
   function eloCell(name, f) {
@@ -675,6 +738,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       fighters: Object.fromEntries(f.map(([n, v]) => [n, v])),
       weights: state.adj.weights,
       matchups: m.map(([, v]) => v),
+      commentary: state.commentary.map(({ id, ...x }) => x),
     };
     const json = JSON.stringify(exportObj, null, 2);
     view.innerHTML = `<div class="stack">
@@ -742,6 +806,19 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     if (t.dataset.removeCard) { e.stopPropagation(); const id = t.dataset.removeCard; state.card = state.card.filter((c) => c.id !== id); state.store.deleteCard(id); render(); return; }
     if (t.id === "read-clear") { saveRead(0, ""); render(); return; }
     if (t.id === "w-reset") { state.adj.weights = {}; state.store.saveWeights({}); render(); return; }
+    if (t.dataset.judge) { state.judging = { fighter: t.dataset.judge, date: t.dataset.date, opp: t.dataset.opp }; render(); return; }
+    if (t.dataset.judgeCancel) { state.judging = null; render(); return; }
+    if (t.dataset.judgeSave) {
+      const c = t.dataset.judgeSave, j = state.judging;
+      const item = {
+        id: slug(j.fighter) + "--" + slug(j.opp) + "--" + j.date + "--" + $("#judge-cat-" + c).value,
+        date: j.date, fighter: j.fighter, opponent: j.opp, category: $("#judge-cat-" + c).value,
+        rating: parseFloat($("#judge-rating-" + c).value), note: $("#judge-note-" + c).value.trim(),
+      };
+      state.commentary = state.commentary.filter((x) => x.id !== item.id).concat(item);
+      state.store.saveComment(item); state.judging = null; render(); setStatus("Judgment saved"); return;
+    }
+    if (t.dataset.delComment) { const id = t.dataset.delComment; state.commentary = state.commentary.filter((x) => x.id !== id); state.store.deleteComment(id); render(); return; }
     if (t.dataset.pick) { state.m.a = t.dataset.pick; if (state.m.b === state.m.a) state.m.b = null; state.tab = "matchup"; render(); return; }
     if (t.dataset.open) { const c = state.card.find((x) => x.id === t.dataset.open); if (c) { Object.assign(state.m, { a: c.a, b: c.b, rounds: c.rounds || 3, oddsA: c.oddsA || "", oddsB: c.oddsB || "" }); state.tab = "matchup"; render(); } return; }
     if (t.id === "copy-json") {

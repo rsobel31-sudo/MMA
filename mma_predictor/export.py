@@ -25,6 +25,7 @@ SNAPSHOT_FIELDS = (
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
     "layoff_days", "sos", "quality_win_elo", "striking", "wrestling", "grappling",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree",
 )
 
 
@@ -77,9 +78,20 @@ def export(
     fighters: List[Dict[str, Any]] = []
     for name in history.names():
         s = history.snapshot(name, as_of)
-        if s.fights < min_fights or s.layoff_days is None or s.layoff_days > active_years * 365:
+        researched = name in history.scouting.backgrounds and s.fights >= 1
+        inactive = s.layoff_days is None or s.layoff_days > active_years * 365
+        if not researched and (s.fights < min_fights or inactive):
             continue
-        fighters.append(snapshot_json(s))
+        row = snapshot_json(s)
+        bg = history.scouting.backgrounds.get(name)
+        if bg:
+            row["background"] = {"summary": bg.summary, "credentials": [dataclasses.asdict(c) for c in bg.credentials]}
+        row["notes"] = [
+            {"date": n.date.isoformat(), "fighter": n.fighter, "opponent": n.opponent, "category": n.category,
+             "rating": n.rating, "note": n.note, "source": n.source}
+            for n in history.scouting.notes if name in (n.fighter, n.opponent)
+        ]
+        fighters.append(row)
     fighters.sort(key=lambda f: -f["elo"])
     return {
         "meta": {

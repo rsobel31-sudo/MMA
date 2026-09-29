@@ -1,0 +1,183 @@
+{
+  "Islam Makhachev": {
+    "summary": "Dagestani sambo champion from the Abdulmanap Nurmagomedov system; wrestling-heavy grappler with elite top control and submissions.",
+    "credentials": [
+      {"discipline": "sambo", "level": "elite", "detail": "2016 World Combat Sambo Champion; European champion; four-time Russian champion", "source": "https://en.wikipedia.org/wiki/Islam_Makhachev"},
+      {"discipline": "wrestling", "level": "experienced", "detail": "Youth freestyle wrestling before sambo", "source": "https://en.wikipedia.org/wiki/Islam_Makhachev"},
+      {"discipline": "judo", "level": "experienced", "detail": "Judo black belt", "source": "https://en.wikipedia.org/wiki/Islam_Makhachev"}
+    ]
+  },
+  "Arman Tsarukyan": {
+    "summary": "Armenian wrestler-grappler; Master of Sport in freestyle wrestling who beat Lance Palmer 10-0 in his freestyle debut at RAF 5.",
+    "credentials": [
+      {"discipline": "wrestling", "level": "national", "detail": "Master of Sport in freestyle wrestling", "source": "https://en.wikipedia.org/wiki/Arman_Tsarukyan"}
+    ]
+  },
+  "Michael Page": {
+    "summary": "Point-fighting specialist with unorthodox, long-range striking and elite distance management.",
+    "credentials": [
+      {"discipline": "kickboxing", "level": "elite", "detail": "10-time world kickboxing (points) champion; 25-time British champion", "source": "https://en.wikipedia.org/wiki/Michael_Page"},
+      {"discipline": "karate", "level": "national", "detail": "Sport karate background; 5th-degree black belt in freestyle kickboxing", "source": "https://en.wikipedia.org/wiki/Michael_Page"}
+    ]
+  },
+  "Joshua Van": {
+    "summary": "Myanmar-born, Houston-raised boxer-puncher; UFC flyweight champion built on volume boxing. No formal pre-MMA credentials found.",
+    "credentials": []
+  },
+  "Nursulton Ruziboev": {
+    "summary": "Uzbek finisher who came up through karate, sambo and hand-to-hand combat tournaments; BJJ purple belt.",
+    "credentials": [
+      {"discipline": "sambo", "level": "experienced", "detail": "Karate and sambo from school age; hand-to-hand combat tournaments", "source": "https://en.wikipedia.org/wiki/Nursulton_Ruziboev"},
+      {"discipline": "karate", "level": "experienced", "detail": "Karate from age 11", "source": "https://en.wikipedia.org/wiki/Nursulton_Ruziboev"}
+    ]
+  },
+  "Salahdine Parnasse": {
+    "summary": "French MMA-native (Atch Academy since age 11), former KSW two-division champion. No separate pre-MMA credentials found.",
+    "credentials": []
+  },
+  "Alexandre Pantoja": {
+    "summary": "BJJ black belt and back-take specialist with a Muay Thai base.",
+    "credentials": [
+      {"discipline": "bjj", "level": "experienced", "detail": "BJJ black belt; state champion in Bahia and Rio de Janeiro", "source": "https://en.wikipedia.org/wiki/Alexandre_Pantoja"},
+      {"discipline": "muay_thai", "level": "national", "detail": "Muay Thai national and state champion (Rio de Janeiro)", "source": "https://en.wikipedia.org/wiki/Alexandre_Pantoja"}
+    ]
+  },
+  "Marcio Barbosa": {
+    "summary": "Brazilian power striker (16 of 19 wins by KO, 18 first-round finishes). No formal pre-MMA credentials found.",
+    "credentials": []
+  },
+  "Ian Garry": {
+    "summary": "Long-range striker with a deep amateur boxing base and judo black belt.",
+    "credentials": [
+      {"discipline": "boxing", "level": "national", "detail": "Boxing from age 10, 300+ amateur bouts", "source": "https://en.wikipedia.org/wiki/Ian_Machado_Garry"},
+      {"discipline": "judo", "level": "experienced", "detail": "Judo black belt by 18", "source": "https://en.wikipedia.org/wiki/Ian_Machado_Garry"}
+    ]
+  },
+  "Quillan Salkilld": {
+    "summary": "Australian lightweight; converted Aussie-rules athlete and BJJ black belt.",
+    "credentials": [
+      {"discipline": "bjj", "level": "experienced", "detail": "BJJ black belt", "source": "https://en.wikipedia.org/wiki/Quillan_Salkilld"}
+    ]
+  },
+  "Valter Walker": {
+    "summary": "Heavyweight leg-lock specialist: UFC record four straight heel-hook finishes. Brother of Johnny Walker. Formal grappling credentials not found.",
+    "credentials": []
+  },
+  "Ramazonbek Temirov": {
+    "summary": "Uzbek striker from hand-to-hand combat and karate; rarely wrestles.",
+    "credentials": [
+      {"discipline": "kickboxing", "level": "international", "detail": "2017 Asian champion in hand-to-hand combat; Master of Sport", "source": "https://simple.wikipedia.org/wiki/Ramazonbek_Temirov"},
+      {"discipline": "karate", "level": "experienced", "detail": "Karate from 2006", "source": "https://simple.wikipedia.org/wiki/Ramazonbek_Temirov"}
+    ]
+  },
+  "Gregory Rodrigues": {
+    "summary": "Decorated BJJ black belt who fights as a pressure striker; famously durable.",
+    "credentials": [
+      {"discipline": "bjj", "level": "international", "detail": "Eight-time Brazilian national BJJ champion; IBJJF world title; black belt under Henrique Machado", "source": "https://en.wikipedia.org/wiki/Gregory_Rodrigues"}
+    ]
+  },
+  "Uros Medic": {
+    "summary": "Serbian kickboxer turned MMA finisher (12 KO wins); judo from age four.",
+    "credentials": [
+      {"discipline": "kickboxing", "level": "international", "detail": "Serbian K-1 champion; WAKO European Championships medallist", "source": "https://www.ufc.com/athlete/uros-medic"}
+    ]
+  },
+  "Magomed Ankalaev": {
+    "summary": "Dagestani combat sambo stylist with Greco-Roman wrestling; former UFC light heavyweight champion.",
+    "credentials": [
+      {"discipline": "sambo", "level": "national", "detail": "Master of Sport in combat sambo", "source": "https://en.wikipedia.org/wiki/Magomed_Ankalaev"},
+      {"discipline": "wrestling", "level": "experienced", "detail": "Greco-Roman wrestling at Dagestan State University", "source": "https://en.wikipedia.org/wiki/Magomed_Ankalaev"}
+    ]
+  },
+  "Jean Silva": {
+    "summary": "Aggressive Brazilian Muay Thai striker (12 KO wins, 10 first-round finishes).",
+    "credentials": [
+      {"discipline": "muay_thai", "level": "experienced", "detail": "Muay Thai since 2009", "source": "https://en.wikipedia.org/wiki/Jean_Silva"}
+    ]
+  },
+  "Waldo Cortes-Acosta": {
+    "summary": "Former Reds-organisation pitcher who took up boxing and MMA at 24; also boxed professionally.",
+    "credentials": [
+      {"discipline": "boxing", "level": "experienced", "detail": "Professional boxing debut in 2018", "source": "https://en.wikipedia.org/wiki/Waldo_Cortes-Acosta"}
+    ]
+  },
+  "Mateusz Gamrot": {
+    "summary": "Polish wrestler-grappler with relentless chain wrestling; former two-division KSW champion.",
+    "credentials": [
+      {"discipline": "wrestling", "level": "national", "detail": "Reached Poland's national wrestling team as a youth", "source": "https://en.wikipedia.org/wiki/Mateusz_Gamrot"},
+      {"discipline": "grappling", "level": "international", "detail": "ADCC European champion (2014, 2019); BJJ black belt", "source": "https://en.wikipedia.org/wiki/Mateusz_Gamrot"}
+    ]
+  },
+  "David Martinez": {
+    "summary": "Mexican bantamweight with a karate/kickboxing base; BJJ purple belt.",
+    "credentials": [
+      {"discipline": "karate", "level": "experienced", "detail": "Black belt in karate", "source": "https://en.wikipedia.org/wiki/David_Mart%C3%ADnez_(fighter)"},
+      {"discipline": "kickboxing", "level": "experienced", "detail": "Black belt in kickboxing", "source": "https://en.wikipedia.org/wiki/David_Mart%C3%ADnez_(fighter)"}
+    ]
+  },
+  "Rei Tsuruya": {
+    "summary": "Japanese wrestler-grappler who started wrestling at three; Pancrase champion and Road to UFC winner.",
+    "credentials": [
+      {"discipline": "wrestling", "level": "international", "detail": "Junior Olympic runner-up; competed at Worlds", "source": "https://www.ufc.com/athlete/rei-tsuruya"}
+    ]
+  },
+  "Joanderson Brito": {
+    "summary": "Brazilian finisher from Maranhão; started training for fun, pro since 2013. No formal pre-MMA credentials found.",
+    "credentials": []
+  },
+  "Myktybek Orolbai": {
+    "summary": "Kyrgyz lightweight with a smothering wrestling style (made his name in LFA); trains at Team Alpha Male. No formal wrestling credentials found.",
+    "credentials": []
+  },
+  "Yadong Song": {
+    "summary": "Chinese sanda-based striker (the 'Kung Fu Kid') who trained near the Shaolin Temple as a child.",
+    "credentials": [
+      {"discipline": "kickboxing", "level": "experienced", "detail": "Sanda from age 12; Hebei Sanshou Championships gold (60 kg)", "source": "https://en.wikipedia.org/wiki/Song_Yadong"}
+    ]
+  },
+  "Bilal Hasan": {
+    "summary": "Indonesian-American taekwondo black belt trained by Demetrious Johnson; knockout artist.",
+    "credentials": [
+      {"discipline": "taekwondo", "level": "national", "detail": "3rd-degree black belt; competed for Team USA at junior level", "source": "https://www.ufc.com/athlete/bilal-hasan"}
+    ]
+  },
+  "Zhu Rong": {
+    "summary": "Tibetan-Chinese lightweight; sanda from age 12, Road to UFC winner.",
+    "credentials": [
+      {"discipline": "kickboxing", "level": "experienced", "detail": "Sanda from age 12", "source": "https://en.wikipedia.org/wiki/Rong_Zhu"}
+    ]
+  },
+  "Thomas Gantt": {
+    "summary": "Late-starting elite wrestler (pro MMA debut at 30) mentored by Daniel Cormier.",
+    "credentials": [
+      {"discipline": "wrestling", "level": "international", "detail": "NC State All-American, ACC champion, 2x NCAA qualifier; ranked as high as #4 on the U.S. Olympic ladder", "source": "https://packinsider.com/2026/05/12/former-nc-state-wrestler-thomas-gantt-set-for-ufc-debut/"}
+    ]
+  },
+  "Axel Sola": {
+    "summary": "French karate-based striker; IMMAF world silver medallist and European champion as an amateur.",
+    "credentials": [
+      {"discipline": "karate", "level": "experienced", "detail": "Karate as primary style", "source": "https://immaf.org/2026/07/23/axel-sola-from-immaf-champion-to-the-ufc/"},
+      {"discipline": "muay_thai", "level": "experienced", "detail": "Amateur Muay Thai leagues in France", "source": "https://immaf.org/2026/07/23/axel-sola-from-immaf-champion-to-the-ufc/"}
+    ]
+  },
+  "Montel Jackson": {
+    "summary": "Milwaukee wrestler who trained at the Olympic training center before switching to MMA.",
+    "credentials": [
+      {"discipline": "wrestling", "level": "national", "detail": "Team USA invitational vs Japan; Olympic training center in Marquette", "source": "https://en.wikipedia.org/wiki/Montel_Jackson"}
+    ]
+  },
+  "Mario Pinto": {
+    "summary": "Unbeaten Portuguese-British heavyweight from FightZone London. No formal pre-MMA credentials found.",
+    "credentials": []
+  },
+  "Gilbert Burns": {
+    "summary": "Jiu-jitsu world champion who won many MMA fights by knockout and control rather than submission. Low MMA submission numbers understate his grappling.",
+    "credentials": [
+      {"discipline": "bjj", "level": "elite", "detail": "2011 IBJJF World Champion (black belt, gi and no-gi); UAEJJF World Pro champion; ADCC medallist", "source": "https://en.wikipedia.org/wiki/Gilbert_Burns"}
+    ]
+  },
+  "Derrick Lewis": {
+    "summary": "Heavyweight knockout artist with some early boxing training under George Foreman; scouting reports cite large grappling holes, weak top control and below-average cardio.",
+    "credentials": []
+  }
+}

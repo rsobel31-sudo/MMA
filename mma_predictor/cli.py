@@ -23,15 +23,18 @@ from .data import load_card, load_dataset
 from .history import FightHistory
 from .model import WinModel
 from .predictor import FightPredictor, build_training_set
+from .scouting import Scouting
 from .skills import CATEGORIES, SUB_LABELS
 from .styles import scouting_line
 
 DEFAULT_DATA = Path(__file__).resolve().parent.parent / "data" / "sample"
+DEFAULT_SCOUTING = Path(__file__).resolve().parent.parent / "data" / "scouting"
 
 
 def _history(args) -> FightHistory:
     bios, fights = load_dataset(Path(args.data))
-    return FightHistory(bios, fights)
+    scouting = Scouting.load(Path(args.scouting)) if getattr(args, "scouting", None) else None
+    return FightHistory(bios, fights, scouting=scouting)
 
 
 def _predictor(args, history: FightHistory) -> FightPredictor:
@@ -229,6 +232,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     def data_arg(p):
         p.add_argument("--data", default=str(DEFAULT_DATA), help="directory with fighters.csv and fights.csv")
+        p.add_argument("--scouting", default=str(DEFAULT_SCOUTING),
+                       help="directory with backgrounds.json and fight_notes.json ('' to ignore)")
 
     def model_args(p):
         p.add_argument("--model", help="trained model JSON (default: built-in prior weights)")

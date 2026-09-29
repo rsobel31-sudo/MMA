@@ -17,6 +17,7 @@ from typing import Dict, List, Optional
 
 from .data import METHOD_BUCKETS, FighterBio, Fight, Method
 from .ratings import EloConfig, EloRatings
+from .scouting import Scouting
 from .skills import SkillConfig, SkillRatings
 
 
@@ -106,6 +107,11 @@ class FighterSnapshot:
     striking: float = 1500.0
     wrestling: float = 1500.0
     grappling: float = 1500.0
+    pedigree: Dict[str, float] = field(default_factory=dict)  # background boost still counting
+    # Wear and tear
+    ko_losses: int = 0
+    kd_absorbed: int = 0
+    sig_absorbed: int = 0
     recent: List[Appearance] = field(default_factory=list, repr=False)
 
     @property
@@ -142,11 +148,16 @@ class FightHistory:
         priors: Priors = DEFAULT_PRIORS,
         elo_config: EloConfig = EloConfig(),
         skill_config: SkillConfig = SkillConfig(),
+        scouting: Optional[Scouting] = None,
+        adjust_for_opponents: bool = True,
     ) -> None:
         self.bios = dict(bios)
         self.fights = sorted(fights, key=lambda f: f.date)
         self.priors = priors
-        self.skills = SkillRatings(self.fights, self.bios, skill_config)
+        self.scouting = scouting or Scouting()
+        self.adjust_for_opponents = adjust_for_opponents
+        self.skills = SkillRatings(self.fights, self.bios, skill_config, self.scouting.boosts(), self.scouting.notes)
+        self._raw_cache: Dict[tuple, Dict[str, float]] = {}
         # Classic single-number Elo, kept only as a backtest baseline.
         self.classic_elo = EloRatings(self.fights, self.bios, elo_config)
         self._apps: Dict[str, List[Appearance]] = defaultdict(list)
@@ -200,14 +211,47 @@ class FightHistory:
             self._cache[key] = self._build(name, as_of)
         return self._cache[key]
 
+    def _raw_rates(self, name: str, as_of: date) -> Dict[str, float]:
+        """Unadjusted, shrunk striking/takedown rates (the baseline for opponent adjustment)."""
+        key = (name, as_of)
+        if key in self._raw_cache:
+            return self._raw_cache[key]
+        p = self.priors
+        mins = sl = sa = att = opp_att = td = td_att = opp_td = opp_td_att = 0.0
+        for app in self.appearances_before(name, as_of):
+            own, opp = app.fight.stats_for(name)
+            if own is None or opp is None:
+                continue
+            mins += app.fight.duration_seconds / 60.0
+            sl += own.sig_landed
+            att += own.sig_attempted
+            sa += opp.sig_landed
+            opp_att += opp.sig_attempted
+            td += own.td_landed
+            td_att += own.td_attempted
+            opp_td += opp.td_landed
+            opp_td_att += opp.td_attempted
+        mw = p.minutes_weight
+        out = {
+            "slpm": _shrink(sl, mins, p.slpm, mw),
+            "sapm": _shrink(sa, mins, p.sapm, mw),
+            "str_acc": _shrink(sl, att, p.str_acc, p.strikes_weight),
+            "str_def": 1.0 - _shrink(sa, opp_att, 1.0 - p.str_def, p.strikes_weight),
+            "td_acc": _shrink(td, td_att, p.td_acc, p.td_weight),
+            "td_def": 1.0 - _shrink(opp_td, opp_td_att, 1.0 - p.td_def, p.td_weight),
+        }
+        self._raw_cache[key] = out
+        return out
+
     def _build(self, name: str, as_of: date) -> FighterSnapshot:
         p = self.priors
         bio = self.bios.get(name) or FighterBio(name=name)
         apps = self.appearances_before(name, as_of)
 
         minutes = stat_minutes = 0.0
-        sl = sa = sig_att = opp_sl = opp_att = 0
-        td = td_att = opp_td = opp_td_att = subs = kd = kd_abs = ctrl = ctrl_against = 0
+        sl = sl_acc = sa = sig_att = opp_sl = opp_att = 0.0
+        td = td_att = opp_td = opp_td_att = 0.0
+        subs = kd = kd_abs = ctrl = ctrl_against = td_raw = ko_losses = sig_absorbed = 0
         wins = losses = 0
         win_m: Dict[str, int] = defaultdict(int)
         loss_m: Dict[str, int] = defaultdict(int)
@@ -232,19 +276,31 @@ class FightHistory:
             if f.end_round >= 3 and app.result is not None:
                 late_total += 1
                 late_wins += int(app.result)
+            if app.result is False and f.method is Method.KO:
+                ko_losses += 1
             own, opp = f.stats_for(name)
             if own is None or opp is None:
                 continue
             stat_minutes += mins
-            sl += own.sig_landed
+            sig_absorbed += opp.sig_landed
+            # Opponent adjustment: judge each bout against what this opponent
+            # usually allows / does. Landing 5 a minute on a fighter who
+            # normally absorbs 2 is worth more than on one who absorbs 6.
+            o = self._raw_rates(app.opponent, f.date) if self.adjust_for_opponents else None
+            if o is None:
+                o = {"slpm": p.slpm, "sapm": p.sapm, "str_acc": p.str_acc, "str_def": p.str_def,
+                     "td_acc": p.td_acc, "td_def": p.td_def}
+            sl += own.sig_landed - (o["sapm"] - p.sapm) * mins
+            sl_acc += own.sig_landed - ((1 - o["str_def"]) - (1 - p.str_def)) * own.sig_attempted
             sig_att += own.sig_attempted
-            sa += opp.sig_landed
-            opp_sl += opp.sig_landed
+            sa += opp.sig_landed - (o["slpm"] - p.slpm) * mins
+            opp_sl += opp.sig_landed - (o["str_acc"] - p.str_acc) * opp.sig_attempted
             opp_att += opp.sig_attempted
-            td += own.td_landed
+            td += own.td_landed - ((1 - o["td_def"]) - (1 - p.td_def)) * own.td_attempted
             td_att += own.td_attempted
-            opp_td += opp.td_landed
+            opp_td += opp.td_landed - (o["td_acc"] - p.td_acc) * opp.td_attempted
             opp_td_att += opp.td_attempted
+            td_raw += own.td_landed
             subs += own.sub_attempts
             kd += own.knockdowns
             kd_abs += opp.knockdowns
@@ -274,15 +330,15 @@ class FightHistory:
             losses=losses,
             age=bio.age_on(as_of),
             minutes=minutes,
-            slpm=_shrink(sl, stat_minutes, p.slpm, mw),
-            sapm=_shrink(sa, stat_minutes, p.sapm, mw),
-            str_acc=_shrink(sl, sig_att, p.str_acc, p.strikes_weight),
-            str_def=1.0 - _shrink(opp_sl, opp_att, 1.0 - p.str_def, p.strikes_weight),
+            slpm=max(0.3, _shrink(sl, stat_minutes, p.slpm, mw)),
+            sapm=max(0.3, _shrink(sa, stat_minutes, p.sapm, mw)),
+            str_acc=_unit(_shrink(sl_acc, sig_att, p.str_acc, p.strikes_weight)),
+            str_def=_unit(1.0 - _shrink(opp_sl, opp_att, 1.0 - p.str_def, p.strikes_weight)),
             kd_per15=per15(kd, p.kd_per15),
             kd_absorbed_per15=per15(kd_abs, p.kd_per15),
-            td_per15=per15(td, p.td_per15),
-            td_acc=_shrink(td, td_att, p.td_acc, p.td_weight),
-            td_def=1.0 - _shrink(opp_td, opp_td_att, 1.0 - p.td_def, p.td_weight),
+            td_per15=per15(td_raw, p.td_per15),
+            td_acc=_unit(_shrink(td, td_att, p.td_acc, p.td_weight)),
+            td_def=_unit(1.0 - _shrink(opp_td, opp_td_att, 1.0 - p.td_def, p.td_weight)),
             sub_per15=per15(subs, p.sub_per15),
             ctrl_share=_shrink(ctrl / 60.0, stat_minutes, p.ctrl_share, mw),
             ctrl_against_share=_shrink(ctrl_against / 60.0, stat_minutes, p.ctrl_share, mw),
@@ -304,8 +360,16 @@ class FightHistory:
             striking=cats["striking"],
             wrestling=cats["wrestling"],
             grappling=cats["grappling"],
+            pedigree=self.skills.pedigree(name, self.skills.bouts_before(name, as_of)),
+            ko_losses=ko_losses,
+            kd_absorbed=kd_abs,
+            sig_absorbed=sig_absorbed,
             recent=apps[-5:],
         )
+
+
+def _unit(x: float) -> float:
+    return max(0.05, min(0.95, x))
 
 
 def _form(apps: List[Appearance]) -> tuple:

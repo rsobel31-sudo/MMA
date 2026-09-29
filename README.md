@@ -50,6 +50,42 @@ the stats). See `mma_predictor/skills.py` for the full definition and
 constants. The old single-number Elo (`ratings.py`) is kept only as a
 backtest baseline.
 
+**Strength of schedule is built into every update.** Each attack/defence
+comparison is scored against what the opponent's ratings predicted, so
+surviving 15 minutes with an elite submission grappler raises your submission
+defence far more than surviving a weak one (see `tests/test_skills.py`). On
+top of that:
+
+- Career stats (strikes landed/absorbed, accuracy, defence, takedown %) are
+  opponent-adjusted: each bout is judged against what that opponent usually
+  allows or lands.
+- A fighter first seen on a regional card starts below a UFC debutant
+  (1400 regional, 1440 feeder such as LFA/DWCS, 1470 major such as Bellator/PFL/ONE, 1500 UFC),
+  so a padded regional record counts for less.
+- Not finishing someone costs the attacker only 40% as much as surviving earns
+  the defender: a grappler who wins on control isn't punished for not getting
+  the tap.
+
+### Scouting: background and fight commentary
+
+`data/scouting/backgrounds.json` records martial-arts pedigree (discipline,
+level, detail, source). It becomes a prior on the matching sub-ratings that fades
+as MMA evidence builds (`boost × 10 / (10 + bouts)`). A world-champion
+BJJ black belt keeps elite grappling ratings even with few MMA submissions.
+
+`data/scouting/fight_notes.json` holds judged performances ("won the
+grappling", "even on the feet") from −2 to +2 per domain. They count as
+evidence, again against expectation: holding even with an elite grappler is a
+big positive. In the web interface, the **Judge** button on each recent fight
+records your own judgments; they feed the ratings when the data is rebuilt.
+
+### Wear and tear
+
+Age alone treats every 34-year-old the same. The wear index adds mileage (pro
+fights, cage time) and damage (KO/TKO losses, knockdowns and significant
+strikes absorbed), and weighs it more heavily past 30:
+`wear × (1 + max(0, age − 30) / 8)`.
+
 Without per-bout stats (Sherdog/Tapology records), only finishes and results
 inform the categories: control, escapes and ground and pound move together
 and takedown offence/defence can't be told apart. UFCStats data fills these in.

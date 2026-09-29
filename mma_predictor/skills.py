@@ -53,7 +53,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Tuple
 
-from .data import CornerStats, FighterBio, Fight, Method
+from .data import CornerStats, FighterBio, Fight, Method, normalise_name
+from .scouting import FightNote, notes_key
 
 CATEGORIES: Dict[str, Tuple[str, ...]] = {
     "striking": ("strike_off", "strike_def", "power", "chin"),
@@ -108,6 +109,14 @@ class SkillConfig:
     regional_bonus_per_net_win: float = 8.0
     regional_bonus_cap: float = 80.0
     surprise_cap: float = 3.0
+    # Share of the penalty an attacker takes for NOT finishing (see _pair).
+    nonevent_weight: float = 0.4
+    # Commentary evidence per note, and how slowly pedigree priors fade (bouts).
+    k_note: float = 18.0
+    pedigree_k: float = 10.0
+    # Starting rating by the level of the promotion a fighter is first seen in, so
+    # beating regional opponents counts for less than beating UFC fighters.
+    tier_base: Dict[str, float] = field(default_factory=lambda: {"ufc": 1500.0, "major": 1470.0, "feeder": 1440.0, "regional": 1400.0})
     # 0 = every category moves equally with the result; 1 = fully by the shares below.
     attribution_strength: float = 0.5
     category_weights: Dict[str, float] = field(
@@ -131,6 +140,25 @@ class SkillConfig:
 Ratings = Dict[str, float]
 
 
+_MAJOR = ("bellator", "pfl", "one championship", "one fc", "one:", "rizin", "strikeforce", "pride", "wec",
+          "ksw", "m-1", "acb", "aca ", "dream", "affliction", "invicta", "professional fighters league")
+_FEEDER = ("contender series", "lfa", "legacy fighting", "cage warriors", "cffc", "titan fc", "rfa", "ring of combat",
+           "brave", "ares", "uae warriors", "oktagon", "eagle fc", "lux fight", "road to ufc", "ultimate fighter",
+           "jungle fight", "shooto", "pancrase", "deep", "fury fc", "cage fury", "lfc", "hexagone")
+
+
+def promotion_tier(event: str) -> str:
+    """ufc | major | feeder | regional, from an event name like 'UFC 300 - ...'."""
+    e = (event or "").lower().strip()
+    if e.startswith("ufc") and "road to ufc" not in e:
+        return "ufc"
+    if any(k in e for k in _MAJOR):
+        return "major"
+    if any(k in e for k in _FEEDER):
+        return "feeder"
+    return "regional"
+
+
 def category_rating(r: Ratings, cat: str) -> float:
     keys = CATEGORIES[cat]
     return sum(r[k] for k in keys) / len(keys)
@@ -144,19 +172,38 @@ def overall_rating(r: Ratings, weights: Dict[str, float]) -> float:
 class SkillRatings:
     """Chronological sub-rating timelines for every fighter."""
 
-    def __init__(self, fights: List[Fight], bios: Optional[Dict[str, FighterBio]] = None, config: SkillConfig = SkillConfig()) -> None:
+    def __init__(
+        self,
+        fights: List[Fight],
+        bios: Optional[Dict[str, FighterBio]] = None,
+        config: SkillConfig = SkillConfig(),
+        pedigree: Optional[Dict[str, Dict[str, float]]] = None,
+        notes: Optional[List[FightNote]] = None,
+    ) -> None:
         self.config = config
         self._bios = bios or {}
+        self._pedigree = pedigree or {}
+        self._notes: Dict[tuple, List[FightNote]] = defaultdict(list)
+        for n in notes or []:
+            # Sites disagree by a day on some dates (time zones), so index both neighbours.
+            for shift in (-1, 0, 1):
+                self._notes[notes_key(date.fromordinal(n.date.toordinal() + shift), n.fighter, n.opponent)].append(n)
         self._dates: Dict[str, List[date]] = defaultdict(list)
         self._values: Dict[str, List[Ratings]] = defaultdict(list)
         self._counts: Dict[str, int] = defaultdict(int)
+        ordered = sorted(fights, key=lambda f: f.date)
+        self._first_event: Dict[str, str] = {}
+        for f in ordered:
+            for n in (f.fighter_a, f.fighter_b):
+                self._first_event.setdefault(n, f.event or "UFC")
         current: Dict[str, Ratings] = {}
-        for f in sorted(fights, key=lambda f: f.date):
+        for f in ordered:
             self._apply(f, current)
 
     # ---------------------------------------------------------------- lookup
     def initial(self, name: str) -> Ratings:
-        base = self.config.base
+        """Evidence ratings before a fighter's first bout in the data (no pedigree)."""
+        base = self.config.tier_base[promotion_tier(self._first_event.get(name, "UFC"))]
         bio = self._bios.get(name)
         if bio is not None:
             net = bio.prior_wins - bio.prior_losses
@@ -164,16 +211,35 @@ class SkillRatings:
             base += max(-cap, min(cap, net * self.config.regional_bonus_per_net_win))
         return {k: base for k in SUB_RATINGS}
 
+    def pedigree(self, name: str, bouts: int) -> Dict[str, float]:
+        """The part of each rating that comes from background, fading with bouts."""
+        boosts = self._pedigree.get(name)
+        if not boosts:
+            return {}
+        fade = self.config.pedigree_k / (self.config.pedigree_k + bouts)
+        return {k: v * fade for k, v in boosts.items()}
+
+    def effective(self, name: str, raw: Ratings, bouts: int) -> Ratings:
+        out = dict(raw)
+        for k, v in self.pedigree(name, bouts).items():
+            out[k] += v
+        return out
+
     def before(self, name: str, when: date) -> Ratings:
         dates = self._dates.get(name)
         if not dates:
-            return self.initial(name)
+            return self.effective(name, self.initial(name), 0)
         idx = bisect.bisect_left(dates, when)
-        return dict(self._values[name][idx - 1]) if idx else self.initial(name)
+        raw = self._values[name][idx - 1] if idx else self.initial(name)
+        return self.effective(name, raw, idx)
+
+    def bouts_before(self, name: str, when: date) -> int:
+        return bisect.bisect_left(self._dates.get(name, []), when)
 
     def current(self, name: str) -> Ratings:
         values = self._values.get(name)
-        return dict(values[-1]) if values else self.initial(name)
+        raw = values[-1] if values else self.initial(name)
+        return self.effective(name, raw, len(values or []))
 
     def overall(self, r: Ratings) -> float:
         return overall_rating(r, self.config.category_weights)
@@ -197,13 +263,18 @@ class SkillRatings:
         return 1.0
 
     def _pair(self, deltas, att: str, dfn: str, ra: Ratings, rd: Ratings, att_key: str, def_key: str,
-              observed: float, base_rate: float, weight: float, k_scale: Tuple[float, float]) -> None:
+              observed: float, base_rate: float, weight: float, k_scale: Tuple[float, float],
+              finish_event: bool = False) -> None:
         cfg = self.config
         expected = sigmoid(logit(base_rate) + C * (ra[att_key] - rd[def_key]))
         z = (observed - expected) / math.sqrt(base_rate * (1.0 - base_rate))
         z = max(-cfg.surprise_cap, min(cfg.surprise_cap, z))
         d = cfg.k_stat * weight * z
-        deltas[att][att_key] += d * k_scale[0]
+        # Not finishing someone is weak evidence against the attacker (a grappler
+        # can win on control without needing the tap), but surviving a dangerous
+        # finisher is full evidence for the defender.
+        att_scale = cfg.nonevent_weight if finish_event and d < 0 else 1.0
+        deltas[att][att_key] += d * k_scale[0] * att_scale
         deltas[dfn][def_key] -= d * k_scale[1]
 
     def _stat_evidence(self, f: Fight, x: str, y: str, rx: Ratings, ry: Ratings, own: Optional[CornerStats],
@@ -215,14 +286,14 @@ class SkillRatings:
         sub_win = f.winner == x and f.method is Method.SUB
         if own is None or opp is None:
             # Records only: finishes are the one domain signal available.
-            self._pair(deltas, x, y, rx, ry, "power", "chin", float(ko_win), per_fight_rate(cfg.ko_win_per15, minutes), 1.0, ks)
-            self._pair(deltas, x, y, rx, ry, "sub_off", "sub_def", float(sub_win), per_fight_rate(cfg.sub_win_per15, minutes), 1.0, ks)
+            self._pair(deltas, x, y, rx, ry, "power", "chin", float(ko_win), per_fight_rate(cfg.ko_win_per15, minutes), 1.0, ks, True)
+            self._pair(deltas, x, y, rx, ry, "sub_off", "sub_def", float(sub_win), per_fight_rate(cfg.sub_win_per15, minutes), 1.0, ks, True)
             return
         if own.sig_attempted > 0:
             self._pair(deltas, x, y, rx, ry, "strike_off", "strike_def", own.sig_landed / own.sig_attempted,
                        cfg.strike_acc, min(1.0, own.sig_attempted / 40.0), ks)
         knocked = own.knockdowns > 0 or ko_win
-        self._pair(deltas, x, y, rx, ry, "power", "chin", float(knocked), per_fight_rate(cfg.kd_per15, minutes), 1.0, ks)
+        self._pair(deltas, x, y, rx, ry, "power", "chin", float(knocked), per_fight_rate(cfg.kd_per15, minutes), 1.0, ks, True)
         if own.td_attempted > 0:
             self._pair(deltas, x, y, rx, ry, "td_off", "td_def", own.td_landed / own.td_attempted,
                        cfg.td_acc, min(1.0, own.td_attempted / 4.0), ks)
@@ -234,9 +305,9 @@ class SkillRatings:
             rate = own.ground_landed / ctrl_min
             self._pair(deltas, x, y, rx, ry, "gnp", "scramble", rate / (rate + cfg.gnp_per_ctrl_min), 0.5,
                        min(1.0, ctrl_min / 3.0), ks)
-        self._pair(deltas, x, y, rx, ry, "sub_off", "sub_def", float(sub_win), per_fight_rate(cfg.sub_win_per15, minutes), 1.0, ks)
+        self._pair(deltas, x, y, rx, ry, "sub_off", "sub_def", float(sub_win), per_fight_rate(cfg.sub_win_per15, minutes), 1.0, ks, True)
         self._pair(deltas, x, y, rx, ry, "sub_off", "sub_def", float(own.sub_attempts > 0),
-                   per_fight_rate(cfg.sub_attempt_per15, minutes), 0.5, ks)
+                   per_fight_rate(cfg.sub_attempt_per15, minutes), 0.5, ks, True)
 
     def _exchange(self, f: Fight, ra: Ratings, rb: Ratings, deltas, ka: float, kb: float) -> None:
         """Share of significant strikes landed: offence and defence of both fighters."""
@@ -284,19 +355,41 @@ class SkillRatings:
             m = 1.0
         return m * (cfg.title_multiplier if f.title_fight else 1.0)
 
+    def _notes_evidence(self, f: Fight, ra: Ratings, rb: Ratings, deltas, ka: float, kb: float) -> None:
+        """Commentary: a judged domain edge, scored against what the ratings expected."""
+        for note in self._notes.get(notes_key(f.date, f.fighter_a, f.fighter_b), []):
+            me_a = normalise_name(note.fighter) == normalise_name(f.fighter_a)
+            x, y = (f.fighter_a, f.fighter_b) if me_a else (f.fighter_b, f.fighter_a)
+            rx, ry = (ra, rb) if me_a else (rb, ra)
+            kx, ky = (ka, kb) if me_a else (kb, ka)
+            keys = [k for k in note.skills if k in CATEGORIES[note.category]] or list(CATEGORIES[note.category])
+            mine = sum(rx[k] for k in keys) / len(keys)
+            theirs = sum(ry[k] for k in keys) / len(keys)
+            expected = sigmoid(C * (mine - theirs))
+            observed = (note.rating + 2.0) / 4.0
+            z = max(-3.0, min(3.0, (observed - expected) / 0.5))
+            d = self.config.k_note * z
+            for k in keys:
+                deltas[x][k] += d * kx
+                deltas[y][k] -= d * ky
+
     def _apply(self, f: Fight, current: Dict[str, Ratings]) -> None:
         if f.method is Method.NC:
             return
         cfg = self.config
         a, b = f.fighter_a, f.fighter_b
-        ra = current.get(a) or self.initial(a)
-        rb = current.get(b) or self.initial(b)
+        raw_a = current.get(a) or self.initial(a)
+        raw_b = current.get(b) or self.initial(b)
+        # Expectations use the effective ratings (evidence + fading pedigree).
+        ra = self.effective(a, raw_a, self._counts[a])
+        rb = self.effective(b, raw_b, self._counts[b])
         ka, kb = self._k(a), self._k(b)
         deltas: Dict[str, Dict[str, float]] = {a: defaultdict(float), b: defaultdict(float)}
 
         self._stat_evidence(f, a, b, ra, rb, f.stats_a, f.stats_b, deltas, (ka, kb))
         self._stat_evidence(f, b, a, rb, ra, f.stats_b, f.stats_a, deltas, (kb, ka))
         self._exchange(f, ra, rb, deltas, ka, kb)
+        self._notes_evidence(f, ra, rb, deltas, ka, kb)
 
         expected = sigmoid(C * (self.overall(ra) - self.overall(rb)))
         if f.winner is None:
@@ -316,7 +409,7 @@ class SkillRatings:
                 deltas[a][key] += step * ka
                 deltas[b][key] -= step * kb
 
-        for name, r in ((a, ra), (b, rb)):
+        for name, r in ((a, raw_a), (b, raw_b)):
             new = {k: r[k] + deltas[name].get(k, 0.0) for k in SUB_RATINGS}
             current[name] = new
             self._dates[name].append(f.date)

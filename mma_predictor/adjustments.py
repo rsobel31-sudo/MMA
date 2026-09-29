@@ -38,7 +38,9 @@ EDITABLE = (
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
     "form", "streak", "layoff_days", "sos", "age", "reach_cm",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "minutes",
 ) + tuple("r_" + k for k in SUB_RATINGS)
+INT_FIELDS = ("recent_ko_losses", "streak", "layoff_days", "ko_losses", "kd_absorbed", "sig_absorbed")
 CATEGORY_WEIGHTS = SkillConfig().category_weights
 
 
@@ -110,7 +112,7 @@ class Adjustments:
                     ratings[k[2:]] = v
             elif k == "reach_cm":
                 bio = dataclasses.replace(bio, reach_cm=v)
-            elif k in ("recent_ko_losses", "streak", "layoff_days"):
+            elif k in INT_FIELDS:
                 changes[k] = int(round(v))
             else:
                 changes[k] = v

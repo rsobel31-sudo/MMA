@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2023-02-11",
+    "fighter": "Alexander Volkanovski",
+    "opponent": "Islam Makhachev",
+    "category": "grappling",
+    "rating": -0.5,
+    "skills": ["scramble", "sub_def"],
+    "note": "Lost the decision but repeatedly got back up and reversed position; Makhachev held his back through round 4 without finishing.",
+    "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
+  },
+  {
+    "date": "2023-02-11",
+    "fighter": "Alexander Volkanovski",
+    "opponent": "Islam Makhachev",
+    "category": "wrestling",
+    "rating": 0,
+    "skills": ["td_def"],
+    "note": "Stuffed five of Makhachev's nine takedown attempts, a near-even wrestling showing against an elite wrestler.",
+    "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
+  },
+  {
+    "date": "2024-03-09",
+    "fighter": "Gilbert Burns",
+    "opponent": "Jack Della Maddalena",
+    "category": "grappling",
+    "rating": 1,
+    "note": "Took Della Maddalena down, nearly took his back and won the grappling exchanges through two rounds before being knocked out in the third.",
+    "source": "https://www.espn.com/mma/story/_/id/39723387/ufc-jack-della-madallena-broke-forearm-win-vs-gilbert-burns"
+  }
+]

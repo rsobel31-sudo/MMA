@@ -39,6 +39,7 @@ FEATURES: List[str] = [
     "submission_threat",
     "reach",
     "age_curve",
+    "wear_and_tear",
     "experience",
     "form",
     "layoff",
@@ -61,6 +62,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "submission_threat": "submission threat",
     "reach": "reach",
     "age_curve": "age / athletic prime",
+    "wear_and_tear": "wear and tear (fights, cage time, damage taken)",
     "experience": "experience",
     "form": "recent form",
     "layoff": "ring rust (layoff)",
@@ -84,6 +86,25 @@ def age_penalty(age: Optional[float]) -> float:
     if age < 24:  # very young fighters are often still raw
         penalty += (24.0 - age) * 0.05
     return penalty
+
+
+def wear_index(s: FighterSnapshot) -> float:
+    """Mileage and damage: ~0.4 for a 5-fight prospect, ~4-5 for a 50-fight veteran.
+
+    Pro fights (including regional record) and cage time measure mileage;
+    KO/TKO losses, knockdowns absorbed and significant strikes absorbed
+    measure damage. Only bouts in the data count toward cage time and
+    damage, so it undercounts for fighters whose early career is missing.
+    """
+    mileage = 0.5 * s.total_fights / 20.0 + 0.5 * s.minutes / 150.0
+    damage = 0.6 * s.ko_losses + 0.25 * s.kd_absorbed + s.sig_absorbed / 1000.0
+    return mileage + damage
+
+
+def wear_penalty(s: FighterSnapshot) -> float:
+    """Wear hurts more the older the body carrying it."""
+    older = max(0.0, (s.age or 30.0) - 30.0) / 8.0
+    return wear_index(s) * (1.0 + older)
 
 
 def layoff_penalty(days: Optional[int]) -> float:
@@ -146,6 +167,7 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         "submission_threat": _clip((sub_a - sub_b) / 1.5),
         "reach": _clip(reach, -2.0, 2.0),
         "age_curve": _clip(age_penalty(b.age) - age_penalty(a.age)),
+        "wear_and_tear": _clip((wear_penalty(b) - wear_penalty(a)) / 3.0),
         "experience": _clip(log_experience(a.total_fights) - log_experience(b.total_fights)),
         "form": a.form - b.form,
         "layoff": layoff_penalty(b.layoff_days) - layoff_penalty(a.layoff_days),

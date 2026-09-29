@@ -64,11 +64,63 @@ def test_ground_and_pound_needs_ground_stats():
     assert ra2["gnp"] == pytest.approx(1500)
 
 
-def test_updates_are_zero_sum_and_every_key_present():
+def test_every_key_present():
     a = CornerStats(50, 100, 2, 5, 1, 1, 200, 15)
     b = CornerStats(20, 80, 0, 3, 0, 0, 30, 0)
     sk, ra, rb = after(bout("A", Method.DEC, a, b))
     assert set(ra) == set(SUB_RATINGS)
-    total = sum(ra.values()) + sum(rb.values())
-    assert total == pytest.approx(2 * 1500 * len(SUB_RATINGS))
     assert set(sk.breakdown(ra)) == set(CATEGORIES) | {"overall"}
+
+
+def survive_gain(opponent_sub_off: float) -> float:
+    """Submission-defence gain for B after surviving a full fight with A (A wins on points)."""
+    f = Fight(D1, "A", "B", "A", Method.DEC, 3, 300)
+    sk = SkillRatings([f], pedigree={"A": {"sub_off": opponent_sub_off}})
+    return sk.before("B", D2)["sub_def"] - sk.initial("B")["sub_def"]
+
+
+def test_surviving_an_elite_grappler_counts_more():
+    # B loses the decision either way, but going the distance with an elite
+    # submission grappler leaves B's submission defence far higher.
+    elite, average = survive_gain(400), survive_gain(0)
+    assert elite - average > 15
+
+
+def test_not_finishing_costs_the_attacker_less_than_it_earns_the_defender():
+    f = Fight(D1, "A", "B", None, Method.DRAW, 3, 300)  # a draw removes result evidence
+    sk = SkillRatings([f], pedigree={"A": {"sub_off": 300}})
+    lost = sk.initial("A")["sub_off"] - (sk.before("A", D2)["sub_off"] - sk.pedigree("A", 1)["sub_off"])
+    gained = sk.before("B", D2)["sub_def"] - sk.initial("B")["sub_def"]
+    assert 0 < lost < gained
+
+
+def test_pedigree_fades_but_persists():
+    sk = SkillRatings([], pedigree={"A": {"sub_off": 200}})
+    assert sk.pedigree("A", 0)["sub_off"] == pytest.approx(200)
+    assert sk.pedigree("A", 10)["sub_off"] == pytest.approx(100)
+    assert sk.before("A", D2)["sub_off"] == pytest.approx(1700)
+
+
+def test_commentary_is_judged_against_expectation():
+    from mma_predictor.scouting import FightNote
+
+    def gain(opp_boost: float) -> float:
+        f = Fight(D1, "A", "B", None, Method.DRAW, 3, 300)
+        note = FightNote(D1, "B", "A", "grappling", 0.0)  # "B held even on the mat"
+        sk = SkillRatings([f], pedigree={"A": {k: opp_boost for k in CATEGORIES["grappling"]}}, notes=[note])
+        base = SkillRatings([f], pedigree={"A": {k: opp_boost for k in CATEGORIES["grappling"]}})
+        return category_rating(sk.before("B", D2), "grappling") - category_rating(base.before("B", D2), "grappling")
+
+    assert gain(300) > gain(0) > -1e-9  # holding even with a great grappler is impressive
+
+
+def test_regional_debuts_start_lower():
+    from mma_predictor.skills import promotion_tier
+
+    assert promotion_tier("UFC 300 - Pereira vs. Hill") == "ufc"
+    assert promotion_tier("Bellator 300") == "major"
+    assert promotion_tier("Dana White's Contender Series 2023: Week 1") == "feeder"
+    assert promotion_tier("Fury FC 80") == "feeder"
+    assert promotion_tier("Hoosier Fight Club 12") == "regional"
+    f = Fight(D1, "A", "B", "A", Method.DEC, 3, 300, event="Hoosier Fight Club 12")
+    assert SkillRatings([f]).initial("B")["td_off"] < 1500
