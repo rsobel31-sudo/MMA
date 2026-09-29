@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mma-predictor"
+version = "0.1.0"
+description = "Evaluate MMA matchups and predict fight outcomes from fighter attributes, patterns and history."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+mma-predict = "mma_predictor.cli:main"
+
+[tool.setuptools]
+packages = ["mma_predictor"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

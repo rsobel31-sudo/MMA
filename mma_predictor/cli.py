@@ -1,0 +1,230 @@
+"""Command-line interface.
+
+    python -m mma_predictor predict  --data DIR "Fighter A" "Fighter B" [--rounds 5] [--odds -150 +130]
+    python -m mma_predictor card     --data DIR --card card.csv
+    python -m mma_predictor profile  --data DIR "Fighter"
+    python -m mma_predictor rankings --data DIR [--top 25]
+    python -m mma_predictor train    --data DIR --out models/model.json
+    python -m mma_predictor backtest --data DIR
+    python -m mma_predictor import   {sherdog,tapology} SEED... --out DIR [--depth 1]
+    python -m mma_predictor merge    DIR1 DIR2 ... --out DIR
+"""
+
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+from typing import List, Optional
+
+from .backtest import walk_forward
+from .data import load_card, load_dataset
+from .history import FightHistory
+from .model import WinModel
+from .predictor import FightPredictor, build_training_set
+from .styles import scouting_line
+
+DEFAULT_DATA = Path(__file__).resolve().parent.parent / "data" / "sample"
+
+
+def _history(args) -> FightHistory:
+    bios, fights = load_dataset(Path(args.data))
+    return FightHistory(bios, fights)
+
+
+def _predictor(args, history: FightHistory) -> FightPredictor:
+    model = WinModel.load(Path(args.model)) if getattr(args, "model", None) else None
+    if model is None and getattr(args, "fit", False):
+        model = WinModel()
+        X, y, _ = build_training_set(history)
+        model.fit(X, y)
+    return FightPredictor(history, model)
+
+
+def cmd_predict(args) -> int:
+    h = _history(args)
+    pred = _predictor(args, h).predict(
+        args.fighter_a,
+        args.fighter_b,
+        scheduled_rounds=args.rounds,
+        title_fight=args.title,
+        odds_a=args.odds[0] if args.odds else None,
+        odds_b=args.odds[1] if args.odds else None,
+    )
+    print(pred.report())
+    return 0
+
+
+def cmd_card(args) -> int:
+    h = _history(args)
+    p = _predictor(args, h)
+    rows = []
+    for m in load_card(Path(args.card)):
+        pred = p.predict_matchup(m)
+        rows.append(pred)
+        if args.verbose:
+            print(pred.report())
+            print()
+    print(f"{'Matchup':<48} {'Pick':<24} {'Prob':>6}  {'Likely outcome':<30} {'Edge':>6}")
+    for pred in rows:
+        f, meth, pp = pred.most_likely_outcome
+        edge = pred.edge_a
+        edge_s = "" if edge is None else f"{(edge if pred.pick == pred.fighter_a else -edge):+.1%}"
+        print(
+            f"{pred.fighter_a + ' vs ' + pred.fighter_b:<48} {pred.pick:<24} {pred.pick_prob:6.1%}  "
+            f"{f.split()[-1] + ' by ' + meth + f' ({pp:.0%})':<30} {edge_s:>6}"
+        )
+    return 0
+
+
+def cmd_profile(args) -> int:
+    h = _history(args)
+    name = h.resolve(args.fighter)
+    s = h.snapshot(name)
+    print(scouting_line(s))
+    print(f"\nWins by method:   " + "  ".join(f"{k} {v:.0%}" for k, v in s.win_methods.items()))
+    print(f"Losses by method: " + "  ".join(f"{k} {v:.0%}" for k, v in s.loss_methods.items()))
+    print(f"Strength of schedule (avg opp Elo): {s.sos:.0f}; avg Elo of beaten opponents: {s.quality_win_elo:.0f}")
+    if s.layoff_days is not None:
+        print(f"Days since last fight: {s.layoff_days}")
+    print("\nRecent bouts:")
+    for a in reversed(s.recent):
+        res = {True: "W", False: "L", None: "D/NC"}[a.result]
+        print(f"  {a.fight.date}  {res:<4} vs {a.opponent:<26} {a.method.value:<7} R{a.fight.end_round}  (opp Elo {a.opp_elo:.0f})")
+    return 0
+
+
+def cmd_rankings(args) -> int:
+    h = _history(args)
+    rows = [(n, r) for n, r in h.elo.leaderboard() if h.snapshot(n).fights >= args.min_fights]
+    for i, (n, r) in enumerate(rows[: args.top], 1):
+        s = h.snapshot(n)
+        inactive = " (inactive)" if s.layoff_days and s.layoff_days > 730 else ""
+        print(f"{i:>3}. {n:<28} {r:7.1f}  {s.record:>7}{inactive}")
+    return 0
+
+
+def cmd_train(args) -> int:
+    h = _history(args)
+    X, y, _ = build_training_set(h, min_prior_fights=args.min_fights)
+    model = WinModel()
+    rep = model.fit(X, y, l2=args.l2, iterations=args.iterations)
+    print(f"Trained on {rep.samples} bouts: log-loss {rep.prior_log_loss:.4f} (priors) -> {rep.log_loss:.4f}")
+    for k, v in sorted(model.weights.items(), key=lambda kv: -abs(kv[1])):
+        print(f"  {k:<20} {v:+.3f}")
+    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+    model.save(Path(args.out))
+    print(f"Saved to {args.out}")
+    return 0
+
+
+def cmd_backtest(args) -> int:
+    h = _history(args)
+    res = walk_forward(h, train_fraction=args.train_fraction, retrain_every=args.retrain_every, min_prior_fights=args.min_fights)
+    print(res.report())
+    return 0
+
+
+def cmd_import(args) -> int:
+    from .sources import common, sherdog, tapology
+
+    mod = sherdog if args.source == "sherdog" else tapology
+    fetcher = common.Fetcher(Path(args.cache), delay=args.delay)
+    seeds = [mod.fighter_url(s) for s in args.seeds]
+    pages = common.crawl(seeds, fetcher, mod.parse_fighter, depth=args.depth, max_fighters=args.max_fighters)
+    fighters, fights = common.pages_to_rows(pages, args.source)
+    common.write_dataset(Path(args.out), fighters, fights)
+    print(f"Wrote {len(fighters)} fighters and {len(fights)} bouts to {args.out}")
+    return 0
+
+
+def cmd_merge(args) -> int:
+    from .sources.merge import merge_datasets
+
+    nf, nb = merge_datasets([Path(d) for d in args.dirs], Path(args.out))
+    print(f"Merged into {args.out}: {nf} fighters, {nb} bouts")
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    ap = argparse.ArgumentParser(prog="mma-predict", description="Evaluate MMA matchups and predict outcomes.")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    def data_arg(p):
+        p.add_argument("--data", default=str(DEFAULT_DATA), help="directory with fighters.csv and fights.csv")
+
+    def model_args(p):
+        p.add_argument("--model", help="trained model JSON (default: built-in prior weights)")
+        p.add_argument("--fit", action="store_true", help="fit a model on the dataset before predicting")
+
+    p = sub.add_parser("predict", help="predict a single matchup")
+    data_arg(p)
+    model_args(p)
+    p.add_argument("fighter_a")
+    p.add_argument("fighter_b")
+    p.add_argument("--rounds", type=int, default=3)
+    p.add_argument("--title", action="store_true")
+    p.add_argument("--odds", nargs=2, type=float, metavar=("A_ODDS", "B_ODDS"), help="American moneylines")
+    p.set_defaults(func=cmd_predict)
+
+    p = sub.add_parser("card", help="predict every bout in a card CSV")
+    data_arg(p)
+    model_args(p)
+    p.add_argument("--card", required=True)
+    p.add_argument("-v", "--verbose", action="store_true")
+    p.set_defaults(func=cmd_card)
+
+    p = sub.add_parser("profile", help="scouting profile for one fighter")
+    data_arg(p)
+    p.add_argument("fighter")
+    p.set_defaults(func=cmd_profile)
+
+    p = sub.add_parser("rankings", help="Elo leaderboard")
+    data_arg(p)
+    p.add_argument("--top", type=int, default=25)
+    p.add_argument("--min-fights", type=int, default=3)
+    p.set_defaults(func=cmd_rankings)
+
+    p = sub.add_parser("train", help="fit model weights on the dataset")
+    data_arg(p)
+    p.add_argument("--out", default="models/model.json")
+    p.add_argument("--l2", type=float, default=25.0)
+    p.add_argument("--iterations", type=int, default=600)
+    p.add_argument("--min-fights", type=int, default=1)
+    p.set_defaults(func=cmd_train)
+
+    p = sub.add_parser("backtest", help="walk-forward evaluation")
+    data_arg(p)
+    p.add_argument("--train-fraction", type=float, default=0.4)
+    p.add_argument("--retrain-every", type=int, default=100)
+    p.add_argument("--min-fights", type=int, default=1)
+    p.set_defaults(func=cmd_backtest)
+
+    p = sub.add_parser("import", help="crawl fighter records from Sherdog or Tapology")
+    p.add_argument("source", choices=["sherdog", "tapology"])
+    p.add_argument("seeds", nargs="+", help="fighter URLs or slugs (e.g. Israel-Adesanya-56374 / israel-adesanya)")
+    p.add_argument("--out", required=True)
+    p.add_argument("--depth", type=int, default=1, help="how many opponent hops to follow")
+    p.add_argument("--max-fighters", type=int, default=500)
+    p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
+    p.add_argument("--cache", default=".cache/pages")
+    p.set_defaults(func=cmd_import)
+
+    p = sub.add_parser("merge", help="merge datasets (e.g. career records + UFC stats)")
+    p.add_argument("dirs", nargs="+")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_merge)
+    return ap
+
+
+def main(argv: Optional[List[str]] = None) -> int:
+    args = build_parser().parse_args(argv)
+    try:
+        return args.func(args)
+    except (KeyError, ValueError, FileNotFoundError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())
