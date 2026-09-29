@@ -166,6 +166,51 @@ def cmd_import(args) -> int:
     return 0
 
 
+def cmd_enrich(args) -> int:
+    """Add current UFC division and gender (Wikipedia roster + fight-graph propagation)."""
+    import csv
+
+    from .sources import common, wikipedia
+
+    data_dir = Path(args.data)
+    if args.roster_html:
+        html = Path(args.roster_html).read_text(encoding="utf-8")
+    else:
+        fetcher = common.Fetcher(Path(args.cache), delay=1.0, user_agent="mma-predictor/0.1 (personal research)")
+        html = fetcher.get(wikipedia.ROSTER_URL)
+    roster = wikipedia.parse_roster(html)
+    with open(data_dir / "fighters.csv", newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh))
+    with open(data_dir / "fights.csv", newline="", encoding="utf-8") as fh:
+        bouts = [(r["fighter_a"], r["fighter_b"]) for r in csv.DictReader(fh)]
+    matched = wikipedia.resolve([r["name"] for r in rows], roster)
+    seeds = {n: g for n, (_, g) in matched.items()}
+    # Divisions only women contest are a second source of known women.
+    for r in rows:
+        if r["name"] not in seeds and r.get("weight_class") in ("Strawweight", "Atomweight"):
+            seeds[r["name"]] = "F"
+    # Women's MMA has no divisions above featherweight, so heavier listed
+    # classes are men's. These are seeds too, and they override propagation.
+    men_only = {"Lightweight", "Welterweight", "Middleweight", "Light Heavyweight", "Heavyweight"}
+    for r in rows:
+        if r["name"] not in seeds and r.get("weight_class") in men_only:
+            seeds[r["name"]] = "M"
+    genders = wikipedia.propagate_gender(bouts, seeds)
+    for r in rows:
+        if r["name"] in matched:
+            r["weight_class"], _ = matched[r["name"]]
+            r["weight_class_source"] = "ufc-roster"
+        elif r.get("weight_class"):
+            r["weight_class_source"] = r.get("weight_class_source") or r.get("source") or "sherdog"
+        r["gender"] = genders.get(r["name"], "")
+    common.write_fighters(data_dir, rows)
+    print(f"Roster: {len(roster)} UFC fighters, {len(matched)} matched to this dataset")
+    known = sum(1 for r in rows if r["gender"])
+    print(f"Gender known for {known} of {len(rows)} fighters "
+          f"({sum(1 for r in rows if r['gender'] == 'F')} women, {sum(1 for r in rows if r['gender'] == 'M')} men)")
+    return 0
+
+
 def cmd_merge(args) -> int:
     from .sources.merge import merge_datasets
 
@@ -316,6 +361,12 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--dir", help="directory holding index.html, engine.js and data.json (default: app/)")
     p.set_defaults(func=cmd_serve)
+
+    p = sub.add_parser("enrich", help="add current UFC division and gender from Wikipedia's UFC roster")
+    p.add_argument("--data", required=True)
+    p.add_argument("--roster-html", help="use a saved copy of the roster page instead of fetching it")
+    p.add_argument("--cache", default=".cache/pages")
+    p.set_defaults(func=cmd_enrich)
 
     p = sub.add_parser("merge", help="merge datasets (e.g. career records + UFC stats)")
     p.add_argument("dirs", nargs="+")

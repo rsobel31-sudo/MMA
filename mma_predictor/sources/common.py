@@ -74,11 +74,21 @@ class Fetcher:
         host = urlparse(url)
         base = f"{host.scheme}://{host.netloc}"
         if base not in self._robots:
+            # Fetch robots.txt with our own user-agent: RobotFileParser.read() uses
+            # Python's default one, which some sites (Wikipedia) refuse with a 403,
+            # and it then wrongly treats the whole site as disallowed.
             rp = urllib.robotparser.RobotFileParser(base + "/robots.txt")
+            req = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": self.user_agent})
             try:
-                rp.read()
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    rp.parse(resp.read().decode("utf-8", errors="replace").splitlines())
+            except urllib.error.HTTPError as exc:
+                if exc.code in (401, 403):
+                    rp.disallow_all = True
+                else:
+                    rp.allow_all = True  # no robots.txt: everything allowed
             except (urllib.error.URLError, OSError):
-                rp = None  # type: ignore[assignment]
+                rp = None  # type: ignore[assignment]  # unreachable; get() will fail anyway
             self._robots[base] = rp  # type: ignore[assignment]
         rp = self._robots[base]
         return True if rp is None else rp.can_fetch(self.user_agent, url)
@@ -271,17 +281,22 @@ def infer_scheduled_rounds(b: CareerBout, name: str, opponent: str) -> int:
     return 3
 
 
-FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "weight_class", "nationality", "team",
-                  "prior_wins", "prior_losses", "source", "url"]
+FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "weight_class", "weight_class_source", "gender",
+                  "nationality", "team", "prior_wins", "prior_losses", "source", "url"]
+
+
+def write_fighters(out_dir: Path, fighters: List[Dict[str, str]]) -> None:
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / "fighters.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIGHTER_HEADER, extrasaction="ignore", restval="")
+        w.writeheader()
+        w.writerows(fighters)
 
 
 def write_dataset(out_dir: Path, fighters: List[Dict[str, str]], fights: List[Dict[str, str]]) -> None:
     out_dir = Path(out_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    with open(out_dir / "fighters.csv", "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=FIGHTER_HEADER, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(fighters)
+    write_fighters(out_dir, fighters)
     with open(out_dir / "fights.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=fight_csv_header(), extrasaction="ignore")
         w.writeheader()

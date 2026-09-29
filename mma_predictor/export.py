@@ -17,6 +17,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from .features import FEATURE_LABELS, FEATURES
 from .history import DEFAULT_PRIORS, FightHistory, FighterSnapshot
 from .model import PRIOR_WEIGHTS, WinModel
+from .bios import division_label, write_bio
 from .skills import CATEGORIES, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
@@ -92,6 +93,7 @@ def export(
     as_of = as_of or history.default_date()
     known_wc = {n: b.weight_class for n, b in history.bios.items() if b.weight_class}
     fighters: List[Dict[str, Any]] = []
+    picked: List[Tuple[FighterSnapshot, Dict[str, Any]]] = []
     for name in history.names():
         s = history.snapshot(name, as_of)
         researched = name in history.scouting.backgrounds and s.fights >= 1
@@ -100,8 +102,10 @@ def export(
             continue
         row = snapshot_json(s)
         wc, inferred = infer_weight_class(history, name, as_of, known_wc)
-        row.update(weight_class=wc, weight_class_inferred=inferred,
-                   nationality=s.bio.nationality, team=s.bio.team)
+        row.update(weight_class=wc, weight_class_inferred=inferred, gender=s.bio.gender,
+                   division=division_label(wc, s.bio.gender),
+                   weight_class_source="inferred" if inferred else (s.bio.weight_class_source or ("sherdog" if wc else "")),
+                   nationality=s.bio.nationality, team=s.bio.team, height_cm=s.bio.height_cm)
         bg = history.scouting.backgrounds.get(name)
         if bg:
             row["background"] = {"summary": bg.summary, "credentials": [dataclasses.asdict(c) for c in bg.credentials]}
@@ -110,6 +114,20 @@ def export(
              "rating": n.rating, "note": n.note, "source": n.source}
             for n in history.scouting.notes if name in (n.fighter, n.opponent)
         ]
+        row["history"] = [
+            {"date": a.fight.date.isoformat(), "opponent": a.opponent, "result": {True: "W", False: "L", None: "D"}[a.result],
+             "method": a.method.value, "round": a.fight.end_round, "time": f"{a.fight.end_seconds // 60}:{a.fight.end_seconds % 60:02d}",
+             "event": a.fight.event, "opp_rating": round(a.opp_elo)}
+            for a in reversed(s.all_appearances[-40:])
+        ]
+        picked.append((s, row))
+    # Bios compare each fighter with the others in their division.
+    divisions: Dict[str, List[FighterSnapshot]] = {}
+    for s, row in picked:
+        divisions.setdefault(row["division"], []).append(s)
+    for s, row in picked:
+        peers = divisions.get(row["division"], []) if row["division"] else []
+        row["bio"] = write_bio(s, peers, row["division"], history.scouting.backgrounds.get(s.name))
         fighters.append(row)
     fighters.sort(key=lambda f: -f["elo"])
     return {

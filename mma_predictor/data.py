@@ -125,6 +125,8 @@ class FighterBio:
     weight_class: str = ""
     nationality: str = ""
     team: str = ""
+    gender: str = ""  # "M" / "F" / "" unknown
+    weight_class_source: str = ""  # ufc-roster | sherdog
 
     def age_on(self, when: date) -> Optional[float]:
         if self.dob is None:
@@ -239,6 +241,8 @@ def load_fighters(path: Path) -> Dict[str, FighterBio]:
                 weight_class=(row.get("weight_class") or "").strip(),
                 nationality=(row.get("nationality") or "").strip(),
                 team=(row.get("team") or "").strip(),
+                gender=(row.get("gender") or "").strip().upper()[:1],
+                weight_class_source=(row.get("weight_class_source") or "").strip(),
             )
     return fighters
 

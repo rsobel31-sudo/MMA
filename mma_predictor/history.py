@@ -112,6 +112,7 @@ class FighterSnapshot:
     ko_losses: int = 0
     kd_absorbed: int = 0
     sig_absorbed: int = 0
+    all_appearances: List[Appearance] = field(default_factory=list, repr=False)
     recent: List[Appearance] = field(default_factory=list, repr=False)
 
     @property
@@ -365,6 +366,7 @@ class FightHistory:
             kd_absorbed=kd_abs,
             sig_absorbed=sig_absorbed,
             recent=apps[-5:],
+            all_appearances=apps,
         )
 
 

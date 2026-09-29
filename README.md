@@ -140,7 +140,9 @@ keeps it sensible; as data grows, the data takes over.
 - **Tale of the tape:** every attribute is editable. Type over a number (takedown defence, strikes absorbed, KO-loss rate, age, reach…) and the prediction updates instantly. Edited values turn amber and can be reset one at a time. You can also nudge a fighter's Elo and keep a scouting note.
 - **Your read on this fight:** a slider that shifts the odds toward either corner for things the numbers can't see (weight cut, injury, short notice), with a note.
 - **Model weights:** change how much each factor counts.
-- **Fight card, Fighters, My adjustments:** track a card, browse the roster, review and export everything you've changed.
+- **Fighters:** a sortable, filterable table, or a breakout by division (men's and women's) ranked by any rating.
+- **Fighter profiles:** click any fighter name anywhere to open a written bio, ratings against the division median, researched credentials, full fight history (with a Judge button per bout) and your own dated notes.
+- **Fight card, My adjustments:** track a card; review and export everything you've changed.
 
 ```bash
 python -m mma_predictor export --data data/sherdog --events UFC   # builds app/data.json
@@ -187,6 +189,25 @@ where the page shows them.
 - These sites don't publish per-bout striking/grappling numbers, so those features fall back to population averages for imported bouts. Elo, record, finishing tendencies, durability, form, age, reach and layoff are all fully informed.
 - Check each site's terms of use before crawling, and keep crawls modest.
 - The parsers were built against the sites' known markup and are covered by fixture tests. The live markup changes from time to time; if a parse comes back empty, update the selectors in `mma_predictor/sources/{sherdog,tapology}.py` and the matching fixture.
+
+### Division and gender (Wikipedia UFC roster)
+
+```bash
+python -m mma_predictor enrich --data data/sherdog
+```
+
+This reads Wikipedia's [List of current UFC fighters](https://en.wikipedia.org/wiki/List_of_current_UFC_fighters),
+which lists every current UFC fighter by division, men's and women's
+separately, and sets their division and gender. Names are matched regardless
+of accents, order or middle names ("Ian Garry" = "Ian Machado Garry").
+Everyone else gets a gender from the nearest known fighters in the fight
+graph, because men and women don't fight each other. Divisions only women
+contest (strawweight) and those only men contest (lightweight and up) are
+extra anchors.
+
+Tapology's robots.txt disallows Anthropic's crawlers, so Claude doesn't fetch
+from it. The Tapology importer is there for you to run yourself, subject to
+Tapology's terms.
 
 ### Combining sources
 
