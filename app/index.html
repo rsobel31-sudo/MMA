@@ -1,0 +1,823 @@
+<title>MMA Fight Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: fight-night broadcast graphic. Red corner left, blue corner right, tale of the tape down the middle; tabs for card, roster, model, and your adjustments. */
+:root {
+  --bg: #eceff2;
+  --surface: #ffffff;
+  --surface-2: #f5f7f9;
+  --ink: #161c23;
+  --muted: #5a6572;
+  --line: #d3d9df;
+  --red: #c41230;
+  --red-soft: #f6d9de;
+  --blue: #1b56c4;
+  --blue-soft: #d8e3f7;
+  --edit: #a86a0c;
+  --edit-soft: #f7ead2;
+  --good: #1f7a4a;
+  --focus: #1b56c4;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1318; --surface: #181e25; --surface-2: #1e252d; --ink: #e7ebef; --muted: #98a3af; --line: #2b333c;
+    --red: #f0506a; --red-soft: #3a1c23; --blue: #6a98f2; --blue-soft: #1a2945; --edit: #e6aa4a; --edit-soft: #3a2c14;
+    --good: #52c287; --focus: #6a98f2; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1318; --surface: #181e25; --surface-2: #1e252d; --ink: #e7ebef; --muted: #98a3af; --line: #2b333c;
+  --red: #f0506a; --red-soft: #3a1c23; --blue: #6a98f2; --blue-soft: #1a2945; --edit: #e6aa4a; --edit-soft: #3a2c14;
+  --good: #52c287; --focus: #6a98f2; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; margin: 0; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 16px 48px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.num { font-variant-numeric: tabular-nums; }
+.label { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: 12.5px; color: var(--muted); }
+.muted { color: var(--muted); }
+
+/* Header + tabs */
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; padding-block: 4px 12px; }
+header.top h1 { font-size: 30px; text-transform: uppercase; }
+header.top h1 span { color: var(--red); }
+.meta { font-size: 13px; color: var(--muted); }
+nav.tabs { display: flex; gap: 2px; border-bottom: 2px solid var(--line); overflow-x: auto; margin-bottom: 18px; }
+nav.tabs button { background: none; border: 0; padding: 10px 14px 8px; font-family: var(--display); font-weight: 600; font-size: 16px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+nav.tabs .count { font-family: var(--body); font-size: 12px; background: var(--edit-soft); color: var(--edit); border-radius: 9px; padding: 0 6px; margin-left: 4px; }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; min-width: 0; }
+.stack { display: grid; gap: 16px; }
+.btn { border: 1px solid var(--line); background: var(--surface-2); border-radius: 4px; padding: 6px 12px; cursor: pointer; font-weight: 500; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.btn.small { padding: 3px 8px; font-size: 13px; }
+.btn.link { background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 13px; }
+input[type="text"], input[type="number"], input[type="search"], textarea, select { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; min-width: 0; }
+textarea { width: 100%; resize: vertical; min-height: 56px; }
+
+/* Matchup setup */
+.setup { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: end; }
+.corner { display: grid; gap: 4px; min-width: 0; }
+.corner input { width: 100%; font-family: var(--display); font-weight: 600; font-size: 20px; padding: 6px 10px; }
+.corner.red input { border-left: 5px solid var(--red); }
+.corner.blue input { border-left: 5px solid var(--blue); }
+.vs { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--muted); padding-bottom: 8px; }
+.options { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 12px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 5px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.odds { display: inline-flex; gap: 6px; align-items: center; }
+.odds input { width: 96px; }
+
+/* Verdict */
+.verdict { display: grid; gap: 12px; }
+.names { display: flex; justify-content: space-between; gap: 12px; }
+.names h2 { font-size: clamp(22px, 4vw, 34px); text-transform: uppercase; line-height: 1.05; min-width: 0; overflow-wrap: anywhere; }
+.names .a { color: var(--red); }
+.names .b { color: var(--blue); text-align: right; }
+.probbar { display: flex; height: 44px; border-radius: 4px; overflow: hidden; font-family: var(--display); font-weight: 700; font-size: 22px; }
+.probbar div { display: flex; align-items: center; padding-inline: 12px; color: #fff; min-width: 0; transition: flex-basis .25s ease; }
+.probbar .pa { background: var(--red); }
+.probbar .pb { background: var(--blue); justify-content: flex-end; }
+.verdict-line { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; }
+.pill { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 2px 8px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); }
+.pill.edit { background: var(--edit-soft); color: var(--edit); border-color: transparent; }
+.pill.warn { background: var(--edit-soft); color: var(--edit); border-color: transparent; }
+
+.grid2 { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+
+/* Method breakdown */
+.methods { display: grid; gap: 8px; }
+.mrow { display: grid; grid-template-columns: 88px 1fr 48px; gap: 8px; align-items: center; font-size: 14px; }
+.mtrack { height: 14px; background: var(--surface-2); border-radius: 2px; position: relative; }
+.mtrack div { position: absolute; inset: 0 auto 0 0; border-radius: 2px; }
+.mhead { font-family: var(--display); font-weight: 600; font-size: 15px; margin-top: 4px; }
+
+/* Factors (diverging) */
+.factors { display: grid; gap: 5px; }
+.frow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, 1.1fr) 46px; gap: 8px; align-items: center; font-size: 13.5px; }
+.fbar { position: relative; height: 12px; }
+.fbar::before { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--muted); }
+.fbar div { position: absolute; top: 0; bottom: 0; border-radius: 1px; }
+.faxis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, 1.1fr) 46px; gap: 8px; font-size: 12px; color: var(--muted); }
+.faxis span:nth-child(2) { display: flex; justify-content: space-between; }
+
+/* Tale of the tape */
+.tape-wrap { overflow-x: auto; }
+table.tape { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.tape th, table.tape td { padding: 5px 6px; border-bottom: 1px solid var(--line); }
+table.tape td.attr { text-align: center; color: var(--muted); font-size: 13px; white-space: nowrap; }
+table.tape td.va { text-align: right; }
+table.tape td.vb { text-align: left; }
+table.tape th { font-family: var(--display); font-size: 17px; text-transform: uppercase; }
+table.tape th.a { color: var(--red); text-align: right; }
+table.tape th.b { color: var(--blue); text-align: left; }
+.cell { display: inline-flex; align-items: center; gap: 4px; }
+.cell input { width: 74px; text-align: right; padding: 3px 6px; font-variant-numeric: tabular-nums; }
+td.vb .cell input { text-align: left; }
+.cell.edited input { background: var(--edit-soft); border-color: var(--edit); }
+.cell .unit { color: var(--muted); font-size: 12px; }
+.cell .reset { visibility: hidden; border: 0; background: none; color: var(--edit); cursor: pointer; padding: 0 2px; font-size: 13px; }
+.cell.edited .reset { visibility: visible; }
+.better { font-weight: 600; }
+
+.notes { display: grid; gap: 6px; padding-left: 18px; margin: 0; }
+.notes li.mine { color: var(--edit); }
+.nostats { font-size: 13px; background: var(--edit-soft); color: var(--edit); padding: 8px 10px; border-radius: 4px; }
+
+.read { display: grid; gap: 8px; }
+.read input[type="range"] { width: 100%; accent-color: var(--ink); }
+.readscale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+.fnotes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fnote { display: grid; gap: 6px; }
+.fnote .hd { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.elo-nudge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; }
+.elo-nudge input { width: 70px; }
+
+.recent { width: 100%; border-collapse: collapse; font-size: 13px; }
+.recent td { padding: 3px 4px; border-bottom: 1px solid var(--line); }
+.res-W { color: var(--good); font-weight: 600; }
+.res-L { color: var(--red); font-weight: 600; }
+
+/* Tables for card/roster/adjustments */
+.table-wrap { overflow-x: auto; }
+table.list { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.list th { text-align: left; font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; font-size: 13px; color: var(--muted); padding: 6px 8px; border-bottom: 2px solid var(--line); white-space: nowrap; }
+table.list td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.list tr.clickable { cursor: pointer; }
+table.list tr.clickable:hover td { background: var(--surface-2); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+.toolbar input[type="search"] { flex: 1 1 220px; }
+
+.weights { display: grid; gap: 10px; }
+.wrow { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(120px, 2fr) 60px 70px; gap: 10px; align-items: center; font-size: 14px; }
+.wrow input[type="range"] { width: 100%; accent-color: var(--ink); }
+.wrow.edited .wv { color: var(--edit); font-weight: 600; }
+.status { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.empty { padding: 24px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; }
+pre.json { background: var(--surface-2); border: 1px solid var(--line); border-radius: 4px; padding: 10px; overflow: auto; max-height: 280px; font-size: 12.5px; }
+.loading { padding: 60px 0; text-align: center; color: var(--muted); }
+
+@media (max-width: 820px) {
+  .grid2, .fnotes { grid-template-columns: 1fr; }
+  .setup { grid-template-columns: 1fr; }
+  .vs { padding: 0; text-align: center; }
+  .wrow { grid-template-columns: 1fr 60px 64px; }
+  .wrow .wname { grid-column: 1 / -1; }
+  table.tape { font-size: 13px; }
+  table.tape th, table.tape td { padding: 4px 2px; }
+  table.tape td.attr { white-space: normal; font-size: 12px; line-height: 1.2; }
+  .cell input { width: 54px; padding: 3px 4px; }
+  .cell .unit { display: none; }
+  .elo-nudge { flex-direction: column; align-items: stretch; gap: 0; font-size: 11px; }
+  .elo-nudge input { width: 54px; }
+}
+@media (prefers-reduced-motion: reduce) { .probbar div { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>MMA Fight <span>Lab</span></h1>
+    <div class="meta num" id="meta">Loading fighter data…</div>
+  </header>
+  <nav class="tabs" role="tablist" id="tabs">
+    <button role="tab" data-tab="matchup" aria-selected="true">Matchup</button>
+    <button role="tab" data-tab="card" aria-selected="false">Fight card <span class="count" id="card-count" hidden></span></button>
+    <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
+    <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
+    <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
+  </nav>
+  <main id="view"><div class="loading">Loading fighter data…</div></main>
+  <datalist id="fighter-list"></datalist>
+</div>
+
+<script src="engine.js"></script>
+<script>
+(function () {
+  "use strict";
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const slug = (s) => String(s).toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 120) || "x";
+  const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+  const ls = {
+    get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } },
+  };
+
+  // Tale-of-the-tape rows. kind: pct (stored 0-1, shown 0-100), num, int.
+  const ATTRS = [
+    { k: "age", label: "Age", kind: "num", d: 1, unit: "yrs", better: "low" },
+    { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high" },
+    { k: "slpm", label: "Sig. strikes landed / min", kind: "num", d: 2, better: "high", stat: true },
+    { k: "sapm", label: "Sig. strikes absorbed / min", kind: "num", d: 2, better: "low", stat: true },
+    { k: "str_acc", label: "Striking accuracy", kind: "pct", better: "high", stat: true },
+    { k: "str_def", label: "Striking defence", kind: "pct", better: "high", stat: true },
+    { k: "kd_per15", label: "Knockdowns / 15 min", kind: "num", d: 2, better: "high", stat: true },
+    { k: "td_per15", label: "Takedowns / 15 min", kind: "num", d: 2, better: "high", stat: true },
+    { k: "td_acc", label: "Takedown accuracy", kind: "pct", better: "high", stat: true },
+    { k: "td_def", label: "Takedown defence", kind: "pct", better: "high", stat: true },
+    { k: "sub_per15", label: "Sub attempts / 15 min", kind: "num", d: 2, better: "high", stat: true },
+    { k: "ctrl_share", label: "Control time share", kind: "pct", better: "high", stat: true },
+    { k: "ko_loss_rate", label: "Bouts lost by KO", kind: "pct", better: "low" },
+    { k: "sub_loss_rate", label: "Bouts lost by sub", kind: "pct", better: "low" },
+    { k: "recent_ko_losses", label: "KO losses, last 3", kind: "int", better: "low" },
+    { k: "late_win_rate", label: "Win rate past R2", kind: "pct", better: "high" },
+    { k: "form", label: "Recent form (−1 to 1)", kind: "num", d: 2, better: "high" },
+    { k: "streak", label: "Streak (+W / −L)", kind: "int", better: "high" },
+    { k: "layoff_days", label: "Days since last fight", kind: "int", better: "low" },
+    { k: "sos", label: "Avg opponent Elo", kind: "int", better: "high" },
+  ];
+  const WEIGHT_RANGE = { elo: [0, 2.5] };
+
+  const state = {
+    data: null, engine: null, byName: new Map(),
+    adj: { fighters: {}, matchups: {}, weights: {} }, card: [],
+    tab: "matchup",
+    m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
+    roster: { q: "", sort: "elo" },
+    store: null, storeKind: "local",
+  };
+
+  // ------------------------------------------------------------------ store
+  // Shared artifact database when available; browser storage otherwise.
+  const LOCAL_KEY = "mma-fight-lab";
+  function localStore() {
+    const saved = ls.get(LOCAL_KEY) || {};
+    const persist = () => ls.set(LOCAL_KEY, { adj: state.adj, card: state.card });
+    if (saved.adj) state.adj = Object.assign({ fighters: {}, matchups: {}, weights: {} }, saved.adj);
+    if (saved.card) state.card = saved.card;
+    return {
+      kind: "local",
+      async saveFighter() { persist(); }, async deleteFighter() { persist(); },
+      async saveMatchup() { persist(); }, async deleteMatchup() { persist(); },
+      async saveWeights() { persist(); },
+      async saveCard() { persist(); }, async deleteCard() { persist(); },
+    };
+  }
+  function dbStore(db) {
+    const writers = new Map();  // one write at a time per doc
+    function write(path, fn) {
+      pending.add(path);
+      const prev = writers.get(path) || Promise.resolve();
+      const next = prev.then(fn).catch((e) => setStatus(`Couldn't save (${e && e.code || "error"}). Your change is kept on this page only.`))
+        .finally(() => { if (writers.get(path) === next) { writers.delete(path); pending.delete(path); } });
+      writers.set(path, next);
+      return next;
+    }
+    // Snapshots never clobber an edit that is still waiting to be written.
+    const keep = (path) => pending.has(path) || debounced.has(path);
+    db.collection("fighters").onSnapshot((snap) => {
+      const f = {};
+      snap.docs.forEach((d) => { const v = d.data(); if (v && v.name) f[v.name] = { elo: v.elo || 0, overrides: v.overrides || {}, note: v.note || "" }; });
+      for (const [n, v] of Object.entries(state.adj.fighters)) if (keep("fighters/" + slug(n))) f[n] = v;
+      for (const n of Object.keys(f)) if (keep("fighters/" + slug(n)) && !state.adj.fighters[n]) delete f[n];
+      state.adj.fighters = f; renderSoon();
+    }, () => {});
+    db.collection("matchups").onSnapshot((snap) => {
+      const m = {};
+      snap.docs.forEach((d) => { const v = d.data(); if (v && v.a) m[d.id] = { a: v.a, b: v.b, logit: v.logit || 0, note: v.note || "" }; });
+      for (const [id, v] of Object.entries(state.adj.matchups)) if (keep("matchups/" + id)) m[id] = v;
+      for (const id of Object.keys(m)) if (keep("matchups/" + id) && !state.adj.matchups[id]) delete m[id];
+      state.adj.matchups = m; renderSoon();
+    }, () => {});
+    db.doc("settings/weights").onSnapshot((d) => {
+      if (keep("settings/weights")) return;
+      state.adj.weights = (d.exists && d.data().weights) || {}; renderSoon();
+    }, () => {});
+    db.collection("card").orderBy("order").onSnapshot((snap) => {
+      state.card = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
+    }, () => {});
+    return {
+      kind: "db",
+      saveFighter(name, v) { return write("fighters/" + slug(name), () => db.doc("fighters/" + slug(name)).set({ name, elo: v.elo || 0, overrides: v.overrides || {}, note: v.note || "" })); },
+      deleteFighter(name) { return write("fighters/" + slug(name), () => db.doc("fighters/" + slug(name)).delete()); },
+      saveMatchup(id, v) { return write("matchups/" + id, () => db.doc("matchups/" + id).set(v)); },
+      deleteMatchup(id) { return write("matchups/" + id, () => db.doc("matchups/" + id).delete()); },
+      saveWeights(w) { return write("settings/weights", () => db.doc("settings/weights").set({ weights: w })); },
+      saveCard(item) { const { id, ...body } = item; return write("card/" + id, () => db.doc("card/" + id).set(body)); },
+      deleteCard(id) { return write("card/" + id, () => db.doc("card/" + id).delete()); },
+    };
+  }
+  let statusTimer;
+  function setStatus(msg) {
+    const el = $("#status"); if (!el) return;
+    el.textContent = msg; clearTimeout(statusTimer);
+    statusTimer = setTimeout(() => { if (el.textContent === msg) el.textContent = ""; }, 4000);
+  }
+  // Coalesce typing into one write per pause. Keys are document paths.
+  const debounced = new Map();
+  const pending = new Set();
+  function later(key, fn, ms = 600) {
+    clearTimeout(debounced.get(key));
+    debounced.set(key, setTimeout(() => { debounced.delete(key); fn(); }, ms));
+  }
+  // Remote updates wait until you stop typing in a text box.
+  let deferred = false;
+  function renderSoon() {
+    const el = document.activeElement;
+    if (el && (el.tagName === "TEXTAREA" || (el.tagName === "INPUT" && el.type !== "range" && el.type !== "button"))) { deferred = true; return; }
+    render();
+  }
+  document.addEventListener("focusout", () => { if (deferred) { deferred = false; setTimeout(render, 0); } });
+
+  // --------------------------------------------------------------- helpers
+  function fighter(name) {
+    const base = state.byName.get(name);
+    if (!base) return null;
+    return state.engine.applyAdjustment(base, state.adj.fighters[name]);
+  }
+  function weights() { return Object.assign({}, state.data.weights, state.adj.weights); }
+  function matchupKey(a, b) { return slug(a) + "--" + slug(b); }
+  function manualFor(a, b) {
+    let t = 0;
+    for (const m of Object.values(state.adj.matchups)) {
+      if (m.a === a && m.b === b) t += m.logit; else if (m.a === b && m.b === a) t -= m.logit;
+    }
+    return t;
+  }
+  function matchupDoc(a, b) {
+    const k1 = matchupKey(a, b), k2 = matchupKey(b, a);
+    if (state.adj.matchups[k1]) return { id: k1, doc: state.adj.matchups[k1], flip: false };
+    if (state.adj.matchups[k2]) return { id: k2, doc: state.adj.matchups[k2], flip: true };
+    return { id: k1, doc: null, flip: false };
+  }
+  function record(s) { return `${s.wins + s.prior_wins}-${s.losses + s.prior_losses}`; }
+  function predict(a, b, rounds, opts = {}) {
+    const fa = fighter(a), fb = fighter(b);
+    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b) });
+  }
+  function confidence(p, a, b) {
+    const edge = Math.abs(p - 0.5), thin = Math.min(a.fights, b.fights) < 3;
+    if (edge >= 0.25 && !thin) return "High confidence";
+    if (edge >= 0.12) return thin ? "Medium, thin data" : "Medium confidence";
+    return thin ? "Low, thin data" : "Coin-flip range";
+  }
+  function adjCount() {
+    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note).length + Object.keys(state.adj.weights).length;
+  }
+  function fmt(attr, v) {
+    if (v === null || v === undefined) return "—";
+    if (attr.kind === "pct") return (v * 100).toFixed(0);
+    if (attr.kind === "int") return String(Math.round(v));
+    return Number(v).toFixed(attr.d ?? 1);
+  }
+
+  // ----------------------------------------------------------------- render
+  function render() {
+    if (!state.data) return;
+    document.querySelectorAll("#tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)));
+    const n = adjCount();
+    const ac = $("#adj-count"); ac.hidden = !n; ac.textContent = n;
+    const cc = $("#card-count"); cc.hidden = !state.card.length; cc.textContent = state.card.length;
+    const view = $("#view");
+    const focusId = document.activeElement && document.activeElement.id;
+    const selStart = document.activeElement && document.activeElement.selectionStart;
+    ({ matchup: renderMatchup, card: renderCard, roster: renderRoster, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    if (focusId) {
+      const el = document.getElementById(focusId);
+      if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
+    }
+  }
+
+  function renderMatchup(view) {
+    const { a, b, rounds } = state.m;
+    const fa = a && fighter(a), fb = b && fighter(b);
+    let html = `
+      <div class="stack">
+        <section class="panel">
+          <div class="setup">
+            <label class="corner red"><span class="label">Red corner</span>
+              <input id="in-a" type="text" list="fighter-list" value="${esc(a || "")}" placeholder="Type a fighter's name" autocomplete="off"></label>
+            <div class="vs">VS</div>
+            <label class="corner blue"><span class="label">Blue corner</span>
+              <input id="in-b" type="text" list="fighter-list" value="${esc(b || "")}" placeholder="Type a fighter's name" autocomplete="off"></label>
+          </div>
+          <div class="options">
+            <span class="label">Rounds</span>
+            <span class="seg" role="group" aria-label="Scheduled rounds">
+              <button type="button" data-rounds="3" aria-pressed="${rounds === 3}">3</button>
+              <button type="button" data-rounds="5" aria-pressed="${rounds === 5}">5</button>
+            </span>
+            <span class="odds"><span class="label">Moneyline</span>
+              <input id="odds-a" type="text" inputmode="numeric" placeholder="Red −150" value="${esc(state.m.oddsA)}" aria-label="Red corner American odds">
+              <input id="odds-b" type="text" inputmode="numeric" placeholder="Blue +130" value="${esc(state.m.oddsB)}" aria-label="Blue corner American odds"></span>
+            <button class="btn" id="swap" type="button">Swap corners</button>
+            <button class="btn" id="to-card" type="button" ${fa && fb ? "" : "disabled"}>Add to fight card</button>
+            <span class="status" id="status" role="status"></span>
+          </div>
+        </section>`;
+    if (!fa || !fb || a === b) {
+      html += `<div class="empty">${a && !fa || b && !fb ? "That name isn't in the dataset. Pick from the suggestions as you type." : "Pick two different fighters to see the prediction."}</div></div>`;
+      view.innerHTML = html; return;
+    }
+    const r = predict(a, b, rounds);
+    const base = predict(a, b, rounds, { noManual: true });
+    const p = r.p;
+    const pick = p >= 0.5 ? a : b;
+    const best = [["a", a], ["b", b]].flatMap(([side, n]) => Object.entries(r.methods[side]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];
+    const dist = r.methods.a.DEC + r.methods.b.DEC;
+    let market = "";
+    const oa = parseFloat(state.m.oddsA), ob = parseFloat(state.m.oddsB);
+    if (isFinite(oa) && isFinite(ob) && Math.abs(oa) >= 100 && Math.abs(ob) >= 100) {
+      const mp = MMAEngine.devig(oa, ob), edge = p - mp;
+      market = `<span class="pill num">Market ${pct(mp, 0)} / ${pct(1 - mp, 0)}</span><span class="pill num">Model edge ${pct(Math.abs(edge))} to ${esc(edge >= 0 ? a : b)}</span>`;
+    }
+    const ea = state.adj.fighters[a], eb = state.adj.fighters[b];
+    const noStats = [fa, fb].filter((f) => !f.stat_minutes).map((f) => f.name);
+    const md = matchupDoc(a, b);
+    const readVal = md.doc ? (md.flip ? -md.doc.logit : md.doc.logit) : 0;
+    const readNote = md.doc ? md.doc.note : "";
+
+    html += `
+      <section class="panel verdict" aria-live="polite">
+        <div class="names"><h2 class="a">${esc(a)}</h2><h2 class="b">${esc(b)}</h2></div>
+        <div class="probbar num" role="img" aria-label="${esc(a)} ${pct(p)}, ${esc(b)} ${pct(1 - p)}">
+          <div class="pa" style="flex-basis:${(p * 100).toFixed(2)}%">${pct(p)}</div>
+          <div class="pb" style="flex-basis:${((1 - p) * 100).toFixed(2)}%">${pct(1 - p)}</div>
+        </div>
+        <div class="verdict-line">
+          <strong>Pick: ${esc(pick)}</strong>
+          <span class="pill">${confidence(p, fa, fb)}</span>
+          <span class="muted">Most likely: ${esc(best[0])} by ${best[1]} (${pct(best[2], 0)}) · Goes the distance ${pct(dist, 0)}</span>
+          ${readVal ? `<span class="pill edit num">Your read moves this ${((p - base.p) * 100 >= 0 ? "+" : "")}${((p - base.p) * 100).toFixed(1)} pts for ${esc(a)}</span>` : ""}
+          ${ea || eb ? `<span class="pill edit">Includes your fighter edits</span>` : ""}
+          ${market}
+        </div>
+      </section>
+
+      <div class="grid2">
+        <section class="panel stack">
+          <div>
+            <h3>Method of victory</h3>
+            <div class="methods" style="margin-top:8px">
+              ${["a", "b"].map((side) => `
+                <div class="mhead" style="color:var(--${side === "a" ? "red" : "blue"})">${esc(side === "a" ? a : b)}</div>
+                ${MMAEngine.BUCKETS.map((m) => `
+                  <div class="mrow num"><span>${m === "DEC" ? "Decision" : m === "SUB" ? "Submission" : "KO/TKO"}</span>
+                    <span class="mtrack"><div style="width:${(r.methods[side][m] * 100).toFixed(2)}%;background:var(--${side === "a" ? "red" : "blue"})"></div></span>
+                    <span style="text-align:right">${pct(r.methods[side][m], 0)}</span></div>`).join("")}`).join("")}
+            </div>
+          </div>
+          <div>
+            <h3>What's driving it</h3>
+            <p class="muted" style="margin:4px 0 8px;font-size:13px">Each bar is that factor's pull on the log-odds. Left favours ${esc(a)}, right favours ${esc(b)}.</p>
+            ${factorBars(r.factors)}
+          </div>
+        </section>
+
+        <section class="panel stack">
+          <div>
+            <h3>Your read on this fight</h3>
+            <p class="muted" style="margin:4px 0 8px;font-size:13px">For things the numbers can't see: a bad weight cut, an injury in camp, a short-notice replacement, a style the model underrates.</p>
+            <div class="read">
+              <input type="range" id="read" min="-1.5" max="1.5" step="0.05" value="${(-readVal).toFixed(2)}" aria-label="Shift toward red or blue corner">
+              <div class="readscale num"><span style="color:var(--red)">◀ Toward ${esc(a)}</span><span>${readVal ? `${readVal > 0 ? "+" : ""}${readVal.toFixed(2)} log-odds` : "No change"}</span><span style="color:var(--blue)">Toward ${esc(b)} ▶</span></div>
+              <textarea id="read-note" placeholder="Why? (saved with the adjustment)">${esc(readNote)}</textarea>
+              <div><button class="btn small" id="read-clear" type="button" ${md.doc ? "" : "disabled"}>Clear my read</button></div>
+            </div>
+          </div>
+          <div>
+            <h3>Matchup patterns</h3>
+            <ul class="notes" style="margin-top:8px">
+              ${ea && ea.note ? `<li class="mine">Your note on ${esc(a)}: ${esc(ea.note)}</li>` : ""}
+              ${eb && eb.note ? `<li class="mine">Your note on ${esc(b)}: ${esc(eb.note)}</li>` : ""}
+              ${readNote ? `<li class="mine">Your read: ${esc(readNote)}</li>` : ""}
+              ${r.insights.map((t) => `<li>${esc(t)}</li>`).join("") || `<li class="muted">No strong stylistic edges detected.</li>`}
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel stack">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+          <h3>Tale of the tape</h3>
+          <span class="muted" style="font-size:13px">Type over any number to apply what you know. Edited values turn amber and are saved; ↺ resets one.</span>
+        </div>
+        ${noStats.length ? `<div class="nostats">No per-fight striking or grappling stats for ${esc(noStats.join(" and "))} yet (Sherdog records don't include them), so rows marked * show league averages. Edit them from what you've seen, or add UFCStats data.</div>` : ""}
+        <div class="tape-wrap"><table class="tape num">
+          <thead><tr><th class="a">${esc(a)}</th><th></th><th class="b">${esc(b)}</th></tr></thead>
+          <tbody>
+            <tr><td class="va">${record(fa)}</td><td class="attr">Record</td><td class="vb">${record(fb)}</td></tr>
+            <tr><td class="va">${eloCell(a, fa)}</td><td class="attr">Elo rating</td><td class="vb">${eloCell(b, fb)}</td></tr>
+            <tr><td class="va">${esc(fa.stance || "—")}</td><td class="attr">Stance</td><td class="vb">${esc(fb.stance || "—")}</td></tr>
+            <tr><td class="va">${state.engine.classify(fa).join(", ")}</td><td class="attr">Style</td><td class="vb">${state.engine.classify(fb).join(", ")}</td></tr>
+            ${ATTRS.map((at) => tapeRow(at, a, fa, b, fb)).join("")}
+          </tbody>
+        </table></div>
+      </section>
+
+      <section class="fnotes">
+        ${[[a, fa, "red"], [b, fb, "blue"]].map(([n, f, c]) => `
+          <div class="panel fnote">
+            <div class="hd"><h3 style="color:var(--${c})">${esc(n)}</h3>
+              ${state.adj.fighters[n] ? `<button class="btn small" data-clear-fighter="${esc(n)}" type="button">Clear all edits</button>` : ""}</div>
+            <textarea id="note-${c}" data-note="${esc(n)}" placeholder="Your scouting note on ${esc(n)} (camp, injuries, how they've looked)">${esc((state.adj.fighters[n] || {}).note || "")}</textarea>
+            <table class="recent num"><tbody>
+              ${f.recent.map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${esc(x.opponent)}</td><td>${esc(x.method)} R${x.round}</td></tr>`).join("")}
+            </tbody></table>
+          </div>`).join("")}
+      </section>
+    </div>`;
+    view.innerHTML = html;
+  }
+
+  function factorBars(factors) {
+    const labels = state.data.feature_labels;
+    const shown = factors.filter(([, c]) => Math.abs(c) >= 0.005).slice(0, 9);
+    if (!shown.length) return `<p class="muted">The model sees these two as even on every factor.</p>`;
+    const max = Math.max(0.5, ...shown.map(([, c]) => Math.abs(c)));
+    return `<div class="factors">${shown.map(([k, c]) => {
+      const w = (Math.abs(c) / max) * 50;
+      const left = c > 0 ? 50 - w : 50;
+      return `<div class="frow num"><span>${esc(labels[k] || k)}</span>
+        <span class="fbar"><div style="left:${left}%;width:${w}%;background:var(--${c > 0 ? "red" : "blue"})"></div></span>
+        <span style="text-align:right">${c > 0 ? "+" : "−"}${Math.abs(c).toFixed(2)}</span></div>`;
+    }).join("")}
+      <div class="faxis"><span></span><span><span>${esc(state.m.a)}</span><span>${esc(state.m.b)}</span></span><span></span></div></div>`;
+  }
+
+  function eloCell(name, f) {
+    const nudge = (state.adj.fighters[name] || {}).elo || 0;
+    const side = name === state.m.a ? "a" : "b";
+    return `<span class="cell ${nudge ? "edited" : ""}"><span>${Math.round(f.elo)}</span>
+      <span class="elo-nudge">nudge <input id="elo-${side}" type="number" step="10" value="${nudge || ""}" placeholder="0" data-elo="${esc(name)}" aria-label="Elo nudge for ${esc(name)}"></span></span>`;
+  }
+  function tapeRow(at, a, fa, b, fb) {
+    const cell = (name, f, side) => {
+      const ov = ((state.adj.fighters[name] || {}).overrides || {})[at.k];
+      const edited = ov !== undefined && ov !== null;
+      const v = f[at.k];
+      const shownVal = v === null || v === undefined ? "" : fmt(at, v);
+      const cmp = compare(at, fa[at.k], fb[at.k]);
+      const better = (side === "a" && cmp > 0) || (side === "b" && cmp < 0);
+      return `<span class="cell ${edited ? "edited" : ""} ${better ? "better" : ""}">
+        ${side === "b" ? `<button class="reset" type="button" data-reset="${esc(name)}" data-key="${at.k}" title="Reset to data">↺</button>` : ""}
+        <input id="t-${side}-${at.k}" type="text" inputmode="decimal" value="${shownVal}" data-attr="${at.k}" data-fighter="${esc(name)}" aria-label="${esc(at.label)} for ${esc(name)}">
+        ${at.kind === "pct" ? `<span class="unit">%</span>` : at.unit ? `<span class="unit">${at.unit}</span>` : ""}
+        ${side === "a" ? `<button class="reset" type="button" data-reset="${esc(name)}" data-key="${at.k}" title="Reset to data">↺</button>` : ""}
+      </span>`;
+    };
+    const star = at.stat && (!fa.stat_minutes || !fb.stat_minutes) ? " *" : "";
+    return `<tr><td class="va">${cell(a, fa, "a")}</td><td class="attr">${esc(at.label)}${star}</td><td class="vb">${cell(b, fb, "b")}</td></tr>`;
+  }
+  function compare(at, x, y) {
+    if (x == null || y == null || Math.abs(x - y) < 1e-9) return 0;
+    return (x > y ? 1 : -1) * (at.better === "low" ? -1 : 1);
+  }
+
+  function renderCard(view) {
+    if (!state.card.length) {
+      view.innerHTML = `<div class="empty">No fights on your card yet. Set up a matchup and choose <strong>Add to fight card</strong> to track your picks for an upcoming event here.</div>`;
+      return;
+    }
+    const rows = state.card.map((c) => {
+      if (!state.byName.has(c.a) || !state.byName.has(c.b)) return `<tr><td colspan="6">${esc(c.a)} vs ${esc(c.b)} <span class="muted">(fighter not in dataset)</span></td></tr>`;
+      const r = predict(c.a, c.b, c.rounds || 3);
+      const pick = r.p >= 0.5 ? c.a : c.b, pp = Math.max(r.p, 1 - r.p);
+      const best = [["a", c.a], ["b", c.b]].flatMap(([s, n]) => Object.entries(r.methods[s]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];
+      let edge = "";
+      if (isFinite(parseFloat(c.oddsA)) && isFinite(parseFloat(c.oddsB))) {
+        const mp = MMAEngine.devig(parseFloat(c.oddsA), parseFloat(c.oddsB));
+        const e = (pick === c.a ? r.p - mp : (1 - r.p) - (1 - mp));
+        edge = `${e >= 0 ? "+" : "−"}${(Math.abs(e) * 100).toFixed(1)}`;
+      }
+      const touched = state.adj.fighters[c.a] || state.adj.fighters[c.b] || manualFor(c.a, c.b);
+      return `<tr class="clickable" data-open="${esc(c.id)}">
+        <td><span style="color:var(--red)">${esc(c.a)}</span> vs <span style="color:var(--blue)">${esc(c.b)}</span>${c.rounds === 5 ? ' <span class="pill">5 rds</span>' : ""}${touched ? ' <span class="pill edit">edited</span>' : ""}</td>
+        <td><strong>${esc(pick)}</strong></td><td class="num">${pct(pp)}</td>
+        <td>${esc(best[0])} by ${best[1]} <span class="muted num">(${pct(best[2], 0)})</span></td>
+        <td class="num">${edge}</td>
+        <td><button class="btn small" type="button" data-remove-card="${esc(c.id)}">Remove</button></td></tr>`;
+    }).join("");
+    view.innerHTML = `<section class="panel"><div class="toolbar"><h3>Fight card</h3><span class="muted" style="font-size:13px">Click a bout to open it. Edge is model minus market (percentage points) when you've entered odds.</span></div>
+      <div class="table-wrap"><table class="list"><thead><tr><th>Bout</th><th>Pick</th><th>Win prob</th><th>Most likely</th><th>Edge</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+  }
+
+  function renderRoster(view) {
+    const q = state.roster.q.toLowerCase();
+    const list = state.data.fighters.map((f) => fighter(f.name))
+      .filter((f) => !q || f.name.toLowerCase().includes(q))
+      .sort((x, y) => state.roster.sort === "name" ? x.name.localeCompare(y.name) : y[state.roster.sort] - x[state.roster.sort])
+      .slice(0, 300);
+    view.innerHTML = `<section class="panel">
+      <div class="toolbar"><input type="search" id="roster-q" placeholder="Search fighters" value="${esc(state.roster.q)}">
+        <label class="label" for="roster-sort">Sort</label>
+        <select id="roster-sort">${[["elo", "Elo"], ["name", "Name"], ["streak", "Streak"], ["form", "Form"]].map(([k, l]) => `<option value="${k}" ${state.roster.sort === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+        <span class="muted" style="font-size:13px">Click a fighter to put them in the red corner.</span></div>
+      <div class="table-wrap"><table class="list num"><thead><tr><th>#</th><th>Fighter</th><th>Elo</th><th>Record</th><th>Age</th><th>Streak</th><th>Style</th><th>Last fight</th></tr></thead><tbody>
+      ${list.map((f, i) => `<tr class="clickable" data-pick="${esc(f.name)}"><td>${i + 1}</td><td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}</td>
+        <td>${Math.round(f.elo)}</td><td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
+        <td>${state.engine.classify(f).join(", ")}</td><td>${f.recent[0] ? esc(f.recent[0].date) : "—"}</td></tr>`).join("")}
+      </tbody></table></div>
+      ${list.length === 300 ? '<p class="muted" style="font-size:13px">Showing the first 300. Search to narrow.</p>' : ""}</section>`;
+  }
+
+  function renderModel(view) {
+    const w = weights(), trained = state.data.weights, prior = state.data.prior_weights, labels = state.data.feature_labels;
+    const meta = state.data.meta;
+    view.innerHTML = `<div class="stack">
+      <section class="panel">
+        <h3>How much each factor counts</h3>
+        <p class="muted" style="margin:4px 0 12px">Weights were ${meta.trained_on ? `learned from ${meta.trained_on.toLocaleString()} past bouts` : "set from MMA conventions (not yet trained)"}. Drag to change how much the model trusts a factor; 0 ignores it. Your changes apply to every prediction and turn amber.</p>
+        <div class="weights">
+          ${state.data.features.map((k) => {
+            const [lo, hi] = WEIGHT_RANGE[k] || [-0.5, 1.5];
+            const edited = k in state.adj.weights;
+            return `<div class="wrow num ${edited ? "edited" : ""}"><span class="wname">${esc(labels[k] || k)}</span>
+              <input type="range" id="w-${k}" data-weight="${k}" min="${lo}" max="${hi}" step="0.01" value="${w[k]}" aria-label="${esc(labels[k] || k)} weight">
+              <span class="wv">${w[k].toFixed(2)}</span>
+              <span class="muted" style="font-size:12px" title="Trained weight">data ${trained[k].toFixed(2)}</span></div>`;
+          }).join("")}
+        </div>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" id="w-reset" type="button" ${Object.keys(state.adj.weights).length ? "" : "disabled"}>Reset all to trained</button>
+          <span class="status" id="status" role="status"></span></div>
+      </section>
+      <section class="panel"><h3>Dataset</h3>
+        <p class="num" style="margin:6px 0 0">${meta.bouts.toLocaleString()} bouts through ${esc(meta.last_fight)}; ${meta.fighters_exported.toLocaleString()} active fighters shown (of ${meta.fighters_total.toLocaleString()}). Source: ${esc(meta.source || "—")}.</p>
+        ${meta.backtest ? `<p class="num" style="margin:6px 0 0">Walk-forward backtest on ${meta.backtest.n.toLocaleString()} ${esc(meta.backtest.scope || "")} bouts: picked the winner ${pct(meta.backtest.accuracy)} of the time (Elo alone: ${pct(meta.backtest.elo_accuracy)}); log-loss ${meta.backtest.log_loss.toFixed(3)}.</p>` : ""}
+      </section></div>`;
+  }
+
+  function renderAdjust(view) {
+    const f = Object.entries(state.adj.fighters);
+    const m = Object.entries(state.adj.matchups).filter(([, v]) => v.logit || v.note);
+    const w = Object.entries(state.adj.weights);
+    const exportObj = {
+      fighters: Object.fromEntries(f.map(([n, v]) => [n, v])),
+      weights: state.adj.weights,
+      matchups: m.map(([, v]) => v),
+    };
+    const json = JSON.stringify(exportObj, null, 2);
+    view.innerHTML = `<div class="stack">
+      <section class="panel">
+        <div class="toolbar"><h3>My adjustments</h3><span class="muted" style="font-size:13px">${state.storeKind === "db" ? "Saved to this page's database. Claude can read them back into the project." : "Saved in this browser only."}</span></div>
+        ${!f.length && !m.length && !w.length ? `<div class="empty">Nothing yet. Edit a number in the tale of the tape, nudge a rating, set your read on a fight, or move a model weight, and it will be listed here.</div>` : ""}
+        ${f.length ? `<h3 style="font-size:17px;margin-top:6px">Fighters</h3><div class="table-wrap"><table class="list num"><thead><tr><th>Fighter</th><th>Changes</th><th>Note</th><th></th></tr></thead><tbody>
+          ${f.map(([n, v]) => `<tr><td>${esc(n)}</td><td>${[v.elo ? `Elo ${v.elo > 0 ? "+" : ""}${v.elo}` : "", ...Object.entries(v.overrides || {}).map(([k, x]) => { const at = ATTRS.find((t) => t.k === k); return `${at ? at.label : k}: ${at ? fmt(at, x) + (at.kind === "pct" ? "%" : "") : x}`; })].filter(Boolean).map(esc).join("<br>") || "—"}</td>
+            <td>${esc(v.note || "")}</td><td><button class="btn small" type="button" data-clear-fighter="${esc(n)}">Remove</button></td></tr>`).join("")}</tbody></table></div>` : ""}
+        ${m.length ? `<h3 style="font-size:17px;margin-top:14px">Matchup reads</h3><div class="table-wrap"><table class="list num"><thead><tr><th>Bout</th><th>Shift</th><th>Note</th><th></th></tr></thead><tbody>
+          ${m.map(([id, v]) => `<tr><td>${esc(v.a)} vs ${esc(v.b)}</td><td>${v.logit ? `${Math.abs(v.logit).toFixed(2)} toward ${esc(v.logit > 0 ? v.a : v.b)}` : "—"}</td><td>${esc(v.note)}</td><td><button class="btn small" type="button" data-remove-matchup="${esc(id)}">Remove</button></td></tr>`).join("")}</tbody></table></div>` : ""}
+        ${w.length ? `<h3 style="font-size:17px;margin-top:14px">Model weights</h3><p class="num">${w.map(([k, v]) => `${esc(state.data.feature_labels[k] || k)}: ${v.toFixed(2)} (data ${state.data.weights[k].toFixed(2)})`).join(" · ")}</p>` : ""}
+      </section>
+      <section class="panel stack">
+        <div><h3>Use them in the Python tools</h3>
+          <p class="muted" style="margin:4px 0 8px">Save this as <code>data/adjustments.json</code> and pass <code>--adjustments data/adjustments.json</code> to <code>predict</code> or <code>card</code>.</p>
+          <pre class="json" id="json">${esc(json)}</pre>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button class="btn" id="copy-json" type="button">Copy JSON</button><span class="status" id="status" role="status"></span></div></div>
+        <div><h3>Import</h3>
+          <p class="muted" style="margin:4px 0 8px">Paste adjustments JSON here to merge it in.</p>
+          <textarea id="import-json" rows="4" placeholder='{"fighters": {...}, "weights": {...}, "matchups": [...]}'></textarea>
+          <div style="margin-top:8px"><button class="btn" id="import-btn" type="button">Merge in</button></div></div>
+      </section></div>`;
+  }
+
+  // ----------------------------------------------------------------- events
+  function parseInput(at, raw) {
+    const v = parseFloat(String(raw).replace(/[,%]/g, ""));
+    if (!isFinite(v)) return null;
+    return at.kind === "pct" ? v / 100 : v;
+  }
+  function setFighterAdj(name, mutate) {
+    const cur = JSON.parse(JSON.stringify(state.adj.fighters[name] || { elo: 0, overrides: {}, note: "" }));
+    mutate(cur);
+    const empty = !cur.elo && !cur.note && !Object.keys(cur.overrides).length;
+    if (empty) { delete state.adj.fighters[name]; state.store.deleteFighter(name); }
+    else { state.adj.fighters[name] = cur; later("fighters/" + slug(name), () => state.store.saveFighter(name, state.adj.fighters[name] || cur).then(() => setStatus("Saved"))); }
+  }
+  function saveRead(value, note) {
+    const { a, b } = state.m;
+    const md = matchupDoc(a, b);
+    const logit = md.flip ? -value : value;
+    const doc = md.doc ? Object.assign({}, md.doc, { logit, note }) : { a, b, logit, note };
+    if (!doc.logit && !doc.note) { delete state.adj.matchups[md.id]; state.store.deleteMatchup(md.id); return; }
+    state.adj.matchups[md.id] = doc;
+    later("matchups/" + md.id, () => state.store.saveMatchup(md.id, doc).then(() => setStatus("Saved")));
+  }
+
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("button, tr[data-pick], tr[data-open]");
+    if (!t) return;
+    if (t.dataset.tab) { state.tab = t.dataset.tab; ls.set(LOCAL_KEY + ":tab", state.tab); render(); return; }
+    if (t.dataset.rounds) { state.m.rounds = +t.dataset.rounds; render(); return; }
+    if (t.id === "swap") { Object.assign(state.m, { a: state.m.b, b: state.m.a, oddsA: state.m.oddsB, oddsB: state.m.oddsA }); render(); return; }
+    if (t.id === "to-card") {
+      const { a, b, rounds, oddsA, oddsB } = state.m;
+      const id = matchupKey(a, b);
+      if (state.card.some((c) => c.id === id)) { setStatus("Already on the card"); return; }
+      const item = { id, a, b, rounds, oddsA, oddsB, order: Date.now() };
+      state.card = state.card.concat(item); state.store.saveCard(item); render(); setStatus("Added to the fight card"); return;
+    }
+    if (t.dataset.reset) { const n = t.dataset.reset, k = t.dataset.key; setFighterAdj(n, (c) => { delete c.overrides[k]; }); render(); return; }
+    if (t.dataset.clearFighter) { const n = t.dataset.clearFighter; delete state.adj.fighters[n]; state.store.deleteFighter(n); render(); return; }
+    if (t.dataset.removeMatchup) { const id = t.dataset.removeMatchup; delete state.adj.matchups[id]; state.store.deleteMatchup(id); render(); return; }
+    if (t.dataset.removeCard) { e.stopPropagation(); const id = t.dataset.removeCard; state.card = state.card.filter((c) => c.id !== id); state.store.deleteCard(id); render(); return; }
+    if (t.id === "read-clear") { saveRead(0, ""); render(); return; }
+    if (t.id === "w-reset") { state.adj.weights = {}; state.store.saveWeights({}); render(); return; }
+    if (t.dataset.pick) { state.m.a = t.dataset.pick; if (state.m.b === state.m.a) state.m.b = null; state.tab = "matchup"; render(); return; }
+    if (t.dataset.open) { const c = state.card.find((x) => x.id === t.dataset.open); if (c) { Object.assign(state.m, { a: c.a, b: c.b, rounds: c.rounds || 3, oddsA: c.oddsA || "", oddsB: c.oddsB || "" }); state.tab = "matchup"; render(); } return; }
+    if (t.id === "copy-json") {
+      const txt = $("#json").textContent;
+      Promise.resolve().then(() => navigator.clipboard.writeText(txt)).then(() => setStatus("Copied"), () => {
+        const r = document.createRange(); r.selectNodeContents($("#json")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); setStatus("Selected. Press Ctrl/Cmd+C to copy.");
+      });
+      return;
+    }
+    if (t.id === "import-btn") {
+      let obj; try { obj = JSON.parse($("#import-json").value); } catch (err) { setStatus("That isn't valid JSON. Check for a missing brace or quote."); return; }
+      for (const [n, v] of Object.entries(obj.fighters || {})) { state.adj.fighters[n] = { elo: +v.elo || 0, overrides: v.overrides || {}, note: v.note || "" }; state.store.saveFighter(n, state.adj.fighters[n]); }
+      for (const v of obj.matchups || []) { const id = matchupKey(v.a, v.b); state.adj.matchups[id] = { a: v.a, b: v.b, logit: +v.logit || 0, note: v.note || "" }; state.store.saveMatchup(id, state.adj.matchups[id]); }
+      if (obj.weights) { Object.assign(state.adj.weights, obj.weights); state.store.saveWeights(state.adj.weights); }
+      render(); setStatus("Merged"); return;
+    }
+  });
+
+  document.addEventListener("change", (e) => {
+    const t = e.target;
+    if (t.id === "in-a" || t.id === "in-b") {
+      const v = t.value.trim();
+      const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === v.toLowerCase()) || v);
+      state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
+    }
+    if (t.dataset.attr) {
+      const at = ATTRS.find((x) => x.k === t.dataset.attr), n = t.dataset.fighter;
+      const v = parseInput(at, t.value);
+      const base = state.byName.get(n)[at.k];
+      setFighterAdj(n, (c) => {
+        if (v === null || (base != null && Math.abs(v - base) < 1e-6)) delete c.overrides[at.k];
+        else c.overrides[at.k] = at.kind === "int" ? Math.round(v) : v;
+      });
+      render(); return;
+    }
+    if (t.type === "range") { render(); return; }
+    if (t.dataset.elo) { const n = t.dataset.elo, v = parseFloat(t.value) || 0; setFighterAdj(n, (c) => { c.elo = v; }); render(); return; }
+    if (t.id === "roster-sort") { state.roster.sort = t.value; render(); return; }
+    if (t.id === "odds-a" || t.id === "odds-b") { state.m[t.id === "odds-a" ? "oddsA" : "oddsB"] = t.value.trim(); render(); return; }
+  });
+
+  document.addEventListener("input", (e) => {
+    const t = e.target;
+    if (t.id === "read") {
+      const v = -parseFloat(t.value);
+      saveRead(v, ($("#read-note") || {}).value || "");
+      const lab = t.parentElement.querySelector(".readscale span:nth-child(2)");
+      if (lab) lab.textContent = v ? `${v > 0 ? "+" : ""}${v.toFixed(2)} log-odds` : "No change";
+      return;
+    }
+    if (t.id === "read-note") { const md = matchupDoc(state.m.a, state.m.b); const v = md.doc ? (md.flip ? -md.doc.logit : md.doc.logit) : 0; saveRead(v, t.value); return; }
+    if (t.dataset.note !== undefined && t.dataset.note) { const n = t.dataset.note, val = t.value; setFighterAdj(n, (c) => { c.note = val; }); return; }
+    if (t.dataset.weight) {
+      const k = t.dataset.weight, v = parseFloat(t.value);
+      if (Math.abs(v - state.data.weights[k]) < 0.005) delete state.adj.weights[k]; else state.adj.weights[k] = v;
+      later("settings/weights", () => state.store.saveWeights(state.adj.weights).then(() => setStatus("Saved")));
+      const lab = t.parentElement.querySelector(".wv");
+      if (lab) lab.textContent = v.toFixed(2);
+      t.parentElement.classList.toggle("edited", k in state.adj.weights);
+      return;
+    }
+    if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
+  });
+
+  // ------------------------------------------------------------------- boot
+  async function boot() {
+    let data;
+    try {
+      const res = await fetch("data.json");
+      if (!res.ok) throw new Error(res.status);
+      data = await res.json();
+    } catch (err) {
+      $("#view").innerHTML = `<div class="empty">Couldn't load <code>data.json</code>. Run <code>python -m mma_predictor export</code> to build it, then reload.</div>`;
+      $("#meta").textContent = "";
+      return;
+    }
+    state.data = data;
+    state.engine = MMAEngine.makeEngine(data);
+    data.fighters.forEach((f) => state.byName.set(f.name, f));
+    $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">`).join("");
+    const m = data.meta;
+    $("#meta").textContent = `${m.fighters_exported.toLocaleString()} fighters · ${m.bouts.toLocaleString()} bouts through ${m.last_fight}`;
+    state.tab = ls.get(LOCAL_KEY + ":tab") || "matchup";
+    state.m.a = data.fighters[0] && data.fighters[0].name;
+    state.m.b = data.fighters[1] && data.fighters[1].name;
+    state.store = localStore();
+    render();
+
+    const db = window.claude && typeof window.claude.use === "function" ? await window.claude.use("db").catch(() => null) : null;
+    if (db) {
+      state.store = dbStore(db); state.storeKind = "db";
+      // The database is the source of truth once it answers.
+      state.adj = { fighters: {}, matchups: {}, weights: {} };
+      render();
+    }
+  }
+  boot();
+})();
+</script>

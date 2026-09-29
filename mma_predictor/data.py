@@ -90,10 +90,13 @@ def parse_clock(raw: str) -> int:
     raw = (raw or "").strip()
     if not raw:
         return ROUND_SECONDS
-    if ":" in raw:
-        m, s = raw.split(":", 1)
-        return int(m) * 60 + int(s)
-    return int(float(raw))
+    try:
+        if ":" in raw:
+            m, s = raw.split(":", 1)
+            return int(m) * 60 + int(s)
+        return int(float(raw))
+    except ValueError:
+        return ROUND_SECONDS // 2  # unknown ("N/A"): assume mid-round
 
 
 def american_to_prob(odds: float) -> float:

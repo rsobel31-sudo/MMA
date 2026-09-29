@@ -6,11 +6,12 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Tuple
 
+from .adjustments import Adjustments
 from .data import METHOD_BUCKETS, Fight, Matchup, devig
 from .features import FEATURE_LABELS, BoutContext, matchup_features
 from .history import FightHistory, FighterSnapshot
 from .methods import method_distribution
-from .model import WinModel, ranked_contributions
+from .model import WinModel, ranked_contributions, sigmoid
 from .styles import matchup_insights, scouting_line
 
 
@@ -100,12 +101,16 @@ def _confidence(p: float, a: FighterSnapshot, b: FighterSnapshot) -> str:
 
 
 class FightPredictor:
-    def __init__(self, history: FightHistory, model: Optional[WinModel] = None) -> None:
+    def __init__(self, history: FightHistory, model: Optional[WinModel] = None, adjustments: Optional[Adjustments] = None) -> None:
         self.history = history
-        self.model = model or WinModel()
+        self.adjustments = adjustments or Adjustments()
+        base = model or WinModel()
+        # Your weight overrides sit on top of the trained (or prior) weights.
+        self.model = WinModel({**base.weights, **self.adjustments.weights}, base.trained_on)
 
     def features(self, a: str, b: str, when: date, ctx: BoutContext) -> Tuple[FighterSnapshot, FighterSnapshot, Dict[str, float]]:
-        sa, sb = self.history.snapshot(a, when), self.history.snapshot(b, when)
+        sa = self.adjustments.apply(self.history.snapshot(a, when))
+        sb = self.adjustments.apply(self.history.snapshot(b, when))
         return sa, sb, matchup_features(sa, sb, ctx)
 
     def predict(
@@ -125,19 +130,23 @@ class FightPredictor:
             when = self.history.default_date()
         ctx = BoutContext(scheduled_rounds, title_fight)
         sa, sb, x = self.features(a, b, when, ctx)
-        p = self.model.predict(x)
+        manual = self.adjustments.matchup_logit(a, b)
+        p = sigmoid(self.model.logit(x) + manual)
         dist_a = method_distribution(sa, sb, scheduled_rounds)
         dist_b = method_distribution(sb, sa, scheduled_rounds)
         methods = {(a, m): p * dist_a[m] for m in METHOD_BUCKETS}
         methods.update({(b, m): (1 - p) * dist_b[m] for m in METHOD_BUCKETS})
+        factors = ranked_contributions(self.model, x)
+        if manual:
+            factors = sorted(factors + [("manual", manual)], key=lambda kv: -abs(kv[1]))
         market = devig(odds_a, odds_b)[0] if odds_a is not None and odds_b is not None else None
         return Prediction(
             fighter_a=a,
             fighter_b=b,
             prob_a=p,
             methods=methods,
-            factors=ranked_contributions(self.model, x),
-            insights=matchup_insights(sa, sb, ctx),
+            factors=factors,
+            insights=self.adjustments.notes_for(a, b) + matchup_insights(sa, sb, ctx),
             profiles=(scouting_line(sa), scouting_line(sb)),
             confidence=_confidence(p, sa, sb),
             market_a=market,

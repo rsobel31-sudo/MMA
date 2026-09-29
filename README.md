@@ -62,6 +62,28 @@ keeps it sensible; as data grows, the data takes over.
 - Matchup pattern notes (wrestling path, power vs compromised chin, 5-round cardio gap, age cliff, ring rust, reach, southpaw vs orthodox, momentum, level of competition)
 - With moneylines: no-vig market probability and the model's edge
 
+## Web interface: MMA Fight Lab
+
+`app/` is a single page for working with the data and applying what you know:
+
+- **Matchup:** pick red and blue corners, 3 or 5 rounds, optional moneylines. You get win probability, method of victory, the factors driving the pick and matchup patterns.
+- **Tale of the tape:** every attribute is editable. Type over a number (takedown defence, strikes absorbed, KO-loss rate, age, reach…) and the prediction updates instantly. Edited values turn amber and can be reset one at a time. You can also nudge a fighter's Elo and keep a scouting note.
+- **Your read on this fight:** a slider that shifts the odds toward either corner for things the numbers can't see (weight cut, injury, short notice), with a note.
+- **Model weights:** change how much each factor counts.
+- **Fight card, Fighters, My adjustments:** track a card, browse the roster, review and export everything you've changed.
+
+```bash
+python -m mma_predictor export --data data/sherdog --events UFC   # builds app/data.json
+python -m mma_predictor serve                                      # http://127.0.0.1:8765
+```
+
+The page runs the same model as the Python code; `app/engine.js` is a port, and
+`tests/test_engine_parity.py` keeps the two in agreement. Adjustments are saved
+in the page's database when it's published as a claude.ai artifact, or in the
+browser when served locally. Copy them from **My adjustments** into
+`data/adjustments.json` and pass `--adjustments data/adjustments.json` to
+`predict` or `card` to apply them in the Python tools too.
+
 ## Commands
 
 ```bash
@@ -71,7 +93,9 @@ python -m mma_predictor profile  "Fighter"
 python -m mma_predictor rankings --top 25
 python -m mma_predictor train    --out models/model.json
 python -m mma_predictor backtest
+python -m mma_predictor import   sherdog  --ufc-events 60 --depth 0 --out data/sherdog   # every fighter from the last 60 UFC events
 python -m mma_predictor import   sherdog  Israel-Adesanya-56374 --out data/sherdog --depth 1
+python -m mma_predictor import   ufcstats --out data/ufcstats [--ufc-events N]              # per-bout strike/takedown stats
 python -m mma_predictor import   tapology israel-adesanya       --out data/tapology --depth 1
 python -m mma_predictor merge    data/ufcstats data/sherdog data/tapology --out data/merged
 ```
@@ -139,7 +163,10 @@ mma_predictor/
   styles.py      style tags and matchup pattern notes
   predictor.py   high-level API + Prediction report
   backtest.py    walk-forward evaluation vs Elo and market baselines
-  sources/       Sherdog & Tapology importers, dataset merge
+  adjustments.py your manual edits, applied on top of the data
+  export.py      snapshot export for the web interface
+  sources/       Sherdog, Tapology & UFCStats importers, dataset merge
+app/             MMA Fight Lab web interface (index.html, engine.js, data.json)
 scripts/generate_sample_data.py   synthetic demo data
 ```
 

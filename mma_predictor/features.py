@@ -62,6 +62,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "cardio": "cardio / late-round performance",
     "schedule_strength": "strength of schedule",
     "stance": "stance matchup",
+    "manual": "your matchup read",
 }
 
 

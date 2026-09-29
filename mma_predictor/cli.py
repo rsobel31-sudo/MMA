@@ -17,6 +17,7 @@ import sys
 from pathlib import Path
 from typing import List, Optional
 
+from .adjustments import Adjustments
 from .backtest import walk_forward
 from .data import load_card, load_dataset
 from .history import FightHistory
@@ -38,7 +39,8 @@ def _predictor(args, history: FightHistory) -> FightPredictor:
         model = WinModel()
         X, y, _ = build_training_set(history)
         model.fit(X, y)
-    return FightPredictor(history, model)
+    adjustments = Adjustments.load(Path(args.adjustments)) if getattr(args, "adjustments", None) else None
+    return FightPredictor(history, model, adjustments)
 
 
 def cmd_predict(args) -> int:
@@ -157,6 +159,62 @@ def cmd_merge(args) -> int:
     return 0
 
 
+def cmd_export(args) -> int:
+    from .export import export, write
+
+    h = _history(args)
+    model = WinModel.load(Path(args.model)) if args.model else None
+    if model is None:
+        model = WinModel()
+        X, y, _ = build_training_set(h)
+        model.fit(X, y)
+    summary = None
+    if not args.no_backtest:
+        res = walk_forward(h, event_prefix=args.events)
+        summary = {
+            "n": res.model.n, "accuracy": res.model.accuracy, "log_loss": res.model.log_loss,
+            "elo_accuracy": res.elo.accuracy, "scope": args.events or "",
+        }
+    data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary, source=args.source or Path(args.data).name)
+    write(data, Path(args.out))
+    print(f"Exported {data['meta']['fighters_exported']} fighters to {args.out}")
+    return 0
+
+
+def cmd_serve(args) -> int:
+    import functools
+    import http.server
+
+    app_dir = Path(args.dir) if args.dir else Path(__file__).resolve().parent.parent / "app"
+
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        # index.html is written without a document skeleton (the artifact
+        # host adds one), so add it here for local viewing.
+        def do_GET(self):
+            if self.path.split("?")[0] in ("/", "/index.html"):
+                body = (
+                    '<!doctype html><html><head><meta charset="utf-8">'
+                    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+                    "</head><body>" + (app_dir / "index.html").read_text(encoding="utf-8") + "</body></html>"
+                ).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+                return
+            super().do_GET()
+
+    handler = functools.partial(Handler, directory=str(app_dir))
+    with http.server.ThreadingHTTPServer(("127.0.0.1", args.port), handler) as srv:
+        print(f"MMA Fight Lab at http://127.0.0.1:{args.port}  (Ctrl+C to stop)")
+        try:
+            srv.serve_forever()
+        except KeyboardInterrupt:
+            pass
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(prog="mma-predict", description="Evaluate MMA matchups and predict outcomes.")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -167,6 +225,7 @@ def build_parser() -> argparse.ArgumentParser:
     def model_args(p):
         p.add_argument("--model", help="trained model JSON (default: built-in prior weights)")
         p.add_argument("--fit", action="store_true", help="fit a model on the dataset before predicting")
+        p.add_argument("--adjustments", help="JSON of your manual adjustments (exported from the web interface)")
 
     p = sub.add_parser("predict", help="predict a single matchup")
     data_arg(p)
@@ -222,6 +281,22 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
     p.add_argument("--cache", default=".cache/pages")
     p.set_defaults(func=cmd_import)
+
+    p = sub.add_parser("export", help="build app/data.json for the web interface")
+    data_arg(p)
+    p.add_argument("--model", help="trained model JSON (default: train on the dataset)")
+    p.add_argument("--out", default=str(Path(__file__).resolve().parent.parent / "app" / "data.json"))
+    p.add_argument("--min-fights", type=int, default=2)
+    p.add_argument("--active-years", type=float, default=4.0)
+    p.add_argument("--events", default="", help="backtest scope, e.g. UFC")
+    p.add_argument("--source", default="")
+    p.add_argument("--no-backtest", action="store_true")
+    p.set_defaults(func=cmd_export)
+
+    p = sub.add_parser("serve", help="open the web interface locally")
+    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--dir", help="directory holding index.html, engine.js and data.json (default: app/)")
+    p.set_defaults(func=cmd_serve)
 
     p = sub.add_parser("merge", help="merge datasets (e.g. career records + UFC stats)")
     p.add_argument("dirs", nargs="+")

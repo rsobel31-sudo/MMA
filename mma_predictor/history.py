@@ -100,6 +100,7 @@ class FighterSnapshot:
     layoff_days: Optional[int]
     sos: float  # mean opponent Elo entering the bout
     quality_win_elo: float  # mean opponent Elo in wins
+    stat_minutes: float = 0.0  # minutes of bouts that carried per-corner stats
     recent: List[Appearance] = field(default_factory=list, repr=False)
 
     @property
@@ -288,6 +289,7 @@ class FightHistory:
             layoff_days=(as_of - last).days if last else None,
             sos=sum(opp_elos) / len(opp_elos) if opp_elos else self.elo.config.base,
             quality_win_elo=sum(win_elos) / len(win_elos) if win_elos else self.elo.config.base,
+            stat_minutes=stat_minutes,
             recent=apps[-5:],
         )
 
