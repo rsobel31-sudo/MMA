@@ -226,6 +226,7 @@ def pages_to_rows(pages: List[FighterPage], source: str) -> Tuple[List[Dict[str,
             "weight_class": p.weight_class,
             "nationality": p.nationality,
             "team": p.team,
+            "profile": "1",  # the fighter's own page was fetched: full career on record
             "prior_wins": "0",
             "prior_losses": "0",
             "source": source,
@@ -282,7 +283,7 @@ def infer_scheduled_rounds(b: CareerBout, name: str, opponent: str) -> int:
 
 
 FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "weight_class", "weight_class_source", "gender",
-                  "nationality", "team", "prior_wins", "prior_losses", "source", "url"]
+                  "nationality", "team", "prior_wins", "prior_losses", "source", "url", "profile"]
 
 
 def write_fighters(out_dir: Path, fighters: List[Dict[str, str]]) -> None:

@@ -127,6 +127,9 @@ class FighterBio:
     team: str = ""
     gender: str = ""  # "M" / "F" / "" unknown
     weight_class_source: str = ""  # ufc-roster | sherdog
+    # False when the fighter is only known as someone else's opponent, so their
+    # record in the data is partial (layoff, streak etc. can't be trusted).
+    complete: bool = True
 
     def age_on(self, when: date) -> Optional[float]:
         if self.dob is None:
@@ -227,7 +230,9 @@ def _corner(row: Dict[str, str], prefix: str) -> Optional[CornerStats]:
 def load_fighters(path: Path) -> Dict[str, FighterBio]:
     fighters: Dict[str, FighterBio] = {}
     with open(path, newline="", encoding="utf-8") as fh:
-        for row in csv.DictReader(fh):
+        reader = csv.DictReader(fh)
+        tracks_profiles = "profile" in (reader.fieldnames or [])
+        for row in reader:
             name = row["name"].strip()
             dob = row.get("dob", "").strip()
             fighters[name] = FighterBio(
@@ -243,6 +248,7 @@ def load_fighters(path: Path) -> Dict[str, FighterBio]:
                 team=(row.get("team") or "").strip(),
                 gender=(row.get("gender") or "").strip().upper()[:1],
                 weight_class_source=(row.get("weight_class_source") or "").strip(),
+                complete=(row.get("profile") or "").strip() == "1" if tracks_profiles else True,
             )
     return fighters
 

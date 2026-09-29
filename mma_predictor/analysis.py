@@ -57,6 +57,23 @@ class Pattern:
     label: str
     side_label: str  # who "the side" is
     test: Callable[[FighterSnapshot, FighterSnapshot, Dict[str, float], BoutContext], Side]
+    # Plain-English specifics for one bout: (fighter with the edge, opponent) -> text.
+    detail: Optional[Callable[[FighterSnapshot, FighterSnapshot], str]] = None
+    # Depends on a fighter's full record (layoff, streak, last result...), so it
+    # only fires when both fighters' own pages are in the data.
+    needs_full_record: bool = False
+
+
+def _both_complete(a: FighterSnapshot, b: FighterSnapshot) -> bool:
+    return a.bio.complete and b.bio.complete
+
+
+def _last_fight(s: FighterSnapshot) -> str:
+    return s.all_appearances[-1].fight.date.strftime("%b %Y") if s.all_appearances else "?"
+
+
+def _last_opponent(s: FighterSnapshot) -> str:
+    return s.all_appearances[-1].opponent if s.all_appearances else "?"
 
 
 def _grappler(s: FighterSnapshot) -> bool:
@@ -73,52 +90,83 @@ def _pedigree(s: FighterSnapshot) -> float:
 
 PATTERNS: List[Pattern] = [
     Pattern("rating_gap", "Ranking favourite by 150+", "higher-ranked fighter",
-            lambda a, b, x, c: _sign(a.proven - b.proven, 150)),
+            lambda a, b, x, c: _sign(a.proven - b.proven, 150),
+            lambda w, l: f"{w.name} ranks {w.proven - l.proven:.0f} points above {l.name}"),
     Pattern("close_ratings", "Near-even ratings (within 40)", "fighter the model picks",
-            lambda a, b, x, c: (1 if a.proven >= b.proven else -1) if abs(a.proven - b.proven) < 40 else 0),
+            lambda a, b, x, c: (1 if a.proven >= b.proven else -1) if abs(a.proven - b.proven) < 40 else 0,
+            lambda w, l: f"{w.name} and {l.name} are within {abs(w.proven - l.proven):.0f} rating points"),
     Pattern("wrestling_edge", "Clear wrestling edge", "better wrestler",
-            lambda a, b, x, c: _sign(x["wrestling_rating"], 0.25)),
+            lambda a, b, x, c: _sign(x["wrestling_rating"], 0.25),
+            lambda w, l: f"{w.name} has the clear wrestling edge over {l.name}"),
     Pattern("striking_edge", "Clear striking edge", "better striker",
-            lambda a, b, x, c: _sign(x["striking_rating"], 0.25)),
+            lambda a, b, x, c: _sign(x["striking_rating"], 0.25),
+            lambda w, l: f"{w.name} has the clear striking edge over {l.name}"),
     Pattern("grappling_edge", "Clear grappling edge", "better grappler",
-            lambda a, b, x, c: _sign(x["grappling_rating"], 0.25)),
+            lambda a, b, x, c: _sign(x["grappling_rating"], 0.25),
+            lambda w, l: f"{w.name} has the clear grappling edge over {l.name}"),
     Pattern("grappler_vs_striker", "Grappler vs striker", "grappler",
-            lambda a, b, x, c: _pair(_grappler(a) and _striker(b), _grappler(b) and _striker(a))),
+            lambda a, b, x, c: _pair(_grappler(a) and _striker(b), _grappler(b) and _striker(a)),
+            lambda w, l: f"{w.name} (grappler) vs {l.name} (striker)"),
     Pattern("power_vs_chin", "Power vs a compromised chin", "puncher",
-            lambda a, b, x, c: _sign(x["power_vs_chin"], 0.4)),
+            lambda a, b, x, c: _sign(x["power_vs_chin"], 0.4),
+            lambda w, l: f"{w.name}'s power against {l.name}'s chin ({l.ko_losses} KO/TKO losses on record)"),
     Pattern("off_ko_loss", "Opponent coming off a KO/TKO loss", "fighter whose opponent was just knocked out",
-            lambda a, b, x, c: _pair(_last_was_ko_loss(b), _last_was_ko_loss(a))),
+            lambda a, b, x, c: _pair(_last_was_ko_loss(b), _last_was_ko_loss(a)),
+            lambda w, l: f"{l.name} was knocked out last time ({_last_opponent(l)}, {_last_fight(l)})", True),
     Pattern("age_gap", "Age gap 6+ years, older fighter 34+", "younger fighter",
             lambda a, b, x, c: (_sign((b.age or 0) - (a.age or 0), 6)
-                                if a.age and b.age and max(a.age, b.age) >= 34 else 0)),
+                                if a.age and b.age and max(a.age, b.age) >= 34 else 0),
+            lambda w, l: f"{l.name} is {l.age:.0f}, {l.age - w.age:.0f} years older than {w.name}"),
     Pattern("wear_gap", "Much fresher (wear and tear)", "fresher fighter",
-            lambda a, b, x, c: _sign(wear_index(b) - wear_index(a), 2.0)),
+            lambda a, b, x, c: _sign(wear_index(b) - wear_index(a), 2.0),
+            lambda w, l: f"{l.name} carries far more wear ({wear_index(l):.1f} vs {wear_index(w):.1f})", True),
     Pattern("layoff", "Opponent out 18+ months", "active fighter",
             lambda a, b, x, c: _pair((b.layoff_days or 0) >= 540 and (a.layoff_days or 0) <= 365,
-                                     (a.layoff_days or 0) >= 540 and (b.layoff_days or 0) <= 365)),
+                                     (a.layoff_days or 0) >= 540 and (b.layoff_days or 0) <= 365),
+            lambda w, l: f"{l.name} has been out {(l.layoff_days or 0) // 30} months (last fight {_last_fight(l)}); {w.name} fought {_last_fight(w)}", True),
     Pattern("streak_vs_skid", "Win streak 3+ vs losing record lately", "fighter on the streak",
-            lambda a, b, x, c: _pair(a.streak >= 3 and b.streak <= 0, b.streak >= 3 and a.streak <= 0)),
+            lambda a, b, x, c: _pair(a.streak >= 3 and b.streak <= 0, b.streak >= 3 and a.streak <= 0),
+            lambda w, l: f"{w.name} has won {w.streak} straight; {l.name} " + (f"has lost {-l.streak} straight" if l.streak < 0 else "lost last time"), True),
     Pattern("ufc_newcomer", "UFC veteran vs newcomer", "UFC veteran (5+ UFC bouts)",
-            lambda a, b, x, c: _pair(_ufc_bouts(a) >= 5 and _ufc_bouts(b) <= 1, _ufc_bouts(b) >= 5 and _ufc_bouts(a) <= 1)),
+            lambda a, b, x, c: _pair(_ufc_bouts(a) >= 5 and _ufc_bouts(b) <= 1, _ufc_bouts(b) >= 5 and _ufc_bouts(a) <= 1),
+            lambda w, l: f"{w.name} has {_ufc_bouts(w)} UFC bouts; {l.name} has {_ufc_bouts(l)}", True),
     Pattern("reach", "Reach advantage 10 cm+", "longer fighter",
-            lambda a, b, x, c: (_sign(a.bio.reach_cm - b.bio.reach_cm, 10) if a.bio.reach_cm and b.bio.reach_cm else 0)),
+            lambda a, b, x, c: (_sign(a.bio.reach_cm - b.bio.reach_cm, 10) if a.bio.reach_cm and b.bio.reach_cm else 0),
+            lambda w, l: f"{w.name} has {w.bio.reach_cm - l.bio.reach_cm:.0f} cm more reach than {l.name}"),
     Pattern("southpaw", "Southpaw vs orthodox", "southpaw",
-            lambda a, b, x, c: _sign(x["stance"], 1)),
+            lambda a, b, x, c: _sign(x["stance"], 1),
+            lambda w, l: f"{w.name} is a southpaw facing orthodox {l.name}"),
     Pattern("cardio_5r", "Five rounds with a cardio edge", "better late-round fighter",
-            lambda a, b, x, c: _sign(x["cardio"], 0.4) if c.scheduled_rounds >= 5 else 0),
+            lambda a, b, x, c: _sign(x["cardio"], 0.4) if c.scheduled_rounds >= 5 else 0,
+            lambda w, l: f"Five rounds: {w.name} wins {w.late_win_rate:.0%} of fights that go past round 2, {l.name} {l.late_win_rate:.0%}"),
     Pattern("pedigree", "Elite pedigree vs none", "fighter with the pedigree",
-            lambda a, b, x, c: _pair(_pedigree(a) >= 60 and _pedigree(b) < 10, _pedigree(b) >= 60 and _pedigree(a) < 10)),
+            lambda a, b, x, c: _pair(_pedigree(a) >= 60 and _pedigree(b) < 10, _pedigree(b) >= 60 and _pedigree(a) < 10),
+            lambda w, l: f"{w.name} has an elite pre-MMA pedigree; {l.name} has none on record"),
 ]
 PATTERN_BY_KEY = {p.key: p for p in PATTERNS}
 
 
 def match_patterns(a: FighterSnapshot, b: FighterSnapshot, x: Dict[str, float], ctx: BoutContext) -> List[Tuple[str, Side]]:
     out = []
+    complete = _both_complete(a, b)
     for p in PATTERNS:
+        if p.needs_full_record and not complete:
+            continue
         side = p.test(a, b, x, ctx)
         if side:
             out.append((p.key, side))
     return out
+
+
+def describe(key: str, side: Side, a: FighterSnapshot, b: FighterSnapshot) -> str:
+    pat = PATTERN_BY_KEY[key]
+    w, l = (a, b) if side > 0 else (b, a)
+    if pat.detail is None:
+        return f"{w.name}: {pat.label.lower()}"
+    try:
+        return pat.detail(w, l)
+    except (TypeError, ValueError):
+        return f"{w.name}: {pat.label.lower()}"
 
 
 # ----------------------------------------------------------------- statistics
@@ -276,9 +324,9 @@ def insights(history: FightHistory, predictions, X_all, y_all) -> Dict[str, obje
     }
 
 
-def upcoming_flags(history: FightHistory, a: str, b: str, rounds: int, when=None) -> List[Tuple[str, Side]]:
+def upcoming_flags(history: FightHistory, a: str, b: str, rounds: int, when=None) -> List[Tuple[str, Side, str]]:
     from .features import matchup_features
 
     sa, sb = history.snapshot(a, when), history.snapshot(b, when)
     ctx = BoutContext(rounds)
-    return match_patterns(sa, sb, matchup_features(sa, sb, ctx), ctx)
+    return [(k, s, describe(k, s, sa, sb)) for k, s in match_patterns(sa, sb, matchup_features(sa, sb, ctx), ctx)]

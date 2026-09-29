@@ -117,7 +117,8 @@ def export(
         row.update(weight_class=wc, weight_class_inferred=inferred, gender=s.bio.gender,
                    division=division_label(wc, s.bio.gender),
                    weight_class_source="inferred" if inferred else (s.bio.weight_class_source or ("sherdog" if wc else "")),
-                   nationality=s.bio.nationality, team=s.bio.team, height_cm=s.bio.height_cm)
+                   nationality=s.bio.nationality, team=s.bio.team, height_cm=s.bio.height_cm,
+                   complete=s.bio.complete)
         bg = history.scouting.backgrounds.get(name)
         if bg:
             row["background"] = {"summary": bg.summary, "credentials": [dataclasses.asdict(c) for c in bg.credentials]}
@@ -157,8 +158,8 @@ def export(
             row = dict(b, a_id=a_id, b_id=b_id)
             if a_id and b_id:
                 # Which historical matchup patterns this bout fits ("a"/"b" = who has the edge).
-                row["patterns"] = [{"key": k, "side": "a" if s > 0 else "b"}
-                                   for k, s in upcoming_flags(history, a_id, b_id, int(b.get("rounds") or 3), as_of)]
+                row["patterns"] = [{"key": k, "side": "a" if s > 0 else "b", "detail": d}
+                                   for k, s, d in upcoming_flags(history, a_id, b_id, int(b.get("rounds") or 3), as_of)]
             bouts.append(row)
         cards.append(dict(e, bouts=bouts))
     return {

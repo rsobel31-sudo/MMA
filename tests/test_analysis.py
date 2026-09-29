@@ -70,3 +70,19 @@ def test_prediction_log_freezes_first_pick_and_grades(tmp_path):
     assert entry["first"]["p_a"] == 0.7  # the pre-fight pick is kept
     assert entry["result"]["correct"] is False and log["scorecard"]["graded"] == 1
     assert json.loads(log_path.read_text())["scorecard"]["accuracy"] == 0.0
+
+
+def test_record_patterns_need_full_records():
+    from mma_predictor.analysis import describe
+
+    fights = [Fight(date(2020, 1, 1), "Old", "X", "Old", Method.DEC, 3, 300),
+              Fight(date(2024, 1, 1), "Busy", "Y", "Busy", Method.DEC, 3, 300)]
+    full = FightHistory({"Old": FighterBio("Old"), "Busy": FighterBio("Busy")}, fights)
+    when = date(2024, 6, 1)
+    a, b = full.snapshot("Busy", when), full.snapshot("Old", when)
+    flags = dict(match_patterns(a, b, matchup_features(a, b), BoutContext()))
+    assert flags.get("layoff") == 1
+    assert "Old has been out" in describe("layoff", 1, a, b)
+    partial = FightHistory({"Old": FighterBio("Old", complete=False), "Busy": FighterBio("Busy")}, fights)
+    a, b = partial.snapshot("Busy", when), partial.snapshot("Old", when)
+    assert "layoff" not in dict(match_patterns(a, b, matchup_features(a, b), BoutContext()))

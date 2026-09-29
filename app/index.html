@@ -194,6 +194,7 @@ table.bouts td { vertical-align: middle; }
 .tier-toss { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
 tr.hl-best td { background: color-mix(in srgb, var(--good) 7%, transparent); }
 tr.hl-watch td { background: color-mix(in srgb, var(--edit) 7%, transparent); }
+.partial { font-size: 12px; color: var(--edit); margin-top: 3px; }
 ul.hltags { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 2px; font-size: 12px; }
 ul.hltags li::before { content: "● "; }
 ul.hltags .k-sure::before, ul.hltags .k-backed::before { color: var(--good); }
@@ -832,13 +833,16 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       const st = patternStat(pt.key);
       if (!st || st.n < 50) continue;
       const overrates = /overrate/.test(st.verdict), underrates = /underrate/.test(st.verdict);
+      const fact = pt.detail || st.label;
+      const record = `fighters with this edge won ${pct(st.win_rate, 0)} of ${st.n} past UFC bouts`;
       if (pt.side === pickSide) {
-        if (overrates) { caution++; tags.push({ kind: "caution", text: `${st.label}: the model has overrated this side (won ${pct(st.win_rate, 0)} vs ${pct(st.expected, 0)} expected)`, key: st.key }); }
-        else if (st.win_rate >= 0.65) { backed++; tags.push({ kind: "backed", text: `${st.label}: that side won ${pct(st.win_rate, 0)} of ${st.n}`, key: st.key }); }
-        else tags.push({ kind: "info", text: `${st.label} (that side won ${pct(st.win_rate, 0)} of ${st.n})`, key: st.key });
+        if (overrates) { caution++; tags.push({ kind: "caution", text: `${fact}. Caution: the model has overrated this edge (${record}, vs ${pct(st.expected, 0)} expected)`, key: st.key }); }
+        else if (st.win_rate >= 0.65) { backed++; tags.push({ kind: "backed", text: `${fact}. Supports the pick: ${record}`, key: st.key }); }
+        else tags.push({ kind: "info", text: `${fact} (${record})`, key: st.key });
       } else {
-        if (underrates || (st.win_rate >= 0.65 && pp < 0.62)) { upset++; tags.push({ kind: "upset", text: `Underdog has ${st.label.toLowerCase()}: that side won ${pct(st.win_rate, 0)} of ${st.n}${underrates ? ", more than the model expected" : ""}`, key: st.key }); }
-        else tags.push({ kind: "info", text: `Underdog: ${st.label.toLowerCase()} (won ${pct(st.win_rate, 0)} of ${st.n})`, key: st.key });
+        const dog = pickSide === "a" ? bt.b_id : bt.a_id;
+        if (underrates || (st.win_rate >= 0.65 && pp < 0.62)) { upset++; tags.push({ kind: "upset", text: `${fact}. Edge to the underdog, ${dog}: ${record}${underrates ? ", more than the model expected" : ""}`, key: st.key }); }
+        else tags.push({ kind: "info", text: `${fact} (edge to ${dog}; ${record})`, key: st.key });
       }
     }
     if (pp < 0.56) tags.push({ kind: "toss", text: "Toss-up: picks this close have won about half the time" });
@@ -868,8 +872,10 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const fa = fighter(a), fb = fighter(b);
     const hl = highlightsFor(bt, r);
     if (state.upOnlyHighlights && !hl.tier) return "";
+    const partial = [fa, fb].filter((f) => f.complete === false).map((f) => f.name);
     return `<tr class="${hl.tier ? "hl hl-" + hl.tier : ""}"><td class="muted">${esc(bt.weight_class)} ${tags}${hl.tier ? `<div><span class="tier tier-${hl.tier}">${TIER_LABEL[hl.tier]}</span></div>` : ""}</td>
       <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}
+        ${partial.length ? `<div class="partial">Partial record for ${esc(partial.join(" and "))}: only fights against fighters already in the data are known, so layoff, streak and last-fight patterns are off.</div>` : ""}
         ${hl.tags.length ? `<ul class="hltags">${hl.tags.map((t) => `<li class="k-${t.kind}">${esc(t.text)}</li>`).join("")}</ul>` : ""}</td>
       <td><span class="mini num" title="${esc(a)} ${pct(p)} / ${esc(b)} ${pct(1 - p)}"><i style="width:${(p * 100).toFixed(1)}%"></i></span></td>
       <td><strong>${esc(pick)}</strong> <span class="num">${pct(Math.max(p, 1 - p), 0)}</span><div class="muted" style="font-size:12px">${confidence(p, fa, fb)}</div></td>
