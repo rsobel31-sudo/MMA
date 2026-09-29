@@ -79,7 +79,9 @@ def walk_forward(
     min_prior_fights: int = 1,
     l2: float = 25.0,
     iterations: int = 300,
+    event_prefix: str = "",
 ) -> BacktestResult:
+    """Train on everything before each block; score bouts whose event starts with ``event_prefix``."""
     X, y, fights = build_training_set(history, min_prior_fights=min_prior_fights)
     if len(X) < 20:
         raise ValueError(f"only {len(X)} usable bouts; need more data to backtest")
@@ -90,6 +92,8 @@ def walk_forward(
     since_train = retrain_every
     for i in range(start, len(X)):
         f = fights[i]
+        if event_prefix and not f.event.lower().startswith(event_prefix.lower()):
+            continue
         if since_train >= retrain_every:
             # Train only on bouts before this date (same-day bouts excluded).
             cutoff = next(j for j in range(i + 1) if j == i or fights[j].date >= f.date)

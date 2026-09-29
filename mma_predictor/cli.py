@@ -120,17 +120,28 @@ def cmd_train(args) -> int:
 
 def cmd_backtest(args) -> int:
     h = _history(args)
-    res = walk_forward(h, train_fraction=args.train_fraction, retrain_every=args.retrain_every, min_prior_fights=args.min_fights)
+    res = walk_forward(h, train_fraction=args.train_fraction, retrain_every=args.retrain_every, min_prior_fights=args.min_fights, event_prefix=args.events)
     print(res.report())
     return 0
 
 
 def cmd_import(args) -> int:
-    from .sources import common, sherdog, tapology
+    from .sources import common, sherdog, tapology, ufcstats
 
-    mod = sherdog if args.source == "sherdog" else tapology
     fetcher = common.Fetcher(Path(args.cache), delay=args.delay)
+    if args.source == "ufcstats":
+        fighters, fights = ufcstats.crawl(fetcher, events=args.ufc_events or None)
+        common.write_dataset(Path(args.out), fighters, fights)
+        print(f"Wrote {len(fighters)} fighters and {len(fights)} bouts to {args.out}")
+        return 0
+    mod = sherdog if args.source == "sherdog" else tapology
     seeds = [mod.fighter_url(s) for s in args.seeds]
+    if args.ufc_events:
+        if args.source != "sherdog":
+            raise ValueError("--ufc-events is only supported for sherdog")
+        seeds += sherdog.recent_event_fighters(fetcher, args.ufc_events)
+    if not seeds:
+        raise ValueError("give seed fighters and/or --ufc-events")
     pages = common.crawl(seeds, fetcher, mod.parse_fighter, depth=args.depth, max_fighters=args.max_fighters)
     fighters, fights = common.pages_to_rows(pages, args.source)
     common.write_dataset(Path(args.out), fighters, fights)
@@ -198,14 +209,16 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--train-fraction", type=float, default=0.4)
     p.add_argument("--retrain-every", type=int, default=100)
     p.add_argument("--min-fights", type=int, default=1)
+    p.add_argument("--events", default="", help="only score bouts whose event name starts with this (e.g. UFC)")
     p.set_defaults(func=cmd_backtest)
 
-    p = sub.add_parser("import", help="crawl fighter records from Sherdog or Tapology")
-    p.add_argument("source", choices=["sherdog", "tapology"])
-    p.add_argument("seeds", nargs="+", help="fighter URLs or slugs (e.g. Israel-Adesanya-56374 / israel-adesanya)")
+    p = sub.add_parser("import", help="crawl fighter records from Sherdog, Tapology or UFCStats")
+    p.add_argument("source", choices=["sherdog", "tapology", "ufcstats"])
+    p.add_argument("seeds", nargs="*", help="fighter URLs or slugs (e.g. Israel-Adesanya-56374 / israel-adesanya)")
+    p.add_argument("--ufc-events", type=int, default=0, help="sherdog: also seed with every fighter on the N most recent UFC events; ufcstats: import the N most recent events (default all)")
     p.add_argument("--out", required=True)
     p.add_argument("--depth", type=int, default=1, help="how many opponent hops to follow")
-    p.add_argument("--max-fighters", type=int, default=500)
+    p.add_argument("--max-fighters", type=int, default=2000)
     p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
     p.add_argument("--cache", default=".cache/pages")
     p.set_defaults(func=cmd_import)

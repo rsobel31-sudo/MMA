@@ -241,10 +241,28 @@ def pages_to_rows(pages: List[FighterPage], source: str) -> Tuple[List[Dict[str,
                 "method": method.value,
                 "round": str(b.round),
                 "time": b.time,
-                "scheduled_rounds": str(b.scheduled_rounds or (5 if b.title_fight else 3)),
+                "scheduled_rounds": str(infer_scheduled_rounds(b, p.name, opp)),
                 "title_fight": "1" if b.title_fight else "0",
             }
     return list(fighters.values()), sorted(fights.values(), key=lambda r: r["date"])
+
+
+def infer_scheduled_rounds(b: CareerBout, name: str, opponent: str) -> int:
+    """Record sites rarely state the scheduled length, so infer it.
+
+    Past round 3 means five rounds. Title fights are five. UFC main events
+    (the event is named after both fighters, "X vs. Y") have been five rounds
+    since late 2011.
+    """
+    if b.scheduled_rounds:
+        return b.scheduled_rounds
+    if b.round > 3 or b.title_fight:
+        return 5
+    event = b.event.lower()
+    surnames = [n.split()[-1].lower() for n in (name, opponent) if n.split()]
+    if event.startswith("ufc") and b.date.year >= 2012 and all(s in event for s in surnames):
+        return 5
+    return 3
 
 
 FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "prior_wins", "prior_losses", "source", "url"]

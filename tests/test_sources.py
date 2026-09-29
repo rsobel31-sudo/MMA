@@ -70,3 +70,23 @@ def test_merge_prefers_row_with_stats_and_matches_across_dates(tmp_path):
     assert bios["Alpha"].reach_cm == 190 and bios["Alpha"].dob == date(1990, 1, 1)
     ufc = [f for f in fights if f.fighter_b == "Beta"][0]
     assert ufc.stats_a is not None and ufc.stats_a.sig_landed == 10
+
+
+def test_infer_scheduled_rounds():
+    def bout(event, rnd=3, year=2024):
+        return common.CareerBout(date(year, 1, 1), "Bob Jones", None, "win", Method.DEC, rnd, "5:00", event=event)
+
+    assert common.infer_scheduled_rounds(bout("UFC 300 - Smith vs. Jones"), "Al Smith", "Bob Jones") == 5
+    assert common.infer_scheduled_rounds(bout("UFC 300 - Pereira vs. Hill"), "Al Smith", "Bob Jones") == 3
+    assert common.infer_scheduled_rounds(bout("LFA 1", rnd=4), "Al Smith", "Bob Jones") == 5
+    assert common.infer_scheduled_rounds(bout("UFC 100 - Smith vs. Jones", year=2009), "Al Smith", "Bob Jones") == 3
+
+
+def test_ufcstats_fight_page():
+    from mma_predictor.sources import ufcstats
+
+    row = ufcstats.parse_fight((FIX / "ufcstats_fight.html").read_text())
+    assert (row["fighter_a"], row["fighter_b"], row["winner"]) == ("Testy McTestface", "Other Guy", "Other Guy")
+    assert (row["method"], row["round"], row["time"], row["scheduled_rounds"], row["title_fight"]) == ("KO/TKO", "2", "4:21", "5", "1")
+    assert (row["a_sig_landed"], row["a_sig_attempted"], row["b_knockdowns"]) == ("41", "88", "2")
+    assert (row["b_td_landed"], row["b_td_attempted"], row["a_sub_attempts"], row["b_ctrl_seconds"]) == ("2", "3", "1", "95")

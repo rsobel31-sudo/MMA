@@ -12,9 +12,10 @@ and the fixture in ``tests/fixtures``.
 from __future__ import annotations
 
 import re
+from datetime import date
 from typing import List, Optional
 
-from .common import CareerBout, FighterPage, find_date, length_cm, method_from_text, normalise_result
+from .common import CareerBout, Fetcher, FighterPage, find_date, length_cm, method_from_text, normalise_result
 from .html import Node, parse_html
 
 BASE = "https://www.sherdog.com"
@@ -99,3 +100,38 @@ def _parse_row(tds: List[Node]) -> Optional[CareerBout]:
         method_detail=method_text,
         title_fight="title" in event.lower(),
     )
+
+
+UFC_ORG = BASE + "/organizations/Ultimate-Fighting-Championship-UFC-2"
+
+
+def recent_event_fighters(fetcher: Fetcher, events: int = 40, org_url: str = UFC_ORG, log=print) -> List[str]:
+    """Fighter URLs from an organisation's most recent completed events."""
+    today = date.today()
+    event_urls: List[str] = []
+    page = 1
+    while len(event_urls) < events and page <= 20:
+        url = org_url if page == 1 else f"{org_url}/recent-events/{page}"
+        root = parse_html(fetcher.get(url))
+        found = 0
+        for tr in root.find_all("tr"):
+            link = tr.find("a", pred=lambda a: a.attrs.get("href", "").startswith("/events/"))
+            when = find_date(tr.text()) if link else None
+            if link is None or when is None or when >= today:
+                continue  # upcoming events have no results yet
+            href = BASE + link.attrs["href"]
+            if href not in event_urls:
+                event_urls.append(href)
+                found += 1
+        if not found:
+            break
+        page += 1
+    fighters: List[str] = []
+    for ev in event_urls[:events]:
+        root = parse_html(fetcher.get(ev))
+        for a in root.find_all("a", pred=lambda a: a.attrs.get("href", "").startswith("/fighter/")):
+            href = BASE + a.attrs["href"]
+            if href not in fighters:
+                fighters.append(href)
+        log(f"  event {ev.rsplit('/', 1)[-1]}: {len(fighters)} fighters so far")
+    return fighters
