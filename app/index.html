@@ -134,6 +134,29 @@ table.tape tr.group td span { display: block; font-family: var(--body); font-wei
 table.tape tr.cat td { background: var(--surface-2); font-size: 15px; }
 table.tape tr.cat td.attr { color: var(--ink); }
 .catval .muted { font-size: 12px; font-weight: 400; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 13px; color: var(--muted); }
+.filters label { display: inline-flex; align-items: center; gap: 5px; }
+.filters select, .filters input { font-size: 13.5px; color: var(--ink); }
+.filters input[type="number"] { width: 64px; }
+.filters input[type="search"] { flex: 1 1 200px; }
+.filters .check input { accent-color: var(--ink); }
+button.sorter { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; cursor: pointer; }
+button.sorter:hover { color: var(--ink); }
+.classes { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+.wc { border: 1px solid var(--line); border-radius: 6px; padding: 12px; min-width: 0; }
+.wc-hd { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+.wc-hd h3 { font-size: 18px; text-transform: uppercase; }
+.wc-hd span { font-size: 12px; }
+.wc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13.5px; }
+.wc li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) 32% 3em; gap: 6px; align-items: center; cursor: pointer; }
+.wc li:hover .nm { text-decoration: underline; }
+.wc li .rk { color: var(--muted); text-align: right; }
+.wc li .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wc li .bar { height: 8px; background: var(--surface-2); border-radius: 2px; position: relative; }
+.wc li .bar span { position: absolute; inset: 0 auto 0 0; background: var(--ink); border-radius: 2px; opacity: .7; }
+.wc li .v { text-align: right; }
+details.more-filters > summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+@media (min-width: 821px) { details.more-filters > summary { display: none; } }
 .bg p { margin: 0 0 6px; }
 .bg ul { margin: 0 0 6px; padding-left: 0; list-style: none; display: grid; gap: 4px; font-size: 13.5px; }
 .bg a, .notes a { color: var(--blue); }
@@ -260,7 +283,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null,
     tab: "matchup",
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
-    roster: { q: "", sort: "elo" },
+    roster: { view: "table", sort: "elo", dir: -1, q: "", wc: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
   };
 
@@ -685,23 +708,113 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       <div class="table-wrap"><table class="list"><thead><tr><th>Bout</th><th>Pick</th><th>Win prob</th><th>Most likely</th><th>Edge</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
   }
 
+  const WEIGHT_ORDER = ["Heavyweight", "Light Heavyweight", "Middleweight", "Welterweight", "Lightweight",
+    "Featherweight", "Bantamweight", "Flyweight", "Strawweight", "Atomweight"];
+  const wcRank = (wc) => { const i = WEIGHT_ORDER.indexOf(wc); return i < 0 ? 99 : i; };
+  const disciplines = (f) => (f.background ? f.background.credentials.map((c) => c.discipline) : []);
+  function rankOptions() {
+    const base = [["elo", "Overall"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"]];
+    const subs = Object.values(state.data.rating_categories).flat().map((k) => ["r_" + k, state.data.rating_labels[k]]);
+    return base.concat(subs);
+  }
+  function sortValue(f, key) {
+    if (key === "name") return f.name;
+    if (key === "weight_class") return wcRank(f.weight_class);
+    if (key === "wear") return MMAEngine.wearPenalty(f);
+    if (key === "record") return (f.wins + f.prior_wins) / Math.max(1, f.wins + f.losses + f.prior_wins + f.prior_losses);
+    const v = f[key];
+    return v === null || v === undefined ? -Infinity : v;
+  }
+  function rosterList() {
+    const r = state.roster, q = r.q.toLowerCase();
+    const ageMin = parseFloat(r.ageMin), ageMax = parseFloat(r.ageMax), minF = parseInt(r.minFights, 10) || 0;
+    return state.data.fighters.map((f) => fighter(f.name)).filter((f) =>
+      (!q || f.name.toLowerCase().includes(q) || (f.team || "").toLowerCase().includes(q)) &&
+      (!r.wc || f.weight_class === r.wc) &&
+      (r.inferred || !f.weight_class_inferred) &&
+      (!r.style || state.engine.classify(f).includes(r.style)) &&
+      (!r.stance || (f.stance || "") === r.stance) &&
+      (!r.nat || f.nationality === r.nat) &&
+      (!r.disc || disciplines(f).includes(r.disc)) &&
+      (!isFinite(ageMin) || (f.age != null && f.age >= ageMin)) &&
+      (!isFinite(ageMax) || (f.age != null && f.age <= ageMax)) &&
+      f.fights >= minF);
+  }
   function renderRoster(view) {
-    const q = state.roster.q.toLowerCase();
-    const list = state.data.fighters.map((f) => fighter(f.name))
-      .filter((f) => !q || f.name.toLowerCase().includes(q))
-      .sort((x, y) => state.roster.sort === "name" ? x.name.localeCompare(y.name) : y[state.roster.sort] - x[state.roster.sort])
-      .slice(0, 300);
-    view.innerHTML = `<section class="panel">
-      <div class="toolbar"><input type="search" id="roster-q" placeholder="Search fighters" value="${esc(state.roster.q)}">
-        <label class="label" for="roster-sort">Sort</label>
-        <select id="roster-sort">${[["elo", "Overall"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"], ["name", "Name"], ["streak", "Streak"], ["form", "Form"]].map(([k, l]) => `<option value="${k}" ${state.roster.sort === k ? "selected" : ""}>${l}</option>`).join("")}</select>
-        <span class="muted" style="font-size:13px">Click a fighter to put them in the red corner.</span></div>
-      <div class="table-wrap"><table class="list num"><thead><tr><th>#</th><th>Fighter</th><th>Overall</th><th>Striking</th><th>Wrestling</th><th>Grappling</th><th>Record</th><th>Age</th><th>Streak</th><th>Style</th><th>Last fight</th></tr></thead><tbody>
-      ${list.map((f, i) => `<tr class="clickable" data-pick="${esc(f.name)}"><td>${i + 1}</td><td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}</td>
-        <td><strong>${Math.round(f.elo)}</strong></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td><td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
-        <td>${state.engine.classify(f).join(", ")}</td><td>${f.recent[0] ? esc(f.recent[0].date) : "—"}</td></tr>`).join("")}
+    const r = state.roster, fs = state.data.fighters;
+    const opts = (vals, cur, all) => `<option value="">${all}</option>` + vals.map((v) => `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(v)}</option>`).join("");
+    const uniq = (fn) => [...new Set(fs.map(fn).filter(Boolean))].sort();
+    const classes = uniq((f) => f.weight_class).sort((x, y) => wcRank(x) - wcRank(y));
+    const styles = [...new Set(fs.flatMap((f) => state.engine.classify(f)))].sort();
+    const narrowOpen = ["style", "disc", "stance", "nat", "ageMin", "ageMax"].some((k) => r[k]) || r.minFights !== "1" || !r.inferred;
+    const filters = `<div class="filters">
+      <input type="search" id="roster-q" placeholder="Search fighter or team" value="${esc(r.q)}">
+      <label>Weight class <select data-rfilter="wc">${opts(classes, r.wc, "All")}</select></label>
+      </div><details class="more-filters" ${narrowOpen || window.innerWidth > 820 ? "open" : ""}><summary>More filters</summary><div class="filters" style="margin-top:8px">
+      <label>Style <select data-rfilter="style">${opts(styles, r.style, "Any")}</select></label>
+      <label>Background <select data-rfilter="disc">${opts([...new Set(fs.flatMap(disciplines))].sort(), r.disc, "Any")}</select></label>
+      <label>Stance <select data-rfilter="stance">${opts(uniq((f) => f.stance), r.stance, "Any")}</select></label>
+      <label>Country <select data-rfilter="nat">${opts(uniq((f) => f.nationality), r.nat, "Any")}</select></label>
+      <label>Age <input type="number" data-rfilter="ageMin" value="${esc(r.ageMin)}" placeholder="min" min="16" max="50"> – <input type="number" data-rfilter="ageMax" value="${esc(r.ageMax)}" placeholder="max" min="16" max="50"></label>
+      <label>Min bouts <input type="number" data-rfilter="minFights" value="${esc(r.minFights)}" min="0" max="60"></label>
+      <label class="check"><input type="checkbox" data-rfilter="inferred" ${r.inferred ? "checked" : ""}> Include inferred weight classes</label>
+    </div></details>`;
+    const list = rosterList();
+    const head = `<div class="toolbar">
+      <span class="seg" role="group" aria-label="View">
+        <button type="button" data-roster-view="table" aria-pressed="${r.view === "table"}">Table</button>
+        <button type="button" data-roster-view="classes" aria-pressed="${r.view === "classes"}">By weight class</button>
+      </span>
+      <label class="label" for="roster-rank">Rank by</label>
+      <select id="roster-rank" data-rfilter="sort">${rankOptions().map(([k, l]) => `<option value="${k}" ${r.sort === k ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>
+      <span class="muted num" style="font-size:13px">${list.length} of ${fs.length} fighters · click one to put them in the red corner</span>
+      ${Object.entries(r).some(([k, v]) => k in ROSTER_FILTERS && v !== ROSTER_FILTERS[k]) ? `<button class="btn small" type="button" id="roster-reset">Clear filters</button>` : ""}
+    </div>`;
+    view.innerHTML = `<section class="panel stack">${head}${filters}${r.view === "classes" ? classBreakout(list) : rosterTable(list)}</section>`;
+  }
+  const ROSTER_FILTERS = { q: "", wc: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true };
+  function rosterTable(list) {
+    const r = state.roster;
+    const sorted = list.slice().sort((x, y) => {
+      const a = sortValue(x, r.sort), b = sortValue(y, r.sort);
+      return typeof a === "string" ? a.localeCompare(b) * r.dir : (b - a) * -r.dir;
+    }).slice(0, 400);
+    const th = (key, label) => `<th><button class="sorter" type="button" data-sort="${key}">${label}${r.sort === key ? (r.dir < 0 ? " ▼" : " ▲") : ""}</button></th>`;
+    const extra = r.sort.startsWith("r_") ? th(r.sort, esc(state.data.rating_labels[r.sort.slice(2)])) : "";
+    return `<div class="table-wrap"><table class="list num"><thead><tr><th>#</th>${th("name", "Fighter")}${th("weight_class", "Class")}
+      ${th("elo", "Overall")}${th("striking", "Striking")}${th("wrestling", "Wrestling")}${th("grappling", "Grappling")}${extra}
+      ${th("record", "Record")}${th("age", "Age")}${th("wear", "Wear")}${th("streak", "Streak")}<th>Style</th><th>Country</th></tr></thead><tbody>
+      ${sorted.map((f, i) => `<tr class="clickable" data-pick="${esc(f.name)}"><td>${i + 1}</td>
+        <td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}${f.background && f.background.credentials.length ? ' <span class="pill" title="Researched background">bg</span>' : ""}</td>
+        <td>${esc(f.weight_class || "—")}${f.weight_class_inferred ? '<span class="muted" title="Inferred from opponents">*</span>' : ""}</td>
+        <td><strong>${Math.round(f.elo)}</strong></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td>
+        ${extra ? `<td><strong>${Math.round(f[r.sort])}</strong></td>` : ""}
+        <td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${MMAEngine.wearPenalty(f).toFixed(1)}</td>
+        <td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
+        <td>${state.engine.classify(f).join(", ")}</td><td>${esc(f.nationality || "—")}</td></tr>`).join("")}
       </tbody></table></div>
-      ${list.length === 300 ? '<p class="muted" style="font-size:13px">Showing the first 300. Search to narrow.</p>' : ""}</section>`;
+      ${sorted.length === 400 ? '<p class="muted" style="font-size:13px">Showing the first 400. Filter to narrow.</p>' : ""}
+      <p class="muted" style="font-size:12px;margin:0">* Weight class inferred from recent opponents (fighter page not crawled). Sherdog doesn't separate men's and women's divisions.</p>`;
+  }
+  function classBreakout(list) {
+    const r = state.roster, key = r.sort;
+    const label = (rankOptions().find(([k]) => k === key) || [key, key])[1];
+    const groups = {};
+    for (const f of list) (groups[f.weight_class || "Unknown"] = groups[f.weight_class || "Unknown"] || []).push(f);
+    const order = Object.keys(groups).sort((x, y) => wcRank(x) - wcRank(y));
+    if (!order.length) return `<div class="empty">No fighters match these filters.</div>`;
+    return `<div class="classes">${order.map((wc) => {
+      const g = groups[wc].slice().sort((x, y) => sortValue(y, key) - sortValue(x, key));
+      const avg = g.reduce((t, f) => t + sortValue(f, key), 0) / g.length;
+      const top = g[0] ? sortValue(g[0], key) : 0;
+      return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} fighters · avg ${Math.round(avg)}</span></div>
+        <ol>${g.slice(0, 10).map((f, i) => {
+          const v = sortValue(f, key), w = Math.max(4, 100 - (top - v) / 4);
+          return `<li class="clickable" data-pick="${esc(f.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(f.name)}">${esc(f.name)}${f.weight_class_inferred ? '<span class="muted">*</span>' : ""}</span>
+            <span class="bar"><span style="width:${w.toFixed(1)}%"></span></span><span class="v num">${Math.round(v)}</span></li>`;
+        }).join("")}</ol>
+        ${g.length > 10 ? `<button class="btn link" type="button" data-show-class="${esc(wc)}">All ${g.length} in the table</button>` : ""}</div>`;
+    }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by ${esc(label)}. Bars show the gap to the division leader.</p>`;
   }
 
   function renderModel(view) {
@@ -788,7 +901,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   }
 
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("button, tr[data-pick], tr[data-open]");
+    const t = e.target.closest("button, tr[data-pick], li[data-pick], tr[data-open]");
     if (!t) return;
     if (t.dataset.tab) { state.tab = t.dataset.tab; ls.set(LOCAL_KEY + ":tab", state.tab); render(); return; }
     if (t.dataset.rounds) { state.m.rounds = +t.dataset.rounds; render(); return; }
@@ -819,6 +932,14 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       state.store.saveComment(item); state.judging = null; render(); setStatus("Judgment saved"); return;
     }
     if (t.dataset.delComment) { const id = t.dataset.delComment; state.commentary = state.commentary.filter((x) => x.id !== id); state.store.deleteComment(id); render(); return; }
+    if (t.dataset.rosterView) { state.roster.view = t.dataset.rosterView; render(); return; }
+    if (t.dataset.sort) {
+      const k = t.dataset.sort, r = state.roster;
+      if (r.sort === k) r.dir = -r.dir; else { r.sort = k; r.dir = k === "name" || k === "weight_class" ? 1 : -1; }
+      render(); return;
+    }
+    if (t.dataset.showClass) { Object.assign(state.roster, { view: "table", wc: t.dataset.showClass }); render(); return; }
+    if (t.id === "roster-reset") { Object.assign(state.roster, ROSTER_FILTERS); render(); return; }
     if (t.dataset.pick) { state.m.a = t.dataset.pick; if (state.m.b === state.m.a) state.m.b = null; state.tab = "matchup"; render(); return; }
     if (t.dataset.open) { const c = state.card.find((x) => x.id === t.dataset.open); if (c) { Object.assign(state.m, { a: c.a, b: c.b, rounds: c.rounds || 3, oddsA: c.oddsA || "", oddsB: c.oddsB || "" }); state.tab = "matchup"; render(); } return; }
     if (t.id === "copy-json") {
@@ -856,7 +977,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     if (t.type === "range") { render(); return; }
     if (t.dataset.elo) { const n = t.dataset.elo, v = parseFloat(t.value) || 0; setFighterAdj(n, (c) => { c.elo = v; }); render(); return; }
-    if (t.id === "roster-sort") { state.roster.sort = t.value; render(); return; }
+    if (t.dataset.rfilter) {
+      const k = t.dataset.rfilter;
+      state.roster[k] = t.type === "checkbox" ? t.checked : t.value;
+      if (k === "sort") state.roster.dir = -1;
+      render(); return;
+    }
     if (t.id === "odds-a" || t.id === "odds-b") { state.m[t.id === "odds-a" ? "oddsA" : "oddsB"] = t.value.trim(); render(); return; }
   });
 

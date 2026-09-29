@@ -11,7 +11,8 @@ import dataclasses
 import json
 from datetime import date
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from collections import Counter
+from typing import Any, Dict, List, Optional, Tuple
 
 from .features import FEATURE_LABELS, FEATURES
 from .history import DEFAULT_PRIORS, FightHistory, FighterSnapshot
@@ -64,6 +65,20 @@ def snapshot_json(s: FighterSnapshot) -> Dict[str, Any]:
     return out
 
 
+def infer_weight_class(history: FightHistory, name: str, as_of: date, known: Dict[str, str]) -> Tuple[str, bool]:
+    """A fighter's listed class, or else the most common class among recent opponents."""
+    if name in known:
+        return known[name], False
+    votes: Counter = Counter()
+    apps = history.appearances_before(name, as_of)
+    for i, app in enumerate(reversed(apps[-6:])):
+        if app.opponent in known:
+            votes[known[app.opponent]] += 1.0 / (1 + i)  # recent opponents count more
+    if not votes:
+        return "", False
+    return votes.most_common(1)[0][0], True
+
+
 def export(
     history: FightHistory,
     model: Optional[WinModel] = None,
@@ -75,6 +90,7 @@ def export(
 ) -> Dict[str, Any]:
     model = model or WinModel()
     as_of = as_of or history.default_date()
+    known_wc = {n: b.weight_class for n, b in history.bios.items() if b.weight_class}
     fighters: List[Dict[str, Any]] = []
     for name in history.names():
         s = history.snapshot(name, as_of)
@@ -83,6 +99,9 @@ def export(
         if not researched and (s.fights < min_fights or inactive):
             continue
         row = snapshot_json(s)
+        wc, inferred = infer_weight_class(history, name, as_of, known_wc)
+        row.update(weight_class=wc, weight_class_inferred=inferred,
+                   nationality=s.bio.nationality, team=s.bio.team)
         bg = history.scouting.backgrounds.get(name)
         if bg:
             row["background"] = {"summary": bg.summary, "credentials": [dataclasses.asdict(c) for c in bg.credentials]}

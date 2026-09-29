@@ -39,6 +39,15 @@ def parse_fighter(html: str, url: str) -> FighterPage:
     bd = root.find(pred=lambda n: n.attrs.get("itemprop") == "birthDate")
     if bd:
         page.dob = find_date(bd.attrs.get("content", "") or bd.text())
+    wc = root.find("a", pred=lambda n: "fightfinder?weightclass=" in n.attrs.get("href", ""))
+    if wc:
+        page.weight_class = wc.text()
+    nat = root.find(pred=lambda n: n.attrs.get("itemprop") == "nationality")
+    if nat:
+        page.nationality = nat.text()
+    team = root.find("a", pred=lambda n: "association" in n.classes)
+    if team:
+        page.team = team.text()
     h = root.find(pred=lambda n: n.attrs.get("itemprop") == "height")
     if h:
         # The cm figure usually sits next to the feet/inches figure.

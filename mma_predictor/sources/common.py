@@ -47,6 +47,9 @@ class FighterPage:
     reach_cm: Optional[float] = None
     stance: Optional[str] = None
     nickname: str = ""
+    weight_class: str = ""
+    nationality: str = ""
+    team: str = ""
     bouts: List[CareerBout] = field(default_factory=list)
 
 
@@ -210,6 +213,9 @@ def pages_to_rows(pages: List[FighterPage], source: str) -> Tuple[List[Dict[str,
             "height_cm": f"{p.height_cm:.1f}" if p.height_cm else "",
             "reach_cm": f"{p.reach_cm:.1f}" if p.reach_cm else "",
             "stance": p.stance or "",
+            "weight_class": p.weight_class,
+            "nationality": p.nationality,
+            "team": p.team,
             "prior_wins": "0",
             "prior_losses": "0",
             "source": source,
@@ -265,7 +271,8 @@ def infer_scheduled_rounds(b: CareerBout, name: str, opponent: str) -> int:
     return 3
 
 
-FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "prior_wins", "prior_losses", "source", "url"]
+FIGHTER_HEADER = ["name", "dob", "height_cm", "reach_cm", "stance", "weight_class", "nationality", "team",
+                  "prior_wins", "prior_losses", "source", "url"]
 
 
 def write_dataset(out_dir: Path, fighters: List[Dict[str, str]], fights: List[Dict[str, str]]) -> None:

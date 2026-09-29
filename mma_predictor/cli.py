@@ -109,7 +109,11 @@ def cmd_rankings(args) -> int:
     h = _history(args)
     snaps = [h.snapshot(n) for n in h.names()]
     key = "elo" if args.by == "overall" else args.by
-    rows = sorted((s for s in snaps if s.fights >= args.min_fights), key=lambda s: -getattr(s, key))
+    wc = (args.weight_class or "").lower()
+    rows = sorted(
+        (s for s in snaps if s.fights >= args.min_fights and (not wc or s.bio.weight_class.lower() == wc)),
+        key=lambda s: -getattr(s, key),
+    )
     print(f"{'':>4} {'Fighter':<28} {'Overall':>7} {'Strike':>7} {'Wrestle':>7} {'Grapple':>7} {'Record':>8}")
     for i, s in enumerate(rows[: args.top], 1):
         inactive = " (inactive)" if s.layoff_days and s.layoff_days > 730 else ""
@@ -267,6 +271,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--top", type=int, default=25)
     p.add_argument("--min-fights", type=int, default=3)
     p.add_argument("--by", choices=["overall", "striking", "wrestling", "grappling"], default="overall")
+    p.add_argument("--class", dest="weight_class", help="only this weight class, e.g. Lightweight (listed classes only)")
     p.set_defaults(func=cmd_rankings)
 
     p = sub.add_parser("train", help="fit model weights on the dataset")

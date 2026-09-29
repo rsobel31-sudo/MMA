@@ -122,6 +122,9 @@ class FighterBio:
     # Record accumulated outside the fight table (e.g. regional circuit).
     prior_wins: int = 0
     prior_losses: int = 0
+    weight_class: str = ""
+    nationality: str = ""
+    team: str = ""
 
     def age_on(self, when: date) -> Optional[float]:
         if self.dob is None:
@@ -233,6 +236,9 @@ def load_fighters(path: Path) -> Dict[str, FighterBio]:
                 stance=(row.get("stance") or "").strip().title() or None,
                 prior_wins=_opt_int(row.get("prior_wins")),
                 prior_losses=_opt_int(row.get("prior_losses")),
+                weight_class=(row.get("weight_class") or "").strip(),
+                nationality=(row.get("nationality") or "").strip(),
+                team=(row.get("team") or "").strip(),
             )
     return fighters
 
