@@ -23,6 +23,7 @@ PRIOR_WEIGHTS: Dict[str, float] = {
     "striking_rating": 0.30,
     "wrestling_rating": 0.30,
     "grappling_rating": 0.25,
+    "intangibles_rating": 0.30,
     "striking_exchange": 0.35,
     "striking_defense": 0.10,
     "power_vs_chin": 0.25,

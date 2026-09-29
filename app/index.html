@@ -200,7 +200,7 @@ ul.hltags li::before { content: "● "; }
 ul.hltags .k-sure::before, ul.hltags .k-backed::before { color: var(--good); }
 ul.hltags .k-upset::before, ul.hltags .k-caution::before { color: var(--edit); }
 ul.hltags .k-info::before, ul.hltags .k-toss::before { color: var(--muted); }
-.verdict { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 9px; background: var(--surface-2); white-space: nowrap; }
+span.verdict { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 9px; background: var(--surface-2); white-space: nowrap; }
 .verdict.v-model-underrates, .verdict.v-model-overrates { background: var(--edit-soft); color: var(--edit); font-weight: 600; }
 .verdict.v-leaning-underrated, .verdict.v-leaning-overrated { color: var(--edit); }
 .verdict.v-well-calibrated { color: var(--good); }
@@ -324,7 +324,9 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   const WEIGHT_RANGE = { overall: [0, 2.5] };
   // Sub-rating rows (r_<key>), built from data.json at boot.
   let RATING_ATTRS = {};
-  const attrFor = (k) => ATTRS.find((x) => x.k === k) || Object.values(RATING_ATTRS).find((x) => x.k === k);
+  let INTANG_ATTRS = {};
+  const attrFor = (k) => ATTRS.find((x) => x.k === k) || Object.values(RATING_ATTRS).find((x) => x.k === k)
+    || Object.values(INTANG_ATTRS).find((x) => x.k === k);
 
   const state = {
     data: null, engine: null, byName: new Map(),
@@ -455,7 +457,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   function record(s) { return `${s.wins + s.prior_wins}-${s.losses + s.prior_losses}`; }
   function predict(a, b, rounds, opts = {}) {
     const fa = fighter(a), fb = fighter(b);
-    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b) });
+    const edit = opts.noManual ? 0 : state.engine.intangiblesEditLogit(state.byName.get(a), fa, state.byName.get(b), fb);
+    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b), intangiblesEdit: edit });
   }
   function confidence(p, a, b) {
     const edge = Math.abs(p - 0.5), thin = Math.min(a.fights, b.fights) < 3;
@@ -509,6 +512,10 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     for (const [cat, keys] of Object.entries(cats)) {
       html += row(cat[0].toUpperCase() + cat.slice(1), f[cat], med(cat), true);
       html += keys.map((k) => row(labels[k], f["r_" + k], med("r_" + k), false)).join("");
+    }
+    if (Object.keys(INTANG_ATTRS).length) {
+      html += row("Intangibles", f.intangibles, med("intangibles"), true);
+      html += Object.values(INTANG_ATTRS).map((at) => row(at.label, f[at.k], med(at.k), false)).join("");
     }
     return `<div class="rbars">${html}</div><p class="muted" style="font-size:12px;margin:6px 0 0">Scale 1200 to 2300. The tick marks the ${esc(f.division || "division")} median${peers.length >= 5 ? ` (${peers.length} fighters)` : " (too few fighters to compare)"}.</p>`;
   }
@@ -694,6 +701,9 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
             ${Object.entries(state.data.rating_categories).map(([cat, keys]) => `
               <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong></td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
               ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
+            ${Object.keys(INTANG_ATTRS).length ? `
+              <tr class="cat"><td class="va">${catCell(fa, fb, "intangibles", "a")}</td><td class="attr"><strong>Intangibles</strong><div class="muted" style="font-size:11px;font-weight:400">separate from overall; your edits move the prediction</div></td><td class="vb">${catCell(fa, fb, "intangibles", "b")}</td></tr>
+              ${Object.values(INTANG_ATTRS).map((at) => tapeRow(at, a, fa, b, fb)).join("")}` : ""}
             <tr class="group"><td colspan="3">Career stats</td></tr>
             ${ATTRS.filter((at) => !at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
             <tr class="group"><td colspan="3">Wear and tear <span>Mileage and damage, weighted more heavily past 30. A 30-year-old with 50 fights is older than one with 5.</span></td></tr>
@@ -806,7 +816,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       </span>`;
     };
     const star = at.stat && (!fa.stat_minutes || !fb.stat_minutes) ? " *" : "";
-    return `<tr><td class="va">${cell(a, fa, "a")}</td><td class="attr">${esc(at.label)}${star}</td><td class="vb">${cell(b, fb, "b")}</td></tr>`;
+    return `<tr><td class="va">${cell(a, fa, "a")}</td><td class="attr"${at.help ? ` title="${esc(at.help)}"` : ""}>${esc(at.label)}${star}${at.help ? ' <span class="muted">ⓘ</span>' : ""}</td><td class="vb">${cell(b, fb, "b")}</td></tr>`;
   }
   function compare(at, x, y) {
     if (x == null || y == null || Math.abs(x - y) < 1e-9) return 0;
@@ -1043,7 +1053,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   function rankOptions() {
     const base = [["proven", "Ranking (proven)"], ["elo", "Overall (unadjusted)"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"]];
     const subs = Object.values(state.data.rating_categories).flat().map((k) => ["r_" + k, state.data.rating_labels[k]]);
-    return base.concat(subs);
+    const intang = Object.values(INTANG_ATTRS).map((at) => [at.k, at.label]);
+    return base.concat(intang.length ? [["intangibles", "Intangibles"]] : [], subs, intang);
   }
   function sortValue(f, key) {
     if (key === "name") return f.name;
@@ -1113,7 +1124,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       return typeof a === "string" ? a.localeCompare(b) * r.dir : (b - a) * -r.dir;
     }).slice(0, 400);
     const th = (key, label) => `<th><button class="sorter" type="button" data-sort="${key}">${label}${r.sort === key ? (r.dir < 0 ? " ▼" : " ▲") : ""}</button></th>`;
-    const extra = r.sort.startsWith("r_") ? th(r.sort, esc(state.data.rating_labels[r.sort.slice(2)])) : "";
+    const extraLabel = r.sort.startsWith("r_") ? state.data.rating_labels[r.sort.slice(2)] : r.sort.startsWith("i_") ? (attrFor(r.sort) || {}).label : r.sort === "intangibles" ? "Intangibles" : null;
+    const extra = extraLabel ? th(r.sort, esc(extraLabel)) : "";
     return `<div class="table-wrap"><table class="list num"><thead><tr><th>#</th>${th("name", "Fighter")}${th("weight_class", "Class")}
       ${th("proven", "Ranking")}${th("ufc", "UFC")}${th("elo", "Overall")}${th("striking", "Striking")}${th("wrestling", "Wrestling")}${th("grappling", "Grappling")}${extra}
       ${th("record", "Record")}${th("age", "Age")}${th("wear", "Wear")}${th("streak", "Streak")}<th>Style</th><th>Country</th></tr></thead><tbody>
@@ -1380,6 +1392,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     state.data = data;
     state.engine = MMAEngine.makeEngine(data);
+    const IN = data.intangibles || { keys: [], labels: {}, help: {} };
+    INTANG_ATTRS = Object.fromEntries(IN.keys.map((k) => [k, { k: "i_" + k, label: IN.labels[k], help: IN.help[k], kind: "int", better: "high", rating: true }]));
     RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
     $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">` + (f.aka || []).map((x) => `<option value="${esc(x)}" label="${esc(f.name)}">`).join("")).join("");

@@ -58,6 +58,7 @@
         striking_rating: clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800),
         wrestling_rating: clip(edge("td_off", "td_def") / 400),
         grappling_rating: clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200),
+        intangibles_rating: clip((a.intangibles - b.intangibles) / 400),
         striking_exchange: clip((landsOn(a, b) - landsOn(b, a)) / 3),
         striking_defense: clip((a.str_def - b.str_def) * 10),
         power_vs_chin: clip(2 * (a.kd_per15 * chin(b) - b.kd_per15 * chin(a))),
@@ -173,6 +174,8 @@
         out[k] = INT_FIELDS.has(k) ? Math.round(Number(v)) : Number(v);
       }
       for (const cat of Object.keys(CATS)) out[cat] = categoryRating(out, cat);
+      const IK = (data.intangibles && data.intangibles.keys) || [];
+      if (IK.length) out.intangibles = IK.reduce((t, k) => t + out["i_" + k], 0) / IK.length;
       out.elo = overallRating(out);
       out.proven = s.proven + (out.elo - s.elo);  // uncertainty is unchanged by your edits
       return out;
@@ -189,7 +192,8 @@
         logit += contrib[k];
       }
       const manual = opts.manual || 0;
-      const p = sigmoid((data.calibration_scale || 1) * logit + manual);
+      const edit = opts.intangiblesEdit || 0;
+      const p = sigmoid((data.calibration_scale || 1) * logit + manual + edit);
       const da = methodDistribution(a, b, rounds), db = methodDistribution(b, a, rounds);
       const methods = { a: {}, b: {} };
       for (const m of BUCKETS) {
@@ -198,11 +202,17 @@
       }
       const factors = Object.entries(contrib);
       if (manual) factors.push(["manual", manual]);
+      if (edit) factors.push(["intangibles_edit", edit]);
       factors.sort((u, v) => Math.abs(v[1]) - Math.abs(u[1]));
-      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual };
+      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual + edit };
     }
 
-    return { features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };
+    /** Same as predictor.intangibles_edit_logit: half an overall point per edited Intangibles point. */
+    function intangiblesEditLogit(baseA, adjA, baseB, adjB) {
+      return 0.5 * Q * ((adjA.intangibles - baseA.intangibles) - (adjB.intangibles - baseB.intangibles));
+    }
+
+    return { intangiblesEditLogit, features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };
   }
 
   function devig(oddsA, oddsB) {

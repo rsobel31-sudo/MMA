@@ -20,6 +20,7 @@ from .model import PRIOR_WEIGHTS, WinModel
 from .analysis import upcoming_flags
 from .bios import division_label, write_bio
 from .sources.events import link_names
+from .intangibles import INTANGIBLE_HELP, INTANGIBLE_LABELS, INTANGIBLES
 from .skills import CATEGORIES, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
@@ -45,6 +46,8 @@ def snapshot_json(s: FighterSnapshot) -> Dict[str, Any]:
     out = {k: _round(getattr(s, k)) for k in SNAPSHOT_FIELDS}
     # Sub-ratings flattened as r_<key>, the same names adjustments use.
     out.update({"r_" + k: _round(v) for k, v in s.ratings.items()})
+    out.update({"i_" + k: _round(v) for k, v in s.intangibles.items()})
+    out["intangibles"] = _round(s.intangibles_rating)
     out.update(
         name=s.name,
         prior_wins=s.bio.prior_wins,
@@ -185,6 +188,7 @@ def export(
         "prior_weights": PRIOR_WEIGHTS,
         "rating_categories": {k: list(v) for k, v in CATEGORIES.items()},
         "rating_labels": SUB_LABELS,
+        "intangibles": {"keys": list(INTANGIBLES), "labels": INTANGIBLE_LABELS, "help": INTANGIBLE_HELP},
         "category_weights": history.skills.config.category_weights,
         "insights": insights,
         "upcoming": {"fetched": (upcoming or {}).get("fetched"), "source": (upcoming or {}).get("source"), "events": cards},

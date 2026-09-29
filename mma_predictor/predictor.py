@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import math
+
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Tuple
@@ -12,6 +14,15 @@ from .features import FEATURE_LABELS, BoutContext, matchup_features
 from .history import FightHistory, FighterSnapshot
 from .methods import method_distribution
 from .model import WinModel, ranked_contributions, sigmoid
+
+INTANGIBLES_EDIT_WEIGHT = 0.5  # overall-rating points per point of edited Intangibles
+_Q = math.log(10) / 400.0
+
+
+def intangibles_edit_logit(base_a, adj_a, base_b, adj_b) -> float:
+    da = adj_a.intangibles_rating - base_a.intangibles_rating
+    db = adj_b.intangibles_rating - base_b.intangibles_rating
+    return INTANGIBLES_EDIT_WEIGHT * _Q * (da - db)
 from .styles import matchup_insights, scouting_line
 
 
@@ -131,14 +142,20 @@ class FightPredictor:
         ctx = BoutContext(scheduled_rounds, title_fight)
         sa, sb, x = self.features(a, b, when, ctx)
         manual = self.adjustments.matchup_logit(a, b)
-        p = sigmoid(self.model.logit(x) + manual)
+        # Your intangibles edits count as half a point of overall rating per point of
+        # the Intangibles category (the data-based estimates alone add little).
+        edit = intangibles_edit_logit(self.history.snapshot(a, when), sa, self.history.snapshot(b, when), sb)
+        p = sigmoid(self.model.logit(x) + manual + edit)
         dist_a = method_distribution(sa, sb, scheduled_rounds)
         dist_b = method_distribution(sb, sa, scheduled_rounds)
         methods = {(a, m): p * dist_a[m] for m in METHOD_BUCKETS}
         methods.update({(b, m): (1 - p) * dist_b[m] for m in METHOD_BUCKETS})
         factors = ranked_contributions(self.model, x)
         if manual:
-            factors = sorted(factors + [("manual", manual)], key=lambda kv: -abs(kv[1]))
+            factors = factors + [("manual", manual)]
+        if edit:
+            factors = factors + [("intangibles_edit", edit)]
+        factors = sorted(factors, key=lambda kv: -abs(kv[1]))
         market = devig(odds_a, odds_b)[0] if odds_a is not None and odds_b is not None else None
         return Prediction(
             fighter_a=a,

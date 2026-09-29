@@ -30,6 +30,8 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from .history import FighterSnapshot
+from .intangibles import INTANGIBLES
+from .intangibles import category as intangibles_category
 from .skills import SUB_RATINGS, SkillConfig, category_rating, overall_rating
 
 # Snapshot attributes that can be overridden (numeric only).
@@ -39,7 +41,7 @@ EDITABLE = (
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
     "form", "streak", "layoff_days", "sos", "age", "reach_cm",
     "ko_losses", "kd_absorbed", "sig_absorbed", "minutes",
-) + tuple("r_" + k for k in SUB_RATINGS)
+) + tuple("r_" + k for k in SUB_RATINGS) + tuple("i_" + k for k in INTANGIBLES)
 INT_FIELDS = ("recent_ko_losses", "streak", "layoff_days", "ko_losses", "kd_absorbed", "sig_absorbed")
 CATEGORY_WEIGHTS = SkillConfig().category_weights
 
@@ -106,8 +108,12 @@ class Adjustments:
         bio = s.bio
         # The Elo nudge shifts every sub-rating, so the overall moves by exactly that much.
         ratings = {k: v + adj.elo for k, v in s.ratings.items()}
+        intang = dict(s.intangibles)
         for k, v in adj.overrides.items():
-            if k.startswith("r_"):
+            if k.startswith("i_"):
+                if k[2:] in intang:
+                    intang[k[2:]] = v
+            elif k.startswith("r_"):
                 if k[2:] in ratings:
                     ratings[k[2:]] = v
             elif k == "reach_cm":
@@ -127,6 +133,8 @@ class Adjustments:
         else:
             changes["elo"] = s.elo + adj.elo
         changes["proven"] = s.proven + (changes["elo"] - s.elo)
+        if intang:
+            changes.update(intangibles=intang, intangibles_rating=intangibles_category(intang))
         return dataclasses.replace(s, bio=bio, **changes)
 
     def matchup_logit(self, a: str, b: str) -> float:

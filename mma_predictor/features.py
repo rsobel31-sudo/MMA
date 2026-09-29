@@ -34,6 +34,7 @@ FEATURES: List[str] = [
     "striking_rating",
     "wrestling_rating",
     "grappling_rating",
+    "intangibles_rating",
     "striking_exchange",
     "striking_defense",
     "power_vs_chin",
@@ -57,6 +58,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "striking_rating": "striking ratings matchup",
     "wrestling_rating": "wrestling ratings matchup",
     "grappling_rating": "grappling ratings matchup",
+    "intangibles_rating": "intangibles (athleticism, durability, killer instinct...)",
     "striking_exchange": "projected striking exchanges",
     "striking_defense": "striking defence",
     "power_vs_chin": "knockdown power vs opponent's chin",
@@ -74,6 +76,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "schedule_strength": "strength of schedule",
     "stance": "stance matchup",
     "manual": "your matchup read",
+    "intangibles_edit": "your intangibles edits",
 }
 
 
@@ -163,6 +166,7 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         "striking_rating": _clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800.0),
         "wrestling_rating": _clip(edge("td_off", "td_def") / 400.0),
         "grappling_rating": _clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200.0),
+        "intangibles_rating": _clip((a.intangibles_rating - b.intangibles_rating) / 400.0),
         "striking_exchange": _clip((lands_on(a, b) - lands_on(b, a)) / 3.0),
         "striking_defense": _clip((a.str_def - b.str_def) * 10.0),
         "power_vs_chin": _clip(2.0 * (a.kd_per15 * chin_vulnerability(b) - b.kd_per15 * chin_vulnerability(a))),

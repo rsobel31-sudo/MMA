@@ -143,6 +143,29 @@ Without per-bout stats (Sherdog/Tapology records), only finishes and results
 inform the categories: control, escapes and ground and pound move together
 and takedown offence/defence can't be told apart. UFCStats data fills these in.
 
+### Intangibles (fourth category)
+
+Seven qualities on the same 1500-average scale, estimated from the record
+(`mma_predictor/intangibles.py`) and meant to be edited from what you've seen:
+
+| Quality | Data estimate |
+| --- | --- |
+| Athleticism | age curve (prime 24–30) plus share of early wins |
+| Durability (wear and tear) | inverse of the age-weighted wear index |
+| Killer instinct | finish rate and how early the finishes come |
+| Cardio | win rate in bouts reaching round 3+ |
+| Fight IQ | decision record (split decisions count extra) |
+| Resilience / heart | record in the fight after a loss |
+| Big-fight experience | five-round and title fights, and their results |
+
+The Intangibles rating is their average. It stays separate from overall (the
+record-based estimates added almost nothing to backtest accuracy, and folding
+them into overall hurt), and enters the model as its own feature (learned
+weight ≈ 0.31). Your edits count more: each point you move a fighter's
+Intangibles rating counts as half a point of overall rating, shown as "your
+intangibles edits" in What's driving it. Edit them in the tale of the tape
+(`i_<key>` overrides in adjustments JSON).
+
 ### Other attributes
 
 | Area | Attributes |

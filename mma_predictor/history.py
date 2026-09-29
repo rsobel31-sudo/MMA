@@ -19,6 +19,8 @@ import dataclasses
 
 from .data import METHOD_BUCKETS, CornerStats, FighterBio, Fight, Method
 from .ratings import EloConfig, EloRatings
+from .intangibles import category as intangibles_category
+from .intangibles import estimate as estimate_intangibles
 from .scouting import Scouting
 from .skills import SkillConfig, SkillRatings
 
@@ -116,6 +118,8 @@ class FighterSnapshot:
     ko_losses: int = 0
     kd_absorbed: int = 0
     sig_absorbed: int = 0
+    intangibles: Dict[str, float] = field(default_factory=dict)  # see intangibles.py
+    intangibles_rating: float = 1500.0
     all_appearances: List[Appearance] = field(default_factory=list, repr=False)
     recent: List[Appearance] = field(default_factory=list, repr=False)
 
@@ -345,7 +349,7 @@ class FightHistory:
         last = apps[-1].fight.date if apps else None
         ratings = self.skills.before(name, as_of)
         cats = self.skills.breakdown(ratings)
-        return FighterSnapshot(
+        snap = FighterSnapshot(
             name=name,
             as_of=as_of,
             bio=bio,
@@ -394,6 +398,9 @@ class FightHistory:
             recent=apps[-5:],
             all_appearances=apps,
         )
+        snap.intangibles = estimate_intangibles(snap)
+        snap.intangibles_rating = intangibles_category(snap.intangibles)
+        return snap
 
 
 def _scaled(c: CornerStats, w: float) -> CornerStats:
