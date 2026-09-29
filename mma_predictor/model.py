@@ -19,7 +19,10 @@ from typing import Dict, List, Sequence, Tuple
 from .features import FEATURES
 
 PRIOR_WEIGHTS: Dict[str, float] = {
-    "elo": 1.10,
+    "overall": 1.00,
+    "striking_rating": 0.30,
+    "wrestling_rating": 0.30,
+    "grappling_rating": 0.25,
     "striking_exchange": 0.35,
     "striking_defense": 0.10,
     "power_vs_chin": 0.25,

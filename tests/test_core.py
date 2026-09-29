@@ -57,8 +57,10 @@ def test_snapshot_excludes_same_day_and_future_bouts():
     h = FightHistory({"A": FighterBio("A")}, fights)
     s = h.snapshot("A", date(2021, 1, 1))
     assert (s.wins, s.losses, s.fights) == (1, 0, 1)
-    assert h.elo.rating_before("A", date(2020, 1, 1)) == h.elo.initial_rating("A")
-    assert h.elo.rating_before("A", date(2020, 1, 2)) > h.elo.initial_rating("A")
+    start = h.skills.overall(h.skills.initial("A"))
+    assert h.skills.overall_before("A", date(2020, 1, 1)) == start
+    assert h.skills.overall_before("A", date(2020, 1, 2)) > start
+    assert s.elo == h.skills.overall_before("A", date(2021, 1, 1))
 
 
 def test_small_samples_shrink_toward_priors():
@@ -112,6 +114,6 @@ def test_backtest_beats_coin_flip_and_elo(history):
 
 def test_model_roundtrip(tmp_path):
     m = WinModel()
-    m.weights["elo"] = 0.5
+    m.weights["overall"] = 0.5
     m.save(tmp_path / "m.json")
-    assert WinModel.load(tmp_path / "m.json").weights["elo"] == 0.5
+    assert WinModel.load(tmp_path / "m.json").weights["overall"] == 0.5

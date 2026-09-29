@@ -50,8 +50,11 @@ def test_js_engine_matches_python(tmp_path, with_adjustments):
     adj = {}
     if with_adjustments:
         adj = {
-            "fighters": {names[0]: {"elo": 60, "overrides": {"td_def": 0.9, "slpm": 6.1, "streak": 3}, "note": "x"}},
-            "weights": {"wrestling_edge": 0.8, "elo": 0.9},
+            "fighters": {
+                names[0]: {"elo": 60, "overrides": {"td_def": 0.9, "slpm": 6.1, "streak": 3, "r_td_def": 1700}, "note": "x"},
+                names[3]: {"elo": 0, "overrides": {"r_sub_off": 1400, "r_power": 1650}, "note": ""},
+            },
+            "weights": {"wrestling_edge": 0.8, "overall": 0.9, "grappling_rating": 0.6},
             "matchups": [{"a": names[2], "b": names[1], "logit": 0.4, "note": ""}],
         }
     predictor = FightPredictor(h, adjustments=Adjustments.from_dict(adj))

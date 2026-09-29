@@ -27,7 +27,10 @@ class BoutContext:
 
 
 FEATURES: List[str] = [
-    "elo",
+    "overall",
+    "striking_rating",
+    "wrestling_rating",
+    "grappling_rating",
     "striking_exchange",
     "striking_defense",
     "power_vs_chin",
@@ -46,7 +49,10 @@ FEATURES: List[str] = [
 ]
 
 FEATURE_LABELS: Dict[str, str] = {
-    "elo": "overall rating (Elo)",
+    "overall": "overall rating (aggregate of the three)",
+    "striking_rating": "striking ratings matchup",
+    "wrestling_rating": "wrestling ratings matchup",
+    "grappling_rating": "grappling ratings matchup",
     "striking_exchange": "projected striking exchanges",
     "striking_defense": "striking defence",
     "power_vs_chin": "knockdown power vs opponent's chin",
@@ -119,8 +125,19 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         reach = (a.bio.reach_cm - b.bio.reach_cm) / 10.0
     sub_a = a.sub_per15 * (b.sub_loss_rate / (0.5 * P.method_share["SUB"]))
     sub_b = b.sub_per15 * (a.sub_loss_rate / (0.5 * P.method_share["SUB"]))
+    ra, rb = a.ratings, b.ratings
+
+    def edge(att: str, dfn: str) -> float:
+        """A's attack against B's defence minus the reverse, in rating points."""
+        if not ra or not rb:
+            return 0.0
+        return (ra[att] - rb[dfn]) - (rb[att] - ra[dfn])
+
     return {
-        "elo": _clip((a.elo - b.elo) / 400.0),
+        "overall": _clip((a.elo - b.elo) / 400.0),
+        "striking_rating": _clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800.0),
+        "wrestling_rating": _clip(edge("td_off", "td_def") / 400.0),
+        "grappling_rating": _clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200.0),
         "striking_exchange": _clip((lands_on(a, b) - lands_on(b, a)) / 3.0),
         "striking_defense": _clip((a.str_def - b.str_def) * 10.0),
         "power_vs_chin": _clip(2.0 * (a.kd_per15 * chin_vulnerability(b) - b.kd_per15 * chin_vulnerability(a))),

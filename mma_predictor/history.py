@@ -17,6 +17,7 @@ from typing import Dict, List, Optional
 
 from .data import METHOD_BUCKETS, FighterBio, Fight, Method
 from .ratings import EloConfig, EloRatings
+from .skills import SkillConfig, SkillRatings
 
 
 @dataclass(frozen=True)
@@ -65,7 +66,7 @@ class FighterSnapshot:
     name: str
     as_of: date
     bio: FighterBio
-    elo: float
+    elo: float  # overall rating: weighted aggregate of the three category ratings
     fights: int  # bouts in the dataset before as_of
     wins: int
     losses: int
@@ -101,6 +102,10 @@ class FighterSnapshot:
     sos: float  # mean opponent Elo entering the bout
     quality_win_elo: float  # mean opponent Elo in wins
     stat_minutes: float = 0.0  # minutes of bouts that carried per-corner stats
+    ratings: Dict[str, float] = field(default_factory=dict)  # sub-ratings, see skills.SUB_RATINGS
+    striking: float = 1500.0
+    wrestling: float = 1500.0
+    grappling: float = 1500.0
     recent: List[Appearance] = field(default_factory=list, repr=False)
 
     @property
@@ -136,18 +141,21 @@ class FightHistory:
         fights: List[Fight],
         priors: Priors = DEFAULT_PRIORS,
         elo_config: EloConfig = EloConfig(),
+        skill_config: SkillConfig = SkillConfig(),
     ) -> None:
         self.bios = dict(bios)
         self.fights = sorted(fights, key=lambda f: f.date)
         self.priors = priors
-        self.elo = EloRatings(self.fights, self.bios, elo_config)
+        self.skills = SkillRatings(self.fights, self.bios, skill_config)
+        # Classic single-number Elo, kept only as a backtest baseline.
+        self.classic_elo = EloRatings(self.fights, self.bios, elo_config)
         self._apps: Dict[str, List[Appearance]] = defaultdict(list)
         self._app_dates: Dict[str, List[date]] = defaultdict(list)
         for f in self.fights:
             for me in (f.fighter_a, f.fighter_b):
                 opp = f.opponent_of(me)
                 result = None if f.winner is None else f.winner == me
-                self._apps[me].append(Appearance(f, opp, result, self.elo.rating_before(opp, f.date)))
+                self._apps[me].append(Appearance(f, opp, result, self.skills.overall_before(opp, f.date)))
                 self._app_dates[me].append(f.date)
             for name in (f.fighter_a, f.fighter_b):
                 self.bios.setdefault(name, FighterBio(name=name))
@@ -254,11 +262,13 @@ class FightHistory:
 
         form, streak = _form(apps)
         last = apps[-1].fight.date if apps else None
+        ratings = self.skills.before(name, as_of)
+        cats = self.skills.breakdown(ratings)
         return FighterSnapshot(
             name=name,
             as_of=as_of,
             bio=bio,
-            elo=self.elo.rating_before(name, as_of),
+            elo=cats["overall"],
             fights=len(apps),
             wins=wins,
             losses=losses,
@@ -287,9 +297,13 @@ class FightHistory:
             form=form,
             streak=streak,
             layoff_days=(as_of - last).days if last else None,
-            sos=sum(opp_elos) / len(opp_elos) if opp_elos else self.elo.config.base,
-            quality_win_elo=sum(win_elos) / len(win_elos) if win_elos else self.elo.config.base,
+            sos=sum(opp_elos) / len(opp_elos) if opp_elos else self.skills.config.base,
+            quality_win_elo=sum(win_elos) / len(win_elos) if win_elos else self.skills.config.base,
             stat_minutes=stat_minutes,
+            ratings=ratings,
+            striking=cats["striking"],
+            wrestling=cats["wrestling"],
+            grappling=cats["grappling"],
             recent=apps[-5:],
         )
 

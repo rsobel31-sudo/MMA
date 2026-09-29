@@ -129,6 +129,11 @@ td.vb .cell input { text-align: left; }
 .cell .reset { visibility: hidden; border: 0; background: none; color: var(--edit); cursor: pointer; padding: 0 2px; font-size: 13px; }
 .cell.edited .reset { visibility: visible; }
 .better { font-weight: 600; }
+table.tape tr.group td { padding-top: 16px; font-family: var(--display); font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: .06em; text-align: center; border-bottom: 2px solid var(--ink); }
+table.tape tr.group td span { display: block; font-family: var(--body); font-weight: 400; font-size: 12px; text-transform: none; letter-spacing: 0; color: var(--muted); }
+table.tape tr.cat td { background: var(--surface-2); font-size: 15px; }
+table.tape tr.cat td.attr { color: var(--ink); }
+.catval .muted { font-size: 12px; font-weight: 400; }
 
 .notes { display: grid; gap: 6px; padding-left: 18px; margin: 0; }
 .notes li.mine { color: var(--edit); }
@@ -234,9 +239,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     { k: "form", label: "Recent form (−1 to 1)", kind: "num", d: 2, better: "high" },
     { k: "streak", label: "Streak (+W / −L)", kind: "int", better: "high" },
     { k: "layoff_days", label: "Days since last fight", kind: "int", better: "low" },
-    { k: "sos", label: "Avg opponent Elo", kind: "int", better: "high" },
+    { k: "sos", label: "Avg opponent rating", kind: "int", better: "high" },
   ];
-  const WEIGHT_RANGE = { elo: [0, 2.5] };
+  const WEIGHT_RANGE = { overall: [0, 2.5] };
+  // Sub-rating rows (r_<key>), built from data.json at boot.
+  let RATING_ATTRS = {};
+  const attrFor = (k) => ATTRS.find((x) => x.k === k) || Object.values(RATING_ATTRS).find((x) => x.k === k);
 
   const state = {
     data: null, engine: null, byName: new Map(),
@@ -507,9 +515,14 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
           <thead><tr><th class="a">${esc(a)}</th><th></th><th class="b">${esc(b)}</th></tr></thead>
           <tbody>
             <tr><td class="va">${record(fa)}</td><td class="attr">Record</td><td class="vb">${record(fb)}</td></tr>
-            <tr><td class="va">${eloCell(a, fa)}</td><td class="attr">Elo rating</td><td class="vb">${eloCell(b, fb)}</td></tr>
             <tr><td class="va">${esc(fa.stance || "—")}</td><td class="attr">Stance</td><td class="vb">${esc(fb.stance || "—")}</td></tr>
             <tr><td class="va">${state.engine.classify(fa).join(", ")}</td><td class="attr">Style</td><td class="vb">${state.engine.classify(fb).join(", ")}</td></tr>
+            <tr class="group"><td colspan="3">Ratings <span>1500 = average. Overall = ${Object.entries(state.data.category_weights).map(([c, w]) => `${Math.round(w * 100)}% ${c}`).join(" + ")}</span></td></tr>
+            <tr><td class="va">${eloCell(a, fa)}</td><td class="attr"><strong>Overall</strong></td><td class="vb">${eloCell(b, fb)}</td></tr>
+            ${Object.entries(state.data.rating_categories).map(([cat, keys]) => `
+              <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong></td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
+              ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
+            <tr class="group"><td colspan="3">Career stats</td></tr>
             ${ATTRS.map((at) => tapeRow(at, a, fa, b, fb)).join("")}
           </tbody>
         </table></div>
@@ -548,8 +561,15 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   function eloCell(name, f) {
     const nudge = (state.adj.fighters[name] || {}).elo || 0;
     const side = name === state.m.a ? "a" : "b";
-    return `<span class="cell ${nudge ? "edited" : ""}"><span>${Math.round(f.elo)}</span>
-      <span class="elo-nudge">nudge <input id="elo-${side}" type="number" step="10" value="${nudge || ""}" placeholder="0" data-elo="${esc(name)}" aria-label="Elo nudge for ${esc(name)}"></span></span>`;
+    const other = side === "a" ? fighter(state.m.b) : fighter(state.m.a);
+    const better = other && f.elo > other.elo + 1e-9;
+    return `<span class="cell ${nudge ? "edited" : ""} ${better ? "better" : ""}"><span>${Math.round(f.elo)}</span>
+      <span class="elo-nudge">nudge all <input id="elo-${side}" type="number" step="10" value="${nudge || ""}" placeholder="0" data-elo="${esc(name)}" aria-label="Nudge every rating for ${esc(name)}"></span></span>`;
+  }
+  function catCell(fa, fb, cat, side) {
+    const [me, other] = side === "a" ? [fa, fb] : [fb, fa];
+    const v = me[cat], diff = v - other[cat];
+    return `<span class="catval ${diff > 1e-9 ? "better" : ""}">${Math.round(v)}<span class="muted"> (${diff >= 0 ? "+" : "−"}${Math.abs(Math.round(diff))})</span></span>`;
   }
   function tapeRow(at, a, fa, b, fb) {
     const cell = (name, f, side) => {
@@ -611,11 +631,11 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     view.innerHTML = `<section class="panel">
       <div class="toolbar"><input type="search" id="roster-q" placeholder="Search fighters" value="${esc(state.roster.q)}">
         <label class="label" for="roster-sort">Sort</label>
-        <select id="roster-sort">${[["elo", "Elo"], ["name", "Name"], ["streak", "Streak"], ["form", "Form"]].map(([k, l]) => `<option value="${k}" ${state.roster.sort === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+        <select id="roster-sort">${[["elo", "Overall"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"], ["name", "Name"], ["streak", "Streak"], ["form", "Form"]].map(([k, l]) => `<option value="${k}" ${state.roster.sort === k ? "selected" : ""}>${l}</option>`).join("")}</select>
         <span class="muted" style="font-size:13px">Click a fighter to put them in the red corner.</span></div>
-      <div class="table-wrap"><table class="list num"><thead><tr><th>#</th><th>Fighter</th><th>Elo</th><th>Record</th><th>Age</th><th>Streak</th><th>Style</th><th>Last fight</th></tr></thead><tbody>
+      <div class="table-wrap"><table class="list num"><thead><tr><th>#</th><th>Fighter</th><th>Overall</th><th>Striking</th><th>Wrestling</th><th>Grappling</th><th>Record</th><th>Age</th><th>Streak</th><th>Style</th><th>Last fight</th></tr></thead><tbody>
       ${list.map((f, i) => `<tr class="clickable" data-pick="${esc(f.name)}"><td>${i + 1}</td><td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}</td>
-        <td>${Math.round(f.elo)}</td><td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
+        <td><strong>${Math.round(f.elo)}</strong></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td><td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
         <td>${state.engine.classify(f).join(", ")}</td><td>${f.recent[0] ? esc(f.recent[0].date) : "—"}</td></tr>`).join("")}
       </tbody></table></div>
       ${list.length === 300 ? '<p class="muted" style="font-size:13px">Showing the first 300. Search to narrow.</p>' : ""}</section>`;
@@ -662,7 +682,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         <div class="toolbar"><h3>My adjustments</h3><span class="muted" style="font-size:13px">${state.storeKind === "db" ? "Saved to this page's database. Claude can read them back into the project." : "Saved in this browser only."}</span></div>
         ${!f.length && !m.length && !w.length ? `<div class="empty">Nothing yet. Edit a number in the tale of the tape, nudge a rating, set your read on a fight, or move a model weight, and it will be listed here.</div>` : ""}
         ${f.length ? `<h3 style="font-size:17px;margin-top:6px">Fighters</h3><div class="table-wrap"><table class="list num"><thead><tr><th>Fighter</th><th>Changes</th><th>Note</th><th></th></tr></thead><tbody>
-          ${f.map(([n, v]) => `<tr><td>${esc(n)}</td><td>${[v.elo ? `Elo ${v.elo > 0 ? "+" : ""}${v.elo}` : "", ...Object.entries(v.overrides || {}).map(([k, x]) => { const at = ATTRS.find((t) => t.k === k); return `${at ? at.label : k}: ${at ? fmt(at, x) + (at.kind === "pct" ? "%" : "") : x}`; })].filter(Boolean).map(esc).join("<br>") || "—"}</td>
+          ${f.map(([n, v]) => `<tr><td>${esc(n)}</td><td>${[v.elo ? `All ratings ${v.elo > 0 ? "+" : ""}${v.elo}` : "", ...Object.entries(v.overrides || {}).map(([k, x]) => { const at = attrFor(k); return `${at ? at.label : k}: ${at ? fmt(at, x) + (at.kind === "pct" ? "%" : "") : x}`; })].filter(Boolean).map(esc).join("<br>") || "—"}</td>
             <td>${esc(v.note || "")}</td><td><button class="btn small" type="button" data-clear-fighter="${esc(n)}">Remove</button></td></tr>`).join("")}</tbody></table></div>` : ""}
         ${m.length ? `<h3 style="font-size:17px;margin-top:14px">Matchup reads</h3><div class="table-wrap"><table class="list num"><thead><tr><th>Bout</th><th>Shift</th><th>Note</th><th></th></tr></thead><tbody>
           ${m.map(([id, v]) => `<tr><td>${esc(v.a)} vs ${esc(v.b)}</td><td>${v.logit ? `${Math.abs(v.logit).toFixed(2)} toward ${esc(v.logit > 0 ? v.a : v.b)}` : "—"}</td><td>${esc(v.note)}</td><td><button class="btn small" type="button" data-remove-matchup="${esc(id)}">Remove</button></td></tr>`).join("")}</tbody></table></div>` : ""}
@@ -748,7 +768,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
     }
     if (t.dataset.attr) {
-      const at = ATTRS.find((x) => x.k === t.dataset.attr), n = t.dataset.fighter;
+      const at = attrFor(t.dataset.attr), n = t.dataset.fighter;
       const v = parseInput(at, t.value);
       const base = state.byName.get(n)[at.k];
       setFighterAdj(n, (c) => {
@@ -800,6 +820,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     state.data = data;
     state.engine = MMAEngine.makeEngine(data);
+    RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
     $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">`).join("");
     const m = data.meta;

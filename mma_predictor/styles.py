@@ -43,7 +43,8 @@ def scouting_line(s: FighterSnapshot) -> str:
     age = f"{s.age:.0f}y" if s.age is not None else "age ?"
     reach = f"{s.bio.reach_cm:.0f}cm reach" if s.bio.reach_cm else "reach ?"
     return (
-        f"{s.name} ({s.record}, Elo {s.elo:.0f}, {age}, {reach}, {s.bio.stance or 'stance ?'}) - {classify(s)}. "
+        f"{s.name} ({s.record}, rating {s.elo:.0f} [S {s.striking:.0f} / W {s.wrestling:.0f} / G {s.grappling:.0f}], "
+        f"{age}, {reach}, {s.bio.stance or 'stance ?'}) - {classify(s)}. "
         f"Strikes {s.slpm:.1f} landed / {s.sapm:.1f} absorbed per min at {s.str_acc:.0%} acc, {s.str_def:.0%} def; "
         f"TD {s.td_per15:.1f}/15 at {s.td_acc:.0%}, TD def {s.td_def:.0%}; subs {s.sub_per15:.1f}/15; "
         f"finish rate {s.finish_rate:.0%}; form {s.form:+.2f} (streak {s.streak:+d})."

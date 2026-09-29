@@ -22,9 +22,43 @@ date**, so predictions and backtests never see the future. Rate stats are
 shrunk toward population averages, so a fighter with only a few bouts isn't
 judged on a handful of minutes.
 
+### Ratings: Striking, Wrestling, Grappling
+
+There is no single Elo. Each fighter has eleven sub-ratings (1500 = average),
+mostly attack/defence pairs rated against each other:
+
+| Category | Sub-ratings | Evidence per bout |
+|---|---|---|
+| Striking | striking offence vs striking defence; power vs chin | accuracy, share of significant strikes, knockdowns, KO/TKO wins |
+| Wrestling | takedown offence vs takedown defence | takedowns landed per attempt |
+| Grappling | top control vs escapes; ground and pound vs escapes; submission offence vs submission defence | control-time share, ground strikes per control minute, submission wins and attempts |
+
+Category rating = mean of its sub-ratings. **Overall = 45% striking + 25%
+wrestling + 30% grappling.** For each attack/defence pair:
+
+```
+expected = sigmoid(logit(base_rate) + ln(10)/400 * (attack - defence))
+delta    = K_stat * weight * clip((observed - expected) / sd(base_rate), ±3)
+attack  += delta;  defence -= delta
+```
+
+Every result also moves the overall by the classic Elo amount,
+`K * margin * (result - 1 / (1 + 10^((overall_B - overall_A)/400)))`,
+tilted toward the categories the bout was decided in (a KO toward
+striking, a submission toward grappling, a decision by who won each domain on
+the stats). See `mma_predictor/skills.py` for the full definition and
+constants. The old single-number Elo (`ratings.py`) is kept only as a
+backtest baseline.
+
+Without per-bout stats (Sherdog/Tapology records), only finishes and results
+inform the categories: control, escapes and ground and pound move together
+and takedown offence/defence can't be told apart. UFCStats data fills these in.
+
+### Other attributes
+
 | Area | Attributes |
 |---|---|
-| Overall strength | MMA-tuned Elo (finishes and early stoppages count more than split decisions; newcomers converge fast; regional record seeds the starting rating), strength of schedule |
+| Overall strength | Category ratings above, strength of schedule (average opponent overall rating) |
 | Striking | Sig. strikes landed/absorbed per min, accuracy, defence, knockdowns scored/absorbed |
 | Grappling | Takedowns per 15, TD accuracy, TD defence, submission attempts, control-time share |
 | Durability | KO-loss rate, KO losses in last 3 bouts, knockdowns absorbed |

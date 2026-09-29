@@ -5,8 +5,9 @@ Stored as JSON so the web interface and the Python tools share them:
     {
       "fighters": {
         "Fighter Name": {
-          "elo": 40,                         # rating nudge (camp change, injury...)
-          "overrides": {"td_def": 0.80},     # replace any snapshot attribute
+          "elo": 40,                         # nudge every sub-rating (camp change, injury...)
+          "overrides": {"td_def": 0.80,      # replace any snapshot attribute
+                        "r_td_def": 1650},   # or a sub-rating (r_ + skills.SUB_RATINGS key)
           "note": "New wrestling coach; TD defence looked much better"
         }
       },
@@ -29,6 +30,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from .history import FighterSnapshot
+from .skills import SUB_RATINGS, SkillConfig, category_rating, overall_rating
 
 # Snapshot attributes that can be overridden (numeric only).
 EDITABLE = (
@@ -36,7 +38,8 @@ EDITABLE = (
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
     "form", "streak", "layoff_days", "sos", "age", "reach_cm",
-)
+) + tuple("r_" + k for k in SUB_RATINGS)
+CATEGORY_WEIGHTS = SkillConfig().category_weights
 
 
 @dataclass
@@ -97,15 +100,30 @@ class Adjustments:
         adj = self.fighters.get(s.name)
         if adj is None:
             return s
-        changes: Dict[str, Any] = {"elo": s.elo + adj.elo}
+        changes: Dict[str, Any] = {}
         bio = s.bio
+        # The Elo nudge shifts every sub-rating, so the overall moves by exactly that much.
+        ratings = {k: v + adj.elo for k, v in s.ratings.items()}
         for k, v in adj.overrides.items():
-            if k == "reach_cm":
+            if k.startswith("r_"):
+                if k[2:] in ratings:
+                    ratings[k[2:]] = v
+            elif k == "reach_cm":
                 bio = dataclasses.replace(bio, reach_cm=v)
             elif k in ("recent_ko_losses", "streak", "layoff_days"):
                 changes[k] = int(round(v))
             else:
                 changes[k] = v
+        if ratings:
+            changes.update(
+                ratings=ratings,
+                striking=category_rating(ratings, "striking"),
+                wrestling=category_rating(ratings, "wrestling"),
+                grappling=category_rating(ratings, "grappling"),
+                elo=overall_rating(ratings, CATEGORY_WEIGHTS),
+            )
+        else:
+            changes["elo"] = s.elo + adj.elo
         return dataclasses.replace(s, bio=bio, **changes)
 
     def matchup_logit(self, a: str, b: str) -> float:

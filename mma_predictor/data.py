@@ -140,6 +140,7 @@ class CornerStats:
     sub_attempts: int = 0
     knockdowns: int = 0
     ctrl_seconds: int = 0
+    ground_landed: Optional[int] = None  # significant strikes landed on the ground
 
 
 @dataclass(frozen=True)
@@ -205,13 +206,17 @@ STAT_FIELDS = (
     "sub_attempts",
     "knockdowns",
     "ctrl_seconds",
+    "ground_landed",
 )
 
 
 def _corner(row: Dict[str, str], prefix: str) -> Optional[CornerStats]:
     if all(_opt_float(row.get(f"{prefix}_{f}")) is None for f in STAT_FIELDS):
         return None
-    return CornerStats(**{f: _opt_int(row.get(f"{prefix}_{f}")) for f in STAT_FIELDS})
+    values = {f: _opt_int(row.get(f"{prefix}_{f}")) for f in STAT_FIELDS}
+    ground = _opt_float(row.get(f"{prefix}_ground_landed"))
+    values["ground_landed"] = None if ground is None else int(ground)  # absent != zero
+    return CornerStats(**values)
 
 
 def load_fighters(path: Path) -> Dict[str, FighterBio]:

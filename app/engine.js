@@ -40,8 +40,13 @@
       const reach = a.reach_cm != null && b.reach_cm != null ? (a.reach_cm - b.reach_cm) / 10 : 0;
       const subA = a.sub_per15 * (b.sub_loss_rate / (0.5 * subShare));
       const subB = b.sub_per15 * (a.sub_loss_rate / (0.5 * subShare));
+      // A's attack against B's defence minus the reverse, in rating points.
+      const edge = (att, dfn) => (a["r_" + att] - b["r_" + dfn]) - (b["r_" + att] - a["r_" + dfn]);
       return {
-        elo: clip((a.elo - b.elo) / 400),
+        overall: clip((a.elo - b.elo) / 400),
+        striking_rating: clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800),
+        wrestling_rating: clip(edge("td_off", "td_def") / 400),
+        grappling_rating: clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200),
         striking_exchange: clip((landsOn(a, b) - landsOn(b, a)) / 3),
         striking_defense: clip((a.str_def - b.str_def) * 10),
         power_vs_chin: clip(2 * (a.kd_per15 * chin(b) - b.kd_per15 * chin(a))),
@@ -132,14 +137,31 @@
       return notes;
     }
 
+    const CATS = data.rating_categories;
+    const CAT_W = data.category_weights;
+    const ratingKeys = Object.values(CATS).flat();
+    function categoryRating(s, cat) {
+      const keys = CATS[cat];
+      return keys.reduce((t, k) => t + s["r_" + k], 0) / keys.length;
+    }
+    function overallRating(s) {
+      let t = 0, w = 0;
+      for (const [cat, wt] of Object.entries(CAT_W)) { t += wt * categoryRating(s, cat); w += wt; }
+      return t / w;
+    }
+
     /** Apply a fighter adjustment {elo, overrides} like Adjustments.apply. */
     function applyAdjustment(s, adj) {
       if (!adj) return s;
-      const out = Object.assign({}, s, { elo: s.elo + (Number(adj.elo) || 0) });
+      const out = Object.assign({}, s);
+      const nudge = Number(adj.elo) || 0;
+      for (const k of ratingKeys) out["r_" + k] = s["r_" + k] + nudge;
       for (const [k, v] of Object.entries(adj.overrides || {})) {
         if (v === null || v === undefined || v === "" || Number.isNaN(Number(v))) continue;
         out[k] = INT_FIELDS.has(k) ? Math.round(Number(v)) : Number(v);
       }
+      for (const cat of Object.keys(CATS)) out[cat] = categoryRating(out, cat);
+      out.elo = overallRating(out);
       return out;
     }
 
@@ -167,7 +189,7 @@
       return { p, x, methods, factors, insights: insights(a, b, rounds), logit: logit + manual };
     }
 
-    return { features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin };
+    return { features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };
   }
 
   function devig(oddsA, oddsB) {

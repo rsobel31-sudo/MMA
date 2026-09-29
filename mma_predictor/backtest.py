@@ -52,14 +52,15 @@ class Scores:
 @dataclass
 class BacktestResult:
     model: Scores = field(default_factory=Scores)
-    elo: Scores = field(default_factory=Scores)
+    elo: Scores = field(default_factory=Scores)  # classic single-number Elo
+    overall: Scores = field(default_factory=Scores)  # category-aggregate rating alone
     market: Scores = field(default_factory=Scores)
     model_on_market: Scores = field(default_factory=Scores)
     calibration: List[Tuple[float, int, int]] = field(default_factory=list)  # (bin lower, n, wins)
     high_conf: Scores = field(default_factory=Scores)
 
     def report(self) -> str:
-        lines = ["Walk-forward backtest", "---------------------", self.model.line("model"), self.elo.line("elo only")]
+        lines = ["Walk-forward backtest", "---------------------", self.model.line("model"), self.overall.line("overall rating"), self.elo.line("classic elo")]
         if self.market.n:
             lines.append(self.market.line("market"))
             lines.append(self.model_on_market.line("model (same)"))
@@ -104,8 +105,10 @@ def walk_forward(
         assert model is not None
         p = model.predict(X[i])
         result.model.add(p, y[i])
-        pe = expected_score(history.elo.rating_before(f.fighter_a, f.date), history.elo.rating_before(f.fighter_b, f.date))
-        result.elo.add(pe, y[i])
+        classic = history.classic_elo
+        result.elo.add(expected_score(classic.rating_before(f.fighter_a, f.date), classic.rating_before(f.fighter_b, f.date)), y[i])
+        skills = history.skills
+        result.overall.add(expected_score(skills.overall_before(f.fighter_a, f.date), skills.overall_before(f.fighter_b, f.date)), y[i])
         fav = max(p, 1 - p)
         fav_won = int((p >= 0.5) == bool(y[i]))
         b = min(4, int((fav - 0.5) * 10))

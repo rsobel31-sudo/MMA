@@ -23,6 +23,7 @@ from .data import load_card, load_dataset
 from .history import FightHistory
 from .model import WinModel
 from .predictor import FightPredictor, build_training_set
+from .skills import CATEGORIES, SUB_LABELS
 from .styles import scouting_line
 
 DEFAULT_DATA = Path(__file__).resolve().parent.parent / "data" / "sample"
@@ -84,6 +85,11 @@ def cmd_profile(args) -> int:
     name = h.resolve(args.fighter)
     s = h.snapshot(name)
     print(scouting_line(s))
+    print("\nRatings (1500 = average):")
+    print(f"  Overall {s.elo:6.0f}   = {', '.join(f'{w:.0%} {c}' for c, w in h.skills.config.category_weights.items())}")
+    for cat, keys in CATEGORIES.items():
+        subs = "  ".join(f"{SUB_LABELS[k]} {s.ratings[k]:.0f}" for k in keys)
+        print(f"  {cat.title():<9} {getattr(s, cat):6.0f}   {subs}")
     print(f"\nWins by method:   " + "  ".join(f"{k} {v:.0%}" for k, v in s.win_methods.items()))
     print(f"Losses by method: " + "  ".join(f"{k} {v:.0%}" for k, v in s.loss_methods.items()))
     print(f"Strength of schedule (avg opp Elo): {s.sos:.0f}; avg Elo of beaten opponents: {s.quality_win_elo:.0f}")
@@ -98,11 +104,13 @@ def cmd_profile(args) -> int:
 
 def cmd_rankings(args) -> int:
     h = _history(args)
-    rows = [(n, r) for n, r in h.elo.leaderboard() if h.snapshot(n).fights >= args.min_fights]
-    for i, (n, r) in enumerate(rows[: args.top], 1):
-        s = h.snapshot(n)
+    snaps = [h.snapshot(n) for n in h.names()]
+    key = "elo" if args.by == "overall" else args.by
+    rows = sorted((s for s in snaps if s.fights >= args.min_fights), key=lambda s: -getattr(s, key))
+    print(f"{'':>4} {'Fighter':<28} {'Overall':>7} {'Strike':>7} {'Wrestle':>7} {'Grapple':>7} {'Record':>8}")
+    for i, s in enumerate(rows[: args.top], 1):
         inactive = " (inactive)" if s.layoff_days and s.layoff_days > 730 else ""
-        print(f"{i:>3}. {n:<28} {r:7.1f}  {s.record:>7}{inactive}")
+        print(f"{i:>3}. {s.name:<28} {s.elo:7.0f} {s.striking:7.0f} {s.wrestling:7.0f} {s.grappling:7.0f} {s.record:>8}{inactive}")
     return 0
 
 
@@ -253,6 +261,7 @@ def build_parser() -> argparse.ArgumentParser:
     data_arg(p)
     p.add_argument("--top", type=int, default=25)
     p.add_argument("--min-fights", type=int, default=3)
+    p.add_argument("--by", choices=["overall", "striking", "wrestling", "grappling"], default="overall")
     p.set_defaults(func=cmd_rankings)
 
     p = sub.add_parser("train", help="fit model weights on the dataset")

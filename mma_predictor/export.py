@@ -16,6 +16,7 @@ from typing import Any, Dict, List, Optional
 from .features import FEATURE_LABELS, FEATURES
 from .history import DEFAULT_PRIORS, FightHistory, FighterSnapshot
 from .model import PRIOR_WEIGHTS, WinModel
+from .skills import CATEGORIES, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
     "elo", "fights", "wins", "losses", "age", "minutes", "stat_minutes",
@@ -23,7 +24,7 @@ SNAPSHOT_FIELDS = (
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
-    "layoff_days", "sos", "quality_win_elo",
+    "layoff_days", "sos", "quality_win_elo", "striking", "wrestling", "grappling",
 )
 
 
@@ -37,6 +38,8 @@ def _round(v: Any) -> Any:
 
 def snapshot_json(s: FighterSnapshot) -> Dict[str, Any]:
     out = {k: _round(getattr(s, k)) for k in SNAPSHOT_FIELDS}
+    # Sub-ratings flattened as r_<key>, the same names adjustments use.
+    out.update({"r_" + k: _round(v) for k, v in s.ratings.items()})
     out.update(
         name=s.name,
         prior_wins=s.bio.prior_wins,
@@ -94,6 +97,9 @@ def export(
         "feature_labels": FEATURE_LABELS,
         "weights": model.weights,
         "prior_weights": PRIOR_WEIGHTS,
+        "rating_categories": {k: list(v) for k, v in CATEGORIES.items()},
+        "rating_labels": SUB_LABELS,
+        "category_weights": history.skills.config.category_weights,
         "fighters": fighters,
     }
 
