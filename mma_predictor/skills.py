@@ -99,7 +99,7 @@ def per_fight_rate(rate_per15: float, minutes: float) -> float:
 class SkillConfig:
     base: float = 1500.0
     k_stat: float = 14.0
-    k_result: float = 32.0
+    k_result: float = 48.0  # tuned: best ranking agreement and backtest log-loss (see README)
     provisional_fights: int = 4
     provisional_multiplier: float = 1.75
     finish_multiplier: float = 1.3
@@ -135,9 +135,32 @@ class SkillConfig:
     ko_win_per15: float = 0.16  # without stats: chance of a KO/TKO win
     sub_win_per15: float = 0.09
     sub_attempt_per15: float = 0.30
+    # Rating uncertainty (Glicko). A newcomer starts unproven; each bout shrinks
+    # the uncertainty by how informative it was, and beating someone far below
+    # you is barely informative. Inactivity grows it back.
+    rd_start: Dict[str, float] = field(default_factory=lambda: {"ufc": 250.0, "major": 280.0, "feeder": 300.0, "regional": 330.0})
+    rd_floor: float = 45.0
+    rd_growth_per_year: float = 45.0
+    # Proven rating used for rankings = overall - rank_sigmas * uncertainty.
+    rank_sigmas: float = 0.5
+    # Stat evidence from a bout against a much weaker opponent is discounted:
+    # full weight up to a 100-point gap, fading to 35% at a 300-point gap.
+    mismatch_free_gap: float = 100.0
+    mismatch_full_gap: float = 300.0
+    mismatch_min_weight: float = 0.35
 
 
 Ratings = Dict[str, float]
+Q = math.log(10) / 400.0
+
+
+def glicko_g(rd: float) -> float:
+    """How much a rating difference counts given the uncertainty around it."""
+    return 1.0 / math.sqrt(1.0 + 3.0 * Q * Q * rd * rd / (math.pi ** 2))
+
+
+def glicko_expected(r: float, r_opp: float, rd_opp: float) -> float:
+    return 1.0 / (1.0 + 10 ** (-glicko_g(rd_opp) * (r - r_opp) / 400.0))
 
 
 _MAJOR = ("bellator", "pfl", "one championship", "one fc", "one:", "rizin", "strikeforce", "pride", "wec",
@@ -190,6 +213,7 @@ class SkillRatings:
                 self._notes[notes_key(date.fromordinal(n.date.toordinal() + shift), n.fighter, n.opponent)].append(n)
         self._dates: Dict[str, List[date]] = defaultdict(list)
         self._values: Dict[str, List[Ratings]] = defaultdict(list)
+        self._rds: Dict[str, List[float]] = defaultdict(list)
         self._counts: Dict[str, int] = defaultdict(int)
         ordered = sorted(fights, key=lambda f: f.date)
         self._first_event: Dict[str, str] = {}
@@ -232,6 +256,34 @@ class SkillRatings:
         idx = bisect.bisect_left(dates, when)
         raw = self._values[name][idx - 1] if idx else self.initial(name)
         return self.effective(name, raw, idx)
+
+    # ------------------------------------------------------------ uncertainty
+    def rd_initial(self, name: str) -> float:
+        return self.config.rd_start[promotion_tier(self._first_event.get(name, "UFC"))]
+
+    def rd_before(self, name: str, when: date) -> float:
+        """Rating uncertainty entering a bout on ``when`` (grows with inactivity)."""
+        dates = self._dates.get(name)
+        cap = self.rd_initial(name)
+        if not dates:
+            return cap
+        idx = bisect.bisect_left(dates, when)
+        if idx == 0:
+            return cap
+        rd = self._rds[name][idx - 1]
+        years = max(0, (when - dates[idx - 1]).days) / 365.25
+        return min(cap, math.sqrt(rd * rd + self.config.rd_growth_per_year ** 2 * years))
+
+    def proven(self, overall: float, rd: float) -> float:
+        """Conservative rating for rankings: you have to prove it to be ranked by it."""
+        return overall - self.config.rank_sigmas * (rd - self.config.rd_floor)
+
+    def _mismatch_weight(self, gap: float) -> float:
+        cfg = self.config
+        if gap <= cfg.mismatch_free_gap:
+            return 1.0
+        t = min(1.0, (gap - cfg.mismatch_free_gap) / (cfg.mismatch_full_gap - cfg.mismatch_free_gap))
+        return 1.0 - t * (1.0 - cfg.mismatch_min_weight)
 
     def bouts_before(self, name: str, when: date) -> int:
         return bisect.bisect_left(self._dates.get(name, []), when)
@@ -385,10 +437,16 @@ class SkillRatings:
         rb = self.effective(b, raw_b, self._counts[b])
         ka, kb = self._k(a), self._k(b)
         deltas: Dict[str, Dict[str, float]] = {a: defaultdict(float), b: defaultdict(float)}
+        oa, ob = self.overall(ra), self.overall(rb)
+        rd_a, rd_b = self.rd_before(a, f.date), self.rd_before(b, f.date)
 
-        self._stat_evidence(f, a, b, ra, rb, f.stats_a, f.stats_b, deltas, (ka, kb))
-        self._stat_evidence(f, b, a, rb, ra, f.stats_b, f.stats_a, deltas, (kb, ka))
-        self._exchange(f, ra, rb, deltas, ka, kb)
+        # Dominating someone far below you says little about how you'd fare
+        # against your peers, so that stat evidence counts for less.
+        wa, wb = self._mismatch_weight(oa - ob), self._mismatch_weight(ob - oa)
+        self._stat_evidence(f, a, b, ra, rb, f.stats_a, f.stats_b, deltas, (ka * wa, kb * wa))
+        self._stat_evidence(f, b, a, rb, ra, f.stats_b, f.stats_a, deltas, (kb * wb, ka * wb))
+        wx = min(wa, wb)
+        self._exchange(f, ra, rb, deltas, ka * wx, kb * wx)
         self._notes_evidence(f, ra, rb, deltas, ka, kb)
 
         expected = sigmoid(C * (self.overall(ra) - self.overall(rb)))
@@ -409,9 +467,18 @@ class SkillRatings:
                 deltas[a][key] += step * ka
                 deltas[b][key] -= step * kb
 
+        # Glicko uncertainty: information from this bout is g(RD_opp)^2 * E * (1 - E),
+        # which is tiny when the result was a foregone conclusion.
+        new_rd = {}
+        for me, rd_me, o_me, o_opp, rd_opp in ((a, rd_a, oa, ob, rd_b), (b, rd_b, ob, oa, rd_a)):
+            e = glicko_expected(o_me, o_opp, rd_opp)
+            info = Q * Q * glicko_g(rd_opp) ** 2 * e * (1.0 - e)
+            new_rd[me] = max(cfg.rd_floor, math.sqrt(1.0 / (1.0 / (rd_me * rd_me) + info)))
+
         for name, r in ((a, raw_a), (b, raw_b)):
             new = {k: r[k] + deltas[name].get(k, 0.0) for k in SUB_RATINGS}
             current[name] = new
             self._dates[name].append(f.date)
             self._values[name].append(new)
+            self._rds[name].append(new_rd[name])
             self._counts[name] += 1

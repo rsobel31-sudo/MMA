@@ -3,8 +3,8 @@ from datetime import date
 import pytest
 
 from mma_predictor.data import CornerStats, Fight, Method
-from mma_predictor.ratings import EloRatings
-from mma_predictor.skills import CATEGORIES, SUB_RATINGS, SkillRatings, category_rating
+from mma_predictor.ratings import EloConfig, EloRatings
+from mma_predictor.skills import CATEGORIES, SUB_RATINGS, SkillConfig, SkillRatings, category_rating
 
 D1, D2 = date(2024, 1, 1), date(2024, 1, 2)
 
@@ -27,12 +27,12 @@ def test_overall_moves_like_classic_elo_without_stats():
     for method in (Method.KO, Method.SUB, Method.DEC):
         f = bout("A", method, end_round=1 if method.is_finish else 3, end_seconds=120 if method.is_finish else 300)
         sk = SkillRatings([f])
-        classic = EloRatings([f])
+        classic = EloRatings([f], config=EloConfig(k=SkillConfig().k_result))
         # Stat-free bouts add small finish-based evidence on top of the result.
         gain = sk.overall_before("A", D2) - sk.overall(sk.initial("A"))
         classic_gain = classic.rating_before("A", D2) - 1500
         assert gain > 0
-        assert gain == pytest.approx(classic_gain, abs=12)
+        assert gain == pytest.approx(classic_gain, abs=15)
 
 
 def test_finish_type_decides_which_category_moves():
@@ -124,3 +124,14 @@ def test_regional_debuts_start_lower():
     assert promotion_tier("Hoosier Fight Club 12") == "regional"
     f = Fight(D1, "A", "B", "A", Method.DEC, 3, 300, event="Hoosier Fight Club 12")
     assert SkillRatings([f]).initial("B")["td_off"] < 1500
+
+
+def test_beating_much_weaker_opponents_proves_little():
+    """Uncertainty shrinks far less from a mismatch than from an even fight."""
+    from mma_predictor.skills import glicko_expected
+    even = [Fight(date(2024, 1, i + 1), "A", f"E{i}", "A", Method.DEC, 3, 300) for i in range(5)]
+    weak = [Fight(date(2024, 1, i + 1), "B", f"W{i}", "B", Method.DEC, 3, 300) for i in range(5)]
+    # Opponents of B are rated far below (a big pedigree gap stands in for a weak record).
+    sk = SkillRatings(even + weak, pedigree={f"W{i}": {k: -400 for k in SUB_RATINGS} for i in range(5)})
+    assert sk.rd_before("B", date(2024, 2, 1)) > sk.rd_before("A", date(2024, 2, 1)) + 20
+    assert glicko_expected(1900, 1500, 50) > 0.9

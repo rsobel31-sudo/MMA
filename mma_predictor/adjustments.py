@@ -126,6 +126,7 @@ class Adjustments:
             )
         else:
             changes["elo"] = s.elo + adj.elo
+        changes["proven"] = s.proven + (changes["elo"] - s.elo)
         return dataclasses.replace(s, bio=bio, **changes)
 
     def matchup_logit(self, a: str, b: str) -> float:

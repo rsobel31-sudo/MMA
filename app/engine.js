@@ -9,6 +9,8 @@
   const clip = (x, lo = -3, hi = 3) => Math.max(lo, Math.min(hi, x));
   const sigmoid = (z) => (z >= 0 ? 1 / (1 + Math.exp(-z)) : Math.exp(z) / (1 + Math.exp(z)));
   const totalFights = (s) => s.wins + s.losses + s.prior_wins + s.prior_losses;
+  const Q = Math.log(10) / 400;
+  const glickoG = (rd) => 1 / Math.sqrt(1 + (3 * Q * Q * rd * rd) / (Math.PI * Math.PI));
 
   function agePenalty(age) {
     if (age === null || age === undefined) return 0;
@@ -52,7 +54,7 @@
       // A's attack against B's defence minus the reverse, in rating points.
       const edge = (att, dfn) => (a["r_" + att] - b["r_" + dfn]) - (b["r_" + att] - a["r_" + dfn]);
       return {
-        overall: clip((a.elo - b.elo) / 400),
+        overall: clip(((a.elo - b.elo) / 400) * glickoG(Math.hypot(a.rd, b.rd))),
         striking_rating: clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800),
         wrestling_rating: clip(edge("td_off", "td_def") / 400),
         grappling_rating: clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200),
@@ -172,6 +174,7 @@
       }
       for (const cat of Object.keys(CATS)) out[cat] = categoryRating(out, cat);
       out.elo = overallRating(out);
+      out.proven = s.proven + (out.elo - s.elo);  // uncertainty is unchanged by your edits
       return out;
     }
 

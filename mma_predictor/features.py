@@ -15,7 +15,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, List, Optional
 
+import math
+
 from .history import DEFAULT_PRIORS, FighterSnapshot, log_experience
+from .skills import glicko_g
 
 P = DEFAULT_PRIORS
 
@@ -155,7 +158,8 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         return (ra[att] - rb[dfn]) - (rb[att] - ra[dfn])
 
     return {
-        "overall": _clip((a.elo - b.elo) / 400.0),
+        # Damped by combined uncertainty: a gap between unproven ratings means less.
+        "overall": _clip((a.elo - b.elo) / 400.0 * glicko_g(math.hypot(a.rd, b.rd))),
         "striking_rating": _clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800.0),
         "wrestling_rating": _clip(edge("td_off", "td_def") / 400.0),
         "grappling_rating": _clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200.0),

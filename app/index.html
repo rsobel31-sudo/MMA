@@ -56,6 +56,7 @@ nav.tabs .count { font-family: var(--body); font-size: 12px; background: var(--e
 
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; min-width: 0; }
 .stack { display: grid; gap: 16px; }
+.stack > * { min-width: 0; }
 .btn { border: 1px solid var(--line); background: var(--surface-2); border-radius: 4px; padding: 6px 12px; cursor: pointer; font-weight: 500; }
 .btn:hover { border-color: var(--muted); }
 .btn.primary { background: var(--ink); color: var(--surface); border-color: var(--ink); }
@@ -148,7 +149,8 @@ button.sorter:hover { color: var(--ink); }
 .wc-hd h3 { font-size: 18px; text-transform: uppercase; }
 .wc-hd span { font-size: 12px; }
 .wc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13.5px; }
-.wc li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) 32% 3em; gap: 6px; align-items: center; cursor: pointer; }
+.wc li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) 28% 4.6em; gap: 6px; align-items: center; cursor: pointer; }
+.wc li .uf { display: inline-block; min-width: 2.2em; margin-left: 4px; font-size: 11px; color: var(--muted); text-align: left; }
 .wc li:hover .nm { text-decoration: underline; }
 .wc li .rk { color: var(--muted); text-align: right; }
 .wc li .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -178,6 +180,13 @@ button.namelink:hover { text-decoration-color: currentColor; }
 ul.journal { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 ul.journal li { border-left: 3px solid var(--edit); padding-left: 10px; }
 ul.journal .jt { white-space: pre-wrap; }
+.evtabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.evtabs button { flex: 0 0 auto; display: grid; gap: 2px; text-align: left; min-width: 150px; max-width: 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); cursor: pointer; font-size: 13px; }
+.evtabs button strong { font-family: var(--display); font-size: 15px; line-height: 1.15; white-space: normal; }
+.evtabs button[aria-selected="true"] { border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--ink); }
+table.bouts td { vertical-align: middle; }
+.mini { display: inline-block; width: 90px; height: 10px; background: var(--blue); border-radius: 2px; position: relative; overflow: hidden; vertical-align: middle; }
+.mini i { position: absolute; inset: 0 auto 0 0; background: var(--red); }
 .bg p { margin: 0 0 6px; }
 .bg ul { margin: 0 0 6px; padding-left: 0; list-style: none; display: grid; gap: 4px; font-size: 13.5px; }
 .bg a, .notes a { color: var(--blue); }
@@ -245,7 +254,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   </header>
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="matchup" aria-selected="true">Matchup</button>
-    <button role="tab" data-tab="card" aria-selected="false">Fight card <span class="count" id="card-count" hidden></span></button>
+    <button role="tab" data-tab="card" aria-selected="false">Upcoming cards <span class="count" id="card-count" hidden></span></button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
     <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
@@ -304,7 +313,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
     tab: "matchup",
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
-    roster: { view: "table", sort: "elo", dir: -1, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
+    roster: { view: "table", sort: "proven", dir: -1, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
   };
 
@@ -502,6 +511,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         <div><button class="btn small" type="button" id="profile-back">← Back</button></div>
         <div class="ph-main"><h2>${esc(n)}</h2><div class="ph-record num">${record(f)}</div></div>
         <p class="muted">${facts.join(" · ")}</p>
+        <p class="num"><strong>Ranking ${Math.round(f.proven)}</strong> <span class="muted">(overall ${Math.round(f.elo)} ± ${Math.round(f.rd)} uncertainty)</span>${officialRank(f) !== null ? ` · <strong>UFC ${officialLabel(f)}</strong> <span class="muted">${esc((f.official.media || f.official.meta).division)}</span>` : ""}${peers.length >= 5 ? ` · <strong>#${peers.slice().sort((x, y) => y.proven - x.proven).findIndex((x) => x.name === n) + 1}</strong> <span class="muted">of ${peers.length} in ${esc(f.division)} by our ranking</span>` : ""}</p>
         <div class="ph-actions"><button class="btn" type="button" data-corner="a">Put in red corner</button><button class="btn" type="button" data-corner="b">Put in blue corner</button>
           ${state.adj.fighters[n] ? '<span class="pill edit">You have edits on this fighter</span>' : ""}</div>
       </section>
@@ -563,7 +573,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
               <input id="odds-a" type="text" inputmode="numeric" placeholder="Red −150" value="${esc(state.m.oddsA)}" aria-label="Red corner American odds">
               <input id="odds-b" type="text" inputmode="numeric" placeholder="Blue +130" value="${esc(state.m.oddsB)}" aria-label="Blue corner American odds"></span>
             <button class="btn" id="swap" type="button">Swap corners</button>
-            <button class="btn" id="to-card" type="button" ${fa && fb ? "" : "disabled"}>Add to fight card</button>
+            <button class="btn" id="to-card" type="button" ${fa && fb ? "" : "disabled"}>Save matchup</button>
             <span class="status" id="status" role="status"></span>
           </div>
         </section>`;
@@ -785,11 +795,54 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     return (x > y ? 1 : -1) * (at.better === "low" ? -1 : 1);
   }
 
-  function renderCard(view) {
-    if (!state.card.length) {
-      view.innerHTML = `<div class="empty">No fights on your card yet. Set up a matchup and choose <strong>Add to fight card</strong> to track your picks for an upcoming event here.</div>`;
-      return;
+  // ---------------------------------------------------------- upcoming cards
+  const SEGMENT_ORDER = ["Fight card", "Main card", "Preliminary card", "Early preliminary card", "Announced"];
+  function boutRow(bt) {
+    const a = bt.a_id, b = bt.b_id;
+    const who = (id, raw, color) => `<span style="color:var(--${color})">${id ? nameLink(id) : `${esc(raw)} <span class="muted" title="No record for this fighter in the data yet">(no data)</span>`}</span>`;
+    const tags = `${bt.title ? '<span class="pill">Title</span> ' : ""}${bt.rounds === 5 ? '<span class="pill">5 rds</span>' : ""}`;
+    if (!a || !b) {
+      return `<tr><td class="muted">${esc(bt.weight_class)} ${tags}</td><td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}</td>
+        <td colspan="3" class="muted" style="font-size:13px">Can't predict until both fighters are in the data</td><td></td></tr>`;
     }
+    const r = predict(a, b, bt.rounds || 3), p = r.p;
+    const pick = p >= 0.5 ? a : b;
+    const best = [["a", a], ["b", b]].flatMap(([s, n]) => Object.entries(r.methods[s]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];
+    const touched = state.adj.fighters[a] || state.adj.fighters[b] || manualFor(a, b);
+    const fa = fighter(a), fb = fighter(b);
+    return `<tr><td class="muted">${esc(bt.weight_class)} ${tags}</td>
+      <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}</td>
+      <td><span class="mini num" title="${esc(a)} ${pct(p)} / ${esc(b)} ${pct(1 - p)}"><i style="width:${(p * 100).toFixed(1)}%"></i></span></td>
+      <td><strong>${esc(pick)}</strong> <span class="num">${pct(Math.max(p, 1 - p), 0)}</span><div class="muted" style="font-size:12px">${confidence(p, fa, fb)}</div></td>
+      <td>${esc(best[0].split(" ").slice(-1)[0])} by ${best[1]} <span class="muted num">(${pct(best[2], 0)})</span></td>
+      <td><button class="btn small" type="button" data-open-bout="${esc(a)}|${esc(b)}|${bt.rounds || 3}">Open</button></td></tr>`;
+  }
+  function renderCard(view) {
+    const up = state.data.upcoming || { events: [] };
+    const events = up.events.filter((e) => e.bouts.length);
+    if (!state.upEvent || !events.some((e) => e.name === state.upEvent)) state.upEvent = events[0] && events[0].name;
+    const ev = events.find((e) => e.name === state.upEvent);
+    const fmtDate = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    let html = `<div class="stack"><section class="panel">
+      <div class="toolbar"><h3>Upcoming UFC cards</h3><span class="muted" style="font-size:13px">Scheduled bouts from <a href="https://en.wikipedia.org/wiki/List_of_UFC_events" target="_blank" rel="noopener">Wikipedia's UFC event pages</a>${up.fetched ? `, fetched ${esc(up.fetched)}` : ""}. Predictions use your edits and reads.</span></div>
+      ${events.length ? `<div class="evtabs" role="tablist">${events.map((e) => `<button type="button" role="tab" data-event="${esc(e.name)}" aria-selected="${e.name === state.upEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.name.replace(/^UFC Fight Night:?\s*/, "Fight Night: "))}</strong><span class="muted num">${e.bouts.length} bouts</span></button>`).join("")}</div>` : `<div class="empty">No scheduled cards in the data. Run <code>python -m mma_predictor upcoming</code>, then export.</div>`}
+    </section>`;
+    if (ev) {
+      const predictable = ev.bouts.filter((b) => b.a_id && b.b_id).length;
+      const segs = [...new Set(ev.bouts.map((b) => b.segment))].sort((x, y) => SEGMENT_ORDER.indexOf(x) - SEGMENT_ORDER.indexOf(y));
+      html += `<section class="panel stack">
+        <div><h2 style="font-size:28px;text-transform:uppercase">${esc(ev.name)}</h2>
+          <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p></div>
+        ${segs.map((sg) => `<div><div class="label" style="margin-bottom:4px">${esc(sg === "Fight card" ? "Card" : sg === "Announced" ? "Announced, not yet placed on the card" : sg)}</div>
+          <div class="table-wrap"><table class="list bouts"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Pick</th><th>Most likely</th><th></th></tr></thead><tbody>
+          ${ev.bouts.filter((b) => b.segment === sg).map(boutRow).join("")}</tbody></table></div></div>`).join("")}
+      </section>`;
+    }
+    html += savedMatchups() + "</div>";
+    view.innerHTML = html;
+  }
+  function savedMatchups() {
+    if (!state.card.length) return "";
     const rows = state.card.map((c) => {
       if (!state.byName.has(c.a) || !state.byName.has(c.b)) return `<tr><td colspan="6">${esc(c.a)} vs ${esc(c.b)} <span class="muted">(fighter not in dataset)</span></td></tr>`;
       const r = predict(c.a, c.b, c.rounds || 3);
@@ -809,7 +862,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         <td class="num">${edge}</td>
         <td><button class="btn small" type="button" data-remove-card="${esc(c.id)}">Remove</button></td></tr>`;
     }).join("");
-    view.innerHTML = `<section class="panel"><div class="toolbar"><h3>Fight card</h3><span class="muted" style="font-size:13px">Click a bout to open it. Edge is model minus market (percentage points) when you've entered odds.</span></div>
+    return `<section class="panel"><div class="toolbar"><h3>Your saved matchups</h3><span class="muted" style="font-size:13px">Matchups you added from the Matchup tab. Edge is model minus market (percentage points) when you entered odds.</span></div>
       <div class="table-wrap"><table class="list"><thead><tr><th>Bout</th><th>Pick</th><th>Win prob</th><th>Most likely</th><th>Edge</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
   }
 
@@ -821,9 +874,16 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const key = (d) => { const w = /^women's /i.test(d); return (w ? 100 : 0) + wcRank(d.replace(/^women's /i, "")); };
     return key(x) - key(y);
   };
+  // Official UFC rank (media panel, else Meta): 0 = champion, null = unranked.
+  function officialRank(f) {
+    const o = f.official && (f.official.media || f.official.meta);
+    if (!o) return null;
+    return o.rank === "C" || o.rank === "IC" ? 0 : parseInt(o.rank, 10);
+  }
+  const officialLabel = (f) => { const r = officialRank(f); return r === null ? "—" : r === 0 ? "C" : "#" + r; };
   const disciplines = (f) => (f.background ? f.background.credentials.map((c) => c.discipline) : []);
   function rankOptions() {
-    const base = [["elo", "Overall"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"]];
+    const base = [["proven", "Ranking (proven)"], ["elo", "Overall (unadjusted)"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"]];
     const subs = Object.values(state.data.rating_categories).flat().map((k) => ["r_" + k, state.data.rating_labels[k]]);
     return base.concat(subs);
   }
@@ -832,6 +892,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     if (key === "weight_class") return wcRank(f.weight_class);
     if (key === "wear") return MMAEngine.wearPenalty(f);
     if (key === "record") return (f.wins + f.prior_wins) / Math.max(1, f.wins + f.losses + f.prior_wins + f.prior_losses);
+    if (key === "ufc") { const r = officialRank(f); return r === null ? -Infinity : -r; }
     const v = f[key];
     return v === null || v === undefined ? -Infinity : v;
   }
@@ -894,12 +955,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const th = (key, label) => `<th><button class="sorter" type="button" data-sort="${key}">${label}${r.sort === key ? (r.dir < 0 ? " ▼" : " ▲") : ""}</button></th>`;
     const extra = r.sort.startsWith("r_") ? th(r.sort, esc(state.data.rating_labels[r.sort.slice(2)])) : "";
     return `<div class="table-wrap"><table class="list num"><thead><tr><th>#</th>${th("name", "Fighter")}${th("weight_class", "Class")}
-      ${th("elo", "Overall")}${th("striking", "Striking")}${th("wrestling", "Wrestling")}${th("grappling", "Grappling")}${extra}
+      ${th("proven", "Ranking")}${th("ufc", "UFC")}${th("elo", "Overall")}${th("striking", "Striking")}${th("wrestling", "Wrestling")}${th("grappling", "Grappling")}${extra}
       ${th("record", "Record")}${th("age", "Age")}${th("wear", "Wear")}${th("streak", "Streak")}<th>Style</th><th>Country</th></tr></thead><tbody>
       ${sorted.map((f, i) => `<tr class="clickable" data-profile="${esc(f.name)}"><td>${i + 1}</td>
         <td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}${f.background && f.background.credentials.length ? ' <span class="pill" title="Researched background">bg</span>' : ""}</td>
         <td>${esc(f.division || "—")}${f.weight_class_inferred ? '<span class="muted" title="Inferred from opponents">*</span>' : ""}</td>
-        <td><strong>${Math.round(f.elo)}</strong></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td>
+        <td><strong>${Math.round(f.proven)}</strong></td><td>${officialLabel(f)}</td><td>${Math.round(f.elo)} <span class="muted" style="font-size:12px">±${Math.round(f.rd)}</span></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td>
         ${extra ? `<td><strong>${Math.round(f[r.sort])}</strong></td>` : ""}
         <td>${record(f)}</td><td>${f.age ? f.age.toFixed(0) : "—"}</td><td>${MMAEngine.wearPenalty(f).toFixed(1)}</td>
         <td>${f.streak > 0 ? "W" + f.streak : f.streak < 0 ? "L" + -f.streak : "—"}</td>
@@ -923,10 +984,10 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         <ol>${g.slice(0, 10).map((f, i) => {
           const v = sortValue(f, key), w = Math.max(4, 100 - (top - v) / 4);
           return `<li class="clickable" data-profile="${esc(f.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(f.name)}">${esc(f.name)}${f.weight_class_inferred ? '<span class="muted">*</span>' : ""}</span>
-            <span class="bar"><span style="width:${w.toFixed(1)}%"></span></span><span class="v num">${Math.round(v)}</span></li>`;
+            <span class="bar"><span style="width:${w.toFixed(1)}%"></span></span><span class="v num" title="Official UFC rank: ${officialLabel(f)}">${Math.round(v)}<span class="uf">${officialRank(f) === null ? "" : officialLabel(f)}</span></span></li>`;
         }).join("")}</ol>
         ${g.length > 10 ? `<button class="btn link" type="button" data-show-class="${esc(wc)}">All ${g.length} in the table</button>` : ""}</div>`;
-    }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by ${esc(label)}. Bars show the gap to the division leader.</p>`;
+    }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by ${esc(label)}. Bars show the gap to the division leader; the small grey label is the official UFC rank.</p>`;
   }
 
   function renderModel(view) {
@@ -1023,7 +1084,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       const id = matchupKey(a, b);
       if (state.card.some((c) => c.id === id)) { setStatus("Already on the card"); return; }
       const item = { id, a, b, rounds, oddsA, oddsB, order: Date.now() };
-      state.card = state.card.concat(item); state.store.saveCard(item); render(); setStatus("Added to the fight card"); return;
+      state.card = state.card.concat(item); state.store.saveCard(item); render(); setStatus("Saved to Upcoming cards → Your saved matchups"); return;
     }
     if (t.dataset.reset) { const n = t.dataset.reset, k = t.dataset.key; setFighterAdj(n, (c) => { delete c.overrides[k]; }); render(); return; }
     if (t.dataset.clearFighter) { const n = t.dataset.clearFighter; delete state.adj.fighters[n]; state.store.deleteFighter(n); render(); return; }
@@ -1059,6 +1120,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       render(); setStatus("Note saved"); return;
     }
     if (t.dataset.delJournal) { const id = t.dataset.delJournal; state.journal = state.journal.filter((j) => j.id !== id); state.store.deleteJournal(id); render(); return; }
+    if (t.dataset.event) { state.upEvent = t.dataset.event; render(); return; }
+    if (t.dataset.openBout) {
+      const [a, b, rounds] = t.dataset.openBout.split("|");
+      Object.assign(state.m, { a, b, rounds: +rounds, oddsA: "", oddsB: "" });
+      state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
+    }
     if (t.dataset.rosterView) { state.roster.view = t.dataset.rosterView; render(); return; }
     if (t.dataset.sort) {
       const k = t.dataset.sort, r = state.roster;

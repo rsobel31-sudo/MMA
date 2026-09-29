@@ -108,6 +108,8 @@ class FighterSnapshot:
     wrestling: float = 1500.0
     grappling: float = 1500.0
     pedigree: Dict[str, float] = field(default_factory=dict)  # background boost still counting
+    rd: float = 250.0  # rating uncertainty (Glicko RD)
+    proven: float = 1500.0  # overall minus uncertainty: what rankings use
     # Wear and tear
     ko_losses: int = 0
     kd_absorbed: int = 0
@@ -362,6 +364,8 @@ class FightHistory:
             wrestling=cats["wrestling"],
             grappling=cats["grappling"],
             pedigree=self.skills.pedigree(name, self.skills.bouts_before(name, as_of)),
+            rd=self.skills.rd_before(name, as_of),
+            proven=self.skills.proven(cats["overall"], self.skills.rd_before(name, as_of)),
             ko_losses=ko_losses,
             kd_absorbed=kd_abs,
             sig_absorbed=sig_absorbed,

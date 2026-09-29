@@ -23,6 +23,48 @@ ROSTER_URL = "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters"
 _SECTION = re.compile(r"^(Women's )?(\w+(?: \w+)?)weights? \(", re.I)
 
 
+RANKINGS_URL = "https://en.wikipedia.org/wiki/UFC_rankings"
+
+
+def parse_rankings(html: str) -> List[Dict[str, str]]:
+    """Official UFC rankings: [{system, division, rank, name, wiki}].
+
+    ``system`` is "meta" (the Elo-based Meta UFC Rankings) or "media" (the
+    media-panel rankings). Division ids like "Heavyweight_2" belong to the
+    second (media) block. Pound-for-pound lists are skipped.
+    """
+    root = parse_html(html)
+    out: List[Dict[str, str]] = []
+    system, division = "meta", None
+    for node in root.iter():
+        if node.tag in ("h2", "h3"):
+            hid = node.attrs.get("id", "")
+            if "media_rankings" in hid:
+                system = "media"
+            elif "Meta_rankings" in hid:
+                system = "meta"
+            text = node.text().strip()
+            division = None
+            if node.tag == "h3" and "pound" not in text.lower() and text:
+                division = text
+        elif node.tag == "table" and division and "wikitable" in node.classes:
+            for tr in node.find_all("tr"):
+                th = tr.child_elements("th")
+                tds = tr.child_elements("td")
+                if not th or len(tds) < 2:
+                    continue
+                rank = th[0].text().strip()
+                if not (rank.isdigit() or rank in ("C", "IC")):
+                    continue
+                link = tds[1].find("a")
+                if link is None:
+                    continue
+                out.append({"system": system, "division": division, "rank": rank, "name": link.text(),
+                            "wiki": link.attrs.get("href", "")})
+            division = None
+    return out
+
+
 def match_key(name: str) -> str:
     """Accent-, case- and order-insensitive key: 'Song Yadong' == 'Yadong Song'."""
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()

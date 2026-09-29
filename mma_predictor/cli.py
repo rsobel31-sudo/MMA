@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import sys
 from pathlib import Path
 from typing import List, Optional
@@ -108,16 +109,16 @@ def cmd_profile(args) -> int:
 def cmd_rankings(args) -> int:
     h = _history(args)
     snaps = [h.snapshot(n) for n in h.names()]
-    key = "elo" if args.by == "overall" else args.by
+    key = {"overall": "proven", "raw": "elo"}.get(args.by, args.by)
     wc = (args.weight_class or "").lower()
     rows = sorted(
         (s for s in snaps if s.fights >= args.min_fights and (not wc or s.bio.weight_class.lower() == wc)),
         key=lambda s: -getattr(s, key),
     )
-    print(f"{'':>4} {'Fighter':<28} {'Overall':>7} {'Strike':>7} {'Wrestle':>7} {'Grapple':>7} {'Record':>8}")
+    print(f"{'':>4} {'Fighter':<28} {'Proven':>7} {'Overall':>7} {'±':>4} {'Strike':>7} {'Wrestle':>7} {'Grapple':>7} {'Record':>8}")
     for i, s in enumerate(rows[: args.top], 1):
         inactive = " (inactive)" if s.layoff_days and s.layoff_days > 730 else ""
-        print(f"{i:>3}. {s.name:<28} {s.elo:7.0f} {s.striking:7.0f} {s.wrestling:7.0f} {s.grappling:7.0f} {s.record:>8}{inactive}")
+        print(f"{i:>3}. {s.name:<28} {s.proven:7.0f} {s.elo:7.0f} {s.rd:4.0f} {s.striking:7.0f} {s.wrestling:7.0f} {s.grappling:7.0f} {s.record:>8}{inactive}")
     return 0
 
 
@@ -211,6 +212,82 @@ def cmd_enrich(args) -> int:
     return 0
 
 
+def cmd_upcoming(args) -> int:
+    """Fetch scheduled UFC cards (Wikipedia) to data/upcoming.json."""
+    import json
+
+    from .sources import common, events
+
+    fetcher = common.Fetcher(Path(args.cache), delay=1.0, user_agent="mma-predictor/0.1 (personal research)")
+    if args.refresh:  # the schedule changes daily; drop cached copies of these pages
+        for url in [events.EVENTS_URL] + [e["url"] for e in events.scheduled_events(fetcher.get(events.EVENTS_URL))]:
+            fetcher._cache_path(url).unlink(missing_ok=True)
+    cards = events.upcoming_cards(fetcher, limit=args.limit)
+    Path(args.out).write_text(json.dumps({"fetched": date.today().isoformat(), "source": events.EVENTS_URL, "events": cards}, indent=1))
+    print(f"Wrote {len(cards)} events, {sum(len(e['bouts']) for e in cards)} bouts to {args.out}")
+    return 0
+
+
+def cmd_rebuild(args) -> int:
+    """Rebuild a Sherdog dataset from every fighter page in the cache."""
+    from .sources import common, sherdog
+
+    pages = sherdog.pages_from_cache(Path(args.cache))
+    fighters, fights = common.pages_to_rows(pages, "sherdog")
+    common.write_dataset(Path(args.data), fighters, fights)
+    print(f"Rebuilt {args.data}: {len(pages)} fighter pages, {len(fighters)} fighters, {len(fights)} bouts")
+    return 0
+
+
+def spearman(xs: List[float], ys: List[float]) -> float:
+    def ranks(v):
+        order = sorted(range(len(v)), key=lambda i: v[i])
+        r = [0.0] * len(v)
+        for pos, i in enumerate(order):
+            r[i] = pos
+        return r
+
+    rx, ry = ranks(xs), ranks(ys)
+    n = len(xs)
+    if n < 3:
+        return float("nan")
+    d2 = sum((a - b) ** 2 for a, b in zip(rx, ry))
+    return 1 - 6 * d2 / (n * (n * n - 1))
+
+
+def cmd_compare(args) -> int:
+    """How closely our proven rating orders each division compared with the official UFC rankings."""
+    import json
+
+    from .sources.events import link_names
+
+    h = _history(args)
+    ranked = json.loads(Path(args.rankings).read_text())["rankings"]
+    aliases = json.loads(Path(args.aliases).read_text()) if Path(args.aliases).exists() else {}
+    linked = link_names({r["name"] for r in ranked}, set(h.names()), aliases)
+    rhos = []
+    for division in dict.fromkeys(r["division"] for r in ranked):
+        rows = [r for r in ranked if r["system"] == args.system and r["division"] == division]
+        pairs = []
+        for r in rows:
+            n = linked.get(r["name"])
+            if n:
+                s = h.snapshot(n)
+                pairs.append((0 if r["rank"] in ("C", "IC") else int(r["rank"]), n, getattr(s, args.by)))
+        if len(pairs) < 5:
+            continue
+        rho = spearman([-p[0] for p in pairs], [p[2] for p in pairs])
+        rhos.append(rho)
+        ours = sorted(pairs, key=lambda p: -p[2])
+        print(f"\n{division}: rank correlation {rho:+.2f} ({len(pairs)} of {len(rows)} ranked fighters in data)")
+        for i, (off, n, v) in enumerate(ours, 1):
+            flag = "  <-- we rate much higher" if off - i >= 6 else ("  <-- we rate much lower" if i - off >= 6 else "")
+            print(f"  ours #{i:<2} UFC {('C' if off == 0 else '#' + str(off)):<4} {n:<26} {v:6.0f}{flag}")
+    if rhos:
+        print(f"\nMean rank correlation across {len(rhos)} divisions: {sum(rhos) / len(rhos):+.3f}")
+    return 0
+
+
 def cmd_merge(args) -> int:
     from .sources.merge import merge_datasets
 
@@ -235,7 +312,15 @@ def cmd_export(args) -> int:
             "n": res.model.n, "accuracy": res.model.accuracy, "log_loss": res.model.log_loss,
             "elo_accuracy": res.elo.accuracy, "scope": args.events or "",
         }
-    data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary, source=args.source or Path(args.data).name)
+    import json
+
+    upcoming = json.loads(Path(args.upcoming).read_text()) if args.upcoming and Path(args.upcoming).exists() else None
+    aliases = json.loads(Path(args.aliases).read_text()) if args.aliases and Path(args.aliases).exists() else {}
+    rankings = None
+    if args.rankings and Path(args.rankings).exists():
+        rankings = json.loads(Path(args.rankings).read_text()).get("rankings")
+    data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary,
+                  source=args.source or Path(args.data).name, upcoming=upcoming, aliases=aliases, rankings=rankings)
     write(data, Path(args.out))
     print(f"Exported {data['meta']['fighters_exported']} fighters to {args.out}")
     return 0
@@ -315,7 +400,8 @@ def build_parser() -> argparse.ArgumentParser:
     data_arg(p)
     p.add_argument("--top", type=int, default=25)
     p.add_argument("--min-fights", type=int, default=3)
-    p.add_argument("--by", choices=["overall", "striking", "wrestling", "grappling"], default="overall")
+    p.add_argument("--by", choices=["overall", "raw", "striking", "wrestling", "grappling"], default="overall",
+                   help="overall = proven rating (overall minus uncertainty); raw = overall without the uncertainty penalty")
     p.add_argument("--class", dest="weight_class", help="only this weight class, e.g. Lightweight (listed classes only)")
     p.set_defaults(func=cmd_rankings)
 
@@ -355,12 +441,35 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--events", default="", help="backtest scope, e.g. UFC")
     p.add_argument("--source", default="")
     p.add_argument("--no-backtest", action="store_true")
+    p.add_argument("--upcoming", default="data/upcoming.json", help="scheduled cards from the upcoming command")
+    p.add_argument("--rankings", default="data/ranked_fighters.json", help="official UFC rankings, for comparison")
+    p.add_argument("--aliases", default="data/name_aliases.json")
     p.set_defaults(func=cmd_export)
 
     p = sub.add_parser("serve", help="open the web interface locally")
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--dir", help="directory holding index.html, engine.js and data.json (default: app/)")
     p.set_defaults(func=cmd_serve)
+
+    p = sub.add_parser("compare", help="compare our division order with the official UFC rankings")
+    data_arg(p)
+    p.add_argument("--rankings", default="data/ranked_fighters.json")
+    p.add_argument("--aliases", default="data/name_aliases.json")
+    p.add_argument("--system", choices=["meta", "media"], default="media")
+    p.add_argument("--by", default="proven", choices=["proven", "elo"])
+    p.set_defaults(func=cmd_compare)
+
+    p = sub.add_parser("upcoming", help="fetch scheduled UFC fight cards from Wikipedia")
+    p.add_argument("--out", default="data/upcoming.json")
+    p.add_argument("--limit", type=int, default=10)
+    p.add_argument("--cache", default=".cache/pages")
+    p.add_argument("--refresh", action="store_true", help="re-download the schedule instead of using the cache")
+    p.set_defaults(func=cmd_upcoming)
+
+    p = sub.add_parser("rebuild", help="rebuild a Sherdog dataset from all cached fighter pages")
+    p.add_argument("--data", required=True)
+    p.add_argument("--cache", default=".cache/pages")
+    p.set_defaults(func=cmd_rebuild)
 
     p = sub.add_parser("enrich", help="add current UFC division and gender from Wikipedia's UFC roster")
     p.add_argument("--data", required=True)

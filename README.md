@@ -66,6 +66,24 @@ top of that:
   the defender: a grappler who wins on control isn't punished for not getting
   the tap.
 
+### Uncertainty, and why a weak schedule can't buy a top ranking
+
+Each fighter also carries a rating uncertainty (Glicko RD). A new fighter
+starts unproven (±250 in the UFC, more if they debuted regionally). Each bout
+shrinks the uncertainty by how informative it was: `g(RD_opp)² · E · (1 − E)`.
+Beating someone you were expected to beat 95% of the time barely counts.
+Inactivity grows it back. Rankings use the **proven rating**,
+`overall − 0.5 × (RD − 45)`. Stat evidence from bouts against opponents more
+than 100 points below you is also discounted (to 35% at a 300-point gap).
+
+**Tuning.** `python -m mma_predictor compare` measures how closely our order
+matches the official UFC rankings (media panel or Meta) in each division.
+Settings were kept only if they improved both that agreement and the
+backtest's log-loss on real results: result K = 48 and a 0.5-sigma
+uncertainty penalty. With full careers for every ranked fighter the
+mean rank correlation is 0.79, and the model picks 68.4% of 1,501 UFC bouts
+(79.8% when it's at least 65% confident).
+
 ### Scouting: background and fight commentary
 
 `data/scouting/backgrounds.json` records martial-arts pedigree (discipline,
@@ -142,7 +160,8 @@ keeps it sensible; as data grows, the data takes over.
 - **Model weights:** change how much each factor counts.
 - **Fighters:** a sortable, filterable table, or a breakout by division (men's and women's) ranked by any rating.
 - **Fighter profiles:** click any fighter name anywhere to open a written bio, ratings against the division median, researched credentials, full fight history (with a Judge button per bout) and your own dated notes.
-- **Fight card, My adjustments:** track a card; review and export everything you've changed.
+- **Upcoming cards:** every scheduled UFC event (from Wikipedia) with a pick, win probability and likely finish for each bout, plus your saved matchups.
+- **My adjustments:** review and export everything you've changed.
 
 ```bash
 python -m mma_predictor export --data data/sherdog --events UFC   # builds app/data.json
@@ -170,6 +189,11 @@ python -m mma_predictor import   sherdog  Israel-Adesanya-56374 --out data/sherd
 python -m mma_predictor import   ufcstats --out data/ufcstats [--ufc-events N]              # per-bout strike/takedown stats
 python -m mma_predictor import   tapology israel-adesanya       --out data/tapology --depth 1
 python -m mma_predictor merge    data/ufcstats data/sherdog data/tapology --out data/merged
+python -m mma_predictor rebuild  --data data/sherdog        # rebuild from every cached Sherdog page
+python -m mma_predictor enrich   --data data/sherdog        # UFC division + gender (Wikipedia roster)
+python -m mma_predictor upcoming                            # scheduled UFC cards -> data/upcoming.json
+python -m mma_predictor compare  --data data/sherdog        # our order vs official UFC rankings
+python scripts/crawl_ranked.py                              # careers of every ranked fighter + their UFC opponents
 ```
 
 Every command takes `--data DIR` (default `data/sample`). Names match partially and case-insensitively.

@@ -13,7 +13,8 @@ from __future__ import annotations
 
 import re
 from datetime import date
-from typing import List, Optional
+from typing import List, Optional, Tuple
+from urllib.parse import quote_plus
 
 from .common import CareerBout, Fetcher, FighterPage, find_date, length_cm, method_from_text, normalise_result
 from .html import Node, parse_html
@@ -111,7 +112,64 @@ def _parse_row(tds: List[Node]) -> Optional[CareerBout]:
     )
 
 
+def search_fighter(fetcher: Fetcher, name: str) -> List[Tuple[str, str]]:
+    """[(name, url)] from Sherdog's fight finder."""
+    url = BASE + "/stats/fightfinder?SearchTxt=" + quote_plus(name)
+    root = parse_html(fetcher.get(url))
+    out = []
+    for a in root.find_all("a", pred=lambda n: n.attrs.get("href", "").startswith("/fighter/")):
+        full = BASE + a.attrs["href"]
+        if a.text() and (a.text(), full) not in out:
+            out.append((a.text(), full))
+    return out
+
+
+def pages_from_cache(cache_dir) -> List[FighterPage]:
+    """Parse every cached Sherdog fighter page (crawls are incremental)."""
+    import re
+    from pathlib import Path
+
+    pages = []
+    for f in Path(cache_dir).glob("*.html"):
+        html = f.read_text(encoding="utf-8")
+        m = re.search(r'og:url" content="([^"]+)"', html)
+        if not m or "sherdog.com/fighter/" not in m.group(1):
+            continue
+        url = "https:" + m.group(1) if m.group(1).startswith("//") else m.group(1)
+        try:
+            pages.append(parse_fighter(html, url))
+        except ValueError:
+            continue
+    return pages
+
+
 UFC_ORG = BASE + "/organizations/Ultimate-Fighting-Championship-UFC-2"
+
+
+def upcoming_event_fighters(fetcher: Fetcher, org_url: str = UFC_ORG, log=print) -> List[str]:
+    """Fighter URLs from an organisation's scheduled (future) events."""
+    today = date.today()
+    root = parse_html(fetcher.get(org_url))
+    events = []
+    for tr in root.find_all("tr"):
+        link = tr.find("a", pred=lambda a: a.attrs.get("href", "").startswith("/events/"))
+        when = find_date(tr.text()) if link else None
+        if link is not None and when is not None and when >= today:
+            href = BASE + link.attrs["href"]
+            if href not in events:
+                events.append(href)
+    fighters: List[str] = []
+    for ev in events:
+        try:
+            ev_root = parse_html(fetcher.get(ev))
+        except OSError as exc:
+            log(f"  skip {ev}: {exc}")
+            continue
+        for a in ev_root.find_all("a", pred=lambda a: a.attrs.get("href", "").startswith("/fighter/")):
+            href = BASE + a.attrs["href"]
+            if href not in fighters:
+                fighters.append(href)
+    return fighters
 
 
 def recent_event_fighters(fetcher: Fetcher, events: int = 40, org_url: str = UFC_ORG, log=print) -> List[str]:

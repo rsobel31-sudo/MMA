@@ -18,6 +18,7 @@ from .features import FEATURE_LABELS, FEATURES
 from .history import DEFAULT_PRIORS, FightHistory, FighterSnapshot
 from .model import PRIOR_WEIGHTS, WinModel
 from .bios import division_label, write_bio
+from .sources.events import link_names
 from .skills import CATEGORIES, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
@@ -27,7 +28,7 @@ SNAPSHOT_FIELDS = (
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
     "layoff_days", "sos", "quality_win_elo", "striking", "wrestling", "grappling",
-    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree", "rd", "proven",
 )
 
 
@@ -88,17 +89,26 @@ def export(
     as_of: Optional[date] = None,
     backtest: Optional[Dict[str, Any]] = None,
     source: str = "",
+    upcoming: Optional[Dict[str, Any]] = None,
+    aliases: Optional[Dict[str, str]] = None,
+    rankings: Optional[List[Dict[str, str]]] = None,
 ) -> Dict[str, Any]:
     model = model or WinModel()
     as_of = as_of or history.default_date()
     known_wc = {n: b.weight_class for n, b in history.bios.items() if b.weight_class}
     fighters: List[Dict[str, Any]] = []
     picked: List[Tuple[FighterSnapshot, Dict[str, Any]]] = []
+    # Fighters on upcoming cards or in the official rankings are always exported.
+    dataset_names = set(history.names())
+    card_names = [str(b[k]) for e in (upcoming or {}).get("events", []) for b in e.get("bouts", []) for k in ("a", "b")]
+    ranked_names = [r["name"] for r in (rankings or [])]
+    linked = link_names(set(card_names) | set(ranked_names), dataset_names, aliases)
+    must = set(linked.values())
     for name in history.names():
         s = history.snapshot(name, as_of)
         researched = name in history.scouting.backgrounds and s.fights >= 1
         inactive = s.layoff_days is None or s.layoff_days > active_years * 365
-        if not researched and (s.fights < min_fights or inactive):
+        if name not in must and not researched and (s.fights < min_fights or inactive):
             continue
         row = snapshot_json(s)
         wc, inferred = infer_weight_class(history, name, as_of, known_wc)
@@ -130,6 +140,18 @@ def export(
         row["bio"] = write_bio(s, peers, row["division"], history.scouting.backgrounds.get(s.name))
         fighters.append(row)
     fighters.sort(key=lambda f: -f["elo"])
+    # Official UFC rank(s), for comparing our order with the UFC's.
+    by_name = {f["name"]: f for f in fighters}
+    for r in rankings or []:
+        target = linked.get(r["name"])
+        if target in by_name:
+            by_name[target].setdefault("official", {})[r["system"]] = {"rank": r["rank"], "division": r["division"]}
+    cards = []
+    for e in (upcoming or {}).get("events", []):
+        bouts = [dict(b, a_id=linked.get(str(b["a"])) if linked.get(str(b["a"])) in by_name else None,
+                      b_id=linked.get(str(b["b"])) if linked.get(str(b["b"])) in by_name else None)
+                 for b in e.get("bouts", [])]
+        cards.append(dict(e, bouts=bouts))
     return {
         "meta": {
             "as_of": as_of.isoformat(),
@@ -149,6 +171,7 @@ def export(
         "rating_categories": {k: list(v) for k, v in CATEGORIES.items()},
         "rating_labels": SUB_LABELS,
         "category_weights": history.skills.config.category_weights,
+        "upcoming": {"fetched": (upcoming or {}).get("fetched"), "source": (upcoming or {}).get("source"), "events": cards},
         "fighters": fighters,
     }
 
