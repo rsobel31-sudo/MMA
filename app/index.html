@@ -1,38 +1,39 @@
 <title>MMA Fight Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: fight-night broadcast graphic. Red corner left, blue corner right, tale of the tape down the middle; tabs for card, roster, model, and your adjustments. */
+/* Look: calm product page (Land-book style). Ivory ground, white rounded cards, a serif display face over a clean sans, pill controls; red and blue corners keep their meaning. */
 :root {
-  --bg: #eceff2;
+  --bg: #f6f3ec;
   --surface: #ffffff;
-  --surface-2: #f5f7f9;
-  --ink: #161c23;
-  --muted: #5a6572;
-  --line: #d3d9df;
-  --red: #c41230;
-  --red-soft: #f6d9de;
-  --blue: #1b56c4;
-  --blue-soft: #d8e3f7;
-  --edit: #a86a0c;
-  --edit-soft: #f7ead2;
+  --surface-2: #f3efe6;
+  --ink: #17181c;
+  --muted: #5b5e66;
+  --line: #e6e0d4;
+  --red: #b3261e;
+  --red-soft: #f6deda;
+  --blue: #1f4fb3;
+  --blue-soft: #dce4f5;
+  --edit: #955708;
+  --edit-soft: #f7ead5;
   --good: #1f7a4a;
-  --focus: #1b56c4;
-  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
-  --body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --focus: #1f4fb3;
+  --shadow: 0 1px 2px rgba(23, 24, 28, .05), 0 14px 32px -20px rgba(23, 24, 28, .22);
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Manrope", "Segoe UI", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1318; --surface: #181e25; --surface-2: #1e252d; --ink: #e7ebef; --muted: #98a3af; --line: #2b333c;
-    --red: #f0506a; --red-soft: #3a1c23; --blue: #6a98f2; --blue-soft: #1a2945; --edit: #e6aa4a; --edit-soft: #3a2c14;
-    --good: #52c287; --focus: #6a98f2; color-scheme: dark;
+    --bg: #141412; --surface: #1d1c19; --surface-2: #26241f; --ink: #f2eee6; --muted: #aaa498; --line: #35322c;
+    --red: #e9665c; --red-soft: #3b1f1c; --blue: #7ea2f0; --blue-soft: #1c2742; --edit: #e6aa4a; --edit-soft: #3a2c14;
+    --good: #52c287; --focus: #7ea2f0; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 32px -20px rgba(0, 0, 0, .6); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f1318; --surface: #181e25; --surface-2: #1e252d; --ink: #e7ebef; --muted: #98a3af; --line: #2b333c;
-  --red: #f0506a; --red-soft: #3a1c23; --blue: #6a98f2; --blue-soft: #1a2945; --edit: #e6aa4a; --edit-soft: #3a2c14;
-  --good: #52c287; --focus: #6a98f2; color-scheme: dark;
+  --bg: #141412; --surface: #1d1c19; --surface-2: #26241f; --ink: #f2eee6; --muted: #aaa498; --line: #35322c;
+  --red: #e9665c; --red-soft: #3b1f1c; --blue: #7ea2f0; --blue-soft: #1c2742; --edit: #e6aa4a; --edit-soft: #3a2c14;
+  --good: #52c287; --focus: #7ea2f0; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 32px -20px rgba(0, 0, 0, .6); color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; margin: 0; }
@@ -278,11 +279,72 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   .elo-nudge input { width: 54px; }
 }
 @media (prefers-reduced-motion: reduce) { .probbar div { transition: none; } }
+
+/* ---- Land-book theme layer: overrides the base component styles above ---- */
+body { font-size: 15.5px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1240px; padding-inline: 24px; padding-block: 0 72px; }
+h1, h2, h3 { font-weight: 500; letter-spacing: -.01em; text-transform: none; }
+h3 { font-size: 22px; }
+.label { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .08em; }
+header.top { align-items: center; padding-block: 22px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
+header.top h1 { font-size: 26px; font-weight: 600; text-transform: none; display: flex; align-items: center; gap: 10px; }
+header.top h1 span { color: inherit; }
+header.top h1 svg { flex: 0 0 auto; }
+header.top .tagline { font-size: 14px; color: var(--muted); margin-top: 2px; }
+nav.tabs { gap: 6px; border-bottom: 0; margin: 20px 0 28px; padding: 4px; background: var(--surface-2); border-radius: 999px; width: fit-content; max-width: 100%; }
+nav.tabs button { font-family: var(--body); font-weight: 600; font-size: 14.5px; text-transform: none; letter-spacing: 0; padding: 9px 18px; border: 0; margin: 0; border-radius: 999px; }
+nav.tabs button:hover { color: var(--ink); }
+nav.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+nav.tabs .count { border-radius: 999px; }
+.panel { border: 1px solid transparent; border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
+.stack { gap: 20px; }
+.grid2 { gap: 20px; }
+.btn { border-radius: 999px; padding: 8px 16px; background: var(--surface); font-weight: 600; }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.small { padding: 5px 12px; font-size: 13px; }
+input[type="text"], input[type="number"], input[type="search"], textarea, select { border-radius: 12px; padding: 9px 12px; }
+.corner input { font-family: var(--display); font-weight: 500; font-size: 24px; padding: 10px 14px; border-left-width: 4px; }
+.vs { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 24px; }
+.seg { border-radius: 999px; }
+.seg button { padding: 7px 14px; font-weight: 600; }
+.names h2 { font-family: var(--display); font-weight: 500; text-transform: none; font-size: clamp(26px, 4vw, 40px); letter-spacing: -.02em; }
+.probbar { border-radius: 14px; height: 48px; font-family: var(--body); font-size: 18px; }
+.probbar div { padding-inline: 16px; }
+.pill { border-radius: 999px; border: 0; padding: 4px 11px; font-size: 12.5px; }
+.verdict-line .pill.num { background: var(--surface-2); font-size: 13px; padding: 6px 12px; }
+.mtrack, .mtrack div, .rbar .track, .rbar .track b, .wc li .bar, .wc li .bar span, .fbar div { border-radius: 999px; }
+.mhead { font-family: var(--body); font-weight: 700; }
+table.tape th { font-family: var(--display); font-weight: 500; font-size: 20px; text-transform: none; }
+table.tape th, table.tape td { padding: 7px 8px; }
+table.tape tr.group td { font-family: var(--body); font-size: 12px; font-weight: 700; letter-spacing: .08em; padding-top: 22px; }
+table.list th { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .06em; }
+table.list td { padding-block: 10px; }
+.wc { border-radius: 16px; border-color: var(--line); background: var(--surface); }
+.wc-hd h3 { font-family: var(--display); text-transform: none; font-size: 22px; }
+.ph-main h2 { font-family: var(--display); font-weight: 500; text-transform: none; letter-spacing: -.02em; font-size: clamp(32px, 5vw, 52px); }
+.ph-record { font-family: var(--body); font-weight: 600; font-size: 20px; }
+.evtabs button { border-radius: 16px; padding: 12px 14px; }
+.evtabs button strong { font-family: var(--display); font-weight: 500; font-size: 16px; }
+.evtabs button[aria-selected="true"] { box-shadow: var(--shadow); }
+.tier, span.verdict { border-radius: 999px; }
+.nostats, .judge { border-radius: 12px; }
+.empty { border-radius: 20px; }
+pre.json { border-radius: 12px; }
+dialog.info-dlg { border: 0; border-radius: 20px; padding: 26px 28px; box-shadow: var(--shadow); }
+dialog.info-dlg h3 { font-size: 28px; }
+dialog.info-dlg dt { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .08em; }
+.mini { border-radius: 999px; }
+a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+a:hover { color: var(--red); text-decoration-color: currentColor; }
+@media (max-width: 600px) { .wrap { padding-inline: 16px; } .panel { padding: 18px; border-radius: 16px; } header.top { padding-block: 16px; } }
 </style>
 
 <div class="wrap">
   <header class="top">
-    <h1>MMA Fight <span>Lab</span></h1>
+    <div>
+      <h1><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="var(--red)" stroke-width="2.5"/><path d="M14 2v24M2 14h24" stroke="currentColor" stroke-width="1.5"/></svg>Fight <span>Lab</span></h1>
+      <div class="tagline">Know the fight before the cage door closes.</div>
+    </div>
     <div class="meta num" id="meta">Loading fighter data…</div>
   </header>
   <nav class="tabs" role="tablist" id="tabs">
@@ -1054,7 +1116,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       const tierLine = Object.keys(TIER_LABEL).filter((k) => tiers[k]).map((k) => `<span class="tier tier-${k}">${TIER_LABEL[k]} ${tiers[k]}</span>`).join(" ");
       const segs = [...new Set(ev.bouts.map((b) => b.segment))].sort((x, y) => SEGMENT_ORDER.indexOf(x) - SEGMENT_ORDER.indexOf(y));
       html += `<section class="panel stack">
-        <div><h2 style="font-size:28px;text-transform:uppercase">${esc(ev.name)}</h2>
+        <div><h2 style="font-size:36px">${esc(ev.name)}</h2>
           <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p>
           <div class="toolbar" style="margin:10px 0 0">${tierLine || '<span class="muted" style="font-size:13px">No highlighted bouts on this card.</span>'}
             <label class="check" style="font-size:13px"><input type="checkbox" id="up-only" ${state.upOnlyHighlights ? "checked" : ""}> Show highlighted bouts only</label></div></div>
