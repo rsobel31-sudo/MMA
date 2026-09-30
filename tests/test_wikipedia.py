@@ -1,4 +1,4 @@
-from mma_predictor.sources.wikipedia import match_key, parse_roster, propagate_gender, resolve
+from mma_predictor.sources.wikipedia import match_key, parse_roster, propagate_gender, reconcile_gender, resolve
 
 ROSTER = """
 <html><body>
@@ -49,3 +49,10 @@ def test_link_names_needs_two_distinct_name_parts():
     got = link_names(["Francisco Prado", "Ian Machado Garry"], {"Francisco Francisco", "Ian Garry"})
     assert "Francisco Prado" not in got
     assert got["Ian Machado Garry"] == "Ian Garry"
+
+
+def test_reconcile_gender_fixes_a_bad_seed():
+    # A woman mislabelled male (e.g. listed at "Lightweight") who has only fought women.
+    bouts = [("Wrong", "W1"), ("Wrong", "W2"), ("Wrong", "W3"), ("M1", "M2")]
+    got = reconcile_gender(bouts, {"Wrong": "M", "W1": "F", "W2": "F", "W3": "F", "M1": "M", "M2": "M"})
+    assert got["Wrong"] == "F" and got["M1"] == "M"

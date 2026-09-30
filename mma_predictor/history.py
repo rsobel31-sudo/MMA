@@ -122,6 +122,13 @@ class FighterSnapshot:
     intangibles_rating: float = 1500.0
     all_appearances: List[Appearance] = field(default_factory=list, repr=False)
     recent: List[Appearance] = field(default_factory=list, repr=False)
+    # Base rates of the sport this fighter competes in (men's and women's differ).
+    priors: Priors = field(default=DEFAULT_PRIORS, repr=False)
+
+    @property
+    def sig_diff5(self) -> float:
+        """Significant strike differential per 5 minutes: (landed - absorbed) per minute x 5."""
+        return 5.0 * (self.slpm - self.sapm)
 
     @property
     def total_wins(self) -> int:
@@ -350,6 +357,7 @@ class FightHistory:
         ratings = self.skills.before(name, as_of)
         cats = self.skills.breakdown(ratings)
         snap = FighterSnapshot(
+            priors=p,
             name=name,
             as_of=as_of,
             bio=bio,

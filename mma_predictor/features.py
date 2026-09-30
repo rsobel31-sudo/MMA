@@ -17,10 +17,9 @@ from typing import Dict, List, Optional
 
 import math
 
-from .history import DEFAULT_PRIORS, FighterSnapshot, log_experience
+from .history import FighterSnapshot, log_experience
 from .skills import glicko_g
 
-P = DEFAULT_PRIORS
 
 
 @dataclass(frozen=True)
@@ -121,19 +120,20 @@ def layoff_penalty(days: Optional[int]) -> float:
 
 def lands_on(attacker: FighterSnapshot, defender: FighterSnapshot) -> float:
     """Projected significant strikes per minute ``attacker`` lands on ``defender``."""
-    hittable = (1.0 - defender.str_def) / (1.0 - P.str_def)
+    hittable = (1.0 - defender.str_def) / (1.0 - defender.priors.str_def)
     return attacker.slpm * hittable
 
 
 def takedowns_on(attacker: FighterSnapshot, defender: FighterSnapshot) -> float:
     """Projected takedowns per 15 minutes."""
-    porous = (1.0 - defender.td_def) / (1.0 - P.td_def)
+    porous = (1.0 - defender.td_def) / (1.0 - defender.priors.td_def)
     return attacker.td_per15 * porous
 
 
 def chin_vulnerability(s: FighterSnapshot) -> float:
-    base = 0.5 * P.method_share["KO/TKO"]
-    return (s.ko_loss_rate / base) * (1.0 + 0.5 * s.kd_absorbed_per15 / P.kd_per15) / 1.5
+    p = s.priors
+    base = 0.5 * p.method_share["KO/TKO"]
+    return (s.ko_loss_rate / base) * (1.0 + 0.5 * s.kd_absorbed_per15 / p.kd_per15) / 1.5
 
 
 def _stance(a: FighterSnapshot, b: FighterSnapshot) -> float:
@@ -150,8 +150,8 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
     reach = 0.0
     if a.bio.reach_cm is not None and b.bio.reach_cm is not None:
         reach = (a.bio.reach_cm - b.bio.reach_cm) / 10.0
-    sub_a = a.sub_per15 * (b.sub_loss_rate / (0.5 * P.method_share["SUB"]))
-    sub_b = b.sub_per15 * (a.sub_loss_rate / (0.5 * P.method_share["SUB"]))
+    sub_a = a.sub_per15 * (b.sub_loss_rate / (0.5 * b.priors.method_share["SUB"]))
+    sub_b = b.sub_per15 * (a.sub_loss_rate / (0.5 * a.priors.method_share["SUB"]))
     ra, rb = a.ratings, b.ratings
 
     def edge(att: str, dfn: str) -> float:

@@ -171,13 +171,45 @@ intangibles edits" in What's driving it. Edit them in the tale of the tape
 | Area | Attributes |
 |---|---|
 | Overall strength | Category ratings above, strength of schedule (average opponent overall rating) |
-| Striking | Sig. strikes landed/absorbed per min, accuracy, defence, knockdowns scored/absorbed |
+| Striking | Sig. strikes landed/absorbed per min, strike differential per 5 min (landed − absorbed, ×5), accuracy, defence, knockdowns scored/absorbed |
 | Grappling | Takedowns per 15, TD accuracy, TD defence, submission attempts, control-time share |
 | Durability | KO-loss rate, KO losses in last 3 bouts, knockdowns absorbed |
 | Finishing | Share of wins/losses by KO/TKO, submission and decision |
 | Physical | Age (prime/decline curve), reach, stance |
 | Momentum | Recency-weighted form, streak, layoff length |
 | Cardio | Win rate in bouts reaching round 3+, weighted more heavily for 5-rounders |
+
+### Men's and women's MMA
+
+Men and women never share a cage, so their ratings never mix: the fight
+graph splits in two. The sports do differ. Women's UFC bouts end by KO/TKO
+18% of the time against 35% for men's, and go the distance 64% against 46%.
+`mma_predictor/sports.py` can treat them as fully separate sports, each with
+its own ratings, base rates (method shares, KO and submission rates) and
+model. Fighter snapshots carry their sport's base rates, so the features and
+method model use them.
+
+Tested walk-forward on the same 3,923 UFC bouts (705 women's):
+
+| Setup | Men's acc / log-loss | Women's acc / log-loss |
+|---|---|---|
+| One shared model (default) | 66.0% / 0.6219 | 62.4% / 0.6412 |
+| Separate model weights | 66.1% / 0.6226 | 63.1% / 0.6449 |
+| Separate weights, shrunk toward the shared fit | 66.0% / 0.6224 | 62.4% / 0.6410 |
+| Separate ratings and base rates, shared weights | 66.2% / 0.6219 | 62.3% / 0.6417 |
+| Women's rating tuning (K, category weights, attribution) | – | 61.7–62.8% / 0.641–0.644 |
+
+None of these beat the shared model by more than noise (±1.8% accuracy on 705
+bouts), and a separate confidence calibration was worse for women out of
+sample. Each fighter's own record already carries their sport's finishing
+tendencies. So one model is the default. Run `backtest --split-sports` to
+re-test as data grows; the backtest always reports men's and women's accuracy
+separately.
+
+Gender comes from `enrich`. Its last step checks each fighter against their
+opponents: a fighter whose known opponents are at least two-thirds one gender
+is that gender. This fixed 59 labels, e.g. Ketlen Vieira, whom Sherdog lists
+at "Lightweight" and whom the men-only class rule had tagged male.
 
 ### Matchup features
 
@@ -214,6 +246,8 @@ keeps it sensible; as data grows, the data takes over.
 
 - **Matchup:** pick red and blue corners, 3 or 5 rounds, optional moneylines. You get win probability, method of victory, the factors driving the pick and matchup patterns.
 - **Tale of the tape:** every attribute is editable. Type over a number (takedown defence, strikes absorbed, KO-loss rate, age, reach…) and the prediction updates instantly. Edited values turn amber and can be reset one at a time. You can also nudge a fighter's Elo and keep a scouting note.
+- **ⓘ buttons:** click one next to any rating, intangible or stat for what it measures, what evidence moves it (with per-fight stats and with records only), how it feeds the prediction, and both fighters' current values.
+- **Strike differential:** significant strikes landed minus absorbed per 5 minutes. Without per-fight stats it shows the league average (±0). Type in the real number and the page keeps the fighter's output, splits it into landed/absorbed, and the striking exchange factor updates.
 - **Your read on this fight:** a slider that shifts the odds toward either corner for things the numbers can't see (weight cut, injury, short notice), with a note.
 - **Model weights:** change how much each factor counts.
 - **Fighters:** a sortable, filterable table, or a breakout by division (men's and women's) ranked by any rating.
@@ -241,7 +275,7 @@ python -m mma_predictor card     --card data/sample/upcoming_card.csv [-v]
 python -m mma_predictor profile  "Fighter"
 python -m mma_predictor rankings --top 25
 python -m mma_predictor train    --out models/model.json
-python -m mma_predictor backtest
+python -m mma_predictor backtest [--events UFC] [--split-sports]
 python -m mma_predictor import   sherdog  --ufc-events 60 --depth 0 --out data/sherdog   # every fighter from the last 60 UFC events
 python -m mma_predictor import   sherdog  Israel-Adesanya-56374 --out data/sherdog --depth 1
 python -m mma_predictor import   ufcstats --out data/ufcstats [--ufc-events N]              # per-bout strike/takedown stats
@@ -285,7 +319,8 @@ of accents, order or middle names ("Ian Garry" = "Ian Machado Garry").
 Everyone else gets a gender from the nearest known fighters in the fight
 graph, because men and women don't fight each other. Divisions only women
 contest (strawweight) and those only men contest (lightweight and up) are
-extra anchors.
+extra anchors. A final pass corrects anyone whose label contradicts their
+opponents' (see Men's and women's MMA above).
 
 Tapology's robots.txt disallows Anthropic's crawlers, so Claude doesn't fetch
 from it. The Tapology importer is there for you to run yourself, subject to

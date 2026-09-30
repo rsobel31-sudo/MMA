@@ -14,12 +14,11 @@ from typing import Dict
 
 from .data import METHOD_BUCKETS
 from .features import chin_vulnerability
-from .history import DEFAULT_PRIORS, FighterSnapshot
-
-P = DEFAULT_PRIORS
+from .history import FighterSnapshot
 
 
 def method_distribution(winner: FighterSnapshot, loser: FighterSnapshot, scheduled_rounds: int = 3) -> Dict[str, float]:
+    P = winner.priors  # both fighters are in the same sport
     pop = P.method_share
     raw = {m: winner.win_methods[m] * loser.loss_methods[m] / pop[m] for m in METHOD_BUCKETS}
 

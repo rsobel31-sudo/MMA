@@ -77,6 +77,76 @@ SUB_LABELS: Dict[str, str] = {
 }
 C = math.log(10) / 400.0
 
+# What each rating measures and what moves it, shown by the web interface's (i) buttons.
+# "stats" = evidence from per-fight stats (UFCStats); "records" = what a win/loss record alone gives.
+RATING_HELP: Dict[str, Dict[str, str]] = {
+    "overall": {
+        "measures": "How good a fighter is overall: the weighted average of Striking (45%), Wrestling (25%) and Grappling (30%).",
+        "stats": "Moves exactly like classic Elo after every bout: K x margin x (result - expected win chance), where the "
+                 "expected chance comes from the two overall ratings. Finishes count 1.3x (more if early), split decisions 0.6x, "
+                 "title fights 1.1x. K is larger while a fighter is new or returning from a layoff (uncertain ratings move faster).",
+        "records": "Same: results drive it. Rankings use the proven rating: overall minus half the uncertainty, so a short "
+                   "record against weak opposition can't reach the top.",
+    },
+    "striking": {
+        "measures": "Stand-up: landing clean, not getting hit, hurting people and taking a shot. Mean of striking offence, "
+                    "striking defence, power and chin.",
+        "stats": "Accuracy vs the opponent's defence, share of significant strikes landed, knockdowns scored and absorbed. "
+                 "KO/TKO wins tilt the result change 70% toward striking; decisions by who won the striking.",
+        "records": "KO/TKO wins raise power and lower the loser's chin; wins and losses move all four (tilted toward "
+                   "striking for knockouts). Always relative to the opponent's level.",
+    },
+    "wrestling": {
+        "measures": "Takedowns: getting the fight down and keeping it standing. Mean of takedown offence and defence.",
+        "stats": "Takedowns landed per attempt, judged against the opponent's takedown defence (and vice versa). Decisions "
+                 "tilt toward wrestling when one fighter clearly won the takedown battle.",
+        "records": "Without stats only wins and losses move it (a small share of each result), so it separates slowly. "
+                   "Background credentials (e.g. NCAA wrestling) add a fading head start.",
+    },
+    "grappling": {
+        "measures": "The fight on the mat: top control, getting up or escaping, ground and pound, submissions and submission "
+                    "defence. Mean of five sub-ratings.",
+        "stats": "Share of the fight spent in control, ground strikes per control minute, submission attempts and wins, "
+                 "all judged against the opponent's matching defence. Submission wins tilt the result change 75% toward grappling.",
+        "records": "Submission wins raise submission offence and lower the loser's submission defence; surviving a dangerous "
+                   "submission artist counts in full. Grappling credentials (BJJ black belt, ADCC) and your fight commentary "
+                   "count too, because a grappler who rarely taps people can still be elite.",
+    },
+    "strike_off": {"measures": "Landing significant strikes: accuracy and output against the opponent's defence.",
+                   "stats": "Accuracy per fight vs the defender's striking defence (weighted by strikes thrown) and share of exchanges won.",
+                   "records": "Only via results: moves with wins and losses, most with KO/TKO results."},
+    "strike_def": {"measures": "Not getting hit: making opponents miss.",
+                   "stats": "Opponents' accuracy against you vs what their offence predicted, and share of exchanges.",
+                   "records": "Only via results."},
+    "power": {"measures": "Hurting people: knockdowns and KO/TKO wins, relative to how hard the opponent is to hurt.",
+              "stats": "Whether a knockdown or KO was scored, vs the expected chance given your power and their chin and the fight length.",
+              "records": "KO/TKO wins vs the chance expected from your power and their chin. Not finishing only counts 40% against you."},
+    "chin": {"measures": "Taking a shot: not being knocked down or stopped.",
+             "stats": "Knockdowns and KO/TKO losses absorbed vs the opponent's power. Surviving a heavy hitter counts in full.",
+             "records": "KO/TKO losses (down) and going the distance with power punchers (up)."},
+    "td_off": {"measures": "Getting the fight to the mat.",
+               "stats": "Takedowns landed per attempt vs the defender's takedown defence, weighted by attempts.",
+               "records": "Only via results (plus wrestling background)."},
+    "td_def": {"measures": "Keeping the fight standing.",
+               "stats": "Opponents' takedown success against you vs what their takedown offence predicted.",
+               "records": "Only via results (plus wrestling background)."},
+    "control": {"measures": "Holding top position once the fight hits the mat.",
+                "stats": "Share of fight time in control vs the opponent's escapes rating, weighted by minutes.",
+                "records": "Only via results (plus grappling background and your commentary)."},
+    "scramble": {"measures": "Escapes and get-ups: not being held down or beaten up on the bottom.",
+                 "stats": "Opponents' control share and ground strikes against you, vs their control and ground and pound.",
+                 "records": "Only via results."},
+    "gnp": {"measures": "Damage from top position.",
+            "stats": "Ground strikes landed per minute of control vs the opponent's escapes.",
+            "records": "Only via results."},
+    "sub_off": {"measures": "Finishing with submissions and threatening them.",
+                "stats": "Submission wins and attempts vs the chance expected from the defender's submission defence and the fight length.",
+                "records": "Submission wins vs the expected chance. Not tapping someone only counts 40% against you."},
+    "sub_def": {"measures": "Not getting submitted.",
+                "stats": "Surviving opponents' submission threat: a full fight with an elite submission artist raises it most.",
+                "records": "Submission losses (down) and surviving dangerous submission artists (up)."},
+}
+
 
 def sigmoid(z: float) -> float:
     if z >= 0:

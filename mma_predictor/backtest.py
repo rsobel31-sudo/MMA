@@ -10,13 +10,14 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass, field
-from typing import List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from .data import Fight, devig
 from .history import FightHistory
 from .model import WinModel
 from .predictor import build_training_set
 from .ratings import expected_score
+from .sports import SPORTS, split_histories, sport_of
 
 
 @dataclass
@@ -45,6 +46,12 @@ class Scores:
     def brier(self) -> float:
         return self.brier_sum / self.n if self.n else float("nan")
 
+    def merge(self, other: "Scores") -> None:
+        self.n += other.n
+        self.correct += other.correct
+        self.log_loss_sum += other.log_loss_sum
+        self.brier_sum += other.brier_sum
+
     def line(self, label: str) -> str:
         return f"{label:<14} n={self.n:<5} acc={self.accuracy:6.1%}  log-loss={self.log_loss:.4f}  brier={self.brier:.4f}"
 
@@ -58,6 +65,7 @@ class BacktestResult:
     model_on_market: Scores = field(default_factory=Scores)
     calibration: List[Tuple[float, int, int]] = field(default_factory=list)  # (bin lower, n, wins)
     high_conf: Scores = field(default_factory=Scores)
+    by_sport: Dict[str, Scores] = field(default_factory=dict)  # model scores on men's / women's bouts
     # Out-of-sample prediction for every scored bout: (fight, P(fighter_a wins), features).
     predictions: List[Tuple[Fight, float, dict]] = field(default_factory=list)
 
@@ -68,6 +76,8 @@ class BacktestResult:
             lines.append(self.model_on_market.line("model (same)"))
         if self.high_conf.n:
             lines.append(self.high_conf.line("model >=65%"))
+        for sport, sc in sorted(self.by_sport.items(), key=lambda kv: -kv[1].n):
+            lines.append(sc.line(f"  {SPORTS.get(sport, sport).lower()}"))
         lines += ["", "Calibration (predicted favourite prob -> actual win rate):"]
         for lo, n, wins in self.calibration:
             if n:
@@ -108,6 +118,7 @@ def walk_forward(
         p = model.predict(X[i])
         result.model.add(p, y[i])
         result.predictions.append((f, p, X[i]))
+        result.by_sport.setdefault(sport_of(f, history.bios), Scores()).add(p, y[i])
         classic = history.classic_elo
         result.elo.add(expected_score(classic.rating_before(f.fighter_a, f.date), classic.rating_before(f.fighter_b, f.date)), y[i])
         skills = history.skills
@@ -124,3 +135,23 @@ def walk_forward(
             result.model_on_market.add(p, y[i])
     result.calibration = [(0.5 + k / 10, n, w) for k, (n, w) in enumerate(bins)]
     return result
+
+
+def walk_forward_split(bios, fights, scouting=None, **kwargs) -> BacktestResult:
+    """Men's and women's MMA as separate sports: own ratings, base rates and model each."""
+    merged = BacktestResult()
+    bins: Dict[float, List[int]] = {}
+    for history in split_histories(bios, fights, scouting).values():
+        res = walk_forward(history, **kwargs)
+        for name in ("model", "elo", "overall", "market", "model_on_market", "high_conf"):
+            getattr(merged, name).merge(getattr(res, name))
+        for sport, sc in res.by_sport.items():
+            merged.by_sport.setdefault(sport, Scores()).merge(sc)
+        for lo, n, w in res.calibration:
+            b = bins.setdefault(lo, [0, 0])
+            b[0] += n
+            b[1] += w
+        merged.predictions += res.predictions
+    merged.predictions.sort(key=lambda t: t[0].date)
+    merged.calibration = [(lo, n, w) for lo, (n, w) in sorted(bins.items())]
+    return merged

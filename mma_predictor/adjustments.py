@@ -7,7 +7,8 @@ Stored as JSON so the web interface and the Python tools share them:
         "Fighter Name": {
           "elo": 40,                         # nudge every sub-rating (camp change, injury...)
           "overrides": {"td_def": 0.80,      # replace any snapshot attribute
-                        "r_td_def": 1650},   # or a sub-rating (r_ + skills.SUB_RATINGS key)
+                        "r_td_def": 1650,    # or a sub-rating (r_ + skills.SUB_RATINGS key)
+                        "sig_diff5": 2.5},   # strike differential per 5 min (sets landed/absorbed)
           "note": "New wrestling coach; TD defence looked much better"
         }
       },
@@ -36,7 +37,7 @@ from .skills import SUB_RATINGS, SkillConfig, category_rating, overall_rating
 
 # Snapshot attributes that can be overridden (numeric only).
 EDITABLE = (
-    "slpm", "sapm", "str_acc", "str_def", "kd_per15", "kd_absorbed_per15",
+    "slpm", "sapm", "sig_diff5", "str_acc", "str_def", "kd_per15", "kd_absorbed_per15",
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
     "form", "streak", "layoff_days", "sos", "age", "reach_cm",
@@ -116,12 +117,19 @@ class Adjustments:
             elif k.startswith("r_"):
                 if k[2:] in ratings:
                     ratings[k[2:]] = v
+            elif k == "sig_diff5":
+                continue  # applied below, after any landed/absorbed edits
             elif k == "reach_cm":
                 bio = dataclasses.replace(bio, reach_cm=v)
             elif k in INT_FIELDS:
                 changes[k] = int(round(v))
             else:
                 changes[k] = v
+        if "sig_diff5" in adj.overrides:
+            # Keep the fighter's output (landed + absorbed) and set the gap between them.
+            landed, absorbed = changes.get("slpm", s.slpm), changes.get("sapm", s.sapm)
+            mid, half = (landed + absorbed) / 2.0, adj.overrides["sig_diff5"] / 10.0
+            changes["slpm"], changes["sapm"] = max(0.1, mid + half), max(0.1, mid - half)
         if ratings:
             changes.update(
                 ratings=ratings,

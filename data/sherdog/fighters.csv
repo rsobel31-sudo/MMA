@@ -58,7 +58,7 @@ Weili Zhang,1989-08-13,162.6,,,Flyweight,ufc-roster,F,China,Fight Ready,0,0,sher
 Brad Pickett,1978-09-24,167.6,,,Flyweight,sherdog,M,England,American Top Team,0,0,sherdog,https://www.sherdog.com/fighter/Brad-Pickett-11743,1
 Felipe Lima,1998-05-07,167.6,,,Featherweight,ufc-roster,M,Brazil,Allstars Training Center,0,0,sherdog,https://www.sherdog.com/fighter/Felipe-Lima-205627,1
 Santiago Ponzinibbio,1986-09-26,182.9,,,Welterweight,ufc-roster,M,Argentina,American Top Team,0,0,sherdog,https://www.sherdog.com/fighter/Santiago-Ponzinibbio-64593,1
-Ketlen Vieira,1991-08-26,175.3,,,Lightweight,sherdog,M,Brazil,Nova Uniao,0,0,sherdog,https://www.sherdog.com/fighter/Ketlen-Vieira-178961,1
+Ketlen Vieira,1991-08-26,175.3,,,,,F,Brazil,Nova Uniao,0,0,sherdog,https://www.sherdog.com/fighter/Ketlen-Vieira-178961,1
 Hector Santiago,1993-03-21,162.6,,,Bantamweight,sherdog,M,Brazil,Team Lucas Mineiro,0,0,sherdog,https://www.sherdog.com/fighter/Hector-Santiago-453620,1
 Christos Giagos,1990-01-23,177.8,,,Lightweight,sherdog,M,United States,Black House,0,0,sherdog,https://www.sherdog.com/fighter/Christos-Giagos-68130,1
 Carlos Leal,1994-05-04,177.8,,,Welterweight,sherdog,M,Brazil,Thai Brasil,0,0,sherdog,https://www.sherdog.com/fighter/Carlos-Leal-109073,1
@@ -613,7 +613,7 @@ Pawel Pawlak,1989-02-08,182.9,,,Middleweight,sherdog,M,Poland,Octopus Lodz,0,0,s
 Misha Cirkunov,1987-02-27,190.5,,,Light Heavyweight,sherdog,M,Latvia,Xtreme Couture,0,0,sherdog,https://www.sherdog.com/fighter/Misha-Cirkunov-59197,1
 Augusto Sakai,1991-05-19,193.0,,,Heavyweight,sherdog,M,Brazil,American Top Team,0,0,sherdog,https://www.sherdog.com/fighter/Augusto-Sakai-87303,1
 Michael Morales,1999-06-24,182.9,,,Welterweight,ufc-roster,M,Ecuador,Entram Gym,0,0,sherdog,https://www.sherdog.com/fighter/Michael-Morales-268041,1
-Vanessa Melo,1988-03-27,165.1,,,Lightweight,sherdog,M,Brazil,Babuino Gold Team,0,0,sherdog,https://www.sherdog.com/fighter/Vanessa-Melo-120777,1
+Vanessa Melo,1988-03-27,165.1,,,,,F,Brazil,Babuino Gold Team,0,0,sherdog,https://www.sherdog.com/fighter/Vanessa-Melo-120777,1
 Ludovit Klein,1995-02-22,172.7,,,Lightweight,ufc-roster,M,Slovakia,Spartakus Fight Gym,0,0,sherdog,https://www.sherdog.com/fighter/Ludovit-Klein-183159,1
 Jose Quinonez,1990-07-28,172.7,,,Featherweight,sherdog,M,Mexico,La Malilla,0,0,sherdog,https://www.sherdog.com/fighter/Jose-Quinonez-152627,1
 Jack Shore,1995-02-06,175.3,,,Featherweight,sherdog,M,Wales,Tillery Combat MMA Academy,0,0,sherdog,https://www.sherdog.com/fighter/Jack-Shore-110177,1
@@ -905,7 +905,7 @@ Ryan Spann,1991-08-24,195.6,,,Heavyweight,ufc-roster,M,United States,Fortis MMA,
 Emily Ducote,1994-01-01,157.5,,,Flyweight,sherdog,F,United States,American Top Team OKC,0,0,sherdog,https://www.sherdog.com/fighter/Emily-Ducote-207407,1
 Emil Meek,1988-08-20,180.3,,,Welterweight,sherdog,M,Norway,Xtreme Couture,0,0,sherdog,https://www.sherdog.com/fighter/Emil-Meek-66143,1
 Nathaniel Wood,1993-08-05,167.6,,,Featherweight,ufc-roster,M,England,Great Britain Top Team,0,0,sherdog,https://www.sherdog.com/fighter/Nathaniel-Wood-82395,1
-Kasib Murdoch,2001-05-15,162.6,,,Bantamweight,sherdog,,New Zealand,Freestyle Fighting Gym,0,0,sherdog,https://www.sherdog.com/fighter/Kasib-Murdoch-396268,1
+Kasib Murdoch,2001-05-15,162.6,,,Bantamweight,sherdog,M,New Zealand,Freestyle Fighting Gym,0,0,sherdog,https://www.sherdog.com/fighter/Kasib-Murdoch-396268,1
 Andre Muniz,1990-02-17,188.0,,,Middleweight,sherdog,M,Brazil,Tata Fight Team Montes Claros,0,0,sherdog,https://www.sherdog.com/fighter/Andre-Muniz-81800,1
 Darren Stewart,1990-12-30,182.9,,,Light Heavyweight,sherdog,M,England,The MMA Clinic,0,0,sherdog,https://www.sherdog.com/fighter/Darren-Stewart-128141,1
 Ariane Carnelossi,1992-11-17,157.5,,,Strawweight,sherdog,F,Brazil,Inside Muay Thai,0,0,sherdog,https://www.sherdog.com/fighter/Ariane-Carnelossi-182853,1
@@ -926,7 +926,7 @@ Alexander Volkanovski,1988-09-29,167.6,,,Featherweight,ufc-roster,M,Australia,Fr
 Bradley Scott,1989-06-22,185.4,,,Welterweight,sherdog,M,England,Dragons Lair MMA,0,0,sherdog,https://www.sherdog.com/fighter/Bradley-Scott-44442,1
 Darian Weeks,1993-11-23,180.3,,,Middleweight,sherdog,M,United States,Hulett House Gym,0,0,sherdog,https://www.sherdog.com/fighter/Darian-Weeks-223693,1
 Beatriz Mesquita,1991-04-07,157.5,,,Bantamweight,ufc-roster,F,Brazil,American Top Team,0,0,sherdog,https://www.sherdog.com/fighter/Beatriz-Mesquita-451242,1
-Takaya Suzuki,2004-09-08,170.2,,,Flyweight,sherdog,,Japan,Kill Cliff FC,0,0,sherdog,https://www.sherdog.com/fighter/Takaya-Suzuki-392953,1
+Takaya Suzuki,2004-09-08,170.2,,,Flyweight,sherdog,M,Japan,Kill Cliff FC,0,0,sherdog,https://www.sherdog.com/fighter/Takaya-Suzuki-392953,1
 Jack Jenkins,1993-03-11,170.2,,,Featherweight,sherdog,M,Australia,Absolute Mixed Martial Arts,0,0,sherdog,https://www.sherdog.com/fighter/Jack-Jenkins-228039,1
 Robert Bryczek,1990-07-04,182.9,,,Middleweight,ufc-roster,M,Poland,Veto Team Bielsko-Biala,0,0,sherdog,https://www.sherdog.com/fighter/Robert-Bryczek-85060,1
 Kron Gracie,1988-07-11,175.3,,,Featherweight,sherdog,M,Brazil,Kron Gracie Jiu-Jitsu,0,0,sherdog,https://www.sherdog.com/fighter/Kron-Gracie-116971,1
@@ -1478,16 +1478,16 @@ Davina Maciel,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Davina-Macie
 Aline Nery,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Aline-Nery-56164,
 Juliana de Sousa,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Juliana-de-Sousa-48405,
 Elaine Leite,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Elaine-Leite-48081,
-Kimbert Alintozon,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Kimbert-Alintozon-396395,
+Kimbert Alintozon,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kimbert-Alintozon-396395,
 Eqiyuebu,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Eqiyuebu-424394,
-Korey Sutcliffe,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Korey-Sutcliffe-335705,
-Ismail Khan,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Ismail-Khan-321155,
-Torepchi Dongak,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Torepchi-Dongak-422636,
-Jason Lyngdoh,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Jason-Lyngdoh-439614,
-Ravi Saw,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Ravi-Saw-376005,
-Krishna Payasi,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Krishna-Payasi-425608,
-Rohit Pundeer,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Rohit-Pundeer-145657,
-Pardeep Singh,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Pardeep-Singh-404893,
+Korey Sutcliffe,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Korey-Sutcliffe-335705,
+Ismail Khan,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Ismail-Khan-321155,
+Torepchi Dongak,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Torepchi-Dongak-422636,
+Jason Lyngdoh,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jason-Lyngdoh-439614,
+Ravi Saw,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Ravi-Saw-376005,
+Krishna Payasi,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Krishna-Payasi-425608,
+Rohit Pundeer,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Rohit-Pundeer-145657,
+Pardeep Singh,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Pardeep-Singh-404893,
 Murtaza Talha Ali,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Murtaza-Talha-Ali-269171,
 Irakli Kuchukhidze,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Irakli-Kuchukhidze-298025,
 Shane Sobnosky,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Shane-Sobnosky-165273,
@@ -1987,13 +1987,13 @@ Emiliano Candau,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Emiliano-C
 Lucas Funes,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Lucas-Funes-95653,
 Gaston Micucci,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Gaston-Micucci-95633,
 Sijara Eubanks,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Sijara-Eubanks-193533,
-Kelly Faszholz,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kelly-Faszholz-117453,
-Estefani Almeida,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Estefani-Almeida-205515,
-Jessica Maciel,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jessica-Maciel-214533,
-Laet Ferreira,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Laet-Ferreira-218399,
+Kelly Faszholz,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Kelly-Faszholz-117453,
+Estefani Almeida,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Estefani-Almeida-205515,
+Jessica Maciel,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Jessica-Maciel-214533,
+Laet Ferreira,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Laet-Ferreira-218399,
 Monique Bastos,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Monique-Bastos-146921,
 Kenya Miranda da Silva,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Kenya-Miranda-da-Silva-147241,
-Juliana Leite,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Juliana-Leite-178963,
+Juliana Leite,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Juliana-Leite-178963,
 Paulo Nogueira,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Paulo-Nogueira-415901,
 Fernando Henrique,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Fernando-Henrique-212869,
 Maycon Alcino,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Maycon-Alcino-289949,
@@ -2444,7 +2444,7 @@ Mandy Bohm,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Mandy-Bohm-1729
 Isabela de Padua,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Isabela-de-Padua-183333,
 Mariana Morais,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Mariana-Morais-141747,
 Sheila Gaff,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Sheila-Gaff-43445,
-Juliana Werner,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Juliana-Werner-13337,
+Juliana Werner,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Juliana-Werner-13337,
 Katarzyna Lubonska,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Katarzyna-Lubonska-117277,
 Paula Vieira da Silva,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Paula-Vieira-da-Silva-184231,
 Marta Souza,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Marta-Souza-150465,
@@ -5178,7 +5178,7 @@ Anevilsson Souza Santos,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/An
 Desiree Yanez,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Desiree-Yanez-286877,
 Francis Hernandez,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Francis-Hernandez-224641,
 Ivanna Martinenghi,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Ivanna-Martinenghi-280673,
-Gloria Bravo,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Gloria-Bravo-88741,
+Gloria Bravo,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Gloria-Bravo-88741,
 Iliana Lopez,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Iliana-Lopez-224243,
 Alexa Conners,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Alexa-Conners-193535,
 Yulia Kutsenko,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Yulia-Kutsenko-246125,
@@ -5208,7 +5208,7 @@ Chenjin Wei,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Chenjin-Wei-23
 Alessio Esposito,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Alessio-Esposito-240091,
 Alban Sinani,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Alban-Sinani-226901,
 Marina Spivac,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Marina-Spivac-226813,
-Olena Kolesnyk,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Olena-Kolesnyk-219875,
+Olena Kolesnyk,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Olena-Kolesnyk-219875,
 Amber Leibrock,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Amber-Leibrock-166447,
 Genah Fabian,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Genah-Fabian-208385,
 Zamzagul Fayzallanova,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Zamzagul-Fayzallanova-216651,
@@ -8113,13 +8113,13 @@ Mathias Salazar,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Mathias-Sa
 Oscar Ravello,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Oscar-Ravello-269371,
 Leonardo Blasco,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Leonardo-Blasco-285817,
 Alvaro Vacacela,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Alvaro-Vacacela-238167,
-Alana Cook,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Alana-Cook-348921,
-Fernanda Barbosa,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Fernanda-Barbosa-221405,
-Filonilda Trindade da Conceicao,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Filonilda-Trindade-da-Conceicao-246231,
-Nubia Santos do Nascimento,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Nubia-Santos-do-Nascimento-189751,
-Suvi Salmimies,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Suvi-Salmimies-164567,
-Suelen Pereira,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Suelen-Pereira-106545,
-Natalie Santos,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Natalie-Santos-120779,
+Alana Cook,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Alana-Cook-348921,
+Fernanda Barbosa,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Fernanda-Barbosa-221405,
+Filonilda Trindade da Conceicao,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Filonilda-Trindade-da-Conceicao-246231,
+Nubia Santos do Nascimento,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Nubia-Santos-do-Nascimento-189751,
+Suvi Salmimies,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Suvi-Salmimies-164567,
+Suelen Pereira,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Suelen-Pereira-106545,
+Natalie Santos,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Natalie-Santos-120779,
 A.J. Cunningham,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/AJ-Cunningham-228033,
 Devonte Smith,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Devonte-Smith-89163,
 Lukasz Sajewski,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Lukasz-Sajewski-31110,
@@ -10160,15 +10160,15 @@ Tobias Harila,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Tobias-Haril
 Cosmin Tutu,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Cosmin-Tutu-134165,
 Sofian Bougamoun,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Sofian-Bougamoun-130423,
 Arouna Kanoute,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Arouna-Kanoute-81735,
-Gonzalo Hanampa,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Gonzalo-Hanampa-434924,
-Wallafy de Paulo,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Wallafy-de-Paulo-180465,
-William Rocha,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/William-Rocha-366567,
-Adrian Haly,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Adrian-Haly-234007,
-Miguel Angel Fierro,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Miguel-Angel-Fierro-242349,
-John Alvarez,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/John-Alvarez-326161,
-Nick Vargas,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Nick-Vargas-281967,
-Andres Santillana,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Andres-Santillana-222693,
-Angel Soto,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Angel-Soto-232205,
+Gonzalo Hanampa,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Gonzalo-Hanampa-434924,
+Wallafy de Paulo,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Wallafy-de-Paulo-180465,
+William Rocha,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/William-Rocha-366567,
+Adrian Haly,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Adrian-Haly-234007,
+Miguel Angel Fierro,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Miguel-Angel-Fierro-242349,
+John Alvarez,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/John-Alvarez-326161,
+Nick Vargas,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Nick-Vargas-281967,
+Andres Santillana,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Andres-Santillana-222693,
+Angel Soto,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Angel-Soto-232205,
 Jason Riley,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jason-Riley-18433,
 Lucas Browne,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Lucas-Browne-42821,
 John Devine,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/John-Devine-23429,
@@ -10542,14 +10542,14 @@ Oleksandr Bilobrovaka,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Olek
 Abdullah Saleh,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Abdullah-Saleh-157981,
 Grisha Adams,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Grisha-Adams-118907,
 Damo Weeden,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Damo-Weeden-87468,
-Yunosuke Minami,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Yunosuke-Minami-432976,
-Kristopher Ustijanovski,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Kristopher-Ustijanovski-298107,
-Sung Jin Kim,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Sung-Jin-Kim-430778,
-Liam Gusti,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Liam-Gusti-336471,
-Rufino Mante,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Rufino-Mante-197767,
-Jake Piper,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Jake-Piper-401042,
-Roy Martin Sitinjak,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Roy-Martin-Sitinjak-432654,
-Amir Mokhtar,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Amir-Mokhtar-443230,
+Yunosuke Minami,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Yunosuke-Minami-432976,
+Kristopher Ustijanovski,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kristopher-Ustijanovski-298107,
+Sung Jin Kim,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Sung-Jin-Kim-430778,
+Liam Gusti,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Liam-Gusti-336471,
+Rufino Mante,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Rufino-Mante-197767,
+Jake Piper,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jake-Piper-401042,
+Roy Martin Sitinjak,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Roy-Martin-Sitinjak-432654,
+Amir Mokhtar,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Amir-Mokhtar-443230,
 Joao Paulo dos Santos,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Joao-Paulo-dos-Santos-117917,
 Welington Lima Rafael,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Welington-Lima-Rafael-223827,
 Carlos Eduardo Tavares Silva,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Carlos-Eduardo-Tavares-Silva-130499,
@@ -10702,15 +10702,15 @@ Hope Chase,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Hope-Chase-2697
 Fernanda Araujo,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Fernanda-Araujo-91567,
 Shannel Butler,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Shannel-Butler-404286,
 Jorgina Ramos,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Jorgina-Ramos-451244,
-Otgonbaatar Boldbaatar,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Otgonbaatar-Boldbaatar-443122,
-Antonio Figueiredo,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Antonio-Figueiredo-270855,
-Gabriel Bellomini,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Gabriel-Bellomini-392301,
-Yuichi Miyagi,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Yuichi-Miyagi-18888,
-Kazumasa Kanai,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Kazumasa-Kanai-411181,
-Shunsuke Kubota,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Shunsuke-Kubota-395821,
-Kaito Oda,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Kaito-Oda-411079,
-Koki Hirasawa,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Koki-Hirasawa-290769,
-Kaito Yoshimura,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Kaito-Yoshimura-385960,
+Otgonbaatar Boldbaatar,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Otgonbaatar-Boldbaatar-443122,
+Antonio Figueiredo,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Antonio-Figueiredo-270855,
+Gabriel Bellomini,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Gabriel-Bellomini-392301,
+Yuichi Miyagi,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Yuichi-Miyagi-18888,
+Kazumasa Kanai,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kazumasa-Kanai-411181,
+Shunsuke Kubota,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Shunsuke-Kubota-395821,
+Kaito Oda,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kaito-Oda-411079,
+Koki Hirasawa,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Koki-Hirasawa-290769,
+Kaito Yoshimura,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Kaito-Yoshimura-385960,
 Rod Costa,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Rod-Costa-208151,
 Jason Petropoulos,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jason-Petropoulos-169601,
 Jesse Medina,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Jesse-Medina-147275,
@@ -11490,11 +11490,11 @@ Mitchell Fredricks,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Mitchel
 Ray Olmos,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Ray-Olmos-28039,
 Josh McDonald,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Josh-McDonald-6735,
 Daniel Dias Nova,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Daniel-Dias-Nova-24196,
-Ryoga Arimoto,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Ryoga-Arimoto-405923,
-Frank Jankowski,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Frank-Jankowski-300335,
-Oden Muscat,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Oden-Muscat-315013,
-Zac Gregson,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Zac-Gregson-341355,
-Troy Fumo,,,,,,,,,,0,0,sherdog,https://www.sherdog.com/fighter/Troy-Fumo-315713,
+Ryoga Arimoto,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Ryoga-Arimoto-405923,
+Frank Jankowski,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Frank-Jankowski-300335,
+Oden Muscat,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Oden-Muscat-315013,
+Zac Gregson,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Zac-Gregson-341355,
+Troy Fumo,,,,,,,M,,,0,0,sherdog,https://www.sherdog.com/fighter/Troy-Fumo-315713,
 Pamela Boveda Aguirre,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Pamela-Boveda-Aguirre-144989,
 Ilara Joanne,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Ilara-Joanne-141949,
 Kana Watanabe,,,,,,,F,,,0,0,sherdog,https://www.sherdog.com/fighter/Kana-Watanabe-265441,

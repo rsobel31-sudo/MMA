@@ -11,12 +11,11 @@ from __future__ import annotations
 from typing import List
 
 from .features import BoutContext, lands_on, takedowns_on
-from .history import DEFAULT_PRIORS, FighterSnapshot
-
-P = DEFAULT_PRIORS
+from .history import FighterSnapshot
 
 
 def classify(s: FighterSnapshot) -> str:
+    P = s.priors
     wrestling = s.td_per15 / P.td_per15 + s.ctrl_share / P.ctrl_share
     grappling = s.sub_per15 / P.sub_per15
     striking = s.slpm / P.slpm
@@ -45,7 +44,7 @@ def scouting_line(s: FighterSnapshot) -> str:
     return (
         f"{s.name} ({s.record}, rating {s.elo:.0f} [S {s.striking:.0f} / W {s.wrestling:.0f} / G {s.grappling:.0f}], "
         f"{age}, {reach}, {s.bio.stance or 'stance ?'}) - {classify(s)}. "
-        f"Strikes {s.slpm:.1f} landed / {s.sapm:.1f} absorbed per min at {s.str_acc:.0%} acc, {s.str_def:.0%} def; "
+        f"Strikes {s.slpm:.1f} landed / {s.sapm:.1f} absorbed per min ({s.sig_diff5:+.1f} per 5 min) at {s.str_acc:.0%} acc, {s.str_def:.0%} def; "
         f"TD {s.td_per15:.1f}/15 at {s.td_acc:.0%}, TD def {s.td_def:.0%}; subs {s.sub_per15:.1f}/15; "
         f"finish rate {s.finish_rate:.0%}; form {s.form:+.2f} (streak {s.streak:+d})."
     )

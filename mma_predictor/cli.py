@@ -140,8 +140,16 @@ def cmd_train(args) -> int:
 
 
 def cmd_backtest(args) -> int:
-    h = _history(args)
-    res = walk_forward(h, train_fraction=args.train_fraction, retrain_every=args.retrain_every, min_prior_fights=args.min_fights, event_prefix=args.events)
+    kw = dict(train_fraction=args.train_fraction, retrain_every=args.retrain_every, min_prior_fights=args.min_fights, event_prefix=args.events)
+    if args.split_sports:
+        from .backtest import walk_forward_split
+
+        bios, fights = load_dataset(Path(args.data))
+        scouting = Scouting.load(Path(args.scouting)) if getattr(args, "scouting", None) else None
+        res = walk_forward_split(bios, fights, scouting, **kw)
+        print("Men's and women's MMA as separate sports (own ratings, base rates and model)\n")
+    else:
+        res = walk_forward(_history(args), **kw)
     print(res.report())
     return 0
 
@@ -199,7 +207,8 @@ def cmd_enrich(args) -> int:
     for r in rows:
         if r["name"] not in seeds and r.get("weight_class") in men_only:
             seeds[r["name"]] = "M"
-    genders = wikipedia.propagate_gender(bouts, seeds)
+    genders = wikipedia.reconcile_gender(bouts, wikipedia.propagate_gender(bouts, seeds))
+    women_classes = {"Atomweight", "Strawweight", "Flyweight", "Bantamweight", "Featherweight"}
     for r in rows:
         if r["name"] in matched:
             r["weight_class"], _ = matched[r["name"]]
@@ -207,6 +216,9 @@ def cmd_enrich(args) -> int:
         elif r.get("weight_class"):
             r["weight_class_source"] = r.get("weight_class_source") or r.get("source") or "sherdog"
         r["gender"] = genders.get(r["name"], "")
+        if r["gender"] == "F" and r.get("weight_class") and r["weight_class"] not in women_classes:
+            # A men's class on a woman's record is a source error; infer it from opponents instead.
+            r["weight_class"], r["weight_class_source"] = "", ""
     common.write_fighters(data_dir, rows)
     print(f"Roster: {len(roster)} UFC fighters, {len(matched)} matched to this dataset")
     known = sum(1 for r in rows if r["gender"])
@@ -345,6 +357,7 @@ def cmd_export(args) -> int:
             "n": res.model.n, "accuracy": res.model.accuracy, "log_loss": res.model.log_loss,
             "elo_accuracy": res.elo.accuracy, "scope": args.events or "",
             "high_conf_n": res.high_conf.n, "high_conf_accuracy": res.high_conf.accuracy,
+            "by_sport": {k: {"n": v.n, "accuracy": v.accuracy, "log_loss": v.log_loss} for k, v in res.by_sport.items()},
         }
         # Calibrate confidence on the out-of-sample predictions only, then judge
         # patterns and confidence bands against the calibrated predictions.
@@ -477,6 +490,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--retrain-every", type=int, default=100)
     p.add_argument("--min-fights", type=int, default=1)
     p.add_argument("--events", default="", help="only score bouts whose event name starts with this (e.g. UFC)")
+    p.add_argument("--split-sports", action="store_true", help="treat men's and women's MMA as separate sports (own ratings, base rates and model)")
     p.set_defaults(func=cmd_backtest)
 
     p = sub.add_parser("import", help="crawl fighter records from Sherdog, Tapology or UFCStats")

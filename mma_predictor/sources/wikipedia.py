@@ -154,3 +154,34 @@ def propagate_gender(bouts: Iterable[Tuple[str, str]], seeds: Dict[str, str], ma
                 out[m] = g
                 frontier.append(m)
     return out
+
+
+def reconcile_gender(bouts: Iterable[Tuple[str, str]], genders: Dict[str, str], max_rounds: int = 10) -> Dict[str, str]:
+    """Correct labels that contradict a fighter's opponents.
+
+    Men and women never meet in sanctioned MMA, so a fighter whose known
+    opponents are at least two-thirds one gender is that gender. This repairs
+    bad seeds (a woman Sherdog lists at "Lightweight" would otherwise be
+    seeded male and pass that on to her opponents) and fills gaps.
+    """
+    graph: Dict[str, List[str]] = defaultdict(list)
+    for a, b in bouts:
+        graph[a].append(b)
+        graph[b].append(a)
+    out = dict(genders)
+    for _ in range(max_rounds):
+        changed = 0
+        for n, opps in graph.items():
+            votes: Dict[str, int] = defaultdict(int)
+            for o in opps:
+                if out.get(o):
+                    votes[out[o]] += 1
+            if not votes:
+                continue
+            top, k = max(votes.items(), key=lambda kv: kv[1])
+            if out.get(n) != top and k >= 2 * (sum(votes.values()) - k):
+                out[n] = top
+                changed += 1
+        if not changed:
+            break
+    return out

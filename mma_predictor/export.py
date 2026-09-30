@@ -20,12 +20,12 @@ from .model import PRIOR_WEIGHTS, WinModel
 from .analysis import upcoming_flags
 from .bios import division_label, write_bio
 from .sources.events import link_names
-from .intangibles import INTANGIBLE_HELP, INTANGIBLE_LABELS, INTANGIBLES
-from .skills import CATEGORIES, SUB_LABELS
+from .intangibles import INTANGIBLE_METHOD_NOTE, INTANGIBLE_HELP, INTANGIBLE_LABELS, INTANGIBLE_METHOD, INTANGIBLES
+from .skills import CATEGORIES, RATING_HELP, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
     "elo", "fights", "wins", "losses", "age", "minutes", "stat_minutes",
-    "slpm", "sapm", "str_acc", "str_def", "kd_per15", "kd_absorbed_per15",
+    "slpm", "sapm", "sig_diff5", "str_acc", "str_def", "kd_per15", "kd_absorbed_per15",
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
@@ -188,7 +188,9 @@ def export(
         "prior_weights": PRIOR_WEIGHTS,
         "rating_categories": {k: list(v) for k, v in CATEGORIES.items()},
         "rating_labels": SUB_LABELS,
-        "intangibles": {"keys": list(INTANGIBLES), "labels": INTANGIBLE_LABELS, "help": INTANGIBLE_HELP},
+        "rating_help": RATING_HELP,
+        "intangibles": {"keys": list(INTANGIBLES), "labels": INTANGIBLE_LABELS, "help": INTANGIBLE_HELP,
+                        "method": INTANGIBLE_METHOD, "method_note": INTANGIBLE_METHOD_NOTE},
         "category_weights": history.skills.config.category_weights,
         "insights": insights,
         "upcoming": {"fetched": (upcoming or {}).get("fetched"), "source": (upcoming or {}).get("source"), "events": cards},

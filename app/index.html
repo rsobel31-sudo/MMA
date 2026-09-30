@@ -116,6 +116,17 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .tape-wrap { overflow-x: auto; }
 table.tape { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.tape th, table.tape td { padding: 5px 6px; border-bottom: 1px solid var(--line); }
+button.info { background: none; border: 0; padding: 0 3px; margin: 0; font: inherit; font-size: 13px; line-height: 1; color: var(--muted); cursor: pointer; border-radius: 50%; }
+button.info:hover, button.info:focus-visible { color: var(--ink); background: var(--surface-2); }
+dialog.info-dlg { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); padding: 18px 20px; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 64px); overflow: auto; }
+dialog.info-dlg::backdrop { background: rgba(10, 14, 20, .45); }
+dialog.info-dlg h3 { font-size: 22px; margin: 0 28px 6px 0; }
+dialog.info-dlg .close { position: absolute; top: 10px; right: 10px; }
+dialog.info-dlg dl { margin: 10px 0 0; }
+dialog.info-dlg dt { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; font-size: 13px; color: var(--muted); margin-top: 12px; }
+dialog.info-dlg dd { margin: 3px 0 0; }
+dialog.info-dlg .vals { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 14px; }
+dialog.info-dlg .vals .a { color: var(--red); font-weight: 600; } dialog.info-dlg .vals .b { color: var(--blue); font-weight: 600; }
 table.tape td.attr { text-align: center; color: var(--muted); font-size: 13px; white-space: nowrap; }
 table.tape td.va { text-align: right; }
 table.tape td.vb { text-align: left; }
@@ -278,6 +289,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
   </nav>
   <main id="view"><div class="loading">Loading fighter data…</div></main>
+  <dialog class="info-dlg" id="info-dlg" aria-labelledby="info-title"><button class="btn small close" type="button" data-info-close="1" aria-label="Close">✕</button><div id="info-body"></div></dialog>
   <datalist id="fighter-list"></datalist>
 </div>
 
@@ -295,31 +307,35 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   };
 
   // Tale-of-the-tape rows. kind: pct (stored 0-1, shown 0-100), num, int.
+  // help: what the number is and where it comes from (shown by the (i) buttons).
+  const SHRUNK = "Shrunk toward the league average until there is enough evidence, so a short record stays near average.";
+  const NEEDS_STATS = "Needs per-fight stats (UFCStats). Sherdog records don't have them, so without them this shows the league average.";
   const ATTRS = [
-    { k: "age", label: "Age", kind: "num", d: 1, unit: "yrs", better: "low" },
-    { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high" },
-    { k: "slpm", label: "Sig. strikes landed / min", kind: "num", d: 2, better: "high", stat: true },
-    { k: "sapm", label: "Sig. strikes absorbed / min", kind: "num", d: 2, better: "low", stat: true },
-    { k: "str_acc", label: "Striking accuracy", kind: "pct", better: "high", stat: true },
-    { k: "str_def", label: "Striking defence", kind: "pct", better: "high", stat: true },
-    { k: "kd_per15", label: "Knockdowns / 15 min", kind: "num", d: 2, better: "high", stat: true },
-    { k: "td_per15", label: "Takedowns / 15 min", kind: "num", d: 2, better: "high", stat: true },
-    { k: "td_acc", label: "Takedown accuracy", kind: "pct", better: "high", stat: true },
-    { k: "td_def", label: "Takedown defence", kind: "pct", better: "high", stat: true },
-    { k: "sub_per15", label: "Sub attempts / 15 min", kind: "num", d: 2, better: "high", stat: true },
-    { k: "ctrl_share", label: "Control time share", kind: "pct", better: "high", stat: true },
-    { k: "ko_loss_rate", label: "Bouts lost by KO", kind: "pct", better: "low" },
-    { k: "sub_loss_rate", label: "Bouts lost by sub", kind: "pct", better: "low" },
-    { k: "recent_ko_losses", label: "KO losses, last 3", kind: "int", better: "low" },
-    { k: "late_win_rate", label: "Win rate past R2", kind: "pct", better: "high" },
-    { k: "form", label: "Recent form (−1 to 1)", kind: "num", d: 2, better: "high" },
-    { k: "streak", label: "Streak (+W / −L)", kind: "int", better: "high" },
-    { k: "layoff_days", label: "Days since last fight", kind: "int", better: "low" },
-    { k: "sos", label: "Avg opponent rating", kind: "int", better: "high" },
-    { k: "minutes", label: "Cage time (in data)", kind: "num", d: 0, unit: "min", better: "low", wear: true },
-    { k: "ko_losses", label: "KO/TKO losses (career)", kind: "int", better: "low", wear: true },
-    { k: "kd_absorbed", label: "Knockdowns absorbed", kind: "int", better: "low", wear: true, stat: true },
-    { k: "sig_absorbed", label: "Sig. strikes absorbed (total)", kind: "int", better: "low", wear: true, stat: true },
+    { k: "age", label: "Age", kind: "num", d: 1, unit: "yrs", better: "low", help: "Age on fight night, from date of birth. Feeds the age curve (a penalty that grows past 32, and a small one under 24) and multiplies wear and tear past 30." },
+    { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high", help: "Arm span in centimetres. The reach factor compares the two fighters per 10 cm; it matters most at range." },
+    { k: "slpm", label: "Sig. strikes landed / min", kind: "num", d: 2, better: "high", stat: true, help: `Significant strikes landed per minute of cage time, adjusted for how hard each opponent was to hit. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "sapm", label: "Sig. strikes absorbed / min", kind: "num", d: 2, better: "low", stat: true, help: `Significant strikes absorbed per minute, adjusted for each opponent's output. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "sig_diff5", label: "Sig. strike differential / 5 min", kind: "num", d: 1, signed: true, better: "high", stat: true, help: `Significant strikes landed minus absorbed per minute, times 5: the margin per five-minute round. Positive means out-landing opponents. Editing it keeps the fighter's total output and moves the split between landed and absorbed, which feeds the striking exchange factor. ${NEEDS_STATS}` },
+    { k: "str_acc", label: "Striking accuracy", kind: "pct", better: "high", stat: true, help: `Share of significant strikes thrown that land, adjusted for opponents' defence. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "str_def", label: "Striking defence", kind: "pct", better: "high", stat: true, help: `Share of opponents' significant strikes that miss, adjusted for their accuracy. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "kd_per15", label: "Knockdowns / 15 min", kind: "num", d: 2, better: "high", stat: true, help: `Knockdowns scored per 15 minutes. Feeds power vs chin and the KO/TKO chance. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "td_per15", label: "Takedowns / 15 min", kind: "num", d: 2, better: "high", stat: true, help: `Takedowns landed per 15 minutes. Feeds the wrestling edge (against the opponent's takedown defence). ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "td_acc", label: "Takedown accuracy", kind: "pct", better: "high", stat: true, help: `Share of takedown attempts that land, adjusted for opponents' takedown defence. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "td_def", label: "Takedown defence", kind: "pct", better: "high", stat: true, help: `Share of opponents' takedown attempts stopped, adjusted for their accuracy. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "sub_per15", label: "Sub attempts / 15 min", kind: "num", d: 2, better: "high", stat: true, help: `Submission attempts per 15 minutes. Feeds submission threat (against the opponent's rate of losing by submission). ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "ctrl_share", label: "Control time share", kind: "pct", better: "high", stat: true, help: `Share of cage time spent in control (on top or on the back). Feeds the control factor. ${SHRUNK} ${NEEDS_STATS}` },
+    { k: "ko_loss_rate", label: "Bouts lost by KO", kind: "pct", better: "low", help: `Share of bouts lost by KO/TKO. Fights in the last 18 months count fully; older ones fade (half weight every 2 years). ${SHRUNK} Feeds chin vulnerability.` },
+    { k: "sub_loss_rate", label: "Bouts lost by sub", kind: "pct", better: "low", help: `Share of bouts lost by submission, recent fights weighted most. ${SHRUNK} Feeds the opponent's submission threat.` },
+    { k: "recent_ko_losses", label: "KO losses, last 3", kind: "int", better: "low", help: "KO/TKO losses in the last three fights: a sign a chin may be going." },
+    { k: "late_win_rate", label: "Win rate past R2", kind: "pct", better: "high", help: "Win rate in fights that reached round 3 or later, recent fights weighted most. Feeds the cardio factor, which counts more in five-round fights." },
+    { k: "form", label: "Recent form (−1 to 1)", kind: "num", d: 2, better: "high", help: "Recency-weighted results: +1 is winning everything lately, −1 losing everything. Finishes count more than decisions." },
+    { k: "streak", label: "Streak (+W / −L)", kind: "int", better: "high", help: "Current run: +3 is three straight wins, −2 two straight losses." },
+    { k: "layoff_days", label: "Days since last fight", kind: "int", better: "low", help: "Days since the last bout. Ring rust starts counting after about 400 days and grows for each extra year." },
+    { k: "sos", label: "Avg opponent rating", kind: "int", better: "high", help: "Strength of schedule: the average overall rating of opponents at the time they were fought." },
+    { k: "minutes", label: "Cage time (in data)", kind: "num", d: 0, unit: "min", better: "low", wear: true, help: "Total minutes fought in the dataset. Part of the wear index (mileage)." },
+    { k: "ko_losses", label: "KO/TKO losses (career)", kind: "int", better: "low", wear: true, help: "Career KO/TKO losses. The heaviest part of the wear index (damage)." },
+    { k: "kd_absorbed", label: "Knockdowns absorbed", kind: "int", better: "low", wear: true, stat: true, help: `Career knockdowns suffered. Part of the wear index (damage). ${NEEDS_STATS}` },
+    { k: "sig_absorbed", label: "Sig. strikes absorbed (total)", kind: "int", better: "low", wear: true, stat: true, help: `Career significant strikes absorbed. Part of the wear index (damage). ${NEEDS_STATS}` },
   ];
   const WEIGHT_RANGE = { overall: [0, 2.5] };
   // Sub-rating rows (r_<key>), built from data.json at boot.
@@ -473,7 +489,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     if (v === null || v === undefined) return "—";
     if (attr.kind === "pct") return (v * 100).toFixed(0);
     if (attr.kind === "int") return String(Math.round(v));
-    return Number(v).toFixed(attr.d ?? 1);
+    const t = Number(v).toFixed(attr.d ?? 1);
+    return attr.signed && Number(t) > 0 ? "+" + t : t;
   }
 
   // ----------------------------------------------------------------- render
@@ -504,18 +521,18 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   function ratingBars(f, peers) {
     const cats = state.data.rating_categories, labels = state.data.rating_labels;
     const lo = 1200, hi = 2300, pos = (v) => Math.max(0, Math.min(100, ((v - lo) / (hi - lo)) * 100));
-    const row = (label, v, med, strong) => `<div class="rbar${strong ? " strong" : ""}"><span>${label}</span>
+    const row = (label, v, med, strong, key) => `<div class="rbar${strong ? " strong" : ""}"><span>${label}${key ? infoBtn(key, label) : ""}</span>
       <span class="track">${med != null ? `<i class="med" style="left:${pos(med).toFixed(1)}%" title="Division median ${Math.round(med)}"></i>` : ""}<b style="width:${pos(v).toFixed(1)}%"></b></span>
       <span class="num">${Math.round(v)}</span></div>`;
     const med = (key) => (peers.length >= 5 ? median(peers.map((p) => p[key])) : null);
-    let html = row("Overall", f.elo, med("elo"), true);
+    let html = row("Overall", f.elo, med("elo"), true, "overall");
     for (const [cat, keys] of Object.entries(cats)) {
-      html += row(cat[0].toUpperCase() + cat.slice(1), f[cat], med(cat), true);
-      html += keys.map((k) => row(labels[k], f["r_" + k], med("r_" + k), false)).join("");
+      html += row(cat[0].toUpperCase() + cat.slice(1), f[cat], med(cat), true, cat);
+      html += keys.map((k) => row(labels[k], f["r_" + k], med("r_" + k), false, "r_" + k)).join("");
     }
     if (Object.keys(INTANG_ATTRS).length) {
-      html += row("Intangibles", f.intangibles, med("intangibles"), true);
-      html += Object.values(INTANG_ATTRS).map((at) => row(at.label, f[at.k], med(at.k), false)).join("");
+      html += row("Intangibles", f.intangibles, med("intangibles"), true, "intangibles");
+      html += Object.values(INTANG_ATTRS).map((at) => row(at.label, f[at.k], med(at.k), false, at.k)).join("");
     }
     return `<div class="rbars">${html}</div><p class="muted" style="font-size:12px;margin:6px 0 0">Scale 1200 to 2300. The tick marks the ${esc(f.division || "division")} median${peers.length >= 5 ? ` (${peers.length} fighters)` : " (too few fighters to compare)"}.</p>`;
   }
@@ -697,12 +714,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
             <tr><td class="va">${esc(fa.stance || "—")}</td><td class="attr">Stance</td><td class="vb">${esc(fb.stance || "—")}</td></tr>
             <tr><td class="va">${state.engine.classify(fa).join(", ")}</td><td class="attr">Style</td><td class="vb">${state.engine.classify(fb).join(", ")}</td></tr>
             <tr class="group"><td colspan="3">Ratings <span>1500 = average. Overall = ${Object.entries(state.data.category_weights).map(([c, w]) => `${Math.round(w * 100)}% ${c}`).join(" + ")}</span></td></tr>
-            <tr><td class="va">${eloCell(a, fa)}</td><td class="attr"><strong>Overall</strong></td><td class="vb">${eloCell(b, fb)}</td></tr>
+            <tr><td class="va">${eloCell(a, fa)}</td><td class="attr"><strong>Overall</strong>${infoBtn("overall", "Overall")}</td><td class="vb">${eloCell(b, fb)}</td></tr>
             ${Object.entries(state.data.rating_categories).map(([cat, keys]) => `
-              <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong></td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
+              <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong>${infoBtn(cat, cat)}</td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
               ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
             ${Object.keys(INTANG_ATTRS).length ? `
-              <tr class="cat"><td class="va">${catCell(fa, fb, "intangibles", "a")}</td><td class="attr"><strong>Intangibles</strong><div class="muted" style="font-size:11px;font-weight:400">separate from overall; your edits move the prediction</div></td><td class="vb">${catCell(fa, fb, "intangibles", "b")}</td></tr>
+              <tr class="cat"><td class="va">${catCell(fa, fb, "intangibles", "a")}</td><td class="attr"><strong>Intangibles</strong>${infoBtn("intangibles", "Intangibles")}<div class="muted" style="font-size:11px;font-weight:400">separate from overall; your edits move the prediction</div></td><td class="vb">${catCell(fa, fb, "intangibles", "b")}</td></tr>
               ${Object.values(INTANG_ATTRS).map((at) => tapeRow(at, a, fa, b, fb)).join("")}` : ""}
             <tr class="group"><td colspan="3">Career stats</td></tr>
             ${ATTRS.filter((at) => !at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
@@ -816,8 +833,56 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       </span>`;
     };
     const star = at.stat && (!fa.stat_minutes || !fb.stat_minutes) ? " *" : "";
-    return `<tr><td class="va">${cell(a, fa, "a")}</td><td class="attr"${at.help ? ` title="${esc(at.help)}"` : ""}>${esc(at.label)}${star}${at.help ? ' <span class="muted">ⓘ</span>' : ""}</td><td class="vb">${cell(b, fb, "b")}</td></tr>`;
+    return `<tr><td class="va">${cell(a, fa, "a")}</td><td class="attr">${esc(at.label)}${star}${infoBtn(at.k, at.label)}</td><td class="vb">${cell(b, fb, "b")}</td></tr>`;
   }
+  // ------------------------------------------------------------------- info
+  // What each rating or stat measures, opened by the (i) buttons.
+  function infoFor(key) {
+    const d = state.data, RH = d.rating_help || {}, IN = d.intangibles || {};
+    const recordsNote = "The current data is Sherdog fight records, so this is the evidence in use now.";
+    if (RH[key] || (key.startsWith("r_") && RH[key.slice(2)])) {
+      const h = RH[key] || RH[key.slice(2)];
+      const cat = Object.entries(d.rating_categories).find(([, ks]) => ks.includes(key.slice(2)));
+      const title = key.startsWith("r_") ? d.rating_labels[key.slice(2)] : key[0].toUpperCase() + key.slice(1);
+      const rows = [["What it measures", h.measures], ["With per-fight stats", h.stats], ["With records only", h.records + " " + recordsNote]];
+      if (key.startsWith("r_") && cat) rows.push(["Part of", `${cat[0][0].toUpperCase() + cat[0].slice(1)} (the mean of ${cat[1].map((k) => d.rating_labels[k]).join(", ")}).`]);
+      rows.push(["Always", "Judged against the opponent's level: surviving an elite grappler counts more than surviving an average one. Background credentials add a head start that fades over about 10 fights; your fight commentary and edits count on top. 1500 is average."]);
+      return { title, rows, key: key === "overall" ? "elo" : key };
+    }
+    if (key === "intangibles") {
+      return { title: "Intangibles", key, rows: [
+        ["What it measures", "The things stats miss: " + (IN.keys || []).map((k) => IN.labels[k]).join(", ") + ". The average of the seven."],
+        ["How it's used", "Kept separate from the overall rating. It is its own factor in the prediction, and your edits count extra: each point you move it is worth half a point of overall rating."],
+        ["Starting values", IN.method_note || ""]] };
+    }
+    if (key.startsWith("i_") && IN.help) {
+      const k = key.slice(2);
+      return { title: IN.labels[k], key, rows: [["What it measures", IN.help[k]], ["Starting value", (IN.method || {})[k] || ""], ["Your call", "Records only hint at this. Type over it with what you've seen; the edit moves the prediction directly."]] };
+    }
+    const at = ATTRS.find((x) => x.k === key);
+    if (at && at.help) return { title: at.label, key, rows: [["What it measures", at.help]] };
+    return null;
+  }
+  function infoBtn(key, label) {
+    return state.data && infoFor(key) ? ` <button class="info" type="button" data-info="${esc(key)}" aria-label="What ${esc(label)} measures">ⓘ</button>` : "";
+  }
+  function openInfo(key) {
+    const info = infoFor(key);
+    if (!info) return;
+    const at = attrFor(key) || { k: info.key, kind: "int" };
+    const vals = [];
+    const show = (f, side) => {
+      if (!f || f[info.key] == null) return;
+      vals.push(`<span><span class="${side}">${esc(f.name)}</span> ${esc(fmt(at, f[info.key]))}${at.kind === "pct" ? "%" : at.unit ? " " + at.unit : ""}</span>`);
+    };
+    if (state.profile) show(fighter(state.profile), "a");
+    else { show(fighter(state.m.a), "a"); show(fighter(state.m.b), "b"); }
+    $("#info-body").innerHTML = `<h3 id="info-title">${esc(info.title)}</h3><dl>${info.rows.filter((r) => r[1]).map(([h, t]) => `<dt>${esc(h)}</dt><dd>${esc(t)}</dd>`).join("")}</dl>
+      ${vals.length ? `<div class="vals">${vals.join("")}</div>` : ""}`;
+    const dlg = $("#info-dlg");
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  }
+
   function compare(at, x, y) {
     if (x == null || y == null || Math.abs(x - y) < 1e-9) return 0;
     return (x > y ? 1 : -1) * (at.better === "low" ? -1 : 1);
@@ -952,6 +1017,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       <section class="panel">
         <h3>How the model has done</h3>
         <p class="num" style="margin:6px 0 0">Walk-forward backtest on ${bt.n ? bt.n.toLocaleString() : "?"} past UFC bouts, each predicted using only what was known beforehand: picked the winner <strong>${bt.accuracy ? pct(bt.accuracy) : "?"}</strong>${bt.high_conf_n ? `, and <strong>${pct(bt.high_conf_accuracy)}</strong> of the ${bt.high_conf_n} fights where it was at least 65% sure` : ""}. Confidence is calibrated (logits × ${state.data.calibration_scale || 1}) because the raw model hedged toward 50/50.</p>
+        ${bt.by_sport && bt.by_sport.F ? `<p class="num" style="margin:6px 0 0">Men's bouts: <strong>${pct(bt.by_sport.M.accuracy)}</strong> of ${bt.by_sport.M.n.toLocaleString()}. Women's bouts: <strong>${pct(bt.by_sport.F.accuracy)}</strong> of ${bt.by_sport.F.n.toLocaleString()}. Treating them as separate sports (own ratings, base rates and model) was tested and didn't beat one shared model, so they share it; the women's picks are simply harder (closer fights, fewer finishes).</p>` : ""}
       </section>
 
       <section class="panel">
@@ -1246,8 +1312,15 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   }
 
   document.addEventListener("click", (e) => {
+    if (e.target.id === "info-dlg") {  // a click on the backdrop lands on the dialog itself, outside its box
+      const r = e.target.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close();
+      return;
+    }
     const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open]");
     if (!t) return;
+    if (t.dataset.info) { e.stopPropagation(); openInfo(t.dataset.info); return; }
+    if (t.dataset.infoClose) { $("#info-dlg").close(); return; }
     if (t.dataset.tab) { state.tab = t.dataset.tab; state.profile = null; ls.set(LOCAL_KEY + ":tab", state.tab); render(); return; }
     if (t.dataset.rounds) { state.m.rounds = +t.dataset.rounds; render(); return; }
     if (t.id === "swap") { Object.assign(state.m, { a: state.m.b, b: state.m.a, oddsA: state.m.oddsB, oddsB: state.m.oddsA }); render(); return; }

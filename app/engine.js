@@ -171,8 +171,17 @@
       for (const k of ratingKeys) out["r_" + k] = s["r_" + k] + nudge;
       for (const [k, v] of Object.entries(adj.overrides || {})) {
         if (v === null || v === undefined || v === "" || Number.isNaN(Number(v))) continue;
+        if (k === "sig_diff5") continue;  // applied below, after any landed/absorbed edits
         out[k] = INT_FIELDS.has(k) ? Math.round(Number(v)) : Number(v);
       }
+      const diff = (adj.overrides || {}).sig_diff5;
+      if (diff !== null && diff !== undefined && diff !== "" && !Number.isNaN(Number(diff))) {
+        // Keep the fighter's output (landed + absorbed) and set the gap between them.
+        const mid = (out.slpm + out.sapm) / 2, half = Number(diff) / 10;
+        out.slpm = Math.max(0.1, mid + half);
+        out.sapm = Math.max(0.1, mid - half);
+      }
+      out.sig_diff5 = 5 * (out.slpm - out.sapm);
       for (const cat of Object.keys(CATS)) out[cat] = categoryRating(out, cat);
       const IK = (data.intangibles && data.intangibles.keys) || [];
       if (IK.length) out.intangibles = IK.reduce((t, k) => t + out["i_" + k], 0) / IK.length;

@@ -56,6 +56,20 @@ INTANGIBLE_HELP: Dict[str, str] = {
     "resilience": "Heart: record in the fight right after a loss.",
     "big_fight": "Composure under the lights: five-round and title fights, and results in them.",
 }
+# How each starting value is computed, shown by the web interface's (i) buttons.
+INTANGIBLE_METHOD: Dict[str, str] = {
+    "athleticism": "1500 + 110 x age factor + 350 x (share of wins that were finishes in rounds 1-2, minus 30%). Age factor: "
+                   "+0.3 from 24 to 30, falling 0.2 a year after 30 and 0.05 a year below 24.",
+    "durability": "1500 - 70 x (wear penalty - 1.5). The wear penalty adds mileage (pro fights, cage time) and damage "
+                  "(KO/TKO losses, knockdowns and strikes absorbed), multiplied up past age 30.",
+    "killer_instinct": "1500 + 450 x (finish share of wins - 50%) + 250 x (early-finish share - 30%).",
+    "cardio": "1500 + 500 x (win rate in bouts that reached round 3 or later - 50%).",
+    "fight_iq": "1500 + 450 x (decision win share - 50%), split decisions counting 1.5x.",
+    "resilience": "1500 + 450 x (win rate in the fight right after a loss - 50%).",
+    "big_fight": "1500 + 70 x ln(1 + five-round/title fights) + 300 x (win rate in them - 50%).",
+}
+INTANGIBLE_METHOD_NOTE = ("Rates are shrunk toward 50% (or 30% for early finishes) so a short record stays near 1500, and values are "
+                "clipped to 1100-1900. The Intangibles rating is the average of all seven.")
 LO, HI = 1100.0, 1900.0
 
 
