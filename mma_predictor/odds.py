@@ -112,6 +112,9 @@ def link(fights: Iterable[Fight], lines: List[Tuple[Fight, dict]]) -> Tuple[Dict
         la, lb = (rec["b_line"], rec["a_line"]) if m.swapped else (rec["a_line"], rec["b_line"])
         mv = movement_for(rec["movement"], "b" if m.swapped else "a")
         ml = MarketLine(m.base.date, rec["event"], la["open"], lb["open"], closing_line(la), closing_line(lb), mv, rec["pages"])
+        if ml.a_close is None and ml.b_close is None:
+            report["no lines"] = report.get("no lines", 0) + 1  # listed without odds
+            continue
         if not _sane(ml.a_close, ml.b_close):
             report["bad lines"] += 1
             continue

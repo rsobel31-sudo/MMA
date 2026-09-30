@@ -854,5 +854,14 @@
   "no second source": 1689,
   "agree": 704,
   "differ": 68
+ },
+ "odds": {
+  "odds bouts": 9621,
+  "matched": 8063,
+  "unmatched": 1004,
+  "bad lines": 0,
+  "pages disagree": 0,
+  "both pages": 3412,
+  "no lines": 554
  }
 }

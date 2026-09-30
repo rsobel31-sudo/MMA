@@ -97,7 +97,10 @@ def parse_fighter(page: str, url: str) -> List[OddsBout]:
 
 
 def search_url(name: str) -> str:
-    return f"{BASE}/search?query={re.sub(r'[^A-Za-z0-9]+', '+', name).strip('+')}"
+    import unicodedata
+
+    plain = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()  # Natália -> Natalia
+    return f"{BASE}/search?query={re.sub(r'[^A-Za-z0-9]+', '+', plain).strip('+')}"
 
 
 def search_results(page: str) -> List[tuple]:

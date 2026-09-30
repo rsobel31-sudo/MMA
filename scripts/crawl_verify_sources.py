@@ -52,7 +52,7 @@ if args.source == "bestfightodds":
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)
     queue: list = []
-    if out.exists():  # resuming: re-expand from pages already saved
+    if out.exists() and not args.cards_only:  # resuming: re-expand from pages already saved
         for line in out.open(encoding="utf-8"):
             for b in json.loads(line).get("bouts", []):
                 if str(b.get("event", "")).upper().startswith("UFC"):
