@@ -405,10 +405,10 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     <button role="tab" data-tab="matchup" aria-selected="false">Create a Matchup</button>
   </nav>
   <div class="more" id="more">
-    <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span> <span class="count" id="more-count" hidden></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
-      <button type="button" role="menuitem" data-tab="adjust">My adjustments <span class="count" id="adj-count" hidden></span></button>
+      <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
       <button type="button" role="menuitem" data-tab="insights">Insights</button>
     </div>
   </div>
@@ -634,9 +634,6 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (edge >= 0.12) return thin ? "Medium, thin data" : "Medium confidence";
     return thin ? "Low, thin data" : "Coin-flip range";
   }
-  function adjCount() {
-    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note || hasIntang(m)).length + Object.keys(state.adj.weights).length + state.commentary.length;
-  }
   function fmt(attr, v) {
     if (v === null || v === undefined) return "—";
     if (attr.kind === "pct") return (v * 100).toFixed(0);
@@ -654,9 +651,6 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const cur = inMore.find((b) => b.dataset.tab === state.tab);
     $("#more-btn").classList.toggle("active", !!cur);
     $("#more-label").textContent = cur ? cur.firstChild.textContent.trim() : "More";
-    const n = adjCount();
-    const ac = $("#adj-count"); ac.hidden = !n; ac.textContent = n;
-    const mc = $("#more-count"); mc.hidden = !n || (cur && cur.dataset.tab === "adjust"); mc.textContent = n;
     const cc = $("#card-count"); cc.hidden = !state.card.length; cc.textContent = state.card.length;
     const pa = $("#picks-alert"); pa.hidden = !(state.picks.summary && state.picks.summary.bust);
     const view = $("#view");
