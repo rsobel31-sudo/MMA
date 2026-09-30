@@ -29,6 +29,7 @@ ap.add_argument("--delay", type=float, default=2.0)
 ap.add_argument("--max", type=int, default=1500, help="fightmatrix profile budget")
 ap.add_argument("--rank-pages", type=int, default=2, help="fightmatrix ranking pages (25 each) per division")
 ap.add_argument("--out", help="output file (default: the source's file under data/)")
+ap.add_argument("--cards-only", action="store_true", help="bestfightodds: only fighters on the upcoming cards, no expansion")
 args = ap.parse_args()
 
 fetcher = Fetcher(Path(".cache/pages"), delay=args.delay, user_agent="mma-predictor/0.1 (personal research)")
@@ -59,7 +60,8 @@ if args.source == "bestfightodds":
     if True:  # seeds: everyone on the upcoming cards and in the rankings
         up = json.loads(Path("data/upcoming.json").read_text())
         names = [str(b[k]) for e in up["events"] for b in e["bouts"] for k in ("a", "b")]
-        names += [r["name"] for r in json.loads(Path("data/ranked_fighters.json").read_text()).get("rankings", [])]
+        if not args.cards_only:
+            names += [r["name"] for r in json.loads(Path("data/ranked_fighters.json").read_text()).get("rankings", [])]
         names = list(dict.fromkeys(names))
         print(f"searching {len(names)} card and ranked fighters", flush=True)
         for n in names:
@@ -88,7 +90,7 @@ if args.source == "bestfightodds":
             name = bouts[0].fighter if bouts else ""
             fh.write(json.dumps({"url": u, "name": name, "bouts": [dataclasses.asdict(b) for b in bouts]}, default=encode) + "\n")
             fh.flush()
-            for b in bouts:
+            for b in bouts if not args.cards_only else []:
                 if b.event.upper().startswith("UFC") and b.opponent_url not in queued:
                     queued.add(b.opponent_url)
                     queue.append(b.opponent_url)

@@ -659,7 +659,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const oa = parseFloat(state.m.oddsA), ob = parseFloat(state.m.oddsB);
     if (isFinite(oa) && isFinite(ob) && Math.abs(oa) >= 100 && Math.abs(ob) >= 100) {
       const mp = MMAEngine.devig(oa, ob), edge = p - mp;
-      market = `<span class="pill num">Market ${pct(mp, 0)} / ${pct(1 - mp, 0)} (${esc((mp >= 0.5 ? a : b).split(" ").slice(-1)[0])} favoured)</span><span class="pill num">Model edge ${pct(Math.abs(edge))} to ${esc(edge >= 0 ? a : b)}</span>`;
+      const bl = blendP(p, mp);
+      market = `<span class="pill num">Market ${pct(mp, 0)} / ${pct(1 - mp, 0)} (${esc((mp >= 0.5 ? a : b).split(" ").slice(-1)[0])} favoured)</span><span class="pill num">Model edge ${pct(Math.abs(edge))} to ${esc(edge >= 0 ? a : b)}</span>${bl != null ? `<span class="pill num" title="Model and market combined with the weights that tested best on past bouts">Blend ${esc((bl >= 0.5 ? a : b).split(" ").slice(-1)[0])} ${pct(Math.max(bl, 1 - bl), 0)}</span>` : ""}`;
     }
     const live = marketFor(a, b);
     if (live && live.a_open != null) {
@@ -979,6 +980,13 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     return null;
   }
+  /** Model + market blend, weighted as the backtest found best (Insights, Betting market). */
+  function blendP(p, pm) {
+    const bw = state.data.insights && state.data.insights.market && state.data.insights.market.blend;
+    if (!bw || pm == null) return null;
+    const lg = (x) => Math.log(Math.min(1 - 1e-6, Math.max(1e-6, x)) / (1 - Math.min(1 - 1e-6, Math.max(1e-6, x))));
+    return MMAEngine.sigmoid(bw.weights.model * lg(p) + bw.weights.market * lg(pm));
+  }
   function sparkline(series) {
     if (!series || series.length < 2) return "";
     const ps = series.map((x) => 1 / x), lo = Math.min(...ps), hi = Math.max(...ps), span = hi - lo || 0.01;
@@ -994,7 +1002,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const toward = move == null || Math.abs(move) < 0.02 ? null : move > 0 ? a : b;
     const edge = p - pm, edgeTo = edge >= 0 ? a : b, last = (n) => esc(n.split(" ").slice(-1)[0]);
     return `<div class="num"><strong>${last(fav)} ${fmtOdds(favA ? mk.a_now : mk.b_now)}</strong> <span class="muted">fav</span> · ${last(dog)} ${fmtOdds(favA ? mk.b_now : mk.a_now)}</div>
-      <div class="muted num" style="font-size:12px">${po != null ? `opened ${last(a)} ${fmtOdds(mk.a_open)} ` : ""}${sparkline(mk.movement_a)}${toward ? ` <span class="${toward === a ? "mv-a" : "mv-b"}">money on ${last(toward)} (${move > 0 ? "+" : "−"}${Math.abs(move * 100).toFixed(0)} pts)</span>` : po != null ? " steady" : ""}</div>
+      <div class="muted num" style="font-size:12px">${po != null ? `opened ${last(a)} ${fmtOdds(mk.a_open)} ` : ""}${sparkline(mk.movement_a)}${toward ? ` <span class="${toward === a ? "mv-a" : "mv-b"}">money on ${last(toward)} (${Math.abs(move * 100).toFixed(0)} pts)</span>` : po != null ? " steady" : ""}</div>
+      ${blendP(p, pm) != null ? `<div class="num" style="font-size:12px">Blend: <strong>${last(blendP(p, pm) >= 0.5 ? a : b)} ${pct(Math.max(blendP(p, pm), 1 - blendP(p, pm)), 0)}</strong></div>` : ""}
       ${Math.abs(edge) >= 0.05 ? `<div class="edge num">Model +${Math.abs(edge * 100).toFixed(0)} pts on ${last(edgeTo)}${(p >= 0.5) !== favA ? " (backs the underdog)" : ""}</div>` : '<div class="muted" style="font-size:12px">Model agrees with the market</div>'}`;
   }
   function boutRow(bt) {
@@ -1104,7 +1113,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
           <tr><td>This model</td><td>${pct(mk.model.accuracy)}</td><td>${mk.model.log_loss.toFixed(4)}</td></tr>
           <tr><td>Blend of both (fitted on the earlier half, scored on the later ${mk.blend.test_n.toLocaleString()})</td><td>${pct(mk.blend.accuracy)}</td><td>${mk.blend.log_loss.toFixed(4)} <span class="muted">vs market ${mk.blend.market_log_loss.toFixed(4)}</span></td></tr>
         </tbody></table></div>
-        <p style="font-size:14px;margin:8px 0 0">${mk.blend.log_loss < mk.blend.market_log_loss - 0.001 ? `Blending adds to the market: weight ${mk.blend.weights.model.toFixed(2)} on the model, ${mk.blend.weights.market.toFixed(2)} on the market. The model sees something the closing line doesn't fully price.` : `The blend doesn't beat the market on its own: the closing line already prices in what the model sees (weights ${mk.blend.weights.model.toFixed(2)} model, ${mk.blend.weights.market.toFixed(2)} market).`}
+        <p style="font-size:14px;margin:8px 0 0">${mk.market.log_loss < mk.model.log_loss ? "The closing line is the better forecaster on its own. " : "The model beats the closing line on its own. "}${mk.blend.log_loss < mk.blend.market_log_loss - 0.003 ? `Blending adds to the market (weight ${mk.blend.weights.model.toFixed(2)} on the model, ${mk.blend.weights.market.toFixed(2)} on the market): the model sees something the closing line doesn't fully price.` : `A blend (weight ${mk.blend.weights.model.toFixed(2)} on the model, ${mk.blend.weights.market.toFixed(2)} on the market) scores about the same as the market alone on later bouts, so the market already prices in most of what the model sees. Upcoming cards show the blend as the best single estimate.`}
           When the model and the market pick different favourites (${mk.disagree.n} bouts), the model's pick won ${pct(mk.disagree.model_right)}.</p>
         ${mk.movement ? `<h3 style="margin-top:14px">Line movement</h3>
         <p style="font-size:14px;margin:4px 0 8px">The opening line had log-loss ${mk.movement.opening_log_loss.toFixed(4)}; the closing line ${mk.movement.closing_log_loss.toFixed(4)}: money arriving before the fight made the market ${mk.movement.closing_log_loss < mk.movement.opening_log_loss ? "sharper" : "no sharper"}.
