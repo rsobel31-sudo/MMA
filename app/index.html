@@ -208,6 +208,7 @@ table.bouts td { vertical-align: middle; }
 .tier-best { background: var(--good); color: var(--surface); }
 .tier-sure { background: color-mix(in srgb, var(--good) 18%, var(--surface)); color: var(--good); }
 .tier-watch { background: var(--edit-soft); color: var(--edit); }
+.tier-caution { background: var(--surface-2); color: var(--edit); border: 1px solid var(--edit-soft); }
 .tier-toss { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
 tr.hl-best td { background: color-mix(in srgb, var(--good) 7%, transparent); }
 tr.hl-watch td { background: color-mix(in srgb, var(--edit) 7%, transparent); }
@@ -1033,7 +1034,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     for (const pt of bt.patterns || []) {
       const st = patternStat(pt.key);
       if (!st || st.n < 50) continue;
-      const overrates = /overrate/.test(st.verdict), underrates = /underrate/.test(st.verdict);
+      // Only a significant miscalibration counts (analysis.py: |z| >= 1.96); "leaning ..." is noise-level.
+      const overrates = st.verdict === "model overrates", underrates = st.verdict === "model underrates";
       const fact = pt.detail || st.label;
       const record = `fighters with this edge won ${pct(st.win_rate, 0)} of ${st.n} past UFC bouts`;
       if (pt.side === pickSide) {
@@ -1047,13 +1049,15 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       }
     }
     if (pp < 0.56) tags.push({ kind: "toss", text: "Toss-up: picks this close have won about half the time" });
-    const tier = sure && backed && !caution && !upset ? "best" : sure && !caution ? "sure" : upset || caution ? "watch" : pp < 0.56 ? "toss" : null;
+    // Upset watch = the underdog has an edge that has historically won; Caution = the pick leans on an
+    // edge the model has significantly overrated. Neither overrides a clean high-certainty pick.
+    const tier = sure && backed && !caution && !upset ? "best" : sure && !caution ? "sure" : upset ? "watch" : caution ? "caution" : pp < 0.56 ? "toss" : null;
     // Most telling reasons first; plain pattern matches are left out.
     const rank = { sure: 0, caution: 1, upset: 2, backed: 3, toss: 4 };
     const shown = tags.filter((t) => t.kind in rank).sort((x, y) => rank[x.kind] - rank[y.kind]).slice(0, 3);
     return { tier, tags: shown, all: tags };
   }
-  const TIER_LABEL = { best: "Best bet", sure: "High certainty", watch: "Upset watch", toss: "Toss-up" };
+  const TIER_LABEL = { best: "Best bet", sure: "High certainty", watch: "Upset watch", caution: "Caution", toss: "Toss-up" };
 
   // ---------------------------------------------------------- upcoming cards
   const SEGMENT_ORDER = ["Fight card", "Main card", "Preliminary card", "Early preliminary card", "Announced"];
@@ -1177,7 +1181,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       const r = predict(b.a_id, b.b_id, b.rounds || 3), hl = highlightsFor(b, r);
       if (hl.tier && hl.tier !== "toss") flagged.push({ e, b, r, hl });
     }
-    const order = { best: 0, sure: 1, watch: 2, toss: 3 };
+    const order = { best: 0, sure: 1, watch: 2, caution: 3, toss: 4 };
     flagged.sort((x, y) => order[x.hl.tier] - order[y.hl.tier] || Math.max(y.r.p, 1 - y.r.p) - Math.max(x.r.p, 1 - x.r.p));
     const upcomingCount = (key) => events.reduce((t, e) => t + e.bouts.filter((b) => (b.patterns || []).some((p) => p.key === key)).length, 0);
     const maxCoef = Math.max(...ins.regression.map((r) => Math.abs(r.coef_per_sd)), 0.5);
@@ -1232,7 +1236,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
 
       <section class="panel">
         <h3>Upcoming bouts worth a look</h3>
-        <p class="muted" style="margin:4px 0 10px;font-size:13px">Best bet = high certainty and backed by a pattern with a strong record. Upset watch = the underdog has an edge that has historically won, or the pick's edge has been overrated.</p>
+        <p class="muted" style="margin:4px 0 10px;font-size:13px">Best bet = high certainty and backed by a pattern with a strong record. Upset watch = the underdog has an edge that has historically won more than the model expected. Caution = the pick leans on an edge the model has significantly overrated in past bouts.</p>
         ${flagged.length ? `<div class="table-wrap"><table class="list"><thead><tr><th></th><th>Bout</th><th>Pick</th><th>Why</th><th></th></tr></thead><tbody>
           ${flagged.map(({ e, b, r, hl }) => `<tr><td><span class="tier tier-${hl.tier}">${TIER_LABEL[hl.tier]}</span><div class="muted" style="font-size:12px">${esc(e.date)}</div></td>
             <td>${nameLink(b.a_id)} vs ${nameLink(b.b_id)}<div class="muted" style="font-size:12px">${esc(e.name)} · ${esc(b.weight_class)}</div></td>
