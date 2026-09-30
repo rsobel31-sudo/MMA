@@ -220,6 +220,7 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
     sf = statsfight_fights(load_jsonl(Path(statsfight_path)))
     sf_matches = {id(m.base): (m, rec) for m, (_, rec) in zip(match_bouts(stat_fights, [f for f, _ in sf]), sf) if m.base}
 
+    checks: Dict[str, Dict[str, str]] = defaultdict(dict)  # per fighter: attribute -> how it was verified
     report: Dict = {"results": Counter(), "stats": Counter(), "conflicts": [], "disputed_stats": [], "statsfight_results": Counter()}
     matches = match_bouts(base_fights, stat_fights)
     for m in matches:
@@ -248,6 +249,9 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
         report["stats"][status] += 1
         if status == "disputed" or status == "inconsistent" or (strict_stats and status != "verified"):
             continue
+        for n in (m.base.fighter_a, m.base.fighter_b):
+            key = "stats_verified" if status == "verified" else "stats_official"
+            checks[n][key] = str(int(checks[n].get(key, "0")) + 1)
         brow = base_by_key.get((m.base.date.isoformat(), m.base.fighter_a, m.base.fighter_b))
         srow = stat_by_key.get((o.date.isoformat(), o.fighter_a, o.fighter_b))
         if brow is None or srow is None:
@@ -284,18 +288,24 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
         if bb and bb.dob and sb.dob:
             if bb.dob == sb.dob:
                 report["dob"]["agree"] += 1
+                checks[bname]["dob"] = "Sherdog + UFCStats agree"
             else:
                 third = fm_dob.get((row.get("url") or "").rstrip("/").lower())
                 if third == sb.dob.isoformat():
                     row["dob"] = third
                     report["dob"]["differ, Fight Matrix sides with UFCStats"] += 1
+                    checks[bname]["dob"] = "UFCStats + Fight Matrix agree (Sherdog differs)"
                 elif third == bb.dob.isoformat():
                     report["dob"]["differ, Fight Matrix sides with Sherdog"] += 1
+                    checks[bname]["dob"] = "Sherdog + Fight Matrix agree (UFCStats differs)"
                 else:
                     report["dob"]["differ, unresolved (Sherdog kept)"] += 1
+                    checks[bname]["dob"] = f"disputed: Sherdog {bb.dob}, UFCStats {sb.dob}"
                     report["dob_conflicts"].append({"name": bname, "sherdog": bb.dob.isoformat(), "ufcstats": sb.dob.isoformat(), "fightmatrix": third})
         if bb and bb.height_cm and sb.height_cm:
-            report["height"]["agree" if abs(bb.height_cm - sb.height_cm) <= 3 else "differ"] += 1
+            ok = abs(bb.height_cm - sb.height_cm) <= 3
+            report["height"]["agree" if ok else "differ"] += 1
+            checks[bname]["height"] = "Sherdog + UFCStats agree" if ok else f"disputed: Sherdog {bb.height_cm:.0f} cm, UFCStats {sb.height_cm:.0f} cm"
         if sb.reach_cm:
             others = sf_reach.get(match_key(sname)) or sf_reach.get(match_key(bname))
             if others:
@@ -303,11 +313,16 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
                 report["reach"]["agree" if ok else "differ"] += 1
                 if ok:
                     row["reach_cm"] = f"{sb.reach_cm:.1f}"
+                    checks[bname]["reach"] = "UFCStats + StatsFight agree"
+                else:
+                    checks[bname]["reach"] = f"disputed: UFCStats {sb.reach_cm:.0f} cm, StatsFight {sorted(others)[len(others) // 2]:.0f} cm (not used)"
             else:
                 report["reach"]["no second source"] += 1
+                checks[bname]["reach"] = f"UFCStats only ({sb.reach_cm:.0f} cm), not used until a second source confirms it"
     write_dataset(Path(out_dir), base_fighters, base_rows)
     report["results"], report["stats"] = dict(report["results"]), dict(report["stats"])
     for k in ("statsfight_results", "dob", "height", "reach"):
         report[k] = dict(report[k])
     Path(out_dir, "verification.json").write_text(json.dumps(report, indent=1))
+    Path(out_dir, "fighter_checks.json").write_text(json.dumps(checks, indent=0, sort_keys=True))
     return report

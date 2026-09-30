@@ -406,9 +406,21 @@ def cmd_export(args) -> int:
     rankings = None
     if args.rankings and Path(args.rankings).exists():
         rankings = json.loads(Path(args.rankings).read_text()).get("rankings")
+    from .export import fightmatrix_metrics
+    from .external import DEFAULT_PATH as FM_PATH
+
+    vdir = Path(args.data)
+    checks = json.loads((vdir / "fighter_checks.json").read_text()) if (vdir / "fighter_checks.json").exists() else None
+    verification = None
+    if (vdir / "verification.json").exists():
+        rep = json.loads((vdir / "verification.json").read_text())
+        verification = {k: rep.get(k) for k in ("results", "statsfight_results", "stats", "dob", "height", "reach")}
+        verification["conflicts"] = rep.get("conflicts", [])[:20]
+        verification["disputed_stats"] = len(rep.get("disputed_stats", []))
+    outside = fightmatrix_metrics(FM_PATH, vdir, h.bios.keys()) if FM_PATH.exists() else None
     data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary,
                   source=args.source or Path(args.data).name, upcoming=upcoming, aliases=aliases, rankings=rankings,
-                  insights=study)
+                  insights=study, checks=checks, verification=verification, outside=outside)
     if args.log and data["upcoming"]["events"]:
         from . import predlog
         from .predictor import FightPredictor

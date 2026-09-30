@@ -97,6 +97,9 @@ def export(
     aliases: Optional[Dict[str, str]] = None,
     rankings: Optional[List[Dict[str, str]]] = None,
     insights: Optional[Dict[str, Any]] = None,
+    checks: Optional[Dict[str, Dict[str, str]]] = None,
+    verification: Optional[Dict[str, Any]] = None,
+    outside: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     model = model or WinModel()
     as_of = as_of or history.default_date()
@@ -122,6 +125,10 @@ def export(
                    weight_class_source="inferred" if inferred else (s.bio.weight_class_source or ("sherdog" if wc else "")),
                    nationality=s.bio.nationality, team=s.bio.team, height_cm=s.bio.height_cm,
                    complete=s.bio.complete)
+        if checks and name in checks:
+            row["checks"] = checks[name]  # how each attribute was cross-verified (verify.py)
+        if outside and name in outside:
+            row["fightmatrix"] = outside[name]  # Fight Matrix profile metrics
         bg = history.scouting.backgrounds.get(name)
         if bg:
             row["background"] = {"summary": bg.summary, "credentials": [dataclasses.asdict(c) for c in bg.credentials]}
@@ -179,6 +186,7 @@ def export(
             "trained_on": model.trained_on,
             "source": source,
             "backtest": backtest,
+            "verification": verification,
         },
         "priors": dataclasses.asdict(DEFAULT_PRIORS),
         "features": FEATURES,
@@ -201,3 +209,33 @@ def export(
 def write(data: Dict[str, Any], path: Path) -> None:
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     Path(path).write_text(json.dumps(data, separators=(",", ":")))
+
+
+def fightmatrix_metrics(path: Path, data_dir: Path, names) -> Dict[str, Dict[str, Any]]:
+    """Fight Matrix profile metrics per fighter in the dataset (linked by Sherdog URL, else unique name)."""
+    import csv
+
+    from .sources.wikipedia import match_key
+    from .verify import load_jsonl
+
+    urls: Dict[str, str] = {}
+    if (Path(data_dir) / "fighters.csv").exists():
+        with open(Path(data_dir) / "fighters.csv", newline="", encoding="utf-8") as fh:
+            urls = {r["url"].rstrip("/").lower(): r["name"] for r in csv.DictReader(fh) if r.get("url")}
+    by_key: Dict[str, List[str]] = {}
+    for n in names:
+        by_key.setdefault(match_key(n), []).append(n)
+    out: Dict[str, Dict[str, Any]] = {}
+    for prof in load_jsonl(Path(path)):
+        name = urls.get((prof.get("sherdog_url") or "").rstrip("/").lower())
+        if not name:
+            cands = by_key.get(match_key(prof["name"]), [])
+            name = cands[0] if len(cands) == 1 else None
+        if not name:
+            continue
+        st = prof.get("stats") or {}
+        out[name] = {"url": prof["url"], "combat_age": st.get("Combat Age"), "quality_perf": st.get("Quality Perf. %"),
+                     "opp_metric_540": st.get("540 Metric"), "rating_points": st.get("Rating Points"),
+                     "big_league": st.get("'Big League' Record"), "octagon_time": st.get("Octagon Time"),
+                     "rankings": (prof.get("rankings") or [])[:3]}
+    return out

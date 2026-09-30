@@ -118,6 +118,8 @@ table.tape { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.tape th, table.tape td { padding: 5px 6px; border-bottom: 1px solid var(--line); }
 button.info { background: none; border: 0; padding: 0 3px; margin: 0; font: inherit; font-size: 13px; line-height: 1; color: var(--muted); cursor: pointer; border-radius: 50%; }
 button.info:hover, button.info:focus-visible { color: var(--ink); background: var(--surface-2); }
+dl.srcs { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 8px 0 0; font-size: 14px; }
+dl.srcs dt { color: var(--muted); } dl.srcs dd { margin: 0; }
 dialog.info-dlg { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); padding: 18px 20px; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 64px); overflow: auto; }
 dialog.info-dlg::backdrop { background: rgba(10, 14, 20, .45); }
 dialog.info-dlg h3 { font-size: 22px; margin: 0 28px 6px 0; }
@@ -309,8 +311,9 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
   // Tale-of-the-tape rows. kind: pct (stored 0-1, shown 0-100), num, int.
   // help: what the number is and where it comes from (shown by the (i) buttons).
   const SHRUNK = "Shrunk toward the league average until there is enough evidence, so a short record stays near average.";
-  const NEEDS_STATS = "Needs per-fight stats (UFCStats). Sherdog records don't have them, so without them this shows the league average.";
+  const NEEDS_STATS = "From UFCStats per-fight stats, used only on bouts whose result a second source (Sherdog) confirms and dropped where StatsFight contradicts them. Fighters without UFC bouts have none, so this shows the league average (*).";
   const ATTRS = [
+    { k: "ext_rating", label: "Fight Matrix rating", kind: "int", better: "high", outside: true, help: "Fight Matrix's own Glicko-1 rating for this fighter after their last bout (an independent computer ranking; Fight Matrix displays it 500 points lower than raw Glicko). The model's outside-rating factor compares the two fighters' ratings; it is 0 when either has none. Type over it if you think it's off." },
     { k: "age", label: "Age", kind: "num", d: 1, unit: "yrs", better: "low", help: "Age on fight night, from date of birth. Feeds the age curve (a penalty that grows past 32, and a small one under 24) and multiplies wear and tear past 30." },
     { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high", help: "Arm span in centimetres. The reach factor compares the two fighters per 10 cm; it matters most at range." },
     { k: "slpm", label: "Sig. strikes landed / min", kind: "num", d: 2, better: "high", stat: true, help: `Significant strikes landed per minute of cage time, adjusted for how hard each opponent was to hit. ${SHRUNK} ${NEEDS_STATS}` },
@@ -536,6 +539,25 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     }
     return `<div class="rbars">${html}</div><p class="muted" style="font-size:12px;margin:6px 0 0">Scale 1200 to 2300. The tick marks the ${esc(f.division || "division")} median${peers.length >= 5 ? ` (${peers.length} fighters)` : " (too few fighters to compare)"}.</p>`;
   }
+  // Where this fighter's numbers come from, and which a second source confirmed (verify.py).
+  function sourcesPanel(f) {
+    const c = f.checks || {}, fm = f.fightmatrix;
+    const statN = (+c.stats_official || 0) + (+c.stats_verified || 0);
+    const rows = [
+      ["Record", "Sherdog (every pro bout); UFC results checked against UFCStats"],
+      ["Per-fight stats", statN ? `UFCStats on ${statN} UFC bouts whose result Sherdog confirms${c.stats_verified ? `, ${c.stats_verified} also cross-checked with StatsFight` : ""}` : "none yet: strike and grappling rows show league averages (*)"],
+      ["Date of birth", c.dob || (f.dob ? "Sherdog only" : "unknown")],
+      ["Height", c.height || (f.height_cm ? "Sherdog only" : "unknown")],
+      ["Reach", c.reach || (f.reach_cm ? "confirmed" : "unknown")],
+    ];
+    const bad = (t) => /disputed|only|not used|none yet|unknown/.test(t);
+    return `<section class="panel"><h3>Sources and verification</h3>
+      <dl class="srcs">${rows.map(([k, v]) => `<dt>${k}</dt><dd class="${bad(v) ? "muted" : ""}">${bad(v) ? "" : "✓ "}${esc(v)}</dd>`).join("")}</dl>
+      ${fm ? `<div class="label" style="margin-top:10px">Fight Matrix</div>
+        <p class="num" style="margin:4px 0 0;font-size:14px">${f.ext_rating != null ? `Rating <strong>${Math.round(f.ext_rating)}</strong> (Glicko) · ` : ""}${fm.rankings && fm.rankings.length ? esc(fm.rankings.join(", ")) + " · " : ""}${fm.combat_age ? `Combat Age ${esc(fm.combat_age)} · ` : ""}${fm.quality_perf ? `Quality perf. ${esc(fm.quality_perf)} · ` : ""}${fm.opp_metric_540 ? `540 opponent metric ${esc(fm.opp_metric_540)}` : ""}
+        <a href="${esc(fm.url)}" target="_blank" rel="noopener">profile</a></p>` : ""}
+    </section>`;
+  }
   function renderProfile(view) {
     const n = state.profile, f = fighter(n), peers = divisionPeers(f);
     const facts = [
@@ -577,6 +599,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         </div>
         <div class="stack">
           <section class="panel"><h3>Ratings</h3>${ratingBars(f, peers)}</section>
+          ${sourcesPanel(f)}
           <section class="panel">${commentaryList(n, f) || '<div class="label">Fight commentary</div><p class="muted" style="font-size:13px;margin:4px 0 0">No judged fights yet. Use Judge in the fight history below.</p>'}</section>
         </div>
       </div>
@@ -706,7 +729,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
           <h3>Tale of the tape</h3>
           <span class="muted" style="font-size:13px">Type over any number to apply what you know. Edited values turn amber and are saved; ↺ resets one.</span>
         </div>
-        ${noStats.length ? `<div class="nostats">No per-fight striking or grappling stats for ${esc(noStats.join(" and "))} yet (Sherdog records don't include them), so rows marked * show league averages. Edit them from what you've seen, or add UFCStats data.</div>` : ""}
+        ${noStats.length ? `<div class="nostats">No verified per-fight stats for ${esc(noStats.join(" and "))} yet (they come from UFCStats, which covers UFC bouts only), so rows marked * show league averages. Edit them from what you've seen.</div>` : ""}
         <div class="tape-wrap"><table class="tape num">
           <thead><tr><th class="a">${nameLink(a)}</th><th></th><th class="b">${nameLink(b)}</th></tr></thead>
           <tbody>
@@ -718,11 +741,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
             ${Object.entries(state.data.rating_categories).map(([cat, keys]) => `
               <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong>${infoBtn(cat, cat)}</td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
               ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
+            ${ATTRS.filter((at) => at.outside).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
             ${Object.keys(INTANG_ATTRS).length ? `
               <tr class="cat"><td class="va">${catCell(fa, fb, "intangibles", "a")}</td><td class="attr"><strong>Intangibles</strong>${infoBtn("intangibles", "Intangibles")}<div class="muted" style="font-size:11px;font-weight:400">separate from overall; your edits move the prediction</div></td><td class="vb">${catCell(fa, fb, "intangibles", "b")}</td></tr>
               ${Object.values(INTANG_ATTRS).map((at) => tapeRow(at, a, fa, b, fb)).join("")}` : ""}
             <tr class="group"><td colspan="3">Career stats</td></tr>
-            ${ATTRS.filter((at) => !at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
+            ${ATTRS.filter((at) => !at.wear && !at.outside).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
             <tr class="group"><td colspan="3">Wear and tear <span>Mileage and damage, weighted more heavily past 30. A 30-year-old with 50 fights is older than one with 5.</span></td></tr>
             <tr><td class="va">${fa.wins + fa.losses + fa.prior_wins + fa.prior_losses}</td><td class="attr">Pro fights</td><td class="vb">${fb.wins + fb.losses + fb.prior_wins + fb.prior_losses}</td></tr>
             ${ATTRS.filter((at) => at.wear).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
@@ -1013,7 +1037,23 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const upcomingCount = (key) => events.reduce((t, e) => t + e.bouts.filter((b) => (b.patterns || []).some((p) => p.key === key)).length, 0);
     const maxCoef = Math.max(...ins.regression.map((r) => Math.abs(r.coef_per_sd)), 0.5);
     const log = state.data.prediction_log;
+    const v = meta.verification;
+    const sum = (o) => Object.values(o || {}).reduce((t, x) => t + x, 0);
+    const verifyPanel = v ? `<section class="panel">
+        <h3>Data verification</h3>
+        <p class="muted" style="font-size:13px;margin:4px 0 8px">Nothing is taken from one source alone. UFC bouts from UFCStats are matched to Sherdog's record of the same bout; their per-fight stats are used only when the winners agree, and dropped where StatsFight's independent count contradicts them. Birth dates, heights and reaches need two sources to agree (Fight Matrix breaks birth-date ties).</p>
+        <dl class="srcs num">
+          <dt>UFC results vs Sherdog</dt><dd>${(v.results.agree || 0).toLocaleString()} agree${v.results.method ? `, ${v.results.method} differ on method` : ""}${v.results.round ? `, ${v.results.round} on round` : ""}, <strong>${v.results.winner || 0}</strong> conflicting winner${v.results.winner === 1 ? "" : "s"} (excluded)${v.results["no second source"] ? `; ${v.results["no second source"].toLocaleString()} not yet matched (unused)` : ""}</dd>
+          ${sum(v.statsfight_results) ? `<dt>UFC results vs StatsFight</dt><dd>${(v.statsfight_results.agree || 0).toLocaleString()} of ${sum(v.statsfight_results).toLocaleString()} agree${v.statsfight_results.winner ? `, ${v.statsfight_results.winner} conflicting` : ""}</dd>` : ""}
+          <dt>Per-fight stats</dt><dd>${(v.stats.verified || 0).toLocaleString()} confirmed by StatsFight, ${(v.stats["official only"] || 0).toLocaleString()} official only (older bouts StatsFight doesn't cover; internally consistent)${v.stats.disputed ? `, <strong>${v.stats.disputed}</strong> disputed (not used)` : ""}</dd>
+          <dt>Birth dates</dt><dd>${Object.entries(v.dob || {}).map(([k, x]) => `${x} ${esc(k)}`).join("; ")}</dd>
+          <dt>Heights</dt><dd>${Object.entries(v.height || {}).map(([k, x]) => `${x} ${esc(k)}`).join("; ")}</dd>
+          <dt>Reach</dt><dd>${Object.entries(v.reach || {}).map(([k, x]) => `${x} ${esc(k)}`).join("; ")}</dd>
+        </dl>
+        ${v.conflicts && v.conflicts.length ? `<p class="muted" style="font-size:13px;margin:8px 0 0">Conflicting results: ${v.conflicts.map((c) => `${esc(c.bout)} (${esc(c.date)}): UFCStats ${esc(c.ufcstats || "none")}, Sherdog ${esc(c.sherdog || "none")}${c.statsfight ? `, StatsFight ${esc(c.statsfight)}` : ""}`).join("; ")}</p>` : ""}
+      </section>` : "";
     view.innerHTML = `<div class="stack">
+      ${verifyPanel}
       <section class="panel">
         <h3>How the model has done</h3>
         <p class="num" style="margin:6px 0 0">Walk-forward backtest on ${bt.n ? bt.n.toLocaleString() : "?"} past UFC bouts, each predicted using only what was known beforehand: picked the winner <strong>${bt.accuracy ? pct(bt.accuracy) : "?"}</strong>${bt.high_conf_n ? `, and <strong>${pct(bt.high_conf_accuracy)}</strong> of the ${bt.high_conf_n} fights where it was at least 65% sure` : ""}. Confidence is calibrated (logits × ${state.data.calibration_scale || 1}) because the raw model hedged toward 50/50.</p>

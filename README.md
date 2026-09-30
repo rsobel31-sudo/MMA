@@ -326,6 +326,38 @@ Tapology's robots.txt disallows Anthropic's crawlers, so Claude doesn't fetch
 from it. The Tapology importer is there for you to run yourself, subject to
 Tapology's terms.
 
+### Sources and cross-verification
+
+Nothing is used on one source's word alone.
+
+| Source | What it supplies | How it's checked |
+|---|---|---|
+| Sherdog | Every pro bout (the career records), DOB, height | UFC bouts against UFCStats and StatsFight |
+| UFCStats (the [Kaggle "UFC Datasets 1994-2025"](https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025) scrape) | Per-fight knockdowns, significant strikes, takedowns, submission attempts, control time, ground strikes; DOB, height, reach | Result against Sherdog; stats against StatsFight |
+| StatsFight | Its own live stats for recent UFC bouts, results, height, reach | Used as the second opinion |
+| Fight Matrix | Point-in-time Elo/Glicko ratings, Combat Age, rankings, DOB | Its ratings are its own opinion and enter as one model feature; its DOB breaks ties |
+| Wikipedia | UFC roster (division, gender), rankings, scheduled cards | Gender checked against each fighter's opponents |
+
+`verify` builds `data/verified` from Sherdog plus UFCStats:
+
+- A UFCStats bout is matched to Sherdog's record of the same bout (same fighters within a day, names matched regardless of order, accents or spelling like "BJ Penn" / "B.J. Penn"). Its stats are attached only if the **winner agrees**. Of 7,026 matched bouts, 7,015 agree fully, 10 differ only on method or round, and 1 conflicts (excluded).
+- Stats that StatsFight contradicts (the sources disagree on who out-landed whom by 20+ points of share, or on takedowns by 3+) are dropped for that bout. StatsFight counts strikes its own way, so it's a check, not a replacement.
+- Reach is used only when UFCStats and StatsFight agree within 3 cm (Sherdog doesn't list reach). Birth dates must match between Sherdog and UFCStats; if they don't, the one Fight Matrix agrees with wins, otherwise Sherdog's is kept and flagged.
+- The report (`data/verified/verification.json`) and per-fighter status (`fighter_checks.json`) feed the Insights tab and each fighter's profile.
+
+```bash
+curl -L -o ufc.zip https://www.kaggle.com/api/v1/datasets/download/neelagiriaditya/ufc-datasets-1994-2025 && unzip ufc.zip -d kaggle
+python -m mma_predictor import kaggle --dir kaggle --out data/ufcstats
+python scripts/crawl_verify_sources.py statsfight            # -> data/statsfight/bouts.jsonl
+python scripts/crawl_verify_sources.py fightmatrix           # -> data/fightmatrix/profiles.jsonl
+python -m mma_predictor verify                               # -> data/verified
+python -m mma_predictor export --data data/verified --events UFC
+```
+
+Adding the verified stats improved the backtest on the same 3,923 UFC bouts from 65.4% to 65.9% (log-loss 0.6254 to 0.6183), most for women's bouts (62.4% to 64.7%), and agreement with the official UFC rankings from 0.82 to 0.84. Fight Matrix's ratings add a little more where both fighters have one (log-loss 0.6251 to 0.6224 on those bouts).
+
+UFCStats itself (ufcstats.com) and UFC.com block automated access, so the Kaggle scrape is how its numbers get in.
+
 ### Combining sources
 
 `merge` unions datasets and matches the same bout across sources by fighter

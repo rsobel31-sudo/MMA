@@ -41,7 +41,7 @@ EDITABLE = (
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
     "form", "streak", "layoff_days", "sos", "age", "reach_cm",
-    "ko_losses", "kd_absorbed", "sig_absorbed", "minutes",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "minutes", "ext_rating",
 ) + tuple("r_" + k for k in SUB_RATINGS) + tuple("i_" + k for k in INTANGIBLES)
 INT_FIELDS = ("recent_ko_losses", "streak", "layoff_days", "ko_losses", "kd_absorbed", "sig_absorbed")
 CATEGORY_WEIGHTS = SkillConfig().category_weights
