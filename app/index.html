@@ -330,6 +330,22 @@ nav.tabs button { font-family: var(--body); font-weight: 600; font-size: 14.5px;
 nav.tabs button:hover { color: var(--ink); }
 nav.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
 nav.tabs .count { border-radius: 999px; }
+.navbar { display: flex; align-items: center; gap: 12px; margin: 20px 0 28px; }
+.navbar nav.tabs { margin: 0; min-width: 0; }
+.more { position: relative; margin-left: auto; flex-shrink: 0; }
+.more-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--surface-2); color: var(--muted); border: 0; border-radius: 999px; padding: 13px 18px; font: 600 14.5px var(--body); cursor: pointer; white-space: nowrap; }
+.more-btn:hover, .more-btn[aria-expanded="true"] { color: var(--ink); }
+.more-btn.active { background: var(--ink); color: var(--bg); }
+.more-btn svg { transition: transform .15s; }
+.more-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.more-btn .count, .more-menu .count { font-size: 12px; background: var(--edit-soft); color: var(--edit); border-radius: 999px; padding: 0 6px; }
+.more-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 40; min-width: 220px; padding: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 32px rgba(0,0,0,.14); display: grid; gap: 2px; }
+.more-menu[hidden] { display: none; }
+.more-menu button { text-align: left; background: none; border: 0; border-radius: 9px; padding: 10px 12px; font: 600 14.5px var(--body); color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.more-menu button:hover, .more-menu button:focus-visible { background: var(--surface-2); outline: none; }
+.more-menu button[aria-current="page"] { background: var(--surface-2); }
+.more-menu button[aria-current="page"]::after { content: "✓"; color: var(--muted); }
+@media (max-width: 600px) { .more-btn { padding: 11px 14px; } }
 .panel { border: 1px solid transparent; border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
 .stack { gap: 20px; }
 .grid2 { gap: 20px; }
@@ -381,15 +397,22 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       <div class="tagline">Know the fight before the cage door closes.</div>
     </div>
   </header>
+  <div class="navbar">
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
     <button role="tab" data-tab="picks" aria-selected="false">AI Picks <span class="count alert" id="picks-alert" hidden>!</span></button>
     <button role="tab" data-tab="matchup" aria-selected="false">Create a Matchup</button>
-    <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
-    <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
-    <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
   </nav>
+  <div class="more" id="more">
+    <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span> <span class="count" id="more-count" hidden></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
+      <button type="button" role="menuitem" data-tab="model">Model weights</button>
+      <button type="button" role="menuitem" data-tab="adjust">My adjustments <span class="count" id="adj-count" hidden></span></button>
+      <button type="button" role="menuitem" data-tab="insights">Insights</button>
+    </div>
+  </div>
+  </div>
   <main id="view"><div class="loading">Loading fighter data…</div></main>
   <dialog class="info-dlg" id="info-dlg" aria-labelledby="info-title"><button class="btn small close" type="button" data-info-close="1" aria-label="Close">✕</button><div id="info-body"></div></dialog>
 </div>
@@ -626,8 +649,14 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   function render() {
     if (!state.data) return;
     document.querySelectorAll("#tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)));
+    const inMore = [...document.querySelectorAll("#more-menu [data-tab]")];
+    inMore.forEach((b) => { if (b.dataset.tab === state.tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
+    const cur = inMore.find((b) => b.dataset.tab === state.tab);
+    $("#more-btn").classList.toggle("active", !!cur);
+    $("#more-label").textContent = cur ? cur.firstChild.textContent.trim() : "More";
     const n = adjCount();
     const ac = $("#adj-count"); ac.hidden = !n; ac.textContent = n;
+    const mc = $("#more-count"); mc.hidden = !n || (cur && cur.dataset.tab === "adjust"); mc.textContent = n;
     const cc = $("#card-count"); cc.hidden = !state.card.length; cc.textContent = state.card.length;
     const pa = $("#picks-alert"); pa.hidden = !(state.picks.summary && state.picks.summary.bust);
     const view = $("#view");
@@ -1582,6 +1611,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (!t) return;
     if (t.dataset.info) { e.stopPropagation(); openInfo(t.dataset.info); return; }
     if (t.dataset.infoClose) { $("#info-dlg").close(); return; }
+    if (t.id === "more-btn") { moreMenu($("#more-menu").hidden); return; }
+    if (t.dataset.tab && t.closest("#more-menu")) moreMenu(false, false);
     if (t.dataset.tab) { state.tab = t.dataset.tab; state.profile = null; ls.set(LOCAL_KEY + ":tab", state.tab); render(); return; }
     if (t.dataset.rounds) { state.m.rounds = +t.dataset.rounds; render(); return; }
     if (t.id === "swap") { Object.assign(state.m, { a: state.m.b, b: state.m.a, oddsA: state.m.oddsB, oddsB: state.m.oddsA }); render(); return; }
@@ -1813,6 +1844,24 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     }
     view.innerHTML = `<div class="stack">${alert}${intro}${sub}${body}<p class="muted" style="font-size:12px;margin:0">Updated ${esc(when(s.updated))}. For entertainment and research: a model's picks, not betting advice.</p></div>`;
   }
+
+  // ------------------------------------------------------------ more menu
+  function moreMenu(open, focusFirst = true) {
+    const btn = $("#more-btn"), menu = $("#more-menu");
+    menu.hidden = !open; btn.setAttribute("aria-expanded", String(open));
+    if (open && focusFirst) (menu.querySelector("[aria-current]") || menu.querySelector("[role=menuitem]")).focus();
+  }
+  document.addEventListener("click", (e) => { if (!$("#more-menu").hidden && !e.target.closest("#more")) moreMenu(false); }, true);
+  document.addEventListener("keydown", (e) => {
+    const menu = $("#more-menu");
+    if (e.target.id === "more-btn" && (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") && menu.hidden) { e.preventDefault(); moreMenu(true); return; }
+    if (menu.hidden || !e.target.closest("#more")) return;
+    const items = [...menu.querySelectorAll("[role=menuitem]")], i = items.indexOf(document.activeElement);
+    if (e.key === "Escape") { e.preventDefault(); moreMenu(false); $("#more-btn").focus(); }
+    else if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); items[(i + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length].focus(); }
+    else if (e.key === "Home" || e.key === "End") { e.preventDefault(); items[e.key === "Home" ? 0 : items.length - 1].focus(); }
+    else if (e.key === "Tab") moreMenu(false, false);
+  });
 
   // ------------------------------------------------------ corner search
   const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
