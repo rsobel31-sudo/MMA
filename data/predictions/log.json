@@ -482,7 +482,7 @@
     }
    },
    "latest": {
-    "p_a": 0.4347,
+    "p_a": 0.5653,
     "pick": "Alice Pereira",
     "method": "Darya Zheleznyakova by DEC",
     "method_p": 0.3334,
@@ -511,7 +511,7 @@
     }
    },
    "latest": {
-    "p_a": 0.577,
+    "p_a": 0.423,
     "pick": "Melissa Gatto",
     "method": "Ernesta Kareckaite by DEC",
     "method_p": 0.3705,
@@ -569,7 +569,7 @@
     }
    },
    "latest": {
-    "p_a": 0.2129,
+    "p_a": 0.7871,
     "pick": "Julius Walker",
     "method": "Julius Walker by KO/TKO",
     "method_p": 0.4197,
@@ -598,7 +598,7 @@
     }
    },
    "latest": {
-    "p_a": 0.4483,
+    "p_a": 0.5517,
     "pick": "Lupita Godinez",
     "method": "Lupita Godinez by DEC",
     "method_p": 0.4216,
@@ -1497,7 +1497,7 @@
     }
    },
    "latest": {
-    "p_a": 0.32,
+    "p_a": 0.68,
     "pick": "Azamat Bekoev",
     "method": "Azamat Bekoev by KO/TKO",
     "method_p": 0.5596,
@@ -1526,7 +1526,7 @@
     }
    },
    "latest": {
-    "p_a": 0.332,
+    "p_a": 0.668,
     "pick": "Rodrigo Sezinando",
     "method": "Rodrigo Sezinando by KO/TKO",
     "method_p": 0.3442,
@@ -1555,7 +1555,7 @@
     }
    },
    "latest": {
-    "p_a": 0.2258,
+    "p_a": 0.7742,
     "pick": "Francis Marshall",
     "method": "Francis Marshall by SUB",
     "method_p": 0.4931,
@@ -1584,7 +1584,7 @@
     }
    },
    "latest": {
-    "p_a": 0.6541,
+    "p_a": 0.3459,
     "pick": "Farman Hasanov",
     "method": "Farman Hasanov by KO/TKO",
     "method_p": 0.3478,
@@ -1758,7 +1758,7 @@
     }
    },
    "latest": {
-    "p_a": 0.5957,
+    "p_a": 0.4043,
     "pick": "Murtazali Magomedov",
     "method": "Murtazali Magomedov by KO/TKO",
     "method_p": 0.3418,
@@ -1787,7 +1787,7 @@
     }
    },
    "latest": {
-    "p_a": 0.2269,
+    "p_a": 0.7731,
     "pick": "Seok Hyeon Ko",
     "method": "Seok Hyeon Ko by DEC",
     "method_p": 0.4907,
@@ -1845,7 +1845,7 @@
     }
    },
    "latest": {
-    "p_a": 0.6657,
+    "p_a": 0.3343,
     "pick": "Jose Henrique Souza",
     "method": "Jose Henrique Souza by DEC",
     "method_p": 0.375,
@@ -1903,7 +1903,7 @@
     }
    },
    "latest": {
-    "p_a": 0.2825,
+    "p_a": 0.7175,
     "pick": "Austin Bashi",
     "method": "Austin Bashi by DEC",
     "method_p": 0.4343,
@@ -1932,7 +1932,7 @@
     }
    },
    "latest": {
-    "p_a": 0.8933,
+    "p_a": 0.1067,
     "pick": "Nina Nikolija Milosevic",
     "method": "Nina Nikolija Milosevic by SUB",
     "method_p": 0.4004,
@@ -2551,6 +2551,180 @@
      "trained_on": 27531
     }
    }
+  },
+  "2026-10-03|kalinn williams|roberto soldic": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Roberto Soldic",
+   "b": "Kalinn Williams",
+   "weight_class": "Welterweight",
+   "first": {
+    "p_a": 0.6124,
+    "pick": "Roberto Soldic",
+    "method": "Kalinn Williams by KO/TKO",
+    "method_p": 0.2792,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.6124,
+    "pick": "Roberto Soldic",
+    "method": "Kalinn Williams by KO/TKO",
+    "method_p": 0.2792,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
+  },
+  "2026-10-03|anthony romero|marcus mcghee": {
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "a": "Marcus McGhee",
+   "b": "Anthony Romero",
+   "weight_class": "Bantamweight",
+   "first": {
+    "p_a": 0.5465,
+    "pick": "Marcus McGhee",
+    "method": "Anthony Romero by DEC",
+    "method_p": 0.2982,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.5465,
+    "pick": "Marcus McGhee",
+    "method": "Anthony Romero by DEC",
+    "method_p": 0.2982,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
+  },
+  "2026-10-10|brendson ribeiro|felipe franco": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Felipe Franco",
+   "b": "Brendson Ribeiro",
+   "weight_class": "Light Heavyweight",
+   "first": {
+    "p_a": 0.8405,
+    "pick": "Felipe Franco",
+    "method": "Felipe Franco by KO/TKO",
+    "method_p": 0.5602,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.8405,
+    "pick": "Felipe Franco",
+    "method": "Felipe Franco by KO/TKO",
+    "method_p": 0.5602,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
+  },
+  "2026-10-24|bolaji oki|daniel santos": {
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "date": "2026-10-24",
+   "a": "Bolaji Oki",
+   "b": "Daniel Santos",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.4035,
+    "pick": "Daniel Santos",
+    "method": "Daniel Santos by KO/TKO",
+    "method_p": 0.4262,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.4035,
+    "pick": "Daniel Santos",
+    "method": "Daniel Santos by KO/TKO",
+    "method_p": 0.4262,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
+  },
+  "2026-11-07|mantas kondratavicius|wesley schultz": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Mantas Kondratavicius",
+   "b": "Wesley Schultz",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.7601,
+    "pick": "Mantas Kondratavicius",
+    "method": "Mantas Kondratavicius by KO/TKO",
+    "method_p": 0.6457,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.7601,
+    "pick": "Mantas Kondratavicius",
+    "method": "Mantas Kondratavicius by KO/TKO",
+    "method_p": 0.6457,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
+  },
+  "2026-11-14|cesar almeida|donte johnson": {
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "a": "Donte Johnson",
+   "b": "Cesar Almeida",
+   "weight_class": "Middleweight",
+   "first": {
+    "p_a": 0.8133,
+    "pick": "Donte Johnson",
+    "method": "Donte Johnson by KO/TKO",
+    "method_p": 0.63,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   },
+   "latest": {
+    "p_a": 0.8133,
+    "pick": "Donte Johnson",
+    "method": "Donte Johnson by KO/TKO",
+    "method_p": 0.63,
+    "made": "2026-09-30",
+    "model": {
+     "scale": 0.899,
+     "trained_on": 27531
+    }
+   }
   }
  },
  "scorecard": {
@@ -2558,6 +2732,6 @@
   "correct": 0,
   "accuracy": null,
   "log_loss": null,
-  "pending": 88
+  "pending": 94
  }
 }

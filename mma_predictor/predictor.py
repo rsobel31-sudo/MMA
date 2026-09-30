@@ -104,8 +104,10 @@ def _confidence(p: float, a: FighterSnapshot, b: FighterSnapshot) -> str:
 
 
 class FightPredictor:
-    def __init__(self, history: FightHistory, model: Optional[WinModel] = None, adjustments: Optional[Adjustments] = None) -> None:
+    def __init__(self, history: FightHistory, model: Optional[WinModel] = None, adjustments: Optional[Adjustments] = None,
+                 reads=None) -> None:
         self.history = history
+        self.reads = reads  # reads.Reads: Claude's scouting reads per bout (reads.py)
         self.adjustments = adjustments or Adjustments()
         base = model or WinModel()
         # Your weight overrides sit on top of the trained (or prior) weights.
@@ -136,7 +138,9 @@ class FightPredictor:
         manual = self.adjustments.matchup_logit(a, b)
         # Your 1-10 intangibles scores for this matchup (intangibles.py).
         intang = self.adjustments.intangibles_logit(a, b)
-        p = sigmoid(self.model.logit(x) + manual + intang)
+        # Claude's scouting read on this bout: film-and-news judgement the numbers can't see (reads.py).
+        read = self.reads.logit(a, b) if self.reads is not None else 0.0
+        p = sigmoid(self.model.logit(x) + manual + intang + read)
         dist_a = method_distribution(sa, sb, scheduled_rounds)
         dist_b = method_distribution(sb, sa, scheduled_rounds)
         methods = {(a, m): p * dist_a[m] for m in METHOD_BUCKETS}
@@ -146,6 +150,8 @@ class FightPredictor:
             factors = factors + [("manual", manual)]
         if intang:
             factors = factors + [("intangibles", intang)]
+        if read:
+            factors = factors + [("scouting", read)]
         factors = sorted(factors, key=lambda kv: -abs(kv[1]))
         market = devig(odds_a, odds_b)[0] if odds_a is not None and odds_b is not None else None
         return Prediction(

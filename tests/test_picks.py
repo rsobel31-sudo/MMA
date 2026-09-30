@@ -117,3 +117,20 @@ def test_distance_calibration_moves_toward_decisions():
     # Method shares still add up once recalibrated.
     tot = sum(P.model_prob(("method", s, m), 0.6, dist, dist, 3, t, (0.22, 0.67)) for s in "ab" for m in ("KO/TKO", "SUB", "DEC"))
     assert tot == pytest.approx(1.0)
+
+
+def test_reads_orientation_cap_and_grading():
+    from mma_predictor.reads import Reads, check_read, grade_reads, pundit_weight
+
+    r = Reads([{"a": "Ann Alpha", "b": "Bea Beta", "favours": "Bea Beta", "logit": 0.3},
+               {"a": "Cy C", "b": "Di D", "favours": "Cy C", "logit": 5.0}])
+    assert r.logit("Ann Alpha", "Bea Beta") == -0.3 and r.logit("Bea Beta", "Ann Alpha") == 0.3
+    assert r.logit("Cy C", "Di D") == 0.8  # capped
+    assert r.logit("Ann Alpha", "Cy C") == 0.0
+    with pytest.raises(ValueError):
+        check_read({"a": "A", "b": "B", "favours": "B", "logit": -0.2, "confidence": "low", "reasoning": ""})
+    g = grade_reads([{"p_model": 0.5, "signed_logit": 0.5, "y": 1}, {"p_model": 0.5, "signed_logit": -0.5, "y": 0}])
+    assert g["n"] == 2 and g["moved_right"] == 2 and g["log_loss_with_reads"] < g["log_loss_model"]
+    # Pundit weights stay equal until the sample is big and the edge is clear.
+    assert pundit_weight(10, 3.0) == 1.0 and pundit_weight(80, 1.0) == 1.0
+    assert pundit_weight(80, 2.2) == 1.5 and pundit_weight(80, -3.0) == 0.0

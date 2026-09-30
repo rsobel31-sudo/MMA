@@ -82,6 +82,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "stance": "stance matchup",
     "manual": "your matchup read",
     "intangibles": "your intangibles (1-10 scores)",
+    "scouting": "Claude's scouting read",
 }
 
 

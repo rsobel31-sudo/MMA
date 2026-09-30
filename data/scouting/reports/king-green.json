@@ -1,0 +1,45 @@
+{
+ "name": "King Green",
+ "updated": "2026-09-30T23:00:00+00:00",
+ "event": "UFC 332",
+ "summary": "A 40-year-old Philly-shell counter boxer on the best run of his career (four straight, three finishes in 2026). Hands low, chin tucked, reads patterns, leads opponents into heavy counters, and wrestles when it's the smart play.",
+ "how_they_fight": {
+  "Striking": "One of the savviest boxers in the UFC (MMA Mania): pops the jab, draws the lead, counters hard. Defends with distance, the shoulder roll and pattern recognition rather than a high guard, and talks constantly to bait exchanges.",
+  "Grappling": "Still an excellent wrestler when he chooses to be; catches kicks and turns them into takedowns. Submitted Jeremy Stephens in May.",
+  "Defense": "Hard to hit cleanly; the risk is off-beat timing and same-side doubles that land while he's leaning.",
+  "Pace & cardio": "This would be his fifth fight in under 12 months at 40: the wear is the concern, not the gas tank.",
+  "Fight IQ": "Elite ring IQ; happy to win a fight ugly with takedowns."
+ },
+ "patterns": [
+  "Hands low, baiting exchanges",
+  "Counter right hand/cross up the middle",
+  "Catch-kick takedowns"
+ ],
+ "concerns": [
+  "Age and a heavy 2026 schedule",
+  "Off-beat timing and same-side kick/punch doubles can find him"
+ ],
+ "keys_to_beat": [
+  "Break rhythm: chop a kick then explode into punches",
+  "Double up on the same side to catch him leaning",
+  "Don't lead predictably into his counters"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "Andrew Richardson",
+   "title": "King Green vs. Esteban Ribovics: Odds, full fight preview and prediction",
+   "url": "https://www.mmamania.com/ufc-332-fight-card-start-time-live-stream-silva-vs-cong/475879/king-green-vs-esteban-ribovics-odds-full-fight-preview-and-prediction-ufc-332",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
+   "date": "2026-09-28"
+  }
+ ],
+ "depth": "good"
+}

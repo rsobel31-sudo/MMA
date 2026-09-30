@@ -73,6 +73,19 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .corner.red input { border-left: 5px solid var(--red); }
 .corner.blue input { border-left: 5px solid var(--blue); }
 .cb { position: relative; display: block; }
+.sc-read { background: var(--surface-2); border-radius: 14px; padding: 14px 16px; }
+.sc-read p { margin: 8px 0 0; font-size: 14.5px; line-height: 1.5; }
+.sc-read-hd { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.sc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.sc-name { margin: 0 0 6px; font-size: 17px; }
+.sc-summary { margin: 0 0 8px; font-size: 14.5px; line-height: 1.5; }
+.sc-report details > summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+.sc-how { margin: 8px 0; display: grid; gap: 6px; }
+.sc-how dt { font-weight: 700; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sc-how dd { margin: 0 0 4px; font-size: 14px; line-height: 1.5; }
+.sc-lists { display: grid; gap: 8px; }
+.sc-src { font-size: 12px; margin: 8px 0 0; }
+.sc-chip { font-size: 11.5px; }
 .pk-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
 .pk-stat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
 .pk-big { font-family: var(--display); font-size: 28px; font-weight: 600; margin: 2px 0; }
@@ -476,6 +489,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
     tab: "card",
     picks: { sub: "week", summary: null, weeks: [], loaded: false },
+    scout: { reports: {}, reads: {}, board: null, loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
@@ -537,6 +551,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     db.collection("commentary").onSnapshot((snap) => {
       state.commentary = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
     }, () => {});
+    db.collection("scouting").onSnapshot((snap) => {
+      setScout(snap.docs.map((d) => Object.assign({ _id: d.id }, d.data())));
+    }, () => { state.scout.loaded = true; renderSoon(); });
     db.collection("ai_picks").onSnapshot((snap) => {
       const docs = snap.docs.map((d) => Object.assign({ _id: d.id }, d.data()));
       setPicks(docs);
@@ -607,7 +624,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const fa = fighter(a), fb = fighter(b);
     const sc = intangFor(a, b);
     const edit = opts.noManual ? 0 : state.engine.intangiblesLogit(sc.a, sc.b);
-    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b), intangibles: edit });
+    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b), intangibles: edit, scouting: opts.noScout ? 0 : scoutLogit(a, b) });
   }
   /** Your 1-10 intangibles scores for this matchup, oriented to (a, b). */
   function intangFor(a, b) {
@@ -731,6 +748,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       </section>
       <div class="grid2">
         <div class="stack">
+          ${scoutReport(n) ? `<section class="panel"><h3>Scouting report</h3>${reportBlock(scoutReport(n), { open: true })}</section>` : ""}
           <section class="panel prose">
             <h3>Bio</h3>
             ${(f.bio || []).map((p) => `<p>${esc(p)}</p>`).join("") || '<p class="muted">No bio yet.</p>'}
@@ -833,6 +851,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
           <span class="muted">Most likely: ${esc(best[0])} by ${best[1]} (${pct(best[2], 0)}) · Goes the distance ${pct(dist, 0)}</span>
           ${readVal ? `<span class="pill edit num">Your read moves this ${((p - base.p) * 100 >= 0 ? "+" : "")}${((p - base.p) * 100).toFixed(1)} pts for ${esc(a)}</span>` : ""}
           ${ea || eb ? `<span class="pill edit">Includes your fighter edits</span>` : ""}
+          ${scoutLogit(a, b) ? (() => { const q = predict(a, b, rounds, { noScout: true }).p; return `<span class="pill num" title="Claude's scouting read (see Scouting below)">Scouting read moves this ${((p - q) * 100 >= 0 ? "+" : "")}${((p - q) * 100).toFixed(1)} pts for ${esc(a)}</span>`; })() : ""}
           ${market}
         </div>
       </section>
@@ -880,6 +899,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         </section>
       </div>
 
+      ${scoutPanel(a, b)}
       <section class="panel stack">
         <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
           <h3>Tale of the tape</h3>
@@ -937,7 +957,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     return `<div class="factors">${shown.map(([k, c]) => {
       const w = (Math.abs(c) / max) * 50;
       const left = c > 0 ? 50 - w : 50;
-      return `<div class="frow num"><span>${esc(labels[k] || k)}</span>
+      return `<div class="frow num"><span>${esc(labels[k] || EXTRA_LABELS[k] || k)}</span>
         <span class="fbar"><div style="left:${left}%;width:${w}%;background:var(--${c > 0 ? "red" : "blue"})"></div></span>
         <span style="text-align:right">${c > 0 ? "+" : "−"}${Math.abs(c).toFixed(2)}</span></div>`;
     }).join("")}
@@ -1026,6 +1046,12 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       if (key.startsWith("r_") && cat) rows.push(["Part of", `${cat[0][0].toUpperCase() + cat[0].slice(1)} (the mean of ${cat[1].map((k) => d.rating_labels[k]).join(", ")}).`]);
       rows.push(["Always", "Judged against the opponent's level: surviving an elite grappler counts more than surviving an average one. Background credentials add a head start that fades over about 10 fights; your fight commentary and edits count on top. 1500 is average."]);
       return { title, rows, key: key === "overall" ? "elo" : key };
+    }
+    if (key === "scouting") {
+      return { title: "Scouting", key, rows: [
+        ["What it is", "Claude reads the major MMA outlets every week (MMA Fighting, Sherdog, Bloody Elbow, Cageside Press, MMA Mania, BJPenn.com, MMA Weekly, LowKick MMA, ESPN, UFC.com) plus fight previews and breakdowns, and writes a report on each fighter: how they actually fight, their habits, what's worrying, how to beat them, and the news. Every claim links to its source; facts are checked against the verified fight records."],
+        ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Picks betting sheet."],
+        ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
     }
     if (key === "ai_picks") {
       return { title: "How AI Picks works", key, rows: [
@@ -1190,7 +1216,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (state.upOnlyHighlights && !hl.tier) return "";
     const partial = [fa, fb].filter((f) => f.complete === false).map((f) => f.name);
     return `<tr class="${hl.tier ? "hl hl-" + hl.tier : ""}"><td class="muted">${esc(bt.weight_class)} ${tags}${hl.tier ? `<div><span class="tier tier-${hl.tier}">${TIER_LABEL[hl.tier]}</span></div>` : ""}</td>
-      <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}
+      <td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}${touched ? ' <span class="pill edit">edited</span>' : ""}${a && b && scoutRead(a, b) && scoutRead(a, b).logit ? ` <span class="pill sc-chip" title="${esc(scoutRead(a, b).reasoning)}">read: ${esc(scoutRead(a, b).favours.split(" ").slice(-1)[0])}</span>` : ""}
         ${partial.length ? `<div class="partial">Partial record for ${esc(partial.join(" and "))}: only fights against fighters already in the data are known, so layoff, streak and last-fight patterns are off.</div>` : ""}
         ${hl.tags.length ? `<ul class="hltags">${hl.tags.map((t) => `<li class="k-${t.kind}">${esc(t.text)}</li>`).join("")}</ul>` : ""}</td>
       <td><span class="mini num" title="${esc(a)} ${pct(p)} / ${esc(b)} ${pct(1 - p)}"><i style="width:${(p * 100).toFixed(1)}%"></i></span></td>
@@ -1239,6 +1265,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   // ------------------------------------------------------------------ insights
   function renderInsights(view) {
     const ins = state.data.insights, meta = state.data.meta, bt = meta.backtest || {};
+    const scoreboard = scoreboardPanel();
     if (!ins) { view.innerHTML = `<div class="empty">No analysis in this data. Export without <code>--no-backtest</code>.</div>`; return; }
     const stars = (p) => (p < 0.001 ? "***" : p < 0.01 ? "**" : p < 0.05 ? "*" : "");
     const verdictChip = (v) => `<span class="verdict v-${v.replace(/\s+/g, "-")}">${esc(v)}</span>`;
@@ -1294,6 +1321,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         <p class="muted" style="font-size:12px;margin:6px 0 0">A backtest, not advice: closing lines are the hardest to beat, and sportsbooks limit winning accounts.</p>` : ""}
       </section>` : "";
     view.innerHTML = `<div class="stack">
+      ${scoreboard}
       ${verifyPanel}
       ${marketPanel}
       <section class="panel">
@@ -1746,6 +1774,80 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
   });
 
+  // ------------------------------------------------------------ scouting
+  const EXTRA_LABELS = { scouting: "Claude's scouting read", intangibles: "your intangibles (1-10 scores)", manual: "your read" };
+  const SLUG = (n) => String(n).normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const pairId = (a, b) => "read--" + [SLUG(a), SLUG(b)].sort().join("--");
+  function setScout(docs) {
+    const S = { reports: {}, reads: {}, board: null, loaded: true };
+    for (const d of docs) {
+      if (d.kind === "report" || (!d.kind && d.how_they_fight)) S.reports[d.name] = d;
+      else if (d.kind === "read") S.reads[pairId(d.a, d.b)] = d;
+      else if (d._id === "scoreboard") S.board = d;
+    }
+    state.scout = S;
+    renderSoon();
+  }
+  const scoutReport = (n) => state.scout.reports[n] || null;
+  const scoutRead = (a, b) => state.scout.reads[pairId(a, b)] || null;
+  /** Claude's read on this bout as log-odds toward a (capped at 0.8), 0 without one. */
+  function scoutLogit(a, b) {
+    const r = scoutRead(a, b);
+    if (!r || r.logit == null) return 0;
+    const x = Math.max(-0.8, Math.min(0.8, +r.logit));
+    return r.favours === a ? x : r.favours === b ? -x : 0;
+  }
+  const SECTIONS = ["Striking", "Grappling", "Defense", "Defense & durability", "Pace & cardio", "Fight IQ"];
+  function reportBlock(rep, opts = {}) {
+    const how = rep.how_they_fight || {};
+    const keys = SECTIONS.filter((k) => how[k]).concat(Object.keys(how).filter((k) => !SECTIONS.includes(k)));
+    const list = (title, xs) => (xs && xs.length ? `<div><div class="label">${title}</div><ul class="notes">${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "");
+    return `<div class="sc-report">
+      <p class="sc-summary">${esc(rep.summary)}</p>
+      <details ${opts.open ? "open" : ""}><summary>How ${esc(rep.name.split(" ")[0])} fights</summary>
+        <dl class="sc-how">${keys.map((k) => `<dt>${esc(k)}</dt><dd>${esc(how[k])}</dd>`).join("")}</dl>
+        <div class="sc-lists">${list("Patterns", rep.patterns)}${list("Concerns", rep.concerns)}${list("How to beat them", rep.keys_to_beat)}</div>
+        ${rep.news && rep.news.length ? `<div class="label">News</div><ul class="notes">${rep.news.map((n) => `<li><span class="muted num">${esc(n.date)}</span> ${esc(n.text)} ${n.source ? `<a href="${esc(n.source)}" target="_blank" rel="noopener">source</a>` : ""}</li>`).join("")}</ul>` : ""}
+        <p class="muted sc-src">Sources: ${(rep.sources || []).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.outlet)}${x.author ? ` (${esc(x.author)})` : ""}</a>`).join(" · ")}. Written by Claude ${esc((rep.updated || "").slice(0, 10))}${rep.depth === "thin" ? "; thin coverage so far" : ""}.</p>
+      </details></div>`;
+  }
+  function scoutPanel(a, b) {
+    const rd = scoutRead(a, b), ra = scoutReport(a), rb = scoutReport(b);
+    if (!rd && !ra && !rb) return "";
+    const lg = scoutLogit(a, b);
+    const readHtml = rd ? `<div class="sc-read">
+        <div class="sc-read-hd"><span class="label">Claude's read</span>
+          ${rd.logit ? `<strong>Leans ${esc(rd.favours)}</strong> <span class="pill num">${lg > 0 ? "+" : "−"}${Math.abs(lg).toFixed(2)} log-odds</span>` : "<strong>No lean</strong>"}
+          <span class="pill">${esc(rd.confidence)} confidence</span></div>
+        <p>${esc(rd.reasoning)}</p>
+        ${rd.factors && rd.factors.length ? `<div class="sc-chips">${rd.factors.map((f) => `<span class="pill">${esc(f)}</span>`).join("")}</div>` : ""}
+        ${rd.pundits && rd.pundits.length ? `<div class="label" style="margin-top:10px">Pundit picks</div><ul class="notes">${rd.pundits.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.outlet)}${x.author ? ` · ${esc(x.author)}` : ""}</a>: <strong>${esc(x.pick)}</strong>${x.method ? ` <span class="muted">(${esc(x.method)})</span>` : ""}</li>`).join("")}</ul>` : ""}
+        ${rd.winner ? `<p class="num" style="margin:8px 0 0"><strong>Result:</strong> ${esc(rd.winner)} (${esc(rd.result.method)} R${rd.result.round}) · the read was ${lg === 0 ? "neutral" : (lg > 0) === (rd.winner === a) ? "right" : "wrong"}</p>` : ""}
+      </div>` : `<p class="muted">No scouting read on this matchup yet.</p>`;
+    return `<section class="panel stack sc-panel">
+      <div class="toolbar" style="margin:0"><h3 style="margin:0">Scouting</h3><span class="muted" style="font-size:13px">What the numbers can't see: how they fight, the news and the pundits. Claude's read is a factor in the prediction above.</span>${infoBtn("scouting", "Scouting")}</div>
+      ${readHtml}
+      <div class="grid2">
+        <div><h4 class="sc-name" style="color:var(--red)">${nameLink(a)}</h4>${ra ? reportBlock(ra) : '<p class="muted">No scouting report yet.</p>'}</div>
+        <div><h4 class="sc-name" style="color:var(--blue)">${nameLink(b)}</h4>${rb ? reportBlock(rb) : '<p class="muted">No scouting report yet.</p>'}</div>
+      </div></section>`;
+  }
+  function scoreboardPanel() {
+    const B = state.scout.board;
+    if (!B) return "";
+    const r = B.reads || { n: 0 }, pu = B.pundits || [];
+    return `<section class="panel">
+      <h3>Scouting track record</h3>
+      <p style="font-size:14px">${r.n ? `Claude's reads on <strong>${r.n}</strong> graded bouts: they moved the model on ${r.moved} and were right on ${r.moved_right}. Log loss with reads <strong class="num">${r.log_loss_with_reads}</strong> vs the model alone <span class="num">${r.log_loss_model}</span> (lower is better).` : "No reads graded yet: the first ones settle after UFC 332."}
+        Reads count at full weight until ${150} bouts are graded; then the weight is re-fitted to how much they actually help.</p>
+      <h4 style="margin:12px 0 4px">Pundits</h4>
+      ${pu.length ? `<div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Outlet</th><th>Author</th><th class="num">Picks</th><th class="num">Right</th><th class="num">Market expected</th><th class="num">Underdogs won</th><th class="num">vs market (z)</th><th class="num">Weight</th></tr></thead><tbody>
+        ${pu.map((x) => `<tr><td>${esc(x.outlet)}</td><td>${esc(x.author)}</td><td class="num">${x.picks}</td><td class="num">${(x.accuracy * 100).toFixed(0)}%</td><td class="num">${x.expected != null ? (x.expected * 100).toFixed(0) + "%" : "—"}</td><td class="num">${x.underdog_won}/${x.underdog_picks}</td><td class="num">${x.z > 0 ? "+" : ""}${x.z.toFixed(2)}</td><td class="num">${x.weight}</td></tr>`).join("")}
+      </tbody></table></div>` : `<p class="muted" style="font-size:13px">Pundit picks are recorded every fight week and graded after the card.</p>`}
+      <p class="muted" style="font-size:12.5px">Every pundit counts equally until they have 40 graded picks and beat (or trail) the betting market by a clear margin (z beyond ±1.96). Only then are they upweighted or discounted, and dropped below −2.58.</p>
+    </section>`;
+  }
+
   // ------------------------------------------------------------ AI picks
   function setPicks(docs) {
     state.picks.summary = docs.find((d) => d._id === "summary") || null;
@@ -1974,6 +2076,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       render();
     } else {
       // No page database in this view: a local ai_picks.json (preview) if there is one.
+      fetch("scouting.json").then((r) => (r.ok ? r.json() : null)).then((docs) => { if (docs) setScout(docs); }).catch(() => {});
       fetch("ai_picks.json").then((r) => (r.ok ? r.json() : null)).then((docs) => {
         if (docs) setPicks(docs); else { state.picks.loaded = true; state.picks.noDb = true; render(); }
       }).catch(() => { state.picks.loaded = true; state.picks.noDb = true; render(); });

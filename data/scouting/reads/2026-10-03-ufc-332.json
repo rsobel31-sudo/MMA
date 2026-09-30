@@ -1,0 +1,338 @@
+{
+ "event": "UFC 332: Silva vs. Wang",
+ "date": "2026-10-03",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_332",
+ "bouts": [
+  {
+   "a": "Natalia Silva",
+   "b": "Cong Wang",
+   "favours": "Natalia Silva",
+   "logit": 0.15,
+   "confidence": "moderate",
+   "reasoning": "Silva's defense is her movement, and five rounds reward the fighter who is harder to hit and can change the fight with grappling. Wang's only loss was a submission, and a championship weight cut after missing weight earlier this year is a real risk over 25 minutes at altitude. Wang's accuracy and pressure keep it close; the model and market already agree on Silva.",
+   "factors": [
+    "Silva's grappling vs Wang's only loss (submission)",
+    "Wang's weight cut for five rounds",
+    "Silva's elusiveness vs Wang's pressure"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.67,
+   "p_market": 0.665,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Deiveson Figueiredo",
+   "b": "Payton Talbott",
+   "favours": "Payton Talbott",
+   "logit": 0.1,
+   "confidence": "moderate",
+   "reasoning": "At 39 and 1-4 in his last five, finished twice, Figueiredo's decline shows most against long, busy strikers, which is exactly Talbott. The main risk to Talbott is Figueiredo's early power and chokes if Talbott gets careless, plus Talbott's ten-month layoff.",
+   "factors": [
+    "Age and recent stoppage losses",
+    "Talbott's length and volume"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.18,
+   "p_market": 0.169,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "King Green",
+   "b": "Esteban Ribovics",
+   "favours": "King Green",
+   "logit": 0.2,
+   "confidence": "moderate",
+   "reasoning": "Stylistically Green is well built for Ribovics: an accurate counter-puncher against a hittable volume striker, and a capable wrestler against a man who lost two of three UFC fights to takedowns (MMA Mania's Andrew Richardson picks Green). The market prices in Green's age and a fifth fight in 12 months; I think it prices them too heavily.",
+   "factors": [
+    "Takedowns vs Ribovics' grappling",
+    "Counters vs a hittable pressure fighter",
+    "Age and schedule (against Green)"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.39,
+   "p_market": 0.314,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "MMA Mania",
+     "author": "Andrew Richardson",
+     "pick": "King Green",
+     "method": "",
+     "url": "https://www.mmamania.com/ufc-332-fight-card-start-time-live-stream-silva-vs-cong/475879/king-green-vs-esteban-ribovics-odds-full-fight-preview-and-prediction-ufc-332"
+    }
+   ]
+  },
+  {
+   "a": "Roberto Soldic",
+   "b": "Kalinn Williams",
+   "favours": "Roberto Soldic",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Soldic's KSW body of work (Khalidov, two belts) is stronger than Williams' UFC record, but a 20-month layoff and a debut against a fast-starting power puncher make round one dangerous. Small lean to the more complete fighter.",
+   "factors": [
+    "Layoff and debut",
+    "Williams' early power",
+    "Soldic's pedigree"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.61,
+   "p_market": 0.707,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Ateba Abega Gautier",
+   "b": "Roman Kopylov",
+   "favours": "Ateba Abega Gautier",
+   "logit": 0.2,
+   "confidence": "moderate",
+   "reasoning": "The model underrates Gautier on thin UFC data: 24, 6'4\" with an 81\" reach, 5-0 with four KOs, and only a durable, lanky Pulyaev took him the distance. Kopylov is a solid gatekeeper who loses to bigger, better strikers; wrestling is his best path.",
+   "factors": [
+    "Size, reach and power",
+    "Kopylov's ceiling vs top middleweights",
+    "Kopylov's wrestling (for him)"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.59,
+   "p_market": 0.685,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Imanol Rodriguez",
+   "b": "Alden Coria",
+   "favours": "Imanol Rodriguez",
+   "logit": 0.25,
+   "confidence": "moderate",
+   "reasoning": "The model likes Coria's longer record, but Rodriguez's athleticism and grappling target Coria's weak spot (takedown defense around 45%). Coria's accurate countering keeps it competitive. Sherdog's Tom Feely: Rodriguez by decision.",
+   "factors": [
+    "Rodriguez's athleticism and wrestling",
+    "Coria's takedown defense",
+    "Coria's counters vs wild pressure"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.42,
+   "p_market": 0.589,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Imanol Rodriguez",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Damian Pinas",
+   "b": "Andrey Pulyaev",
+   "favours": "Damian Pinas",
+   "logit": 0.1,
+   "confidence": "moderate",
+   "reasoning": "Pulyaev has lost three straight and was just submitted; his durability-and-range approach is risky against Pinas' one-shot power. Pinas is unproven past round one, which is Pulyaev's only real path.",
+   "factors": [
+    "Pinas' power",
+    "Pulyaev's slide"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.8,
+   "p_market": 0.805,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Damian Pinas",
+     "method": "KO/TKO R2",
+     "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Marcus McGhee",
+   "b": "Anthony Romero",
+   "favours": "Marcus McGhee",
+   "logit": null,
+   "confidence": "none",
+   "reasoning": "No read yet: Romero took the fight on three days' notice, sources disagree on his record, and FanDuel had no line when this was written. McGhee should be a solid favourite; revisit Friday.",
+   "factors": [
+    "Short-notice newcomer",
+    "Thin data on Romero"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": null,
+   "p_market": null,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Anthony Wint",
+   "b": "Lucas Armand",
+   "favours": "Anthony Wint",
+   "logit": 0.6,
+   "confidence": "moderate",
+   "reasoning": "The model has almost nothing on either man (both get league-average stats), so its 56% is a shrug. Wint is an elite athlete with a wrestling base who ran through regional opposition; Armand's unbeaten record came against weak competition. Wint's size and defensive holes are the risks.",
+   "factors": [
+    "No UFC data for either (model near 50/50)",
+    "Athleticism and wrestling",
+    "Armand's level of opposition"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.56,
+   "p_market": 0.817,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Anthony Wint",
+     "method": "KO/TKO R1",
+     "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Johnny Walker",
+   "b": "Mick Parkin",
+   "favours": "Mick Parkin",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Walker's chin has failed against heavy hitters (Oezdemir, Ankalaev), and heavyweight punches are heavier; his recent fights have been frozen at range. Parkin is durable, steady and applies pressure, but he's hittable and returns from 18 months out. The model is already on Parkin; the market isn't. Tom Feely: Parkin by second-round KO.",
+   "factors": [
+    "Walker's durability at heavyweight",
+    "Parkin's layoff",
+    "Walker's length and explosiveness"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.35,
+   "p_market": 0.577,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Mick Parkin",
+     "method": "KO/TKO R2",
+     "url": "https://www.sherdog.com/news/articles/5/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Rafael dos Anjos",
+   "b": "Alexander Hernandez",
+   "favours": "Alexander Hernandez",
+   "logit": 0.1,
+   "confidence": "moderate",
+   "reasoning": "Dos Anjos is 42, two years out after three knee surgeries, and cutting to 155 where his cardio has failed before. His pressure is the style that beat Hernandez last time out (Rafa Garcia), which keeps it from being a blowout.",
+   "factors": [
+    "Age, layoff and knee surgery",
+    "Pressure vs Hernandez's counters"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.16,
+   "p_market": 0.303,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Alexander Hernandez",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Jacobe Smith",
+   "b": "Bruce Whitehead",
+   "favours": "Jacobe Smith",
+   "logit": 0.2,
+   "confidence": "moderate",
+   "reasoning": "Whitehead debuts on about nine days' notice from the regional scene and was knocked out quickly in 2025; Smith's wrestling and ground-and-pound should end it early. Smith's defensive holes are the only upset path.",
+   "factors": [
+    "Short-notice debut",
+    "Wrestling and ground-and-pound"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.88,
+   "p_market": 0.868,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO R1",
+     "url": "https://www.sherdog.com/news/articles/9/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Marvin Vettori",
+   "b": "Ismail Naurdiev",
+   "favours": "Ismail Naurdiev",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Genuinely even. Vettori's four losses all went to the cards against good opposition, and a camp change could restore his pressure style; Naurdiev is sharp but aimless. No adjustment to the model.",
+   "factors": [
+    "Vettori's form and camp change",
+    "Naurdiev's sharpness"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.47,
+   "p_market": 0.442,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Ismail Naurdiev",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/7/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  },
+  {
+   "a": "Court McGee",
+   "b": "Eric Nolan",
+   "favours": "Eric Nolan",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "McGee is 42 and has been knocked out twice since 2022; Nolan has the power to exploit it. McGee's early grappling and the hometown farewell are real, and Tom Feely picks McGee by first-round submission, but the smarter side is Nolan.",
+   "factors": [
+    "Age and durability",
+    "McGee's early grappling"
+   ],
+   "event": "UFC 332: Silva vs. Wang",
+   "date": "2026-10-03",
+   "p_model": 0.38,
+   "p_market": 0.307,
+   "created": "2026-09-30T23:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Court McGee",
+     "method": "SUB R1",
+     "url": "https://www.sherdog.com/news/articles/8/Preview-UFC-332-prelims-203006"
+    }
+   ]
+  }
+ ]
+}

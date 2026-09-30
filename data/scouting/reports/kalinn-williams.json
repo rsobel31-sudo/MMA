@@ -1,0 +1,42 @@
+{
+ "name": "Kalinn Williams",
+ "updated": "2026-09-30T23:00:00+00:00",
+ "event": "UFC 332",
+ "summary": "'Khaos' Williams: a fast-starting power puncher whose UFC identity is heavy hands in the first minutes; KO'd Nikolay Veretennikov in May. His losses came to fighters who survived the start and grappled or outworked him.",
+ "how_they_fight": {
+  "Striking": "Fight-ending power in both hands; explosive early. Long reach for the division.",
+  "Grappling": "Minimal offense (few takedowns); submitted by Gabriel Bonfim in 2025.",
+  "Defense": "Absorbs nearly 5 significant strikes a minute: the output drops if he doesn't get the early finish.",
+  "Pace & cardio": "Front-loaded: the danger window is round one.",
+  "Fight IQ": "Wants the knockout; less effective when a fight becomes a grind."
+ },
+ "patterns": [
+  "Fast starts and heavy first-round power",
+  "Counter right hand"
+ ],
+ "concerns": [
+  "Grappling and submission defense",
+  "Output in later rounds"
+ ],
+ "keys_to_beat": [
+  "Survive the first round, then wrestle or outwork him"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
+   "date": "2026-09-28"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "",
+   "title": "Former Two-Division KSW Champion Makes UFC Debut",
+   "url": "https://heavy.com/sports/ufc/two-division-ksw-champion-ufc-debut/",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "moderate"
+}

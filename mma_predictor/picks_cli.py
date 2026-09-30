@@ -108,6 +108,9 @@ def cmd_sheet(args) -> int:
     names = {n for b in best["bouts"] for n in (b["a"], b["b"])}
     linked = link_names(names, set(h.names()), aliases)
     timing = P.Timing.from_fights(h.fights)
+    from .reads import Reads
+
+    reads = Reads.load()  # Claude's scouting reads: nudge the model before it meets the market
     dec_cal = tuple(json.loads(CALIBRATION.read_text())["dec_cal"]) if CALIBRATION.exists() else None
     if dec_cal is None:
         print("warning: no decision calibration (run `picks calibrate`); props will be biased toward finishes")
@@ -121,10 +124,12 @@ def cmd_sheet(args) -> int:
             skipped.append(f"{b['a']} vs {b['b']} (not enough data on {'/'.join(x for x, y in ((b['a'], a), (b['b'], bb)) if not y)})")
             continue
         sa, sb, x = predictor.features(a, bb, when, BoutContext(rounds, bool(wiki and wiki["title"])))
-        pa = sigmoid_logit(model, x)
+        pa_stats = sigmoid_logit(model, x)
+        read = reads.logit(a, bb)
+        pa = P.sigmoid(P._logit(pa_stats) + read)
         rows = P.price_bout(b, pa, method_distribution(sa, sb, rounds), method_distribution(sb, sa, rounds), rounds, timing, blend_w, dec_cal)
         bouts.append({"bout": f"{b['a']} vs {b['b']}", "a": b["a"], "b": b["b"], "dataset": [a, bb], "rounds": rounds,
-                      "title": bool(wiki and wiki["title"]), "p_model_a": round(pa, 4), "ml": b["ml"], "markets": len(rows)})
+                      "title": bool(wiki and wiki["title"]), "p_model_a": round(pa, 4), "p_stats_a": round(pa_stats, 4), "read_a": round(read, 3), "ml": b["ml"], "markets": len(rows)})
         markets += rows
     sheet = {
         "event": ev["name"], "date": ev["date"], "results_url": ev["url"], "odds_url": best["url"], "book": "FanDuel",
@@ -141,7 +146,8 @@ def cmd_sheet(args) -> int:
     print(f"{ev['name']} ({ev['date']}) · FanDuel via {best['url']}")
     print(f"Bankroll ${led.bankroll():.2f} · available ${led.available():.2f}" + ("  ** BUST **" if led.bust() else ""))
     for b in bouts:
-        print(f"  {b['bout']:<44} model {b['p_model_a']:.0%} · FanDuel {b['ml']['a']} / {b['ml']['b']} · {b['rounds']} rds")
+        rd = f" (stats {b['p_stats_a']:.0%}, read {b['read_a']:+.2f})" if b["read_a"] else ""
+        print(f"  {b['bout']:<44} model {b['p_model_a']:.0%}{rd} · FanDuel {b['ml']['a']} / {b['ml']['b']} · {b['rounds']} rds")
     for s in skipped:
         print(f"  skipped: {s}")
     for s in unpriced:
@@ -244,7 +250,9 @@ def _results_for(fetcher, week, log=print) -> Dict[str, Optional[P.Result]]:
         a, b = bout.split(" vs ", 1)
         ka, kb = match_key(a), match_key(b)
         last = lambda k: k.split()[-1:]  # noqa: E731
+        toks = lambda k: frozenset(k.split())  # noqa: E731  ("Wang Cong" == "Cong Wang")
         row = next((r for r in card if {match_key(r["a"]), match_key(r["b"])} == {ka, kb}), None) or \
+            next((r for r in card if {toks(match_key(r["a"])), toks(match_key(r["b"]))} == {toks(ka), toks(kb)}), None) or \
             next((r for r in card if {tuple(last(match_key(r["a"]))), tuple(last(match_key(r["b"])))} == {tuple(last(ka)), tuple(last(kb))}), None)
         if row is None:
             if decided and date.today() > when:
@@ -255,7 +263,7 @@ def _results_for(fetcher, week, log=print) -> Dict[str, Optional[P.Result]]:
         if wr is None:
             log(f"  {bout}: no result on Wikipedia yet")
             continue
-        if match_key(row["a"]) not in (ka,) and last(match_key(row["a"])) != last(ka):
+        if match_key(row["a"]) != ka and toks(match_key(row["a"])) != toks(ka) and last(match_key(row["a"])) != last(ka):
             wr = P.flip(wr)  # Wikipedia's left fighter is our b
         # Second source: the fighter's Sherdog record.
         sr = None

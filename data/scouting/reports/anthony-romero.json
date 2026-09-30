@@ -1,0 +1,47 @@
+{
+ "name": "Anthony Romero",
+ "updated": "2026-09-30T23:00:00+00:00",
+ "event": "UFC 332",
+ "summary": "A short-notice UFC newcomer from Black House MMA with a two-fight win streak, most recently a 25-second knockout of Yuma Horiuchi. Sources disagree on his record (13-3 on Sherdog, 7-2 per MMA Mania); the Horiuchi knockout matches our records, so it's the same fighter, but thin regional data means the model knows little about him.",
+ "how_they_fight": {
+  "Striking": "Finisher: four KOs and two submissions in seven wins (per MMA Mania).",
+  "Grappling": "Two submission wins.",
+  "Defense": "Unknown at UFC level.",
+  "Pace & cardio": "Took the fight on three days' notice.",
+  "Fight IQ": "Unknown."
+ },
+ "patterns": [
+  "Early finishing threat"
+ ],
+ "concerns": [
+  "Three days' notice for a debut against a ranked opponent",
+  "Record differs between sources (13-3 vs 7-2)"
+ ],
+ "keys_to_beat": [
+  "Test his conditioning late"
+ ],
+ "news": [
+  {
+   "date": "2026-09-30",
+   "text": "Steps in for Benardo Sopaj on three days' notice against No. 15 Marcus McGhee.",
+   "source": "https://www.mmamania.com/ufc-332-fight-card-start-time-live-stream-silva-vs-cong/476072/ufc-332-loses-bantamweight-banger-marcus-mcghee-draws-dangerous-newcomer-on-three-days-notice"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "UFC 332 loses bantamweight banger, Marcus McGhee draws dangerous newcomer on three days' notice",
+   "url": "https://www.mmamania.com/ufc-332-fight-card-start-time-live-stream-silva-vs-cong/476072/ufc-332-loses-bantamweight-banger-marcus-mcghee-draws-dangerous-newcomer-on-three-days-notice",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "",
+   "title": "UFC 332 fight card: Marcus McGhee books new opponent 3 days from event",
+   "url": "https://www.mmafighting.com/ufc/513476/ufc-332-fight-card-marcus-mcghee-books-new-opponent-3-days-from-event",
+   "date": "2026-09-30"
+  }
+ ],
+ "depth": "thin"
+}

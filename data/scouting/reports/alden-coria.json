@@ -1,0 +1,43 @@
+{
+ "name": "Alden Coria",
+ "updated": "2026-09-30T23:00:00+00:00",
+ "event": "UFC 332",
+ "summary": "An accurate, dogged counter-striker: 3-0 in the UFC, with a short-notice stoppage of Alessandro Costa and two clear but unspectacular decisions in 2026. Sharp when opponents lead; less able to break open a slow fight.",
+ "how_they_fight": {
+  "Striking": "Accurate counter-striking; can do real damage when opponents get wild.",
+  "Grappling": "Threatens submissions (about 1.2 attempts per 15 minutes) but his takedown defense (about 45%) is a question.",
+  "Defense": "Composed; absorbs about 2.4 significant strikes a minute.",
+  "Pace & cardio": "Goes three rounds comfortably.",
+  "Fight IQ": "Patient; waits for the opponent to lead."
+ },
+ "patterns": [
+  "Counters opponents who lead",
+  "Stands his ground under pressure"
+ ],
+ "concerns": [
+  "Takedown defense",
+  "Doesn't force the action in slow fights"
+ ],
+ "keys_to_beat": [
+  "Wrestle him",
+  "Don't give him easy counters: feint and take him down"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC 332 prelims (Rodriguez vs. Coria)",
+   "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-332-prelims-203006",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
+   "date": "2026-09-28"
+  }
+ ],
+ "depth": "moderate"
+}

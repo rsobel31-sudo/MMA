@@ -1,0 +1,36 @@
+{
+ "name": "Roman Kopylov",
+ "updated": "2026-09-30T23:00:00+00:00",
+ "event": "UFC 332",
+ "summary": "A Russian southpaw pressure striker and a classic measuring stick: too skilled for most newcomers, but beaten on points by the better middleweights (Paulo Costa, Gregory Rodrigues). Stops 94% of takedowns.",
+ "how_they_fight": {
+  "Striking": "Aggressive southpaw with kicks and volume (about 4.3 significant strikes a minute); finished Chris Curtis in 2025.",
+  "Grappling": "Solid wrestling defense and a willingness to wrestle himself: previewers see takedowns as his best route against Gautier.",
+  "Defense": "Absorbs about as much as he lands; beaten over three rounds by bigger, better strikers.",
+  "Pace & cardio": "Steady for three rounds.",
+  "Fight IQ": "Experienced; knows how to make fights ugly."
+ },
+ "patterns": [
+  "Southpaw kicks and pressure",
+  "Mixes in wrestling"
+ ],
+ "concerns": [
+  "Size and power disadvantage here",
+  "Plateaued against top-15 opposition"
+ ],
+ "keys_to_beat": [
+  "Out-size and out-power him",
+  "Keep him on the outside"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
+   "date": "2026-09-28"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -37,7 +37,19 @@ The ledger (`data/ai_picks/ledger.json`) is the record, and the web page (Fight 
   - A void leg drops out of a parlay.
   - A bout that never happened is void.
 
-## Friday: settle, then pick
+## Friday: scout, settle, then pick
+
+Scouting comes first: follow **SCOUTING.md** "Fight week" for this weekend's card.
+
+1. Refresh the news.
+2. Write any missing reports and update the others with fight-week news: weigh-ins, replacements, injuries.
+3. Record every pundit pick published since Tuesday: Sherdog's main card preview, MMA Fighting staff picks, MMA Mania previews.
+4. Finalize a read for every bout.
+5. Sync the `scouting` collection.
+
+The reads feed the betting sheet, so do this before `picks sheet`.
+
+Then settle and pick:
 
 ```bash
 git fetch origin claude/mma-fight-predictor-9sxxhl && git checkout claude/mma-fight-predictor-9sxxhl && git pull origin claude/mma-fight-predictor-9sxxhl
@@ -107,6 +119,9 @@ git add data/ai_picks && git commit -m "AI Picks: <event> (<n> bets, $<staked>)"
 Committing before the fights is what timestamps the picks.
 
 ## Sunday: grade
+
+Also run `python -m mma_predictor scout grade` and `scout sync`, write the `scouting` collection, and commit. Reads and pundit picks are graded against the same two-source results.
+
 
 Run `picks settle`, `picks sync`, the ArtifactData batch, and a commit ("AI Picks: settled <event>"). If results aren't in on both sources yet (exit code 2), leave the week open; Friday's run settles it.
 

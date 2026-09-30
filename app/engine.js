@@ -204,7 +204,8 @@
       }
       const manual = opts.manual || 0;
       const edit = opts.intangibles || 0;
-      const p = sigmoid((data.calibration_scale || 1) * logit + manual + edit);
+      const read = opts.scouting || 0;  // Claude's scouting read (reads.py)
+      const p = sigmoid((data.calibration_scale || 1) * logit + manual + edit + read);
       const da = methodDistribution(a, b, rounds), db = methodDistribution(b, a, rounds);
       const methods = { a: {}, b: {} };
       for (const m of BUCKETS) {
@@ -214,8 +215,9 @@
       const factors = Object.entries(contrib);
       if (manual) factors.push(["manual", manual]);
       if (edit) factors.push(["intangibles", edit]);
+      if (read) factors.push(["scouting", read]);
       factors.sort((u, v) => Math.abs(v[1]) - Math.abs(u[1]));
-      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual + edit };
+      return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual + edit + read };
     }
 
     /** Same as intangibles.logit: WEIGHT x mean score gap over qualities scored 1-10 for both fighters. */

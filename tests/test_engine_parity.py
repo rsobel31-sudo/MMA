@@ -14,6 +14,7 @@ from mma_predictor.export import export
 from mma_predictor.external import ExternalRatings
 from mma_predictor.history import FightHistory
 from mma_predictor.predictor import FightPredictor
+from mma_predictor.reads import Reads
 
 ROOT = Path(__file__).resolve().parent.parent
 NODE = shutil.which("node")
@@ -39,7 +40,14 @@ const out = input.pairs.map(([a, b, rounds]) => {
     if (m.a === a && m.b === b) edit += eng.intangiblesLogit(sc.a, sc.b);
     else if (m.a === b && m.b === a) edit += eng.intangiblesLogit(sc.b, sc.a);
   }
-  const r = eng.predict(fa, fb, { rounds, weights, manual, intangibles: edit });
+  // Scouting reads: capped log-odds toward `favours`, either corner order (reads.py / index.html).
+  let scouting = 0;
+  for (const rd of input.reads || []) {
+    if (![rd.a, rd.b].includes(a) || ![rd.a, rd.b].includes(b) || rd.logit == null) continue;
+    const x = Math.max(-0.8, Math.min(0.8, rd.logit));
+    scouting += rd.favours === a ? x : rd.favours === b ? -x : 0;
+  }
+  const r = eng.predict(fa, fb, { rounds, weights, manual, intangibles: edit, scouting });
   return { p: r.p, methods: r.methods, x: r.x, n_insights: r.insights.length };
 });
 process.stdout.write(JSON.stringify(out));
@@ -74,12 +82,16 @@ def test_js_engine_matches_python(tmp_path, with_adjustments):
                           "intangibles": {"a": {"cardio": 8, "fight_iq": 6, "athleticism": 4}, "b": {"cardio": 5, "fight_iq": 9}}},
                          {"a": names[4], "b": names[5], "logit": 0, "note": "", "intangibles": {"a": {"durability": 2}, "b": {"durability": 9}}}],
         }
-    predictor = FightPredictor(h, adjustments=Adjustments.from_dict(adj))
+    reads = []
+    if with_adjustments:
+        reads = [{"a": names[6], "b": names[7], "favours": names[7], "logit": 0.3},
+                 {"a": names[9], "b": names[8], "favours": names[9], "logit": 0.55}]
+    predictor = FightPredictor(h, adjustments=Adjustments.from_dict(adj), reads=Reads(reads))
     script = tmp_path / "run.js"
     script.write_text(JS)
     res = subprocess.run(
         [NODE, str(script), str(ROOT / "app" / "engine.js")],
-        input=json.dumps({"data": data, "pairs": pairs, "adjustments": adj}),
+        input=json.dumps({"data": data, "pairs": pairs, "adjustments": adj, "reads": reads}),
         capture_output=True, text=True, check=True,
     )
     js = json.loads(res.stdout)
