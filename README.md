@@ -375,7 +375,18 @@ python -m mma_predictor export --data data/verified --events UFC
 - **Line movement** is tested for information beyond the closing price, and the Insights tab breaks bouts down by how far the line moved and who then won.
 - **Upcoming cards** show the favourite and underdog, where the line opened, a sparkline of its movement, which side the money came in on, and the model's edge over the market. Opening a bout pre-fills its odds on the matchup page.
 
-Results of the market study are shown in the Insights tab (Betting market).
+Results on 4,930 UFC bouts with lines (2012-2026), every prediction made before the bout:
+
+| | Picked the winner | Log-loss |
+|---|---|---|
+| Closing line (margin removed) | 67.0% | 0.603 |
+| Opening line | | 0.621 |
+| This model | 64.5% | 0.625 |
+| Blend, fitted on the earlier half, scored on the later half | 68.4% | 0.596 (market 0.597) |
+
+- **The market is the stronger forecaster**, and when the two disagree on the favourite (1,046 bouts) the model is right 44% of the time. A blend (weights 0.48 model, 0.82 market) edges the closing line out of sample, so upcoming cards show it as the best single estimate.
+- **Line movement is informative until the line closes, then it's priced in.** Closing lines beat opening lines (0.603 vs 0.621), and fighters the money moved 10+ points toward won 65.7% against a closing price of 64.3%, but the size of the move adds nothing significant beyond the closing price (z = -0.6).
+- **Big disagreements:** where the model rates a fighter 15+ points above the market (1,116 bouts), they won 41.2% against a market-implied 36.1% (+6.8% return at mid closing prices). At 5+ and 10+ points there is no edge. Treat it as a lead to watch in the prediction log, not a proven edge: it's one threshold among several, and books limit winning accounts.
 
 ### Combining sources
 
