@@ -118,6 +118,9 @@ table.tape { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.tape th, table.tape td { padding: 5px 6px; border-bottom: 1px solid var(--line); }
 button.info { background: none; border: 0; padding: 0 3px; margin: 0; font: inherit; font-size: 13px; line-height: 1; color: var(--muted); cursor: pointer; border-radius: 50%; }
 button.info:hover, button.info:focus-visible { color: var(--ink); background: var(--surface-2); }
+svg.spark { vertical-align: middle; color: var(--muted); }
+.mv-a { color: var(--red); } .mv-b { color: var(--blue); }
+.edge { font-size: 12px; font-weight: 600; color: var(--edit); }
 dl.srcs { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 8px 0 0; font-size: 14px; }
 dl.srcs dt { color: var(--muted); } dl.srcs dd { margin: 0; }
 dialog.info-dlg { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); padding: 18px 20px; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 64px); overflow: auto; }
@@ -656,7 +659,12 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     const oa = parseFloat(state.m.oddsA), ob = parseFloat(state.m.oddsB);
     if (isFinite(oa) && isFinite(ob) && Math.abs(oa) >= 100 && Math.abs(ob) >= 100) {
       const mp = MMAEngine.devig(oa, ob), edge = p - mp;
-      market = `<span class="pill num">Market ${pct(mp, 0)} / ${pct(1 - mp, 0)}</span><span class="pill num">Model edge ${pct(Math.abs(edge))} to ${esc(edge >= 0 ? a : b)}</span>`;
+      market = `<span class="pill num">Market ${pct(mp, 0)} / ${pct(1 - mp, 0)} (${esc((mp >= 0.5 ? a : b).split(" ").slice(-1)[0])} favoured)</span><span class="pill num">Model edge ${pct(Math.abs(edge))} to ${esc(edge >= 0 ? a : b)}</span>`;
+    }
+    const live = marketFor(a, b);
+    if (live && live.a_open != null) {
+      const po = fairP(live.a_open, live.b_open), pn = fairP(live.a_now, live.b_now);
+      market += `<span class="muted num" style="font-size:13px">BestFightOdds: opened ${fmtOdds(live.a_open)} / ${fmtOdds(live.b_open)}, now ${fmtOdds(live.a_now)} / ${fmtOdds(live.b_now)} ${sparkline(live.movement_a)}${po != null && pn != null && Math.abs(pn - po) >= 0.02 ? ` (money on ${esc((pn > po ? a : b).split(" ").slice(-1)[0])}, ${Math.abs((pn - po) * 100).toFixed(0)} pts)` : ""}</span>`;
     }
     const ea = state.adj.fighters[a], eb = state.adj.fighters[b];
     const noStats = [fa, fb].filter((f) => !f.stat_minutes).map((f) => f.name);
@@ -955,6 +963,40 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
 
   // ---------------------------------------------------------- upcoming cards
   const SEGMENT_ORDER = ["Fight card", "Main card", "Preliminary card", "Early preliminary card", "Announced"];
+  // ------------------------------------------------------------------ market
+  const fmtOdds = (n) => (n == null ? "—" : n > 0 ? "+" + n : "−" + Math.abs(n));
+  const impliedP = (n) => (n == null ? null : n > 0 ? 100 / (n + 100) : -n / (-n + 100));
+  const fairP = (x, y) => { const a = impliedP(x), b = impliedP(y); return a == null || b == null ? null : a / (a + b); };
+  /** BestFightOdds line for a scheduled bout, oriented to (a, b). */
+  function marketFor(a, b) {
+    for (const e of (state.data.upcoming || { events: [] }).events) for (const bt of e.bouts) {
+      if (!bt.market) continue;
+      if (bt.a_id === a && bt.b_id === b) return bt.market;
+      if (bt.a_id === b && bt.b_id === a) {
+        const m = bt.market;
+        return { a_open: m.b_open, b_open: m.a_open, a_now: m.b_now, b_now: m.a_now, movement_a: (m.movement_a || []).map((x) => (x > 1 ? x / (x - 1) : x)) };
+      }
+    }
+    return null;
+  }
+  function sparkline(series) {
+    if (!series || series.length < 2) return "";
+    const ps = series.map((x) => 1 / x), lo = Math.min(...ps), hi = Math.max(...ps), span = hi - lo || 0.01;
+    const pts = ps.map((v, i) => `${((i / (ps.length - 1)) * 60).toFixed(1)},${(16 - ((v - lo) / span) * 14 - 1).toFixed(1)}`).join(" ");
+    return `<svg class="spark" width="60" height="16" viewBox="0 0 60 16" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>`;
+  }
+  /** Favourite/underdog, where the line opened and moved, and the model's edge over the market. */
+  function marketCell(mk, p, a, b) {
+    if (!mk || mk.a_now == null || mk.b_now == null) return '<span class="muted" style="font-size:13px">No line yet</span>';
+    const pm = fairP(mk.a_now, mk.b_now), po = fairP(mk.a_open, mk.b_open);
+    const favA = pm >= 0.5, fav = favA ? a : b, dog = favA ? b : a;
+    const move = po == null ? null : pm - po;
+    const toward = move == null || Math.abs(move) < 0.02 ? null : move > 0 ? a : b;
+    const edge = p - pm, edgeTo = edge >= 0 ? a : b, last = (n) => esc(n.split(" ").slice(-1)[0]);
+    return `<div class="num"><strong>${last(fav)} ${fmtOdds(favA ? mk.a_now : mk.b_now)}</strong> <span class="muted">fav</span> · ${last(dog)} ${fmtOdds(favA ? mk.b_now : mk.a_now)}</div>
+      <div class="muted num" style="font-size:12px">${po != null ? `opened ${last(a)} ${fmtOdds(mk.a_open)} ` : ""}${sparkline(mk.movement_a)}${toward ? ` <span class="${toward === a ? "mv-a" : "mv-b"}">money on ${last(toward)} (${move > 0 ? "+" : "−"}${Math.abs(move * 100).toFixed(0)} pts)</span>` : po != null ? " steady" : ""}</div>
+      ${Math.abs(edge) >= 0.05 ? `<div class="edge num">Model +${Math.abs(edge * 100).toFixed(0)} pts on ${last(edgeTo)}${(p >= 0.5) !== favA ? " (backs the underdog)" : ""}</div>` : '<div class="muted" style="font-size:12px">Model agrees with the market</div>'}`;
+  }
   function boutRow(bt) {
     const a = bt.a_id, b = bt.b_id;
     const who = (id, raw, color) => `<span style="color:var(--${color})">${id ? nameLink(id) : `${esc(raw)} <span class="muted" title="No record for this fighter in the data yet">(no data)</span>`}</span>`;
@@ -962,7 +1004,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     if (!a || !b) {
       if (state.upOnlyHighlights) return "";
       return `<tr><td class="muted">${esc(bt.weight_class)} ${tags}</td><td>${who(a, bt.a, "red")} <span class="muted">vs</span> ${who(b, bt.b, "blue")}</td>
-        <td colspan="3" class="muted" style="font-size:13px">Can't predict until both fighters are in the data</td><td></td></tr>`;
+        <td colspan="4" class="muted" style="font-size:13px">Can't predict until both fighters are in the data</td><td></td></tr>`;
     }
     const r = predict(a, b, bt.rounds || 3), p = r.p;
     const pick = p >= 0.5 ? a : b;
@@ -979,6 +1021,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
       <td><span class="mini num" title="${esc(a)} ${pct(p)} / ${esc(b)} ${pct(1 - p)}"><i style="width:${(p * 100).toFixed(1)}%"></i></span></td>
       <td><strong>${esc(pick)}</strong> <span class="num">${pct(Math.max(p, 1 - p), 0)}</span><div class="muted" style="font-size:12px">${confidence(p, fa, fb)}</div></td>
       <td>${esc(best[0].split(" ").slice(-1)[0])} by ${best[1]} <span class="muted num">(${pct(best[2], 0)})</span></td>
+      <td>${marketCell(marketFor(a, b), p, a, b)}</td>
       <td><button class="btn small" type="button" data-open-bout="${esc(a)}|${esc(b)}|${bt.rounds || 3}">Open</button></td></tr>`;
   }
   function renderCard(view) {
@@ -1010,7 +1053,7 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
           const rows = ev.bouts.filter((b) => b.segment === sg).map(boutRow).join("");
           if (!rows) return "";
           return `<div><div class="label" style="margin-bottom:4px">${esc(sg === "Fight card" ? "Card" : sg === "Announced" ? "Announced, not yet placed on the card" : sg)}</div>
-          <div class="table-wrap"><table class="list bouts"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Pick</th><th>Most likely</th><th></th></tr></thead><tbody>
+          <div class="table-wrap"><table class="list bouts"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Pick</th><th>Most likely</th><th>Market (BestFightOdds)</th><th></th></tr></thead><tbody>
           ${rows}</tbody></table></div></div>`;
         }).join("")}
       </section>`;
@@ -1052,8 +1095,32 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
         </dl>
         ${v.conflicts && v.conflicts.length ? `<p class="muted" style="font-size:13px;margin:8px 0 0">Conflicting results: ${v.conflicts.map((c) => `${esc(c.bout)} (${esc(c.date)}): UFCStats ${esc(c.ufcstats || "none")}, Sherdog ${esc(c.sherdog || "none")}${c.statsfight ? `, StatsFight ${esc(c.statsfight)}` : ""}`).join("; ")}</p>` : ""}
       </section>` : "";
+    const mk = ins.market;
+    const marketPanel = mk ? `<section class="panel">
+        <h3>Betting market</h3>
+        <p class="muted" style="font-size:13px;margin:4px 0 8px">Closing and opening lines from BestFightOdds (an aggregate of many sportsbooks), matched to ${mk.n.toLocaleString()} UFC bouts in the backtest (${esc(mk.from)} to ${esc(mk.to)}), with the bookmaker margin removed. Every prediction here was made before the bout.</p>
+        <div class="table-wrap"><table class="list num"><thead><tr><th></th><th>Picked the winner</th><th>Log-loss (lower is better)</th></tr></thead><tbody>
+          <tr><td>Closing line (market)</td><td>${pct(mk.market.accuracy)}</td><td>${mk.market.log_loss.toFixed(4)}</td></tr>
+          <tr><td>This model</td><td>${pct(mk.model.accuracy)}</td><td>${mk.model.log_loss.toFixed(4)}</td></tr>
+          <tr><td>Blend of both (fitted on the earlier half, scored on the later ${mk.blend.test_n.toLocaleString()})</td><td>${pct(mk.blend.accuracy)}</td><td>${mk.blend.log_loss.toFixed(4)} <span class="muted">vs market ${mk.blend.market_log_loss.toFixed(4)}</span></td></tr>
+        </tbody></table></div>
+        <p style="font-size:14px;margin:8px 0 0">${mk.blend.log_loss < mk.blend.market_log_loss - 0.001 ? `Blending adds to the market: weight ${mk.blend.weights.model.toFixed(2)} on the model, ${mk.blend.weights.market.toFixed(2)} on the market. The model sees something the closing line doesn't fully price.` : `The blend doesn't beat the market on its own: the closing line already prices in what the model sees (weights ${mk.blend.weights.model.toFixed(2)} model, ${mk.blend.weights.market.toFixed(2)} market).`}
+          When the model and the market pick different favourites (${mk.disagree.n} bouts), the model's pick won ${pct(mk.disagree.model_right)}.</p>
+        ${mk.movement ? `<h3 style="margin-top:14px">Line movement</h3>
+        <p style="font-size:14px;margin:4px 0 8px">The opening line had log-loss ${mk.movement.opening_log_loss.toFixed(4)}; the closing line ${mk.movement.closing_log_loss.toFixed(4)}: money arriving before the fight made the market ${mk.movement.closing_log_loss < mk.movement.opening_log_loss ? "sharper" : "no sharper"}.
+          Beyond the closing price, the size of the move ${mk.movement.p_move < 0.05 ? `<strong>does</strong> predict results (z = ${mk.movement.z_move.toFixed(1)}): fighters the money moved toward won ${mk.movement.coef_move > 0 ? "more" : "less"} often than even their closing price implied` : `adds nothing significant (z = ${mk.movement.z_move.toFixed(1)}): once the line closes, which way it moved is already priced in`}.</p>
+        <div class="table-wrap"><table class="list num"><thead><tr><th>Seen from the side the money moved toward</th><th>Bouts</th><th>Opening chance</th><th>Closing chance</th><th>Actually won</th></tr></thead><tbody>
+          ${mk.movement.buckets.map((x) => `<tr><td>${esc(x.label)}</td><td>${x.n}</td><td>${pct(x.open_p)}</td><td>${pct(x.close_p)}</td><td><strong>${pct(x.win_rate)}</strong></td></tr>`).join("")}
+        </tbody></table></div>` : ""}
+        ${mk.value && mk.value.length ? `<h3 style="margin-top:14px">Where the model disagrees with the price</h3>
+        <div class="table-wrap"><table class="list num"><thead><tr><th>Model above the market by</th><th>Bouts</th><th>Won</th><th>Market expected</th><th>Return on 1 unit at the closing line</th></tr></thead><tbody>
+          ${mk.value.map((v) => `<tr><td>${Math.round(v.edge * 100)}+ pts</td><td>${v.bets}</td><td>${pct(v.win_rate)}</td><td>${pct(v.market_expected)}</td><td>${v.roi >= 0 ? "+" : "−"}${Math.abs(v.roi * 100).toFixed(1)}%</td></tr>`).join("")}
+        </tbody></table></div>
+        <p class="muted" style="font-size:12px;margin:6px 0 0">A backtest, not advice: closing lines are the hardest to beat, and sportsbooks limit winning accounts.</p>` : ""}
+      </section>` : "";
     view.innerHTML = `<div class="stack">
       ${verifyPanel}
+      ${marketPanel}
       <section class="panel">
         <h3>How the model has done</h3>
         <p class="num" style="margin:6px 0 0">Walk-forward backtest on ${bt.n ? bt.n.toLocaleString() : "?"} past UFC bouts, each predicted using only what was known beforehand: picked the winner <strong>${bt.accuracy ? pct(bt.accuracy) : "?"}</strong>${bt.high_conf_n ? `, and <strong>${pct(bt.high_conf_accuracy)}</strong> of the ${bt.high_conf_n} fights where it was at least 65% sure` : ""}. Confidence is calibrated (logits × ${state.data.calibration_scale || 1}) because the raw model was ${(state.data.calibration_scale || 1) >= 1 ? "hedging toward 50/50" : "slightly overconfident"} on past bouts.</p>
@@ -1409,7 +1476,8 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
     if (t.dataset.event) { state.upEvent = t.dataset.event; render(); return; }
     if (t.dataset.openBout) {
       const [a, b, rounds] = t.dataset.openBout.split("|");
-      Object.assign(state.m, { a, b, rounds: +rounds, oddsA: "", oddsB: "" });
+      const mk = marketFor(a, b);
+      Object.assign(state.m, { a, b, rounds: +rounds, oddsA: mk && mk.a_now != null ? String(mk.a_now) : "", oddsB: mk && mk.b_now != null ? String(mk.b_now) : "" });
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
     if (t.dataset.rosterView) { state.roster.view = t.dataset.rosterView; render(); return; }

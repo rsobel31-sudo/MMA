@@ -345,7 +345,7 @@ def cmd_verify(args) -> int:
     from .verify import build_verified
 
     rep = build_verified(Path(args.data), Path(args.stats), Path(args.statsfight), Path(args.out), strict_stats=args.strict_stats,
-                         fightmatrix_path=Path(args.fightmatrix))
+                         fightmatrix_path=Path(args.fightmatrix), odds_path=Path(args.odds))
     total = sum(rep["results"].values())
     print(f"UFCStats bouts: {total}")
     for k, v in sorted(rep["results"].items(), key=lambda kv: -kv[1]):
@@ -356,6 +356,8 @@ def cmd_verify(args) -> int:
         print(f"  stats {k}: {v}")
     for k in ("dob", "height", "reach"):
         print(f"  {k}: {rep[k]}")
+    if rep.get("odds"):
+        print(f"  betting lines: {rep['odds']}")
     for c in rep["conflicts"][:10]:
         print(f"  conflict {c['date']} {c['bout']}: UFCStats {c['ufcstats']}, Sherdog {c['sherdog']}, StatsFight {c['statsfight']}")
     print(f"Wrote {args.out} (report: {args.out}/verification.json)")
@@ -419,9 +421,20 @@ def cmd_export(args) -> int:
         verification["conflicts"] = rep.get("conflicts", [])[:20]
         verification["disputed_stats"] = len(rep.get("disputed_stats", []))
     outside = fightmatrix_metrics(FM_PATH, vdir, h.bios.keys()) if FM_PATH.exists() else None
+    odds_path = Path(args.odds)
+    upcoming_market = None
+    if odds_path.exists():
+        from .odds import upcoming_lines
+
+        upcoming_market = upcoming_lines(odds_path, h.last_date())
+    if study is not None and (vdir / "odds.json").exists():
+        from .analysis import market_study
+
+        study["market"] = market_study(calibrated, json.loads((vdir / "odds.json").read_text()))
     data = export(h, model, min_fights=args.min_fights, active_years=args.active_years, backtest=summary,
                   source=args.source or Path(args.data).name, upcoming=upcoming, aliases=aliases, rankings=rankings,
-                  insights=study, checks=checks, verification=verification, outside=outside)
+                  insights=study, checks=checks, verification=verification, outside=outside,
+                  upcoming_market=upcoming_market)
     if args.log and data["upcoming"]["events"]:
         from . import predlog
         from .predictor import FightPredictor
@@ -564,6 +577,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--rankings", default="data/ranked_fighters.json", help="official UFC rankings, for comparison")
     p.add_argument("--aliases", default="data/name_aliases.json")
     p.add_argument("--log", default="data/predictions/log.json", help="prediction log to update ('' to skip)")
+    p.add_argument("--odds", default="data/bestfightodds/fighters.jsonl", help="BestFightOdds lines (upcoming cards)")
     p.set_defaults(func=cmd_export)
 
     p = sub.add_parser("serve", help="open the web interface locally")
@@ -609,6 +623,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--statsfight", default="data/statsfight/bouts.jsonl")
     p.add_argument("--out", default="data/verified")
     p.add_argument("--fightmatrix", default="data/fightmatrix/profiles.jsonl", help="third source for birth dates")
+    p.add_argument("--odds", default="data/bestfightodds/fighters.jsonl", help="betting lines (BestFightOdds)")
     p.add_argument("--strict-stats", action="store_true", help="attach only stats StatsFight confirms")
     p.set_defaults(func=cmd_verify)
 

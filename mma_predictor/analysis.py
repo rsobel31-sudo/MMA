@@ -330,3 +330,121 @@ def upcoming_flags(history: FightHistory, a: str, b: str, rounds: int, when=None
     sa, sb = history.snapshot(a, when), history.snapshot(b, when)
     ctx = BoutContext(rounds)
     return [(k, s, describe(k, s, sa, sb)) for k, s in match_patterns(sa, sb, matchup_features(sa, sb, ctx), ctx)]
+
+
+# ------------------------------------------------------------------ betting market
+def _logistic(rows: List[List[float]], y: Sequence[int], iterations: int = 30, ridge: float = 1e-6) -> Tuple[List[float], List[float]]:
+    """Unpenalised logistic fit (Newton) with standard errors; rows exclude an intercept."""
+    m = len(rows[0])
+    w = [0.0] * m
+    H = [[0.0] * m for _ in range(m)]
+    for _ in range(iterations):
+        g = [-ridge * wi for wi in w]
+        H = [[ridge if i == j else 0.0 for j in range(m)] for i in range(m)]
+        for r, label in zip(rows, y):
+            p = sigmoid(sum(wi * xi for wi, xi in zip(w, r)))
+            for i in range(m):
+                g[i] += (label - p) * r[i]
+                for j in range(m):
+                    H[i][j] += p * (1 - p) * r[i] * r[j]
+        step = _solve(H, g)
+        w = [wi + si for wi, si in zip(w, step)]
+        if max(abs(s) for s in step) < 1e-8:
+            break
+    cov = _inverse(H)
+    return w, [math.sqrt(max(cov[i][i], 1e-12)) for i in range(m)]
+
+
+def _ll(p: float, y: int) -> float:
+    p = min(1 - 1e-9, max(1e-9, p))
+    return -(y * math.log(p) + (1 - y) * math.log(1 - p))
+
+
+def _logit(p: float) -> float:
+    p = min(1 - 1e-6, max(1e-6, p))
+    return math.log(p / (1 - p))
+
+
+def _payout(american: int) -> float:
+    """Profit on a 1-unit stake that wins."""
+    return american / 100.0 if american > 0 else 100.0 / -american
+
+
+def market_study(predictions: Sequence[Tuple[Fight, float, dict]], market: Dict[str, dict]) -> Optional[Dict[str, object]]:
+    """How the model compares with the betting market, and what line movement adds.
+
+    ``predictions`` are out-of-sample (fight, P(fighter_a wins), features);
+    ``market`` maps "date|fighter_a|fighter_b" to opening/closing lines.
+    """
+    from .sources.bestfightodds import fair_pair
+
+    rows = []
+    for f, p, _ in predictions:
+        m = market.get(f"{f.date.isoformat()}|{f.fighter_a}|{f.fighter_b}")
+        if not m or f.winner is None:
+            continue
+        pc = fair_pair(m.get("a_close"), m.get("b_close"))
+        if pc is None:
+            continue
+        po = fair_pair(m.get("a_open"), m.get("b_open"))
+        rows.append({"f": f, "p": p, "pc": pc, "po": po, "y": int(f.winner == f.fighter_a), "m": m})
+    if len(rows) < 100:
+        return None
+    rows.sort(key=lambda r: r["f"].date)
+    n = len(rows)
+    out: Dict[str, object] = {"n": n, "from": rows[0]["f"].date.isoformat(), "to": rows[-1]["f"].date.isoformat()}
+    for key, name in (("p", "model"), ("pc", "market")):
+        out[name] = {"accuracy": sum((r[key] >= 0.5) == bool(r["y"]) for r in rows) / n,
+                     "log_loss": sum(_ll(r[key], r["y"]) for r in rows) / n}
+    # Blend: fitted on the earlier half, scored on the later half (never on what it was fitted to).
+    half = n // 2
+    w, _ = _logistic([[_logit(r["p"]), _logit(r["pc"])] for r in rows[:half]], [r["y"] for r in rows[:half]])
+    test = rows[half:]
+    out["blend"] = {
+        "weights": {"model": w[0], "market": w[1]}, "test_n": len(test),
+        "log_loss": sum(_ll(sigmoid(w[0] * _logit(r["p"]) + w[1] * _logit(r["pc"])), r["y"]) for r in test) / len(test),
+        "accuracy": sum((w[0] * _logit(r["p"]) + w[1] * _logit(r["pc"]) >= 0) == bool(r["y"]) for r in test) / len(test),
+        "market_log_loss": sum(_ll(r["pc"], r["y"]) for r in test) / len(test),
+        "model_log_loss": sum(_ll(r["p"], r["y"]) for r in test) / len(test),
+    }
+    # Line movement: does open -> close carry information beyond the closing line?
+    moved = [r for r in rows if r["po"] is not None]
+    if len(moved) >= 100:
+        w, se = _logistic([[_logit(r["pc"]), _logit(r["pc"]) - _logit(r["po"])] for r in moved], [r["y"] for r in moved])
+        # Each bout seen from the side the money moved toward (open -> close).
+        buckets = []
+        for label, lo, hi in (("little movement (under 5 pts)", 0.0, 0.05), ("moved 5-10 pts", 0.05, 0.10), ("moved 10+ pts", 0.10, 1.0)):
+            sel = []
+            for r in moved:
+                d = r["pc"] - r["po"]
+                if lo <= abs(d) < hi:
+                    a = d >= 0
+                    sel.append((r["po"] if a else 1 - r["po"], r["pc"] if a else 1 - r["pc"], r["y"] if a else 1 - r["y"]))
+            if sel:
+                buckets.append({"label": label, "n": len(sel), "open_p": sum(x[0] for x in sel) / len(sel),
+                                "close_p": sum(x[1] for x in sel) / len(sel), "win_rate": sum(x[2] for x in sel) / len(sel)})
+        out["movement"] = {"n": len(moved), "coef_close": w[0], "coef_move": w[1], "se_move": se[1], "z_move": w[1] / se[1],
+                           "p_move": _p_value(w[1] / se[1]), "buckets": buckets,
+                           "opening_log_loss": sum(_ll(r["po"], r["y"]) for r in moved) / len(moved),
+                           "closing_log_loss": sum(_ll(r["pc"], r["y"]) for r in moved) / len(moved)}
+    # Disagreements and value.
+    dis = [r for r in rows if (r["p"] >= 0.5) != (r["pc"] >= 0.5)]
+    out["disagree"] = {"n": len(dis), "model_right": sum((r["p"] >= 0.5) == bool(r["y"]) for r in dis) / max(1, len(dis))}
+    value = []
+    for thr in (0.05, 0.10, 0.15):
+        bets = profit = wins = 0.0
+        exp = 0.0
+        for r in rows:
+            for side_a in (True, False):
+                edge = (r["p"] - r["pc"]) if side_a else (r["pc"] - r["p"])
+                price = r["m"].get("a_close") if side_a else r["m"].get("b_close")
+                if edge >= thr and price:
+                    won = r["y"] if side_a else 1 - r["y"]
+                    bets += 1
+                    wins += won
+                    exp += r["pc"] if side_a else 1 - r["pc"]
+                    profit += _payout(int(price)) if won else -1.0
+        if bets:
+            value.append({"edge": thr, "bets": int(bets), "win_rate": wins / bets, "market_expected": exp / bets, "roi": profit / bets})
+    out["value"] = value
+    return out

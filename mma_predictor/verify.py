@@ -200,7 +200,8 @@ def _read_csv(path: Path) -> List[Dict[str, str]]:
 
 
 def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_dir: Path,
-                   strict_stats: bool = False, fightmatrix_path: Optional[Path] = None) -> Dict:
+                   strict_stats: bool = False, fightmatrix_path: Optional[Path] = None,
+                   odds_path: Optional[Path] = None) -> Dict:
     """Sherdog careers + UFCStats stats on the bouts a second source confirms. Returns the report.
 
     ``strict_stats``: attach stats only where StatsFight confirms them (not
@@ -320,6 +321,24 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
             else:
                 report["reach"]["no second source"] += 1
                 checks[bname]["reach"] = f"UFCStats only ({sb.reach_cm:.0f} cm), not used until a second source confirms it"
+    # Betting lines (BestFightOdds): attached only to bouts it confirms, with sane lines.
+    if odds_path and Path(odds_path).exists():
+        from .odds import link, load_lines
+
+        lines, odds_report = link(base_fights, load_lines(Path(odds_path)))
+        report["odds"] = odds_report
+        by_id = {id(f): f for f in base_fights}
+        market = {}
+        for fid, ml in lines.items():
+            f = by_id[fid]
+            brow = base_by_key.get((f.date.isoformat(), f.fighter_a, f.fighter_b))
+            if brow is not None:
+                brow["a_odds"], brow["b_odds"] = str(ml.a_close), str(ml.b_close)
+            market[f"{f.date.isoformat()}|{f.fighter_a}|{f.fighter_b}"] = {
+                "a_open": ml.a_open, "b_open": ml.b_open, "a_close": ml.a_close, "b_close": ml.b_close,
+                "movement_a": [round(x, 4) for x in ml.movement_a], "pages": ml.pages}
+        Path(out_dir).mkdir(parents=True, exist_ok=True)
+        Path(out_dir, "odds.json").write_text(json.dumps(market, separators=(",", ":")))
     write_dataset(Path(out_dir), base_fighters, base_rows)
     report["results"], report["stats"] = dict(report["results"]), dict(report["stats"])
     for k in ("statsfight_results", "dob", "height", "reach"):

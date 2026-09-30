@@ -100,6 +100,7 @@ def export(
     checks: Optional[Dict[str, Dict[str, str]]] = None,
     verification: Optional[Dict[str, Any]] = None,
     outside: Optional[Dict[str, Dict[str, Any]]] = None,
+    upcoming_market: Optional[List[dict]] = None,
 ) -> Dict[str, Any]:
     model = model or WinModel()
     as_of = as_of or history.default_date()
@@ -170,6 +171,13 @@ def export(
             a_id = linked.get(str(b["a"])) if linked.get(str(b["a"])) in by_name else None
             b_id = linked.get(str(b["b"])) if linked.get(str(b["b"])) in by_name else None
             row = dict(b, a_id=a_id, b_id=b_id)
+            if upcoming_market:
+                from .odds import line_for
+
+                when = date.fromisoformat(e["date"]) if e.get("date") else None
+                mk = line_for(upcoming_market, a_id or str(b["a"]), b_id or str(b["b"]), when)
+                if mk:
+                    row["market"] = mk  # BestFightOdds: opening and current lines, A's price over time
             if a_id and b_id:
                 # Which historical matchup patterns this bout fits ("a"/"b" = who has the edge).
                 row["patterns"] = [{"key": k, "side": "a" if s > 0 else "b", "detail": d}

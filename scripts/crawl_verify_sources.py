@@ -4,6 +4,10 @@
   statsfight   every UFC bout page in StatsFight's sitemap -> data/statsfight/bouts.jsonl
   fightmatrix  Fight Matrix profiles: the top of every division, then their
                UFC opponents, up to --max -> data/fightmatrix/profiles.jsonl
+  bestfightodds  BestFightOdds fighter pages (betting lines and their movement):
+               everyone on the upcoming cards and in the UFC rankings, found by
+               search, then their UFC opponents, up to --max
+               -> data/bestfightodds/fighters.jsonl
 
 Pages are parsed on the fly and only the parsed record is kept (the raw
 pages are large). Both are resumable: URLs already in the output are skipped.
@@ -15,11 +19,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from mma_predictor.sources import fightmatrix, statsfight  # noqa: E402
+from mma_predictor.sources import bestfightodds, fightmatrix, statsfight  # noqa: E402
+from mma_predictor.sources.wikipedia import match_key  # noqa: E402
 from mma_predictor.sources.common import Fetcher  # noqa: E402
 
 ap = argparse.ArgumentParser()
-ap.add_argument("source", choices=["statsfight", "fightmatrix"])
+ap.add_argument("source", choices=["statsfight", "fightmatrix", "bestfightodds"])
 ap.add_argument("--delay", type=float, default=2.0)
 ap.add_argument("--max", type=int, default=1500, help="fightmatrix profile budget")
 ap.add_argument("--rank-pages", type=int, default=2, help="fightmatrix ranking pages (25 each) per division")
@@ -40,7 +45,55 @@ def encode(o):
     return str(o)
 
 
-if args.source == "statsfight":
+if args.source == "bestfightodds":
+    out = Path("data/bestfightodds/fighters.jsonl")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    seen = done_urls(out)
+    queue: list = []
+    if out.exists():  # resuming: re-expand from pages already saved
+        for line in out.open(encoding="utf-8"):
+            for b in json.loads(line).get("bouts", []):
+                if str(b.get("event", "")).upper().startswith("UFC"):
+                    queue.append(b["opponent_url"])
+    else:
+        up = json.loads(Path("data/upcoming.json").read_text())
+        names = [str(b[k]) for e in up["events"] for b in e["bouts"] for k in ("a", "b")]
+        names += [r["name"] for r in json.loads(Path("data/ranked_fighters.json").read_text()).get("rankings", [])]
+        names = list(dict.fromkeys(names))
+        print(f"searching {len(names)} card and ranked fighters", flush=True)
+        for n in names:
+            try:
+                hits = bestfightodds.search_results(fetcher.get(bestfightodds.search_url(n), cache=False))
+            except Exception as exc:
+                print(f"  search {n}: {exc}", flush=True)
+                continue
+            exact = [u for name, u in hits if match_key(name) == match_key(n)]
+            if len(exact) == 1:  # ambiguous or missing names are skipped
+                queue.append(exact[0])
+    print(f"{len(queue)} fighters to start from ({len(seen)} pages already done)", flush=True)
+    queued = set(queue)
+    with out.open("a", encoding="utf-8") as fh:
+        while queue and len(seen) < args.max:
+            u = queue.pop(0)
+            if u in seen:
+                continue
+            seen.add(u)
+            try:
+                page = fetcher.get(u, cache=False)
+                bouts = bestfightodds.parse_fighter(page, u)
+            except Exception as exc:
+                print(f"  skip {u}: {exc}", flush=True)
+                continue
+            name = bouts[0].fighter if bouts else ""
+            fh.write(json.dumps({"url": u, "name": name, "bouts": [dataclasses.asdict(b) for b in bouts]}, default=encode) + "\n")
+            fh.flush()
+            for b in bouts:
+                if b.event.upper().startswith("UFC") and b.opponent_url not in queued:
+                    queued.add(b.opponent_url)
+                    queue.append(b.opponent_url)
+            if len(seen) % 100 == 0:
+                print(f"  {len(seen)} pages, {len(queue)} queued", flush=True)
+elif args.source == "statsfight":
     out = Path("data/statsfight/bouts.jsonl")
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)
