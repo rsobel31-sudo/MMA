@@ -73,6 +73,31 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .corner.red input { border-left: 5px solid var(--red); }
 .corner.blue input { border-left: 5px solid var(--blue); }
 .cb { position: relative; display: block; }
+.pk-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.pk-stat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
+.pk-big { font-family: var(--display); font-size: 28px; font-weight: 600; margin: 2px 0; }
+.pk-note { background: var(--surface-2); border-radius: 12px; padding: 10px 14px; margin: 10px 0 12px; }
+.pk-note p { margin: 4px 0 0; font-size: 14.5px; line-height: 1.5; }
+.pk-why { font-size: 12.5px; color: var(--muted); margin-top: 4px; max-width: 60ch; }
+.pk-bets td { vertical-align: top; }
+.pk-pass { margin: 8px 0 0; }
+.pk-alert { background: var(--red); color: #fff; border-radius: 14px; padding: 14px 18px; font-size: 15px; }
+.count.alert { background: var(--red); color: #fff; }
+.pk-curve { width: 100%; max-width: 760px; height: auto; display: block; }
+.pk-table th, .pk-table td { text-align: left; }
+.pk-table th.num, .pk-table td.num { text-align: right; }
+.pk-line { fill: none; stroke: var(--ink); stroke-width: 2.5; }
+.pk-dot { fill: var(--red); }
+.pk-base { stroke: var(--line); stroke-dasharray: 4 4; }
+.pk-axis { font-size: 13px; fill: var(--muted); font-family: var(--body); }
+@media (max-width: 640px) {
+  .pk-axis { font-size: 22px; }
+  .pk-bets thead { display: none; }
+  .pk-bets tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .pk-bets td { border: 0; padding: 0; text-align: left !important; }
+  .pk-bets td:first-child { grid-column: 1 / -1; }
+  .pk-bets td[data-l]::before { content: attr(data-l); display: block; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+}
 .cb-list { position: absolute; z-index: 30; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.14); max-height: 340px; overflow-y: auto; }
 .cb-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 15px; }
 .cb-list li[aria-selected=true] { background: var(--red-soft, rgba(0,0,0,.06)); }
@@ -360,6 +385,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
     <button role="tab" data-tab="matchup" aria-selected="false">Matchup</button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
+    <button role="tab" data-tab="picks" aria-selected="false">AI Picks <span class="count alert" id="picks-alert" hidden>!</span></button>
     <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
     <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
@@ -426,6 +452,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     data: null, engine: null, byName: new Map(),
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
     tab: "card",
+    picks: { sub: "week", summary: null, weeks: [], loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
@@ -472,7 +499,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     }, () => {});
     db.collection("matchups").onSnapshot((snap) => {
       const m = {};
-      snap.docs.forEach((d) => { const v = d.data(); if (v && v.a) m[d.id] = { a: v.a, b: v.b, logit: v.logit || 0, note: v.note || "" }; });
+      snap.docs.forEach((d) => { const v = d.data(); if (v && v.a) m[d.id] = { a: v.a, b: v.b, logit: v.logit || 0, note: v.note || "", ...(v.intangibles ? { intangibles: v.intangibles } : {}) }; });
       for (const [id, v] of Object.entries(state.adj.matchups)) if (keep("matchups/" + id)) m[id] = v;
       for (const id of Object.keys(m)) if (keep("matchups/" + id) && !state.adj.matchups[id]) delete m[id];
       state.adj.matchups = m; renderSoon();
@@ -487,6 +514,10 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     db.collection("commentary").onSnapshot((snap) => {
       state.commentary = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
     }, () => {});
+    db.collection("ai_picks").onSnapshot((snap) => {
+      const docs = snap.docs.map((d) => Object.assign({ _id: d.id }, d.data()));
+      setPicks(docs);
+    }, () => { state.picks.loaded = true; renderSoon(); });
     db.collection("card").orderBy("order").onSnapshot((snap) => {
       state.card = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
     }, () => {});
@@ -598,11 +629,12 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const n = adjCount();
     const ac = $("#adj-count"); ac.hidden = !n; ac.textContent = n;
     const cc = $("#card-count"); cc.hidden = !state.card.length; cc.textContent = state.card.length;
+    const pa = $("#picks-alert"); pa.hidden = !(state.picks.summary && state.picks.summary.bust);
     const view = $("#view");
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -972,6 +1004,14 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       rows.push(["Always", "Judged against the opponent's level: surviving an elite grappler counts more than surviving an average one. Background credentials add a head start that fades over about 10 fights; your fight commentary and edits count on top. 1500 is average."]);
       return { title, rows, key: key === "overall" ? "elo" : key };
     }
+    if (key === "ai_picks") {
+      return { title: "How AI Picks works", key, rows: [
+        ["Bankroll", "$100 to start. Every settled bet adds its profit or loses its stake; there is no top-up. Minimum bet $1: below that the bankroll is bust and an alert shows here."],
+        ["Prices", "FanDuel's odds as listed on BestFightOdds when the bets are placed (Friday). A bet is recorded at that exact price, so nothing can be picked after the fact."],
+        ["How Claude decides", "Each Friday a betting sheet prices every FanDuel market on the card: our win probability (the model blended with the market, as the backtest found best), method and round props from the finish model (calibrated to real decision rates, then shrunk halfway to FanDuel's price), edge, expected value and a Kelly stake. Claude then bets at its own discretion: all in, a little, or nothing."],
+        ["Grading", "Results must agree on two sources (the Wikipedia event page and Sherdog's records) before a bet is settled. Draws and no contests refund moneylines; a void leg drops out of a parlay."],
+        ["Honesty", "Bets are committed to the project's history before the fights, and the record keeps losses, passes and closing-line value (did we beat FanDuel's final price?). Several cards are needed before the record says anything about skill."]] };
+    }
     if (key === "intangibles") {
       return { title: "Intangibles", key, rows: [
         ["What it measures", "The things stats miss: " + (IN.keys || []).map((k) => IN.labels[k]).join(", ") + "."],
@@ -1336,6 +1376,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   }
   const officialLabel = (f) => { const r = officialRank(f); return r === null ? "—" : r === 0 ? "C" : "#" + r; };
   const disciplines = (f) => (f.background ? f.background.credentials.map((c) => c.discipline) : []);
+  const DISC_SHORT = { wrestling: "Wrestling", bjj: "BJJ", judo: "Judo", boxing: "Boxing", kickboxing: "Kickboxing", muay_thai: "Muay Thai", karate: "Karate", sambo: "Sambo", taekwondo: "Taekwondo", grappling: "Grappling" };
   function rankOptions() {
     const base = [["proven", "Ranking (proven)"], ["elo", "Overall (unadjusted)"], ["striking", "Striking"], ["wrestling", "Wrestling"], ["grappling", "Grappling"]];
     const subs = Object.values(state.data.rating_categories).flat().map((k) => ["r_" + k, state.data.rating_labels[k]]);
@@ -1416,7 +1457,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       ${th("proven", "Ranking")}${th("ufc", "UFC")}${th("elo", "Overall")}${th("striking", "Striking")}${th("wrestling", "Wrestling")}${th("grappling", "Grappling")}${extra}
       ${th("record", "Record")}${th("age", "Age")}${th("wear", "Wear")}${th("streak", "Streak")}<th>Style</th><th>Country</th></tr></thead><tbody>
       ${sorted.map((f, i) => `<tr class="clickable" data-profile="${esc(f.name)}"><td>${i + 1}</td>
-        <td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}${f.background && f.background.credentials.length ? ' <span class="pill" title="Researched background">bg</span>' : ""}</td>
+        <td>${esc(f.name)} ${state.adj.fighters[f.name] ? '<span class="pill edit">edited</span>' : ""}${f.background && f.background.credentials.length ? ` <span class="pill" title="Combat-sports background before MMA (researched, with sources on the fighter's profile)">${esc([...new Set(f.background.credentials.map((c) => DISC_SHORT[c.discipline] || c.discipline.replace("_", " ")))].slice(0, 3).join(" · "))}</span>` : ""}</td>
         <td>${esc(f.division || "—")}${f.weight_class_inferred ? '<span class="muted" title="Inferred from opponents">*</span>' : ""}</td>
         <td><strong>${Math.round(f.proven)}</strong></td><td>${officialLabel(f)}</td><td>${Math.round(f.elo)} <span class="muted" style="font-size:12px">±${Math.round(f.rd)}</span></td><td>${Math.round(f.striking)}</td><td>${Math.round(f.wrestling)}</td><td>${Math.round(f.grappling)}</td>
         ${extra ? `<td><strong>${Math.round(f[r.sort])}</strong></td>` : ""}
@@ -1592,6 +1633,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       Object.assign(state.m, { a, b, rounds: +rounds, oddsA: mk && mk.a_now != null ? String(mk.a_now) : "", oddsB: mk && mk.b_now != null ? String(mk.b_now) : "" });
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
+    if (t.dataset.picksSub) { state.picks.sub = t.dataset.picksSub; render(); return; }
     if (t.dataset.rosterView) { state.roster.view = t.dataset.rosterView; render(); return; }
     if (t.dataset.sort) {
       const k = t.dataset.sort, r = state.roster;
@@ -1678,6 +1720,99 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
   });
+
+  // ------------------------------------------------------------ AI picks
+  function setPicks(docs) {
+    state.picks.summary = docs.find((d) => d._id === "summary") || null;
+    state.picks.weeks = docs.filter((d) => d._id !== "summary" && d.event).sort((a, b) => (b.placed_at || "").localeCompare(a.placed_at || ""));
+    state.picks.loaded = true;
+    renderSoon();
+  }
+  const money = (x) => (x < 0 ? "−$" : "$") + Math.abs(x).toFixed(2);
+  const signed = (x) => (x > 0 ? "+" : x < 0 ? "−" : "") + "$" + Math.abs(x).toFixed(2);
+  const amer = (o) => (o > 0 ? "+" : "") + o;
+  const STATUS = { open: ["Open", "tier-toss"], won: ["Won", "tier-best"], lost: ["Lost", "tier-caution"], void: ["Void (refunded)", "tier-toss"] };
+  function nextFriday() {
+    const d = new Date(); const add = (5 - d.getUTCDay() + 7) % 7;
+    d.setUTCDate(d.getUTCDate() + add);
+    return d.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  }
+  const when = (iso) => { try { return new Date(iso).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }); } catch (e) { return iso; } };
+  function picksStats(s) {
+    const cells = [
+      ["Bankroll", money(s.bankroll), `started at ${money(s.start)}`],
+      ["Profit", signed(s.bankroll - s.start), s.roi != null ? `ROI ${(s.roi * 100).toFixed(1)}% on ${money(s.staked)} staked` : "nothing settled yet"],
+      ["Record", `${s.won}–${s.lost}${s.void ? `–${s.void}` : ""}`, `won–lost${s.void ? "–void" : ""} · ${s.weeks} week${s.weeks === 1 ? "" : "s"}${s.passes ? `, ${s.passes} passed` : ""}`],
+      ["On the table", money(s.open_stakes), `${money(s.available)} free to bet`],
+    ];
+    return `<div class="pk-stats">${cells.map(([l, v, sub]) => `<div class="pk-stat"><div class="label">${l}</div><div class="pk-big num">${v}</div><div class="muted" style="font-size:12.5px">${sub}</div></div>`).join("")}</div>`;
+  }
+  function betRows(w) {
+    if (!w.bets.length) return `<p class="pk-pass"><strong>Pass.</strong> No bets this week.</p>`;
+    return `<div class="table-wrap"><table class="recent pk-bets pk-table"><thead><tr><th>Bet</th><th class="num">Odds</th><th class="num">Stake</th><th class="num">To win</th><th class="num" title="Our probability vs FanDuel's price with the margin removed">Ours / FanDuel</th><th>Result</th></tr></thead><tbody>
+      ${w.bets.map((b) => {
+        const [lab, cls] = STATUS[b.status] || STATUS.open;
+        const legs = b.legs.map((l) => `<div>${esc(l.selection)} <span class="muted" style="font-size:12px">${esc(l.bout)}${b.legs.length > 1 ? ` · ${amer(l.odds)}` : ""}${l.grade && b.legs.length > 1 ? ` · ${esc(l.grade)}` : ""}</span></div>`).join("");
+        const fd = b.legs.reduce((x, l) => x * (l.p_fanduel || 0), 1);
+        return `<tr><td>${b.kind === "parlay" ? `<span class="pill">${b.legs.length}-leg parlay</span>` : ""}${legs}${b.reasoning ? `<div class="pk-why">${esc(b.reasoning)}</div>` : ""}</td>
+          <td class="num" data-l="Odds">${amer(b.odds)}</td><td class="num" data-l="Stake">${money(b.stake)}</td><td class="num" data-l="To win">${money(b.to_win)}</td>
+          <td class="num" data-l="Ours / FanDuel">${(b.p * 100).toFixed(0)}% / ${(fd * 100).toFixed(0)}%<div class="muted" style="font-size:12px">EV ${b.ev >= 0 ? "+" : ""}${(b.ev * 100).toFixed(1)}%</div></td>
+          <td data-l="Result"><span class="tier ${cls}">${lab}</span>${b.status !== "open" ? `<div class="num" style="font-size:13px;margin-top:3px">${signed(b.profit)}</div>` : ""}${b.clv != null ? `<div class="muted num" style="font-size:12px" title="Price we got vs FanDuel's closing price">CLV ${b.clv >= 0 ? "+" : ""}${(b.clv * 100).toFixed(1)}%</div>` : ""}</td></tr>`;
+      }).join("")}</tbody></table></div>`;
+  }
+  function weekPanel(w, open = true) {
+    const result = w.settled && w.bets.length ? `<span class="pill num">${signed(w.bets.reduce((x, b) => x + (b.profit || 0), 0))}</span>` : w.bets.length ? '<span class="pill">Awaiting results</span>' : "";
+    return `<section class="panel pk-week"><div class="toolbar" style="justify-content:space-between"><div><h3 style="margin:0">${esc(w.event)}</h3>
+        <div class="muted num" style="font-size:13px">${esc(w.event_date)} · bets placed ${esc(when(w.placed_at))} at FanDuel prices · ${money(w.staked)} of ${money(w.available_before)} staked</div></div>${result}</div>
+      ${w.note ? `<div class="pk-note"><div class="label">The read</div><p>${esc(w.note)}</p></div>` : ""}
+      ${betRows(w)}</section>`;
+  }
+  function curve(points) {
+    if (points.length < 2) return `<div class="empty">The bankroll chart starts after the first settled card.</div>`;
+    const W = 640, H = 220, pad = 34, ys = points.map((p) => p.bankroll);
+    const span = Math.max(20, Math.max(...ys) - Math.min(...ys)), lo = Math.max(0, Math.min(...ys) - span * 0.25), hi = Math.max(...ys) + span * 0.25;
+    const x = (i) => pad + (i * (W - pad * 2)) / (points.length - 1), y = (v) => H - pad - ((v - lo) / (hi - lo)) * (H - pad * 2);
+    const path = points.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.bankroll).toFixed(1)}`).join("");
+    return `<svg class="pk-curve" viewBox="0 0 ${W} ${H}" role="img" aria-label="Bankroll after each card">
+      <line x1="${pad}" x2="${W - pad}" y1="${y(points[0].bankroll)}" y2="${y(points[0].bankroll)}" class="pk-base"/>
+      <path d="${path}" class="pk-line"/>${points.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.bankroll)}" r="3.5" class="pk-dot"><title>${esc(p.week)}: ${money(p.bankroll)}</title></circle>`).join("")}
+      <text x="${pad}" y="${y(points[0].bankroll) - 8}" class="pk-axis">Start ${money(points[0].bankroll)}</text>
+      <text x="${W - pad}" y="${y(points[points.length - 1].bankroll) - 10}" text-anchor="end" class="pk-axis">${money(points[points.length - 1].bankroll)}</text>
+      <text x="${pad}" y="${H - 6}" class="pk-axis">${esc(points[1].week)}</text>${points.length > 2 ? `<text x="${W - pad}" y="${H - 6}" text-anchor="end" class="pk-axis">${esc(points[points.length - 1].week)}</text>` : ""}</svg>`;
+  }
+  function renderPicks(view) {
+    const P = state.picks, s = P.summary;
+    const alert = s && s.bust ? `<div class="pk-alert" role="alert"><strong>Out of money.</strong> The AI's bankroll is down to ${money(s.bankroll)}, below the ${money(s.min_stake || 1)} minimum bet. No more picks can be placed unless the bankroll is topped up.</div>` : "";
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="AI Picks view">
+        <button type="button" data-picks-sub="week" aria-pressed="${P.sub === "week"}">This week</button>
+        <button type="button" data-picks-sub="record" aria-pressed="${P.sub === "record"}">Track record</button></span>
+        ${infoBtn("ai_picks", "How AI Picks works")}</div>`;
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">AI Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:70ch">Claude bets a $100 bankroll on the UFC like a real bettor: FanDuel's odds, any bet it likes (straight, parlays, method, rounds, over/unders), as much or as little as it wants. Picks go in every Friday before the card and are graded from results two sources agree on.</p></section>`;
+    if (!P.loaded) { view.innerHTML = `<div class="stack">${intro}${sub}<div class="loading">Loading the ledger…</div></div>`; return; }
+    if (!s && P.noDb) {
+      view.innerHTML = `<div class="stack">${intro}${sub}<div class="empty">The picks ledger lives in this page's database, which isn't available in this view. Open the page signed in to claude.ai to see it.</div></div>`;
+      return;
+    }
+    if (!s) {
+      view.innerHTML = `<div class="stack">${intro}${sub}<div class="empty">No picks yet. The first card's bets go in on <strong>${esc(nextFriday())}</strong>, starting from a <strong>$100.00</strong> bankroll.</div></div>`;
+      return;
+    }
+    let body;
+    if (P.sub === "week") {
+      const latest = P.weeks[0];
+      body = `${picksStats(s)}${latest ? weekPanel(latest) : ""}${!latest || latest.settled ? `<div class="empty">Next picks: <strong>${esc(nextFriday())}</strong>.</div>` : ""}`;
+    } else {
+      const kinds = Object.entries(s.by_kind || {});
+      const luck = s.bets ? `<p style="font-size:14px;margin:8px 0 0">Expected profit at the prices taken: <strong class="num">${signed(s.expected_profit)}</strong>; actual: <strong class="num">${signed(s.profit)}</strong>. ${Math.abs(s.profit - s.expected_profit) > Math.max(10, Math.abs(s.expected_profit)) ? "The gap is mostly variance: a handful of cards can't tell skill from luck." : ""}</p>` : "";
+      body = `${picksStats(s)}
+        <section class="panel"><h3 style="margin-top:0">Bankroll</h3>${curve(s.curve || [])}${luck}</section>
+        ${kinds.length ? `<section class="panel"><h3 style="margin-top:0">By bet type</h3><div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Type</th><th class="num">Bets</th><th class="num">Won</th><th class="num">Staked</th><th class="num">Profit</th><th class="num">ROI</th></tr></thead><tbody>
+          ${kinds.map(([k, v]) => `<tr><td>${esc({ moneyline: "Moneyline", prop: "Props", parlay: "Parlays" }[k] || k)}</td><td class="num">${v.bets}</td><td class="num">${v.won}</td><td class="num">${money(v.staked)}</td><td class="num">${signed(v.profit)}</td><td class="num">${v.staked ? ((v.profit / v.staked) * 100).toFixed(1) + "%" : "—"}</td></tr>`).join("")}</tbody></table></div></section>` : ""}
+        <h3 style="margin:4px 0 0">Every card</h3>
+        ${P.weeks.length ? P.weeks.map((w) => weekPanel(w)).join("") : `<div class="empty">No cards yet.</div>`}`;
+    }
+    view.innerHTML = `<div class="stack">${alert}${intro}${sub}${body}<p class="muted" style="font-size:12px;margin:0">Updated ${esc(when(s.updated))}. For entertainment and research: a model's picks, not betting advice.</p></div>`;
+  }
 
   // ------------------------------------------------------ corner search
   const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -1790,9 +1925,15 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const db = window.claude && typeof window.claude.use === "function" ? await window.claude.use("db").catch(() => null) : null;
     if (db) {
       state.store = dbStore(db); state.storeKind = "db";
+      state.picks.fromDb = true;
       // The database is the source of truth once it answers.
       state.adj = { fighters: {}, matchups: {}, weights: {} };
       render();
+    } else {
+      // No page database in this view: a local ai_picks.json (preview) if there is one.
+      fetch("ai_picks.json").then((r) => (r.ok ? r.json() : null)).then((docs) => {
+        if (docs) setPicks(docs); else { state.picks.loaded = true; state.picks.noDb = true; render(); }
+      }).catch(() => { state.picks.loaded = true; state.picks.noDb = true; render(); });
     }
   }
   boot();

@@ -79,6 +79,10 @@ def parse_card(html: str) -> List[Dict[str, object]]:
                 "b": _clean(b_raw),
                 "title": title,
                 "result": cells[4].text().strip() if len(cells) > 4 else "",
+                # After the event: "def." means the left fighter won; round and clock of the finish.
+                "decided": cells[2].text().strip().lower() in ("def.", "def"),
+                "round": cells[5].text().strip() if len(cells) > 5 else "",
+                "time": cells[6].text().strip() if len(cells) > 6 else "",
             })
     # Bouts announced but not yet slotted into the card are a bulleted list:
     # "Bantamweight bout: Malcolm Wellmaker vs. Otari Tanzilovi [6]".

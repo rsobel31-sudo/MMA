@@ -631,6 +631,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("dirs", nargs="+")
     p.add_argument("--out", required=True)
     p.set_defaults(func=cmd_merge)
+
+    from .picks_cli import register as register_picks
+    register_picks(sub, data_arg)
     return ap
 
 
