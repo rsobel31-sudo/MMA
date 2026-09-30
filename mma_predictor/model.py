@@ -23,7 +23,6 @@ PRIOR_WEIGHTS: Dict[str, float] = {
     "striking_rating": 0.30,
     "wrestling_rating": 0.30,
     "grappling_rating": 0.25,
-    "intangibles_rating": 0.30,
     "striking_exchange": 0.35,
     "striking_defense": 0.10,
     "power_vs_chin": 0.25,
@@ -40,8 +39,20 @@ PRIOR_WEIGHTS: Dict[str, float] = {
     "cardio": 0.20,
     "schedule_strength": 0.30,
     "outside_rating": 0.30,
+    "size": 0.30,
+    "size_gap": 0.45,
+    "height": 0.03,
     "stance": 0.05,
 }
+
+
+# Weights set from MMA knowledge, not fitted: the data has almost no bouts that exercise them.
+# size_gap: each 5% of weight beyond a full division (15%) is worth 0.45 log-odds, on top of the
+# learned size, height and reach effects. 205 vs 155 lb (~28%) adds about +1.2; a heavyweight
+# against a lightweight (~48%) about +2.6. Starting at 15% leaves the backtest unchanged (log-loss
+# 0.6321 vs 0.6318 without it), since real bouts that far apart are almost nonexistent; starting
+# at 10% cost 0.0016, because fighters moving up one division are usually the stronger ones.
+FIXED_WEIGHTS = {"size_gap": 0.45}
 
 
 def sigmoid(z: float) -> float:
@@ -123,6 +134,7 @@ class WinModel:
                 g = grad[j] / n + penalty * (w[j] - mu[j])
                 w[j] -= lr * g
         self.weights = dict(zip(names, w))
+        self.weights.update(FIXED_WEIGHTS)
         self.trained_on = n
         return FitReport(n, iterations, _log_loss(rows, y, w), prior_ll)
 

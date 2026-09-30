@@ -334,6 +334,7 @@ dialog.info-dlg { border: 0; border-radius: 20px; padding: 26px 28px; box-shadow
 dialog.info-dlg h3 { font-size: 28px; }
 dialog.info-dlg dt { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .08em; }
 .mini { border-radius: 999px; }
+input.iscore { width: 76px; text-align: center; }
 a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
 a:hover { color: var(--red); text-decoration-color: currentColor; }
 @media (max-width: 600px) { .wrap { padding-inline: 16px; } .panel { padding: 18px; border-radius: 16px; } header.top { padding-block: 16px; } }
@@ -380,7 +381,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   const ATTRS = [
     { k: "ext_rating", label: "Fight Matrix rating", kind: "int", better: "high", outside: true, help: "Fight Matrix's own Glicko-1 rating for this fighter after their last bout (an independent computer ranking; Fight Matrix displays it 500 points lower than raw Glicko). The model's outside-rating factor compares the two fighters' ratings; it is 0 when either has none. Type over it if you think it's off." },
     { k: "age", label: "Age", kind: "num", d: 1, unit: "yrs", better: "low", help: "Age on fight night, from date of birth. Feeds the age curve (a penalty that grows past 32, and a small one under 24) and multiplies wear and tear past 30." },
-    { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high", help: "Arm span in centimetres. The reach factor compares the two fighters per 10 cm; it matters most at range." },
+    { k: "reach_cm", label: "Reach", kind: "num", d: 0, unit: "cm", better: "high", help: "Arm span in centimetres. The reach factor compares the two fighters per 10 cm; it matters most at range. Used only when two sources agree on it." },
+    { k: "height_cm", label: "Height", kind: "num", d: 0, unit: "cm", better: "high", help: "Height in centimetres (Sherdog, checked against UFCStats). The height factor compares the two fighters per 10 cm." },
+    { k: "fight_weight", label: "Fighting weight", kind: "num", d: 0, unit: "lb", better: "high", help: "The division this fighter has been competing at: the middle of their last few bouts' weight classes (heavyweight counted as 250 lb). The size factor compares the two fighters' fighting weights, so a heavyweight facing a lightweight gets a large edge. Learned from bouts where fighters moved up or down a division. Type over it for a fight at a different weight." },
     { k: "slpm", label: "Sig. strikes landed / min", kind: "num", d: 2, better: "high", stat: true, help: `Significant strikes landed per minute of cage time, adjusted for how hard each opponent was to hit. ${SHRUNK} ${NEEDS_STATS}` },
     { k: "sapm", label: "Sig. strikes absorbed / min", kind: "num", d: 2, better: "low", stat: true, help: `Significant strikes absorbed per minute, adjusted for each opponent's output. ${SHRUNK} ${NEEDS_STATS}` },
     { k: "sig_diff5", label: "Sig. strike differential / 5 min", kind: "num", d: 1, signed: true, better: "high", stat: true, help: `Significant strikes landed minus absorbed per minute, times 5: the margin per five-minute round. Positive means out-landing opponents. Editing it keeps the fighter's total output and moves the split between landed and absorbed, which feeds the striking exchange factor. ${NEEDS_STATS}` },
@@ -541,8 +544,28 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   function record(s) { return `${s.wins + s.prior_wins}-${s.losses + s.prior_losses}`; }
   function predict(a, b, rounds, opts = {}) {
     const fa = fighter(a), fb = fighter(b);
-    const edit = opts.noManual ? 0 : state.engine.intangiblesEditLogit(state.byName.get(a), fa, state.byName.get(b), fb);
-    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b), intangiblesEdit: edit });
+    const sc = intangFor(a, b);
+    const edit = opts.noManual ? 0 : state.engine.intangiblesLogit(sc.a, sc.b);
+    return state.engine.predict(fa, fb, { rounds, weights: weights(), manual: opts.noManual ? 0 : manualFor(a, b), intangibles: edit });
+  }
+  /** Your 1-10 intangibles scores for this matchup, oriented to (a, b). */
+  function intangFor(a, b) {
+    const md = matchupDoc(a, b), sc = (md.doc && md.doc.intangibles) || {};
+    return md.flip ? { a: sc.b || {}, b: sc.a || {} } : { a: sc.a || {}, b: sc.b || {} };
+  }
+  const hasIntang = (doc) => !!doc && !!doc.intangibles && ["a", "b"].some((s) => Object.keys(doc.intangibles[s] || {}).length);
+  function saveIntang(side, key, value) {
+    const { a, b } = state.m;
+    const md = matchupDoc(a, b);
+    const doc = md.doc ? JSON.parse(JSON.stringify(md.doc)) : { a, b, logit: 0, note: "" };
+    const stored = md.flip ? (side === "a" ? "b" : "a") : side;
+    doc.intangibles = doc.intangibles || { a: {}, b: {} };
+    doc.intangibles[stored] = doc.intangibles[stored] || {};
+    if (value === null) delete doc.intangibles[stored][key];
+    else doc.intangibles[stored][key] = value;
+    if (!doc.logit && !doc.note && !hasIntang(doc)) { delete state.adj.matchups[md.id]; state.store.deleteMatchup(md.id); return; }
+    state.adj.matchups[md.id] = doc;
+    later("matchups/" + md.id, () => state.store.saveMatchup(md.id, doc).then(() => setStatus("Saved")));
   }
   function confidence(p, a, b) {
     const edge = Math.abs(p - 0.5), thin = Math.min(a.fights, b.fights) < 3;
@@ -551,7 +574,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     return thin ? "Low, thin data" : "Coin-flip range";
   }
   function adjCount() {
-    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note).length + Object.keys(state.adj.weights).length + state.commentary.length;
+    return Object.keys(state.adj.fighters).length + Object.values(state.adj.matchups).filter((m) => m.logit || m.note || hasIntang(m)).length + Object.keys(state.adj.weights).length + state.commentary.length;
   }
   function fmt(attr, v) {
     if (v === null || v === undefined) return "—";
@@ -813,9 +836,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
               <tr class="cat"><td class="va">${catCell(fa, fb, cat, "a")}</td><td class="attr"><strong>${cat[0].toUpperCase() + cat.slice(1)}</strong>${infoBtn(cat, cat)}</td><td class="vb">${catCell(fa, fb, cat, "b")}</td></tr>
               ${keys.map((k) => tapeRow(RATING_ATTRS[k], a, fa, b, fb)).join("")}`).join("")}
             ${ATTRS.filter((at) => at.outside).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
-            ${Object.keys(INTANG_ATTRS).length ? `
-              <tr class="cat"><td class="va">${catCell(fa, fb, "intangibles", "a")}</td><td class="attr"><strong>Intangibles</strong>${infoBtn("intangibles", "Intangibles")}<div class="muted" style="font-size:11px;font-weight:400">separate from overall; your edits move the prediction</div></td><td class="vb">${catCell(fa, fb, "intangibles", "b")}</td></tr>
-              ${Object.values(INTANG_ATTRS).map((at) => tapeRow(at, a, fa, b, fb)).join("")}` : ""}
+            ${intangRows(a, b)}
             <tr class="group"><td colspan="3">Career stats</td></tr>
             ${ATTRS.filter((at) => !at.wear && !at.outside).map((at) => tapeRow(at, a, fa, b, fb)).join("")}
             <tr class="group"><td colspan="3">Wear and tear <span>Mileage and damage, weighted more heavily past 30. A 30-year-old with 50 fights is older than one with 5.</span></td></tr>
@@ -946,13 +967,13 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     }
     if (key === "intangibles") {
       return { title: "Intangibles", key, rows: [
-        ["What it measures", "The things stats miss: " + (IN.keys || []).map((k) => IN.labels[k]).join(", ") + ". The average of the seven."],
-        ["How it's used", "Kept separate from the overall rating. It is its own factor in the prediction, and your edits count extra: each point you move it is worth half a point of overall rating."],
-        ["Starting values", IN.method_note || ""]] };
+        ["What it measures", "The things stats miss: " + (IN.keys || []).map((k) => IN.labels[k]).join(", ") + "."],
+        ["Your call", "Nothing is filled in. Score each fighter from 1 (poor) to 10 (elite) for this specific matchup, from what you know. Only qualities you score for both fighters count."],
+        ["How it's used", `Adds ${IN.weight ?? 0.15} log-odds per point of average score gap to the prediction: a one-point edge across the board is worth about 4 percentage points near a coin flip, and 10 vs 1 on everything about 29.`]] };
     }
     if (key.startsWith("i_") && IN.help) {
       const k = key.slice(2);
-      return { title: IN.labels[k], key, rows: [["What it measures", IN.help[k]], ["Starting value", (IN.method || {})[k] || ""], ["Your call", "Records only hint at this. Type over it with what you've seen; the edit moves the prediction directly."]] };
+      return { title: IN.labels[k], key, rows: [["What it measures", IN.help[k]], ["Your call", "Score each fighter 1 (poor) to 10 (elite) for this matchup. Blank means not scored; it only counts once both fighters have a score."]] };
     }
     const at = ATTRS.find((x) => x.k === key);
     if (at && at.help) return { title: at.label, key, rows: [["What it measures", at.help]] };
@@ -978,6 +999,16 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
   }
 
+  function intangRows(a, b) {
+    const IN = state.data.intangibles || { keys: [] };
+    if (!IN.keys.length) return "";
+    const sc = intangFor(a, b), lg = state.engine.intangiblesLogit(sc.a, sc.b);
+    const scored = IN.keys.filter((k) => sc.a[k] != null && sc.b[k] != null).length;
+    const cell = (side, k) => `<span class="cell ${(side === "a" ? sc.a : sc.b)[k] != null ? "edited" : ""}"><input id="i-${side}-${k}" class="iscore" type="number" inputmode="numeric" min="1" max="10" step="1" placeholder="1–10" value="${(side === "a" ? sc.a : sc.b)[k] ?? ""}" data-intang="${side}|${k}" aria-label="${esc(IN.labels[k])} for ${esc(side === "a" ? a : b)}, 1 to 10"></span>`;
+    return `<tr class="group"><td colspan="3">Intangibles${infoBtn("intangibles", "Intangibles")} <span>Your 1–10 read for this matchup. Left blank, they don't count; only qualities you score for both fighters do.</span></td></tr>
+      ${IN.keys.map((k) => `<tr><td class="va">${cell("a", k)}</td><td class="attr">${esc(IN.labels[k])}${infoBtn("i_" + k, IN.labels[k])}</td><td class="vb">${cell("b", k)}</td></tr>`).join("")}
+      <tr><td colspan="3" class="muted" style="text-align:center;font-size:13px">${scored ? `${scored} of ${IN.keys.length} scored for both · moves the pick ${Math.abs(lg) < 1e-9 ? "nowhere (even)" : `toward <strong>${esc(lg > 0 ? a : b)}</strong> (${lg > 0 ? "+" : "−"}${Math.abs(lg).toFixed(2)} log-odds)`}` : "Not scored yet: the prediction is data only."}</td></tr>`;
+  }
   function compare(at, x, y) {
     if (x == null || y == null || Math.abs(x - y) < 1e-9) return 0;
     return (x > y ? 1 : -1) * (at.better === "low" ? -1 : 1);
@@ -1435,7 +1466,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
 
   function renderAdjust(view) {
     const f = Object.entries(state.adj.fighters);
-    const m = Object.entries(state.adj.matchups).filter(([, v]) => v.logit || v.note);
+    const m = Object.entries(state.adj.matchups).filter(([, v]) => v.logit || v.note || hasIntang(v));
     const w = Object.entries(state.adj.weights);
     const exportObj = {
       fighters: Object.fromEntries(f.map(([n, v]) => [n, v])),
@@ -1485,7 +1516,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const md = matchupDoc(a, b);
     const logit = md.flip ? -value : value;
     const doc = md.doc ? Object.assign({}, md.doc, { logit, note }) : { a, b, logit, note };
-    if (!doc.logit && !doc.note) { delete state.adj.matchups[md.id]; state.store.deleteMatchup(md.id); return; }
+    if (!doc.logit && !doc.note && !hasIntang(doc)) { delete state.adj.matchups[md.id]; state.store.deleteMatchup(md.id); return; }
     state.adj.matchups[md.id] = doc;
     later("matchups/" + md.id, () => state.store.saveMatchup(md.id, doc).then(() => setStatus("Saved")));
   }
@@ -1571,7 +1602,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (t.id === "import-btn") {
       let obj; try { obj = JSON.parse($("#import-json").value); } catch (err) { setStatus("That isn't valid JSON. Check for a missing brace or quote."); return; }
       for (const [n, v] of Object.entries(obj.fighters || {})) { state.adj.fighters[n] = { elo: +v.elo || 0, overrides: v.overrides || {}, note: v.note || "" }; state.store.saveFighter(n, state.adj.fighters[n]); }
-      for (const v of obj.matchups || []) { const id = matchupKey(v.a, v.b); state.adj.matchups[id] = { a: v.a, b: v.b, logit: +v.logit || 0, note: v.note || "" }; state.store.saveMatchup(id, state.adj.matchups[id]); }
+      for (const v of obj.matchups || []) { const id = matchupKey(v.a, v.b); state.adj.matchups[id] = { a: v.a, b: v.b, logit: +v.logit || 0, note: v.note || "", ...(v.intangibles ? { intangibles: v.intangibles } : {}) }; state.store.saveMatchup(id, state.adj.matchups[id]); }
       if (obj.weights) { Object.assign(state.adj.weights, obj.weights); state.store.saveWeights(state.adj.weights); }
       render(); setStatus("Merged"); return;
     }
@@ -1585,6 +1616,13 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === low)
         || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || v);
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
+    }
+    if (t.dataset.intang) {
+      const [side, key] = t.dataset.intang.split("|");
+      const v = t.value.trim() === "" ? null : Math.round(Number(t.value));
+      if (v !== null && !(v >= 1 && v <= 10)) { setStatus("Intangibles are scored 1 to 10."); t.value = ""; return; }
+      saveIntang(side, key, v);
+      render(); return;
     }
     if (t.dataset.attr) {
       const at = attrFor(t.dataset.attr), n = t.dataset.fighter;
@@ -1646,7 +1684,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     state.data = data;
     state.engine = MMAEngine.makeEngine(data);
     const IN = data.intangibles || { keys: [], labels: {}, help: {} };
-    INTANG_ATTRS = Object.fromEntries(IN.keys.map((k) => [k, { k: "i_" + k, label: IN.labels[k], help: IN.help[k], kind: "int", better: "high", rating: true }]));
+    INTANG_ATTRS = {};  // intangibles are your 1-10 scores per matchup (tale of the tape), not fighter attributes
     RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
     $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">` + (f.aka || []).map((x) => `<option value="${esc(x)}" label="${esc(f.name)}">`).join("")).join("");

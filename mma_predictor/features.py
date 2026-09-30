@@ -33,7 +33,6 @@ FEATURES: List[str] = [
     "striking_rating",
     "wrestling_rating",
     "grappling_rating",
-    "intangibles_rating",
     "striking_exchange",
     "striking_defense",
     "power_vs_chin",
@@ -50,6 +49,9 @@ FEATURES: List[str] = [
     "cardio",
     "schedule_strength",
     "outside_rating",
+    "size",
+    "size_gap",
+    "height",
     "stance",
 ]
 
@@ -58,7 +60,6 @@ FEATURE_LABELS: Dict[str, str] = {
     "striking_rating": "striking ratings matchup",
     "wrestling_rating": "wrestling ratings matchup",
     "grappling_rating": "grappling ratings matchup",
-    "intangibles_rating": "intangibles (athleticism, durability, killer instinct...)",
     "striking_exchange": "projected striking exchanges",
     "striking_defense": "striking defence",
     "power_vs_chin": "knockdown power vs opponent's chin",
@@ -75,14 +76,24 @@ FEATURE_LABELS: Dict[str, str] = {
     "cardio": "cardio / late-round performance",
     "schedule_strength": "strength of schedule",
     "outside_rating": "Fight Matrix rating edge",
+    "size": "size (weight class fought at)",
+    "size_gap": "size mismatch beyond a division",
+    "height": "height",
     "stance": "stance matchup",
     "manual": "your matchup read",
-    "intangibles_edit": "your intangibles edits",
+    "intangibles": "your intangibles (1-10 scores)",
 }
 
 
 def _clip(x: float, lo: float = -3.0, hi: float = 3.0) -> float:
     return max(lo, min(hi, x))
+
+
+def _size_units(a: FighterSnapshot, b: FighterSnapshot) -> float:
+    """How much heavier A fights than B, in 5% steps (0 unless both fighting weights are known)."""
+    if not a.fight_weight or not b.fight_weight:
+        return 0.0
+    return math.log(a.fight_weight / b.fight_weight) / 0.05
 
 
 def age_penalty(age: Optional[float]) -> float:
@@ -168,7 +179,6 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         "striking_rating": _clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800.0),
         "wrestling_rating": _clip(edge("td_off", "td_def") / 400.0),
         "grappling_rating": _clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200.0),
-        "intangibles_rating": _clip((a.intangibles_rating - b.intangibles_rating) / 400.0),
         "striking_exchange": _clip((lands_on(a, b) - lands_on(b, a)) / 3.0),
         "striking_defense": _clip((a.str_def - b.str_def) * 10.0),
         "power_vs_chin": _clip(2.0 * (a.kd_per15 * chin_vulnerability(b) - b.kd_per15 * chin_vulnerability(a))),
@@ -186,5 +196,12 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         "schedule_strength": _clip((a.sos - b.sos) / 200.0),
         # Fight Matrix Glicko rating (point in time); 0 unless both fighters have one.
         "outside_rating": _clip((a.ext_rating - b.ext_rating) / 400.0) if a.ext_rating is not None and b.ext_rating is not None else 0.0,
+        # Size: log ratio of fighting weights in 5% steps (about a third of a division); 0 unless both
+        # known. "size" is learned from bouts within about a division of each other; "size_gap" is the
+        # part beyond 15% (more than a full division), which real bouts almost never reach, so its
+        # weight is set from MMA knowledge (model.FIXED_WEIGHTS) rather than fitted.
+        "size": _clip(_size_units(a, b)),
+        "size_gap": _clip(math.copysign(max(0.0, abs(_size_units(a, b)) - 3.0), _size_units(a, b)), -10.0, 10.0),
+        "height": (a.bio.height_cm - b.bio.height_cm) / 10.0 if a.bio.height_cm and b.bio.height_cm else 0.0,
         "stance": _stance(a, b),
     }

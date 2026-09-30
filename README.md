@@ -143,28 +143,44 @@ Without per-bout stats (Sherdog/Tapology records), only finishes and results
 inform the categories: control, escapes and ground and pound move together
 and takedown offence/defence can't be told apart. UFCStats data fills these in.
 
-### Intangibles (fourth category)
+### Intangibles: your 1-10 read, per matchup
 
-Seven qualities on the same 1500-average scale, estimated from the record
-(`mma_predictor/intangibles.py`) and meant to be edited from what you've seen:
+Seven qualities the data can't see: athleticism, durability (wear and tear),
+killer instinct, cardio, fight IQ, resilience / heart and big-fight
+experience. **Nothing is filled in.** In the tale of the tape you score each
+fighter from 1 (poor) to 10 (elite) for that specific matchup; the scores are
+saved with the matchup (either corner order) in your adjustments.
 
-| Quality | Data estimate |
-| --- | --- |
-| Athleticism | age curve (prime 24–30) plus share of early wins |
-| Durability (wear and tear) | inverse of the age-weighted wear index |
-| Killer instinct | finish rate and how early the finishes come |
-| Cardio | win rate in bouts reaching round 3+ |
-| Fight IQ | decision record (split decisions count extra) |
-| Resilience / heart | record in the fight after a loss |
-| Big-fight experience | five-round and title fights, and their results |
+Only qualities scored for both fighters count. Their average gap moves the
+prediction: `0.15 x mean(score_A - score_B)` log-odds
+(`mma_predictor/intangibles.py`). A one-point edge across the board is worth
+about 4 percentage points near a coin flip; the largest possible edge (10 vs
+1 on everything) about 29, enough to decide close fights but not to overturn
+a mismatch the data is sure about. It shows as "your intangibles (1-10
+scores)" in What's driving it. In adjustments JSON:
+`{"a": "A", "b": "B", "intangibles": {"a": {"cardio": 8}, "b": {"cardio": 5}}}`.
 
-The Intangibles rating is their average. It stays separate from overall (the
-record-based estimates added almost nothing to backtest accuracy, and folding
-them into overall hurt), and enters the model as its own feature (learned
-weight ≈ 0.31). Your edits count more: each point you move a fighter's
-Intangibles rating counts as half a point of overall rating, shown as "your
-intangibles edits" in What's driving it. Edit them in the tale of the tape
-(`i_<key>` overrides in adjustments JSON).
+(An earlier version estimated these from the record on the rating scale; the
+estimates added almost nothing to the backtest, so they're gone.)
+
+### Size: weight, height and reach
+
+- **Fighting weight**: the middle division of each fighter's last few bouts
+  (UFCStats records the class of every UFC bout; heavyweight counts as 250 lb).
+- **Size** (learned): the log ratio of fighting weights, in 5% steps, capped at
+  15%. Within a division or so the data finds only a small effect, because
+  fighters who move up are usually the stronger ones.
+- **Size mismatch** (set from MMA knowledge, not fitted): each 5% beyond a full
+  division (15%) adds 0.45 log-odds. Real bouts almost never reach that range,
+  so the data can't learn it; weight classes exist because size dominates
+  there. Heavyweight against lightweight (~48% heavier) adds about +2.6.
+- **Height** and **reach** (learned): about 0.11 and 0.14 log-odds per 10 cm.
+
+Before this, Jon Jones vs Islam Makhachev came out 44% Jones (age, layoff and
+Makhachev's wrestling, with nothing for an 80 lb gap); now 93%. The backtest is
+unchanged (log-loss 0.6321 vs 0.6318). Starting the mismatch at 10% instead
+cost 0.0016. All three can be retuned in Model weights, and fighting weight,
+height and reach are editable in the tale of the tape.
 
 ### Other attributes
 

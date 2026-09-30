@@ -31,8 +31,8 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from .history import FighterSnapshot
-from .intangibles import INTANGIBLES
-from .intangibles import category as intangibles_category
+from .intangibles import clean as clean_intangibles
+from .intangibles import logit as intangibles_logit
 from .skills import SUB_RATINGS, SkillConfig, category_rating, overall_rating
 
 # Snapshot attributes that can be overridden (numeric only).
@@ -40,9 +40,9 @@ EDITABLE = (
     "slpm", "sapm", "sig_diff5", "str_acc", "str_def", "kd_per15", "kd_absorbed_per15",
     "td_per15", "td_acc", "td_def", "sub_per15", "ctrl_share", "ctrl_against_share",
     "finish_rate", "ko_loss_rate", "sub_loss_rate", "recent_ko_losses", "late_win_rate",
-    "form", "streak", "layoff_days", "sos", "age", "reach_cm",
+    "form", "streak", "layoff_days", "sos", "age", "reach_cm", "height_cm", "fight_weight",
     "ko_losses", "kd_absorbed", "sig_absorbed", "minutes", "ext_rating",
-) + tuple("r_" + k for k in SUB_RATINGS) + tuple("i_" + k for k in INTANGIBLES)
+) + tuple("r_" + k for k in SUB_RATINGS)
 INT_FIELDS = ("recent_ko_losses", "streak", "layoff_days", "ko_losses", "kd_absorbed", "sig_absorbed")
 CATEGORY_WEIGHTS = SkillConfig().category_weights
 
@@ -60,6 +60,8 @@ class MatchupAdjustment:
     b: str
     logit: float = 0.0
     note: str = ""
+    # Your 1-10 scores for this matchup: {"a": {quality: score}, "b": {...}} (intangibles.py).
+    intangibles: Dict[str, Dict[str, float]] = field(default_factory=dict)
 
 
 @dataclass
@@ -79,7 +81,8 @@ class Adjustments:
             for name, v in (d.get("fighters") or {}).items()
         }
         matchups = [
-            MatchupAdjustment(m["a"], m["b"], float(m.get("logit", 0) or 0), m.get("note", "") or "")
+            MatchupAdjustment(m["a"], m["b"], float(m.get("logit", 0) or 0), m.get("note", "") or "",
+                              {side: clean_intangibles((m.get("intangibles") or {}).get(side)) for side in ("a", "b")})
             for m in d.get("matchups") or []
         ]
         return cls(fighters, {k: float(v) for k, v in (d.get("weights") or {}).items()}, matchups)
@@ -109,18 +112,14 @@ class Adjustments:
         bio = s.bio
         # The Elo nudge shifts every sub-rating, so the overall moves by exactly that much.
         ratings = {k: v + adj.elo for k, v in s.ratings.items()}
-        intang = dict(s.intangibles)
         for k, v in adj.overrides.items():
-            if k.startswith("i_"):
-                if k[2:] in intang:
-                    intang[k[2:]] = v
-            elif k.startswith("r_"):
+            if k.startswith("r_"):
                 if k[2:] in ratings:
                     ratings[k[2:]] = v
             elif k == "sig_diff5":
                 continue  # applied below, after any landed/absorbed edits
-            elif k == "reach_cm":
-                bio = dataclasses.replace(bio, reach_cm=v)
+            elif k in ("reach_cm", "height_cm"):
+                bio = dataclasses.replace(bio, **{k: v})
             elif k in INT_FIELDS:
                 changes[k] = int(round(v))
             else:
@@ -141,8 +140,6 @@ class Adjustments:
         else:
             changes["elo"] = s.elo + adj.elo
         changes["proven"] = s.proven + (changes["elo"] - s.elo)
-        if intang:
-            changes.update(intangibles=intang, intangibles_rating=intangibles_category(intang))
         return dataclasses.replace(s, bio=bio, **changes)
 
     def matchup_logit(self, a: str, b: str) -> float:
@@ -152,6 +149,17 @@ class Adjustments:
                 total += m.logit
             elif (m.a, m.b) == (b, a):
                 total -= m.logit
+        return total
+
+    def intangibles_logit(self, a: str, b: str) -> float:
+        """Log-odds toward ``a`` from your 1-10 intangibles scores for this matchup (either order)."""
+        total = 0.0
+        for m in self.matchups:
+            sc = m.intangibles or {}
+            if (m.a, m.b) == (a, b):
+                total += intangibles_logit(sc.get("a"), sc.get("b"))
+            elif (m.a, m.b) == (b, a):
+                total += intangibles_logit(sc.get("b"), sc.get("a"))
         return total
 
     def notes_for(self, a: str, b: str) -> List[str]:

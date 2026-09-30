@@ -19,10 +19,9 @@ import dataclasses
 
 from .data import METHOD_BUCKETS, CornerStats, FighterBio, Fight, Method
 from .ratings import EloConfig, EloRatings
-from .intangibles import category as intangibles_category
-from .intangibles import estimate as estimate_intangibles
 from .scouting import Scouting
 from .skills import SkillConfig, SkillRatings
+from .weights import division_lbs
 
 if TYPE_CHECKING:
     from .external import ExternalRatings
@@ -121,13 +120,12 @@ class FighterSnapshot:
     ko_losses: int = 0
     kd_absorbed: int = 0
     sig_absorbed: int = 0
-    intangibles: Dict[str, float] = field(default_factory=dict)  # see intangibles.py
-    intangibles_rating: float = 1500.0
     all_appearances: List[Appearance] = field(default_factory=list, repr=False)
     recent: List[Appearance] = field(default_factory=list, repr=False)
     # Base rates of the sport this fighter competes in (men's and women's differ).
     priors: Priors = field(default=DEFAULT_PRIORS, repr=False)
     ext_rating: Optional[float] = None  # Fight Matrix Glicko before as_of (external.py)
+    fight_weight: Optional[float] = None  # lbs: typical division of recent bouts (weights.py)
 
     @property
     def sig_diff5(self) -> float:
@@ -362,7 +360,18 @@ class FightHistory:
         last = apps[-1].fight.date if apps else None
         ratings = self.skills.before(name, as_of)
         cats = self.skills.breakdown(ratings)
+        # Fighting weight: the median division of the last few bouts with a recorded class. The
+        # listed (current) division is only a fallback when predicting ahead: for past dates it
+        # can be years out of step with the division the fighter competed in then.
+        recent_lbs = sorted(w for w in (division_lbs(a.fight.weight_class) for a in apps[-4:]) if w)
+        if recent_lbs:
+            fight_weight = recent_lbs[len(recent_lbs) // 2]
+        elif as_of > self.last_date():
+            fight_weight = division_lbs(bio.weight_class)
+        else:
+            fight_weight = None
         snap = FighterSnapshot(
+            fight_weight=fight_weight,
             priors=p,
             ext_rating=self.external.before(name, as_of) if self.external else None,
             name=name,
@@ -413,8 +422,6 @@ class FightHistory:
             recent=apps[-5:],
             all_appearances=apps,
         )
-        snap.intangibles = estimate_intangibles(snap)
-        snap.intangibles_rating = intangibles_category(snap.intangibles)
         return snap
 
 

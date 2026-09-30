@@ -33,8 +33,13 @@ const out = input.pairs.map(([a, b, rounds]) => {
     if (m.a === a && m.b === b) manual += m.logit;
     else if (m.a === b && m.b === a) manual -= m.logit;
   }
-  const edit = eng.intangiblesEditLogit(byName[a], fa, byName[b], fb);
-  const r = eng.predict(fa, fb, { rounds, weights, manual, intangiblesEdit: edit });
+  let edit = 0;
+  for (const m of adj.matchups || []) {
+    const sc = m.intangibles || {};
+    if (m.a === a && m.b === b) edit += eng.intangiblesLogit(sc.a, sc.b);
+    else if (m.a === b && m.b === a) edit += eng.intangiblesLogit(sc.b, sc.a);
+  }
+  const r = eng.predict(fa, fb, { rounds, weights, manual, intangibles: edit });
   return { p: r.p, methods: r.methods, x: r.x, n_insights: r.insights.length };
 });
 process.stdout.write(JSON.stringify(out));
@@ -62,10 +67,12 @@ def test_js_engine_matches_python(tmp_path, with_adjustments):
         adj = {
             "fighters": {
                 names[0]: {"elo": 60, "overrides": {"td_def": 0.9, "slpm": 6.1, "streak": 3, "r_td_def": 1700, "sig_diff5": -2}, "note": "x"},
-                names[3]: {"elo": 0, "overrides": {"r_sub_off": 1400, "r_power": 1650, "i_athleticism": 1780, "i_killer_instinct": 1300, "sig_diff5": 3.5, "slpm": 5.2}, "note": ""},
+                names[3]: {"elo": 0, "overrides": {"r_sub_off": 1400, "r_power": 1650, "sig_diff5": 3.5, "slpm": 5.2}, "note": ""},
             },
-            "weights": {"wrestling_edge": 0.8, "overall": 0.9, "grappling_rating": 0.6, "intangibles_rating": 0.7},
-            "matchups": [{"a": names[2], "b": names[1], "logit": 0.4, "note": ""}],
+            "weights": {"wrestling_edge": 0.8, "overall": 0.9, "grappling_rating": 0.6, "size": 0.5},
+            "matchups": [{"a": names[2], "b": names[1], "logit": 0.4, "note": "",
+                          "intangibles": {"a": {"cardio": 8, "fight_iq": 6, "athleticism": 4}, "b": {"cardio": 5, "fight_iq": 9}}},
+                         {"a": names[4], "b": names[5], "logit": 0, "note": "", "intangibles": {"a": {"durability": 2}, "b": {"durability": 9}}}],
         }
     predictor = FightPredictor(h, adjustments=Adjustments.from_dict(adj))
     script = tmp_path / "run.js"

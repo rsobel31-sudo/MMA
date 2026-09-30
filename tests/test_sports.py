@@ -51,3 +51,14 @@ def test_strike_differential_edit_keeps_output():
     assert abs(t.sig_diff5 - 4.0) < 1e-9
     assert abs((t.slpm + t.sapm) - (s.slpm + s.sapm)) < 1e-9
     assert abs(s.sig_diff5 - 5 * (s.slpm - s.sapm)) < 1e-9
+
+
+def test_intangibles_are_your_scores_per_matchup():
+    from mma_predictor.intangibles import logit
+
+    assert logit({}, {}) == 0.0  # nothing filled in: no effect
+    assert logit({"cardio": 8}, {"fight_iq": 9}) == 0.0  # only qualities scored for both count
+    assert abs(logit({"cardio": 8, "fight_iq": 6}, {"cardio": 5, "fight_iq": 6}) - 0.15 * 1.5) < 1e-9
+    assert logit({"cardio": 11}, {"cardio": 1}) == 0.0  # off the 1-10 scale is ignored
+    adj = Adjustments.from_dict({"matchups": [{"a": "X", "b": "Y", "intangibles": {"a": {"cardio": 9}, "b": {"cardio": 3}}}]})
+    assert abs(adj.intangibles_logit("X", "Y") - 0.9) < 1e-9 and abs(adj.intangibles_logit("Y", "X") + 0.9) < 1e-9

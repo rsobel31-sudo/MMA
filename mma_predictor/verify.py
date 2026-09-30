@@ -240,6 +240,10 @@ def build_verified(base_dir: Path, stats_dir: Path, statsfight_path: Path, out_d
                                         "ufcstats": o.winner, "sherdog": m.base.winner,
                                         "statsfight": sfm[1].get("a_result") and (sfm[1]["a"] if sfm[1]["a_result"] == "Win" else sfm[1]["b"] if sfm[1]["a_result"] == "Loss" else "none") if sfm else None})
             continue
+        # The division it was fought at (UFCStats has it; Sherdog records don't), for the size feature.
+        brow0 = base_by_key.get((m.base.date.isoformat(), m.base.fighter_a, m.base.fighter_b))
+        if brow0 is not None and not brow0.get("weight_class") and o.weight_class:
+            brow0["weight_class"] = o.weight_class
         # Stats: confirmed by StatsFight, or (if it lacks the bout) internally consistent.
         chk = stats_check(o, sfm[1], sfm[0].swapped) if sfm else None
         if chk is not None:

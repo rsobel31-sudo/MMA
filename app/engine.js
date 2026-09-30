@@ -37,6 +37,7 @@
     const subShare = P.method_share["SUB"];
     const landsOn = (a, d) => a.slpm * ((1 - d.str_def) / (1 - P.str_def));
     const takedownsOn = (a, d) => a.td_per15 * ((1 - d.td_def) / (1 - P.td_def));
+    const sizeUnits = (a, b) => (a.fight_weight && b.fight_weight ? Math.log(a.fight_weight / b.fight_weight) / 0.05 : 0);
     const chin = (s) => (s.ko_loss_rate / (0.5 * koShare)) * (1 + (0.5 * s.kd_absorbed_per15) / P.kd_per15) / 1.5;
 
     function stance(a, b) {
@@ -58,7 +59,6 @@
         striking_rating: clip((edge("strike_off", "strike_def") + edge("power", "chin")) / 800),
         wrestling_rating: clip(edge("td_off", "td_def") / 400),
         grappling_rating: clip((edge("control", "scramble") + edge("gnp", "scramble") + edge("sub_off", "sub_def")) / 1200),
-        intangibles_rating: clip((a.intangibles - b.intangibles) / 400),
         striking_exchange: clip((landsOn(a, b) - landsOn(b, a)) / 3),
         striking_defense: clip((a.str_def - b.str_def) * 10),
         power_vs_chin: clip(2 * (a.kd_per15 * chin(b) - b.kd_per15 * chin(a))),
@@ -75,6 +75,9 @@
         cardio: (a.late_win_rate - b.late_win_rate) * (five ? 2 : 1),
         schedule_strength: clip((a.sos - b.sos) / 200),
         outside_rating: a.ext_rating != null && b.ext_rating != null ? clip((a.ext_rating - b.ext_rating) / 400) : 0,
+        size: clip(sizeUnits(a, b)),
+        size_gap: clip(Math.sign(sizeUnits(a, b)) * Math.max(0, Math.abs(sizeUnits(a, b)) - 3), -10, 10),
+        height: a.height_cm && b.height_cm ? (a.height_cm - b.height_cm) / 10 : 0,
         stance: stance(a, b),
       };
     }
@@ -184,8 +187,6 @@
       }
       out.sig_diff5 = 5 * (out.slpm - out.sapm);
       for (const cat of Object.keys(CATS)) out[cat] = categoryRating(out, cat);
-      const IK = (data.intangibles && data.intangibles.keys) || [];
-      if (IK.length) out.intangibles = IK.reduce((t, k) => t + out["i_" + k], 0) / IK.length;
       out.elo = overallRating(out);
       out.proven = s.proven + (out.elo - s.elo);  // uncertainty is unchanged by your edits
       return out;
@@ -202,7 +203,7 @@
         logit += contrib[k];
       }
       const manual = opts.manual || 0;
-      const edit = opts.intangiblesEdit || 0;
+      const edit = opts.intangibles || 0;
       const p = sigmoid((data.calibration_scale || 1) * logit + manual + edit);
       const da = methodDistribution(a, b, rounds), db = methodDistribution(b, a, rounds);
       const methods = { a: {}, b: {} };
@@ -212,17 +213,21 @@
       }
       const factors = Object.entries(contrib);
       if (manual) factors.push(["manual", manual]);
-      if (edit) factors.push(["intangibles_edit", edit]);
+      if (edit) factors.push(["intangibles", edit]);
       factors.sort((u, v) => Math.abs(v[1]) - Math.abs(u[1]));
       return { p, x, methods, factors, insights: insights(a, b, rounds), logit: (data.calibration_scale || 1) * logit + manual + edit };
     }
 
-    /** Same as predictor.intangibles_edit_logit: half an overall point per edited Intangibles point. */
-    function intangiblesEditLogit(baseA, adjA, baseB, adjB) {
-      return 0.5 * Q * ((adjA.intangibles - baseA.intangibles) - (adjB.intangibles - baseB.intangibles));
+    /** Same as intangibles.logit: WEIGHT x mean score gap over qualities scored 1-10 for both fighters. */
+    function intangiblesLogit(scoresA, scoresB) {
+      const IN = data.intangibles || { keys: [], weight: 0.15 };
+      const ok = (v) => v !== null && v !== undefined && v !== "" && !Number.isNaN(Number(v)) && Number(v) >= 1 && Number(v) <= 10;
+      const both = IN.keys.filter((k) => ok((scoresA || {})[k]) && ok((scoresB || {})[k]));
+      if (!both.length) return 0;
+      return (IN.weight ?? 0.15) * both.reduce((t, k) => t + Number(scoresA[k]) - Number(scoresB[k]), 0) / both.length;
     }
 
-    return { intangiblesEditLogit, features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };
+    return { intangiblesLogit, features, methodDistribution, classify, insights, predict, applyAdjustment, landsOn, takedownsOn, chin, categoryRating, overallRating };
   }
 
   function devig(oddsA, oddsB) {

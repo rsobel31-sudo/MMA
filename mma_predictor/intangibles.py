@@ -1,39 +1,29 @@
-"""Intangibles: the fourth rating category.
+"""Intangibles: your 1-10 read of each fighter, per matchup.
 
 Striking, Wrestling and Grappling are learned from results and stats. The
-intangibles are qualities the data only hints at, so each starts from a
-data-based estimate on the same 1500-average scale and is meant to be
-corrected by your own judgement (edit any of them in the web interface or
-via ``overrides`` in adjustments, e.g. ``"i_athleticism": 1700``).
+intangibles are the things the data can't see, so nothing is pre-filled:
+you score each fighter from 1 (poor) to 10 (elite) on any of the qualities
+below, for a specific matchup (a fighter's cardio matters more over five
+rounds; their athleticism may be gone by the time a fight happens).
 
-    athleticism        speed, explosiveness, strength
-                       estimate: age (peak years highest) + share of wins inside two rounds
-    durability         tread left on the tyres (wear and tear, inverted)
-                       estimate: wear index (mileage + damage absorbed), weighted more past 30
-    killer_instinct    closing the show when the chance comes
-                       estimate: share of wins that are finishes, especially early ones
-    cardio             holding up late
-                       estimate: win rate in fights that reach round 3+
-    fight_iq           winning the close ones
-                       estimate: decision record, split decisions counting as the closest
-    resilience         heart; bouncing back
-                       estimate: record in the fight right after a loss
-    big_fight          composure under the lights
-                       estimate: five-round and title fights, and results in them
+Only qualities scored for BOTH fighters count. Their average gap feeds the
+prediction:
 
-Every estimate is shrunk toward 1500 when there's little evidence, and clipped
-to 1100-1900 so no single proxy can dominate.
+    intangibles log-odds = WEIGHT x mean(score_a - score_b)
+
+With WEIGHT = 0.15, a one-point edge across the board is worth about 4
+percentage points near a coin flip, and the largest possible edge (10 vs 1
+on everything) about 1.35 log-odds (50% -> 79%): enough to decide close
+fights, not to overturn a mismatch the data is sure about.
+
+Stored with the matchup in adjustments:
+    {"a": "Fighter A", "b": "Fighter B", "logit": 0, "note": "",
+     "intangibles": {"a": {"cardio": 8}, "b": {"cardio": 5}}}
 """
 
 from __future__ import annotations
 
-import math
-from typing import TYPE_CHECKING, Dict, Tuple
-
-from .data import Method
-
-if TYPE_CHECKING:  # pragma: no cover
-    from .history import FighterSnapshot
+from typing import Dict, Mapping, Optional, Tuple
 
 INTANGIBLES: Tuple[str, ...] = (
     "athleticism", "durability", "killer_instinct", "cardio", "fight_iq", "resilience", "big_fight",
@@ -48,82 +38,35 @@ INTANGIBLE_LABELS: Dict[str, str] = {
     "big_fight": "Big-fight experience",
 }
 INTANGIBLE_HELP: Dict[str, str] = {
-    "athleticism": "Speed, explosiveness and strength. Estimated from age and early wins; mainly your call.",
-    "durability": "Tread left on the tyres: the inverse of wear and tear (fights, cage time, damage absorbed, age).",
-    "killer_instinct": "Closing the show when the chance comes: share of wins that are finishes, especially early.",
-    "cardio": "Holding up late: win rate in fights that reach round 3 or later.",
-    "fight_iq": "Winning the close ones: decision record, with split decisions counting as the closest.",
-    "resilience": "Heart: record in the fight right after a loss.",
-    "big_fight": "Composure under the lights: five-round and title fights, and results in them.",
+    "athleticism": "Speed, explosiveness and strength right now. 10 = elite for the division; 1 = well below it.",
+    "durability": "Tread left on the tyres: how much the body and chin have left after the fights, cage time and damage so far.",
+    "killer_instinct": "Closing the show: how reliably they finish a hurt opponent instead of letting them off the hook.",
+    "cardio": "Holding pace and power late, especially over five rounds.",
+    "fight_iq": "Game planning, adjusting mid-fight, winning close rounds and staying out of bad positions.",
+    "resilience": "Heart: coming back from being hurt or losing rounds, and from losses.",
+    "big_fight": "Composure under the lights: title fights, main events, hostile crowds.",
 }
-# How each starting value is computed, shown by the web interface's (i) buttons.
-INTANGIBLE_METHOD: Dict[str, str] = {
-    "athleticism": "1500 + 110 x age factor + 350 x (share of wins that were finishes in rounds 1-2, minus 30%). Age factor: "
-                   "+0.3 from 24 to 30, falling 0.2 a year after 30 and 0.05 a year below 24.",
-    "durability": "1500 - 70 x (wear penalty - 1.5). The wear penalty adds mileage (pro fights, cage time) and damage "
-                  "(KO/TKO losses, knockdowns and strikes absorbed), multiplied up past age 30.",
-    "killer_instinct": "1500 + 450 x (finish share of wins - 50%) + 250 x (early-finish share - 30%).",
-    "cardio": "1500 + 500 x (win rate in bouts that reached round 3 or later - 50%).",
-    "fight_iq": "1500 + 450 x (decision win share - 50%), split decisions counting 1.5x.",
-    "resilience": "1500 + 450 x (win rate in the fight right after a loss - 50%).",
-    "big_fight": "1500 + 70 x ln(1 + five-round/title fights) + 300 x (win rate in them - 50%).",
-}
-INTANGIBLE_METHOD_NOTE = ("Rates are shrunk toward 50% (or 30% for early finishes) so a short record stays near 1500, and values are "
-                "clipped to 1100-1900. The Intangibles rating is the average of all seven.")
-LO, HI = 1100.0, 1900.0
+WEIGHT = 0.15  # log-odds per point of average score gap
+SCALE = (1, 10)
 
 
-def _clip(v: float) -> float:
-    return max(LO, min(HI, v))
+def clean(scores: Optional[Mapping[str, object]]) -> Dict[str, float]:
+    """Only known qualities with a score in 1-10."""
+    out: Dict[str, float] = {}
+    for k, v in (scores or {}).items():
+        try:
+            x = float(v)  # type: ignore[arg-type]
+        except (TypeError, ValueError):
+            continue
+        if k in INTANGIBLES and SCALE[0] <= x <= SCALE[1]:
+            out[k] = x
+    return out
 
 
-def _shrunk_rate(wins: float, total: float, prior: float = 0.5, weight: float = 3.0) -> float:
-    return (wins + prior * weight) / (total + weight)
-
-
-def estimate(s: "FighterSnapshot") -> Dict[str, float]:
-    """Data-based starting values for one fighter (before any edits)."""
-    from .features import wear_penalty
-
-    apps = s.all_appearances
-    decided = [a for a in apps if a.result is not None]
-    wins = [a for a in decided if a.result]
-
-    # Athleticism: peak around 27-30, fading after; plus winning fast.
-    age = s.age if s.age is not None else 30.0
-    if age < 24:
-        youth = 0.3 - (24 - age) * 0.05  # often still raw
-    elif age <= 30:
-        youth = 0.3  # athletic prime
-    else:
-        youth = max(-1.5, 0.3 - (age - 30) / 5.0)
-    early_wins = sum(1 for a in wins if a.method.is_finish and a.fight.end_round <= 2)
-    early_share = _shrunk_rate(early_wins, len(wins), 0.3, 4)
-    athleticism = 1500 + 110 * youth + 350 * (early_share - 0.3)
-
-    durability = 1500 - 70 * (wear_penalty(s) - 1.5)
-
-    finish_share = _shrunk_rate(sum(1 for a in wins if a.method.is_finish), len(wins), 0.5, 4)
-    killer = 1500 + 450 * (finish_share - 0.5) + 250 * (early_share - 0.3)
-
-    cardio = 1500 + 500 * (s.late_win_rate - 0.5)
-
-    # Fight IQ: decisions are the fights decided by margins; split decisions most of all.
-    dec_w = sum(1.5 if a.method is Method.SPLIT_DEC else 1.0 for a in decided if a.method.is_decision and a.result)
-    dec_l = sum(1.5 if a.method is Method.SPLIT_DEC else 1.0 for a in decided if a.method.is_decision and not a.result)
-    fight_iq = 1500 + 450 * (_shrunk_rate(dec_w, dec_w + dec_l, 0.5, 4) - 0.5)
-
-    after_loss = [decided[i + 1] for i in range(len(decided) - 1) if decided[i].result is False]
-    resilience = 1500 + 450 * (_shrunk_rate(sum(1 for a in after_loss if a.result), len(after_loss), 0.5, 3) - 0.5)
-
-    big = [a for a in decided if a.fight.scheduled_rounds >= 5 or a.fight.title_fight]
-    big_rate = _shrunk_rate(sum(1 for a in big if a.result), len(big), 0.5, 3)
-    big_fight = 1500 + 70 * math.log1p(len(big)) + 300 * (big_rate - 0.5)
-
-    raw = {"athleticism": athleticism, "durability": durability, "killer_instinct": killer, "cardio": cardio,
-           "fight_iq": fight_iq, "resilience": resilience, "big_fight": big_fight}
-    return {k: round(_clip(v), 1) for k, v in raw.items()}
-
-
-def category(values: Dict[str, float]) -> float:
-    return sum(values[k] for k in INTANGIBLES) / len(INTANGIBLES)
+def logit(scores_a: Optional[Mapping[str, object]], scores_b: Optional[Mapping[str, object]]) -> float:
+    """Log-odds toward A from the qualities scored for both fighters (0 if none)."""
+    a, b = clean(scores_a), clean(scores_b)
+    both = [k for k in INTANGIBLES if k in a and k in b]
+    if not both:
+        return 0.0
+    return WEIGHT * sum(a[k] - b[k] for k in both) / len(both)

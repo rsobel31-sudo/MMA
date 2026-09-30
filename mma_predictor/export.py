@@ -20,7 +20,8 @@ from .model import PRIOR_WEIGHTS, WinModel
 from .analysis import upcoming_flags
 from .bios import division_label, write_bio
 from .sources.events import link_names
-from .intangibles import INTANGIBLE_METHOD_NOTE, INTANGIBLE_HELP, INTANGIBLE_LABELS, INTANGIBLE_METHOD, INTANGIBLES
+from .intangibles import INTANGIBLE_HELP, INTANGIBLE_LABELS, INTANGIBLES
+from .intangibles import WEIGHT as INTANGIBLE_WEIGHT
 from .skills import CATEGORIES, RATING_HELP, SUB_LABELS
 
 SNAPSHOT_FIELDS = (
@@ -30,7 +31,7 @@ SNAPSHOT_FIELDS = (
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
     "layoff_days", "sos", "quality_win_elo", "striking", "wrestling", "grappling",
-    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree", "rd", "proven", "ext_rating",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree", "rd", "proven", "ext_rating", "fight_weight",
 )
 
 
@@ -46,8 +47,6 @@ def snapshot_json(s: FighterSnapshot) -> Dict[str, Any]:
     out = {k: _round(getattr(s, k)) for k in SNAPSHOT_FIELDS}
     # Sub-ratings flattened as r_<key>, the same names adjustments use.
     out.update({"r_" + k: _round(v) for k, v in s.ratings.items()})
-    out.update({"i_" + k: _round(v) for k, v in s.intangibles.items()})
-    out["intangibles"] = _round(s.intangibles_rating)
     out.update(
         name=s.name,
         prior_wins=s.bio.prior_wins,
@@ -206,7 +205,7 @@ def export(
         "rating_labels": SUB_LABELS,
         "rating_help": RATING_HELP,
         "intangibles": {"keys": list(INTANGIBLES), "labels": INTANGIBLE_LABELS, "help": INTANGIBLE_HELP,
-                        "method": INTANGIBLE_METHOD, "method_note": INTANGIBLE_METHOD_NOTE},
+                        "weight": INTANGIBLE_WEIGHT, "scale": [1, 10]},
         "category_weights": history.skills.config.category_weights,
         "insights": insights,
         "upcoming": {"fetched": (upcoming or {}).get("fetched"), "source": (upcoming or {}).get("source"), "events": cards},
