@@ -102,6 +102,17 @@ class WinModel:
         mu = [prior.get(k, 0.0) for k in names]
         penalty = l2 / n
         prior_ll = _log_loss(rows, y, mu)
+        try:
+            import numpy as np
+        except ImportError:  # pure-Python fallback below (same maths, much slower)
+            np = None
+        if np is not None:
+            Xa, ya, wa, mua = np.array(rows, float), np.array(y, float), np.array(w, float), np.array(mu, float)
+            for _ in range(iterations):
+                err = 1.0 / (1.0 + np.exp(-(Xa @ wa))) - ya
+                wa -= lr * (Xa.T @ err / n + penalty * (wa - mua))
+            w = [float(v) for v in wa]
+            iterations = 0
         for _ in range(iterations):
             grad = [0.0] * len(names)
             for row, label in zip(rows, y):
