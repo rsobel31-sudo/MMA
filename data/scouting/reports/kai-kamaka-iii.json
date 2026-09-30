@@ -1,0 +1,40 @@
+{
+ "name": "Kai Kamaka III",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A Hawaiian featherweight back in the UFC in 2026: 1-1 since returning, most recently knocked out by Luke Riley in July. Accurate, high-volume striker (about 59% accuracy) who also absorbs a lot.",
+ "how_they_fight": {
+  "Striking": "About 5.3 significant strikes a minute at high accuracy.",
+  "Grappling": "Moderate wrestling.",
+  "Defense": "Absorbs about 5.8 a minute.",
+  "Pace & cardio": "Has gone five rounds (split loss to Diego Brandao, 2025).",
+  "Fight IQ": "Volume over power."
+ },
+ "patterns": [
+  "Accurate volume"
+ ],
+ "concerns": [
+  "Defensive leaks; coming off a KO loss"
+ ],
+ "keys_to_beat": [
+  "Counter his volume"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Andre Fili vs. Kai Kamaka III bolsters UFC Vegas 122",
+   "url": "https://www.bjpenn.com/mma-news/andre-fili/andre-fili-vs-kai-kamaka-iii-bolsters-ufc-vegas-122/",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

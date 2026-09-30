@@ -1,0 +1,40 @@
+{
+ "name": "Andre Fili",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A long-serving Team Alpha Male featherweight (27 UFC fights), 36, who has lost two straight, including a TKO to Vinicius Oliveira in June. Many of his fights are close split decisions.",
+ "how_they_fight": {
+  "Striking": "Long, busy kickboxer; absorbs more than he lands lately (about 4.6 a minute).",
+  "Grappling": "Good takedown defense (about 81%).",
+  "Defense": "Durability showing wear.",
+  "Pace & cardio": "Three solid rounds.",
+  "Fight IQ": "Veteran."
+ },
+ "patterns": [
+  "Volume at range"
+ ],
+ "concerns": [
+  "Age and recent stoppage"
+ ],
+ "keys_to_beat": [
+  "Pressure and heavy shots"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Andre Fili vs. Kai Kamaka III bolsters UFC Vegas 122",
+   "url": "https://www.bjpenn.com/mma-news/andre-fili/andre-fili-vs-kai-kamaka-iii-bolsters-ufc-vegas-122/",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

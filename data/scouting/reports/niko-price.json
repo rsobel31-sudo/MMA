@@ -1,0 +1,46 @@
+{
+ "name": "Niko Price",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A 37-year-old action fighter returning from a brief retirement for a last dance after four straight losses (Chiesa by submission, Veretennikov by KO); the knee injury and stoppage losses have taken their toll.",
+ "how_they_fight": {
+  "Striking": "Wild, high-volume power (about 5.2 a minute), famous for strange finishes.",
+  "Grappling": "Scrambles; submitted twice in the recent skid.",
+  "Defense": "Absorbs about 5 a minute; stopped repeatedly lately.",
+  "Pace & cardio": "Brawling pace.",
+  "Fight IQ": "Chaos by design."
+ },
+ "patterns": [
+  "Brawls and wild exchanges"
+ ],
+ "concerns": [
+  "Age, knee, four losses"
+ ],
+ "keys_to_beat": [
+  "Stay composed and pick him apart"
+ ],
+ "news": [
+  {
+   "date": "2026-09",
+   "text": "Unretires for one final fight after his UFC Seattle exit was overshadowed.",
+   "source": "https://www.mmamania.com/latest-news/471230/snubbed-knockout-artist-niko-price-returns-from-retirement-for-last-dance-at-ufc-vegas-122"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Snubbed knockout artist Niko Price returns from retirement for last dance at UFC Vegas 122",
+   "url": "https://www.mmamania.com/latest-news/471230/snubbed-knockout-artist-niko-price-returns-from-retirement-for-last-dance-at-ufc-vegas-122",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "moderate"
+}

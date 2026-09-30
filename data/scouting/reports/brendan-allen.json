@@ -1,0 +1,56 @@
+{
+ "name": "Brendan Allen",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "The No. 4 middleweight and a complete grappler: strong wrestling, excellent jiu-jitsu and a serviceable kickboxing game, on a three-fight run (Vettori, de Ridder, Edmen Shahbazyan). Wins by making opponents carry his weight and breaking them late.",
+ "how_they_fight": {
+  "Striking": "Varied and functional kickboxing (about 3.8 significant strikes a minute) used mostly to get to the clinch and the legs; his decision losses to Nassourdine Imavov and Anthony Hernandez came when he couldn't impose grappling.",
+  "Grappling": "The weapon. Against Reinier de Ridder he survived an early mount and back take, reversed him in rounds two and three, then rode him for over 11 minutes of control with heavy ground-and-pound until de Ridder's corner stopped it after round four.",
+  "Defense": "Takedown defense around 60% and he can be put on his back, but he's comfortable there and scrambles well.",
+  "Pace & cardio": "Built for five rounds: the de Ridder fight was won by draining the other man's tank.",
+  "Fight IQ": "Patient; picks the phase where he's strongest and stays there."
+ },
+ "patterns": [
+  "Clinch entries off strikes",
+  "Top control with ground-and-pound",
+  "Wins late rounds"
+ ],
+ "concerns": [
+  "Out-struck at range by technical kickboxers (Imavov, Hernandez)"
+ ],
+ "keys_to_beat": [
+  "Stay on the feet and at range",
+  "Make him strike first; punish entries"
+ ],
+ "news": [
+  {
+   "date": "2026-09-01",
+   "text": "Headlines UFC Vegas 122 against Christian Leroy Duncan, five rounds at the Meta Apex.",
+   "source": "https://cagesidepress.com/2026/09/01/brendan-allen-vs-christian-leroy-duncan-tops-ufc-vegas-122/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Brendan Allen Grinds Down Reinier de Ridder in UFC Vancouver Headliner",
+   "url": "https://www.sherdog.com/news/news/Brendan-Allen-Grinds-Down-Reinier-de-Ridder-in-UFC-Vancouver-Headliner-198751",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "ESPN",
+   "author": "",
+   "title": "Brendan Allen upsets Reinier de Ridder in UFC main event",
+   "url": "https://www.espn.com/mma/story/_/id/46643866/brendan-allen-upsets-reinier-de-ridder-ufc-main-event",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Brendan Allen vs. Christian Leroy Duncan Tops UFC Vegas 122",
+   "url": "https://cagesidepress.com/2026/09/01/brendan-allen-vs-christian-leroy-duncan-tops-ufc-vegas-122/",
+   "date": "2026-09-01"
+  }
+ ],
+ "depth": "good"
+}

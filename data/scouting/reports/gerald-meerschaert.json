@@ -1,0 +1,46 @@
+{
+ "name": "Gerald Meerschaert",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A 39-year-old submission specialist (37 wins) moving up to light heavyweight after five straight losses, two by stoppage. Still dangerous off his back and in scrambles; the athleticism has faded.",
+ "how_they_fight": {
+  "Striking": "Serviceable, not a strength.",
+  "Grappling": "Opportunistic submissions (about 1.2 attempts per 15 minutes); weak takedown defense (about 49%).",
+  "Defense": "Stopped by Oleksiejczuk (KO) and Daukaus (sub) in 2025.",
+  "Pace & cardio": "Veteran pace.",
+  "Fight IQ": "Crafty; hunting a submission."
+ },
+ "patterns": [
+  "Submission hunting in scrambles"
+ ],
+ "concerns": [
+  "Age, five-fight skid, moving up in weight"
+ ],
+ "keys_to_beat": [
+  "Avoid scrambles; strike"
+ ],
+ "news": [
+  {
+   "date": "2026-09",
+   "text": "Moves up to light heavyweight after five straight losses.",
+   "source": "https://www.si.com/fannation/mma/news/26-fight-ufc-veteran-change-weight-classes-after-5-straight-losses"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sports Illustrated",
+   "author": "",
+   "title": "26-Fight UFC Veteran Set to Change Weight Classes After 5-Straight Losses",
+   "url": "https://www.si.com/fannation/mma/news/26-fight-ufc-veteran-change-weight-classes-after-5-straight-losses",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

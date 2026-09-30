@@ -1,0 +1,40 @@
+{
+ "name": "Julius Walker",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A 27-year-old light heavyweight on two straight knockout losses (Dustin Jacoby, Abdul-Rakhman Yakhyaev), with wrestling (about 3.3 takedowns per 15 minutes) as his best tool.",
+ "how_they_fight": {
+  "Striking": "Hittable; stopped twice in 2026.",
+  "Grappling": "Wrestles and controls (44% control share).",
+  "Defense": "Poor striking defense (about 49%).",
+  "Pace & cardio": "Unremarkable.",
+  "Fight IQ": "Needs to wrestle."
+ },
+ "patterns": [
+  "Takedowns and control"
+ ],
+ "concerns": [
+  "Chin after two KO losses"
+ ],
+ "keys_to_beat": [
+  "Strike with him"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sports Illustrated",
+   "author": "",
+   "title": "26-Fight UFC Veteran Set to Change Weight Classes After 5-Straight Losses",
+   "url": "https://www.si.com/fannation/mma/news/26-fight-ufc-veteran-change-weight-classes-after-5-straight-losses",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

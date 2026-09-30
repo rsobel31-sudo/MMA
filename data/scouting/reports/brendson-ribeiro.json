@@ -1,0 +1,34 @@
+{
+ "name": "Brendson Ribeiro",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A long (206-cm reach) Brazilian light heavyweight on four straight losses, three by stoppage; poor takedown defense (about 45%).",
+ "how_they_fight": {
+  "Striking": "Long-range striker, rarely wrestles.",
+  "Grappling": "Submitted by Yakhyaev; weak defensive wrestling.",
+  "Defense": "Stopped three times in a row.",
+  "Pace & cardio": "Fades.",
+  "Fight IQ": "Needs range."
+ },
+ "patterns": [
+  "Length"
+ ],
+ "concerns": [
+  "Four-fight skid",
+  "Takedown defense"
+ ],
+ "keys_to_beat": [
+  "Take him down"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

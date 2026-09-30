@@ -1,0 +1,40 @@
+{
+ "name": "Otari Tanzilovi",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A Georgian featherweight-bantamweight wrestler (about 3.4 takedowns per 15 minutes) who lost his UFC debut to Shane Collins on the cards.",
+ "how_they_fight": {
+  "Striking": "Accurate (about 62%) in a small sample.",
+  "Grappling": "Wrestling-first.",
+  "Defense": "Takedown defense about 76%.",
+  "Pace & cardio": "Three-round fighter.",
+  "Fight IQ": "Unknown at UFC level."
+ },
+ "patterns": [
+  "Takedowns"
+ ],
+ "concerns": [
+  "Small UFC sample"
+ ],
+ "keys_to_beat": [
+  "Stuff takedowns and strike"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "",
+   "title": "Malcolm Wellmaker Back in Action in Las Vegas",
+   "url": "https://heavy.com/sports/ufc/malcolm-wellmaker-back-action-las-vegas/",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}

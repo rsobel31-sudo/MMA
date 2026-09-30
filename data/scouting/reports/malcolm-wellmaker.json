@@ -1,0 +1,47 @@
+{
+ "name": "Malcolm Wellmaker",
+ "updated": "2026-09-30T23:40:00+00:00",
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "summary": "A bantamweight knockout puncher (three straight first-round KOs to start his UFC run), now on two straight losses and newly at American Top Team.",
+ "how_they_fight": {
+  "Striking": "One-punch power; early finisher.",
+  "Grappling": "Takedown defense about 50%; submitted by Juan Diaz in May.",
+  "Defense": "Vulnerable when taken down.",
+  "Pace & cardio": "Lost a decision to Ethyn Ewing when the fight went long.",
+  "Fight IQ": "Camp change after the losses."
+ },
+ "patterns": [
+  "Early power"
+ ],
+ "concerns": [
+  "Grappling defense",
+  "Two-fight skid"
+ ],
+ "keys_to_beat": [
+  "Take him down"
+ ],
+ "news": [
+  {
+   "date": "2026-09",
+   "text": "Switched camps to American Top Team after two losses.",
+   "source": "https://heavy.com/sports/ufc/malcolm-wellmaker-back-action-las-vegas/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "",
+   "title": "Malcolm Wellmaker Back in Action in Las Vegas",
+   "url": "https://heavy.com/sports/ufc/malcolm-wellmaker-back-action-las-vegas/",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Allen vs Duncan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+   "date": "2026-09"
+  }
+ ],
+ "depth": "thin"
+}
