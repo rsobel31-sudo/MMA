@@ -28,6 +28,7 @@ ap.add_argument("source", choices=["statsfight", "fightmatrix", "bestfightodds"]
 ap.add_argument("--delay", type=float, default=2.0)
 ap.add_argument("--max", type=int, default=1500, help="fightmatrix profile budget")
 ap.add_argument("--rank-pages", type=int, default=2, help="fightmatrix ranking pages (25 each) per division")
+ap.add_argument("--out", help="output file (default: the source's file under data/)")
 args = ap.parse_args()
 
 fetcher = Fetcher(Path(".cache/pages"), delay=args.delay, user_agent="mma-predictor/0.1 (personal research)")
@@ -46,7 +47,7 @@ def encode(o):
 
 
 if args.source == "bestfightodds":
-    out = Path("data/bestfightodds/fighters.jsonl")
+    out = Path(args.out or "data/bestfightodds/fighters.jsonl")
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)
     queue: list = []
@@ -55,7 +56,7 @@ if args.source == "bestfightodds":
             for b in json.loads(line).get("bouts", []):
                 if str(b.get("event", "")).upper().startswith("UFC"):
                     queue.append(b["opponent_url"])
-    else:
+    if True:  # seeds: everyone on the upcoming cards and in the rankings
         up = json.loads(Path("data/upcoming.json").read_text())
         names = [str(b[k]) for e in up["events"] for b in e["bouts"] for k in ("a", "b")]
         names += [r["name"] for r in json.loads(Path("data/ranked_fighters.json").read_text()).get("rankings", [])]
@@ -94,7 +95,7 @@ if args.source == "bestfightodds":
             if len(seen) % 100 == 0:
                 print(f"  {len(seen)} pages, {len(queue)} queued", flush=True)
 elif args.source == "statsfight":
-    out = Path("data/statsfight/bouts.jsonl")
+    out = Path(args.out or "data/statsfight/bouts.jsonl")
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)
     urls = [u for u in statsfight.bout_urls(fetcher.get(statsfight.SITEMAP, cache=False)) if u not in seen]
@@ -110,7 +111,7 @@ elif args.source == "statsfight":
             if i % 50 == 0:
                 print(f"  {i}/{len(urls)}", flush=True)
 else:
-    out = Path("data/fightmatrix/profiles.jsonl")
+    out = Path(args.out or "data/fightmatrix/profiles.jsonl")
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)
     queue = []
