@@ -383,9 +383,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   </header>
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
-    <button role="tab" data-tab="matchup" aria-selected="false">Matchup</button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
     <button role="tab" data-tab="picks" aria-selected="false">AI Picks <span class="count alert" id="picks-alert" hidden>!</span></button>
+    <button role="tab" data-tab="matchup" aria-selected="false">Create a Matchup</button>
     <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
     <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
@@ -1356,7 +1356,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         <td class="num">${edge}</td>
         <td><button class="btn small" type="button" data-remove-card="${esc(c.id)}">Remove</button></td></tr>`;
     }).join("");
-    return `<section class="panel"><div class="toolbar"><h3>Your saved matchups</h3><span class="muted" style="font-size:13px">Matchups you added from the Matchup tab. Edge is model minus market (percentage points) when you entered odds.</span></div>
+    return `<section class="panel"><div class="toolbar"><h3>Your saved matchups</h3><span class="muted" style="font-size:13px">Matchups you added from the Create a Matchup tab. Edge is model minus market (percentage points) when you entered odds.</span></div>
       <div class="table-wrap"><table class="list"><thead><tr><th>Bout</th><th>Pick</th><th>Win prob</th><th>Most likely</th><th>Edge</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
   }
 
