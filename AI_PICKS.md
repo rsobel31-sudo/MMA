@@ -7,6 +7,19 @@ The ledger (`data/ai_picks/ledger.json`) is the record, and the web page (Fight 
 - Database collection: `ai_picks`. It holds one `summary` document and one document per week (`w1`, `w2`, ...), written with the ArtifactData tool.
 - Branch: `claude/mma-fight-predictor-9sxxhl`
 
+## The goal
+
+**Maximize overall earnings: finish with the largest bankroll possible over the long run.** Every decision serves that.
+
+- Growth compounds. The strategy that ends richest over many cards maximizes the bankroll's long-run growth rate, not one week's expected profit. Going all-in on the best-EV bet maximizes this week's expectation, but it almost surely busts over a season, and a bust bankroll earns nothing more.
+- So size bets to the edge.
+  - Kelly (the sheet's quarter-Kelly column is a guide) is the right frame for growth.
+  - Use a fraction of it because our probabilities are estimates.
+  - Stake more when the edge is solid and well understood, less when it rests on thin or unvalidated modelling (round props, small moneyline gaps).
+- Passing is correct when nothing has a real edge; betting without an edge only lowers expected earnings. But don't pass out of caution when a genuine edge is there: unbet edges are lost earnings.
+- Parlays multiply the bookmaker's margin. Use them only when every leg is independently +EV.
+- Judge the strategy by bankroll growth and closing-line value over many cards, not by any single week's result.
+
 ## Rules of the game
 
 - The bankroll starts at $100.00 with no top-ups. The minimum stake is $1.00. Below that with nothing pending, the bankroll is **bust**: no more bets, and an alert shows on the page.
