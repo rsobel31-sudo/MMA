@@ -19,7 +19,7 @@ Rules applied when building the dataset (``attach_stats``):
   StatsFight doesn't cover the bout (older fights) and they pass internal
   checks (landed <= attempted, control time <= fight time). Stats StatsFight
   contradicts (the two disagree on who out-landed whom by a wide margin, or
-  on takedowns by 3+) are dropped for that bout.
+  on takedowns by 3+ and by more than half) are dropped for that bout.
 - A physical attribute (DOB, height, reach) counts as verified when two
   sources agree (DOB exactly, height/reach within 3 cm).
 """
@@ -138,7 +138,8 @@ def stats_check(f: Fight, sf: Dict, swapped: bool) -> Optional[StatsCheck]:
     if "takedowns" in sf:
         ta, tb = (sf["takedowns"]["b"], sf["takedowns"]["a"]) if swapped else (sf["takedowns"]["a"], sf["takedowns"]["b"])
         for who, u, s in (("A", f.stats_a.td_landed, ta[0]), ("B", f.stats_b.td_landed, tb[0])):
-            if abs(u - s) >= 3:
+            # Counting conventions differ (chained takedowns), so only a large relative gap is a contradiction.
+            if abs(u - s) >= 3 and abs(u - s) > 0.5 * max(u, s):
                 reasons.append(f"takedowns {who} {u} (UFCStats) vs {s} (StatsFight)")
     return StatsCheck("disputed" if reasons else "agree", reasons)
 

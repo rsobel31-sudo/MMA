@@ -340,8 +340,8 @@ Nothing is used on one source's word alone.
 
 `verify` builds `data/verified` from Sherdog plus UFCStats:
 
-- A UFCStats bout is matched to Sherdog's record of the same bout (same fighters within a day, names matched regardless of order, accents or spelling like "BJ Penn" / "B.J. Penn"). Its stats are attached only if the **winner agrees**. Of 7,026 matched bouts, 7,015 agree fully, 10 differ only on method or round, and 1 conflicts (excluded).
-- Stats that StatsFight contradicts (the sources disagree on who out-landed whom by 20+ points of share, or on takedowns by 3+) are dropped for that bout. StatsFight counts strikes its own way, so it's a check, not a replacement.
+- A UFCStats bout is matched to Sherdog's record of the same bout (same fighters within a day, names matched regardless of order, accents or spelling like "BJ Penn" / "B.J. Penn"). Its stats are attached only if the **winner agrees**. Of 8,666 matched bouts, 8,637 agree fully, 28 differ only on method or round, and 1 conflicts (excluded). Every one of the 145 bouts StatsFight also covers so far agrees on the result.
+- Stats that StatsFight contradicts (the sources disagree on who out-landed whom by 20+ points of share, or on takedowns by 3+ and by more than half the larger count) are dropped for that bout. StatsFight counts strikes its own way, so it's a check, not a replacement.
 - Reach is used only when UFCStats and StatsFight agree within 3 cm (Sherdog doesn't list reach). Birth dates must match between Sherdog and UFCStats; if they don't, the one Fight Matrix agrees with wins, otherwise Sherdog's is kept and flagged.
 - The report (`data/verified/verification.json`) and per-fighter status (`fighter_checks.json`) feed the Insights tab and each fighter's profile.
 

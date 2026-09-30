@@ -1,0 +1,456 @@
+{
+ "results": {
+  "no second source": 2775,
+  "method": 17,
+  "agree": 8637,
+  "round": 11,
+  "winner": 1
+ },
+ "stats": {
+  "official only": 8516,
+  "verified": 145,
+  "disputed": 4
+ },
+ "conflicts": [
+  {
+   "date": "2021-09-14",
+   "bout": "Lukasz Brzeski vs Dylan Potter",
+   "ufcstats": "Lukasz Brzeski",
+   "sherdog": null,
+   "statsfight": null
+  }
+ ],
+ "disputed_stats": [
+  {
+   "date": "2026-04-04",
+   "bout": "Dione Barbosa vs Melissa Gatto",
+   "why": [
+    "strike share 48% (UFCStats) vs 68% (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-04-25",
+   "bout": "Rafa Garcia vs Alexander Hernandez",
+   "why": [
+    "takedowns A 4 (UFCStats) vs 1 (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-05-16",
+   "bout": "Ketlen Vieira vs Jacqueline Cavalcanti",
+   "why": [
+    "strike share 36% (UFCStats) vs 58% (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-08-08",
+   "bout": "Manoel Sousa vs Richie Miranda",
+   "why": [
+    "strike share 59% (UFCStats) vs 38% (StatsFight)"
+   ]
+  }
+ ],
+ "statsfight_results": {
+  "agree": 149
+ },
+ "dob_conflicts": [
+  {
+   "name": "John Dixson",
+   "sherdog": "1965-10-16",
+   "ufcstats": "1961-10-15",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jorge Patino",
+   "sherdog": "1973-05-08",
+   "ufcstats": "1973-08-05",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ian Freeman",
+   "sherdog": "1970-12-31",
+   "ufcstats": "1966-11-10",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bobby Hoffman",
+   "sherdog": "1966-10-28",
+   "ufcstats": "1968-10-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jason Black",
+   "sherdog": "1972-08-15",
+   "ufcstats": "1972-07-15",
+   "fightmatrix": null
+  },
+  {
+   "name": "Rodrigo Gracie",
+   "sherdog": "1975-03-11",
+   "ufcstats": "1975-04-11",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bob Sapp",
+   "sherdog": "1973-09-22",
+   "ufcstats": "1974-09-22",
+   "fightmatrix": null
+  },
+  {
+   "name": "James Zikic",
+   "sherdog": "1977-03-31",
+   "ufcstats": "1977-03-01",
+   "fightmatrix": null
+  },
+  {
+   "name": "Tim Sylvia",
+   "sherdog": "1974-03-05",
+   "ufcstats": "1976-03-05",
+   "fightmatrix": null
+  },
+  {
+   "name": "Forrest Griffin",
+   "sherdog": "1979-07-01",
+   "ufcstats": "1979-03-16",
+   "fightmatrix": null
+  },
+  {
+   "name": "Lee Murray",
+   "sherdog": "1977-11-12",
+   "ufcstats": "1977-09-12",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jaime Jara",
+   "sherdog": "1969-02-08",
+   "ufcstats": "1969-08-02",
+   "fightmatrix": null
+  },
+  {
+   "name": "Drew Fickett",
+   "sherdog": "1979-12-24",
+   "ufcstats": "1979-12-14",
+   "fightmatrix": null
+  },
+  {
+   "name": "Pete Sell",
+   "sherdog": "1982-08-25",
+   "ufcstats": "1982-08-05",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ricardo Morais",
+   "sherdog": "1992-07-25",
+   "ufcstats": "1967-02-26",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ibragim Magomedov",
+   "sherdog": "1995-02-10",
+   "ufcstats": "1975-06-08",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ron Faircloth",
+   "sherdog": "1971-08-16",
+   "ufcstats": "1979-08-16",
+   "fightmatrix": null
+  },
+  {
+   "name": "Joshua Burkman",
+   "sherdog": "1980-10-04",
+   "ufcstats": "1980-04-10",
+   "fightmatrix": null
+  },
+  {
+   "name": "Gleison Tibau",
+   "sherdog": "1983-07-10",
+   "ufcstats": "1983-10-07",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jeremy Stephens",
+   "sherdog": "1986-05-26",
+   "ufcstats": "1986-05-25",
+   "fightmatrix": null
+  },
+  {
+   "name": "Tyron Woodley",
+   "sherdog": "1982-04-17",
+   "ufcstats": "1982-04-07",
+   "fightmatrix": null
+  },
+  {
+   "name": "Stanislav Nedkov",
+   "sherdog": "1981-09-12",
+   "ufcstats": "1981-12-09",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bradley Scott",
+   "sherdog": "1989-06-22",
+   "ufcstats": "1989-06-24",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ilir Latifi",
+   "sherdog": "1983-07-28",
+   "ufcstats": "1982-07-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Francimar Barroso",
+   "sherdog": "1980-02-29",
+   "ufcstats": "1980-02-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Ali Bagautinov",
+   "sherdog": "1985-06-12",
+   "ufcstats": "1985-06-10",
+   "fightmatrix": null
+  },
+  {
+   "name": "Rashid Magomedov",
+   "sherdog": "1984-05-14",
+   "ufcstats": "1984-11-29",
+   "fightmatrix": null
+  },
+  {
+   "name": "Gasan Umalatov",
+   "sherdog": "1983-11-03",
+   "ufcstats": "1982-09-11",
+   "fightmatrix": null
+  },
+  {
+   "name": "Rodrigo Goiana de Lima",
+   "sherdog": "1991-03-03",
+   "ufcstats": "1991-03-12",
+   "fightmatrix": null
+  },
+  {
+   "name": "Alan Jouban",
+   "sherdog": "1982-11-25",
+   "ufcstats": "1981-11-25",
+   "fightmatrix": null
+  },
+  {
+   "name": "Milana Dudieva",
+   "sherdog": "1989-04-08",
+   "ufcstats": "1989-08-04",
+   "fightmatrix": null
+  },
+  {
+   "name": "Paul Felder",
+   "sherdog": "1985-04-25",
+   "ufcstats": "1984-04-25",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jake Collier",
+   "sherdog": "1988-10-23",
+   "ufcstats": "1988-10-25",
+   "fightmatrix": null
+  },
+  {
+   "name": "Garreth McLellan",
+   "sherdog": "1982-01-09",
+   "ufcstats": "1982-09-01",
+   "fightmatrix": null
+  },
+  {
+   "name": "Elizeu Zaleski dos Santos",
+   "sherdog": "1986-11-12",
+   "ufcstats": "1986-12-11",
+   "fightmatrix": null
+  },
+  {
+   "name": "Enrique Barzola",
+   "sherdog": "1989-04-25",
+   "ufcstats": "1989-04-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Chase Sherman",
+   "sherdog": "1989-11-06",
+   "ufcstats": "1989-11-16",
+   "fightmatrix": null
+  },
+  {
+   "name": "J.J. Aldrich",
+   "sherdog": "1992-06-11",
+   "ufcstats": "1992-09-29",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jeremy Kimball",
+   "sherdog": "1991-03-01",
+   "ufcstats": "1991-01-03",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bharat Khandare",
+   "sherdog": "1989-06-20",
+   "ufcstats": "1987-06-20",
+   "fightmatrix": null
+  },
+  {
+   "name": "Markus Perez",
+   "sherdog": "1990-06-22",
+   "ufcstats": "1988-06-22",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jordan Griffin",
+   "sherdog": "1990-02-23",
+   "ufcstats": "1990-02-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Augusto Sakai",
+   "sherdog": "1991-05-19",
+   "ufcstats": "1991-05-09",
+   "fightmatrix": null
+  },
+  {
+   "name": "Maria Oliveira",
+   "sherdog": "1996-12-09",
+   "ufcstats": "1996-12-12",
+   "fightmatrix": null
+  },
+  {
+   "name": "Callan Potter",
+   "sherdog": "1984-09-06",
+   "ufcstats": "1984-06-09",
+   "fightmatrix": null
+  },
+  {
+   "name": "Mike Grundy",
+   "sherdog": "1987-03-01",
+   "ufcstats": "1987-01-03",
+   "fightmatrix": null
+  },
+  {
+   "name": "Carlos Huachin",
+   "sherdog": "1996-04-06",
+   "ufcstats": "1996-06-04",
+   "fightmatrix": null
+  },
+  {
+   "name": "Zarah Fairn",
+   "sherdog": "1986-12-10",
+   "ufcstats": "1983-12-10",
+   "fightmatrix": null
+  },
+  {
+   "name": "Nate Landwehr",
+   "sherdog": "1988-06-07",
+   "ufcstats": "1988-06-06",
+   "fightmatrix": null
+  },
+  {
+   "name": "Cristian Quinonez",
+   "sherdog": "1996-04-21",
+   "ufcstats": "1996-04-26",
+   "fightmatrix": null
+  },
+  {
+   "name": "Francis Marshall",
+   "sherdog": "1999-03-09",
+   "ufcstats": "1999-03-03",
+   "fightmatrix": null
+  },
+  {
+   "name": "Charlie Campbell",
+   "sherdog": "1995-06-03",
+   "ufcstats": "1995-07-03",
+   "fightmatrix": null
+  },
+  {
+   "name": "Clayton Carpenter",
+   "sherdog": "1996-06-04",
+   "ufcstats": "1996-06-09",
+   "fightmatrix": null
+  },
+  {
+   "name": "Nurullo Aliev",
+   "sherdog": "1999-10-16",
+   "ufcstats": "2000-12-08",
+   "fightmatrix": null
+  },
+  {
+   "name": "Jack Jenkins",
+   "sherdog": "1993-03-11",
+   "ufcstats": "1993-11-03",
+   "fightmatrix": null
+  },
+  {
+   "name": "Azat Maksum",
+   "sherdog": "1995-05-07",
+   "ufcstats": "1995-02-02",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bogdan Grad",
+   "sherdog": "1995-09-18",
+   "ufcstats": "1995-09-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Marco Tulio",
+   "sherdog": "1994-08-30",
+   "ufcstats": "1994-06-13",
+   "fightmatrix": null
+  },
+  {
+   "name": "Brendson Ribeiro",
+   "sherdog": "1996-08-09",
+   "ufcstats": "1996-09-08",
+   "fightmatrix": null
+  },
+  {
+   "name": "Felipe Bunes",
+   "sherdog": "1989-10-26",
+   "ufcstats": "1989-10-29",
+   "fightmatrix": null
+  },
+  {
+   "name": "Paula Luna",
+   "sherdog": "1999-05-07",
+   "ufcstats": "1999-07-05",
+   "fightmatrix": null
+  },
+  {
+   "name": "Alexia Thainara",
+   "sherdog": "1997-11-20",
+   "ufcstats": "1995-11-20",
+   "fightmatrix": null
+  },
+  {
+   "name": "Gianni Vazquez",
+   "sherdog": "1994-07-13",
+   "ufcstats": "1994-07-17",
+   "fightmatrix": null
+  },
+  {
+   "name": "Bo Meng",
+   "sherdog": "1996-04-21",
+   "ufcstats": "1996-03-29",
+   "fightmatrix": null
+  }
+ ],
+ "dob": {
+  "agree": 1245,
+  "differ, unresolved (Sherdog kept)": 64,
+  "differ, Fight Matrix sides with Sherdog": 11
+ },
+ "height": {
+  "agree": 1238,
+  "differ": 90
+ },
+ "reach": {
+  "no second source": 1920,
+  "agree": 288,
+  "differ": 29
+ }
+}
