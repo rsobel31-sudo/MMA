@@ -72,6 +72,14 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .corner input { width: 100%; font-family: var(--display); font-weight: 600; font-size: 20px; padding: 6px 10px; }
 .corner.red input { border-left: 5px solid var(--red); }
 .corner.blue input { border-left: 5px solid var(--blue); }
+.cb { position: relative; display: block; }
+.cb-list { position: absolute; z-index: 30; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.14); max-height: 340px; overflow-y: auto; }
+.cb-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 15px; }
+.cb-list li[aria-selected=true] { background: var(--red-soft, rgba(0,0,0,.06)); }
+.corner.blue .cb-list li[aria-selected=true] { background: var(--blue-soft, rgba(0,0,0,.06)); }
+.cb-list .cb-name { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cb-list .cb-meta { color: var(--muted); font-size: 12.5px; white-space: nowrap; flex-shrink: 0; }
+.cb-list .cb-empty { color: var(--muted); cursor: default; }
 .vs { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--muted); padding-bottom: 8px; }
 .options { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 12px; }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
@@ -347,19 +355,17 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       <h1><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="var(--red)" stroke-width="2.5"/><path d="M14 2v24M2 14h24" stroke="currentColor" stroke-width="1.5"/></svg>Fight <span>Lab</span></h1>
       <div class="tagline">Know the fight before the cage door closes.</div>
     </div>
-    <div class="meta num" id="meta">Loading fighter data…</div>
   </header>
   <nav class="tabs" role="tablist" id="tabs">
-    <button role="tab" data-tab="matchup" aria-selected="true">Matchup</button>
-    <button role="tab" data-tab="card" aria-selected="false">Upcoming cards <span class="count" id="card-count" hidden></span></button>
-    <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
+    <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
+    <button role="tab" data-tab="matchup" aria-selected="false">Matchup</button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
     <button role="tab" data-tab="model" aria-selected="false">Model weights</button>
     <button role="tab" data-tab="adjust" aria-selected="false">My adjustments <span class="count" id="adj-count" hidden></span></button>
+    <button role="tab" data-tab="insights" aria-selected="false">Insights</button>
   </nav>
   <main id="view"><div class="loading">Loading fighter data…</div></main>
   <dialog class="info-dlg" id="info-dlg" aria-labelledby="info-title"><button class="btn small close" type="button" data-info-close="1" aria-label="Close">✕</button><div id="info-body"></div></dialog>
-  <datalist id="fighter-list"></datalist>
 </div>
 
 <script src="engine.js"></script>
@@ -419,9 +425,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   const state = {
     data: null, engine: null, byName: new Map(),
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
-    tab: "matchup",
+    tab: "card",
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
-    roster: { view: "table", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
+    roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
   };
 
@@ -712,10 +718,10 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         <section class="panel">
           <div class="setup">
             <label class="corner red"><span class="label">Red corner</span>
-              <input id="in-a" type="text" list="fighter-list" value="${esc(a || "")}" placeholder="Type a fighter's name" autocomplete="off"></label>
+              <span class="cb"><input id="in-a" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb-a" value="${esc(a || "")}" placeholder="Search red corner…" autocomplete="off" spellcheck="false"><ul class="cb-list" id="cb-a" role="listbox" aria-label="Red corner results" hidden></ul></span></label>
             <div class="vs">VS</div>
             <label class="corner blue"><span class="label">Blue corner</span>
-              <input id="in-b" type="text" list="fighter-list" value="${esc(b || "")}" placeholder="Type a fighter's name" autocomplete="off"></label>
+              <span class="cb"><input id="in-b" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cb-b" value="${esc(b || "")}" placeholder="Search blue corner…" autocomplete="off" spellcheck="false"><ul class="cb-list" id="cb-b" role="listbox" aria-label="Blue corner results" hidden></ul></span></label>
           </div>
           <div class="options">
             <span class="label">Rounds</span>
@@ -1386,8 +1392,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const list = rosterList();
     const head = `<div class="toolbar">
       <span class="seg" role="group" aria-label="View">
-        <button type="button" data-roster-view="table" aria-pressed="${r.view === "table"}">Table</button>
         <button type="button" data-roster-view="classes" aria-pressed="${r.view === "classes"}">By weight class</button>
+        <button type="button" data-roster-view="table" aria-pressed="${r.view === "table"}" title="Pound for pound: every fighter in one ranked list">P4P (Pound for Pound)</button>
       </span>
       <label class="label" for="roster-rank">Rank by</label>
       <select id="roster-rank" data-rfilter="sort">${rankOptions().map(([k, l]) => `<option value="${k}" ${r.sort === k ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>
@@ -1618,7 +1624,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       const v = t.value.trim();
       const low = v.toLowerCase();
       const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === low)
-        || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || v);
+        || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || (searchFighters(v)[0] || {}).name || v);
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
     }
     if (t.dataset.intang) {
@@ -1673,6 +1679,90 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
   });
 
+  // ------------------------------------------------------ corner search
+  const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const cb = { input: null, items: [], active: -1 };
+  function searchFighters(q) {
+    const t = fold(q.trim());
+    if (!t) return [];
+    const words = t.split(/\s+/);
+    const hits = [];
+    for (const e of state.search) {
+      let best = -1;
+      for (const k of e.keys) {
+        if (!words.every((w) => k.includes(w))) continue;
+        // Exact, then name start, then word start, then anywhere; proven fighters first within a tier.
+        const sc = k === t ? 3 : k.startsWith(t) ? 2 : k.split(/[\s-]+/).some((p) => p.startsWith(words[0])) ? 1 : 0;
+        best = Math.max(best, sc);
+      }
+      if (best >= 0) hits.push([best, e.f.proven || 0, e]);
+    }
+    hits.sort((x, y) => y[0] - x[0] || y[1] - x[1]);
+    return hits.slice(0, 8).map((h) => h[2]);
+  }
+  function cbList(input) { return document.getElementById(input.getAttribute("aria-controls")); }
+  function cbClose() {
+    if (!cb.input) return;
+    const ul = cbList(cb.input);
+    if (ul) { ul.hidden = true; ul.innerHTML = ""; }
+    cb.input.setAttribute("aria-expanded", "false"); cb.input.removeAttribute("aria-activedescendant");
+    cb.input = null; cb.items = []; cb.active = -1;
+  }
+  function cbOpen(input) {
+    const ul = cbList(input);
+    if (cb.input && cb.input !== input) cbClose();
+    cb.input = input; cb.items = searchFighters(input.value); cb.active = cb.items.length ? 0 : -1;
+    const id = input.id.slice(-1);
+    ul.innerHTML = cb.items.length ? cb.items.map((e, i) => {
+      const f = e.f, q = fold(input.value.trim());
+      const aka = !fold(f.name).includes(q.split(/\s+/)[0]) && e.aka.find((x) => fold(x).includes(q.split(/\s+/)[0]));
+      return `<li role="option" id="cbo-${id}-${i}" data-cb-pick="${esc(f.name)}" aria-selected="${i === cb.active}">
+        <span class="cb-name">${esc(f.name)}${aka ? ` <span class="muted">“${esc(aka)}”</span>` : ""}</span>
+        <span class="cb-meta num">${esc(f.weight_class || "—")} · ${record(f)}</span></li>`;
+    }).join("") : `<li class="cb-empty">No fighter matches “${esc(input.value.trim())}”</li>`;
+    ul.hidden = !input.value.trim();
+    input.setAttribute("aria-expanded", String(!ul.hidden));
+    cbMark();
+  }
+  function cbMark() {
+    if (!cb.input) return;
+    const ul = cbList(cb.input);
+    [...ul.querySelectorAll("[role=option]")].forEach((li, i) => li.setAttribute("aria-selected", String(i === cb.active)));
+    const cur = ul.querySelector(`[role=option][aria-selected=true]`);
+    if (cur) { cb.input.setAttribute("aria-activedescendant", cur.id); cur.scrollIntoView({ block: "nearest" }); }
+    else cb.input.removeAttribute("aria-activedescendant");
+  }
+  function cbPick(input, name) {
+    const side = input.id === "in-a" ? "a" : "b";
+    input.value = name; cbClose();
+    state.m[side] = name; render();
+    const next = document.getElementById(side === "a" && !state.m.b ? "in-b" : input.id);
+    if (next && side === "a" && !state.m.b) next.focus();
+  }
+  document.addEventListener("input", (e) => { if (e.target.id === "in-a" || e.target.id === "in-b") cbOpen(e.target); });
+  document.addEventListener("focusin", (e) => { if ((e.target.id === "in-a" || e.target.id === "in-b") && e.target.value) e.target.select(); });
+  document.addEventListener("keydown", (e) => {
+    const t = e.target;
+    if (t.id !== "in-a" && t.id !== "in-b") return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      if (cb.input !== t) cbOpen(t);
+      if (!cb.items.length) return;
+      e.preventDefault();
+      cb.active = (cb.active + (e.key === "ArrowDown" ? 1 : -1) + cb.items.length) % cb.items.length;
+      cbMark();
+    } else if (e.key === "Enter") {
+      if (cb.input === t && cb.active >= 0) { e.preventDefault(); cbPick(t, cb.items[cb.active].name); }
+    } else if (e.key === "Escape") {
+      if (cb.input === t) { e.preventDefault(); cbClose(); t.value = state.m[t.id === "in-a" ? "a" : "b"] || ""; }
+    }
+  });
+  // mousedown so the pick lands before the input loses focus.
+  document.addEventListener("mousedown", (e) => {
+    const li = e.target.closest && e.target.closest("[data-cb-pick]");
+    if (li && cb.input) { e.preventDefault(); cbPick(cb.input, li.dataset.cbPick); }
+  });
+  document.addEventListener("focusout", (e) => { if (cb.input && e.target === cb.input) setTimeout(() => { if (cb.input && document.activeElement !== cb.input) cbClose(); }, 0); });
+
   // ------------------------------------------------------------------- boot
   async function boot() {
     let data;
@@ -1682,7 +1772,6 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       data = await res.json();
     } catch (err) {
       $("#view").innerHTML = `<div class="empty">Couldn't load <code>data.json</code>. Run <code>python -m mma_predictor export</code> to build it, then reload.</div>`;
-      $("#meta").textContent = "";
       return;
     }
     state.data = data;
@@ -1691,10 +1780,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     INTANG_ATTRS = {};  // intangibles are your 1-10 scores per matchup (tale of the tape), not fighter attributes
     RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
-    $("#fighter-list").innerHTML = data.fighters.map((f) => `<option value="${esc(f.name)}">` + (f.aka || []).map((x) => `<option value="${esc(x)}" label="${esc(f.name)}">`).join("")).join("");
-    const m = data.meta;
-    $("#meta").textContent = `${m.fighters_exported.toLocaleString()} fighters · ${m.bouts.toLocaleString()} bouts through ${m.last_fight}`;
-    state.tab = ls.get(LOCAL_KEY + ":tab") || "matchup";
+    state.search = data.fighters.map((f) => ({ name: f.name, keys: [f.name, ...(f.aka || [])].map(fold), aka: f.aka || [], f }));
+    state.tab = ls.get(LOCAL_KEY + ":tab") || "card";
     state.m.a = data.fighters[0] && data.fighters[0].name;
     state.m.b = data.fighters[1] && data.fighters[1].name;
     state.store = localStore();
