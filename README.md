@@ -340,7 +340,7 @@ Nothing is used on one source's word alone.
 
 `verify` builds `data/verified` from Sherdog plus UFCStats:
 
-- A UFCStats bout is matched to Sherdog's record of the same bout (same fighters within a day, names matched regardless of order, accents or spelling like "BJ Penn" / "B.J. Penn"). Its stats are attached only if the **winner agrees**. Of 8,666 matched bouts, 8,637 agree fully, 28 differ only on method or round, and 1 conflicts (excluded). Every one of the 145 bouts StatsFight also covers so far agrees on the result.
+- A UFCStats bout is matched to Sherdog's record of the same bout (same fighters within a day, names matched regardless of order, accents or spelling like "BJ Penn" / "B.J. Penn"). Its stats are attached only if the **winner agrees**. Of 10,551 matched bouts, 10,515 agree fully, 33 differ only on method or round, and 3 conflict (excluded). StatsFight covers 1,163 of them: 1,161 agree fully, 1 differs on method, and in 1 it names a different winner than both other sources (the two-source majority stands). 890 UFCStats bouts, mostly from the 1990s, have no Sherdog match and are unused.
 - Stats that StatsFight contradicts (the sources disagree on who out-landed whom by 20+ points of share, or on takedowns by 3+ and by more than half the larger count) are dropped for that bout. StatsFight counts strikes its own way, so it's a check, not a replacement.
 - Reach is used only when UFCStats and StatsFight agree within 3 cm (Sherdog doesn't list reach). Birth dates must match between Sherdog and UFCStats; if they don't, the one Fight Matrix agrees with wins, otherwise Sherdog's is kept and flagged.
 - The report (`data/verified/verification.json`) and per-fighter status (`fighter_checks.json`) feed the Insights tab and each fighter's profile.
@@ -354,7 +354,9 @@ python -m mma_predictor verify                               # -> data/verified
 python -m mma_predictor export --data data/verified --events UFC
 ```
 
-Adding the verified stats improved the backtest on the same 3,923 UFC bouts from 65.4% to 65.9% (log-loss 0.6254 to 0.6183), most for women's bouts (62.4% to 64.7%), and agreement with the official UFC rankings from 0.82 to 0.84. Fight Matrix's ratings add a little more where both fighters have one (log-loss 0.6251 to 0.6224 on those bouts).
+Adding the verified stats improved the backtest on the same 3,923 UFC bouts from 65.4% to 65.9% (log-loss 0.6254 to 0.6183), most for women's bouts (62.4% to 64.7%). Fight Matrix's ratings add a little more where both fighters have one (log-loss 0.6251 to 0.6224 on those bouts). Agreement with the official UFC rankings is now 0.84.
+
+**A bias the backtest used to have.** Full Sherdog records were first crawled for fighters ranked today and their opponents; many other fighters appeared only in bouts against them. In UFC bouts where exactly one fighter's full record was known, that fighter won 73%: we had crawled them *because* they went on to succeed, which leaks the future into the past. Completing 1,324 more records (every UFC fighter with an unmatched bout) cut those bouts from 2,117 to 576 of the post-2012 test set, and the headline accuracy fell accordingly (to about 64%) while predictions got no worse: on the 4,116 bouts where both fighters were complete in both datasets, 64.3% before vs 63.6% after, within noise. The backtest now reports the **fair test** separately: bouts where both fighters' full records are known, which is also what upcoming cards look like.
 
 UFCStats itself (ufcstats.com) and UFC.com block automated access, so the Kaggle scrape is how its numbers get in.
 

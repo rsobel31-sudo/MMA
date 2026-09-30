@@ -390,6 +390,7 @@ def cmd_export(args) -> int:
             "elo_accuracy": res.elo.accuracy, "scope": args.events or "",
             "high_conf_n": res.high_conf.n, "high_conf_accuracy": res.high_conf.accuracy,
             "by_sport": {k: {"n": v.n, "accuracy": v.accuracy, "log_loss": v.log_loss} for k, v in res.by_sport.items()},
+            "fair": {"n": res.fair.n, "accuracy": res.fair.accuracy, "log_loss": res.fair.log_loss, "elo_accuracy": res.fair_elo.accuracy},
         }
         # Calibrate confidence on the out-of-sample predictions only, then judge
         # patterns and confidence bands against the calibrated predictions.

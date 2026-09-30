@@ -66,6 +66,11 @@ class BacktestResult:
     calibration: List[Tuple[float, int, int]] = field(default_factory=list)  # (bin lower, n, wins)
     high_conf: Scores = field(default_factory=Scores)
     by_sport: Dict[str, Scores] = field(default_factory=dict)  # model scores on men's / women's bouts
+    # Bouts where both fighters' full records are in the data. When only one is, the one we
+    # crawled tends to be the one who went on to succeed (we crawl ranked fighters), which
+    # leaks the future: that fighter won 73% of such UFC bouts. This is the fair measure.
+    fair: Scores = field(default_factory=Scores)
+    fair_elo: Scores = field(default_factory=Scores)
     # Out-of-sample prediction for every scored bout: (fight, P(fighter_a wins), features).
     predictions: List[Tuple[Fight, float, dict]] = field(default_factory=list)
 
@@ -76,6 +81,9 @@ class BacktestResult:
             lines.append(self.model_on_market.line("model (same)"))
         if self.high_conf.n:
             lines.append(self.high_conf.line("model >=65%"))
+        if self.fair.n:
+            lines.append(self.fair.line("both complete"))
+            lines.append(self.fair_elo.line("  classic elo"))
         for sport, sc in sorted(self.by_sport.items(), key=lambda kv: -kv[1].n):
             lines.append(sc.line(f"  {SPORTS.get(sport, sport).lower()}"))
         lines += ["", "Calibration (predicted favourite prob -> actual win rate):"]
@@ -119,8 +127,13 @@ def walk_forward(
         result.model.add(p, y[i])
         result.predictions.append((f, p, X[i]))
         result.by_sport.setdefault(sport_of(f, history.bios), Scores()).add(p, y[i])
+        both = all(getattr(history.bios.get(n), "complete", True) for n in (f.fighter_a, f.fighter_b))
         classic = history.classic_elo
-        result.elo.add(expected_score(classic.rating_before(f.fighter_a, f.date), classic.rating_before(f.fighter_b, f.date)), y[i])
+        e_classic = expected_score(classic.rating_before(f.fighter_a, f.date), classic.rating_before(f.fighter_b, f.date))
+        result.elo.add(e_classic, y[i])
+        if both:
+            result.fair.add(p, y[i])
+            result.fair_elo.add(e_classic, y[i])
         skills = history.skills
         result.overall.add(expected_score(skills.overall_before(f.fighter_a, f.date), skills.overall_before(f.fighter_b, f.date)), y[i])
         fav = max(p, 1 - p)
@@ -143,7 +156,7 @@ def walk_forward_split(bios, fights, scouting=None, **kwargs) -> BacktestResult:
     bins: Dict[float, List[int]] = {}
     for history in split_histories(bios, fights, scouting).values():
         res = walk_forward(history, **kwargs)
-        for name in ("model", "elo", "overall", "market", "model_on_market", "high_conf"):
+        for name in ("model", "elo", "overall", "market", "model_on_market", "high_conf", "fair", "fair_elo"):
             getattr(merged, name).merge(getattr(res, name))
         for sport, sc in res.by_sport.items():
             merged.by_sport.setdefault(sport, Scores()).merge(sc)
