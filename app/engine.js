@@ -74,6 +74,7 @@
         chin_damage: b.recent_ko_losses - a.recent_ko_losses,
         cardio: (a.late_win_rate - b.late_win_rate) * (five ? 2 : 1),
         schedule_strength: clip((a.sos - b.sos) / 200),
+        outside_rating: a.ext_rating != null && b.ext_rating != null ? clip((a.ext_rating - b.ext_rating) / 400) : 0,
         stance: stance(a, b),
       };
     }

@@ -11,6 +11,7 @@ import pytest
 from mma_predictor.adjustments import Adjustments
 from mma_predictor.data import load_dataset
 from mma_predictor.export import export
+from mma_predictor.external import ExternalRatings
 from mma_predictor.history import FightHistory
 from mma_predictor.predictor import FightPredictor
 
@@ -44,10 +45,18 @@ process.stdout.write(JSON.stringify(out));
 @pytest.mark.parametrize("with_adjustments", [False, True])
 def test_js_engine_matches_python(tmp_path, with_adjustments):
     bios, fights = load_dataset(ROOT / "data" / "sample")
-    h = FightHistory(bios, fights)
+    first = sorted(bios)[:6]
+    # Fight Matrix ratings for a few fighters, so the outside_rating feature is exercised.
+    ext = ExternalRatings([{"name": first[i], "bouts": [{"date": "2000-01-01", "opponent": first[i + 1],
+                                                          "ratings": {"glicko": [1500, 1500 + 60 * i]},
+                                                          "opp_ratings": {"glicko": [1500, 1450 - 40 * i]}}]}
+                           for i in (0, 2, 4)], bios.keys())
+    h = FightHistory(bios, fights, external=ext)
     data = export(h, min_fights=1, active_years=100)
     names = [f["name"] for f in data["fighters"]][:16]
+    assert sum(f["ext_rating"] is not None for f in data["fighters"]) == 6
     pairs = [(names[i], names[i + 1], 5 if i % 3 == 0 else 3) for i in range(0, 15)]
+    pairs += [(first[0], first[3], 3), (first[2], first[5], 5), (first[1], first[4], 3)]
     adj = {}
     if with_adjustments:
         adj = {

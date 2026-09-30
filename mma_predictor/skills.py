@@ -196,15 +196,15 @@ class SkillConfig:
     ko_shares: Dict[str, float] = field(default_factory=lambda: {"striking": 0.7, "wrestling": 0.1, "grappling": 0.2})
     sub_shares: Dict[str, float] = field(default_factory=lambda: {"striking": 0.1, "wrestling": 0.15, "grappling": 0.75})
     decision_shares: Dict[str, float] = field(default_factory=lambda: {"striking": 0.45, "wrestling": 0.25, "grappling": 0.30})
-    # Base rates (UFC-ish).
+    # Base rates, measured on UFC bouts since 2015 (UFCStats).
     strike_acc: float = 0.45
-    td_acc: float = 0.38
-    ctrl_share: float = 0.15
-    gnp_per_ctrl_min: float = 2.0
+    td_acc: float = 0.36
+    ctrl_share: float = 0.19
+    gnp_per_ctrl_min: float = 2.25
     kd_per15: float = 0.25  # chance of scoring >=1 knockdown in 15 min
     ko_win_per15: float = 0.16  # without stats: chance of a KO/TKO win
     sub_win_per15: float = 0.09
-    sub_attempt_per15: float = 0.30
+    sub_attempt_per15: float = 0.28
     # Rating uncertainty (Glicko). A newcomer starts unproven; each bout shrinks
     # the uncertainty by how informative it was, and beating someone far below
     # you is barely informative. Inactivity grows it back.

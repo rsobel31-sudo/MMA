@@ -30,7 +30,7 @@ SNAPSHOT_FIELDS = (
     "win_methods", "loss_methods", "finish_rate", "ko_loss_rate", "sub_loss_rate",
     "recent_ko_losses", "late_win_rate", "five_round_fights", "form", "streak",
     "layoff_days", "sos", "quality_win_elo", "striking", "wrestling", "grappling",
-    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree", "rd", "proven",
+    "ko_losses", "kd_absorbed", "sig_absorbed", "pedigree", "rd", "proven", "ext_rating",
 )
 
 

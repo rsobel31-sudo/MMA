@@ -35,9 +35,12 @@ DEFAULT_SCOUTING = Path(__file__).resolve().parent.parent / "data" / "scouting"
 
 
 def _history(args) -> FightHistory:
+    from .external import for_dataset
+
     bios, fights = load_dataset(Path(args.data))
     scouting = Scouting.load(Path(args.scouting)) if getattr(args, "scouting", None) else None
-    return FightHistory(bios, fights, scouting=scouting)
+    external = None if getattr(args, "no_external", False) else for_dataset(Path(args.data), bios)
+    return FightHistory(bios, fights, scouting=scouting, external=external)
 
 
 def _predictor(args, history: FightHistory) -> FightPredictor:
@@ -467,6 +470,7 @@ def build_parser() -> argparse.ArgumentParser:
         p.add_argument("--data", default=str(DEFAULT_DATA), help="directory with fighters.csv and fights.csv")
         p.add_argument("--scouting", default=str(DEFAULT_SCOUTING),
                        help="directory with backgrounds.json and fight_notes.json ('' to ignore)")
+        p.add_argument("--no-external", action="store_true", help="ignore Fight Matrix ratings (data/fightmatrix)")
 
     def model_args(p):
         p.add_argument("--model", help="trained model JSON (default: built-in prior weights)")

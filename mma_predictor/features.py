@@ -49,6 +49,7 @@ FEATURES: List[str] = [
     "chin_damage",
     "cardio",
     "schedule_strength",
+    "outside_rating",
     "stance",
 ]
 
@@ -73,6 +74,7 @@ FEATURE_LABELS: Dict[str, str] = {
     "chin_damage": "accumulated KO damage",
     "cardio": "cardio / late-round performance",
     "schedule_strength": "strength of schedule",
+    "outside_rating": "Fight Matrix rating edge",
     "stance": "stance matchup",
     "manual": "your matchup read",
     "intangibles_edit": "your intangibles edits",
@@ -182,5 +184,7 @@ def matchup_features(a: FighterSnapshot, b: FighterSnapshot, ctx: BoutContext = 
         "chin_damage": float(b.recent_ko_losses - a.recent_ko_losses),
         "cardio": (a.late_win_rate - b.late_win_rate) * (2.0 if five else 1.0),
         "schedule_strength": _clip((a.sos - b.sos) / 200.0),
+        # Fight Matrix Glicko rating (point in time); 0 unless both fighters have one.
+        "outside_rating": _clip((a.ext_rating - b.ext_rating) / 400.0) if a.ext_rating is not None and b.ext_rating is not None else 0.0,
         "stance": _stance(a, b),
     }

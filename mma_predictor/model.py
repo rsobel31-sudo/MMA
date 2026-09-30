@@ -39,6 +39,7 @@ PRIOR_WEIGHTS: Dict[str, float] = {
     "chin_damage": 0.15,
     "cardio": 0.20,
     "schedule_strength": 0.30,
+    "outside_rating": 0.30,
     "stance": 0.05,
 }
 

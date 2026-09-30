@@ -13,7 +13,7 @@ import math
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date
-from typing import Dict, List, Optional
+from typing import TYPE_CHECKING, Dict, List, Optional
 
 import dataclasses
 
@@ -24,21 +24,24 @@ from .intangibles import estimate as estimate_intangibles
 from .scouting import Scouting
 from .skills import SkillConfig, SkillRatings
 
+if TYPE_CHECKING:
+    from .external import ExternalRatings
+
 
 @dataclass(frozen=True)
 class Priors:
-    """Population averages (roughly UFC-level) and their pseudo-sample sizes."""
+    """Population averages and their pseudo-sample sizes (UFC bouts since 2015, UFCStats)."""
 
     slpm: float = 3.8  # significant strikes landed per minute
     sapm: float = 3.8  # absorbed per minute
     str_acc: float = 0.45
     str_def: float = 0.55
-    td_per15: float = 1.3
-    td_acc: float = 0.38
+    td_per15: float = 1.4
+    td_acc: float = 0.36
     td_def: float = 0.62
-    sub_per15: float = 0.5
+    sub_per15: float = 0.4
     kd_per15: float = 0.3
-    ctrl_share: float = 0.18
+    ctrl_share: float = 0.19
     # Share of bouts ending by each method.
     method_share: Dict[str, float] = field(
         default_factory=lambda: {"KO/TKO": 0.32, "SUB": 0.19, "DEC": 0.49}
@@ -124,6 +127,7 @@ class FighterSnapshot:
     recent: List[Appearance] = field(default_factory=list, repr=False)
     # Base rates of the sport this fighter competes in (men's and women's differ).
     priors: Priors = field(default=DEFAULT_PRIORS, repr=False)
+    ext_rating: Optional[float] = None  # Fight Matrix Glicko before as_of (external.py)
 
     @property
     def sig_diff5(self) -> float:
@@ -165,6 +169,7 @@ class FightHistory:
         elo_config: EloConfig = EloConfig(),
         skill_config: SkillConfig = SkillConfig(),
         scouting: Optional[Scouting] = None,
+        external: Optional["ExternalRatings"] = None,
         adjust_for_opponents: bool = True,
         recency_window_days: int = 548,
         recency_half_life_days: int = 730,
@@ -173,6 +178,7 @@ class FightHistory:
         self.fights = sorted(fights, key=lambda f: f.date)
         self.priors = priors
         self.scouting = scouting or Scouting()
+        self.external = external
         self.adjust_for_opponents = adjust_for_opponents
         self.recency_window_days = recency_window_days
         self.recency_half_life_days = recency_half_life_days
@@ -358,6 +364,7 @@ class FightHistory:
         cats = self.skills.breakdown(ratings)
         snap = FighterSnapshot(
             priors=p,
+            ext_rating=self.external.before(name, as_of) if self.external else None,
             name=name,
             as_of=as_of,
             bio=bio,
