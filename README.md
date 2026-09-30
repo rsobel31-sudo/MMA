@@ -360,6 +360,23 @@ Adding the verified stats improved the backtest on the same 3,923 UFC bouts from
 
 UFCStats itself (ufcstats.com) and UFC.com block automated access, so the Kaggle scrape is how its numbers get in.
 
+### Betting markets (BestFightOdds)
+
+[BestFightOdds](https://www.bestfightodds.com) aggregates many sportsbooks. Each fighter page lists every bout it tracked with both fighters' **opening line**, **closing range** and a series of how the average line **moved** in between; scheduled bouts carry the current line.
+
+```bash
+python scripts/crawl_verify_sources.py bestfightodds   # card + ranked fighters by search, then their UFC opponents
+python -m mma_predictor verify                         # links lines to verified bouts -> data/verified/odds.json
+python -m mma_predictor export --data data/verified --events UFC
+```
+
+- **Verified like everything else.** A line is used only when its bout matches a bout in our verified data (same fighters within a day), the bookmaker margin is sane (0-20%), and, where both fighters' pages list it, the two pages agree.
+- **The closing line** (margin removed) is the benchmark: the backtest reports the market's accuracy next to the model's, and a blend of the two fitted on earlier bouts is scored on later ones.
+- **Line movement** is tested for information beyond the closing price, and the Insights tab breaks bouts down by how far the line moved and who then won.
+- **Upcoming cards** show the favourite and underdog, where the line opened, a sparkline of its movement, which side the money came in on, and the model's edge over the market. Opening a bout pre-fills its odds on the matchup page.
+
+Results of the market study are shown in the Insights tab (Betting market).
+
 ### Combining sources
 
 `merge` unions datasets and matches the same bout across sources by fighter
