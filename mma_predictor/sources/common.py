@@ -93,7 +93,8 @@ class Fetcher:
         rp = self._robots[base]
         return True if rp is None else rp.can_fetch(self.user_agent, url)
 
-    def get(self, url: str) -> str:
+    def get(self, url: str, cache: bool = True) -> str:
+        """Fetch ``url``; ``cache=False`` skips writing big pages that are parsed once and stored compactly."""
         path = self._cache_path(url)
         if path.exists():
             return path.read_text(encoding="utf-8")
@@ -107,7 +108,8 @@ class Fetcher:
         with urllib.request.urlopen(req, timeout=30) as resp:
             html = resp.read().decode(resp.headers.get_content_charset() or "utf-8", errors="replace")
         self._last[host] = time.monotonic()
-        path.write_text(html, encoding="utf-8")
+        if cache:
+            path.write_text(html, encoding="utf-8")
         return html
 
 

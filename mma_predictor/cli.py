@@ -155,8 +155,15 @@ def cmd_backtest(args) -> int:
 
 
 def cmd_import(args) -> int:
-    from .sources import common, sherdog, tapology, ufcstats
+    from .sources import common, kaggle_ufc, sherdog, tapology, ufcstats
 
+    if args.source == "kaggle":
+        if not args.dir:
+            raise ValueError(f"--dir: the unzipped dataset (download: {kaggle_ufc.DOWNLOAD_URL})")
+        fighters, fights = kaggle_ufc.convert(Path(args.dir))
+        common.write_dataset(Path(args.out), fighters, fights)
+        print(f"Wrote {len(fighters)} fighters and {len(fights)} bouts to {args.out}")
+        return 0
     fetcher = common.Fetcher(Path(args.cache), delay=args.delay)
     if args.source == "ufcstats":
         fighters, fights = ufcstats.crawl(fetcher, events=args.ufc_events or None)
@@ -330,6 +337,28 @@ def cmd_analyze(args) -> int:
     return 0
 
 
+def cmd_verify(args) -> int:
+    """Build a dataset from Sherdog + UFCStats that keeps only what a second source confirms."""
+    from .verify import build_verified
+
+    rep = build_verified(Path(args.data), Path(args.stats), Path(args.statsfight), Path(args.out), strict_stats=args.strict_stats,
+                         fightmatrix_path=Path(args.fightmatrix))
+    total = sum(rep["results"].values())
+    print(f"UFCStats bouts: {total}")
+    for k, v in sorted(rep["results"].items(), key=lambda kv: -kv[1]):
+        print(f"  result vs Sherdog, {k}: {v}")
+    for k, v in sorted(rep["statsfight_results"].items(), key=lambda kv: -kv[1]):
+        print(f"  result vs StatsFight, {k}: {v}")
+    for k, v in sorted(rep["stats"].items(), key=lambda kv: -kv[1]):
+        print(f"  stats {k}: {v}")
+    for k in ("dob", "height", "reach"):
+        print(f"  {k}: {rep[k]}")
+    for c in rep["conflicts"][:10]:
+        print(f"  conflict {c['date']} {c['bout']}: UFCStats {c['ufcstats']}, Sherdog {c['sherdog']}, StatsFight {c['statsfight']}")
+    print(f"Wrote {args.out} (report: {args.out}/verification.json)")
+    return 0
+
+
 def cmd_merge(args) -> int:
     from .sources.merge import merge_datasets
 
@@ -494,7 +523,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.set_defaults(func=cmd_backtest)
 
     p = sub.add_parser("import", help="crawl fighter records from Sherdog, Tapology or UFCStats")
-    p.add_argument("source", choices=["sherdog", "tapology", "ufcstats"])
+    p.add_argument("source", choices=["sherdog", "tapology", "ufcstats", "kaggle"])
+    p.add_argument("--dir", help="kaggle: the unzipped UFC Datasets 1994-2025 folder")
     p.add_argument("seeds", nargs="*", help="fighter URLs or slugs (e.g. Israel-Adesanya-56374 / israel-adesanya)")
     p.add_argument("--ufc-events", type=int, default=0, help="sherdog: also seed with every fighter on the N most recent UFC events; ufcstats: import the N most recent events (default all)")
     p.add_argument("--out", required=True)
@@ -555,6 +585,15 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--roster-html", help="use a saved copy of the roster page instead of fetching it")
     p.add_argument("--cache", default=".cache/pages")
     p.set_defaults(func=cmd_enrich)
+
+    p = sub.add_parser("verify", help="Sherdog + UFCStats stats, keeping only what a second source confirms")
+    p.add_argument("--data", default="data/sherdog", help="career dataset (the base)")
+    p.add_argument("--stats", default="data/ufcstats", help="UFCStats dataset (import kaggle)")
+    p.add_argument("--statsfight", default="data/statsfight/bouts.jsonl")
+    p.add_argument("--out", default="data/verified")
+    p.add_argument("--fightmatrix", default="data/fightmatrix/profiles.jsonl", help="third source for birth dates")
+    p.add_argument("--strict-stats", action="store_true", help="attach only stats StatsFight confirms")
+    p.set_defaults(func=cmd_verify)
 
     p = sub.add_parser("merge", help="merge datasets (e.g. career records + UFC stats)")
     p.add_argument("dirs", nargs="+")
