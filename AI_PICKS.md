@@ -118,6 +118,48 @@ git add data/ai_picks && git commit -m "AI Picks: <event> (<n> bets, $<staked>)"
 
 Committing before the fights is what timestamps the picks.
 
+## My Picks: players vs Claude
+
+Everyone the page is shared with as a Contributor (or above) can play the same game in **My Picks**: $100, FanDuel prices, any bet. Public-link visitors from outside the owner's organization can only watch.
+
+Page database layout:
+
+| Path | Who writes it | What it holds |
+|---|---|---|
+| `players/<uid>` | the player | optional `nickname` |
+| `players/<uid>/bets/<id>` | the player | their bets |
+| `standings/<uid>`, `standings/leaderboard` | Claude only | official, graded standings |
+| `ai_picks/board` | Claude only | the prices players bet at |
+
+**Publishing the board.** Every `picks sheet` run (Tuesday scouting, Friday picks) saves a board: FanDuel prices, never Claude's probabilities. It goes in `data/ai_picks/boards/` and `.cache/ai_picks_board.json`. Publish it with ArtifactData:
+
+- `set ai_picks/board` from that file (read the document first and pin `if_version`).
+- Old boards stay in the repo, so a bet placed at Tuesday's price stays valid.
+
+**Grading (Sunday, after `picks settle`):**
+
+```bash
+python -m mma_predictor picks results        # two-source results for every bout on past boards
+```
+
+1. ArtifactData `list` the `players` collection **inline** (not `out_dir`: grading needs each document's `updatedAt`).
+2. For each player id, `list` `players/<id>/bets` inline and save the full tool output to `.cache/players/<id>.txt`.
+3. Run:
+
+   ```bash
+   python -m mma_predictor picks league        # -> .cache/league_sync/*.json and the batch to write
+   ```
+
+4. Write the listed `standings` documents in one ArtifactData batch (read first; pin `if_version` on existing documents).
+
+A player's bet is voided (refunded) if any of these is true:
+
+- It was saved after the card locked. The database's `updatedAt` is the source of truth.
+- It uses a price that was never on a board for that event.
+- The stake is under $1.
+- It has two legs from the same bout.
+- The stake is more than the player had available.
+
 ## Sunday: grade
 
 Also run `python -m mma_predictor scout grade` and `scout sync`, write the `scouting` collection, and commit. Reads and pundit picks are graded against the same two-source results.

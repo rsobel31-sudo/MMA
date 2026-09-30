@@ -42,6 +42,10 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+def _in_us(location: str) -> bool:
+    return bool(re.search(r"U\.S\.|United States", location))
+
+
 def _pair(a: str, b: str) -> frozenset:
     """A bout's identity across sources: the two surnames (accent- and order-insensitive)."""
     from .sources.wikipedia import match_key
@@ -134,7 +138,9 @@ def cmd_sheet(args) -> int:
     sheet = {
         "event": ev["name"], "date": ev["date"], "results_url": ev["url"], "odds_url": best["url"], "book": "FanDuel",
         "fetched_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        "event_starts": f"{ev['date']}T12:00:00+00:00",
+        # Betting locks before the first bout: US cards start in the evening (early prelims ~22:00-23:00 UTC),
+        # cards elsewhere can start by mid-afternoon UTC.
+        "event_starts": f"{ev['date']}T{'21' if _in_us(ev.get('location', '')) else '12'}:00:00+00:00",
         "odds_urls": best["urls"], "unpriced": unpriced,
         "blend_weights": blend_w, "dec_cal": dec_cal, "prop_shrink": P.PROP_SHRINK, "bouts": bouts, "skipped": skipped,
         "markets": sorted(markets, key=lambda m: -m["ev"]),
@@ -142,6 +148,14 @@ def cmd_sheet(args) -> int:
     SHEETS.mkdir(parents=True, exist_ok=True)
     out = Path(args.out) if args.out else SHEETS / f"{ev['date']}-{_slug(ev['name'])}.json"
     out.write_text(json.dumps(sheet, indent=1))
+    # The players' board (My Picks): FanDuel prices only; every version is kept to validate bets.
+    from .league import board_from_sheet, save_board
+
+    board = board_from_sheet(sheet)
+    saved = save_board(board)
+    Path(".cache").mkdir(exist_ok=True)
+    Path(".cache/ai_picks_board.json").write_text(json.dumps(board, ensure_ascii=False))
+    print(f"Board for My Picks -> {saved} (publish .cache/ai_picks_board.json as ai_picks/board)")
     led = P.Ledger(Path(args.ledger))
     print(f"{ev['name']} ({ev['date']}) · FanDuel via {best['url']}")
     print(f"Bankroll ${led.bankroll():.2f} · available ${led.available():.2f}" + ("  ** BUST **" if led.bust() else ""))
@@ -346,6 +360,55 @@ def cmd_settle(args) -> int:
     return 3 if s["bust"] else (2 if pending else 0)
 
 
+def cmd_results(args) -> int:
+    """Results for every bout on past boards (both sources agreeing), for grading players' bets."""
+    from .league import RESULTS, load_boards
+
+    fetcher = _fetcher(args.cache)
+    today = date.today().isoformat()
+    for ev, boards in load_boards().items():
+        b = boards[-1]
+        if b["date"] >= today and not args.force:
+            continue
+        path = RESULTS / f"{b['date']}-{_slug(ev)}.json"
+        have = json.loads(path.read_text())["bouts"] if path.exists() else {}
+        todo = [x["bout"] for x in b["bouts"] if x["bout"] not in have]
+        if not todo:
+            continue
+        week = {"results_url": b.get("results_url", ""), "event_date": b["date"], "bets": [{"legs": [{"bout": x}]} for x in todo]}
+        res = _results_for(fetcher, week)
+        for k, r in res.items():
+            have[k] = None if r is None else {"winner": r.winner, "method": r.method, "round": r.round, "seconds": r.seconds}
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"event": ev, "date": b["date"], "sources": ["Wikipedia event page", "Sherdog fighter records"],
+                                    "bouts": have}, indent=1, ensure_ascii=False) + "\n")
+        print(f"{ev}: {len(have)}/{len(b['bouts'])} bouts resolved -> {path}")
+    return 0
+
+
+def cmd_league(args) -> int:
+    """Official My Picks standings from the players' bets (exported from the page database)."""
+    from .league import leaderboard, load_boards, load_results, parse_player_export, standings_for
+
+    boards, results = load_boards(), load_results()
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    standings = []
+    for f in sorted(Path(args.players).glob("*.txt")):
+        uid = f.stem
+        docs = parse_player_export(f.read_text())
+        s = standings_for(uid, docs, boards, results)
+        standings.append(s)
+        (out / f"{uid}.json").write_text(json.dumps(s, ensure_ascii=False))
+        print(f"  {uid}: bankroll ${s['bankroll']:.2f}, {s['won']}-{s['lost']}, {s['void']} void, ${s['open_stakes']:.2f} open")
+    claude = P.Ledger(Path(args.ledger)).summary()
+    lb = leaderboard(standings, claude)
+    (out / "leaderboard.json").write_text(json.dumps(lb, ensure_ascii=False))
+    writes = [{"op": "set", "collection": "standings", "doc_id": p.stem, "file_path": str(p.resolve())} for p in sorted(out.glob("*.json"))]
+    print(json.dumps(writes, indent=1))
+    return 0
+
+
 def cmd_status(args) -> int:
     led = P.Ledger(Path(args.ledger))
     s = led.summary()
@@ -409,6 +472,17 @@ def register(sub, data_arg) -> None:
     common(q)
     q.add_argument("--force", action="store_true", help="try weeks whose event date hasn't passed")
     q.set_defaults(func=cmd_settle)
+
+    q = ps.add_parser("results", help="two-source results for past boards (grades My Picks)")
+    common(q)
+    q.add_argument("--force", action="store_true")
+    q.set_defaults(func=cmd_results)
+
+    q = ps.add_parser("league", help="My Picks standings from exported player bets")
+    common(q)
+    q.add_argument("--players", default=".cache/players", help="one <uid>.txt per player: the inline ArtifactData listing of players/<uid>/bets")
+    q.add_argument("--out", default=".cache/league_sync")
+    q.set_defaults(func=cmd_league)
 
     q = ps.add_parser("status", help="bankroll and record")
     common(q)

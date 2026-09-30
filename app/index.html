@@ -73,6 +73,27 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .corner.red input { border-left: 5px solid var(--red); }
 .corner.blue input { border-left: 5px solid var(--blue); }
 .cb { position: relative; display: block; }
+.mp-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-top: 12px; }
+.mp-side { position: sticky; top: 12px; }
+.mp-bout { border-top: 1px solid var(--line); padding: 12px 0; }
+.mp-bout:first-child { border-top: 0; padding-top: 0; }
+.mp-bout-hd { margin-bottom: 8px; }
+.mp-ml { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mp-props { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; margin-top: 8px; }
+.mp-bout details > summary { cursor: pointer; font-size: 13px; color: var(--muted); margin-top: 8px; }
+.odds-btn { display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 7px 10px; font: 500 13px var(--body); color: var(--ink); cursor: pointer; text-align: left; }
+.odds-btn.big { padding: 10px 12px; font-size: 14.5px; }
+.odds-btn:hover { border-color: var(--ink); }
+.odds-btn.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.mp-slip { background: var(--surface-2); border-radius: 14px; padding: 14px; display: grid; gap: 10px; }
+.mp-legs { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.mp-legs li { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; font-size: 13.5px; }
+.mp-stake { display: grid; gap: 6px; font-size: 13.5px; }
+.mp-stake input { width: 110px; }
+.mp-msg { margin: 0; font-size: 13px; color: var(--edit); }
+.mp-lb tr.mp-me td { background: var(--edit-soft); }
+.mp-lb tr.mp-ai td { font-style: italic; }
+@media (max-width: 800px) { .mp-grid { grid-template-columns: 1fr; } .mp-side { position: sticky; bottom: 8px; top: auto; order: 2; } }
 .sc-read { background: var(--surface-2); border-radius: 14px; padding: 14px 16px; }
 .sc-read p { margin: 8px 0 0; font-size: 14.5px; line-height: 1.5; }
 .sc-read-hd { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
@@ -420,6 +441,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   <div class="more" id="more">
     <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
+      <button type="button" role="menuitem" data-tab="mypicks">My Picks</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
       <button type="button" role="menuitem" data-tab="insights">Insights</button>
@@ -490,6 +512,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     tab: "card",
     picks: { sub: "week", summary: null, weeks: [], loaded: false },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
+    my: { sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
@@ -674,7 +697,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -1052,6 +1075,13 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         ["What it is", "Claude reads the major MMA outlets every week (MMA Fighting, Sherdog, Bloody Elbow, Cageside Press, MMA Mania, BJPenn.com, MMA Weekly, LowKick MMA, ESPN, UFC.com) plus fight previews and breakdowns, and writes a report on each fighter: how they actually fight, their habits, what's worrying, how to beat them, and the news. Every claim links to its source; facts are checked against the verified fight records."],
         ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Picks betting sheet."],
         ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
+    }
+    if (key === "my_picks") {
+      return { title: "How My Picks works", key, rows: [
+        ["The game", "Everyone who plays starts with $100 of play money and bets UFC cards at FanDuel's prices: moneylines, method, rounds, over/unders and parlays across different bouts. Claude plays the same game in AI Picks; the leaderboard ranks everyone, Claude included."],
+        ["Prices", "The board is FanDuel's prices as listed on BestFightOdds when Claude last checked (Tuesday and Friday). Your bet is recorded at the board's price."],
+        ["Locking and grading", "Betting closes when the card starts. After the card, Claude grades every bet from results that Wikipedia and Sherdog agree on, the same way it grades its own. A bet saved after the lock, at a price that wasn't on the board, or for more than your available money is voided and refunded."],
+        ["Who can play", "Anyone the page is shared with as a Contributor (or above). Viewers from a public link can watch the leaderboard but can't place bets."]] };
     }
     if (key === "ai_picks") {
       return { title: "How AI Picks works", key, rows: [
@@ -1687,6 +1717,11 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
     if (t.dataset.picksSub) { state.picks.sub = t.dataset.picksSub; render(); return; }
+    if (t.dataset.mySub) { state.my.sub = t.dataset.mySub; state.my.msg = ""; render(); return; }
+    if (t.dataset.slip) { slipToggle(t.dataset.slip); return; }
+    if (t.id === "mp-place") { placeBet(); return; }
+    if (t.id === "mp-clear") { state.my.slip = []; state.my.msg = ""; render(); return; }
+    if (t.id === "mp-nick-save") { saveNickname(($("#mp-nick") || {}).value || ""); return; }
     if (t.dataset.rosterView) { state.roster.view = t.dataset.rosterView; render(); return; }
     if (t.dataset.sort) {
       const k = t.dataset.sort, r = state.roster;
@@ -1772,6 +1807,12 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       return;
     }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
+    if (t.id === "mp-stake") {
+      state.my.stake = t.value;
+      const out = t.closest(".mp-stake").querySelector(".num strong");
+      if (out) { const dec = state.my.slip.reduce((x, l) => x * decOdds(l.odds), 1); out.textContent = money((+t.value || 0) * (dec - 1)); }
+      return;
+    }
   });
 
   // ------------------------------------------------------------ scouting
@@ -1848,10 +1889,175 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     </section>`;
   }
 
+  // ------------------------------------------------------------ My Picks (the league)
+  async function startLeague(db) {
+    const M = state.my;
+    M.db = db;
+    db.collection("standings").onSnapshot((snap) => {
+      const st = {};
+      let lb = null;
+      snap.docs.forEach((d) => { const v = d.data(); if (d.id === "leaderboard") lb = v; else st[d.id] = v; });
+      M.standings = st; M.lb = lb; M.loaded = true; namesFor(); renderSoon();
+    }, () => { M.loaded = true; renderSoon(); });
+    db.collection("players").onSnapshot((snap) => {
+      M.nicks = {};
+      snap.docs.forEach((d) => { const v = d.data(); if (v && v.nickname) M.nicks[d.id] = v.nickname; });
+      namesFor(); renderSoon();
+    }, () => {});
+    const user = await window.claude.use("user").catch(() => null);
+    M.user = user;
+    M.uid = user ? await user.id() : null;
+    if (!M.uid) { renderSoon(); return; }
+    db.collection("players/" + M.uid + "/bets").onSnapshot((snap) => {
+      M.bets = snap.docs.map((d) => Object.assign({ _id: d.id }, d.data())).sort((a, b) => (b.placed_at || "").localeCompare(a.placed_at || ""));
+      renderSoon();
+    }, () => {});
+    db.doc("players/" + M.uid).onSnapshot((d) => { M.player = d.exists ? d.data() : null; renderSoon(); }, () => {});
+  }
+  // Names for the leaderboard: a player's own nickname, else their profile name (resolved each render, never stored).
+  async function namesFor() {
+    const M = state.my;
+    const ids = ((M.lb && M.lb.rows) || []).map((r) => r.uid).filter((u) => u !== "claude");
+    if (!ids.length) return;
+    const ps = M.user ? await M.user.profiles(ids).catch(() => ({})) : {};
+    let changed = false;
+    for (const id of ids) {
+      const n = (M.nicks || {})[id] || (ps[id] && ps[id].name) || "";
+      if (M.names[id] !== n) { M.names[id] = n; changed = true; }
+    }
+    if (changed && state.tab === "mypicks") renderSoon();
+  }
+  const myStanding = () => (state.my.uid && state.my.standings[state.my.uid]) || null;
+  /** Your bankroll as of Claude's last grading, minus bets placed since. */
+  function myMoney() {
+    const M = state.my, st = myStanding();
+    const graded = new Set(((st && st.bets) || []).map((b) => b.id));
+    const pending = M.bets.filter((b) => !graded.has(b._id));
+    const pendingStake = pending.reduce((x, b) => x + (+b.stake || 0), 0);
+    const bankroll = st ? st.bankroll : 100;
+    const available = (st ? st.available : 100) - pendingStake;
+    return { bankroll, available: Math.round(available * 100) / 100, open: Math.round(((st ? st.open_stakes : 0) + pendingStake) * 100) / 100, pending, st };
+  }
+  const boardLocked = (bd) => !bd || !bd.locks_at || Date.now() >= Date.parse(bd.locks_at);
+  const decOdds = (o) => (o > 0 ? 1 + o / 100 : 1 + 100 / -o);
+  const amerOdds = (d) => (d >= 2 ? "+" + Math.round((d - 1) * 100) : String(Math.round(-100 / (d - 1))));
+  function slipToggle(id) {
+    const M = state.my, bd = M.board;
+    const m = bd && bd.markets.find((x) => x.id === id);
+    if (!m) return;
+    const i = M.slip.findIndex((l) => l.id === id);
+    if (i >= 0) M.slip.splice(i, 1);
+    else { M.slip = M.slip.filter((l) => l.bout !== m.bout); M.slip.push({ id: m.id, bout: m.bout, market: m.market, selection: m.selection, odds: m.odds }); }
+    M.msg = "";
+    render();
+  }
+  async function placeBet() {
+    const M = state.my, bd = M.board;
+    const stake = Math.round((+M.stake || 0) * 100) / 100;
+    const mon = myMoney();
+    if (!M.uid || !bd || boardLocked(bd) || !M.slip.length) return;
+    if (!(stake >= 1)) { M.msg = "Minimum stake is $1.00."; render(); return; }
+    if (stake > mon.available + 1e-9) { M.msg = `You have ${money(mon.available)} available.`; render(); return; }
+    const dec = M.slip.reduce((x, l) => x * decOdds(l.odds), 1);
+    const doc = { event: bd.event, placed_at: new Date().toISOString(), board_fetched_at: bd.fetched_at, stake,
+      odds: +amerOdds(dec), legs: M.slip.map((l) => ({ id: l.id, bout: l.bout, market: l.market, selection: l.selection, odds: l.odds })) };
+    M.busy = true; render();
+    try {
+      if (!M.player) await M.db.doc("players/" + M.uid).set({ joined: new Date().toISOString() });
+      await M.db.collection("players/" + M.uid + "/bets").add(doc);
+      M.slip = []; M.stake = ""; M.msg = "Bet placed. It's graded with everyone's after the card.";
+    } catch (e) {
+      M.readOnly = (e && e.code) === "invalid_argument";
+      M.msg = M.readOnly ? "This view can't place bets: ask the page's owner to invite you as a Contributor." : `Couldn't place the bet (${(e && e.code) || "error"}).`;
+    }
+    M.busy = false; render();
+  }
+  async function saveNickname(v) {
+    const M = state.my;
+    if (!M.uid) return;
+    try { await M.db.doc("players/" + M.uid).set(Object.assign({}, M.player || { joined: new Date().toISOString() }, { nickname: v.trim().slice(0, 40) })); M.msg = "Leaderboard name saved."; }
+    catch (e) { M.msg = "Couldn't save the name."; }
+    render();
+  }
+  function boardHtml(bd) {
+    const M = state.my, inSlip = new Set(M.slip.map((l) => l.id));
+    const btn = (m, cls = "") => `<button type="button" class="odds-btn ${cls} ${inSlip.has(m.id) ? "on" : ""}" data-slip="${esc(m.id)}" aria-pressed="${inSlip.has(m.id)}"><span>${esc(m.selection)}</span><strong class="num">${m.odds > 0 ? "+" : ""}${m.odds}</strong></button>`;
+    return bd.bouts.map((b) => {
+      const ms = bd.markets.filter((m) => m.bout === b.bout);
+      if (!ms.length) return "";
+      const ml = ms.filter((m) => m.market[0] === "ml"), props = ms.filter((m) => m.market[0] !== "ml");
+      return `<div class="mp-bout"><div class="mp-bout-hd"><strong>${esc(b.bout)}</strong>${b.rounds === 5 ? ' <span class="pill">5 rds</span>' : ""}</div>
+        <div class="mp-ml">${ml.map((m) => btn(m, "big")).join("")}</div>
+        ${props.length ? `<details><summary>${props.length} more markets: method, rounds, over/under</summary><div class="mp-props">${props.map((m) => btn(m)).join("")}</div></details>` : ""}</div>`;
+    }).join("");
+  }
+  function slipHtml(bd, mon) {
+    const M = state.my;
+    if (!M.slip.length) return `<div class="mp-slip"><div class="label">Bet slip</div><p class="muted" style="font-size:13.5px;margin:6px 0 0">Tap a price to add it. Pick legs from different bouts to build a parlay.</p>${M.msg ? `<p class="mp-msg">${esc(M.msg)}</p>` : ""}</div>`;
+    const dec = M.slip.reduce((x, l) => x * decOdds(l.odds), 1), stake = +M.stake || 0;
+    return `<div class="mp-slip"><div class="label">Bet slip · ${M.slip.length > 1 ? `${M.slip.length}-leg parlay` : "single"}</div>
+      <ul class="mp-legs">${M.slip.map((l) => `<li><span>${esc(l.selection)} <span class="muted" style="font-size:12px">${esc(l.bout)}</span></span><span class="num">${l.odds > 0 ? "+" : ""}${l.odds}</span><button type="button" class="btn link" data-slip="${esc(l.id)}" aria-label="Remove">✕</button></li>`).join("")}</ul>
+      <div class="mp-stake"><label>Stake $ <input id="mp-stake" type="number" inputmode="decimal" min="1" step="0.5" value="${esc(M.stake)}" placeholder="0.00"></label>
+        <span class="num">@ ${amerOdds(dec)} · to win <strong>${money(stake * (dec - 1))}</strong></span></div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button type="button" class="btn primary" id="mp-place" ${M.busy || boardLocked(bd) ? "disabled" : ""}>Place bet</button>
+        <button type="button" class="btn small" id="mp-clear">Clear</button><span class="muted num" style="font-size:12.5px">${money(mon.available)} available</span></div>
+      ${M.msg ? `<p class="mp-msg">${esc(M.msg)}</p>` : ""}</div>`;
+  }
+  function myBetRows(rows) {
+    if (!rows.length) return `<p class="muted" style="font-size:13.5px">No bets yet.</p>`;
+    return `<div class="table-wrap"><table class="recent pk-bets pk-table"><thead><tr><th>Bet</th><th class="num">Odds</th><th class="num">Stake</th><th>Result</th></tr></thead><tbody>
+      ${rows.map((b) => { const [lab, cls] = STATUS[b.status] || ["Awaiting grading", "tier-toss"];
+        return `<tr><td>${b.legs.length > 1 ? `<span class="pill">${b.legs.length}-leg parlay</span>` : ""}${b.legs.map((l) => `<div>${esc(l.selection)} <span class="muted" style="font-size:12px">${esc(l.bout)}${b.legs.length > 1 ? ` · ${l.odds > 0 ? "+" : ""}${l.odds}` : ""}</span></div>`).join("")}<div class="muted" style="font-size:12px">${esc(b.event || "")}</div></td>
+          <td class="num" data-l="Odds">${b.odds > 0 ? "+" : ""}${b.odds ?? ""}</td><td class="num" data-l="Stake">${money(+b.stake)}</td>
+          <td data-l="Result"><span class="tier ${cls}">${lab}</span>${b.status && b.status !== "open" ? `<div class="num" style="font-size:13px;margin-top:3px">${signed(b.profit || 0)}</div>` : ""}${b.void_reason ? `<div class="muted" style="font-size:12px">${esc(b.void_reason)}</div>` : ""}</td></tr>`; }).join("")}
+      </tbody></table></div>`;
+  }
+  function leaderboardHtml() {
+    const M = state.my, lb = M.lb;
+    if (!lb || !lb.rows.length) return `<div class="empty">The leaderboard fills in after the first card is graded. Claude and every player start at $100.00.</div>`;
+    return `<div class="table-wrap"><table class="recent pk-table mp-lb"><thead><tr><th class="num">#</th><th>Player</th><th class="num">Bankroll</th><th class="num">Profit</th><th class="num">Record</th><th class="num">ROI</th></tr></thead><tbody>
+      ${lb.rows.map((r, i) => { const me = r.uid === M.uid, ai = r.uid === "claude";
+        const name = ai ? "Claude (AI)" : (M.names[r.uid] || (me ? "You" : "Player"));
+        return `<tr class="${me ? "mp-me" : ""}${ai ? " mp-ai" : ""}"><td class="num">${i + 1}</td><td>${esc(name)}${me && !ai ? ' <span class="pill">you</span>' : ""}</td><td class="num"><strong>${money(r.bankroll)}</strong></td><td class="num">${signed(r.profit)}</td><td class="num">${r.won}-${r.lost}</td><td class="num">${r.roi != null ? (r.roi * 100).toFixed(1) + "%" : "—"}</td></tr>`; }).join("")}
+      </tbody></table></div><p class="muted" style="font-size:12px">Graded after each card from results two sources agree on${lb.updated ? `; updated ${esc(when(lb.updated))}` : ""}.</p>`;
+  }
+  function renderMyPicks(view) {
+    const M = state.my, bd = M.board, mon = myMoney(), st = mon.st;
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">My Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:72ch">Same game as AI Picks: $100 to start, FanDuel's prices, any bet you like. Your bankroll runs all season against Claude's and everyone else's who plays. Bets lock when the card starts and are graded after it.</p></section>`;
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="My Picks view">
+        <button type="button" data-my-sub="bet" aria-pressed="${M.sub === "bet"}">Bet</button>
+        <button type="button" data-my-sub="record" aria-pressed="${M.sub === "record"}">My record</button>
+        <button type="button" data-my-sub="board" aria-pressed="${M.sub === "board"}">Leaderboard</button></span>${infoBtn("my_picks", "How My Picks works")}</div>`;
+    if (!M.db) { view.innerHTML = `<div class="stack">${intro}<div class="empty">My Picks needs the page's database: open the page signed in to claude.ai.</div></div>`; return; }
+    const bust = st && st.bust ? `<div class="pk-alert" role="alert"><strong>You're out of money.</strong> Your bankroll is ${money(st.bankroll)}, below the $1.00 minimum bet.</div>` : "";
+    const stats = `<div class="pk-stats">
+      <div class="pk-stat"><div class="label">Bankroll</div><div class="pk-big num">${money(mon.bankroll)}</div><div class="muted" style="font-size:12.5px">started at $100.00</div></div>
+      <div class="pk-stat"><div class="label">Available</div><div class="pk-big num">${money(mon.available)}</div><div class="muted" style="font-size:12.5px">${money(mon.open)} on open bets</div></div>
+      <div class="pk-stat"><div class="label">Record</div><div class="pk-big num">${st ? `${st.won}–${st.lost}` : "0–0"}</div><div class="muted" style="font-size:12.5px">${st && st.roi != null ? `ROI ${(st.roi * 100).toFixed(1)}%` : "nothing graded yet"}</div></div>
+      <div class="pk-stat"><div class="label">Vs Claude</div><div class="pk-big num">${state.picks.summary ? signed(mon.bankroll - state.picks.summary.bankroll) : "—"}</div><div class="muted" style="font-size:12.5px">Claude has ${state.picks.summary ? money(state.picks.summary.bankroll) : "$100.00"}</div></div></div>`;
+    let body = "";
+    if (!M.uid) body = `<div class="empty">Sign in to claude.ai to play. You can still see the leaderboard.</div>` + leaderboardHtml();
+    else if (M.sub === "bet") {
+      if (!bd) body = `<div class="empty">No board yet: FanDuel prices for the next card go up with Claude's Tuesday and Friday runs.</div>`;
+      else body = `<section class="panel"><div class="toolbar" style="justify-content:space-between"><div><h3 style="margin:0">${esc(bd.event)}</h3>
+          <div class="muted num" style="font-size:13px">FanDuel prices as of ${esc(when(bd.fetched_at))} · ${boardLocked(bd) ? "<strong>Betting closed</strong>" : `locks ${esc(when(bd.locks_at))}`}</div></div></div>
+          <div class="mp-grid"><div class="mp-board">${boardHtml(bd)}</div><div class="mp-side">${slipHtml(bd, mon)}</div></div></section>`;
+    } else if (M.sub === "record") {
+      const graded = (st && st.bets) || [];
+      const pending = mon.pending.map((b) => Object.assign({}, b, { status: undefined }));
+      body = `${st && st.curve && st.curve.length > 1 ? `<section class="panel"><h3 style="margin-top:0">Bankroll</h3>${curve(st.curve)}</section>` : ""}
+        <section class="panel"><h3 style="margin-top:0">Your bets</h3>${myBetRows(pending.concat(graded.slice().reverse()))}</section>
+        <section class="panel"><h3 style="margin-top:0">Leaderboard name</h3><p class="muted" style="font-size:13px;margin:0 0 8px">Optional. Otherwise the leaderboard shows your claude.ai name to people who can see it.</p>
+          <input id="mp-nick" type="text" maxlength="40" value="${esc((M.player && M.player.nickname) || "")}" placeholder="Your name on the leaderboard"> <button class="btn small" type="button" id="mp-nick-save">Save</button></section>`;
+    } else body = `<section class="panel"><h3 style="margin-top:0">Leaderboard</h3>${leaderboardHtml()}</section>`;
+    view.innerHTML = `<div class="stack">${bust}${intro}${sub}${M.uid ? stats : ""}${body}<p class="muted" style="font-size:12px;margin:0">For fun: play money, not betting advice.</p></div>`;
+  }
+
   // ------------------------------------------------------------ AI picks
   function setPicks(docs) {
     state.picks.summary = docs.find((d) => d._id === "summary") || null;
-    state.picks.weeks = docs.filter((d) => d._id !== "summary" && d.event).sort((a, b) => (b.placed_at || "").localeCompare(a.placed_at || ""));
+    state.my.board = docs.find((d) => d._id === "board") || state.my.board;
+    state.picks.weeks = docs.filter((d) => /^w\d+$/.test(d._id) && d.event).sort((a, b) => (b.placed_at || "").localeCompare(a.placed_at || ""));
     state.picks.loaded = true;
     renderSoon();
   }
@@ -2071,6 +2277,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (db) {
       state.store = dbStore(db); state.storeKind = "db";
       state.picks.fromDb = true;
+      startLeague(db);
       // The database is the source of truth once it answers.
       state.adj = { fighters: {}, matchups: {}, weights: {} };
       render();
