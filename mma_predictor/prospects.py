@@ -222,14 +222,82 @@ def _division(sherdog_wc: str) -> str:
 MIN_CALLS = 20  # graded calls before a source's weight can move
 
 
+PROMOTIONS = (("UFC", r"^\s*UFC"), ("PFL", r"^\s*(PFL|Professional Fighters League)"), ("Bellator", r"^\s*Bellator"),
+              ("ONE", r"^\s*(ONE\b|One Championship|OneFC|ONE FC)"), ("ACA", r"^\s*(ACA|Absolute Championship)"), ("RIZIN", r"^\s*Rizin"))
+
+
+def promotion_of(event: str) -> str:
+    for name, rx in PROMOTIONS:
+        if re.search(rx, event or "", re.I):
+            return name
+    return "major"
+
+
+def first_major(bouts: List[Dict[str, object]]) -> Optional[Dict[str, object]]:
+    maj = sorted((b for b in bouts if is_major(str(b.get("event", "")))), key=lambda b: str(b["date"]))
+    return maj[0] if maj else None
+
+
 def grade_call(bouts: List[Dict[str, object]], since: str) -> Optional[bool]:
-    """Did a prospect call pan out? Hit = won at least two thirds of their decided fights since the call
-    (at least two of them); None while fewer than two fights have happened."""
+    """Did a prospect call pan out?
+
+    - Already fought in a major promotion when called: not a prospect call, not graded (None).
+    - Signed with a major promotion (first major-promotion bout) after the call: hit.
+    - Otherwise: hit if they won at least two thirds of their decided fights since the call
+      (at least two of them); None while fewer than two fights have happened.
+    """
+    fm = first_major(bouts)
+    if fm is not None:
+        return None if str(fm["date"]) < since else True
     after = [b for b in bouts if str(b.get("date", "")) >= since and b.get("result") in ("win", "loss")]
     if len(after) < 2:
         return None
     wins = sum(b["result"] == "win" for b in after)
     return wins / len(after) >= 2 / 3
+
+
+def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], listed: Dict[str, Dict[str, object]],
+             checks: Optional[Dict[str, Dict[str, object]]] = None) -> List[Dict[str, object]]:
+    """Prospects who signed with a major promotion after being called (by a caller) or listed (by us).
+
+    The signing is dated by the first major-promotion bout on Sherdog; `confirm` holds the
+    second source for it (BestFightOdds, filled in by the crawl) when we have one.
+    """
+    key = person_keys(noted, candidates)
+    rec: Dict[str, tuple] = {}
+    for c in candidates:
+        sd = c.get("sherdog") or {}
+        if sd.get("bouts"):
+            shown = (noted.get("aliases") or {}).get(c["name"], c["name"])
+            rec.setdefault(key(c["name"]), (listed.get(key(c["name"]), {}).get("name") or shown, sd))
+    calls: Dict[str, List[dict]] = {}
+    for lst in noted.get("lists", []):
+        since = str(lst.get("date", ""))[:10] or "1900-01-01"
+        if len(since) == 7:
+            since += "-01"
+        for n in lst.get("names", []):
+            calls.setdefault(key(n), []).append({"source": source_of(lst), "outlet": lst.get("outlet", ""), "author": lst.get("author", ""),
+                                                 "kind": lst.get("kind", "outlet"), "date": since, "url": lst.get("url", ""), "title": lst.get("title", "")})
+    out = []
+    for k in set(calls) | set(listed):
+        if k not in rec:
+            continue
+        name, sd = rec[k]
+        fm = first_major(sd["bouts"])
+        if fm is None:
+            continue
+        before = sorted((c for c in calls.get(k, []) if c["date"] <= str(fm["date"])), key=lambda c: c["date"])
+        ours = listed.get(k)
+        ours_before = ours if ours and str(ours.get("first_listed", "9999")) <= str(fm["date"]) else None
+        if not before and not ours_before:
+            continue  # already in a major promotion when first named
+        out.append({"name": name, "sherdog_url": sd.get("url", ""), "promotion": promotion_of(str(fm["event"])),
+                    "debut": str(fm["date"]), "event": fm["event"], "result": fm.get("result"), "method": fm.get("method"),
+                    "called_by": before, "first_call": before[0] if before else None,
+                    "lead_days": (date.fromisoformat(str(fm["date"])) - date.fromisoformat(before[0]["date"])).days if before else None,
+                    "on_our_list": bool(ours_before), "our_rank": (ours_before or {}).get("best_rank"),
+                    "confirmed_by": (checks or {}).get(sd.get("url", ""))})
+    return sorted(out, key=lambda s: s["debut"], reverse=True)
 
 
 def person_keys(noted: Dict[str, object], candidates: Iterable[Dict[str, object]]):
@@ -351,10 +419,22 @@ def cmd_build(args) -> int:
     ranks = Path(args.candidates).with_name("fm_ranks.jsonl")
     screened = sum(1 for l in ranks.read_text().splitlines() if l.strip()) if ranks.exists() else None
     pros = build(cands, noted, today)
+    # Our own list's history: who we listed, from when, at best what rank (credits us when they sign).
+    lpath = Path(args.candidates).with_name("listed.json")
+    listed = json.loads(lpath.read_text()) if lpath.exists() else {}
+    person = person_keys(noted, cands)
+    for p in pros:
+        k = person(p["name"])
+        e = listed.setdefault(k, {"name": p["name"], "sherdog_url": p.get("sherdog_url", ""), "first_listed": today.isoformat(), "best_rank": p["p4p_rank"]})
+        e["last_listed"] = today.isoformat()
+        e["best_rank"] = min(e.get("best_rank") or p["p4p_rank"], p["p4p_rank"])
+    lpath.write_text(json.dumps(listed, ensure_ascii=False, indent=0, sort_keys=True))
+    cpath = Path(args.candidates).with_name("signing_checks.json")
+    signed = signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {})
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
-           "callers": getattr(build, "track", []), "prospects": pros}
+           "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     rejected = [c for c in cands if not (c.get("check") or {}).get("eligible")]
     reasons: Dict[str, int] = {}
@@ -364,6 +444,7 @@ def cmd_build(args) -> int:
             reasons[k] = reasons.get(k, 0) + 1
     print(f"{len(pros)} prospects from {len(cands)} checked ({screened} ranked fighters screened) -> {args.out}")
     print("Left out:", ", ".join(f"{k} {v}" for k, v in sorted(reasons.items(), key=lambda kv: -kv[1])))
+    print(f"{len(signed)} signed after being called or listed: " + ", ".join(f"{x['name']} ({x['promotion']} {x['debut'][:7]})" for x in signed[:12]))
     for p in pros[:15]:
         print(f"  {p['p4p_rank']:>3}. {p['name']:<26} {p['division']:<20} {p['age']:>4} {p['wins']}-{p['losses']}  {p['promotion'][:22]:<22} {p['score']}  {'★' * len(p['noted_by'])}")
     return 0

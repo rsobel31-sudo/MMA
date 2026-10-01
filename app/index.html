@@ -434,6 +434,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   .rc-big { font-size: 26px; font-weight: 700; }
   td.rc-good { color: var(--good); font-weight: 600; }
   td.rc-bad { color: var(--red); }
+  .sg-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+  .sg-card { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface); }
 </style>
 
 <div class="wrap">
@@ -1105,7 +1107,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         ["Who qualifies", "Under 28, fewer than 14 professional fights, never fought in a major promotion (UFC, PFL or Bellator, ONE, ACA, RIZIN; the Contender Series doesn't count), and fought in the last two years."],
         ["Where they come from", `Fight Matrix's divisional rankings, which rank fighters in every promotion worldwide (${P.screened ? P.screened.toLocaleString() : "thousands of"} ranked fighters screened), plus prospects named on outlet lists (MMA Junkie, MMA Prospect Vault, The Scrap).`],
         ["Two sources", "Each prospect's birth date, record and promotions are checked on Fight Matrix and on Sherdog (or, for list picks, Sherdog and the published list). Anyone whose sources disagree, or who shows a major-promotion fight on either, is left out."],
-        ["Who called it", "Outlets, creators on X and forum posters who name prospects are tracked like the betting pundits: every call is graded on what the fighter did next, and a caller's buzz is weighted up or down only once their record is long enough to show real skill (20 graded calls and a clear edge)."],
+        ["Who called it", "Outlets, creators on X and forum posters who name prospects are tracked like the betting pundits: every call is graded on what the fighter did next (signing with a major promotion is a hit; see Signed!), and a caller's buzz is weighted up or down only once their record is long enough to show real skill (20 graded calls and a clear edge)."],
         ["The score", "50% Fight Matrix rating (as a percentile within the division; it already weighs opponent quality), 15% winning (unbeaten records get a bonus), 10% finishing rate, 10% youth, 5% activity, 10% buzz (named on independent prospect lists)."],
         ["Refresh", "The list is rebuilt as the data is re-crawled; a prospect who signs with a major promotion drops off."]] };
     }
@@ -2024,17 +2026,31 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const all = P.data.prospects, list = prospectList();
     const divs = [...new Set(all.map((x) => x.division))].sort(divisionOrder);
     const head = `<div class="toolbar">
-      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button></span>
+      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button><button type="button" data-pros-view="signed" aria-pressed="${P.view === "signed"}">Signed!</button></span>
       <label class="label" for="pros-q" style="margin-left:6px">Search</label><input id="pros-q" type="search" value="${esc(P.q)}" placeholder="Name, promotion, country">
       <select data-pros-filter="gender"><option value="">Men and women</option><option value="men" ${P.gender === "men" ? "selected" : ""}>Men</option><option value="women" ${P.gender === "women" ? "selected" : ""}>Women</option></select>
       <select data-pros-filter="wc"><option value="">All divisions</option>${divs.map((d) => `<option ${P.wc === d ? "selected" : ""}>${esc(d)}</option>`).join("")}</select>
       <label class="check"><input type="checkbox" data-pros-filter="unbeaten" ${P.unbeaten ? "checked" : ""}> Unbeaten only</label>
       <span class="muted num" style="font-size:13px">${list.length} of ${all.length}</span></div>`;
     let body;
-    if (P.view === "callers") {
+    if (P.view === "signed") {
+      const S = (P.data.signed || []).filter((x) => !P.q || fold(x.name).includes(fold(P.q)) || fold(x.promotion).includes(fold(P.q)));
+      const fmtD = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+      const months = (d) => d < 60 ? `${d} days` : `${Math.round(d / 30.4)} months`;
+      const who = (c) => esc(c.author || c.outlet);
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Prospects who signed with a major promotion after someone we track named them, or after they made our list. A signing is dated by the first major-promotion fight on Sherdog and confirmed on BestFightOdds. The first caller gets the credit, and every signing counts as a hit in <em>Who called it</em>.</p>
+        ${S.length ? `<div class="sg-list">${S.map((x) => `<article class="sg-card">
+          <div class="toolbar" style="margin:0;justify-content:space-between"><strong style="font-size:17px">${esc(x.name)}</strong><span class="chip">${esc(x.promotion)}</span></div>
+          <div class="muted" style="font-size:13px">Debut ${fmtD(x.debut)} · ${esc(x.event)}${x.result ? ` · <strong>${esc(x.result)}</strong>${x.method ? ` (${esc(x.method)})` : ""}` : ""}</div>
+          ${x.first_call ? `<div style="font-size:14px;margin-top:6px">Called first by <strong>${who(x.first_call)}</strong>${x.first_call.author && x.first_call.outlet ? ` <span class="muted">(${esc(x.first_call.outlet)})</span>` : ""}, ${months(x.lead_days)} before the debut${x.first_call.url ? ` · <a href="${esc(x.first_call.url)}" target="_blank" rel="noopener">the call</a>` : ""}</div>` : ""}
+          ${x.called_by.length > 1 ? `<div class="muted" style="font-size:12.5px">Also called by ${x.called_by.slice(1).map(who).join(", ")}</div>` : ""}
+          ${x.on_our_list ? `<div class="muted" style="font-size:12.5px">On our list (best #${x.our_rank})</div>` : ""}
+          <div class="muted" style="font-size:12px;margin-top:4px">${x.confirmed_by ? `Confirmed: Sherdog + <a href="${esc(x.confirmed_by.url)}" target="_blank" rel="noopener">BestFightOdds</a>` : "Sherdog only so far; awaiting a second source"}${x.sherdog_url ? ` · <a href="${esc(x.sherdog_url)}" target="_blank" rel="noopener">Sherdog</a>` : ""}</div>
+        </article>`).join("")}</div>` : `<div class="empty">No signings yet.</div>`}`;
+    } else if (P.view === "callers") {
       const T = P.data.callers || [];
       const kind = { outlet: "Outlet", creator: "Creator", forum: "Forum" };
-      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Every prospect call we track (outlets, creators on X, forum posters), graded on what the fighter did next: a hit means they won at least two thirds of their decided fights since the call (at least two). Each caller is compared with the pooled hit rate; their buzz counts equally until they have ${20} graded calls and a clear edge either way (beyond ±1.96 standard errors), then it's weighted up, down, or dropped.</p>
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Every prospect call we track (outlets, creators on X, forum posters), graded on what the fighter did next: a hit means they signed with a major promotion after the call, or won at least two thirds of their decided fights since it (at least two). Fighters who were already in a major promotion when named aren't counted. Each caller is compared with the pooled hit rate; their buzz counts equally until they have ${20} graded calls and a clear edge either way (beyond ±1.96 standard errors), then it's weighted up, down, or dropped.</p>
         <div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Caller</th><th>Type</th><th class="num">Calls</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th><th class="num">vs all (z)</th><th class="num">Weight</th></tr></thead><tbody>
         ${T.map((t) => `<tr><td>${esc(t.author || t.outlet)}${t.author && t.outlet ? `<div class="muted" style="font-size:12px">${esc(t.outlet)}</div>` : ""}</td><td>${kind[t.kind] || esc(t.kind)}</td><td class="num">${t.calls}</td><td class="num">${t.graded}</td><td class="num">${t.hits}</td><td class="num">${t.hit_rate != null ? Math.round(t.hit_rate * 100) + "%" : "—"}</td><td class="num">${t.z > 0 ? "+" : ""}${t.z.toFixed(2)}</td><td class="num"><strong>${t.weight}</strong></td></tr>`).join("")}
         </tbody></table></div><p class="muted" style="font-size:12px;margin:0">Pooled hit rate across all graded calls: ${T.length ? Math.round(T[0].baseline * 100) : 0}%.</p>`;

@@ -19,6 +19,9 @@ outlet list + Sherdog).
    When a list spells a name differently from Sherdog, add it to "aliases" only
    after checking record and birth date match (two people can share a name).
    Rerun step 2 with `--skip-ranks` to pick up new names.
+   The crawl also re-checks every prospect we've listed whose rankings row no longer
+   passes the screen (signed? aged out?) and confirms each signing on BestFightOdds
+   (`data/prospects/signing_checks.json`); `--confirm-only` reruns just that.
 4. `python -m mma_predictor prospects` rebuilds `app/prospects.json`; caller
    weights update automatically (only after 20 graded calls and |z| >= 1.96).
 5. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab

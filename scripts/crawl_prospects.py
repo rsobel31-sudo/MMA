@@ -35,12 +35,17 @@ def main() -> int:
     ap.add_argument("--max-pages", type=int, default=60)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--skip-ranks", action="store_true")
+    ap.add_argument("--skip-track", action="store_true", help="don't re-check listed prospects that left the screen")
+    ap.add_argument("--confirm-only", action="store_true", help="only confirm signings on BestFightOdds")
     ap.add_argument("--noted", default="", help="noted.json: also check prospects named on outlet lists")
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     f = Fetcher(Path(args.cache), delay=1.5, user_agent="Mozilla/5.0 (compatible; mma-predictor/0.1; personal research)")
     today = date.today()
+    if args.confirm_only:
+        confirm_signings(f, out)
+        return 0
 
     ranks_path = out / "fm_ranks.jsonl"
     if not args.skip_ranks:
@@ -128,7 +133,63 @@ def main() -> int:
                     fh.write(json.dumps(dict(row, fm={}, sherdog=sd, check=chk), ensure_ascii=False) + "\n")
                     fh.flush()
                     print(f"  {name}: {'eligible' if chk['eligible'] else '; '.join(chk['issues'])}", flush=True)
+    # Stage 4: our listed prospects whose rankings row no longer passes the screen (signed? aged out?):
+    # re-check their Sherdog pages so a signing shows up.
+    lpath = out / "listed.json"
+    if lpath.exists() and not args.skip_track:
+        listed = json.loads(lpath.read_text())
+        seen_urls = {(json.loads(l).get("sherdog") or {}).get("url") for l in cpath.read_text().splitlines() if l.strip()}
+        todo = [e for e in listed.values() if e.get("sherdog_url") and e["sherdog_url"] not in seen_urls]
+        print(f"{len(todo)} listed prospects to re-check", flush=True)
+        with cpath.open("a") as fh:
+            for e in todo:
+                try:
+                    sd = PR.sherdog_summary(sherdog.parse_fighter(f.get(e["sherdog_url"], cache=False, fresh=True), e["sherdog_url"]))
+                except Exception as exc:  # noqa: BLE001
+                    print(f"  {e['name']}: {exc}", flush=True)
+                    continue
+                row = {"division": "", "rank": None, "name": e["name"], "fm_url": "", "age": None, "wins": 0, "losses": 0, "draws": 0,
+                       "rating": None, "last_fight": None, "last_org": "", "country": "", "via": "tracked"}
+                fh.write(json.dumps(dict(row, fm={}, sherdog=sd, check=PR.verify(row, {"stats": {}, "bouts": []}, sd, today)), ensure_ascii=False) + "\n")
+    # Stage 5: second source for each signing (BestFightOdds lists major-promotion bouts).
+    confirm_signings(f, out)
     print("done", flush=True)
+
+
+def confirm_signings(f, out: Path) -> None:
+    from mma_predictor.sources import bestfightodds
+
+    cands = [json.loads(l) for l in (out / "candidates.jsonl").read_text().splitlines() if l.strip()]
+    noted = json.loads((out / "noted.json").read_text()) if (out / "noted.json").exists() else {}
+    listed = json.loads((out / "listed.json").read_text()) if (out / "listed.json").exists() else {}
+    cpath = out / "signing_checks.json"
+    checks = json.loads(cpath.read_text()) if cpath.exists() else {}
+    aliases = noted.get("aliases") or {}
+    for s in PR.signings(noted, cands, listed, checks):
+        if s["sherdog_url"] in checks:
+            continue
+        found = None
+        spellings = [s["name"]] + [a for a, b in aliases.items() if PR.fold(b) == PR.fold(s["name"])] + [aliases.get(s["name"], s["name"])]
+        for n in dict.fromkeys(spellings):
+            try:
+                hits = bestfightodds.search_results(f.get(bestfightodds.search_url(n), cache=False))
+            except Exception as exc:  # noqa: BLE001
+                print(f"  bestfightodds {n}: {exc}", flush=True)
+                continue
+            for _, u in [h for h in hits if PR.fold(h[0]) == PR.fold(n)][:2]:
+                for b in bestfightodds.parse_fighter(f.get(u, cache=False), u):
+                    d = str(b.date)[:10]
+                    if abs((date.fromisoformat(d) - date.fromisoformat(s["debut"])).days) <= 2:
+                        found = {"source": "BestFightOdds", "event": b.event, "date": d, "url": u}
+                        break
+                if found:
+                    break
+            if found:
+                break
+        if found:
+            checks[s["sherdog_url"]] = found
+        print(f"  signing {s['name']} ({s['promotion']} {s['debut']}): {'confirmed' if found else 'not on BestFightOdds'}", flush=True)
+    cpath.write_text(json.dumps(checks, indent=1, ensure_ascii=False))
     return 0
 
 

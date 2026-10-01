@@ -111,3 +111,23 @@ def test_two_spellings_are_one_prospect_credited_to_both_callers():
     out = PR.build(cands, noted, TODAY)
     assert len(out) == 1 and {n["outlet"] for n in out[0]["noted_by"]} == {"A", "B"}
     assert out[0]["name"] == "Tommy Morrison"
+
+
+def test_signing_is_a_hit_and_pre_signed_calls_are_not_graded():
+    regional = {"date": "2025-03-01", "result": "win", "event": "LFA 200", "method": "KO/TKO"}
+    ufc = {"date": "2026-05-16", "result": "loss", "event": "UFC Fight Night 276 - Allen vs. Costa", "method": "DEC"}
+    assert PR.grade_call([regional, ufc], "2026-01-01") is True        # signed after the call, even with a loss
+    assert PR.grade_call([regional, ufc], "2026-06-01") is None        # already in the UFC when named
+    assert PR.promotion_of(ufc["event"]) == "UFC"
+    assert PR.promotion_of("Professional Fighters League - PFL Dubai") == "PFL"
+
+
+def test_signings_credit_first_caller():
+    sd = {"url": "sd/minev", "bouts": [{"date": "2025-03-01", "result": "win", "event": "Fury FC 90", "method": "SUB"},
+                                       {"date": "2026-05-16", "result": "win", "event": "UFC Fight Night 276", "method": "DEC"}]}
+    cands = [{"name": "Artur Minev", "sherdog": sd, "check": {}}]
+    noted = {"lists": [{"outlet": "B", "title": "t", "url": "v", "date": "2026-01", "names": ["Artur Minev"]},
+                       {"outlet": "A", "title": "t", "url": "u", "date": "2025-12-16", "names": ["Artur Minev"]}]}
+    out = PR.signings(noted, cands, {}, {"sd/minev": {"source": "BestFightOdds"}})
+    assert len(out) == 1 and out[0]["first_call"]["outlet"] == "A" and out[0]["lead_days"] == 151
+    assert out[0]["promotion"] == "UFC" and out[0]["confirmed_by"]
