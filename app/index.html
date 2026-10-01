@@ -429,6 +429,11 @@ input.iscore { width: 76px; text-align: center; }
 a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
 a:hover { color: var(--red); text-decoration-color: currentColor; }
 @media (max-width: 600px) { .wrap { padding-inline: 16px; } .panel { padding: 18px; border-radius: 16px; } header.top { padding-block: 16px; } }
+  .rc-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .rc-tile { border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+  .rc-big { font-size: 26px; font-weight: 700; }
+  td.rc-good { color: var(--good); font-weight: 600; }
+  td.rc-bad { color: var(--red); }
 </style>
 
 <div class="wrap">
@@ -1085,6 +1090,15 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Picks betting sheet."],
         ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
     }
+    if (key === "recaps") {
+      const R = state.data.recaps || {}, w = R.blend_weights;
+      return { title: "Card recaps", key, rows: [
+        ["Model", "The chance our model gave the winner. For cards before live logging began, it's the walk-forward backtest: the model refitted on only the fights before that card, so it never saw the result (marked 'backtest'). From UFC 332 on, it's the live pick frozen before the card (marked 'live')."],
+        ["Market", "BestFightOdds' closing line with the bookmaker's margin taken out: what the betting market believed when the fight started."],
+        ["Blend", `The mix the AI Picks betting sheet uses${w ? ` (${w.model.toFixed(2)} × model + ${w.market.toFixed(2)} × market, on the log-odds scale)` : ""}, fitted on earlier fights.`],
+        ["Log-loss", "The average penalty −log(chance given to what happened). A coin flip scores 0.693; lower is better. Unlike picks right, it rewards being confident when right and punishes being confident when wrong."],
+        ["Why it matters", "A forecaster has to beat the closing line to make money betting. If the blend isn't beating the market over a full season, the betting sheet should lean harder on the market."]] };
+    }
     if (key === "prospects") {
       const P = state.pros.data || {};
       return { title: "How prospects are chosen and ranked", key, rows: [
@@ -1274,14 +1288,49 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       <td>${marketCell(marketFor(a, b), p, a, b)}</td>
       <td><button class="btn small" type="button" data-open-bout="${esc(a)}|${esc(b)}|${bt.rounds || 3}">Open</button></td></tr>`;
   }
+  function cardToggle() {
+    const v = state.cardView || "upcoming";
+    return `<span class="seg" role="group" aria-label="Cards view"><button type="button" data-card-view="upcoming" aria-pressed="${v === "upcoming"}">Upcoming</button><button type="button" data-card-view="recaps" aria-pressed="${v === "recaps"}">Recaps</button></span>`;
+  }
+  function renderRecaps(view) {
+    const R = state.data.recaps;
+    const head = `<section class="panel"><div class="toolbar">${cardToggle()}<h3 style="margin:0">Card recaps</h3>${infoBtn("recaps", "Card recaps")}</div>
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:75ch">After each card: what the model said, what the betting market said at the close, and what happened. Each number is the chance that source gave the fighter who won.</p></section>`;
+    if (!R || !R.events || !R.events.length) { view.innerHTML = `<div class="stack">${head}<div class="empty">No recaps in this data yet. They're built on export from the backtest and the closing lines.</div></div>`; return; }
+    const fmtDate = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    if (!state.recapEvent || !R.events.some((e) => e.event === state.recapEvent)) state.recapEvent = R.events[0].event;
+    const ev = R.events.find((e) => e.event === state.recapEvent);
+    const tile = (label, x, note) => x && x.n ? `<div class="rc-tile"><div class="label">${label}</div><div class="rc-big num">${x.correct}/${x.n}</div><div class="muted num" style="font-size:13px">winners picked · ${pct(x.correct / x.n)}</div><div class="muted num" style="font-size:13px">log-loss ${x.log_loss.toFixed(3)}${note || ""}</div></div>` : "";
+    const S = R.season;
+    const best = S ? ["model", "market", "blend"].map((k) => [k, k === "model" ? S.model_on_priced : S[k].log_loss]).filter((x) => x[1] != null).sort((a, b) => a[1] - b[1])[0] : null;
+    const NAMES = { model: "the model", market: "the closing line", blend: "the blend" };
+    const season = S ? `<section class="panel stack"><div class="toolbar"><h3 style="margin:0">Since ${fmtDate(S.from)}</h3><span class="muted" style="font-size:13px">${S.cards} cards, ${S.bouts} bouts (${S.priced} with a closing line)</span></div>
+      <div class="rc-tiles">${tile("Model", S.model, S.model_on_priced != null ? ` (${S.model_on_priced.toFixed(3)} on the priced bouts)` : "")}${tile("Market (closing line)", S.market)}${tile("Blend (used for betting)", S.blend)}</div>
+      ${best ? `<p class="muted" style="margin:0;font-size:13px">Lower log-loss is better: it rewards confident picks that come in and punishes confident misses. On the same priced bouts, <strong>${NAMES[best[0]]}</strong> has been the most accurate forecaster so far.</p>` : ""}</section>` : "";
+    const tabs = `<div class="evtabs" role="tablist">${R.events.map((e) => `<button type="button" role="tab" data-recap="${esc(e.event)}" aria-selected="${e.event === state.recapEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.event.replace(/^UFC Fight Night \d+ - /, "Fight Night: ").replace(/^(UFC \d+) - /, "$1: "))}</strong><span class="muted num">${e.summary.model.correct}/${e.summary.model.n} model</span></button>`).join("")}</div>`;
+    const cell = (p) => p == null ? `<td class="muted">–</td>` : `<td class="num ${p >= 0.5 ? "rc-good" : "rc-bad"}">${pct(p, 0)}</td>`;
+    const rows = ev.bouts.map((b) => {
+      const w = (k) => b[k] == null ? null : (b.y ? b[k] : 1 - b[k]);
+      const loser = b.winner === b.a ? b.b : b.a;
+      return `<tr><td><strong>${esc(b.winner)}</strong> <span class="muted">def.</span> ${esc(loser)}${b.title ? ' <span class="chip">title</span>' : ""}</td>
+        <td class="muted">${esc(b.method)}${b.round ? ` R${b.round}` : ""}</td>${cell(w("model"))}${cell(w("market"))}${cell(w("blend"))}
+        <td><span class="chip" title="${b.source === "live" ? "Frozen before the card" : "Walk-forward: made with only earlier fights, but computed after the fact"}">${b.source === "live" ? "live" : "backtest"}</span></td></tr>`;
+    }).join("");
+    const sm = ev.summary, line = (k, x) => x && x.n ? `${NAMES[k][0].toUpperCase() + NAMES[k].slice(1)} ${x.correct}/${x.n}` : "";
+    const card = `<section class="panel stack"><div><h2 style="font-size:30px;margin:0">${esc(ev.event)}</h2>
+      <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${[line("model", sm.model), line("market", sm.market), line("blend", sm.blend)].filter(Boolean).join(" · ")}${ev.live ? "" : " · model numbers are backtest (no live picks were logged for this card)"}</p></div>
+      <div class="table-wrap"><table class="list"><thead><tr><th>Result</th><th>Method</th><th>Model</th><th>Market</th><th>Blend</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+    view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}</div>`;
+  }
   function renderCard(view) {
+    if (state.cardView === "recaps") { renderRecaps(view); return; }
     const up = state.data.upcoming || { events: [] };
     const events = up.events.filter((e) => e.bouts.length);
     if (!state.upEvent || !events.some((e) => e.name === state.upEvent)) state.upEvent = events[0] && events[0].name;
     const ev = events.find((e) => e.name === state.upEvent);
     const fmtDate = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
     let html = `<div class="stack"><section class="panel">
-      <div class="toolbar"><h3>Upcoming UFC cards</h3><span class="muted" style="font-size:13px">Scheduled bouts from <a href="https://en.wikipedia.org/wiki/List_of_UFC_events" target="_blank" rel="noopener">Wikipedia's UFC event pages</a>${up.fetched ? `, fetched ${esc(up.fetched)}` : ""}. Predictions use your edits and reads.</span></div>
+      <div class="toolbar">${cardToggle()}<h3>Upcoming UFC cards</h3><span class="muted" style="font-size:13px">Scheduled bouts from <a href="https://en.wikipedia.org/wiki/List_of_UFC_events" target="_blank" rel="noopener">Wikipedia's UFC event pages</a>${up.fetched ? `, fetched ${esc(up.fetched)}` : ""}. Predictions use your edits and reads.</span></div>
       ${events.length ? `<div class="evtabs" role="tablist">${events.map((e) => `<button type="button" role="tab" data-event="${esc(e.name)}" aria-selected="${e.name === state.upEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.name.replace(/^UFC Fight Night:?\s*/, "Fight Night: "))}</strong><span class="muted num">${e.bouts.length} bouts</span></button>`).join("")}</div>` : `<div class="empty">No scheduled cards in the data. Run <code>python -m mma_predictor upcoming</code>, then export.</div>`}
     </section>`;
     if (ev) {
@@ -1730,6 +1779,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     }
     if (t.dataset.delJournal) { const id = t.dataset.delJournal; state.journal = state.journal.filter((j) => j.id !== id); state.store.deleteJournal(id); render(); return; }
     if (t.dataset.event) { state.upEvent = t.dataset.event; render(); return; }
+    if (t.dataset.cardView) { state.cardView = t.dataset.cardView; ls.set(LOCAL_KEY + ":cardView", state.cardView); render(); return; }
+    if (t.dataset.recap) { state.recapEvent = t.dataset.recap; render(); return; }
     if (t.dataset.openBout) {
       const [a, b, rounds] = t.dataset.openBout.split("|");
       const mk = marketFor(a, b);
@@ -2386,6 +2437,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     data.fighters.forEach((f) => state.byName.set(f.name, f));
     state.search = data.fighters.map((f) => ({ name: f.name, keys: [f.name, ...(f.aka || [])].map(fold).flatMap((k) => [k, k.replace(/ /g, "")]), aka: f.aka || [], f }));
     state.tab = ls.get(LOCAL_KEY + ":tab") || "card";
+    state.cardView = ls.get(LOCAL_KEY + ":cardView") || "upcoming";
     state.m.a = data.fighters[0] && data.fighters[0].name;
     state.m.b = data.fighters[1] && data.fighters[1].name;
     state.store = localStore();

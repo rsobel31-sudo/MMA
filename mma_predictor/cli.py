@@ -449,6 +449,12 @@ def cmd_export(args) -> int:
         log = predlog.update(Path(args.log), h, data["upcoming"]["events"], _predict,
                              {"scale": model.scale, "trained_on": model.trained_on})
         data["prediction_log"] = {"scorecard": log["scorecard"], "entries": list(log["entries"].values())}
+    if study is not None and study.get("market") and (vdir / "odds.json").exists():
+        from .analysis import card_recaps
+
+        live = json.loads(Path(args.log).read_text())["entries"] if args.log and Path(args.log).exists() else {}
+        data["recaps"] = card_recaps(calibrated, json.loads((vdir / "odds.json").read_text()),
+                                     study["market"]["blend"]["weights"], live)
     write(data, Path(args.out))
     print(f"Exported {data['meta']['fighters_exported']} fighters to {args.out}")
     return 0

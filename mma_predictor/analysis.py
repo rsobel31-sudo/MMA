@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass
+from datetime import date
 from typing import Callable, Dict, List, Optional, Sequence, Tuple
 
 from .data import Fight, Method
@@ -448,3 +449,64 @@ def market_study(predictions: Sequence[Tuple[Fight, float, dict]], market: Dict[
             value.append({"edge": thr, "bets": int(bets), "win_rate": wins / bets, "market_expected": exp / bets, "roi": profit / bets})
     out["value"] = value
     return out
+
+
+def card_recaps(predictions: Sequence[Tuple[Fight, float, dict]], market: Dict[str, dict],
+                blend: Optional[Dict[str, float]], live: Optional[Dict[str, dict]] = None,
+                events: int = 12, season_from: Optional[date] = None) -> Dict[str, object]:
+    """After each card: what the model said, what the market said, what happened.
+
+    The model's number is the live pick frozen before the card (prediction log) when we
+    have one, else the walk-forward prediction (made with only earlier data, but after
+    the fact): each bout says which. The market is the closing line with the margin
+    taken out; the blend is the fitted mix the betting sheet uses.
+    """
+    from .predlog import _key
+    from .sources.bestfightodds import fair_pair
+
+    live = live or {}
+    by_event: Dict[Tuple[date, str], List[dict]] = {}
+    for f, p, _ in predictions:
+        if f.winner is None or f.winner not in (f.fighter_a, f.fighter_b):
+            continue
+        k = _key(f.date.isoformat(), f.fighter_a, f.fighter_b)
+        src, pm = "backtest", p
+        e = live.get(k)
+        if e and e.get("first"):
+            pa = e["first"]["p_a"]
+            pm, src = (pa if e["a"] == f.fighter_a else 1 - pa), "live"
+        m = market.get(f"{f.date.isoformat()}|{f.fighter_a}|{f.fighter_b}") or {}
+        pc = fair_pair(m.get("a_close"), m.get("b_close"))
+        pb = sigmoid(blend["model"] * _logit(pm) + blend["market"] * _logit(pc)) if pc is not None and blend else None
+        y = int(f.winner == f.fighter_a)
+        by_event.setdefault((f.date, f.event), []).append({
+            "a": f.fighter_a, "b": f.fighter_b, "winner": f.winner, "method": f.method.value, "round": f.end_round,
+            "model": round(pm, 4), "market": None if pc is None else round(pc, 4), "blend": None if pb is None else round(pb, 4),
+            "y": y, "source": src, "title": bool(f.title_fight), "rounds": f.scheduled_rounds})
+
+    def score(bouts: List[dict]) -> Dict[str, object]:
+        out: Dict[str, object] = {"bouts": len(bouts)}
+        priced = [b for b in bouts if b["market"] is not None]
+        for k in ("model", "market", "blend"):
+            xs = bouts if k == "model" else priced
+            xs = [b for b in xs if b[k] is not None]
+            out[k] = {"n": len(xs), "correct": sum((b[k] >= 0.5) == bool(b["y"]) for b in xs),
+                      "log_loss": round(sum(_ll(b[k], b["y"]) for b in xs) / len(xs), 4) if xs else None}
+        # Head to head on the same bouts (those with a closing line).
+        out["priced"] = len(priced)
+        out["model_on_priced"] = round(sum(_ll(b["model"], b["y"]) for b in priced) / len(priced), 4) if priced else None
+        return out
+
+    cards = [(d, name, bs) for (d, name), bs in by_event.items() if len(bs) >= 3]
+    cards.sort(key=lambda c: c[0], reverse=True)
+    recent = []
+    for d, name, bs in cards[:events]:
+        bs.sort(key=lambda b: (not b["title"], -b["rounds"]))  # main event first
+        recent.append({"event": name, "date": d.isoformat(), "summary": score(bs), "bouts": bs,
+                       "live": sum(b["source"] == "live" for b in bs)})
+    season_from = season_from or date(cards[0][0].year, 1, 1) if cards else None
+    season = [b for d, _, bs in cards if season_from and d >= season_from for b in bs]
+    return {"events": recent, "season": {"from": season_from.isoformat() if season_from else None,
+                                         "cards": sum(1 for d, _, _ in cards if season_from and d >= season_from),
+                                         **score(season)} if season else None,
+            "blend_weights": blend}
