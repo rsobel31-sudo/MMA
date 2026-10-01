@@ -55,8 +55,30 @@ def fm_row(name: str) -> Optional[dict]:
     return hits[0] if len(hits) == 1 else None
 
 
+def spellings(name: str) -> list:
+    """'Daniyar (Daniiar) Toychubek Uulu' -> ['Daniyar Toychubek Uulu', 'Daniiar Toychubek Uulu']."""
+    import re
+
+    m = re.search(r"\(([^)]+)\)", name)
+    base = re.sub(r"\s+", " ", re.sub(r"\([^)]*\)", " ", name)).strip()
+    if not m:
+        return [base]
+    before = name[:m.start()].strip().split()
+    alt = re.sub(r"\s+", " ", " ".join(before[:-1] + [m.group(1)]) + " " + name[m.end():]).strip()
+    return list(dict.fromkeys([base, alt]))
+
+
 def check(f, name: str, today: date) -> Optional[dict]:
-    """A candidate record like the crawl's: Fight Matrix + Sherdog when ranked there, else Sherdog alone."""
+    """A candidate record like the crawl's: Fight Matrix + Sherdog when ranked there, else Sherdog alone.
+    Alternate spellings in brackets are each tried."""
+    for n in spellings(name):
+        rec = _check(f, n, today)
+        if rec:
+            return rec
+    return None
+
+
+def _check(f, name: str, today: date) -> Optional[dict]:
     from .sources import fightmatrix, sherdog
 
     row = fm_row(name)
@@ -92,7 +114,7 @@ def call_list(s: dict, today: date) -> dict:
     who = (s.get("commentator") or "").strip() or "Owner"
     return {"kind": kind, "outlet": outlet or s.get("where", "") or "Owner's report", "author": who, "person": who,
             "title": f"Suggested on Fight Lab: {who}" + (f" on {s['where']}" if s.get("where") else ""),
-            "url": s.get("link", ""), "date": (s.get("said_on") or today.isoformat())[:10], "names": [s["name"].strip()],
+            "url": s.get("link", ""), "date": (s.get("said_on") or today.isoformat())[:10], "names": [spellings(s["name"])[0]],
             "background": (s.get("background") or "").strip()[:2000], "via": "owner"}
 
 
