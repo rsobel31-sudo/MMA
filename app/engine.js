@@ -91,11 +91,8 @@
       for (const m of BUCKETS) raw[m] = (w.win_methods[m] * l.loss_methods[m]) / pop[m];
       raw["KO/TKO"] *= damp((w.kd_per15 / P.kd_per15) * chin(l));
       raw["SUB"] *= damp((w.sub_per15 / P.sub_per15) * (l.sub_loss_rate / (0.5 * subShare)));
-      if (rounds >= 5) {
-        raw["KO/TKO"] *= 1.15;
-        raw["SUB"] *= 1.15;
-        raw["DEC"] *= 0.85;
-      }
+      // No five-round tilt: five-rounders go the distance as often as three-rounders since 2019
+      // (tested out of sample; see methods.py). Finish timing is modelled per length.
       const t = raw["KO/TKO"] + raw["SUB"] + raw["DEC"];
       const out = {};
       for (const m of BUCKETS) out[m] = raw[m] / t;

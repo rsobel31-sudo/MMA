@@ -27,11 +27,11 @@ def method_distribution(winner: FighterSnapshot, loser: FighterSnapshot, schedul
     raw["KO/TKO"] *= _damp(ko_matchup)
     raw["SUB"] *= _damp(sub_matchup)
 
-    if scheduled_rounds >= 5:
-        # Two extra rounds give more time to find a finish.
-        raw["KO/TKO"] *= 1.15
-        raw["SUB"] *= 1.15
-        raw["DEC"] *= 0.85
+    # No five-round tilt. A fixed 15% shift toward finishes in five-rounders was tested out of
+    # sample (picks calibrate data, 2014-18 -> 2019-26 and 2019-22 -> 2023-26): since 2019
+    # five-rounders go the distance as often as three-rounders (51% vs 50%), so the tilt
+    # hurt, and a separately fitted five-round term flips sign between eras. When finishes
+    # come in five-rounders is modelled separately (picks.Timing).
 
     total = sum(raw.values())
     return {m: v / total for m, v in raw.items()}
