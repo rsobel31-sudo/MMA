@@ -1986,7 +1986,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       body = order.length ? `<div class="classes">${order.map((wc) => {
         const g = groups[wc], top = g[0].score;
         return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} prospects</span></div>
-          <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)} · age ${Math.floor(x.age)}">${esc(x.name)} <span class="muted num" style="font-size:12px">${prRecord(x)}</span></span>
+          <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)} · age ${Math.floor(x.age)}">${esc(x.name)}</span>
             <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}</span></li>`).join("")}</ol>
           ${g.length > 10 ? `<button class="btn link" type="button" data-pros-class="${esc(wc)}">All ${g.length} in the list</button>` : ""}</div>`;
       }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by prospect score. Click a name for the full card.</p>` : `<div class="empty">No prospects match these filters.</div>`;
