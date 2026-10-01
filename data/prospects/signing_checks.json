@@ -112,5 +112,41 @@
   "event": "UFC Vegas 120",
   "date": "2026-08-08",
   "url": "https://www.bestfightodds.com/fighters/gigi-canuto-18625"
+ },
+ "https://www.sherdog.com/fighter/Thomas-Petersen-287525": {
+  "source": "BestFightOdds",
+  "event": "UFC Fight Night",
+  "date": "2024-02-03",
+  "url": "https://www.bestfightodds.com/fighters/thomas-petersen-10546"
+ },
+ "https://www.sherdog.com/fighter/Hasan-Mezhiev-219923": {
+  "source": "BestFightOdds",
+  "event": "Rizin",
+  "date": "2023-11-04",
+  "url": "https://www.bestfightodds.com/fighters/hasan-mezhiev-13271"
+ },
+ "https://www.sherdog.com/fighter/Kirill-Kornilov-338905": {
+  "source": "BestFightOdds",
+  "event": "ACA 154",
+  "date": "2023-03-17",
+  "url": "https://www.bestfightodds.com/fighters/kirill-kornilov-13040"
+ },
+ "https://www.sherdog.com/fighter/Tatsuro-Taira-293975": {
+  "source": "BestFightOdds",
+  "event": "UFC Fight Night 208",
+  "date": "2022-05-14",
+  "url": "https://www.bestfightodds.com/fighters/tatsuro-taira-13311"
+ },
+ "https://www.sherdog.com/fighter/Renan-Ferreira-181493": {
+  "source": "BestFightOdds",
+  "event": "PFL 2021 3: Werdum vs. Ferreira",
+  "date": "2021-05-06",
+  "url": "https://www.bestfightodds.com/fighters/renan-ferreira-9266"
+ },
+ "https://www.sherdog.com/fighter/Caolan-Loughran-250567": {
+  "source": "BestFightOdds",
+  "event": "UFC on ESPN: Gane vs. Spivak",
+  "date": "2023-09-02",
+  "url": "https://www.bestfightodds.com/fighters/caolan-loughran-13592"
  }
 }
