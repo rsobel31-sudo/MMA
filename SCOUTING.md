@@ -122,11 +122,12 @@ Cloudflare bot protection and rate-limit hard, so this is done by hand with WebF
 (at most ~8 forum pages per run; on a 429, stop and try again next week; never try to get around the
 protection). robots.txt allows /threads/ and /members/ pages; never fetch /search/ or /posts/.
 
-1. Any member with an empty `profile`: open a thread they've posted in (from `seen`, noted.json or a
-   `site:forums.sherdog.com "<name>"` web search) and copy their profile link (`/members/<name>.<id>/`).
-2. For each member, read their profile's recent activity (the profile page, its "Postings" tab) and
-   find posts and threads since `last_checked` that aren't in `seen`. A web search for
-   `site:forums.sherdog.com "<name>"` finds threads they started too.
+1. Member profile pages (`profile` in the watchlist) are shown only to logged-in users (HTTP 403),
+   so don't fetch them and never log in. Find each member's recent posts through web search instead:
+   `site:forums.sherdog.com "<name>"`, plus the same with "prospect", "sign", "hype" or a division
+   name, and the threads they started or posted in that you already know (`seen`).
+2. Open threads (public) that are new since `last_checked` or not yet in `seen`, newest first, and
+   read the member's posts in them (a thread's later pages: `<thread url>page-N`).
 3. Read each new post. Every fighter they tout as a prospect or as someone a promotion should sign
    becomes a call: append a list to `data/prospects/noted.json` with `kind: "forum"`,
    `outlet: "Sherdog Forums"`, `author` and `person` set to the member's name, the post's date and
