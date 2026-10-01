@@ -167,6 +167,19 @@ Also run `python -m mma_predictor scout grade` and `scout sync`, write the `scou
 
 Run `picks settle`, `picks sync`, the ArtifactData batch, and a commit ("AI Picks: settled <event>"). If results aren't in on both sources yet (exit code 2), leave the week open; Friday's run settles it.
 
+## Sunday: refresh the data
+
+After grading, bring the fighter data up to date so next week's sheet sees last night's results:
+
+```bash
+python -m mma_predictor refresh          # about 20 minutes
+```
+
+- It fetches the Sherdog pages of everyone on UFC events since our last bout, plus a rotating batch of 150 exported fighters whose pages were checked longest ago (catches non-UFC bouts and corrected results), and merges them into `data/sherdog` by date and both names.
+- It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, verify and export.
+- One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
+- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json` and `prospects.json`, and commit `data/` and `app/data.json`.
+
 ## Bust
 
 If `picks settle` or `picks status` exits 3:
