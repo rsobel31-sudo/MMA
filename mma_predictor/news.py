@@ -25,6 +25,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
+from .data import join_initials
+
 FEEDS = {
     "MMA Fighting": "https://www.mmafighting.com/rss/index.xml",
     "Sherdog": "https://www.sherdog.com/rss/news.xml",
@@ -48,7 +50,7 @@ def fold(s: str) -> str:
     """Lowercase, accents stripped, punctuation to spaces."""
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
-    return " " + re.sub(r"[^a-z0-9]+", " ", s).strip() + " "
+    return " " + " ".join(join_initials(re.sub(r"[^a-z0-9]+", " ", s).split())) + " "
 
 
 def text_of(fragment: str) -> str:

@@ -31,6 +31,8 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
+from .data import join_initials
+
 FM = "https://www.fightmatrix.com"
 DIVISIONS = {
     "Flyweight": "flyweight", "Bantamweight": "bantamweight", "Featherweight": "featherweight", "Lightweight": "lightweight",
@@ -166,7 +168,45 @@ def fold(s: str) -> str:
     import unicodedata
 
     s = unicodedata.normalize("NFKD", s or "")
-    return re.sub(r"[^a-z0-9]+", " ", "".join(c for c in s if not unicodedata.combining(c)).lower()).strip()
+    return " ".join(join_initials(re.sub(r"[^a-z0-9]+", " ", "".join(c for c in s if not unicodedata.combining(c)).lower()).split()))
+
+
+SUFFIX = {"jr", "sr", "ii", "iii", "iv", "uulu", "kyzy"}
+
+
+def _close(a: str, b: str) -> bool:
+    """Same name token: equal, one a prefix of the other (Max/Maximus), or one edit apart in a long token."""
+    if a == b or (min(len(a), len(b)) >= 3 and (a.startswith(b) or b.startswith(a))):
+        return True
+    if min(len(a), len(b)) < 6 or abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    short, long_ = sorted((a, b), key=len)
+    return any(long_[:i] + long_[i + 1:] == short for i in range(len(long_)))
+
+
+def match_name(name: str, hits: List[tuple]) -> str:
+    """URL of the one search hit that is this person (surname exact, given names close), else ''.
+
+    Lists write names loosely (Max Lally = Maximus Lally, Sean Clancy = Sean Clancy Jr.), so an
+    exact match is tried first and a loose one is accepted only when it is unique.
+    """
+    want = fold(name)
+    exact = {u for n, u in hits if fold(n) == want}
+    if len(exact) == 1:
+        return exact.pop()
+    toks = want.split()
+    if len(toks) < 2:
+        return ""
+    found = set()
+    for n, u in hits:
+        got = [t for t in fold(n).split() if t not in SUFFIX]
+        if len(got) < 2 or toks[-1] not in got and not any(_close(toks[-1], g) and len(g) >= 6 for g in got):
+            continue
+        if all(any(_close(t, g) for g in got) for t in toks):
+            found.add(u)
+    return found.pop() if len(found) == 1 else ""
 
 
 def source_of(lst: Dict[str, object]) -> str:
@@ -192,19 +232,35 @@ def grade_call(bouts: List[Dict[str, object]], since: str) -> Optional[bool]:
     return wins / len(after) >= 2 / 3
 
 
+def person_keys(noted: Dict[str, object], candidates: Iterable[Dict[str, object]]):
+    """name -> one key per person: the Sherdog URL when any record of that name has one, so
+    'Tommy Morrisson' on one list and 'Tommy Morrison' on another are the same prospect."""
+    url = {}
+    for c in candidates:
+        u = (c.get("sherdog") or {}).get("url")
+        if u:
+            url.setdefault(fold(c["name"]), u)
+    for a, b in (noted.get("aliases") or {}).items():
+        if fold(b) in url:
+            url.setdefault(fold(a), url[fold(b)])
+    return lambda name: url.get(fold(name), fold(name))
+
+
 def source_track(noted: Dict[str, object], candidates: Iterable[Dict[str, object]], today: date) -> List[Dict[str, object]]:
     """Each caller's record: graded calls, hits, and a z-score against the pooled hit rate of every graded call.
     Weights stay 1.0 until a caller has MIN_CALLS graded calls and |z| > 1.96, as for the betting pundits."""
     import math
 
-    bouts_by = {fold(c["name"]): (c.get("sherdog") or {}).get("bouts", []) for c in candidates if c.get("sherdog")}
+    candidates = list(candidates)
+    key = person_keys(noted, candidates)
+    bouts_by = {key(c["name"]): (c.get("sherdog") or {}).get("bouts", []) for c in candidates if c.get("sherdog")}
     calls = []
     for lst in noted.get("lists", []):
         since = str(lst.get("date", ""))[:10] or "1900-01-01"
         if len(since) == 7:
             since += "-01"
         for n in lst.get("names", []):
-            g = grade_call(bouts_by.get(fold(n), []), since)
+            g = grade_call(bouts_by.get(key(n), []), since)
             calls.append((source_of(lst), lst, n, g))
     graded = [c for c in calls if c[3] is not None]
     p0 = sum(c[3] for c in graded) / len(graded) if graded else 0.5
@@ -225,20 +281,23 @@ def source_track(noted: Dict[str, object], candidates: Iterable[Dict[str, object
     return sorted(out, key=lambda t: (-t["graded"], -t["calls"]))
 
 
-def noted_index(noted: Dict[str, object]) -> Dict[str, List[Dict[str, str]]]:
+def noted_index(noted: Dict[str, object], key=fold) -> Dict[str, List[Dict[str, str]]]:
     idx: Dict[str, List[Dict[str, str]]] = {}
     for lst in noted.get("lists", []):
         src = {k: lst.get(k, "") for k in ("outlet", "author", "title", "url", "date", "kind")}
         src["source"] = source_of(lst)
         for n in lst.get("names", []):
-            idx.setdefault(fold(n), []).append(src)
+            if src not in idx.setdefault(key(n), []):
+                idx[key(n)].append(src)
     return idx
 
 
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
     """Eligible, two-source-verified prospects, scored and ranked."""
-    candidates = list(candidates)
-    idx = noted_index(noted)
+    # Fight Matrix records first: when two records are the same person, keep the one with a rating.
+    candidates = sorted(candidates, key=lambda c: not c.get("fm_url"))
+    person = person_keys(noted, candidates)
+    idx = noted_index(noted, person)
     track = source_track(noted, candidates, today)
     weights = {t["source"]: t["weight"] for t in track}
     hints = {fold(k): v for k, v in (noted.get("division_hints") or {}).items()}
@@ -248,7 +307,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
         sd = c.get("sherdog") or {}
         if not chk.get("eligible") or not sd:
             continue
-        key = fold(c["name"])
+        key = person(c["name"])
         if key in seen:
             continue
         seen.add(key)
@@ -259,7 +318,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
         rec = {"W": sum(b["result"] == "win" for b in bouts), "L": sum(b["result"] == "loss" for b in bouts),
                "D": sum(b["result"] == "draw" for b in bouts), "NC": sum(b["result"] == "nc" for b in bouts)}
         out.append({
-            "name": c["name"], "division": c["division"] or hints.get(key) or _division(sd.get("weight_class", "")) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
+            "name": c["name"], "division": c["division"] or hints.get(fold(c["name"])) or _division(sd.get("weight_class", "")) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
             "age": chk.get("age"), "dob": chk.get("dob"), "wins": rec["W"], "losses": rec["L"], "draws": rec["D"], "nc": rec["NC"],
             "finish_rate": round(len(fin) / len(wins), 3) if wins else 0.0, "ko": sum(b["method"] == "KO/TKO" for b in wins),
             "sub": sum(b["method"] == "SUB" for b in wins), "last_fight": last.get("date") or c.get("last_fight"),

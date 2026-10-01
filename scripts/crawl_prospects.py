@@ -20,6 +20,14 @@ from mma_predictor.sources import fightmatrix, sherdog  # noqa: E402
 from mma_predictor.sources.common import Fetcher  # noqa: E402
 
 
+def find_sherdog(f, name: str) -> str:
+    """Sherdog URL for a name: full-name search, then a surname search (Sherdog's full-name search often returns nothing)."""
+    url = PR.match_name(name, sherdog.search_fighter(f, name))
+    if not url and len(name.split()) > 1:
+        url = PR.match_name(name, sherdog.search_fighter(f, name.split()[-1]))
+    return url
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="data/prospects")
@@ -77,8 +85,7 @@ def main() -> int:
             url = fm.get("sherdog_url") or ""
             try:
                 if not url:
-                    hits = sherdog.search_fighter(f, c["name"])
-                    url = next((u for n, u in hits if n.lower() == c["name"].lower()), "")
+                    url = find_sherdog(f, c["name"])
                 if url:
                     sd = PR.sherdog_summary(sherdog.parse_fighter(f.get(url, cache=False), url))
             except Exception as exc:  # noqa: BLE001
@@ -93,15 +100,15 @@ def main() -> int:
     if args.noted:
         noted = json.loads(Path(args.noted).read_text())
         have = {PR.fold(json.loads(l)["name"]) for l in cpath.read_text().splitlines() if l.strip()}
+        aliases = noted.get("aliases", {})  # list name -> Sherdog name, checked by hand (Gigi -> Giovanna)
         with cpath.open("a") as fh:
             for lst in noted["lists"]:
                 for name in lst["names"]:
-                    if PR.fold(name) in have:
+                    if PR.fold(name) in have or PR.fold(aliases.get(name, name)) in have:
                         continue
                     have.add(PR.fold(name))
                     try:
-                        hits = sherdog.search_fighter(f, name)
-                        url = next((u for n, u in hits if PR.fold(n) == PR.fold(name)), "")
+                        url = find_sherdog(f, aliases.get(name, name))
                         if not url:
                             print(f"  not found on Sherdog: {name}", flush=True)
                             continue

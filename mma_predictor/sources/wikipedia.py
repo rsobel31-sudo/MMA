@@ -17,6 +17,7 @@ import unicodedata
 from collections import defaultdict, deque
 from typing import Dict, Iterable, List, Optional, Tuple
 
+from ..data import join_initials
 from .html import parse_html
 
 ROSTER_URL = "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters"
@@ -68,7 +69,7 @@ def parse_rankings(html: str) -> List[Dict[str, str]]:
 def match_key(name: str) -> str:
     """Accent-, case- and order-insensitive key: 'Song Yadong' == 'Yadong Song'."""
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
-    tokens = re.findall(r"[a-z0-9]+", s.lower())
+    tokens = join_initials(re.findall(r"[a-z0-9]+", s.lower()))
     return " ".join(sorted(t for t in tokens if t not in ("jr", "sr", "ii", "iii")))
 
 

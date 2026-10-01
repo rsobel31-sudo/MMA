@@ -2282,7 +2282,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   });
 
   // ------------------------------------------------------ corner search
-  const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  // Accents and punctuation ignored, initials joined: "R.J. Harris", "R. J. Harris" and "RJ Harris" all read "rj harris".
+  const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ").replace(/\b([a-z])\s+(?=[a-z]\b)/g, "$1").trim();
   const cb = { input: null, items: [], active: -1 };
   function searchFighters(q) {
     const t = fold(q.trim());
@@ -2382,7 +2384,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     INTANG_ATTRS = {};  // intangibles are your 1-10 scores per matchup (tale of the tape), not fighter attributes
     RATING_ATTRS = Object.fromEntries(Object.values(data.rating_categories).flat().map((k) => [k, { k: "r_" + k, label: data.rating_labels[k], kind: "int", better: "high", rating: true }]));
     data.fighters.forEach((f) => state.byName.set(f.name, f));
-    state.search = data.fighters.map((f) => ({ name: f.name, keys: [f.name, ...(f.aka || [])].map(fold), aka: f.aka || [], f }));
+    state.search = data.fighters.map((f) => ({ name: f.name, keys: [f.name, ...(f.aka || [])].map(fold).flatMap((k) => [k, k.replace(/ /g, "")]), aka: f.aka || [], f }));
     state.tab = ls.get(LOCAL_KEY + ":tab") || "card";
     state.m.a = data.fighters[0] && data.fighters[0].name;
     state.m.b = data.fighters[1] && data.fighters[1].name;

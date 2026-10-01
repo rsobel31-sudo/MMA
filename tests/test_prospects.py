@@ -52,7 +52,7 @@ def test_build_and_score():
     cands = []
     for i, (name, rating, losses) in enumerate([("Alpha One", 1200, 0), ("Beta Two", 800, 2), ("Gamma Three", None, 0)]):
         r = row(name=name, rating=rating, losses=losses, wins=8)
-        s = sd(n_l=losses)
+        s = dict(sd(n_l=losses), url="sd/" + name)
         cands.append(dict(r, fm={"stats": {}, "bouts": []}, sherdog=s, check=PR.verify(r, {"stats": {}, "bouts": []}, s, TODAY)))
     noted = {"lists": [{"outlet": "X", "title": "t", "url": "u", "names": ["Gamma Three"]}]}
     out = PR.build(cands, noted, TODAY)
@@ -77,3 +77,36 @@ def test_source_track_grades_calls_and_holds_weights_until_enough():
     assert t["wrongway"]["weight"] == 0.0
     assert t["Few"]["graded"] == 2 and t["Few"]["weight"] == 1.0      # too few calls to judge
     assert t["Late"]["graded"] == 0                                   # no fights since the call yet
+
+
+def test_match_name_handles_loose_list_names():
+    hits = [("Caleb Lally", "a"), ("Maximus Lally", "b"), ("Sean Clancy Jr.", "c"), ("Ben Clancy", "d"),
+            ("Daniyar Toychubek Uulu", "e"), ("Mehemmedali Osmanli", "f"), ("Kemal Osmanli", "g"), ("Kazbek Esembaev", "h")]
+    assert PR.match_name("Max Lally", hits) == "b"
+    assert PR.match_name("Sean Clancy", hits) == "c"
+    assert PR.match_name("Daniyar Toychubek", hits) == "e"
+    assert PR.match_name("Mehemmedeli Osmanli", hits) == "f"
+    assert PR.match_name("Yusuf Esembaev", hits) == ""          # different person
+    assert PR.match_name("Lally", hits) == ""
+    assert PR.match_name("M Lally", hits + [("Mike Lally", "z")]) == ""   # ambiguous
+
+
+def test_initials_fold_the_same_way_everywhere():
+    from mma_predictor import news
+    from mma_predictor.data import normalise_name
+    from mma_predictor.sources.wikipedia import match_key
+    for fn in (PR.fold, normalise_name, match_key, lambda s: news.fold(s).strip()):
+        keys = {fn(n) for n in ("RJ Harris", "R.J. Harris", "R.J Harris", "R. J. Harris", "rj harris")}
+        assert len(keys) == 1, (fn, keys)
+    assert PR.fold("Mark O. Madsen") == "mark o madsen"      # a lone middle initial stays put
+
+
+def test_two_spellings_are_one_prospect_credited_to_both_callers():
+    r = row(name="Tommy Morrison")
+    s = dict(sd(), url="sd/morrison")
+    cands = [dict(r, fm={"stats": {}, "bouts": []}, sherdog=s, check=PR.verify(r, {"stats": {}, "bouts": []}, s, TODAY))]
+    noted = {"aliases": {"Tommy Morrisson": "Tommy Morrison"},
+             "lists": [{"outlet": "A", "title": "t", "url": "u", "names": ["Tommy Morrisson"]},
+                       {"outlet": "B", "title": "t", "url": "v", "names": ["Tommy Morrison"]}]}
+    out = PR.build(cands, noted, TODAY)
+    assert len(out) == 1 and {n["outlet"] for n in out[0]["noted_by"]} == {"A", "B"}

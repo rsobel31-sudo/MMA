@@ -361,5 +361,19 @@ def iter_names(fights: Iterable[Fight]) -> List[str]:
 _WS = re.compile(r"\s+")
 
 
+def join_initials(tokens: List[str]) -> List[str]:
+    """Merge runs of single-letter tokens: R.J. Harris / R.J Harris / R. J. Harris -> rj harris, like RJ Harris."""
+    out: List[str] = []
+    run = False
+    for t in tokens:
+        if len(t) == 1 and t.isalpha() and run:
+            out[-1] += t
+        else:
+            out.append(t)
+        run = len(t) == 1 and t.isalpha()
+    return out
+
+
 def normalise_name(name: str) -> str:
-    return _WS.sub(" ", name).strip().lower()
+    """Comparison key: lowercase, punctuation ignored, initials joined (A.J. McKee == AJ McKee)."""
+    return " ".join(join_initials(re.findall(r"[a-z0-9]+", _WS.sub(" ", name).strip().lower())))
