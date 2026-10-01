@@ -41,7 +41,7 @@ The AI Picks routine runs `python -m mma_predictor prospect-week`: every listed 
 booked on any card in the next nine days (Sherdog's event listings, all promotions,
 matched by Sherdog profile), and results for the ones that have fought (read from the
 prospect's own Sherdog record). Kept in `data/prospects/fights.jsonl`, shown on the
-Prospects page under "This week".
+Prospects page under "This week", which shows only the current global top 100 (all bouts are kept).
 
 ## Suggestions from the owner (Tuesday, Friday, Sunday)
 

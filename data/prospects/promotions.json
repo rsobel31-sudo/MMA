@@ -1,0 +1,6 @@
+{
+ "_note": "Promotions whose recent cards are swept for prospects on every prospects crawl (crawl_prospects.py --sweep): every fighter on their cards in the last two years is checked against the rules, so nobody good is missed because Fight Matrix ranks them low. Add a promotion by its Sherdog organization page.",
+ "promotions": [
+  {"name": "RCC (Russian Cagefighting Championship)", "sherdog": "https://www.sherdog.com/organizations/Russian-Cagefighting-Championship-9663", "why": "Owner's pick: a strong Russian league", "added": "2026-10-01"}
+ ]
+}

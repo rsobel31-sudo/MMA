@@ -2136,18 +2136,24 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     } else if (P.view === "week") {
       const W = P.data.week || { upcoming: [], recent: [] };
       const fmtD = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
-      const keep = (b) => (!P.q || fold(b.prospect + " " + b.event + " " + b.opponent).includes(fold(P.q))) && (!P.wc || b.division === P.wc);
+      // Only the global top 100, by today's ranking (not the rank when the bout was found).
+      const TOP = 100, rankOf = {};
+      for (const x of P.data.prospects) if (x.sherdog_url) rankOf[x.sherdog_url] = x.p4p_rank;
+      const inTop = (b) => (rankOf[b.prospect_url] || 9999) <= TOP;
+      const cur = (b) => Object.assign({}, b, { p4p_rank: rankOf[b.prospect_url] || b.p4p_rank });
+      const outside = W.upcoming.filter((b) => !inTop(b)).length;
+      const keep = (b) => inTop(b) && (!P.q || fold(b.prospect + " " + b.event + " " + b.opponent).includes(fold(P.q))) && (!P.wc || b.division === P.wc);
       const once = (xs) => { const seen = new Set(); return xs.filter((b) => { const k = [b.date, ...[b.prospect_url, b.opponent_url].sort()].join("|"); if (seen.has(k)) return false; seen.add(k); return true; }); };
-      const up = once(W.upcoming.filter(keep)), rec = W.recent.filter(keep);
+      const up = once(W.upcoming.filter(keep).map(cur)), rec = W.recent.filter(keep).map(cur);
       const who = (b) => `<button type="button" class="linklike" data-prospect-open="${esc(b.prospect)}"><strong>${esc(b.prospect)}</strong></button> <span class="muted num">#${b.p4p_rank} · ${esc(b.division || "")} · ${esc(b.record)}</span>`;
       const opp = (b) => `${esc(b.opponent)}${b.opponent_prospect ? ' <span class="chip">prospect vs prospect</span>' : ""}`;
       const days = {};
       for (const b of up) (days[b.date] = days[b.date] || []).push(b);
       const resCell = (b) => `<span class="${b.result === "win" ? "rc-good" : b.result === "loss" ? "rc-bad" : "muted"}" style="font-weight:600">${esc(b.result === "win" ? "W" : b.result === "loss" ? "L" : b.result)}</span> <span class="muted">${esc(b.method || "")}${b.round ? ` R${b.round}` : ""}</span>`;
-      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Listed prospects booked on any card in the next nine days, found on Sherdog's event listings (every promotion) and matched by Sherdog profile. Results fill in after the event from the prospect's own record.${W.fetched ? ` Checked ${esc(W.fetched.slice(0, 10))}.` : ""}</p>
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Top-100 prospects booked on any card in the next nine days${outside ? ` (${outside} more bouts involve prospects ranked below 100)` : ""}, found on Sherdog's event listings (every promotion) and matched by Sherdog profile. Results fill in after the event from the prospect's own record.${W.fetched ? ` Checked ${esc(W.fetched.slice(0, 10))}.` : ""}</p>
         ${up.length ? Object.keys(days).sort().map((d) => `<div><div class="label" style="margin:10px 0 4px">${fmtD(d)}</div><div class="table-wrap"><table class="recent pk-table"><tbody>
           ${days[d].map((b) => `<tr><td>${who(b)}</td><td><span class="muted">vs</span> ${opp(b)}</td><td><a href="${esc(b.event_url)}" target="_blank" rel="noopener">${esc(b.event)}</a>${b.major_debut ? ' <span class="chip">major-promotion debut</span>' : ""}</td></tr>`).join("")}
-          </tbody></table></div></div>`).join("") : `<div class="empty">No listed prospects are booked in the next nine days${P.q || P.wc ? " (with these filters)" : ""}.</div>`}
+          </tbody></table></div></div>`).join("") : `<div class="empty">No top-100 prospects are booked in the next nine days${P.q || P.wc ? " (with these filters)" : ""}.</div>`}
         ${rec.length ? `<div><h3 style="margin:16px 0 6px">Recent results</h3><div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Date</th><th>Prospect</th><th>Opponent</th><th>Result</th><th>Event</th></tr></thead><tbody>
           ${rec.map((b) => `<tr><td class="num">${esc(b.date)}</td><td>${who(b)}</td><td>${opp(b)}</td><td>${resCell(b)}</td><td>${esc(b.event)}</td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
     } else if (P.view === "signed") {

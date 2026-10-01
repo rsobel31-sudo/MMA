@@ -37,6 +37,8 @@ def main() -> int:
     ap.add_argument("--skip-ranks", action="store_true")
     ap.add_argument("--skip-track", action="store_true", help="don't re-check listed prospects that left the screen")
     ap.add_argument("--confirm-only", action="store_true", help="only confirm signings on BestFightOdds")
+    ap.add_argument("--sweep", action="store_true", help="check every fighter on the swept promotions' recent cards (promotions.json)")
+    ap.add_argument("--sweep-only", action="store_true", help="only the promotion sweep")
     ap.add_argument("--noted", default="", help="noted.json: also check prospects named on outlet lists")
     args = ap.parse_args()
     out = Path(args.out)
@@ -45,6 +47,9 @@ def main() -> int:
     today = date.today()
     if args.confirm_only:
         confirm_signings(f, out)
+        return 0
+    if args.sweep_only:
+        sweep_promotions(f, out, out / "candidates.jsonl", today)
         return 0
 
     ranks_path = out / "fm_ranks.jsonl"
@@ -151,9 +156,42 @@ def main() -> int:
                 row = {"division": "", "rank": None, "name": e["name"], "fm_url": "", "age": None, "wins": 0, "losses": 0, "draws": 0,
                        "rating": None, "last_fight": None, "last_org": "", "country": "", "via": "tracked"}
                 fh.write(json.dumps(dict(row, fm={}, sherdog=sd, check=PR.verify(row, {"stats": {}, "bouts": []}, sd, today)), ensure_ascii=False) + "\n")
+    # Stage 4b: promotions we sweep (promotions.json): every fighter on their last two years of cards.
+    if args.sweep:
+        sweep_promotions(f, out, cpath, today)
     # Stage 5: second source for each signing (BestFightOdds lists major-promotion bouts).
     confirm_signings(f, out)
     print("done", flush=True)
+
+
+def sweep_promotions(f, out: Path, cpath: Path, today: date) -> None:
+    from datetime import timedelta
+
+    from mma_predictor.suggestions import check
+
+    promos = json.loads((out / "promotions.json").read_text())["promotions"] if (out / "promotions.json").exists() else []
+    seen = {(json.loads(l).get("sherdog") or {}).get("url") for l in cpath.read_text().splitlines() if l.strip()}
+    for p in promos:
+        urls = sherdog.recent_event_fighters(f, events=60, org_url=p["sherdog"], since=today - timedelta(days=730), log=lambda m: None)
+        todo = [u for u in urls if u not in seen]
+        print(f"{p['name']}: {len(urls)} fighters on cards in the last two years, {len(todo)} not checked yet", flush=True)
+        added = 0
+        with cpath.open("a") as fh:
+            for u in todo:
+                try:
+                    page = sherdog.parse_fighter(f.get(u, cache=False), u)
+                    rec = check(f, page.name, today)
+                except Exception as exc:  # noqa: BLE001
+                    print(f"  {u}: {exc}", flush=True)
+                    continue
+                if not rec:
+                    continue
+                rec["via"] = rec.get("via") or "sweep"
+                rec["swept_from"] = p["name"]
+                fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                seen.add((rec.get("sherdog") or {}).get("url"))
+                added += rec["check"].get("eligible", False)
+        print(f"  {added} newly eligible", flush=True)
 
 
 def confirm_signings(f, out: Path) -> None:

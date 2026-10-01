@@ -150,7 +150,7 @@ def cmd_prospect_week(args) -> int:
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     print(f"{len(found)} prospect bouts in the next {args.days} days ({len(new)} new); {graded} results filled in; "
           f"{len(recent)} results in the last 60 days")
-    for b in upcoming[:20]:
+    for b in [b for b in upcoming if (b.get("p4p_rank") or 9999) <= 100][:20]:  # the page shows the top 100 only
         print(f"  {b['date']}  #{b['p4p_rank']:<4} {b['prospect']:<26} vs {b['opponent']:<24} {b['event'][:40]}")
     return 0
 
