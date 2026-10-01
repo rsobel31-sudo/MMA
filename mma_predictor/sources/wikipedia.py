@@ -73,6 +73,9 @@ def match_key(name: str) -> str:
     return " ".join(sorted(t for t in tokens if t not in ("jr", "sr", "ii", "iii")))
 
 
+_MARKERS = re.compile(r"\s*(\((c|ic|ac|ip)\)|\*|\[[^\]]*\])\s*", re.I)
+
+
 def parse_roster(html: str) -> Dict[str, Tuple[str, str]]:
     """{fighter name: (weight class, gender 'M'/'F')} from the roster page."""
     root = parse_html(html)
@@ -88,8 +91,20 @@ def parse_roster(html: str) -> Dict[str, Tuple[str, str]]:
                 cls = cls.replace("Lightheavyweight", "Light Heavyweight").replace("Light Heavyweight", "Light Heavyweight")
                 division = (cls, "F" if m.group(1) else "M")
         elif node.tag == "table" and division and "wikitable" in node.classes:
-            for fn in node.find_all("span", "fn"):
-                name = fn.text()
+            for tr in node.find_all("tr"):
+                cells = tr.find_all("td")
+                # The name: an hCard span on most rows; otherwise the second column's link or text
+                # (champions marked "(c)", footnoted "*" rows, newer templates).
+                fn = tr.find("span", "fn")
+                if fn is not None:
+                    name = fn.text()
+                elif len(cells) >= 2:
+                    link = cells[1].find("a")
+                    name = link.text() if link is not None else cells[1].text()
+                else:
+                    continue  # header row
+                name = name.strip()
+                name = _MARKERS.sub("", name).strip()
                 if name:
                     out.setdefault(name, division)
             division = None  # one table per division

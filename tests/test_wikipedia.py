@@ -6,7 +6,8 @@ ROSTER = """
 <h3 id="Lightweights">Lightweights (155 lb, 70 kg)</h3>
 <table class="wikitable sortable"><tr><th>Name</th></tr>
 <tr><td><span class="fn"><a href="/wiki/A">Arman Tsarukyan</a></span></td></tr>
-<tr><td><span class="fn"><a href="/wiki/B">Ian Machado Garry</a></span></td></tr></table>
+<tr><td><span class="fn"><a href="/wiki/B">Ian Machado Garry</a></span></td></tr>
+<tr><td><span class="flagicon"><a href="/wiki/United_States">US</a></span></td><td><a href="/wiki/Justin_Gaethje">Justin Gaethje</a> (c)</td><td>37</td></tr></table>
 <h3 id="LHW">Light heavyweights (205 lb, 93 kg)</h3>
 <table class="wikitable"><tr><td><span class="fn">Magomed Ankalaev</span></td></tr></table>
 <h3 id="WFly">Women's flyweights (125 lb, 56 kg)</h3>
@@ -20,6 +21,7 @@ ROSTER = """
 def test_parse_roster_divisions_and_gender():
     r = parse_roster(ROSTER)
     assert r["Arman Tsarukyan"] == ("Lightweight", "M")
+    assert r["Justin Gaethje"] == ("Lightweight", "M")      # no hCard, champion marker
     assert r["Magomed Ankalaev"] == ("Light Heavyweight", "M")
     assert r["Valentina Shevchenko"] == ("Flyweight", "F")
     assert "Not A Fighter" not in r
