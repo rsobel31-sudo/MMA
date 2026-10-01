@@ -3,9 +3,12 @@
 Runs on the 1st of each month. Goal: keep the Prospects tab current and keep
 grading the outlets, creators and forum posters who call prospects.
 
-Rules: under 28, fewer than 14 pro fights, not signed to a major promotion
-(UFC, PFL/Bellator, ONE, ACA, RIZIN; Contender Series / Road to UFC are not
-"signed"). Every prospect needs two sources (Fight Matrix + Sherdog, or an
+Rules: under 28, fewer than 14 pro fights, not in a major promotion (UFC,
+PFL/Bellator, ONE, ACA, RIZIN; Contender Series / Road to UFC don't count), active
+in the last two years. Anyone who has fought in the UFC is out for good; a fighter who
+has formally left PFL, ONE, ACA or RIZIN (most recent fight outside the majors) is
+eligible again, tagged ex-<promotion>. The build re-checks every stored candidate
+against these rules, so a rule change applies without a recrawl. Every prospect needs two sources (Fight Matrix + Sherdog, or an
 outlet list + Sherdog).
 
 0. `python -m mma_predictor tapology-import`: imports whatever the owner dropped in

@@ -131,3 +131,18 @@ def test_signings_credit_first_caller():
     out = PR.signings(noted, cands, {}, {"sd/minev": {"source": "BestFightOdds"}})
     assert len(out) == 1 and out[0]["first_call"]["outlet"] == "A" and out[0]["lead_days"] == 151
     assert out[0]["promotion"] == "UFC" and out[0]["confirmed_by"]
+
+
+def test_left_a_major_is_eligible_again_but_not_the_ufc():
+    aca = [{"date": "2023-03-09", "result": "win", "event": "ACA 153 - Dzhanaev vs. Pessoa", "method": "DEC", "opponent": "x", "round": 3},
+           {"date": "2024-08-16", "result": "win", "event": "ACA 178", "method": "KO/TKO", "opponent": "y", "round": 1}]
+    regional = {"date": "2026-01-31", "result": "win", "event": "Black Combat 16", "method": "KO/TKO", "opponent": "z", "round": 1}
+    assert PR.major_status(aca) == ("in", ["ACA"])
+    assert PR.major_status(aca + [regional]) == ("left", ["ACA"])
+    assert PR.major_status([dict(aca[0], event="UFC 300")] + [regional])[0] == "ufc"
+    s = dict(sd(), bouts=sd()["bouts"] + aca + [regional])
+    chk = PR.verify(row(wins=11), {"stats": {}, "bouts": []}, s, TODAY)
+    assert chk["eligible"] and chk["former"] == ["ACA"]
+    # A call made while he was in ACA isn't graded; one made after he left is, and re-signing is a hit.
+    assert PR.grade_call(aca + [regional], "2024-01-01") is None
+    assert PR.grade_call(aca + [regional, dict(regional, date="2026-06-01", event="PFL 5")], "2026-02-01") is True

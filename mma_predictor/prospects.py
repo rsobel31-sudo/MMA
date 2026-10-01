@@ -29,7 +29,7 @@ import json
 import re
 from datetime import date, datetime
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional
+from typing import Dict, Iterable, List, Optional, Tuple
 
 from .data import join_initials
 
@@ -99,13 +99,32 @@ def age_on(dob: Optional[str], today: date) -> Optional[float]:
     return (today - d).days / 365.25
 
 
+def major_status(bouts: List[Dict[str, object]], before: Optional[str] = None) -> Tuple[str, List[str]]:
+    """Where a fighter stands with the major promotions (optionally as of a date):
+    'never' fought in one; 'left' one (their most recent fight is outside the majors, and never the UFC);
+    'in' one (their most recent fight was in a major); 'ufc' (fought in the UFC: never a prospect again).
+    Also returns the majors they've fought in, e.g. ['ACA']."""
+    bs = sorted((b for b in bouts if before is None or (b.get("date") and str(b["date"]) < before)), key=lambda b: str(b.get("date") or ""))
+    majors = [b for b in bs if is_major(str(b.get("event", "")))]
+    names = list(dict.fromkeys(promotion_of(str(b["event"])) for b in majors))
+    if not majors:
+        return "never", []
+    if "UFC" in names:
+        return "ufc", names
+    return ("in" if is_major(str(bs[-1].get("event", ""))) else "left"), names
+
+
 def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict[str, object]], today: date) -> Dict[str, object]:
     """Two-source eligibility: Fight Matrix profile and Sherdog page must agree."""
     issues = []
     fm_dob = (fm.get("stats") or {}).get("Birth Date") or ""
-    fm_events = [b.get("event", "") for b in fm.get("bouts", [])]
-    if any(is_major(e) for e in fm_events):
-        issues.append("major-promotion bout on Fight Matrix")
+    # Majors: a fighter who has formally left PFL, ONE, ACA or RIZIN (most recent fight outside them) is
+    # eligible again; anyone currently in a major, or who has fought in the UFC, is not.
+    st, _ = major_status(fm.get("bouts", []))
+    if st == "ufc":
+        issues.append("UFC bout on Fight Matrix")
+    elif st == "in":
+        issues.append("most recent fight in a major promotion (Fight Matrix)")
     if sherdog is None:
         issues.append("no Sherdog page")
         return {"eligible": False, "verified": False, "issues": issues}
@@ -113,8 +132,14 @@ def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict
     sd_bouts = sherdog.get("bouts", [])
     sd_n = len([b for b in sd_bouts if b.get("result") in ("win", "loss", "draw", "nc")])
     sd_w = len([b for b in sd_bouts if b.get("result") == "win"])
-    if any(is_major(b.get("event", "")) for b in sd_bouts):
-        issues.append("major-promotion bout on Sherdog")
+    st, former = major_status(sd_bouts)
+    if st == "ufc":
+        issues.append("UFC bout on Sherdog")
+    elif st == "in":
+        issues.append("most recent fight in a major promotion (Sherdog)")
+    last = max((str(b["date"]) for b in sd_bouts if b.get("date")), default="")
+    if last and (today - date.fromisoformat(last[:10])).days > 730:
+        issues.append("inactive for two years")
     dob = sd_dob or fm_dob
     if fm_dob and sd_dob and abs((date.fromisoformat(fm_dob) - date.fromisoformat(sd_dob)).days) > 1:
         issues.append(f"birth dates disagree ({fm_dob} vs {sd_dob})")
@@ -129,7 +154,7 @@ def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict
     if abs(sd_n - fm_n) > 1 or abs(sd_w - row["wins"]) > 1:
         issues.append(f"records disagree (Fight Matrix {row['wins']}-{row['losses']}-{row['draws']}, Sherdog {sd_w} wins in {sd_n})")
     return {"eligible": not issues, "verified": not any("disagree" in i or "no " in i for i in issues), "issues": issues,
-            "dob": dob, "age": round(age, 1) if age is not None else None, "fights": sd_n}
+            "dob": dob, "age": round(age, 1) if age is not None else None, "fights": sd_n, "former": former if st == "left" else []}
 
 
 def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
@@ -248,14 +273,16 @@ def first_major(bouts: List[Dict[str, object]]) -> Optional[Dict[str, object]]:
 def grade_call(bouts: List[Dict[str, object]], since: str) -> Optional[bool]:
     """Did a prospect call pan out?
 
-    - Already fought in a major promotion when called: not a prospect call, not graded (None).
-    - Signed with a major promotion (first major-promotion bout) after the call: hit.
+    - In a major promotion (or ever in the UFC) when called: not a prospect call, not graded (None).
+      A fighter who had formally left PFL/ONE/ACA/RIZIN by then is a prospect like any other.
+    - Signed with a major promotion (a major-promotion bout) after the call: hit.
     - Otherwise: hit if they won at least two thirds of their decided fights since the call
       (at least two of them); None while fewer than two fights have happened.
     """
-    fm = first_major(bouts)
-    if fm is not None:
-        return None if str(fm["date"]) < since else True
+    if major_status(bouts, before=since)[0] in ("in", "ufc"):
+        return None
+    if any(is_major(str(b.get("event", ""))) and str(b.get("date", "")) >= since for b in bouts):
+        return True
     after = [b for b in bouts if str(b.get("date", "")) >= since and b.get("result") in ("win", "loss")]
     if len(after) < 2:
         return None
@@ -290,14 +317,18 @@ def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], list
         if k not in rec:
             continue
         name, sd = rec[k]
-        fm = first_major(sd["bouts"])
+        ours = listed.get(k)
+        valid = sorted((c for c in calls.get(k, []) if major_status(sd["bouts"], before=c["date"])[0] not in ("in", "ufc")), key=lambda c: c["date"])
+        starts = [c["date"] for c in valid] + ([str(ours["first_listed"])] if ours and major_status(sd["bouts"], before=str(ours["first_listed"]))[0] not in ("in", "ufc") else [])
+        if not starts:
+            continue  # in a major promotion whenever they were named
+        fm = first_major([b for b in sd["bouts"] if str(b.get("date", "")) >= min(starts)])
         if fm is None:
             continue
-        before = sorted((c for c in calls.get(k, []) if c["date"] <= str(fm["date"])), key=lambda c: c["date"])
-        ours = listed.get(k)
-        ours_before = ours if ours and str(ours.get("first_listed", "9999")) <= str(fm["date"]) else None
+        before = [c for c in valid if c["date"] <= str(fm["date"])]
+        ours_before = ours if ours and str(ours.get("first_listed", "9999")) <= str(fm["date"]) and str(ours["first_listed"]) in starts else None
         if not before and not ours_before:
-            continue  # already in a major promotion when first named
+            continue
         out.append({"name": name, "sherdog_url": sd.get("url", ""), "promotion": promotion_of(str(fm["event"])),
                     "debut": str(fm["date"]), "event": fm["event"], "result": fm.get("result"), "method": fm.get("method"),
                     "called_by": before, "first_call": before[0] if before else None,
@@ -407,6 +438,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url", ""),
             "noted_by": [dict(n, weight=weights.get(n["source"], 1.0)) for n in idx.get(key, [])],
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
+            "former": major_status(sd.get("bouts", []))[1],
         })
     score_pool(out, today)
     build.track = track  # exposed for the output file
@@ -426,6 +458,11 @@ def cmd_build(args) -> int:
     noted = json.loads(Path(args.noted).read_text()) if Path(args.noted).exists() else {}
     ranks = Path(args.candidates).with_name("fm_ranks.jsonl")
     screened = sum(1 for l in ranks.read_text().splitlines() if l.strip()) if ranks.exists() else None
+    # Re-check every candidate from its stored Fight Matrix and Sherdog records, so rule changes apply
+    # without a recrawl.
+    for c in cands:
+        if c.get("sherdog") is not None:
+            c["check"] = verify(c, c.get("fm") or {"stats": {}, "bouts": []}, c["sherdog"], today)
     pros = build(cands, noted, today)
     # Our own list's history: who we listed, from when, at best what rank (credits us when they sign).
     lpath = Path(args.candidates).with_name("listed.json")

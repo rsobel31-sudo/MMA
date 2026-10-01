@@ -1135,7 +1135,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (key === "prospects") {
       const P = state.pros.data || {};
       return { title: "How prospects are chosen and ranked", key, rows: [
-        ["Who qualifies", "Under 28, fewer than 14 professional fights, never fought in a major promotion (UFC, PFL or Bellator, ONE, ACA, RIZIN; the Contender Series doesn't count), and fought in the last two years."],
+        ["Who qualifies", "Under 28, fewer than 14 professional fights, not in a major promotion, and fought in the last two years. The majors are the UFC, PFL (with Bellator), ONE, ACA and RIZIN; the Contender Series doesn't count. Anyone who has fought in the UFC is out for good. A fighter who has formally left PFL, ONE, ACA or RIZIN (their most recent fight is outside the majors) is back in, tagged with where they were (e.g. ex-ACA)."],
         ["Where they come from", `Fight Matrix's divisional rankings, which rank fighters in every promotion worldwide (${P.screened ? P.screened.toLocaleString() : "thousands of"} ranked fighters screened), plus prospects named on outlet lists (MMA Junkie, MMA Prospect Vault, The Scrap).`],
         ["Two sources", "Each prospect's birth date, record and promotions are checked on Fight Matrix and on Sherdog (or, for list picks, Sherdog and the published list). Anyone whose sources disagree, or who shows a major-promotion fight on either, is left out."],
         ["Who called it", "Outlets, creators on X and forum posters who name prospects are tracked like the betting pundits: every call is graded on what the fighter did next (signing with a major promotion is a hit; see Signed!), and a caller's buzz is weighted up or down only once their record is long enough to show real skill (20 graded calls and a clear edge)."],
@@ -2083,7 +2083,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   function prospectRow(x, rank) {
     const open = state.pros.open === x.name;
     return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td>
-      <td><strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
+      <td><strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
       <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
       <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
       <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="8">${prospectDetail(x)}</td></tr>` : ""}`;
@@ -2092,7 +2092,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const P = state.pros;
     loadProspects();
     const intro = `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h2 style="margin:0">Prospects</h2>${infoBtn("prospects", "How prospects are chosen and ranked")}</div>
-      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:78ch">The best young fighters not yet in a major promotion: under 28, fewer than 14 pro fights, never fought in the UFC, PFL/Bellator, ONE, ACA or RIZIN, and active in the last two years. Every one is checked on two sources.${P.data ? ` ${P.data.prospects.length} prospects · built ${esc((P.data.built || "").slice(0, 10))}.` : ""}</p></section>`;
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:78ch">The best young fighters outside the major promotions: under 28, fewer than 14 pro fights, never in the UFC, not currently with PFL/Bellator, ONE, ACA or RIZIN, and active in the last two years. Every one is checked on two sources.${P.data ? ` ${P.data.prospects.length} prospects · built ${esc((P.data.built || "").slice(0, 10))}.` : ""}</p></section>`;
     if (!P.data) { view.innerHTML = `<div class="stack">${intro}<div class="${P.error ? "empty" : "loading"}">${P.error || "Loading prospects…"}</div></div>`; return; }
     const all = P.data.prospects, list = prospectList();
     const divs = [...new Set(all.map((x) => x.division))].sort(divisionOrder);
