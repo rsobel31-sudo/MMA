@@ -17,7 +17,7 @@ from typing import Dict, List, Optional
 from . import prospects as PR
 
 COMPONENTS = ("rating", "winning", "finishing", "youth", "activity")
-CURRENT = {"rating": 0.50, "winning": 0.15, "finishing": 0.10, "youth": 0.10, "activity": 0.05}
+CURRENT = {"rating": 0.50, "winning": 0.15, "finishing": 0.05, "youth": 0.10, "activity": 0.10}  # the live mix (prospects.score_pool)
 WINDOW_DAYS = 4 * 365
 
 

@@ -153,7 +153,11 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
             buzz = min(1.0, sum(n.get("weight", 1.0) for n in p.get("noted_by", [])) / 2)
             p["components"] = {"rating": round(pct, 3), "winning": round(min(1, win), 3), "finishing": round(fin, 3),
                                "youth": round(youth, 3), "activity": active, "buzz": buzz}
-            p["score"] = round(100 * (0.50 * pct + 0.15 * min(1, win) + 0.10 * fin + 0.10 * youth + 0.05 * active + 0.10 * buzz), 1)
+            # Mix checked against Fight Matrix snapshots from Jan 2019 and Jan 2021 (prospects_backtest): rating
+            # carries most of the signal; finishing and youth add little; activity a bit more than first thought.
+            # Fitted weights flip between the two snapshots, so only this small shift (finishing 10 -> 5,
+            # activity 5 -> 10, better on both) was adopted.
+            p["score"] = round(100 * (0.50 * pct + 0.15 * min(1, win) + 0.05 * fin + 0.10 * youth + 0.10 * active + 0.10 * buzz), 1)
 
 
 def sherdog_summary(page) -> Dict[str, object]:

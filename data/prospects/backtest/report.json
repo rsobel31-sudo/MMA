@@ -2,68 +2,68 @@
  "window_years": 4,
  "target": "won a bout in a major promotion within the window",
  "2019-01-06": {
-  "prospects": 218,
-  "made_it": 94,
-  "reached": 121,
-  "base_rate": 0.431,
-  "auc_current": 0.713,
-  "auc_fitted": 0.71,
+  "prospects": 297,
+  "made_it": 117,
+  "reached": 155,
+  "base_rate": 0.394,
+  "auc_current": 0.718,
+  "auc_fitted": 0.72,
   "auc_by_component": {
-   "rating": 0.703,
-   "winning": 0.568,
-   "finishing": 0.469,
-   "youth": 0.499,
-   "activity": 0.523
+   "rating": 0.709,
+   "winning": 0.589,
+   "finishing": 0.482,
+   "youth": 0.505,
+   "activity": 0.525
   },
-  "top50_current": 0.74,
-  "top50_fitted": 0.76
+  "top50_current": 0.76,
+  "top50_fitted": 0.74
  },
  "2021-01-03": {
-  "prospects": 95,
-  "made_it": 57,
-  "reached": 71,
-  "base_rate": 0.6,
-  "auc_current": 0.51,
-  "auc_fitted": 0.513,
+  "prospects": 246,
+  "made_it": 80,
+  "reached": 112,
+  "base_rate": 0.325,
+  "auc_current": 0.593,
+  "auc_fitted": 0.598,
   "auc_by_component": {
-   "rating": 0.49,
-   "winning": 0.539,
-   "finishing": 0.562,
-   "youth": 0.495,
-   "activity": 0.561
+   "rating": 0.568,
+   "winning": 0.573,
+   "finishing": 0.543,
+   "youth": 0.539,
+   "activity": 0.556
   },
-  "top50_current": 0.58,
-  "top50_fitted": 0.58
+  "top50_current": 0.42,
+  "top50_fitted": 0.42
  },
  "fitted_on": "2019-01-06",
  "tested_on": "2021-01-03",
  "coefficients": {
-  "intercept": -2.282,
-  "rating": 2.007,
-  "winning": 0.287,
-  "finishing": 0.035,
-  "youth": 0.165,
-  "activity": 0.686
+  "intercept": -3.091,
+  "rating": 2.137,
+  "winning": 0.529,
+  "finishing": 0.125,
+  "youth": 0.139,
+  "activity": 1.023
  },
  "current_mix": {
   "rating": 0.5,
   "winning": 0.15,
-  "finishing": 0.1,
+  "finishing": 0.05,
   "youth": 0.1,
-  "activity": 0.05
+  "activity": 0.1
  },
  "fitted_mix": {
-  "rating": 0.568,
-  "winning": 0.081,
-  "finishing": 0.01,
-  "youth": 0.047,
-  "activity": 0.194
+  "rating": 0.487,
+  "winning": 0.12,
+  "finishing": 0.028,
+  "youth": 0.032,
+  "activity": 0.233
  },
  "final_mix": {
-  "rating": 0.379,
-  "winning": 0.154,
-  "finishing": 0.1,
-  "youth": 0.0,
-  "activity": 0.267
+  "rating": 0.311,
+  "winning": 0.177,
+  "finishing": 0.061,
+  "youth": 0.055,
+  "activity": 0.297
  }
 }
