@@ -240,9 +240,11 @@ def person_keys(noted: Dict[str, object], candidates: Iterable[Dict[str, object]
         u = (c.get("sherdog") or {}).get("url")
         if u:
             url.setdefault(fold(c["name"]), u)
-    for a, b in (noted.get("aliases") or {}).items():
+    for a, b in (noted.get("aliases") or {}).items():  # either spelling may be the one a record carries
         if fold(b) in url:
             url.setdefault(fold(a), url[fold(b)])
+        elif fold(a) in url:
+            url.setdefault(fold(b), url[fold(a)])
     return lambda name: url.get(fold(name), fold(name))
 
 
@@ -318,7 +320,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
         rec = {"W": sum(b["result"] == "win" for b in bouts), "L": sum(b["result"] == "loss" for b in bouts),
                "D": sum(b["result"] == "draw" for b in bouts), "NC": sum(b["result"] == "nc" for b in bouts)}
         out.append({
-            "name": c["name"], "division": c["division"] or hints.get(fold(c["name"])) or _division(sd.get("weight_class", "")) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
+            "name": (noted.get("aliases") or {}).get(c["name"], c["name"]), "division": c["division"] or hints.get(fold(c["name"])) or _division(sd.get("weight_class", "")) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
             "age": chk.get("age"), "dob": chk.get("dob"), "wins": rec["W"], "losses": rec["L"], "draws": rec["D"], "nc": rec["NC"],
             "finish_rate": round(len(fin) / len(wins), 3) if wins else 0.0, "ko": sum(b["method"] == "KO/TKO" for b in wins),
             "sub": sum(b["method"] == "SUB" for b in wins), "last_fight": last.get("date") or c.get("last_fight"),

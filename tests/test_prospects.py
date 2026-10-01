@@ -102,7 +102,7 @@ def test_initials_fold_the_same_way_everywhere():
 
 
 def test_two_spellings_are_one_prospect_credited_to_both_callers():
-    r = row(name="Tommy Morrison")
+    r = row(name="Tommy Morrisson")
     s = dict(sd(), url="sd/morrison")
     cands = [dict(r, fm={"stats": {}, "bouts": []}, sherdog=s, check=PR.verify(r, {"stats": {}, "bouts": []}, s, TODAY))]
     noted = {"aliases": {"Tommy Morrisson": "Tommy Morrison"},
@@ -110,3 +110,4 @@ def test_two_spellings_are_one_prospect_credited_to_both_callers():
                        {"outlet": "B", "title": "t", "url": "v", "names": ["Tommy Morrison"]}]}
     out = PR.build(cands, noted, TODAY)
     assert len(out) == 1 and {n["outlet"] for n in out[0]["noted_by"]} == {"A", "B"}
+    assert out[0]["name"] == "Tommy Morrison"

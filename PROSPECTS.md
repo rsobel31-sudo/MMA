@@ -16,6 +16,8 @@ outlet list + Sherdog).
    forums via WebFetch; Tapology is blocked) and append them to
    `data/prospects/noted.json` with source, kind (outlet/creator/forum), date
    and names. Never edit old calls — they are graded against later results.
+   When a list spells a name differently from Sherdog, add it to "aliases" only
+   after checking record and birth date match (two people can share a name).
    Rerun step 2 with `--skip-ranks` to pick up new names.
 4. `python -m mma_predictor prospects` rebuilds `app/prospects.json`; caller
    weights update automatically (only after 20 graded calls and |z| >= 1.96).
