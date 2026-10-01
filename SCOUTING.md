@@ -113,3 +113,24 @@ python -m mma_predictor scout sync     # then ArtifactData batch as above; commi
   | below −2.58 | dropped (0) |
 
   Until then, pundits inform the reads only qualitatively. Don't adjust anyone's weight early: a few cards can't separate skill from luck.
+
+
+## Sherdog watchlist (every Tuesday)
+
+`data/scouting/watchlist.json` lists forum members whose posts we follow. Sherdog's forums sit behind
+Cloudflare bot protection and rate-limit hard, so this is done by hand with WebFetch at a gentle pace
+(at most ~8 forum pages per run; on a 429, stop and try again next week; never try to get around the
+protection). robots.txt allows /threads/ and /members/ pages; never fetch /search/ or /posts/.
+
+1. Any member with an empty `profile`: open a thread they've posted in (from `seen`, noted.json or a
+   `site:forums.sherdog.com "<name>"` web search) and copy their profile link (`/members/<name>.<id>/`).
+2. For each member, read their profile's recent activity (the profile page, its "Postings" tab) and
+   find posts and threads since `last_checked` that aren't in `seen`. A web search for
+   `site:forums.sherdog.com "<name>"` finds threads they started too.
+3. Read each new post. Every fighter they tout as a prospect or as someone a promotion should sign
+   becomes a call: append a list to `data/prospects/noted.json` with `kind: "forum"`,
+   `outlet: "Sherdog Forums"`, `author` and `person` set to the member's name, the post's date and
+   thread URL, and the names exactly as written. Fight picks they make for UFC cards are pundit picks
+   (SCOUTING.md pundits), not prospect calls. Opinions about how a fighter fights can go into that
+   fighter's scouting report, cited.
+4. Add the URLs to `seen`, set `last_checked`, and in the summary list who said what.
