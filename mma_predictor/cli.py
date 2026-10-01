@@ -636,6 +636,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_picks(sub, data_arg)
     from .scout_cli import register as register_scout
     register_scout(sub)
+    from .prospects import register as register_prospects
+    register_prospects(sub)
     return ap
 
 

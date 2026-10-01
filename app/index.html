@@ -73,6 +73,13 @@ textarea { width: 100%; resize: vertical; min-height: 56px; }
 .corner.red input { border-left: 5px solid var(--red); }
 .corner.blue input { border-left: 5px solid var(--blue); }
 .cb { position: relative; display: block; }
+.pr-table td { vertical-align: top; }
+.pr-detail td.num { white-space: nowrap; }
+.pr-row:hover td { background: var(--surface-2); }
+.pr-open > td { background: var(--surface-2); padding: 12px 14px; }
+.pr-cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px; }
+.pr-detail .rbar { grid-template-columns: minmax(0, 11em) 1fr 3em; }
+@media (max-width: 800px) { .pr-cols { grid-template-columns: 1fr; } }
 .mp-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-top: 12px; }
 .mp-side { position: sticky; top: 12px; }
 .mp-bout { border-top: 1px solid var(--line); padding: 12px 0; }
@@ -441,6 +448,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   <div class="more" id="more">
     <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
+      <button type="button" role="menuitem" data-tab="prospects">Prospects</button>
       <button type="button" role="menuitem" data-tab="mypicks">My Picks</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
@@ -512,6 +520,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     tab: "card",
     picks: { sub: "week", summary: null, weeks: [], loaded: false },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
+    pros: { data: null, loading: false, error: "", view: "classes", gender: "", wc: "", q: "", unbeaten: false, open: null },
     my: { sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
@@ -697,7 +706,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -1075,6 +1084,15 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         ["What it is", "Claude reads the major MMA outlets every week (MMA Fighting, Sherdog, Bloody Elbow, Cageside Press, MMA Mania, BJPenn.com, MMA Weekly, LowKick MMA, ESPN, UFC.com) plus fight previews and breakdowns, and writes a report on each fighter: how they actually fight, their habits, what's worrying, how to beat them, and the news. Every claim links to its source; facts are checked against the verified fight records."],
         ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Picks betting sheet."],
         ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
+    }
+    if (key === "prospects") {
+      const P = state.pros.data || {};
+      return { title: "How prospects are chosen and ranked", key, rows: [
+        ["Who qualifies", "Under 28, fewer than 14 professional fights, never fought in a major promotion (UFC, PFL or Bellator, ONE, ACA, RIZIN; the Contender Series doesn't count), and fought in the last two years."],
+        ["Where they come from", `Fight Matrix's divisional rankings, which rank fighters in every promotion worldwide (${P.screened ? P.screened.toLocaleString() : "thousands of"} ranked fighters screened), plus prospects named on outlet lists (MMA Junkie, MMA Prospect Vault, The Scrap).`],
+        ["Two sources", "Each prospect's birth date, record and promotions are checked on Fight Matrix and on Sherdog (or, for list picks, Sherdog and the published list). Anyone whose sources disagree, or who shows a major-promotion fight on either, is left out."],
+        ["The score", "50% Fight Matrix rating (as a percentile within the division; it already weighs opponent quality), 15% winning (unbeaten records get a bonus), 10% finishing rate, 10% youth, 5% activity, 10% buzz (named on independent prospect lists)."],
+        ["Refresh", "The list is rebuilt as the data is re-crawled; a prospect who signs with a major promotion drops off."]] };
     }
     if (key === "my_picks") {
       return { title: "How My Picks works", key, rows: [
@@ -1659,7 +1677,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close();
       return;
     }
-    const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open]");
+    if (e.target.closest("a")) return;
+    const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open], tr[data-prospect], li[data-prospect-open]");
     if (!t) return;
     if (t.dataset.info) { e.stopPropagation(); openInfo(t.dataset.info); return; }
     if (t.dataset.infoClose) { $("#info-dlg").close(); return; }
@@ -1717,6 +1736,10 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
     if (t.dataset.picksSub) { state.picks.sub = t.dataset.picksSub; render(); return; }
+    if (t.dataset.prosView) { state.pros.view = t.dataset.prosView; render(); return; }
+    if (t.dataset.prosClass) { Object.assign(state.pros, { view: "table", wc: t.dataset.prosClass, open: null }); render(); return; }
+    if (t.dataset.prospectOpen) { Object.assign(state.pros, { view: "table", open: t.dataset.prospectOpen, q: "", wc: "" }); render(); const el = document.querySelector(`[data-prospect="${CSS.escape(t.dataset.prospectOpen)}"]`); if (el) el.scrollIntoView({ block: "center" }); return; }
+    if (t.dataset.prospect) { state.pros.open = state.pros.open === t.dataset.prospect ? null : t.dataset.prospect; render(); return; }
     if (t.dataset.mySub) { state.my.sub = t.dataset.mySub; state.my.msg = ""; render(); return; }
     if (t.dataset.slip) { slipToggle(t.dataset.slip); return; }
     if (t.id === "mp-place") { placeBet(); return; }
@@ -1756,6 +1779,12 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       const name = state.byName.has(v) ? v : ([...state.byName.keys()].find((n) => n.toLowerCase() === low)
         || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || (searchFighters(v)[0] || {}).name || v);
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
+    }
+    if (t.dataset.prosFilter) {
+      const k = t.dataset.prosFilter;
+      state.pros[k] = t.type === "checkbox" ? t.checked : t.value;
+      if (k === "gender" && state.pros.wc && (state.pros.gender === "women") !== isWomen(state.pros.wc)) state.pros.wc = "";
+      render(); return;
     }
     if (t.dataset.intang) {
       const [side, key] = t.dataset.intang.split("|");
@@ -1807,6 +1836,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       return;
     }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
+    if (t.id === "pros-q") { state.pros.q = t.value; render(); return; }
     if (t.id === "mp-stake") {
       state.my.stake = t.value;
       const out = t.closest(".mp-stake").querySelector(".num strong");
@@ -1887,6 +1917,84 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       </tbody></table></div>` : `<p class="muted" style="font-size:13px">Pundit picks are recorded every fight week and graded after the card.</p>`}
       <p class="muted" style="font-size:12.5px">Every pundit counts equally until they have 40 graded picks and beat (or trail) the betting market by a clear margin (z beyond ±1.96). Only then are they upweighted or discounted, and dropped below −2.58.</p>
     </section>`;
+  }
+
+  // ------------------------------------------------------------ Prospects
+  function loadProspects() {
+    const P = state.pros;
+    if (P.data || P.loading) return;
+    P.loading = true;
+    fetch("prospects.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => { P.data = d; P.loading = false; render(); })
+      .catch(() => { P.loading = false; P.error = "Couldn't load the prospect list."; render(); });
+  }
+  const isWomen = (d) => /^women/i.test(d || "");
+  function prospectList() {
+    const P = state.pros, q = P.q.trim().toLowerCase();
+    return (P.data ? P.data.prospects : []).filter((x) =>
+      (!P.gender || (P.gender === "women") === isWomen(x.division)) && (!P.wc || x.division === P.wc) && (!P.unbeaten || x.losses === 0) &&
+      (!q || x.name.toLowerCase().includes(q) || (x.promotion || "").toLowerCase().includes(q) || (x.nationality || "").toLowerCase().includes(q)));
+  }
+  const prRecord = (x) => `${x.wins}-${x.losses}${x.draws ? `-${x.draws}` : ""}`;
+  function prospectDetail(x) {
+    const c = x.components || {};
+    const part = (k, lab, w) => `<div class="rbar"><span>${lab} <span class="muted">(${w}%)</span></span><span class="mtrack"><div style="width:${Math.round((c[k] || 0) * 100)}%;background:var(--ink)"></div></span><span class="num">${Math.round((c[k] || 0) * 100)}</span></div>`;
+    return `<div class="pr-detail">
+      <div class="pr-cols">
+        <div>
+          <p class="muted" style="margin:0 0 6px;font-size:13.5px">${[x.nickname ? `“${x.nickname}”` : "", x.nationality, x.team, x.stance, x.height_cm ? `${Math.round(x.height_cm)} cm` : "", x.reach_cm ? `${Math.round(x.reach_cm)} cm reach` : ""].filter(Boolean).map(esc).join(" · ")}</p>
+          <p style="margin:0 0 8px;font-size:14px"><strong>${prRecord(x)}</strong> · ${x.ko} KO/TKO, ${x.sub} submission${x.sub === 1 ? "" : "s"} · finishes ${Math.round(x.finish_rate * 100)}% of wins · age ${Math.floor(x.age)}</p>
+          <table class="recent"><thead><tr><th>Date</th><th>Res</th><th>Opponent</th><th>Method</th><th>Event</th></tr></thead><tbody>
+            ${x.recent.map((b) => `<tr><td class="num">${esc(b.date)}</td><td class="res-${b.result === "win" ? "W" : b.result === "loss" ? "L" : "D"}">${b.result === "win" ? "W" : b.result === "loss" ? "L" : b.result.toUpperCase()}</td><td>${esc(b.opponent)}</td><td>${esc(b.method)} R${b.round}</td><td class="muted">${esc(b.event)}</td></tr>`).join("")}
+          </tbody></table>
+        </div>
+        <div>
+          <div class="label">Prospect score ${x.score}</div>
+          <div class="rbars">${part("rating", "Fight Matrix rating", 50)}${part("winning", "Winning", 15)}${part("finishing", "Finishing", 10)}${part("youth", "Youth", 10)}${part("activity", "Activity", 5)}${part("buzz", "Buzz", 10)}</div>
+          ${x.noted_by.length ? `<div class="label" style="margin-top:10px">On prospect lists</div><ul class="notes">${x.noted_by.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.outlet)}${n.author ? ` (${esc(n.author)})` : ""}: ${esc(n.title)}</a></li>`).join("")}</ul>` : ""}
+          <p class="muted" style="font-size:12px;margin:10px 0 0">Verified on ${esc(x.sources.join(" + "))}. ${x.sherdog_url ? `<a href="${esc(x.sherdog_url)}" target="_blank" rel="noopener">Sherdog</a>` : ""}${x.fm_url ? ` · <a href="${esc(x.fm_url)}" target="_blank" rel="noopener">Fight Matrix</a>` : ""}</p>
+        </div>
+      </div></div>`;
+  }
+  function prospectRow(x, rank) {
+    const open = state.pros.open === x.name;
+    return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td>
+      <td><strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
+      <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
+      <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
+      <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="8">${prospectDetail(x)}</td></tr>` : ""}`;
+  }
+  function renderProspects(view) {
+    const P = state.pros;
+    loadProspects();
+    const intro = `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h2 style="margin:0">Prospects</h2>${infoBtn("prospects", "How prospects are chosen and ranked")}</div>
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:78ch">The best young fighters not yet in a major promotion: under 28, fewer than 14 pro fights, never fought in the UFC, PFL/Bellator, ONE, ACA or RIZIN, and active in the last two years. Every one is checked on two sources.${P.data ? ` ${P.data.prospects.length} prospects · built ${esc((P.data.built || "").slice(0, 10))}.` : ""}</p></section>`;
+    if (!P.data) { view.innerHTML = `<div class="stack">${intro}<div class="${P.error ? "empty" : "loading"}">${P.error || "Loading prospects…"}</div></div>`; return; }
+    const all = P.data.prospects, list = prospectList();
+    const divs = [...new Set(all.map((x) => x.division))].sort(divisionOrder);
+    const head = `<div class="toolbar">
+      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button></span>
+      <label class="label" for="pros-q" style="margin-left:6px">Search</label><input id="pros-q" type="search" value="${esc(P.q)}" placeholder="Name, promotion, country">
+      <select data-pros-filter="gender"><option value="">Men and women</option><option value="men" ${P.gender === "men" ? "selected" : ""}>Men</option><option value="women" ${P.gender === "women" ? "selected" : ""}>Women</option></select>
+      <select data-pros-filter="wc"><option value="">All divisions</option>${divs.map((d) => `<option ${P.wc === d ? "selected" : ""}>${esc(d)}</option>`).join("")}</select>
+      <label class="check"><input type="checkbox" data-pros-filter="unbeaten" ${P.unbeaten ? "checked" : ""}> Unbeaten only</label>
+      <span class="muted num" style="font-size:13px">${list.length} of ${all.length}</span></div>`;
+    let body;
+    if (P.view === "classes") {
+      const groups = {};
+      for (const x of list) (groups[x.division] = groups[x.division] || []).push(x);
+      const order = Object.keys(groups).sort(divisionOrder);
+      body = order.length ? `<div class="classes">${order.map((wc) => {
+        const g = groups[wc], top = g[0].score;
+        return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} prospects</span></div>
+          <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)} · age ${Math.floor(x.age)}">${esc(x.name)} <span class="muted num" style="font-size:12px">${prRecord(x)}</span></span>
+            <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}</span></li>`).join("")}</ol>
+          ${g.length > 10 ? `<button class="btn link" type="button" data-pros-class="${esc(wc)}">All ${g.length} in the list</button>` : ""}</div>`;
+      }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by prospect score. Click a name for the full card.</p>` : `<div class="empty">No prospects match these filters.</div>`;
+    } else {
+      body = list.length ? `<div class="table-wrap"><table class="list pr-table"><thead><tr><th class="num">#</th><th>Prospect</th><th class="num">Age</th><th class="num">Record</th><th class="num">Finish</th><th>Promotion · last fight</th><th>From</th><th class="num">Score</th></tr></thead>
+        <tbody>${list.map((x, i) => prospectRow(x, i + 1)).join("")}</tbody></table></div>` : `<div class="empty">No prospects match these filters.</div>`;
+    }
+    view.innerHTML = `<div class="stack">${intro}<section class="panel stack">${head}${body}</section></div>`;
   }
 
   // ------------------------------------------------------------ My Picks (the league)
