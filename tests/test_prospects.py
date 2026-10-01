@@ -60,3 +60,20 @@ def test_build_and_score():
     g = next(p for p in out if p["name"] == "Gamma Three")
     assert g["components"]["rating"] == 0.5 and g["noted_by"] and g["components"]["buzz"] == 0.5
     assert all(0 <= p["score"] <= 100 for p in out) and out[0]["p4p_rank"] == 1 and out[0]["div_rank"] == 1
+
+
+def test_source_track_grades_calls_and_holds_weights_until_enough():
+    good = [{"date": f"2026-0{m}-01", "result": "win"} for m in (2, 3, 4)]
+    bad = [{"date": f"2026-0{m}-01", "result": "loss"} for m in (2, 3, 4)]
+    cands = [{"name": f"Good {i}", "sherdog": {"bouts": good}} for i in range(30)] + [{"name": f"Bad {i}", "sherdog": {"bouts": bad}} for i in range(30)]
+    noted = {"lists": [
+        {"kind": "creator", "outlet": "X", "author": "@sharp", "date": "2026-01", "names": [f"Good {i}" for i in range(25)]},
+        {"kind": "forum", "outlet": "Forum", "author": "wrongway", "date": "2026-01", "names": [f"Bad {i}" for i in range(25)]},
+        {"kind": "outlet", "outlet": "Few", "author": "", "date": "2026-01", "names": ["Good 25", "Bad 25"]},
+        {"kind": "outlet", "outlet": "Late", "author": "", "date": "2026-09", "names": ["Good 26"]},
+    ]}
+    t = {x["author"] or x["outlet"]: x for x in PR.source_track(noted, cands, TODAY)}
+    assert t["@sharp"]["hits"] == 25 and t["@sharp"]["weight"] == 2.0
+    assert t["wrongway"]["weight"] == 0.0
+    assert t["Few"]["graded"] == 2 and t["Few"]["weight"] == 1.0      # too few calls to judge
+    assert t["Late"]["graded"] == 0                                   # no fights since the call yet

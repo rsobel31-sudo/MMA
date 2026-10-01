@@ -147,14 +147,15 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
             youth = max(0.0, min(1.0, (MAX_AGE - (p.get("age") or MAX_AGE)) / 7))
             days = (today - date.fromisoformat(p["last_fight"])).days if p.get("last_fight") else 999
             active = 1.0 if days <= 365 else 0.4
-            buzz = min(1.0, len(p.get("noted_by", [])) / 2)
+            # Buzz: sources naming them, each weighted by its graded track record (source_track).
+            buzz = min(1.0, sum(n.get("weight", 1.0) for n in p.get("noted_by", [])) / 2)
             p["components"] = {"rating": round(pct, 3), "winning": round(min(1, win), 3), "finishing": round(fin, 3),
                                "youth": round(youth, 3), "activity": active, "buzz": buzz}
             p["score"] = round(100 * (0.50 * pct + 0.15 * min(1, win) + 0.10 * fin + 0.10 * youth + 0.05 * active + 0.10 * buzz), 1)
 
 
 def sherdog_summary(page) -> Dict[str, object]:
-    return {"dob": page.dob.isoformat() if page.dob else "", "url": page.url, "team": page.team, "nationality": page.nationality,
+    return {"dob": page.dob.isoformat() if page.dob else "", "url": page.url, "team": page.team, "weight_class": page.weight_class, "nationality": page.nationality,
             "height_cm": page.height_cm, "reach_cm": page.reach_cm, "stance": page.stance, "nickname": page.nickname,
             "bouts": [{"date": b.date.isoformat(), "opponent": b.opponent, "result": b.result, "method": b.method.value if hasattr(b.method, "value") else str(b.method),
                        "round": b.round, "time": b.time, "event": b.event} for b in page.bouts]}
@@ -168,10 +169,67 @@ def fold(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", "".join(c for c in s if not unicodedata.combining(c)).lower()).strip()
 
 
+def source_of(lst: Dict[str, object]) -> str:
+    """One caller: an outlet's author, a creator, or a forum username."""
+    return f"{lst.get('kind', 'outlet')}|{lst.get('outlet', '')}|{lst.get('author', '')}"
+
+
+def _division(sherdog_wc: str) -> str:
+    wc = (sherdog_wc or "").strip().title()
+    return wc if wc in DIVISIONS and not wc.startswith("Women") else ""
+
+
+MIN_CALLS = 20  # graded calls before a source's weight can move
+
+
+def grade_call(bouts: List[Dict[str, object]], since: str) -> Optional[bool]:
+    """Did a prospect call pan out? Hit = won at least two thirds of their decided fights since the call
+    (at least two of them); None while fewer than two fights have happened."""
+    after = [b for b in bouts if str(b.get("date", "")) >= since and b.get("result") in ("win", "loss")]
+    if len(after) < 2:
+        return None
+    wins = sum(b["result"] == "win" for b in after)
+    return wins / len(after) >= 2 / 3
+
+
+def source_track(noted: Dict[str, object], candidates: Iterable[Dict[str, object]], today: date) -> List[Dict[str, object]]:
+    """Each caller's record: graded calls, hits, and a z-score against the pooled hit rate of every graded call.
+    Weights stay 1.0 until a caller has MIN_CALLS graded calls and |z| > 1.96, as for the betting pundits."""
+    import math
+
+    bouts_by = {fold(c["name"]): (c.get("sherdog") or {}).get("bouts", []) for c in candidates if c.get("sherdog")}
+    calls = []
+    for lst in noted.get("lists", []):
+        since = str(lst.get("date", ""))[:10] or "1900-01-01"
+        if len(since) == 7:
+            since += "-01"
+        for n in lst.get("names", []):
+            g = grade_call(bouts_by.get(fold(n), []), since)
+            calls.append((source_of(lst), lst, n, g))
+    graded = [c for c in calls if c[3] is not None]
+    p0 = sum(c[3] for c in graded) / len(graded) if graded else 0.5
+    out = []
+    for src in sorted({c[0] for c in calls}):
+        mine = [c for c in calls if c[0] == src]
+        g = [c for c in mine if c[3] is not None]
+        hits = sum(c[3] for c in g)
+        n = len(g)
+        z = (hits - n * p0) / math.sqrt(n * p0 * (1 - p0)) if n and 0 < p0 < 1 else 0.0
+        w = 1.0
+        if n >= MIN_CALLS and abs(z) >= 1.96:
+            w = (2.0 if z >= 2.58 else 1.5) if z > 0 else (0.0 if z <= -2.58 else 0.5)
+        lst = mine[0][1]
+        out.append({"source": src, "kind": lst.get("kind", "outlet"), "outlet": lst.get("outlet", ""), "author": lst.get("author", ""),
+                    "calls": len(mine), "graded": n, "hits": hits, "hit_rate": round(hits / n, 3) if n else None,
+                    "baseline": round(p0, 3), "z": round(z, 2), "weight": w})
+    return sorted(out, key=lambda t: (-t["graded"], -t["calls"]))
+
+
 def noted_index(noted: Dict[str, object]) -> Dict[str, List[Dict[str, str]]]:
     idx: Dict[str, List[Dict[str, str]]] = {}
     for lst in noted.get("lists", []):
-        src = {k: lst.get(k, "") for k in ("outlet", "author", "title", "url", "date")}
+        src = {k: lst.get(k, "") for k in ("outlet", "author", "title", "url", "date", "kind")}
+        src["source"] = source_of(lst)
         for n in lst.get("names", []):
             idx.setdefault(fold(n), []).append(src)
     return idx
@@ -179,7 +237,10 @@ def noted_index(noted: Dict[str, object]) -> Dict[str, List[Dict[str, str]]]:
 
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
     """Eligible, two-source-verified prospects, scored and ranked."""
+    candidates = list(candidates)
     idx = noted_index(noted)
+    track = source_track(noted, candidates, today)
+    weights = {t["source"]: t["weight"] for t in track}
     hints = {fold(k): v for k, v in (noted.get("division_hints") or {}).items()}
     out, seen = [], set()
     for c in candidates:
@@ -198,7 +259,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
         rec = {"W": sum(b["result"] == "win" for b in bouts), "L": sum(b["result"] == "loss" for b in bouts),
                "D": sum(b["result"] == "draw" for b in bouts), "NC": sum(b["result"] == "nc" for b in bouts)}
         out.append({
-            "name": c["name"], "division": c["division"] or hints.get(key) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
+            "name": c["name"], "division": c["division"] or hints.get(key) or _division(sd.get("weight_class", "")) or "Unknown", "fm_rank": c.get("rank"), "rating": c.get("rating"),
             "age": chk.get("age"), "dob": chk.get("dob"), "wins": rec["W"], "losses": rec["L"], "draws": rec["D"], "nc": rec["NC"],
             "finish_rate": round(len(fin) / len(wins), 3) if wins else 0.0, "ko": sum(b["method"] == "KO/TKO" for b in wins),
             "sub": sum(b["method"] == "SUB" for b in wins), "last_fight": last.get("date") or c.get("last_fight"),
@@ -206,10 +267,12 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "nationality": sd.get("nationality", ""), "team": sd.get("team", "") or (c.get("fm", {}).get("stats", {}) or {}).get("Association", ""),
             "height_cm": sd.get("height_cm"), "reach_cm": sd.get("reach_cm"), "stance": sd.get("stance"), "nickname": sd.get("nickname", ""),
             "recent": [{k: b[k] for k in ("date", "opponent", "result", "method", "round", "event")} for b in bouts[:6]],
-            "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url", ""), "noted_by": idx.get(key, []),
+            "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url", ""),
+            "noted_by": [dict(n, weight=weights.get(n["source"], 1.0)) for n in idx.get(key, [])],
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
         })
     score_pool(out, today)
+    build.track = track  # exposed for the output file
     out.sort(key=lambda p: -p["score"])
     for i, p in enumerate(out, 1):
         p["p4p_rank"] = i
@@ -230,7 +293,7 @@ def cmd_build(args) -> int:
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
-           "prospects": pros}
+           "callers": getattr(build, "track", []), "prospects": pros}
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     rejected = [c for c in cands if not (c.get("check") or {}).get("eligible")]
     reasons: Dict[str, int] = {}

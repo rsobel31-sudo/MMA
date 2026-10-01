@@ -1,5 +1,5 @@
 {
- "_note": "Independent prospect lists (outlets and analysts). A prospect's buzz = how many of these name them. Names exactly as published; matched to candidates accent- and case-insensitively.",
+ "_note": "Prospect calls by outlets, creators and forum posters. Each list is one dated call by one source (outlet + author, creator handle, or forum username). Buzz = weighted count of sources naming a prospect; each source's weight follows its graded track record (prospects.source_track). Names exactly as published; matched accent- and case-insensitively.",
  "lists": [
   {
    "outlet": "MMA Junkie",
@@ -28,7 +28,8 @@
     "Kazuki Aimoto",
     "Vinny Dias",
     "Tornike Nagliashvili"
-   ]
+   ],
+   "kind": "outlet"
   },
   {
    "outlet": "MMA Prospect Vault",
@@ -62,7 +63,8 @@
     "Shakhban Gapizov",
     "Nikita Kulshin",
     "Khalim Nazruloev"
-   ]
+   ],
+   "kind": "outlet"
   },
   {
    "outlet": "The Scrap",
@@ -78,6 +80,222 @@
     "Regina Tarin",
     "Austin Clayton",
     "Yusuf Esembaev"
+   ],
+   "kind": "outlet"
+  },
+  {
+   "kind": "outlet",
+   "outlet": "MMA Prospect Vault",
+   "author": "",
+   "title": "Top 10 Cage Warriors Prospects in 2026",
+   "url": "https://mmaprospectvault.com/top-10-cage-warriors-prospects-in-2026",
+   "date": "2026-02",
+   "names": [
+    "Sean Clancy",
+    "George Staines",
+    "Jack Humphries",
+    "Shay Ingram",
+    "Conor McCarthy",
+    "Max Lally",
+    "Nik Bagley",
+    "Tariq Pell",
+    "Anthony Orozco",
+    "Ieuan Davies"
+   ]
+  },
+  {
+   "kind": "creator",
+   "outlet": "X",
+   "author": "@FdrNphw (Fedor's nephew, Tapology editor for Russia)",
+   "title": "\"three great prospects to keep an eye on\" (Fight Nights card)",
+   "url": "https://x.com/FdrNphw/status/2022274662873309397",
+   "date": "2026-02",
+   "names": [
+    "Yusup Khalukhoev",
+    "Bilan Korotev",
+    "Khalil Pirmagomedov"
+   ]
+  },
+  {
+   "kind": "creator",
+   "outlet": "X",
+   "author": "@FlightOFfists (prospectator)",
+   "title": "\"Bilal (remember the name) Tawfik\"",
+   "url": "https://x.com/FlightOFfists/status/2005284906973397138",
+   "date": "2025-12",
+   "names": [
+    "Bilal Tawfik"
+   ]
+  },
+  {
+   "kind": "creator",
+   "outlet": "X",
+   "author": "@FlightOFfists (prospectator)",
+   "title": "\"elite prospect Yusup Khalukhoev\"",
+   "url": "https://x.com/FlightOFfists/status/2051737890556686692",
+   "date": "2026-05",
+   "names": [
+    "Yusup Khalukhoev"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "STAY GOLD",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2024-12-23",
+   "names": [
+    "Juan Diaz",
+    "Alberth Bahamondes",
+    "Imanol Rodriguez"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "SirWillemDarry",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2024-12-24",
+   "names": [
+    "Nicholas Hwende"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "Ara tech",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2024-12-24",
+   "names": [
+    "Rajabali Shaidullaev",
+    "Akbar Abdullaev",
+    "Yryskeldi Duysheev"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "HuskySamoan",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-01-03",
+   "names": [
+    "Daniyar Toychubek",
+    "Asaf Chopurov",
+    "Renat Khavalov",
+    "Aboubakar Younousov",
+    "Khalim Nazruloev",
+    "Mehemmedeli Osmanli",
+    "Shakhban Gapizov",
+    "Payton Talbott",
+    "Austin Bashi",
+    "Felipe Lima",
+    "Jean Matsumoto",
+    "Bilal Hasan",
+    "Kade Ruotolo"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "Hellowhosthat",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-01-03",
+   "names": [
+    "Julius Walker",
+    "Isaac Moreno",
+    "Mitch McKee",
+    "Damien Anderson",
+    "Luke Fernandez",
+    "Santiago Luna"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "STAY GOLD",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-01-03",
+   "names": [
+    "Damian Fernandez",
+    "Luis Ivan Rodriguez",
+    "Anthony Ramirez",
+    "Silvestre Sanchez"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "SilverMoon",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-01-13",
+   "names": [
+    "Bo Nickal",
+    "Fatima Kline",
+    "Jacobe Smith",
+    "Aaron Kunneman",
+    "Julius Walker",
+    "Mitch McKee",
+    "Chance Ikei",
+    "Blake Decourcy",
+    "Luke Fernandez",
+    "Ezra Elliott",
+    "Tommy McMillen",
+    "Isaac Moreno"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "agibmxmma",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-01-15",
+   "names": [
+    "Bobby Seronio"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "Bars",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-06-07",
+   "names": [
+    "Yryskeldi Duysheev",
+    "Bekmyrza Dosmatov",
+    "Adilet Nurmatov"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "DamnSevern",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-06-08",
+   "names": [
+    "Murtazali Magomedov"
+   ]
+  },
+  {
+   "kind": "forum",
+   "outlet": "Sherdog Forums",
+   "author": "obublok",
+   "title": "Top regional MMA prospects from your part of the world?",
+   "url": "https://forums.sherdog.com/threads/top-regional-mma-prospects-from-your-part-of-the-world.4348841/",
+   "date": "2025-06-10",
+   "names": [
+    "Omran Chabaan",
+    "Abdul Hussein",
+    "Theo Kolehmainen"
    ]
   }
  ],
@@ -127,6 +345,13 @@
   "Gable Steveson": "Heavyweight",
   "Gigi Canuto": "Women's Strawweight",
   "Mitch McKee": "Featherweight",
-  "Regina Tarin": "Women's Flyweight"
+  "Regina Tarin": "Women's Flyweight",
+  "Sean Clancy": "Welterweight",
+  "Jack Humphries": "Bantamweight",
+  "Shay Ingram": "Lightweight",
+  "Conor McCarthy": "Lightweight",
+  "Max Lally": "Featherweight",
+  "Tariq Pell": "Lightweight",
+  "Anthony Orozco": "Welterweight"
  }
 }
