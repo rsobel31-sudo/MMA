@@ -652,6 +652,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_health(sub)
     from .recap_cli import register as register_recap
     register_recap(sub)
+    from .tapology_import import register as register_tapology_import
+    register_tapology_import(sub)
     return ap
 
 

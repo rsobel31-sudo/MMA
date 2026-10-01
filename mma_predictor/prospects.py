@@ -214,7 +214,10 @@ def match_name(name: str, hits: List[tuple]) -> str:
 
 
 def source_of(lst: Dict[str, object]) -> str:
-    """One caller: an outlet's author, a creator, or a forum username."""
+    """One caller: an outlet's author, a creator, or a forum username. A list with a `person` belongs to
+    that person wherever they posted it (Sherdog, Tapology, X), so their calls share one track record."""
+    if lst.get("person"):
+        return f"person|{lst['person']}"
     return f"{lst.get('kind', 'outlet')}|{lst.get('outlet', '')}|{lst.get('author', '')}"
 
 
@@ -349,7 +352,8 @@ def source_track(noted: Dict[str, object], candidates: Iterable[Dict[str, object
         if n >= MIN_CALLS and abs(z) >= 1.96:
             w = (2.0 if z >= 2.58 else 1.5) if z > 0 else (0.0 if z <= -2.58 else 0.5)
         lst = mine[0][1]
-        out.append({"source": src, "kind": lst.get("kind", "outlet"), "outlet": lst.get("outlet", ""), "author": lst.get("author", ""),
+        outlets = ", ".join(dict.fromkeys(str(c[1].get("outlet", "")) for c in mine if c[1].get("outlet")))
+        out.append({"source": src, "kind": lst.get("kind", "outlet"), "outlet": outlets, "author": lst.get("person") or lst.get("author", ""),
                     "calls": len(mine), "graded": n, "hits": hits, "hit_rate": round(hits / n, 3) if n else None,
                     "baseline": round(p0, 3), "z": round(z, 2), "weight": w})
     return sorted(out, key=lambda t: (-t["graded"], -t["calls"]))

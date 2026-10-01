@@ -8,6 +8,10 @@ Rules: under 28, fewer than 14 pro fights, not signed to a major promotion
 "signed"). Every prospect needs two sources (Fight Matrix + Sherdog, or an
 outlet list + Sherdog).
 
+0. `python -m mma_predictor tapology-import`: imports whatever the owner dropped in
+   `data/prospects/inbox/` (Tapology pages they saved, pasted lists; see the README there).
+   Claude never fetches Tapology itself (its robots.txt bars Anthropic's crawlers). If a saved
+   page yields no fighters, say so in the summary and keep the file.
 1. `mv data/prospects/candidates.jsonl data/prospects/candidates.prev.jsonl`
    (fresh recheck: records, ages and promotions change).
 2. `python scripts/crawl_prospects.py --out data/prospects --max-pages 45 --noted data/prospects/noted.json`
