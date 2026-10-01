@@ -146,3 +146,10 @@ def test_left_a_major_is_eligible_again_but_not_the_ufc():
     # A call made while he was in ACA isn't graded; one made after he left is, and re-signing is a hit.
     assert PR.grade_call(aca + [regional], "2024-01-01") is None
     assert PR.grade_call(aca + [regional, dict(regional, date="2026-06-01", event="PFL 5")], "2026-02-01") is True
+
+
+def test_winning_record_required():
+    s = dict(sd(n_w=2, n_l=2))
+    chk = PR.verify(row(wins=2, losses=2), {"stats": {}, "bouts": []}, s, TODAY)
+    assert not chk["eligible"] and any("winning record" in i for i in chk["issues"])
+    assert PR.verify(row(wins=2, losses=0), {"stats": {}, "bouts": []}, sd(n_w=2), TODAY)["eligible"]

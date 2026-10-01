@@ -3,7 +3,7 @@
 Runs on the 1st of each month. Goal: keep the Prospects tab current and keep
 grading the outlets, creators and forum posters who call prospects.
 
-Rules: under 28, fewer than 14 pro fights, not in a major promotion (UFC,
+Rules: under 28, fewer than 14 pro fights, a winning record, not in a major promotion (UFC,
 PFL/Bellator, ONE, ACA, RIZIN; Contender Series / Road to UFC don't count), active
 in the last two years. Anyone who has fought in the UFC is out for good; a fighter who
 has formally left PFL, ONE, ACA or RIZIN (most recent fight outside the majors) is
@@ -17,7 +17,9 @@ outlet list + Sherdog).
    page yields no fighters, say so in the summary and keep the file.
 1. `mv data/prospects/candidates.jsonl data/prospects/candidates.prev.jsonl`
    (fresh recheck: records, ages and promotions change).
-2. `python scripts/crawl_prospects.py --out data/prospects --max-pages 45 --noted data/prospects/noted.json`
+2. `python scripts/crawl_prospects.py --out data/prospects --max-pages 45 --noted data/prospects/noted.json --sweep`
+   (`--sweep` also checks every fighter on the last two years of cards of each promotion in
+   `data/prospects/promotions.json`, e.g. RCC; the owner adds promotions there)
    (about 1-2 hours; resumable — rerun the same command if it stops).
 3. Scrub for new calls (WebSearch; X posts via `site:x.com` searches; Sherdog
    forums via WebFetch; Tapology is blocked) and append them to

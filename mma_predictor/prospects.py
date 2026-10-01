@@ -150,6 +150,9 @@ def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict
         issues.append(f"age {age:.1f}")
     if sd_n >= MAX_FIGHTS:
         issues.append(f"{sd_n} fights on Sherdog")
+    sd_l = len([b for b in sd_bouts if b.get("result") == "loss"])
+    if sd_w <= sd_l:
+        issues.append(f"no winning record ({sd_w}-{sd_l})")
     fm_n = row["wins"] + row["losses"] + row["draws"]
     if abs(sd_n - fm_n) > 1 or abs(sd_w - row["wins"]) > 1:
         issues.append(f"records disagree (Fight Matrix {row['wins']}-{row['losses']}-{row['draws']}, Sherdog {sd_w} wins in {sd_n})")
@@ -166,8 +169,13 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
         ratings = sorted(p["rating"] for p in ps if p.get("rating"))
         for p in ps:
             r = p.get("rating")
-            # No Fight Matrix rating (found only via an outlet list): neutral on this component.
-            pct = 0.5 if not r or len(ratings) < 2 else sum(x < r for x in ratings) / (len(ratings) - 1)
+            # No Fight Matrix rating: neutral if they came from a commentator's call (we may just have missed
+            # their ranking); near the bottom if found by a promotion sweep (Fight Matrix ranks ~1,100 deep per
+            # division, so not being there means rating below everyone who is).
+            if not r or len(ratings) < 2:
+                pct = 0.1 if p.get("via") == "sweep" else 0.5
+            else:
+                pct = sum(x < r for x in ratings) / (len(ratings) - 1)
             n = p["wins"] + p["losses"] + p["draws"]
             win = (p["wins"] + 1) / (n + 2) + (0.08 if p["losses"] == 0 and p["wins"] >= 5 else 0)
             fin = p.get("finish_rate") or 0.0
@@ -401,10 +409,36 @@ def noted_index(noted: Dict[str, object], key=fold) -> Dict[str, List[Dict[str, 
     return idx
 
 
+def fill_fm_ratings(candidates: List[Dict[str, object]], path: Path = Path("data/prospects/fm_ranks.jsonl")) -> None:
+    """Candidates found by name (lists, suggestions, sweeps) get their Fight Matrix rank and rating when
+    exactly one ranked fighter has their name and division-free record agrees within a fight."""
+    from .sources.wikipedia import match_key
+
+    if not path.exists():
+        return
+    by: Dict[str, List[dict]] = {}
+    for line in path.read_text().splitlines():
+        if line.strip():
+            r = json.loads(line)
+            by.setdefault(match_key(r["name"]), []).append(r)
+    for c in candidates:
+        if c.get("rating") or not c.get("sherdog"):
+            continue
+        hits = by.get(match_key(c["name"]), [])
+        if len(hits) != 1:
+            continue
+        h = hits[0]
+        sd_w = sum(b.get("result") == "win" for b in c["sherdog"].get("bouts", []))
+        if abs(int(h.get("wins") or 0) - sd_w) > 1:
+            continue
+        c.update(rating=h.get("rating"), rank=h.get("rank"), division=c.get("division") or h.get("division"), fm_rank_url=h.get("fm_url"))
+
+
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
     """Eligible, two-source-verified prospects, scored and ranked."""
     # Fight Matrix records first: when two records are the same person, keep the one with a rating.
     candidates = sorted(candidates, key=lambda c: not c.get("fm_url"))
+    fill_fm_ratings(candidates)
     person = person_keys(noted, candidates)
     idx = noted_index(noted, person)
     track = source_track(noted, candidates, today)
@@ -435,10 +469,11 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "nationality": sd.get("nationality", ""), "team": sd.get("team", "") or (c.get("fm", {}).get("stats", {}) or {}).get("Association", ""),
             "height_cm": sd.get("height_cm"), "reach_cm": sd.get("reach_cm"), "stance": sd.get("stance"), "nickname": sd.get("nickname", ""),
             "recent": [{k: b[k] for k in ("date", "opponent", "result", "method", "round", "event")} for b in bouts[:6]],
-            "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url", ""),
+            "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url") or c.get("fm_rank_url", ""),
             "noted_by": [dict(n, weight=weights.get(n["source"], 1.0)) for n in idx.get(key, [])],
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
             "former": major_status(sd.get("bouts", []))[1],
+            "via": c.get("via") or ("rankings" if c.get("fm_url") else ""),
         })
     score_pool(out, today)
     build.track = track  # exposed for the output file

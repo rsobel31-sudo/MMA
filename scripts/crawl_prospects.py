@@ -186,7 +186,7 @@ def sweep_promotions(f, out: Path, cpath: Path, today: date) -> None:
                     continue
                 if not rec:
                     continue
-                rec["via"] = rec.get("via") or "sweep"
+                rec["via"] = "sweep" if rec.get("via") == "suggested" else rec.get("via") or "sweep"
                 rec["swept_from"] = p["name"]
                 fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 seen.add((rec.get("sherdog") or {}).get("url"))
