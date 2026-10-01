@@ -650,6 +650,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_week(sub)
     from .health import register as register_health
     register_health(sub)
+    from .recap_cli import register as register_recap
+    register_recap(sub)
     return ap
 
 

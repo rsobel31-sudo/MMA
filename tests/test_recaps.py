@@ -18,3 +18,10 @@ def test_card_recaps_scores_each_source_and_prefers_live_picks():
     b0 = next(b for b in ev["bouts"] if b["a"] == "A0")
     assert b0["source"] == "live" and b0["model"] == 0.9
     assert out["season"]["cards"] == 1 and out["season"]["market"]["n"] == 4
+
+
+def test_page_ids_match_the_page_slug():
+    from mma_predictor.recap_cli import bout_key, page_slug, recap_id
+    assert recap_id({"date": "2026-09-26", "event": "UFC Fight Night 289 - Rosas Jr. vs. Barcelos"}) == "2026-09-26-ufc-fight-night-289-rosas-jr-vs-barcelos"
+    assert bout_key({"a": "Raoni Barcelos", "b": "Raul Rosas Jr."}) == "raoni-barcelos-raul-rosas-jr"
+    assert page_slug("Mário") == "ma-rio"   # same quirk as the page's slug(): lowercase before NFKD

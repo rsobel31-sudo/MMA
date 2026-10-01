@@ -439,6 +439,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   button.linklike { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; text-align: left; }
   button.linklike:hover strong { text-decoration: underline; }
   .chip { display: inline-block; font-size: 11.5px; font-weight: 600; line-height: 1.5; padding: 0 7px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface-2, transparent); color: var(--ink); white-space: nowrap; vertical-align: 1px; }
+  tr.rc-note td { background: var(--surface-2); font-size: 13.5px; }
 </style>
 
 <div class="wrap">
@@ -555,6 +556,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       async saveCard() { persist(); }, async deleteCard() { persist(); },
       async saveComment() { persist(); }, async deleteComment() { persist(); },
       async saveJournal() { persist(); }, async deleteJournal() { persist(); },
+      async saveRecapNote() { ls.set(LOCAL_KEY + ":recapNotes", state.recapNotes); },
     };
   }
   function dbStore(db) {
@@ -600,6 +602,17 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       const docs = snap.docs.map((d) => Object.assign({ _id: d.id }, d.data()));
       setPicks(docs);
     }, () => { state.picks.loaded = true; renderSoon(); });
+    db.collection("recap_notes").onSnapshot((snap) => {
+      const m = {};
+      snap.docs.forEach((d) => { m[d.id] = keep("recap_notes/" + d.id) ? state.recapNotes[d.id] : d.data(); });
+      for (const id of Object.keys(state.recapNotes)) if (keep("recap_notes/" + id) && !m[id]) m[id] = state.recapNotes[id];
+      state.recapNotes = m; renderSoon();
+    }, () => {});
+    db.collection("recap_reviews").onSnapshot((snap) => {
+      const m = {};
+      snap.docs.forEach((d) => { m[d.id] = d.data(); });
+      state.recapReviews = m; renderSoon();
+    }, () => {});
     db.collection("card").orderBy("order").onSnapshot((snap) => {
       state.card = snap.docs.map((d) => Object.assign({ id: d.id }, d.data())); renderSoon();
     }, () => {});
@@ -616,6 +629,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       saveJournal(item) { const { id, ...body } = item; return write("journal/" + id, () => db.doc("journal/" + id).set(body)); },
       deleteJournal(id) { return write("journal/" + id, () => db.doc("journal/" + id).delete()); },
       deleteCard(id) { return write("card/" + id, () => db.doc("card/" + id).delete()); },
+      saveRecapNote(id, v) { return write("recap_notes/" + id, () => db.doc("recap_notes/" + id).set(v)); },
     };
   }
   let statusTimer;
@@ -1297,6 +1311,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const v = state.cardView || "upcoming";
     return `<span class="seg" role="group" aria-label="Cards view"><button type="button" data-card-view="upcoming" aria-pressed="${v === "upcoming"}">Upcoming</button><button type="button" data-card-view="recaps" aria-pressed="${v === "recaps"}">Recaps</button></span>`;
   }
+  const recapId = (ev) => slug(ev.date + " " + ev.event);
+  const boutKey = (b) => slug(b.a + "--" + b.b);
   function renderRecaps(view) {
     const R = state.data.recaps;
     const head = `<section class="panel"><div class="toolbar">${cardToggle()}<h3 style="margin:0">Card recaps</h3>${infoBtn("recaps", "Card recaps")}</div>
@@ -1314,18 +1330,31 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       ${best ? `<p class="muted" style="margin:0;font-size:13px">Lower log-loss is better: it rewards confident picks that come in and punishes confident misses. On the same priced bouts, <strong>${NAMES[best[0]]}</strong> has been the most accurate forecaster so far.</p>` : ""}</section>` : "";
     const tabs = `<div class="evtabs" role="tablist">${R.events.map((e) => `<button type="button" role="tab" data-recap="${esc(e.event)}" aria-selected="${e.event === state.recapEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.event.replace(/^UFC Fight Night \d+ - /, "Fight Night: ").replace(/^(UFC \d+) - /, "$1: "))}</strong><span class="muted num">${e.summary.model.correct}/${e.summary.model.n} model</span></button>`).join("")}</div>`;
     const cell = (p) => p == null ? `<td class="muted">–</td>` : `<td class="num ${p >= 0.5 ? "rc-good" : "rc-bad"}">${pct(p, 0)}</td>`;
+    const rid = recapId(ev), notes = (state.recapNotes || {})[rid] || { card: "", bouts: {} }, canEdit = state.recapCanEdit;
+    const review = (state.recapReviews || {})[rid];
     const rows = ev.bouts.map((b) => {
       const w = (k) => b[k] == null ? null : (b.y ? b[k] : 1 - b[k]);
       const loser = b.winner === b.a ? b.b : b.a;
+      const bk = boutKey(b), note = (notes.bouts || {})[bk] || "", open = state.recapOpen === bk;
+      const noteBtn = canEdit ? `<button type="button" class="linklike muted" style="font-size:12.5px" data-recap-open="${esc(bk)}" aria-expanded="${open}">${note ? "✎ your note" : "+ note"}</button>` : "";
+      const noteRow = open && canEdit ? `<tr class="rc-note"><td colspan="7"><textarea rows="2" data-recap-note="${esc(bk)}" data-recap-id="${esc(rid)}" placeholder="What did you see in ${esc(b.winner)} vs ${esc(loser)}? Styles, momentum, judging, what the numbers missed…" style="width:100%">${esc(note)}</textarea></td></tr>`
+        : note ? `<tr class="rc-note"><td colspan="7"><span class="label" style="margin-right:6px">Your note</span>${esc(note)}</td></tr>` : "";
       return `<tr><td><strong>${esc(b.winner)}</strong> <span class="muted">def.</span> ${esc(loser)}${b.title ? ' <span class="chip">title</span>' : ""}</td>
         <td class="muted">${esc(b.method)}${b.round ? ` R${b.round}` : ""}</td>${cell(w("model"))}${cell(w("market"))}${cell(w("blend"))}
-        <td><span class="chip" title="${b.source === "live" ? "Frozen before the card" : "Walk-forward: made with only earlier fights, but computed after the fact"}">${b.source === "live" ? "live" : "backtest"}</span></td></tr>`;
+        <td><span class="chip" title="${b.source === "live" ? "Frozen before the card" : "Walk-forward: made with only earlier fights, but computed after the fact"}">${b.source === "live" ? "live" : "backtest"}</span></td><td>${noteBtn}</td></tr>${noteRow}`;
     }).join("");
     const sm = ev.summary, line = (k, x) => x && x.n ? `${NAMES[k][0].toUpperCase() + NAMES[k].slice(1)} ${x.correct}/${x.n}` : "";
     const card = `<section class="panel stack"><div><h2 style="font-size:30px;margin:0">${esc(ev.event)}</h2>
       <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${[line("model", sm.model), line("market", sm.market), line("blend", sm.blend)].filter(Boolean).join(" · ")}${ev.live ? "" : " · model numbers are backtest (no live picks were logged for this card)"}</p></div>
-      <div class="table-wrap"><table class="list"><thead><tr><th>Result</th><th>Method</th><th>Model</th><th>Market</th><th>Blend</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
-    view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}</div>`;
+      <div class="table-wrap"><table class="list"><thead><tr><th>Result</th><th>Method</th><th>Model</th><th>Market</th><th>Blend</th><th></th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+    const insight = canEdit ? `<section class="panel stack"><div><h3 style="margin:0">Your take on the card</h3>
+        <p class="muted" style="margin:4px 0 0;font-size:13px">What you saw that the numbers didn't. Saved as you type${state.storeKind === "db" ? "; only you can edit it, anyone with the link can read it" : " (in this browser only)"}. Claude reads your notes when it writes the review below, and folds what holds up into its scouting reports.</p></div>
+        <textarea rows="4" data-recap-note="card" data-recap-id="${esc(rid)}" placeholder="Overall read on the card: who looked better than their odds, who faded, judging, anything the model and the market both missed." style="width:100%">${esc(notes.card || "")}</textarea></section>`
+      : notes.card ? `<section class="panel"><h3 style="margin:0 0 6px">The owner's take</h3><p style="margin:0;white-space:pre-wrap">${esc(notes.card)}</p></section>` : "";
+    const rv = review ? `<section class="panel stack"><div class="toolbar" style="margin:0"><h3 style="margin:0">Claude's review</h3><span class="muted" style="font-size:12.5px">${esc((review.written || "").slice(0, 10))}${review.notes_used ? " · includes your notes" : ""}</span></div>
+        ${String(review.review || "").split(/\n{2,}/).map((para) => `<p style="margin:0">${esc(para)}</p>`).join("")}</section>`
+      : `<section class="panel"><h3 style="margin:0 0 4px">Claude's review</h3><p class="muted" style="margin:0;font-size:13.5px">Written on the Sunday after the card: what the model and the market got right and wrong, and why${canEdit ? ", with your notes worked in" : ""}.</p></section>`;
+    view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}${insight}${rv}</div>`;
   }
   function renderCard(view) {
     if (state.cardView === "recaps") { renderRecaps(view); return; }
@@ -1786,6 +1815,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (t.dataset.event) { state.upEvent = t.dataset.event; render(); return; }
     if (t.dataset.cardView) { state.cardView = t.dataset.cardView; ls.set(LOCAL_KEY + ":cardView", state.cardView); render(); return; }
     if (t.dataset.recap) { state.recapEvent = t.dataset.recap; render(); return; }
+    if (t.dataset.recapOpen) { state.recapOpen = state.recapOpen === t.dataset.recapOpen ? null : t.dataset.recapOpen; render(); const el = document.querySelector(`[data-recap-note="${CSS.escape(t.dataset.recapOpen)}"]`); if (el) el.focus(); return; }
     if (t.dataset.openBout) {
       const [a, b, rounds] = t.dataset.openBout.split("|");
       const mk = marketFor(a, b);
@@ -1874,6 +1904,14 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
 
   document.addEventListener("input", (e) => {
     const t = e.target;
+    if (t.dataset.recapNote !== undefined) {
+      const id = t.dataset.recapId, which = t.dataset.recapNote, ev = (state.data.recaps.events || []).find((x) => recapId(x) === id);
+      const n = state.recapNotes[id] = Object.assign({ event: ev ? ev.event : "", date: ev ? ev.date : "", card: "", bouts: {} }, state.recapNotes[id]);
+      if (which === "card") n.card = t.value; else n.bouts = Object.assign({}, n.bouts, { [which]: t.value });
+      n.updated = new Date().toISOString();
+      later("recap_notes/" + id, () => state.store.saveRecapNote(id, n).then(() => setStatus("Note saved")));
+      return;
+    }
     if (t.id === "read") {
       const v = -parseFloat(t.value);
       saveRead(v, ($("#read-note") || {}).value || "");
@@ -2476,12 +2514,18 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     state.cardView = ls.get(LOCAL_KEY + ":cardView") || "upcoming";
     state.m.a = data.fighters[0] && data.fighters[0].name;
     state.m.b = data.fighters[1] && data.fighters[1].name;
+    state.recapNotes = ls.get(LOCAL_KEY + ":recapNotes") || {};
+    state.recapReviews = {};
+    state.recapCanEdit = true;  // this browser only, until the page database answers
     state.store = localStore();
     render();
 
     const db = window.claude && typeof window.claude.use === "function" ? await window.claude.use("db").catch(() => null) : null;
     if (db) {
+      state.recapNotes = {};
+      state.recapCanEdit = false;
       state.store = dbStore(db); state.storeKind = "db";
+      window.claude.use("user").then((u) => { state.recapCanEdit = !!(u && u.isOwner()); renderSoon(); }).catch(() => {});
       state.picks.fromDb = true;
       startLeague(db);
       // The database is the source of truth once it answers.
