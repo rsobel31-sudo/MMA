@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-30",
+ "fetched": "2026-10-01",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -110,7 +110,7 @@
     {
      "order": 7,
      "segment": "Preliminary card",
-     "weight_class": "Bantamweight",
+     "weight_class": "Featherweight",
      "a": "Marcus McGhee",
      "b": "Anthony Romero",
      "title": false,
@@ -1290,6 +1290,17 @@
      "result": "",
      "rounds": 5,
      "main_event": true
+    },
+    {
+     "order": 1,
+     "segment": "Announced",
+     "weight_class": "Flyweight",
+     "a": "Brandon Moreno",
+     "b": "Charles Johnson",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },

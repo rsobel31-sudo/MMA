@@ -638,6 +638,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_scout(sub)
     from .prospects import register as register_prospects
     register_prospects(sub)
+    from .refresh import register as register_refresh
+    register_refresh(sub)
     return ap
 
 

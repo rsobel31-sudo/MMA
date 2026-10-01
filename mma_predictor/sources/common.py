@@ -93,10 +93,11 @@ class Fetcher:
         rp = self._robots[base]
         return True if rp is None else rp.can_fetch(self.user_agent, url)
 
-    def get(self, url: str, cache: bool = True) -> str:
-        """Fetch ``url``; ``cache=False`` skips writing big pages that are parsed once and stored compactly."""
+    def get(self, url: str, cache: bool = True, fresh: bool = False) -> str:
+        """Fetch ``url``; ``cache=False`` skips writing big pages that are parsed once and stored compactly;
+        ``fresh=True`` ignores any cached copy (pages that change, e.g. a record after a new fight)."""
         path = self._cache_path(url)
-        if path.exists():
+        if path.exists() and not fresh:
             return path.read_text(encoding="utf-8")
         if not self.allowed(url):
             raise PermissionError(f"robots.txt disallows {url}")

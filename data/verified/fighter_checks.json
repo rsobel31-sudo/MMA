@@ -2,7 +2,7 @@
 "A.J. Cunningham": {
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
-"stats_verified": "1"
+"stats_verified": "2"
 },
 "A.J. Dobson": {
 "dob": "Sherdog + UFCStats agree",
@@ -1376,7 +1376,7 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "11",
-"stats_verified": "2"
+"stats_verified": "3"
 },
 "Ariel Beck": {
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
@@ -2400,7 +2400,7 @@
 },
 "Bruno Mesquita": {
 "reach": "UFCStats only (165 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Bruno Oliveira": {
 "reach": "UFCStats only (203 cm), not used until a second source confirms it",
@@ -2508,8 +2508,8 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "4",
-"stats_verified": "3"
+"stats_official": "5",
+"stats_verified": "4"
 },
 "CJ Fernandes": {
 "stats_official": "1"
@@ -2940,7 +2940,7 @@
 "stats_official": "2"
 },
 "Chanmi Jeon": {
-"stats_official": "1"
+"stats_official": "2"
 },
 "Charalampos Grigoriou": {
 "dob": "Sherdog + UFCStats agree",
@@ -4132,8 +4132,8 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "disputed: Sherdog 173 cm, UFCStats 168 cm",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "5",
-"stats_verified": "1"
+"stats_official": "4",
+"stats_verified": "2"
 },
 "Daniel Marcos": {
 "dob": "Sherdog + UFCStats agree",
@@ -7308,8 +7308,8 @@
 "dob": "Sherdog + Fight Matrix agree (UFCStats differs)",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "14",
-"stats_verified": "1"
+"stats_official": "15",
+"stats_verified": "2"
 },
 "J.J. Ambrose": {
 "stats_official": "1"
@@ -14034,7 +14034,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "31",
+"stats_official": "32",
 "stats_verified": "2"
 },
 "Pablo Alfonso": {
@@ -14683,7 +14683,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (160 cm), not used until a second source confirms it",
-"stats_official": "2"
+"stats_official": "3"
 },
 "Rameau Thierry Sokoudjou": {
 "dob": "Sherdog + UFCStats agree",
@@ -16851,7 +16851,7 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "4",
-"stats_verified": "1"
+"stats_verified": "2"
 },
 "Sultan Aliev": {
 "dob": "Sherdog + UFCStats agree",
@@ -16881,7 +16881,7 @@
 "stats_verified": "3"
 },
 "T.J. Cook": {
-"stats_official": "1"
+"stats_official": "2"
 },
 "T.J. Dillashaw": {
 "dob": "Sherdog + UFCStats agree",

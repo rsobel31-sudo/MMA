@@ -1,14 +1,14 @@
 {
  "results": {
-  "no second source": 890,
+  "no second source": 884,
   "method": 21,
-  "agree": 10515,
+  "agree": 10521,
   "round": 12,
   "winner": 3
  },
  "stats": {
-  "official only": 9385,
-  "verified": 1127,
+  "official only": 9388,
+  "verified": 1130,
   "disputed": 36
  },
  "conflicts": [
@@ -289,7 +289,7 @@
   }
  ],
  "statsfight_results": {
-  "agree": 1161,
+  "agree": 1164,
   "method": 1,
   "winner": 1
  },
@@ -856,12 +856,12 @@
   "differ": 68
  },
  "odds": {
-  "odds bouts": 16645,
-  "matched": 12884,
-  "unmatched": 2426,
+  "odds bouts": 16655,
+  "matched": 12897,
+  "unmatched": 2422,
   "bad lines": 0,
   "pages disagree": 0,
-  "both pages": 8955,
-  "no lines": 1335
+  "both pages": 8960,
+  "no lines": 1336
  }
 }
