@@ -362,7 +362,7 @@ def source_track(noted: Dict[str, object], candidates: Iterable[Dict[str, object
 def noted_index(noted: Dict[str, object], key=fold) -> Dict[str, List[Dict[str, str]]]:
     idx: Dict[str, List[Dict[str, str]]] = {}
     for lst in noted.get("lists", []):
-        src = {k: lst.get(k, "") for k in ("outlet", "author", "title", "url", "date", "kind")}
+        src = {k: lst.get(k, "") for k in ("outlet", "author", "title", "url", "date", "kind", "background")}
         src["source"] = source_of(lst)
         for n in lst.get("names", []):
             if src not in idx.setdefault(key(n), []):

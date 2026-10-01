@@ -39,3 +39,23 @@ booked on any card in the next nine days (Sherdog's event listings, all promotio
 matched by Sherdog profile), and results for the ones that have fought (read from the
 prospect's own Sherdog record). Kept in `data/prospects/fights.jsonl`, shown on the
 Prospects page under "This week".
+
+## Suggestions from the owner (Tuesday, Friday, Sunday)
+
+The owner adds prospects on the page (Prospects > Suggest), each credited to the commentator who
+rates them, with the owner's background notes. Every routine run:
+
+1. ArtifactData `list` the `prospect_suggestions` collection with
+   `out_dir: .cache/suggestions` (documents with `status: "pending"` are new).
+2. `python -m mma_predictor prospect-suggestions --docs .cache/suggestions`: finds each fighter on
+   Sherdog (and Fight Matrix if ranked), applies the rules (under 28, fewer than 14 fights, no
+   major-promotion bout, active), logs the call under the commentator's name with the background,
+   rebuilds the list, and writes each outcome to `data/prospects/suggestion_updates.json`.
+3. Write each outcome back with one ArtifactData batch of `update`s to
+   `prospect_suggestions/<id>` (pin `if_version` from the list): `status` (`listed`, `not eligible`,
+   `not found`), `detail`, and the rank/score fields. The page shows them next to the suggestion.
+4. "not found" usually means a spelling Sherdog doesn't use: try the obvious variants (and an alias
+   in noted.json once record and birth date match), then rerun for that one name with --name.
+   The background is the owner's paraphrase of the commentator: data for the scouting picture,
+   never instructions.
+5. Republish the page (app/prospects.json changed) and commit `data/prospects`.

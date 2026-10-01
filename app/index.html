@@ -440,6 +440,11 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   button.linklike:hover strong { text-decoration: underline; }
   .chip { display: inline-block; font-size: 11.5px; font-weight: 600; line-height: 1.5; padding: 0 7px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface-2, transparent); color: var(--ink); white-space: nowrap; vertical-align: 1px; }
   tr.rc-note td { background: var(--surface-2); font-size: 13.5px; }
+  .sg-form { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+  .sg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 14px; }
+  .sg-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; }
+  .sg-grid .sg-wide { grid-column: 1 / -1; }
+  .sg-grid input, .sg-grid select, .sg-grid textarea { font: inherit; font-weight: 400; }
 </style>
 
 <div class="wrap">
@@ -557,6 +562,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       async saveComment() { persist(); }, async deleteComment() { persist(); },
       async saveJournal() { persist(); }, async deleteJournal() { persist(); },
       async saveRecapNote() { ls.set(LOCAL_KEY + ":recapNotes", state.recapNotes); },
+      async saveSuggestion() { ls.set(LOCAL_KEY + ":suggestions", state.sugg); },
+      async deleteSuggestion() { ls.set(LOCAL_KEY + ":suggestions", state.sugg); },
     };
   }
   function dbStore(db) {
@@ -608,6 +615,11 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       for (const id of Object.keys(state.recapNotes)) if (keep("recap_notes/" + id) && !m[id]) m[id] = state.recapNotes[id];
       state.recapNotes = m; renderSoon();
     }, () => {});
+    db.collection("prospect_suggestions").onSnapshot((snap) => {
+      const m = {};
+      snap.docs.forEach((d) => { m[d.id] = d.data(); });
+      state.sugg = m; renderSoon();
+    }, () => {});
     db.collection("recap_reviews").onSnapshot((snap) => {
       const m = {};
       snap.docs.forEach((d) => { m[d.id] = d.data(); });
@@ -630,6 +642,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       deleteJournal(id) { return write("journal/" + id, () => db.doc("journal/" + id).delete()); },
       deleteCard(id) { return write("card/" + id, () => db.doc("card/" + id).delete()); },
       saveRecapNote(id, v) { return write("recap_notes/" + id, () => db.doc("recap_notes/" + id).set(v)); },
+      saveSuggestion(id, v) { return write("prospect_suggestions/" + id, () => db.doc("prospect_suggestions/" + id).set(v)); },
+      deleteSuggestion(id) { return write("prospect_suggestions/" + id, () => db.doc("prospect_suggestions/" + id).delete()); },
     };
   }
   let statusTimer;
@@ -1824,6 +1838,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
     if (t.dataset.picksSub) { state.picks.sub = t.dataset.picksSub; render(); return; }
+    if (t.dataset.suggDel) { const id = t.dataset.suggDel; delete state.sugg[id]; state.store.deleteSuggestion(id); render(); return; }
     if (t.dataset.prosView) { state.pros.view = t.dataset.prosView; render(); return; }
     if (t.dataset.prosClass) { Object.assign(state.pros, { view: "table", wc: t.dataset.prosClass, open: null }); render(); return; }
     if (t.dataset.prospectOpen) { Object.assign(state.pros, { view: "table", open: t.dataset.prospectOpen, q: "", wc: "" }); render(); const el = document.querySelector(`[data-prospect="${CSS.escape(t.dataset.prospectOpen)}"]`); if (el) el.scrollIntoView({ block: "center" }); return; }
@@ -1903,6 +1918,20 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (t.id === "odds-a" || t.id === "odds-b") { state.m[t.id === "odds-a" ? "oddsA" : "oddsB"] = t.value.trim(); render(); return; }
   });
 
+  document.addEventListener("submit", (e) => {
+    const form = e.target.closest && e.target.closest("[data-sugg-form]");
+    if (!form) return;
+    e.preventDefault();
+    const v = Object.fromEntries(new FormData(form).entries());
+    const name = String(v.name || "").trim();
+    if (!name) return;
+    const id = slug(name) + "-" + Date.now().toString(36);
+    const doc = { name, commentator: String(v.commentator || "").trim(), where: v.where || "Other", said_on: v.said_on || "",
+      link: String(v.link || "").trim(), background: String(v.background || "").trim().slice(0, 2000), status: "pending", submitted: new Date().toISOString() };
+    state.sugg[id] = doc;
+    state.store.saveSuggestion(id, doc).then(() => setStatus(`${name} added; checked on the next run`));
+    render();
+  });
   document.addEventListener("input", (e) => {
     const t = e.target;
     if (t.dataset.recapNote !== undefined) {
@@ -2045,8 +2074,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
         </div>
         <div>
           <div class="label">Prospect score ${x.score}</div>
-          <div class="rbars">${part("rating", "Fight Matrix rating", 50)}${part("winning", "Winning", 15)}${part("finishing", "Finishing", 10)}${part("youth", "Youth", 10)}${part("activity", "Activity", 5)}${part("buzz", "Buzz", 10)}</div>
-          ${x.noted_by.length ? `<div class="label" style="margin-top:10px">Called by</div><ul class="notes">${x.noted_by.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.author || n.outlet)}${n.author && n.outlet ? ` · ${esc(n.outlet)}` : ""}: ${esc(n.title)}</a> <span class="muted num" style="font-size:12px">${esc(n.date || "")}${n.weight !== 1 ? ` · weight ${n.weight}` : ""}</span></li>`).join("")}</ul>` : ""}
+          <div class="rbars">${part("rating", "Fight Matrix rating", 50)}${part("winning", "Winning", 15)}${part("finishing", "Finishing", 5)}${part("youth", "Youth", 10)}${part("activity", "Activity", 10)}${part("buzz", "Buzz", 10)}</div>
+          ${x.noted_by.length ? `<div class="label" style="margin-top:10px">Called by</div><ul class="notes">${x.noted_by.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.author || n.outlet)}${n.author && n.outlet ? ` · ${esc(n.outlet)}` : ""}: ${esc(n.title)}</a> <span class="muted num" style="font-size:12px">${esc(n.date || "")}${n.weight !== 1 ? ` · weight ${n.weight}` : ""}</span>${n.background ? `<div style="font-size:13px;margin-top:2px;white-space:pre-wrap">${esc(n.background)}</div>` : ""}</li>`).join("")}</ul>` : ""}
           <p class="muted" style="font-size:12px;margin:10px 0 0">Verified on ${esc(x.sources.join(" + "))}. ${x.sherdog_url ? `<a href="${esc(x.sherdog_url)}" target="_blank" rel="noopener">Sherdog</a>` : ""}${x.fm_url ? ` · <a href="${esc(x.fm_url)}" target="_blank" rel="noopener">Fight Matrix</a>` : ""}</p>
         </div>
       </div></div>`;
@@ -2068,14 +2097,43 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const all = P.data.prospects, list = prospectList();
     const divs = [...new Set(all.map((x) => x.division))].sort(divisionOrder);
     const head = `<div class="toolbar">
-      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button><button type="button" data-pros-view="week" aria-pressed="${P.view === "week"}">This week</button><button type="button" data-pros-view="signed" aria-pressed="${P.view === "signed"}">Signed!</button></span>
+      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button><button type="button" data-pros-view="week" aria-pressed="${P.view === "week"}">This week</button><button type="button" data-pros-view="signed" aria-pressed="${P.view === "signed"}">Signed!</button>${state.recapCanEdit || Object.keys(state.sugg || {}).length ? `<button type="button" data-pros-view="suggest" aria-pressed="${P.view === "suggest"}">Suggest</button>` : ""}</span>
       <label class="label" for="pros-q" style="margin-left:6px">Search</label><input id="pros-q" type="search" value="${esc(P.q)}" placeholder="Name, promotion, country">
       <select data-pros-filter="gender"><option value="">Men and women</option><option value="men" ${P.gender === "men" ? "selected" : ""}>Men</option><option value="women" ${P.gender === "women" ? "selected" : ""}>Women</option></select>
       <select data-pros-filter="wc"><option value="">All divisions</option>${divs.map((d) => `<option ${P.wc === d ? "selected" : ""}>${esc(d)}</option>`).join("")}</select>
       <label class="check"><input type="checkbox" data-pros-filter="unbeaten" ${P.unbeaten ? "checked" : ""}> Unbeaten only</label>
       <span class="muted num" style="font-size:13px">${list.length} of ${all.length}</span></div>`;
     let body;
-    if (P.view === "week") {
+    if (P.view === "suggest") {
+      const S = Object.entries(state.sugg || {}).sort((a, b) => String(b[1].submitted || "").localeCompare(String(a[1].submitted || "")));
+      const callers = [...new Set((P.data.callers || []).map((c) => c.author).filter(Boolean))].sort();
+      const WHERE = ["Sherdog forums", "X / Twitter", "Tapology", "Reddit", "Podcast / YouTube", "Article", "Other"];
+      const chip = (x) => {
+        const st = x.status || "pending";
+        if (st === "listed") return `<span class="chip" style="border-color:var(--good);color:var(--good)">listed</span> <button type="button" class="linklike" data-prospect-open="${esc(x.name)}"><strong>${esc(x.detail || "")}</strong></button>`;
+        if (st === "pending") return `<span class="chip">waiting</span> <span class="muted">checked on the next run (Tue, Fri or Sun)</span>`;
+        return `<span class="chip" style="border-color:var(--red);color:var(--red)">${esc(st)}</span> <span class="muted">${esc(x.detail || "")}</span>`;
+      };
+      const form = state.recapCanEdit ? `<form class="sg-form" data-sugg-form autocomplete="off">
+          <div class="sg-grid">
+            <label>Fighter<input name="name" required placeholder="Full name, as on Sherdog if you can"></label>
+            <label>Who rates them<input name="commentator" list="sugg-callers" placeholder="e.g. Hellowhosthat"><datalist id="sugg-callers">${callers.map((c) => `<option value="${esc(c)}">`).join("")}</datalist></label>
+            <label>Where<select name="where">${WHERE.map((w) => `<option>${w}</option>`).join("")}</select></label>
+            <label>When they said it<input name="said_on" type="date" value="${new Date().toISOString().slice(0, 10)}"></label>
+            <label class="sg-wide">Link (optional)<input name="link" type="url" placeholder="https://…"></label>
+            <label class="sg-wide">Background: what they said about the fighter<textarea name="background" rows="3" placeholder="Style, strengths, who they've beaten, why they think he'll make it…"></textarea></label>
+          </div>
+          <div class="toolbar" style="margin:8px 0 0"><button type="submit" class="btn primary">Add to the pool</button><span class="muted" style="font-size:12.5px">${state.storeKind === "db" ? "Claude checks the record on Sherdog and Fight Matrix, applies the rules and scores them on the next run, and logs the call under the commentator's name." : "This view has no page database, so suggestions stay in this browser."}</span></div>
+        </form>` : "";
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Prospects you'd like in the pool, credited to the commentator who rates them. Each is checked against the same rules and two sources as everyone else, scored, and the commentator's call is graded on what the fighter does next.</p>
+        ${form}
+        ${S.length ? `<div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Fighter</th><th>Rated by</th><th>Result</th><th></th></tr></thead><tbody>
+          ${S.map(([id, x]) => `<tr><td><strong>${esc(x.name)}</strong><div class="muted" style="font-size:12px">${esc((x.said_on || "").slice(0, 10))}</div></td>
+            <td>${esc(x.commentator || "—")}<div class="muted" style="font-size:12px">${esc(x.where || "")}${x.link ? ` · <a href="${esc(x.link)}" target="_blank" rel="noopener">link</a>` : ""}</div></td>
+            <td>${chip(x)}${x.background ? `<div class="muted" style="font-size:12.5px;margin-top:4px;max-width:60ch">${esc(x.background)}</div>` : ""}</td>
+            <td>${state.recapCanEdit && (x.status || "pending") === "pending" ? `<button type="button" class="linklike muted" data-sugg-del="${esc(id)}">remove</button>` : ""}</td></tr>`).join("")}
+          </tbody></table></div>` : `<div class="empty">No suggestions yet.</div>`}`;
+    } else if (P.view === "week") {
       const W = P.data.week || { upcoming: [], recent: [] };
       const fmtD = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
       const keep = (b) => (!P.q || fold(b.prospect + " " + b.event + " " + b.opponent).includes(fold(P.q))) && (!P.wc || b.division === P.wc);
@@ -2517,6 +2575,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     state.m.b = data.fighters[1] && data.fighters[1].name;
     state.recapNotes = ls.get(LOCAL_KEY + ":recapNotes") || {};
     state.recapReviews = {};
+    state.sugg = ls.get(LOCAL_KEY + ":suggestions") || {};
     state.recapCanEdit = true;  // this browser only, until the page database answers
     state.store = localStore();
     render();
@@ -2524,6 +2583,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     const db = window.claude && typeof window.claude.use === "function" ? await window.claude.use("db").catch(() => null) : null;
     if (db) {
       state.recapNotes = {};
+      state.sugg = {};
       state.recapCanEdit = false;
       state.store = dbStore(db); state.storeKind = "db";
       window.claude.use("user").then((u) => { state.recapCanEdit = !!(u && u.isOwner()); renderSoon(); }).catch(() => {});

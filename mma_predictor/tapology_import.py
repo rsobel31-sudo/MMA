@@ -121,8 +121,15 @@ def division_hint(title: str) -> str:
 def add_list(noted: Dict, lst: Dict) -> bool:
     """Append a call list unless the same author/url/date is already there. Links the author to their other calls."""
     key = (fold(lst.get("author", "")), lst.get("url", ""), lst.get("date", ""))
-    if any((fold(l.get("author", "")), l.get("url", ""), l.get("date", "")) == key for l in noted["lists"]):
-        return False
+    for l in noted["lists"]:
+        if (fold(l.get("author", "")), l.get("url", ""), l.get("date", "")) == key:
+            new = [n for n in lst.get("names", []) if fold(n) not in {fold(x) for x in l.get("names", [])}]
+            if not new:
+                return False
+            l["names"] = l.get("names", []) + new  # same caller, same day: one list, more names
+            if lst.get("background"):
+                l["background"] = (l.get("background", "") + "\n\n" + lst["background"]).strip()
+            return True
     who = fold(lst.get("person") or lst.get("author", ""))
     same = [l for l in noted["lists"] if who and fold(l.get("person") or l.get("author", "")) == who]
     if same:
