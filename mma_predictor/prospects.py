@@ -435,6 +435,10 @@ def cmd_build(args) -> int:
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
            "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
+    if Path(args.out).exists():  # prospect-week's section survives a rebuild
+        prev = json.loads(Path(args.out).read_text())
+        if "week" in prev:
+            out["week"] = prev["week"]
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     rejected = [c for c in cands if not (c.get("check") or {}).get("eligible")]
     reasons: Dict[str, int] = {}

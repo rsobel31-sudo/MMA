@@ -27,3 +27,11 @@ outlet list + Sherdog).
 5. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab
    artifact with files engine.js, data.json, prospects.json; delete
    candidates.prev.jsonl; commit and push.
+
+## Every Friday and Sunday: prospect fights
+
+The AI Picks routine runs `python -m mma_predictor prospect-week`: every listed prospect
+booked on any card in the next nine days (Sherdog's event listings, all promotions,
+matched by Sherdog profile), and results for the ones that have fought (read from the
+prospect's own Sherdog record). Kept in `data/prospects/fights.jsonl`, shown on the
+Prospects page under "This week".

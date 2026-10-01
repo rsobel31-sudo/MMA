@@ -646,6 +646,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_prospects(sub)
     from .refresh import register as register_refresh
     register_refresh(sub)
+    from .prospect_week import register as register_week
+    register_week(sub)
     return ap
 
 
