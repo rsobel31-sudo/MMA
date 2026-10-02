@@ -42,6 +42,15 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+def _lock_time(day: str, in_us: bool) -> str:
+    """When betting on a card locks: 5:00 PM Eastern for US cards, 8:00 AM Eastern elsewhere (DST-aware).
+    Stored in UTC ("+00:00") because lock checks compare these strings with UTC timestamps."""
+    from zoneinfo import ZoneInfo
+
+    t = datetime.fromisoformat(day).replace(hour=17 if in_us else 8, tzinfo=ZoneInfo("America/New_York"))
+    return t.astimezone(timezone.utc).isoformat()
+
+
 def _in_us(location: str) -> bool:
     return bool(re.search(r"U\.S\.|United States", location))
 
@@ -138,9 +147,9 @@ def cmd_sheet(args) -> int:
     sheet = {
         "event": ev["name"], "date": ev["date"], "results_url": ev["url"], "odds_url": best["url"], "book": "FanDuel",
         "fetched_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        # Betting locks before the first bout: US cards start in the evening (early prelims ~22:00-23:00 UTC),
-        # cards elsewhere can start by mid-afternoon UTC.
-        "event_starts": f"{ev['date']}T{'21' if _in_us(ev.get('location', '')) else '12'}:00:00+00:00",
+        # Betting locks before the first bout, set in US Eastern time (the site runs on ET): US cards at
+        # 5:00 PM ET (early prelims start around 6-7 PM ET), cards elsewhere at 8:00 AM ET.
+        "event_starts": _lock_time(ev["date"], _in_us(ev.get("location", ""))),
         "odds_urls": best["urls"], "unpriced": unpriced,
         "blend_weights": blend_w, "dec_cal": dec_cal, "prop_shrink": P.PROP_SHRINK, "bouts": bouts, "skipped": skipped,
         "markets": sorted(markets, key=lambda m: -m["ev"]),

@@ -7,6 +7,8 @@ The ledger (`data/ai_picks/ledger.json`) is the record, and the web page (Fight 
 - Database collection: `ai_picks`. It holds one `summary` document and one document per week (`w1`, `w2`, ...), written with the ArtifactData tool.
 - Branch: `claude/mma-fight-predictor-9sxxhl`
 
+Time zone: the site runs on US Eastern time (ET). Routines are scheduled in America/New_York, times on the page show in ET, and a card's betting locks at 5:00 PM ET for US events and 8:00 AM ET elsewhere (stored in UTC in the sheet's `event_starts`).
+
 ## The goal
 
 **Maximize overall earnings: finish with the largest bankroll possible over the long run.** Every decision serves that.

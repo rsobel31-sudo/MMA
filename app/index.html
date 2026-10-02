@@ -445,6 +445,9 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   .sg-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; }
   .sg-grid .sg-wide { grid-column: 1 / -1; }
   .sg-grid input, .sg-grid select, .sg-grid textarea { font: inherit; font-weight: 400; }
+  button.star { background: none; border: 0; padding: 0 2px; font-size: 16px; line-height: 1; cursor: pointer; color: var(--muted); vertical-align: -1px; }
+  button.star[aria-pressed="true"], .star-on { color: #d4a017; }
+  button.star:hover { color: #d4a017; }
 </style>
 
 <div class="wrap">
@@ -1779,6 +1782,11 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     if (e.target.closest("a")) return;
     const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open], tr[data-prospect], li[data-prospect-open]");
     if (!t) return;
+    if (t.dataset.follow) {
+      const u = t.dataset.follow;
+      if (state.follows.has(u)) state.follows.delete(u); else state.follows.add(u);
+      saveFollows(); render(); return;
+    }
     if (t.dataset.info) { e.stopPropagation(); openInfo(t.dataset.info); return; }
     if (t.dataset.infoClose) { $("#info-dlg").close(); return; }
     if (t.id === "more-btn") { moreMenu($("#more-menu").hidden); return; }
@@ -2053,9 +2061,18 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       .catch(() => { P.loading = false; P.error = "Couldn't load the prospect list."; render(); });
   }
   const isWomen = (d) => /^women/i.test(d || "");
+  // Starred prospects: each viewer's own follow list (page database when signed in, else this browser).
+  const followed = (url) => !!url && state.follows.has(url);
+  const starBtn = (x) => x.sherdog_url ? `<button type="button" class="star" data-follow="${esc(x.sherdog_url)}" aria-pressed="${followed(x.sherdog_url)}" title="${followed(x.sherdog_url) ? "Starred: their fights always show in This week. Click to unstar." : "Star to follow: their fights always show in This week, whatever their rank."}">${followed(x.sherdog_url) ? "★" : "☆"}</button>` : "";
+  function saveFollows() {
+    const urls = [...state.follows];
+    ls.set(LOCAL_KEY + ":follows", urls);
+    if (state.followDoc) state.followDoc.set({ urls, updated: new Date().toISOString() }).catch(() => setStatus("Couldn't save your stars to your account; they're kept in this browser."));
+  }
   function prospectList() {
     const P = state.pros, q = P.q.trim().toLowerCase();
     return (P.data ? P.data.prospects : []).filter((x) =>
+      (!P.starred || followed(x.sherdog_url)) &&
       (!P.gender || (P.gender === "women") === isWomen(x.division)) && (!P.wc || x.division === P.wc) && (!P.unbeaten || x.losses === 0) &&
       (!q || x.name.toLowerCase().includes(q) || (x.promotion || "").toLowerCase().includes(q) || (x.nationality || "").toLowerCase().includes(q)));
   }
@@ -2073,7 +2090,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
           </tbody></table>
         </div>
         <div>
-          <div class="label">Prospect score ${x.score}</div>
+          <div class="label">Prospect score ${x.score} ${starBtn(x)}</div>
           <div class="rbars">${part("rating", "Fight Matrix rating", 50)}${part("winning", "Winning", 15)}${part("finishing", "Finishing", 5)}${part("youth", "Youth", 10)}${part("activity", "Activity", 10)}${part("buzz", "Buzz", 10)}</div>
           ${x.noted_by.length ? `<div class="label" style="margin-top:10px">Called by</div><ul class="notes">${x.noted_by.map((n) => `<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.author || n.outlet)}${n.author && n.outlet ? ` · ${esc(n.outlet)}` : ""}: ${esc(n.title)}</a> <span class="muted num" style="font-size:12px">${esc(n.date || "")}${n.weight !== 1 ? ` · weight ${n.weight}` : ""}</span>${n.background ? `<div style="font-size:13px;margin-top:2px;white-space:pre-wrap">${esc(n.background)}</div>` : ""}</li>`).join("")}</ul>` : ""}
           <p class="muted" style="font-size:12px;margin:10px 0 0">Verified on ${esc(x.sources.join(" + "))}. ${x.sherdog_url ? `<a href="${esc(x.sherdog_url)}" target="_blank" rel="noopener">Sherdog</a>` : ""}${x.fm_url ? ` · <a href="${esc(x.fm_url)}" target="_blank" rel="noopener">Fight Matrix</a>` : ""}</p>
@@ -2083,7 +2100,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   function prospectRow(x, rank) {
     const open = state.pros.open === x.name;
     return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td>
-      <td><strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
+      <td>${starBtn(x)} <strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
       <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
       <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
       <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="8">${prospectDetail(x)}</td></tr>` : ""}`;
@@ -2102,6 +2119,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       <select data-pros-filter="gender"><option value="">Men and women</option><option value="men" ${P.gender === "men" ? "selected" : ""}>Men</option><option value="women" ${P.gender === "women" ? "selected" : ""}>Women</option></select>
       <select data-pros-filter="wc"><option value="">All divisions</option>${divs.map((d) => `<option ${P.wc === d ? "selected" : ""}>${esc(d)}</option>`).join("")}</select>
       <label class="check"><input type="checkbox" data-pros-filter="unbeaten" ${P.unbeaten ? "checked" : ""}> Unbeaten only</label>
+      <label class="check"><input type="checkbox" data-pros-filter="starred" ${P.starred ? "checked" : ""}> Starred only (${state.follows.size})</label>
       <span class="muted num" style="font-size:13px">${list.length} of ${all.length}</span></div>`;
     let body;
     if (P.view === "suggest") {
@@ -2136,24 +2154,24 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     } else if (P.view === "week") {
       const W = P.data.week || { upcoming: [], recent: [] };
       const fmtD = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
-      // Only the global top 100, by today's ranking (not the rank when the bout was found).
-      const TOP = 100, rankOf = {};
+      // The global top 200 by today's ranking (not the rank when the bout was found), plus anyone starred.
+      const TOP = 200, rankOf = {};
       for (const x of P.data.prospects) if (x.sherdog_url) rankOf[x.sherdog_url] = x.p4p_rank;
-      const inTop = (b) => (rankOf[b.prospect_url] || 9999) <= TOP;
+      const inTop = (b) => (rankOf[b.prospect_url] || 9999) <= TOP || followed(b.prospect_url);
       const cur = (b) => Object.assign({}, b, { p4p_rank: rankOf[b.prospect_url] || b.p4p_rank });
       const outside = W.upcoming.filter((b) => !inTop(b)).length;
       const keep = (b) => inTop(b) && (!P.q || fold(b.prospect + " " + b.event + " " + b.opponent).includes(fold(P.q))) && (!P.wc || b.division === P.wc);
       const once = (xs) => { const seen = new Set(); return xs.filter((b) => { const k = [b.date, ...[b.prospect_url, b.opponent_url].sort()].join("|"); if (seen.has(k)) return false; seen.add(k); return true; }); };
       const up = once(W.upcoming.filter(keep).map(cur)), rec = W.recent.filter(keep).map(cur);
-      const who = (b) => `<button type="button" class="linklike" data-prospect-open="${esc(b.prospect)}"><strong>${esc(b.prospect)}</strong></button> <span class="muted num">#${b.p4p_rank} · ${esc(b.division || "")} · ${esc(b.record)}</span>`;
+      const who = (b) => `${followed(b.prospect_url) ? '<span class="star-on" title="Starred">★</span> ' : ""}<button type="button" class="linklike" data-prospect-open="${esc(b.prospect)}"><strong>${esc(b.prospect)}</strong></button> <span class="muted num">#${b.p4p_rank} · ${esc(b.division || "")} · ${esc(b.record)}</span>`;
       const opp = (b) => `${esc(b.opponent)}${b.opponent_prospect ? ' <span class="chip">prospect vs prospect</span>' : ""}`;
       const days = {};
       for (const b of up) (days[b.date] = days[b.date] || []).push(b);
       const resCell = (b) => `<span class="${b.result === "win" ? "rc-good" : b.result === "loss" ? "rc-bad" : "muted"}" style="font-weight:600">${esc(b.result === "win" ? "W" : b.result === "loss" ? "L" : b.result)}</span> <span class="muted">${esc(b.method || "")}${b.round ? ` R${b.round}` : ""}</span>`;
-      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Top-100 prospects booked on any card in the next nine days${outside ? ` (${outside} more bouts involve prospects ranked below 100)` : ""}, found on Sherdog's event listings (every promotion) and matched by Sherdog profile. Results fill in after the event from the prospect's own record.${W.fetched ? ` Checked ${esc(W.fetched.slice(0, 10))}.` : ""}</p>
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">Top-200 prospects, plus any you've starred (☆ on a prospect), booked on any card in the next nine days${outside ? ` (${outside} more bouts involve prospects ranked below 200)` : ""}, found on Sherdog's event listings (every promotion) and matched by Sherdog profile. Results fill in after the event from the prospect's own record.${W.fetched ? ` Checked ${esc(W.fetched.slice(0, 10))}.` : ""}</p>
         ${up.length ? Object.keys(days).sort().map((d) => `<div><div class="label" style="margin:10px 0 4px">${fmtD(d)}</div><div class="table-wrap"><table class="recent pk-table"><tbody>
           ${days[d].map((b) => `<tr><td>${who(b)}</td><td><span class="muted">vs</span> ${opp(b)}</td><td><a href="${esc(b.event_url)}" target="_blank" rel="noopener">${esc(b.event)}</a>${b.major_debut ? ' <span class="chip">major-promotion debut</span>' : ""}</td></tr>`).join("")}
-          </tbody></table></div></div>`).join("") : `<div class="empty">No top-100 prospects are booked in the next nine days${P.q || P.wc ? " (with these filters)" : ""}.</div>`}
+          </tbody></table></div></div>`).join("") : `<div class="empty">No top-200 or starred prospects are booked in the next nine days${P.q || P.wc ? " (with these filters)" : ""}.</div>`}
         ${rec.length ? `<div><h3 style="margin:16px 0 6px">Recent results</h3><div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Date</th><th>Prospect</th><th>Opponent</th><th>Result</th><th>Event</th></tr></thead><tbody>
           ${rec.map((b) => `<tr><td class="num">${esc(b.date)}</td><td>${who(b)}</td><td>${opp(b)}</td><td>${resCell(b)}</td><td>${esc(b.event)}</td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
     } else if (P.view === "signed") {
@@ -2372,11 +2390,13 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   const amer = (o) => (o > 0 ? "+" : "") + o;
   const STATUS = { open: ["Open", "tier-toss"], won: ["Won", "tier-best"], lost: ["Lost", "tier-caution"], void: ["Void (refunded)", "tier-toss"] };
   function nextFriday() {
-    const d = new Date(); const add = (5 - d.getUTCDay() + 7) % 7;
-    d.setUTCDate(d.getUTCDate() + add);
-    return d.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+    // Friday in Eastern time.
+    const et = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+    et.setDate(et.getDate() + ((5 - et.getDay() + 7) % 7));
+    return et.toLocaleDateString("en-US", { weekday: "long", day: "numeric", month: "long" });
   }
-  const when = (iso) => { try { return new Date(iso).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }); } catch (e) { return iso; } };
+  // Times are shown in US Eastern for everyone (the site runs on ET).
+  const when = (iso) => { try { return new Date(iso).toLocaleString("en-US", { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET"; } catch (e) { return iso; } };
   function picksStats(s) {
     const cells = [
       ["Bankroll", money(s.bankroll), `started at ${money(s.start)}`],
@@ -2582,6 +2602,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     state.recapNotes = ls.get(LOCAL_KEY + ":recapNotes") || {};
     state.recapReviews = {};
     state.sugg = ls.get(LOCAL_KEY + ":suggestions") || {};
+    state.follows = new Set(ls.get(LOCAL_KEY + ":follows") || []);
     state.recapCanEdit = true;  // this browser only, until the page database answers
     state.store = localStore();
     render();
@@ -2592,7 +2613,20 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       state.sugg = {};
       state.recapCanEdit = false;
       state.store = dbStore(db); state.storeKind = "db";
-      window.claude.use("user").then((u) => { state.recapCanEdit = !!(u && u.isOwner()); renderSoon(); }).catch(() => {});
+      window.claude.use("user").then(async (u) => {
+        state.recapCanEdit = !!(u && u.isOwner()); renderSoon();
+        const uid = u ? await u.id() : null;
+        if (!uid) return;
+        // Stars live in the viewer's private space; this browser's stars carry over the first time.
+        const ref = db.doc("data/users/" + uid + "/follows");
+        let first = true;
+        ref.onSnapshot((d) => {
+          const remote = d.exists ? (d.data().urls || []) : [];
+          if (first && !d.exists && state.follows.size) { first = false; state.followDoc = ref; saveFollows(); return; }
+          first = false; state.followDoc = ref;
+          state.follows = new Set(remote); ls.set(LOCAL_KEY + ":follows", remote); renderSoon();
+        }, () => {});
+      }).catch(() => {});
       state.picks.fromDb = true;
       startLeague(db);
       // The database is the source of truth once it answers.

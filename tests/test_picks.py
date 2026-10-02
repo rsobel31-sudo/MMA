@@ -134,3 +134,10 @@ def test_reads_orientation_cap_and_grading():
     # Pundit weights stay equal until the sample is big and the edge is clear.
     assert pundit_weight(10, 3.0) == 1.0 and pundit_weight(80, 1.0) == 1.0
     assert pundit_weight(80, 2.2) == 1.5 and pundit_weight(80, -3.0) == 0.0
+
+
+def test_lock_time_is_eastern_and_stored_in_utc():
+    from mma_predictor.picks_cli import _lock_time
+    assert _lock_time("2026-10-03", True) == "2026-10-03T21:00:00+00:00"    # 5 PM EDT
+    assert _lock_time("2026-11-14", True) == "2026-11-14T22:00:00+00:00"    # 5 PM EST
+    assert _lock_time("2026-10-10", False) == "2026-10-10T12:00:00+00:00"   # 8 AM EDT
