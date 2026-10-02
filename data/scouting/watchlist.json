@@ -1,5 +1,5 @@
 {
- "_note": "Sherdog forum members whose posts the Tuesday scouting routine checks each week (SCOUTING.md, 'Sherdog watchlist'). profile: https://forums.sherdog.com/members/<name>.<id>/ once known. seen: post/thread URLs already read, so nothing is logged twice.",
+ "_note": "Sherdog forum members whose posts the Tuesday scouting routine checks each week (SCOUTING.md, 'Sherdog watchlist'). profile: https://forums.sherdog.com/members/<name>.<id>/ once known. seen: post/thread URLs already read, so nothing is logged twice. x_accounts: X handles checked weekly by web search (site:x.com \"<handle>\" plus the handle with 'prospect'); calls logged under the account's name.",
  "members": [
   {
    "name": "Hellowhosthat",
@@ -19,6 +19,33 @@
    "name": "Koala",
    "profile": "https://forums.sherdog.com/members/koala.575391/",
    "why": "Owner's pick: worldwide MMA, PFL and regional promotions",
+   "last_checked": "",
+   "seen": []
+  }
+ ],
+ "x_accounts": [
+  {
+   "handle": "@mma_sushi",
+   "why": "Owner's pick: prospect analysis",
+   "found": "nothing indexed yet (2026-10-02)",
+   "last_checked": "2026-10-02",
+   "seen": []
+  },
+  {
+   "handle": "@hellowhosthat",
+   "why": "Same person as the Sherdog member Hellowhosthat",
+   "last_checked": "",
+   "seen": []
+  },
+  {
+   "handle": "@FdrNphw",
+   "why": "Prospect calls (Russia)",
+   "last_checked": "",
+   "seen": []
+  },
+  {
+   "handle": "@FlightOFfists",
+   "why": "Prospect calls",
    "last_checked": "",
    "seen": []
   }
