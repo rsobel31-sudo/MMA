@@ -240,6 +240,17 @@ python -m mma_predictor card-picks sync
 - **Claude's judgment.** Once Claude has 30 overrides of the model's winner, a hit rate clearly above 50% means the scouting reads deserve more weight in the model (raise the cap in `reads.py`, and the scouting factor). A rate clearly below 50% means follow the model more and shrink the reads. Make the change in code, run the tests, and note it in the commit.
 - **Confidence.** If picks said at 70% win far less often (the confidence table under Track record), lower the confidence you give.
 
+## Dry run
+
+After changing anything in the pipeline, replay a past card end to end in a scratch folder (nothing real is written):
+
+```bash
+python scripts/dry_run_card.py --wiki-url https://en.wikipedia.org/wiki/UFC_Fight_Night_289 \
+  --odds-url https://www.bestfightodds.com/events/ufc-vegas-121-4368 --date 2026-09-26 --location "Las Vegas, Nevada, U.S."
+```
+
+It prices the card, places stand-in bets and picks, checks that late or incomplete entries are refused, settles and grades from two sources, grades a stand-in My Picks player, cross-checks every result against the card recap, and confirms the real data is untouched. It ends with "all checks passed" or a list of failures. Closing-line value reads +0.0% in a replay, because a past card's BestFightOdds page shows the closing prices.
+
 ## Bust
 
 If `picks settle` or `picks status` exits 3:
