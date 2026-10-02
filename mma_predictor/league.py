@@ -118,7 +118,7 @@ def standings_for(uid: str, bets: Iterable[Dict[str, object]], boards: Dict[str,
             why = None
             if not bs:
                 why = "no board for this event"
-            elif locks and str(d["_saved"]) > locks:
+            elif locks and str(d["_saved"]) >= locks:  # betting closes when the card starts, as for AI Bets
                 why = "saved after the card locked"
             elif stake < P.MIN_STAKE:
                 why = f"minimum stake is ${P.MIN_STAKE:.2f}"

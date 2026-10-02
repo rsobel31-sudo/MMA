@@ -22,7 +22,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from . import picks as P
-from .picks_cli import CALIBRATION, SHEETS, _fetcher, _fresh, _in_us, _lock_time, _model, _pair, _results_for, _slug, sigmoid_logit
+from .picks_cli import (CALIBRATION, SHEETS, _fetcher, _fresh, _in_us, _lock_time, _model, _pair, _results_for, _slug, next_event,
+                        replay_args, replay_event, sigmoid_logit)
 
 DIR = Path("data/card_picks")
 SUMMARY = DIR / "summary.json"
@@ -36,6 +37,10 @@ MIN_OVERRIDE_N = 30  # overrides before "trust the model more / less" is called
 
 def _now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def _surname(name: str) -> str:
+    return re.sub(r"\s+(Jr|Sr|II|III)\.?$", "", name).split()[-1]
 
 
 def load_adjust() -> Dict[str, float]:
@@ -69,13 +74,10 @@ def cmd_draft(args) -> int:
     from .sources.events import link_names
 
     fetcher = _fetcher(args.cache)
-    sched = [e for e in events.scheduled_events(_fresh(fetcher, events.EVENTS_URL)) if e["date"] >= date.today().isoformat()]
-    if args.event:
-        sched = [e for e in sched if args.event.lower() in e["name"].lower()]
-    if not sched:
+    ev = replay_event(args) or next_event(fetcher, args.event)
+    if ev is None:
         print("No scheduled UFC event found.")
         return 1
-    ev = sched[0]
     card = events.parse_card(_fresh(fetcher, ev["url"])) if ev["url"] else []
     if not card:
         print(f"No bouts listed for {ev['name']} yet.")
@@ -89,7 +91,7 @@ def cmd_draft(args) -> int:
     dec_cal = tuple(json.loads(CALIBRATION.read_text())["dec_cal"]) if CALIBRATION.exists() else None
     adjust = load_adjust()
     # FanDuel's moneyline from this week's AI Bets sheet, when there is one: a third opinion to compare with.
-    sheet_path = SHEETS / f"{ev['date']}-{_slug(ev['name'])}.json"
+    sheet_path = Path(args.sheet) if getattr(args, "sheet", "") else SHEETS / f"{ev['date']}-{_slug(ev['name'])}.json"
     ml = {}
     if sheet_path.exists():
         for b in json.loads(sheet_path.read_text())["bouts"]:
@@ -138,9 +140,9 @@ def cmd_draft(args) -> int:
         m = r["model"]
         mk = ""
         if m and "market_p_a" in r:
-            mk = f" · market {r['market_p_a'] if m['winner'] == r['a'] else 1 - r['market_p_a']:.0%} on {m['winner'].split()[-1]}"
+            mk = f" · market {r['market_p_a'] if m['winner'] == r['a'] else 1 - r['market_p_a']:.0%} on {_surname(m['winner'])}"
         if r.get("read_a"):
-            mk += f" · Claude's read {r['read_a']:+.2f} to {r['a'].split()[-1]}"
+            mk += f" · Claude's read {r['read_a']:+.2f} to {_surname(r['a'])}"
         print(f"  {r['bout']:<46} " + (f"model: {m['winner']} by {m['method']} ({m['p_win']:.0%} to win; "
               f"{m['joint']['a' if m['winner'] == r['a'] else 'b'][m['method']]:.0%} exact){mk}" if m else f"no model pick (no data on {', '.join(r['no_data'])})"))
     print(f"\nDraft -> {DRAFT}. Write a picks file covering every bout and run `card-picks lock --picks FILE`.")
@@ -196,7 +198,7 @@ def cmd_lock(args) -> int:
     draft = json.loads(Path(args.draft).read_text())
     spec = json.loads(Path(args.picks).read_text())
     try:
-        rec = lock(draft, spec)
+        rec = lock(draft, spec, now=args.as_of or None)
     except ValueError as exc:
         print(f"Not locked: {exc}")
         return 1
@@ -400,9 +402,12 @@ def register(sub, data_arg) -> None:
     q.add_argument("--cache", default=".cache/pages")
     q.add_argument("--app-data", default="app/data.json")
     q.add_argument("--aliases", default="data/name_aliases.json")
+    replay_args(q)
+    q.add_argument("--sheet", default="", help="this card's AI Bets sheet (default: data/ai_picks/sheets/<date>-<event>.json)")
     q.set_defaults(func=cmd_draft)
     q = ps.add_parser("lock", help="record Claude's picks (every bout) before the card starts")
     q.add_argument("--draft", default=str(DRAFT))
+    q.add_argument("--as-of", default="", help="UTC timestamp to lock at (replays only)")
     q.add_argument("--picks", required=True, help='{"note": "...", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO|SUB|DEC", "confidence": 0.62, "why": "..."}]}')
     q.set_defaults(func=cmd_lock)
     q = ps.add_parser("grade", help="grade finished cards and update the record and lessons")

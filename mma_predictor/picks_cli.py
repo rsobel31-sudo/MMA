@@ -51,6 +51,23 @@ def _lock_time(day: str, in_us: bool) -> str:
     return t.astimezone(timezone.utc).isoformat()
 
 
+def next_event(fetcher, name: str = "") -> Optional[Dict[str, str]]:
+    from .sources import events
+
+    sched = [e for e in events.scheduled_events(_fresh(fetcher, events.EVENTS_URL)) if e["date"] >= date.today().isoformat()]
+    if name:
+        sched = [e for e in sched if name.lower() in e["name"].lower()]
+    return sched[0] if sched else None
+
+
+def replay_event(args) -> Optional[Dict[str, str]]:
+    """A given card instead of the next one (`--wiki-url` with `--event` and `--date`): for dry runs on past cards."""
+    url = getattr(args, "wiki_url", "")
+    if not url:
+        return None
+    return {"name": args.event or url.rsplit("/", 1)[-1].replace("_", " "), "date": args.date, "url": url, "location": getattr(args, "location", "") or ""}
+
+
 def _in_us(location: str) -> bool:
     return bool(re.search(r"U\.S\.|United States", location))
 
@@ -81,23 +98,20 @@ def cmd_sheet(args) -> int:
     from .sources.wikipedia import match_key
 
     fetcher = _fetcher(args.cache)
-    # 1. The next UFC card on Wikipedia (the schedule, rounds and title bouts).
-    sched = [e for e in events.scheduled_events(_fresh(fetcher, events.EVENTS_URL)) if e["date"] >= date.today().isoformat()]
-    if args.event:
-        sched = [e for e in sched if args.event.lower() in e["name"].lower()]
-    if not sched:
+    # 1. The next UFC card on Wikipedia (the schedule, rounds and title bouts), or a given card (replays).
+    ev = replay_event(args) or next_event(fetcher, args.event)
+    if ev is None:
         print("No scheduled UFC event found.")
         return 1
-    ev = sched[0]
     card = events.parse_card(_fresh(fetcher, ev["url"])) if ev["url"] else []
 
     # 2. FanDuel's prices from BestFightOdds, matched to the card by the fighters.
     # BestFightOdds may split one card over several pages ("UFC 332" and "UFC" for the prelims):
     # take every UFC page and keep the bouts Wikipedia also lists (two sources for each bout).
-    home = _fresh(fetcher, BFO_HOME)
     wiki_pairs = {_pair(w["a"], w["b"]) for w in card}
     found, pages = {}, []
-    for name, url in P.event_links(home):
+    links = [("UFC", u) for u in args.odds_url] if getattr(args, "odds_url", None) else P.event_links(_fresh(fetcher, BFO_HOME))
+    for name, url in links:
         if not name.upper().startswith("UFC"):
             continue
         parsed = P.parse_event(_fresh(fetcher, url), url)
@@ -160,6 +174,9 @@ def cmd_sheet(args) -> int:
     # The players' board (My Picks): FanDuel prices only; every version is kept to validate bets.
     from .league import board_from_sheet, save_board
 
+    if getattr(args, "no_board", False):
+        print(f"{len(markets)} markets priced -> {out} (no My Picks board: replay)")
+        return 0
     board = board_from_sheet(sheet)
     saved = save_board(board)
     Path(".cache").mkdir(exist_ok=True)
@@ -242,13 +259,14 @@ def cmd_place(args) -> int:
     if led.bust():
         print("Bankroll is bust: no bets can be placed.")
         return 3
-    days = (date.fromisoformat(sheet["date"]) - date.today()).days
+    today = date.fromisoformat(args.as_of[:10]) if args.as_of else date.today()
+    days = (date.fromisoformat(sheet["date"]) - today).days
     if not 0 <= days <= 3 and not args.any_date:
         print(f"{sheet['event']} is {days} days away: picks are for this weekend's card only.")
         return 1
     by_id = {m["id"]: m for m in sheet["markets"]}
     week = led.place({"name": sheet["event"], "date": sheet["date"], "url": sheet["odds_url"], "results_url": sheet["results_url"]},
-                     by_id, spec.get("picks", []), spec.get("note", ""), event_starts=sheet.get("event_starts"))
+                     by_id, spec.get("picks", []), spec.get("note", ""), event_starts=sheet.get("event_starts"), placed_at=args.as_of or None)
     week["sheet"] = str(Path(args.sheet))
     week["odds_urls"] = sheet.get("odds_urls", [sheet["odds_url"]])
     week["sheet_fetched_at"] = sheet["fetched_at"]
@@ -445,6 +463,12 @@ def cmd_sync(args) -> int:
     return 0
 
 
+def replay_args(q) -> None:
+    q.add_argument("--wiki-url", default="", help="a given card's Wikipedia page instead of the next scheduled card (replays)")
+    q.add_argument("--date", default="", help="the given card's date (with --wiki-url)")
+    q.add_argument("--location", default="", help="the given card's location (with --wiki-url; sets the lock time)")
+
+
 def register(sub, data_arg) -> None:
     p = sub.add_parser("picks", help="AI Bets: FanDuel betting sheet, ledger and settlement (see AI_PICKS.md)")
     ps = p.add_subparsers(dest="picks_cmd", required=True)
@@ -461,6 +485,9 @@ def register(sub, data_arg) -> None:
     q.add_argument("--aliases", default="data/name_aliases.json")
     q.add_argument("--out", default="")
     q.add_argument("--top", type=int, default=40)
+    replay_args(q)
+    q.add_argument("--odds-url", action="append", default=[], help="BestFightOdds event page(s) to price (replays; default: the home page's UFC events)")
+    q.add_argument("--no-board", action="store_true", help="don't save a My Picks board (replays)")
     q.set_defaults(func=cmd_sheet)
 
     q = ps.add_parser("calibrate", help="fit the decision-rate correction for props")
@@ -474,6 +501,7 @@ def register(sub, data_arg) -> None:
     common(q)
     q.add_argument("--sheet", required=True)
     q.add_argument("--any-date", action="store_true", help="allow a card more than 3 days out")
+    q.add_argument("--as-of", default="", help="UTC timestamp to place at (replays only)")
     q.add_argument("--bets", required=True, help='{"note": "...", "picks": [{"legs": [market ids], "stake": 5, "reasoning": "..."}]}')
     q.set_defaults(func=cmd_place)
 

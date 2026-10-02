@@ -62,3 +62,10 @@ def test_open_bets_hold_bankroll_until_results():
 def test_parse_inline_listing():
     text = 'header\n=== BEGIN ===\n{"id":"b1","data":{"stake":5},"version":1,"updatedAt":"2026-10-02T20:00:00Z"}\n=== END ===\n'
     assert parse_player_export(text)[0]["updatedAt"] == "2026-10-02T20:00:00Z"
+
+
+def test_bet_saved_exactly_at_the_lock_is_void():
+    # Same rule as AI Bets: betting closes when the card starts (found by scripts/dry_run_card.py).
+    boards = {"UFC 999": [board_from_sheet(SHEET)]}
+    s = standings_for("u_3", [bet(1, [leg("1:ml:a")], 5, saved=SHEET["event_starts"])], boards, {})
+    assert s["bets"][0]["status"] == "void" and "locked" in s["bets"][0]["void_reason"]
