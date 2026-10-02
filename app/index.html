@@ -471,6 +471,18 @@ button.namelink:hover { color: var(--red); }
 .bill-sub { font-family: var(--cond); font-size: 16px; letter-spacing: .2em; text-transform: uppercase; margin-top: 14px; }
 .bill-read { max-width: 60ch; margin: 10px auto 0; font-size: 17px; }
 .bill-rule { height: 6px; background: var(--rule); margin: 22px 0 3px; } .bill-rule + .bill-rule { height: 2px; margin: 0; }
+.fw-side { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; align-items: stretch; }
+.stub { background: var(--surface); border: 3px solid var(--rule); padding: 16px 18px; display: flex; flex-direction: column; }
+.stub > .btn.link { margin-top: auto !important; padding-top: 8px; align-self: flex-start; }
+.stub-hd { font-family: var(--cond); font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.stub-row { display: flex; justify-content: space-between; gap: 10px; font-family: var(--cond); font-size: 18px; padding: 3px 0; }
+.stub-foot { border-top: 2px dashed var(--rule); margin: 12px -18px 0; padding: 10px 18px 0; font-family: var(--display); font-size: 22px; }
+.stub-duel { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: center; }
+.stub-big { font-family: var(--display); font-size: 28px; line-height: 1.1; }
+.stub-btn { display: block; width: 100%; margin-top: 14px; padding: 10px; }
+.stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
+.stub-pro strong { font-family: var(--cond); font-weight: 500; font-size: 17px; text-transform: uppercase; letter-spacing: .03em; }
+.stub-rank { font-family: var(--display); font-size: 20px; min-width: 50px; }
 @media (max-width: 640px) {
   .bill-bout, .bill-odds { grid-template-columns: 1fr; gap: 4px; }
   .bill-name.a, .bill-name.b, .bill-odds > * { text-align: center !important; }
@@ -1455,6 +1467,65 @@ button.namelink:hover { color: var(--red); }
       ${odds}${read}
     </section>`;
   }
+  // ---- Fight-week sidebar: the ticket stubs beside the card
+  /** UTC instant of a wall-clock time in New York on a given day (DST-aware). */
+  function etInstant(day, hh, mm) {
+    const guess = new Date(day + "T12:00:00Z");
+    const etHour = +new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour: "numeric", hourCycle: "h23" }).format(guess);
+    return new Date(Date.parse(day + "T00:00:00Z") + ((hh + (12 - etHour)) * 60 + mm) * 60000);
+  }
+  /** When your picks lock: the board's own time, else 5:00 PM ET on fight day for US cards and 8:00 AM ET elsewhere (as the picks routine sets it). */
+  function lockFor(ev) {
+    const bd = state.my.board;
+    if (bd && bd.locks_at && bd.event && fold(bd.event).includes(fold(ev.name.split(":")[0]))) return new Date(bd.locks_at);
+    return /U\.S\.|United States/.test(ev.location || "") ? etInstant(ev.date, 17, 0) : etInstant(ev.date, 8, 0);
+  }
+  const etShort = (d) => d.toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }).replace(",", "");
+  function countdown(ms) {
+    if (ms <= 0) return "Locked";
+    const m = Math.floor(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60);
+    return d ? `${d}d ${h}h ${m % 60}m to go` : h ? `${h}h ${m % 60}m to go` : `${m % 60}m to go`;
+  }
+  function tickClocks() {
+    document.querySelectorAll("[data-countdown]").forEach((el) => { el.textContent = countdown(Date.parse(el.dataset.countdown) - Date.now()); });
+  }
+  setInterval(tickClocks, 30000);
+  function fightWeekSide(ev) {
+    const lock = lockFor(ev);
+    const fri = new Date(etInstant(ev.date, 11, 59).getTime() - (((new Date(ev.date + "T12:00:00Z").getUTCDay() - 5 + 7) % 7) * 86400000));
+    const placed = state.picks.weeks.find((w) => w.event && fold(w.event).includes(fold(ev.name.split(":")[0])));
+    const clock = `<div class="stub"><div class="stub-hd">The clock · Eastern time</div>
+      <div class="stub-row"><span>Claude's picks</span><span class="num">${placed ? "In ✓" : etShort(fri)}</span></div>
+      <div class="stub-row"><span>Your picks lock</span><span class="num">${etShort(lock)}</span></div>
+      <div class="stub-foot num" data-countdown="${lock.toISOString()}">${countdown(lock - Date.now())}</div></div>`;
+    const S = state.picks.summary, mine = state.my.uid ? myMoney().bankroll : null;
+    const vs = `<div class="stub"><div class="stub-hd">Claude vs. You</div>
+      <div class="stub-duel"><div><div class="stub-big num">${S ? money(S.bankroll) : "$100.00"}</div><div class="label">Claude</div></div>
+      <div><div class="stub-big num" style="color:var(--blue)">${mine != null ? money(mine) : "—"}</div><div class="label">You</div></div></div>
+      <button type="button" class="btn primary stub-btn" data-goto="mypicks">${mine != null ? "Place your picks" : "Join the game"}</button>
+      <button type="button" class="btn link" data-goto="picks" style="margin-top:8px">See Claude's picks →</button></div>`;
+    const P = state.pros;
+    let pros = `<div class="muted" style="font-size:14px">Loading…</div>`;
+    if (P.data) {
+      const rankOf = {};
+      for (const x of P.data.prospects) if (x.sherdog_url) rankOf[x.sherdog_url] = x.p4p_rank;
+      const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+      const seen = new Set();
+      const up = ((P.data.week || {}).upcoming || []).filter((b) => b.date >= today && ((rankOf[b.prospect_url] || 9999) <= 200 || followed(b.prospect_url)))
+        .filter((b) => { const k = b.date + b.prospect_url; if (seen.has(k)) return false; seen.add(k); return true; })
+        .sort((a, b) => a.date.localeCompare(b.date) || (rankOf[a.prospect_url] || 9999) - (rankOf[b.prospect_url] || 9999)).slice(0, 3);
+      const day = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+      pros = up.length ? up.map((b) => `<div class="stub-pro"><span class="stub-rank num">#${rankOf[b.prospect_url] || b.p4p_rank}</span><span><strong>${followed(b.prospect_url) ? "★ " : ""}${esc(b.prospect)}</strong><br><span class="muted" style="font-size:13.5px">${day(b.date)} · ${esc(b.event.split(/:| - /)[0])}</span></span></div>`).join("")
+        : `<div class="muted" style="font-size:14px">No top-200 or starred prospects booked in the next nine days.</div>`;
+    }
+    const prosStub = `<div class="stub"><div class="stub-hd">Prospects in action</div>${pros}<button type="button" class="btn link" data-goto="prospects:week" style="margin-top:8px">All prospect fights →</button></div>`;
+    const R = state.data.recaps, last = R && R.events && R.events[0], sm = last && last.summary;
+    const lastStub = sm ? `<div class="stub"><div class="stub-hd">Last time out · ${esc(last.event.split(" - ")[0])}</div>
+      <div class="stub-row"><span>Model</span><span class="num">${sm.model.correct} of ${sm.model.n}</span></div>
+      ${sm.market && sm.market.n ? `<div class="stub-row"><span>Closing line</span><span class="num">${sm.market.correct} of ${sm.market.n}</span></div>` : ""}
+      <button type="button" class="btn link" data-goto="card:recaps" style="margin-top:8px">Read the recap →</button></div>` : "";
+    return `<aside class="fw-side" aria-label="Fight week">${clock}${vs}${prosStub}${lastStub}</aside>`;
+  }
   function renderCard(view) {
     if (state.cardView === "recaps") { renderRecaps(view); return; }
     const up = state.data.upcoming || { events: [] };
@@ -1476,7 +1547,8 @@ button.namelink:hover { color: var(--red); }
       }
       const tierLine = Object.keys(TIER_LABEL).filter((k) => tiers[k]).map((k) => `<span class="tier tier-${k}">${TIER_LABEL[k]} ${tiers[k]}</span>`).join(" ");
       const segs = [...new Set(ev.bouts.map((b) => b.segment))].sort((x, y) => SEGMENT_ORDER.indexOf(x) - SEGMENT_ORDER.indexOf(y));
-      html += billHero(ev) + `<section class="panel stack">
+      loadProspects();
+      html += billHero(ev) + fightWeekSide(ev) + `<section class="panel stack">
         <div><h2 style="font-size:36px">${esc(ev.name)}</h2>
           <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p>
           <div class="toolbar" style="margin:10px 0 0">${tierLine || '<span class="muted" style="font-size:13px">No highlighted bouts on this card.</span>'}
@@ -1873,6 +1945,13 @@ button.namelink:hover { color: var(--red); }
     if (t.id === "more-btn") { moreMenu($("#more-menu").hidden); return; }
     if (t.dataset.tab && t.closest("#more-menu")) moreMenu(false, false);
     if (t.dataset.tab) { state.tab = t.dataset.tab; state.profile = null; ls.set(LOCAL_KEY + ":tab", state.tab); render(); return; }
+    if (t.dataset.goto) {
+      const [tab, sub] = t.dataset.goto.split(":");
+      state.tab = tab; state.profile = null; ls.set(LOCAL_KEY + ":tab", tab);
+      if (tab === "prospects" && sub) state.pros.view = sub;
+      if (tab === "card" && sub) state.cardView = sub;
+      render(); window.scrollTo(0, 0); return;
+    }
     if (t.dataset.rounds) { state.m.rounds = +t.dataset.rounds; render(); return; }
     if (t.id === "swap") { Object.assign(state.m, { a: state.m.b, b: state.m.a, oddsA: state.m.oddsB, oddsB: state.m.oddsA }); render(); return; }
     if (t.id === "to-card") {
