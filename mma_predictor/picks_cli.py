@@ -1,4 +1,4 @@
-"""`python -m mma_predictor picks ...`: the weekly AI Picks routine.
+"""`python -m mma_predictor picks ...`: the weekly AI Bets routine (betting; AI Picks, the pick'em, is card_picks.py).
 
     picks sheet    fetch FanDuel's lines for the next UFC card and price every market
     picks place    record this week's bets (or a pass) from a picks file, at sheet prices
@@ -446,7 +446,7 @@ def cmd_sync(args) -> int:
 
 
 def register(sub, data_arg) -> None:
-    p = sub.add_parser("picks", help="AI Picks: FanDuel betting sheet, ledger and settlement (see AI_PICKS.md)")
+    p = sub.add_parser("picks", help="AI Bets: FanDuel betting sheet, ledger and settlement (see AI_PICKS.md)")
     ps = p.add_subparsers(dest="picks_cmd", required=True)
 
     def common(q):

@@ -1,0 +1,506 @@
+{
+ "event": "UFC 332: Silva vs. Wang",
+ "date": "2026-10-03",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_332",
+ "locks_at": "2026-10-03T21:00:00+00:00",
+ "locked_at": "2026-10-02T21:19:10+00:00",
+ "note": "First card of the pick'em. I follow the model on most winners and part with it where my scouting read and the betting market both point the other way (Rodríguez), and on method where a fighter's finishing record says more than the averaged method model (Talbott, Soldić, McGhee, Nolan go to KO/TKO; Hernandez to decision against a durable dos Anjos).",
+ "dec_cal": [
+  0.20520152691436633,
+  0.6741987155097109
+ ],
+ "method_adjust": {},
+ "bouts": [
+  {
+   "bout": "Natália Silva vs Wang Cong",
+   "a": "Natália Silva",
+   "b": "Wang Cong",
+   "segment": "Main card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 5,
+   "title": false,
+   "pick": {
+    "winner": "Natália Silva",
+    "side": "a",
+    "method": "DEC",
+    "confidence": 0.66,
+    "why": "Movement and grappling over 25 minutes; Wang's weight cut is the risk for her, not for Silva. Model, market and read all agree."
+   },
+   "model": {
+    "p_a": 0.6723,
+    "winner": "Natália Silva",
+    "method": "DEC",
+    "p_win": 0.6723,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0975,
+      "SUB": 0.165,
+      "DEC": 0.4093
+     },
+     "b": {
+      "KO/TKO": 0.0531,
+      "SUB": 0.0422,
+      "DEC": 0.2329
+     }
+    }
+   },
+   "market_p_a": 0.6464
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "a": "Deiveson Figueiredo",
+   "b": "Payton Talbott",
+   "segment": "Main card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Payton Talbott",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.82,
+    "why": "Figueiredo is 39 and has been finished twice in his last five; a long, busy striker with power is the worst style for him now."
+   },
+   "model": {
+    "p_a": 0.181,
+    "winner": "Payton Talbott",
+    "method": "DEC",
+    "p_win": 0.819,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0175,
+      "SUB": 0.023,
+      "DEC": 0.1552
+     },
+     "b": {
+      "KO/TKO": 0.3547,
+      "SUB": 0.0879,
+      "DEC": 0.3617
+     }
+    }
+   },
+   "market_p_a": 0.1616
+  },
+  {
+   "bout": "King Green vs Esteban Ribovics",
+   "a": "King Green",
+   "b": "Esteban Ribovics",
+   "segment": "Main card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Esteban Ribovics",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.57,
+    "why": "My read leans Green on style, but not enough to overturn both the model and the market; Ribovics' volume and power at 40-year-old Green."
+   },
+   "model": {
+    "p_a": 0.3905,
+    "winner": "Esteban Ribovics",
+    "method": "KO/TKO",
+    "p_win": 0.6095,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0533,
+      "SUB": 0.1144,
+      "DEC": 0.2496
+     },
+     "b": {
+      "KO/TKO": 0.3606,
+      "SUB": 0.0318,
+      "DEC": 0.1903
+     }
+    }
+   },
+   "market_p_a": 0.3294
+  },
+  {
+   "bout": "Roberto Soldić vs Khaos Williams",
+   "a": "Roberto Soldić",
+   "b": "Khaos Williams",
+   "segment": "Main card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Roberto Soldić",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.66,
+    "why": "Soldić finishes people (KSW two-division champion); Williams is a fast starter but hittable. Round one is the danger."
+   },
+   "model": {
+    "p_a": 0.6132,
+    "winner": "Roberto Soldić",
+    "method": "DEC",
+    "p_win": 0.6132,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1709,
+      "SUB": 0.1207,
+      "DEC": 0.3412
+     },
+     "b": {
+      "KO/TKO": 0.2377,
+      "SUB": 0.0138,
+      "DEC": 0.1157
+     }
+    }
+   },
+   "market_p_a": 0.7086
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "a": "Ateba Gautier",
+   "b": "Roman Kopylov",
+   "segment": "Main card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Ateba Gautier",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.66,
+    "why": "Size and reach (6'4\", 81\") with four KOs in five; Kopylov loses to bigger, better strikers."
+   },
+   "model": {
+    "p_a": 0.5885,
+    "winner": "Ateba Gautier",
+    "method": "KO/TKO",
+    "p_win": 0.5885,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2787,
+      "SUB": 0.0294,
+      "DEC": 0.2728
+     },
+     "b": {
+      "KO/TKO": 0.156,
+      "SUB": 0.0182,
+      "DEC": 0.2449
+     }
+    }
+   },
+   "market_p_a": 0.6554
+  },
+  {
+   "bout": "Imanol Rodríguez vs Alden Coria",
+   "a": "Imanol Rodríguez",
+   "b": "Alden Coria",
+   "segment": "Preliminary card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Imanol Rodríguez",
+    "side": "a",
+    "method": "DEC",
+    "confidence": 0.55,
+    "why": "Override of the model: Rodríguez's wrestling targets Coria's weak takedown defense, and the market agrees (59%). Coria's counters keep it to the cards."
+   },
+   "model": {
+    "p_a": 0.4249,
+    "winner": "Alden Coria",
+    "method": "DEC",
+    "p_win": 0.5751,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2301,
+      "SUB": 0.0469,
+      "DEC": 0.1267
+     },
+     "b": {
+      "KO/TKO": 0.1707,
+      "SUB": 0.1048,
+      "DEC": 0.3208
+     }
+    }
+   },
+   "market_p_a": 0.5882
+  },
+  {
+   "bout": "Damian Pinas vs Andrey Pulyaev",
+   "a": "Damian Pinas",
+   "b": "Andrey Pulyaev",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Damian Pinas",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.82,
+    "why": "One-shot power against a man on a three-fight skid; Pulyaev's path is surviving past round one."
+   },
+   "model": {
+    "p_a": 0.8125,
+    "winner": "Damian Pinas",
+    "method": "KO/TKO",
+    "p_win": 0.8125,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.498,
+      "SUB": 0.0707,
+      "DEC": 0.2111
+     },
+     "b": {
+      "KO/TKO": 0.0606,
+      "SUB": 0.0227,
+      "DEC": 0.1368
+     }
+    }
+   },
+   "market_p_a": 0.8311
+  },
+  {
+   "bout": "Marcus McGhee vs Anthony Romero",
+   "a": "Marcus McGhee",
+   "b": "Anthony Romero",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Marcus McGhee",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.66,
+    "why": "Romero took this on three days' notice; McGhee's power should find a late-notice opponent."
+   },
+   "model": {
+    "p_a": 0.5428,
+    "winner": "Marcus McGhee",
+    "method": "DEC",
+    "p_win": 0.5428,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.252,
+      "SUB": 0.0288,
+      "DEC": 0.2533
+     },
+     "b": {
+      "KO/TKO": 0.0976,
+      "SUB": 0.0459,
+      "DEC": 0.3223
+     }
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "a": "Anthony Wint",
+   "b": "Lucas Armand",
+   "segment": "Preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Anthony Wint",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.75,
+    "why": "The model knows little about either; Wint's athleticism and size against a padded regional record."
+   },
+   "model": {
+    "p_a": 0.5646,
+    "winner": "Anthony Wint",
+    "method": "KO/TKO",
+    "p_win": 0.5646,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2316,
+      "SUB": 0.0986,
+      "DEC": 0.2308
+     },
+     "b": {
+      "KO/TKO": 0.2222,
+      "SUB": 0.0214,
+      "DEC": 0.1954
+     }
+    }
+   },
+   "market_p_a": 0.7988
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "a": "Johnny Walker",
+   "b": "Mick Parkin",
+   "segment": "Early preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Mick Parkin",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.58,
+    "why": "Walker's chin has failed against heavy hitters and heavyweight punches are heavier; Parkin's pressure."
+   },
+   "model": {
+    "p_a": 0.3449,
+    "winner": "Mick Parkin",
+    "method": "KO/TKO",
+    "p_win": 0.6551,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1095,
+      "SUB": 0.0334,
+      "DEC": 0.218
+     },
+     "b": {
+      "KO/TKO": 0.3619,
+      "SUB": 0.0199,
+      "DEC": 0.2574
+     }
+    }
+   },
+   "market_p_a": 0.5552
+  },
+  {
+   "bout": "Jacobe Smith vs Bruce Whitehead",
+   "a": "Jacobe Smith",
+   "b": "Bruce Whitehead",
+   "segment": "Early preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Jacobe Smith",
+    "side": "a",
+    "method": "KO/TKO",
+    "confidence": 0.86,
+    "why": "Short-notice regional debutant knocked out quickly last year; Smith's wrestling into ground strikes."
+   },
+   "model": {
+    "p_a": 0.8819,
+    "winner": "Jacobe Smith",
+    "method": "KO/TKO",
+    "p_win": 0.8819,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.5354,
+      "SUB": 0.1336,
+      "DEC": 0.1759
+     },
+     "b": {
+      "KO/TKO": 0.0264,
+      "SUB": 0.0268,
+      "DEC": 0.1019
+     }
+    }
+   },
+   "market_p_a": 0.863
+  },
+  {
+   "bout": "Rafael dos Anjos vs Alexander Hernandez",
+   "a": "Rafael dos Anjos",
+   "b": "Alexander Hernandez",
+   "segment": "Early preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Alexander Hernandez",
+    "side": "b",
+    "method": "DEC",
+    "confidence": 0.7,
+    "why": "Dos Anjos at 42 off knee surgeries fades, but he is very rarely stopped; Hernandez on the cards."
+   },
+   "model": {
+    "p_a": 0.1583,
+    "winner": "Alexander Hernandez",
+    "method": "KO/TKO",
+    "p_win": 0.8417,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0202,
+      "SUB": 0.0228,
+      "DEC": 0.1245
+     },
+     "b": {
+      "KO/TKO": 0.415,
+      "SUB": 0.0157,
+      "DEC": 0.4017
+     }
+    }
+   },
+   "market_p_a": 0.3118
+  },
+  {
+   "bout": "Marvin Vettori vs Ismail Naurdiev",
+   "a": "Marvin Vettori",
+   "b": "Ismail Naurdiev",
+   "segment": "Early preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Ismail Naurdiev",
+    "side": "b",
+    "method": "DEC",
+    "confidence": 0.52,
+    "why": "Genuinely even; Naurdiev's sharper striking over three rounds, and Vettori's losses all went the distance."
+   },
+   "model": {
+    "p_a": 0.4704,
+    "winner": "Ismail Naurdiev",
+    "method": "DEC",
+    "p_win": 0.5296,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0781,
+      "SUB": 0.0778,
+      "DEC": 0.3186
+     },
+     "b": {
+      "KO/TKO": 0.0805,
+      "SUB": 0.0375,
+      "DEC": 0.4074
+     }
+    }
+   },
+   "market_p_a": 0.4463
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "a": "Court McGee",
+   "b": "Eric Nolan",
+   "segment": "Early preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Eric Nolan",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.65,
+    "why": "McGee is 42 and has been knocked out twice since 2022; Nolan has the power to do it again."
+   },
+   "model": {
+    "p_a": 0.3771,
+    "winner": "Eric Nolan",
+    "method": "DEC",
+    "p_win": 0.6229,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0177,
+      "SUB": 0.1747,
+      "DEC": 0.1807
+     },
+     "b": {
+      "KO/TKO": 0.2383,
+      "SUB": 0.0436,
+      "DEC": 0.3449
+     }
+    }
+   },
+   "market_p_a": 0.3101
+  }
+ ],
+ "graded": false
+}

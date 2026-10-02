@@ -1,0 +1,4036 @@
+{
+ "book": "FanDuel",
+ "bouts": [
+  {
+   "a": "Natalia Silva",
+   "b": "Wang Cong",
+   "bout": "Natalia Silva vs Wang Cong",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "a": "Deiveson Figueiredo",
+   "b": "Payton Talbott",
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Esteban Ribovics",
+   "b": "King Green",
+   "bout": "Esteban Ribovics vs King Green",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Khaos Williams",
+   "b": "Roberto Soldic",
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Ateba Gautier",
+   "b": "Roman Kopylov",
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Alden Coria",
+   "b": "Imanol Rodriguez",
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Andrey Pulyaev",
+   "b": "Damian Pinas",
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Anthony Romero",
+   "b": "Marcus McGhee",
+   "bout": "Anthony Romero vs Marcus McGhee",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Anthony Wint",
+   "b": "Lucas Armand",
+   "bout": "Anthony Wint vs Lucas Armand",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Johnny Walker",
+   "b": "Mick Parkin",
+   "bout": "Johnny Walker vs Mick Parkin",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Bruce Whitehead",
+   "b": "Jacobe Smith",
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Alexander Hernandez",
+   "b": "Rafael Dos Anjos",
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Ismail Naurdiev",
+   "b": "Marvin Vettori",
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "a": "Court McGee",
+   "b": "Eric Nolan",
+   "bout": "Court McGee vs Eric Nolan",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "date": "2026-10-03",
+ "event": "UFC 332: Silva vs. Wang",
+ "fetched_at": "2026-10-02T16:02:03+00:00",
+ "locks_at": "2026-10-03T21:00:00+00:00",
+ "markets": [
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -205,
+   "p_fanduel": 0.6396,
+   "selection": "Natalia Silva to win"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 164,
+   "p_fanduel": 0.3604,
+   "selection": "Wang Cong to win"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": 210,
+   "p_fanduel": 0.3045,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": -280,
+   "p_fanduel": 0.6955,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 850,
+   "p_fanduel": 0.094,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0744,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 1300,
+   "p_fanduel": 0.0638,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ends_round:4",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "Fight ends in round 4"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:ends_round:5",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "odds": 1900,
+   "p_fanduel": 0.0446,
+   "selection": "Fight ends in round 5"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": -105,
+   "p_fanduel": 0.4485,
+   "selection": "Natalia Silva by decision"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 700,
+   "p_fanduel": 0.1094,
+   "selection": "Natalia Silva by KO/TKO"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0796,
+   "selection": "Natalia Silva by submission"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 270,
+   "p_fanduel": 0.2366,
+   "selection": "Wang Cong by decision"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 850,
+   "p_fanduel": 0.0922,
+   "selection": "Wang Cong by KO/TKO"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 2500,
+   "p_fanduel": 0.0337,
+   "selection": "Wang Cong by submission"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 660,
+   "p_fanduel": 0.1227,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -1600,
+   "p_fanduel": 0.8773,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1762,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -750,
+   "p_fanduel": 0.8238,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:4:False",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "odds": 320,
+   "p_fanduel": 0.2247,
+   "selection": "Fight does not start round 4"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:4:True",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "odds": -460,
+   "p_fanduel": 0.7753,
+   "selection": "Fight starts round 4"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:5:False",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "odds": 245,
+   "p_fanduel": 0.2703,
+   "selection": "Fight does not start round 5"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:starts_round:5:True",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "odds": -360,
+   "p_fanduel": 0.7297,
+   "selection": "Fight starts round 5"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:total:False:4.5",
+   "market": [
+    "total",
+    false,
+    4.5
+   ],
+   "odds": 230,
+   "p_fanduel": 0.2846,
+   "selection": "Under 4.5 rounds"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:total:True:4.5",
+   "market": [
+    "total",
+    true,
+    4.5
+   ],
+   "odds": -320,
+   "p_fanduel": 0.7154,
+   "selection": "Over 4.5 rounds"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 1400,
+   "p_fanduel": 0.0595,
+   "selection": "Natalia Silva in round 1"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.047,
+   "selection": "Natalia Silva in round 2"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Natalia Silva in round 3"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:a:4",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "odds": 2500,
+   "p_fanduel": 0.0343,
+   "selection": "Natalia Silva in round 4"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:a:5",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "odds": 3000,
+   "p_fanduel": 0.0288,
+   "selection": "Natalia Silva in round 5"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Wang Cong in round 1"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 2500,
+   "p_fanduel": 0.0343,
+   "selection": "Wang Cong in round 2"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 3000,
+   "p_fanduel": 0.0288,
+   "selection": "Wang Cong in round 3"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:b:4",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "odds": 3500,
+   "p_fanduel": 0.0248,
+   "selection": "Wang Cong in round 4"
+  },
+  {
+   "bout": "Natalia Silva vs Wang Cong",
+   "id": "44794:win_round:b:5",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "odds": 4000,
+   "p_fanduel": 0.0218,
+   "selection": "Wang Cong in round 5"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 490,
+   "p_fanduel": 0.1611,
+   "selection": "Deiveson Figueiredo to win"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -750,
+   "p_fanduel": 0.8389,
+   "selection": "Payton Talbott to win"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -152,
+   "p_fanduel": 0.5703,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 120,
+   "p_fanduel": 0.4297,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 280,
+   "p_fanduel": 0.235,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 360,
+   "p_fanduel": 0.1941,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 490,
+   "p_fanduel": 0.1513,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0796,
+   "selection": "Deiveson Figueiredo by decision"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0381,
+   "selection": "Deiveson Figueiredo by KO/TKO"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.0461,
+   "selection": "Deiveson Figueiredo by submission"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 160,
+   "p_fanduel": 0.3368,
+   "selection": "Payton Talbott by decision"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 115,
+   "p_fanduel": 0.4073,
+   "selection": "Payton Talbott by KO/TKO"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 850,
+   "p_fanduel": 0.0922,
+   "selection": "Payton Talbott by submission"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 280,
+   "p_fanduel": 0.2449,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -430,
+   "p_fanduel": 0.7551,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 118,
+   "p_fanduel": 0.4295,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -156,
+   "p_fanduel": 0.5705,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": -110,
+   "p_fanduel": 0.4938,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": -116,
+   "p_fanduel": 0.5062,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Deiveson Figueiredo in round 1"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 3000,
+   "p_fanduel": 0.0288,
+   "selection": "Deiveson Figueiredo in round 2"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 3500,
+   "p_fanduel": 0.0248,
+   "selection": "Deiveson Figueiredo in round 3"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 340,
+   "p_fanduel": 0.2029,
+   "selection": "Payton Talbott in round 1"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1685,
+   "selection": "Payton Talbott in round 2"
+  },
+  {
+   "bout": "Deiveson Figueiredo vs Payton Talbott",
+   "id": "44602:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 550,
+   "p_fanduel": 0.1374,
+   "selection": "Payton Talbott in round 3"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -240,
+   "p_fanduel": 0.6718,
+   "selection": "Esteban Ribovics to win"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 190,
+   "p_fanduel": 0.3282,
+   "selection": "King Green to win"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -194,
+   "p_fanduel": 0.6226,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 150,
+   "p_fanduel": 0.3774,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 210,
+   "p_fanduel": 0.288,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 330,
+   "p_fanduel": 0.2076,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 550,
+   "p_fanduel": 0.1374,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 370,
+   "p_fanduel": 0.1848,
+   "selection": "Esteban Ribovics by decision"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 120,
+   "p_fanduel": 0.3948,
+   "selection": "Esteban Ribovics by KO/TKO"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.079,
+   "selection": "Esteban Ribovics by submission"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 390,
+   "p_fanduel": 0.1772,
+   "selection": "King Green by decision"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 750,
+   "p_fanduel": 0.1022,
+   "selection": "King Green by KO/TKO"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 1300,
+   "p_fanduel": 0.062,
+   "selection": "King Green by submission"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 220,
+   "p_fanduel": 0.2924,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -310,
+   "p_fanduel": 0.7076,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -108,
+   "p_fanduel": 0.4896,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -118,
+   "p_fanduel": 0.5104,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": -138,
+   "p_fanduel": 0.5537,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": 114,
+   "p_fanduel": 0.4463,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 290,
+   "p_fanduel": 0.2289,
+   "selection": "Esteban Ribovics in round 1"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 470,
+   "p_fanduel": 0.1566,
+   "selection": "Esteban Ribovics in round 2"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 750,
+   "p_fanduel": 0.105,
+   "selection": "Esteban Ribovics in round 3"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0687,
+   "selection": "King Green in round 1"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "King Green in round 2"
+  },
+  {
+   "bout": "Esteban Ribovics vs King Green",
+   "id": "45051:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "King Green in round 3"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 210,
+   "p_fanduel": 0.3076,
+   "selection": "Khaos Williams to win"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -265,
+   "p_fanduel": 0.6924,
+   "selection": "Roberto Soldic to win"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -430,
+   "p_fanduel": 0.7644,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 300,
+   "p_fanduel": 0.2356,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 120,
+   "p_fanduel": 0.4058,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 280,
+   "p_fanduel": 0.235,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 650,
+   "p_fanduel": 0.1153,
+   "selection": "Khaos Williams by decision"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 440,
+   "p_fanduel": 0.1602,
+   "selection": "Khaos Williams by KO/TKO"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.0455,
+   "selection": "Khaos Williams by submission"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 600,
+   "p_fanduel": 0.1236,
+   "selection": "Roberto Soldic by decision"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": -130,
+   "p_fanduel": 0.4889,
+   "selection": "Roberto Soldic by KO/TKO"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0665,
+   "selection": "Roberto Soldic by submission"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 134,
+   "p_fanduel": 0.4033,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -172,
+   "p_fanduel": 0.5967,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -200,
+   "p_fanduel": 0.6287,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": 154,
+   "p_fanduel": 0.3713,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:total:False:1.5",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "odds": -118,
+   "p_fanduel": 0.5174,
+   "selection": "Under 1.5 rounds"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:total:True:1.5",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "odds": -102,
+   "p_fanduel": 0.4826,
+   "selection": "Over 1.5 rounds"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 750,
+   "p_fanduel": 0.105,
+   "selection": "Khaos Williams in round 1"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0687,
+   "selection": "Khaos Williams in round 2"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 2000,
+   "p_fanduel": 0.0425,
+   "selection": "Khaos Williams in round 3"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 195,
+   "p_fanduel": 0.3027,
+   "selection": "Roberto Soldic in round 1"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1685,
+   "selection": "Roberto Soldic in round 2"
+  },
+  {
+   "bout": "Khaos Williams vs Roberto Soldic",
+   "id": "45052:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 700,
+   "p_fanduel": 0.1116,
+   "selection": "Roberto Soldic in round 3"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -245,
+   "p_fanduel": 0.6761,
+   "selection": "Ateba Gautier to win"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 194,
+   "p_fanduel": 0.3239,
+   "selection": "Roman Kopylov to win"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -235,
+   "p_fanduel": 0.6626,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 180,
+   "p_fanduel": 0.3374,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 190,
+   "p_fanduel": 0.3079,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 350,
+   "p_fanduel": 0.1984,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 450,
+   "p_fanduel": 0.1623,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 390,
+   "p_fanduel": 0.179,
+   "selection": "Ateba Gautier by decision"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 100,
+   "p_fanduel": 0.4385,
+   "selection": "Ateba Gautier by KO/TKO"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.0462,
+   "selection": "Ateba Gautier by submission"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 470,
+   "p_fanduel": 0.1539,
+   "selection": "Roman Kopylov by decision"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 480,
+   "p_fanduel": 0.1512,
+   "selection": "Roman Kopylov by KO/TKO"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 2700,
+   "p_fanduel": 0.0313,
+   "selection": "Roman Kopylov by submission"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 205,
+   "p_fanduel": 0.3079,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -280,
+   "p_fanduel": 0.6921,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -116,
+   "p_fanduel": 0.5062,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -110,
+   "p_fanduel": 0.4938,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": -154,
+   "p_fanduel": 0.5802,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": 128,
+   "p_fanduel": 0.4198,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 280,
+   "p_fanduel": 0.235,
+   "selection": "Ateba Gautier in round 1"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Ateba Gautier in round 2"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 650,
+   "p_fanduel": 0.119,
+   "selection": "Ateba Gautier in round 3"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0812,
+   "selection": "Roman Kopylov in round 1"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 1400,
+   "p_fanduel": 0.0595,
+   "selection": "Roman Kopylov in round 2"
+  },
+  {
+   "bout": "Ateba Gautier vs Roman Kopylov",
+   "id": "45053:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.047,
+   "selection": "Roman Kopylov in round 3"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 124,
+   "p_fanduel": 0.4253,
+   "selection": "Alden Coria to win"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -152,
+   "p_fanduel": 0.5747,
+   "selection": "Imanol Rodriguez to win"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": 104,
+   "p_fanduel": 0.4628,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": -132,
+   "p_fanduel": 0.5372,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 300,
+   "p_fanduel": 0.2232,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 700,
+   "p_fanduel": 0.1116,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 230,
+   "p_fanduel": 0.263,
+   "selection": "Alden Coria by decision"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 750,
+   "p_fanduel": 0.1021,
+   "selection": "Alden Coria by KO/TKO"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0668,
+   "selection": "Alden Coria by submission"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 250,
+   "p_fanduel": 0.2479,
+   "selection": "Imanol Rodriguez by decision"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 250,
+   "p_fanduel": 0.2479,
+   "selection": "Imanol Rodriguez by KO/TKO"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0723,
+   "selection": "Imanol Rodriguez by submission"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 320,
+   "p_fanduel": 0.2247,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -460,
+   "p_fanduel": 0.7753,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 160,
+   "p_fanduel": 0.3621,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -210,
+   "p_fanduel": 0.6379,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": 134,
+   "p_fanduel": 0.4087,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": -162,
+   "p_fanduel": 0.5913,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0744,
+   "selection": "Alden Coria in round 1"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "Alden Coria in round 2"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Alden Coria in round 3"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Imanol Rodriguez in round 1"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 800,
+   "p_fanduel": 0.0992,
+   "selection": "Imanol Rodriguez in round 2"
+  },
+  {
+   "bout": "Alden Coria vs Imanol Rodriguez",
+   "id": "45055:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0812,
+   "selection": "Imanol Rodriguez in round 3"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 410,
+   "p_fanduel": 0.1865,
+   "selection": "Andrey Pulyaev to win"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -590,
+   "p_fanduel": 0.8135,
+   "selection": "Damian Pinas to win"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -410,
+   "p_fanduel": 0.7582,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 290,
+   "p_fanduel": 0.2418,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 105,
+   "p_fanduel": 0.4355,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 310,
+   "p_fanduel": 0.2178,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 600,
+   "p_fanduel": 0.1276,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 900,
+   "p_fanduel": 0.0874,
+   "selection": "Andrey Pulyaev by decision"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0728,
+   "selection": "Andrey Pulyaev by KO/TKO"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.046,
+   "selection": "Andrey Pulyaev by submission"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 480,
+   "p_fanduel": 0.1506,
+   "selection": "Damian Pinas by decision"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": -175,
+   "p_fanduel": 0.5559,
+   "selection": "Damian Pinas by KO/TKO"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 900,
+   "p_fanduel": 0.0874,
+   "selection": "Damian Pinas by submission"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 118,
+   "p_fanduel": 0.4333,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -150,
+   "p_fanduel": 0.5667,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -215,
+   "p_fanduel": 0.6431,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": 164,
+   "p_fanduel": 0.3569,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:total:False:1.5",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "odds": -128,
+   "p_fanduel": 0.5363,
+   "selection": "Under 1.5 rounds"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:total:True:1.5",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "odds": 106,
+   "p_fanduel": 0.4637,
+   "selection": "Over 1.5 rounds"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "Andrey Pulyaev in round 1"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Andrey Pulyaev in round 2"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 3000,
+   "p_fanduel": 0.0288,
+   "selection": "Andrey Pulyaev in round 3"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 130,
+   "p_fanduel": 0.3882,
+   "selection": "Damian Pinas in round 1"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 380,
+   "p_fanduel": 0.186,
+   "selection": "Damian Pinas in round 2"
+  },
+  {
+   "bout": "Andrey Pulyaev vs Damian Pinas",
+   "id": "45056:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 750,
+   "p_fanduel": 0.105,
+   "selection": "Damian Pinas in round 3"
+  },
+  {
+   "bout": "Anthony Romero vs Marcus McGhee",
+   "id": "45123:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 370,
+   "p_fanduel": 0.2023,
+   "selection": "Anthony Romero to win"
+  },
+  {
+   "bout": "Anthony Romero vs Marcus McGhee",
+   "id": "45123:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -520,
+   "p_fanduel": 0.7977,
+   "selection": "Marcus McGhee to win"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -550,
+   "p_fanduel": 0.8057,
+   "selection": "Anthony Wint to win"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 390,
+   "p_fanduel": 0.1943,
+   "selection": "Lucas Armand to win"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -670,
+   "p_fanduel": 0.8245,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 440,
+   "p_fanduel": 0.1755,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": -170,
+   "p_fanduel": 0.5622,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 390,
+   "p_fanduel": 0.1822,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 950,
+   "p_fanduel": 0.085,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 650,
+   "p_fanduel": 0.1156,
+   "selection": "Anthony Wint by decision"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 110,
+   "p_fanduel": 0.413,
+   "selection": "Anthony Wint by KO/TKO"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 230,
+   "p_fanduel": 0.2628,
+   "selection": "Anthony Wint by submission"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 1300,
+   "p_fanduel": 0.0619,
+   "selection": "Lucas Armand by decision"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 650,
+   "p_fanduel": 0.1156,
+   "selection": "Lucas Armand by KO/TKO"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 2700,
+   "p_fanduel": 0.031,
+   "selection": "Lucas Armand by submission"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": -152,
+   "p_fanduel": 0.5703,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": 120,
+   "p_fanduel": 0.4297,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -380,
+   "p_fanduel": 0.7455,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": 270,
+   "p_fanduel": 0.2545,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:total:False:1.5",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "odds": -225,
+   "p_fanduel": 0.6597,
+   "selection": "Under 1.5 rounds"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:total:True:1.5",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "odds": 180,
+   "p_fanduel": 0.3403,
+   "selection": "Over 1.5 rounds"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": -125,
+   "p_fanduel": 0.496,
+   "selection": "Anthony Wint in round 1"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Anthony Wint in round 2"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0687,
+   "selection": "Anthony Wint in round 3"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0812,
+   "selection": "Lucas Armand in round 1"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 2000,
+   "p_fanduel": 0.0425,
+   "selection": "Lucas Armand in round 2"
+  },
+  {
+   "bout": "Anthony Wint vs Lucas Armand",
+   "id": "45074:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 3000,
+   "p_fanduel": 0.0288,
+   "selection": "Lucas Armand in round 3"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -134,
+   "p_fanduel": 0.546,
+   "selection": "Johnny Walker to win"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 110,
+   "p_fanduel": 0.454,
+   "selection": "Mick Parkin to win"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -178,
+   "p_fanduel": 0.6038,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 138,
+   "p_fanduel": 0.3962,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 210,
+   "p_fanduel": 0.288,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 350,
+   "p_fanduel": 0.1984,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 600,
+   "p_fanduel": 0.1276,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 300,
+   "p_fanduel": 0.2195,
+   "selection": "Johnny Walker by decision"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 220,
+   "p_fanduel": 0.2744,
+   "selection": "Johnny Walker by KO/TKO"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1900,
+   "p_fanduel": 0.0439,
+   "selection": "Johnny Walker by submission"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1657,
+   "selection": "Mick Parkin by decision"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 330,
+   "p_fanduel": 0.2042,
+   "selection": "Mick Parkin by KO/TKO"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 850,
+   "p_fanduel": 0.0924,
+   "selection": "Mick Parkin by submission"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 230,
+   "p_fanduel": 0.2846,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -320,
+   "p_fanduel": 0.7154,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -102,
+   "p_fanduel": 0.477,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -124,
+   "p_fanduel": 0.523,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": -130,
+   "p_fanduel": 0.538,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": 106,
+   "p_fanduel": 0.462,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 490,
+   "p_fanduel": 0.1513,
+   "selection": "Johnny Walker in round 1"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 750,
+   "p_fanduel": 0.105,
+   "selection": "Johnny Walker in round 2"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0744,
+   "selection": "Johnny Walker in round 3"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 550,
+   "p_fanduel": 0.1374,
+   "selection": "Mick Parkin in round 1"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 800,
+   "p_fanduel": 0.0992,
+   "selection": "Mick Parkin in round 2"
+  },
+  {
+   "bout": "Johnny Walker vs Mick Parkin",
+   "id": "45060:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 1300,
+   "p_fanduel": 0.0638,
+   "selection": "Mick Parkin in round 3"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 590,
+   "p_fanduel": 0.1381,
+   "selection": "Bruce Whitehead to win"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -950,
+   "p_fanduel": 0.8619,
+   "selection": "Jacobe Smith to win"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -1400,
+   "p_fanduel": 0.8792,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 680,
+   "p_fanduel": 0.1208,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": -200,
+   "p_fanduel": 0.5952,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 350,
+   "p_fanduel": 0.1984,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 900,
+   "p_fanduel": 0.0893,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 1900,
+   "p_fanduel": 0.0441,
+   "selection": "Bruce Whitehead by decision"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 1300,
+   "p_fanduel": 0.063,
+   "selection": "Bruce Whitehead by KO/TKO"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.0464,
+   "selection": "Bruce Whitehead by submission"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0678,
+   "selection": "Jacobe Smith by decision"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": -270,
+   "p_fanduel": 0.6432,
+   "selection": "Jacobe Smith by KO/TKO"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 550,
+   "p_fanduel": 0.1356,
+   "selection": "Jacobe Smith by submission"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": -182,
+   "p_fanduel": 0.6097,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": 142,
+   "p_fanduel": 0.3903,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": -600,
+   "p_fanduel": 0.8011,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": 370,
+   "p_fanduel": 0.1989,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.047,
+   "selection": "Bruce Whitehead in round 1"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 2500,
+   "p_fanduel": 0.0343,
+   "selection": "Bruce Whitehead in round 2"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 3300,
+   "p_fanduel": 0.0263,
+   "selection": "Bruce Whitehead in round 3"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": -170,
+   "p_fanduel": 0.5622,
+   "selection": "Jacobe Smith in round 1"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1685,
+   "selection": "Jacobe Smith in round 2"
+  },
+  {
+   "bout": "Bruce Whitehead vs Jacobe Smith",
+   "id": "45073:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0744,
+   "selection": "Jacobe Smith in round 3"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -300,
+   "p_fanduel": 0.7153,
+   "selection": "Alexander Hernandez to win"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 235,
+   "p_fanduel": 0.2847,
+   "selection": "Rafael Dos Anjos to win"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -118,
+   "p_fanduel": 0.5104,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": -108,
+   "p_fanduel": 0.4896,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 350,
+   "p_fanduel": 0.1984,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 400,
+   "p_fanduel": 0.1786,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 185,
+   "p_fanduel": 0.3061,
+   "selection": "Alexander Hernandez by decision"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 155,
+   "p_fanduel": 0.3421,
+   "selection": "Alexander Hernandez by KO/TKO"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 1800,
+   "p_fanduel": 0.0459,
+   "selection": "Alexander Hernandez by submission"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 430,
+   "p_fanduel": 0.1646,
+   "selection": "Rafael Dos Anjos by decision"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 1400,
+   "p_fanduel": 0.0582,
+   "selection": "Rafael Dos Anjos by KO/TKO"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 950,
+   "p_fanduel": 0.0831,
+   "selection": "Rafael Dos Anjos by submission"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 360,
+   "p_fanduel": 0.2044,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -550,
+   "p_fanduel": 0.7956,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 150,
+   "p_fanduel": 0.3766,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -196,
+   "p_fanduel": 0.6234,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": 116,
+   "p_fanduel": 0.4425,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": -140,
+   "p_fanduel": 0.5575,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 480,
+   "p_fanduel": 0.1539,
+   "selection": "Alexander Hernandez in round 1"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 550,
+   "p_fanduel": 0.1374,
+   "selection": "Alexander Hernandez in round 2"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 700,
+   "p_fanduel": 0.1116,
+   "selection": "Alexander Hernandez in round 3"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "Rafael Dos Anjos in round 1"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 1900,
+   "p_fanduel": 0.0446,
+   "selection": "Rafael Dos Anjos in round 2"
+  },
+  {
+   "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+   "id": "45058:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 2200,
+   "p_fanduel": 0.0388,
+   "selection": "Rafael Dos Anjos in round 3"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": -140,
+   "p_fanduel": 0.5552,
+   "selection": "Ismail Naurdiev to win"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": 114,
+   "p_fanduel": 0.4448,
+   "selection": "Marvin Vettori to win"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": 142,
+   "p_fanduel": 0.3894,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": -184,
+   "p_fanduel": 0.6106,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 410,
+   "p_fanduel": 0.1751,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 600,
+   "p_fanduel": 0.1276,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 800,
+   "p_fanduel": 0.0992,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 190,
+   "p_fanduel": 0.3,
+   "selection": "Ismail Naurdiev by decision"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 330,
+   "p_fanduel": 0.2023,
+   "selection": "Ismail Naurdiev by KO/TKO"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 2000,
+   "p_fanduel": 0.0414,
+   "selection": "Ismail Naurdiev by submission"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 210,
+   "p_fanduel": 0.2806,
+   "selection": "Marvin Vettori by decision"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0791,
+   "selection": "Marvin Vettori by KO/TKO"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 800,
+   "p_fanduel": 0.0967,
+   "selection": "Marvin Vettori by submission"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 420,
+   "p_fanduel": 0.1816,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -650,
+   "p_fanduel": 0.8184,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 210,
+   "p_fanduel": 0.3026,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -290,
+   "p_fanduel": 0.6974,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": 174,
+   "p_fanduel": 0.3484,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": -215,
+   "p_fanduel": 0.6516,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 700,
+   "p_fanduel": 0.1116,
+   "selection": "Ismail Naurdiev in round 1"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 1000,
+   "p_fanduel": 0.0812,
+   "selection": "Ismail Naurdiev in round 2"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 1400,
+   "p_fanduel": 0.0595,
+   "selection": "Ismail Naurdiev in round 3"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 1100,
+   "p_fanduel": 0.0744,
+   "selection": "Marvin Vettori in round 1"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 1500,
+   "p_fanduel": 0.0558,
+   "selection": "Marvin Vettori in round 2"
+  },
+  {
+   "bout": "Ismail Naurdiev vs Marvin Vettori",
+   "id": "45059:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 2000,
+   "p_fanduel": 0.0425,
+   "selection": "Marvin Vettori in round 3"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:ml:a",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "odds": 194,
+   "p_fanduel": 0.3239,
+   "selection": "Court McGee to win"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:ml:b",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "odds": -245,
+   "p_fanduel": 0.6761,
+   "selection": "Eric Nolan to win"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:distance:False",
+   "market": [
+    "distance",
+    false
+   ],
+   "odds": -148,
+   "p_fanduel": 0.5631,
+   "selection": "Doesn't go to decision"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:distance:True",
+   "market": [
+    "distance",
+    true
+   ],
+   "odds": 116,
+   "p_fanduel": 0.4369,
+   "selection": "Goes to decision"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:ends_round:1",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "odds": 240,
+   "p_fanduel": 0.2626,
+   "selection": "Fight ends in round 1"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:ends_round:2",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "odds": 380,
+   "p_fanduel": 0.186,
+   "selection": "Fight ends in round 2"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:ends_round:3",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "odds": 650,
+   "p_fanduel": 0.119,
+   "selection": "Fight ends in round 3"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:a:DEC",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "odds": 370,
+   "p_fanduel": 0.1842,
+   "selection": "Court McGee by decision"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:a:KO/TKO",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "odds": 1500,
+   "p_fanduel": 0.0541,
+   "selection": "Court McGee by KO/TKO"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:a:SUB",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "odds": 750,
+   "p_fanduel": 0.1018,
+   "selection": "Court McGee by submission"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:b:DEC",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "odds": 270,
+   "p_fanduel": 0.2339,
+   "selection": "Eric Nolan by decision"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:b:KO/TKO",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "odds": 135,
+   "p_fanduel": 0.3683,
+   "selection": "Eric Nolan by KO/TKO"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:method:b:SUB",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "odds": 1400,
+   "p_fanduel": 0.0577,
+   "selection": "Eric Nolan by submission"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:starts_round:2:False",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "odds": 250,
+   "p_fanduel": 0.2687,
+   "selection": "Fight does not start round 2"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:starts_round:2:True",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "odds": -350,
+   "p_fanduel": 0.7313,
+   "selection": "Fight starts round 2"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:starts_round:3:False",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "odds": 110,
+   "p_fanduel": 0.4494,
+   "selection": "Fight does not start round 3"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:starts_round:3:True",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "odds": -140,
+   "p_fanduel": 0.5506,
+   "selection": "Fight starts round 3"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:total:False:2.5",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "odds": -110,
+   "p_fanduel": 0.5,
+   "selection": "Under 2.5 rounds"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:total:True:2.5",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "odds": -110,
+   "p_fanduel": 0.5,
+   "selection": "Over 2.5 rounds"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:a:1",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "odds": 1200,
+   "p_fanduel": 0.0687,
+   "selection": "Court McGee in round 1"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:a:2",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "odds": 1600,
+   "p_fanduel": 0.0525,
+   "selection": "Court McGee in round 2"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:a:3",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "odds": 2700,
+   "p_fanduel": 0.0319,
+   "selection": "Court McGee in round 3"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:b:1",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "odds": 340,
+   "p_fanduel": 0.2029,
+   "selection": "Eric Nolan in round 1"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:b:2",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "odds": 500,
+   "p_fanduel": 0.1488,
+   "selection": "Eric Nolan in round 2"
+  },
+  {
+   "bout": "Court McGee vs Eric Nolan",
+   "id": "45057:win_round:b:3",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "odds": 850,
+   "p_fanduel": 0.094,
+   "selection": "Eric Nolan in round 3"
+  }
+ ],
+ "odds_url": "https://www.bestfightodds.com/events/ufc-4380",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_332"
+}

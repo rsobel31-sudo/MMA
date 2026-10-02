@@ -1,0 +1,19 @@
+{
+ "note": "First card of the pick'em. I follow the model on most winners and part with it where my scouting read and the betting market both point the other way (Rodríguez), and on method where a fighter's finishing record says more than the averaged method model (Talbott, Soldić, McGhee, Nolan go to KO/TKO; Hernandez to decision against a durable dos Anjos).",
+ "picks": [
+  {"bout": "Natália Silva vs Wang Cong", "winner": "Natália Silva", "method": "DEC", "confidence": 0.66, "why": "Movement and grappling over 25 minutes; Wang's weight cut is the risk for her, not for Silva. Model, market and read all agree."},
+  {"bout": "Deiveson Figueiredo vs Payton Talbott", "winner": "Payton Talbott", "method": "KO/TKO", "confidence": 0.82, "why": "Figueiredo is 39 and has been finished twice in his last five; a long, busy striker with power is the worst style for him now."},
+  {"bout": "King Green vs Esteban Ribovics", "winner": "Esteban Ribovics", "method": "KO/TKO", "confidence": 0.57, "why": "My read leans Green on style, but not enough to overturn both the model and the market; Ribovics' volume and power at 40-year-old Green."},
+  {"bout": "Roberto Soldić vs Khaos Williams", "winner": "Roberto Soldić", "method": "KO/TKO", "confidence": 0.66, "why": "Soldić finishes people (KSW two-division champion); Williams is a fast starter but hittable. Round one is the danger."},
+  {"bout": "Ateba Gautier vs Roman Kopylov", "winner": "Ateba Gautier", "method": "KO/TKO", "confidence": 0.66, "why": "Size and reach (6'4\", 81\") with four KOs in five; Kopylov loses to bigger, better strikers."},
+  {"bout": "Imanol Rodríguez vs Alden Coria", "winner": "Imanol Rodríguez", "method": "DEC", "confidence": 0.55, "why": "Override of the model: Rodríguez's wrestling targets Coria's weak takedown defense, and the market agrees (59%). Coria's counters keep it to the cards."},
+  {"bout": "Damian Pinas vs Andrey Pulyaev", "winner": "Damian Pinas", "method": "KO/TKO", "confidence": 0.82, "why": "One-shot power against a man on a three-fight skid; Pulyaev's path is surviving past round one."},
+  {"bout": "Marcus McGhee vs Anthony Romero", "winner": "Marcus McGhee", "method": "KO/TKO", "confidence": 0.66, "why": "Romero took this on three days' notice; McGhee's power should find a late-notice opponent."},
+  {"bout": "Anthony Wint vs Lucas Armand", "winner": "Anthony Wint", "method": "KO/TKO", "confidence": 0.75, "why": "The model knows little about either; Wint's athleticism and size against a padded regional record."},
+  {"bout": "Johnny Walker vs Mick Parkin", "winner": "Mick Parkin", "method": "KO/TKO", "confidence": 0.58, "why": "Walker's chin has failed against heavy hitters and heavyweight punches are heavier; Parkin's pressure."},
+  {"bout": "Jacobe Smith vs Bruce Whitehead", "winner": "Jacobe Smith", "method": "KO/TKO", "confidence": 0.86, "why": "Short-notice regional debutant knocked out quickly last year; Smith's wrestling into ground strikes."},
+  {"bout": "Rafael dos Anjos vs Alexander Hernandez", "winner": "Alexander Hernandez", "method": "DEC", "confidence": 0.7, "why": "Dos Anjos at 42 off knee surgeries fades, but he is very rarely stopped; Hernandez on the cards."},
+  {"bout": "Marvin Vettori vs Ismail Naurdiev", "winner": "Ismail Naurdiev", "method": "DEC", "confidence": 0.52, "why": "Genuinely even; Naurdiev's sharper striking over three rounds, and Vettori's losses all went the distance."},
+  {"bout": "Court McGee vs Eric Nolan", "winner": "Eric Nolan", "method": "KO/TKO", "confidence": 0.65, "why": "McGee is 42 and has been knocked out twice since 2022; Nolan has the power to do it again."}
+ ]
+}

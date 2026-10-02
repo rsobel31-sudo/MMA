@@ -3,5 +3,83 @@
  "start": 100.0,
  "min_stake": 1.0,
  "created": "2026-09-30T00:00:00+00:00",
- "weeks": []
+ "weeks": [
+  {
+   "available_before": 100,
+   "bankroll_before": 100,
+   "bets": [
+    {
+     "decimal": 1.3333,
+     "ev": 0.0768,
+     "id": "1-1",
+     "kind": "single",
+     "legs": [
+      {
+       "bout": "Alexander Hernandez vs Rafael Dos Anjos",
+       "id": "45058:ml:a",
+       "market": [
+        "ml",
+        "a"
+       ],
+       "odds": -300,
+       "p": 0.8076,
+       "p_fanduel": 0.7153,
+       "selection": "Alexander Hernandez to win"
+      }
+     ],
+     "odds": -300,
+     "p": 0.8076,
+     "profit": 0,
+     "reasoning": "Hernandez at -300 (FD 71.5% no-vig, ours 80.8%). Dos Anjos is 42, two years out after knee surgeries, and cutting to 155 where his cardio has failed before. Model and read agree. Staked about half quarter-Kelly since the favourite price caps the payoff.",
+     "stake": 3,
+     "status": "open",
+     "to_win": 1
+    },
+    {
+     "decimal": 2.1,
+     "ev": 0.1117,
+     "id": "1-2",
+     "kind": "single",
+     "legs": [
+      {
+       "bout": "Johnny Walker vs Mick Parkin",
+       "id": "45060:ml:b",
+       "market": [
+        "ml",
+        "b"
+       ],
+       "odds": 110,
+       "p": 0.5294,
+       "p_fanduel": 0.454,
+       "selection": "Mick Parkin to win"
+      }
+     ],
+     "odds": 110,
+     "p": 0.5294,
+     "profit": 0,
+     "reasoning": "Parkin at +110 (FD 45.4%, ours 52.9%). Walker's chin has failed against heavy hitters and heavyweight punches are heavier. Model already leans Parkin and Sherdog's Feely picks him by KO. Risk is Parkin's 18-month layoff, so stake is slightly under quarter-Kelly.",
+     "stake": 2,
+     "status": "open",
+     "to_win": 2.2
+    }
+   ],
+   "book": "FanDuel",
+   "event": "UFC 332: Silva vs. Wang",
+   "event_date": "2026-10-03",
+   "id": "w1",
+   "note": "First card, so small and selective. All 28 fighters made weight; the only late change was McGhee's three-day-notice opponent, where the model's 46% for Romero against FanDuel's 20% is the model being uninformed, so no bet. Most of the sheet's top EV is method/round props (decision, goes the distance), which are model-derived and only half-shrunk toward the price. I distrust them on this card: Soldic, Wint and Smith are finishers against short-notice or power-punching opponents, and Sherdog's picks lean to early finishes. Skipped those. I took two moneylines where the model and our reads agree and there is a stylistic reason: Hernandez over a 42-year-old dos Anjos two years off after three knee surgeries, and Parkin over Walker, whose chin has failed against heavy hitters. Stakes are well under quarter-Kelly because the edges are a few points and the market is sharp.",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-4380",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-4380",
+    "https://www.bestfightodds.com/events/ufc-332-4330"
+   ],
+   "placed_at": "2026-10-02T16:02:31+00:00",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_332",
+   "settled": false,
+   "settled_at": null,
+   "sheet_fetched_at": "2026-10-02T16:02:03+00:00",
+   "staked": 5,
+   "restored_from": "page database ai_picks/w1 (the Friday run's push did not reach the branch)"
+  }
+ ]
 }

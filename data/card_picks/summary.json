@@ -1,0 +1,78 @@
+{
+ "updated": "2026-10-02T21:20:41+00:00",
+ "cards": 0,
+ "bouts": 0,
+ "claude": {
+  "n": 0,
+  "winners": 0,
+  "methods": 0,
+  "points": 0,
+  "log_loss": null
+ },
+ "model": {
+  "n": 0,
+  "winners": 0,
+  "methods": 0,
+  "points": 0,
+  "log_loss": null
+ },
+ "market": {
+  "n": 0,
+  "winners": 0
+ },
+ "overrides": {
+  "n": 0,
+  "claude_right": 0
+ },
+ "method_overrides": {
+  "n": 0,
+  "claude_right": 0,
+  "model_right": 0
+ },
+ "by_method": {
+  "KO/TKO": {
+   "picked": 0,
+   "right": 0,
+   "happened": 0
+  },
+  "SUB": {
+   "picked": 0,
+   "right": 0,
+   "happened": 0
+  },
+  "DEC": {
+   "picked": 0,
+   "right": 0,
+   "happened": 0
+  }
+ },
+ "method_calibration": {
+  "n": 0,
+  "KO/TKO": {
+   "expected": 0,
+   "actual": 0,
+   "z": 0.0
+  },
+  "SUB": {
+   "expected": 0,
+   "actual": 0,
+   "z": 0.0
+  },
+  "DEC": {
+   "expected": 0,
+   "actual": 0,
+   "z": 0.0
+  }
+ },
+ "confidence": [],
+ "lessons": [
+  {
+   "kind": "wait",
+   "text": "Method model: 0 of 100 graded bouts needed before its KO/TKO, submission and decision rates are re-weighted."
+  },
+  {
+   "kind": "wait",
+   "text": "Overrides: Claude has picked against the model 0 times; 30 needed before judging them."
+  }
+ ]
+}

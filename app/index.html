@@ -480,6 +480,8 @@ button.namelink:hover { color: var(--red); }
 .stub-duel { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: center; }
 .stub-big { font-family: var(--display); font-size: 28px; line-height: 1.1; }
 .stub-btn { display: block; width: 100%; margin-top: 14px; padding: 10px; }
+.cp-table td { vertical-align: top; }
+.stub-links { margin-top: auto; padding-top: 8px; display: flex; gap: 16px; flex-wrap: wrap; }
 .stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
 .stub-pro strong { font-family: var(--cond); font-weight: 500; font-size: 17px; text-transform: uppercase; letter-spacing: .03em; }
 .stub-rank { font-family: var(--display); font-size: 20px; min-width: 50px; }
@@ -525,7 +527,8 @@ button.namelink:hover { color: var(--red); }
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
     <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
-    <button role="tab" data-tab="picks" aria-selected="false">AI Picks <span class="count alert" id="picks-alert" hidden>!</span></button>
+    <button role="tab" data-tab="cardpicks" aria-selected="false">AI Picks</button>
+    <button role="tab" data-tab="picks" aria-selected="false">AI Bets <span class="count alert" id="picks-alert" hidden>!</span></button>
     <button role="tab" data-tab="matchup" aria-selected="false">Create a Matchup</button>
   </nav>
   <div class="more" id="more">
@@ -604,6 +607,7 @@ button.namelink:hover { color: var(--red); }
     adj: { fighters: {}, matchups: {}, weights: {} }, card: [], commentary: [], judging: null, journal: [], profile: null,
     tab: "card",
     picks: { sub: "week", summary: null, weeks: [], loaded: false },
+    cp: { sub: "card", summary: null, cards: [], ev: null },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
     pros: { data: null, loading: false, error: "", view: "classes", gender: "", wc: "", q: "", unbeaten: false, open: null },
     my: { sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
@@ -813,7 +817,7 @@ button.namelink:hover { color: var(--red); }
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, cardpicks: renderCardPicks, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -1189,7 +1193,7 @@ button.namelink:hover { color: var(--red); }
     if (key === "scouting") {
       return { title: "Scouting", key, rows: [
         ["What it is", "Claude reads the major MMA outlets every week (MMA Fighting, Sherdog, Bloody Elbow, Cageside Press, MMA Mania, BJPenn.com, MMA Weekly, LowKick MMA, ESPN, UFC.com) plus fight previews and breakdowns, and writes a report on each fighter: how they actually fight, their habits, what's worrying, how to beat them, and the news. Every claim links to its source; facts are checked against the verified fight records."],
-        ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Picks betting sheet."],
+        ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Bets betting sheet."],
         ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
     }
     if (key === "recaps") {
@@ -1197,7 +1201,7 @@ button.namelink:hover { color: var(--red); }
       return { title: "Card recaps", key, rows: [
         ["Model", "The chance our model gave the winner. For cards before live logging began, it's the walk-forward backtest: the model refitted on only the fights before that card, so it never saw the result (marked 'backtest'). From UFC 332 on, it's the live pick frozen before the card (marked 'live')."],
         ["Market", "BestFightOdds' closing line with the bookmaker's margin taken out: what the betting market believed when the fight started."],
-        ["Blend", `The mix the AI Picks betting sheet uses${w ? ` (${w.model.toFixed(2)} × model + ${w.market.toFixed(2)} × market, on the log-odds scale)` : ""}, fitted on earlier fights.`],
+        ["Blend", `The mix the AI Bets betting sheet uses${w ? ` (${w.model.toFixed(2)} × model + ${w.market.toFixed(2)} × market, on the log-odds scale)` : ""}, fitted on earlier fights.`],
         ["Log-loss", "The average penalty −log(chance given to what happened). A coin flip scores 0.693; lower is better. Unlike picks right, it rewards being confident when right and punishes being confident when wrong."],
         ["Why it matters", "A forecaster has to beat the closing line to make money betting. If the blend isn't beating the market over a full season, the betting sheet should lean harder on the market."]] };
     }
@@ -1214,13 +1218,21 @@ button.namelink:hover { color: var(--red); }
     }
     if (key === "my_picks") {
       return { title: "How My Picks works", key, rows: [
-        ["The game", "Everyone who plays starts with $100 of play money and bets UFC cards at FanDuel's prices: moneylines, method, rounds, over/unders and parlays across different bouts. Claude plays the same game in AI Picks; the leaderboard ranks everyone, Claude included."],
+        ["The game", "Everyone who plays starts with $100 of play money and bets UFC cards at FanDuel's prices: moneylines, method, rounds, over/unders and parlays across different bouts. Claude plays the same game in AI Bets; the leaderboard ranks everyone, Claude included."],
         ["Prices", "The board is FanDuel's prices as listed on BestFightOdds when Claude last checked (Tuesday and Friday). Your bet is recorded at the board's price."],
         ["Locking and grading", "Betting closes when the card starts. After the card, Claude grades every bet from results that Wikipedia and Sherdog agree on, the same way it grades its own. A bet saved after the lock, at a price that wasn't on the board, or for more than your available money is voided and refunded."],
         ["Who can play", "Anyone the page is shared with as a Contributor (or above). Viewers from a public link can watch the leaderboard but can't place bets."]] };
     }
-    if (key === "ai_picks") {
+    if (key === "card_picks") {
       return { title: "How AI Picks works", key, rows: [
+        ["The game", "No money. Before every UFC card Claude picks every bout: the winner and how it ends (KO/TKO, submission or decision). Picks lock when the card starts and are committed to the project's history first, so nothing is picked after the fact."],
+        ["Scoring", "1 point for the winner, 1 more for the method when the winner is right (2 at most per bout). Draws, no contests and cancelled bouts don't count. Results must agree on two sources (the Wikipedia event page and Sherdog's records)."],
+        ["Claude vs the model", "Each pick is stored beside the model's own pick for the same bout: the statistics alone, without Claude's scouting read. Where Claude picks a different winner or method, that's an override, and the record shows whether overrides help or hurt."],
+        ["How it updates the model", "After each card the grader compares how often the model expected each ending (KO/TKO, submission, decision) with what happened. Once 100 bouts are graded, an ending it gets wrong beyond noise (|z| ≥ 1.96) is re-weighted in the method model; once Claude has 30 overrides, they decide whether the scouting reads earn more weight or less. The lessons are listed under Track record."],
+        ["AI Bets is separate", "AI Bets judges betting (prices, stakes, bankroll). AI Picks judges reading the fights."]] };
+    }
+    if (key === "ai_picks") {
+      return { title: "How AI Bets works", key, rows: [
         ["Bankroll", "$100 to start. Every settled bet adds its profit or loses its stake; there is no top-up. Minimum bet $1: below that the bankroll is bust and an alert shows here."],
         ["Prices", "FanDuel's odds as listed on BestFightOdds when the bets are placed (Friday). A bet is recorded at that exact price, so nothing can be picked after the fact."],
         ["How Claude decides", "Each Friday a betting sheet prices every FanDuel market on the card: our win probability (the model blended with the market, as the backtest found best), method and round props from the finish model (calibrated to real decision rates, then shrunk halfway to FanDuel's price), edge, expected value and a Kelly stake. Claude then bets at its own discretion: all in, a little, or nothing."],
@@ -1493,9 +1505,11 @@ button.namelink:hover { color: var(--red); }
   function fightWeekSide(ev) {
     const lock = lockFor(ev);
     const fri = new Date(etInstant(ev.date, 11, 59).getTime() - (((new Date(ev.date + "T12:00:00Z").getUTCDay() - 5 + 7) % 7) * 86400000));
-    const placed = state.picks.weeks.find((w) => w.event && fold(w.event).includes(fold(ev.name.split(":")[0])));
+    const same = (x) => x && fold(x).includes(fold(ev.name.split(":")[0]));
+    const placed = state.picks.weeks.find((w) => same(w.event)), picked = state.cp.cards.find((c) => same(c.event));
     const clock = `<div class="stub"><div class="stub-hd">The clock · Eastern time</div>
-      <div class="stub-row"><span>Claude's picks</span><span class="num">${placed ? "In ✓" : etShort(fri)}</span></div>
+      <div class="stub-row"><span>Claude's picks</span><span class="num">${picked ? "In ✓" : etShort(fri)}</span></div>
+      <div class="stub-row"><span>Claude's bets</span><span class="num">${placed ? "In ✓" : etShort(fri)}</span></div>
       <div class="stub-row"><span>Your picks lock</span><span class="num">${etShort(lock)}</span></div>
       <div class="stub-foot num" data-countdown="${lock.toISOString()}">${countdown(lock - Date.now())}</div></div>`;
     const S = state.picks.summary, mine = state.my.uid ? myMoney().bankroll : null;
@@ -1503,7 +1517,7 @@ button.namelink:hover { color: var(--red); }
       <div class="stub-duel"><div><div class="stub-big num">${S ? money(S.bankroll) : "$100.00"}</div><div class="label">Claude</div></div>
       <div><div class="stub-big num" style="color:var(--blue)">${mine != null ? money(mine) : "—"}</div><div class="label">You</div></div></div>
       <button type="button" class="btn primary stub-btn" data-goto="mypicks">${mine != null ? "Place your picks" : "Join the game"}</button>
-      <button type="button" class="btn link" data-goto="picks" style="margin-top:8px">See Claude's picks →</button></div>`;
+      <div class="stub-links"><button type="button" class="btn link" data-goto="cardpicks">Claude's picks →</button><button type="button" class="btn link" data-goto="picks">Claude's bets →</button></div></div>`;
     const P = state.pros;
     let pros = `<div class="muted" style="font-size:14px">Loading…</div>`;
     if (P.data) {
@@ -2006,6 +2020,8 @@ button.namelink:hover { color: var(--red); }
       state.tab = "matchup"; render(); window.scrollTo(0, 0); return;
     }
     if (t.dataset.picksSub) { state.picks.sub = t.dataset.picksSub; render(); return; }
+    if (t.dataset.cpSub) { state.cp.sub = t.dataset.cpSub; render(); return; }
+    if (t.dataset.cpEv) { state.cp.ev = t.dataset.cpEv; state.cp.sub = "card"; render(); return; }
     if (t.dataset.suggDel) { const id = t.dataset.suggDel; delete state.sugg[id]; state.store.deleteSuggestion(id); render(); return; }
     if (t.dataset.prosView) { state.pros.view = t.dataset.prosView; render(); return; }
     if (t.dataset.prosClass) { Object.assign(state.pros, { view: "table", wc: t.dataset.prosClass, open: null }); render(); return; }
@@ -2507,7 +2523,7 @@ button.namelink:hover { color: var(--red); }
   }
   function renderMyPicks(view) {
     const M = state.my, bd = M.board, mon = myMoney(), st = mon.st;
-    const intro = `<section class="panel"><h2 style="margin:0 0 6px">My Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:72ch">Same game as AI Picks: $100 to start, FanDuel's prices, any bet you like. Your bankroll runs all season against Claude's and everyone else's who plays. Bets lock when the card starts and are graded after it.</p></section>`;
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">My Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:72ch">Same game as AI Bets: $100 to start, FanDuel's prices, any bet you like. Your bankroll runs all season against Claude's and everyone else's who plays. Bets lock when the card starts and are graded after it.</p></section>`;
     const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="My Picks view">
         <button type="button" data-my-sub="bet" aria-pressed="${M.sub === "bet"}">Bet</button>
         <button type="button" data-my-sub="record" aria-pressed="${M.sub === "record"}">My record</button>
@@ -2542,6 +2558,9 @@ button.namelink:hover { color: var(--red); }
     state.picks.summary = docs.find((d) => d._id === "summary") || null;
     state.my.board = docs.find((d) => d._id === "board") || state.my.board;
     state.picks.weeks = docs.filter((d) => /^w\d+$/.test(d._id) && d.event).sort((a, b) => (b.placed_at || "").localeCompare(a.placed_at || ""));
+    // AI Picks (the pick'em) shares the collection: "card-summary" and one "card-<date>-<event>" per card.
+    state.cp.summary = docs.find((d) => d._id === "card-summary") || null;
+    state.cp.cards = docs.filter((d) => /^card-\d/.test(d._id) && d.bouts).sort((a, b) => b.date.localeCompare(a.date));
     state.picks.loaded = true;
     renderSoon();
   }
@@ -2602,11 +2621,11 @@ button.namelink:hover { color: var(--red); }
   function renderPicks(view) {
     const P = state.picks, s = P.summary;
     const alert = s && s.bust ? `<div class="pk-alert" role="alert"><strong>Out of money.</strong> The AI's bankroll is down to ${money(s.bankroll)}, below the ${money(s.min_stake || 1)} minimum bet. No more picks can be placed unless the bankroll is topped up.</div>` : "";
-    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="AI Picks view">
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="AI Bets view">
         <button type="button" data-picks-sub="week" aria-pressed="${P.sub === "week"}">This week</button>
         <button type="button" data-picks-sub="record" aria-pressed="${P.sub === "record"}">Track record</button></span>
-        ${infoBtn("ai_picks", "How AI Picks works")}</div>`;
-    const intro = `<section class="panel"><h2 style="margin:0 0 6px">AI Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:70ch">Claude bets a $100 bankroll on the UFC like a real bettor: FanDuel's odds, any bet it likes (straight, parlays, method, rounds, over/unders), as much or as little as it wants. Picks go in every Friday before the card and are graded from results two sources agree on.</p></section>`;
+        ${infoBtn("ai_picks", "How AI Bets works")}</div>`;
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">AI Bets</h2><p class="muted" style="margin:0;font-size:14px;max-width:70ch">Claude bets a $100 bankroll on the UFC like a real bettor: FanDuel's odds, any bet it likes (straight, parlays, method, rounds, over/unders), as much or as little as it wants. Picks go in every Friday before the card and are graded from results two sources agree on.</p></section>`;
     if (!P.loaded) { view.innerHTML = `<div class="stack">${intro}${sub}<div class="loading">Loading the ledger…</div></div>`; return; }
     if (!s && P.noDb) {
       view.innerHTML = `<div class="stack">${intro}${sub}<div class="empty">The picks ledger lives in this page's database, which isn't available in this view. Open the page signed in to claude.ai to see it.</div></div>`;
@@ -2631,6 +2650,79 @@ button.namelink:hover { color: var(--red); }
         ${P.weeks.length ? P.weeks.map((w) => weekPanel(w)).join("") : `<div class="empty">No cards yet.</div>`}`;
     }
     view.innerHTML = `<div class="stack">${alert}${intro}${sub}${body}<p class="muted" style="font-size:12px;margin:0">Updated ${esc(when(s.updated))}. For entertainment and research: a model's picks, not betting advice.</p></div>`;
+  }
+
+
+  // ------------------------------------------------------------ AI Picks (the pick'em)
+  const METHOD_WORD = { "KO/TKO": "KO/TKO", SUB: "submission", DEC: "decision" };
+  function cpPick(winner, method, extra = "") { return `<strong>${esc(winner)}</strong> <span class="muted">by</span> ${esc(METHOD_WORD[method] || method)}${extra}`; }
+  function cpRecordTiles(S) {
+    const c = S ? S.claude : { n: 0, winners: 0, methods: 0, points: 0 }, m = S ? S.model : { n: 0, winners: 0, methods: 0, points: 0 }, k = S ? S.market : { n: 0, winners: 0 };
+    const pctOf = (x, n) => (n ? ` · ${Math.round((x / n) * 100)}%` : "");
+    return `<div class="pk-stats">
+      <div class="pk-stat"><div class="label">Claude · points</div><div class="pk-big num">${c.points}</div><div class="muted" style="font-size:12.5px">of ${c.n * 2} possible</div></div>
+      <div class="pk-stat"><div class="label">Claude · winners</div><div class="pk-big num">${c.winners}–${c.n - c.winners}</div><div class="muted" style="font-size:12.5px">${c.methods} with the method too${pctOf(c.winners, c.n)}</div></div>
+      <div class="pk-stat"><div class="label">The model alone</div><div class="pk-big num">${m.winners}–${m.n - m.winners}</div><div class="muted" style="font-size:12.5px">${m.points} points · ${m.methods} methods</div></div>
+      <div class="pk-stat"><div class="label">Betting favourite</div><div class="pk-big num">${k.winners}–${k.n - k.winners}</div><div class="muted" style="font-size:12.5px">on bouts with a line</div></div></div>`;
+  }
+  function cpCardTable(card) {
+    const rows = card.bouts.map((b) => {
+      const m = b.model, r = b.result, cl = b.claude, ms = b.model_score;
+      const over = m && (m.winner !== b.pick.winner ? "winner" : m.method !== b.pick.method ? "method" : "");
+      const res = !r ? '<span class="muted">—</span>' : r.void ? `<span class="muted">${esc(r.void)} (not counted)</span>`
+        : `${esc(r.winner)} <span class="muted">by</span> ${esc(METHOD_WORD[r.method] || r.method)}${r.round ? ` <span class="muted">R${r.round}</span>` : ""}`;
+      const pts = (x) => (x ? `<span class="tier ${x.points === 2 ? "tier-best" : x.points === 1 ? "tier-sure" : "tier-caution"}">${x.points} pt${x.points === 1 ? "" : "s"}</span>` : "");
+      return `<tr><td><span style="color:var(--red)">${esc(b.a)}</span> <span class="muted">vs</span> <span style="color:var(--blue)">${esc(b.b)}</span><div class="muted" style="font-size:12px">${esc(b.weight_class || "")}${b.rounds === 5 ? " · 5 rds" : ""}</div></td>
+        <td>${cpPick(b.pick.winner, b.pick.method)} <span class="muted num">${Math.round(b.pick.confidence * 100)}%</span>${over ? ` <span class="pill" title="Claude picked a different ${over} from the model">override</span>` : ""}${b.pick.why ? `<div class="pk-why">${esc(b.pick.why)}</div>` : ""}</td>
+        <td>${m ? `${cpPick(m.winner, m.method)} <span class="muted num">${Math.round(m.p_win * 100)}%</span>` : '<span class="muted">no data</span>'}</td>
+        <td>${res}</td><td class="num">${pts(cl)}${ms ? `<div class="muted" style="font-size:12px">model ${ms.points}</div>` : ""}</td></tr>`;
+    }).join("");
+    return `<div class="table-wrap"><table class="list cp-table"><thead><tr><th>Bout</th><th>Claude's pick</th><th>Model's pick</th><th>Result</th><th>Points</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  function renderCardPicks(view) {
+    const C = state.cp, P = state.picks, S = C.summary;
+    const intro = `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h2 style="margin:0">AI Picks</h2>${infoBtn("card_picks", "How AI Picks works")}</div>
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:74ch">No money on the line: Claude picks every bout on the card, the winner and how it ends, before the card starts. 1 point for the winner, 1 more for the method. Each pick sits beside the model's own, so the record shows where Claude's judgment adds to the numbers, and what the model should learn.</p></section>`;
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="AI Picks view">
+        <button type="button" data-cp-sub="card" aria-pressed="${C.sub === "card"}">This card</button>
+        <button type="button" data-cp-sub="record" aria-pressed="${C.sub === "record"}">Track record</button></span></div>`;
+    if (!P.loaded) { view.innerHTML = `<div class="stack">${intro}<div class="loading">Loading the picks…</div></div>`; return; }
+    if (!C.cards.length) {
+      view.innerHTML = `<div class="stack">${intro}<div class="empty">${P.noDb ? "The picks live in this page's database, which isn't available in this view. Open the page signed in to claude.ai." : `No picks yet. The first card's picks go in on <strong>${esc(nextFriday())}</strong>.`}</div></div>`;
+      return;
+    }
+    let body;
+    if (C.sub === "card") {
+      const card = C.cards.find((c) => c.event === C.ev) || C.cards[0];
+      const g = card.bouts.filter((b) => b.claude), gm = card.bouts.filter((b) => b.model_score);
+      const sum = (xs, k, f) => xs.reduce((t, b) => t + (b[k][f] ? (f === "points" ? b[k][f] : 1) : 0), 0);
+      const tabs = C.cards.length > 1 ? `<div class="evtabs" role="tablist">${C.cards.map((c) => `<button type="button" role="tab" data-cp-ev="${esc(c.event)}" aria-selected="${c === card}"><span class="num">${esc(c.date)}</span><strong>${esc(c.event.split(":")[0])}</strong><span class="muted num">${c.bouts.filter((b) => b.claude).reduce((t, b) => t + b.claude.points, 0)} pts</span></button>`).join("")}</div>` : "";
+      body = `${tabs}<section class="panel stack"><div class="toolbar" style="justify-content:space-between;margin:0"><div><h3 style="margin:0">${esc(card.event)}</h3>
+          <div class="muted num" style="font-size:13px">${esc(card.date)} · ${card.bouts.length} bouts · picks locked ${esc(when(card.locked_at))}${card.revision ? ` (revision ${card.revision})` : ""}</div></div>
+          ${g.length ? `<span class="pill num">Claude ${sum(g, "claude", "points")} pts · ${sum(g, "claude", "winner")}/${g.length} winners${gm.length ? ` · model ${sum(gm, "model_score", "points")} pts` : ""}</span>` : `<span class="pill">Locked, awaiting results</span>`}</div>
+        ${card.note ? `<div class="pk-note"><div class="label">The read</div><p>${esc(card.note)}</p></div>` : ""}
+        ${cpCardTable(card)}</section>`;
+    } else {
+      const cal = S && S.method_calibration, L = (S && S.lessons) || [];
+      const ov = S ? S.overrides : { n: 0, claude_right: 0 }, mov = S ? S.method_overrides : { n: 0, claude_right: 0, model_right: 0 };
+      body = `${cpRecordTiles(S)}
+        <section class="panel"><h3 style="margin-top:0">What the record is teaching</h3>
+          <ul class="notes">${L.length ? L.map((l) => `<li>${l.kind === "change" ? "<strong>Change:</strong> " : l.kind === "ok" ? "<strong>Holding:</strong> " : ""}${esc(l.text)}</li>`).join("") : "<li class=\"muted\">Lessons start after the first graded card.</li>"}</ul>
+          <p class="muted" style="font-size:13px;margin:8px 0 0">Overrides so far: Claude picked a different winner from the model ${ov.n} time${ov.n === 1 ? "" : "s"} and was right on ${ov.claude_right}; same winner but a different method ${mov.n} time${mov.n === 1 ? "" : "s"} (Claude's method right ${mov.claude_right}, the model's ${mov.model_right}).</p></section>
+        ${cal && cal.n ? `<section class="panel"><h3 style="margin-top:0">How fights ended vs what the model expected</h3>
+          <div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Ending</th><th class="num">Model expected</th><th class="num">Happened</th><th class="num">Gap (z)</th><th class="num">Claude picked it</th><th class="num">Right</th></tr></thead><tbody>
+          ${["KO/TKO", "SUB", "DEC"].map((m) => `<tr><td>${METHOD_WORD[m][0].toUpperCase() + METHOD_WORD[m].slice(1)}</td><td class="num">${cal[m].expected.toFixed(1)}</td><td class="num">${cal[m].actual}</td><td class="num">${cal[m].z > 0 ? "+" : ""}${cal[m].z.toFixed(2)}</td><td class="num">${S.by_method[m].picked}</td><td class="num">${S.by_method[m].right}</td></tr>`).join("")}
+          </tbody></table></div><p class="muted" style="font-size:12.5px;margin:6px 0 0">Over ${cal.n} graded bouts. A gap beyond ±1.96 after 100 bouts re-weights that ending in the method model${S.method_adjust ? ` (current factors: ${Object.entries(S.method_adjust).map(([k, v]) => `${k} ×${v}`).join(", ")})` : ""}.</p></section>` : ""}
+        ${S && S.confidence && S.confidence.length ? `<section class="panel"><h3 style="margin-top:0">Is Claude's confidence honest?</h3><div class="rbars">${S.confidence.map((b) => `<div class="rbar"><span class="num">said ${Math.round(b.said * 100)}%</span><span class="track"><i class="med" style="left:${(b.said * 100).toFixed(1)}%"></i><b style="width:${(b.won * 100).toFixed(1)}%"></b></span><span class="num">${Math.round(b.won * 100)}% <span class="muted" style="font-size:11px">${b.n}</span></span></div>`).join("")}</div>
+          <p class="muted" style="font-size:12.5px;margin:6px 0 0">The tick is the confidence Claude gave; the bar is how often those picks won.${S.claude.log_loss != null ? ` Log-loss: Claude ${S.claude.log_loss.toFixed(3)}, model ${S.model.log_loss != null ? S.model.log_loss.toFixed(3) : "—"} (lower is better).` : ""}</p></section>` : ""}
+        <h3 style="margin:4px 0 0">Every card</h3>
+        <div class="table-wrap"><table class="list"><thead><tr><th>Card</th><th class="num">Claude</th><th class="num">Model</th><th></th></tr></thead><tbody>
+          ${C.cards.map((c) => { const g = c.bouts.filter((b) => b.claude); return `<tr><td><strong>${esc(c.event)}</strong><div class="muted num" style="font-size:12px">${esc(c.date)}</div></td>
+            <td class="num">${g.length ? `${g.reduce((t, b) => t + b.claude.points, 0)} pts · ${g.filter((b) => b.claude.winner).length}/${g.length}` : "awaiting results"}</td>
+            <td class="num">${g.length ? `${g.filter((b) => b.model_score).reduce((t, b) => t + b.model_score.points, 0)} pts` : "—"}</td>
+            <td><button type="button" class="btn small" data-cp-ev="${esc(c.event)}">Open</button></td></tr>`; }).join("")}</tbody></table></div>`;
+    }
+    view.innerHTML = `<div class="stack">${intro}${sub}${body}<p class="muted" style="font-size:12px;margin:0">${S ? `Record updated ${esc(when(S.updated))}. ` : ""}Picks are for fun and to test the model: not betting advice.</p></div>`;
   }
 
   // ------------------------------------------------------------ more menu

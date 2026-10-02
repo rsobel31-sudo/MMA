@@ -1,10 +1,14 @@
-# AI Picks playbook
+# AI Bets and AI Picks playbook
 
-Claude bets a $100 bankroll on UFC cards at FanDuel's prices. Picks go in every Friday before the card; results are graded on Sunday.
-The ledger (`data/ai_picks/ledger.json`) is the record, and the web page (Fight Lab, **AI Picks** tab) reads a copy from the page database.
+Two separate games, judged separately:
+
+- **AI Bets** (the `picks` command): Claude bets a $100 bankroll on UFC cards at FanDuel's prices. This judges betting: prices, staking, bankroll. Bets go in every Friday before the card; results are graded on Sunday. The ledger (`data/ai_picks/ledger.json`) is the record; the page's **AI Bets** tab reads a copy from the page database.
+- **AI Picks** (the `card-picks` command): no money. Claude picks every bout on the card, the winner and the method (KO/TKO, SUB, DEC). This judges reading fights, beside the model's own pick for each bout, and what it learns goes back into the model. See "AI Picks: the pick'em" below.
+
+(The data folders and the database collection kept their old name, `ai_picks`, for both.)
 
 - Page: https://claude.ai/artifact/4kRut1VP9KGeCFqMd9fR2A
-- Database collection: `ai_picks`. It holds one `summary` document and one document per week (`w1`, `w2`, ...), written with the ArtifactData tool.
+- Database collection: `ai_picks`. For AI Bets it holds one `summary` document and one document per week (`w1`, `w2`, ...); for AI Picks, `card-summary` and one `card-<date>-<event>` per card. All are written with the ArtifactData tool.
 - Branch: `claude/mma-fight-predictor-9sxxhl`
 
 Time zone: the site runs on US Eastern time (ET). Routines are scheduled in America/New_York, times on the page show in ET, and a card's betting locks at 5:00 PM ET for US events and 8:00 AM ET elsewhere (stored in UTC in the sheet's `event_starts`).
@@ -164,7 +168,7 @@ A player's bet is voided (refunded) if any of these is true:
 
 ## Sunday: grade
 
-Also run `python -m mma_predictor scout grade` and `scout sync`, write the `scouting` collection, and commit. Reads and pundit picks are graded against the same two-source results.
+Then grade AI Picks too ("AI Picks: the pick'em" above). Also run `python -m mma_predictor scout grade` and `scout sync`, write the `scouting` collection, and commit. Reads and pundit picks are graded against the same two-source results.
 
 
 Run `picks settle`, `picks sync`, the ArtifactData batch, and a commit ("AI Picks: settled <event>"). If results aren't in on both sources yet (exit code 2), leave the week open; Friday's run settles it.
@@ -194,6 +198,47 @@ python -m mma_predictor refresh          # about 20 minutes
 - It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, verify and export.
 - One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
 - Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json` and `prospects.json`, and commit `data/` and `app/data.json`.
+
+## AI Picks: the pick'em
+
+No money on the line, and no passing: **every bout on the card gets a pick**, a winner and a method (KO/TKO, SUB or DEC), plus the chance Claude gives the pick (0.50-0.99) and a one-line reason. Scoring: 1 point for the winner, 1 more for the method when the winner is right. Draws, no contests and cancelled bouts don't count. Results need the same two sources as AI Bets (Wikipedia and Sherdog agreeing).
+
+**Friday, after the scouting reads and before the bets:**
+
+```bash
+python -m mma_predictor card-picks draft --data data/verified
+```
+
+The draft lists every bout on the Wikipedia card with **the model's own pick: the statistics alone**, without Claude's scouting read. It shows the model's win chance and its chance of the exact winner-and-method, the betting market's chance, and Claude's read. Write `data/card_picks/entries/<date>-<event-slug>.json`:
+
+```json
+{"note": "the read on the card", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO", "confidence": 0.62, "why": "..."}]}
+```
+
+- Pick on judgment. Follow the model where nothing says otherwise. Depart from it (an *override*) only for a reason the numbers can't see: a scouting read, a style matchup, short notice, a fighter's own finishing record against the averaged method model. Write the reason in `why`. Overrides are tracked against the model, so make them count.
+- A bout the model can't price (no data on a fighter) still gets a pick.
+- `confidence` should be honest: the record checks whether picks said at 70% win about 70% of the time.
+
+```bash
+python -m mma_predictor card-picks lock --picks data/card_picks/entries/<file>.json
+```
+
+`lock` refuses a missing bout, a winner who isn't in the bout, a method outside KO/TKO/SUB/DEC, and anything after the card's lock time (the same lock as AI Bets). If the card changes before the lock (a replacement or a cancellation), re-run `draft` and `lock`; the revision count goes up. Then `card-picks sync`, write the printed documents to the `ai_picks` collection (ArtifactData batch; read first and pin `if_version` on existing documents), and commit `data/card_picks/` before the card ("AI Picks: <event>, <n> picks").
+
+**Sunday, after AI Bets settles:**
+
+```bash
+python -m mma_predictor card-picks grade
+python -m mma_predictor card-picks sync
+```
+
+`grade` scores every pick, Claude's and the model's, and rewrites `data/card_picks/summary.json`. Write the sync to the database and commit ("AI Picks: graded <event>"). Results still missing on one source stay pending until the next run.
+
+**What the record changes in the model (the feedback loop).** `grade` prints the lessons; act on each `change`:
+
+- **Method model.** Once 100 bouts are graded, an ending the model gets wrong beyond noise (|z| ≥ 1.96: it expected more or fewer KO/TKOs, submissions or decisions than happened) is re-weighted automatically in `data/card_picks/method_adjust.json`. The change is shrunk halfway and capped at ±25%, and `card-picks draft` applies it. If the gap is in decisions, also re-run `picks calibrate` (the decision-rate correction AI Bets prices props with). Mention the change in the summary and commit it.
+- **Claude's judgment.** Once Claude has 30 overrides of the model's winner, a hit rate clearly above 50% means the scouting reads deserve more weight in the model (raise the cap in `reads.py`, and the scouting factor). A rate clearly below 50% means follow the model more and shrink the reads. Make the change in code, run the tests, and note it in the commit.
+- **Confidence.** If picks said at 70% win far less often (the confidence table under Track record), lower the confidence you give.
 
 ## Bust
 
