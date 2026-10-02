@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-01",
+ "fetched": "2026-10-02",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -152,6 +152,20 @@
     {
      "order": 10,
      "segment": "Early preliminary card",
+     "weight_class": "Welterweight",
+     "a": "Jacobe Smith",
+     "b": "Bruce Whitehead",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 11,
+     "segment": "Early preliminary card",
      "weight_class": "Lightweight",
      "a": "Rafael dos Anjos",
      "b": "Alexander Hernandez",
@@ -164,25 +178,11 @@
      "main_event": false
     },
     {
-     "order": 11,
+     "order": 12,
      "segment": "Early preliminary card",
      "weight_class": "Middleweight",
      "a": "Marvin Vettori",
      "b": "Ismail Naurdiev",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Early preliminary card",
-     "weight_class": "Welterweight",
-     "a": "Jacobe Smith",
-     "b": "Bruce Whitehead",
      "title": false,
      "result": "",
      "decided": false,
@@ -492,20 +492,6 @@
     {
      "order": 7,
      "segment": "Preliminary card",
-     "weight_class": "Heavyweight",
-     "a": "Javad Mahjoub",
-     "b": "Louie Sutherland",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Preliminary card",
      "weight_class": "Bantamweight",
      "a": "Chad Anheliger",
      "b": "Steven Koslow",
@@ -518,7 +504,7 @@
      "main_event": false
     },
     {
-     "order": 9,
+     "order": 8,
      "segment": "Preliminary card",
      "weight_class": "Heavyweight",
      "a": "Tanner Boser",
@@ -532,7 +518,7 @@
      "main_event": false
     },
     {
-     "order": 10,
+     "order": 9,
      "segment": "Preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Melissa Croden",
@@ -546,25 +532,33 @@
      "main_event": false
     },
     {
-     "order": 11,
-     "segment": "Preliminary card",
-     "weight_class": "Middleweight",
-     "a": "Julien Leblanc",
-     "b": "Gilbert Urbina",
+     "order": 10,
+     "segment": "Announced",
+     "weight_class": "Women's Flyweight",
+     "a": "Katlyn Cerminara",
+     "b": "Mackenzie Stiller",
      "title": false,
      "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 11,
+     "segment": "Announced",
+     "weight_class": "Heavyweight",
+     "a": "Javad Mahjoub",
+     "b": "Joel Faglier",
+     "title": false,
+     "result": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 12,
      "segment": "Announced",
-     "weight_class": "Women's Flyweight",
-     "a": "Katlyn Cerminara",
-     "b": "TBD",
+     "weight_class": "Middleweight",
+     "a": "Julien Leblanc",
+     "b": "Nick Galanti",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -730,6 +724,17 @@
      "weight_class": "Featherweight",
      "a": "Bolaji Oki",
      "b": "Daniel Santos",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 12,
+     "segment": "Announced",
+     "weight_class": "Women's Strawweight",
+     "a": "Iasmin Lucindo",
+     "b": "Nicolle Caliari",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -1258,6 +1263,28 @@
      "weight_class": "Middleweight",
      "a": "Donte Johnson",
      "b": "C\u00e9sar Almeida",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 12,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Jared Gordon",
+     "b": "Melquizael Costa",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 13,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Evan Elder",
+     "b": "Samuel Sanches",
      "title": false,
      "result": "",
      "rounds": 3,
