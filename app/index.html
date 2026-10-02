@@ -1,39 +1,44 @@
 <title>MMA Fight Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
 <style>
-/* Look: calm product page (Land-book style). Ivory ground, white rounded cards, a serif display face over a clean sans, pill controls; red and blue corners keep their meaning. */
+/* Look: Fight Bill. A classic boxing poster: cream paper, black ink, slab-serif billing, condensed caps for labels, heavy rules, square corners. Red and blue corners keep their meaning. Dark mode prints the same bill on black. */
 :root {
-  --bg: #f6f3ec;
-  --surface: #ffffff;
-  --surface-2: #f3efe6;
-  --ink: #17181c;
-  --muted: #5b5e66;
-  --line: #e6e0d4;
+  --bg: #efe3c4;
+  --surface: #f6edd5;
+  --surface-2: #e7d9b3;
+  --ink: #1c1a17;
+  --muted: #4a4438;
+  --line: #b9a97e;
+  --rule: #1c1a17;
   --red: #b3261e;
-  --red-soft: #f6deda;
-  --blue: #1f4fb3;
-  --blue-soft: #dce4f5;
-  --edit: #955708;
-  --edit-soft: #f7ead5;
-  --good: #1f7a4a;
-  --focus: #1f4fb3;
-  --shadow: 0 1px 2px rgba(23, 24, 28, .05), 0 14px 32px -20px rgba(23, 24, 28, .22);
-  --display: "Fraunces", Georgia, "Times New Roman", serif;
-  --body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --red-soft: #efcfc3;
+  --blue: #1e3a6d;
+  --blue-soft: #d2d8e0;
+  --edit: #855600;
+  --edit-soft: #ead9a6;
+  --good: #2b6a3c;
+  --focus: #1e3a6d;
+  --masthead: #1c1a17;
+  --mast-ink: #efe3c4;
+  --mast-muted: #cfc3a4;
+  --shadow: none;
+  --display: "Alfa Slab One", "Rockwell", Georgia, serif;
+  --cond: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141412; --surface: #1d1c19; --surface-2: #26241f; --ink: #f2eee6; --muted: #aaa498; --line: #35322c;
-    --red: #e9665c; --red-soft: #3b1f1c; --blue: #7ea2f0; --blue-soft: #1c2742; --edit: #e6aa4a; --edit-soft: #3a2c14;
-    --good: #52c287; --focus: #7ea2f0; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 32px -20px rgba(0, 0, 0, .6); color-scheme: dark;
+    --bg: #15130f; --surface: #1f1c16; --surface-2: #2a261e; --ink: #efe3c4; --muted: #b6aa88; --line: #4a4336; --rule: #efe3c4;
+    --red: #e45a4d; --red-soft: #3e1d18; --blue: #8fa9da; --blue-soft: #1b2537; --edit: #e1b052; --edit-soft: #3a2e14;
+    --good: #6cbf84; --focus: #8fa9da; --masthead: #0b0a08; --mast-ink: #efe3c4; --mast-muted: #a99d7d; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #141412; --surface: #1d1c19; --surface-2: #26241f; --ink: #f2eee6; --muted: #aaa498; --line: #35322c;
-  --red: #e9665c; --red-soft: #3b1f1c; --blue: #7ea2f0; --blue-soft: #1c2742; --edit: #e6aa4a; --edit-soft: #3a2c14;
-  --good: #52c287; --focus: #7ea2f0; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 32px -20px rgba(0, 0, 0, .6); color-scheme: dark;
+  --bg: #15130f; --surface: #1f1c16; --surface-2: #2a261e; --ink: #efe3c4; --muted: #b6aa88; --line: #4a4336; --rule: #efe3c4;
+  --red: #e45a4d; --red-soft: #3e1d18; --blue: #8fa9da; --blue-soft: #1b2537; --edit: #e1b052; --edit-soft: #3a2e14;
+  --good: #6cbf84; --focus: #8fa9da; --masthead: #0b0a08; --mast-ink: #efe3c4; --mast-muted: #a99d7d; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; margin: 0; }
@@ -355,80 +360,129 @@ pre.json { background: var(--surface-2); border: 1px solid var(--line); border-r
 }
 @media (prefers-reduced-motion: reduce) { .probbar div { transition: none; } }
 
-/* ---- Land-book theme layer: overrides the base component styles above ---- */
-body { font-size: 15.5px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-.wrap { max-width: 1240px; padding-inline: 24px; padding-block: 0 72px; }
-h1, h2, h3 { font-weight: 500; letter-spacing: -.01em; text-transform: none; }
+/* ---- Fight Bill theme layer: overrides the base component styles above ---- */
+body { font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1240px; padding-inline: 24px; padding-block: 28px 72px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: .01em; text-transform: uppercase; }
 h3 { font-size: 22px; }
-.label { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .08em; }
-header.top { align-items: center; padding-block: 22px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
-header.top h1 { font-size: 26px; font-weight: 600; text-transform: none; display: flex; align-items: center; gap: 10px; }
-header.top h1 span { color: inherit; }
-header.top h1 svg { flex: 0 0 auto; }
-header.top .tagline { font-size: 14px; color: var(--muted); margin-top: 2px; }
-nav.tabs { gap: 6px; border-bottom: 0; margin: 20px 0 28px; padding: 4px; background: var(--surface-2); border-radius: 999px; width: fit-content; max-width: 100%; }
-nav.tabs button { font-family: var(--body); font-weight: 600; font-size: 14.5px; text-transform: none; letter-spacing: 0; padding: 9px 18px; border: 0; margin: 0; border-radius: 999px; }
-nav.tabs button:hover { color: var(--ink); }
-nav.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
-nav.tabs .count { border-radius: 999px; }
-.navbar { display: flex; align-items: center; gap: 12px; margin: 20px 0 28px; }
-.navbar nav.tabs { margin: 0; min-width: 0; }
-.more { position: relative; margin-left: auto; flex-shrink: 0; }
-.more-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--surface-2); color: var(--muted); border: 0; border-radius: 999px; padding: 13px 18px; font: 600 14.5px var(--body); cursor: pointer; white-space: nowrap; }
-.more-btn:hover, .more-btn[aria-expanded="true"] { color: var(--ink); }
-.more-btn.active { background: var(--ink); color: var(--bg); }
+.label { font-family: var(--cond); font-weight: 500; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+
+/* Masthead: the black bar across the top of the bill */
+.masthead { background: var(--masthead); color: var(--mast-ink); border-bottom: 6px double var(--red); }
+.mast-in { max-width: 1240px; margin: 0 auto; padding-inline: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; }
+header.top { display: flex; flex-direction: column; gap: 0; padding-block: 10px 8px; border: 0; margin: 0; }
+header.top h1 { font-size: 30px; color: var(--mast-ink); display: flex; align-items: center; gap: 10px; letter-spacing: .02em; }
+header.top h1 span { color: var(--red); }
+header.top .tagline { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--mast-muted); }
+.navbar { display: flex; align-items: stretch; gap: 0; margin: 0; flex: 1 1 520px; min-width: 0; }
+nav.tabs { display: flex; gap: 0; margin: 0; padding: 0; background: none; border: 0; border-radius: 0; overflow-x: auto; min-width: 0; }
+nav.tabs button, .more-btn { font-family: var(--cond); font-weight: 500; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--mast-muted); background: none; border: 0; border-radius: 0; padding: 18px 14px 14px; margin: 0; border-bottom: 4px solid transparent; cursor: pointer; white-space: nowrap; }
+nav.tabs button:hover, .more-btn:hover { color: var(--mast-ink); }
+nav.tabs button[aria-selected="true"], .more-btn.active { color: var(--mast-ink); background: none; border-bottom-color: var(--red); }
+nav.tabs .count, .more-btn .count, .more-menu .count { font-family: var(--cond); font-size: 12px; letter-spacing: 0; border-radius: 0; background: var(--red); color: #fff; padding: 0 5px; margin-left: 4px; }
+.more { position: relative; margin-left: auto; flex-shrink: 0; display: flex; }
+.more-btn { display: inline-flex; align-items: center; gap: 6px; }
 .more-btn svg { transition: transform .15s; }
 .more-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
-.more-btn .count, .more-menu .count { font-size: 12px; background: var(--edit-soft); color: var(--edit); border-radius: 999px; padding: 0 6px; }
-.more-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 40; min-width: 220px; padding: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 32px rgba(0,0,0,.14); display: grid; gap: 2px; }
+.more-menu { position: absolute; right: 0; top: 100%; z-index: 40; min-width: 230px; padding: 4px; background: var(--surface); border: 3px solid var(--rule); border-radius: 0; box-shadow: 6px 6px 0 rgba(0,0,0,.25); display: grid; gap: 0; }
 .more-menu[hidden] { display: none; }
-.more-menu button { text-align: left; background: none; border: 0; border-radius: 9px; padding: 10px 12px; font: 600 14.5px var(--body); color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.more-menu button { text-align: left; background: none; border: 0; border-bottom: 1px dotted var(--line); border-radius: 0; padding: 10px 12px; font: 500 15px var(--cond); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.more-menu button:last-child { border-bottom: 0; }
 .more-menu button:hover, .more-menu button:focus-visible { background: var(--surface-2); outline: none; }
-.more-menu button[aria-current="page"] { background: var(--surface-2); }
-.more-menu button[aria-current="page"]::after { content: "✓"; color: var(--muted); }
-@media (max-width: 600px) { .more-btn { padding: 11px 14px; } }
-.panel { border: 1px solid transparent; border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
-.stack { gap: 20px; }
-.grid2 { gap: 20px; }
-.btn { border-radius: 999px; padding: 8px 16px; background: var(--surface); font-weight: 600; }
-.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.btn.small { padding: 5px 12px; font-size: 13px; }
-input[type="text"], input[type="number"], input[type="search"], textarea, select { border-radius: 12px; padding: 9px 12px; }
-.corner input { font-family: var(--display); font-weight: 500; font-size: 24px; padding: 10px 14px; border-left-width: 4px; }
-.vs { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 24px; }
-.seg { border-radius: 999px; }
-.seg button { padding: 7px 14px; font-weight: 600; }
-.names h2 { font-family: var(--display); font-weight: 500; text-transform: none; font-size: clamp(26px, 4vw, 40px); letter-spacing: -.02em; }
-.probbar { border-radius: 14px; height: 48px; font-family: var(--body); font-size: 18px; }
+.more-menu button[aria-current="page"] { color: var(--red); }
+.more-menu button[aria-current="page"]::after { content: "★"; }
+
+/* Panels are ticket stubs: square, ink-ruled, no shadow */
+.panel { background: var(--surface); border: 3px solid var(--rule); border-radius: 0; padding: 22px 24px; box-shadow: none; }
+.stack { gap: 22px; }
+.grid2 { gap: 22px; }
+.btn { font-family: var(--cond); font-weight: 500; letter-spacing: .12em; text-transform: uppercase; font-size: 14px; border: 2px solid var(--rule); border-radius: 0; background: var(--surface); padding: 7px 14px; }
+.btn:hover { background: var(--rule); color: var(--bg); border-color: var(--rule); }
+.btn.primary { background: var(--rule); color: var(--bg); border-color: var(--rule); }
+.btn.primary:hover { background: var(--red); border-color: var(--red); color: #fff; }
+.btn.small { padding: 3px 9px; font-size: 12.5px; }
+.btn.link { font-family: var(--body); letter-spacing: 0; text-transform: none; border: 0; }
+.btn.link:hover { background: none; color: var(--red); }
+input[type="text"], input[type="number"], input[type="search"], textarea, select { border: 2px solid var(--line); border-radius: 0; padding: 8px 10px; background: var(--surface); }
+input:focus, textarea:focus, select:focus { border-color: var(--rule); }
+.corner input { font-family: var(--display); font-weight: 400; font-size: 24px; padding: 10px 14px; border-left-width: 8px; text-transform: uppercase; }
+.vs { font-family: var(--body); font-style: italic; font-weight: 400; font-size: 28px; color: var(--ink); }
+.seg { border: 2px solid var(--rule); border-radius: 0; }
+.seg button { font-family: var(--cond); font-weight: 500; letter-spacing: .1em; text-transform: uppercase; font-size: 13.5px; padding: 6px 14px; background: var(--surface); }
+.seg button[aria-pressed="true"] { background: var(--rule); color: var(--bg); }
+.names h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(26px, 4.4vw, 48px); line-height: 1; letter-spacing: .01em; }
+.probbar { border-radius: 0; height: 50px; font-family: var(--display); font-weight: 400; font-size: 22px; border: 3px solid var(--rule); }
 .probbar div { padding-inline: 16px; }
-.pill { border-radius: 999px; border: 0; padding: 4px 11px; font-size: 12.5px; }
-.verdict-line .pill.num { background: var(--surface-2); font-size: 13px; padding: 6px 12px; }
-.mtrack, .mtrack div, .rbar .track, .rbar .track b, .wc li .bar, .wc li .bar span, .fbar div { border-radius: 999px; }
-.mhead { font-family: var(--body); font-weight: 700; }
-table.tape th { font-family: var(--display); font-weight: 500; font-size: 20px; text-transform: none; }
+.pill { font-family: var(--cond); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; border-radius: 0; border: 1px solid var(--rule); background: transparent; padding: 1px 7px; font-size: 12px; }
+.pill.edit, .pill.warn { border-color: var(--edit); }
+.verdict-line .pill.num { font-size: 13px; padding: 4px 10px; }
+.mtrack, .mtrack div, .rbar .track, .rbar .track b, .wc li .bar, .wc li .bar span, .fbar div, .mini { border-radius: 0; }
+.mhead { font-family: var(--cond); font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+table.tape th { font-family: var(--display); font-weight: 400; font-size: 21px; text-transform: uppercase; }
 table.tape th, table.tape td { padding: 7px 8px; }
-table.tape tr.group td { font-family: var(--body); font-size: 12px; font-weight: 700; letter-spacing: .08em; padding-top: 22px; }
-table.list th { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .06em; }
-table.list td { padding-block: 10px; }
-.wc { border-radius: 16px; border-color: var(--line); background: var(--surface); }
-.wc-hd h3 { font-family: var(--display); text-transform: none; font-size: 22px; }
-.ph-main h2 { font-family: var(--display); font-weight: 500; text-transform: none; letter-spacing: -.02em; font-size: clamp(32px, 5vw, 52px); }
-.ph-record { font-family: var(--body); font-weight: 600; font-size: 20px; }
-.evtabs button { border-radius: 16px; padding: 12px 14px; }
-.evtabs button strong { font-family: var(--display); font-weight: 500; font-size: 16px; }
-.evtabs button[aria-selected="true"] { box-shadow: var(--shadow); }
-.tier, span.verdict { border-radius: 999px; }
-.nostats, .judge { border-radius: 12px; }
-.empty { border-radius: 20px; }
-pre.json { border-radius: 12px; }
-dialog.info-dlg { border: 0; border-radius: 20px; padding: 26px 28px; box-shadow: var(--shadow); }
+table.tape tr.group td { font-family: var(--cond); font-size: 14px; font-weight: 500; letter-spacing: .2em; padding-top: 22px; border-bottom: 3px double var(--rule); }
+table.tape tr.group td span { font-family: var(--body); letter-spacing: 0; }
+table.list th { font-family: var(--cond); font-weight: 500; font-size: 13px; letter-spacing: .14em; color: var(--ink); border-bottom: 3px solid var(--rule); }
+table.list td { padding-block: 11px; border-bottom: 1px solid var(--line); }
+table.list tr.clickable:hover td, .pr-row:hover td { background: var(--surface-2); }
+.wc { border: 3px solid var(--rule); border-radius: 0; background: var(--surface); }
+.wc-hd { border-bottom: 3px double var(--rule); padding-bottom: 6px; margin-bottom: 8px; }
+.wc-hd h3 { font-family: var(--display); font-size: 20px; }
+.wc li .bar span { background: var(--red); opacity: .85; }
+.ph-main h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; font-size: clamp(34px, 5.4vw, 64px); line-height: .95; }
+.ph-record { font-family: var(--cond); font-weight: 500; font-size: 26px; letter-spacing: .06em; color: var(--ink); }
+.evtabs { gap: 0; border: 3px solid var(--rule); background: var(--surface); padding: 0; }
+.evtabs button { border: 0; border-right: 1px solid var(--line); border-radius: 0; padding: 10px 14px; background: none; font-family: var(--cond); letter-spacing: .06em; }
+.evtabs button strong { font-family: var(--display); font-weight: 400; font-size: 16px; text-transform: uppercase; letter-spacing: .01em; }
+.evtabs button[aria-selected="true"] { background: var(--rule); color: var(--bg); box-shadow: none; }
+.evtabs button[aria-selected="true"] .muted { color: var(--mast-muted); }
+.tier, span.verdict { font-family: var(--cond); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; border-radius: 0; }
+.nostats, .judge, .sc-read, .pk-note, .mp-slip { border-radius: 0; }
+.sc-read, .pk-note { border-left: 6px solid var(--red); }
+.pk-stat { border: 3px solid var(--rule); border-radius: 0; background: var(--surface); }
+.pk-big { font-family: var(--display); font-weight: 400; font-size: 32px; }
+.pk-alert { border-radius: 0; border: 3px solid var(--rule); font-family: var(--cond); letter-spacing: .06em; }
+.odds-btn { border: 2px solid var(--line); border-radius: 0; background: var(--surface); font-family: var(--cond); font-weight: 500; letter-spacing: .04em; }
+.odds-btn:hover { border-color: var(--rule); }
+.odds-btn.on { background: var(--rule); color: var(--bg); border-color: var(--rule); }
+.cb-list { border: 3px solid var(--rule); border-radius: 0; box-shadow: 6px 6px 0 rgba(0,0,0,.2); }
+.cb-list li { border-radius: 0; }
+.empty { border: 2px dashed var(--line); border-radius: 0; font-style: italic; }
+pre.json { border-radius: 0; }
+dialog.info-dlg { border: 4px solid var(--rule); border-radius: 0; padding: 26px 28px; box-shadow: 10px 10px 0 rgba(0,0,0,.3); background: var(--surface); }
 dialog.info-dlg h3 { font-size: 28px; }
-dialog.info-dlg dt { font-family: var(--body); font-weight: 700; font-size: 12px; letter-spacing: .08em; }
-.mini { border-radius: 999px; }
+dialog.info-dlg dt { font-family: var(--cond); font-weight: 500; font-size: 13px; letter-spacing: .14em; }
 input.iscore { width: 76px; text-align: center; }
 a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
 a:hover { color: var(--red); text-decoration-color: currentColor; }
-@media (max-width: 600px) { .wrap { padding-inline: 16px; } .panel { padding: 18px; border-radius: 16px; } header.top { padding-block: 16px; } }
+button.namelink:hover { color: var(--red); }
+
+/* The bill: main-event billing at the top of a card */
+.bill { text-align: center; padding: 30px 24px 26px; background: var(--surface); border: 3px solid var(--rule); outline: 1px solid var(--rule); outline-offset: 4px; margin: 4px; }
+.bill-kicker { display: flex; align-items: center; gap: 16px; font-family: var(--cond); font-size: 14px; letter-spacing: .3em; text-transform: uppercase; }
+.bill-kicker::before, .bill-kicker::after { content: ""; flex: 1; height: 3px; background: var(--rule); }
+.bill-event { font-family: var(--display); font-size: clamp(44px, 8vw, 104px); line-height: .92; color: var(--red); margin: 14px 0 4px; text-transform: uppercase; overflow-wrap: anywhere; }
+.bill-bout { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 18px; margin-top: 14px; }
+.bill-name { font-family: var(--display); font-size: clamp(28px, 4.6vw, 58px); line-height: 1; text-transform: uppercase; overflow-wrap: anywhere; }
+.bill-name.a { color: var(--red); text-align: right; } .bill-name.b { color: var(--blue); text-align: left; }
+.bill-vs { font-family: var(--body); font-style: italic; font-size: 34px; }
+.bill-odds { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 18px; font-family: var(--cond); font-size: 15px; letter-spacing: .08em; margin-top: 8px; }
+.bill-odds > :first-child { text-align: right; } .bill-odds > :last-child { text-align: left; }
+.bill-sub { font-family: var(--cond); font-size: 16px; letter-spacing: .2em; text-transform: uppercase; margin-top: 14px; }
+.bill-read { max-width: 60ch; margin: 10px auto 0; font-size: 17px; }
+.bill-rule { height: 6px; background: var(--rule); margin: 22px 0 3px; } .bill-rule + .bill-rule { height: 2px; margin: 0; }
+@media (max-width: 640px) {
+  .bill-bout, .bill-odds { grid-template-columns: 1fr; gap: 4px; }
+  .bill-name.a, .bill-name.b, .bill-odds > * { text-align: center !important; }
+}
+@media (max-width: 760px) {
+  .mast-in { padding-inline: 16px; }
+  header.top { padding-block: 12px 0; }
+  table.list.bouts { min-width: 760px; }
+  .navbar { flex-basis: 100%; }
+  nav.tabs button, .more-btn { padding: 12px 10px 10px; font-size: 13.5px; letter-spacing: .1em; }
+}
+@media (max-width: 600px) { .wrap { padding-inline: 16px; padding-top: 18px; } .panel { padding: 16px; } }
   .rc-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
   .rc-tile { border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
   .rc-big { font-size: 26px; font-weight: 700; }
@@ -450,12 +504,10 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   button.star:hover { color: #d4a017; }
 </style>
 
-<div class="wrap">
+<div class="masthead"><div class="mast-in">
   <header class="top">
-    <div>
-      <h1><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="var(--red)" stroke-width="2.5"/><path d="M14 2v24M2 14h24" stroke="currentColor" stroke-width="1.5"/></svg>Fight <span>Lab</span></h1>
+      <h1>Fight <span>Lab</span></h1>
       <div class="tagline">Know the fight before the cage door closes.</div>
-    </div>
   </header>
   <div class="navbar">
   <nav class="tabs" role="tablist" id="tabs">
@@ -475,6 +527,8 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
     </div>
   </div>
   </div>
+</div></div>
+<div class="wrap">
   <main id="view"><div class="loading">Loading fighter data…</div></main>
   <dialog class="info-dlg" id="info-dlg" aria-labelledby="info-title"><button class="btn small close" type="button" data-info-close="1" aria-label="Close">✕</button><div id="info-body"></div></dialog>
 </div>
@@ -1374,6 +1428,33 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       : `<section class="panel"><h3 style="margin:0 0 4px">Claude's review</h3><p class="muted" style="margin:0;font-size:13.5px">Written on the Sunday after the card: what the model and the market got right and wrong, and why${canEdit ? ", with your notes worked in" : ""}.</p></section>`;
     view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}${insight}${rv}</div>`;
   }
+  // The bill: the main event printed like a fight poster's headline billing.
+  function billHero(ev) {
+    const order = (b) => SEGMENT_ORDER.indexOf(b.segment) < 0 ? 99 : SEGMENT_ORDER.indexOf(b.segment);
+    const main = ev.bouts.slice().sort((x, y) => order(x) - order(y))[0];
+    if (!main) return "";
+    const day = new Date(ev.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+    const head = ev.name.split(":")[0];
+    const name = (raw, id, side) => `<div class="bill-name ${side}">${id && state.byName.has(id) ? `<button class="namelink" type="button" data-profile="${esc(id)}">${esc(raw)}</button>` : esc(raw)}</div>`;
+    let odds = "", read = "";
+    if (main.a_id && main.b_id) {
+      const r = predict(main.a_id, main.b_id, main.rounds || 3), pa = r.p, mk = marketFor(main.a_id, main.b_id);
+      const pm = mk && mk.a_now != null && mk.b_now != null ? fairP(mk.a_now, mk.b_now) : null;
+      const side = (p, m, o) => `MODEL ${pct(p, 0)}${m != null ? ` · MARKET ${pct(m, 0)} · ${fmtOdds(o)}` : ""}`;
+      odds = `<div class="bill-odds num"><span>${side(pa, pm, mk && mk.a_now)}</span><span></span><span>${side(1 - pa, pm == null ? null : 1 - pm, mk && mk.b_now)}</span></div>`;
+      const best = [["a", main.a], ["b", main.b]].flatMap(([s, n]) => Object.entries(r.methods[s]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];
+      const pick = pa >= 0.5 ? main.a : main.b, edge = pm == null ? null : (pa >= 0.5 ? pa - pm : pm - pa);
+      read = `<p class="bill-read">The model makes ${esc(pick)} the pick at ${pct(Math.max(pa, 1 - pa), 0)}${edge == null ? "" : Math.abs(edge) < 0.03 ? ", close to the market" : edge > 0 ? `, ${Math.round(edge * 100)} points above the market` : `, ${Math.round(-edge * 100)} points below the market`}. Most likely result: <strong>${esc(best[0])} by ${esc(best[1])} (${pct(best[2], 0)})</strong>.
+        <button class="btn small" type="button" data-open-bout="${esc(main.a_id)}|${esc(main.b_id)}|${main.rounds || 3}" style="margin-left:6px">Full breakdown</button></p>`;
+    }
+    return `<section class="bill" aria-label="Main event">
+      <div class="bill-kicker"><span>Fight Lab presents · ${esc(day)} · ${esc(ev.venue || "")}${ev.location ? ", " + esc(ev.location.split(",")[0]) : ""}</span></div>
+      <div class="bill-event">${esc(head)}</div>
+      <div class="bill-sub">Main event${main.title ? " · Title fight" : ""} · ${main.rounds === 5 ? "Five rounds" : "Three rounds"} · ${esc(main.weight_class || "")}</div>
+      <div class="bill-bout">${name(main.a, main.a_id, "a")}<div class="bill-vs">vs.</div>${name(main.b, main.b_id, "b")}</div>
+      ${odds}${read}
+    </section>`;
+  }
   function renderCard(view) {
     if (state.cardView === "recaps") { renderRecaps(view); return; }
     const up = state.data.upcoming || { events: [] };
@@ -1395,7 +1476,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
       }
       const tierLine = Object.keys(TIER_LABEL).filter((k) => tiers[k]).map((k) => `<span class="tier tier-${k}">${TIER_LABEL[k]} ${tiers[k]}</span>`).join(" ");
       const segs = [...new Set(ev.bouts.map((b) => b.segment))].sort((x, y) => SEGMENT_ORDER.indexOf(x) - SEGMENT_ORDER.indexOf(y));
-      html += `<section class="panel stack">
+      html += billHero(ev) + `<section class="panel stack">
         <div><h2 style="font-size:36px">${esc(ev.name)}</h2>
           <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${esc(ev.venue)}${ev.location ? ", " + esc(ev.location) : ""} · ${predictable} of ${ev.bouts.length} bouts predictable${ev.url ? ` · <a href="${esc(ev.url)}" target="_blank" rel="noopener">event page</a>` : ""}</p>
           <div class="toolbar" style="margin:10px 0 0">${tierLine || '<span class="muted" style="font-size:13px">No highlighted bouts on this card.</span>'}
