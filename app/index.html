@@ -482,6 +482,8 @@ button.namelink:hover { color: var(--red); }
 .stub-btn { display: block; width: 100%; margin-top: 14px; padding: 10px; }
 .cp-table td { vertical-align: top; }
 .stub-links { margin-top: auto; padding-top: 8px; display: flex; gap: 16px; flex-wrap: wrap; }
+.fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 18px; }
+.fn-bout textarea { width: 100%; margin-top: 4px; }
 .stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
 .stub-pro strong { font-family: var(--cond); font-weight: 500; font-size: 17px; text-transform: uppercase; letter-spacing: .03em; }
 .stub-rank { font-family: var(--display); font-size: 20px; min-width: 50px; }
@@ -1450,7 +1452,10 @@ button.namelink:hover { color: var(--red); }
     const rv = review ? `<section class="panel stack"><div class="toolbar" style="margin:0"><h3 style="margin:0">Claude's review</h3><span class="muted" style="font-size:12.5px">${esc((review.written || "").slice(0, 10))}${review.notes_used ? " · includes your notes" : ""}</span></div>
         ${String(review.review || "").split(/\n{2,}/).map((para) => `<p style="margin:0">${esc(para)}</p>`).join("")}</section>`
       : `<section class="panel"><h3 style="margin:0 0 4px">Claude's review</h3><p class="muted" style="margin:0;font-size:13.5px">Written on the Sunday after the card: what the model and the market got right and wrong, and why${canEdit ? ", with your notes worked in" : ""}.</p></section>`;
-    view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}${insight}${rv}</div>`;
+    const fn = Object.entries(state.recapNotes || {}).find(([k, v]) => k.startsWith("live-" + ev.date) && v && (v.card || Object.values(v.bouts || {}).some(Boolean)));
+    const fnHtml = fn ? `<section class="panel stack"><h3 style="margin:0">Fight-night notes</h3>${fn[1].card ? `<p style="margin:0;white-space:pre-wrap">${esc(fn[1].card)}</p>` : ""}
+      <ul class="notes">${Object.entries(fn[1].bouts || {}).filter(([, v]) => v).map(([k, v]) => `<li><strong>${esc(k.replace(/--/g, " vs ").replace(/-/g, " "))}</strong>: ${esc(v)}</li>`).join("")}</ul></section>` : "";
+    view.innerHTML = `<div class="stack">${head}${season}<section class="panel">${tabs}</section>${card}${fnHtml}${insight}${rv}</div>`;
   }
   // The bill: the main event printed like a fight poster's headline billing.
   function billHero(ev) {
@@ -1540,6 +1545,25 @@ button.namelink:hover { color: var(--red); }
       <button type="button" class="btn link" data-goto="card:recaps" style="margin-top:8px">Read the recap →</button></div>` : "";
     return `<aside class="fw-side" aria-label="Fight week">${clock}${vs}${prosStub}${lastStub}</aside>`;
   }
+  // Fight-night notes: from the card's date on, the owner can write notes on the Upcoming page, before the
+  // card's recap exists (it appears after Sunday's data refresh). Saved as recap_notes/live-<date>-<event>.
+  const todayET = () => new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  const liveNoteId = (ev) => "live-" + slug(ev.date + " " + ev.name);
+  function fightNightNotes(ev) {
+    if (ev.date > todayET()) return "";
+    const id = liveNoteId(ev), n = (state.recapNotes || {})[id] || { card: "", bouts: {} }, canEdit = state.recapCanEdit;
+    const attrs = `data-recap-id="${esc(id)}" data-recap-event="${esc(ev.name)}" data-recap-date="${esc(ev.date)}"`;
+    if (!canEdit && !n.card && !Object.values(n.bouts || {}).some(Boolean)) return "";
+    const bouts = ev.bouts.map((b) => {
+      const bk = boutKey(b), v = (n.bouts || {})[bk] || "";
+      if (!canEdit && !v) return "";
+      return `<div class="fn-bout"><div class="label">${esc(b.a)} vs ${esc(b.b)}</div>${canEdit ? `<textarea rows="2" data-recap-note="${esc(bk)}" ${attrs} placeholder="What did you see? Who won, how, what the numbers missed…">${esc(v)}</textarea>` : `<p style="margin:0">${esc(v)}</p>`}</div>`;
+    }).join("");
+    return `<section class="panel stack"><div><h3 style="margin:0">Your fight-night notes</h3>
+        <p class="muted" style="margin:4px 0 0;font-size:13px">Write as you watch. Saved as you type${state.storeKind === "db" ? "; only you can edit them, anyone with the link can read them" : " (in this browser only)"}. Claude reads them for Sunday's card review and folds what holds up into the scouting reports. They move to the card's recap once it's built.</p></div>
+      ${canEdit ? `<textarea rows="3" data-recap-note="card" ${attrs} placeholder="The card overall: who looked better than their odds, who faded, judging, anything the model and the market both missed.">${esc(n.card || "")}</textarea>` : n.card ? `<p style="margin:0;white-space:pre-wrap">${esc(n.card)}</p>` : ""}
+      <div class="fn-grid">${bouts}</div></section>`;
+  }
   function renderCard(view) {
     if (state.cardView === "recaps") { renderRecaps(view); return; }
     const up = state.data.upcoming || { events: [] };
@@ -1574,7 +1598,7 @@ button.namelink:hover { color: var(--red); }
           <div class="table-wrap"><table class="list bouts"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Pick</th><th>Most likely</th><th>Market (BestFightOdds)</th><th></th></tr></thead><tbody>
           ${rows}</tbody></table></div></div>`;
         }).join("")}
-      </section>`;
+      </section>${fightNightNotes(ev)}`;
     }
     html += savedMatchups() + "</div>";
     view.innerHTML = html;
@@ -2119,8 +2143,8 @@ button.namelink:hover { color: var(--red); }
   document.addEventListener("input", (e) => {
     const t = e.target;
     if (t.dataset.recapNote !== undefined) {
-      const id = t.dataset.recapId, which = t.dataset.recapNote, ev = (state.data.recaps.events || []).find((x) => recapId(x) === id);
-      const n = state.recapNotes[id] = Object.assign({ event: ev ? ev.event : "", date: ev ? ev.date : "", card: "", bouts: {} }, state.recapNotes[id]);
+      const id = t.dataset.recapId, which = t.dataset.recapNote, ev = ((state.data.recaps || {}).events || []).find((x) => recapId(x) === id);
+      const n = state.recapNotes[id] = Object.assign({ event: ev ? ev.event : t.dataset.recapEvent || "", date: ev ? ev.date : t.dataset.recapDate || "", card: "", bouts: {} }, state.recapNotes[id]);
       if (which === "card") n.card = t.value; else n.bouts = Object.assign({}, n.bouts, { [which]: t.value });
       n.updated = new Date().toISOString();
       later("recap_notes/" + id, () => state.store.saveRecapNote(id, n).then(() => setStatus("Note saved")));
