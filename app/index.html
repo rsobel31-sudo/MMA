@@ -482,6 +482,10 @@ button.namelink:hover { color: var(--red); }
 .stub-btn { display: block; width: 100%; margin-top: 14px; padding: 10px; }
 .cp-table td { vertical-align: top; }
 .stub-links { margin-top: auto; padding-top: 8px; display: flex; gap: 16px; flex-wrap: wrap; }
+.note-status { font-family: var(--cond); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border: 2px solid var(--line); }
+.ns-saved { border-color: var(--good); color: var(--good); }
+.ns-saving { border-color: var(--edit); color: var(--edit); }
+.ns-failed { border-color: var(--red); color: #fff; background: var(--red); text-transform: none; letter-spacing: 0; font-family: var(--body); }
 .fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 18px; }
 .fn-bout textarea { width: 100%; margin-top: 4px; }
 .stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
@@ -646,7 +650,7 @@ button.namelink:hover { color: var(--red); }
     function write(path, fn) {
       pending.add(path);
       const prev = writers.get(path) || Promise.resolve();
-      const next = prev.then(fn).catch((e) => setStatus(`Couldn't save (${e && e.code || "error"}). Your change is kept on this page only.`))
+      const next = prev.then(fn).then(() => true, (e) => { setStatus(`Couldn't save (${e && e.code || "error"}). Your change is kept on this page only.`); state.lastSaveError = (e && e.code) || "error"; return false; })
         .finally(() => { if (writers.get(path) === next) { writers.delete(path); pending.delete(path); } });
       writers.set(path, next);
       return next;
@@ -1445,7 +1449,7 @@ button.namelink:hover { color: var(--red); }
     const card = `<section class="panel stack"><div><h2 style="font-size:30px;margin:0">${esc(ev.event)}</h2>
       <p class="muted" style="margin:4px 0 0">${fmtDate(ev.date)} · ${[line("model", sm.model), line("market", sm.market), line("blend", sm.blend)].filter(Boolean).join(" · ")}${ev.live ? "" : " · model numbers are backtest (no live picks were logged for this card)"}</p></div>
       <div class="table-wrap"><table class="list"><thead><tr><th>Result</th><th>Method</th><th>Model</th><th>Market</th><th>Blend</th><th></th><th></th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
-    const insight = canEdit ? `<section class="panel stack"><div><h3 style="margin:0">Your take on the card</h3>
+    const insight = canEdit ? `<section class="panel stack"><div><div class="toolbar" style="margin:0;justify-content:space-between"><h3 style="margin:0">Your take on the card</h3>${noteStatusEl(rid)}</div>
         <p class="muted" style="margin:4px 0 0;font-size:13px">What you saw that the numbers didn't. Saved as you type${state.storeKind === "db" ? "; only you can edit it, anyone with the link can read it" : " (in this browser only)"}. Claude reads your notes when it writes the review below, and folds what holds up into its scouting reports.</p></div>
         <textarea rows="4" data-recap-note="card" data-recap-id="${esc(rid)}" placeholder="Overall read on the card: who looked better than their odds, who faded, judging, anything the model and the market both missed." style="width:100%">${esc(notes.card || "")}</textarea></section>`
       : notes.card ? `<section class="panel"><h3 style="margin:0 0 6px">The owner's take</h3><p style="margin:0;white-space:pre-wrap">${esc(notes.card)}</p></section>` : "";
@@ -1549,6 +1553,27 @@ button.namelink:hover { color: var(--red); }
   // card's recap exists (it appears after Sunday's data refresh). Saved as recap_notes/live-<date>-<event>.
   const todayET = () => new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
   const liveNoteId = (ev) => "live-" + slug(ev.date + " " + ev.name);
+  // Save state per notes document, shown beside the notes so it's clear whether they're saved.
+  state.noteState = {};
+  const etTime = (d) => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", second: "2-digit", timeZone: "America/New_York" });
+  function noteStatusText(id) {
+    const st = state.noteState[id], n = (state.recapNotes || {})[id];
+    if (st && st.s === "saving") return ["saving", "Saving…"];
+    if (st && st.s === "failed") return ["failed", `Not saved (${state.lastSaveError || "error"}). Keep this page open and copy your notes somewhere safe; they're also kept in this browser.`];
+    if (st && st.s === "saved") return ["saved", `Saved ✓ ${etTime(st.at)} ET` + (state.storeKind === "db" ? "" : " (this browser only)")];
+    if (n && n.updated) return ["saved", `Saved ✓ ${etTime(new Date(n.updated))} ET`];
+    return ["idle", "Saves as you type"];
+  }
+  function noteStatus(id, s) {
+    state.noteState[id] = { s, at: new Date() };
+    const [cls, text] = noteStatusText(id);
+    document.querySelectorAll(`[data-note-status="${CSS.escape(id)}"]`).forEach((el) => { el.className = "note-status ns-" + cls; el.textContent = text; });
+  }
+  const noteStatusEl = (id) => { const [cls, text] = noteStatusText(id); return `<span class="note-status ns-${cls}" data-note-status="${esc(id)}" role="status" aria-live="polite">${esc(text)}</span>`; };
+  // Don't let the page close with a note still waiting to be written.
+  window.addEventListener("beforeunload", (e) => {
+    if ([...debounced.keys(), ...pending].some((k) => String(k).startsWith("recap_notes/"))) { e.preventDefault(); e.returnValue = ""; }
+  });
   function fightNightNotes(ev) {
     if (ev.date > todayET()) return "";
     const id = liveNoteId(ev), n = (state.recapNotes || {})[id] || { card: "", bouts: {} }, canEdit = state.recapCanEdit;
@@ -1559,7 +1584,7 @@ button.namelink:hover { color: var(--red); }
       if (!canEdit && !v) return "";
       return `<div class="fn-bout"><div class="label">${esc(b.a)} vs ${esc(b.b)}</div>${canEdit ? `<textarea rows="2" data-recap-note="${esc(bk)}" ${attrs} placeholder="What did you see? Who won, how, what the numbers missed…">${esc(v)}</textarea>` : `<p style="margin:0">${esc(v)}</p>`}</div>`;
     }).join("");
-    return `<section class="panel stack"><div><h3 style="margin:0">Your fight-night notes</h3>
+    return `<section class="panel stack"><div><div class="toolbar" style="margin:0;justify-content:space-between"><h3 style="margin:0">Your fight-night notes</h3>${canEdit ? noteStatusEl(id) : ""}</div>
         <p class="muted" style="margin:4px 0 0;font-size:13px">Write as you watch. Saved as you type${state.storeKind === "db" ? "; only you can edit them, anyone with the link can read them" : " (in this browser only)"}. Claude reads them for Sunday's card review and folds what holds up into the scouting reports. They move to the card's recap once it's built.</p></div>
       ${canEdit ? `<textarea rows="3" data-recap-note="card" ${attrs} placeholder="The card overall: who looked better than their odds, who faded, judging, anything the model and the market both missed.">${esc(n.card || "")}</textarea>` : n.card ? `<p style="margin:0;white-space:pre-wrap">${esc(n.card)}</p>` : ""}
       <div class="fn-grid">${bouts}</div></section>`;
@@ -2147,7 +2172,9 @@ button.namelink:hover { color: var(--red); }
       const n = state.recapNotes[id] = Object.assign({ event: ev ? ev.event : t.dataset.recapEvent || "", date: ev ? ev.date : t.dataset.recapDate || "", card: "", bouts: {} }, state.recapNotes[id]);
       if (which === "card") n.card = t.value; else n.bouts = Object.assign({}, n.bouts, { [which]: t.value });
       n.updated = new Date().toISOString();
-      later("recap_notes/" + id, () => state.store.saveRecapNote(id, n).then(() => setStatus("Note saved")));
+      ls.set(LOCAL_KEY + ":noteCopy:" + id, n);  // a copy in this browser too, whatever happens to the save
+      noteStatus(id, "saving");
+      later("recap_notes/" + id, () => state.store.saveRecapNote(id, n).then((ok) => noteStatus(id, ok === false ? "failed" : "saved")), 400);
       return;
     }
     if (t.id === "read") {
