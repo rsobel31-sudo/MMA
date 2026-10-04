@@ -43,6 +43,14 @@ def _surname(name: str) -> str:
     return re.sub(r"\s+(Jr|Sr|II|III)\.?$", "", name).split()[-1]
 
 
+def use_dir(d: str) -> None:
+    """Keep a separate record (e.g. data/card_picks/dwcs for the Contender Series): its own cards and summary.
+    Only the main UFC record re-weights the method model."""
+    global DIR, SUMMARY
+    if d and Path(d) != DIR:
+        DIR, SUMMARY = Path(d), Path(d) / "summary.json"
+
+
 def load_adjust() -> Dict[str, float]:
     """Per-method multipliers learned from graded picks (1.0 = no change)."""
     return json.loads(ADJUST.read_text()).get("factors", {}) if ADJUST.exists() else {}
@@ -195,6 +203,7 @@ def conf_of(p: Dict) -> float:
 
 
 def cmd_lock(args) -> int:
+    use_dir(args.dir)
     draft = json.loads(Path(args.draft).read_text())
     spec = json.loads(Path(args.picks).read_text())
     try:
@@ -349,6 +358,8 @@ def load_cards() -> List[Dict]:
 
 
 def cmd_grade(args) -> int:
+    use_dir(args.dir)
+    main = DIR == Path("data/card_picks")
     fetcher = _fetcher(args.cache)
     today = date.today().isoformat()
     for path in sorted(DIR.glob("20*.json")):
@@ -363,7 +374,7 @@ def cmd_grade(args) -> int:
         print(f"{rec['event']}: {n} bouts graded now; Claude {sum(b['claude']['winner'] for b in g)}/{len(g)} winners, "
               f"{sum(b['claude']['method'] for b in g)} with the method" + ("" if rec["graded"] else " (some results still pending)"))
     s = summarize(load_cards())
-    adj = fit_adjust(s)
+    adj = fit_adjust(s) if main else None
     if adj:
         ADJUST.write_text(json.dumps(adj, indent=1) + "\n")
         s["method_adjust"] = adj["factors"]
@@ -379,19 +390,20 @@ def cmd_grade(args) -> int:
 
 
 # -------------------------------------------------------------------- sync
-def sync_docs() -> Dict[str, Dict]:
+def sync_docs(prefix: str = "card-") -> Dict[str, Dict]:
     docs = {}
     if SUMMARY.exists():
-        docs["card-summary"] = json.loads(SUMMARY.read_text())
+        docs[prefix + "summary"] = json.loads(SUMMARY.read_text())
     for rec in load_cards():
-        docs["card-" + rec["date"] + "-" + _slug(rec["event"])[:60]] = rec
+        docs[prefix + rec["date"] + "-" + _slug(rec["event"])[:60]] = rec
     return docs
 
 
 def cmd_sync(args) -> int:
+    use_dir(args.dir)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    docs = sync_docs()
+    docs = sync_docs(args.prefix)
     for k, v in docs.items():
         (out / f"{k}.json").write_text(json.dumps(v, ensure_ascii=False))
     print(json.dumps([{"op": "set", "collection": "ai_picks", "doc_id": k, "file_path": str((out / f"{k}.json").resolve())} for k in docs], indent=1))
@@ -414,11 +426,15 @@ def register(sub, data_arg) -> None:
     q.add_argument("--draft", default=str(DRAFT))
     q.add_argument("--as-of", default="", help="UTC timestamp to lock at (replays only)")
     q.add_argument("--picks", required=True, help='{"note": "...", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO|SUB|DEC", "confidence": 0.62, "why": "..."}]}')
+    q.add_argument("--dir", default="", help="a separate record, e.g. data/card_picks/dwcs")
     q.set_defaults(func=cmd_lock)
     q = ps.add_parser("grade", help="grade finished cards and update the record and lessons")
     q.add_argument("--cache", default=".cache/pages")
     q.add_argument("--force", action="store_true")
+    q.add_argument("--dir", default="")
     q.set_defaults(func=cmd_grade)
     q = ps.add_parser("sync", help="write card-* documents for the page database")
     q.add_argument("--out", default=".cache/card_picks_sync")
+    q.add_argument("--dir", default="")
+    q.add_argument("--prefix", default="card-", help="document id prefix (dwcs- for the Contender Series record)")
     q.set_defaults(func=cmd_sync)

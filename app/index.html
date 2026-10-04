@@ -614,6 +614,7 @@ button.namelink:hover { color: var(--red); }
     tab: "card",
     picks: { sub: "week", summary: null, weeks: [], loaded: false },
     cp: { sub: "card", summary: null, cards: [], ev: null },
+    dwcs: { data: null, loading: false },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
     pros: { data: null, loading: false, error: "", view: "classes", gender: "", wc: "", q: "", unbeaten: false, open: null },
     my: { sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
@@ -1592,14 +1593,19 @@ button.namelink:hover { color: var(--red); }
   function renderCard(view) {
     if (state.cardView === "recaps") { renderRecaps(view); return; }
     const up = state.data.upcoming || { events: [] };
-    const events = up.events.filter((e) => e.bouts.length);
+    loadDwcs();
+    // Contender Series weeks (just for fun: their own file, kept out of the model and the data) sit among the UFC cards by date.
+    const dw = ((state.dwcs.data || {}).weeks || []).filter((w) => w.date >= todayET() || (w.bouts || []).some((b) => !b.result))
+      .map((w) => ({ name: w.event, date: w.date, bouts: w.bouts, dwcs: w }));
+    const events = up.events.filter((e) => e.bouts.length).concat(dw).sort((x, y) => x.date.localeCompare(y.date));
     if (!state.upEvent || !events.some((e) => e.name === state.upEvent)) state.upEvent = events[0] && events[0].name;
     const ev = events.find((e) => e.name === state.upEvent);
     const fmtDate = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
     let html = `<div class="stack"><section class="panel">
       <div class="toolbar">${cardToggle()}<h3>Upcoming UFC cards</h3><span class="muted" style="font-size:13px">Scheduled bouts from <a href="https://en.wikipedia.org/wiki/List_of_UFC_events" target="_blank" rel="noopener">Wikipedia's UFC event pages</a>${up.fetched ? `, fetched ${esc(up.fetched)}` : ""}. Predictions use your edits and reads.</span></div>
-      ${events.length ? `<div class="evtabs" role="tablist">${events.map((e) => `<button type="button" role="tab" data-event="${esc(e.name)}" aria-selected="${e.name === state.upEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.name.replace(/^UFC Fight Night:?\s*/, "Fight Night: "))}</strong><span class="muted num">${e.bouts.length} bouts</span></button>`).join("")}</div>` : `<div class="empty">No scheduled cards in the data. Run <code>python -m mma_predictor upcoming</code>, then export.</div>`}
+      ${events.length ? `<div class="evtabs" role="tablist">${events.map((e) => `<button type="button" role="tab" data-event="${esc(e.name)}" aria-selected="${e.name === state.upEvent}"><span class="num">${fmtDate(e.date)}</span><strong>${esc(e.dwcs ? `DWCS · Week ${e.dwcs.week}` : e.name.replace(/^UFC Fight Night:?\s*/, "Fight Night: "))}</strong><span class="muted num">${e.bouts.length} bouts${e.dwcs ? " · for fun" : ""}</span></button>`).join("")}</div>` : `<div class="empty">No scheduled cards in the data. Run <code>python -m mma_predictor upcoming</code>, then export.</div>`}
     </section>`;
+    if (ev && ev.dwcs) { html += dwcsPanel(ev.dwcs) + "</div>"; view.innerHTML = html; return; }
     if (ev) {
       const predictable = ev.bouts.filter((b) => b.a_id && b.b_id).length;
       const tiers = {};
@@ -1627,6 +1633,42 @@ button.namelink:hover { color: var(--red); }
     }
     html += savedMatchups() + "</div>";
     view.innerHTML = html;
+  }
+
+  // ---- Dana White's Contender Series: just for fun (app/dwcs.json; not part of the model or its data)
+  function loadDwcs() {
+    const D = state.dwcs;
+    if (D.data || D.loading) return;
+    D.loading = true;
+    fetch("dwcs.json").then((r) => (r.ok ? r.json() : null)).then((d) => { D.data = d || { weeks: [] }; D.loading = false; renderSoon(); })
+      .catch(() => { D.data = { weeks: [] }; D.loading = false; });
+  }
+  function dwcsPanel(w) {
+    const day = new Date(w.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+    const who = (b, k) => {
+      const r = (b.records || {})[k], pr = b[k + "_prospect"];
+      return `<span style="color:var(--${k === "a" ? "red" : "blue"})">${esc(b[k])}</span>${pr ? ` <span class="pill" title="On our prospect list (score ${pr.score})">prospect #${pr.rank}</span>` : ""}
+        ${r ? `<div class="muted num" style="font-size:12px">${esc(r.record)} · model knows ${r.opponents_known} of ${r.bouts} opponents</div>` : ""}`;
+    };
+    const rows = w.bouts.map((b) => {
+      const m = b.model, pk = b.pick, res = b.result, pts = b.claude;
+      const mk = b.market_p_a != null ? `<div class="num"><strong>${esc(b.a.split(" ").slice(-1)[0])} ${fmtOdds(b.odds && b.odds.a)}</strong> · ${esc(b.b.split(" ").slice(-1)[0])} ${fmtOdds(b.odds && b.odds.b)}</div><div class="muted num" style="font-size:12px">${pct(b.market_p_a, 0)} / ${pct(1 - b.market_p_a, 0)}</div>` : '<span class="muted" style="font-size:13px">No line yet</span>';
+      const model = m ? `<span class="mini num" title="${esc(b.a)} ${pct(m.p_a)} / ${esc(b.b)} ${pct(1 - m.p_a)}"><i style="width:${(m.p_a * 100).toFixed(1)}%"></i></span>
+        <div style="margin-top:4px"><strong>${esc(m.winner)}</strong> <span class="num">${pct(m.p_win, 0)}</span></div><div class="muted" style="font-size:12px">most likely by ${esc(METHOD_WORD[m.method] || m.method)}</div>` : '<span class="muted">no data</span>';
+      const mine = pk ? `${cpPick(pk.winner, pk.method)} <span class="muted num">${Math.round(pk.confidence * 100)}%</span>${m && (m.winner !== pk.winner || m.method !== pk.method) ? ' <span class="pill" title="Claude picked differently from the model">override</span>' : ""}${pk.why ? `<div class="pk-why">${esc(pk.why)}</div>` : ""}` : '<span class="muted">not picked yet</span>';
+      const out = !res ? "" : res.void ? `<div class="muted" style="font-size:12px">${esc(res.void)}</div>`
+        : `<div style="margin-top:6px;font-size:13px"><strong>Result:</strong> ${esc(res.winner)} by ${esc(METHOD_WORD[res.method] || res.method)}${res.round ? ` R${res.round}` : ""}${pts ? ` <span class="tier ${pts.points === 2 ? "tier-best" : pts.points === 1 ? "tier-sure" : "tier-caution"}">${pts.points} pt${pts.points === 1 ? "" : "s"}</span>` : ""}</div>`;
+      return `<tr><td class="muted">${esc(b.weight_class)}</td><td>${who(b, "a")}<div class="muted" style="margin:2px 0">vs</div>${who(b, "b")}</td><td>${model}</td><td>${mk}</td><td>${mine}${out}</td></tr>`;
+    }).join("");
+    const rec = (state.dwcs.data || {}).record, c = rec && rec.claude;
+    return `<section class="panel stack">
+      <div class="toolbar" style="justify-content:space-between;margin:0"><div><h2 style="font-size:32px;margin:0">${esc(w.event)}</h2>
+        <p class="muted" style="margin:4px 0 0">Contender Series Week ${w.week} · ${esc(day)} · Meta Apex, Las Vegas${w.sherdog_url ? ` · <a href="${esc(w.sherdog_url)}" target="_blank" rel="noopener">Sherdog</a>` : ""}${w.locked_at ? ` · Claude's picks locked ${esc(when(w.locked_at))}` : ""}</p></div>
+        <span class="pill">Just for fun${c && c.n ? ` · Claude ${c.points} pts, ${c.winners}/${c.n} winners this season` : ""}</span></div>
+      <p class="muted" style="margin:0;font-size:13.5px;max-width:82ch">Contender Series fighters mostly come from regional cards, so the model sees only part of their records (each fighter shows how many opponents it knows) and these numbers are rougher than for a UFC card. They're kept out of the model and its data. Bouts are listed on both Wikipedia and Sherdog; odds appear once BestFightOdds posts them.</p>
+      ${w.note ? `<div class="pk-note"><div class="label">Claude's read</div><p>${esc(w.note)}</p></div>` : ""}
+      <div class="table-wrap"><table class="list bouts cp-table"><thead><tr><th>Division</th><th>Bout</th><th>Model</th><th>Market</th><th>Claude's pick</th></tr></thead><tbody>${rows}</tbody></table></div>
+    </section>`;
   }
   // ------------------------------------------------------------------ insights
   function renderInsights(view) {

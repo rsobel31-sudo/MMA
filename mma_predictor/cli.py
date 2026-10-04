@@ -642,6 +642,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_picks(sub, data_arg)
     from .card_picks import register as register_card_picks
     register_card_picks(sub, data_arg)
+    from .dwcs import register as register_dwcs
+    register_dwcs(sub, data_arg)
     from .scout_cli import register as register_scout
     register_scout(sub)
     from .prospects import register as register_prospects

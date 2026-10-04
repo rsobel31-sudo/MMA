@@ -1,0 +1,267 @@
+{
+ "event": "Dana White's Contender Series 96",
+ "week": 10,
+ "date": "2026-10-13",
+ "results_url": "https://en.wikipedia.org/wiki/Dana_White%27s_Contender_Series_season_10",
+ "sherdog_url": "https://www.sherdog.com/events/Dana-Whites-Contender-Series-Contender-Series-2026-Week-10-112636",
+ "location": "Las Vegas, Nevada, U.S.",
+ "locks_at": "2026-10-13T21:00:00+00:00",
+ "drafted_at": "2026-10-04T03:21:35+00:00",
+ "dec_cal": [
+  0.20520152691436633,
+  0.6741987155097109
+ ],
+ "method_adjust": {},
+ "bouts": [
+  {
+   "bout": "Douglas da Lapa vs Davi Cabral",
+   "a": "Douglas da Lapa",
+   "b": "Davi Cabral",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Douglas-Lapa-374446",
+   "b_url": "https://www.sherdog.com/fighter/Davi-Cabral-440030",
+   "a_prospect": {
+    "rank": 157,
+    "score": 71.9,
+    "division_rank": 9
+   },
+   "b_prospect": {
+    "rank": 217,
+    "score": 68.2,
+    "division_rank": 11
+   },
+   "model": {
+    "p_a": 0.5491,
+    "winner": "Douglas da Lapa",
+    "method": "DEC",
+    "p_win": 0.5491,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2612,
+      "SUB": 0.0302,
+      "DEC": 0.2615
+     },
+     "b": {
+      "KO/TKO": 0.1736,
+      "SUB": 0.0801,
+      "DEC": 0.1933
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "6-0",
+     "bouts": 6,
+     "opponents_known": 0
+    },
+    "b": {
+     "record": "7-0",
+     "bouts": 7,
+     "opponents_known": 4
+    }
+   }
+  },
+  {
+   "bout": "Luis Francischinelli vs William Rentz",
+   "a": "Luis Francischinelli",
+   "b": "William Rentz",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Luis-Francischinelli-428715",
+   "b_url": "https://www.sherdog.com/fighter/William-Rentz-372872",
+   "b_prospect": {
+    "rank": 450,
+    "score": 55.1,
+    "division_rank": 55
+   },
+   "model": {
+    "p_a": 0.5417,
+    "winner": "Luis Francischinelli",
+    "method": "KO/TKO",
+    "p_win": 0.5417,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3553,
+      "SUB": 0.019,
+      "DEC": 0.1694
+     },
+     "b": {
+      "KO/TKO": 0.2303,
+      "SUB": 0.0898,
+      "DEC": 0.1363
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "6-1",
+     "bouts": 7,
+     "opponents_known": 2
+    },
+    "b": {
+     "record": "8-2",
+     "bouts": 10,
+     "opponents_known": 4
+    }
+   }
+  },
+  {
+   "bout": "Aline Pereira vs Smilla Sundell",
+   "a": "Aline Pereira",
+   "b": "Smilla Sundell",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Aline-Pereira-415750",
+   "b_url": "https://www.sherdog.com/fighter/Smilla-Sundell-432096",
+   "b_prospect": {
+    "rank": 329,
+    "score": 61.8,
+    "division_rank": 9
+   },
+   "model": {
+    "p_a": 0.297,
+    "winner": "Smilla Sundell",
+    "method": "DEC",
+    "p_win": 0.703,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0401,
+      "SUB": 0.0238,
+      "DEC": 0.2387
+     },
+     "b": {
+      "KO/TKO": 0.2783,
+      "SUB": 0.0536,
+      "DEC": 0.3655
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "3-2",
+     "bouts": 5,
+     "opponents_known": 2
+    },
+    "b": {
+     "record": "2-0",
+     "bouts": 2,
+     "opponents_known": 1
+    }
+   }
+  },
+  {
+   "bout": "Ilias Bulaid vs Erick Visconde",
+   "a": "Ilias Bulaid",
+   "b": "Erick Visconde",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Ilias-Bulaid-341517",
+   "b_url": "https://www.sherdog.com/fighter/Erick-Visconde-265709",
+   "model": {
+    "p_a": 0.5519,
+    "winner": "Ilias Bulaid",
+    "method": "DEC",
+    "p_win": 0.5519,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1546,
+      "SUB": 0.1671,
+      "DEC": 0.2143
+     },
+     "b": {
+      "KO/TKO": 0.1107,
+      "SUB": 0.0727,
+      "DEC": 0.2806
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "9-0",
+     "bouts": 10,
+     "opponents_known": 3
+    },
+    "b": {
+     "record": "17-3",
+     "bouts": 20,
+     "opponents_known": 12
+    }
+   }
+  },
+  {
+   "bout": "Jason Asher vs Greg Foster",
+   "a": "Jason Asher",
+   "b": "Greg Foster",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Jason-Asher-400301",
+   "b_url": "https://www.sherdog.com/fighter/Gregory-Foster-120253",
+   "a_prospect": {
+    "rank": 179,
+    "score": 70.6,
+    "division_rank": 25
+   },
+   "model": {
+    "p_a": 0.5982,
+    "winner": "Jason Asher",
+    "method": "KO/TKO",
+    "p_win": 0.5982,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3045,
+      "SUB": 0.0291,
+      "DEC": 0.2579
+     },
+     "b": {
+      "KO/TKO": 0.099,
+      "SUB": 0.1003,
+      "DEC": 0.2092
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "5-0",
+     "bouts": 5,
+     "opponents_known": 1
+    },
+    "b": {
+     "record": "8-1",
+     "bouts": 9,
+     "opponents_known": 6
+    }
+   }
+  }
+ ]
+}

@@ -243,6 +243,13 @@ python -m mma_predictor card-picks sync
 - **Claude's judgment.** Once Claude has 30 overrides of the model's winner, a hit rate clearly above 50% means the scouting reads deserve more weight in the model (raise the cap in `reads.py`, and the scouting factor). A rate clearly below 50% means follow the model more and shrink the reads. Make the change in code, run the tests, and note it in the commit.
 - **Confidence.** If picks said at 70% win far less often (the confidence table under Track record), lower the confidence you give.
 
+## Contender Series (just for fun)
+
+Dana White's Contender Series picks are **for fun only**: kept in their own record (`data/card_picks/dwcs`), shown on the Upcoming cards page from `app/dwcs.json`, and **never added to the model or its data**. The fighters' Sherdog records go into a scratch copy of the dataset (`.cache/dwcs/data`) that's thrown away, and grading this record never re-weights the method model. If the record turns out to be strong, or teaches something interesting, the owner may decide to bring it into the main data and model; until then, don't.
+
+- **Tuesday (fight night, or any day before a remaining week):** `python -m mma_predictor dwcs build` re-reads the season page and Sherdog, prices every bout and attaches BestFightOdds lines once posted. If a week's card changed since the picks were locked (a replacement, a cancellation, a TBA opponent named), update `data/card_picks/dwcs/entries/<date>-week-<n>.json` to cover every bout and re-lock before 5:00 PM ET: `card-picks lock --dir data/card_picks/dwcs --draft data/dwcs/drafts/<date>-week-<n>.json --picks <entries file>`. Then `dwcs export`, republish the page with `dwcs.json`, and commit `data/dwcs`, `data/card_picks/dwcs` and `app/dwcs.json`.
+- **Sunday:** `card-picks grade --dir data/card_picks/dwcs`, then `dwcs export`, republish with `dwcs.json`, and commit.
+
 ## Dry run
 
 After changing anything in the pipeline, replay a past card end to end in a scratch folder (nothing real is written):

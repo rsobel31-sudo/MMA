@@ -1,0 +1,247 @@
+{
+ "event": "Dana White's Contender Series 95",
+ "week": 9,
+ "date": "2026-10-06",
+ "results_url": "https://en.wikipedia.org/wiki/Dana_White%27s_Contender_Series_season_10",
+ "sherdog_url": "https://www.sherdog.com/events/Dana-Whites-Contender-Series-Contender-Series-2026-Week-9-112635",
+ "location": "Las Vegas, Nevada, U.S.",
+ "locks_at": "2026-10-06T21:00:00+00:00",
+ "drafted_at": "2026-10-04T03:21:32+00:00",
+ "dec_cal": [
+  0.20520152691436633,
+  0.6741987155097109
+ ],
+ "method_adjust": {},
+ "bouts": [
+  {
+   "bout": "Alivia Bierley vs Summer Onley",
+   "a": "Alivia Bierley",
+   "b": "Summer Onley",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Alivia-Bierley-392070",
+   "b_url": "https://www.sherdog.com/fighter/Summer-Onley-354033",
+   "model": {
+    "p_a": 0.4425,
+    "winner": "Summer Onley",
+    "method": "DEC",
+    "p_win": 0.5575,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1627,
+      "SUB": 0.0245,
+      "DEC": 0.2588
+     },
+     "b": {
+      "KO/TKO": 0.2431,
+      "SUB": 0.0251,
+      "DEC": 0.2859
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "5-1",
+     "bouts": 6,
+     "opponents_known": 2
+    },
+    "b": {
+     "record": "6-0",
+     "bouts": 6,
+     "opponents_known": 0
+    }
+   }
+  },
+  {
+   "bout": "Salhahuddin Everett vs Ozzy Martin",
+   "a": "Salhahuddin Everett",
+   "b": "Ozzy Martin",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Salhahuddin-Everett-437966",
+   "b_url": "https://www.sherdog.com/fighter/Ozzy-Martin-418492",
+   "b_prospect": {
+    "rank": 495,
+    "score": 52.3,
+    "division_rank": 60
+   },
+   "model": {
+    "p_a": 0.5146,
+    "winner": "Salhahuddin Everett",
+    "method": "DEC",
+    "p_win": 0.5146,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1685,
+      "SUB": 0.1463,
+      "DEC": 0.1995
+     },
+     "b": {
+      "KO/TKO": 0.2651,
+      "SUB": 0.0309,
+      "DEC": 0.1898
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "4-0",
+     "bouts": 4,
+     "opponents_known": 1
+    },
+    "b": {
+     "record": "4-0",
+     "bouts": 4,
+     "opponents_known": 2
+    }
+   }
+  },
+  {
+   "bout": "Roque Conceição Moreira Jr. vs Alexander Chavez",
+   "a": "Roque Conceição Moreira Jr.",
+   "b": "Alexander Chavez",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Roque-Conceicao-Moreira-Junior-239909",
+   "b_url": "https://www.sherdog.com/fighter/Alexander-Chavez-427066",
+   "model": {
+    "p_a": 0.3435,
+    "winner": "Alexander Chavez",
+    "method": "KO/TKO",
+    "p_win": 0.6565,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1628,
+      "SUB": 0.0467,
+      "DEC": 0.134
+     },
+     "b": {
+      "KO/TKO": 0.3916,
+      "SUB": 0.009,
+      "DEC": 0.256
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "11-3",
+     "bouts": 14,
+     "opponents_known": 4
+    },
+    "b": {
+     "record": "9-0",
+     "bouts": 9,
+     "opponents_known": 2
+    }
+   }
+  },
+  {
+   "bout": "Ryuho Miyaguchi vs Matheus Soares",
+   "a": "Ryuho Miyaguchi",
+   "b": "Matheus Soares",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Ryuho-Miyaguchi-420440",
+   "b_url": "https://www.sherdog.com/fighter/Mateus-Soares-410668",
+   "model": {
+    "p_a": 0.4498,
+    "winner": "Matheus Soares",
+    "method": "KO/TKO",
+    "p_win": 0.5502,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1948,
+      "SUB": 0.0467,
+      "DEC": 0.2275
+     },
+     "b": {
+      "KO/TKO": 0.2057,
+      "SUB": 0.1547,
+      "DEC": 0.1707
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "7-1",
+     "bouts": 8,
+     "opponents_known": 3
+    },
+    "b": {
+     "record": "11-2",
+     "bouts": 13,
+     "opponents_known": 3
+    }
+   }
+  },
+  {
+   "bout": "Preston LaGrange vs Nell Ariano",
+   "a": "Preston LaGrange",
+   "b": "Nell Ariano",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "segment": "Fight card",
+   "sources": [
+    "Wikipedia",
+    "Sherdog"
+   ],
+   "a_url": "https://www.sherdog.com/fighter/Preston-LaGrange-418929",
+   "b_url": "https://www.sherdog.com/fighter/Nell-Ariano-399649",
+   "model": {
+    "p_a": 0.3907,
+    "winner": "Nell Ariano",
+    "method": "KO/TKO",
+    "p_win": 0.6093,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0956,
+      "SUB": 0.1583,
+      "DEC": 0.133
+     },
+     "b": {
+      "KO/TKO": 0.3673,
+      "SUB": 0.0158,
+      "DEC": 0.2301
+     }
+    }
+   },
+   "records": {
+    "a": {
+     "record": "6-1",
+     "bouts": 7,
+     "opponents_known": 1
+    },
+    "b": {
+     "record": "6-0",
+     "bouts": 6,
+     "opponents_known": 0
+    }
+   }
+  }
+ ]
+}

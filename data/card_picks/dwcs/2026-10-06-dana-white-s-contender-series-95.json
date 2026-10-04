@@ -1,0 +1,191 @@
+{
+ "event": "Dana White's Contender Series 95",
+ "date": "2026-10-06",
+ "results_url": "https://en.wikipedia.org/wiki/Dana_White%27s_Contender_Series_season_10",
+ "locks_at": "2026-10-06T21:00:00+00:00",
+ "locked_at": "2026-10-04T03:22:08+00:00",
+ "note": "Just for fun: the model sees only part of these records (mostly regional opponents it doesn't know), so I follow it where nothing says otherwise, lean toward finishes (fighters chasing a contract take risks), and take the single likeliest outcome in the coin flip.",
+ "dec_cal": [
+  0.20520152691436633,
+  0.6741987155097109
+ ],
+ "method_adjust": {},
+ "bouts": [
+  {
+   "bout": "Alivia Bierley vs Summer Onley",
+   "a": "Alivia Bierley",
+   "b": "Summer Onley",
+   "segment": "Fight card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Summer Onley",
+    "side": "b",
+    "method": "DEC",
+    "confidence": 0.55,
+    "why": "Unbeaten Onley, slight model edge; a decision is the likeliest single outcome."
+   },
+   "model": {
+    "p_a": 0.4425,
+    "winner": "Summer Onley",
+    "method": "DEC",
+    "p_win": 0.5575,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1627,
+      "SUB": 0.0245,
+      "DEC": 0.2588
+     },
+     "b": {
+      "KO/TKO": 0.2431,
+      "SUB": 0.0251,
+      "DEC": 0.2859
+     }
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Salhahuddin Everett vs Ozzy Martin",
+   "a": "Salhahuddin Everett",
+   "b": "Ozzy Martin",
+   "segment": "Fight card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Ozzy Martin",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.52,
+    "why": "A coin flip on the model (51-49 Everett), but Martin by KO is its single likeliest result; listed prospect."
+   },
+   "model": {
+    "p_a": 0.5146,
+    "winner": "Salhahuddin Everett",
+    "method": "DEC",
+    "p_win": 0.5146,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1685,
+      "SUB": 0.1463,
+      "DEC": 0.1995
+     },
+     "b": {
+      "KO/TKO": 0.2651,
+      "SUB": 0.0309,
+      "DEC": 0.1898
+     }
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Roque Conceição Moreira Jr. vs Alexander Chavez",
+   "a": "Roque Conceição Moreira Jr.",
+   "b": "Alexander Chavez",
+   "segment": "Fight card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Alexander Chavez",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.66,
+    "why": "Unbeaten Chavez with finishing power against a fighter with three losses."
+   },
+   "model": {
+    "p_a": 0.3435,
+    "winner": "Alexander Chavez",
+    "method": "KO/TKO",
+    "p_win": 0.6565,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1628,
+      "SUB": 0.0467,
+      "DEC": 0.134
+     },
+     "b": {
+      "KO/TKO": 0.3916,
+      "SUB": 0.009,
+      "DEC": 0.256
+     }
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Ryuho Miyaguchi vs Matheus Soares",
+   "a": "Ryuho Miyaguchi",
+   "b": "Matheus Soares",
+   "segment": "Fight card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Matheus Soares",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.55,
+    "why": "More experienced (11-2) and the more varied finisher."
+   },
+   "model": {
+    "p_a": 0.4498,
+    "winner": "Matheus Soares",
+    "method": "KO/TKO",
+    "p_win": 0.5502,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1948,
+      "SUB": 0.0467,
+      "DEC": 0.2275
+     },
+     "b": {
+      "KO/TKO": 0.2057,
+      "SUB": 0.1547,
+      "DEC": 0.1707
+     }
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Preston LaGrange vs Nell Ariano",
+   "a": "Preston LaGrange",
+   "b": "Nell Ariano",
+   "segment": "Fight card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Nell Ariano",
+    "side": "b",
+    "method": "KO/TKO",
+    "confidence": 0.61,
+    "why": "Unbeaten light heavyweight with knockout power; heavier divisions finish more."
+   },
+   "model": {
+    "p_a": 0.3907,
+    "winner": "Nell Ariano",
+    "method": "KO/TKO",
+    "p_win": 0.6093,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0956,
+      "SUB": 0.1583,
+      "DEC": 0.133
+     },
+     "b": {
+      "KO/TKO": 0.3673,
+      "SUB": 0.0158,
+      "DEC": 0.2301
+     }
+    }
+   },
+   "market_p_a": null
+  }
+ ],
+ "graded": false
+}
