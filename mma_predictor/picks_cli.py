@@ -278,8 +278,8 @@ def cmd_place(args) -> int:
 
 
 # ------------------------------------------------------------------ settle
-def _results_for(fetcher, week, log=print) -> Dict[str, Optional[P.Result]]:
-    """Results for this week's bouts that Wikipedia and Sherdog agree on."""
+def _results_for(fetcher, week, log=print, agree=None) -> Dict[str, Optional[P.Result]]:
+    """Results for this week's bouts that Wikipedia and Sherdog agree on (`agree`: what must match; default everything bets need)."""
     from .sources import events, sherdog
     from .sources.wikipedia import match_key
 
@@ -326,7 +326,7 @@ def _results_for(fetcher, week, log=print) -> Dict[str, Optional[P.Result]]:
             if r is not None:
                 sr = r if name == a else P.flip(r)
                 break
-        if P.agree(wr, sr):
+        if (agree or P.agree)(wr, sr):
             out[bout] = wr
         else:
             log(f"  {bout}: waiting for sources to agree (Wikipedia {wr}, Sherdog {sr})")

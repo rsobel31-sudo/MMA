@@ -24,16 +24,25 @@
        "odds": -300,
        "p": 0.8076,
        "p_fanduel": 0.7153,
-       "selection": "Alexander Hernandez to win"
+       "selection": "Alexander Hernandez to win",
+       "close_odds": -290,
+       "grade": "won",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 2,
+        "seconds": 192
+       }
       }
      ],
      "odds": -300,
      "p": 0.8076,
-     "profit": 0,
+     "profit": 1.0,
      "reasoning": "Hernandez at -300 (FD 71.5% no-vig, ours 80.8%). Dos Anjos is 42, two years out after knee surgeries, and cutting to 155 where his cardio has failed before. Model and read agree. Staked about half quarter-Kelly since the favourite price caps the payoff.",
      "stake": 3,
-     "status": "open",
-     "to_win": 1
+     "status": "won",
+     "to_win": 1,
+     "clv": -0.0086
     },
     {
      "decimal": 2.1,
@@ -51,16 +60,25 @@
        "odds": 110,
        "p": 0.5294,
        "p_fanduel": 0.454,
-       "selection": "Mick Parkin to win"
+       "selection": "Mick Parkin to win",
+       "close_odds": -104,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 1,
+        "seconds": 215
+       }
       }
      ],
      "odds": 110,
      "p": 0.5294,
-     "profit": 0,
+     "profit": -2,
      "reasoning": "Parkin at +110 (FD 45.4%, ours 52.9%). Walker's chin has failed against heavy hitters and heavyweight punches are heavier. Model already leans Parkin and Sherdog's Feely picks him by KO. Risk is Parkin's 18-month layoff, so stake is slightly under quarter-Kelly.",
      "stake": 2,
-     "status": "open",
-     "to_win": 2.2
+     "status": "lost",
+     "to_win": 2.2,
+     "clv": 0.0706
     }
    ],
    "book": "FanDuel",
@@ -75,11 +93,16 @@
    ],
    "placed_at": "2026-10-02T16:02:31+00:00",
    "results_url": "https://en.wikipedia.org/wiki/UFC_332",
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-10-04T02:59:11+00:00",
    "sheet_fetched_at": "2026-10-02T16:02:03+00:00",
    "staked": 5,
-   "restored_from": "page database ai_picks/w1 (the Friday run's push did not reach the branch)"
+   "restored_from": "page database ai_picks/w1 (the Friday run's push did not reach the branch)",
+   "bankroll_after": 99.0,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }

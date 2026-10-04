@@ -44,7 +44,23 @@
      }
     }
    },
-   "market_p_a": 0.6464
+   "market_p_a": 0.6464,
+   "result": {
+    "winner": "Natália Silva",
+    "side": "a",
+    "method": "DEC",
+    "round": 5
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Deiveson Figueiredo vs Payton Talbott",
@@ -79,7 +95,23 @@
      }
     }
    },
-   "market_p_a": 0.1616
+   "market_p_a": 0.1616,
+   "result": {
+    "winner": "Payton Talbott",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "points": 1
+   }
   },
   {
    "bout": "King Green vs Esteban Ribovics",
@@ -114,7 +146,23 @@
      }
     }
    },
-   "market_p_a": 0.3294
+   "market_p_a": 0.3294,
+   "result": {
+    "winner": "Esteban Ribovics",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Roberto Soldić vs Khaos Williams",
@@ -184,7 +232,23 @@
      }
     }
    },
-   "market_p_a": 0.6554
+   "market_p_a": 0.6554,
+   "result": {
+    "winner": "Roman Kopylov",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "points": 0
+   }
   },
   {
    "bout": "Imanol Rodríguez vs Alden Coria",
@@ -219,7 +283,23 @@
      }
     }
    },
-   "market_p_a": 0.5882
+   "market_p_a": 0.5882,
+   "result": {
+    "winner": "Imanol Rodríguez",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "points": 1
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "points": 0
+   }
   },
   {
    "bout": "Damian Pinas vs Andrey Pulyaev",
@@ -254,7 +334,23 @@
      }
     }
    },
-   "market_p_a": 0.8311
+   "market_p_a": 0.8311,
+   "result": {
+    "winner": "Damian Pinas",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Marcus McGhee vs Anthony Romero",
@@ -289,7 +385,23 @@
      }
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Marcus McGhee",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "points": 1
+   }
   },
   {
    "bout": "Anthony Wint vs Lucas Armand",
@@ -324,7 +436,23 @@
      }
     }
    },
-   "market_p_a": 0.7988
+   "market_p_a": 0.7988,
+   "result": {
+    "winner": "Anthony Wint",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Johnny Walker vs Mick Parkin",
@@ -359,7 +487,23 @@
      }
     }
    },
-   "market_p_a": 0.5552
+   "market_p_a": 0.5552,
+   "result": {
+    "winner": "Johnny Walker",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "points": 0
+   }
   },
   {
    "bout": "Jacobe Smith vs Bruce Whitehead",
@@ -394,7 +538,23 @@
      }
     }
    },
-   "market_p_a": 0.863
+   "market_p_a": 0.863,
+   "result": {
+    "winner": "Jacobe Smith",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Rafael dos Anjos vs Alexander Hernandez",
@@ -429,7 +589,23 @@
      }
     }
    },
-   "market_p_a": 0.3118
+   "market_p_a": 0.3118,
+   "result": {
+    "winner": "Alexander Hernandez",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "points": 1
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Marvin Vettori vs Ismail Naurdiev",
@@ -464,7 +640,23 @@
      }
     }
    },
-   "market_p_a": 0.4463
+   "market_p_a": 0.4463,
+   "result": {
+    "winner": "Ismail Naurdiev",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   }
   },
   {
    "bout": "Court McGee vs Eric Nolan",
@@ -499,8 +691,25 @@
      }
     }
    },
-   "market_p_a": 0.3101
+   "market_p_a": 0.3101,
+   "result": {
+    "winner": "Eric Nolan",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "points": 1
+   }
   }
  ],
- "graded": false
+ "graded": false,
+ "graded_at": "2026-10-04T02:58:56+00:00"
 }

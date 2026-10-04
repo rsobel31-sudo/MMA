@@ -215,6 +215,11 @@ def cmd_lock(args) -> int:
 
 
 # ------------------------------------------------------------------- grade
+def same_outcome(x: Optional[P.Result], y: Optional[P.Result]) -> bool:
+    """The pick'em needs only the winner and the method to agree (bets also need the round and time)."""
+    return x is not None and y is not None and x.winner == y.winner and x.method == y.method
+
+
 def score(pick_side: Optional[str], pick_method: Optional[str], res: P.Result) -> Dict[str, object]:
     """Pick'em points: 1 for the winner, 1 more for the method when the winner is right."""
     win = pick_side == res.winner
@@ -351,7 +356,7 @@ def cmd_grade(args) -> int:
         if rec.get("graded") or (rec["date"] >= today and not args.force):
             continue
         week = {"results_url": rec["results_url"], "event_date": rec["date"], "bets": [{"legs": [{"bout": b["bout"]}]} for b in rec["bouts"] if "result" not in b]}
-        n = grade_card(rec, _results_for(fetcher, week))
+        n = grade_card(rec, _results_for(fetcher, week, agree=same_outcome))
         rec["graded_at"] = _now()
         path.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
         g = [b for b in rec["bouts"] if "claude" in b]
