@@ -33,7 +33,18 @@ outlet list + Sherdog).
    (`data/prospects/signing_checks.json`); `--confirm-only` reruns just that.
 4. `python -m mma_predictor prospects` rebuilds `app/prospects.json`; caller
    weights update automatically (only after 20 graded calls and |z| >= 1.96).
-5. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab
+5. Risers and fallers. `python -m mma_predictor prospect-snapshot` saves this
+   month's ranking to `data/prospects/snapshots/YYYY-MM.json`, then
+   `python -m mma_predictor prospect-report` compares it with last month's and
+   writes `data/prospects/reports/YYYY-MM.json`: the biggest risers and fallers
+   among the top 300 (with the fights in between), new names in the top 100, and
+   who left the list and why. Read it and write the `summary` field yourself: two
+   or three short paragraphs on the month's story (who earned a jump with a win,
+   who fell on a loss, which moves came from the field rather than a fight, such
+   as a new promotion sweep or Fight Matrix release). Then rerun step 4 so the
+   page carries the report and every prospect's arrow is measured from the new
+   snapshot (from the day after it is taken; until then the old one stands).
+6. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab
    artifact with files engine.js, data.json, prospects.json; delete
    candidates.prev.jsonl; commit and push.
 

@@ -515,6 +515,9 @@ def cmd_build(args) -> int:
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
            "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
+    from .prospect_report import attach  # each prospect's move since the last monthly snapshot, and the latest report
+
+    attach(out, today)
     if Path(args.out).exists():  # prospect-week's section survives a rebuild
         prev = json.loads(Path(args.out).read_text())
         if "week" in prev:

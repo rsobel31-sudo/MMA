@@ -245,10 +245,12 @@ button.sorter:hover { color: var(--ink); }
 .wc-hd h3 { font-size: 18px; text-transform: uppercase; }
 .wc-hd span { font-size: 12px; }
 .wc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13.5px; }
-.wc li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) 28% 4.6em; gap: 6px; align-items: center; cursor: pointer; }
+.wc li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) 24% 5.2em; gap: 6px; align-items: center; cursor: pointer; }
 .wc li .uf { display: inline-block; min-width: 2.2em; margin-left: 4px; font-size: 11px; color: var(--muted); text-align: left; }
 .wc li:hover .nm { text-decoration: underline; }
 .wc li .rk { color: var(--muted); text-align: right; }
+.wc li .wmv { display: inline-block; min-width: 2.6em; margin-left: 5px; text-align: left; }
+.wc li .wmv .mv { font-size: 11px; }
 .wc li .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .wc li .bar { height: 8px; background: var(--surface-2); border-radius: 2px; position: relative; }
 .wc li .bar span { position: absolute; inset: 0 auto 0 0; background: var(--ink); border-radius: 2px; opacity: .7; }
@@ -486,6 +488,8 @@ button.namelink:hover { color: var(--red); }
 .ns-saved { border-color: var(--good); color: var(--good); }
 .ns-saving { border-color: var(--edit); color: var(--edit); }
 .ns-failed { border-color: var(--red); color: #fff; background: var(--red); text-transform: none; letter-spacing: 0; font-family: var(--body); }
+.mv { font-family: var(--cond); font-size: 12px; letter-spacing: .04em; white-space: nowrap; }
+.mv-up { color: var(--good); } .mv-down { color: var(--red); } .mv-new { color: var(--edit); border: 1px solid var(--edit); padding: 0 4px; } .mv-flat { color: var(--muted); }
 .fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 18px; }
 .fn-bout textarea { width: 100%; margin-top: 4px; }
 .stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
@@ -2345,6 +2349,14 @@ button.namelink:hover { color: var(--red); }
       (!P.gender || (P.gender === "women") === isWomen(x.division)) && (!P.wc || x.division === P.wc) && (!P.unbeaten || x.losses === 0) &&
       (!q || x.name.toLowerCase().includes(q) || (x.promotion || "").toLowerCase().includes(q) || (x.nationality || "").toLowerCase().includes(q)));
   }
+  // Move since the last monthly snapshot: ▲ places up, ▼ places down, NEW if not listed then.
+  const moveBadge = (x) => {
+    const m = x.move;
+    if (!m) return "";
+    if (m.new) return `<span class="mv mv-new" title="Not on the list on ${esc(m.since)}">NEW</span>`;
+    if (!m.places) return `<span class="mv mv-flat" title="Same place as on ${esc(m.since)}">–</span>`;
+    return `<span class="mv ${m.places > 0 ? "mv-up" : "mv-down"}" title="#${m.from} on ${esc(m.since)} → #${x.p4p_rank} now (score ${m.score > 0 ? "+" : ""}${m.score})">${m.places > 0 ? "▲" : "▼"}${Math.abs(m.places)}</span>`;
+  };
   const prRecord = (x) => `${x.wins}-${x.losses}${x.draws ? `-${x.draws}` : ""}`;
   function prospectDetail(x) {
     const c = x.components || {};
@@ -2368,11 +2380,11 @@ button.namelink:hover { color: var(--red); }
   }
   function prospectRow(x, rank) {
     const open = state.pros.open === x.name;
-    return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td>
+    return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td><td class="num">${moveBadge(x)}</td>
       <td>${starBtn(x)} <strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
       <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
       <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
-      <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="8">${prospectDetail(x)}</td></tr>` : ""}`;
+      <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="9">${prospectDetail(x)}</td></tr>` : ""}`;
   }
   function renderProspects(view) {
     const P = state.pros;
@@ -2383,7 +2395,7 @@ button.namelink:hover { color: var(--red); }
     const all = P.data.prospects, list = prospectList();
     const divs = [...new Set(all.map((x) => x.division))].sort(divisionOrder);
     const head = `<div class="toolbar">
-      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button><button type="button" data-pros-view="week" aria-pressed="${P.view === "week"}">This week</button><button type="button" data-pros-view="signed" aria-pressed="${P.view === "signed"}">Signed!</button>${state.recapCanEdit || Object.keys(state.sugg || {}).length ? `<button type="button" data-pros-view="suggest" aria-pressed="${P.view === "suggest"}">Suggest</button>` : ""}</span>
+      <span class="seg" role="group" aria-label="View"><button type="button" data-pros-view="classes" aria-pressed="${P.view === "classes"}">By weight class</button><button type="button" data-pros-view="table" aria-pressed="${P.view === "table"}">Top prospects</button><button type="button" data-pros-view="callers" aria-pressed="${P.view === "callers"}">Who called it</button><button type="button" data-pros-view="moves" aria-pressed="${P.view === "moves"}">Risers &amp; fallers</button><button type="button" data-pros-view="week" aria-pressed="${P.view === "week"}">This week</button><button type="button" data-pros-view="signed" aria-pressed="${P.view === "signed"}">Signed!</button>${state.recapCanEdit || Object.keys(state.sugg || {}).length ? `<button type="button" data-pros-view="suggest" aria-pressed="${P.view === "suggest"}">Suggest</button>` : ""}</span>
       <label class="label" for="pros-q" style="margin-left:6px">Search</label><input id="pros-q" type="search" value="${esc(P.q)}" placeholder="Name, promotion, country">
       <select data-pros-filter="gender"><option value="">Men and women</option><option value="men" ${P.gender === "men" ? "selected" : ""}>Men</option><option value="women" ${P.gender === "women" ? "selected" : ""}>Women</option></select>
       <select data-pros-filter="wc"><option value="">All divisions</option>${divs.map((d) => `<option ${P.wc === d ? "selected" : ""}>${esc(d)}</option>`).join("")}</select>
@@ -2420,6 +2432,25 @@ button.namelink:hover { color: var(--red); }
             <td>${chip(x)}${x.background ? `<div class="muted" style="font-size:12.5px;margin-top:4px;max-width:60ch">${esc(x.background)}</div>` : ""}</td>
             <td>${state.recapCanEdit && (x.status || "pending") === "pending" ? `<button type="button" class="linklike muted" data-sugg-del="${esc(id)}">remove</button>` : ""}</td></tr>`).join("")}
           </tbody></table></div>` : `<div class="empty">No suggestions yet.</div>`}`;
+    } else if (P.view === "moves") {
+      const since = P.data.moves_since, rep = P.data.report;
+      const moved = P.data.prospects.filter((x) => x.move && !x.move.new && x.move.places && Math.min(x.p4p_rank, x.move.from) <= 300);
+      const up = moved.slice().sort((a, b) => b.move.places - a.move.places).filter((x) => x.move.places > 0).slice(0, 12);
+      const down = moved.slice().sort((a, b) => a.move.places - b.move.places).filter((x) => x.move.places < 0).slice(0, 12);
+      const fresh = P.data.prospects.filter((x) => x.move && x.move.new).slice(0, 12);
+      const lastFight = (x) => { const f = (x.recent || []).find((b) => since && b.date > since); return f ? `${f.result === "win" ? "W" : f.result === "loss" ? "L" : f.result} vs ${esc(f.opponent)} (${esc(f.method || "")})` : '<span class="muted">no fight since</span>'; };
+      const live = (xs) => xs.length ? `<table class="recent pk-table"><tbody>${xs.map((x) => `<tr><td>${moveBadge(x)}</td><td><button type="button" class="linklike" data-prospect-open="${esc(x.name)}"><strong>${esc(x.name)}</strong></button><div class="muted" style="font-size:12px">${esc(x.division)} · #${x.move && x.move.from ? x.move.from : "—"} → #${x.p4p_rank}</div></td><td style="font-size:13px">${lastFight(x)}</td></tr>`).join("")}</tbody></table>` : '<p class="muted" style="font-size:13px">None yet.</p>';
+      const repRows = (xs, cls) => xs.length ? `<table class="recent pk-table"><tbody>${xs.map((r) => `<tr><td><span class="mv ${cls}">${r.places > 0 ? "▲" : "▼"}${Math.abs(r.places)}</span></td><td><strong>${esc(r.name)}</strong><div class="muted" style="font-size:12px">${esc(r.division)} · #${r.from} → #${r.rank} · score ${r.score_change > 0 ? "+" : ""}${r.score_change}</div></td><td style="font-size:13px">${r.fights.length ? r.fights.map((f) => `${f.result === "win" ? "W" : f.result === "loss" ? "L" : esc(f.result)} vs ${esc(f.opponent)}`).join(", ") : '<span class="muted">no fight: the field moved</span>'}</td></tr>`).join("")}</tbody></table>` : '<p class="muted" style="font-size:13px">None.</p>';
+      body = `<p class="muted" style="font-size:13.5px;margin:0;max-width:80ch">The list is snapshotted on the 1st of each month. Each prospect's arrow is the places moved since then; the monthly report compares one month with the last, with the fights behind each move. Some movement has no fight behind it: a newly swept promotion or a new Fight Matrix release reshuffles the field, and youth and activity change as time passes.</p>
+        ${rep ? `<section class="panel stack" style="padding:18px 20px"><div class="toolbar" style="margin:0;justify-content:space-between"><h3 style="margin:0">Monthly report · ${esc(rep.month)}</h3><span class="muted num" style="font-size:12.5px">${esc(rep.from)} → ${esc(rep.to)} · ${rep.counts.new} new, ${rep.counts.left} left</span></div>
+          ${rep.summary ? rep.summary.split(/\n{2,}/).map((t) => `<p style="margin:0">${esc(t)}</p>`).join("") : ""}
+          <div class="grid2"><div><h4 style="margin:0 0 6px">Risers</h4>${repRows(rep.risers, "mv-up")}</div><div><h4 style="margin:0 0 6px">Fallers</h4>${repRows(rep.fallers, "mv-down")}</div></div>
+          ${rep.new_top100.length ? `<div><h4 style="margin:0 0 6px">New in the top 100</h4><p style="margin:0;font-size:14px">${rep.new_top100.map((r) => `<strong>${esc(r.name)}</strong> <span class="muted">#${r.rank}${r.from ? ` (from #${r.from})` : " (new)"}</span>`).join(" · ")}</p></div>` : ""}
+          ${rep.left.length ? `<div><h4 style="margin:0 0 6px">Left the list</h4><ul class="notes">${rep.left.slice(0, 15).map((g) => `<li><strong>${esc(g.name)}</strong> <span class="muted">(was #${g.was})</span>: ${esc(g.why)}</li>`).join("")}</ul></div>` : ""}</section>`
+          : `<div class="empty" style="padding:14px">The first monthly report comes after the next snapshot (the 1st of the month), comparing it with ${since ? esc(since) : "this month's"}.</div>`}
+        ${since ? `<h3 style="margin:8px 0 0">So far this month <span class="muted" style="font-size:14px">(since ${esc(since)})</span></h3>
+        <div class="grid2"><div><h4 style="margin:0 0 6px">Rising</h4>${live(up)}</div><div><h4 style="margin:0 0 6px">Falling</h4>${live(down)}</div></div>
+        ${fresh.length ? `<div><h4 style="margin:0 0 6px">New on the list</h4>${live(fresh)}</div>` : ""}` : ""}`;
     } else if (P.view === "week") {
       const W = P.data.week || { upcoming: [], recent: [] };
       const fmtD = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
@@ -2472,11 +2503,11 @@ button.namelink:hover { color: var(--red); }
         const g = groups[wc], top = g[0].score;
         return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} prospects</span></div>
           <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)} · age ${Math.floor(x.age)}">${esc(x.name)}</span>
-            <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}</span></li>`).join("")}</ol>
+            <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}<span class="wmv">${moveBadge(x)}</span></span></li>`).join("")}</ol>
           ${g.length > 10 ? `<button class="btn link" type="button" data-pros-class="${esc(wc)}">All ${g.length} in the list</button>` : ""}</div>`;
       }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by prospect score. Click a name for the full card.</p>` : `<div class="empty">No prospects match these filters.</div>`;
     } else {
-      body = list.length ? `<div class="table-wrap"><table class="list pr-table"><thead><tr><th class="num">#</th><th>Prospect</th><th class="num">Age</th><th class="num">Record</th><th class="num">Finish</th><th>Promotion · last fight</th><th>From</th><th class="num">Score</th></tr></thead>
+      body = list.length ? `<div class="table-wrap"><table class="list pr-table"><thead><tr><th class="num">#</th><th class="num" title="Places moved since the last monthly snapshot">Move</th><th>Prospect</th><th class="num">Age</th><th class="num">Record</th><th class="num">Finish</th><th>Promotion · last fight</th><th>From</th><th class="num">Score</th></tr></thead>
         <tbody>${list.map((x, i) => prospectRow(x, i + 1)).join("")}</tbody></table></div>` : `<div class="empty">No prospects match these filters.</div>`;
     }
     view.innerHTML = `<div class="stack">${intro}<section class="panel stack">${head}${body}</section></div>`;
