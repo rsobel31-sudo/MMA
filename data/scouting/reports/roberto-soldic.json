@@ -1,14 +1,14 @@
 {
  "name": "Roberto Soldic",
- "updated": "2026-09-30T23:00:00+00:00",
+ "updated": "2026-10-04",
  "event": "UFC 332",
  "summary": "Former two-division KSW champion and a knockout artist (18 KO/TKO wins) making his UFC debut; power puncher with championship experience, coming off a first-round KO in February 2025.",
  "how_they_fight": {
-  "Striking": "Heavy, compact power punching and aggressive finishing instincts; beat Mamed Khalidov by knockout in 2021.",
-  "Grappling": "Can wrestle but prefers to strike; his ONE run (2022-23) included a KO loss to Zebaztian Kadestam and a no contest.",
   "Defense & durability": "Has been stopped (Kadestam, 2023); chin is good but not untouchable.",
+  "Fight IQ": "Experienced in big fights; the unknown is his first UFC fight and its adrenaline.",
+  "Grappling": "Can wrestle but prefers to strike; his ONE run (2022-23) included a KO loss to Zebaztian Kadestam and a no contest.",
   "Pace & cardio": "About 20 months out of the cage before this debut.",
-  "Fight IQ": "Experienced in big fights; the unknown is his first UFC fight and its adrenaline."
+  "Striking": "Heavy, compact power punching and aggressive finishing instincts; beat Mamed Khalidov by knockout in 2021."
  },
  "patterns": [
   "Pressure and heavy combinations",
@@ -17,7 +17,8 @@
  "concerns": [
   "Long layoff",
   "Debut nerves in the Octagon",
-  "Fighting a fast starter with his own power"
+  "Fighting a fast starter with his own power",
+  "Owner's notes, UFC 332: looked hittable."
  ],
  "keys_to_beat": [
   "Beat him to the punch early",
@@ -26,18 +27,18 @@
  "news": [],
  "sources": [
   {
-   "outlet": "UFC.com",
    "author": "E. Spencer Kyte",
+   "date": "2026-09-28",
+   "outlet": "UFC.com",
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
-   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
-   "date": "2026-09-28"
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city"
   },
   {
-   "outlet": "Heavy",
    "author": "",
+   "date": "2026-09",
+   "outlet": "Heavy",
    "title": "Former Two-Division KSW Champion Makes UFC Debut",
-   "url": "https://heavy.com/sports/ufc/two-division-ksw-champion-ufc-debut/",
-   "date": "2026-09"
+   "url": "https://heavy.com/sports/ufc/two-division-ksw-champion-ufc-debut/"
   }
  ],
  "depth": "moderate"

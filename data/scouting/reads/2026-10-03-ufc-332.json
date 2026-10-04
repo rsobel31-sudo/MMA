@@ -20,7 +20,15 @@
    "p_model": 0.67,
    "p_market": 0.665,
    "created": "2026-09-30T23:30:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Natalia Silva",
+   "result": {
+    "method": "DEC",
+    "round": 5,
+    "seconds": 300
+   }
   },
   {
    "a": "Deiveson Figueiredo",
@@ -38,7 +46,15 @@
    "p_model": 0.18,
    "p_market": 0.169,
    "created": "2026-09-30T23:30:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 0,
+   "signed_logit": -0.1,
+   "winner": "Payton Talbott",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 129
+   }
   },
   {
    "a": "King Green",
@@ -65,7 +81,15 @@
      "method": "",
      "url": "https://www.mmamania.com/ufc-332-fight-card-start-time-live-stream-silva-vs-cong/475879/king-green-vs-esteban-ribovics-odds-full-fight-preview-and-prediction-ufc-332"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.2,
+   "winner": "Esteban Ribovics",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 248
+   }
   },
   {
    "a": "Roberto Soldic",
@@ -84,7 +108,15 @@
    "p_model": 0.61,
    "p_market": 0.707,
    "created": "2026-09-30T23:30:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Roberto Soldic",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Ateba Abega Gautier",
@@ -103,7 +135,15 @@
    "p_model": 0.59,
    "p_market": 0.685,
    "created": "2026-09-30T23:30:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 0,
+   "signed_logit": 0.2,
+   "winner": "Roman Kopylov",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 192
+   }
   },
   {
    "a": "Imanol Rodriguez",
@@ -130,7 +170,15 @@
      "method": "DEC",
      "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.25,
+   "winner": "Imanol Rodriguez",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 191
+   }
   },
   {
    "a": "Damian Pinas",
@@ -156,7 +204,15 @@
      "method": "KO/TKO R2",
      "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Damian Pinas",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 75
+   }
   },
   {
    "a": "Marcus McGhee",
@@ -174,7 +230,15 @@
    "p_model": null,
    "p_market": null,
    "created": "2026-09-30T23:30:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 1,
+   "signed_logit": 0,
+   "winner": "Marcus McGhee",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 298
+   }
   },
   {
    "a": "Anthony Wint",
@@ -201,7 +265,15 @@
      "method": "KO/TKO R1",
      "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.6,
+   "winner": "Anthony Wint",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 23
+   }
   },
   {
    "a": "Johnny Walker",
@@ -228,7 +300,15 @@
      "method": "KO/TKO R2",
      "url": "https://www.sherdog.com/news/articles/5/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.1,
+   "winner": "Johnny Walker",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 215
+   }
   },
   {
    "a": "Rafael dos Anjos",
@@ -254,7 +334,15 @@
      "method": "DEC",
      "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.1,
+   "winner": "Alexander Hernandez",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 192
+   }
   },
   {
    "a": "Jacobe Smith",
@@ -280,7 +368,15 @@
      "method": "KO/TKO R1",
      "url": "https://www.sherdog.com/news/articles/9/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.2,
+   "winner": "Jacobe Smith",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 92
+   }
   },
   {
    "a": "Marvin Vettori",
@@ -306,7 +402,15 @@
      "method": "DEC",
      "url": "https://www.sherdog.com/news/articles/7/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0,
+   "winner": "Ismail Naurdiev",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Court McGee",
@@ -332,7 +436,15 @@
      "method": "SUB R1",
      "url": "https://www.sherdog.com/news/articles/8/Preview-UFC-332-prelims-203006"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.1,
+   "winner": "Eric Nolan",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 206
+   }
   }
  ]
 }

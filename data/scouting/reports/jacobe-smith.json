@@ -1,18 +1,19 @@
 {
  "name": "Jacobe Smith",
- "updated": "2026-09-30T23:00:00+00:00",
+ "updated": "2026-10-04",
  "event": "UFC 332",
  "summary": "A former collegiate wrestler and elite athlete, 12-0, with ground-and-pound finishes and some dynamic striking; overconfident and with defensive holes, but still getting overmatched opponents.",
  "how_they_fight": {
-  "Striking": "Dynamic, athletic; knocked out Josiah Harrell in round one in February.",
-  "Grappling": "Heavy wrestling (about 4.9 takedowns per 15 minutes) and ground-and-pound.",
   "Defense": "Holes (Sherdog); doesn't know what he doesn't know.",
+  "Fight IQ": "Overconfident; hasn't been tested.",
+  "Grappling": "Heavy wrestling (about 4.9 takedowns per 15 minutes) and ground-and-pound.",
   "Pace & cardio": "Rarely needed.",
-  "Fight IQ": "Overconfident; hasn't been tested."
+  "Striking": "Dynamic, athletic; knocked out Josiah Harrell in round one in February."
  },
  "patterns": [
   "Takedowns and ground-and-pound",
-  "Early finishes"
+  "Early finishes",
+  "Owner's notes, UFC 332: exceptional ground and pound; chin and stamina still unknown."
  ],
  "concerns": [
   "Defensive holes against a puncher"
@@ -23,31 +24,31 @@
  "news": [
   {
    "date": "2026-09-24",
-   "text": "Added to UFC 332 on about nine days' notice against newcomer Bruce Whitehead.",
-   "source": "https://sports.yahoo.com/articles/ufc-332-fight-card-adds-160000725.html"
+   "source": "https://sports.yahoo.com/articles/ufc-332-fight-card-adds-160000725.html",
+   "text": "Added to UFC 332 on about nine days' notice against newcomer Bruce Whitehead."
   }
  ],
  "sources": [
   {
-   "outlet": "Sherdog",
    "author": "Tom Feely",
+   "date": "2026-09-30",
+   "outlet": "Sherdog",
    "title": "Preview: UFC 332 prelims (Smith vs. Whitehead)",
-   "url": "https://www.sherdog.com/news/articles/9/Preview-UFC-332-prelims-203006",
-   "date": "2026-09-30"
+   "url": "https://www.sherdog.com/news/articles/9/Preview-UFC-332-prelims-203006"
   },
   {
-   "outlet": "Yahoo Sports",
    "author": "",
+   "date": "2026-09-24",
+   "outlet": "Yahoo Sports",
    "title": "UFC 332 fight card adds undefeated welterweight on short notice",
-   "url": "https://sports.yahoo.com/articles/ufc-332-fight-card-adds-160000725.html",
-   "date": "2026-09-24"
+   "url": "https://sports.yahoo.com/articles/ufc-332-fight-card-adds-160000725.html"
   },
   {
-   "outlet": "UFC.com",
    "author": "E. Spencer Kyte",
+   "date": "2026-09-28",
+   "outlet": "UFC.com",
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
-   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
-   "date": "2026-09-28"
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city"
   }
  ],
  "depth": "good"

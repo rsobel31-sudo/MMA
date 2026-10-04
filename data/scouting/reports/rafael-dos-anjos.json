@@ -1,21 +1,22 @@
 {
  "name": "Rafael dos Anjos",
- "updated": "2026-09-30T23:00:00+00:00",
+ "updated": "2026-10-04",
  "event": "UFC 332",
  "summary": "A former lightweight champion and one of the great pressure fighters, now 42, back from a two-year layoff and three knee surgeries (torn ACL and meniscus) and on a three-fight losing streak, cutting back to 155 where his cardio has faltered before.",
  "how_they_fight": {
-  "Striking": "Southpaw pressure: body kicks and relentless forward movement.",
-  "Grappling": "Strong top game when he gets there.",
   "Defense & durability": "Durable, but finished by Geoff Neal in 2024 (the fight where the knee went).",
+  "Fight IQ": "Elite experience and doggedness.",
+  "Grappling": "Strong top game when he gets there.",
   "Pace & cardio": "The central question: at lightweight, the cut has drained him before.",
-  "Fight IQ": "Elite experience and doggedness."
+  "Striking": "Southpaw pressure: body kicks and relentless forward movement."
  },
  "patterns": [
   "Southpaw pressure and body kicks"
  ],
  "concerns": [
   "Age, layoff and knee surgery",
-  "Weight cut to 155"
+  "Weight cut to 155",
+  "Owner's notes, UFC 332: looked strong early, but 'pretty much done' by the owner's read."
  ],
  "keys_to_beat": [
   "Move and counter; make him chase"
@@ -23,31 +24,31 @@
  "news": [
   {
    "date": "2026-08-21",
-   "text": "Returns after two years out following three knee surgeries.",
-   "source": "https://bloodyelbow.com/2026/08/21/former-ufc-champion-returns-after-two-years-out-at-ufc-332-despite-fan-calls-for-him-to-retire/"
+   "source": "https://bloodyelbow.com/2026/08/21/former-ufc-champion-returns-after-two-years-out-at-ufc-332-despite-fan-calls-for-him-to-retire/",
+   "text": "Returns after two years out following three knee surgeries."
   }
  ],
  "sources": [
   {
-   "outlet": "Sherdog",
    "author": "Tom Feely",
+   "date": "2026-09-30",
+   "outlet": "Sherdog",
    "title": "Preview: UFC 332 prelims (Dos Anjos vs. Hernandez)",
-   "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-332-prelims-203006",
-   "date": "2026-09-30"
+   "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-332-prelims-203006"
   },
   {
-   "outlet": "Bloody Elbow",
    "author": "",
+   "date": "2026-08-21",
+   "outlet": "Bloody Elbow",
    "title": "Former UFC champion returns after two years out at UFC 332",
-   "url": "https://bloodyelbow.com/2026/08/21/former-ufc-champion-returns-after-two-years-out-at-ufc-332-despite-fan-calls-for-him-to-retire/",
-   "date": "2026-08-21"
+   "url": "https://bloodyelbow.com/2026/08/21/former-ufc-champion-returns-after-two-years-out-at-ufc-332-despite-fan-calls-for-him-to-retire/"
   },
   {
-   "outlet": "UFC.com",
    "author": "E. Spencer Kyte",
+   "date": "2026-09-28",
+   "outlet": "UFC.com",
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
-   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
-   "date": "2026-09-28"
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city"
   }
  ],
  "depth": "good"

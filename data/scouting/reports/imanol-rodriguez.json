@@ -1,18 +1,19 @@
 {
  "name": "Imanol Rodriguez",
- "updated": "2026-09-30T23:00:00+00:00",
+ "updated": "2026-10-04",
  "event": "UFC 332",
  "summary": "'Himan': an elite flyweight athlete with power and a strong striking-plus-grappling mix; 7-0 and a TUF semifinalist who went to a coin-flip decision with eventual winner Joseph Morales.",
  "how_they_fight": {
-  "Striking": "Horsepower is the calling card: aggressive, powerful for 125, can be wild. Got caught by sharp shots from Kevin Borjas in his UFC debut but regrouped and finished him in round two.",
-  "Grappling": "Uses takedowns and scrambles as a second weapon.",
   "Defense": "Can be hit when he over-commits to pressure.",
+  "Fight IQ": "Showed composure recovering against Borjas.",
+  "Grappling": "Uses takedowns and scrambles as a second weapon.",
   "Pace & cardio": "Explosive; most wins came early.",
-  "Fight IQ": "Showed composure recovering against Borjas."
+  "Striking": "Horsepower is the calling card: aggressive, powerful for 125, can be wild. Got caught by sharp shots from Kevin Borjas in his UFC debut but regrouped and finished him in round two."
  },
  "patterns": [
   "Aggressive, powerful pressure",
-  "Wrestling in the mix"
+  "Wrestling in the mix",
+  "Owner's notes, UFC 332: fast and mean; refused to let it be a point-fighting match and overwhelmed Coria."
  ],
  "concerns": [
   "Wildness under pressure",
@@ -25,18 +26,18 @@
  "news": [],
  "sources": [
   {
-   "outlet": "Sherdog",
    "author": "Tom Feely",
+   "date": "2026-09-30",
+   "outlet": "Sherdog",
    "title": "Preview: UFC 332 prelims (Rodriguez vs. Coria)",
-   "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-332-prelims-203006",
-   "date": "2026-09-30"
+   "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-332-prelims-203006"
   },
   {
-   "outlet": "UFC.com",
    "author": "E. Spencer Kyte",
+   "date": "2026-09-28",
+   "outlet": "UFC.com",
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
-   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
-   "date": "2026-09-28"
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city"
   }
  ],
  "depth": "moderate"

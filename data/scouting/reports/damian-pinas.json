@@ -1,18 +1,19 @@
 {
  "name": "Damian Pinas",
- "updated": "2026-09-30T23:00:00+00:00",
+ "updated": "2026-10-04",
  "event": "UFC 332",
  "summary": "The 'death touch' middleweight: 25, with a long frame, a 200-cm reach and one-punch power; five straight first-round knockouts, including Cesar Almeida, a kickboxer never stopped before.",
  "how_they_fight": {
-  "Striking": "Not much happens until it does: picks spots, then lands shots that end fights.",
-  "Grappling": "Largely untested.",
   "Defense": "Raw; hasn't needed defense in short fights.",
+  "Fight IQ": "Improving shot selection (Sherdog).",
+  "Grappling": "Largely untested.",
   "Pace & cardio": "Never been past the first round in his current run.",
-  "Fight IQ": "Improving shot selection (Sherdog)."
+  "Striking": "Not much happens until it does: picks spots, then lands shots that end fights."
  },
  "patterns": [
   "One-punch knockouts",
-  "Patient until he finds the shot"
+  "Patient until he finds the shot",
+  "Owner's notes, UFC 332: scary power and big hands."
  ],
  "concerns": [
   "Unproven beyond round one",
@@ -25,18 +26,18 @@
  "news": [],
  "sources": [
   {
-   "outlet": "Sherdog",
    "author": "Tom Feely",
+   "date": "2026-09-30",
+   "outlet": "Sherdog",
    "title": "Preview: UFC 332 prelims (Pinas vs. Pulyaev)",
-   "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-332-prelims-203006",
-   "date": "2026-09-30"
+   "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-332-prelims-203006"
   },
   {
-   "outlet": "UFC.com",
    "author": "E. Spencer Kyte",
+   "date": "2026-09-28",
+   "outlet": "UFC.com",
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
-   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
-   "date": "2026-09-28"
+   "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city"
   }
  ],
  "depth": "moderate"
