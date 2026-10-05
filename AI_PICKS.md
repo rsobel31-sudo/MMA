@@ -260,7 +260,7 @@ The pick'em for everyone: the same game as AI Picks, with no money. Players pick
 
 | Path | Who writes it | What it holds |
 |---|---|---|
-| `players/<uid>/picks/<card id>` | the player | `{event, date, picks: {"A vs B": {winner, method, round}}, updated}`, saved as they pick |
+| `players/<uid>/picks/<card id>` | the player | `{event, date, picks: [{bout, winner, method, round}], updated}`, saved as they pick |
 | `standings/picks-<uid>`, `standings/picks-leaderboard` | Claude only | official, graded pick'em standings |
 
 **Grading (Sunday, after `card-picks grade`, which supplies the results):**

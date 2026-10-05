@@ -51,3 +51,10 @@ def test_board_lists_the_whole_card_even_unpriced_bouts():
     board = board_from_sheet(sheet)
     assert [b["bout"] for b in board["bouts"]] == ["A vs B", "C vs D"] and board["bouts"][1]["rounds"] == 5
     assert len(board["markets"]) == 1
+
+
+def test_reads_picks_saved_as_a_list():
+    picks = [{"bout": "Ann Ace vs Bea Bold", "winner": "Bea Bold", "method": "SUB", "round": 2},
+             {"bout": "Cy Cole vs Di Dunn", "winner": "Cy Cole", "method": "DEC"}]
+    s = K.standings_for("u1", [_doc("2099-01-01T20:00:00Z", picks)], BOARDS, K.load_results([CARD], folder="nowhere"))
+    assert s["points"] == 8 and s["bouts"] == 2

@@ -4,7 +4,7 @@ Each player picks every bout they like on the card from the board (`ai_picks/boa
 the method and, for a finish, the round. Picks are saved on the page in
 `players/<id>/picks/<card id>` (writable only by that player):
 
-    {"event": "...", "date": "YYYY-MM-DD", "picks": {"A vs B": {"winner": "A", "method": "KO/TKO", "round": 1}}, "updated": "..."}
+    {"event": "...", "date": "YYYY-MM-DD", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO", "round": 1}], "updated": "..."}
 
 Claude grades them after the card with the same scoring as AI Picks (card_picks.score: 2 for the
 winner, 1 for the method, a bonus point for the round) and the same two-source results, and publishes
@@ -90,6 +90,8 @@ def standings_for(uid: str, docs: Iterable[Dict], boards: Dict[str, List[Dict]],
     cards = []
     for raw in docs:
         d = dict(raw.get("data") or raw)
+        if isinstance(d.get("picks"), list):  # the page saves a list of {bout, winner, method, round}
+            d["picks"] = {p["bout"]: p for p in d["picks"] if isinstance(p, dict) and p.get("bout")}
         saved = str(raw.get("updatedAt") or d.get("updated") or "")
         ev = d.get("event", "")
         lock, bouts = locks.get(ev, ("", []))

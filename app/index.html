@@ -2565,7 +2565,11 @@ button.namelink:hover { color: var(--red); }
     db.doc("players/" + M.uid).onSnapshot((d) => { M.player = d.exists ? d.data() : null; renderSoon(); }, () => {});
     db.collection("players/" + M.uid + "/picks").onSnapshot((snap) => {
       const docs = {};
-      snap.docs.forEach((d) => { docs[d.id] = d.data(); });
+      snap.docs.forEach((d) => {
+        const v = d.data();
+        // Saved as a list of {bout, winner, method, round}; the page works with them keyed by bout.
+        docs[d.id] = Object.assign({}, v, { picks: Array.isArray(v.picks) ? Object.fromEntries(v.picks.filter((x) => x && x.bout).map(({ bout, ...p }) => [bout, p])) : (v.picks || {}) });
+      });
       // Edits still waiting to be written win over what the database last said.
       for (const id of Object.keys(M.pk.docs)) if (debounced.has("pickem/" + id) || pending.has("pickem/" + id)) docs[id] = M.pk.docs[id];
       M.pk.docs = docs; renderSoon();
@@ -2727,7 +2731,7 @@ button.namelink:hover { color: var(--red); }
     if (!M.uid || !bd || boardLocked(bd)) return;
     const id = pkCardId(bd), bout = bd.bouts.find((b) => b.bout === boutName);
     if (!bout) return;
-    const doc = M.pk.docs[id] = Object.assign({ event: bd.event, date: bd.date, picks: {} }, M.pk.docs[id]);
+    const doc = M.pk.docs[id] = Object.assign({ event: bd.event, date: bd.date, picks: {} }, M.pk.docs[id] || ls.get(LOCAL_KEY + ":pickem:" + id));
     doc.picks = Object.assign({}, doc.picks);
     const p = Object.assign({}, doc.picks[boutName]);
     if (field === "winner") p.winner = value;
@@ -2739,13 +2743,19 @@ button.namelink:hover { color: var(--red); }
     const key = "pickem/" + id;
     later(key, async () => {
       pending.add(key);
+      const doc = M.pk.docs[id];
+      ls.set(LOCAL_KEY + ":pickem:" + id, doc);  // a copy in this browser too, whatever happens to the save
+      // Stored as a list: bout names make poor field keys ("Allen Frye Jr. vs ..." has a dot in it).
+      const body = { event: doc.event, date: doc.date, updated: doc.updated, picks: Object.entries(doc.picks || {}).map(([bout, p]) => Object.assign({ bout }, p)) };
+      // "unavailable" is a passing platform hiccup: try once more after a short random pause.
+      const retry = (fn) => fn().catch((e) => { if ((e && e.code) !== "unavailable") throw e; return new Promise((r) => setTimeout(r, 700 + Math.random() * 900)).then(fn); });
       try {
-        if (!M.player) await M.db.doc("players/" + M.uid).set({ joined: new Date().toISOString() });
-        await M.db.doc("players/" + M.uid + "/picks/" + id).set(M.pk.docs[id]);
+        if (!M.player) await retry(() => M.db.doc("players/" + M.uid).set({ joined: new Date().toISOString() }));
+        await retry(() => M.db.doc("players/" + M.uid + "/picks/" + id).set(body));
         M.pk.status = "saved";
       } catch (e) {
         M.readOnly = (e && e.code) === "invalid_argument";
-        M.pk.status = "failed " + (M.readOnly ? "this view can't save picks (ask the owner to invite you as a Contributor)" : (e && e.code) || "error");
+        M.pk.status = "failed " + (M.readOnly ? "this view can't save picks (ask the owner to invite you as a Contributor)" : `${(e && e.code) || "error"}. Your picks are kept in this browser; pick again in a minute to retry.`);
       } finally { pending.delete(key); }
       pkStatusPaint();
     }, 500);
@@ -2753,7 +2763,7 @@ button.namelink:hover { color: var(--red); }
   const pkPickText = (p, rounds) => !p || !p.winner ? '<span class="muted">no pick</span>'
     : `<strong>${esc(p.winner)}</strong>${p.method ? ` <span class="muted">by</span> ${esc(METHOD_WORD[p.method] || p.method)}` : ' <span class="muted">(method?)</span>'}${p.method && p.method !== "DEC" ? (p.round ? ` <span class="muted">in</span> R${p.round}` : ' <span class="muted">(round?)</span>') : ""}`;
   function pkCardHtml(bd) {
-    const M = state.my, id = pkCardId(bd), doc = M.pk.docs[id] || { picks: {} }, locked = boardLocked(bd);
+    const M = state.my, id = pkCardId(bd), doc = M.pk.docs[id] || ls.get(LOCAL_KEY + ":pickem:" + id) || { picks: {} }, locked = boardLocked(bd);
     const same = (x) => x && fold(x).includes(fold(bd.event.split(":")[0]));
     const claude = state.cp.cards.find((c) => same(c.event));
     const cb = {};
