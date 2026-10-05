@@ -166,6 +166,9 @@ def cmd_sheet(args) -> int:
         "event_starts": _lock_time(ev["date"], _in_us(ev.get("location", ""))),
         "odds_urls": best["urls"], "unpriced": unpriced,
         "blend_weights": blend_w, "dec_cal": dec_cal, "prop_shrink": P.PROP_SHRINK, "bouts": bouts, "skipped": skipped,
+        # Every bout on the card, priced or not: My Picks needs them all (FanDuel's spelling where it lists the bout).
+        "card": [{"bout": f"{x['a']} vs {x['b']}", "a": x["a"], "b": x["b"], "rounds": int(w.get("rounds") or 3), "title": bool(w.get("title"))}
+                 for w in card for x in [found.get(_pair(w["a"], w["b"]), w)]],
         "markets": sorted(markets, key=lambda m: -m["ev"]),
     }
     SHEETS.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,317 @@
+{
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "date": "2026-10-10",
+ "locks_at": "2026-10-10T21:00:00+00:00",
+ "fetched_at": "2026-10-05T14:03:57+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-332-4378",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan",
+ "bouts": [
+  {
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "a": "Brendan Allen",
+   "b": "Christian Leroy Duncan",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "a": "Jai Herbert",
+   "b": "Matheus Camilo",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "a": "Ketlen Souza",
+   "b": "Loopy Godinez",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "a": "Andre Fili",
+   "b": "Kai Kamaka III",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "a": "Gerald Meerschaert",
+   "b": "Julius Walker",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "a": "Malcolm Wellmaker",
+   "b": "Otari Tanzilovi",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "a": "Francisco Prado",
+   "b": "Ismael Bonfim",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "a": "Leon Shahbazyan",
+   "b": "Niko Price",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "a": "Brendson Ribeiro",
+   "b": "Felipe Franco",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "a": "Allen Frye Jr.",
+   "b": "Rj Harris",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "a": "Alice Pereira",
+   "b": "Darya Zheleznyakova",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "a": "Ernesta Kareckaite",
+   "b": "Melissa Gatto",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45167:ml:a",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Brendan Allen to win",
+   "odds": -146,
+   "p_fanduel": 0.5595
+  },
+  {
+   "id": "45167:ml:b",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Christian Leroy Duncan to win",
+   "odds": 114,
+   "p_fanduel": 0.4405
+  },
+  {
+   "id": "45169:ml:a",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jai Herbert to win",
+   "odds": 158,
+   "p_fanduel": 0.3658
+  },
+  {
+   "id": "45169:ml:b",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Matheus Camilo to win",
+   "odds": -205,
+   "p_fanduel": 0.6342
+  },
+  {
+   "id": "45168:ml:a",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ketlen Souza to win",
+   "odds": 186,
+   "p_fanduel": 0.3299
+  },
+  {
+   "id": "45168:ml:b",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Loopy Godinez to win",
+   "odds": -245,
+   "p_fanduel": 0.6701
+  },
+  {
+   "id": "45171:ml:a",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gerald Meerschaert to win",
+   "odds": 220,
+   "p_fanduel": 0.295
+  },
+  {
+   "id": "45171:ml:b",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Julius Walker to win",
+   "odds": -295,
+   "p_fanduel": 0.705
+  },
+  {
+   "id": "45172:ml:a",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Malcolm Wellmaker to win",
+   "odds": -235,
+   "p_fanduel": 0.6626
+  },
+  {
+   "id": "45172:ml:b",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Otari Tanzilovi to win",
+   "odds": 180,
+   "p_fanduel": 0.3374
+  },
+  {
+   "id": "45173:ml:a",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Francisco Prado to win",
+   "odds": -106,
+   "p_fanduel": 0.4854
+  },
+  {
+   "id": "45173:ml:b",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Ismael Bonfim to win",
+   "odds": -120,
+   "p_fanduel": 0.5146
+  },
+  {
+   "id": "45179:ml:a",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Leon Shahbazyan to win",
+   "odds": -164,
+   "p_fanduel": 0.5862
+  },
+  {
+   "id": "45179:ml:b",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Niko Price to win",
+   "odds": 128,
+   "p_fanduel": 0.4138
+  },
+  {
+   "id": "45176:ml:a",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Brendson Ribeiro to win",
+   "odds": 265,
+   "p_fanduel": 0.2582
+  },
+  {
+   "id": "45176:ml:b",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Felipe Franco to win",
+   "odds": -370,
+   "p_fanduel": 0.7418
+  },
+  {
+   "id": "45175:ml:a",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alice Pereira to win",
+   "odds": -148,
+   "p_fanduel": 0.5608
+  },
+  {
+   "id": "45175:ml:b",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Darya Zheleznyakova to win",
+   "odds": 114,
+   "p_fanduel": 0.4392
+  },
+  {
+   "id": "45177:ml:a",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ernesta Kareckaite to win",
+   "odds": 102,
+   "p_fanduel": 0.4669
+  },
+  {
+   "id": "45177:ml:b",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Melissa Gatto to win",
+   "odds": -130,
+   "p_fanduel": 0.5331
+  }
+ ]
+}

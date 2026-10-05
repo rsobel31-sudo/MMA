@@ -39,3 +39,15 @@ def test_saved_after_lock_counts_nothing():
     picks = {"Ann Ace vs Bea Bold": {"winner": "Bea Bold", "method": "SUB", "round": 2}}
     s = K.standings_for("u1", [_doc("2099-01-01T22:00:00Z", picks)], BOARDS, K.load_results([CARD], folder="nowhere"))
     assert s["points"] == 0 and s["bouts"] == 0 and s["cards"][0]["void_reason"] == "saved after the card locked"
+
+
+def test_board_lists_the_whole_card_even_unpriced_bouts():
+    from mma_predictor.league import board_from_sheet
+    sheet = {"event": "E", "date": "2099-01-01", "event_starts": "2099-01-01T22:00:00+00:00", "fetched_at": "x",
+             "bouts": [{"bout": "A vs B", "a": "A", "b": "B", "rounds": 3}],
+             "card": [{"bout": "A vs B", "a": "A", "b": "B", "rounds": 3, "title": False},
+                      {"bout": "C vs D", "a": "C", "b": "D", "rounds": 5, "title": True}],
+             "markets": [{"id": "1:ml:a", "bout": "A vs B", "market": ["ml", "a"], "selection": "A to win", "odds": -150, "p_fanduel": 0.58}]}
+    board = board_from_sheet(sheet)
+    assert [b["bout"] for b in board["bouts"]] == ["A vs B", "C vs D"] and board["bouts"][1]["rounds"] == 5
+    assert len(board["markets"]) == 1

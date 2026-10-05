@@ -37,7 +37,8 @@ def _now() -> str:
 # ------------------------------------------------------------------- board
 def board_from_sheet(sheet: Dict[str, object]) -> Dict[str, object]:
     """What players see: FanDuel's prices and no-vig probabilities, never Claude's numbers."""
-    bouts = [{"bout": b["bout"], "a": b["a"], "b": b["b"], "rounds": b["rounds"], "title": b.get("title", False)} for b in sheet["bouts"]]
+    # The whole card (My Picks picks every bout); bouts Claude couldn't price simply have no markets for My Bets.
+    bouts = [{"bout": b["bout"], "a": b["a"], "b": b["b"], "rounds": b["rounds"], "title": b.get("title", False)} for b in sheet.get("card") or sheet["bouts"]]
     order = {b["bout"]: i for i, b in enumerate(bouts)}
     markets = [{"id": m["id"], "bout": m["bout"], "market": m["market"], "selection": m["selection"], "odds": m["odds"],
                 "p_fanduel": m["p_fanduel"]} for m in sheet["markets"]]
