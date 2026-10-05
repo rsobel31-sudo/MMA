@@ -142,33 +142,71 @@ class Pundits:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in self.rows))
 
-    def scoreboard(self) -> List[Dict[str, object]]:
-        """Per author: graded picks, accuracy, and a test against the market.
+    def people(self) -> Dict[str, str]:
+        """Each written author name -> one canonical name per person: accents, case and small spelling slips
+        ('Frazer Kron' / 'Frazer Krohn', 'Beaupré' / 'Beaupre') are the same person; the most used spelling wins."""
+        from collections import Counter
+        from difflib import SequenceMatcher
 
-        Each pick carries the market's no-vig probability for the fighter picked
-        (p_market). A pundit with no edge wins about sum(p_market) picks;
-        z = (won - expected) / sqrt(sum p(1 - p)) says how far above or below the
-        market they are, in standard errors.
+        counts = Counter(str(r.get("author") or "") for r in self.rows if r.get("author"))
+        fold = lambda n: re.sub(r"[^a-z ]", "", unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().lower()).split()  # noqa: E731
+        canon: Dict[str, str] = {}
+        heads: List[str] = []
+        for name, _ in counts.most_common():
+            f = fold(name)
+            for h in heads:
+                g = fold(h)
+                if f and g and f[0] == g[0] and SequenceMatcher(None, " ".join(f[1:]), " ".join(g[1:])).ratio() >= 0.85:
+                    canon[name] = h
+                    break
+            else:
+                heads.append(name)
+                canon[name] = name
+        return canon
+
+    def scoreboard(self, today: Optional[str] = None) -> List[Dict[str, object]]:
+        """Per picker (a person, across outlets): graded picks, accuracy, and a test against the market.
+
+        Each pick carries the market's no-vig probability for the fighter picked (p_market). A picker with
+        no edge wins about sum(p_market) picks; z = (won - expected) / sqrt(sum p(1 - p)) says how far above
+        or below the market they are, in standard errors. Ranking is by z, so a long record of beating the
+        favourite counts and a famous name or a run of chalk picks does not.
         """
-        by: Dict[Tuple[str, str], List[Dict[str, object]]] = {}
+        canon = self.people()
+        today = today or datetime.now(timezone.utc).date().isoformat()
+        year_ago = f"{int(today[:4]) - 1}{today[4:10]}"
+        by: Dict[str, List[Dict[str, object]]] = {}
         for r in self.rows:
-            if r.get("grade") in ("won", "lost"):
-                by.setdefault((r["outlet"], r.get("author") or "(staff)"), []).append(r)
+            if r.get("grade") in ("won", "lost") and r.get("author"):
+                by.setdefault(canon.get(str(r["author"]), str(r["author"])), []).append(r)
+
+        def test(rs: List[Dict[str, object]]) -> Tuple[float, float, int]:
+            priced = [r for r in rs if r.get("p_market") is not None]
+            exp = sum(float(r["p_market"]) for r in priced)
+            var = sum(float(r["p_market"]) * (1 - float(r["p_market"])) for r in priced)
+            won = sum(r["grade"] == "won" for r in priced)
+            return ((won - exp) / math.sqrt(var) if var > 0 else 0.0), (exp / len(priced) if priced else 0.0), len(priced)
+
         out = []
-        for (outlet, author), rs in by.items():
+        for author, rs in by.items():
             n = len(rs)
             won = sum(r["grade"] == "won" for r in rs)
+            z, expected, n_priced = test(rs)
             priced = [r for r in rs if r.get("p_market") is not None]
-            exp = sum(r["p_market"] for r in priced)
-            var = sum(r["p_market"] * (1 - r["p_market"]) for r in priced)
-            won_p = sum(r["grade"] == "won" for r in priced)
-            z = (won_p - exp) / math.sqrt(var) if var > 0 else 0.0
-            underdogs = [r for r in priced if r["p_market"] < 0.5]
-            out.append({"outlet": outlet, "author": author, "picks": n, "correct": won, "accuracy": round(won / n, 3),
-                        "expected": round(exp / len(priced), 3) if priced else None,
-                        "underdog_picks": len(underdogs), "underdog_won": sum(r["grade"] == "won" for r in underdogs),
-                        "z": round(z, 2), "weight": pundit_weight(len(priced), z)})
-        return sorted(out, key=lambda s: (-s["picks"], s["outlet"]))
+            dogs = [r for r in priced if float(r["p_market"]) < 0.5]
+            meth = [r for r in rs if r.get("method_correct") is not None]
+            recent = [r for r in rs if str(r.get("date", "")) >= year_ago]
+            rz, _, rn = test(recent)
+            outlets = [o for o, _ in __import__("collections").Counter(str(r["outlet"]) for r in rs).most_common()]
+            out.append({"author": author, "outlet": outlets[0], "outlets": outlets, "picks": n, "correct": won,
+                        "accuracy": round(won / n, 3), "expected": round(expected, 3) if n_priced else None,
+                        "edge": round(won / n - expected, 3) if n_priced else None,
+                        "underdog_picks": len(dogs), "underdog_won": sum(r["grade"] == "won" for r in dogs),
+                        "methods": len(meth), "method_hits": sum(bool(r["method_correct"]) for r in meth),
+                        "first": min(str(r["date"]) for r in rs), "last": max(str(r["date"]) for r in rs),
+                        "recent": {"picks": rn, "z": round(rz, 2)},
+                        "z": round(z, 2), "weight": pundit_weight(n_priced, z)})
+        return sorted(out, key=lambda s: (-(s["picks"] >= MIN_PUNDIT_PICKS), -s["z"], -s["picks"]))
 
 
 def pundit_weight(n: int, z: float) -> float:
@@ -178,3 +216,22 @@ def pundit_weight(n: int, z: float) -> float:
     if z <= -1.96:
         return 0.0 if z <= -2.58 else 0.5
     return 1.5 if z < 2.58 else 2.0
+
+
+def pundit_consensus(picks: Iterable[Dict[str, object]], board: Iterable[Dict[str, object]]) -> Optional[Dict[str, object]]:
+    """Fight-week pundit picks on one bout, each counted by its picker's Fight Track Record weight
+    (1.0 until the record is long and clear). Returns the leading fighter, their weighted share and the
+    picks behind it, or None when nobody has picked the bout."""
+    def fold(n: object) -> str:
+        return re.sub(r"[^a-z ]", "", unicodedata.normalize("NFKD", str(n or "")).encode("ascii", "ignore").decode().lower()).strip()
+
+    weights = {fold(b["author"]): float(b["weight"]) for b in board}
+    tally: Dict[str, float] = {}
+    rows = list(picks)
+    for r in rows:
+        tally[str(r["pick"])] = tally.get(str(r["pick"]), 0.0) + weights.get(fold(r.get("author")), 1.0)
+    total = sum(tally.values())
+    if not total:
+        return None
+    pick, w = max(tally.items(), key=lambda kv: kv[1])
+    return {"pick": pick, "share": round(w / total, 3), "n": len(rows), "raw_share": round(sum(str(r["pick"]) == pick for r in rows) / len(rows), 3)}

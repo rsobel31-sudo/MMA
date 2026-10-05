@@ -1,0 +1,18 @@
+{
+ "_comment": "Short names pickers use for fighters (nickname or initials -> name as in data/verified). Add one when `scout history --verbose` skips a pick over it.",
+ "BSD": "Benoit St. Denis",
+ "JDM": "Jack Della Maddalena",
+ "MVP": "Michael Page",
+ "Suga": "Sean O'Malley",
+ "Bullet": "Sharabutdin Magomedov",
+ "Mak": "Islam Makhachev",
+ "Poatan": "Alex Pereira",
+ "Bones": "Jon Jones",
+ "Borz": "Khamzat Chimaev",
+ "Blessed": "Max Holloway",
+ "Chito": "Marlon Vera",
+ "Pitbull": "Patricio Freire",
+ "Do Bronx": "Charles Oliveira",
+ "El Matador": "Ilia Topuria",
+ "Stylebender": "Israel Adesanya"
+}

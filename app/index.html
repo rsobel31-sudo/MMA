@@ -419,6 +419,13 @@ input:focus, textarea:focus, select:focus { border-color: var(--rule); }
 .probbar { border-radius: 0; height: 50px; font-family: var(--display); font-weight: 400; font-size: 22px; border: 3px solid var(--rule); }
 .probbar div { padding-inline: 16px; }
 .pill { font-family: var(--cond); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; border-radius: 0; border: 1px solid var(--rule); background: transparent; padding: 1px 7px; font-size: 12px; }
+.pill.ftr-up { border-color: var(--good); color: var(--good); }
+.pill.ftr-down { border-color: var(--red); color: var(--red); }
+.ftr-table .pos { color: var(--good); font-weight: 600; }
+.ftr-table .neg { color: var(--red); font-weight: 600; }
+.ftr-table tr.muted td { color: var(--muted); }
+.ftr-table .nowrap { white-space: nowrap; }
+@media (max-width: 640px) { .ftr-table .ftr-opt { display: none; } .ftr-table .pill { letter-spacing: 0; padding: 1px 3px; font-size: 11px; white-space: nowrap; } .ftr-table td, .ftr-table th { padding-inline: 3px; } }
 .pill.edit, .pill.warn { border-color: var(--edit); }
 .verdict-line .pill.num { font-size: 13px; padding: 4px 10px; }
 .mtrack, .mtrack div, .rbar .track, .rbar .track b, .wc li .bar, .wc li .bar span, .fbar div, .mini { border-radius: 0; }
@@ -1216,7 +1223,16 @@ button.namelink:hover { color: var(--red); }
       return { title: "Scouting", key, rows: [
         ["What it is", "Claude reads the major MMA outlets every week (MMA Fighting, Sherdog, Bloody Elbow, Cageside Press, MMA Mania, BJPenn.com, MMA Weekly, LowKick MMA, ESPN, UFC.com) plus fight previews and breakdowns, and writes a report on each fighter: how they actually fight, their habits, what's worrying, how to beat them, and the news. Every claim links to its source; facts are checked against the verified fight records."],
         ["The read", "For each bout Claude then makes a read: a lean of up to 0.8 log-odds toward one fighter, for what the numbers can't see (style matchups, layoffs, weight cuts, short notice, age). It's added to the prediction as its own factor, on this site and in the AI Bets betting sheet."],
-        ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are recorded and graded too; each counts equally until they have a long enough record to prove they beat, or trail, the betting market."]] };
+        ["Keeping it honest", "Every read is graded after the fight against the model alone. Pundits' picks are graded too, years back, in the Fight Track Record (Insights): each picker counts equally until a long record proves they beat, or trail, the betting market, and the read leans on the consensus weighted that way."]] };
+    }
+    if (key === "fighttrack") {
+      return { title: "Fight Track Record", key, rows: [
+        ["Who's on it", "Anyone who publishes fight picks in the open, not just the famous names: Sherdog's previews (every bout on the card), CBS Sports' expert panel, Cageside Press, MMASucka, Bleacher Report and SI's MMA Knockout staff picks, and more outlets as they're added. Claude collects each card's picks in fight week and back-fills the archives."],
+        ["How picks are graded", "Every pick is matched to the bout in our verified results (two sources agree on the winner) and to the closing odds with the bookmaker's margin removed. Draws, no contests and cancelled bouts don't count."],
+        ["Why not just win rate", "Picking -500 favourites wins most of the time and shows nothing. Each pick is compared with the market's own chance for the fighter picked, so 'Market expected' is what an average picker would have hit with the same picks. Edge is the difference, and z says how many standard errors it is from zero: beyond ±1.96 is unlikely to be luck."],
+        ["What the status means", "Everyone counts the same until they have 40 graded picks and a clear edge. Elevated: ×1.5 (z above +1.96) or ×2 (above +2.58). Discounted: ×½ (below −1.96). Ignored: below −2.58. Provisional: under 40 picks, standard weight."],
+        ["How it's used", "For each fight, the pundit picks shown under Scouting are combined into a consensus weighted by these statuses, and Claude's scouting read leans on the weighted consensus, not the raw headcount. The read is a factor in every prediction and is itself graded."],
+      ] };
     }
     if (key === "recaps") {
       const R = state.data.recaps || {}, w = R.blend_weights;
@@ -2068,6 +2084,7 @@ button.namelink:hover { color: var(--red); }
       if (state.follows.has(u)) state.follows.delete(u); else state.follows.add(u);
       saveFollows(); render(); return;
     }
+    if (t.dataset.ftrAll) { state.ftrAll = !state.ftrAll; render(); return; }
     if (t.dataset.info) { e.stopPropagation(); openInfo(t.dataset.info); return; }
     if (t.dataset.infoClose) { $("#info-dlg").close(); return; }
     if (t.id === "more-btn") { moreMenu($("#more-menu").hidden); return; }
@@ -2319,7 +2336,7 @@ button.namelink:hover { color: var(--red); }
           <span class="pill">${esc(rd.confidence)} confidence</span></div>
         <p>${esc(rd.reasoning)}</p>
         ${rd.factors && rd.factors.length ? `<div class="sc-chips">${rd.factors.map((f) => `<span class="pill">${esc(f)}</span>`).join("")}</div>` : ""}
-        ${rd.pundits && rd.pundits.length ? `<div class="label" style="margin-top:10px">Pundit picks</div><ul class="notes">${rd.pundits.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.outlet)}${x.author ? ` · ${esc(x.author)}` : ""}</a>: <strong>${esc(x.pick)}</strong>${x.method ? ` <span class="muted">(${esc(x.method)})</span>` : ""}</li>`).join("")}</ul>` : ""}
+        ${rd.pundits && rd.pundits.length ? (() => { const cs = punditConsensus(rd.pundits), idx = pickerIndex(); return `<div class="label" style="margin-top:10px">Pundit picks${cs ? ` · <span style="text-transform:none;letter-spacing:0">weighted consensus <strong>${esc(cs.pick)}</strong> ${Math.round(cs.share * 100)}%</span>` : ""}</div><ul class="notes">${rd.pundits.map((x) => { const rec = idx.get(foldName(x.author)); return `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.outlet)}${x.author ? ` · ${esc(x.author)}` : ""}</a>: <strong>${esc(x.pick)}</strong>${x.method ? ` <span class="muted">(${esc(x.method)})</span>` : ""}${rec ? ` ${ftrStatus(rec)} <span class="muted num" style="font-size:12px">${rec.correct}/${rec.picks}</span>` : ""}</li>`; }).join("")}</ul>`; })() : ""}
         ${rd.winner ? `<p class="num" style="margin:8px 0 0"><strong>Result:</strong> ${esc(rd.winner)} (${esc(rd.result.method)} R${rd.result.round}) · the read was ${lg === 0 ? "neutral" : (lg > 0) === (rd.winner === a) ? "right" : "wrong"}</p>` : ""}
       </div>` : `<p class="muted">No scouting read on this matchup yet.</p>`;
     return `<section class="panel stack sc-panel">
@@ -2330,20 +2347,49 @@ button.namelink:hover { color: var(--red); }
         <div><h4 class="sc-name" style="color:var(--blue)">${nameLink(b)}</h4>${rb ? reportBlock(rb) : '<p class="muted">No scouting report yet.</p>'}</div>
       </div></section>`;
   }
+  // Fight Track Record: everyone who publishes picks, graded against the betting market on the same fights.
+  const foldName = (n) => String(n || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z ]/g, "").trim();
+  function pickerIndex() {
+    const B = state.scout.board, idx = new Map();
+    for (const x of (B && B.pundits) || []) idx.set(foldName(x.author), x);
+    return idx;
+  }
+  const ftrStatus = (x) => x.picks < 40 ? `<span class="pill muted" title="Fewer than 40 graded picks: counts at standard weight until the record is long enough to judge">Provisional</span>`
+    : x.weight > 1 ? `<span class="pill ftr-up" title="Beats the betting market by a clear margin: their picks count ×${x.weight}">Elevated ×${x.weight}</span>`
+    : x.weight === 0 ? `<span class="pill ftr-down" title="Trails the market by a wide margin: their picks are ignored">Ignored</span>`
+    : x.weight < 1 ? `<span class="pill ftr-down" title="Trails the betting market by a clear margin: their picks count half">Discounted ×½</span>`
+    : `<span class="pill" title="No clear edge either way yet: standard weight">Standard</span>`;
   function scoreboardPanel() {
     const B = state.scout.board;
     if (!B) return "";
     const r = B.reads || { n: 0 }, pu = B.pundits || [];
+    const pct = (x) => x == null ? "—" : Math.round(x * 100) + "%";
+    const qualified = pu.filter((x) => x.picks >= 40), shown = state.ftrAll ? pu : qualified.slice(0, 25);
+    const zc = (z) => `<span class="num ${z >= 1.96 ? "pos" : z <= -1.96 ? "neg" : ""}">${z > 0 ? "+" : ""}${Number(z).toFixed(2)}</span>`;
+    const outletsN = new Set(pu.flatMap((x) => x.outlets || [x.outlet])).size, picksN = pu.reduce((t, x) => t + x.picks, 0);
     return `<section class="panel">
-      <h3>Scouting track record</h3>
-      <p style="font-size:14px">${r.n ? `Claude's reads on <strong>${r.n}</strong> graded bouts: they moved the model on ${r.moved} and were right on ${r.moved_right}. Log loss with reads <strong class="num">${r.log_loss_with_reads}</strong> vs the model alone <span class="num">${r.log_loss_model}</span> (lower is better).` : "No reads graded yet: the first ones settle after UFC 332."}
+      <div class="toolbar" style="margin:0;justify-content:space-between"><h3 style="margin:0">Fight Track Record</h3>${infoBtn("fighttrack", "How pickers are graded")}</div>
+      <p style="font-size:14px;max-width:85ch">Who actually predicts fights well. Published picks from <strong>${pu.length}</strong> analysts across <strong>${outletsN}</strong> outlets (${picksN.toLocaleString()} graded picks), each checked against our verified results and against the betting market on the same fights. Picking heavy favourites wins often and proves nothing, so pickers are ranked by how far they beat the market's own expectation (z), not by how often they're right.</p>
+      ${pu.length ? `<div class="table-wrap"><table class="recent pk-table ftr-table"><thead><tr><th class="num">#</th><th>Picker</th><th class="num">Picks</th><th class="num">Right</th><th class="num ftr-opt" title="How often the fighters they picked were expected to win, by the closing odds">Market expected</th><th class="num" title="Right minus market expected">Edge</th><th class="num ftr-opt">Underdogs won</th><th class="num ftr-opt" title="Correct method, where they named one (shown from 10 method picks)">Method</th><th class="num ftr-opt" title="Edge over the market in the last 12 months, in standard errors">Last 12 mo</th><th class="num" title="Edge over the market, in standard errors: beyond ±1.96 is a clear edge">vs market (z)</th><th>Status</th></tr></thead><tbody>
+        ${shown.map((x, i) => `<tr${x.picks < 40 ? ' class="muted"' : ""}><td class="num">${x.picks >= 40 ? i + 1 : ""}</td><td><strong>${esc(x.author)}</strong><div class="muted" style="font-size:12px">${esc((x.outlets || [x.outlet]).join(", "))} · ${esc(String(x.first || "").slice(0, 4))}–${esc(String(x.last || "").slice(0, 4))}</div></td><td class="num">${x.picks}</td><td class="num">${pct(x.accuracy)}</td><td class="num ftr-opt">${pct(x.expected)}</td><td class="num nowrap">${x.edge == null ? "—" : (x.edge > 0 ? "+" : "") + (x.edge * 100).toFixed(1) + " pts"}</td><td class="num ftr-opt">${x.underdog_won}/${x.underdog_picks}</td><td class="num ftr-opt">${x.methods >= 10 ? pct(x.method_hits / x.methods) + `<div class="muted" style="font-size:11px">of ${x.methods}</div>` : "—"}</td><td class="num ftr-opt">${x.recent && x.recent.picks >= 10 ? zc(x.recent.z) + `<div class="muted" style="font-size:11px">${x.recent.picks} picks</div>` : "—"}</td><td class="num">${zc(x.z)}</td><td>${ftrStatus(x)}</td></tr>`).join("")}
+      </tbody></table></div>
+      <div class="toolbar" style="margin:6px 0 0"><button class="btn small" type="button" data-ftr-all="1">${state.ftrAll ? "Show the qualified top 25" : `Show all ${pu.length} pickers (${pu.length - qualified.length} with under 40 picks)`}</button></div>` : `<p class="muted" style="font-size:13px">Published picks are collected every fight week and graded after the card.</p>`}
+      <p class="muted" style="font-size:12.5px;max-width:85ch">Everyone starts at standard weight. A picker is <strong>elevated</strong> (×1.5, or ×2 beyond z +2.58) only after 40 graded picks with a clear edge over the market (z above +1.96), <strong>discounted</strong> (×½) below −1.96 and <strong>ignored</strong> below −2.58, the same bar as <em>Who called it</em> for prospects. The weights decide how much each picker counts in the pundit consensus that goes into Claude's scouting read for every fight.</p>
+      <h4 style="margin:16px 0 4px">Claude's scouting reads</h4>
+      <p style="font-size:14px">${r.n ? `Claude's reads on <strong>${r.n}</strong> graded bouts: they moved the model on ${r.moved} and were right on ${r.moved_right}. Log loss with reads <strong class="num">${r.log_loss_with_reads}</strong> vs the model alone <span class="num">${r.log_loss_model}</span> (lower is better).` : "No reads graded yet."}
         Reads count at full weight until ${150} bouts are graded; then the weight is re-fitted to how much they actually help.</p>
-      <h4 style="margin:12px 0 4px">Pundits</h4>
-      ${pu.length ? `<div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Outlet</th><th>Author</th><th class="num">Picks</th><th class="num">Right</th><th class="num">Market expected</th><th class="num">Underdogs won</th><th class="num">vs market (z)</th><th class="num">Weight</th></tr></thead><tbody>
-        ${pu.map((x) => `<tr><td>${esc(x.outlet)}</td><td>${esc(x.author)}</td><td class="num">${x.picks}</td><td class="num">${(x.accuracy * 100).toFixed(0)}%</td><td class="num">${x.expected != null ? (x.expected * 100).toFixed(0) + "%" : "—"}</td><td class="num">${x.underdog_won}/${x.underdog_picks}</td><td class="num">${x.z > 0 ? "+" : ""}${x.z.toFixed(2)}</td><td class="num">${x.weight}</td></tr>`).join("")}
-      </tbody></table></div>` : `<p class="muted" style="font-size:13px">Pundit picks are recorded every fight week and graded after the card.</p>`}
-      <p class="muted" style="font-size:12.5px">Every pundit counts equally until they have 40 graded picks and beat (or trail) the betting market by a clear margin (z beyond ±1.96). Only then are they upweighted or discounted, and dropped below −2.58.</p>
     </section>`;
+  }
+  function punditConsensus(list) {
+    // Pundit picks on one bout, each counted by the picker's track-record weight.
+    const idx = pickerIndex(), tally = {};
+    let total = 0;
+    for (const x of list) {
+      const rec = idx.get(foldName(x.author)), w = rec ? rec.weight : 1;
+      tally[x.pick] = (tally[x.pick] || 0) + w; total += w;
+    }
+    const top = Object.entries(tally).sort((a, b) => b[1] - a[1])[0];
+    return top && total ? { pick: top[0], share: top[1] / total, n: list.length } : null;
   }
 
   // ------------------------------------------------------------ Prospects

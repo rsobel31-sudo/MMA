@@ -132,6 +132,9 @@ def _report(name: str) -> Dict[str, object]:
 def cmd_card(args) -> int:
     fetcher, roster = _fetcher(args.cache), _roster(args.app_data, args.aliases)
     ev = _card(fetcher, args.event)
+    from .reads import Pundits, pundit_consensus
+    pun = Pundits()
+    board = pun.scoreboard()
     print(f"{ev['name']} ({ev['date']})")
     for b in ev["bouts"]:
         row = []
@@ -141,6 +144,10 @@ def cmd_card(args) -> int:
             r = _report(name)
             row.append(f"{name} [{('report ' + r['updated'][:10]) if r else 'NO REPORT'}]")
         print("  " + "  vs  ".join(row))
+        mine = [p for p in pun.rows if not p.get("grade") and {p["a"], p["b"]} == {b["a"], b["b"]}]
+        cs = pundit_consensus(mine, board)
+        if cs:
+            print(f"      pundits: {cs['pick']} {cs['share']:.0%} weighted by track record ({cs['raw_share']:.0%} by headcount, {cs['n']} picks)")
     return 0
 
 
@@ -301,6 +308,15 @@ def register(sub) -> None:
     q.add_argument("--cache", default=".cache/pages")
     q.add_argument("--force", action="store_true")
     q.set_defaults(func=cmd_grade)
+
+    from .pundit_history import cmd_history
+    q = ps.add_parser("history", help="collect published fight picks from outlets' archives into the pundit ledger, graded")
+    q.add_argument("--sources", default="sherdog,cageside,mmasucka,bleacher,cbs,staff")
+    q.add_argument("--since", default="2024-01-01")
+    q.add_argument("--limit", type=int, default=0, help="articles per source (testing)")
+    q.add_argument("--cache", default=".cache/pages")
+    q.add_argument("--verbose", action="store_true")
+    q.set_defaults(func=cmd_history)
 
     q = ps.add_parser("sync", help="write scouting documents for the page database")
     q.add_argument("--out", default=".cache/scouting_sync")

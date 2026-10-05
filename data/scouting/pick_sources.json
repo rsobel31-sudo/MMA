@@ -1,0 +1,445 @@
+{
+ "_comment": "Pick articles found by web search (outlets without a listing we can read). The weekly scouting routine appends new ones; `scout history` reads them. source: cbs (expert table) or staff (Name: ... Pick: X articles; single-author articles credit the byline).",
+ "articles": [
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-331-fight-card-predictions-joshua-van-alexandre-pantoja-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-330-fight-card-predictions-islam-makhachev-vs-ian-garry-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-332-fight-card-predictions-natalia-silva-vs-wang-cong-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-freedom-250-fight-card-predictions-expert-picks-ilia-topuria-vs-justin-gaethje-white-house/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-328-fight-card-predictions-expert-picks-khamzat-chimaev-vs-sean-strickland/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-327-fight-card-predictions-expert-picks-jiri-prochazka-vs-carlos-ulberg/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-322-fight-card-predictions-expert-picks-jack-della-maddalena-islam-makhachev/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-321-fight-card-predictions-expert-picks-tom-aspinall-ciryl-gane/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-329-fight-card-predictions-conor-mcgregor-vs-max-holloway-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-323-fight-card-predictions-expert-picks-merab-dvalishvili-petr-yan/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-324-fight-card-predictions-expert-picks-justin-gaethje-paddy-pimblett/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-325-fight-card-predictions-expert-picks-alexander-volkanovski-vs-diego-lopes/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-326-fight-card-predictions-expert-picks-max-holloway-charles-oliveira-bmf/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-uros-medic-daniel-rodriguez/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-arnold-allen-melquizael-costa-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-odds-rafael-fiziev-manuel-torres/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-mateusz-gamrot-quillan-salkilld-odds/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-odds-manel-kape-kyoji-horiguchi/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-aljamain-sterling-youssef-zalal-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-belal-muhammad-gabriel-bonfim-predictions-fight-card-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-song-yadong-deiveson-figueiredo-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-dan-hooker-salahdine-parnasse-odds/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-anthony-hernandez-vs-gregory-rodrigues-odds/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-raul-rosas-vs-raoni-barcelos-odds/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-odds-expert-picks-israel-adesanya-joe-pyfer/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-card-predictions-umar-nurmagomedov-song-yadong-odds/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-gilbert-burns-vs-mike-malott-odds-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-card-odds-josh-emmett-kevin-vallejos/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/ufc-fight-night-predictions-odds-expert-picks-renato-moicano-chris-duncan/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-318-predictions-dustin-poirier-vs-max-holloway-3-fight-card-odds-prelims-preview-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-314-predictions-alexander-volkanovski-vs-diego-lopes-fight-card-odds-preview-expert-picks-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-315-predictions-belal-muhammad-vs-jack-della-maddalena-fight-card-odds-preview-picks-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-319-predictions-dricus-du-plessis-vs-khamzat-chimaev-fight-card-odds-preview-expert-picks-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-309-predictions-jon-jones-vs-stipe-miocic-fight-card-odds-preview-prelims-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-307-predictions-alex-pereira-vs-khalil-rountree-jr-fight-card-odds-expert-picks-preview-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-306-predictions-sean-omalley-vs-merab-dvalishvili-fight-card-odds-expert-picks-preview-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-305-predictions-dricus-du-plessis-vs-israel-adesanya-fight-card-odds-prelims-preview-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-298-predictions-alexander-volkanovski-vs-ilia-topuria-fight-card-odds-expert-picks-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-304-predictions-leon-edwards-vs-belal-muhammad-2-fight-card-odds-preview-expert-picks-prelims/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-313-predictions-alex-pereira-vs-magomed-ankalaev-fight-card-odds-preview-prelims-expert-picks/"
+  },
+  {
+   "source": "cbs",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/mma/news/ufc-312-predictions-dricus-du-plessis-vs-sean-strickland-fight-card-odds-preview-expert-picks-prelims/"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-328-mma-ko-staff-predictions-khamzat-chimaev-vs-sean-strickland-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-322-della-maddalena-vs-makhachev-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-327-mma-ko-staff-predictions-jiri-prochazka-vs-carlos-ulberg-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-329-mma-ko-staff-predictions-conor-mcgregor-vs-max-holloway-2-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-321-staff-predictions-tom-aspinall-vs-ciryl-gane-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-325-mma-ko-staff-predictions-volkanovski-vs-lopes-2-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-326-mma-ko-staff-predictions-holloway-vs-oliveira-2-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/mma-ko-predictions-ufc-324-justin-gaethje-vs-paddy-pimblett-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-320-staff-predictions-ankalaev-vs-pereira-2-main-card-picks-tips"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/main-card-predictions-ufc-312-sean-strickland-reclaim-belt-dricus-du-plessis"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-332-mma-ko-staff-predictions-natalia-silva-vs-cong-wang-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-330-mma-ko-staff-predictions-makhachev-vs-machado-garry-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-331-mma-ko-staff-predictions-joshua-van-vs-alexandre-pantoja-2-main-card-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-white-house-mma-ko-staff-predictions-topuria-vs-gaethje-pereira-vs-gane"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-fight-night-mario-bautista-vs-vinicius-oliveira-full-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-311-main-card-predictions-can-renato-moicano-shock-islam-makhachev"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-abu-dhabi-magomed-ankalaev-vs-bogdan-guskov-fight-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-noche-jean-silva-vs-jose-delgado-full-fight-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-fight-night-josh-emmett-vs-kevin-vallejos-full-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-oklahoma-city-du-plessis-vs-usman-full-fight-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "MMA Knockout (SI)",
+   "url": "https://www.si.com/fannation/mma/news/ufc-331-joshua-van-vs-alexandre-pantoja-2-prelim-fight-card-picks-predictions"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46610635/picks-bet-ufc-vancouver-reinier-de-ridder-brendan-allen"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/44318535/ufc-fight-night-expert-picks-best-bets-leon-edwards-vs-sean-brady"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/47682670/ufc-324-expert-picks-mma-experts-backing-justin-gaethje-paddy-pimblett"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/49032648/ufc-white-house-expert-picks-storylines-numbers-know"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46941852/ufc-322-expert-picks-best-bets-two-highly-anticipated-title-fights-jack-della-maddalena-islam-makhachev-valentina-shevchenko-zhang-weili"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46860254/ufc-fight-night-expert-picks-best-bets-gabriel-bonfim-vs-randy-brown"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/47261762/ufc-fight-night-brandon-royval-vs-manel-kape-expert-picks-best-bets"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45805847/ufc-fight-night-expert-picks-best-bets-robert-whittaker-vs-reinier-de-ridder"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46772215/ufc-fight-night-expert-picks-best-bets-steve-garcia-vs-david-onama"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/47024305/ufc-fight-night-expert-picks-best-bets-arman-tsarukyan-vs-dan-hooker"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/44415680/ufc-fight-night-expert-picks-best-bets-brandon-moreno-vs-steve-erceg"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45915939/ufc-fight-night-expert-picks-best-bets-roman-dolidze-anthony-hernandez"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45539722/expert-picks-best-bets-ufc-fight-night-azerbaijan-hamahal-hill-khalil-rountree-pfl-semifinals"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45695801/expert-picks-best-bets-lewis-vs-teixeira"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/48102342/ufc-326-expert-pick-max-holloway-vs-charles-oliveira-2"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/48695171/ufc-328-expert-picks-khamzat-chimaev-vs-sean-strickland-middleweight-championship"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/47754748/ufc-325-picks-experts-split-alexander-volkanovski-diego-lopes"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/48420514/ufc-327-expert-picks-expect-ji%C5%99i-prochazka-finish-carlos-ulberg"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/47193613/ufc-323-expert-picks-best-bets-merab-dvalishvili-alexandre-pantoja-stopped"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45575711/ufc-317-experts-picks-best-bets-charles-oliveira-ilia-topuria-alexandre-pantoja-kai-kara-france-pfl"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45967146/expert-picks-best-bets-ufc-319-pfl-championships"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/44605582/how-alexander-volkanovski-diego-lopes-win-ufc-314-pfl-picks"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45451514/ufc-316-expert-picks-best-bets-merab-dvalishvili-sean-omalley-julianna-pena-kayla-harrison"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46687442/ufc-321-abu-dhabi-experts-picks-best-bets-anyone-taking-ciryl-gane-upset-tom-aspinall"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/46442775/expert-picks-best-bets-ufc-320-pfl-champions-series-alex-pereira-magomed-ankalaev-merab-dvalishvili-cory-sandhagen"
+  },
+  {
+   "source": "staff",
+   "outlet": "ESPN",
+   "url": "https://www.espn.com/mma/story/_/id/45041226/ufc-315-expert-picks-best-bets-belal-muhammad-vs-jack-della-maddalena"
+  }
+ ]
+}

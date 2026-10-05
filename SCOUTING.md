@@ -4,7 +4,7 @@ Statistics miss the feel of a fight: rhythm, habits, how a fighter builds offenc
 
 - **Reports** on how each fighter fights.
 - **Reads**: a bounded judgement per bout that feeds the prediction.
-- **A pundit ledger** that learns which analysts are worth listening to.
+- **The Fight Track Record**: a pundit ledger that learns which analysts are worth listening to (Insights tab).
 
 ## Where things live
 
@@ -13,7 +13,8 @@ Statistics miss the feel of a fight: rhythm, habits, how a fighter builds offenc
 | News index (metadata only: outlet, title, link, date, fighters) | `data/scouting/news.jsonl` | none |
 | Fighter reports, in our own words with sources | `data/scouting/reports/<slug>.json` | `<slug>` (kind `report`) |
 | Reads per bout, with pundit picks | `data/scouting/reads/<date>-<event>.json` | `read--<slugA>--<slugB>` (kind `read`) |
-| Pundit ledger | `data/scouting/pundits.jsonl` | `scoreboard` |
+| Pundit ledger (Fight Track Record) | `data/scouting/pundits.jsonl` | `scoreboard` |
+| Pick articles found by search (CBS, SI, ...) | `data/scouting/pick_sources.json` | none |
 | Per-event drafts (what was written and why) | `data/scouting/drafts/` | none |
 
 Article text is cached in `.cache/` for reading and never committed.
@@ -85,6 +86,9 @@ Then:
    | 0.4 to 0.8 | Only when the model is plainly uninformed, e.g. no UFC data for either fighter. |
    | 0, or no read | When genuinely even or unknown. |
 3. **Pundit picks.** Record every pick you read (outlet, author, pick, method, link), with FanDuel's no-vig probability for the pick as `p_market`.
+   `scout card` prints each bout's **weighted consensus**: every picker counts by their Fight Track Record weight
+   (×2, ×1.5, ×1, ×½ or 0). Lean on that, not the headcount: five chalk pickers agreeing tell you less than one
+   picker with a proven edge over the market. Say in the read when a proven picker disagrees with the model.
 4. **Publish:** `python -m mma_predictor scout sync`, then write the listed documents to the `scouting` collection with ArtifactData. Page: https://claude.ai/artifact/4kRut1VP9KGeCFqMd9fR2A. Use `list` first so every existing document is pinned with `if_version`; at most 50 writes per batch.
 5. Commit `data/scouting` and push.
 
@@ -113,6 +117,35 @@ python -m mma_predictor scout sync     # then ArtifactData batch as above; commi
   | below −2.58 | dropped (0) |
 
   Until then, pundits inform the reads only qualitatively. Don't adjust anyone's weight early: a few cards can't separate skill from luck.
+
+## Fight Track Record (pundit history)
+
+The ledger is filled from the outlets' own archives, not just the picks read in fight week, so pickers arrive
+with years of graded picks. Anyone who publishes picks in the open belongs on it: the goal is to find the best
+pickers, not the most famous, so keep adding sources, especially smaller outlets and staff tables.
+
+```bash
+python -m mma_predictor scout history --since 2024-01-01      # all sources; re-runs only add new picks
+python -m mma_predictor scout history --sources cbs,staff --since <60 days ago> --verbose
+```
+
+| Source | Listing | Parser |
+|---|---|---|
+| Sherdog previews (every bout) | tag page `/tag/previews` | `parse_sherdog` |
+| Cageside Press staff picks | WordPress API search | `parse_cageside` (headshot = pick) |
+| MMASucka staff picks | `sitemap-predictions-N.xml` | `parse_staff` |
+| Bleacher Report staff predictions | monthly article sitemaps | `parse_staff` |
+| CBS Sports expert picks | `pick_sources.json` (web search) | `parse_cbs`, else `parse_staff` with the byline |
+| SI MMA Knockout and any other staff article | `pick_sources.json` (web search) | `parse_staff` |
+
+Each pick is tied to a bout in `data/verified/fights.csv` (two sources agree on the winner) and its closing no-vig
+odds; a pick that can't be tied to one bout and one fighter is skipped and listed with `--verbose`, never guessed.
+Never use Tapology or MMA Junkie (blocked). To add a source: put its articles in `pick_sources.json` with
+`source: "staff"` (or write a parser if the format is new), run `scout history`, and check the `--verbose` skips.
+
+Every Tuesday, after the Sunday data refresh has verified the last card's results: search for that card's
+CBS Sports and SI staff picks and any new outlet with named staff picks, add them to `pick_sources.json`, run
+`scout history --since <60 days ago>`, then `scout sync` and publish the `scoreboard` document.
 
 
 ## Sherdog watchlist (every Tuesday)
