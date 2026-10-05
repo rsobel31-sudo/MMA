@@ -377,8 +377,10 @@ header.top h1 { font-size: 30px; color: var(--mast-ink); display: flex; align-it
 header.top h1 span { color: var(--red); }
 header.top .tagline { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--mast-muted); }
 .navbar { display: flex; align-items: stretch; gap: 0; margin: 0; flex: 1 1 520px; min-width: 0; }
+/* Seven tabs and More: their own row under the title (phones scroll the tabs) */
+.navbar { flex-basis: 100%; }
 nav.tabs { display: flex; gap: 0; margin: 0; padding: 0; background: none; border: 0; border-radius: 0; overflow-x: auto; min-width: 0; }
-nav.tabs button, .more-btn { font-family: var(--cond); font-weight: 500; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--mast-muted); background: none; border: 0; border-radius: 0; padding: 18px 14px 14px; margin: 0; border-bottom: 4px solid transparent; cursor: pointer; white-space: nowrap; }
+nav.tabs button, .more-btn { font-family: var(--cond); font-weight: 500; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--mast-muted); background: none; border: 0; border-radius: 0; padding: 18px 11px 14px; margin: 0; border-bottom: 4px solid transparent; cursor: pointer; white-space: nowrap; }
 nav.tabs button:hover, .more-btn:hover { color: var(--mast-ink); }
 nav.tabs button[aria-selected="true"], .more-btn.active { color: var(--mast-ink); background: none; border-bottom-color: var(--red); }
 nav.tabs .count, .more-btn .count, .more-menu .count { font-family: var(--cond); font-size: 12px; letter-spacing: 0; border-radius: 0; background: var(--red); color: #fff; padding: 0 5px; margin-left: 4px; }
@@ -393,6 +395,7 @@ nav.tabs .count, .more-btn .count, .more-menu .count { font-family: var(--cond);
 .more-menu button:hover, .more-menu button:focus-visible { background: var(--surface-2); outline: none; }
 .more-menu button[aria-current="page"] { color: var(--red); }
 .more-menu button[aria-current="page"]::after { content: "★"; }
+@media (max-width: 1180px) { nav.tabs button, .more-btn { padding-inline: 8px; letter-spacing: .06em; } }
 
 /* Panels are ticket stubs: square, ink-ruled, no shadow */
 .panel { background: var(--surface); border: 3px solid var(--rule); border-radius: 0; padding: 22px 24px; box-shadow: none; }
@@ -543,17 +546,17 @@ button.namelink:hover { color: var(--red); }
   <div class="navbar">
   <nav class="tabs" role="tablist" id="tabs">
     <button role="tab" data-tab="card" aria-selected="true">Upcoming cards <span class="count" id="card-count" hidden></span></button>
-    <button role="tab" data-tab="roster" aria-selected="false">Fighters</button>
+    <button role="tab" data-tab="roster" aria-selected="false">UFC Rankings</button>
+    <button role="tab" data-tab="prospects" aria-selected="false">Prospect Rankings</button>
     <button role="tab" data-tab="cardpicks" aria-selected="false">AI Picks</button>
     <button role="tab" data-tab="picks" aria-selected="false">AI Bets <span class="count alert" id="picks-alert" hidden>!</span></button>
-    <button role="tab" data-tab="matchup" aria-selected="false">Create a Matchup</button>
+    <button role="tab" data-tab="mypickem" aria-selected="false">My Picks</button>
+    <button role="tab" data-tab="mypicks" aria-selected="false">My Bets</button>
   </nav>
   <div class="more" id="more">
     <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
-      <button type="button" role="menuitem" data-tab="prospects">Prospects</button>
-      <button type="button" role="menuitem" data-tab="mypickem">My Picks</button>
-      <button type="button" role="menuitem" data-tab="mypicks">My Bets</button>
+      <button type="button" role="menuitem" data-tab="matchup">Create a Matchup</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
       <button type="button" role="menuitem" data-tab="insights">Insights</button>
