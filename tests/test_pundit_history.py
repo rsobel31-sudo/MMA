@@ -127,3 +127,26 @@ def test_cageside_encoded_filenames_and_nicknames(tmp_path, monkeypatch):
     rows, skipped = H.resolve(B, H.parse_cageside(content), "Cageside Press", "u", "2099-05-02")
     assert not skipped
     assert [r["pick"] for r in rows] == ["Bea Bold", "Cy Cole"]
+
+
+def test_numbered_pool_rows_find_the_bout_from_the_picks(tmp_path):
+    B = _bouts(tmp_path)
+    content = """<table><tr><th>UFC 999</th><th>Adam Martin</th><th>MikesMMAPicks</th><th>Big Marcel</th></tr>
+      <tr><td>Fight #1</td><td>Ace</td><td>Bold</td><td>Ace</td></tr>
+      <tr><td>Fight #2</td><td>Cole</td><td>Cole</td><td>Cole</td></tr>
+      <tr><td>Record</td><td>1-1</td><td>0-2</td><td>1-1</td></tr></table>"""
+    rows, _ = H.resolve(B, H.parse_numbered_grid(content), "MMAOddsBreaker", "u", "2099-04-30")
+    got = {(r["author"], r["pick"], r["grade"]) for r in rows}
+    assert ("MikesMMAPicks", "Bea Bold", "won") in got and ("Big Marcel", "Cy Cole", "won") in got and len(rows) == 6
+
+
+def test_over_lines_and_pending_picks(tmp_path):
+    B = _bouts(tmp_path)
+    page = "<p>MW: Ann Ace (4) over Bea Bold (13)</p><p>LW: Gus Gray over Hal Hope (51)</p>"
+    raw = H.parse_over(page, "MMA Intel")
+    assert [r[1:] for r in raw] == [("Ann Ace", "Bea Bold", "Ann Ace"), ("Gus Gray", "Hal Hope", "Gus Gray")]
+    pending = []
+    rows, _ = H.resolve(B, raw, "MMA Intel", "u", "2099-04-30", pending=pending)
+    assert [(r["pick"], r["grade"]) for r in rows] == [("Ann Ace", "lost")]
+    assert pending == [{"author": "MMA Intel", "a": "Gus Gray", "b": "Hal Hope", "pick": "Gus Gray", "outlet": "MMA Intel",
+                        "url": "u", "published": "2099-04-30"}]

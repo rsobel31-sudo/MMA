@@ -136,7 +136,15 @@ python -m mma_predictor scout history --sources cbs,staff --since <60 days ago> 
 | MMASucka staff picks | `sitemap-predictions-N.xml` | `parse_staff` |
 | Bleacher Report staff predictions | monthly article sitemaps | `parse_staff` |
 | CBS Sports expert picks | `pick_sources.json` (web search) | `parse_cbs`, else `parse_staff` with the byline |
-| SI MMA Knockout and any other staff article | `pick_sources.json` (web search) | `parse_staff` |
+| RotoWire expert picks (six pickers, PPV main cards) | `mma_articles.xml` sitemap | `parse_grid` |
+| MMAOddsBreaker staff pool (eight analysts incl. MikesMMAPicks, Big Marcel; every bout) | WordPress API (Crawl-delay 10) | `parse_numbered_grid` |
+| MMA Intel (independent blog, every bout) | upcoming page only: recorded weekly | `parse_over` |
+| SI MMA Knockout, ESPN panels, F4W and any other staff article | `pick_sources.json` (web search) | `parse_staff` / `parse_grid` / `parse_espn` |
+
+Sources that only show upcoming picks (MMA Intel; add others the same way) are read every week: picks on bouts not yet
+fought wait in `data/scouting/picks_pending.jsonl` and are graded on a later run once the results are verified. Niche,
+independent pickers are the point: a self-reported record (MMA Intel claims 74%) means nothing until it is graded
+here against the market.
 
 Each pick is tied to a bout in `data/verified/fights.csv` (two sources agree on the winner) and its closing no-vig
 odds; a pick that can't be tied to one bout and one fighter is skipped and listed with `--verbose`, never guessed.

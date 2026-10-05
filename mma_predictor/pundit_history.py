@@ -39,6 +39,7 @@ FIGHTS = Path("data/verified/fights.csv")
 ALIASES = Path("data/name_aliases.json")
 SOURCES_FILE = Path("data/scouting/pick_sources.json")
 NICKNAMES = Path("data/scouting/fighter_nicknames.json")
+PENDING = Path("data/scouting/picks_pending.jsonl")  # picks on bouts not yet fought/verified, retried each run
 
 Row = Dict[str, object]
 
@@ -284,7 +285,7 @@ def _full_name(word: str, body: str) -> str:
     return m.group(1) if m else (w + (f" ({nick.group(1)})" if nick else ""))
 
 
-def parse_grid(page: str) -> List[Tuple[str, str, str, str]]:
+def parse_grid(page: str, byline_name: str = "") -> List[Tuple[str, str, str, str]]:
     """Expert-grid tables (CBS Sports, RotoWire, ...): one row per bout ('A vs. B' in some column), one column per
     picker. A picker column is one whose cells name a fighter of that row's bout on most rows."""
     body = text_of(page)
@@ -310,7 +311,12 @@ def parse_grid(page: str) -> List[Tuple[str, str, str, str]]:
             surn = lambda x: {t for t in match_key(x).split() if len(t) > 2}  # noqa: E731
             hits = [c for c, a, b in named if surn(c) & (surn(a) | surn(b))]
             if len(named) and len(hits) >= max(1, 0.6 * len(named)):
-                who = _full_name(h, body)
+                if re.fullmatch(r"(?i)\s*(prediction|pick|winner|my pick)\s*", h):  # one writer's table: credit the byline
+                    if not byline_name:
+                        continue
+                    who = byline_name
+                else:
+                    who = _full_name(h, body)
                 out += [(who, a, b, c) for c, a, b in named]
     return out
 
@@ -327,6 +333,36 @@ def parse_espn(page: str) -> List[Tuple[str, str, str, str]]:
             if len(c) >= 2 and c[1]:
                 name = c[0].split("\n")[0].strip()
                 out.append((name, c[1], "", c[1] + (" by " + c[2] if len(c) > 2 and c[2] else "")))
+    return out
+
+
+def parse_numbered_grid(content: str) -> List[Tuple[str, str, str, str]]:
+    """Pools whose rows are 'Fight #1', 'Fight #2'... with each picker's surname pick (MMAOddsBreaker):
+    the bout is found from the names picked on that row."""
+    out = []
+    for tb in re.findall(r"<table.*?</table>", content, re.S):
+        trs = re.findall(r"<tr.*?</tr>", tb, re.S)
+        if len(trs) < 2:
+            continue
+        head = _cells(trs[0])
+        for tr in trs[1:]:
+            c = _cells(tr)
+            if len(c) != len(head) or not re.match(r"(?i)(fight|bout)\s*#?\s*\d+", c[0]):
+                continue
+            names = list(dict.fromkeys(x.strip() for x in c[1:] if x.strip()))
+            fa, fb = (names + [""])[:2] if len(names) <= 2 else ("", "")
+            if not fa:
+                continue
+            out += [(w.strip(), fa, fb, x.strip()) for w, x in zip(head[1:], c[1:]) if x.strip() and w.strip()]
+    return out
+
+
+def parse_over(page: str, author: str) -> List[Tuple[str, str, str, str]]:
+    """'MW: Brendan Allen (4) over Christian Duncan (13)' lines (MMA Intel's full-card predictions)."""
+    out = []
+    for m in re.finditer(r"^(?:[A-Z]{1,5}:\s*)?([A-Z][^()\n]{2,40}?)\s*(?:\([^)]*\))?\s+over\s+([A-Z][^()\n]{2,40}?)\s*(?:\([^)]*\))?\s*$",
+                         text_of(page), re.M):
+        out.append((author, m.group(1).strip(), m.group(2).strip(), m.group(1).strip()))
     return out
 
 
@@ -422,14 +458,17 @@ def _parse_staff(page: str, B: Bouts, cands: List[Dict[str, str]], default_write
 
 # ------------------------------------------------------------------ assembling rows
 def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url: str, published: str,
-            cands: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
-    """Parsed picks -> ledger rows; picks we can't tie to one real bout and one fighter are reported, not guessed."""
+            cands: Optional[List[Dict[str, str]]] = None, pending: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
+    """Parsed picks -> ledger rows; picks we can't tie to one real bout and one fighter are reported, not guessed.
+    With `pending`, picks on bouts not in the verified results yet are kept there to be graded on a later run."""
     cands = cands if cands is not None else B.window(published)
     rows, skipped = [], []
     for author, fa, fb, pick_text in raw:
         bout = B.find(cands, fa, fb)
         if not bout:
             skipped.append(f"{author}: no verified bout for {fa} vs {fb}")
+            if pending is not None and fb:
+                pending.append({"author": author, "a": fa, "b": fb, "pick": pick_text, "outlet": outlet, "url": url, "published": published[:10]})
             continue
         who, how = split_pick(pick_text)
         side = B.side(who, bout) or B.side(pick_text, bout)
@@ -498,6 +537,21 @@ def discover(fetcher, source: str, since: str) -> List[Dict[str, str]]:
             out += [{"outlet": "Bleacher Report", "url": u} for u in re.findall(r"<loc>([^<]+)</loc>", xml)
                     if "ufc" in u and re.search(r"staff-(?:predictions|picks)", u)]
             y, m = (y, m - 1) if m > 1 else (y - 1, 12)
+    elif source == "oddsbreaker":  # WordPress API, content inline; robots.txt asks for 10 s between requests
+        for n in range(1, 30):
+            try:
+                d = json.loads(fetcher.get("https://www.mmaoddsbreaker.com/wp-json/wp/v2/posts?search=staff%20picks&per_page=20"
+                                           f"&page={n}&_fields=link,date,content", fresh=n == 1))
+            except Exception:
+                break
+            if not isinstance(d, list) or not d:
+                break
+            out += [{"outlet": "MMAOddsBreaker", "url": x["link"], "published": x["date"][:10], "content": x["content"]["rendered"]}
+                    for x in d if x["date"][:10] >= since and "staff-picks" in x["link"]]
+            if d[-1]["date"][:10] < since:
+                break
+    elif source == "mmaintel":  # upcoming cards only (old picks are taken down): recorded weekly, graded once fought
+        out.append({"outlet": "MMA Intel", "url": "https://mmaintel.blog/upcoming-ufc-predictions/", "published": date.today().isoformat()})
     elif source == "rotowire":
         xml = fetcher.get("https://www.rotowire.com/mma_articles.xml", fresh=True)
         out += [{"outlet": "RotoWire", "url": u} for u in re.findall(r"<loc>([^<]+)</loc>", xml) if "expert-picks" in u]
@@ -515,9 +569,13 @@ def discover(fetcher, source: str, since: str) -> List[Dict[str, str]]:
 PARSERS = {"sherdog": "sherdog", "cageside": "cageside", "cbs": "cbs"}
 
 
-def harvest(fetcher, B: Bouts, art: Dict[str, str], source: str) -> Tuple[List[Row], List[str]]:
+def harvest(fetcher, B: Bouts, art: Dict[str, str], source: str, pending: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
     """Fetch one article (all its pages) and turn it into graded ledger rows."""
     url = art["url"]
+    if source == "oddsbreaker":
+        return resolve(B, parse_numbered_grid(art.get("content", "")), art["outlet"], url, art["published"], pending=pending)
+    if source == "mmaintel":
+        return resolve(B, parse_over(fetcher.get(url, fresh=True), "MMA Intel"), art["outlet"], url, art["published"], pending=pending)
     if source == "cageside":
         slug = url.rstrip("/").split("/")[-1]
         d = json.loads(fetcher.get(f"https://cagesidepress.com/wp-json/wp/v2/posts?slug={slug}&_fields=content,date"))
@@ -542,13 +600,14 @@ def harvest(fetcher, B: Bouts, art: Dict[str, str], source: str) -> Tuple[List[R
     if not pub:
         return [], [f"{url}: no publish date"]
     if "<table" in page:  # expert grids (CBS, RotoWire) and ESPN's panels
-        raw = parse_cbs(page) if source == "cbs" else parse_grid(page) + parse_espn(page)
-        rows = resolve(B, raw, art["outlet"], url, pub)
+        names = bylines(page)
+        raw = parse_cbs(page) if source == "cbs" else parse_grid(page, names[0] if len(names) == 1 else "") + parse_espn(page)
+        rows = resolve(B, raw, art["outlet"], url, pub, pending=pending)
         if rows[0]:
             return rows
     cands = B.window(pub)
     names = bylines(page)
-    return resolve(B, parse_staff(page, B, cands, names[0] if len(names) == 1 else ""), art["outlet"], url, pub, cands)
+    return resolve(B, parse_staff(page, B, cands, names[0] if len(names) == 1 else ""), art["outlet"], url, pub, cands, pending)
 
 
 def cmd_history(args) -> int:
@@ -557,18 +616,31 @@ def cmd_history(args) -> int:
     from .reads import Pundits
 
     fetcher = _fetcher(args.cache)
+    from .sources.common import Fetcher
+    slow = Fetcher(Path(args.cache), delay=10.0, user_agent=fetcher.user_agent)  # sites whose robots.txt sets Crawl-delay: 10
     B = Bouts()
     pun = Pundits()
     added = graded = 0
+    pend: List[Dict[str, str]] = []
+    old = [json.loads(l) for l in PENDING.read_text().splitlines() if l.strip()] if PENDING.exists() else []
+    for p in old:  # last weeks' picks on bouts that have since been fought and verified
+        rows, _ = resolve(B, [(p["author"], p["a"], p["b"], p["pick"])], p["outlet"], p["url"], p["published"],
+                          B.window(p["published"], after=60))
+        for r in rows:
+            added += pun.add(r)
+            graded += r["grade"] in ("won", "lost")
+        if not rows and p["published"] >= (date.today() - timedelta(days=60)).isoformat():
+            pend.append(p)
     for source in [s.strip() for s in args.sources.split(",") if s.strip()]:
-        arts = discover(fetcher, source, args.since)
+        fx = slow if source == "oddsbreaker" else fetcher
+        arts = discover(fx, source, args.since)
         if args.limit:
             arts = arts[: args.limit]
         print(f"{source}: {len(arts)} articles", flush=True)
         n_rows, skipped = 0, 0
         for art in arts:
             try:
-                rows, sk = harvest(fetcher, B, art, source)
+                rows, sk = harvest(fx, B, art, source, pend)
             except Exception as e:  # one bad page never stops the run
                 print(f"  ! {art['url']}: {e}", flush=True)
                 continue
@@ -583,7 +655,9 @@ def cmd_history(args) -> int:
                     print("   skip", s)
         print(f"  {n_rows} picks ({skipped} skipped: no verified bout yet, or the pick couldn't be read)", flush=True)
         pun.save()
-    print(f"{added} new picks, {graded} graded")
+    keep = {(p["author"], p["a"], p["b"], p["outlet"]): p for p in pend if p["published"] >= (date.today() - timedelta(days=60)).isoformat()}
+    PENDING.write_text("".join(json.dumps(p, ensure_ascii=False) + "\n" for p in keep.values()))
+    print(f"{added} new picks, {graded} graded; {len(keep)} picks waiting for their bouts")
     for s in pun.scoreboard()[:40]:
         print(f"  {s['outlet']:<16} {s['author']:<22} {s['correct']:>3}/{s['picks']:<3} ({s['accuracy']:.0%}; market {s['expected'] or 0:.0%}) z {s['z']:+.2f} ×{s['weight']}")
     return 0

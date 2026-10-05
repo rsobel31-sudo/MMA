@@ -311,7 +311,7 @@ def register(sub) -> None:
 
     from .pundit_history import cmd_history
     q = ps.add_parser("history", help="collect published fight picks from outlets' archives into the pundit ledger, graded")
-    q.add_argument("--sources", default="sherdog,cageside,mmasucka,bleacher,cbs,staff")
+    q.add_argument("--sources", default="sherdog,cageside,mmasucka,bleacher,rotowire,oddsbreaker,mmaintel,cbs,staff")
     q.add_argument("--since", default="2024-01-01")
     q.add_argument("--limit", type=int, default=0, help="articles per source (testing)")
     q.add_argument("--cache", default=".cache/pages")
