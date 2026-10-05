@@ -377,8 +377,8 @@ header.top h1 { font-size: 30px; color: var(--mast-ink); display: flex; align-it
 header.top h1 span { color: var(--red); }
 header.top .tagline { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--mast-muted); }
 .navbar { display: flex; align-items: stretch; gap: 0; margin: 0; flex: 1 1 520px; min-width: 0; }
-/* Seven tabs and More: their own row under the title (phones scroll the tabs) */
-.navbar { flex-basis: 100%; }
+/* Five tabs and More fit beside the title on wide screens; below that they take their own row (phones scroll the tabs) */
+@media (max-width: 1199px) { .navbar { flex-basis: 100%; } }
 nav.tabs { display: flex; gap: 0; margin: 0; padding: 0; background: none; border: 0; border-radius: 0; overflow-x: auto; min-width: 0; }
 nav.tabs button, .more-btn { font-family: var(--cond); font-weight: 500; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--mast-muted); background: none; border: 0; border-radius: 0; padding: 18px 11px 14px; margin: 0; border-bottom: 4px solid transparent; cursor: pointer; white-space: nowrap; }
 nav.tabs button:hover, .more-btn:hover { color: var(--mast-ink); }
@@ -549,13 +549,13 @@ button.namelink:hover { color: var(--red); }
     <button role="tab" data-tab="roster" aria-selected="false">UFC Rankings</button>
     <button role="tab" data-tab="prospects" aria-selected="false">Prospect Rankings</button>
     <button role="tab" data-tab="cardpicks" aria-selected="false">AI Picks</button>
-    <button role="tab" data-tab="picks" aria-selected="false">AI Bets <span class="count alert" id="picks-alert" hidden>!</span></button>
     <button role="tab" data-tab="mypickem" aria-selected="false">My Picks</button>
-    <button role="tab" data-tab="mypicks" aria-selected="false">My Bets</button>
   </nav>
   <div class="more" id="more">
-    <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><span class="count alert" id="more-alert" hidden>!</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
+      <button type="button" role="menuitem" data-tab="picks">AI Bets <span class="count alert" id="picks-alert" hidden>!</span></button>
+      <button type="button" role="menuitem" data-tab="mypicks">My Bets</button>
       <button type="button" role="menuitem" data-tab="matchup">Create a Matchup</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
@@ -834,7 +834,7 @@ button.namelink:hover { color: var(--red); }
     $("#more-btn").classList.toggle("active", !!cur);
     $("#more-label").textContent = cur ? cur.firstChild.textContent.trim() : "More";
     const cc = $("#card-count"); cc.hidden = !state.card.length; cc.textContent = state.card.length;
-    const pa = $("#picks-alert"); pa.hidden = !(state.picks.summary && state.picks.summary.bust);
+    const pa = $("#picks-alert"); pa.hidden = !(state.picks.summary && state.picks.summary.bust); $("#more-alert").hidden = pa.hidden || state.tab === "picks";
     const view = $("#view");
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
