@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from . import picks as P
-from .card_picks import METHODS, joint_methods, load_adjust
+from .card_picks import METHODS, add_model_round, finish_rounds, joint_methods, load_adjust, load_round_table
 from .picks_cli import BFO_HOME, CALIBRATION, _fetcher, _fresh, _lock_time, _model, _pair, sigmoid_logit
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -113,8 +113,9 @@ def build_week(week: Dict, f, history, model, dec_cal, adjust, prospects: Dict[s
             pa = sigmoid_logit(model, x)
             j = joint_methods(pa, method_distribution(sa, sb, 3), method_distribution(sb, sa, 3), dec_cal, adjust)
             s = "a" if pa >= 0.5 else "b"
-            row["model"] = {"p_a": round(pa, 4), "winner": b[s], "method": max(METHODS, key=lambda m: j[s][m]), "p_win": round(max(pa, 1 - pa), 4),
-                            "joint": {q: {m: round(v, 4) for m, v in j[q].items()} for q in j}}
+            row["model"] = add_model_round({"p_a": round(pa, 4), "winner": b[s], "method": max(METHODS, key=lambda m: j[s][m]), "p_win": round(max(pa, 1 - pa), 4),
+                                            "joint": {q: {m: round(v, 4) for m, v in j[q].items()} for q in j}}, 3, load_round_table(),
+                                           finish_rounds(history.fights, side[s], side["b" if s == "a" else "a"], when, 3))
             row["records"] = {k: _record(history, side[k], when) for k in ("a", "b")}
         else:
             row["model"] = None
@@ -126,7 +127,7 @@ def build_week(week: Dict, f, history, model, dec_cal, adjust, prospects: Dict[s
         rows.append(row)
     return {"event": week["name"], "week": week["week"], "date": week["date"], "results_url": SEASON_URL, "sherdog_url": week["sherdog_url"],
             "location": "Las Vegas, Nevada, U.S.", "locks_at": _lock_time(week["date"], True), "drafted_at": _now(),
-            "dec_cal": dec_cal, "method_adjust": adjust, "bouts": rows}
+            "dec_cal": dec_cal, "method_adjust": adjust, "round_table": load_round_table(), "bouts": rows}
 
 
 _url_name: Dict[str, str] = {}
@@ -229,7 +230,7 @@ def cmd_build(args) -> int:
         for r in d["bouts"]:
             m = r["model"]
             rec = r.get("records", {})
-            print(f"  {r['bout']:<44} " + (f"model {m['winner']} by {m['method']} {m['p_win']:.0%}" if m else "no model pick")
+            print(f"  {r['bout']:<44} " + (f"model {m['winner']} by {m['method']}{'' if m['method'] == 'DEC' else ' R' + str(m['round'])} {m['p_win']:.0%}" if m else "no model pick")
                   + (f" · market {r['market_p_a']:.0%} on {r['a']}" if "market_p_a" in r else "")
                   + (f" · records {rec['a']['record']} / {rec['b']['record']}" if rec else "")
                   + "".join(f" · {r[k]} prospect #{r[k + '_prospect']['rank']}" for k in ("a", "b") if r.get(k + "_prospect")))

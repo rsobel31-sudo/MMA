@@ -23,6 +23,7 @@
     "winner": "Summer Onley",
     "side": "b",
     "method": "DEC",
+    "round": 3,
     "confidence": 0.55,
     "why": "Unbeaten Onley, slight model edge; a decision is the likeliest single outcome."
    },
@@ -42,6 +43,32 @@
       "SUB": 0.0251,
       "DEC": 0.2859
      }
+    },
+    "round": 3,
+    "p_exact": 0.2859,
+    "round_chances": {
+     "KO/TKO": [
+      0.502,
+      0.342,
+      0.157
+     ],
+     "SUB": [
+      0.455,
+      0.366,
+      0.179
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      3,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -58,8 +85,9 @@
     "winner": "Ozzy Martin",
     "side": "b",
     "method": "KO/TKO",
+    "round": 2,
     "confidence": 0.52,
-    "why": "A coin flip on the model (51-49 Everett), but Martin by KO is its single likeliest result; listed prospect."
+    "why": "A coin flip on the model (51-49 Everett), but Martin by KO is its single likeliest result; listed prospect. Round: Everett has won all four inside the first round and never seen a second; Martin's way through is to survive that start and catch him after it, so R2."
    },
    "model": {
     "p_a": 0.5146,
@@ -77,6 +105,32 @@
       "SUB": 0.0309,
       "DEC": 0.1898
      }
+    },
+    "round": 3,
+    "p_exact": 0.1995,
+    "round_chances": {
+     "KO/TKO": [
+      0.581,
+      0.281,
+      0.138
+     ],
+     "SUB": [
+      0.534,
+      0.306,
+      0.161
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -93,8 +147,9 @@
     "winner": "Alexander Chavez",
     "side": "b",
     "method": "KO/TKO",
+    "round": 2,
     "confidence": 0.66,
-    "why": "Unbeaten Chavez with finishing power against a fighter with three losses."
+    "why": "Unbeaten Chavez with finishing power against a fighter with three losses. Round: Chavez's knockouts are spread over all three rounds, and Moreira is a 14-fight veteran stopped only once, so not early: R2."
    },
    "model": {
     "p_a": 0.3435,
@@ -112,6 +167,32 @@
       "SUB": 0.009,
       "DEC": 0.256
      }
+    },
+    "round": 1,
+    "p_exact": 0.2048,
+    "round_chances": {
+     "KO/TKO": [
+      0.523,
+      0.306,
+      0.171
+     ],
+     "SUB": [
+      0.478,
+      0.329,
+      0.193
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      2,
+      2
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -128,8 +209,9 @@
     "winner": "Matheus Soares",
     "side": "b",
     "method": "KO/TKO",
+    "round": 1,
     "confidence": 0.55,
-    "why": "More experienced (11-2) and the more varied finisher."
+    "why": "More experienced (11-2) and the more varied finisher. Round: Eight of Soares's eleven knockouts came in the first round; if he lands, it's early: R1."
    },
    "model": {
     "p_a": 0.4498,
@@ -147,6 +229,32 @@
       "SUB": 0.1547,
       "DEC": 0.1707
      }
+    },
+    "round": 1,
+    "p_exact": 0.1193,
+    "round_chances": {
+     "KO/TKO": [
+      0.58,
+      0.262,
+      0.158
+     ],
+     "SUB": [
+      0.539,
+      0.283,
+      0.178
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      8,
+      0,
+      2
+     ],
+     "losses": [
+      0,
+      1,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -163,8 +271,9 @@
     "winner": "Nell Ariano",
     "side": "b",
     "method": "KO/TKO",
+    "round": 2,
     "confidence": 0.61,
-    "why": "Unbeaten light heavyweight with knockout power; heavier divisions finish more."
+    "why": "Unbeaten light heavyweight with knockout power; heavier divisions finish more. Round: Ariano's knockouts come in rounds two and three, and LaGrange is the fast starter, so it comes after the opening storm: R2."
    },
    "model": {
     "p_a": 0.3907,
@@ -182,10 +291,39 @@
       "SUB": 0.0158,
       "DEC": 0.2301
      }
+    },
+    "round": 1,
+    "p_exact": 0.1844,
+    "round_chances": {
+     "KO/TKO": [
+      0.502,
+      0.319,
+      0.179
+     ],
+     "SUB": [
+      0.455,
+      0.343,
+      0.201
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      0,
+      2,
+      2
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
   }
  ],
- "graded": false
+ "graded": false,
+ "rounds_picked": true,
+ "revision": 2,
+ "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged."
 }

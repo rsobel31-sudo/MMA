@@ -171,17 +171,17 @@ def cmd_sheet(args) -> int:
     SHEETS.mkdir(parents=True, exist_ok=True)
     out = Path(args.out) if args.out else SHEETS / f"{ev['date']}-{_slug(ev['name'])}.json"
     out.write_text(json.dumps(sheet, indent=1))
-    # The players' board (My Picks): FanDuel prices only; every version is kept to validate bets.
+    # The players' board (My Bets, and the bouts for My Picks): FanDuel prices only; every version is kept to validate bets.
     from .league import board_from_sheet, save_board
 
     if getattr(args, "no_board", False):
-        print(f"{len(markets)} markets priced -> {out} (no My Picks board: replay)")
+        print(f"{len(markets)} markets priced -> {out} (no players' board: replay)")
         return 0
     board = board_from_sheet(sheet)
     saved = save_board(board)
     Path(".cache").mkdir(exist_ok=True)
     Path(".cache/ai_picks_board.json").write_text(json.dumps(board, ensure_ascii=False))
-    print(f"Board for My Picks -> {saved} (publish .cache/ai_picks_board.json as ai_picks/board)")
+    print(f"Board for My Bets and My Picks -> {saved} (publish .cache/ai_picks_board.json as ai_picks/board)")
     led = P.Ledger(Path(args.ledger))
     print(f"{ev['name']} ({ev['date']}) · FanDuel via {best['url']}")
     print(f"Bankroll ${led.bankroll():.2f} · available ${led.available():.2f}" + ("  ** BUST **" if led.bust() else ""))
@@ -278,8 +278,9 @@ def cmd_place(args) -> int:
 
 
 # ------------------------------------------------------------------ settle
-def _results_for(fetcher, week, log=print, agree=None) -> Dict[str, Optional[P.Result]]:
-    """Results for this week's bouts that Wikipedia and Sherdog agree on (`agree`: what must match; default everything bets need)."""
+def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dict[str, Optional[P.Result]]:
+    """Results for this week's bouts that Wikipedia and Sherdog agree on (`agree`: what must match; default everything bets need).
+    `round_agrees`, if given, is filled with whether the two sources also agree on the round of each accepted result."""
     from .sources import events, sherdog
     from .sources.wikipedia import match_key
 
@@ -328,6 +329,10 @@ def _results_for(fetcher, week, log=print, agree=None) -> Dict[str, Optional[P.R
                 break
         if (agree or P.agree)(wr, sr):
             out[bout] = wr
+            if round_agrees is not None:
+                round_agrees[bout] = sr is not None and sr.round == wr.round
+                if not round_agrees[bout]:
+                    log(f"  {bout}: sources differ on the round (Wikipedia {wr.round}, Sherdog {sr.round if sr else '?'}): no round point")
         else:
             log(f"  {bout}: waiting for sources to agree (Wikipedia {wr}, Sherdog {sr})")
     return out
@@ -414,7 +419,7 @@ def cmd_results(args) -> int:
 
 
 def cmd_league(args) -> int:
-    """Official My Picks standings from the players' bets (exported from the page database)."""
+    """Official My Bets standings from the players' bets (exported from the page database)."""
     from .league import leaderboard, load_boards, load_results, parse_player_export, standings_for
 
     boards, results = load_boards(), load_results()
@@ -487,7 +492,7 @@ def register(sub, data_arg) -> None:
     q.add_argument("--top", type=int, default=40)
     replay_args(q)
     q.add_argument("--odds-url", action="append", default=[], help="BestFightOdds event page(s) to price (replays; default: the home page's UFC events)")
-    q.add_argument("--no-board", action="store_true", help="don't save a My Picks board (replays)")
+    q.add_argument("--no-board", action="store_true", help="don't save a players' board (replays)")
     q.set_defaults(func=cmd_sheet)
 
     q = ps.add_parser("calibrate", help="fit the decision-rate correction for props")
@@ -510,12 +515,12 @@ def register(sub, data_arg) -> None:
     q.add_argument("--force", action="store_true", help="try weeks whose event date hasn't passed")
     q.set_defaults(func=cmd_settle)
 
-    q = ps.add_parser("results", help="two-source results for past boards (grades My Picks)")
+    q = ps.add_parser("results", help="two-source results for past boards (grades My Bets)")
     common(q)
     q.add_argument("--force", action="store_true")
     q.set_defaults(func=cmd_results)
 
-    q = ps.add_parser("league", help="My Picks standings from exported player bets")
+    q = ps.add_parser("league", help="My Bets standings from exported player bets")
     common(q)
     q.add_argument("--players", default=".cache/players", help="one <uid>.txt per player: the inline ArtifactData listing of players/<uid>/bets")
     q.add_argument("--out", default=".cache/league_sync")

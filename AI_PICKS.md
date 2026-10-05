@@ -124,9 +124,9 @@ git add data/ai_picks && git commit -m "AI Picks: <event> (<n> bets, $<staked>)"
 
 Committing before the fights is what timestamps the picks.
 
-## My Picks: players vs Claude
+## My Bets: players vs Claude, betting
 
-Everyone the page is shared with as a Contributor (or above) can play the same game in **My Picks**: $100, FanDuel prices, any bet. Public-link visitors from outside the owner's organization can only watch.
+Everyone the page is shared with as a Contributor (or above) can play the same game in **My Bets**: $100, FanDuel prices, any bet. (My Picks, the players' pick'em, is below.) Public-link visitors from outside the owner's organization can only watch.
 
 Page database layout:
 
@@ -204,7 +204,17 @@ python -m mma_predictor refresh          # about 20 minutes
 
 ## AI Picks: the pick'em
 
-No money on the line, and no passing: **every bout on the card gets a pick**, a winner and a method (KO/TKO, SUB or DEC), plus the chance Claude gives the pick (0.50-0.99) and a one-line reason. Scoring: 1 point for the winner, 1 more for the method when the winner is right. Draws, no contests and cancelled bouts don't count. Results need the same two sources as AI Bets (Wikipedia and Sherdog agreeing).
+No money on the line, and no passing: **every bout on the card gets a pick**: a winner, a method (KO/TKO, SUB or DEC) and, for a finish, the round. Each pick also carries the chance Claude gives it (0.50-0.99) and a one-line reason.
+
+Scoring, 4 points at most per bout:
+
+- **2 points** for the winner.
+- **1 more** for the method, when the winner is right.
+- **A bonus point** when the winner, method and round are all right. A decision goes the distance, so a decision pick's round is the last scheduled round and a right decision pick earns the bonus.
+
+Draws, no contests and cancelled bouts don't count. Results need the same two sources as AI Bets (Wikipedia and Sherdog agreeing on the winner and method); the round point also needs them to agree on the round. Cards picked before rounds were added (UFC 332) score winner and method only.
+
+**Picking the round: a read on every fight, never a default.** The round is a nuance pick, not part of the model: it never changes the model's winner or method, and nothing is filled in for you. For each finish pick, look at when the winner finishes people and when the loser gets finished (their Sherdog records), who starts fast and who fades or grows into fights, durability (never stopped? goes the distance?), pace, cardio and the scouting report. Then name the round in `why` with the reason. The draft prints a per-fight reference for each bout (`round_chances`: the league's finish timing, from `data/card_picks/round_table.json`, moved by both fighters' own finish rounds). Use it as a check on your read, not as the answer. In a backtest of 3,200 UFC finishes, round one was the likeliest round in about half of them, and fighter history barely moved that, so round two or three has to come from reading the fight.
 
 **Friday, after the scouting reads and before the bets:**
 
@@ -212,10 +222,11 @@ No money on the line, and no passing: **every bout on the card gets a pick**, a 
 python -m mma_predictor card-picks draft --data data/verified
 ```
 
-The draft lists every bout on the Wikipedia card with **the model's own pick: the statistics alone**, without Claude's scouting read. It shows the model's win chance and its chance of the exact winner-and-method, the betting market's chance, and Claude's read. Write `data/card_picks/entries/<date>-<event-slug>.json`:
+The draft lists every bout on the Wikipedia card with **the model's own pick: the statistics alone**, without Claude's scouting read. It shows the model's win chance and method, a reference round for that method (the per-fight round chances), the betting market's chance, and Claude's read. Write `data/card_picks/entries/<date>-<event-slug>.json`:
 
 ```json
-{"note": "the read on the card", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO", "confidence": 0.62, "why": "..."}]}
+{"note": "the read on the card", "picks": [{"bout": "A vs B", "winner": "A", "method": "KO/TKO", "round": 1, "confidence": 0.62, "why": "..."},
+                                         {"bout": "C vs D", "winner": "D", "method": "DEC", "confidence": 0.58, "why": "..."}]}
 ```
 
 - Pick on judgment. Follow the model where nothing says otherwise. Depart from it (an *override*) only for a reason the numbers can't see: a scouting read, a style matchup, short notice, a fighter's own finishing record against the averaged method model. Write the reason in `why`. Overrides are tracked against the model, so make them count.
@@ -226,7 +237,7 @@ The draft lists every bout on the Wikipedia card with **the model's own pick: th
 python -m mma_predictor card-picks lock --picks data/card_picks/entries/<file>.json
 ```
 
-`lock` refuses a missing bout, a winner who isn't in the bout, a method outside KO/TKO/SUB/DEC, and anything after the card's lock time (the same lock as AI Bets). If the card changes before the lock (a replacement or a cancellation), re-run `draft` and `lock`; the revision count goes up. Then `card-picks sync`, write the printed documents to the `ai_picks` collection (ArtifactData batch; read first and pin `if_version` on existing documents), and commit `data/card_picks/` before the card ("AI Picks: <event>, <n> picks").
+`lock` refuses a missing bout, a winner who isn't in the bout, a method outside KO/TKO/SUB/DEC, a finish without a round (1 to the scheduled rounds; a decision needs none), and anything after the card's lock time (the same lock as AI Bets). If the card changes before the lock (a replacement or a cancellation), re-run `draft` and `lock`; the revision count goes up. Then `card-picks sync`, write the printed documents to the `ai_picks` collection (ArtifactData batch; read first and pin `if_version` on existing documents), and commit `data/card_picks/` before the card ("AI Picks: <event>, <n> picks").
 
 **Sunday, after AI Bets settles:**
 
@@ -235,13 +246,35 @@ python -m mma_predictor card-picks grade
 python -m mma_predictor card-picks sync
 ```
 
-`grade` scores every pick, Claude's and the model's, and rewrites `data/card_picks/summary.json`. Write the sync to the database and commit ("AI Picks: graded <event>"). Results still missing on one source stay pending until the next run.
+`grade` scores every pick, Claude's and the model's, rescores finished cards if the scoring changed, and rewrites `data/card_picks/summary.json`. Write the sync to the database and commit ("AI Picks: graded <event>"). Results still missing on one source stay pending until the next run.
 
 **What the record changes in the model (the feedback loop).** `grade` prints the lessons; act on each `change`:
 
 - **Method model.** Once 100 bouts are graded, an ending the model gets wrong beyond noise (|z| ≥ 1.96: it expected more or fewer KO/TKOs, submissions or decisions than happened) is re-weighted automatically in `data/card_picks/method_adjust.json`. The change is shrunk halfway and capped at ±25%, and `card-picks draft` applies it. If the gap is in decisions, also re-run `picks calibrate` (the decision-rate correction AI Bets prices props with). Mention the change in the summary and commit it.
 - **Claude's judgment.** Once Claude has 30 overrides of the model's winner, a hit rate clearly above 50% means the scouting reads deserve more weight in the model (raise the cap in `reads.py`, and the scouting factor). A rate clearly below 50% means follow the model more and shrink the reads. Make the change in code, run the tests, and note it in the commit.
 - **Confidence.** If picks said at 70% win far less often (the confidence table under Track record), lower the confidence you give.
+
+## My Picks: players vs Claude, picking
+
+The pick'em for everyone: the same game as AI Picks, with no money. Players pick bouts on the board (`ai_picks/board`, the same bouts as My Bets): a winner, a method and, for a finish, a round. Scoring is AI Picks' own (2 for the winner, 1 for the method, a bonus point for the round). Claude is on the same leaderboard, and each player's record shows Claude's points on the same bouts they picked, so skipping a fight doesn't flatter anyone.
+
+| Path | Who writes it | What it holds |
+|---|---|---|
+| `players/<uid>/picks/<card id>` | the player | `{event, date, picks: {"A vs B": {winner, method, round}}, updated}`, saved as they pick |
+| `standings/picks-<uid>`, `standings/picks-leaderboard` | Claude only | official, graded pick'em standings |
+
+**Grading (Sunday, after `card-picks grade`, which supplies the results):**
+
+1. ArtifactData `list` the `players` collection inline. For each player id, `list` `players/<id>/picks` **inline** (grading needs each document's `updatedAt`) and save the full tool output to `.cache/players_picks/<id>.txt`.
+2. Run:
+
+   ```bash
+   python -m mma_predictor card-picks league    # -> .cache/pickem_sync/picks-*.json and the batch to write
+   ```
+
+3. Write the listed `standings` documents in one ArtifactData batch (read first; pin `if_version` on existing documents).
+
+A card's picks count only if the document was saved before the card locked (the database's `updatedAt`). Results come from Claude's AI Picks records (both sources agreeing on the winner and method; the round point needs them to agree on the round too), then the My Bets results files.
 
 ## Contender Series (just for fun)
 
@@ -259,7 +292,7 @@ python scripts/dry_run_card.py --wiki-url https://en.wikipedia.org/wiki/UFC_Figh
   --odds-url https://www.bestfightodds.com/events/ufc-vegas-121-4368 --date 2026-09-26 --location "Las Vegas, Nevada, U.S."
 ```
 
-It prices the card, places stand-in bets and picks, checks that late or incomplete entries are refused, settles and grades from two sources, grades a stand-in My Picks player, cross-checks every result against the card recap, and confirms the real data is untouched. It ends with "all checks passed" or a list of failures. Closing-line value reads +0.0% in a replay, because a past card's BestFightOdds page shows the closing prices.
+It prices the card, places stand-in bets and picks, checks that late or incomplete entries are refused, settles and grades from two sources, grades a stand-in My Bets player, cross-checks every result against the card recap, and confirms the real data is untouched. It ends with "all checks passed" or a list of failures. Closing-line value reads +0.0% in a replay, because a past card's BestFightOdds page shows the closing prices.
 
 ## Bust
 

@@ -23,8 +23,9 @@
     "winner": "Douglas da Lapa",
     "side": "a",
     "method": "KO/TKO",
+    "round": 2,
     "confidence": 0.55,
-    "why": "Both unbeaten; da Lapa is the higher-ranked prospect (#157 vs #217) and the model's pick. KO and decision are even, so I take the finish."
+    "why": "Both unbeaten; da Lapa is the higher-ranked prospect (#157 vs #217) and the model's pick. KO and decision are even, so I take the finish. Round: Three of da Lapa's five knockouts came in the second round, and Cabral has never been stopped: R2."
    },
    "model": {
     "p_a": 0.5491,
@@ -42,6 +43,32 @@
       "SUB": 0.0801,
       "DEC": 0.1933
      }
+    },
+    "round": 3,
+    "p_exact": 0.2615,
+    "round_chances": {
+     "KO/TKO": [
+      0.502,
+      0.342,
+      0.157
+     ],
+     "SUB": [
+      0.455,
+      0.366,
+      0.179
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      3,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -58,8 +85,9 @@
     "winner": "Luis Francischinelli",
     "side": "a",
     "method": "KO/TKO",
+    "round": 1,
     "confidence": 0.54,
-    "why": "The model's pick, and knockout is his likeliest way to win."
+    "why": "The model's pick, and knockout is his likeliest way to win. Round: Five of Francischinelli's six knockouts came in the first round, and Rentz has been stopped in the first before: R1."
    },
    "model": {
     "p_a": 0.5417,
@@ -77,6 +105,32 @@
       "SUB": 0.0898,
       "DEC": 0.1363
      }
+    },
+    "round": 1,
+    "p_exact": 0.2086,
+    "round_chances": {
+     "KO/TKO": [
+      0.587,
+      0.285,
+      0.129
+     ],
+     "SUB": [
+      0.542,
+      0.308,
+      0.15
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      1,
+      0
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -93,8 +147,9 @@
     "winner": "Smilla Sundell",
     "side": "b",
     "method": "KO/TKO",
+    "round": 2,
     "confidence": 0.7,
-    "why": "Sundell is an elite Muay Thai striker; the model's decision lean doesn't know that. Pereira is 3-2."
+    "why": "Sundell is an elite Muay Thai striker; the model's decision lean doesn't know that. Pereira is 3-2. Round: Pereira has gone the distance in all five pro fights; Sundell needs time to break her down: R2."
    },
    "model": {
     "p_a": 0.297,
@@ -112,6 +167,32 @@
       "SUB": 0.0536,
       "DEC": 0.3655
      }
+    },
+    "round": 3,
+    "p_exact": 0.3655,
+    "round_chances": {
+     "KO/TKO": [
+      0.537,
+      0.318,
+      0.144
+     ],
+     "SUB": [
+      0.488,
+      0.344,
+      0.168
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      1,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -128,6 +209,7 @@
     "winner": "Erick Visconde",
     "side": "b",
     "method": "DEC",
+    "round": 3,
     "confidence": 0.52,
     "why": "Override: Visconde is the LFA champion at 17-3 against opponents the model mostly knows; Bulaid's record is thin to it, and the fight was postponed for his illness."
    },
@@ -147,6 +229,32 @@
       "SUB": 0.0727,
       "DEC": 0.2806
      }
+    },
+    "round": 3,
+    "p_exact": 0.2143,
+    "round_chances": {
+     "KO/TKO": [
+      0.587,
+      0.263,
+      0.15
+     ],
+     "SUB": [
+      0.542,
+      0.286,
+      0.172
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      0,
+      1
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
@@ -163,8 +271,9 @@
     "winner": "Jason Asher",
     "side": "a",
     "method": "KO/TKO",
+    "round": 1,
     "confidence": 0.6,
-    "why": "Unbeaten listed prospect (#179) with knockout power."
+    "why": "Unbeaten listed prospect (#179) with knockout power. Round: Four of Asher's five knockouts came in the first round, and if he stops Foster it's before Foster's grappling takes over: R1."
    },
    "model": {
     "p_a": 0.5982,
@@ -182,10 +291,39 @@
       "SUB": 0.1003,
       "DEC": 0.2092
      }
+    },
+    "round": 1,
+    "p_exact": 0.173,
+    "round_chances": {
+     "KO/TKO": [
+      0.568,
+      0.297,
+      0.134
+     ],
+     "SUB": [
+      0.522,
+      0.321,
+      0.157
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
     }
    },
    "market_p_a": null
   }
  ],
- "graded": false
+ "graded": false,
+ "rounds_picked": true,
+ "revision": 2,
+ "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged."
 }

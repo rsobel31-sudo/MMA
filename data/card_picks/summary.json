@@ -1,20 +1,32 @@
 {
- "updated": "2026-10-04T02:58:56+00:00",
+ "updated": "2026-10-05T03:29:56+00:00",
  "cards": 1,
  "bouts": 13,
+ "scoring": {
+  "winner": 2,
+  "method": 1,
+  "round": 1
+ },
  "claude": {
   "n": 13,
   "winners": 11,
   "methods": 9,
-  "points": 20,
+  "rounds": 0,
+  "points": 31,
+  "possible": 39,
   "log_loss": 0.478
  },
  "model": {
   "n": 13,
   "winners": 10,
   "methods": 7,
-  "points": 17,
+  "rounds": 0,
+  "points": 27,
   "log_loss": 0.5152
+ },
+ "finish_rounds": {
+  "n": 0,
+  "right": 0
  },
  "market": {
   "n": 12,

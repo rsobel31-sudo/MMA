@@ -5,13 +5,13 @@
         --location "Las Vegas, Nevada, U.S." --out .cache/dry_run
 
 Friday, as of two hours before the lock:
-  1. AI Bets: `picks sheet` prices the card, the My Picks board is built from it, and `picks place` records
+  1. AI Bets: `picks sheet` prices the card, the players' board is built from it, and `picks place` records
      stand-in bets (the best-EV moneyline, the best-EV method prop and a two-leg parlay, quarter-Kelly, $1 minimum)
      into a scratch ledger.
   2. AI Picks: `card-picks draft` drafts every bout; stand-in picks follow the model (one winner flipped, to
      exercise an override) and `card-picks lock` locks them.
 Sunday:
-  3. `picks settle` grades the bets from two sources; a stand-in My Picks player's bets are graded by
+  3. `picks settle` grades the bets from two sources; a stand-in My Bets player's bets are graded by
      `picks results` + `picks league`.
   4. `card-picks grade` grades the picks and writes the record and lessons.
   5. `picks sync` + `card-picks sync` write the page-database documents, collected into ai_picks.json for a
@@ -132,29 +132,30 @@ def main() -> int:
     for i, b in enumerate(draft["bouts"]):
         m = b["model"]
         if m:
-            w, meth, conf = m["winner"], m["method"], m["p_win"]
+            w, meth, rnd, conf = m["winner"], m["method"], m.get("round", 1), m["p_win"]
             if i == 1:  # one override, to exercise the override tracking
                 w = b["b"] if w == b["a"] else b["a"]
                 meth, conf = "DEC", 0.52
         else:
-            w, meth, conf = b["a"], "DEC", 0.5
-        entries.append({"bout": b["bout"], "winner": w, "method": meth, "confidence": round(min(0.99, max(0.5, conf)), 2), "why": "dry run"})
+            w, meth, rnd, conf = b["a"], "DEC", None, 0.5
+        entries.append({"bout": b["bout"], "winner": w, "method": meth, "round": rnd if meth != "DEC" else None,
+                        "confidence": round(min(0.99, max(0.5, conf)), 2), "why": "dry run"})
     pf = out / "picks.json"
     pf.write_text(json.dumps({"note": "Dry run: stand-in picks (the model's, one flipped).", "picks": entries[:-1]}))
-    rc = C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=as_of))
+    rc = C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=as_of, dir=""))
     if rc == 0:
         failures.append("lock accepted a card with a bout missing")
     else:
         print("missing bout refused ✓")
     pf.write_text(json.dumps({"note": "Dry run: stand-in picks (the model's, one flipped).", "picks": entries}))
-    if C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=as_of)):
+    if C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=as_of, dir="")):
         failures.append("card-picks lock")
-    if C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=lock)) == 0:
+    if C.cmd_lock(SimpleNamespace(draft=str(C.DRAFT), picks=str(pf), as_of=lock, dir="")) == 0:
         failures.append("lock accepted picks at the lock time")
     else:
         print("late picks refused ✓")
 
-    step("Friday · My Picks: a stand-in player bets the board")
+    step("Friday · My Bets: a stand-in player bets the board")
     first = next(m for m in board["markets"] if m["market"][0] == "ml")
     player = out / "players"
     player.mkdir()
@@ -170,7 +171,7 @@ def main() -> int:
     if rc == 2:
         failures.append("some bets still waiting on results")
 
-    step("Sunday · My Picks: results and standings")
+    step("Sunday · My Bets: results and standings")
     PC.cmd_results(SimpleNamespace(ledger=str(ledger), cache=".cache/pages", force=False))
     PC.cmd_league(SimpleNamespace(ledger=str(ledger), cache=".cache/pages", players=str(player), out=str(out / "league")))
     st = json.loads((out / "league/u_dryrun.json").read_text())
@@ -179,7 +180,7 @@ def main() -> int:
         failures.append("a player bet saved after the lock wasn't voided")
 
     step("Sunday · AI Picks: grade")
-    C.cmd_grade(SimpleNamespace(cache=".cache/pages", force=False))
+    C.cmd_grade(SimpleNamespace(cache=".cache/pages", force=False, dir=""))
     rec = C.load_cards()[0]
     ungraded = [b["bout"] for b in rec["bouts"] if "result" not in b]
     if ungraded:
@@ -208,7 +209,7 @@ def main() -> int:
 
     step("Both days · page documents")
     PC.cmd_sync(SimpleNamespace(ledger=str(ledger), out=str(out / "ai_picks_sync")))
-    C.cmd_sync(SimpleNamespace(out=str(out / "card_picks_sync")))
+    C.cmd_sync(SimpleNamespace(out=str(out / "card_picks_sync"), dir="", prefix="card-"))
     docs = [dict(json.loads(p.read_text()), _id=p.stem) for d in ("ai_picks_sync", "card_picks_sync") for p in sorted((out / d).glob("*.json"))]
     (out / "ai_picks.json").write_text(json.dumps(docs, ensure_ascii=False))
 
@@ -227,9 +228,9 @@ def main() -> int:
     print(f"AI Bets: {s['won']}-{s['lost']} ({s['void']} void), bankroll ${s['bankroll']:.2f}")
     for b in led.bets():
         print(f"  {b['status']:<5} ${b['profit']:+6.2f}  ${b['stake']:.2f} @ {b['odds']:+d}  {' + '.join(l['selection'] + ' [' + l.get('grade', '?') + ']' for l in b['legs'])}")
-    print(f"AI Picks: Claude {S['claude']['points']} pts ({S['claude']['winners']}/{S['claude']['n']} winners, {S['claude']['methods']} methods) · "
+    print(f"AI Picks: Claude {S['claude']['points']} pts ({S['claude']['winners']}/{S['claude']['n']} winners, {S['claude']['methods']} methods, {S['claude']['rounds']} rounds) · "
           f"model {S['model']['points']} pts · favourite {S['market']['winners']}/{S['market']['n']} · voids {sum(1 for b in rec['bouts'] if 'void' in b.get('result', {}))}")
-    print(f"My Picks player: bankroll ${st['bankroll']:.2f}, bets {[(b['status'], b.get('void_reason')) for b in st['bets']]}")
+    print(f"My Bets player: bankroll ${st['bankroll']:.2f}, bets {[(b['status'], b.get('void_reason')) for b in st['bets']]}")
     print(f"Page documents: {len(docs)} -> {out / 'ai_picks.json'}")
     print("\nRESULT: " + ("all checks passed" if not failures else "FAILED:\n  - " + "\n  - ".join(failures)))
     return 1 if failures else 0

@@ -492,6 +492,13 @@ button.namelink:hover { color: var(--red); }
 .mv-up { color: var(--good); } .mv-down { color: var(--red); } .mv-new { color: var(--edit); border: 1px solid var(--edit); padding: 0 4px; } .mv-flat { color: var(--muted); }
 .fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 18px; }
 .fn-bout textarea { width: 100%; margin-top: 4px; }
+.pe-list { display: grid; gap: 0; }
+.pe-bout { border-top: 1px solid var(--line); padding: 12px 0; display: grid; gap: 6px; }
+.pe-bout:first-child { border-top: 0; padding-top: 0; }
+.pe-line { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pe-line .label { min-width: 4.5em; }
+.pe-line .seg button { padding: 6px 12px; }
+.seg button:disabled { opacity: .35; cursor: not-allowed; }
 .stub-pro { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dotted var(--line); }
 .stub-pro strong { font-family: var(--cond); font-weight: 500; font-size: 17px; text-transform: uppercase; letter-spacing: .03em; }
 .stub-rank { font-family: var(--display); font-size: 20px; min-width: 50px; }
@@ -545,7 +552,8 @@ button.namelink:hover { color: var(--red); }
     <button type="button" class="more-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="more-menu"><span id="more-label">More</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
       <button type="button" role="menuitem" data-tab="prospects">Prospects</button>
-      <button type="button" role="menuitem" data-tab="mypicks">My Picks</button>
+      <button type="button" role="menuitem" data-tab="mypickem">My Picks</button>
+      <button type="button" role="menuitem" data-tab="mypicks">My Bets</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
       <button type="button" role="menuitem" data-tab="insights">Insights</button>
@@ -621,7 +629,7 @@ button.namelink:hover { color: var(--red); }
     dwcs: { data: null, loading: false },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
     pros: { data: null, loading: false, error: "", view: "classes", gender: "", wc: "", q: "", unbeaten: false, open: null },
-    my: { sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
+    my: { pk: { sub: "card", docs: {}, standings: {}, lb: null, status: "", cardId: null }, sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
     store: null, storeKind: "local",
@@ -828,7 +836,7 @@ button.namelink:hover { color: var(--red); }
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, cardpicks: renderCardPicks, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, cardpicks: renderCardPicks, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, mypickem: renderMyPickem, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -1227,8 +1235,16 @@ button.namelink:hover { color: var(--red); }
         ["Does it work?", "Tested on the field as it really was: every ranked fighter who fit our rules in Fight Matrix's January 2019 and January 2021 rankings (297 and 246 prospects), scored as of that date and followed for four years. Of the 2019 top 50, 76% went on to win in a major promotion (the base rate was 39%); of the 2021 top 50, 42% (base 33%). The Fight Matrix rating carries most of the signal; buzz couldn't be tested (no list history that far back)."],
         ["Refresh", "The list is rebuilt as the data is re-crawled; a prospect who signs with a major promotion drops off."]] };
     }
-    if (key === "my_picks") {
+    if (key === "my_pickem") {
       return { title: "How My Picks works", key, rows: [
+        ["The game", "No money: pick every bout on the card, the winner, how it ends (KO/TKO, submission or decision) and, for a finish, the round. Claude plays the same game in AI Picks, and the leaderboard ranks everyone, Claude included."],
+        ["Scoring", "The same as AI Picks: 2 points for the winner, 1 more for the method when the winner is right, and a bonus point when the round is right too (4 at most per bout). A decision goes the distance, so a right decision pick earns the bonus."],
+        ["Locking and grading", "Picks save as you make them and lock when the card starts; anything saved after the lock doesn't count. After the card, Claude grades everyone from results Wikipedia and Sherdog agree on, the same results Claude's own picks are graded on."],
+        ["Against Claude", "Your record shows how Claude scored on the same bouts you picked, so the comparison is like for like even if you skip a fight."],
+        ["Who can play", "Anyone the page is shared with as a Contributor (or above). Viewers from a public link can watch the leaderboard."]] };
+    }
+    if (key === "my_picks") {
+      return { title: "How My Bets works", key, rows: [
         ["The game", "Everyone who plays starts with $100 of play money and bets UFC cards at FanDuel's prices: moneylines, method, rounds, over/unders and parlays across different bouts. Claude plays the same game in AI Bets; the leaderboard ranks everyone, Claude included."],
         ["Prices", "The board is FanDuel's prices as listed on BestFightOdds when Claude last checked (Tuesday and Friday). Your bet is recorded at the board's price."],
         ["Locking and grading", "Betting closes when the card starts. After the card, Claude grades every bet from results that Wikipedia and Sherdog agree on, the same way it grades its own. A bet saved after the lock, at a price that wasn't on the board, or for more than your available money is voided and refunded."],
@@ -1236,9 +1252,9 @@ button.namelink:hover { color: var(--red); }
     }
     if (key === "card_picks") {
       return { title: "How AI Picks works", key, rows: [
-        ["The game", "No money. Before every UFC card Claude picks every bout: the winner and how it ends (KO/TKO, submission or decision). Picks lock when the card starts and are committed to the project's history first, so nothing is picked after the fact."],
-        ["Scoring", "1 point for the winner, 1 more for the method when the winner is right (2 at most per bout). Draws, no contests and cancelled bouts don't count. Results must agree on two sources (the Wikipedia event page and Sherdog's records)."],
-        ["Claude vs the model", "Each pick is stored beside the model's own pick for the same bout: the statistics alone, without Claude's scouting read. Where Claude picks a different winner or method, that's an override, and the record shows whether overrides help or hurt."],
+        ["The game", "No money. Before every UFC card Claude picks every bout: the winner, how it ends (KO/TKO, submission or decision) and the round. Picks lock when the card starts and are committed to the project's history first, so nothing is picked after the fact."],
+        ["Scoring", "2 points for the winner, 1 more for the method when the winner is right, and a bonus point when the winner, method and round are all right: 4 at most per bout. A decision goes the distance, so a decision pick's round is the last scheduled round. Draws, no contests and cancelled bouts don't count. Results must agree on two sources (the Wikipedia event page and Sherdog's records); the round point needs them to agree on the round too. UFC 332 was picked before rounds were added, so it scores winner and method only (3 at most per bout)."],
+        ["Claude vs the model", "Each pick is stored beside the model's own pick for the same bout: the statistics alone, without Claude's scouting read. The model takes its likeliest winner and method; its round is the likeliest for that method in this fight (the league's finish timing moved by both fighters' records). The round is a nuance read: it never changes the model's winner or method. Claude reads the round fight by fight. Where Claude picks a different winner or method, that's an override, and the record shows whether overrides help or hurt."],
         ["How it updates the model", "After each card the grader compares how often the model expected each ending (KO/TKO, submission, decision) with what happened. Once 100 bouts are graded, an ending it gets wrong beyond noise (|z| ≥ 1.96) is re-weighted in the method model; once Claude has 30 overrides, they decide whether the scouting reads earn more weight or less. The lessons are listed under Track record."],
         ["AI Bets is separate", "AI Bets judges betting (prices, stakes, bankroll). AI Picks judges reading the fights."]] };
     }
@@ -1530,8 +1546,8 @@ button.namelink:hover { color: var(--red); }
     const vs = `<div class="stub"><div class="stub-hd">Claude vs. You</div>
       <div class="stub-duel"><div><div class="stub-big num">${S ? money(S.bankroll) : "$100.00"}</div><div class="label">Claude</div></div>
       <div><div class="stub-big num" style="color:var(--blue)">${mine != null ? money(mine) : "—"}</div><div class="label">You</div></div></div>
-      <button type="button" class="btn primary stub-btn" data-goto="mypicks">${mine != null ? "Place your picks" : "Join the game"}</button>
-      <div class="stub-links"><button type="button" class="btn link" data-goto="cardpicks">Claude's picks →</button><button type="button" class="btn link" data-goto="picks">Claude's bets →</button></div></div>`;
+      <button type="button" class="btn primary stub-btn" data-goto="mypickem">Make your picks</button>
+      <div class="stub-links"><button type="button" class="btn link" data-goto="mypicks">${mine != null ? "Place your bets" : "Join the betting game"} →</button><button type="button" class="btn link" data-goto="cardpicks">Claude's picks →</button><button type="button" class="btn link" data-goto="picks">Claude's bets →</button></div></div>`;
     const P = state.pros;
     let pros = `<div class="muted" style="font-size:14px">Loading…</div>`;
     if (P.data) {
@@ -1577,7 +1593,7 @@ button.namelink:hover { color: var(--red); }
   const noteStatusEl = (id) => { const [cls, text] = noteStatusText(id); return `<span class="note-status ns-${cls}" data-note-status="${esc(id)}" role="status" aria-live="polite">${esc(text)}</span>`; };
   // Don't let the page close with a note still waiting to be written.
   window.addEventListener("beforeunload", (e) => {
-    if ([...debounced.keys(), ...pending].some((k) => String(k).startsWith("recap_notes/"))) { e.preventDefault(); e.returnValue = ""; }
+    if ([...debounced.keys(), ...pending].some((k) => String(k).startsWith("recap_notes/") || String(k).startsWith("pickem/"))) { e.preventDefault(); e.returnValue = ""; }
   });
   function fightNightNotes(ev) {
     if (ev.date > todayET()) return "";
@@ -1658,10 +1674,10 @@ button.namelink:hover { color: var(--red); }
       const m = b.model, pk = b.pick, res = b.result, pts = b.claude;
       const mk = b.market_p_a != null ? `<div class="num"><strong>${esc(b.a.split(" ").slice(-1)[0])} ${fmtOdds(b.odds && b.odds.a)}</strong> · ${esc(b.b.split(" ").slice(-1)[0])} ${fmtOdds(b.odds && b.odds.b)}</div><div class="muted num" style="font-size:12px">${pct(b.market_p_a, 0)} / ${pct(1 - b.market_p_a, 0)}</div>` : '<span class="muted" style="font-size:13px">No line yet</span>';
       const model = m ? `<span class="mini num" title="${esc(b.a)} ${pct(m.p_a)} / ${esc(b.b)} ${pct(1 - m.p_a)}"><i style="width:${(m.p_a * 100).toFixed(1)}%"></i></span>
-        <div style="margin-top:4px"><strong>${esc(m.winner)}</strong> <span class="num">${pct(m.p_win, 0)}</span></div><div class="muted" style="font-size:12px">most likely by ${esc(METHOD_WORD[m.method] || m.method)}</div>` : '<span class="muted">no data</span>';
-      const mine = pk ? `${cpPick(pk.winner, pk.method)} <span class="muted num">${Math.round(pk.confidence * 100)}%</span>${m && (m.winner !== pk.winner || m.method !== pk.method) ? ' <span class="pill" title="Claude picked differently from the model">override</span>' : ""}${pk.why ? `<div class="pk-why">${esc(pk.why)}</div>` : ""}` : '<span class="muted">not picked yet</span>';
+        <div style="margin-top:4px"><strong>${esc(m.winner)}</strong> <span class="num">${pct(m.p_win, 0)}</span></div><div class="muted" style="font-size:12px">by ${esc(METHOD_WORD[m.method] || m.method)}${m.round && m.method !== "DEC" ? ` in R${m.round}` : ""}</div>` : '<span class="muted">no data</span>';
+      const mine = pk ? `${cpPick(pk.winner, pk.method, pk.round)} <span class="muted num">${Math.round(pk.confidence * 100)}%</span>${m && (m.winner !== pk.winner || m.method !== pk.method || (m.round && pk.round && m.round !== pk.round)) ? ' <span class="pill" title="Claude picked differently from the model">override</span>' : ""}${pk.why ? `<div class="pk-why">${esc(pk.why)}</div>` : ""}` : '<span class="muted">not picked yet</span>';
       const out = !res ? "" : res.void ? `<div class="muted" style="font-size:12px">${esc(res.void)}</div>`
-        : `<div style="margin-top:6px;font-size:13px"><strong>Result:</strong> ${esc(res.winner)} by ${esc(METHOD_WORD[res.method] || res.method)}${res.round ? ` R${res.round}` : ""}${pts ? ` <span class="tier ${pts.points === 2 ? "tier-best" : pts.points === 1 ? "tier-sure" : "tier-caution"}">${pts.points} pt${pts.points === 1 ? "" : "s"}</span>` : ""}</div>`;
+        : `<div style="margin-top:6px;font-size:13px"><strong>Result:</strong> ${esc(res.winner)} by ${esc(METHOD_WORD[res.method] || res.method)}${res.round ? ` R${res.round}` : ""}${pts ? " " + cpPts(pts) : ""}</div>`;
       return `<tr><td class="muted">${esc(b.weight_class)}</td><td>${who(b, "a")}<div class="muted" style="margin:2px 0">vs</div>${who(b, "b")}</td><td>${model}</td><td>${mk}</td><td>${mine}${out}</td></tr>`;
     }).join("");
     const rec = (state.dwcs.data || {}).record, c = rec && rec.claude;
@@ -2123,6 +2139,8 @@ button.namelink:hover { color: var(--red); }
     if (t.dataset.prospectOpen) { Object.assign(state.pros, { view: "table", open: t.dataset.prospectOpen, q: "", wc: "" }); render(); const el = document.querySelector(`[data-prospect="${CSS.escape(t.dataset.prospectOpen)}"]`); if (el) el.scrollIntoView({ block: "center" }); return; }
     if (t.dataset.prospect) { state.pros.open = state.pros.open === t.dataset.prospect ? null : t.dataset.prospect; render(); return; }
     if (t.dataset.mySub) { state.my.sub = t.dataset.mySub; state.my.msg = ""; render(); return; }
+    if (t.dataset.pkSub) { state.my.pk.sub = t.dataset.pkSub; render(); return; }
+    if (t.dataset.pk) { const [bout, field, value] = t.dataset.pk.split("|"); pkSet(bout, field, value); return; }
     if (t.dataset.slip) { slipToggle(t.dataset.slip); return; }
     if (t.id === "mp-place") { placeBet(); return; }
     if (t.id === "mp-clear") { state.my.slip = []; state.my.msg = ""; render(); return; }
@@ -2513,15 +2531,23 @@ button.namelink:hover { color: var(--red); }
     view.innerHTML = `<div class="stack">${intro}<section class="panel stack">${head}${body}</section></div>`;
   }
 
-  // ------------------------------------------------------------ My Picks (the league)
+  // ------------------------------------------------------------ My Bets (the betting league) and My Picks (the pick'em)
   async function startLeague(db) {
     const M = state.my;
     M.db = db;
     db.collection("standings").onSnapshot((snap) => {
       const st = {};
       let lb = null;
-      snap.docs.forEach((d) => { const v = d.data(); if (d.id === "leaderboard") lb = v; else st[d.id] = v; });
-      M.standings = st; M.lb = lb; M.loaded = true; namesFor(); renderSoon();
+      const pst = {};
+      let plb = null;
+      snap.docs.forEach((d) => {
+        const v = d.data();
+        if (d.id === "leaderboard") lb = v;
+        else if (d.id === "picks-leaderboard") plb = v;
+        else if (d.id.startsWith("picks-")) pst[d.id.slice(6)] = v;
+        else st[d.id] = v;
+      });
+      M.standings = st; M.lb = lb; M.pk.standings = pst; M.pk.lb = plb; M.loaded = true; namesFor(); renderSoon();
     }, () => { M.loaded = true; renderSoon(); });
     db.collection("players").onSnapshot((snap) => {
       M.nicks = {};
@@ -2537,11 +2563,18 @@ button.namelink:hover { color: var(--red); }
       renderSoon();
     }, () => {});
     db.doc("players/" + M.uid).onSnapshot((d) => { M.player = d.exists ? d.data() : null; renderSoon(); }, () => {});
+    db.collection("players/" + M.uid + "/picks").onSnapshot((snap) => {
+      const docs = {};
+      snap.docs.forEach((d) => { docs[d.id] = d.data(); });
+      // Edits still waiting to be written win over what the database last said.
+      for (const id of Object.keys(M.pk.docs)) if (debounced.has("pickem/" + id) || pending.has("pickem/" + id)) docs[id] = M.pk.docs[id];
+      M.pk.docs = docs; renderSoon();
+    }, () => {});
   }
   // Names for the leaderboard: a player's own nickname, else their profile name (resolved each render, never stored).
   async function namesFor() {
     const M = state.my;
-    const ids = ((M.lb && M.lb.rows) || []).map((r) => r.uid).filter((u) => u !== "claude");
+    const ids = [...new Set([...((M.lb && M.lb.rows) || []), ...((M.pk.lb && M.pk.lb.rows) || [])].map((r) => r.uid).filter((u) => u !== "claude"))];
     if (!ids.length) return;
     const ps = M.user ? await M.user.profiles(ids).catch(() => ({})) : {};
     let changed = false;
@@ -2549,7 +2582,7 @@ button.namelink:hover { color: var(--red); }
       const n = (M.nicks || {})[id] || (ps[id] && ps[id].name) || "";
       if (M.names[id] !== n) { M.names[id] = n; changed = true; }
     }
-    if (changed && state.tab === "mypicks") renderSoon();
+    if (changed && (state.tab === "mypicks" || state.tab === "mypickem")) renderSoon();
   }
   const myStanding = () => (state.my.uid && state.my.standings[state.my.uid]) || null;
   /** Your bankroll as of Claude's last grading, minus bets placed since. */
@@ -2647,12 +2680,12 @@ button.namelink:hover { color: var(--red); }
   }
   function renderMyPicks(view) {
     const M = state.my, bd = M.board, mon = myMoney(), st = mon.st;
-    const intro = `<section class="panel"><h2 style="margin:0 0 6px">My Picks</h2><p class="muted" style="margin:0;font-size:14px;max-width:72ch">Same game as AI Bets: $100 to start, FanDuel's prices, any bet you like. Your bankroll runs all season against Claude's and everyone else's who plays. Bets lock when the card starts and are graded after it.</p></section>`;
-    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="My Picks view">
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">My Bets</h2><p class="muted" style="margin:0;font-size:14px;max-width:72ch">Same game as AI Bets: $100 to start, FanDuel's prices, any bet you like. Your bankroll runs all season against Claude's and everyone else's who plays. Bets lock when the card starts and are graded after it.</p></section>`;
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="My Bets view">
         <button type="button" data-my-sub="bet" aria-pressed="${M.sub === "bet"}">Bet</button>
         <button type="button" data-my-sub="record" aria-pressed="${M.sub === "record"}">My record</button>
-        <button type="button" data-my-sub="board" aria-pressed="${M.sub === "board"}">Leaderboard</button></span>${infoBtn("my_picks", "How My Picks works")}</div>`;
-    if (!M.db) { view.innerHTML = `<div class="stack">${intro}<div class="empty">My Picks needs the page's database: open the page signed in to claude.ai.</div></div>`; return; }
+        <button type="button" data-my-sub="board" aria-pressed="${M.sub === "board"}">Leaderboard</button></span>${infoBtn("my_picks", "How My Bets works")}</div>`;
+    if (!M.db) { view.innerHTML = `<div class="stack">${intro}<div class="empty">My Bets needs the page's database: open the page signed in to claude.ai.</div></div>`; return; }
     const bust = st && st.bust ? `<div class="pk-alert" role="alert"><strong>You're out of money.</strong> Your bankroll is ${money(st.bankroll)}, below the $1.00 minimum bet.</div>` : "";
     const stats = `<div class="pk-stats">
       <div class="pk-stat"><div class="label">Bankroll</div><div class="pk-big num">${money(mon.bankroll)}</div><div class="muted" style="font-size:12.5px">started at $100.00</div></div>
@@ -2675,6 +2708,118 @@ button.namelink:hover { color: var(--red); }
           <input id="mp-nick" type="text" maxlength="40" value="${esc((M.player && M.player.nickname) || "")}" placeholder="Your name on the leaderboard"> <button class="btn small" type="button" id="mp-nick-save">Save</button></section>`;
     } else body = `<section class="panel"><h3 style="margin-top:0">Leaderboard</h3>${leaderboardHtml()}</section>`;
     view.innerHTML = `<div class="stack">${bust}${intro}${sub}${M.uid ? stats : ""}${body}<p class="muted" style="font-size:12px;margin:0">For fun: play money, not betting advice.</p></div>`;
+  }
+
+  // My Picks: the pick'em. Every bout on the board: winner, method and (for a finish) round, saved to
+  // players/<uid>/picks/<card id> as you go; graded by Claude with AI Picks' scoring (standings/picks-*).
+  const PK_METHODS = [["KO/TKO", "KO/TKO"], ["SUB", "Submission"], ["DEC", "Decision"]];
+  const pkCardId = (bd) => slug(bd.date + " " + bd.event);
+  function pkStatusText() {
+    const st = state.my.pk.status;
+    return st === "saving" ? ["saving", "Saving…"] : st === "saved" ? ["saved", "Saved ✓"] : st && st.startsWith("failed") ? ["failed", "Not saved: " + st.slice(7)] : ["idle", "Saves as you pick"];
+  }
+  function pkStatusPaint() {
+    const [cls, text] = pkStatusText();
+    document.querySelectorAll("[data-pk-status]").forEach((el) => { el.className = "note-status ns-" + cls; el.textContent = text; });
+  }
+  function pkSet(boutName, field, value) {
+    const M = state.my, bd = M.board;
+    if (!M.uid || !bd || boardLocked(bd)) return;
+    const id = pkCardId(bd), bout = bd.bouts.find((b) => b.bout === boutName);
+    if (!bout) return;
+    const doc = M.pk.docs[id] = Object.assign({ event: bd.event, date: bd.date, picks: {} }, M.pk.docs[id]);
+    doc.picks = Object.assign({}, doc.picks);
+    const p = Object.assign({}, doc.picks[boutName]);
+    if (field === "winner") p.winner = value;
+    if (field === "method") { p.method = value; if (value === "DEC") delete p.round; }
+    if (field === "round") { p.round = +value; if (!p.method || p.method === "DEC") p.method = "KO/TKO"; }
+    if (field === "clear") { delete doc.picks[boutName]; } else doc.picks[boutName] = p;
+    doc.updated = new Date().toISOString();
+    M.pk.status = "saving"; render();
+    const key = "pickem/" + id;
+    later(key, async () => {
+      pending.add(key);
+      try {
+        if (!M.player) await M.db.doc("players/" + M.uid).set({ joined: new Date().toISOString() });
+        await M.db.doc("players/" + M.uid + "/picks/" + id).set(M.pk.docs[id]);
+        M.pk.status = "saved";
+      } catch (e) {
+        M.readOnly = (e && e.code) === "invalid_argument";
+        M.pk.status = "failed " + (M.readOnly ? "this view can't save picks (ask the owner to invite you as a Contributor)" : (e && e.code) || "error");
+      } finally { pending.delete(key); }
+      pkStatusPaint();
+    }, 500);
+  }
+  const pkPickText = (p, rounds) => !p || !p.winner ? '<span class="muted">no pick</span>'
+    : `<strong>${esc(p.winner)}</strong>${p.method ? ` <span class="muted">by</span> ${esc(METHOD_WORD[p.method] || p.method)}` : ' <span class="muted">(method?)</span>'}${p.method && p.method !== "DEC" ? (p.round ? ` <span class="muted">in</span> R${p.round}` : ' <span class="muted">(round?)</span>') : ""}`;
+  function pkCardHtml(bd) {
+    const M = state.my, id = pkCardId(bd), doc = M.pk.docs[id] || { picks: {} }, locked = boardLocked(bd);
+    const same = (x) => x && fold(x).includes(fold(bd.event.split(":")[0]));
+    const claude = state.cp.cards.find((c) => same(c.event));
+    const cb = {};
+    if (claude) for (const b of claude.bouts) cb[[b.a, b.b].map((n) => fold(n).split(" ").pop()).sort().join("|")] = b;
+    const mine = (M.pk.standings[M.uid] || { cards: [] }).cards.find((c) => c.id === id);
+    const graded = {};
+    if (mine) for (const b of mine.bouts) graded[b.bout] = b;
+    const n = bd.bouts.filter((b) => (doc.picks[b.bout] || {}).winner && (doc.picks[b.bout] || {}).method && ((doc.picks[b.bout] || {}).method === "DEC" || (doc.picks[b.bout] || {}).round)).length;
+    const seg = (bout, field, opts, cur, dis) => `<span class="seg" role="group">${opts.map(([v, lab]) => `<button type="button" data-pk="${esc(bout)}|${field}|${esc(v)}" aria-pressed="${String(cur) === String(v)}" ${dis ? "disabled" : ""}>${esc(lab)}</button>`).join("")}</span>`;
+    const rows = bd.bouts.map((b) => {
+      const p = doc.picks[b.bout] || {}, rounds = b.rounds || 3;
+      const c = cb[[b.a, b.b].map((x) => fold(x).split(" ").pop()).sort().join("|")];
+      const g = graded[b.bout];
+      const res = g && g.result ? (g.result.void ? `<span class="muted">${esc(g.result.void)} (not counted)</span>` : `${esc(g.result.winner)} <span class="muted">by</span> ${esc(METHOD_WORD[g.result.method] || g.result.method)}${g.result.method !== "DEC" ? ` R${g.result.round}` : ""}`) : "";
+      const body = locked
+        ? `<div class="pe-line"><span class="label">You</span> ${pkPickText((g && g.pick) || p, rounds)} ${g && g.score ? cpPts(g.score) : ""}</div>`
+        : `<div class="pe-line">${seg(b.bout, "winner", [[b.a, b.a], [b.b, b.b]], p.winner)}</div>
+           <div class="pe-line">${seg(b.bout, "method", PK_METHODS, p.method)} ${seg(b.bout, "round", Array.from({ length: rounds }, (_, i) => [i + 1, "R" + (i + 1)]), p.method === "DEC" ? "" : p.round, p.method === "DEC")}
+             ${p.winner ? `<button type="button" class="btn link" data-pk="${esc(b.bout)}|clear|1">clear</button>` : ""}</div>`;
+      return `<div class="pe-bout"><div class="pe-hd"><strong><span style="color:var(--red)">${esc(b.a)}</span> <span class="muted">vs</span> <span style="color:var(--blue)">${esc(b.b)}</span></strong>${rounds === 5 ? ' <span class="pill">5 rds</span>' : ""}${b.title ? ' <span class="pill">Title</span>' : ""}</div>
+        ${body}
+        ${locked && c ? `<div class="pe-line"><span class="label">Claude</span> ${cpPick(c.pick.winner, c.pick.method, c.pick.round)} ${c.claude ? cpPts(c.claude, claude.rounds_picked ? 4 : 3) : ""}</div>` : ""}
+        ${res ? `<div class="pe-line"><span class="label">Result</span> ${res}</div>` : ""}</div>`;
+    }).join("");
+    const [cls, text] = pkStatusText();
+    return `<section class="panel stack"><div class="toolbar" style="justify-content:space-between;margin:0"><div><h3 style="margin:0">${esc(bd.event)}</h3>
+        <div class="muted num" style="font-size:13px">${esc(bd.date)} · ${locked ? "<strong>Picks locked</strong>" : `picks lock ${esc(when(bd.locks_at))}`} · ${n} of ${bd.bouts.length} picked</div></div>
+        ${locked ? (mine ? `<span class="pill num">${mine.points} pts${mine.graded ? ` · Claude ${mine.claude_points} on the same bouts` : ""}</span>` : "") : `<span class="note-status ns-${cls}" data-pk-status role="status" aria-live="polite">${esc(text)}</span>`}</div>
+      ${locked ? (claude ? "" : '<p class="muted" style="margin:0;font-size:13px">Claude\'s picks for this card aren\'t in yet.</p>') : `<p class="muted" style="margin:0;font-size:13px">Pick the winner, the method and, for a finish, the round. Claude's picks for this card show here once it locks (they're on the AI Picks tab too).</p>`}
+      <div class="pe-list">${rows}</div></section>`;
+  }
+  function renderMyPickem(view) {
+    const M = state.my, P = M.pk, bd = M.board;
+    const intro = `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h2 style="margin:0">My Picks</h2>${infoBtn("my_pickem", "How My Picks works")}</div><p class="muted" style="margin:6px 0 0;font-size:14px;max-width:74ch">No money: pick every bout on the card, the winner, how it ends and the round, against Claude and everyone else who plays. 2 points for the winner, 1 for the method, and a bonus point for the round. Picks lock when the card starts.</p></section>`;
+    const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="My Picks view">
+        <button type="button" data-pk-sub="card" aria-pressed="${P.sub === "card"}">This card</button>
+        <button type="button" data-pk-sub="record" aria-pressed="${P.sub === "record"}">My record</button>
+        <button type="button" data-pk-sub="board" aria-pressed="${P.sub === "board"}">Leaderboard</button></span></div>`;
+    if (!M.db) { view.innerHTML = `<div class="stack">${intro}<div class="empty">My Picks needs the page's database: open the page signed in to claude.ai.</div></div>`; return; }
+    const lb = () => {
+      const L = P.lb;
+      if (!L || !L.rows.length) return `<div class="empty">The leaderboard fills in after the first card is graded.</div>`;
+      return `<div class="table-wrap"><table class="recent pk-table mp-lb"><thead><tr><th class="num">#</th><th>Player</th><th class="num">Points</th><th class="num">Bouts</th><th class="num">Per bout</th><th class="num">Winners</th><th class="num">Methods</th><th class="num">Rounds</th></tr></thead><tbody>
+        ${L.rows.map((r, i) => { const me = r.uid === M.uid, ai = r.uid === "claude"; const name = ai ? "Claude (AI)" : (M.names[r.uid] || (me ? "You" : "Player"));
+          return `<tr class="${me ? "mp-me" : ""}${ai ? " mp-ai" : ""}"><td class="num">${i + 1}</td><td>${esc(name)}${me ? ' <span class="pill">you</span>' : ""}</td><td class="num"><strong>${r.points}</strong></td><td class="num">${r.bouts}</td><td class="num">${r.per_bout.toFixed(2)}</td><td class="num">${r.winners}</td><td class="num">${r.methods}</td><td class="num">${r.rounds}</td></tr>`; }).join("")}
+        </tbody></table></div><p class="muted" style="font-size:12px">Graded after each card from results two sources agree on${L.updated ? `; updated ${esc(when(L.updated))}` : ""}. Per bout is the fair comparison when people skip fights.</p>`;
+    };
+    let body;
+    if (!M.uid) body = `<div class="empty">Sign in to claude.ai to play. You can still see the leaderboard.</div>` + lb();
+    else if (P.sub === "card") body = bd ? pkCardHtml(bd) : `<div class="empty">No card yet: the bouts go up with Claude's Tuesday and Friday runs.</div>`;
+    else if (P.sub === "record") {
+      const st = P.standings[M.uid];
+      if (!st || !st.cards.length) body = `<div class="empty">Your record starts after your first graded card.</div>`;
+      else {
+        const vs = st.vs_claude;
+        body = `<div class="pk-stats">
+          <div class="pk-stat"><div class="label">Points</div><div class="pk-big num">${st.points}</div><div class="muted" style="font-size:12.5px">of ${st.possible} possible</div></div>
+          <div class="pk-stat"><div class="label">Winners</div><div class="pk-big num">${st.winners}–${st.bouts - st.winners}</div><div class="muted" style="font-size:12.5px">${st.methods} with the method, ${st.rounds} with the round</div></div>
+          <div class="pk-stat"><div class="label">Vs Claude</div><div class="pk-big num">${vs.mine - vs.claude > 0 ? "+" : ""}${vs.mine - vs.claude}</div><div class="muted" style="font-size:12.5px">${vs.mine} to ${vs.claude} on the same ${vs.bouts} bouts</div></div></div>
+          ${st.cards.slice().reverse().map((c) => `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h3 style="margin:0">${esc(c.event)}</h3><span class="pill num">${c.void_reason ? esc(c.void_reason) : `${c.points} pts · Claude ${c.claude_points}`}</span></div>
+            <div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Bout</th><th>Your pick</th><th>Result</th><th class="num">Points</th><th class="num">Claude</th></tr></thead><tbody>
+            ${c.bouts.map((b) => `<tr><td>${esc(b.bout)}</td><td>${pkPickText(b.pick)}</td><td>${b.result ? (b.result.void ? `<span class="muted">${esc(b.result.void)}</span>` : `${esc(b.result.winner)} by ${esc(METHOD_WORD[b.result.method] || b.result.method)}${b.result.method !== "DEC" ? ` R${b.result.round}` : ""}`) : '<span class="muted">pending</span>'}</td><td class="num">${b.score ? cpPts(b.score) : ""}</td><td class="num">${b.claude_points ?? ""}</td></tr>`).join("")}
+            </tbody></table></div></section>`).join("")}`;
+      }
+    } else body = `<section class="panel"><h3 style="margin-top:0">Leaderboard</h3>${lb()}</section>`;
+    view.innerHTML = `<div class="stack">${intro}${sub}${body}</div>`;
   }
 
   // ------------------------------------------------------------ AI picks
@@ -2779,26 +2924,28 @@ button.namelink:hover { color: var(--red); }
 
   // ------------------------------------------------------------ AI Picks (the pick'em)
   const METHOD_WORD = { "KO/TKO": "KO/TKO", SUB: "submission", DEC: "decision" };
-  function cpPick(winner, method, extra = "") { return `<strong>${esc(winner)}</strong> <span class="muted">by</span> ${esc(METHOD_WORD[method] || method)}${extra}`; }
+  function cpPick(winner, method, round, extra = "") { return `<strong>${esc(winner)}</strong> <span class="muted">by</span> ${esc(METHOD_WORD[method] || method)}${round && method !== "DEC" ? ` <span class="muted">in</span> R${round}` : ""}${extra}`; }
+  const cpPts = (x, max = 4) => (x ? `<span class="tier ${x.points >= max - 1 && x.points > 2 ? "tier-best" : x.points >= 2 ? "tier-sure" : "tier-caution"}" title="${x.winner ? "winner ✓" : "winner ✗"}${x.method ? " · method ✓" : ""}${x.round ? " · round ✓" : ""}">${x.points} pt${x.points === 1 ? "" : "s"}</span>` : "");
   function cpRecordTiles(S) {
-    const c = S ? S.claude : { n: 0, winners: 0, methods: 0, points: 0 }, m = S ? S.model : { n: 0, winners: 0, methods: 0, points: 0 }, k = S ? S.market : { n: 0, winners: 0 };
+    const c = S ? S.claude : { n: 0, winners: 0, methods: 0, rounds: 0, points: 0 }, m = S ? S.model : { n: 0, winners: 0, methods: 0, rounds: 0, points: 0 }, k = S ? S.market : { n: 0, winners: 0 };
     const pctOf = (x, n) => (n ? ` · ${Math.round((x / n) * 100)}%` : "");
     return `<div class="pk-stats">
-      <div class="pk-stat"><div class="label">Claude · points</div><div class="pk-big num">${c.points}</div><div class="muted" style="font-size:12.5px">of ${c.n * 2} possible</div></div>
-      <div class="pk-stat"><div class="label">Claude · winners</div><div class="pk-big num">${c.winners}–${c.n - c.winners}</div><div class="muted" style="font-size:12.5px">${c.methods} with the method too${pctOf(c.winners, c.n)}</div></div>
-      <div class="pk-stat"><div class="label">The model alone</div><div class="pk-big num">${m.winners}–${m.n - m.winners}</div><div class="muted" style="font-size:12.5px">${m.points} points · ${m.methods} methods</div></div>
+      <div class="pk-stat"><div class="label">Claude · points</div><div class="pk-big num">${c.points}</div><div class="muted" style="font-size:12.5px">of ${c.possible ?? c.n * 4} possible</div></div>
+      <div class="pk-stat"><div class="label">Claude · winners</div><div class="pk-big num">${c.winners}–${c.n - c.winners}</div><div class="muted" style="font-size:12.5px">${c.methods} with the method, ${c.rounds || 0} with the round too${pctOf(c.winners, c.n)}</div></div>
+      <div class="pk-stat"><div class="label">The model alone</div><div class="pk-big num">${m.winners}–${m.n - m.winners}</div><div class="muted" style="font-size:12.5px">${m.points} points · ${m.methods} methods · ${m.rounds || 0} rounds</div></div>
       <div class="pk-stat"><div class="label">Betting favourite</div><div class="pk-big num">${k.winners}–${k.n - k.winners}</div><div class="muted" style="font-size:12.5px">on bouts with a line</div></div></div>`;
   }
   function cpCardTable(card) {
+    const max = card.rounds_picked ? 4 : 3;
     const rows = card.bouts.map((b) => {
       const m = b.model, r = b.result, cl = b.claude, ms = b.model_score;
-      const over = m && (m.winner !== b.pick.winner ? "winner" : m.method !== b.pick.method ? "method" : "");
+      const over = m && (m.winner !== b.pick.winner ? "winner" : m.method !== b.pick.method ? "method" : card.rounds_picked && m.round && m.round !== b.pick.round ? "round" : "");
       const res = !r ? '<span class="muted">—</span>' : r.void ? `<span class="muted">${esc(r.void)} (not counted)</span>`
         : `${esc(r.winner)} <span class="muted">by</span> ${esc(METHOD_WORD[r.method] || r.method)}${r.round ? ` <span class="muted">R${r.round}</span>` : ""}`;
-      const pts = (x) => (x ? `<span class="tier ${x.points === 2 ? "tier-best" : x.points === 1 ? "tier-sure" : "tier-caution"}">${x.points} pt${x.points === 1 ? "" : "s"}</span>` : "");
+      const pts = (x) => cpPts(x, max);
       return `<tr><td><span style="color:var(--red)">${esc(b.a)}</span> <span class="muted">vs</span> <span style="color:var(--blue)">${esc(b.b)}</span><div class="muted" style="font-size:12px">${esc(b.weight_class || "")}${b.rounds === 5 ? " · 5 rds" : ""}</div></td>
-        <td>${cpPick(b.pick.winner, b.pick.method)} <span class="muted num">${Math.round(b.pick.confidence * 100)}%</span>${over ? ` <span class="pill" title="Claude picked a different ${over} from the model">override</span>` : ""}${b.pick.why ? `<div class="pk-why">${esc(b.pick.why)}</div>` : ""}</td>
-        <td>${m ? `${cpPick(m.winner, m.method)} <span class="muted num">${Math.round(m.p_win * 100)}%</span>` : '<span class="muted">no data</span>'}</td>
+        <td>${cpPick(b.pick.winner, b.pick.method, b.pick.round)} <span class="muted num">${Math.round(b.pick.confidence * 100)}%</span>${over ? ` <span class="pill" title="Claude picked a different ${over} from the model">override</span>` : ""}${b.pick.why ? `<div class="pk-why">${esc(b.pick.why)}</div>` : ""}</td>
+        <td>${m ? `${cpPick(m.winner, m.method, card.rounds_picked ? m.round : null)} <span class="muted num">${Math.round(m.p_win * 100)}%</span>` : '<span class="muted">no data</span>'}</td>
         <td>${res}</td><td class="num">${pts(cl)}${ms ? `<div class="muted" style="font-size:12px">model ${ms.points}</div>` : ""}</td></tr>`;
     }).join("");
     return `<div class="table-wrap"><table class="list cp-table"><thead><tr><th>Bout</th><th>Claude's pick</th><th>Model's pick</th><th>Result</th><th>Points</th></tr></thead><tbody>${rows}</tbody></table></div>`;
@@ -2806,7 +2953,7 @@ button.namelink:hover { color: var(--red); }
   function renderCardPicks(view) {
     const C = state.cp, P = state.picks, S = C.summary;
     const intro = `<section class="panel"><div class="toolbar" style="justify-content:space-between;margin:0"><h2 style="margin:0">AI Picks</h2>${infoBtn("card_picks", "How AI Picks works")}</div>
-      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:74ch">No money on the line: Claude picks every bout on the card, the winner and how it ends, before the card starts. 1 point for the winner, 1 more for the method. Each pick sits beside the model's own, so the record shows where Claude's judgment adds to the numbers, and what the model should learn.</p></section>`;
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:74ch">No money on the line: Claude picks every bout on the card, the winner, how it ends and the round, before the card starts. 2 points for the winner, 1 more for the method, and a bonus point when the round is right too. Each pick sits beside the model's own, so the record shows where Claude's judgment adds to the numbers, and what the model should learn.</p></section>`;
     const sub = `<div class="toolbar"><span class="seg" role="group" aria-label="AI Picks view">
         <button type="button" data-cp-sub="card" aria-pressed="${C.sub === "card"}">This card</button>
         <button type="button" data-cp-sub="record" aria-pressed="${C.sub === "record"}">Track record</button></span></div>`;
@@ -2822,7 +2969,7 @@ button.namelink:hover { color: var(--red); }
       const sum = (xs, k, f) => xs.reduce((t, b) => t + (b[k][f] ? (f === "points" ? b[k][f] : 1) : 0), 0);
       const tabs = C.cards.length > 1 ? `<div class="evtabs" role="tablist">${C.cards.map((c) => `<button type="button" role="tab" data-cp-ev="${esc(c.event)}" aria-selected="${c === card}"><span class="num">${esc(c.date)}</span><strong>${esc(c.event.split(":")[0])}</strong><span class="muted num">${c.bouts.filter((b) => b.claude).reduce((t, b) => t + b.claude.points, 0)} pts</span></button>`).join("")}</div>` : "";
       body = `${tabs}<section class="panel stack"><div class="toolbar" style="justify-content:space-between;margin:0"><div><h3 style="margin:0">${esc(card.event)}</h3>
-          <div class="muted num" style="font-size:13px">${esc(card.date)} · ${card.bouts.length} bouts · picks locked ${esc(when(card.locked_at))}${card.revision ? ` (revision ${card.revision})` : ""}</div></div>
+          <div class="muted num" style="font-size:13px">${esc(card.date)} · ${card.bouts.length} bouts · picks locked ${esc(when(card.locked_at))}${card.revision ? ` (revision ${card.revision})` : ""}${card.rounds_picked ? "" : " · picked before rounds were added: winner and method only, 3 points a bout at most"}</div></div>
           ${g.length ? `<span class="pill num">Claude ${sum(g, "claude", "points")} pts · ${sum(g, "claude", "winner")}/${g.length} winners${gm.length ? ` · model ${sum(gm, "model_score", "points")} pts` : ""}</span>` : `<span class="pill">Locked, awaiting results</span>`}</div>
         ${card.note ? `<div class="pk-note"><div class="label">The read</div><p>${esc(card.note)}</p></div>` : ""}
         ${cpCardTable(card)}</section>`;
@@ -2832,6 +2979,7 @@ button.namelink:hover { color: var(--red); }
       body = `${cpRecordTiles(S)}
         <section class="panel"><h3 style="margin-top:0">What the record is teaching</h3>
           <ul class="notes">${L.length ? L.map((l) => `<li>${l.kind === "change" ? "<strong>Change:</strong> " : l.kind === "ok" ? "<strong>Holding:</strong> " : ""}${esc(l.text)}</li>`).join("") : "<li class=\"muted\">Lessons start after the first graded card.</li>"}</ul>
+          ${S && S.finish_rounds && S.finish_rounds.n ? `<p style="font-size:14px;margin:8px 0 0">Rounds: on the finishes where Claude had the winner and method right, the round was right ${S.finish_rounds.right} of ${S.finish_rounds.n} times.</p>` : ""}
           <p class="muted" style="font-size:13px;margin:8px 0 0">Overrides so far: Claude picked a different winner from the model ${ov.n} time${ov.n === 1 ? "" : "s"} and was right on ${ov.claude_right}; same winner but a different method ${mov.n} time${mov.n === 1 ? "" : "s"} (Claude's method right ${mov.claude_right}, the model's ${mov.model_right}).</p></section>
         ${cal && cal.n ? `<section class="panel"><h3 style="margin-top:0">How fights ended vs what the model expected</h3>
           <div class="table-wrap"><table class="recent pk-table"><thead><tr><th>Ending</th><th class="num">Model expected</th><th class="num">Happened</th><th class="num">Gap (z)</th><th class="num">Claude picked it</th><th class="num">Right</th></tr></thead><tbody>

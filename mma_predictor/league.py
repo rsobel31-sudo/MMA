@@ -1,4 +1,4 @@
-"""My Picks: the same $100 FanDuel game for everyone who opens the page, graded against Claude.
+"""My Bets: the same $100 FanDuel game for everyone who opens the page, graded against Claude.
 
 Each player writes their own bets on the page (page database `players/<id>/bets/<bet>`,
 writable only by them). Prices come from the board Claude publishes each fight
