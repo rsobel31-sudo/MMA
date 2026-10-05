@@ -481,7 +481,7 @@ def discover(fetcher, source: str, since: str) -> List[Dict[str, str]]:
         while f"{y}-{m:02d}" >= since[:7]:
             xml = fetcher.get(f"https://bleacherreport.com/sitemaps/articles/{y}-{m:02d}", cache=True, fresh=(y, m) == (date.today().year, date.today().month))
             out += [{"outlet": "Bleacher Report", "url": u} for u in re.findall(r"<loc>([^<]+)</loc>", xml)
-                    if re.search(r"staff-predictions-(?:for-)?ufc|predictions-ufc-\d+.*staff|br-staff-.*ufc", u)]
+                    if "ufc" in u and re.search(r"staff-(?:predictions|picks)", u)]
             y, m = (y, m - 1) if m > 1 else (y - 1, 12)
     elif source == "rotowire":
         xml = fetcher.get("https://www.rotowire.com/mma_articles.xml", fresh=True)
