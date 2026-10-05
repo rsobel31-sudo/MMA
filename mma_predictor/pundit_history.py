@@ -177,19 +177,34 @@ def to_row(B: Bouts, bout: Dict[str, str], outlet: str, author: str, pick: str, 
 # ------------------------------------------------------------------ parsers
 def parse_sherdog(page: str) -> List[Tuple[str, str, str, str]]:
     """One Sherdog preview page -> [(author, fighter A, fighter B, pick sentence)]."""
-    t = text_of(page)
+    flat = re.sub(r"\s*\n\s*", " ", text_of(page))
     au = re.search(r"/authors/([A-Za-z-]+)-\d+", page)
     author = au.group(1).replace("-", " ") if au else ""
-    vs = re.search(r"\n([^\n(]{3,60}?)\s*\(\d+-\d+(?:-\d+)?(?:, \d+ NC)?\)\s*vs\.\s*([^\n(]{3,60}?)\s*\(\d+-\d+", t.replace("\n(", " (").replace(" \n", " "))
-    if not vs:
-        flat = re.sub(r"\s*\n\s*", " ", t)
-        vs = re.search(r"([A-Z][\w'.-]+(?: [A-Z][\w'.-]+){0,3}) \(\d+-\d+(?:-\d+)?(?:, \d+ NC)?\) vs\. ([A-Z][\w'.-]+(?: [A-Z][\w'.-]+){0,3}) \(\d+-\d+", flat)
-    flat = re.sub(r"\s*\n\s*", " ", t)
-    pk = re.search(r"[Tt]he pick is ([^.]{2,140})\.", flat)
-    if not vs or not pk:
+    rec = r"\(\d+-\d+[^)]{0,30}\)"  # (10-1), (36-17-1, 1 N/C), (12-3, 1 NC)
+    vs = re.search(r"([^()]{2,120}?) " + rec + r" vs\. ([^()]{2,60}?) " + rec, flat)
+    end = flat.find("Jump To")
+    body = flat[:end] if end > 0 else flat
+    picks = re.findall(r"[Tt]he pick is ([^.;]{2,300})[.;]", body)
+    pick = picks[-1] if picks else None
+    if not pick or not re.match(r"[A-Z]", pick):  # free-form endings: "The pick is that Todorovic ...",
+        tail = body[-600:]  # "look for Stirling to ...", "I lean slightly towards Janicic", "Blachowicz via KO"
+        nm = r"((?:[A-Z][\w'’.-]+ ){0,2}[A-Z][\w'’.-]+)"
+        found = []
+        for rx in (r"[Tt]he pick is (?:that )?" + nm, r"\blean(?:s|ing)?(?: slightly| a bit)? (?:towards?|to|with) " + nm,
+                   r"[Ll]ook for " + nm + r" to\b", r"(?:side|go|going) with " + nm, nm + r" (?:via|by|wins via|wins by)\b"):
+            found += [(m.start(), m.group(1)) for m in re.finditer(rx, tail)]
+        if found:
+            pos, who = max(found)
+            pick = f"{who} via {tail[pos:]}"
+    if not pick:
         return []
-    wc = r"^(?:(?:Women's |Light |Super )?\w+weights?|Catchweight|Catch Weight)\s+"
-    return [(author, re.sub(wc, "", vs.group(1).strip(), flags=re.I), vs.group(2).strip(), pk.group(1))]
+    if not vs:  # main events are written as prose: the bout is in the page title, "Preview: ... - Song vs. Figueiredo"
+        tt = re.search(r"<title>[^<]*? - ([^<]+?) vs\.? ([^<]+?)\s*(?:\||</title>)", page)
+        return [(author, htmllib.unescape(tt.group(1)).strip(), htmllib.unescape(tt.group(2)).strip(), pick)] if tt else []
+    a = vs.group(1)
+    a = re.split(r"\b\d{4}\b|Odds|Advertisement", a)[-1]  # drop the byline and date before the names
+    a = re.sub(r"^\s*(?:(?:Women's |Light |Super )?\w+weights?|Catchweight|Catch Weight)\s+", "", a.strip(), flags=re.I)
+    return [(author, a.strip(), vs.group(2).strip(), pick)]
 
 
 def split_pick(s: str) -> Tuple[str, str]:

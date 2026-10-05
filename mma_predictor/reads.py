@@ -133,7 +133,8 @@ class Pundits:
         key = (row["event"], pair_id(row["a"], row["b"]), row["outlet"], row.get("author", ""))
         for r in self.rows:
             if (r["event"], pair_id(r["a"], r["b"]), r["outlet"], r.get("author", "")) == key:
-                r.update({k: v for k, v in row.items() if k not in ("grade",)})
+                # Archive picks (scout history) are graded on import: a re-parse may correct pick and grade alike.
+                r.update({k: v for k, v in row.items() if k != "grade" or "published" in row})
                 return False
         self.rows.append(dict(row, recorded=_now()))
         return True
