@@ -44,6 +44,7 @@ MAJOR = re.compile(r"^\s*(UFC|PFL|Professional Fighters League|Bellator|ONE\b|ON
                    r"|Absolute Championship Akhmat|Rizin|RIZIN)", re.I)
 NOT_MAJOR = re.compile(r"Contender Series|Road to UFC|Road to ONE|Fight Pass Invitational", re.I)
 MAX_AGE, MAX_FIGHTS = 28, 14
+PER_DIVISION = 100  # the list keeps each division's top 100 by score
 
 
 def is_major(org_or_event: str) -> bool:
@@ -512,13 +513,17 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
     score_pool(out, today)
     build.track = track  # exposed for the output file
     out.sort(key=lambda p: -p["score"])
-    for i, p in enumerate(out, 1):
-        p["p4p_rank"] = i
+    # Top PER_DIVISION in each division (the owner's picks always stay), then the overall ranking.
     by_div: Dict[str, int] = {}
+    kept = []
     for p in out:
         by_div[p["division"]] = by_div.get(p["division"], 0) + 1
         p["div_rank"] = by_div[p["division"]]
-    return out
+        if p["div_rank"] <= PER_DIVISION or p.get("owner_pick"):
+            kept.append(p)
+    for i, p in enumerate(kept, 1):
+        p["p4p_rank"] = i
+    return kept
 
 
 def cmd_build(args) -> int:
@@ -547,7 +552,7 @@ def cmd_build(args) -> int:
     cpath = Path(args.candidates).with_name("signing_checks.json")
     signed = signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {})
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
-           "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
+           "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
            "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
     from .prospect_report import attach  # each prospect's move since the last monthly snapshot, and the latest report
