@@ -164,23 +164,41 @@ def main() -> int:
     print("done", flush=True)
 
 
+PERMANENT = ("UFC bout", "age ", "fights on Sherdog")  # only get worse with time: never re-fetch these fighters
+
+
 def sweep_promotions(f, out: Path, cpath: Path, today: date) -> None:
+    """Every fighter on each swept promotion's cards from the last two years, checked against the rules.
+    One Sherdog page per fighter: a fighter the page already rules out for good (UFC bout, too old, too many
+    fights) is remembered in sweep_seen.json and never fetched again; the rest get the full two-source check."""
     from datetime import timedelta
 
     from mma_predictor.suggestions import check
 
     promos = json.loads((out / "promotions.json").read_text())["promotions"] if (out / "promotions.json").exists() else []
     seen = {(json.loads(l).get("sherdog") or {}).get("url") for l in cpath.read_text().splitlines() if l.strip()}
+    spath = out / "sweep_seen.json"
+    gone = json.loads(spath.read_text()) if spath.exists() else {}
     for p in promos:
+        f._cache_path(p["sherdog"]).unlink(missing_ok=True)  # the promotion's newest cards
         urls = sherdog.recent_event_fighters(f, events=60, org_url=p["sherdog"], since=today - timedelta(days=730), log=lambda m: None)
-        todo = [u for u in urls if u not in seen]
-        print(f"{p['name']}: {len(urls)} fighters on cards in the last two years, {len(todo)} not checked yet", flush=True)
-        added = 0
+        todo = [u for u in urls if u not in seen and u not in gone]
+        print(f"{p['name']}: {len(urls)} fighters on cards in the last two years, {len(todo)} to check", flush=True)
+        added = ruled_out = 0
         with cpath.open("a") as fh:
-            for u in todo:
+            for n, u in enumerate(todo, 1):
                 try:
                     page = sherdog.parse_fighter(f.get(u, cache=False), u)
-                    rec = check(f, page.name, today)
+                    sd = PR.sherdog_summary(page)
+                    res = [b["result"] for b in sd["bouts"]]
+                    row = {"wins": res.count("win"), "losses": res.count("loss"), "draws": res.count("draw")}
+                    quick = PR.verify(row, {"stats": {}, "bouts": []}, sd, today)
+                    final = [i for i in quick["issues"] if i.startswith(PERMANENT)]
+                    if final:
+                        gone[u] = {"name": page.name, "out": final[0], "checked": today.isoformat()}
+                        ruled_out += 1
+                        continue
+                    rec = check(f, page.name, today, sherdog_url=u)
                 except Exception as exc:  # noqa: BLE001
                     print(f"  {u}: {exc}", flush=True)
                     continue
@@ -191,7 +209,11 @@ def sweep_promotions(f, out: Path, cpath: Path, today: date) -> None:
                 fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 seen.add((rec.get("sherdog") or {}).get("url"))
                 added += rec["check"].get("eligible", False)
-        print(f"  {added} newly eligible", flush=True)
+                if n % 50 == 0:
+                    spath.write_text(json.dumps(gone, ensure_ascii=False, separators=(",", ":")))
+                    print(f"  {n}/{len(todo)}", flush=True)
+        spath.write_text(json.dumps(gone, ensure_ascii=False, separators=(",", ":")))
+        print(f"  {added} newly eligible, {ruled_out} ruled out for good", flush=True)
 
 
 def confirm_signings(f, out: Path) -> None:

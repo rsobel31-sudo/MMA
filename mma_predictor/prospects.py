@@ -434,6 +434,39 @@ def fill_fm_ratings(candidates: List[Dict[str, object]], path: Path = Path("data
         c.update(rating=h.get("rating"), rank=h.get("rank"), division=c.get("division") or h.get("division"), fm_rank_url=h.get("fm_url"))
 
 
+OWNER_PICKS = Path("data/prospects/owner_picks.json")
+
+
+def load_owner_picks(path: Path = OWNER_PICKS) -> List[Dict[str, str]]:
+    return (json.loads(path.read_text()).get("picks") or []) if path.exists() else []
+
+
+def apply_owner_picks(candidates: List[Dict[str, object]], picks: List[Dict[str, str]]) -> None:
+    """Fighters the owner put on the list themselves are listed whatever the rules say: the rules they break
+    are kept (and shown on the page) as `overrides`. The Sherdog record still has to be found and verified."""
+    urls = {p.get("sherdog_url") for p in picks if p.get("sherdog_url")}
+    names = {fold(p["name"]) for p in picks if p.get("name")}
+    for c in candidates:
+        sd = c.get("sherdog") or {}
+        if not sd or not (sd.get("url") in urls or fold(c["name"]) in names):
+            continue
+        chk = c.setdefault("check", {})
+        chk["overrides"] = list(chk.get("issues") or [])
+        chk["eligible"], chk["owner_pick"] = True, True
+
+
+def add_owner_pick(name: str, sherdog_url: str, note: str = "", added: Optional[str] = None, path: Path = OWNER_PICKS) -> bool:
+    d = json.loads(path.read_text()) if path.exists() else {
+        "_note": "Prospects the owner put on the list themselves (a suggestion on the page, or asked in chat): listed whatever the "
+                 "rules say, marked Owner's pick, with the rules they break shown. Remove an entry to put them back under the rules.",
+        "picks": []}
+    if any(p.get("sherdog_url") == sherdog_url or fold(p.get("name", "")) == fold(name) for p in d["picks"]):
+        return False
+    d["picks"].append({"name": name, "sherdog_url": sherdog_url, "added": added or date.today().isoformat(), "note": note})
+    path.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n")
+    return True
+
+
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
     """Eligible, two-source-verified prospects, scored and ranked."""
     # Fight Matrix records first: when two records are the same person, keep the one with a rating.
@@ -474,6 +507,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
             "former": major_status(sd.get("bouts", []))[1],
             "via": c.get("via") or ("rankings" if c.get("fm_url") else ""),
+            **({"owner_pick": True, "overrides": chk.get("overrides") or []} if chk.get("owner_pick") else {}),
         })
     score_pool(out, today)
     build.track = track  # exposed for the output file
@@ -498,6 +532,7 @@ def cmd_build(args) -> int:
     for c in cands:
         if c.get("sherdog") is not None:
             c["check"] = verify(c, c.get("fm") or {"stats": {}, "bouts": []}, c["sherdog"], today)
+    apply_owner_picks(cands, load_owner_picks())
     pros = build(cands, noted, today)
     # Our own list's history: who we listed, from when, at best what rank (credits us when they sign).
     lpath = Path(args.candidates).with_name("listed.json")

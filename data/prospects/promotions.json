@@ -1,6 +1,89 @@
 {
  "_note": "Promotions whose recent cards are swept for prospects on every prospects crawl (crawl_prospects.py --sweep): every fighter on their cards in the last two years is checked against the rules, so nobody good is missed because Fight Matrix ranks them low. Add a promotion by its Sherdog organization page.",
  "promotions": [
-  {"name": "RCC (Russian Cagefighting Championship)", "sherdog": "https://www.sherdog.com/organizations/Russian-Cagefighting-Championship-9663", "why": "Owner's pick: a strong Russian league", "added": "2026-10-01"}
+  {
+   "name": "RCC (Russian Cagefighting Championship)",
+   "sherdog": "https://www.sherdog.com/organizations/Russian-Cagefighting-Championship-9663",
+   "why": "Owner's pick: a strong Russian league",
+   "added": "2026-10-01"
+  },
+  {
+   "name": "UAE Warriors",
+   "sherdog": "https://www.sherdog.com/organizations/UAE-Warriors-5307",
+   "why": "Owner: major regional promotions. Feeder for the UFC and PFL; Middle East and Central Asia",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Brave CF",
+   "sherdog": "https://www.sherdog.com/organizations/Brave-Combat-Federation-11227",
+   "why": "Owner: major regional promotions. Global feeder league; many Central Asian prospects",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "LFA (Legacy Fighting Alliance)",
+   "sherdog": "https://www.sherdog.com/organizations/Legacy-Fighting-Alliance-11339",
+   "why": "Owner: major regional promotions. The main US feeder to the UFC and the Contender Series",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "CFFC (Cage Fury Fighting Championships)",
+   "sherdog": "https://www.sherdog.com/organizations/Cage-Fury-Fighting-Championships-813",
+   "why": "Owner: major regional promotions. US East Coast feeder",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Cage Warriors",
+   "sherdog": "https://www.sherdog.com/organizations/Cage-Warriors-Fighting-Championship-186",
+   "why": "Owner: major regional promotions. Europe's main UFC feeder",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "KSW",
+   "sherdog": "https://www.sherdog.com/organizations/Konfrontacja-Sztuk-Walki-668",
+   "why": "Owner: major regional promotions. Poland's top league",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Oktagon MMA",
+   "sherdog": "https://www.sherdog.com/organizations/Oktagon-MMA-5383",
+   "why": "Owner: major regional promotions. Central Europe's top league",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Fury FC",
+   "sherdog": "https://www.sherdog.com/organizations/Fury-Fighting-Championship-Texas-7617",
+   "why": "Owner: major regional promotions. Texas feeder; frequent Contender Series source",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Ares FC",
+   "sherdog": "https://www.sherdog.com/organizations/Ares-Fighting-Championship-15823",
+   "why": "Owner: major regional promotions. French/African feeder",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Jungle Fight",
+   "sherdog": "https://www.sherdog.com/organizations/Jungle-Fight-351",
+   "why": "Owner: major regional promotions. Brazil's long-running feeder",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "LUX Fight League",
+   "sherdog": "https://www.sherdog.com/organizations/LUX-Fight-League-12569",
+   "why": "Owner: major regional promotions. Mexico's top regional league",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Road FC",
+   "sherdog": "https://www.sherdog.com/organizations/Road-Fighting-Championship-3238",
+   "why": "Owner: major regional promotions. Korea's top league; Road to UFC source",
+   "added": "2026-10-06"
+  },
+  {
+   "name": "Pancrase",
+   "sherdog": "https://www.sherdog.com/organizations/Pancrase-19",
+   "why": "Owner: major regional promotions. Japan; Road to UFC source",
+   "added": "2026-10-06"
+  }
  ]
 }

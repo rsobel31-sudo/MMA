@@ -68,17 +68,17 @@ def spellings(name: str) -> list:
     return list(dict.fromkeys([base, alt]))
 
 
-def check(f, name: str, today: date) -> Optional[dict]:
+def check(f, name: str, today: date, sherdog_url: str = "") -> Optional[dict]:
     """A candidate record like the crawl's: Fight Matrix + Sherdog when ranked there, else Sherdog alone.
     Alternate spellings in brackets are each tried."""
     for n in spellings(name):
-        rec = _check(f, n, today)
+        rec = _check(f, n, today, sherdog_url)
         if rec:
             return rec
     return None
 
 
-def _check(f, name: str, today: date) -> Optional[dict]:
+def _check(f, name: str, today: date, known_url: str = "") -> Optional[dict]:
     from .sources import fightmatrix, sherdog
 
     row = fm_row(name)
@@ -92,7 +92,7 @@ def _check(f, name: str, today: date) -> Optional[dict]:
             url = prof.sherdog_url or ""
         except Exception:  # noqa: BLE001 - fall back to Sherdog alone
             row = None
-    url = url or find_sherdog(f, name)
+    url = known_url or url or find_sherdog(f, name)
     if not url:
         return None
     sd = PR.sherdog_summary(sherdog.parse_fighter(f.get(url, cache=False, fresh=True), url))
@@ -150,7 +150,8 @@ def cmd_suggestions(args) -> int:
             rec = None
         found[k] = rec
         add_list(noted, call_list(s, today))
-        if rec and not args.dry_run:
+        if rec and not args.dry_run:  # the owner's own suggestion: listed even where the rules would leave it out
+            PR.add_owner_pick(rec["name"], (rec.get("sherdog") or {}).get("url", ""), note=f"suggested on the page ({k})")
             with cpath.open("a") as fh:
                 fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
     if args.dry_run:
@@ -171,7 +172,8 @@ def cmd_suggestions(args) -> int:
             if p:
                 u = {"status": "listed", "p4p_rank": p["p4p_rank"], "div_rank": p["div_rank"], "division": p["division"], "score": p["score"],
                      "record": f"{p['wins']}-{p['losses']}" + (f"-{p['draws']}" if p.get("draws") else ""), "age": p.get("age"),
-                     "detail": f"#{p['p4p_rank']} overall, #{p['div_rank']} {p['division']}, score {p['score']}"}
+                     "detail": f"#{p['p4p_rank']} overall, #{p['div_rank']} {p['division']}, score {p['score']}"
+                               + (f" (your pick: listed despite {'; '.join(p['overrides'])})" if p.get("overrides") else "")}
             else:
                 u = {"status": "not eligible", "detail": "; ".join(rec["check"].get("issues") or ["did not pass the screen"])}
             u["sherdog_url"] = (rec.get("sherdog") or {}).get("url", "")

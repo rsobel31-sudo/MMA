@@ -2448,7 +2448,7 @@ button.namelink:hover { color: var(--red); }
   function prospectRow(x, rank) {
     const open = state.pros.open === x.name;
     return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td><td class="num">${moveBadge(x)}</td>
-      <td>${starBtn(x)} <strong>${esc(x.name)}</strong>${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
+      <td>${starBtn(x)} <strong>${esc(x.name)}</strong>${x.owner_pick ? ` <span class="pill ftr-up" title="Owner's pick: listed by the owner${(x.overrides || []).length ? " despite the rules (" + esc(x.overrides.join("; ")) + ")" : ""}">Owner's pick</span>` : ""}${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
       <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
       <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
       <td class="num"><strong>${x.score}</strong></td></tr>${open ? `<tr class="pr-open"><td colspan="9">${prospectDetail(x)}</td></tr>` : ""}`;
@@ -2569,7 +2569,7 @@ button.namelink:hover { color: var(--red); }
       body = order.length ? `<div class="classes">${order.map((wc) => {
         const g = groups[wc], top = g[0].score;
         return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} prospects</span></div>
-          <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)} · age ${Math.floor(x.age)}">${esc(x.name)}</span>
+          <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)}${x.age != null ? " · age " + Math.floor(x.age) : ""}${x.owner_pick ? " · Owner's pick" : ""}">${esc(x.name)}${x.owner_pick ? " ✦" : ""}</span>
             <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}<span class="wmv">${moveBadge(x)}</span></span></li>`).join("")}</ol>
           ${g.length > 10 ? `<button class="btn link" type="button" data-pros-class="${esc(wc)}">All ${g.length} in the list</button>` : ""}</div>`;
       }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by prospect score. Click a name for the full card.</p>` : `<div class="empty">No prospects match these filters.</div>`;
