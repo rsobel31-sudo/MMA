@@ -45,6 +45,7 @@ MAJOR = re.compile(r"^\s*(UFC|PFL|Professional Fighters League|Bellator|ONE\b|ON
 NOT_MAJOR = re.compile(r"Contender Series|Road to UFC|Road to ONE|Fight Pass Invitational", re.I)
 MAX_AGE, MAX_FIGHTS = 28, 14
 PER_DIVISION = 100  # the list keeps each division's top 100 by score
+UNRATED_PCT = 0.5  # rating percentile for prospects Fight Matrix doesn't rank
 
 
 def is_major(org_or_event: str) -> bool:
@@ -170,11 +171,11 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
         ratings = sorted(p["rating"] for p in ps if p.get("rating"))
         for p in ps:
             r = p.get("rating")
-            # No Fight Matrix rating: neutral if they came from a commentator's call (we may just have missed
-            # their ranking); near the bottom if found by a promotion sweep (Fight Matrix ranks ~1,100 deep per
-            # division, so not being there means rating below everyone who is).
+            # No Fight Matrix rating: neutral (the division's middle), whoever found them. Fight Matrix doesn't
+            # rank many regional fighters at all, so a missing rating says little either way (owner's call,
+            # Oct 2026); winning, finishing, youth and activity then decide where they land.
             if not r or len(ratings) < 2:
-                pct = 0.1 if p.get("via") == "sweep" else 0.5
+                pct = UNRATED_PCT
             else:
                 pct = sum(x < r for x in ratings) / (len(ratings) - 1)
             n = p["wins"] + p["losses"] + p["draws"]

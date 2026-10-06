@@ -4,6 +4,8 @@ Runs on the 1st of each month. Goal: keep the Prospects tab current and keep
 grading the outlets, creators and forum posters who call prospects.
 
 The list keeps the top 100 by score in each division (`PER_DIVISION`; owner's picks always stay).
+A prospect Fight Matrix doesn't rank gets the division's middle rating (`UNRATED_PCT` = 50th percentile), not the bottom:
+many regional fighters simply aren't in its rankings.
 Rules: under 28, fewer than 14 pro fights, a winning record, not in a major promotion (UFC,
 PFL/Bellator, ONE, ACA, RIZIN; Contender Series / Road to UFC don't count), active
 in the last two years. Anyone who has fought in the UFC is out for good; a fighter who
