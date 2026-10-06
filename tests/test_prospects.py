@@ -153,3 +153,8 @@ def test_winning_record_required():
     chk = PR.verify(row(wins=2, losses=2), {"stats": {}, "bouts": []}, s, TODAY)
     assert not chk["eligible"] and any("winning record" in i for i in chk["issues"])
     assert PR.verify(row(wins=2, losses=0), {"stats": {}, "bouts": []}, sd(n_w=2), TODAY)["eligible"]
+
+
+def test_unrated_ladder_grows_with_experience():
+    from mma_predictor.prospects import unrated_pct
+    assert [unrated_pct(n) for n in (1, 2, 3, 4, 5, 6, 12)] == [0.15, 0.15, 0.15, 0.25, 0.40, 0.50, 0.50]

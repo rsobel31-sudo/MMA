@@ -45,7 +45,15 @@ MAJOR = re.compile(r"^\s*(UFC|PFL|Professional Fighters League|Bellator|ONE\b|ON
 NOT_MAJOR = re.compile(r"Contender Series|Road to UFC|Road to ONE|Fight Pass Invitational", re.I)
 MAX_AGE, MAX_FIGHTS = 28, 14
 PER_DIVISION = 100  # the list keeps each division's top 100 by score
-UNRATED_PCT = 0.5  # rating percentile for prospects Fight Matrix doesn't rank
+UNRATED_LADDER = ((3, 0.15), (4, 0.25), (5, 0.40))  # pro fights -> rating percentile for prospects Fight Matrix
+UNRATED_TOP = 0.50                                   # doesn't rank; 6 or more fights get the division's middle
+
+
+def unrated_pct(fights: int) -> float:
+    for most, pct in UNRATED_LADDER:
+        if fights <= most:
+            return pct
+    return UNRATED_TOP
 
 
 def is_major(org_or_event: str) -> bool:
@@ -171,11 +179,11 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
         ratings = sorted(p["rating"] for p in ps if p.get("rating"))
         for p in ps:
             r = p.get("rating")
-            # No Fight Matrix rating: neutral (the division's middle), whoever found them. Fight Matrix doesn't
-            # rank many regional fighters at all, so a missing rating says little either way (owner's call,
-            # Oct 2026); winning, finishing, youth and activity then decide where they land.
+            # No Fight Matrix rating: Fight Matrix doesn't rank many regional fighters at all, so a missing
+            # rating says little on its own. The stand-in grows with experience up to the division's middle
+            # (owner's ladder, Oct 2026): a 2-0 teenager shouldn't outrank proven fighters on youth alone.
             if not r or len(ratings) < 2:
-                pct = UNRATED_PCT
+                pct = unrated_pct(p["wins"] + p["losses"] + p["draws"])
             else:
                 pct = sum(x < r for x in ratings) / (len(ratings) - 1)
             n = p["wins"] + p["losses"] + p["draws"]
