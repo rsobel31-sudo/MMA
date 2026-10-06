@@ -202,6 +202,14 @@ python -m mma_predictor refresh          # about 20 minutes
 - One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
 - Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json` and `prospects.json`, and commit `data/` and `app/data.json`.
 
+## Betting lines: the odds sweep
+
+`python -m mma_predictor odds-sweep` re-fetches the BestFightOdds pages of everyone booked on a UFC card in the next 21 days
+(`--days`), re-prices the Contender Series weeks from BestFightOdds' event pages (`dwcs odds`, no model rebuild), and re-exports
+app/data.json and app/dwcs.json. It runs first thing in the daily sweep (6:53 AM ET, with `--no-export`, since that run's
+`refresh` exports anyway) and on its own at 12:47 and 6:47 PM ET (the "Fight Lab odds sweep" routine), which republishes only
+when a line changed. Lines on a card usually appear 1 to 2 weeks out, so the furthest card can show "No line yet" for a while.
+
 ## AI Picks: the pick'em
 
 No money on the line, and no passing: **every bout on the card gets a pick**: a winner, a method (KO/TKO, SUB or DEC) and, for a finish, the round. Each pick also carries the chance Claude gives it (0.50-0.99) and a one-line reason.

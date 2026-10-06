@@ -47,3 +47,15 @@ def test_parse_season_reads_finished_and_upcoming_weeks():
 def test_same_fighter_across_spellings():
     assert _same("Greg Foster", "Gregory Foster") and _same("Douglas da Lapa", "Douglas Lapa")
     assert not _same("Jason Asher", "Greg Foster")
+
+
+def test_bfo_lines_match_spelling_variants_and_orient_to_our_order():
+    from mma_predictor import dwcs
+    from mma_predictor.picks_cli import _pair
+
+    bfo = {_pair("Mateus Soares", "Ryuho Miyaguchi"): ("Mateus Soares", {"a": -420, "b": 320})}
+    row = {"a": "Ryuho Miyaguchi", "b": "Matheus Soares"}
+    assert dwcs.apply_lines(row, dwcs._line(bfo, row["a"], row["b"]))
+    assert row["odds"] == {"a": 320, "b": -420} and row["market_p_a"] < 0.25
+    assert not dwcs.apply_lines(row, dwcs._line(bfo, row["a"], row["b"]))  # unchanged lines report no change
+    assert dwcs._line(bfo, "Someone Else", "Matheus Soares") is None

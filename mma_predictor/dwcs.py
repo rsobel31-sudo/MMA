@@ -119,11 +119,7 @@ def build_week(week: Dict, f, history, model, dec_cal, adjust, prospects: Dict[s
             row["records"] = {k: _record(history, side[k], when) for k in ("a", "b")}
         else:
             row["model"] = None
-        ml = bfo.get(_pair(b["a"], b["b"]))
-        if ml and ml[1].get("a") is not None and ml[1].get("b") is not None:
-            pa_m = P.implied(ml[1]["a"]) / (P.implied(ml[1]["a"]) + P.implied(ml[1]["b"]))
-            row["market_p_a"] = round(pa_m if _same(ml[0], b["a"]) else 1 - pa_m, 4)
-            row["odds"] = ml[1] if _same(ml[0], b["a"]) else {"a": ml[1]["b"], "b": ml[1]["a"]}
+        apply_lines(row, _line(bfo, b["a"], b["b"]))
         rows.append(row)
     return {"event": week["name"], "week": week["week"], "date": week["date"], "results_url": SEASON_URL, "sherdog_url": week["sherdog_url"],
             "location": "Las Vegas, Nevada, U.S.", "locks_at": _lock_time(week["date"], True), "drafted_at": _now(),
@@ -186,6 +182,65 @@ def bfo_lines(f) -> Dict:
     except OSError:
         pass
     return out
+
+
+def _line(bfo: Dict, a: str, b: str):
+    """BestFightOdds' line for a bout, by exact pair, else by a pair whose names each share a token with ours
+    ('Mateus Soares' for 'Matheus Soares' still needs the other fighter to match too)."""
+    ml = bfo.get(_pair(a, b))
+    if ml:
+        return ml
+    hits = [v for key, v in bfo.items() if len(key) == 2
+            and any(_same(a, x) and _same(b, y) for x, y in (tuple(key), tuple(key)[::-1]))]
+    return hits[0] if len(hits) == 1 else None
+
+
+def apply_lines(row: Dict, ml) -> bool:
+    """Set a bout's moneylines and no-vig market chance for A; True when they changed."""
+    if not ml or ml[1].get("a") is None or ml[1].get("b") is None:
+        return False
+    first_is_a = _same(ml[0], row["a"]) and not _same(ml[0], row["b"])
+    pa_m = P.implied(ml[1]["a"]) / (P.implied(ml[1]["a"]) + P.implied(ml[1]["b"]))
+    new = {"market_p_a": round(pa_m if first_is_a else 1 - pa_m, 4),
+           "odds": ml[1] if first_is_a else {"a": ml[1]["b"], "b": ml[1]["a"]}}
+    if all(row.get(k) == v for k, v in new.items()):
+        return False
+    row.update(new)
+    return True
+
+
+def refresh_odds(f, bfo: Optional[Dict] = None, log=print) -> int:
+    """Re-price every upcoming draft from BestFightOdds without rebuilding the model numbers. Returns bouts changed."""
+    bfo = bfo_lines(f) if bfo is None else bfo
+    today, changed = date.today().isoformat(), 0
+    for p in sorted(DRAFTS.glob("20*.json")) if DRAFTS.exists() else []:
+        d = json.loads(p.read_text())
+        if d["date"] < today:
+            continue
+        n = 0
+        for r in d["bouts"]:
+            if apply_lines(r, _line(bfo, r["a"], r["b"])):
+                n += 1
+                log(f"  {d['event']}: {r['bout']} {r['odds']['a']:+d} / {r['odds']['b']:+d} (market {r['market_p_a']:.0%} on {r['a']})")
+        priced = sum(1 for r in d["bouts"] if r.get("odds"))
+        log(f"Week {d['week']} ({d['date']}): {priced}/{len(d['bouts'])} bouts priced, {n} changed")
+        if n:
+            d["odds_at"] = _now()
+            p.write_text(json.dumps(d, indent=1, ensure_ascii=False))
+        changed += n
+    return changed
+
+
+def cmd_odds(args) -> int:
+    log = print
+    bfo = bfo_lines(_fetcher(args.cache))
+    log(f"BestFightOdds: {len(bfo)} bouts on current events")
+    if not bfo:
+        log("BestFightOdds unreachable or empty; drafts left as they were")
+        return 1
+    refresh_odds(None, bfo)
+    export()
+    return 0
 
 
 def cmd_build(args) -> int:
@@ -272,5 +327,8 @@ def register(sub, data_arg) -> None:
     q.add_argument("--cache", default=".cache/pages")
     q.add_argument("--app-data", default="app/data.json")
     q.set_defaults(func=cmd_build)
+    q = ps.add_parser("odds", help="re-price the upcoming weeks from BestFightOdds (no model rebuild) and rewrite app/dwcs.json")
+    q.add_argument("--cache", default=".cache/pages")
+    q.set_defaults(func=cmd_odds)
     q = ps.add_parser("export", help="rewrite app/dwcs.json from the drafts, picks and results")
     q.set_defaults(func=lambda a: (export(), 0)[1])

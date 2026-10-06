@@ -329,7 +329,45 @@ def cmd_refresh(args) -> int:
     return 1 if failed else 0
 
 
+def upcoming_names(days: int, today: Optional[date] = None) -> List[str]:
+    """Fighters booked on the UFC cards in app/data.json within the next ``days`` days."""
+    today = today or date.today()
+    events = json.loads((ROOT / "app" / "data.json").read_text())["upcoming"]["events"]
+    names = []
+    for e in events:
+        if today.isoformat() <= e["date"] <= (today + timedelta(days=days)).isoformat():
+            names += [str(b[k]) for b in e.get("bouts", []) if not b.get("decided") for k in ("a", "b")]
+    return list(dict.fromkeys(names))
+
+
+def cmd_odds_sweep(args) -> int:
+    """Betting lines only: booked UFC fighters' BestFightOdds pages, the Contender Series weeks, then a re-export."""
+    from . import dwcs
+
+    names = upcoming_names(args.days)
+    print(f"Odds sweep: {len(names)} fighters on UFC cards in the next {args.days} days", flush=True)
+    report = {"bestfightodds": refresh_bestfightodds(names, args.delay)}
+    print(f"  UFC: {report['bestfightodds']}", flush=True)
+    bfo = dwcs.bfo_lines(dwcs._fetcher(".cache/pages"))
+    report["dwcs_changed"] = dwcs.refresh_odds(None, bfo) if bfo else None
+    dwcs.export()
+    if not args.no_export:
+        print(_run(["export"] + EXPORT_ARGS).strip()[-300:], flush=True)
+    events = json.loads((ROOT / "app" / "data.json").read_text())["upcoming"]["events"]
+    for e in events:
+        if e["date"] <= (date.today() + timedelta(days=args.days)).isoformat():
+            bs = e.get("bouts", [])
+            print(f"  {e['date']} {e['name']}: {sum(1 for b in bs if b.get('market'))}/{len(bs)} bouts priced")
+    return 0
+
+
 def register(sub) -> None:
+    p = sub.add_parser("odds-sweep", help="betting lines only: BestFightOdds for upcoming UFC cards and the Contender Series")
+    p.add_argument("--days", type=int, default=21, help="UFC cards this many days ahead")
+    p.add_argument("--delay", type=float, default=2.0)
+    p.add_argument("--no-export", action="store_true", help="skip the app/data.json re-export")
+    p.set_defaults(func=cmd_odds_sweep)
+
     p = sub.add_parser("refresh", help="weekly data refresh: new results, stale records, re-verify, re-export")
     p.add_argument("--since", help="UFC events after this date (default: our last bout minus --overlap days)")
     p.add_argument("--overlap", type=int, default=3)
