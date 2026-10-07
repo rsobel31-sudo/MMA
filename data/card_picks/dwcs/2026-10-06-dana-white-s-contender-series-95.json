@@ -71,7 +71,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Alivia Bierley",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Salhahuddin Everett vs Ozzy Martin",
@@ -133,7 +151,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Salhahuddin Everett",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Roque Conceição Moreira Jr. vs Alexander Chavez",
@@ -195,7 +231,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Roque Conceição Moreira Jr.",
+    "side": "a",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Ryuho Miyaguchi vs Matheus Soares",
@@ -257,7 +311,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Matheus Soares",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Preston LaGrange vs Nell Ariano",
@@ -319,11 +391,30 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Preston LaGrange",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   }
  ],
- "graded": false,
+ "graded": true,
  "rounds_picked": true,
  "revision": 2,
- "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged."
+ "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged.",
+ "graded_at": "2026-10-07T02:06:57+00:00"
 }
