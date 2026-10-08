@@ -135,24 +135,25 @@ def _expected(r: float, rj: float, rdj: float) -> float:
     return 1 / (1 + 10 ** (-_g(rdj) * (r - rj) / 400))
 
 
-def _age(p: Player, d: date) -> float:
+def _age(p: Player, d: date, cap: float = RD0) -> float:
     if p.last is None:
         return p.rd
     months = max(0.0, (d - p.last).days / 30.0)
-    return min(RD0, math.sqrt(p.rd ** 2 + C2 * months))
+    return min(cap, math.sqrt(p.rd ** 2 + C2 * months))
 
 
-def replay(bs: Iterable[Bout], until: Optional[date] = None, finish_weight: float = 1.0) -> Dict[str, Player]:
+def replay(bs: Iterable[Bout], until: Optional[date] = None, finish_weight: float = 1.0, rd0: float = RD0) -> Dict[str, Player]:
     """Glicko-1, one bout per rating period, both sides updated from their pre-fight values.
-    finish_weight < 1 scores a decision win as that share of a full win (0.9 -> a decision is 0.9/0.1)."""
+    finish_weight < 1 scores a decision win as that share of a full win (0.9 -> a decision is 0.9/0.1).
+    rd0 < 350 is a firmer prior: a short record moves the rating less (shrinks 3-0 and 5-0 records toward 1500)."""
     ps: Dict[str, Player] = {}
     for b in bs:
         if until and b.day >= until:
             break
         if b.a == b.b:
             continue
-        pa, pb = ps.setdefault(b.a, Player()), ps.setdefault(b.b, Player())
-        rda, rdb = _age(pa, b.day), _age(pb, b.day)
+        pa, pb = ps.setdefault(b.a, Player(rd=rd0)), ps.setdefault(b.b, Player(rd=rd0))
+        rda, rdb = _age(pa, b.day, rd0), _age(pb, b.day, rd0)
         s = b.score_a
         if s in (0.0, 1.0) and finish_weight < 1 and b.method.upper().startswith("DEC"):
             s = finish_weight if s == 1.0 else 1 - finish_weight
@@ -169,7 +170,7 @@ def replay(bs: Iterable[Bout], until: Optional[date] = None, finish_weight: floa
 
 
 # ------------------------------------------------------------------ backtest
-def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: bool = True, k_rd: float = 0.0, log=print) -> dict:
+def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: bool = True, k_rd: float = 0.0, rd0: float = RD0, log=print) -> dict:
     """Our rating vs Fight Matrix's on the 2019/2021 cohorts, scored the way the Fight Matrix test was."""
     from . import prospects_backtest as PB
 
@@ -193,7 +194,7 @@ def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: b
                       "auc_score": round(PB.auc(pool, lambda p: PB.score(p, cur)), 3),
                       "top50_score": round(PB.top_rate(pool, lambda p: PB.score(p, cur), 50), 3)}}
         for fw in finish_weights:
-            ours = replay(bs, until=when, finish_weight=fw)
+            ours = replay(bs, until=when, finish_weight=fw, rd0=rd0)
             covered = []
             for p in pool:
                 su = (profiles.get(p["url"]) or {}).get("sherdog_url")
@@ -232,15 +233,15 @@ def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: b
 
 
 # ------------------------------------------------------- strength of schedule after signing
-def pre_fight_ratings(bs: List[Bout]) -> List[Tuple[Bout, float, float]]:
-    """Each bout with both fighters' ratings going in (a's, b's)."""
+def pre_fight_ratings(bs: List[Bout]) -> List[Tuple[Bout, float, float, int, int]]:
+    """Each bout with both fighters' ratings going in (a's, b's) and how many rated bouts each had."""
     ps: Dict[str, Player] = {}
     out = []
     for b in bs:
         if b.a == b.b:
             continue
         pa, pb = ps.setdefault(b.a, Player()), ps.setdefault(b.b, Player())
-        out.append((b, pa.r, pb.r))
+        out.append((b, pa.r, pb.r, pa.n, pb.n))
         replay_one(ps, b)
     return out
 
@@ -258,9 +259,11 @@ def replay_one(ps: Dict[str, Player], b: Bout) -> None:
         me.r, me.rd, me.last, me.n = r, rd, b.day, me.n + 1
 
 
-def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1)) -> dict:
+def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1), min_later: int = 1) -> dict:
     """For everyone who reached a major promotion: the opponents in their first `first` major bouts (rating going
-    in), and how they did in the `later` major bouts after that. Does a soft start predict struggles?"""
+    in), and how they did in the `later` major bouts after that. Does a soft start predict struggles?
+    min_later > 1 keeps only fighters who stayed around, which favours the ones who kept winning (survivorship);
+    "next_bout" (the first bout after the start, whoever had one) is free of that."""
     from . import prospects as PR
 
     names = {}
@@ -273,8 +276,8 @@ def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1)) ->
             names.setdefault(r["url"], r["name"])
     rows = pre_fight_ratings(all_bouts(load_records()))
     major: Dict[str, List[Tuple[date, float, float, str]]] = {}  # fighter -> (day, opp rating, result, event)
-    for b, ra, rb in rows:
-        if not PR.is_major(b.event):
+    for b, ra, rb, na, nb in rows:
+        if not PR.is_major(b.event) or not na or not nb:  # an opponent with no rated bouts is a default 1500, not a known level
             continue
         ea = 1 / (1 + 10 ** (-(ra - rb) / 400))
         major.setdefault(b.a, []).append((b.day, rb, b.score_a, b.event, ea, ra))
@@ -297,7 +300,7 @@ def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1)) ->
     for label, keep in (("soft", lambda s: s["early_opp"] <= lo), ("middle", lambda s: lo < s["early_opp"] < hi), ("tough", lambda s: s["early_opp"] >= hi)):
         for rec in ("3-0", "2-1"):
             w = int(rec[0])
-            g = [s for s in starts if keep(s) and s["early_wins"] == w and len(s["later"]) >= 3]
+            g = [s for s in starts if keep(s) and s["early_wins"] == w and len(s["later"]) >= min_later]
             later = [x for s in g for x in s["later"]]
             exp = [x for s in g for x in s["later_expected"]]
             lopp = [x for s in g for x in s["later_opp"]]
@@ -306,17 +309,19 @@ def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1)) ->
                                                "expected": round(sum(exp) / len(exp), 3) if exp else None,
                                                "vs_expected": round((sum(later) - sum(exp)) / len(later), 3) if later else None,
                                                "later_opp": round(sum(lopp) / len(lopp)) if lopp else None,
+                                               "next_bout_win_rate": round(sum(s["later"][0] for s in g) / len(g), 3) if g else None,
+                                               "next_bout_expected": round(sum(s["later_expected"][0] for s in g) / len(g), 3) if g else None,
                                                "z": round((sum(later) - sum(exp)) / math.sqrt(sum(e * (1 - e) for e in exp)), 2) if exp else None}
     out["starts"] = starts
     return out
 
 
 # ------------------------------------------------------- today's prospects: ours vs Fight Matrix
-def compare_current(prospects_path: Path = Path("app/prospects.json"), top: int = 15, k_rd: float = 1.0) -> dict:
+def compare_current(prospects_path: Path = Path("app/prospects.json"), top: int = 15, k_rd: float = 1.0, rd0: float = RD0) -> dict:
     """Each listed prospect's within-division percentile on our rating and on Fight Matrix's (the score's rating
     component), and the biggest disagreements both ways."""
     recs = load_records()
-    ps = replay(all_bouts(recs))
+    ps = replay(all_bouts(recs), rd0=rd0)
     P = json.loads(prospects_path.read_text())["prospects"]
     rows = []
     for p in P:
