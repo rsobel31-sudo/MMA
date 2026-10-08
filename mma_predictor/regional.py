@@ -169,7 +169,7 @@ def replay(bs: Iterable[Bout], until: Optional[date] = None, finish_weight: floa
 
 
 # ------------------------------------------------------------------ backtest
-def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: bool = True, log=print) -> dict:
+def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: bool = True, k_rd: float = 0.0, log=print) -> dict:
     """Our rating vs Fight Matrix's on the 2019/2021 cohorts, scored the way the Fight Matrix test was."""
     from . import prospects_backtest as PB
 
@@ -198,7 +198,7 @@ def backtest(out: Optional[Path] = None, finish_weights=(1.0, 0.9), with_main: b
             for p in pool:
                 su = (profiles.get(p["url"]) or {}).get("sherdog_url")
                 pl = ours.get(su) if su else None
-                p["ours"] = pl.r if pl else None
+                p["ours"] = pl.r - k_rd * pl.rd if pl else None
                 p["ours_low"] = pl.r - pl.rd if pl else None
                 if pl:
                     covered.append(p)
@@ -309,3 +309,36 @@ def schedules(first: int = 3, later: int = 6, since: date = date(2008, 1, 1)) ->
                                                "z": round((sum(later) - sum(exp)) / math.sqrt(sum(e * (1 - e) for e in exp)), 2) if exp else None}
     out["starts"] = starts
     return out
+
+
+# ------------------------------------------------------- today's prospects: ours vs Fight Matrix
+def compare_current(prospects_path: Path = Path("app/prospects.json"), top: int = 15, k_rd: float = 1.0) -> dict:
+    """Each listed prospect's within-division percentile on our rating and on Fight Matrix's (the score's rating
+    component), and the biggest disagreements both ways."""
+    recs = load_records()
+    ps = replay(all_bouts(recs))
+    P = json.loads(prospects_path.read_text())["prospects"]
+    rows = []
+    for p in P:
+        pl = ps.get(p.get("sherdog_url") or "")
+        if pl:
+            rows.append({"name": p["name"], "division": p["division"], "rank": p["p4p_rank"], "record": f"{p['wins']}-{p['losses']}",
+                         "fm_pct": p["components"]["rating"], "ours": round(pl.r - k_rd * pl.rd), "r": round(pl.r), "rd": round(pl.rd), "bouts_rated": pl.n})
+    by: Dict[str, List[dict]] = {}
+    for r in rows:
+        by.setdefault(r["division"], []).append(r)
+    for g in by.values():
+        xs = sorted(r["ours"] for r in g)
+        for r in g:
+            r["ours_pct"] = 0.5 if len(xs) < 2 else round(sum(x < r["ours"] for x in xs) / (len(xs) - 1), 3)
+            r["gap"] = round(r["ours_pct"] - r["fm_pct"], 3)
+    n = len(rows)
+    import statistics as st
+
+    corr = None
+    if n > 2:
+        a, b = [r["ours_pct"] for r in rows], [r["fm_pct"] for r in rows]
+        ma, mb = st.mean(a), st.mean(b)
+        corr = round(sum((x - ma) * (y - mb) for x, y in zip(a, b)) / math.sqrt(sum((x - ma) ** 2 for x in a) * sum((y - mb) ** 2 for y in b)), 3)
+    rows.sort(key=lambda r: r["gap"])
+    return {"listed": len(P), "rated": n, "correlation": corr, "ours_higher": rows[::-1][:top], "fm_higher": rows[:top]}
