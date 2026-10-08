@@ -347,3 +347,53 @@ def compare_current(prospects_path: Path = Path("app/prospects.json"), top: int 
         corr = round(sum((x - ma) * (y - mb) for x, y in zip(a, b)) / math.sqrt(sum((x - ma) ** 2 for x in a) * sum((y - mb) ** 2 for y in b)), 3)
     rows.sort(key=lambda r: r["gap"])
     return {"listed": len(P), "rated": n, "correlation": corr, "ours_higher": rows[::-1][:top], "fm_higher": rows[:top]}
+
+
+# ------------------------------------------------------- the regional promotions, for tiering
+def promotion(event: str) -> str:
+    """"Fury FC 103 - Fury Fighting Championship 103" -> "Fury FC"; "Pancrase - Blood.9" -> "Pancrase"."""
+    import re
+
+    if "road to ufc" in (event or "").lower():
+        return "Road to UFC"
+    head = (event or "").split(" - ")[0].strip()
+    return re.sub(r"\s+(\d+|[IVXL]+)\b.*$", "", head).strip() or head
+
+
+def promotions(since: date = date(2020, 1, 1), min_bouts: int = 40) -> List[dict]:
+    """Each promotion since `since`: how strong its fighters were going in (mean rating of those with three or more
+    rated bouts), how many went on to a major, and how connected it is (share of its fighters who also fought
+    elsewhere; an isolated scene's ratings have little to anchor them)."""
+    from . import prospects as PR
+
+    rows = pre_fight_ratings(all_bouts(load_records()))
+    first_major: Dict[str, date] = {}
+    orgs_of: Dict[str, set] = {}
+    stats: Dict[str, dict] = {}
+    for b, ra, rb, na, nb in rows:
+        org = promotion(b.event)
+        for f in (b.a, b.b):
+            orgs_of.setdefault(f, set()).add(org)
+        if PR.is_major(b.event):
+            for f in (b.a, b.b):
+                first_major.setdefault(f, b.day)
+            continue
+        if b.day < since:
+            continue
+        s = stats.setdefault(org, {"bouts": 0, "fighters": {}, "rated": []})
+        s["bouts"] += 1
+        for f, r, n in ((b.a, ra, na), (b.b, rb, nb)):
+            s["fighters"].setdefault(f, b.day)
+            if n >= 3:
+                s["rated"].append(r)
+    out = []
+    for org, s in stats.items():
+        if s["bouts"] < min_bouts:
+            continue
+        fs = s["fighters"]
+        out.append({"promotion": org, "bouts": s["bouts"], "fighters": len(fs),
+                    "mean_rating": round(sum(s["rated"]) / len(s["rated"])) if s["rated"] else None,
+                    "to_major": round(sum(1 for f, d in fs.items() if first_major.get(f, date.max) > d and f in first_major) / len(fs), 3),
+                    "fought_elsewhere": round(sum(1 for f in fs if len(orgs_of.get(f, ())) > 1) / len(fs), 3)})
+    out.sort(key=lambda r: -(r["mean_rating"] or 0))
+    return out
