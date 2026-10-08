@@ -3080,7 +3080,7 @@
 },
 "Chasen Blair": {
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Che Mills": {
 "dob": "Sherdog + UFCStats agree",
@@ -15969,6 +15969,12 @@
 "Samandar Murodov": {
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "2"
+},
+"Samuel Sanches": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Samuel Silva": {
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
