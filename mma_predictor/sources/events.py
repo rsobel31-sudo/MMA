@@ -127,6 +127,14 @@ def upcoming_cards(fetcher: Fetcher, limit: int = 8, log: Callable[[str], None] 
     return events
 
 
+def _full(name: str) -> str:
+    """Accent- and case-insensitive full name, suffixes kept."""
+    import unicodedata
+
+    s = unicodedata.normalize("NFKD", str(name))
+    return " ".join("".join(c for c in s if not unicodedata.combining(c)).lower().replace(".", "").split())
+
+
 def link_names(names, dataset_names, aliases: Optional[Dict[str, str]] = None) -> Dict[str, str]:
     """Map card names onto dataset names (aliases, then accent/order-insensitive, then unique partial)."""
     by_key: Dict[str, List[str]] = {}
@@ -140,6 +148,10 @@ def link_names(names, dataset_names, aliases: Optional[Dict[str, str]] = None) -
             out[n] = target
             continue
         hits = by_key.get(match_key(n), [])
+        if len(hits) > 1:
+            # The match key drops suffixes, so "Kai Kamaka III" and "Kai Kamaka" collide: the exact full name decides.
+            exact = [h for h in hits if _full(h) == _full(n)]
+            hits = exact if len(exact) == 1 else hits
         if len(hits) == 1:
             out[n] = hits[0]
             continue

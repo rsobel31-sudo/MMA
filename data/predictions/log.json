@@ -735,14 +735,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3115,
+    "p_a": 0.2889,
     "pick": "Kai Kamaka III",
     "method": "Kai Kamaka III by DEC",
-    "method_p": 0.4127,
-    "made": "2026-09-30",
+    "method_p": 0.426,
+    "made": "2026-10-08",
     "model": {
-     "scale": 0.96,
-     "trained_on": 14569
+     "scale": 0.905,
+     "trained_on": 28097
     }
    }
   },
@@ -3257,13 +3257,71 @@
      "trained_on": 28097
     }
    }
+  },
+  "2026-10-10|allen frye|richard harris": {
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "date": "2026-10-10",
+   "a": "Allen Frye",
+   "b": "Richard Harris",
+   "weight_class": "Heavyweight",
+   "first": {
+    "p_a": 0.3545,
+    "pick": "Richard Harris",
+    "method": "Richard Harris by DEC",
+    "method_p": 0.2733,
+    "made": "2026-10-08",
+    "model": {
+     "scale": 0.905,
+     "trained_on": 28097
+    }
+   },
+   "latest": {
+    "p_a": 0.3545,
+    "pick": "Richard Harris",
+    "method": "Richard Harris by DEC",
+    "method_p": 0.2733,
+    "made": "2026-10-08",
+    "model": {
+     "scale": 0.905,
+     "trained_on": 28097
+    }
+   }
+  },
+  "2026-11-07|keiichiro nakamura|oliver schmid": {
+   "event": "UFC Fight Night: Bonfim vs. Brady",
+   "date": "2026-11-07",
+   "a": "Keiichiro Nakamura",
+   "b": "Oliver Schmid",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.7998,
+    "pick": "Keiichiro Nakamura",
+    "method": "Keiichiro Nakamura by KO/TKO",
+    "method_p": 0.7045,
+    "made": "2026-10-08",
+    "model": {
+     "scale": 0.905,
+     "trained_on": 28097
+    }
+   },
+   "latest": {
+    "p_a": 0.7998,
+    "pick": "Keiichiro Nakamura",
+    "method": "Keiichiro Nakamura by KO/TKO",
+    "method_p": 0.7045,
+    "made": "2026-10-08",
+    "model": {
+     "scale": 0.905,
+     "trained_on": 28097
+    }
+   }
   }
  },
  "scorecard": {
   "graded": 14,
   "correct": 11,
   "accuracy": 0.7857142857142857,
-  "log_loss": 0.4724515975123046,
-  "pending": 94
+  "log_loss": 0.47245159751230464,
+  "pending": 96
  }
 }
