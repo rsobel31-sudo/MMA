@@ -91,6 +91,10 @@ def main() -> int:
     st = Store(OUT)
     cands = [json.loads(l) for l in (ROOT / "data/prospects/candidates.jsonl").read_text().splitlines() if l.strip()]
     seeds = list(dict.fromkeys(c["sherdog"]["url"] for c in cands if (c.get("sherdog") or {}).get("url")))
+    # The 2019/2021 backtest cohorts (Fight Matrix snapshots), so our own rating can be replayed on them fairly.
+    extra = OUT / "extra_seeds.json"
+    if extra.exists():
+        seeds += [u for u in json.loads(extra.read_text()) if u not in set(seeds)]
     fetched, t0 = 0, time.time()
 
     def visit(url: str) -> dict | None:
