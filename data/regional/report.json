@@ -1,0 +1,3226 @@
+{
+ "backtest": {
+  "records": 22000,
+  "bouts": 174489,
+  "2019-01-06": {
+   "prospects": 297,
+   "made_it": 117,
+   "fm": {
+    "auc_rating": 0.654,
+    "auc_score": 0.718,
+    "top50_score": 0.76
+   },
+   "ours_fw1.0": {
+    "covered": 295,
+    "auc_rating": 0.597,
+    "auc_rating_low": 0.602,
+    "fm_auc_rating_same_fighters": 0.658,
+    "auc_score": 0.604,
+    "auc_score_blend": 0.681,
+    "fm_auc_score_same_fighters": 0.718,
+    "top50_score": 0.58,
+    "top50_blend": 0.7,
+    "fm_top50_same_fighters": 0.76
+   }
+  },
+  "2021-01-03": {
+   "prospects": 246,
+   "made_it": 80,
+   "fm": {
+    "auc_rating": 0.542,
+    "auc_score": 0.593,
+    "top50_score": 0.42
+   },
+   "ours_fw1.0": {
+    "covered": 246,
+    "auc_rating": 0.52,
+    "auc_rating_low": 0.509,
+    "fm_auc_rating_same_fighters": 0.542,
+    "auc_score": 0.543,
+    "auc_score_blend": 0.57,
+    "fm_auc_score_same_fighters": 0.593,
+    "top50_score": 0.44,
+    "top50_blend": 0.42,
+    "fm_top50_same_fighters": 0.42
+   }
+  }
+ },
+ "schedules": {
+  "fighters": 2990,
+  "soft_below": 1930,
+  "tough_above": 2080,
+  "groups": {
+   "soft 3-0": {
+    "fighters": 239,
+    "later_bouts": 1074,
+    "later_win_rate": 0.621,
+    "expected": 0.581,
+    "vs_expected": 0.04,
+    "later_opp": 2078,
+    "next_bout_win_rate": 0.621,
+    "next_bout_expected": 0.625,
+    "z": 3.11
+   },
+   "soft 2-1": {
+    "fighters": 322,
+    "later_bouts": 1275,
+    "later_win_rate": 0.513,
+    "expected": 0.476,
+    "vs_expected": 0.037,
+    "later_opp": 2030,
+    "next_bout_win_rate": 0.494,
+    "next_bout_expected": 0.471,
+    "z": 3.05
+   },
+   "middle 3-0": {
+    "fighters": 165,
+    "later_bouts": 759,
+    "later_win_rate": 0.594,
+    "expected": 0.558,
+    "vs_expected": 0.036,
+    "later_opp": 2288,
+    "next_bout_win_rate": 0.594,
+    "next_bout_expected": 0.568,
+    "z": 2.25
+   },
+   "middle 2-1": {
+    "fighters": 333,
+    "later_bouts": 1463,
+    "later_win_rate": 0.532,
+    "expected": 0.515,
+    "vs_expected": 0.016,
+    "later_opp": 2152,
+    "next_bout_win_rate": 0.524,
+    "next_bout_expected": 0.518,
+    "z": 1.41
+   },
+   "tough 3-0": {
+    "fighters": 191,
+    "later_bouts": 881,
+    "later_win_rate": 0.615,
+    "expected": 0.603,
+    "vs_expected": 0.013,
+    "later_opp": 2369,
+    "next_bout_win_rate": 0.615,
+    "next_bout_expected": 0.636,
+    "z": 0.87
+   },
+   "tough 2-1": {
+    "fighters": 330,
+    "later_bouts": 1430,
+    "later_win_rate": 0.553,
+    "expected": 0.556,
+    "vs_expected": -0.002,
+    "later_opp": 2245,
+    "next_bout_win_rate": 0.573,
+    "next_bout_expected": 0.567,
+    "z": -0.18
+   }
+  }
+ },
+ "compare_current": {
+  "listed": 732,
+  "rated": 732,
+  "correlation": 0.636,
+  "ours_higher": [
+   {
+    "name": "Seiya Saso",
+    "division": "Unknown",
+    "rank": 656,
+    "record": "3-0",
+    "fm_pct": 0.15,
+    "ours": 1960,
+    "r": 1960,
+    "rd": 227,
+    "bouts_rated": 3,
+    "ours_pct": 1.0,
+    "gap": 0.85
+   },
+   {
+    "name": "Jade Moctezuma",
+    "division": "Unknown",
+    "rank": 681,
+    "record": "2-0",
+    "fm_pct": 0.15,
+    "ours": 1740,
+    "r": 1740,
+    "rd": 287,
+    "bouts_rated": 2,
+    "ours_pct": 0.789,
+    "gap": 0.639
+   },
+   {
+    "name": "Mukhamed-Afandi Asipov",
+    "division": "Middleweight",
+    "rank": 623,
+    "record": "5-0",
+    "fm_pct": 0.4,
+    "ours": 2162,
+    "r": 2162,
+    "rd": 239,
+    "bouts_rated": 5,
+    "ours_pct": 0.961,
+    "gap": 0.561
+   },
+   {
+    "name": "Brett Wittmann",
+    "division": "Heavyweight",
+    "rank": 720,
+    "record": "3-0",
+    "fm_pct": 0.0,
+    "ours": 1809,
+    "r": 1809,
+    "rd": 244,
+    "bouts_rated": 3,
+    "ours_pct": 0.56,
+    "gap": 0.56
+   },
+   {
+    "name": "Alana Viduani",
+    "division": "Unknown",
+    "rank": 683,
+    "record": "1-0",
+    "fm_pct": 0.15,
+    "ours": 1724,
+    "r": 1724,
+    "rd": 291,
+    "bouts_rated": 1,
+    "ours_pct": 0.684,
+    "gap": 0.534
+   },
+   {
+    "name": "Ubaidulla Tagirov",
+    "division": "Light Heavyweight",
+    "rank": 469,
+    "record": "5-0",
+    "fm_pct": 0.4,
+    "ours": 2119,
+    "r": 2119,
+    "rd": 275,
+    "bouts_rated": 5,
+    "ours_pct": 0.931,
+    "gap": 0.531
+   },
+   {
+    "name": "Allex Walker Junior",
+    "division": "Middleweight",
+    "rank": 709,
+    "record": "3-0",
+    "fm_pct": 0.0,
+    "ours": 1890,
+    "r": 1890,
+    "rd": 286,
+    "bouts_rated": 3,
+    "ours_pct": 0.494,
+    "gap": 0.494
+   },
+   {
+    "name": "Juan Andres Cabrera",
+    "division": "Middleweight",
+    "rank": 617,
+    "record": "10-1",
+    "fm_pct": 0.226,
+    "ours": 1972,
+    "r": 1972,
+    "rd": 255,
+    "bouts_rated": 11,
+    "ours_pct": 0.714,
+    "gap": 0.488
+   },
+   {
+    "name": "Laura Vasconcelos",
+    "division": "Women's Strawweight",
+    "rank": 562,
+    "record": "5-0",
+    "fm_pct": 0.4,
+    "ours": 2160,
+    "r": 2160,
+    "rd": 249,
+    "bouts_rated": 5,
+    "ours_pct": 0.882,
+    "gap": 0.482
+   },
+   {
+    "name": "Elene Loladze",
+    "division": "Women's Flyweight",
+    "rank": 547,
+    "record": "4-0",
+    "fm_pct": 0.381,
+    "ours": 1970,
+    "r": 1970,
+    "rd": 236,
+    "bouts_rated": 4,
+    "ours_pct": 0.857,
+    "gap": 0.476
+   },
+   {
+    "name": "Cadin Vowels",
+    "division": "Middleweight",
+    "rank": 647,
+    "record": "4-0",
+    "fm_pct": 0.25,
+    "ours": 1972,
+    "r": 1972,
+    "rd": 227,
+    "bouts_rated": 4,
+    "ours_pct": 0.714,
+    "gap": 0.464
+   },
+   {
+    "name": "Helisson Cardoso",
+    "division": "Middleweight",
+    "rank": 537,
+    "record": "5-1",
+    "fm_pct": 0.396,
+    "ours": 2032,
+    "r": 2032,
+    "rd": 264,
+    "bouts_rated": 6,
+    "ours_pct": 0.857,
+    "gap": 0.461
+   },
+   {
+    "name": "Kanji Funada",
+    "division": "Unknown",
+    "rank": 461,
+    "record": "6-1",
+    "fm_pct": 0.5,
+    "ours": 1955,
+    "r": 1955,
+    "rd": 211,
+    "bouts_rated": 7,
+    "ours_pct": 0.947,
+    "gap": 0.447
+   },
+   {
+    "name": "Nicoly Pedroza",
+    "division": "Women's Bantamweight",
+    "rank": 408,
+    "record": "6-0",
+    "fm_pct": 0.5,
+    "ours": 2082,
+    "r": 2082,
+    "rd": 235,
+    "bouts_rated": 6,
+    "ours_pct": 0.941,
+    "gap": 0.441
+   },
+   {
+    "name": "Adam Bartikhanov",
+    "division": "Middleweight",
+    "rank": 556,
+    "record": "8-1",
+    "fm_pct": 0.34,
+    "ours": 1987,
+    "r": 1987,
+    "rd": 287,
+    "bouts_rated": 9,
+    "ours_pct": 0.753,
+    "gap": 0.413
+   },
+   {
+    "name": "Hiroshi Fujita",
+    "division": "Middleweight",
+    "rank": 652,
+    "record": "3-2",
+    "fm_pct": 0.226,
+    "ours": 1940,
+    "r": 1940,
+    "rd": 294,
+    "bouts_rated": 5,
+    "ours_pct": 0.623,
+    "gap": 0.397
+   },
+   {
+    "name": "Giuseppe Milano",
+    "division": "Light Heavyweight",
+    "rank": 476,
+    "record": "8-1",
+    "fm_pct": 0.5,
+    "ours": 2103,
+    "r": 2103,
+    "rd": 222,
+    "bouts_rated": 9,
+    "ours_pct": 0.897,
+    "gap": 0.397
+   },
+   {
+    "name": "Liam Aunan",
+    "division": "Middleweight",
+    "rank": 460,
+    "record": "8-2",
+    "fm_pct": 0.5,
+    "ours": 2072,
+    "r": 2072,
+    "rd": 224,
+    "bouts_rated": 10,
+    "ours_pct": 0.896,
+    "gap": 0.396
+   },
+   {
+    "name": "Dana Yasiri Garcia",
+    "division": "Unknown",
+    "rank": 626,
+    "record": "7-2",
+    "fm_pct": 0.5,
+    "ours": 1808,
+    "r": 1808,
+    "rd": 246,
+    "bouts_rated": 9,
+    "ours_pct": 0.895,
+    "gap": 0.395
+   },
+   {
+    "name": "Mackenzie Jean",
+    "division": "Women's Bantamweight",
+    "rank": 650,
+    "record": "4-0",
+    "fm_pct": 0.312,
+    "ours": 2003,
+    "r": 2003,
+    "rd": 243,
+    "bouts_rated": 4,
+    "ours_pct": 0.706,
+    "gap": 0.394
+   }
+  ],
+  "fm_higher": [
+   {
+    "name": "Young Chan Choi",
+    "division": "Bantamweight",
+    "rank": 201,
+    "record": "6-5",
+    "fm_pct": 0.8,
+    "ours": 1856,
+    "r": 1856,
+    "rd": 212,
+    "bouts_rated": 11,
+    "ours_pct": 0.04,
+    "gap": -0.76
+   },
+   {
+    "name": "Brandon Gonzalez",
+    "division": "Bantamweight",
+    "rank": 264,
+    "record": "7-3",
+    "fm_pct": 0.741,
+    "ours": 1864,
+    "r": 1864,
+    "rd": 210,
+    "bouts_rated": 10,
+    "ours_pct": 0.071,
+    "gap": -0.67
+   },
+   {
+    "name": "Ryuki Kirishima",
+    "division": "Bantamweight",
+    "rank": 293,
+    "record": "7-5",
+    "fm_pct": 0.682,
+    "ours": 1783,
+    "r": 1783,
+    "rd": 213,
+    "bouts_rated": 12,
+    "ours_pct": 0.02,
+    "gap": -0.662
+   },
+   {
+    "name": "Takuma Tokuhiro",
+    "division": "Bantamweight",
+    "rank": 259,
+    "record": "6-2",
+    "fm_pct": 0.718,
+    "ours": 1862,
+    "r": 1862,
+    "rd": 218,
+    "bouts_rated": 8,
+    "ours_pct": 0.061,
+    "gap": -0.657
+   },
+   {
+    "name": "Michel Tavares Rodrigues",
+    "division": "Flyweight",
+    "rank": 94,
+    "record": "6-3",
+    "fm_pct": 0.871,
+    "ours": 1852,
+    "r": 1852,
+    "rd": 208,
+    "bouts_rated": 9,
+    "ours_pct": 0.242,
+    "gap": -0.629
+   },
+   {
+    "name": "Sukhbat Otgonsuren",
+    "division": "Bantamweight",
+    "rank": 430,
+    "record": "9-4",
+    "fm_pct": 0.636,
+    "ours": 1734,
+    "r": 1734,
+    "rd": 206,
+    "bouts_rated": 13,
+    "ours_pct": 0.01,
+    "gap": -0.626
+   },
+   {
+    "name": "Babar Ali",
+    "division": "Bantamweight",
+    "rank": 356,
+    "record": "10-3",
+    "fm_pct": 0.718,
+    "ours": 1879,
+    "r": 1879,
+    "rd": 245,
+    "bouts_rated": 14,
+    "ours_pct": 0.101,
+    "gap": -0.617
+   },
+   {
+    "name": "Danny Buteau",
+    "division": "Bantamweight",
+    "rank": 359,
+    "record": "3-0",
+    "fm_pct": 0.636,
+    "ours": 1811,
+    "r": 1811,
+    "rd": 240,
+    "bouts_rated": 3,
+    "ours_pct": 0.03,
+    "gap": -0.606
+   },
+   {
+    "name": "Gabriel Wanderley",
+    "division": "Bantamweight",
+    "rank": 151,
+    "record": "7-2",
+    "fm_pct": 0.832,
+    "ours": 1960,
+    "r": 1960,
+    "rd": 232,
+    "bouts_rated": 9,
+    "ours_pct": 0.242,
+    "gap": -0.59
+   },
+   {
+    "name": "Hiroto Kishida",
+    "division": "Flyweight",
+    "rank": 280,
+    "record": "6-3",
+    "fm_pct": 0.742,
+    "ours": 1826,
+    "r": 1826,
+    "rd": 194,
+    "bouts_rated": 9,
+    "ours_pct": 0.152,
+    "gap": -0.59
+   },
+   {
+    "name": "Luis Perez",
+    "division": "Flyweight",
+    "rank": 322,
+    "record": "4-2",
+    "fm_pct": 0.683,
+    "ours": 1792,
+    "r": 1792,
+    "rd": 226,
+    "bouts_rated": 6,
+    "ours_pct": 0.101,
+    "gap": -0.582
+   },
+   {
+    "name": "Natsuki Kumazaki",
+    "division": "Flyweight",
+    "rank": 277,
+    "record": "6-1",
+    "fm_pct": 0.742,
+    "ours": 1831,
+    "r": 1831,
+    "rd": 224,
+    "bouts_rated": 7,
+    "ours_pct": 0.162,
+    "gap": -0.58
+   },
+   {
+    "name": "Jason Shaner",
+    "division": "Flyweight",
+    "rank": 470,
+    "record": "4-2",
+    "fm_pct": 0.597,
+    "ours": 1712,
+    "r": 1712,
+    "rd": 206,
+    "bouts_rated": 6,
+    "ours_pct": 0.02,
+    "gap": -0.577
+   },
+   {
+    "name": "Munenori Fujita",
+    "division": "Bantamweight",
+    "rank": 437,
+    "record": "7-3",
+    "fm_pct": 0.682,
+    "ours": 1893,
+    "r": 1893,
+    "rd": 199,
+    "bouts_rated": 11,
+    "ours_pct": 0.121,
+    "gap": -0.561
+   },
+   {
+    "name": "Ibragim Kartoev",
+    "division": "Bantamweight",
+    "rank": 345,
+    "record": "5-1",
+    "fm_pct": 0.636,
+    "ours": 1869,
+    "r": 1869,
+    "rd": 233,
+    "bouts_rated": 6,
+    "ours_pct": 0.081,
+    "gap": -0.555
+   },
+   {
+    "name": "Joao Victor Melo",
+    "division": "Flyweight",
+    "rank": 350,
+    "record": "6-4",
+    "fm_pct": 0.543,
+    "ours": 1661,
+    "r": 1661,
+    "rd": 207,
+    "bouts_rated": 10,
+    "ours_pct": 0.0,
+    "gap": -0.543
+   },
+   {
+    "name": "Bat-Itght Shijirbaatar",
+    "division": "Bantamweight",
+    "rank": 344,
+    "record": "5-1",
+    "fm_pct": 0.682,
+    "ours": 1908,
+    "r": 1908,
+    "rd": 241,
+    "bouts_rated": 6,
+    "ours_pct": 0.141,
+    "gap": -0.541
+   },
+   {
+    "name": "Shoaib Khan",
+    "division": "Flyweight",
+    "rank": 302,
+    "record": "4-1",
+    "fm_pct": 0.742,
+    "ours": 1835,
+    "r": 1835,
+    "rd": 271,
+    "bouts_rated": 5,
+    "ours_pct": 0.202,
+    "gap": -0.54
+   },
+   {
+    "name": "Takeru Suzuki",
+    "division": "Flyweight",
+    "rank": 303,
+    "record": "5-1",
+    "fm_pct": 0.656,
+    "ours": 1816,
+    "r": 1816,
+    "rd": 220,
+    "bouts_rated": 6,
+    "ours_pct": 0.121,
+    "gap": -0.535
+   },
+   {
+    "name": "Jamoliddin Rakhmonjonov",
+    "division": "Bantamweight",
+    "rank": 233,
+    "record": "8-2",
+    "fm_pct": 0.718,
+    "ours": 1943,
+    "r": 1943,
+    "rd": 215,
+    "bouts_rated": 11,
+    "ours_pct": 0.192,
+    "gap": -0.526
+   }
+  ]
+ },
+ "promotions": [
+  {
+   "promotion": "Dana White's Contender Series",
+   "bouts": 335,
+   "fighters": 610,
+   "mean_rating": 2052,
+   "to_major": 0.479,
+   "fought_elsewhere": 0.995
+  },
+  {
+   "promotion": "Road to UFC",
+   "bouts": 141,
+   "fighters": 160,
+   "mean_rating": 2046,
+   "to_major": 0.237,
+   "fought_elsewhere": 0.994
+  },
+  {
+   "promotion": "KSW",
+   "bouts": 586,
+   "fighters": 370,
+   "mean_rating": 2040,
+   "to_major": 0.046,
+   "fought_elsewhere": 0.949
+  },
+  {
+   "promotion": "RCC",
+   "bouts": 494,
+   "fighters": 471,
+   "mean_rating": 1993,
+   "to_major": 0.149,
+   "fought_elsewhere": 0.926
+  },
+  {
+   "promotion": "Fight Nights",
+   "bouts": 122,
+   "fighters": 192,
+   "mean_rating": 1945,
+   "to_major": 0.021,
+   "fought_elsewhere": 0.802
+  },
+  {
+   "promotion": "Oktagon MMA",
+   "bouts": 858,
+   "fighters": 585,
+   "mean_rating": 1928,
+   "to_major": 0.053,
+   "fought_elsewhere": 0.956
+  },
+  {
+   "promotion": "Brave CF",
+   "bouts": 613,
+   "fighters": 774,
+   "mean_rating": 1925,
+   "to_major": 0.138,
+   "fought_elsewhere": 0.93
+  },
+  {
+   "promotion": "SFT",
+   "bouts": 283,
+   "fighters": 313,
+   "mean_rating": 1903,
+   "to_major": 0.093,
+   "fought_elsewhere": 0.955
+  },
+  {
+   "promotion": "UAE Warriors",
+   "bouts": 696,
+   "fighters": 788,
+   "mean_rating": 1902,
+   "to_major": 0.178,
+   "fought_elsewhere": 0.928
+  },
+  {
+   "promotion": "Ural FC",
+   "bouts": 84,
+   "fighters": 130,
+   "mean_rating": 1894,
+   "to_major": 0.115,
+   "fought_elsewhere": 0.892
+  },
+  {
+   "promotion": "XMMA",
+   "bouts": 53,
+   "fighters": 85,
+   "mean_rating": 1891,
+   "to_major": 0.071,
+   "fought_elsewhere": 0.988
+  },
+  {
+   "promotion": "LFA",
+   "bouts": 1508,
+   "fighters": 1699,
+   "mean_rating": 1886,
+   "to_major": 0.132,
+   "fought_elsewhere": 0.919
+  },
+  {
+   "promotion": "Ares",
+   "bouts": 364,
+   "fighters": 375,
+   "mean_rating": 1885,
+   "to_major": 0.088,
+   "fought_elsewhere": 0.883
+  },
+  {
+   "promotion": "Future MMA",
+   "bouts": 90,
+   "fighters": 158,
+   "mean_rating": 1881,
+   "to_major": 0.165,
+   "fought_elsewhere": 0.949
+  },
+  {
+   "promotion": "Eagle FC",
+   "bouts": 106,
+   "fighters": 171,
+   "mean_rating": 1879,
+   "to_major": 0.175,
+   "fought_elsewhere": 0.901
+  },
+  {
+   "promotion": "AMC Fight Nights",
+   "bouts": 164,
+   "fighters": 244,
+   "mean_rating": 1875,
+   "to_major": 0.172,
+   "fought_elsewhere": 0.893
+  },
+  {
+   "promotion": "Mangu Professional League",
+   "bouts": 55,
+   "fighters": 92,
+   "mean_rating": 1871,
+   "to_major": 0.011,
+   "fought_elsewhere": 0.957
+  },
+  {
+   "promotion": "FNC",
+   "bouts": 293,
+   "fighters": 289,
+   "mean_rating": 1854,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.869
+  },
+  {
+   "promotion": "AMC",
+   "bouts": 81,
+   "fighters": 128,
+   "mean_rating": 1850,
+   "to_major": 0.242,
+   "fought_elsewhere": 0.906
+  },
+  {
+   "promotion": "FEN",
+   "bouts": 226,
+   "fighters": 214,
+   "mean_rating": 1847,
+   "to_major": 0.061,
+   "fought_elsewhere": 0.935
+  },
+  {
+   "promotion": "Jungle Fight",
+   "bouts": 654,
+   "fighters": 728,
+   "mean_rating": 1825,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.85
+  },
+  {
+   "promotion": "Tuff-N-Uff",
+   "bouts": 153,
+   "fighters": 213,
+   "mean_rating": 1825,
+   "to_major": 0.075,
+   "fought_elsewhere": 0.925
+  },
+  {
+   "promotion": "FMS",
+   "bouts": 57,
+   "fighters": 93,
+   "mean_rating": 1824,
+   "to_major": 0.075,
+   "fought_elsewhere": 0.914
+  },
+  {
+   "promotion": "CW",
+   "bouts": 1153,
+   "fighters": 962,
+   "mean_rating": 1822,
+   "to_major": 0.061,
+   "fought_elsewhere": 0.874
+  },
+  {
+   "promotion": "United Fight League",
+   "bouts": 52,
+   "fighters": 78,
+   "mean_rating": 1819,
+   "to_major": 0.09,
+   "fought_elsewhere": 0.962
+  },
+  {
+   "promotion": "Naiza FC",
+   "bouts": 142,
+   "fighters": 200,
+   "mean_rating": 1817,
+   "to_major": 0.025,
+   "fought_elsewhere": 0.85
+  },
+  {
+   "promotion": "Xtreme Fighting Championships",
+   "bouts": 70,
+   "fighters": 124,
+   "mean_rating": 1816,
+   "to_major": 0.04,
+   "fought_elsewhere": 0.935
+  },
+  {
+   "promotion": "Yuzhniy Rubezh",
+   "bouts": 112,
+   "fighters": 136,
+   "mean_rating": 1815,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.853
+  },
+  {
+   "promotion": "OFC",
+   "bouts": 589,
+   "fighters": 765,
+   "mean_rating": 1811,
+   "to_major": 0.131,
+   "fought_elsewhere": 0.838
+  },
+  {
+   "promotion": "Invicta FC",
+   "bouts": 146,
+   "fighters": 162,
+   "mean_rating": 1811,
+   "to_major": 0.16,
+   "fought_elsewhere": 0.938
+  },
+  {
+   "promotion": "Shooto Brazil",
+   "bouts": 408,
+   "fighters": 530,
+   "mean_rating": 1807,
+   "to_major": 0.096,
+   "fought_elsewhere": 0.906
+  },
+  {
+   "promotion": "WOW",
+   "bouts": 143,
+   "fighters": 182,
+   "mean_rating": 1806,
+   "to_major": 0.049,
+   "fought_elsewhere": 0.912
+  },
+  {
+   "promotion": "North-West Power Alliance",
+   "bouts": 95,
+   "fighters": 140,
+   "mean_rating": 1805,
+   "to_major": 0.071,
+   "fought_elsewhere": 0.864
+  },
+  {
+   "promotion": "Bushido Kazakhstan",
+   "bouts": 47,
+   "fighters": 49,
+   "mean_rating": 1792,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.735
+  },
+  {
+   "promotion": "CFFC",
+   "bouts": 674,
+   "fighters": 777,
+   "mean_rating": 1787,
+   "to_major": 0.094,
+   "fought_elsewhere": 0.889
+  },
+  {
+   "promotion": "EMC",
+   "bouts": 64,
+   "fighters": 96,
+   "mean_rating": 1784,
+   "to_major": 0.083,
+   "fought_elsewhere": 0.938
+  },
+  {
+   "promotion": "Unified MMA",
+   "bouts": 177,
+   "fighters": 190,
+   "mean_rating": 1783,
+   "to_major": 0.021,
+   "fought_elsewhere": 0.821
+  },
+  {
+   "promotion": "MAC",
+   "bouts": 84,
+   "fighters": 108,
+   "mean_rating": 1782,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.926
+  },
+  {
+   "promotion": "Octagon Promotion",
+   "bouts": 818,
+   "fighters": 810,
+   "mean_rating": 1776,
+   "to_major": 0.057,
+   "fought_elsewhere": 0.66
+  },
+  {
+   "promotion": "Black Combat",
+   "bouts": 304,
+   "fighters": 250,
+   "mean_rating": 1776,
+   "to_major": 0.04,
+   "fought_elsewhere": 0.796
+  },
+  {
+   "promotion": "Iron Man MMA",
+   "bouts": 61,
+   "fighters": 90,
+   "mean_rating": 1776,
+   "to_major": 0.067,
+   "fought_elsewhere": 0.944
+  },
+  {
+   "promotion": "Bison Kombat",
+   "bouts": 49,
+   "fighters": 88,
+   "mean_rating": 1775,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.955
+  },
+  {
+   "promotion": "MMA Series",
+   "bouts": 669,
+   "fighters": 722,
+   "mean_rating": 1773,
+   "to_major": 0.173,
+   "fought_elsewhere": 0.817
+  },
+  {
+   "promotion": "LUX",
+   "bouts": 558,
+   "fighters": 425,
+   "mean_rating": 1772,
+   "to_major": 0.033,
+   "fought_elsewhere": 0.816
+  },
+  {
+   "promotion": "Inka",
+   "bouts": 108,
+   "fighters": 135,
+   "mean_rating": 1769,
+   "to_major": 0.022,
+   "fought_elsewhere": 0.881
+  },
+  {
+   "promotion": "MFP",
+   "bouts": 112,
+   "fighters": 168,
+   "mean_rating": 1769,
+   "to_major": 0.06,
+   "fought_elsewhere": 0.851
+  },
+  {
+   "promotion": "CSYSL",
+   "bouts": 45,
+   "fighters": 65,
+   "mean_rating": 1766,
+   "to_major": 0.046,
+   "fought_elsewhere": 0.985
+  },
+  {
+   "promotion": "Urijah Faber's A1 Combat",
+   "bouts": 181,
+   "fighters": 212,
+   "mean_rating": 1765,
+   "to_major": 0.047,
+   "fought_elsewhere": 0.882
+  },
+  {
+   "promotion": "SBC",
+   "bouts": 130,
+   "fighters": 168,
+   "mean_rating": 1763,
+   "to_major": 0.06,
+   "fought_elsewhere": 0.899
+  },
+  {
+   "promotion": "Babilon MMA",
+   "bouts": 257,
+   "fighters": 261,
+   "mean_rating": 1761,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.893
+  },
+  {
+   "promotion": "MMA Mexico",
+   "bouts": 52,
+   "fighters": 66,
+   "mean_rating": 1761,
+   "to_major": 0.015,
+   "fought_elsewhere": 0.909
+  },
+  {
+   "promotion": "ZFN",
+   "bouts": 77,
+   "fighters": 115,
+   "mean_rating": 1760,
+   "to_major": 0.052,
+   "fought_elsewhere": 0.809
+  },
+  {
+   "promotion": "NFT Gym",
+   "bouts": 51,
+   "fighters": 79,
+   "mean_rating": 1759,
+   "to_major": 0.152,
+   "fought_elsewhere": 0.873
+  },
+  {
+   "promotion": "WKG & M-1 Global",
+   "bouts": 50,
+   "fighters": 86,
+   "mean_rating": 1758,
+   "to_major": 0.081,
+   "fought_elsewhere": 0.953
+  },
+  {
+   "promotion": "BFS",
+   "bouts": 91,
+   "fighters": 167,
+   "mean_rating": 1758,
+   "to_major": 0.084,
+   "fought_elsewhere": 0.946
+  },
+  {
+   "promotion": "Jue Cheng King",
+   "bouts": 459,
+   "fighters": 388,
+   "mean_rating": 1758,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.856
+  },
+  {
+   "promotion": "Khan Fight",
+   "bouts": 40,
+   "fighters": 61,
+   "mean_rating": 1757,
+   "to_major": 0.115,
+   "fought_elsewhere": 0.787
+  },
+  {
+   "promotion": "Eternal MMA",
+   "bouts": 205,
+   "fighters": 189,
+   "mean_rating": 1756,
+   "to_major": 0.159,
+   "fought_elsewhere": 0.72
+  },
+  {
+   "promotion": "GFC",
+   "bouts": 498,
+   "fighters": 726,
+   "mean_rating": 1754,
+   "to_major": 0.092,
+   "fought_elsewhere": 0.835
+  },
+  {
+   "promotion": "BTC",
+   "bouts": 124,
+   "fighters": 162,
+   "mean_rating": 1753,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.833
+  },
+  {
+   "promotion": "iFC",
+   "bouts": 40,
+   "fighters": 68,
+   "mean_rating": 1753,
+   "to_major": 0.162,
+   "fought_elsewhere": 0.926
+  },
+  {
+   "promotion": "NFC",
+   "bouts": 622,
+   "fighters": 773,
+   "mean_rating": 1752,
+   "to_major": 0.085,
+   "fought_elsewhere": 0.828
+  },
+  {
+   "promotion": "BSC",
+   "bouts": 214,
+   "fighters": 225,
+   "mean_rating": 1752,
+   "to_major": 0.022,
+   "fought_elsewhere": 0.929
+  },
+  {
+   "promotion": "HFS",
+   "bouts": 93,
+   "fighters": 108,
+   "mean_rating": 1748,
+   "to_major": 0.167,
+   "fought_elsewhere": 0.861
+  },
+  {
+   "promotion": "Muradov Professional League",
+   "bouts": 83,
+   "fighters": 130,
+   "mean_rating": 1747,
+   "to_major": 0.138,
+   "fought_elsewhere": 0.815
+  },
+  {
+   "promotion": "MFN",
+   "bouts": 108,
+   "fighters": 113,
+   "mean_rating": 1745,
+   "to_major": 0.027,
+   "fought_elsewhere": 0.743
+  },
+  {
+   "promotion": "WAR MMA",
+   "bouts": 44,
+   "fighters": 63,
+   "mean_rating": 1745,
+   "to_major": 0.143,
+   "fought_elsewhere": 0.905
+  },
+  {
+   "promotion": "DF",
+   "bouts": 118,
+   "fighters": 146,
+   "mean_rating": 1740,
+   "to_major": 0.055,
+   "fought_elsewhere": 0.774
+  },
+  {
+   "promotion": "Open Fighting Championship",
+   "bouts": 45,
+   "fighters": 78,
+   "mean_rating": 1740,
+   "to_major": 0.064,
+   "fought_elsewhere": 0.91
+  },
+  {
+   "promotion": "Titan FC",
+   "bouts": 140,
+   "fighters": 183,
+   "mean_rating": 1738,
+   "to_major": 0.169,
+   "fought_elsewhere": 0.885
+  },
+  {
+   "promotion": "Mr. Cage Championship",
+   "bouts": 93,
+   "fighters": 125,
+   "mean_rating": 1737,
+   "to_major": 0.048,
+   "fought_elsewhere": 0.824
+  },
+  {
+   "promotion": "Combate Global",
+   "bouts": 472,
+   "fighters": 451,
+   "mean_rating": 1737,
+   "to_major": 0.084,
+   "fought_elsewhere": 0.894
+  },
+  {
+   "promotion": "MFE",
+   "bouts": 45,
+   "fighters": 72,
+   "mean_rating": 1736,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.708
+  },
+  {
+   "promotion": "JCK Night Cage Series",
+   "bouts": 273,
+   "fighters": 226,
+   "mean_rating": 1736,
+   "to_major": 0.049,
+   "fought_elsewhere": 0.823
+  },
+  {
+   "promotion": "HXMMA",
+   "bouts": 275,
+   "fighters": 340,
+   "mean_rating": 1736,
+   "to_major": 0.059,
+   "fought_elsewhere": 0.862
+  },
+  {
+   "promotion": "FFC",
+   "bouts": 587,
+   "fighters": 651,
+   "mean_rating": 1734,
+   "to_major": 0.074,
+   "fought_elsewhere": 0.813
+  },
+  {
+   "promotion": "BFL",
+   "bouts": 174,
+   "fighters": 194,
+   "mean_rating": 1731,
+   "to_major": 0.036,
+   "fought_elsewhere": 0.804
+  },
+  {
+   "promotion": "XFC",
+   "bouts": 74,
+   "fighters": 117,
+   "mean_rating": 1730,
+   "to_major": 0.068,
+   "fought_elsewhere": 0.966
+  },
+  {
+   "promotion": "IFL",
+   "bouts": 66,
+   "fighters": 104,
+   "mean_rating": 1729,
+   "to_major": 0.038,
+   "fought_elsewhere": 0.837
+  },
+  {
+   "promotion": "Thunder Fight",
+   "bouts": 181,
+   "fighters": 262,
+   "mean_rating": 1727,
+   "to_major": 0.038,
+   "fought_elsewhere": 0.905
+  },
+  {
+   "promotion": "Spartacus MMA",
+   "bouts": 168,
+   "fighters": 245,
+   "mean_rating": 1726,
+   "to_major": 0.065,
+   "fought_elsewhere": 0.869
+  },
+  {
+   "promotion": "Venator FC",
+   "bouts": 77,
+   "fighters": 110,
+   "mean_rating": 1725,
+   "to_major": 0.055,
+   "fought_elsewhere": 0.882
+  },
+  {
+   "promotion": "UWC Mexico",
+   "bouts": 268,
+   "fighters": 274,
+   "mean_rating": 1725,
+   "to_major": 0.08,
+   "fought_elsewhere": 0.909
+  },
+  {
+   "promotion": "Superior Challenge",
+   "bouts": 43,
+   "fighters": 63,
+   "mean_rating": 1723,
+   "to_major": 0.063,
+   "fought_elsewhere": 0.968
+  },
+  {
+   "promotion": "SFH",
+   "bouts": 291,
+   "fighters": 278,
+   "mean_rating": 1720,
+   "to_major": 0.05,
+   "fought_elsewhere": 0.881
+  },
+  {
+   "promotion": "UFL",
+   "bouts": 90,
+   "fighters": 144,
+   "mean_rating": 1716,
+   "to_major": 0.132,
+   "fought_elsewhere": 0.66
+  },
+  {
+   "promotion": "ABA Fighting Championship",
+   "bouts": 46,
+   "fighters": 62,
+   "mean_rating": 1716,
+   "to_major": 0.081,
+   "fought_elsewhere": 0.677
+  },
+  {
+   "promotion": "CFC",
+   "bouts": 351,
+   "fighters": 483,
+   "mean_rating": 1715,
+   "to_major": 0.027,
+   "fought_elsewhere": 0.87
+  },
+  {
+   "promotion": "WCC",
+   "bouts": 49,
+   "fighters": 83,
+   "mean_rating": 1710,
+   "to_major": 0.036,
+   "fought_elsewhere": 0.904
+  },
+  {
+   "promotion": "CFS",
+   "bouts": 90,
+   "fighters": 133,
+   "mean_rating": 1710,
+   "to_major": 0.03,
+   "fought_elsewhere": 0.872
+  },
+  {
+   "promotion": "The Cage MMA",
+   "bouts": 54,
+   "fighters": 86,
+   "mean_rating": 1708,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.826
+  },
+  {
+   "promotion": "FCC",
+   "bouts": 159,
+   "fighters": 215,
+   "mean_rating": 1707,
+   "to_major": 0.056,
+   "fought_elsewhere": 0.819
+  },
+  {
+   "promotion": "The King of Fighters",
+   "bouts": 80,
+   "fighters": 116,
+   "mean_rating": 1707,
+   "to_major": 0.086,
+   "fought_elsewhere": 0.922
+  },
+  {
+   "promotion": "FCR",
+   "bouts": 160,
+   "fighters": 177,
+   "mean_rating": 1706,
+   "to_major": 0.085,
+   "fought_elsewhere": 0.893
+  },
+  {
+   "promotion": "NC",
+   "bouts": 62,
+   "fighters": 95,
+   "mean_rating": 1706,
+   "to_major": 0.042,
+   "fought_elsewhere": 0.884
+  },
+  {
+   "promotion": "FK MMA",
+   "bouts": 62,
+   "fighters": 109,
+   "mean_rating": 1704,
+   "to_major": 0.064,
+   "fought_elsewhere": 0.945
+  },
+  {
+   "promotion": "Road FC",
+   "bouts": 252,
+   "fighters": 180,
+   "mean_rating": 1704,
+   "to_major": 0.072,
+   "fought_elsewhere": 0.728
+  },
+  {
+   "promotion": "National Fighting Championship",
+   "bouts": 69,
+   "fighters": 108,
+   "mean_rating": 1704,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.944
+  },
+  {
+   "promotion": "Alash Pride",
+   "bouts": 411,
+   "fighters": 473,
+   "mean_rating": 1703,
+   "to_major": 0.07,
+   "fought_elsewhere": 0.723
+  },
+  {
+   "promotion": "Naciones MMA",
+   "bouts": 108,
+   "fighters": 152,
+   "mean_rating": 1703,
+   "to_major": 0.033,
+   "fought_elsewhere": 0.855
+  },
+  {
+   "promotion": "Fury FC",
+   "bouts": 1370,
+   "fighters": 1056,
+   "mean_rating": 1698,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.705
+  },
+  {
+   "promotion": "African Knockout",
+   "bouts": 43,
+   "fighters": 48,
+   "mean_rating": 1697,
+   "to_major": 0.188,
+   "fought_elsewhere": 0.729
+  },
+  {
+   "promotion": "EFC",
+   "bouts": 764,
+   "fighters": 766,
+   "mean_rating": 1695,
+   "to_major": 0.141,
+   "fought_elsewhere": 0.769
+  },
+  {
+   "promotion": "SMMA",
+   "bouts": 218,
+   "fighters": 258,
+   "mean_rating": 1692,
+   "to_major": 0.054,
+   "fought_elsewhere": 0.795
+  },
+  {
+   "promotion": "ATFC",
+   "bouts": 172,
+   "fighters": 232,
+   "mean_rating": 1691,
+   "to_major": 0.091,
+   "fought_elsewhere": 0.638
+  },
+  {
+   "promotion": "KFL",
+   "bouts": 65,
+   "fighters": 110,
+   "mean_rating": 1691,
+   "to_major": 0.173,
+   "fought_elsewhere": 0.527
+  },
+  {
+   "promotion": "Bali MMA",
+   "bouts": 75,
+   "fighters": 104,
+   "mean_rating": 1687,
+   "to_major": 0.067,
+   "fought_elsewhere": 0.779
+  },
+  {
+   "promotion": "Qadya MMA",
+   "bouts": 46,
+   "fighters": 70,
+   "mean_rating": 1685,
+   "to_major": 0.157,
+   "fought_elsewhere": 0.871
+  },
+  {
+   "promotion": "WLF",
+   "bouts": 672,
+   "fighters": 587,
+   "mean_rating": 1684,
+   "to_major": 0.056,
+   "fought_elsewhere": 0.761
+  },
+  {
+   "promotion": "Full Contact Promotions",
+   "bouts": 51,
+   "fighters": 52,
+   "mean_rating": 1684,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.654
+  },
+  {
+   "promotion": "FMMAF",
+   "bouts": 175,
+   "fighters": 179,
+   "mean_rating": 1684,
+   "to_major": 0.011,
+   "fought_elsewhere": 0.453
+  },
+  {
+   "promotion": "SFN",
+   "bouts": 69,
+   "fighters": 106,
+   "mean_rating": 1683,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.896
+  },
+  {
+   "promotion": "Middle East Fighting Championship",
+   "bouts": 49,
+   "fighters": 75,
+   "mean_rating": 1683,
+   "to_major": 0.133,
+   "fought_elsewhere": 0.8
+  },
+  {
+   "promotion": "OFL",
+   "bouts": 102,
+   "fighters": 137,
+   "mean_rating": 1682,
+   "to_major": 0.015,
+   "fought_elsewhere": 0.752
+  },
+  {
+   "promotion": "Empire MMA",
+   "bouts": 53,
+   "fighters": 72,
+   "mean_rating": 1682,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.736
+  },
+  {
+   "promotion": "Caged Thunder",
+   "bouts": 44,
+   "fighters": 62,
+   "mean_rating": 1682,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.839
+  },
+  {
+   "promotion": "Anthony Pettis FC",
+   "bouts": 185,
+   "fighters": 260,
+   "mean_rating": 1680,
+   "to_major": 0.046,
+   "fought_elsewhere": 0.846
+  },
+  {
+   "promotion": "SFC",
+   "bouts": 424,
+   "fighters": 635,
+   "mean_rating": 1679,
+   "to_major": 0.054,
+   "fought_elsewhere": 0.767
+  },
+  {
+   "promotion": "Pancrase",
+   "bouts": 885,
+   "fighters": 465,
+   "mean_rating": 1679,
+   "to_major": 0.09,
+   "fought_elsewhere": 0.701
+  },
+  {
+   "promotion": "WWFC",
+   "bouts": 90,
+   "fighters": 122,
+   "mean_rating": 1678,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.73
+  },
+  {
+   "promotion": "IFC MMA",
+   "bouts": 45,
+   "fighters": 69,
+   "mean_rating": 1676,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.812
+  },
+  {
+   "promotion": "Double G FC",
+   "bouts": 75,
+   "fighters": 88,
+   "mean_rating": 1675,
+   "to_major": 0.091,
+   "fought_elsewhere": 0.898
+  },
+  {
+   "promotion": "Real Fight Arena",
+   "bouts": 185,
+   "fighters": 209,
+   "mean_rating": 1674,
+   "to_major": 0.01,
+   "fought_elsewhere": 0.837
+  },
+  {
+   "promotion": "ARMMADA",
+   "bouts": 90,
+   "fighters": 115,
+   "mean_rating": 1673,
+   "to_major": 0.035,
+   "fought_elsewhere": 0.8
+  },
+  {
+   "promotion": "AFN",
+   "bouts": 79,
+   "fighters": 116,
+   "mean_rating": 1671,
+   "to_major": 0.069,
+   "fought_elsewhere": 0.853
+  },
+  {
+   "promotion": "CES MMA",
+   "bouts": 110,
+   "fighters": 154,
+   "mean_rating": 1671,
+   "to_major": 0.078,
+   "fought_elsewhere": 0.903
+  },
+  {
+   "promotion": "FAC",
+   "bouts": 129,
+   "fighters": 155,
+   "mean_rating": 1671,
+   "to_major": 0.084,
+   "fought_elsewhere": 0.813
+  },
+  {
+   "promotion": "Number",
+   "bouts": 49,
+   "fighters": 75,
+   "mean_rating": 1671,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.853
+  },
+  {
+   "promotion": "UNF",
+   "bouts": 117,
+   "fighters": 125,
+   "mean_rating": 1671,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.872
+  },
+  {
+   "promotion": "MMAGP",
+   "bouts": 64,
+   "fighters": 93,
+   "mean_rating": 1668,
+   "to_major": 0.161,
+   "fought_elsewhere": 0.935
+  },
+  {
+   "promotion": "ROC",
+   "bouts": 112,
+   "fighters": 145,
+   "mean_rating": 1667,
+   "to_major": 0.09,
+   "fought_elsewhere": 0.841
+  },
+  {
+   "promotion": "100% Fight",
+   "bouts": 47,
+   "fighters": 74,
+   "mean_rating": 1667,
+   "to_major": 0.095,
+   "fought_elsewhere": 0.824
+  },
+  {
+   "promotion": "Velikoross",
+   "bouts": 46,
+   "fighters": 77,
+   "mean_rating": 1665,
+   "to_major": 0.169,
+   "fought_elsewhere": 0.818
+  },
+  {
+   "promotion": "FFIT",
+   "bouts": 43,
+   "fighters": 61,
+   "mean_rating": 1664,
+   "to_major": 0.049,
+   "fought_elsewhere": 0.738
+  },
+  {
+   "promotion": "LMMA",
+   "bouts": 52,
+   "fighters": 70,
+   "mean_rating": 1664,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.714
+  },
+  {
+   "promotion": "COF",
+   "bouts": 48,
+   "fighters": 72,
+   "mean_rating": 1662,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.944
+  },
+  {
+   "promotion": "MGL-1 Fighting Championship",
+   "bouts": 64,
+   "fighters": 67,
+   "mean_rating": 1661,
+   "to_major": 0.06,
+   "fought_elsewhere": 0.627
+  },
+  {
+   "promotion": "LFL",
+   "bouts": 398,
+   "fighters": 470,
+   "mean_rating": 1661,
+   "to_major": 0.034,
+   "fought_elsewhere": 0.779
+  },
+  {
+   "promotion": "IMMAF",
+   "bouts": 447,
+   "fighters": 422,
+   "mean_rating": 1660,
+   "to_major": 0.007,
+   "fought_elsewhere": 0.396
+  },
+  {
+   "promotion": "GLFC",
+   "bouts": 40,
+   "fighters": 64,
+   "mean_rating": 1656,
+   "to_major": 0.125,
+   "fought_elsewhere": 0.891
+  },
+  {
+   "promotion": "MF",
+   "bouts": 165,
+   "fighters": 256,
+   "mean_rating": 1655,
+   "to_major": 0.039,
+   "fought_elsewhere": 0.844
+  },
+  {
+   "promotion": "Allstars Fight Night",
+   "bouts": 55,
+   "fighters": 82,
+   "mean_rating": 1654,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.902
+  },
+  {
+   "promotion": "PFC",
+   "bouts": 275,
+   "fighters": 412,
+   "mean_rating": 1653,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.833
+  },
+  {
+   "promotion": "AUFC",
+   "bouts": 60,
+   "fighters": 89,
+   "mean_rating": 1651,
+   "to_major": 0.124,
+   "fought_elsewhere": 0.596
+  },
+  {
+   "promotion": "Ignite Fights",
+   "bouts": 103,
+   "fighters": 133,
+   "mean_rating": 1650,
+   "to_major": 0.045,
+   "fought_elsewhere": 0.82
+  },
+  {
+   "promotion": "NP Fight",
+   "bouts": 62,
+   "fighters": 78,
+   "mean_rating": 1649,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.795
+  },
+  {
+   "promotion": "Caged Aggression",
+   "bouts": 104,
+   "fighters": 134,
+   "mean_rating": 1648,
+   "to_major": 0.045,
+   "fought_elsewhere": 0.799
+  },
+  {
+   "promotion": "FSF",
+   "bouts": 40,
+   "fighters": 56,
+   "mean_rating": 1647,
+   "to_major": 0.036,
+   "fought_elsewhere": 0.946
+  },
+  {
+   "promotion": "CCC",
+   "bouts": 54,
+   "fighters": 83,
+   "mean_rating": 1647,
+   "to_major": 0.036,
+   "fought_elsewhere": 0.831
+  },
+  {
+   "promotion": "Aleksey Raevskiy Promotion",
+   "bouts": 43,
+   "fighters": 77,
+   "mean_rating": 1647,
+   "to_major": 0.13,
+   "fought_elsewhere": 0.818
+  },
+  {
+   "promotion": "CAGE",
+   "bouts": 107,
+   "fighters": 128,
+   "mean_rating": 1646,
+   "to_major": 0.094,
+   "fought_elsewhere": 0.961
+  },
+  {
+   "promotion": "PML",
+   "bouts": 70,
+   "fighters": 108,
+   "mean_rating": 1645,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.963
+  },
+  {
+   "promotion": "HFL",
+   "bouts": 98,
+   "fighters": 121,
+   "mean_rating": 1644,
+   "to_major": 0.025,
+   "fought_elsewhere": 0.76
+  },
+  {
+   "promotion": "MCF",
+   "bouts": 43,
+   "fighters": 64,
+   "mean_rating": 1644,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.812
+  },
+  {
+   "promotion": "AFS",
+   "bouts": 98,
+   "fighters": 135,
+   "mean_rating": 1644,
+   "to_major": 0.052,
+   "fought_elsewhere": 0.719
+  },
+  {
+   "promotion": "WXC",
+   "bouts": 46,
+   "fighters": 61,
+   "mean_rating": 1643,
+   "to_major": 0.066,
+   "fought_elsewhere": 0.852
+  },
+  {
+   "promotion": "Slam FC",
+   "bouts": 51,
+   "fighters": 86,
+   "mean_rating": 1643,
+   "to_major": 0.047,
+   "fought_elsewhere": 0.837
+  },
+  {
+   "promotion": "Synergy FC",
+   "bouts": 86,
+   "fighters": 107,
+   "mean_rating": 1643,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.841
+  },
+  {
+   "promotion": "LXF",
+   "bouts": 120,
+   "fighters": 174,
+   "mean_rating": 1642,
+   "to_major": 0.063,
+   "fought_elsewhere": 0.839
+  },
+  {
+   "promotion": "Full Contact Fighting Championship",
+   "bouts": 43,
+   "fighters": 54,
+   "mean_rating": 1642,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.481
+  },
+  {
+   "promotion": "BRTL",
+   "bouts": 67,
+   "fighters": 92,
+   "mean_rating": 1642,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.87
+  },
+  {
+   "promotion": "Shooto",
+   "bouts": 802,
+   "fighters": 482,
+   "mean_rating": 1640,
+   "to_major": 0.112,
+   "fought_elsewhere": 0.761
+  },
+  {
+   "promotion": "RUF MMA",
+   "bouts": 110,
+   "fighters": 158,
+   "mean_rating": 1640,
+   "to_major": 0.044,
+   "fought_elsewhere": 0.829
+  },
+  {
+   "promotion": "BFC",
+   "bouts": 241,
+   "fighters": 333,
+   "mean_rating": 1640,
+   "to_major": 0.093,
+   "fought_elsewhere": 0.682
+  },
+  {
+   "promotion": "FLA",
+   "bouts": 40,
+   "fighters": 48,
+   "mean_rating": 1635,
+   "to_major": 0.021,
+   "fought_elsewhere": 0.75
+  },
+  {
+   "promotion": "FSC",
+   "bouts": 122,
+   "fighters": 178,
+   "mean_rating": 1633,
+   "to_major": 0.034,
+   "fought_elsewhere": 0.888
+  },
+  {
+   "promotion": "Dragon FC",
+   "bouts": 59,
+   "fighters": 105,
+   "mean_rating": 1633,
+   "to_major": 0.067,
+   "fought_elsewhere": 0.819
+  },
+  {
+   "promotion": "LF",
+   "bouts": 103,
+   "fighters": 113,
+   "mean_rating": 1633,
+   "to_major": 0.009,
+   "fought_elsewhere": 0.726
+  },
+  {
+   "promotion": "Cun MMA",
+   "bouts": 47,
+   "fighters": 63,
+   "mean_rating": 1633,
+   "to_major": 0.016,
+   "fought_elsewhere": 0.54
+  },
+  {
+   "promotion": "HFC",
+   "bouts": 84,
+   "fighters": 144,
+   "mean_rating": 1632,
+   "to_major": 0.042,
+   "fought_elsewhere": 0.771
+  },
+  {
+   "promotion": "Deep",
+   "bouts": 1133,
+   "fighters": 621,
+   "mean_rating": 1626,
+   "to_major": 0.138,
+   "fought_elsewhere": 0.676
+  },
+  {
+   "promotion": "AKA",
+   "bouts": 134,
+   "fighters": 177,
+   "mean_rating": 1626,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.734
+  },
+  {
+   "promotion": "XKO",
+   "bouts": 140,
+   "fighters": 186,
+   "mean_rating": 1624,
+   "to_major": 0.011,
+   "fought_elsewhere": 0.726
+  },
+  {
+   "promotion": "GMC",
+   "bouts": 161,
+   "fighters": 225,
+   "mean_rating": 1624,
+   "to_major": 0.027,
+   "fought_elsewhere": 0.831
+  },
+  {
+   "promotion": "LC",
+   "bouts": 61,
+   "fighters": 75,
+   "mean_rating": 1623,
+   "to_major": 0.093,
+   "fought_elsewhere": 0.52
+  },
+  {
+   "promotion": "ZFC",
+   "bouts": 53,
+   "fighters": 89,
+   "mean_rating": 1622,
+   "to_major": 0.079,
+   "fought_elsewhere": 0.798
+  },
+  {
+   "promotion": "EFC Global",
+   "bouts": 247,
+   "fighters": 341,
+   "mean_rating": 1621,
+   "to_major": 0.067,
+   "fought_elsewhere": 0.581
+  },
+  {
+   "promotion": "IAF",
+   "bouts": 53,
+   "fighters": 65,
+   "mean_rating": 1621,
+   "to_major": 0.077,
+   "fought_elsewhere": 0.8
+  },
+  {
+   "promotion": "URCC",
+   "bouts": 59,
+   "fighters": 80,
+   "mean_rating": 1621,
+   "to_major": 0.113,
+   "fought_elsewhere": 0.713
+  },
+  {
+   "promotion": "Fighting Force",
+   "bouts": 40,
+   "fighters": 43,
+   "mean_rating": 1620,
+   "to_major": 0.047,
+   "fought_elsewhere": 0.814
+  },
+  {
+   "promotion": "Serbian MMA Federation",
+   "bouts": 56,
+   "fighters": 58,
+   "mean_rating": 1620,
+   "to_major": 0.017,
+   "fought_elsewhere": 0.534
+  },
+  {
+   "promotion": "DFC",
+   "bouts": 54,
+   "fighters": 86,
+   "mean_rating": 1618,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.802
+  },
+  {
+   "promotion": "PF",
+   "bouts": 131,
+   "fighters": 195,
+   "mean_rating": 1618,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.831
+  },
+  {
+   "promotion": "MFL",
+   "bouts": 96,
+   "fighters": 162,
+   "mean_rating": 1618,
+   "to_major": 0.012,
+   "fought_elsewhere": 0.796
+  },
+  {
+   "promotion": "RPC",
+   "bouts": 40,
+   "fighters": 63,
+   "mean_rating": 1618,
+   "to_major": 0.048,
+   "fought_elsewhere": 0.794
+  },
+  {
+   "promotion": "Colosseum MMA",
+   "bouts": 380,
+   "fighters": 579,
+   "mean_rating": 1613,
+   "to_major": 0.135,
+   "fought_elsewhere": 0.47
+  },
+  {
+   "promotion": "MFC",
+   "bouts": 352,
+   "fighters": 546,
+   "mean_rating": 1613,
+   "to_major": 0.038,
+   "fought_elsewhere": 0.76
+  },
+  {
+   "promotion": "VMMA",
+   "bouts": 49,
+   "fighters": 81,
+   "mean_rating": 1613,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.79
+  },
+  {
+   "promotion": "ZLF",
+   "bouts": 41,
+   "fighters": 63,
+   "mean_rating": 1611,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.857
+  },
+  {
+   "promotion": "BMMAF",
+   "bouts": 159,
+   "fighters": 203,
+   "mean_rating": 1610,
+   "to_major": 0.005,
+   "fought_elsewhere": 0.596
+  },
+  {
+   "promotion": "Cage Titans FC",
+   "bouts": 153,
+   "fighters": 139,
+   "mean_rating": 1609,
+   "to_major": 0.043,
+   "fought_elsewhere": 0.799
+  },
+  {
+   "promotion": "WEF",
+   "bouts": 216,
+   "fighters": 324,
+   "mean_rating": 1609,
+   "to_major": 0.12,
+   "fought_elsewhere": 0.599
+  },
+  {
+   "promotion": "Acesso MMA",
+   "bouts": 61,
+   "fighters": 65,
+   "mean_rating": 1609,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.738
+  },
+  {
+   "promotion": "VFN",
+   "bouts": 128,
+   "fighters": 173,
+   "mean_rating": 1608,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.786
+  },
+  {
+   "promotion": "Strife",
+   "bouts": 87,
+   "fighters": 129,
+   "mean_rating": 1608,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.907
+  },
+  {
+   "promotion": "AFC",
+   "bouts": 519,
+   "fighters": 775,
+   "mean_rating": 1604,
+   "to_major": 0.074,
+   "fought_elsewhere": 0.766
+  },
+  {
+   "promotion": "NEC",
+   "bouts": 110,
+   "fighters": 109,
+   "mean_rating": 1604,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.587
+  },
+  {
+   "promotion": "Combat Quest",
+   "bouts": 54,
+   "fighters": 71,
+   "mean_rating": 1602,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.676
+  },
+  {
+   "promotion": "Maverick MMA",
+   "bouts": 45,
+   "fighters": 73,
+   "mean_rating": 1602,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.849
+  },
+  {
+   "promotion": "247 FC",
+   "bouts": 85,
+   "fighters": 111,
+   "mean_rating": 1600,
+   "to_major": 0.009,
+   "fought_elsewhere": 0.811
+  },
+  {
+   "promotion": "Puro Impacto Fight Championship",
+   "bouts": 47,
+   "fighters": 73,
+   "mean_rating": 1597,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.822
+  },
+  {
+   "promotion": "BSB Fight",
+   "bouts": 46,
+   "fighters": 74,
+   "mean_rating": 1597,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.905
+  },
+  {
+   "promotion": "HRMMA",
+   "bouts": 55,
+   "fighters": 82,
+   "mean_rating": 1596,
+   "to_major": 0.098,
+   "fought_elsewhere": 0.793
+  },
+  {
+   "promotion": "Gladiator",
+   "bouts": 219,
+   "fighters": 201,
+   "mean_rating": 1596,
+   "to_major": 0.119,
+   "fought_elsewhere": 0.871
+  },
+  {
+   "promotion": "BCMMA",
+   "bouts": 57,
+   "fighters": 77,
+   "mean_rating": 1596,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.701
+  },
+  {
+   "promotion": "B2 Fighting Series",
+   "bouts": 160,
+   "fighters": 230,
+   "mean_rating": 1596,
+   "to_major": 0.091,
+   "fought_elsewhere": 0.852
+  },
+  {
+   "promotion": "CWA",
+   "bouts": 532,
+   "fighters": 708,
+   "mean_rating": 1596,
+   "to_major": 0.004,
+   "fought_elsewhere": 0.641
+  },
+  {
+   "promotion": "TFL",
+   "bouts": 89,
+   "fighters": 112,
+   "mean_rating": 1593,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.759
+  },
+  {
+   "promotion": "Arena Global",
+   "bouts": 220,
+   "fighters": 297,
+   "mean_rating": 1593,
+   "to_major": 0.047,
+   "fought_elsewhere": 0.825
+  },
+  {
+   "promotion": "GMC Fight Night",
+   "bouts": 93,
+   "fighters": 149,
+   "mean_rating": 1592,
+   "to_major": 0.06,
+   "fought_elsewhere": 0.879
+  },
+  {
+   "promotion": "OCL",
+   "bouts": 106,
+   "fighters": 138,
+   "mean_rating": 1590,
+   "to_major": 0.051,
+   "fought_elsewhere": 0.855
+  },
+  {
+   "promotion": "SFS",
+   "bouts": 43,
+   "fighters": 66,
+   "mean_rating": 1590,
+   "to_major": 0.167,
+   "fought_elsewhere": 0.773
+  },
+  {
+   "promotion": "Riot",
+   "bouts": 47,
+   "fighters": 70,
+   "mean_rating": 1590,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.857
+  },
+  {
+   "promotion": "SFL",
+   "bouts": 86,
+   "fighters": 124,
+   "mean_rating": 1589,
+   "to_major": 0.137,
+   "fought_elsewhere": 0.71
+  },
+  {
+   "promotion": "ECF",
+   "bouts": 43,
+   "fighters": 70,
+   "mean_rating": 1588,
+   "to_major": 0.043,
+   "fought_elsewhere": 0.657
+  },
+  {
+   "promotion": "AMF",
+   "bouts": 42,
+   "fighters": 61,
+   "mean_rating": 1587,
+   "to_major": 0.082,
+   "fought_elsewhere": 0.803
+  },
+  {
+   "promotion": "SPF / PFC",
+   "bouts": 54,
+   "fighters": 76,
+   "mean_rating": 1586,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.908
+  },
+  {
+   "promotion": "IFC",
+   "bouts": 69,
+   "fighters": 125,
+   "mean_rating": 1586,
+   "to_major": 0.016,
+   "fought_elsewhere": 0.864
+  },
+  {
+   "promotion": "Happy Elephant",
+   "bouts": 50,
+   "fighters": 74,
+   "mean_rating": 1586,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.865
+  },
+  {
+   "promotion": "GF",
+   "bouts": 42,
+   "fighters": 67,
+   "mean_rating": 1583,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.761
+  },
+  {
+   "promotion": "Square Ring Promotions",
+   "bouts": 55,
+   "fighters": 75,
+   "mean_rating": 1583,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.627
+  },
+  {
+   "promotion": "MCP",
+   "bouts": 55,
+   "fighters": 77,
+   "mean_rating": 1582,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.805
+  },
+  {
+   "promotion": "MMA Quest",
+   "bouts": 50,
+   "fighters": 65,
+   "mean_rating": 1582,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.754
+  },
+  {
+   "promotion": "CINTHEC",
+   "bouts": 43,
+   "fighters": 67,
+   "mean_rating": 1582,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.761
+  },
+  {
+   "promotion": "CAM",
+   "bouts": 190,
+   "fighters": 205,
+   "mean_rating": 1581,
+   "to_major": 0.039,
+   "fought_elsewhere": 0.785
+  },
+  {
+   "promotion": "Shamrock FC",
+   "bouts": 82,
+   "fighters": 109,
+   "mean_rating": 1579,
+   "to_major": 0.064,
+   "fought_elsewhere": 0.807
+  },
+  {
+   "promotion": "RFP",
+   "bouts": 47,
+   "fighters": 65,
+   "mean_rating": 1579,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.585
+  },
+  {
+   "promotion": "CN",
+   "bouts": 325,
+   "fighters": 342,
+   "mean_rating": 1577,
+   "to_major": 0.067,
+   "fought_elsewhere": 0.632
+  },
+  {
+   "promotion": "FW",
+   "bouts": 72,
+   "fighters": 100,
+   "mean_rating": 1572,
+   "to_major": 0.02,
+   "fought_elsewhere": 0.78
+  },
+  {
+   "promotion": "CFN",
+   "bouts": 94,
+   "fighters": 150,
+   "mean_rating": 1571,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.813
+  },
+  {
+   "promotion": "SF",
+   "bouts": 151,
+   "fighters": 192,
+   "mean_rating": 1569,
+   "to_major": 0.026,
+   "fought_elsewhere": 0.734
+  },
+  {
+   "promotion": "FederKombat",
+   "bouts": 145,
+   "fighters": 158,
+   "mean_rating": 1569,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.772
+  },
+  {
+   "promotion": "Combat Zone",
+   "bouts": 61,
+   "fighters": 86,
+   "mean_rating": 1568,
+   "to_major": 0.07,
+   "fought_elsewhere": 0.849
+  },
+  {
+   "promotion": "AF",
+   "bouts": 66,
+   "fighters": 112,
+   "mean_rating": 1567,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.821
+  },
+  {
+   "promotion": "AFL",
+   "bouts": 179,
+   "fighters": 258,
+   "mean_rating": 1567,
+   "to_major": 0.043,
+   "fought_elsewhere": 0.837
+  },
+  {
+   "promotion": "Grachan",
+   "bouts": 264,
+   "fighters": 207,
+   "mean_rating": 1566,
+   "to_major": 0.082,
+   "fought_elsewhere": 0.768
+  },
+  {
+   "promotion": "DSMMA",
+   "bouts": 100,
+   "fighters": 146,
+   "mean_rating": 1565,
+   "to_major": 0.007,
+   "fought_elsewhere": 0.733
+  },
+  {
+   "promotion": "Bears FC",
+   "bouts": 87,
+   "fighters": 128,
+   "mean_rating": 1565,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.633
+  },
+  {
+   "promotion": "KFC",
+   "bouts": 58,
+   "fighters": 98,
+   "mean_rating": 1563,
+   "to_major": 0.061,
+   "fought_elsewhere": 0.582
+  },
+  {
+   "promotion": "Tru Rev MMA",
+   "bouts": 40,
+   "fighters": 48,
+   "mean_rating": 1562,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.521
+  },
+  {
+   "promotion": "Northwest Fight Promotions",
+   "bouts": 50,
+   "fighters": 72,
+   "mean_rating": 1561,
+   "to_major": 0.042,
+   "fought_elsewhere": 0.889
+  },
+  {
+   "promotion": "Elite Fight Night",
+   "bouts": 46,
+   "fighters": 65,
+   "mean_rating": 1560,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.831
+  },
+  {
+   "promotion": "MITC",
+   "bouts": 61,
+   "fighters": 102,
+   "mean_rating": 1559,
+   "to_major": 0.01,
+   "fought_elsewhere": 0.824
+  },
+  {
+   "promotion": "CF",
+   "bouts": 96,
+   "fighters": 156,
+   "mean_rating": 1559,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.814
+  },
+  {
+   "promotion": "Fusion Fight League",
+   "bouts": 98,
+   "fighters": 120,
+   "mean_rating": 1559,
+   "to_major": 0.033,
+   "fought_elsewhere": 0.825
+  },
+  {
+   "promotion": "Caged Steel",
+   "bouts": 63,
+   "fighters": 98,
+   "mean_rating": 1557,
+   "to_major": 0.092,
+   "fought_elsewhere": 0.878
+  },
+  {
+   "promotion": "Dominium Fighter Championship",
+   "bouts": 54,
+   "fighters": 70,
+   "mean_rating": 1556,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.829
+  },
+  {
+   "promotion": "Grachan / Brave",
+   "bouts": 46,
+   "fighters": 69,
+   "mean_rating": 1555,
+   "to_major": 0.13,
+   "fought_elsewhere": 0.986
+  },
+  {
+   "promotion": "German Cage Pioneer",
+   "bouts": 54,
+   "fighters": 82,
+   "mean_rating": 1555,
+   "to_major": 0.037,
+   "fought_elsewhere": 0.732
+  },
+  {
+   "promotion": "Campania Kombat",
+   "bouts": 116,
+   "fighters": 122,
+   "mean_rating": 1555,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.631
+  },
+  {
+   "promotion": "EBD",
+   "bouts": 66,
+   "fighters": 109,
+   "mean_rating": 1553,
+   "to_major": 0.028,
+   "fought_elsewhere": 0.844
+  },
+  {
+   "promotion": "Power Nation Fighting Championship",
+   "bouts": 48,
+   "fighters": 71,
+   "mean_rating": 1551,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.789
+  },
+  {
+   "promotion": "Troncal Fight League",
+   "bouts": 51,
+   "fighters": 61,
+   "mean_rating": 1551,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.787
+  },
+  {
+   "promotion": "SW",
+   "bouts": 61,
+   "fighters": 88,
+   "mean_rating": 1550,
+   "to_major": 0.034,
+   "fought_elsewhere": 0.807
+  },
+  {
+   "promotion": "JFL",
+   "bouts": 130,
+   "fighters": 147,
+   "mean_rating": 1549,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.782
+  },
+  {
+   "promotion": "Made Men Promotions",
+   "bouts": 74,
+   "fighters": 119,
+   "mean_rating": 1546,
+   "to_major": 0.025,
+   "fought_elsewhere": 0.739
+  },
+  {
+   "promotion": "Dragon House MMA",
+   "bouts": 59,
+   "fighters": 73,
+   "mean_rating": 1543,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.781
+  },
+  {
+   "promotion": "WLMMA",
+   "bouts": 170,
+   "fighters": 214,
+   "mean_rating": 1542,
+   "to_major": 0.009,
+   "fought_elsewhere": 0.79
+  },
+  {
+   "promotion": "Fierce FC",
+   "bouts": 140,
+   "fighters": 168,
+   "mean_rating": 1542,
+   "to_major": 0.071,
+   "fought_elsewhere": 0.762
+  },
+  {
+   "promotion": "PPC",
+   "bouts": 41,
+   "fighters": 52,
+   "mean_rating": 1541,
+   "to_major": 0.077,
+   "fought_elsewhere": 0.692
+  },
+  {
+   "promotion": "TFC",
+   "bouts": 102,
+   "fighters": 178,
+   "mean_rating": 1541,
+   "to_major": 0.034,
+   "fought_elsewhere": 0.747
+  },
+  {
+   "promotion": "Combat FC",
+   "bouts": 81,
+   "fighters": 94,
+   "mean_rating": 1541,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.904
+  },
+  {
+   "promotion": "MMA Battle Arena",
+   "bouts": 53,
+   "fighters": 74,
+   "mean_rating": 1540,
+   "to_major": 0.041,
+   "fought_elsewhere": 0.73
+  },
+  {
+   "promotion": "RCF",
+   "bouts": 40,
+   "fighters": 57,
+   "mean_rating": 1539,
+   "to_major": 0.018,
+   "fought_elsewhere": 0.737
+  },
+  {
+   "promotion": "Home Fight Championship",
+   "bouts": 94,
+   "fighters": 110,
+   "mean_rating": 1539,
+   "to_major": 0.018,
+   "fought_elsewhere": 0.782
+  },
+  {
+   "promotion": "CC",
+   "bouts": 40,
+   "fighters": 70,
+   "mean_rating": 1536,
+   "to_major": 0.071,
+   "fought_elsewhere": 0.757
+  },
+  {
+   "promotion": "RITC",
+   "bouts": 79,
+   "fighters": 117,
+   "mean_rating": 1533,
+   "to_major": 0.017,
+   "fought_elsewhere": 0.726
+  },
+  {
+   "promotion": "LFC",
+   "bouts": 98,
+   "fighters": 166,
+   "mean_rating": 1532,
+   "to_major": 0.084,
+   "fought_elsewhere": 0.765
+  },
+  {
+   "promotion": "XFL",
+   "bouts": 96,
+   "fighters": 98,
+   "mean_rating": 1532,
+   "to_major": 0.02,
+   "fought_elsewhere": 0.776
+  },
+  {
+   "promotion": "MMA Galla",
+   "bouts": 91,
+   "fighters": 99,
+   "mean_rating": 1532,
+   "to_major": 0.01,
+   "fought_elsewhere": 0.788
+  },
+  {
+   "promotion": "Evolution Championship",
+   "bouts": 97,
+   "fighters": 123,
+   "mean_rating": 1530,
+   "to_major": 0.073,
+   "fought_elsewhere": 0.545
+  },
+  {
+   "promotion": "AOW",
+   "bouts": 145,
+   "fighters": 165,
+   "mean_rating": 1526,
+   "to_major": 0.036,
+   "fought_elsewhere": 0.721
+  },
+  {
+   "promotion": "Elevate FC",
+   "bouts": 93,
+   "fighters": 107,
+   "mean_rating": 1526,
+   "to_major": 0.009,
+   "fought_elsewhere": 0.57
+  },
+  {
+   "promotion": "RFC",
+   "bouts": 113,
+   "fighters": 183,
+   "mean_rating": 1521,
+   "to_major": 0.016,
+   "fought_elsewhere": 0.803
+  },
+  {
+   "promotion": "Costa Combat",
+   "bouts": 61,
+   "fighters": 71,
+   "mean_rating": 1521,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.563
+  },
+  {
+   "promotion": "Valhalla Fight Night",
+   "bouts": 52,
+   "fighters": 60,
+   "mean_rating": 1521,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.667
+  },
+  {
+   "promotion": "GCF",
+   "bouts": 62,
+   "fighters": 99,
+   "mean_rating": 1520,
+   "to_major": 0.02,
+   "fought_elsewhere": 0.798
+  },
+  {
+   "promotion": "Hamara MMA",
+   "bouts": 41,
+   "fighters": 58,
+   "mean_rating": 1520,
+   "to_major": 0.052,
+   "fought_elsewhere": 0.879
+  },
+  {
+   "promotion": "UKFC",
+   "bouts": 61,
+   "fighters": 87,
+   "mean_rating": 1519,
+   "to_major": 0.069,
+   "fought_elsewhere": 0.736
+  },
+  {
+   "promotion": "Adventure Fighters Tournament",
+   "bouts": 51,
+   "fighters": 76,
+   "mean_rating": 1517,
+   "to_major": 0.039,
+   "fought_elsewhere": 0.842
+  },
+  {
+   "promotion": "Fighting Nexus",
+   "bouts": 341,
+   "fighters": 273,
+   "mean_rating": 1514,
+   "to_major": 0.062,
+   "fought_elsewhere": 0.736
+  },
+  {
+   "promotion": "CFL",
+   "bouts": 50,
+   "fighters": 90,
+   "mean_rating": 1511,
+   "to_major": 0.022,
+   "fought_elsewhere": 0.722
+  },
+  {
+   "promotion": "KOTC",
+   "bouts": 78,
+   "fighters": 105,
+   "mean_rating": 1508,
+   "to_major": 0.038,
+   "fought_elsewhere": 0.743
+  },
+  {
+   "promotion": "Panama Fight League",
+   "bouts": 107,
+   "fighters": 115,
+   "mean_rating": 1508,
+   "to_major": 0.017,
+   "fought_elsewhere": 0.678
+  },
+  {
+   "promotion": "Throne MMA",
+   "bouts": 58,
+   "fighters": 74,
+   "mean_rating": 1506,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.622
+  },
+  {
+   "promotion": "Flex Fight Series Vol.",
+   "bouts": 154,
+   "fighters": 203,
+   "mean_rating": 1505,
+   "to_major": 0.01,
+   "fought_elsewhere": 0.64
+  },
+  {
+   "promotion": "VFC",
+   "bouts": 78,
+   "fighters": 130,
+   "mean_rating": 1502,
+   "to_major": 0.108,
+   "fought_elsewhere": 0.823
+  },
+  {
+   "promotion": "SMMAC",
+   "bouts": 72,
+   "fighters": 113,
+   "mean_rating": 1500,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.867
+  },
+  {
+   "promotion": "NEF",
+   "bouts": 85,
+   "fighters": 91,
+   "mean_rating": 1493,
+   "to_major": 0.044,
+   "fought_elsewhere": 0.681
+  },
+  {
+   "promotion": "COGA",
+   "bouts": 61,
+   "fighters": 64,
+   "mean_rating": 1485,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.812
+  },
+  {
+   "promotion": "Battle",
+   "bouts": 51,
+   "fighters": 76,
+   "mean_rating": 1481,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.829
+  },
+  {
+   "promotion": "WFC",
+   "bouts": 127,
+   "fighters": 214,
+   "mean_rating": 1480,
+   "to_major": 0.023,
+   "fought_elsewhere": 0.79
+  },
+  {
+   "promotion": "KROSSxOVER",
+   "bouts": 76,
+   "fighters": 72,
+   "mean_rating": 1475,
+   "to_major": 0.014,
+   "fought_elsewhere": 0.625
+  },
+  {
+   "promotion": "BFN",
+   "bouts": 52,
+   "fighters": 77,
+   "mean_rating": 1474,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.792
+  },
+  {
+   "promotion": "MCC",
+   "bouts": 46,
+   "fighters": 63,
+   "mean_rating": 1470,
+   "to_major": 0.032,
+   "fought_elsewhere": 0.73
+  },
+  {
+   "promotion": "TSE",
+   "bouts": 75,
+   "fighters": 89,
+   "mean_rating": 1466,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.719
+  },
+  {
+   "promotion": "Real Deal Championships",
+   "bouts": 57,
+   "fighters": 70,
+   "mean_rating": 1466,
+   "to_major": 0.029,
+   "fought_elsewhere": 0.729
+  },
+  {
+   "promotion": "BMF MMA",
+   "bouts": 43,
+   "fighters": 67,
+   "mean_rating": 1462,
+   "to_major": 0.045,
+   "fought_elsewhere": 0.776
+  },
+  {
+   "promotion": "Shooto / Torao Nation State",
+   "bouts": 51,
+   "fighters": 58,
+   "mean_rating": 1459,
+   "to_major": 0.034,
+   "fought_elsewhere": 0.845
+  },
+  {
+   "promotion": "DOMVS",
+   "bouts": 49,
+   "fighters": 77,
+   "mean_rating": 1455,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.636
+  },
+  {
+   "promotion": "Bayou FC",
+   "bouts": 92,
+   "fighters": 109,
+   "mean_rating": 1443,
+   "to_major": 0.018,
+   "fought_elsewhere": 0.817
+  },
+  {
+   "promotion": "DCS",
+   "bouts": 89,
+   "fighters": 101,
+   "mean_rating": 1442,
+   "to_major": 0.05,
+   "fought_elsewhere": 0.663
+  },
+  {
+   "promotion": "CountDown Tournament",
+   "bouts": 40,
+   "fighters": 37,
+   "mean_rating": 1442,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.703
+  },
+  {
+   "promotion": "WCF",
+   "bouts": 108,
+   "fighters": 114,
+   "mean_rating": 1411,
+   "to_major": 0.018,
+   "fought_elsewhere": 0.737
+  },
+  {
+   "promotion": "Absolute Combat Federation",
+   "bouts": 47,
+   "fighters": 56,
+   "mean_rating": 1409,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.714
+  },
+  {
+   "promotion": "ExciteFight",
+   "bouts": 72,
+   "fighters": 79,
+   "mean_rating": 1408,
+   "to_major": 0.025,
+   "fought_elsewhere": 0.747
+  },
+  {
+   "promotion": "CLIP",
+   "bouts": 43,
+   "fighters": 55,
+   "mean_rating": 1404,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.782
+  },
+  {
+   "promotion": "Ultimate Battle Grounds",
+   "bouts": 53,
+   "fighters": 77,
+   "mean_rating": 1401,
+   "to_major": 0.013,
+   "fought_elsewhere": 0.779
+  },
+  {
+   "promotion": "Budo",
+   "bouts": 51,
+   "fighters": 82,
+   "mean_rating": 1397,
+   "to_major": 0.049,
+   "fought_elsewhere": 0.829
+  },
+  {
+   "promotion": "P4P FC",
+   "bouts": 67,
+   "fighters": 53,
+   "mean_rating": 1391,
+   "to_major": 0.094,
+   "fought_elsewhere": 0.792
+  },
+  {
+   "promotion": "Shooto / Philoktetes Niigata",
+   "bouts": 41,
+   "fighters": 46,
+   "mean_rating": 1305,
+   "to_major": 0.0,
+   "fought_elsewhere": 0.696
+  }
+ ],
+ "fighters": {
+  "Anthony Wint": [
+   {
+    "date": "2023-04-14",
+    "opponent": "Luis Garcia",
+    "opp_rating": 1500,
+    "my_rating": 1500,
+    "won": 1.0,
+    "event": "Titan FC 81 - Brooks vs. Sojo",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2024-06-14",
+    "opponent": "Jawaski Bethly",
+    "opp_rating": 1500,
+    "my_rating": 1662,
+    "won": 1.0,
+    "event": "Double Down Fighting Championship - DDFC 1: Sowma vs. Graves",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2025-03-23",
+    "opponent": "Omar El-Sahlah",
+    "opp_rating": 1604,
+    "my_rating": 1772,
+    "won": 1.0,
+    "event": "Fury FC 103 - Fury Fighting Championship 103: Englund vs. Minus",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2025-06-25",
+    "opponent": "Emmanuel Verdier",
+    "opp_rating": 1683,
+    "my_rating": 1872,
+    "won": 1.0,
+    "event": "Xtreme Fighting Championships - XFC Young Guns 9-10",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2025-11-21",
+    "opponent": "Miles Banks",
+    "opp_rating": 1747,
+    "my_rating": 1949,
+    "won": 1.0,
+    "event": "Fury FC - Challenger Series 15",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2026-03-15",
+    "opponent": "Jamahl Tatum",
+    "opp_rating": 1687,
+    "my_rating": 2020,
+    "won": 1.0,
+    "event": "Fury FC 117 - Fury Fighting Championship 117: Wint vs. Tatum",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2026-08-11",
+    "opponent": "Matthew Adams",
+    "opp_rating": 1852,
+    "my_rating": 2064,
+    "won": 1.0,
+    "event": "Dana White's Contender Series - Contender Series 2026: Week 1",
+    "major_opp_pct": null
+   },
+   {
+    "date": "2026-08-22",
+    "opponent": "Terrance Chatman",
+    "opp_rating": 1796,
+    "my_rating": 2126,
+    "won": 1.0,
+    "event": "UFC Fight Night 285 - Hernandez vs. Rodrigues",
+    "major_opp_pct": 0.18
+   },
+   {
+    "date": "2026-10-03",
+    "opponent": "Lucas Armand",
+    "opp_rating": 2021,
+    "my_rating": 2162,
+    "won": 1.0,
+    "event": "UFC 332 - Silva vs. Wang",
+    "major_opp_pct": 0.42
+   }
+  ]
+ },
+ "records": 22000
+}

@@ -110,9 +110,12 @@ def all_bouts(recs: Dict[str, dict], with_main: bool = True) -> List[Bout]:
     bs = bouts(recs)
     if with_main:
         seen = {(b.day, min(b.a, b.b), max(b.a, b.b)) for b in bs}
+        # The main dataset links opponents by name, so a namesake can stand in for the real opponent ("Luis Garcia"):
+        # a fighter whose own record we crawled already has that day's bout, so the main dataset's copy is skipped.
+        busy = {(b.day, f) for b in bs for f in (b.a, b.b) if f in recs}
         for b in main_bouts():
             k = (b.day, min(b.a, b.b), max(b.a, b.b))
-            if k not in seen:
+            if k not in seen and (b.day, b.a) not in busy and (b.day, b.b) not in busy:
                 seen.add(k)
                 bs.append(b)
         bs.sort()

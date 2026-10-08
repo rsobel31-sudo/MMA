@@ -25,7 +25,8 @@ def schedule_of(url: str, rows, names) -> list:
             continue
         mine = b.a == url
         o, r_op, r_me = (b.b, rb, ra) if mine else (b.a, ra, rb)
-        out.append({"date": b.day.isoformat(), "opponent": names.get(o, o), "opp_rating": round(r_op),
+        slug = o.rstrip("/").rsplit("/", 1)[-1].rsplit("-", 1)[0].replace("-", " ")  # an uncrawled opponent: name from the link
+        out.append({"date": b.day.isoformat(), "opponent": names.get(o, slug), "opp_rating": round(r_op),
                     "my_rating": round(r_me), "won": b.score_a if mine else 1 - b.score_a, "event": b.event,
                     "major_opp_pct": round(sum(x < r_op for x in opp) / len(opp), 2) if PR.is_major(b.event) else None})
     return out
