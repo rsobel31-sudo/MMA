@@ -83,6 +83,8 @@
 "stats_official": "1"
 },
 "Abdul Hussein": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 165 cm, UFCStats 170 cm",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -745,6 +747,8 @@
 "stats_verified": "3"
 },
 "Allan Begosso": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -5408,6 +5412,10 @@
 "stats_official": "3"
 },
 "Eldari Kurtanidze": {
+"stats_official": "1"
+},
+"Eli Aronov": {
+"reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Elias Garcia": {
@@ -11367,6 +11375,8 @@
 "stats_official": "4"
 },
 "Luke Riley": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "2"
@@ -11509,6 +11519,8 @@
 "stats_official": "1"
 },
 "Magomed Tuchalov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 196 cm, UFCStats 190 cm",
 "reach": "UFCStats only (198 cm), not used until a second source confirms it",
 "stats_verified": "1"
 },
@@ -18801,8 +18813,10 @@
 "stats_official": "3"
 },
 "Zachary Reese": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "5",
+"stats_official": "6",
 "stats_verified": "3"
 },
 "Zak Bucia": {
