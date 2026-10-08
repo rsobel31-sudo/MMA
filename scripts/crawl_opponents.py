@@ -18,6 +18,7 @@ import gzip
 import json
 import sys
 import time
+import urllib.error
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -96,8 +97,26 @@ def main() -> int:
         nonlocal fetched
         if url in st.seen or url in st.failed or not ok(url):
             return None
+        for attempt in range(6):  # network trouble (a timeout, a dropped proxy) is retried, never recorded as a bad page
+            try:
+                html = f.get(url, cache=False)  # a cached copy is used when there is one
+                break
+            except urllib.error.HTTPError as exc:
+                if exc.code in (404, 410):  # the page is gone: a bad page, not a network problem
+                    print(f"  skip {url}: HTTP {exc.code}", flush=True)
+                    st.fail(url)
+                    return None
+                wait = 30 * 2 ** attempt
+                print(f"  HTTP {exc.code} on {url}; retrying in {wait}s", flush=True)
+                time.sleep(wait)
+            except OSError as exc:
+                wait = 30 * 2 ** attempt
+                print(f"  network error on {url} ({str(exc)[:80]}); retrying in {wait}s", flush=True)
+                time.sleep(wait)
+        else:
+            raise SystemExit("network down for over half an hour; stopping (rerun to resume)")
         try:
-            page = sherdog.parse_fighter(f.get(url, cache=False), url)  # a cached copy is used when there is one
+            page = sherdog.parse_fighter(html, url)
         except Exception as exc:  # noqa: BLE001 - a removed or malformed page: note it and move on
             print(f"  skip {url}: {str(exc)[:120]}", flush=True)
             st.fail(url)
