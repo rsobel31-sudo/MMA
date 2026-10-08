@@ -8,3 +8,4 @@ dist/
 models/*.json
 !models/.gitkeep
 .cache/
+data/regional/open.jsonl
