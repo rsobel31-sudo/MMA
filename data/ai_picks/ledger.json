@@ -103,6 +103,99 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w2",
+   "event": "UFC Fight Night: Allen vs. Duncan",
+   "event_date": "2026-10-10",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-332-4378",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan",
+   "book": "FanDuel",
+   "placed_at": "2026-10-09T18:21:56+00:00",
+   "bankroll_before": 99.0,
+   "available_before": 99.0,
+   "note": "A card where the sheet's loudest numbers are the model's general lean toward decisions and moneyline gaps my reads don't back (Kamaka, Tanzilovi), so most of it is a pass. I bet only two decision props with a fight-specific reason, small, because both rest on the finish model rather than a proven moneyline edge. Weigh-ins: Souza, Ribeiro and Bonfim (7.5 lb) missed; none touches these bets. Allen and Duncan both made weight.",
+   "bets": [
+    {
+     "id": "2-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45167:distance:True",
+       "bout": "Brendan Allen vs Christian Leroy Duncan",
+       "market": [
+        "distance",
+        true
+       ],
+       "selection": "Goes to decision",
+       "odds": 136,
+       "p": 0.5252,
+       "p_fanduel": 0.4002
+      }
+     ],
+     "odds": 136,
+     "decimal": 2.36,
+     "stake": 3.0,
+     "to_win": 4.08,
+     "p": 0.5252,
+     "ev": 0.2395,
+     "reasoning": "Five rounds between a grinder who wins late and a striker who has never been submitted: Allen's path is control and a decision, and Duncan's knockouts come early against lesser opposition, not against a durable top-five middleweight. FanDuel's 40% for the distance looks low for this matchup; I make it about half.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-09T18:21:56+00:00"
+    },
+    {
+     "id": "2-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45174:method:b:DEC",
+       "bout": "Allen Frye Jr. vs Rj Harris",
+       "market": [
+        "method",
+        "b",
+        "DEC"
+       ],
+       "selection": "Rj Harris by decision",
+       "odds": 500,
+       "p": 0.2489,
+       "p_fanduel": 0.1446
+      }
+     ],
+     "odds": 500,
+     "decimal": 6.0,
+     "stake": 2.0,
+     "to_win": 10.0,
+     "p": 0.2489,
+     "ev": 0.4934,
+     "reasoning": "Harris is the deserved favourite (about 73%), but Frye has never been finished (his only UFC fight went the distance) and comes in 15 lb lighter at 246, so a Harris win on the cards is likelier than FanDuel's 14.5%. Small stake: heavyweight finish rates make this a long shot either way.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-09T18:21:56+00:00"
+    }
+   ],
+   "staked": 5.0,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-10-09T18:21:56+00:00",
+     "note": "A card where the sheet's loudest numbers are the model's general lean toward decisions and moneyline gaps my reads don't back (Kamaka, Tanzilovi), so most of it is a pass. I bet only two decision props with a fight-specific reason, small, because both rest on the finish model rather than a proven moneyline edge. Weigh-ins: Souza, Ribeiro and Bonfim (7.5 lb) missed; none touches these bets. Allen and Duncan both made weight.",
+     "bets": [
+      "2-1",
+      "2-2"
+     ],
+     "staked": 5.0,
+     "sheet": "data/ai_picks/sheets/2026-10-10-ufc-fight-night-allen-vs-duncan.json",
+     "sheet_fetched_at": "2026-10-09T18:21:45+00:00"
+    }
+   ],
+   "last_placed_at": "2026-10-09T18:21:56+00:00",
+   "sheet": "data/ai_picks/sheets/2026-10-10-ufc-fight-night-allen-vs-duncan.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-332-4378"
+   ],
+   "sheet_fetched_at": "2026-10-09T18:21:45+00:00"
   }
  ]
 }
