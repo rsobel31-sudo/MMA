@@ -237,7 +237,7 @@ def cmd_prospect_week(args) -> int:
                     "recent": sorted(recent, key=lambda b: b["date"], reverse=True)}
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     if newly:
-        print(f"Signed (booked on a UFC card, Sherdog and Wikipedia agree), moved to Signed!: {', '.join(newly)}")
+        print(f"Signed (booked on a UFC card, Sherdog and Wikipedia agree), on Signed! and still ranked until the debut: {', '.join(newly)}")
     if refreshed or newly:
         # Re-score and re-rank with the new results (the build keeps this file's "week" section).
         from types import SimpleNamespace

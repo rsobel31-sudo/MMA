@@ -499,8 +499,9 @@ def newer_org(c: Dict[str, object], last: Dict[str, object]) -> str:
 
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date,
           booked: Optional[Dict[str, dict]] = None) -> List[Dict[str, object]]:
-    """Eligible, two-source-verified prospects, scored and ranked. Anyone booked on a UFC card (`booked`, by
-    Sherdog profile) has signed: they go to Signed! instead."""
+    """Eligible, two-source-verified prospects, scored and ranked. A prospect booked on a UFC card (`booked`, by
+    Sherdog profile) has signed but stays ranked until the debut itself (then the major-promotion rule takes
+    them off); the booking is shown with them."""
     booked = booked or {}
     # Fight Matrix records first: when two records are the same person, keep the one with a rating.
     candidates = sorted(candidates, key=lambda c: not c.get("fm_url"))
@@ -514,7 +515,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
     for c in candidates:
         chk = c.get("check") or {}
         sd = c.get("sherdog") or {}
-        if not chk.get("eligible") or not sd or sd.get("url", "").rstrip("/") in booked:
+        if not chk.get("eligible") or not sd:
             continue
         key = person(c["name"])
         if key in seen:
@@ -535,6 +536,8 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "nationality": sd.get("nationality", ""), "team": sd.get("team", "") or (c.get("fm", {}).get("stats", {}) or {}).get("Association", ""),
             "height_cm": sd.get("height_cm"), "reach_cm": sd.get("reach_cm"), "stance": sd.get("stance"), "nickname": sd.get("nickname", ""),
             "recent": [{k: b[k] for k in ("date", "opponent", "result", "method", "round", "event")} for b in bouts[:6]],
+            "booked": {k: booked[sd.get("url", "").rstrip("/")][k] for k in ("promotion", "date", "event")}
+                      if sd.get("url", "").rstrip("/") in booked and booked[sd.get("url", "").rstrip("/")]["date"] >= today.isoformat() else None,
             "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url") or c.get("fm_rank_url", ""),
             "noted_by": [dict(n, weight=weights.get(n["source"], 1.0)) for n in idx.get(key, [])],
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
