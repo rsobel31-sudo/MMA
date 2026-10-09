@@ -109,14 +109,16 @@ def build(today: date = None) -> dict:
     # Each fighter's first major bout, and their major record.
     first_major: Dict[str, tuple] = {}
     major_rec: Dict[str, List[int]] = {}
+    ufc_rec: Dict[str, List[int]] = {}  # the UFC is the premier promotion: its alumni are listed first
     for b in bs:
         if not PR.is_major(b.event):
             continue
         for f, s in ((b.a, b.score_a), (b.b, 1 - b.score_a)):
             first_major.setdefault(f, (b.day, R.promotion(b.event)))
-            w = major_rec.setdefault(f, [0, 0])
-            w[0] += s == 1.0
-            w[1] += s == 0.0
+            for rec in (major_rec, ufc_rec) if brand(R.promotion(b.event)) == "UFC" else (major_rec,):
+                w = rec.setdefault(f, [0, 0])
+                w[0] += s == 1.0
+                w[1] += s == 0.0
     # Record in each promotion before reaching the majors; last regional promotion per fighter.
     here: Dict[str, Dict[str, List[int]]] = {}
     last_prom: Dict[str, tuple] = {}
@@ -146,8 +148,12 @@ def build(today: date = None) -> dict:
             if f not in first_major:
                 continue
             mw, ml = major_rec[f]
-            alumni.append({"name": names.get(f, f), "here": f"{w}-{l}", "went_to": brand(first_major[f][1]),
-                           "major": f"{mw}-{ml}", "debut": first_major[f][0].isoformat(), "_k": (mw - ml, mw)})
+            uw, ul = ufc_rec.get(f, (0, 0))
+            first = brand(first_major[f][1])
+            alumni.append({"name": names.get(f, f), "here": f"{w}-{l}",
+                           "went_to": first if first == "UFC" or f not in ufc_rec else f"{first} → UFC",
+                           "major": f"{mw}-{ml}", "ufc": f"{uw}-{ul}" if f in ufc_rec else None,
+                           "debut": first_major[f][0].isoformat(), "_k": (f in ufc_rec, uw - ul, mw - ml, mw)})
         alumni.sort(key=lambda a: a.pop("_k"), reverse=True)
         current = [{"name": x["name"], "rank": x["p4p_rank"], "division": x["division"], "record": f"{x['wins']}-{x['losses']}"}
                    for x in pros if last_prom.get(x.get("sherdog_url") or "", (None, None))[1] == prom]

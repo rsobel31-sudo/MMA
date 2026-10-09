@@ -2459,9 +2459,9 @@ button.namelink:hover { color: var(--red); }
         ${x.org_url ? `<p class="muted" style="font-size:12px;margin:8px 0 0"><a href="${esc(x.org_url)}" target="_blank" rel="noopener">Sherdog</a></p>` : ""}
       </div>
       <div>
-        <div class="label">Notable alumni <span class="muted">(${x.alumni_count} reached a major)</span></div>
-        ${x.alumni.length ? `<table class="recent"><thead><tr><th>Fighter</th><th>Here</th><th>Went to</th><th>Major record</th></tr></thead><tbody>
-          ${x.alumni.map((a) => `<tr><td>${nameLink(a.name)}</td><td class="num">${esc(a.here)}</td><td>${esc(a.went_to)} <span class="muted num" style="font-size:12px">${esc(a.debut.slice(0, 4))}</span></td><td class="num">${esc(a.major)}</td></tr>`).join("")}
+        <div class="label">Notable alumni <span class="muted">(${x.alumni_count} reached a major; UFC alumni first)</span></div>
+        ${x.alumni.length ? `<table class="recent"><thead><tr><th>Fighter</th><th>Here</th><th>Went to</th><th>Record in the majors</th></tr></thead><tbody>
+          ${x.alumni.map((a) => `<tr><td>${nameLink(a.name)}</td><td class="num">${esc(a.here)}</td><td>${esc(a.went_to)} <span class="muted num" style="font-size:12px">${esc(a.debut.slice(0, 4))}</span></td><td class="num">${esc(a.major)}${a.ufc && a.ufc !== a.major ? ` <span class="muted">(UFC ${esc(a.ufc)})</span>` : ""}</td></tr>`).join("")}
         </tbody></table>` : `<p class="muted" style="font-size:13px;margin:4px 0">None yet.</p>`}
         ${x.prospects.length ? `<div class="label" style="margin-top:10px">Prospects fighting here now</div><ul class="notes">${x.prospects.map((p) => `<li data-prospect-open="${esc(p.name)}" class="clickable"><strong>${esc(p.name)}</strong> <span class="muted">#${p.rank} · ${esc(p.division)} · ${esc(p.record)}</span></li>`).join("")}</ul>` : ""}
       </div>
