@@ -15,3 +15,9 @@ def test_replay_moves_winner_up_and_skips_self_bouts():
     assert ps["a"].r > 1500 > ps["b"].r and ps["a"].n == 1
     # A firmer prior moves a single result less.
     assert R.replay(bs, rd0=200)["a"].r < ps["a"].r
+
+
+def test_ufc_feeder_shows_are_not_minor_leagues():
+    from mma_predictor import minor_leagues as ML
+
+    assert {"Dana White's Contender Series", "Road to UFC"} <= ML.FEEDERS

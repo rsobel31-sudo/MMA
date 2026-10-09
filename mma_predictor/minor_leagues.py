@@ -19,6 +19,8 @@ from . import prospects as PR
 from . import regional as R
 
 OUT = Path("app/minor_leagues.json")
+# Not minor leagues: the UFC's own feeder shows (it runs them, and winners go straight to UFC contracts).
+FEEDERS = {"Dana White's Contender Series", "Road to UFC"}
 TIERS = [(1950, 1, "Elite"), (1850, 2, "Strong"), (1750, 3, "Solid"), (1650, 4, "Developmental"), (0, 5, "Local")]
 
 
@@ -106,7 +108,7 @@ def build(today: date = None) -> dict:
     orgs = json.loads(Path("data/regional/orgs.json").read_text()) if Path("data/regional/orgs.json").exists() else {}
     out = []
     for p in R.promotions():
-        if not p["mean_rating"]:
+        if not p["mean_rating"] or p["promotion"] in FEEDERS:
             continue
         t, label = tier(p["mean_rating"])
         prom = p["promotion"]
