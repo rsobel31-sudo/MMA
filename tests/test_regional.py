@@ -21,3 +21,14 @@ def test_ufc_feeder_shows_are_not_minor_leagues():
     from mma_predictor import minor_leagues as ML
 
     assert {"Dana White's Contender Series", "Road to UFC"} <= ML.FEEDERS
+
+
+def test_a_promotions_old_event_names_count_with_its_new_ones():
+    from mma_predictor import minor_leagues as ML
+
+    orgs = {"CW": {"org_url": "https://www.sherdog.com/organizations/Cage-Warriors-186", "org_name": "Cage Warriors",
+                   "events": [["2013-07-06", "CWFC 56 - Cage Warriors Fighting Championship 56", ""],
+                              ["2018-02-24", "CW 90 - Cage Warriors 90", ""]]}}
+    canon = ML.canonicalizer(orgs)
+    assert canon("CWFC 60 - Cage Warriors Fighting Championship 60") == "CW"
+    assert canon("UFC 300 - Pereira vs. Hill") == "UFC"

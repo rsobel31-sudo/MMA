@@ -17,7 +17,7 @@ from typing import Dict, List
 
 from . import prospects as PR
 from . import regional as R
-from .minor_leagues import brand
+from .minor_leagues import brand, canonicalizer
 
 OUT = Path("app/opponents.json")
 KEEP = 10
@@ -25,6 +25,7 @@ KEEP = 10
 
 def build() -> dict:
     recs = R.load_records()
+    canon = canonicalizer()
     rows = R.pre_fight_ratings(R.all_bouts(recs))
     pool = sorted(r for b, ra, rb, na, nb in rows if PR.is_major(b.event) and b.day >= date(2008, 1, 1) and na and nb for r in (ra, rb))
     pct = lambda r: round(100 * bisect.bisect_left(pool, r) / len(pool))
@@ -51,7 +52,7 @@ def build() -> dict:
             if me in want:
                 slug = op.rstrip("/").rsplit("/", 1)[-1].rsplit("-", 1)[0].replace("-", " ")
                 res = "W" if s == 1.0 else "L" if s == 0.0 else "D"
-                prom = R.promotion(b.event)
+                prom = canon(b.event)
                 hist.setdefault(me, []).append([b.day.isoformat(), names.get(op, slug), res, pct(r_op) if n_op else None,
                                                 brand(prom) if PR.is_major(b.event) else prom, PR.is_major(b.event)])
     out = {}

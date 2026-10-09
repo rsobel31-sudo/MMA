@@ -51,9 +51,37 @@ def brand(prom: str) -> str:
     return prom
 
 
-def overview(org: dict, prom: str, today: date) -> dict:
+def canonicalizer(orgs: dict = None):
+    """Event -> promotion, with every name a promotion has gone by counted as one: Cage Warriors billed its
+    events "CWFC 56" until 2017 and "CW 90" after, and Fight Nights Global became AMC Fight Nights. Names are
+    joined through the Sherdog organization pages (data/regional/orgs.json): the names that share an organization,
+    and the names on every event in its history. Each organization is shown under its busiest name since 2020."""
+    if orgs is None:
+        orgs = json.loads(Path("data/regional/orgs.json").read_text()) if Path("data/regional/orgs.json").exists() else {}
+    bouts = {p["promotion"]: p["bouts"] for p in R.promotions(min_bouts=0)}
+    by_org: Dict[str, List[str]] = {}
+    for key, o in orgs.items():
+        if o.get("org_url") and key not in FEEDERS:
+            by_org.setdefault(o["org_url"], []).append(key)
+    primary = {url: max(keys, key=lambda k: bouts.get(k, 0)) for url, keys in by_org.items()}
+    primaries = set(primary.values())
+    alias: Dict[str, str] = {}
+    for url, keys in by_org.items():
+        main = primary[url]
+        names = set(keys) | {R.promotion(e[1]) for e in (orgs[keys[0]].get("events") or []) if not PR.is_major(e[1])}
+        for k in names:
+            if k and k not in FEEDERS and (k == main or k not in primaries):
+                alias.setdefault(k, main)
+
+    def canon(event: str) -> str:
+        p = R.promotion(event)
+        return p if PR.is_major(event) else alias.get(p, p)
+    return canon
+
+
+def overview(org: dict, prom: str, today: date, canon=None) -> dict:
     ev = org.get("events") or []
-    own = [e for e in ev if R.promotion(e[1]) == prom]
+    own = [e for e in ev if (canon(e[1]) if canon else R.promotion(e[1])) == prom]
     ev = own or ev  # an organization page can carry several brands (the UFC's carries Road to UFC)
     past = [e for e in ev if e[0] <= today.isoformat()]
     future = [e for e in ev if e[0] > today.isoformat()]
@@ -70,6 +98,7 @@ def overview(org: dict, prom: str, today: date) -> dict:
 
 def build(today: date = None) -> dict:
     today = today or date.today()
+    canon = canonicalizer()
     recs = R.load_records()
     bs = R.all_bouts(recs)
     names: Dict[str, str] = {}
@@ -94,7 +123,7 @@ def build(today: date = None) -> dict:
     for b in bs:
         if PR.is_major(b.event):
             continue
-        prom = R.promotion(b.event)
+        prom = canon(b.event)
         for f, s in ((b.a, b.score_a), (b.b, 1 - b.score_a)):
             if f in first_major and b.day >= first_major[f][0]:
                 continue
@@ -107,7 +136,7 @@ def build(today: date = None) -> dict:
     pros = json.loads(Path("app/prospects.json").read_text())["prospects"] if Path("app/prospects.json").exists() else []
     orgs = json.loads(Path("data/regional/orgs.json").read_text()) if Path("data/regional/orgs.json").exists() else {}
     out = []
-    for p in R.promotions():
+    for p in R.promotions(canon=canon):
         if not p["mean_rating"] or p["promotion"] in FEEDERS:
             continue
         t, label = tier(p["mean_rating"])
@@ -118,15 +147,15 @@ def build(today: date = None) -> dict:
                 continue
             mw, ml = major_rec[f]
             alumni.append({"name": names.get(f, f), "here": f"{w}-{l}", "went_to": brand(first_major[f][1]),
-                           "major": f"{mw}-{ml}", "debut": first_major[f][0].isoformat(), "_k": (mw, -ml)})
+                           "major": f"{mw}-{ml}", "debut": first_major[f][0].isoformat(), "_k": (mw - ml, mw)})
         alumni.sort(key=lambda a: a.pop("_k"), reverse=True)
         current = [{"name": x["name"], "rank": x["p4p_rank"], "division": x["division"], "record": f"{x['wins']}-{x['losses']}"}
                    for x in pros if last_prom.get(x.get("sherdog_url") or "", (None, None))[1] == prom]
         current.sort(key=lambda x: x["rank"])
-        row = dict(p, tier=t, tier_label=label, alumni_count=len(alumni), alumni=alumni[:8], prospects=current[:8])
+        row = dict(p, tier=t, tier_label=label, alumni_count=len(alumni), alumni=alumni[:10], prospects=current[:8])
         org = orgs.get(prom)
         if org and org.get("org_url"):
-            row.update(overview(org, prom, today))
+            row.update(overview(org, prom, today, canon))
         out.append(row)
     out.sort(key=lambda r: (r["tier"], -r["mean_rating"]))
     return {"built": today.isoformat(), "since": "2020-01-01",

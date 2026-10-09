@@ -363,18 +363,21 @@ def promotion(event: str) -> str:
     return re.sub(r"\s+(\d+|[IVXL]+)\b.*$", "", head).strip() or head
 
 
-def promotions(since: date = date(2020, 1, 1), min_bouts: int = 40) -> List[dict]:
+def promotions(since: date = date(2020, 1, 1), min_bouts: int = 40, canon=None) -> List[dict]:
     """Each promotion since `since`: how strong its fighters were going in (mean rating of those with three or more
     rated bouts), how many went on to a major, and how connected it is (share of its fighters who also fought
-    elsewhere; an isolated scene's ratings have little to anchor them)."""
+    elsewhere; an isolated scene's ratings have little to anchor them). `canon` maps an event to its promotion
+    (default: the name before the event number), so one promotion's old and new names can count together."""
     from . import prospects as PR
+
+    canon = canon or (lambda event: promotion(event))
 
     rows = pre_fight_ratings(all_bouts(load_records()))
     first_major: Dict[str, date] = {}
     orgs_of: Dict[str, set] = {}
     stats: Dict[str, dict] = {}
     for b, ra, rb, na, nb in rows:
-        org = promotion(b.event)
+        org = canon(b.event)
         for f in (b.a, b.b):
             orgs_of.setdefault(f, set()).add(org)
         if PR.is_major(b.event):
