@@ -27,7 +27,7 @@ from __future__ import annotations
 import html as htmllib
 import json
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
@@ -315,7 +315,7 @@ def grade_call(bouts: List[Dict[str, object]], since: str) -> Optional[bool]:
 
 
 def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], listed: Dict[str, Dict[str, object]],
-             checks: Optional[Dict[str, Dict[str, object]]] = None) -> List[Dict[str, object]]:
+             checks: Optional[Dict[str, Dict[str, object]]] = None, booked: Optional[Dict[str, dict]] = None) -> List[Dict[str, object]]:
     """Prospects who signed with a major promotion after being called (by a caller) or listed (by us).
 
     The signing is dated by the first major-promotion bout on Sherdog; `confirm` holds the
@@ -347,6 +347,9 @@ def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], list
         if not starts:
             continue  # in a major promotion whenever they were named
         fm = first_major([b for b in sd["bouts"] if str(b.get("date", "")) >= min(starts)])
+        bk = (booked or {}).get(sd.get("url", "").rstrip("/"))
+        if fm is None and bk:  # signed, debut booked: the booking dates it until the fight happens
+            fm = {"date": bk["date"], "event": bk["event"], "result": None, "method": None}
         if fm is None:
             continue
         before = [c for c in valid if c["date"] <= str(fm["date"])]
@@ -358,7 +361,8 @@ def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], list
                     "called_by": before, "first_call": before[0] if before else None,
                     "lead_days": (date.fromisoformat(str(fm["date"])) - date.fromisoformat(before[0]["date"])).days if before else None,
                     "on_our_list": bool(ours_before), "our_rank": (ours_before or {}).get("best_rank"),
-                    "confirmed_by": (checks or {}).get(sd.get("url", ""))})
+                    "confirmed_by": (checks or {}).get(sd.get("url", "")),
+                    "booked": bool(bk) and fm.get("result") is None})
     return sorted(out, key=lambda s: s["debut"], reverse=True)
 
 
@@ -493,8 +497,11 @@ def newer_org(c: Dict[str, object], last: Dict[str, object]) -> str:
     return c.get("last_org") or ""
 
 
-def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
-    """Eligible, two-source-verified prospects, scored and ranked."""
+def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date,
+          booked: Optional[Dict[str, dict]] = None) -> List[Dict[str, object]]:
+    """Eligible, two-source-verified prospects, scored and ranked. Anyone booked on a UFC card (`booked`, by
+    Sherdog profile) has signed: they go to Signed! instead."""
+    booked = booked or {}
     # Fight Matrix records first: when two records are the same person, keep the one with a rating.
     candidates = sorted(candidates, key=lambda c: not c.get("fm_url"))
     fill_fm_ratings(candidates)
@@ -507,7 +514,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
     for c in candidates:
         chk = c.get("check") or {}
         sd = c.get("sherdog") or {}
-        if not chk.get("eligible") or not sd:
+        if not chk.get("eligible") or not sd or sd.get("url", "").rstrip("/") in booked:
             continue
         key = person(c["name"])
         if key in seen:
@@ -563,7 +570,10 @@ def cmd_build(args) -> int:
         if c.get("sherdog") is not None:
             c["check"] = verify(c, c.get("fm") or {"stats": {}, "bouts": []}, c["sherdog"], today)
     apply_owner_picks(cands, load_owner_picks())
-    pros = build(cands, noted, today)
+    bpath = Path(args.candidates).with_name("booked.json")
+    booked = {u.rstrip("/"): b for u, b in (json.loads(bpath.read_text()) if bpath.exists() else {}).items()
+              if b["date"] >= (today - timedelta(days=14)).isoformat()}
+    pros = build(cands, noted, today, booked)
     # Our own list's history: who we listed, from when, at best what rank (credits us when they sign).
     lpath = Path(args.candidates).with_name("listed.json")
     listed = json.loads(lpath.read_text()) if lpath.exists() else {}
@@ -575,7 +585,7 @@ def cmd_build(args) -> int:
         e["best_rank"] = min(e.get("best_rank") or p["p4p_rank"], p["p4p_rank"])
     lpath.write_text(json.dumps(listed, ensure_ascii=False, indent=0, sort_keys=True))
     cpath = Path(args.candidates).with_name("signing_checks.json")
-    signed = signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {})
+    signed = signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {}, booked)
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],

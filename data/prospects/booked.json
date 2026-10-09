@@ -1,0 +1,74 @@
+{
+ "https://www.sherdog.com/fighter/Asaf-Chopurov-399679": {
+  "date": "2026-10-24",
+  "event": "UFC 333 - Volkanovski vs. Evloev",
+  "name": "Asaf Chopurov",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-333-Volkanovski-vs-Evloev-113863",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_333"
+ },
+ "https://www.sherdog.com/fighter/Gabriel-Lourenco-398156": {
+  "date": "2026-11-07",
+  "event": "UFC Fight Night 293 - Bonfim vs. Brady",
+  "name": "Gabriel Lourenco",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-293-Bonfim-vs-Brady-114213",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
+ },
+ "https://www.sherdog.com/fighter/Joel-Faglier-325449": {
+  "date": "2026-10-17",
+  "event": "UFC Fight Night 291 - Buckley vs. Malott",
+  "name": "Joel Faglier",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-291-Buckley-vs-Malott-113800",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott"
+ },
+ "https://www.sherdog.com/fighter/Mackenzie-Stiller-402395": {
+  "date": "2026-10-17",
+  "event": "UFC Fight Night 291 - Buckley vs. Malott",
+  "name": "Mackenzie Stiller",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-291-Buckley-vs-Malott-113800",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott"
+ },
+ "https://www.sherdog.com/fighter/Modestino-Rodrigues-397486": {
+  "date": "2026-11-28",
+  "event": "UFC Fight Night 295 - Riyadh",
+  "name": "Modestino Rodrigues",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-295-Riyadh-114777",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
+ },
+ "https://www.sherdog.com/fighter/Samuel-Sanches-389956": {
+  "date": "2026-11-14",
+  "event": "UFC 334 - Gane vs. Hokit",
+  "name": "Samuel Sanches",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-334-Gane-vs-Hokit-114293",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_334"
+ }
+}

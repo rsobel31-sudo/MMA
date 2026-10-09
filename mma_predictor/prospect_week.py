@@ -27,6 +27,8 @@ UA = "Mozilla/5.0 (compatible; mma-predictor/0.1; personal research)"
 FIGHTS = ROOT / "data" / "prospects" / "fights.jsonl"
 PROSPECTS = ROOT / "app" / "prospects.json"
 CANDIDATES = ROOT / "data" / "prospects" / "candidates.jsonl"
+BOOKED = ROOT / "data" / "prospects" / "booked.json"
+UFC_ORG = SHERDOG + "/organizations/Ultimate-Fighting-Championship-UFC-2"
 ROW = re.compile(r"<tr.*?</tr>", re.S)
 FIGHTER = re.compile(r'href="(/fighter/[^"]+)"')
 
@@ -128,6 +130,44 @@ def grade(fetcher, bouts: List[dict], today: date, log=print, pages: Optional[Di
     return done
 
 
+def ufc_bookings(fetcher, prospects: Dict[str, dict], today: date, log=print) -> Dict[str, dict]:
+    """Listed prospects booked on an upcoming UFC card: they've signed. Two sources must agree: Sherdog's
+    upcoming UFC events (matched by Sherdog profile) and Wikipedia's UFC cards (app/data.json, by name)."""
+    from .sources.events import link_names
+
+    sd: Dict[str, tuple] = {}
+    for d, url in listing(fetcher.get(UFC_ORG, cache=False, fresh=True)):
+        if d < today:
+            continue
+        try:
+            name, bouts = event_bouts(fetcher.get(url, cache=False, fresh=True))
+        except Exception as exc:  # noqa: BLE001
+            log(f"  skip {url}: {exc}")
+            continue
+        for a, b in bouts:
+            for me in (a, b):
+                if me in prospects:
+                    sd.setdefault(me, (d.isoformat(), name, url))
+    data = json.loads((ROOT / "app" / "data.json").read_text())
+    by_name = {p["name"]: u for u, p in prospects.items()}
+    aliases = json.loads((ROOT / "data" / "name_aliases.json").read_text()) if (ROOT / "data" / "name_aliases.json").exists() else {}
+    wiki: Dict[str, tuple] = {}
+    for e in (data.get("upcoming") or {}).get("events", []):
+        if e["date"] < today.isoformat():
+            continue
+        names = [n for bt in e["bouts"] for n in (bt["a"], bt["b"])]
+        for card_name, ours in link_names(names, list(by_name), aliases).items():
+            wiki.setdefault(by_name[ours], (e["date"], e["name"], e.get("url", "")))
+    out = {}
+    for u in set(sd) & set(wiki):
+        d, ev, ev_url = sd[u]
+        out[u] = {"name": prospects[u]["name"], "promotion": "UFC", "date": d, "event": ev, "sherdog_event": ev_url,
+                  "wikipedia_event": wiki[u][2], "sources": ["Sherdog", "Wikipedia"]}
+    for u in set(sd) ^ set(wiki):
+        log(f"  {prospects[u]['name']}: on {'Sherdog' if u in sd else 'Wikipedia'}'s UFC card only, waiting for a second source")
+    return out
+
+
 def refresh_records(fetcher, bouts: List[dict], pages: Dict[str, object], today: date, log=print) -> List[str]:
     """After a prospect fights, store their fresh Sherdog record (the prospect list is built from the stored
     one), so the record, recent fights and score reflect the result. Covers every result in the last 60 days
@@ -181,6 +221,13 @@ def cmd_prospect_week(args) -> int:
     pages: Dict[str, object] = {}
     graded = grade(f, known, today, pages=pages)
     refreshed = refresh_records(f, known, pages, today)
+    old_booked = json.loads(BOOKED.read_text()) if BOOKED.exists() else {}
+    # Today's bookings, plus past ones kept as history; a future booking that's gone from the cards was
+    # cancelled, so that prospect is ranked again.
+    booked = {u: b for u, b in old_booked.items() if b["date"] < today.isoformat()}
+    booked.update(ufc_bookings(f, {**prospects, **{u: {"name": b["name"]} for u, b in old_booked.items()}}, today))
+    BOOKED.write_text(json.dumps(booked, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+    newly = [b["name"] for u, b in booked.items() if u not in old_booked]
     known.sort(key=lambda b: (b["date"], b.get("p4p_rank") or 9999))
     FIGHTS.parent.mkdir(parents=True, exist_ok=True)
     FIGHTS.write_text("".join(json.dumps(b, ensure_ascii=False) + "\n" for b in known))
@@ -189,13 +236,16 @@ def cmd_prospect_week(args) -> int:
     data["week"] = {"fetched": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), "upcoming": upcoming,
                     "recent": sorted(recent, key=lambda b: b["date"], reverse=True)}
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
-    if refreshed:
+    if newly:
+        print(f"Signed (booked on a UFC card, Sherdog and Wikipedia agree), moved to Signed!: {', '.join(newly)}")
+    if refreshed or newly:
         # Re-score and re-rank with the new results (the build keeps this file's "week" section).
         from types import SimpleNamespace
 
         from .prospects import cmd_build
         cmd_build(SimpleNamespace(candidates=str(CANDIDATES), noted=str(CANDIDATES.with_name("noted.json")), out=str(PROSPECTS)))
-        print(f"Refreshed {len(refreshed)} prospects' records after their fights and re-ranked: {', '.join(refreshed)}")
+        if refreshed:
+            print(f"Refreshed {len(refreshed)} prospects' records after their fights and re-ranked: {', '.join(refreshed)}")
     print(f"{len(found)} prospect bouts in the next {args.days} days ({len(new)} new); {graded} results filled in; "
           f"{len(recent)} results in the last 60 days")
     for b in [b for b in upcoming if (b.get("p4p_rank") or 9999) <= 200][:25]:  # the page shows the top 200 (plus starred)
