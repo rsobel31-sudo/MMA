@@ -4,15 +4,15 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan",
  "odds_url": "https://www.bestfightodds.com/events/ufc-332-4378",
  "book": "FanDuel",
- "fetched_at": "2026-10-05T14:03:57+00:00",
+ "fetched_at": "2026-10-09T16:06:25+00:00",
  "event_starts": "2026-10-10T21:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-332-4378"
  ],
  "unpriced": [],
  "blend_weights": {
-  "model": 0.377636622155377,
-  "market": 0.8515190685442322
+  "model": 0.38198561624333677,
+  "market": 0.848772978749161
  },
  "dec_cal": [
   0.20520152691436633,
@@ -30,14 +30,14 @@
    ],
    "rounds": 5,
    "title": false,
-   "p_model_a": 0.4496,
-   "p_stats_a": 0.4496,
-   "read_a": 0.0,
+   "p_model_a": 0.489,
+   "p_stats_a": 0.4516,
+   "read_a": 0.15,
    "ml": {
-    "a": -146,
-    "b": 114
+    "a": -134,
+    "b": 110
    },
-   "markets": 2
+   "markets": 35
   },
   {
    "bout": "Jai Herbert vs Matheus Camilo",
@@ -49,14 +49,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3285,
-   "p_stats_a": 0.3285,
-   "read_a": 0.0,
+   "p_model_a": 0.2976,
+   "p_stats_a": 0.3189,
+   "read_a": -0.1,
    "ml": {
     "a": 158,
-    "b": -205
+    "b": -194
    },
-   "markets": 2
+   "markets": 25
   },
   {
    "bout": "Ketlen Souza vs Loopy Godinez",
@@ -68,33 +68,33 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4465,
-   "p_stats_a": 0.4465,
-   "read_a": 0.0,
+   "p_model_a": 0.3855,
+   "p_stats_a": 0.4462,
+   "read_a": -0.25,
    "ml": {
-    "a": 186,
-    "b": -245
+    "a": 198,
+    "b": -250
    },
-   "markets": 2
+   "markets": 25
   },
   {
-   "bout": "Gerald Meerschaert vs Julius Walker",
-   "a": "Gerald Meerschaert",
-   "b": "Julius Walker",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "a": "Andre Fili",
+   "b": "Kai Kamaka III",
    "dataset": [
-    "Gerald Meerschaert",
-    "Julius Walker"
+    "Andre Fili",
+    "Kai Kamaka III"
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.2114,
-   "p_stats_a": 0.2114,
-   "read_a": 0.0,
+   "p_model_a": 0.3243,
+   "p_stats_a": 0.2923,
+   "read_a": 0.15,
    "ml": {
-    "a": 220,
-    "b": -295
+    "a": -154,
+    "b": 126
    },
-   "markets": 2
+   "markets": 25
   },
   {
    "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
@@ -106,14 +106,33 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3793,
-   "p_stats_a": 0.3793,
+   "p_model_a": 0.3849,
+   "p_stats_a": 0.3849,
    "read_a": 0.0,
    "ml": {
-    "a": -235,
-    "b": 180
+    "a": -230,
+    "b": 184
    },
-   "markets": 2
+   "markets": 25
+  },
+  {
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "a": "Gerald Meerschaert",
+   "b": "Julius Walker",
+   "dataset": [
+    "Gerald Meerschaert",
+    "Julius Walker"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.2003,
+   "p_stats_a": 0.2003,
+   "read_a": -0.0,
+   "ml": {
+    "a": 235,
+    "b": -310
+   },
+   "markets": 25
   },
   {
    "bout": "Francisco Prado vs Ismael Bonfim",
@@ -125,14 +144,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.488,
-   "p_stats_a": 0.488,
-   "read_a": 0.0,
+   "p_model_a": 0.5237,
+   "p_stats_a": 0.4862,
+   "read_a": 0.15,
    "ml": {
-    "a": -106,
-    "b": -120
+    "a": -122,
+    "b": 100
    },
-   "markets": 2
+   "markets": 25
   },
   {
    "bout": "Leon Shahbazyan vs Niko Price",
@@ -144,14 +163,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6185,
-   "p_stats_a": 0.6185,
-   "read_a": 0.0,
+   "p_model_a": 0.6595,
+   "p_stats_a": 0.6367,
+   "read_a": 0.1,
    "ml": {
-    "a": -164,
-    "b": 128
+    "a": -148,
+    "b": 120
    },
-   "markets": 2
+   "markets": 25
   },
   {
    "bout": "Brendson Ribeiro vs Felipe Franco",
@@ -163,14 +182,33 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.1575,
-   "p_stats_a": 0.1575,
-   "read_a": 0.0,
+   "p_model_a": 0.169,
+   "p_stats_a": 0.169,
+   "read_a": -0.0,
    "ml": {
-    "a": 265,
-    "b": -370
+    "a": 290,
+    "b": -385
    },
-   "markets": 2
+   "markets": 25
+  },
+  {
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "a": "Allen Frye Jr.",
+   "b": "Rj Harris",
+   "dataset": [
+    "Allen Frye",
+    "Richard Harris"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.3178,
+   "p_stats_a": 0.3511,
+   "read_a": -0.15,
+   "ml": {
+    "a": 250,
+    "b": -325
+   },
+   "markets": 25
   },
   {
    "bout": "Alice Pereira vs Darya Zheleznyakova",
@@ -182,14 +220,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.5652,
-   "p_stats_a": 0.5652,
+   "p_model_a": 0.5663,
+   "p_stats_a": 0.5663,
    "read_a": 0.0,
    "ml": {
-    "a": -148,
-    "b": 114
+    "a": -144,
+    "b": 118
    },
-   "markets": 2
+   "markets": 25
   },
   {
    "bout": "Ernesta Kareckaite vs Melissa Gatto",
@@ -201,20 +239,17 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4161,
-   "p_stats_a": 0.4161,
-   "read_a": 0.0,
+   "p_model_a": 0.417,
+   "p_stats_a": 0.417,
+   "read_a": -0.0,
    "ml": {
-    "a": 102,
-    "b": -130
+    "a": -105,
+    "b": -115
    },
-   "markets": 2
+   "markets": 25
   }
  ],
- "skipped": [
-  "Andre Fili vs Kai Kamaka III (not enough data on Kai Kamaka III)",
-  "Allen Frye Jr. vs Rj Harris (not enough data on Rj Harris)"
- ],
+ "skipped": [],
  "card": [
   {
    "bout": "Brendan Allen vs Christian Leroy Duncan",
@@ -245,16 +280,16 @@
    "title": false
   },
   {
-   "bout": "Gerald Meerschaert vs Julius Walker",
-   "a": "Gerald Meerschaert",
-   "b": "Julius Walker",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "a": "Malcolm Wellmaker",
+   "b": "Otari Tanzilovi",
    "rounds": 3,
    "title": false
   },
   {
-   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
-   "a": "Malcolm Wellmaker",
-   "b": "Otari Tanzilovi",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "a": "Gerald Meerschaert",
+   "b": "Julius Walker",
    "rounds": 3,
    "title": false
   },
@@ -303,6 +338,450 @@
  ],
  "markets": [
   {
+   "id": "45177:method:b:KO/TKO",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Melissa Gatto by KO/TKO",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.1649,
+   "p_fanduel": 0.0544,
+   "p": 0.0963,
+   "edge": 0.0419,
+   "ev": 0.5411,
+   "kelly": 0.0361
+  },
+  {
+   "id": "45174:method:b:DEC",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Rj Harris by decision",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.3937,
+   "p_fanduel": 0.1446,
+   "p": 0.2489,
+   "edge": 0.1043,
+   "ev": 0.4934,
+   "kelly": 0.0987
+  },
+  {
+   "id": "45171:method:b:DEC",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Julius Walker by decision",
+   "odds": 700,
+   "decimal": 8.0,
+   "p_model": 0.2979,
+   "p_fanduel": 0.1079,
+   "p": 0.1847,
+   "edge": 0.0768,
+   "ev": 0.4773,
+   "kelly": 0.0682
+  },
+  {
+   "id": "45174:distance:True",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.4702,
+   "p_fanduel": 0.2247,
+   "p": 0.3365,
+   "edge": 0.1118,
+   "ev": 0.4133,
+   "kelly": 0.1292
+  },
+  {
+   "id": "45173:method:a:SUB",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Francisco Prado by submission",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.2387,
+   "p_fanduel": 0.0958,
+   "p": 0.1542,
+   "edge": 0.0584,
+   "ev": 0.3875,
+   "kelly": 0.0484
+  },
+  {
+   "id": "45169:method:b:DEC",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Matheus Camilo by decision",
+   "odds": 380,
+   "decimal": 4.8,
+   "p_model": 0.3902,
+   "p_fanduel": 0.1824,
+   "p": 0.2742,
+   "edge": 0.0918,
+   "ev": 0.3162,
+   "kelly": 0.0832
+  },
+  {
+   "id": "45171:distance:True",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 360,
+   "decimal": 4.6,
+   "p_model": 0.3793,
+   "p_fanduel": 0.2053,
+   "p": 0.2844,
+   "edge": 0.079,
+   "ev": 0.3082,
+   "kelly": 0.0856
+  },
+  {
+   "id": "45179:win_round:a:3",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Leon Shahbazyan in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.086,
+   "p_fanduel": 0.0425,
+   "p": 0.0607,
+   "edge": 0.0182,
+   "ev": 0.2751,
+   "kelly": 0.0138
+  },
+  {
+   "id": "45167:distance:True",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 136,
+   "decimal": 2.36,
+   "p_model": 0.6471,
+   "p_fanduel": 0.4002,
+   "p": 0.5252,
+   "edge": 0.125,
+   "ev": 0.2395,
+   "kelly": 0.1761
+  },
+  {
+   "id": "45179:win_round:a:2",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Leon Shahbazyan in round 2",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.1652,
+   "p_fanduel": 0.0893,
+   "p": 0.1222,
+   "edge": 0.033,
+   "ev": 0.2224,
+   "kelly": 0.0247
+  },
+  {
+   "id": "45167:method:b:DEC",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Christian Leroy Duncan by decision",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.2773,
+   "p_fanduel": 0.1456,
+   "p": 0.2037,
+   "edge": 0.058,
+   "ev": 0.222,
+   "kelly": 0.0444
+  },
+  {
+   "id": "45175:win_round:a:1",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Alice Pereira in round 1",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.1916,
+   "p_fanduel": 0.105,
+   "p": 0.1429,
+   "edge": 0.0379,
+   "ev": 0.2151,
+   "kelly": 0.0287
+  },
+  {
+   "id": "45179:method:b:DEC",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Niko Price by decision",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.1918,
+   "p_fanduel": 0.1026,
+   "p": 0.1414,
+   "edge": 0.0388,
+   "ev": 0.202,
+   "kelly": 0.0269
+  },
+  {
+   "id": "45176:distance:True",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 450,
+   "decimal": 5.5,
+   "p_model": 0.2696,
+   "p_fanduel": 0.1715,
+   "p": 0.2166,
+   "edge": 0.0451,
+   "ev": 0.1913,
+   "kelly": 0.0425
+  },
+  {
+   "id": "45174:starts_round:3:True",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 160,
+   "decimal": 2.6,
+   "p_model": 0.5547,
+   "p_fanduel": 0.3621,
+   "p": 0.4568,
+   "edge": 0.0947,
+   "ev": 0.1878,
+   "kelly": 0.1173
+  },
+  {
+   "id": "45179:total:True:1.5",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 170,
+   "decimal": 2.7,
+   "p_model": 0.522,
+   "p_fanduel": 0.3535,
+   "p": 0.4359,
+   "edge": 0.0824,
+   "ev": 0.177,
+   "kelly": 0.1041
+  },
+  {
+   "id": "45169:distance:True",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 164,
+   "decimal": 2.64,
+   "p_model": 0.537,
+   "p_fanduel": 0.3569,
+   "p": 0.4452,
+   "edge": 0.0883,
+   "ev": 0.1752,
+   "kelly": 0.1069
+  },
+  {
+   "id": "45179:distance:True",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.264,
+   "p_fanduel": 0.1747,
+   "p": 0.216,
+   "edge": 0.0413,
+   "ev": 0.1664,
+   "kelly": 0.0378
+  },
+  {
+   "id": "45179:starts_round:3:True",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.3866,
+   "p_fanduel": 0.2608,
+   "p": 0.3205,
+   "edge": 0.0597,
+   "ev": 0.1537,
+   "kelly": 0.0591
+  },
+  {
+   "id": "45167:starts_round:5:True",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": -102,
+   "decimal": 1.9804,
+   "p_model": 0.6818,
+   "p_fanduel": 0.4753,
+   "p": 0.5821,
+   "edge": 0.1069,
+   "ev": 0.1529,
+   "kelly": 0.1559
+  },
+  {
+   "id": "45176:starts_round:3:True",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.3859,
+   "p_fanduel": 0.2608,
+   "p": 0.3201,
+   "edge": 0.0593,
+   "ev": 0.1525,
+   "kelly": 0.0587
+  },
+  {
+   "id": "45179:starts_round:2:True",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": 116,
+   "decimal": 2.16,
+   "p_model": 0.6261,
+   "p_fanduel": 0.4382,
+   "p": 0.5334,
+   "edge": 0.0951,
+   "ev": 0.1521,
+   "kelly": 0.1311
+  },
+  {
+   "id": "45171:starts_round:3:True",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 186,
+   "decimal": 2.86,
+   "p_model": 0.4783,
+   "p_fanduel": 0.3313,
+   "p": 0.4026,
+   "edge": 0.0713,
+   "ev": 0.1514,
+   "kelly": 0.0814
+  },
+  {
+   "id": "45175:method:a:SUB",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Alice Pereira by submission",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0779,
+   "p_fanduel": 0.0464,
+   "p": 0.0602,
+   "edge": 0.0138,
+   "ev": 0.1445,
+   "kelly": 0.008
+  },
+  {
+   "id": "45173:method:b:DEC",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Ismael Bonfim by decision",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.4695,
+   "p_fanduel": 0.2781,
+   "p": 0.3686,
+   "edge": 0.0905,
+   "ev": 0.1428,
+   "kelly": 0.068
+  },
+  {
    "id": "45172:ml:b",
    "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
    "market": [
@@ -310,31 +789,497 @@
     "b"
    ],
    "selection": "Otari Tanzilovi to win",
-   "odds": 180,
-   "decimal": 2.8,
-   "p_model": 0.404,
-   "p_fanduel": 0.3374,
-   "p": 0.404,
-   "edge": 0.0666,
-   "ev": 0.1312,
-   "kelly": 0.0729
+   "odds": 184,
+   "decimal": 2.84,
+   "p_model": 0.4012,
+   "p_fanduel": 0.3356,
+   "p": 0.4012,
+   "edge": 0.0656,
+   "ev": 0.1395,
+   "kelly": 0.0758
   },
   {
-   "id": "45176:ml:b",
-   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "id": "45170:ml:b",
+   "bout": "Andre Fili vs Kai Kamaka III",
    "market": [
     "ml",
     "b"
    ],
-   "selection": "Felipe Franco to win",
-   "odds": -370,
-   "decimal": 1.2703,
-   "p_model": 0.8223,
-   "p_fanduel": 0.7418,
-   "p": 0.8223,
-   "edge": 0.0805,
-   "ev": 0.0446,
-   "kelly": 0.1649
+   "selection": "Kai Kamaka III to win",
+   "odds": 126,
+   "decimal": 2.26,
+   "p_model": 0.5033,
+   "p_fanduel": 0.4219,
+   "p": 0.5033,
+   "edge": 0.0814,
+   "ev": 0.1374,
+   "kelly": 0.1091
+  },
+  {
+   "id": "45167:total:True:3.5",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "total",
+    true,
+    3.5
+   ],
+   "selection": "Over 3.5 rounds",
+   "odds": -120,
+   "decimal": 1.8333,
+   "p_model": 0.7108,
+   "p_fanduel": 0.5193,
+   "p": 0.6197,
+   "edge": 0.1004,
+   "ev": 0.1361,
+   "kelly": 0.1633
+  },
+  {
+   "id": "45176:total:True:1.5",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 156,
+   "decimal": 2.56,
+   "p_model": 0.5161,
+   "p_fanduel": 0.3735,
+   "p": 0.4436,
+   "edge": 0.0701,
+   "ev": 0.1357,
+   "kelly": 0.087
+  },
+  {
+   "id": "45169:total:True:2.5",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": 128,
+   "decimal": 2.28,
+   "p_model": 0.5757,
+   "p_fanduel": 0.4185,
+   "p": 0.497,
+   "edge": 0.0785,
+   "ev": 0.1332,
+   "kelly": 0.1041
+  },
+  {
+   "id": "45170:win_round:b:1",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Kai Kamaka III in round 1",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.1087,
+   "p_fanduel": 0.0687,
+   "p": 0.0866,
+   "edge": 0.0179,
+   "ev": 0.1259,
+   "kelly": 0.0105
+  },
+  {
+   "id": "45176:method:b:DEC",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Felipe Franco by decision",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.1599,
+   "p_fanduel": 0.0962,
+   "p": 0.1246,
+   "edge": 0.0284,
+   "ev": 0.1214,
+   "kelly": 0.0152
+  },
+  {
+   "id": "45175:method:a:KO/TKO",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Alice Pereira by KO/TKO",
+   "odds": 390,
+   "decimal": 4.9,
+   "p_model": 0.2841,
+   "p_fanduel": 0.1799,
+   "p": 0.2278,
+   "edge": 0.0479,
+   "ev": 0.1163,
+   "kelly": 0.0298
+  },
+  {
+   "id": "45174:total:True:1.5",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": -106,
+   "decimal": 1.9434,
+   "p_model": 0.6493,
+   "p_fanduel": 0.4893,
+   "p": 0.5712,
+   "edge": 0.0819,
+   "ev": 0.11,
+   "kelly": 0.1166
+  },
+  {
+   "id": "45169:method:a:SUB",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jai Herbert by submission",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0667,
+   "p_fanduel": 0.0417,
+   "p": 0.0528,
+   "edge": 0.0111,
+   "ev": 0.1093,
+   "kelly": 0.0055
+  },
+  {
+   "id": "45172:distance:True",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 120,
+   "decimal": 2.2,
+   "p_model": 0.5758,
+   "p_fanduel": 0.4285,
+   "p": 0.5022,
+   "edge": 0.0737,
+   "ev": 0.1048,
+   "kelly": 0.0874
+  },
+  {
+   "id": "45177:win_round:b:1",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Melissa Gatto in round 1",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.1229,
+   "p_fanduel": 0.0812,
+   "p": 0.1001,
+   "edge": 0.0189,
+   "ev": 0.1011,
+   "kelly": 0.0101
+  },
+  {
+   "id": "45167:starts_round:4:True",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -146,
+   "decimal": 1.6849,
+   "p_model": 0.7267,
+   "p_fanduel": 0.5595,
+   "p": 0.6476,
+   "edge": 0.0881,
+   "ev": 0.0912,
+   "kelly": 0.1331
+  },
+  {
+   "id": "45167:method:a:DEC",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Brendan Allen by decision",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.3698,
+   "p_fanduel": 0.2427,
+   "p": 0.3025,
+   "edge": 0.0598,
+   "ev": 0.089,
+   "kelly": 0.0342
+  },
+  {
+   "id": "45176:starts_round:2:True",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -102,
+   "decimal": 1.9804,
+   "p_model": 0.6176,
+   "p_fanduel": 0.477,
+   "p": 0.5483,
+   "edge": 0.0713,
+   "ev": 0.0858,
+   "kelly": 0.0875
+  },
+  {
+   "id": "45171:total:True:1.5",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 106,
+   "decimal": 2.06,
+   "p_model": 0.589,
+   "p_fanduel": 0.4637,
+   "p": 0.5268,
+   "edge": 0.0631,
+   "ev": 0.0852,
+   "kelly": 0.0804
+  },
+  {
+   "id": "45175:starts_round:2:False",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.2383,
+   "p_fanduel": 0.1816,
+   "p": 0.2085,
+   "edge": 0.0269,
+   "ev": 0.0844,
+   "kelly": 0.0201
+  },
+  {
+   "id": "45172:total:True:2.5",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.6097,
+   "p_fanduel": 0.487,
+   "p": 0.5491,
+   "edge": 0.0621,
+   "ev": 0.077,
+   "kelly": 0.0801
+  },
+  {
+   "id": "45169:starts_round:3:True",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.6106,
+   "p_fanduel": 0.4812,
+   "p": 0.5467,
+   "edge": 0.0655,
+   "ev": 0.0724,
+   "kelly": 0.0753
+  },
+  {
+   "id": "45176:method:a:DEC",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Brendson Ribeiro by decision",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.1098,
+   "p_fanduel": 0.0722,
+   "p": 0.0892,
+   "edge": 0.017,
+   "ev": 0.0702,
+   "kelly": 0.0064
+  },
+  {
+   "id": "45175:starts_round:3:False",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 215,
+   "decimal": 3.15,
+   "p_model": 0.3797,
+   "p_fanduel": 0.2992,
+   "p": 0.3383,
+   "edge": 0.0391,
+   "ev": 0.0655,
+   "kelly": 0.0305
+  },
+  {
+   "id": "45175:total:False:2.5",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 184,
+   "decimal": 2.84,
+   "p_model": 0.4143,
+   "p_fanduel": 0.3356,
+   "p": 0.3741,
+   "edge": 0.0385,
+   "ev": 0.0626,
+   "kelly": 0.034
+  },
+  {
+   "id": "45176:method:b:KO/TKO",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Felipe Franco by KO/TKO",
+   "odds": 170,
+   "decimal": 2.7,
+   "p_model": 0.4701,
+   "p_fanduel": 0.3207,
+   "p": 0.3929,
+   "edge": 0.0722,
+   "ev": 0.0608,
+   "kelly": 0.0358
+  },
+  {
+   "id": "45175:win_round:a:2",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Alice Pereira in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.1137,
+   "p_fanduel": 0.0812,
+   "p": 0.0962,
+   "edge": 0.0151,
+   "ev": 0.0584,
+   "kelly": 0.0058
+  },
+  {
+   "id": "45170:method:b:KO/TKO",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kai Kamaka III by KO/TKO",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.1813,
+   "p_fanduel": 0.1244,
+   "p": 0.1506,
+   "edge": 0.0263,
+   "ev": 0.0545,
+   "kelly": 0.0091
+  },
+  {
+   "id": "45172:method:a:DEC",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Malcolm Wellmaker by decision",
+   "odds": 300,
+   "decimal": 4.0,
+   "p_model": 0.308,
+   "p_fanduel": 0.2195,
+   "p": 0.2613,
+   "edge": 0.0418,
+   "ev": 0.0453,
+   "kelly": 0.0151
+  },
+  {
+   "id": "45175:ends_round:1",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 410,
+   "decimal": 5.1,
+   "p_model": 0.2383,
+   "p_fanduel": 0.1751,
+   "p": 0.2049,
+   "edge": 0.0298,
+   "ev": 0.0449,
+   "kelly": 0.0109
+  },
+  {
+   "id": "45174:starts_round:2:True",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -176,
+   "decimal": 1.5682,
+   "p_model": 0.7231,
+   "p_fanduel": 0.6028,
+   "p": 0.6656,
+   "edge": 0.0628,
+   "ev": 0.0438,
+   "kelly": 0.0771
   },
   {
    "id": "45171:ml:b",
@@ -344,14 +1289,66 @@
     "b"
    ],
    "selection": "Julius Walker to win",
-   "odds": -295,
-   "decimal": 1.339,
-   "p_model": 0.7754,
-   "p_fanduel": 0.705,
-   "p": 0.7754,
-   "edge": 0.0704,
-   "ev": 0.0382,
-   "kelly": 0.1128
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.7888,
+   "p_fanduel": 0.7169,
+   "p": 0.7888,
+   "edge": 0.0718,
+   "ev": 0.0432,
+   "kelly": 0.1341
+  },
+  {
+   "id": "45176:ml:b",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Felipe Franco to win",
+   "odds": -385,
+   "decimal": 1.2597,
+   "p_model": 0.8274,
+   "p_fanduel": 0.7559,
+   "p": 0.8274,
+   "edge": 0.0716,
+   "ev": 0.0423,
+   "kelly": 0.163
+  },
+  {
+   "id": "45177:starts_round:2:False",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 640,
+   "decimal": 7.4,
+   "p_model": 0.1554,
+   "p_fanduel": 0.1274,
+   "p": 0.1408,
+   "edge": 0.0134,
+   "ev": 0.042,
+   "kelly": 0.0066
+  },
+  {
+   "id": "45175:distance:False",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 154,
+   "decimal": 2.54,
+   "p_model": 0.45,
+   "p_fanduel": 0.3713,
+   "p": 0.4101,
+   "edge": 0.0388,
+   "ev": 0.0416,
+   "kelly": 0.027
   },
   {
    "id": "45169:ml:b",
@@ -361,31 +1358,14 @@
     "b"
    ],
    "selection": "Matheus Camilo to win",
-   "odds": -205,
-   "decimal": 1.4878,
-   "p_model": 0.6767,
-   "p_fanduel": 0.6342,
-   "p": 0.6767,
-   "edge": 0.0425,
-   "ev": 0.0068,
-   "kelly": 0.014
-  },
-  {
-   "id": "45167:ml:b",
-   "bout": "Brendan Allen vs Christian Leroy Duncan",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Christian Leroy Duncan to win",
-   "odds": 114,
-   "decimal": 2.14,
-   "p_model": 0.4683,
-   "p_fanduel": 0.4405,
-   "p": 0.4683,
-   "edge": 0.0277,
-   "ev": 0.0021,
-   "kelly": 0.0018
+   "odds": -194,
+   "decimal": 1.5155,
+   "p_model": 0.6856,
+   "p_fanduel": 0.63,
+   "p": 0.6856,
+   "edge": 0.0557,
+   "ev": 0.039,
+   "kelly": 0.0757
   },
   {
    "id": "45179:ml:a",
@@ -395,14 +1375,172 @@
     "a"
    ],
    "selection": "Leon Shahbazyan to win",
+   "odds": -148,
+   "decimal": 1.6757,
+   "p_model": 0.6186,
+   "p_fanduel": 0.5676,
+   "p": 0.6186,
+   "edge": 0.051,
+   "ev": 0.0366,
+   "kelly": 0.0542
+  },
+  {
+   "id": "45172:method:b:DEC",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Otari Tanzilovi by decision",
+   "odds": 350,
+   "decimal": 4.5,
+   "p_model": 0.2678,
+   "p_fanduel": 0.1951,
+   "p": 0.2294,
+   "edge": 0.0343,
+   "ev": 0.0325,
+   "kelly": 0.0093
+  },
+  {
+   "id": "45172:starts_round:3:True",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -136,
+   "decimal": 1.7353,
+   "p_model": 0.6423,
+   "p_fanduel": 0.5428,
+   "p": 0.5935,
+   "edge": 0.0507,
+   "ev": 0.0299,
+   "kelly": 0.0406
+  },
+  {
+   "id": "45175:method:b:DEC",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Darya Zheleznyakova by decision",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.3571,
+   "p_fanduel": 0.2671,
+   "p": 0.3103,
+   "edge": 0.0432,
+   "ev": 0.024,
+   "kelly": 0.0105
+  },
+  {
+   "id": "45173:distance:True",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 116,
+   "decimal": 2.16,
+   "p_model": 0.5115,
+   "p_fanduel": 0.4369,
+   "p": 0.474,
+   "edge": 0.0372,
+   "ev": 0.0239,
+   "kelly": 0.0206
+  },
+  {
+   "id": "45179:ends_round:3",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.1226,
+   "p_fanduel": 0.094,
+   "p": 0.1075,
+   "edge": 0.0135,
+   "ev": 0.021,
+   "kelly": 0.0025
+  },
+  {
+   "id": "45167:starts_round:3:True",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -260,
+   "decimal": 1.3846,
+   "p_model": 0.7859,
+   "p_fanduel": 0.6768,
+   "p": 0.7349,
+   "edge": 0.0581,
+   "ev": 0.0176,
+   "kelly": 0.0458
+  },
+  {
+   "id": "45171:starts_round:2:True",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
    "odds": -164,
    "decimal": 1.6098,
-   "p_model": 0.6175,
+   "p_model": 0.6754,
    "p_fanduel": 0.5862,
-   "p": 0.6175,
-   "edge": 0.0313,
-   "ev": -0.006,
-   "kelly": 0.0
+   "p": 0.6319,
+   "edge": 0.0457,
+   "ev": 0.0172,
+   "kelly": 0.0282
+  },
+  {
+   "id": "45179:ends_round:2",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 380,
+   "decimal": 4.8,
+   "p_model": 0.2395,
+   "p_fanduel": 0.186,
+   "p": 0.2115,
+   "edge": 0.0255,
+   "ev": 0.0153,
+   "kelly": 0.004
+  },
+  {
+   "id": "45170:distance:True",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -154,
+   "decimal": 1.6494,
+   "p_model": 0.6566,
+   "p_fanduel": 0.5715,
+   "p": 0.6149,
+   "edge": 0.0434,
+   "ev": 0.0143,
+   "kelly": 0.022
   },
   {
    "id": "45177:ml:b",
@@ -412,13 +1550,281 @@
     "b"
    ],
    "selection": "Melissa Gatto to win",
-   "odds": -130,
-   "decimal": 1.7692,
-   "p_model": 0.5599,
-   "p_fanduel": 0.5331,
-   "p": 0.5599,
-   "edge": 0.0268,
-   "ev": -0.0094,
+   "odds": -115,
+   "decimal": 1.8696,
+   "p_model": 0.5411,
+   "p_fanduel": 0.5108,
+   "p": 0.5411,
+   "edge": 0.0303,
+   "ev": 0.0117,
+   "kelly": 0.0134
+  },
+  {
+   "id": "45177:starts_round:3:False",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.2492,
+   "p_fanduel": 0.2117,
+   "p": 0.2299,
+   "edge": 0.0182,
+   "ev": 0.0117,
+   "kelly": 0.0034
+  },
+  {
+   "id": "45173:total:True:2.5",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -110,
+   "decimal": 1.9091,
+   "p_model": 0.5564,
+   "p_fanduel": 0.5,
+   "p": 0.5283,
+   "edge": 0.0283,
+   "ev": 0.0085,
+   "kelly": 0.0094
+  },
+  {
+   "id": "45170:total:True:2.5",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -182,
+   "decimal": 1.5495,
+   "p_model": 0.6824,
+   "p_fanduel": 0.6155,
+   "p": 0.6496,
+   "edge": 0.0342,
+   "ev": 0.0066,
+   "kelly": 0.012
+  },
+  {
+   "id": "45177:total:False:2.5",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 290,
+   "decimal": 3.9,
+   "p_model": 0.2716,
+   "p_fanduel": 0.2446,
+   "p": 0.2579,
+   "edge": 0.0133,
+   "ev": 0.0058,
+   "kelly": 0.002
+  },
+  {
+   "id": "45173:win_round:a:2",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Francisco Prado in round 2",
+   "odds": 700,
+   "decimal": 8.0,
+   "p_model": 0.1395,
+   "p_fanduel": 0.1116,
+   "p": 0.1249,
+   "edge": 0.0133,
+   "ev": -0.0009,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:win_round:b:2",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Melissa Gatto in round 2",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0741,
+   "p_fanduel": 0.0595,
+   "p": 0.0664,
+   "edge": 0.0069,
+   "ev": -0.0037,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:method:a:SUB",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Leon Shahbazyan by submission",
+   "odds": 160,
+   "decimal": 2.6,
+   "p_model": 0.433,
+   "p_fanduel": 0.3354,
+   "p": 0.383,
+   "edge": 0.0476,
+   "ev": -0.0042,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:b:3",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Felipe Franco in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0997,
+   "p_fanduel": 0.0812,
+   "p": 0.09,
+   "edge": 0.0088,
+   "ev": -0.0098,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:ml:b",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Rj Harris to win",
+   "odds": -325,
+   "decimal": 1.3077,
+   "p_model": 0.7554,
+   "p_fanduel": 0.728,
+   "p": 0.7554,
+   "edge": 0.0274,
+   "ev": -0.0122,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:ends_round:1",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.1554,
+   "p_fanduel": 0.1276,
+   "p": 0.1409,
+   "edge": 0.0134,
+   "ev": -0.0136,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:method:a:DEC",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Andre Fili by decision",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.3561,
+   "p_fanduel": 0.2808,
+   "p": 0.3173,
+   "edge": 0.0364,
+   "ev": -0.0165,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:starts_round:2:True",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -650,
+   "decimal": 1.1538,
+   "p_model": 0.88,
+   "p_fanduel": 0.8184,
+   "p": 0.8518,
+   "edge": 0.0334,
+   "ev": -0.0171,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:starts_round:3:True",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -230,
+   "decimal": 1.4348,
+   "p_model": 0.7093,
+   "p_fanduel": 0.658,
+   "p": 0.6842,
+   "edge": 0.0262,
+   "ev": -0.0183,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:win_round:a:3",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Alice Pereira in round 3",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0566,
+   "p_fanduel": 0.047,
+   "p": 0.0516,
+   "edge": 0.0046,
+   "ev": -0.0197,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:starts_round:2:True",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -320,
+   "decimal": 1.3125,
+   "p_model": 0.7756,
+   "p_fanduel": 0.7154,
+   "p": 0.7467,
+   "edge": 0.0313,
+   "ev": -0.0199,
    "kelly": 0.0
   },
   {
@@ -429,64 +1835,83 @@
     "a"
    ],
    "selection": "Alice Pereira to win",
-   "odds": -148,
-   "decimal": 1.6757,
-   "p_model": 0.5762,
-   "p_fanduel": 0.5608,
-   "p": 0.5762,
-   "edge": 0.0154,
-   "ev": -0.0344,
+   "odds": -144,
+   "decimal": 1.6944,
+   "p_model": 0.5783,
+   "p_fanduel": 0.5627,
+   "p": 0.5783,
+   "edge": 0.0156,
+   "ev": -0.0201,
    "kelly": 0.0
   },
   {
-   "id": "45168:ml:a",
-   "bout": "Ketlen Souza vs Loopy Godinez",
+   "id": "45170:win_round:b:2",
+   "bout": "Andre Fili vs Kai Kamaka III",
    "market": [
-    "ml",
-    "a"
+    "win_round",
+    "b",
+    2
    ],
-   "selection": "Ketlen Souza to win",
-   "odds": 186,
-   "decimal": 2.86,
-   "p_model": 0.3353,
-   "p_fanduel": 0.3299,
-   "p": 0.3353,
-   "edge": 0.0053,
-   "ev": -0.0412,
+   "selection": "Kai Kamaka III in round 2",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0632,
+   "p_fanduel": 0.0525,
+   "p": 0.0576,
+   "edge": 0.0051,
+   "ev": -0.0205,
    "kelly": 0.0
   },
   {
-   "id": "45173:ml:b",
+   "id": "45173:starts_round:3:True",
    "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -140,
+   "decimal": 1.7143,
+   "p_model": 0.5918,
+   "p_fanduel": 0.5506,
+   "p": 0.5713,
+   "edge": 0.0207,
+   "ev": -0.0206,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ml:b",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
    "market": [
     "ml",
     "b"
    ],
-   "selection": "Ismael Bonfim to win",
-   "odds": -120,
-   "decimal": 1.8333,
-   "p_model": 0.5169,
-   "p_fanduel": 0.5146,
-   "p": 0.5169,
-   "edge": 0.0024,
-   "ev": -0.0523,
+   "selection": "Christian Leroy Duncan to win",
+   "odds": 110,
+   "decimal": 2.1,
+   "p_model": 0.4651,
+   "p_fanduel": 0.454,
+   "p": 0.4651,
+   "edge": 0.0111,
+   "ev": -0.0232,
    "kelly": 0.0
   },
   {
-   "id": "45173:ml:a",
-   "bout": "Francisco Prado vs Ismael Bonfim",
+   "id": "45177:distance:False",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
    "market": [
-    "ml",
-    "a"
+    "distance",
+    false
    ],
-   "selection": "Francisco Prado to win",
-   "odds": -106,
-   "decimal": 1.9434,
-   "p_model": 0.4831,
-   "p_fanduel": 0.4854,
-   "p": 0.4831,
-   "edge": -0.0024,
-   "ev": -0.0612,
+   "selection": "Doesn't go to decision",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.2962,
+   "p_fanduel": 0.2771,
+   "p": 0.2865,
+   "edge": 0.0095,
+   "ev": -0.0258,
    "kelly": 0.0
   },
   {
@@ -497,30 +1922,314 @@
     "b"
    ],
    "selection": "Loopy Godinez to win",
-   "odds": -245,
-   "decimal": 1.4082,
-   "p_model": 0.6647,
-   "p_fanduel": 0.6701,
-   "p": 0.6647,
-   "edge": -0.0053,
-   "ev": -0.0639,
+   "odds": -250,
+   "decimal": 1.4,
+   "p_model": 0.6941,
+   "p_fanduel": 0.6804,
+   "p": 0.6941,
+   "edge": 0.0137,
+   "ev": -0.0283,
    "kelly": 0.0
   },
   {
-   "id": "45175:ml:b",
-   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "id": "45176:ends_round:3",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.1163,
+   "p_fanduel": 0.0992,
+   "p": 0.1074,
+   "edge": 0.0082,
+   "ev": -0.033,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:starts_round:2:True",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.7496,
+   "p_fanduel": 0.7108,
+   "p": 0.7306,
+   "edge": 0.0199,
+   "ev": -0.0337,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:a:SUB",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Ketlen Souza by submission",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0711,
+   "p_fanduel": 0.0582,
+   "p": 0.0643,
+   "edge": 0.0062,
+   "ev": -0.0351,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:starts_round:2:True",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -330,
+   "decimal": 1.303,
+   "p_model": 0.7574,
+   "p_fanduel": 0.72,
+   "p": 0.7391,
+   "edge": 0.0191,
+   "ev": -0.0369,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:ml:a",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Francisco Prado to win",
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.5291,
+   "p_fanduel": 0.5236,
+   "p": 0.5291,
+   "edge": 0.0055,
+   "ev": -0.0373,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:total:True:2.5",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -330,
+   "decimal": 1.303,
+   "p_model": 0.7385,
+   "p_fanduel": 0.7287,
+   "p": 0.7337,
+   "edge": 0.0049,
+   "ev": -0.044,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:b:2",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Felipe Franco in round 2",
+   "odds": 410,
+   "decimal": 5.1,
+   "p_model": 0.1997,
+   "p_fanduel": 0.1751,
+   "p": 0.1871,
+   "edge": 0.012,
+   "ev": -0.046,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:starts_round:2:True",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -550,
+   "decimal": 1.1818,
+   "p_model": 0.8161,
+   "p_fanduel": 0.792,
+   "p": 0.8043,
+   "edge": 0.0123,
+   "ev": -0.0494,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:distance:True",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.7095,
+   "p_fanduel": 0.7008,
+   "p": 0.7052,
+   "edge": 0.0044,
+   "ev": -0.0516,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:starts_round:2:False",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1458,
+   "p_fanduel": 0.1453,
+   "p": 0.1456,
+   "edge": 0.0002,
+   "ev": -0.0538,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:starts_round:2:True",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -950,
+   "decimal": 1.1053,
+   "p_model": 0.8542,
+   "p_fanduel": 0.8547,
+   "p": 0.8544,
+   "edge": -0.0002,
+   "ev": -0.0556,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:starts_round:3:True",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -410,
+   "decimal": 1.2439,
+   "p_model": 0.7588,
+   "p_fanduel": 0.7582,
+   "p": 0.7585,
+   "edge": 0.0003,
+   "ev": -0.0565,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:starts_round:3:False",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 290,
+   "decimal": 3.9,
+   "p_model": 0.2412,
+   "p_fanduel": 0.2418,
+   "p": 0.2415,
+   "edge": -0.0003,
+   "ev": -0.058,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:ml:b",
+   "bout": "Francisco Prado vs Ismael Bonfim",
    "market": [
     "ml",
     "b"
    ],
-   "selection": "Darya Zheleznyakova to win",
-   "odds": 114,
-   "decimal": 2.14,
-   "p_model": 0.4238,
-   "p_fanduel": 0.4392,
-   "p": 0.4238,
-   "edge": -0.0154,
-   "ev": -0.0932,
+   "selection": "Ismael Bonfim to win",
+   "odds": 100,
+   "decimal": 2.0,
+   "p_model": 0.4709,
+   "p_fanduel": 0.4764,
+   "p": 0.4709,
+   "edge": -0.0055,
+   "ev": -0.0581,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:win_round:a:1",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Francisco Prado in round 1",
+   "odds": 350,
+   "decimal": 4.5,
+   "p_model": 0.2202,
+   "p_fanduel": 0.1984,
+   "p": 0.2091,
+   "edge": 0.0107,
+   "ev": -0.0591,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:ends_round:2",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.1414,
+   "p_fanduel": 0.1276,
+   "p": 0.1343,
+   "edge": 0.0068,
+   "ev": -0.0599,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:total:True:2.5",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -380,
+   "decimal": 1.2632,
+   "p_model": 0.7284,
+   "p_fanduel": 0.7554,
+   "p": 0.7421,
+   "edge": -0.0133,
+   "ev": -0.0626,
    "kelly": 0.0
   },
   {
@@ -531,12 +2240,347 @@
     "a"
    ],
    "selection": "Brendan Allen to win",
-   "odds": -146,
-   "decimal": 1.6849,
-   "p_model": 0.5317,
-   "p_fanduel": 0.5595,
-   "p": 0.5317,
-   "edge": -0.0277,
+   "odds": -134,
+   "decimal": 1.7463,
+   "p_model": 0.5349,
+   "p_fanduel": 0.546,
+   "p": 0.5349,
+   "edge": -0.0111,
+   "ev": -0.066,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:total:False:2.5",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.2615,
+   "p_fanduel": 0.2713,
+   "p": 0.2663,
+   "edge": -0.0049,
+   "ev": -0.0678,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:method:b:DEC",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kai Kamaka III by decision",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.3005,
+   "p_fanduel": 0.2638,
+   "p": 0.2818,
+   "edge": 0.018,
+   "ev": -0.0701,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:distance:True",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -330,
+   "decimal": 1.303,
+   "p_model": 0.7038,
+   "p_fanduel": 0.7229,
+   "p": 0.7135,
+   "edge": -0.0095,
+   "ev": -0.0703,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:distance:False",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 215,
+   "decimal": 3.15,
+   "p_model": 0.2905,
+   "p_fanduel": 0.2992,
+   "p": 0.2948,
+   "edge": -0.0044,
+   "ev": -0.0714,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:starts_round:2:True",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1250,
+   "decimal": 1.08,
+   "p_model": 0.8446,
+   "p_fanduel": 0.8726,
+   "p": 0.8592,
+   "edge": -0.0134,
+   "ev": -0.0721,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:ends_round:1",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1458,
+   "p_fanduel": 0.1374,
+   "p": 0.1415,
+   "edge": 0.0042,
+   "ev": -0.08,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:ml:b",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Darya Zheleznyakova to win",
+   "odds": 118,
+   "decimal": 2.18,
+   "p_model": 0.4217,
+   "p_fanduel": 0.4373,
+   "p": 0.4217,
+   "edge": -0.0156,
+   "ev": -0.0807,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:b:1",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Otari Tanzilovi in round 1",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0724,
+   "p_fanduel": 0.0687,
+   "p": 0.0705,
+   "edge": 0.0018,
+   "ev": -0.0836,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:b:DEC",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Loopy Godinez by decision",
+   "odds": -115,
+   "decimal": 1.8696,
+   "p_model": 0.5123,
+   "p_fanduel": 0.4667,
+   "p": 0.4894,
+   "edge": 0.0228,
+   "ev": -0.085,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:starts_round:2:True",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -650,
+   "decimal": 1.1538,
+   "p_model": 0.7617,
+   "p_fanduel": 0.8184,
+   "p": 0.7915,
+   "edge": -0.0269,
+   "ev": -0.0868,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:ml:a",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ketlen Souza to win",
+   "odds": 198,
+   "decimal": 2.98,
+   "p_model": 0.3059,
+   "p_fanduel": 0.3196,
+   "p": 0.3059,
+   "edge": -0.0137,
+   "ev": -0.0884,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:method:a:DEC",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Ernesta Kareckaite by decision",
+   "odds": 145,
+   "decimal": 2.45,
+   "p_model": 0.3888,
+   "p_fanduel": 0.3553,
+   "p": 0.3719,
+   "edge": 0.0166,
+   "ev": -0.0889,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:starts_round:3:True",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -550,
+   "decimal": 1.1818,
+   "p_model": 0.7508,
+   "p_fanduel": 0.7883,
+   "p": 0.7701,
+   "edge": -0.0182,
+   "ev": -0.0899,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:ends_round:2",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 300,
+   "decimal": 4.0,
+   "p_model": 0.2317,
+   "p_fanduel": 0.2232,
+   "p": 0.2274,
+   "edge": 0.0042,
+   "ev": -0.0903,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:method:a:SUB",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Brendson Ribeiro by submission",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0727,
+   "p_fanduel": 0.0666,
+   "p": 0.0696,
+   "edge": 0.003,
+   "ev": -0.0955,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:total:False:2.5",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": -110,
+   "decimal": 1.9091,
+   "p_model": 0.4436,
+   "p_fanduel": 0.5,
+   "p": 0.4717,
+   "edge": -0.0283,
+   "ev": -0.0995,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:starts_round:3:False",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 110,
+   "decimal": 2.1,
+   "p_model": 0.4082,
+   "p_fanduel": 0.4494,
+   "p": 0.4287,
+   "edge": -0.0207,
+   "ev": -0.0997,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:total:True:2.5",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -230,
+   "decimal": 1.4348,
+   "p_model": 0.5857,
+   "p_fanduel": 0.6644,
+   "p": 0.6259,
+   "edge": -0.0385,
+   "ev": -0.102,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:distance:False",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -700,
+   "decimal": 1.1429,
+   "p_model": 0.736,
+   "p_fanduel": 0.8253,
+   "p": 0.784,
+   "edge": -0.0413,
    "ev": -0.104,
    "kelly": 0.0
   },
@@ -548,30 +2592,350 @@
     "a"
    ],
    "selection": "Ernesta Kareckaite to win",
-   "odds": 102,
-   "decimal": 2.02,
-   "p_model": 0.4401,
-   "p_fanduel": 0.4669,
-   "p": 0.4401,
-   "edge": -0.0268,
-   "ev": -0.111,
+   "odds": -105,
+   "decimal": 1.9524,
+   "p_model": 0.4589,
+   "p_fanduel": 0.4892,
+   "p": 0.4589,
+   "edge": -0.0303,
+   "ev": -0.1041,
    "kelly": 0.0
   },
   {
-   "id": "45179:ml:b",
+   "id": "45168:win_round:b:1",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Loopy Godinez in round 1",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0894,
+   "p_fanduel": 0.0893,
+   "p": 0.0894,
+   "edge": 0.0001,
+   "ev": -0.1064,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:distance:False",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -720,
+   "decimal": 1.1389,
+   "p_model": 0.7304,
+   "p_fanduel": 0.8285,
+   "p": 0.7834,
+   "edge": -0.0451,
+   "ev": -0.1078,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:ends_round:2",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0938,
+   "p_fanduel": 0.094,
+   "p": 0.0939,
+   "edge": -0.0001,
+   "ev": -0.1081,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:starts_round:3:True",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.6203,
+   "p_fanduel": 0.7008,
+   "p": 0.6617,
+   "edge": -0.0391,
+   "ev": -0.1101,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:distance:True",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -200,
+   "decimal": 1.5,
+   "p_model": 0.55,
+   "p_fanduel": 0.6287,
+   "p": 0.5899,
+   "edge": -0.0388,
+   "ev": -0.1151,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:distance:False",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -148,
+   "decimal": 1.6757,
+   "p_model": 0.4885,
+   "p_fanduel": 0.5631,
+   "p": 0.526,
+   "edge": -0.0372,
+   "ev": -0.1186,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:starts_round:2:False",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 350,
+   "decimal": 4.5,
+   "p_model": 0.1839,
+   "p_fanduel": 0.208,
+   "p": 0.1957,
+   "edge": -0.0123,
+   "ev": -0.1196,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:starts_round:2:False",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 225,
+   "decimal": 3.25,
+   "p_model": 0.2504,
+   "p_fanduel": 0.2892,
+   "p": 0.2694,
+   "edge": -0.0199,
+   "ev": -0.1245,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:starts_round:2:False",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 235,
+   "decimal": 3.35,
+   "p_model": 0.2426,
+   "p_fanduel": 0.28,
+   "p": 0.2609,
+   "edge": -0.0191,
+   "ev": -0.126,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:ends_round:2",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.1578,
+   "p_fanduel": 0.1653,
+   "p": 0.1615,
+   "edge": -0.0038,
+   "ev": -0.1277,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:starts_round:3:False",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 176,
+   "decimal": 2.76,
+   "p_model": 0.2907,
+   "p_fanduel": 0.342,
+   "p": 0.3158,
+   "edge": -0.0262,
+   "ev": -0.1284,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:a:DEC",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Ketlen Souza by decision",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.1973,
+   "p_fanduel": 0.1983,
+   "p": 0.1978,
+   "edge": -0.0005,
+   "ev": -0.1297,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:method:a:DEC",
    "bout": "Leon Shahbazyan vs Niko Price",
    "market": [
-    "ml",
-    "b"
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Niko Price to win",
-   "odds": 128,
-   "decimal": 2.28,
-   "p_model": 0.3825,
-   "p_fanduel": 0.4138,
-   "p": 0.3825,
-   "edge": -0.0313,
-   "ev": -0.1278,
+   "selection": "Leon Shahbazyan by decision",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0722,
+   "p_fanduel": 0.0727,
+   "p": 0.0724,
+   "edge": -0.0002,
+   "ev": -0.1307,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:win_round:a:1",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Ketlen Souza in round 1",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0564,
+   "p_fanduel": 0.0595,
+   "p": 0.0579,
+   "edge": -0.0016,
+   "ev": -0.131,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:total:False:2.5",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 148,
+   "decimal": 2.48,
+   "p_model": 0.3176,
+   "p_fanduel": 0.3845,
+   "p": 0.3504,
+   "edge": -0.0342,
+   "ev": -0.1311,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:starts_round:3:False",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -370,
+   "decimal": 1.2703,
+   "p_model": 0.6141,
+   "p_fanduel": 0.7392,
+   "p": 0.6799,
+   "edge": -0.0593,
+   "ev": -0.1364,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:starts_round:3:False",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -370,
+   "decimal": 1.2703,
+   "p_model": 0.6134,
+   "p_fanduel": 0.7392,
+   "p": 0.6795,
+   "edge": -0.0597,
+   "ev": -0.1368,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:method:b:SUB",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Otari Tanzilovi by submission",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0499,
+   "p_fanduel": 0.0516,
+   "p": 0.0508,
+   "edge": -0.0009,
+   "ev": -0.137,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:method:a:KO/TKO",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Gerald Meerschaert by KO/TKO",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0613,
+   "p_fanduel": 0.0616,
+   "p": 0.0615,
+   "edge": -0.0002,
+   "ev": -0.1396,
    "kelly": 0.0
   },
   {
@@ -582,13 +2946,686 @@
     "a"
    ],
    "selection": "Malcolm Wellmaker to win",
-   "odds": -235,
-   "decimal": 1.4255,
-   "p_model": 0.596,
-   "p_fanduel": 0.6626,
-   "p": 0.596,
-   "edge": -0.0666,
-   "ev": -0.1504,
+   "odds": -230,
+   "decimal": 1.4348,
+   "p_model": 0.5988,
+   "p_fanduel": 0.6644,
+   "p": 0.5988,
+   "edge": -0.0656,
+   "ev": -0.1409,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:ml:a",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Allen Frye Jr. to win",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.2446,
+   "p_fanduel": 0.272,
+   "p": 0.2446,
+   "edge": -0.0274,
+   "ev": -0.1438,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:method:b:DEC",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Melissa Gatto by decision",
+   "odds": 165,
+   "decimal": 2.65,
+   "p_model": 0.3151,
+   "p_fanduel": 0.3284,
+   "p": 0.3217,
+   "edge": -0.0067,
+   "ev": -0.1475,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:ends_round:2",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0954,
+   "p_fanduel": 0.105,
+   "p": 0.1001,
+   "edge": -0.0049,
+   "ev": -0.1489,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:distance:False",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -530,
+   "decimal": 1.1887,
+   "p_model": 0.6207,
+   "p_fanduel": 0.7947,
+   "p": 0.7156,
+   "edge": -0.079,
+   "ev": -0.1494,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:ends_round:1",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.1839,
+   "p_fanduel": 0.2029,
+   "p": 0.1932,
+   "edge": -0.0097,
+   "ev": -0.1498,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:total:False:1.5",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -190,
+   "decimal": 1.5263,
+   "p_model": 0.4839,
+   "p_fanduel": 0.6265,
+   "p": 0.5564,
+   "edge": -0.0701,
+   "ev": -0.1508,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:distance:False",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 120,
+   "decimal": 2.2,
+   "p_model": 0.3434,
+   "p_fanduel": 0.4285,
+   "p": 0.3851,
+   "edge": -0.0434,
+   "ev": -0.1529,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:starts_round:3:False",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -240,
+   "decimal": 1.4167,
+   "p_model": 0.5217,
+   "p_fanduel": 0.6687,
+   "p": 0.5974,
+   "edge": -0.0713,
+   "ev": -0.1537,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:b:SUB",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Loopy Godinez by submission",
+   "odds": 490,
+   "decimal": 5.9,
+   "p_model": 0.1384,
+   "p_fanduel": 0.1479,
+   "p": 0.1431,
+   "edge": -0.0048,
+   "ev": -0.1559,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:total:False:1.5",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -128,
+   "decimal": 1.7812,
+   "p_model": 0.411,
+   "p_fanduel": 0.5363,
+   "p": 0.4732,
+   "edge": -0.0631,
+   "ev": -0.1571,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:b:2",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Otari Tanzilovi in round 2",
+   "odds": 1700,
+   "decimal": 18.0,
+   "p_model": 0.0442,
+   "p_fanduel": 0.0496,
+   "p": 0.0468,
+   "edge": -0.0028,
+   "ev": -0.1575,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:method:b:SUB",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Julius Walker by submission",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1369,
+   "p_fanduel": 0.1438,
+   "p": 0.1403,
+   "edge": -0.0035,
+   "ev": -0.158,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:total:False:2.5",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": -116,
+   "decimal": 1.8621,
+   "p_model": 0.3903,
+   "p_fanduel": 0.513,
+   "p": 0.4509,
+   "edge": -0.0621,
+   "ev": -0.1603,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:starts_round:2:False",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 128,
+   "decimal": 2.28,
+   "p_model": 0.3246,
+   "p_fanduel": 0.4138,
+   "p": 0.3681,
+   "edge": -0.0457,
+   "ev": -0.1607,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:ml:b",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Niko Price to win",
+   "odds": 120,
+   "decimal": 2.2,
+   "p_model": 0.3814,
+   "p_fanduel": 0.4324,
+   "p": 0.3814,
+   "edge": -0.051,
+   "ev": -0.1609,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:method:a:KO/TKO",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Allen Frye Jr. by KO/TKO",
+   "odds": 470,
+   "decimal": 5.7,
+   "p_model": 0.1419,
+   "p_fanduel": 0.1522,
+   "p": 0.147,
+   "edge": -0.0053,
+   "ev": -0.1622,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:starts_round:3:False",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 106,
+   "decimal": 2.06,
+   "p_model": 0.3577,
+   "p_fanduel": 0.4572,
+   "p": 0.4065,
+   "edge": -0.0507,
+   "ev": -0.1626,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:starts_round:2:False",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.2244,
+   "p_fanduel": 0.2846,
+   "p": 0.2533,
+   "edge": -0.0313,
+   "ev": -0.1641,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:method:a:SUB",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Malcolm Wellmaker by submission",
+   "odds": 1700,
+   "decimal": 18.0,
+   "p_model": 0.0442,
+   "p_fanduel": 0.0488,
+   "p": 0.0464,
+   "edge": -0.0023,
+   "ev": -0.1641,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:method:a:DEC",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Allen Frye Jr. by decision",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0764,
+   "p_fanduel": 0.0826,
+   "p": 0.0795,
+   "edge": -0.0032,
+   "ev": -0.1654,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:ends_round:1",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.2504,
+   "p_fanduel": 0.288,
+   "p": 0.2688,
+   "edge": -0.0192,
+   "ev": -0.1667,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:total:False:1.5",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -210,
+   "decimal": 1.4762,
+   "p_model": 0.478,
+   "p_fanduel": 0.6465,
+   "p": 0.5641,
+   "edge": -0.0824,
+   "ev": -0.1673,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:ends_round:3",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0704,
+   "p_fanduel": 0.0812,
+   "p": 0.0756,
+   "edge": -0.0056,
+   "ev": -0.1685,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:win_round:b:2",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Loopy Godinez in round 2",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0591,
+   "p_fanduel": 0.0687,
+   "p": 0.0637,
+   "edge": -0.005,
+   "ev": -0.1715,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:method:a:DEC",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Jai Herbert by decision",
+   "odds": 430,
+   "decimal": 5.3,
+   "p_model": 0.1469,
+   "p_fanduel": 0.1652,
+   "p": 0.1558,
+   "edge": -0.0094,
+   "ev": -0.1742,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:total:False:2.5",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": -156,
+   "decimal": 1.641,
+   "p_model": 0.4243,
+   "p_fanduel": 0.5815,
+   "p": 0.503,
+   "edge": -0.0785,
+   "ev": -0.1746,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:starts_round:3:False",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.3894,
+   "p_fanduel": 0.5188,
+   "p": 0.4533,
+   "edge": -0.0655,
+   "ev": -0.1752,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:method:b:KO/TKO",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Niko Price by KO/TKO",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.2226,
+   "p_fanduel": 0.2492,
+   "p": 0.2356,
+   "edge": -0.0135,
+   "ev": -0.1753,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:a:1",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Jai Herbert in round 1",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0846,
+   "p_fanduel": 0.0992,
+   "p": 0.0916,
+   "edge": -0.0076,
+   "ev": -0.1754,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:b:KO/TKO",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Loopy Godinez by KO/TKO",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0408,
+   "p_fanduel": 0.0459,
+   "p": 0.0433,
+   "edge": -0.0027,
+   "ev": -0.178,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:distance:False",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -154,
+   "decimal": 1.6494,
+   "p_model": 0.4242,
+   "p_fanduel": 0.5715,
+   "p": 0.4978,
+   "edge": -0.0737,
+   "ev": -0.179,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:ml:a",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Andre Fili to win",
+   "odds": -154,
+   "decimal": 1.6494,
+   "p_model": 0.4967,
+   "p_fanduel": 0.5781,
+   "p": 0.4967,
+   "edge": -0.0814,
+   "ev": -0.1807,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:method:a:DEC",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Gerald Meerschaert by decision",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0815,
+   "p_fanduel": 0.0908,
+   "p": 0.086,
+   "edge": -0.0048,
+   "ev": -0.1827,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:win_round:a:3",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Francisco Prado in round 3",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0712,
+   "p_fanduel": 0.085,
+   "p": 0.0778,
+   "edge": -0.0072,
+   "ev": -0.183,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:starts_round:2:False",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -124,
+   "decimal": 1.8065,
+   "p_model": 0.3824,
+   "p_fanduel": 0.523,
+   "p": 0.4517,
+   "edge": -0.0713,
+   "ev": -0.184,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:method:b:KO/TKO",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Otari Tanzilovi by KO/TKO",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0888,
+   "p_fanduel": 0.1033,
+   "p": 0.0958,
+   "edge": -0.0075,
+   "ev": -0.1856,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:distance:False",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -215,
+   "decimal": 1.4651,
+   "p_model": 0.463,
+   "p_fanduel": 0.6431,
+   "p": 0.5548,
+   "edge": -0.0883,
+   "ev": -0.1871,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:b:3",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Julius Walker in round 3",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0775,
+   "p_fanduel": 0.094,
+   "p": 0.0854,
+   "edge": -0.0086,
+   "ev": -0.1888,
    "kelly": 0.0
   },
   {
@@ -601,11 +3638,1000 @@
    "selection": "Jai Herbert to win",
    "odds": 158,
    "decimal": 2.58,
-   "p_model": 0.3233,
-   "p_fanduel": 0.3658,
-   "p": 0.3233,
-   "edge": -0.0425,
-   "ev": -0.1659,
+   "p_model": 0.3144,
+   "p_fanduel": 0.37,
+   "p": 0.3144,
+   "edge": -0.0557,
+   "ev": -0.1889,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:distance:False",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -460,
+   "decimal": 1.2174,
+   "p_model": 0.5298,
+   "p_fanduel": 0.7753,
+   "p": 0.6635,
+   "edge": -0.1118,
+   "ev": -0.1923,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:a:2",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Allen Frye Jr. in round 2",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0486,
+   "p_fanduel": 0.0595,
+   "p": 0.0538,
+   "edge": -0.0057,
+   "ev": -0.1928,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:method:b:SUB",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Matheus Camilo by submission",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0781,
+   "p_fanduel": 0.0922,
+   "p": 0.0848,
+   "edge": -0.0073,
+   "ev": -0.1939,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:win_round:a:2",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Ketlen Souza in round 2",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0363,
+   "p_fanduel": 0.0446,
+   "p": 0.0403,
+   "edge": -0.0044,
+   "ev": -0.1946,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:ends_round:1",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 220,
+   "decimal": 3.2,
+   "p_model": 0.2244,
+   "p_fanduel": 0.279,
+   "p": 0.2507,
+   "edge": -0.0283,
+   "ev": -0.1977,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:starts_round:3:False",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -210,
+   "decimal": 1.4762,
+   "p_model": 0.4453,
+   "p_fanduel": 0.6379,
+   "p": 0.5432,
+   "edge": -0.0947,
+   "ev": -0.1982,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:win_round:b:3",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Kai Kamaka III in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0312,
+   "p_fanduel": 0.0388,
+   "p": 0.0348,
+   "edge": -0.004,
+   "ev": -0.1994,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:total:False:1.5",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -116,
+   "decimal": 1.8621,
+   "p_model": 0.3507,
+   "p_fanduel": 0.5107,
+   "p": 0.4288,
+   "edge": -0.0819,
+   "ev": -0.2015,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:a:1",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Allen Frye Jr. in round 1",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0839,
+   "p_fanduel": 0.105,
+   "p": 0.0939,
+   "edge": -0.0111,
+   "ev": -0.2017,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:b:1",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Julius Walker in round 1",
+   "odds": 175,
+   "decimal": 2.75,
+   "p_model": 0.2579,
+   "p_fanduel": 0.3247,
+   "p": 0.2901,
+   "edge": -0.0345,
+   "ev": -0.2021,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:starts_round:2:False",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 138,
+   "decimal": 2.38,
+   "p_model": 0.2769,
+   "p_fanduel": 0.3972,
+   "p": 0.3344,
+   "edge": -0.0628,
+   "ev": -0.2042,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:b:1",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Felipe Franco in round 1",
+   "odds": 110,
+   "decimal": 2.1,
+   "p_model": 0.3337,
+   "p_fanduel": 0.4252,
+   "p": 0.3784,
+   "edge": -0.0468,
+   "ev": -0.2054,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:win_round:b:3",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Melissa Gatto in round 3",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0371,
+   "p_fanduel": 0.047,
+   "p": 0.0418,
+   "edge": -0.0052,
+   "ev": -0.2066,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:ends_round:1",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 115,
+   "decimal": 2.15,
+   "p_model": 0.3246,
+   "p_fanduel": 0.4153,
+   "p": 0.3688,
+   "edge": -0.0465,
+   "ev": -0.2071,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:starts_round:2:False",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -146,
+   "decimal": 1.6849,
+   "p_model": 0.3739,
+   "p_fanduel": 0.5618,
+   "p": 0.4666,
+   "edge": -0.0951,
+   "ev": -0.2138,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:b:2",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Julius Walker in round 2",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.155,
+   "p_fanduel": 0.2029,
+   "p": 0.1777,
+   "edge": -0.0252,
+   "ev": -0.2182,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:ends_round:1",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 180,
+   "decimal": 2.8,
+   "p_model": 0.2426,
+   "p_fanduel": 0.3189,
+   "p": 0.2792,
+   "edge": -0.0397,
+   "ev": -0.2183,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:a:2",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Jai Herbert in round 2",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0521,
+   "p_fanduel": 0.0687,
+   "p": 0.0599,
+   "edge": -0.0088,
+   "ev": -0.2219,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:ends_round:2",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.1971,
+   "p_fanduel": 0.2626,
+   "p": 0.2282,
+   "edge": -0.0344,
+   "ev": -0.2242,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:ends_round:2",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.1334,
+   "p_fanduel": 0.1786,
+   "p": 0.1546,
+   "edge": -0.024,
+   "ev": -0.2269,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:ends_round:1",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -140,
+   "decimal": 1.7143,
+   "p_model": 0.3824,
+   "p_fanduel": 0.5208,
+   "p": 0.4507,
+   "edge": -0.0702,
+   "ev": -0.2274,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:starts_round:2:False",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.12,
+   "p_fanduel": 0.1816,
+   "p": 0.1482,
+   "edge": -0.0334,
+   "ev": -0.2295,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:starts_round:3:False",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 190,
+   "decimal": 2.9,
+   "p_model": 0.2141,
+   "p_fanduel": 0.3232,
+   "p": 0.2651,
+   "edge": -0.0581,
+   "ev": -0.2313,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:method:a:SUB",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Ernesta Kareckaite by submission",
+   "odds": 3300,
+   "decimal": 34.0,
+   "p_model": 0.0199,
+   "p_fanduel": 0.0256,
+   "p": 0.0226,
+   "edge": -0.003,
+   "ev": -0.2321,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:method:b:KO/TKO",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Julius Walker by KO/TKO",
+   "odds": -110,
+   "decimal": 1.9091,
+   "p_model": 0.3534,
+   "p_fanduel": 0.452,
+   "p": 0.4017,
+   "edge": -0.0503,
+   "ev": -0.2331,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:b:1",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Christian Leroy Duncan in round 1",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0684,
+   "p_fanduel": 0.094,
+   "p": 0.0803,
+   "edge": -0.0137,
+   "ev": -0.2376,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:ends_round:3",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.099,
+   "p_fanduel": 0.1374,
+   "p": 0.1168,
+   "edge": -0.0206,
+   "ev": -0.2408,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:ends_round:2",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1068,
+   "p_fanduel": 0.1488,
+   "p": 0.1263,
+   "edge": -0.0225,
+   "ev": -0.2421,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:win_round:b:3",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Loopy Godinez in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0306,
+   "p_fanduel": 0.0425,
+   "p": 0.0361,
+   "edge": -0.0064,
+   "ev": -0.2423,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:ends_round:3",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0492,
+   "p_fanduel": 0.0687,
+   "p": 0.0582,
+   "edge": -0.0105,
+   "ev": -0.2435,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:starts_round:4:False",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": 114,
+   "decimal": 2.14,
+   "p_model": 0.2733,
+   "p_fanduel": 0.4405,
+   "p": 0.3524,
+   "edge": -0.0881,
+   "ev": -0.2459,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:b:1",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Matheus Camilo in round 1",
+   "odds": 300,
+   "decimal": 4.0,
+   "p_model": 0.1581,
+   "p_fanduel": 0.2232,
+   "p": 0.1885,
+   "edge": -0.0347,
+   "ev": -0.246,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:a:1",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Gerald Meerschaert in round 1",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0668,
+   "p_fanduel": 0.094,
+   "p": 0.0793,
+   "edge": -0.0147,
+   "ev": -0.2465,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:total:False:3.5",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "total",
+    false,
+    3.5
+   ],
+   "selection": "Under 3.5 rounds",
+   "odds": -102,
+   "decimal": 1.9804,
+   "p_model": 0.2892,
+   "p_fanduel": 0.4807,
+   "p": 0.3803,
+   "edge": -0.1004,
+   "ev": -0.2468,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:ends_round:2",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.1467,
+   "p_fanduel": 0.2076,
+   "p": 0.1751,
+   "edge": -0.0325,
+   "ev": -0.247,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:win_round:b:2",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Niko Price in round 2",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0744,
+   "p_fanduel": 0.105,
+   "p": 0.0885,
+   "edge": -0.0165,
+   "ev": -0.2477,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:ends_round:1",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 125,
+   "decimal": 2.25,
+   "p_model": 0.2769,
+   "p_fanduel": 0.3968,
+   "p": 0.3342,
+   "edge": -0.0626,
+   "ev": -0.248,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:starts_round:5:False",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -126,
+   "decimal": 1.7937,
+   "p_model": 0.3182,
+   "p_fanduel": 0.5247,
+   "p": 0.4179,
+   "edge": -0.1069,
+   "ev": -0.2505,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:distance:False",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -174,
+   "decimal": 1.5747,
+   "p_model": 0.3529,
+   "p_fanduel": 0.5998,
+   "p": 0.4748,
+   "edge": -0.125,
+   "ev": -0.2523,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:win_round:b:1",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Niko Price in round 1",
+   "odds": 380,
+   "decimal": 4.8,
+   "p_model": 0.1288,
+   "p_fanduel": 0.186,
+   "p": 0.1553,
+   "edge": -0.0308,
+   "ev": -0.2548,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:ends_round:1",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -165,
+   "decimal": 1.6061,
+   "p_model": 0.3739,
+   "p_fanduel": 0.5559,
+   "p": 0.4637,
+   "edge": -0.0922,
+   "ev": -0.2553,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ends_round:1",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 410,
+   "decimal": 5.1,
+   "p_model": 0.12,
+   "p_fanduel": 0.1751,
+   "p": 0.1454,
+   "edge": -0.0297,
+   "ev": -0.2586,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:method:a:KO/TKO",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Brendan Allen by KO/TKO",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0627,
+   "p_fanduel": 0.0874,
+   "p": 0.0741,
+   "edge": -0.0133,
+   "ev": -0.2591,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:a:1",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Malcolm Wellmaker in round 1",
+   "odds": 300,
+   "decimal": 4.0,
+   "p_model": 0.152,
+   "p_fanduel": 0.2232,
+   "p": 0.185,
+   "edge": -0.0382,
+   "ev": -0.26,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:ends_round:3",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0803,
+   "p_fanduel": 0.119,
+   "p": 0.098,
+   "edge": -0.0211,
+   "ev": -0.265,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:ends_round:2",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.1683,
+   "p_fanduel": 0.2551,
+   "p": 0.2084,
+   "edge": -0.0467,
+   "ev": -0.2706,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:win_round:a:1",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Leon Shahbazyan in round 1",
+   "odds": 135,
+   "decimal": 2.35,
+   "p_model": 0.2451,
+   "p_fanduel": 0.3799,
+   "p": 0.3084,
+   "edge": -0.0715,
+   "ev": -0.2752,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:b:1",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Rj Harris in round 1",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.1931,
+   "p_fanduel": 0.2976,
+   "p": 0.2415,
+   "edge": -0.0561,
+   "ev": -0.2755,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:win_round:b:3",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Niko Price in round 3",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0366,
+   "p_fanduel": 0.0558,
+   "p": 0.0453,
+   "edge": -0.0105,
+   "ev": -0.2759,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:a:2",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Malcolm Wellmaker in round 2",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0892,
+   "p_fanduel": 0.1374,
+   "p": 0.111,
+   "edge": -0.0263,
+   "ev": -0.2784,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:method:b:SUB",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Rj Harris by submission",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.165,
+   "p_fanduel": 0.241,
+   "p": 0.2003,
+   "edge": -0.0407,
+   "ev": -0.2788,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:b:2",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Matheus Camilo in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0946,
+   "p_fanduel": 0.1488,
+   "p": 0.1191,
+   "edge": -0.0297,
+   "ev": -0.2855,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ends_round:2",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0941,
+   "p_fanduel": 0.1488,
+   "p": 0.1188,
+   "edge": -0.03,
+   "ev": -0.2874,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:ends_round:3",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.047,
+   "p_fanduel": 0.0744,
+   "p": 0.0592,
+   "edge": -0.0152,
+   "ev": -0.2893,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:method:a:KO/TKO",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Francisco Prado by KO/TKO",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.1921,
+   "p_fanduel": 0.2874,
+   "p": 0.2365,
+   "edge": -0.0509,
+   "ev": -0.2906,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:b:2",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Christian Leroy Duncan in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.051,
+   "p_fanduel": 0.0812,
+   "p": 0.0645,
+   "edge": -0.0167,
+   "ev": -0.2909,
    "kelly": 0.0
   },
   {
@@ -616,13 +4642,317 @@
     "a"
    ],
    "selection": "Gerald Meerschaert to win",
+   "odds": 235,
+   "decimal": 3.35,
+   "p_model": 0.2112,
+   "p_fanduel": 0.2831,
+   "p": 0.2112,
+   "edge": -0.0718,
+   "ev": -0.2925,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:method:a:KO/TKO",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Malcolm Wellmaker by KO/TKO",
+   "odds": 130,
+   "decimal": 2.3,
+   "p_model": 0.2412,
+   "p_fanduel": 0.3817,
+   "p": 0.307,
+   "edge": -0.0747,
+   "ev": -0.2939,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:method:b:KO/TKO",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Matheus Camilo by KO/TKO",
+   "odds": 150,
+   "decimal": 2.5,
+   "p_model": 0.2219,
+   "p_fanduel": 0.3502,
+   "p": 0.2817,
+   "edge": -0.0686,
+   "ev": -0.2959,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:win_round:a:1",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Ernesta Kareckaite in round 1",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0326,
+   "p_fanduel": 0.0525,
+   "p": 0.0414,
+   "edge": -0.0111,
+   "ev": -0.2961,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:a:2",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Gerald Meerschaert in round 2",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0421,
+   "p_fanduel": 0.0687,
+   "p": 0.0539,
+   "edge": -0.0148,
+   "ev": -0.2997,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:b:2",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Rj Harris in round 2",
+   "odds": 350,
+   "decimal": 4.5,
+   "p_model": 0.1197,
+   "p_fanduel": 0.1984,
+   "p": 0.155,
+   "edge": -0.0434,
+   "ev": -0.3024,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:method:b:KO/TKO",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Christian Leroy Duncan by KO/TKO",
    "odds": 220,
    "decimal": 3.2,
-   "p_model": 0.2246,
-   "p_fanduel": 0.295,
-   "p": 0.2246,
-   "edge": -0.0704,
-   "ev": -0.2813,
+   "p_model": 0.1707,
+   "p_fanduel": 0.2731,
+   "p": 0.2176,
+   "edge": -0.0555,
+   "ev": -0.3038,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:method:b:KO/TKO",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Rj Harris by KO/TKO",
+   "odds": 160,
+   "decimal": 2.6,
+   "p_model": 0.2084,
+   "p_fanduel": 0.3338,
+   "p": 0.2664,
+   "edge": -0.0674,
+   "ev": -0.3074,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:a:3",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jai Herbert in round 3",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0263,
+   "p_fanduel": 0.0446,
+   "p": 0.0343,
+   "edge": -0.0103,
+   "ev": -0.3138,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:win_round:a:3",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Ketlen Souza in round 3",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0186,
+   "p_fanduel": 0.0319,
+   "p": 0.0244,
+   "edge": -0.0075,
+   "ev": -0.317,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:ends_round:3",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0736,
+   "p_fanduel": 0.1276,
+   "p": 0.0973,
+   "edge": -0.0303,
+   "ev": -0.3191,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:a:1",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Brendan Allen in round 1",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0516,
+   "p_fanduel": 0.0893,
+   "p": 0.0681,
+   "edge": -0.0212,
+   "ev": -0.3193,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:method:a:DEC",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Alice Pereira by decision",
+   "odds": 165,
+   "decimal": 2.65,
+   "p_model": 0.1929,
+   "p_fanduel": 0.3326,
+   "p": 0.2566,
+   "edge": -0.0761,
+   "ev": -0.32,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:win_round:b:1",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Darya Zheleznyakova in round 1",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0467,
+   "p_fanduel": 0.0812,
+   "p": 0.0617,
+   "edge": -0.0194,
+   "ev": -0.3211,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:a:2",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Brendson Ribeiro in round 2",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.032,
+   "p_fanduel": 0.0558,
+   "p": 0.0423,
+   "edge": -0.0135,
+   "ev": -0.3226,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:a:3",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Brendson Ribeiro in round 3",
+   "odds": 3000,
+   "decimal": 31.0,
+   "p_model": 0.0165,
+   "p_fanduel": 0.0288,
+   "p": 0.0218,
+   "edge": -0.007,
+   "ev": -0.3228,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:ends_round:3",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0846,
+   "p_fanduel": 0.1488,
+   "p": 0.1128,
+   "edge": -0.0361,
+   "ev": -0.3235,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:b:3",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Otari Tanzilovi in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0222,
+   "p_fanduel": 0.0388,
+   "p": 0.0294,
+   "edge": -0.0094,
+   "ev": -0.3237,
    "kelly": 0.0
   },
   {
@@ -633,13 +4963,872 @@
     "a"
    ],
    "selection": "Brendson Ribeiro to win",
-   "odds": 265,
-   "decimal": 3.65,
-   "p_model": 0.1777,
-   "p_fanduel": 0.2582,
-   "p": 0.1777,
-   "edge": -0.0805,
-   "ev": -0.3515,
+   "odds": 290,
+   "decimal": 3.9,
+   "p_model": 0.1726,
+   "p_fanduel": 0.2441,
+   "p": 0.1726,
+   "edge": -0.0716,
+   "ev": -0.327,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:a:3",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Allen Frye Jr. in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.024,
+   "p_fanduel": 0.0425,
+   "p": 0.032,
+   "edge": -0.0105,
+   "ev": -0.3285,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:ends_round:3",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0664,
+   "p_fanduel": 0.119,
+   "p": 0.0893,
+   "edge": -0.0297,
+   "ev": -0.3302,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:method:a:KO/TKO",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jai Herbert by KO/TKO",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.0962,
+   "p_fanduel": 0.1684,
+   "p": 0.128,
+   "edge": -0.0403,
+   "ev": -0.3343,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:win_round:a:1",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Andre Fili in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0752,
+   "p_fanduel": 0.1374,
+   "p": 0.1022,
+   "edge": -0.0352,
+   "ev": -0.3359,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:win_round:b:3",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Rj Harris in round 3",
+   "odds": 700,
+   "decimal": 8.0,
+   "p_model": 0.0606,
+   "p_fanduel": 0.1116,
+   "p": 0.0826,
+   "edge": -0.029,
+   "ev": -0.3394,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:ends_round:3",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0527,
+   "p_fanduel": 0.0992,
+   "p": 0.0726,
+   "edge": -0.0266,
+   "ev": -0.3465,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:a:2",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Brendan Allen in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0431,
+   "p_fanduel": 0.0812,
+   "p": 0.0593,
+   "edge": -0.0218,
+   "ev": -0.3472,
+   "kelly": 0.0
+  },
+  {
+   "id": "45169:win_round:b:3",
+   "bout": "Jai Herbert vs Matheus Camilo",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Matheus Camilo in round 3",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0473,
+   "p_fanduel": 0.0893,
+   "p": 0.0652,
+   "edge": -0.0241,
+   "ev": -0.348,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:method:b:KO/TKO",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Darya Zheleznyakova by KO/TKO",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0705,
+   "p_fanduel": 0.1356,
+   "p": 0.0984,
+   "edge": -0.0373,
+   "ev": -0.3606,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ends_round:3",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0592,
+   "p_fanduel": 0.119,
+   "p": 0.0844,
+   "edge": -0.0346,
+   "ev": -0.3668,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:method:b:SUB",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Kai Kamaka III by submission",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0217,
+   "p_fanduel": 0.0415,
+   "p": 0.0301,
+   "edge": -0.0114,
+   "ev": -0.3688,
+   "kelly": 0.0
+  },
+  {
+   "id": "45172:win_round:a:3",
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Malcolm Wellmaker in round 3",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0442,
+   "p_fanduel": 0.0893,
+   "p": 0.0631,
+   "edge": -0.0262,
+   "ev": -0.3691,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:method:b:SUB",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Melissa Gatto by submission",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0691,
+   "p_fanduel": 0.1339,
+   "p": 0.0967,
+   "edge": -0.0372,
+   "ev": -0.3711,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:a:3",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Brendan Allen in round 3",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0314,
+   "p_fanduel": 0.0638,
+   "p": 0.0449,
+   "edge": -0.0189,
+   "ev": -0.3716,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:method:b:SUB",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Felipe Franco by submission",
+   "odds": 170,
+   "decimal": 2.7,
+   "p_model": 0.163,
+   "p_fanduel": 0.3207,
+   "p": 0.2326,
+   "edge": -0.088,
+   "ev": -0.3719,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:method:a:KO/TKO",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Andre Fili by KO/TKO",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.1268,
+   "p_fanduel": 0.2561,
+   "p": 0.1827,
+   "edge": -0.0733,
+   "ev": -0.3787,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:win_round:a:3",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Gerald Meerschaert in round 3",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0214,
+   "p_fanduel": 0.0446,
+   "p": 0.031,
+   "edge": -0.0136,
+   "ev": -0.3799,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ends_round:4",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0449,
+   "p_fanduel": 0.094,
+   "p": 0.0653,
+   "edge": -0.0287,
+   "ev": -0.38,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:a:4",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Brendan Allen in round 4",
+   "odds": 1700,
+   "decimal": 18.0,
+   "p_model": 0.0237,
+   "p_fanduel": 0.0496,
+   "p": 0.0344,
+   "edge": -0.0152,
+   "ev": -0.3815,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:method:a:SUB",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Brendan Allen by submission",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.1027,
+   "p_fanduel": 0.2131,
+   "p": 0.1497,
+   "edge": -0.0635,
+   "ev": -0.3863,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:win_round:a:2",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Andre Fili in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0436,
+   "p_fanduel": 0.094,
+   "p": 0.0644,
+   "edge": -0.0296,
+   "ev": -0.3886,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:win_round:a:1",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Brendson Ribeiro in round 1",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0487,
+   "p_fanduel": 0.105,
+   "p": 0.0719,
+   "edge": -0.0331,
+   "ev": -0.3887,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:win_round:b:2",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Darya Zheleznyakova in round 2",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0276,
+   "p_fanduel": 0.0595,
+   "p": 0.0407,
+   "edge": -0.0188,
+   "ev": -0.3897,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:win_round:a:2",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Ernesta Kareckaite in round 2",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0197,
+   "p_fanduel": 0.0425,
+   "p": 0.029,
+   "edge": -0.0135,
+   "ev": -0.3905,
+   "kelly": 0.0
+  },
+  {
+   "id": "45168:method:a:KO/TKO",
+   "bout": "Ketlen Souza vs Loopy Godinez",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Ketlen Souza by KO/TKO",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0402,
+   "p_fanduel": 0.0831,
+   "p": 0.058,
+   "edge": -0.0251,
+   "ev": -0.3906,
+   "kelly": 0.0
+  },
+  {
+   "id": "45171:method:a:SUB",
+   "bout": "Gerald Meerschaert vs Julius Walker",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Gerald Meerschaert by submission",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.069,
+   "p_fanduel": 0.1438,
+   "p": 0.1004,
+   "edge": -0.0434,
+   "ev": -0.3976,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:b:5",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Christian Leroy Duncan in round 5",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0192,
+   "p_fanduel": 0.0425,
+   "p": 0.0286,
+   "edge": -0.0139,
+   "ev": -0.3987,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:method:b:SUB",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Darya Zheleznyakova by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0176,
+   "p_fanduel": 0.0383,
+   "p": 0.026,
+   "edge": -0.0123,
+   "ev": -0.4021,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:b:3",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Christian Leroy Duncan in round 3",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0278,
+   "p_fanduel": 0.0638,
+   "p": 0.0423,
+   "edge": -0.0215,
+   "ev": -0.4083,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:ends_round:5",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0347,
+   "p_fanduel": 0.0812,
+   "p": 0.0534,
+   "edge": -0.0278,
+   "ev": -0.4131,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:method:b:SUB",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Christian Leroy Duncan by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0169,
+   "p_fanduel": 0.038,
+   "p": 0.0254,
+   "edge": -0.0126,
+   "ev": -0.4164,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:b:4",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Christian Leroy Duncan in round 4",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0212,
+   "p_fanduel": 0.0525,
+   "p": 0.0335,
+   "edge": -0.019,
+   "ev": -0.4307,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:method:a:KO/TKO",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Leon Shahbazyan by KO/TKO",
+   "odds": 470,
+   "decimal": 5.7,
+   "p_model": 0.0633,
+   "p_fanduel": 0.153,
+   "p": 0.0995,
+   "edge": -0.0535,
+   "ev": -0.4331,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:method:a:KO/TKO",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Ernesta Kareckaite by KO/TKO",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0423,
+   "p_fanduel": 0.1024,
+   "p": 0.0662,
+   "edge": -0.0361,
+   "ev": -0.4369,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:method:a:SUB",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Andre Fili by submission",
+   "odds": 2500,
+   "decimal": 26.0,
+   "p_model": 0.0135,
+   "p_fanduel": 0.0335,
+   "p": 0.0213,
+   "edge": -0.0121,
+   "ev": -0.4452,
+   "kelly": 0.0
+  },
+  {
+   "id": "45167:win_round:a:5",
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Brendan Allen in round 5",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0155,
+   "p_fanduel": 0.0425,
+   "p": 0.0258,
+   "edge": -0.0167,
+   "ev": -0.4586,
+   "kelly": 0.0
+  },
+  {
+   "id": "45175:win_round:b:3",
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Darya Zheleznyakova in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0137,
+   "p_fanduel": 0.0388,
+   "p": 0.0232,
+   "edge": -0.0156,
+   "ev": -0.4671,
+   "kelly": 0.0
+  },
+  {
+   "id": "45170:win_round:a:3",
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Andre Fili in round 3",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0215,
+   "p_fanduel": 0.0638,
+   "p": 0.0373,
+   "edge": -0.0265,
+   "ev": -0.4782,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:win_round:b:1",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Ismael Bonfim in round 1",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0302,
+   "p_fanduel": 0.094,
+   "p": 0.0538,
+   "edge": -0.0402,
+   "ev": -0.4889,
+   "kelly": 0.0
+  },
+  {
+   "id": "45177:win_round:a:3",
+   "bout": "Ernesta Kareckaite vs Melissa Gatto",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Ernesta Kareckaite in round 3",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0099,
+   "p_fanduel": 0.0319,
+   "p": 0.0178,
+   "edge": -0.0141,
+   "ev": -0.501,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:method:b:KO/TKO",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Ismael Bonfim by KO/TKO",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0394,
+   "p_fanduel": 0.1232,
+   "p": 0.0706,
+   "edge": -0.0526,
+   "ev": -0.5059,
+   "kelly": 0.0
+  },
+  {
+   "id": "45174:method:a:SUB",
+   "bout": "Allen Frye Jr. vs Rj Harris",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Allen Frye Jr. by submission",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0146,
+   "p_fanduel": 0.0457,
+   "p": 0.0259,
+   "edge": -0.0197,
+   "ev": -0.5073,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:win_round:b:2",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Ismael Bonfim in round 2",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0183,
+   "p_fanduel": 0.0638,
+   "p": 0.0344,
+   "edge": -0.0294,
+   "ev": -0.5184,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:method:a:DEC",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Francisco Prado by decision",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.042,
+   "p_fanduel": 0.1437,
+   "p": 0.079,
+   "edge": -0.0647,
+   "ev": -0.526,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:method:b:SUB",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Ismael Bonfim by submission",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0182,
+   "p_fanduel": 0.0718,
+   "p": 0.0365,
+   "edge": -0.0353,
+   "ev": -0.5616,
+   "kelly": 0.0
+  },
+  {
+   "id": "45173:win_round:b:3",
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Ismael Bonfim in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0092,
+   "p_fanduel": 0.0388,
+   "p": 0.019,
+   "edge": -0.0198,
+   "ev": -0.5637,
+   "kelly": 0.0
+  },
+  {
+   "id": "45176:method:a:KO/TKO",
+   "bout": "Brendson Ribeiro vs Felipe Franco",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Brendson Ribeiro by KO/TKO",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0246,
+   "p_fanduel": 0.1237,
+   "p": 0.0563,
+   "edge": -0.0674,
+   "ev": -0.6062,
+   "kelly": 0.0
+  },
+  {
+   "id": "45179:method:b:SUB",
+   "bout": "Leon Shahbazyan vs Niko Price",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Niko Price by submission",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0171,
+   "p_fanduel": 0.0872,
+   "p": 0.0392,
+   "edge": -0.048,
+   "ev": -0.6078,
    "kelly": 0.0
   }
  ]

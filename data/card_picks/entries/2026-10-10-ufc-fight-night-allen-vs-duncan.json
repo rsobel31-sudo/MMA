@@ -1,0 +1,29 @@
+{
+ "note": "A grappler's card at the top: Allen's five-round top game against Duncan's untested cardio, Camilo's wrestling against a 38-year-old striker, and Godínez's volume against a clincher. Two overrides of the model, both for things it can't see: Allen over five rounds, and Prado against a short-notice opponent on a three-fight skid. The finishes I pick are all first-round reads, where the winner's own record and the loser's finishes line up.",
+ "picks": [
+  {"bout": "Brendan Allen vs Christian Leroy Duncan", "winner": "Brendan Allen", "method": "DEC", "confidence": 0.53,
+   "why": "Override: the model leans Duncan on striking, but five rounds favour Allen's grinding top game against a fighter who has never gone past round three; the market agrees. Duncan has never been submitted, so the cards over a tap."},
+  {"bout": "Matheus Camilo vs Jai Herbert", "winner": "Matheus Camilo", "method": "DEC", "confidence": 0.66,
+   "why": "A 25-year-old wrestler out-working a 38-year-old range striker; Herbert's power keeps it honest, so I take the model's decision rather than a finish."},
+  {"bout": "Loopy Godínez vs Ketlen Souza", "winner": "Loopy Godínez", "method": "DEC", "confidence": 0.67,
+   "why": "Godínez's volume and takedowns against a striker who drifts into clinches; her losses are only to elite grapplers. She wins rounds rather than finishing: decision."},
+  {"bout": "Andre Fili vs Kai Kamaka III", "winner": "Kai Kamaka III", "method": "DEC", "confidence": 0.52,
+   "why": "Following the model on Kamaka's accuracy and volume, though the market and my small read lean Fili; close to a coin flip. A decision, as most of Fili's fights are."},
+  {"bout": "Malcolm Wellmaker vs Otari Tanzilovi", "winner": "Otari Tanzilovi", "method": "DEC", "confidence": 0.52,
+   "why": "Following the model: Tanzilovi's wrestling targets Wellmaker's grappling defense, and Wellmaker has lost two straight. The market's faith in Wellmaker's power is the risk; no read either way."},
+  {"bout": "Julius Walker vs Gerald Meerschaert", "winner": "Julius Walker", "method": "KO/TKO", "round": 1, "confidence": 0.75,
+   "why": "Meerschaert, 38 and moving up to light heavyweight, has been stopped in round one 13 times; five of Walker's finishes came in round one. R1."},
+  {"bout": "Francisco Prado vs Ismael Bonfim", "winner": "Francisco Prado", "method": "DEC", "confidence": 0.53,
+   "why": "Override: Bonfim is a short-notice replacement on a three-fight skid, and Prado has a full camp back at his natural lightweight. Prado's last three fights all went the distance and he has never been finished: decision."},
+  {"bout": "Niko Price vs Leon Shahbazyan", "winner": "Leon Shahbazyan", "method": "SUB", "round": 1, "confidence": 0.63,
+   "why": "Eleven of Shahbazyan's finishes are first-round submissions, and a 37-year-old Price with a bad knee, four straight losses and a submission loss to Chiesa is there to be taken down early. R1, before Price's swinging lands."},
+  {"bout": "Felipe Franco vs Brendson Ribeiro", "winner": "Felipe Franco", "method": "KO/TKO", "round": 1, "confidence": 0.78,
+   "why": "Ten of Franco's finishes came in round one, and Ribeiro, a short-notice replacement on a losing run, has been stopped in round one seven times. R1."},
+  {"bout": "Allen Frye Jr. vs RJ Harris", "winner": "RJ Harris", "method": "DEC", "confidence": 0.70,
+   "why": "Harris is unbeaten and active; Frye has been pulled from two fights this year. Frye has never been finished, so Harris on the cards rather than a knockout."},
+  {"bout": "Alice Pereira vs Darya Zheleznyakova", "winner": "Alice Pereira", "method": "KO/TKO", "round": 1, "confidence": 0.56,
+   "why": "Following the model. Four of Pereira's finishes came in round one (latest a stepping-knee KO), and Zheleznyakova has been stopped in round one twice. R1."},
+  {"bout": "Ernesta Kareckaitė vs Melissa Gatto", "winner": "Melissa Gatto", "method": "DEC", "confidence": 0.55,
+   "why": "Following the model on a near-even fight. Kareckaitė has never been finished, so a decision."}
+ ]
+}

@@ -1,0 +1,769 @@
+{
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "date": "2026-10-10",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan",
+ "locks_at": "2026-10-10T21:00:00+00:00",
+ "locked_at": "2026-10-09T16:07:32+00:00",
+ "note": "A grappler's card at the top: Allen's five-round top game against Duncan's untested cardio, Camilo's wrestling against a 38-year-old striker, and Godínez's volume against a clincher. Two overrides of the model, both for things it can't see: Allen over five rounds, and Prado against a short-notice opponent on a three-fight skid. The finishes I pick are all first-round reads, where the winner's own record and the loser's finishes line up.",
+ "dec_cal": [
+  0.20520152691436633,
+  0.6741987155097109
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Brendan Allen vs Christian Leroy Duncan",
+   "a": "Brendan Allen",
+   "b": "Christian Leroy Duncan",
+   "segment": "Fight card",
+   "weight_class": "Middleweight",
+   "rounds": 5,
+   "title": false,
+   "pick": {
+    "winner": "Brendan Allen",
+    "side": "a",
+    "method": "DEC",
+    "round": 5,
+    "confidence": 0.53,
+    "why": "Override: the model leans Duncan on striking, but five rounds favour Allen's grinding top game against a fighter who has never gone past round three; the market agrees. Duncan has never been submitted, so the cards over a tap."
+   },
+   "model": {
+    "p_a": 0.4516,
+    "winner": "Christian Leroy Duncan",
+    "method": "DEC",
+    "p_win": 0.5484,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0525,
+      "SUB": 0.0861,
+      "DEC": 0.3135
+     },
+     "b": {
+      "KO/TKO": 0.1998,
+      "SUB": 0.0198,
+      "DEC": 0.3283
+     }
+    },
+    "round": 5,
+    "p_exact": 0.3283,
+    "round_chances": {
+     "KO/TKO": [
+      0.369,
+      0.351,
+      0.123,
+      0.08,
+      0.077
+     ],
+     "SUB": [
+      0.296,
+      0.335,
+      0.181,
+      0.122,
+      0.065
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      5,
+      1,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      3,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.546
+  },
+  {
+   "bout": "Matheus Camilo vs Jai Herbert",
+   "a": "Matheus Camilo",
+   "b": "Jai Herbert",
+   "segment": "Fight card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Matheus Camilo",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.66,
+    "why": "A 25-year-old wrestler out-working a 38-year-old range striker; Herbert's power keeps it honest, so I take the model's decision rather than a finish."
+   },
+   "model": {
+    "p_a": 0.6811,
+    "winner": "Matheus Camilo",
+    "method": "DEC",
+    "p_win": 0.6811,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2204,
+      "SUB": 0.0775,
+      "DEC": 0.3878
+     },
+     "b": {
+      "KO/TKO": 0.0976,
+      "SUB": 0.0677,
+      "DEC": 0.149
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3878,
+    "round_chances": {
+     "KO/TKO": [
+      0.522,
+      0.32,
+      0.158
+     ],
+     "SUB": [
+      0.48,
+      0.342,
+      0.178
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      2,
+      1
+     ],
+     "losses": [
+      1,
+      2,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.63
+  },
+  {
+   "bout": "Loopy Godínez vs Ketlen Souza",
+   "a": "Loopy Godínez",
+   "b": "Ketlen Souza",
+   "segment": "Fight card",
+   "weight_class": "Women's Strawweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Loopy Godínez",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.67,
+    "why": "Godínez's volume and takedowns against a striker who drifts into clinches; her losses are only to elite grapplers. She wins rounds rather than finishing: decision."
+   },
+   "model": {
+    "p_a": 0.5538,
+    "winner": "Loopy Godínez",
+    "method": "DEC",
+    "p_win": 0.5538,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.032,
+      "SUB": 0.1085,
+      "DEC": 0.4108
+     },
+     "b": {
+      "KO/TKO": 0.0576,
+      "SUB": 0.1019,
+      "DEC": 0.2892
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4108,
+    "round_chances": {
+     "KO/TKO": [
+      0.567,
+      0.283,
+      0.15
+     ],
+     "SUB": [
+      0.521,
+      0.308,
+      0.172
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      1,
+      0
+     ],
+     "losses": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.6804
+  },
+  {
+   "bout": "Andre Fili vs Kai Kamaka III",
+   "a": "Andre Fili",
+   "b": "Kai Kamaka III",
+   "segment": "Fight card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Kai Kamaka III",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.52,
+    "why": "Following the model on Kamaka's accuracy and volume, though the market and my small read lean Fili; close to a coin flip. A decision, as most of Fili's fights are."
+   },
+   "model": {
+    "p_a": 0.2923,
+    "winner": "Kai Kamaka III",
+    "method": "DEC",
+    "p_win": 0.7077,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.073,
+      "SUB": 0.0078,
+      "DEC": 0.2122
+     },
+     "b": {
+      "KO/TKO": 0.2493,
+      "SUB": 0.0299,
+      "DEC": 0.4279
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4279,
+    "round_chances": {
+     "KO/TKO": [
+      0.522,
+      0.3,
+      0.177
+     ],
+     "SUB": [
+      0.48,
+      0.323,
+      0.197
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      1,
+      2
+     ],
+     "losses": [
+      4,
+      2,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.5781
+  },
+  {
+   "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
+   "a": "Malcolm Wellmaker",
+   "b": "Otari Tanzilovi",
+   "segment": "Fight card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Otari Tanzilovi",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.52,
+    "why": "Following the model: Tanzilovi's wrestling targets Wellmaker's grappling defense, and Wellmaker has lost two straight. The market's faith in Wellmaker's power is the risk; no read either way."
+   },
+   "model": {
+    "p_a": 0.3849,
+    "winner": "Otari Tanzilovi",
+    "method": "DEC",
+    "p_win": 0.6151,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1581,
+      "SUB": 0.029,
+      "DEC": 0.1939
+     },
+     "b": {
+      "KO/TKO": 0.1389,
+      "SUB": 0.078,
+      "DEC": 0.4022
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4022,
+    "round_chances": {
+     "KO/TKO": [
+      0.555,
+      0.298,
+      0.147
+     ],
+     "SUB": [
+      0.51,
+      0.322,
+      0.168
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      1,
+      1
+     ],
+     "losses": [
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6644
+  },
+  {
+   "bout": "Julius Walker vs Gerald Meerschaert",
+   "a": "Julius Walker",
+   "b": "Gerald Meerschaert",
+   "segment": "Preliminary card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Julius Walker",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.75,
+    "why": "Meerschaert, 38 and moving up to light heavyweight, has been stopped in round one 13 times; five of Walker's finishes came in round one. R1."
+   },
+   "model": {
+    "p_a": 0.7997,
+    "winner": "Julius Walker",
+    "method": "KO/TKO",
+    "p_win": 0.7997,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3583,
+      "SUB": 0.1388,
+      "DEC": 0.302
+     },
+     "b": {
+      "KO/TKO": 0.0581,
+      "SUB": 0.0655,
+      "DEC": 0.0773
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2329,
+    "round_chances": {
+     "KO/TKO": [
+      0.65,
+      0.235,
+      0.115
+     ],
+     "SUB": [
+      0.614,
+      0.253,
+      0.132
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      1,
+      0
+     ],
+     "losses": [
+      13,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.7169
+  },
+  {
+   "bout": "Francisco Prado vs Ismael Bonfim",
+   "a": "Francisco Prado",
+   "b": "Ismael Bonfim",
+   "segment": "Preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Francisco Prado",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.53,
+    "why": "Override: Bonfim is a short-notice replacement on a three-fight skid, and Prado has a full camp back at his natural lightweight. Prado's last three fights all went the distance and he has never been finished: decision."
+   },
+   "model": {
+    "p_a": 0.4862,
+    "winner": "Ismael Bonfim",
+    "method": "DEC",
+    "p_win": 0.5138,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1791,
+      "SUB": 0.2226,
+      "DEC": 0.0375
+     },
+     "b": {
+      "KO/TKO": 0.0437,
+      "SUB": 0.0202,
+      "DEC": 0.497
+     }
+    },
+    "round": 3,
+    "p_exact": 0.497,
+    "round_chances": {
+     "KO/TKO": [
+      0.522,
+      0.327,
+      0.152
+     ],
+     "SUB": [
+      0.481,
+      0.348,
+      0.171
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      6,
+      5,
+      2
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5236
+  },
+  {
+   "bout": "Niko Price vs Leon Shahbazyan",
+   "a": "Niko Price",
+   "b": "Leon Shahbazyan",
+   "segment": "Preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Leon Shahbazyan",
+    "side": "b",
+    "method": "SUB",
+    "round": 1,
+    "confidence": 0.63,
+    "why": "Eleven of Shahbazyan's finishes are first-round submissions, and a 37-year-old Price with a bad knee, four straight losses and a submission loss to Chiesa is there to be taken down early. R1, before Price's swinging lands."
+   },
+   "model": {
+    "p_a": 0.3633,
+    "winner": "Leon Shahbazyan",
+    "method": "SUB",
+    "p_win": 0.6367,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2123,
+      "SUB": 0.0163,
+      "DEC": 0.1848
+     },
+     "b": {
+      "KO/TKO": 0.0652,
+      "SUB": 0.4462,
+      "DEC": 0.0752
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2521,
+    "round_chances": {
+     "KO/TKO": [
+      0.601,
+      0.251,
+      0.148
+     ],
+     "SUB": [
+      0.565,
+      0.27,
+      0.165
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      11,
+      0,
+      1
+     ],
+     "losses": [
+      4,
+      3,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.4324
+  },
+  {
+   "bout": "Felipe Franco vs Brendson Ribeiro",
+   "a": "Felipe Franco",
+   "b": "Brendson Ribeiro",
+   "segment": "Preliminary card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Felipe Franco",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.78,
+    "why": "Ten of Franco's finishes came in round one, and Ribeiro, a short-notice replacement on a losing run, has been stopped in round one seven times. R1."
+   },
+   "model": {
+    "p_a": 0.831,
+    "winner": "Felipe Franco",
+    "method": "KO/TKO",
+    "p_win": 0.831,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.4723,
+      "SUB": 0.1637,
+      "DEC": 0.161
+     },
+     "b": {
+      "KO/TKO": 0.0241,
+      "SUB": 0.0712,
+      "DEC": 0.1078
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3094,
+    "round_chances": {
+     "KO/TKO": [
+      0.655,
+      0.243,
+      0.102
+     ],
+     "SUB": [
+      0.618,
+      0.262,
+      0.12
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      10,
+      1,
+      0
+     ],
+     "losses": [
+      7,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.7559
+  },
+  {
+   "bout": "Allen Frye Jr. vs RJ Harris",
+   "a": "Allen Frye Jr.",
+   "b": "RJ Harris",
+   "segment": "Preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "RJ Harris",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.7,
+    "why": "Harris is unbeaten and active; Frye has been pulled from two fights this year. Frye has never been finished, so Harris on the cards rather than a knockout."
+   },
+   "model": {
+    "p_a": 0.3511,
+    "winner": "RJ Harris",
+    "method": "DEC",
+    "p_win": 0.6489,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2027,
+      "SUB": 0.0208,
+      "DEC": 0.112
+     },
+     "b": {
+      "KO/TKO": 0.1782,
+      "SUB": 0.1411,
+      "DEC": 0.3452
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3452,
+    "round_chances": {
+     "KO/TKO": [
+      0.548,
+      0.318,
+      0.134
+     ],
+     "SUB": [
+      0.5,
+      0.343,
+      0.157
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      2,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.272
+  },
+  {
+   "bout": "Alice Pereira vs Darya Zheleznyakova",
+   "a": "Alice Pereira",
+   "b": "Darya Zheleznyakova",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Alice Pereira",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.56,
+    "why": "Following the model. Four of Pereira's finishes came in round one (latest a stepping-knee KO), and Zheleznyakova has been stopped in round one twice. R1."
+   },
+   "model": {
+    "p_a": 0.5663,
+    "winner": "Alice Pereira",
+    "method": "KO/TKO",
+    "p_win": 0.5663,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.279,
+      "SUB": 0.0765,
+      "DEC": 0.1881
+     },
+     "b": {
+      "KO/TKO": 0.0727,
+      "SUB": 0.0181,
+      "DEC": 0.3656
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1607,
+    "round_chances": {
+     "KO/TKO": [
+      0.576,
+      0.298,
+      0.126
+     ],
+     "SUB": [
+      0.531,
+      0.322,
+      0.147
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      2,
+      0
+     ],
+     "losses": [
+      2,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5627
+  },
+  {
+   "bout": "Ernesta Kareckaitė vs Melissa Gatto",
+   "a": "Ernesta Kareckaitė",
+   "b": "Melissa Gatto",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Melissa Gatto",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "Following the model on a near-even fight. Kareckaitė has never been finished, so a decision."
+   },
+   "model": {
+    "p_a": 0.417,
+    "winner": "Melissa Gatto",
+    "method": "DEC",
+    "p_win": 0.583,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0379,
+      "SUB": 0.0178,
+      "DEC": 0.3548
+     },
+     "b": {
+      "KO/TKO": 0.1752,
+      "SUB": 0.0734,
+      "DEC": 0.3409
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3409,
+    "round_chances": {
+     "KO/TKO": [
+      0.546,
+      0.283,
+      0.171
+     ],
+     "SUB": [
+      0.5,
+      0.308,
+      0.193
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      2
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.4892
+  }
+ ],
+ "graded": false
+}
