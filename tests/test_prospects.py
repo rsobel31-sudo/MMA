@@ -158,3 +158,14 @@ def test_winning_record_required():
 def test_unrated_ladder_grows_with_experience():
     from mma_predictor.prospects import unrated_pct
     assert [unrated_pct(n) for n in (1, 2, 3, 4, 5, 6, 12)] == [0.15, 0.15, 0.15, 0.25, 0.40, 0.50, 0.50]
+
+
+def test_a_fight_fight_matrix_has_not_caught_up_on_is_not_a_disagreement():
+    # Fight Matrix still shows 6-0 up to its last fight; Sherdog (refreshed after the fight) has two newer bouts.
+    r = row(wins=6, losses=0, last_fight="2026-06-01")
+    s = sd(n_w=6)
+    s["bouts"] = [dict(b, date=f"2026-0{i + 1}-01") for i, b in enumerate(s["bouts"])]
+    s["bouts"] += [{"date": "2026-08-01", "result": "loss", "event": "FCR 31", "method": "KO/TKO", "opponent": "z", "round": 2},
+                   {"date": "2026-09-01", "result": "win", "event": "FCR 32", "method": "SUB", "opponent": "w", "round": 1}]
+    chk = PR.verify(r, {"stats": {"Birth Date": "2003-01-01"}, "bouts": []}, s, TODAY)
+    assert chk["verified"] and chk["eligible"] and chk["fights"] == 8

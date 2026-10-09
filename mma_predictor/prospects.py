@@ -164,7 +164,13 @@ def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict
     if sd_w <= sd_l:
         issues.append(f"no winning record ({sd_w}-{sd_l})")
     fm_n = row["wins"] + row["losses"] + row["draws"]
-    if abs(sd_n - fm_n) > 1 or abs(sd_w - row["wins"]) > 1:
+    # Fight Matrix updates on its own schedule, so a fight Sherdog already has (we refresh a prospect's Sherdog
+    # record after every fight) isn't a disagreement: compare the records only up to Fight Matrix's last fight.
+    fm_last = str(row.get("last_fight") or "")[:10]
+    upto = [b for b in sd_bouts if not fm_last or str(b.get("date") or "")[:10] <= fm_last]
+    up_n = len([b for b in upto if b.get("result") in ("win", "loss", "draw", "nc")])
+    up_w = len([b for b in upto if b.get("result") == "win"])
+    if all(abs(n - fm_n) > 1 or abs(w - row["wins"]) > 1 for n, w in ((sd_n, sd_w), (up_n, up_w))):
         issues.append(f"records disagree (Fight Matrix {row['wins']}-{row['losses']}-{row['draws']}, Sherdog {sd_w} wins in {sd_n})")
     return {"eligible": not issues, "verified": not any("disagree" in i or "no " in i for i in issues), "issues": issues,
             "dob": dob, "age": round(age, 1) if age is not None else None, "fights": sd_n, "former": former if st == "left" else []}
@@ -477,6 +483,16 @@ def add_owner_pick(name: str, sherdog_url: str, note: str = "", added: Optional[
     return True
 
 
+def newer_org(c: Dict[str, object], last: Dict[str, object]) -> str:
+    """Fight Matrix's last promotion, unless the stored Sherdog record has a newer fight (it is refreshed after
+    every prospect fight): then that fight's promotion."""
+    if last.get("date") and str(last["date"])[:10] > str(c.get("last_fight") or "")[:10] and last.get("event"):
+        from .regional import promotion
+
+        return promotion(last["event"])
+    return c.get("last_org") or ""
+
+
 def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], today: date) -> List[Dict[str, object]]:
     """Eligible, two-source-verified prospects, scored and ranked."""
     # Fight Matrix records first: when two records are the same person, keep the one with a rating.
@@ -508,7 +524,7 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "age": chk.get("age"), "dob": chk.get("dob"), "wins": rec["W"], "losses": rec["L"], "draws": rec["D"], "nc": rec["NC"],
             "finish_rate": round(len(fin) / len(wins), 3) if wins else 0.0, "ko": sum(b["method"] == "KO/TKO" for b in wins),
             "sub": sum(b["method"] == "SUB" for b in wins), "last_fight": last.get("date") or c.get("last_fight"),
-            "promotion": c.get("last_org") or "", "last_event": last.get("event", ""), "country": c.get("country") or sd.get("nationality", ""),
+            "promotion": newer_org(c, last), "last_event": last.get("event", ""), "country": c.get("country") or sd.get("nationality", ""),
             "nationality": sd.get("nationality", ""), "team": sd.get("team", "") or (c.get("fm", {}).get("stats", {}) or {}).get("Association", ""),
             "height_cm": sd.get("height_cm"), "reach_cm": sd.get("reach_cm"), "stance": sd.get("stance"), "nickname": sd.get("nickname", ""),
             "recent": [{k: b[k] for k in ("date", "opponent", "result", "method", "round", "event")} for b in bouts[:6]],

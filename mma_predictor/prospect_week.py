@@ -16,7 +16,7 @@ import json
 import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from .prospects import is_major
 
@@ -26,6 +26,7 @@ SHERDOG = "https://www.sherdog.com"
 UA = "Mozilla/5.0 (compatible; mma-predictor/0.1; personal research)"
 FIGHTS = ROOT / "data" / "prospects" / "fights.jsonl"
 PROSPECTS = ROOT / "app" / "prospects.json"
+CANDIDATES = ROOT / "data" / "prospects" / "candidates.jsonl"
 ROW = re.compile(r"<tr.*?</tr>", re.S)
 FIGHTER = re.compile(r'href="(/fighter/[^"]+)"')
 
@@ -94,12 +95,13 @@ def find_bouts(fetcher, prospects: Dict[str, dict], start: date, end: date, log=
     return out
 
 
-def grade(fetcher, bouts: List[dict], today: date, log=print) -> int:
-    """Fill in results for bouts whose date has passed, from the prospect's Sherdog page."""
+def grade(fetcher, bouts: List[dict], today: date, log=print, pages: Optional[Dict[str, object]] = None) -> int:
+    """Fill in results for bouts whose date has passed, from the prospect's Sherdog page (fetched pages are
+    left in `pages`, so the prospect's stored record can be refreshed from them)."""
     from .sources import sherdog
 
     done = 0
-    pages: Dict[str, object] = {}
+    pages = {} if pages is None else pages
     for b in bouts:
         if b.get("result") or date.fromisoformat(b["date"]) >= today:
             continue
@@ -126,6 +128,43 @@ def grade(fetcher, bouts: List[dict], today: date, log=print) -> int:
     return done
 
 
+def refresh_records(fetcher, bouts: List[dict], pages: Dict[str, object], today: date, log=print) -> List[str]:
+    """After a prospect fights, store their fresh Sherdog record (the prospect list is built from the stored
+    one), so the record, recent fights and score reflect the result. Covers every result in the last 60 days
+    whose fight isn't in the stored record yet."""
+    from .prospects import sherdog_summary
+    from .sources import sherdog
+
+    if not CANDIDATES.exists():
+        return []
+    cands = [json.loads(l) for l in CANDIDATES.read_text().splitlines() if l.strip()]
+    by_url = {(c.get("sherdog") or {}).get("url", "").rstrip("/"): c for c in cands if c.get("sherdog")}
+    since = (today - timedelta(days=60)).isoformat()
+    done = []
+    for b in bouts:
+        if b.get("result") in (None, "not held") or b["date"] < since:
+            continue
+        c = by_url.get(b["prospect_url"].rstrip("/"))
+        if c is None or any(abs((date.fromisoformat(x["date"][:10]) - date.fromisoformat(b["date"])).days) <= 1
+                            for x in c["sherdog"].get("bouts", []) if x.get("date")):
+            continue
+        try:
+            if b["prospect_url"] not in pages:
+                pages[b["prospect_url"]] = sherdog.parse_fighter(fetcher.get(b["prospect_url"], cache=False, fresh=True), b["prospect_url"])
+        except Exception as exc:  # noqa: BLE001
+            log(f"  {b['prospect']}: {exc}")
+            continue
+        fresh = sherdog_summary(pages[b["prospect_url"]])
+        if len(fresh["bouts"]) < len(c["sherdog"].get("bouts", [])):
+            continue  # a short or broken page: keep what we have
+        c["sherdog"] = fresh
+        c["sherdog_refreshed"] = today.isoformat()
+        done.append(c["name"])
+    if done:
+        CANDIDATES.write_text("".join(json.dumps(c, ensure_ascii=False) + "\n" for c in cands))
+    return done
+
+
 def cmd_prospect_week(args) -> int:
     from .sources.common import Fetcher
 
@@ -139,7 +178,9 @@ def cmd_prospect_week(args) -> int:
     found = find_bouts(f, prospects, today - timedelta(days=1), today + timedelta(days=args.days))
     new = [b for b in found if key(b) not in have]
     known += new
-    graded = grade(f, known, today)
+    pages: Dict[str, object] = {}
+    graded = grade(f, known, today, pages=pages)
+    refreshed = refresh_records(f, known, pages, today)
     known.sort(key=lambda b: (b["date"], b.get("p4p_rank") or 9999))
     FIGHTS.parent.mkdir(parents=True, exist_ok=True)
     FIGHTS.write_text("".join(json.dumps(b, ensure_ascii=False) + "\n" for b in known))
@@ -148,6 +189,13 @@ def cmd_prospect_week(args) -> int:
     data["week"] = {"fetched": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), "upcoming": upcoming,
                     "recent": sorted(recent, key=lambda b: b["date"], reverse=True)}
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+    if refreshed:
+        # Re-score and re-rank with the new results (the build keeps this file's "week" section).
+        from types import SimpleNamespace
+
+        from .prospects import cmd_build
+        cmd_build(SimpleNamespace(candidates=str(CANDIDATES), noted=str(CANDIDATES.with_name("noted.json")), out=str(PROSPECTS)))
+        print(f"Refreshed {len(refreshed)} prospects' records after their fights and re-ranked: {', '.join(refreshed)}")
     print(f"{len(found)} prospect bouts in the next {args.days} days ({len(new)} new); {graded} results filled in; "
           f"{len(recent)} results in the last 60 days")
     for b in [b for b in upcoming if (b.get("p4p_rank") or 9999) <= 200][:25]:  # the page shows the top 200 (plus starred)
