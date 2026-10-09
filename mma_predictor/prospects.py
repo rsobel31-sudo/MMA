@@ -585,7 +585,10 @@ def cmd_build(args) -> int:
         e["best_rank"] = min(e.get("best_rank") or p["p4p_rank"], p["p4p_rank"])
     lpath.write_text(json.dumps(listed, ensure_ascii=False, indent=0, sort_keys=True))
     cpath = Path(args.candidates).with_name("signing_checks.json")
-    signed = signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {}, booked)
+    # Signed! is for the UFC, the premier promotion. Other majors' signings still take a prospect off the
+    # rankings (and still count as hits for whoever called them), but aren't listed there.
+    signed = [x for x in signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {},
+                                  {u: b for u, b in booked.items() if b.get("promotion", "UFC") == "UFC"}) if x["promotion"] == "UFC"]
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
            "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
