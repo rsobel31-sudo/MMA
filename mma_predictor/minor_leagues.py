@@ -20,6 +20,7 @@ from . import regional as R
 
 OUT = Path("app/minor_leagues.json")
 # Not minor leagues: the UFC's own feeder shows (it runs them, and winners go straight to UFC contracts).
+MIN_BOUTS = 2  # bouts in a promotion before a fighter counts as one of its fighters
 FEEDERS = {"Dana White's Contender Series", "Road to UFC"}
 TIERS = [(1950, 1, "Elite"), (1850, 2, "Strong"), (1750, 3, "Solid"), (1650, 4, "Developmental"), (0, 5, "Local")]
 
@@ -106,19 +107,27 @@ def build(today: date = None) -> dict:
         if r.get("url"):
             names[r["url"]] = r["name"]
     names.update({u: r["name"] for u, r in recs.items()})
-    # Each fighter's first major bout, and their major record.
+    # A fighter belongs to a promotion once they've fought there at least twice (MIN_BOUTS): one appearance
+    # doesn't make someone a Bellator fighter. A fighter reached the majors with their first bout in the first
+    # major promotion they belong to; their major record counts every major bout.
+    major_bouts: Dict[str, list] = {}
+    for b in bs:
+        if PR.is_major(b.event):
+            br = brand(R.promotion(b.event))
+            for f, s in ((b.a, b.score_a), (b.b, 1 - b.score_a)):
+                major_bouts.setdefault(f, []).append((b.day, br, s))
     first_major: Dict[str, tuple] = {}
     major_rec: Dict[str, List[int]] = {}
     ufc_rec: Dict[str, List[int]] = {}  # the UFC is the premier promotion: its alumni are listed first
-    for b in bs:
-        if not PR.is_major(b.event):
+    for f, xs in major_bouts.items():
+        n = Counter(br for _, br, _ in xs)
+        home = [x for x in xs if n[x[1]] >= MIN_BOUTS]
+        if not home:
             continue
-        for f, s in ((b.a, b.score_a), (b.b, 1 - b.score_a)):
-            first_major.setdefault(f, (b.day, R.promotion(b.event)))
-            for rec in (major_rec, ufc_rec) if brand(R.promotion(b.event)) == "UFC" else (major_rec,):
-                w = rec.setdefault(f, [0, 0])
-                w[0] += s == 1.0
-                w[1] += s == 0.0
+        first_major[f] = min(home)[:2]
+        major_rec[f] = [sum(s == 1.0 for *_, s in xs), sum(s == 0.0 for *_, s in xs)]
+        if n["UFC"] >= MIN_BOUTS:
+            ufc_rec[f] = [sum(s == 1.0 for _, br, s in xs if br == "UFC"), sum(s == 0.0 for _, br, s in xs if br == "UFC")]
     # Record in each promotion before reaching the majors; last regional promotion per fighter.
     here: Dict[str, Dict[str, List[int]]] = {}
     last_prom: Dict[str, tuple] = {}
@@ -145,11 +154,11 @@ def build(today: date = None) -> dict:
         prom = p["promotion"]
         alumni = []
         for f, (w, l) in here.get(prom, {}).items():
-            if f not in first_major:
+            if f not in first_major or w + l < MIN_BOUTS:
                 continue
             mw, ml = major_rec[f]
             uw, ul = ufc_rec.get(f, (0, 0))
-            first = brand(first_major[f][1])
+            first = first_major[f][1]
             alumni.append({"name": names.get(f, f), "here": f"{w}-{l}",
                            "went_to": first if first == "UFC" or f not in ufc_rec else f"{first} → UFC",
                            "major": f"{mw}-{ml}", "ufc": f"{uw}-{ul}" if f in ufc_rec else None,
