@@ -90,7 +90,7 @@ def main() -> int:
         return 1
     sheet = json.loads(sheet_path.read_text())
     lock = sheet["event_starts"]
-    as_of = (datetime.fromisoformat(lock) - timedelta(hours=2)).astimezone(timezone.utc).replace(microsecond=0).isoformat()
+    as_of = (datetime.fromisoformat(lock) - timedelta(hours=4)).astimezone(timezone.utc).replace(microsecond=0).isoformat()
     print(f"lock {lock} · placing as of {as_of}")
     board = L.board_from_sheet(sheet)
     L.save_board(board, out / "boards")
@@ -115,12 +115,13 @@ def main() -> int:
     rc = PC.cmd_place(SimpleNamespace(sheet=str(sheet_path), bets=str(spec), ledger=str(ledger), any_date=False, as_of=as_of))
     if rc:
         failures.append("picks place")
-    # Late bets must be refused.
-    try:
-        P.Ledger(ledger).place({"name": "late", "date": a.date}, {}, [], "", event_starts=lock, placed_at=lock)
-        failures.append("a bet at the lock time was accepted")
-    except ValueError:
-        print("late bet refused ✓")
+    # Late bets must be refused: at the lock, and inside the last three hours before it.
+    for late in (lock, (datetime.fromisoformat(lock) - timedelta(hours=2)).isoformat()):
+        try:
+            P.Ledger(ledger).place({"name": "late", "date": a.date}, {}, [], "", event_starts=lock, placed_at=late)
+            failures.append(f"a bet at {late} was accepted")
+        except ValueError:
+            print(f"late bet at {late} refused ✓")
 
     step("Friday · AI Picks: draft and lock every bout")
     rc = C.cmd_draft(SimpleNamespace(**common, sheet=str(sheet_path)))

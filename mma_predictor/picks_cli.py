@@ -42,6 +42,9 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+FRESH_HOURS = 6  # a sheet older than this is stale: its prices may have moved
+
+
 def _lock_time(day: str, in_us: bool) -> str:
     """When betting on a card locks: 5:00 PM Eastern for US cards, 8:00 AM Eastern elsewhere (DST-aware).
     Stored in UTC ("+00:00") because lock checks compare these strings with UTC timestamps."""
@@ -263,19 +266,32 @@ def cmd_place(args) -> int:
         print("Bankroll is bust: no bets can be placed.")
         return 3
     today = date.fromisoformat(args.as_of[:10]) if args.as_of else date.today()
-    days = (date.fromisoformat(sheet["date"]) - today).days
-    if not 0 <= days <= 3 and not args.any_date:
-        print(f"{sheet['event']} is {days} days away: picks are for this weekend's card only.")
+    if date.fromisoformat(sheet["date"]) < today:
+        print(f"{sheet['event']} has already happened.")
+        return 1
+    # Early bets are allowed (any day up to 3 hours before the card), but only at the price on offer now: the
+    # sheet must be fresh, so a bet can't be recorded at a stale, better price.
+    now = datetime.fromisoformat(args.as_of) if args.as_of else datetime.now(timezone.utc)
+    age = (now - datetime.fromisoformat(sheet["fetched_at"])).total_seconds() / 3600
+    if age > FRESH_HOURS and not args.any_date:
+        print(f"The sheet's prices are {age:.1f} hours old: run `picks sheet` again for current FanDuel prices.")
         return 1
     by_id = {m["id"]: m for m in sheet["markets"]}
-    week = led.place({"name": sheet["event"], "date": sheet["date"], "url": sheet["odds_url"], "results_url": sheet["results_url"]},
-                     by_id, spec.get("picks", []), spec.get("note", ""), event_starts=sheet.get("event_starts"), placed_at=args.as_of or None)
+    try:
+        week = led.place({"name": sheet["event"], "date": sheet["date"], "url": sheet["odds_url"], "results_url": sheet["results_url"]},
+                         by_id, spec.get("picks", []), spec.get("note", ""), event_starts=sheet.get("event_starts"), placed_at=args.as_of or None)
+    except ValueError as exc:
+        print(f"Not placed: {exc}")
+        return 1
     week["sheet"] = str(Path(args.sheet))
     week["odds_urls"] = sheet.get("odds_urls", [sheet["odds_url"]])
     week["sheet_fetched_at"] = sheet["fetched_at"]
+    week["placements"][-1].update(sheet=str(Path(args.sheet)), sheet_fetched_at=sheet["fetched_at"])
     led.save()
-    print(f"{week['event']}: {len(week['bets'])} bets, ${week['staked']:.2f} staked of ${week['available_before']:.2f}")
-    for b in week["bets"]:
+    new = set(week["placements"][-1]["bets"])
+    print(f"{week['event']}: {len(new)} new bets, ${week['placements'][-1]['staked']:.2f} staked; "
+          f"{len(week['bets'])} bets on this card in all (${week['staked']:.2f}); ${led.available():.2f} still available")
+    for b in (b for b in week["bets"] if b["id"] in new):
         print(f"  ${b['stake']:.2f} {b['kind']} {' + '.join(l['selection'] for l in b['legs'])} @ {b['odds']:+d} (to win ${b['to_win']:.2f}, EV {b['ev']:+.1%})")
     return 0
 
@@ -508,7 +524,7 @@ def register(sub, data_arg) -> None:
     q = ps.add_parser("place", help="record this week's bets from a picks file")
     common(q)
     q.add_argument("--sheet", required=True)
-    q.add_argument("--any-date", action="store_true", help="allow a card more than 3 days out")
+    q.add_argument("--any-date", action="store_true", help="allow a sheet older than 6 hours (replays only)")
     q.add_argument("--as-of", default="", help="UTC timestamp to place at (replays only)")
     q.add_argument("--bets", required=True, help='{"note": "...", "picks": [{"legs": [market ids], "stake": 5, "reasoning": "..."}]}')
     q.set_defaults(func=cmd_place)

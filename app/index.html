@@ -1312,8 +1312,9 @@ button.namelink:hover { color: var(--red); }
     if (key === "ai_picks") {
       return { title: "How AI Bets works", key, rows: [
         ["Bankroll", "$100 to start. Every settled bet adds its profit or loses its stake; there is no top-up. Minimum bet $1: below that the bankroll is bust and an alert shows here."],
-        ["Prices", "FanDuel's odds as listed on BestFightOdds when the bets are placed (Friday). A bet is recorded at that exact price, so nothing can be picked after the fact."],
-        ["How Claude decides", "Each Friday a betting sheet prices every FanDuel market on the card: our win probability (the model blended with the market, as the backtest found best), method and round props from the finish model (calibrated to real decision rates, then shrunk halfway to FanDuel's price), edge, expected value and a Kelly stake. Claude then bets at its own discretion: all in, a little, or nothing."],
+        ["Prices", "FanDuel's odds as listed on BestFightOdds at the moment a bet is placed, from prices fetched in the last six hours. A bet is recorded at that exact price, so nothing can be picked after the fact."],
+        ["When", "Any time up to 3 hours before the card starts. Most bets go in on Friday after the scouting; when a line looks clearly wrong earlier in the week (moneyline or prop), Claude can bet it then. Every bet is locked once placed: later bets on the same card only add to it, never change or cancel one, and each bet shows when it went in."],
+        ["How Claude decides", "Before each bet a betting sheet prices every FanDuel market on the card (moneylines and every prop): our win probability (the model blended with the market, as the backtest found best), method and round props from the finish model (calibrated to real decision rates, then shrunk halfway to FanDuel's price), edge, expected value and a Kelly stake. Claude then bets at its own discretion: all in, a little, or nothing."],
         ["Grading", "Results must agree on two sources (the Wikipedia event page and Sherdog's records) before a bet is settled. Draws and no contests refund moneylines; a void leg drops out of a parlay."],
         ["Honesty", "Bets are committed to the project's history before the fights, and the record keeps losses, passes and closing-line value (did we beat FanDuel's final price?). Several cards are needed before the record says anything about skill."]] };
     }
@@ -3031,7 +3032,8 @@ button.namelink:hover { color: var(--red); }
         const [lab, cls] = STATUS[b.status] || STATUS.open;
         const legs = b.legs.map((l) => `<div>${esc(l.selection)} <span class="muted" style="font-size:12px">${esc(l.bout)}${b.legs.length > 1 ? ` · ${amer(l.odds)}` : ""}${l.grade && b.legs.length > 1 ? ` · ${esc(l.grade)}` : ""}</span></div>`).join("");
         const fd = b.legs.reduce((x, l) => x * (l.p_fanduel || 0), 1);
-        return `<tr><td>${b.kind === "parlay" ? `<span class="pill">${b.legs.length}-leg parlay</span>` : ""}${legs}${b.reasoning ? `<div class="pk-why">${esc(b.reasoning)}</div>` : ""}</td>
+        const early = (w.placements || []).length > 1 && b.placed_at ? `<div class="muted num" style="font-size:12px">placed ${esc(when(b.placed_at))}</div>` : "";
+        return `<tr><td>${b.kind === "parlay" ? `<span class="pill">${b.legs.length}-leg parlay</span>` : ""}${legs}${early}${b.reasoning ? `<div class="pk-why">${esc(b.reasoning)}</div>` : ""}</td>
           <td class="num" data-l="Odds">${amer(b.odds)}</td><td class="num" data-l="Stake">${money(b.stake)}</td><td class="num" data-l="To win">${money(b.to_win)}</td>
           <td class="num" data-l="Ours / FanDuel">${(b.p * 100).toFixed(0)}% / ${(fd * 100).toFixed(0)}%<div class="muted" style="font-size:12px">EV ${b.ev >= 0 ? "+" : ""}${(b.ev * 100).toFixed(1)}%</div></td>
           <td data-l="Result"><span class="tier ${cls}">${lab}</span>${b.status !== "open" ? `<div class="num" style="font-size:13px;margin-top:3px">${signed(b.profit)}</div>` : ""}${b.clv != null ? `<div class="muted num" style="font-size:12px" title="Price we got vs FanDuel's closing price">CLV ${b.clv >= 0 ? "+" : ""}${(b.clv * 100).toFixed(1)}%</div>` : ""}</td></tr>`;
@@ -3040,7 +3042,7 @@ button.namelink:hover { color: var(--red); }
   function weekPanel(w, open = true) {
     const result = w.settled && w.bets.length ? `<span class="pill num">${signed(w.bets.reduce((x, b) => x + (b.profit || 0), 0))}</span>` : w.bets.length ? '<span class="pill">Awaiting results</span>' : "";
     return `<section class="panel pk-week"><div class="toolbar" style="justify-content:space-between"><div><h3 style="margin:0">${esc(w.event)}</h3>
-        <div class="muted num" style="font-size:13px">${esc(w.event_date)} · bets placed ${esc(when(w.placed_at))} at FanDuel prices · ${money(w.staked)} of ${money(w.available_before)} staked</div></div>${result}</div>
+        <div class="muted num" style="font-size:13px">${esc(w.event_date)} · ${(w.placements || []).length > 1 ? `bets placed in ${w.placements.length} goes (${w.placements.map((p) => esc(when(p.placed_at))).join("; ")})` : `bets placed ${esc(when(w.placed_at))}`} at FanDuel prices then · ${money(w.staked)} staked</div></div>${result}</div>
       ${w.note ? `<div class="pk-note"><div class="label">The read</div><p>${esc(w.note)}</p></div>` : ""}
       ${betRows(w)}</section>`;
   }
@@ -3064,7 +3066,7 @@ button.namelink:hover { color: var(--red); }
         <button type="button" data-picks-sub="week" aria-pressed="${P.sub === "week"}">This week</button>
         <button type="button" data-picks-sub="record" aria-pressed="${P.sub === "record"}">Track record</button></span>
         ${infoBtn("ai_picks", "How AI Bets works")}</div>`;
-    const intro = `<section class="panel"><h2 style="margin:0 0 6px">AI Bets</h2><p class="muted" style="margin:0;font-size:14px;max-width:70ch">Claude bets a $100 bankroll on the UFC like a real bettor: FanDuel's odds, any bet it likes (straight, parlays, method, rounds, over/unders), as much or as little as it wants. Picks go in every Friday before the card and are graded from results two sources agree on.</p></section>`;
+    const intro = `<section class="panel"><h2 style="margin:0 0 6px">AI Bets</h2><p class="muted" style="margin:0;font-size:14px;max-width:70ch">Claude bets a $100 bankroll on the UFC like a real bettor: FanDuel's odds, any bet it likes (straight, parlays, method, rounds, over/unders), as much or as little as it wants. Bets go in any time up to 3 hours before the card (most on Friday, earlier when a line looks wrong), are locked once placed, and are graded from results two sources agree on.</p></section>`;
     if (!P.loaded) { view.innerHTML = `<div class="stack">${intro}${sub}<div class="loading">Loading the ledger…</div></div>`; return; }
     if (!s && P.noDb) {
       view.innerHTML = `<div class="stack">${intro}${sub}<div class="empty">The picks ledger lives in this page's database, which isn't available in this view. Open the page signed in to claude.ai to see it.</div></div>`;

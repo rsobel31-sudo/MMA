@@ -2,7 +2,7 @@
 
 Two separate games, judged separately:
 
-- **AI Bets** (the `picks` command): Claude bets a $100 bankroll on UFC cards at FanDuel's prices. This judges betting: prices, staking, bankroll. Bets go in every Friday before the card; results are graded on Sunday. The ledger (`data/ai_picks/ledger.json`) is the record; the page's **AI Bets** tab reads a copy from the page database.
+- **AI Bets** (the `picks` command): Claude bets a $100 bankroll on UFC cards at FanDuel's prices. This judges betting: prices, staking, bankroll. Bets go in any time up to 3 hours before the card (most on Friday; earlier when a line is clearly wrong, see "Early bets"); results are graded on Sunday. The ledger (`data/ai_picks/ledger.json`) is the record; the page's **AI Bets** tab reads a copy from the page database.
 - **AI Picks** (the `card-picks` command): no money. Claude picks every bout on the card, the winner and the method (KO/TKO, SUB, DEC). This judges reading fights, beside the model's own pick for each bout, and what it learns goes back into the model. See "AI Picks: the pick'em" below.
 
 (The data folders and the database collection kept their old name, `ai_picks`, for both.)
@@ -29,7 +29,8 @@ Time zone: the site runs on US Eastern time (ET). Routines are scheduled in Amer
 ## Rules of the game
 
 - The bankroll starts at $100.00 with no top-ups. The minimum stake is $1.00. Below that with nothing pending, the bankroll is **bust**: no more bets, and an alert shows on the page.
-- The book is FanDuel, as listed on BestFightOdds. A bet is recorded at the sheet's price only. `picks place` refuses markets that aren't on the sheet, stakes above the available bankroll, bets after the event starts, and cards more than 3 days out.
+- The book is FanDuel, as listed on BestFightOdds. A bet is recorded at the sheet's price only. `picks place` refuses markets that aren't on the sheet, stakes above the available bankroll, a sheet whose prices are more than 6 hours old, and any bet in the last 3 hours before the card starts (the card starts at 5:00 PM ET for US cards, 8:00 AM ET elsewhere).
+- Bets on a card can go in more than once. Every placed bet is locked: it is never changed, cancelled or re-priced, and later bets only add to the card. Each bet keeps its own timestamp and price, and the ledger is committed after every placement, which is what timestamps it.
 - Any bet type FanDuel offers on the sheet is allowed:
   - moneylines
   - method (KO/TKO, submission, decision) and inside the distance
@@ -102,6 +103,23 @@ Use `"picks": []` to pass, keeping the note. Then place the bets:
 ```bash
 python -m mma_predictor picks place --sheet data/ai_picks/sheets/<file>.json --bets data/ai_picks/bets/<file>.json
 ```
+
+## Early bets
+
+Lines open 1 to 2 weeks before a card and move as money comes in. When a line is clearly wrong before Friday, bet it then, before it moves; don't wait.
+
+- Check moneylines and every prop on the sheet: method, inside the distance, rounds, starts round N, over/under. Props are often the softest prices early in the week.
+- Bet early only for a real, explained edge: a reason the price is wrong (style matchup, news the market hasn't priced, a scouting read), not just a positive EV number. Size it as on Friday (fractional Kelly, smaller for thin modelling such as round props).
+- Same commands as Friday, on a fresh sheet (`picks sheet` first: `picks place` refuses prices more than 6 hours old):
+
+```bash
+python -m mma_predictor picks sheet --data data/verified
+python -m mma_predictor picks place --sheet data/ai_picks/sheets/<file>.json --bets data/ai_picks/bets/<file>-early-<weekday>.json
+```
+
+- Then publish (`picks sync`, ArtifactData batch) and commit, exactly as on Friday. Commit right away: the commit timestamps the bet.
+- On Friday, the card's earlier bets stay as they are. Friday's bets are added to them (a new bets file), and the stake guide applies to what's still available.
+- Passing early is the default: most weeks nothing is worth betting before Friday's news.
 
 ## Publish to the page
 

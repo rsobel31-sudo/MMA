@@ -1,5 +1,7 @@
 """AI Picks: FanDuel parsing, grading, parlays and bankroll rules."""
 
+import json
+
 import pytest
 
 from mma_predictor import picks as P
@@ -87,8 +89,24 @@ def test_ledger_rules(tmp_path):
         led.place(ev, _sheet(), [{"legs": ["1:ml:a", "1:total:True:1.5"], "stake": 5}], "", placed_at="2026-10-02T00:00:00+00:00")
     with pytest.raises(ValueError, match="sheet"):
         led.place(ev, _sheet(), [{"legs": ["9:ml:a"], "stake": 5}], "", placed_at="2026-10-02T00:00:00+00:00")
-    with pytest.raises(ValueError, match="before the event"):
+    with pytest.raises(ValueError, match="3 hours before"):
         led.place(ev, _sheet(), [{"legs": ["1:ml:a"], "stake": 5}], "", event_starts="2026-10-03T12:00:00+00:00", placed_at="2026-10-03T13:00:00+00:00")
+    with pytest.raises(ValueError, match="3 hours before"):  # inside the last three hours
+        led.place(ev, _sheet(), [{"legs": ["1:ml:a"], "stake": 5}], "", event_starts="2026-10-03T12:00:00+00:00", placed_at="2026-10-03T09:30:00+00:00")
+
+
+def test_early_bets_add_to_the_card_and_never_change(tmp_path):
+    led = P.Ledger(tmp_path / "l.json")
+    ev, starts = {"name": "UFC 999", "date": "2026-10-03"}, "2026-10-03T21:00:00+00:00"
+    early = led.place(ev, _sheet(), [{"legs": ["1:ml:a"], "stake": 10, "reasoning": "line too long"}], "Tuesday: one early bet",
+                      event_starts=starts, placed_at="2026-09-29T17:00:00+00:00")
+    first = json.loads(json.dumps(early["bets"][0]))
+    week = led.place(ev, _sheet(), [{"legs": ["2:ml:a"], "stake": 5}], "Friday", event_starts=starts, placed_at="2026-10-02T16:00:00+00:00")
+    assert week is early and len(led.weeks) == 1 and [b["id"] for b in week["bets"]] == ["1-1", "1-2"]
+    assert week["bets"][0] == first  # the early bet is untouched
+    assert [b["placed_at"] for b in week["bets"]] == ["2026-09-29T17:00:00+00:00", "2026-10-02T16:00:00+00:00"]
+    assert len(week["placements"]) == 2 and week["staked"] == 15 and led.available() == 85
+    assert not week["settled"]
 
 
 def test_bust(tmp_path):

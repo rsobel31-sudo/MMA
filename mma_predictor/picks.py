@@ -28,7 +28,7 @@ import math
 import re
 from collections import defaultdict
 from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
@@ -427,6 +427,9 @@ def grade_bet(bet: Dict[str, object]) -> Tuple[str, float]:
     return "won", _money(bet["stake"] * (dec - 1))
 
 
+CUTOFF_HOURS = 3  # bets close this long before the card starts
+
+
 class Ledger:
     def __init__(self, path: Path) -> None:
         self.path = Path(path)
@@ -465,15 +468,24 @@ class Ledger:
 
     def place(self, event: Dict[str, object], sheet: Dict[str, Dict[str, object]], picks: List[Dict[str, object]],
               card_note: str, event_starts: Optional[str] = None, placed_at: Optional[str] = None) -> Dict[str, object]:
-        """Record a week's bets at sheet prices. An empty `picks` list is a pass (still recorded)."""
+        """Record bets on a card at sheet prices. An empty `picks` list is a pass (still recorded).
+
+        Bets can go in any time up to CUTOFF_HOURS before the card starts, in more than one placement (an early
+        bet when a line looks wrong, then Friday's). Each placement only adds bets: a placed bet is never changed
+        or removed, and each keeps its own timestamp and price."""
         placed_at = placed_at or _now()
-        if event_starts and placed_at >= event_starts:
-            raise ValueError("bets must be placed before the event starts")
-        if any(w["event"] == event["name"] for w in self.weeks):
-            raise ValueError(f"already bet {event['name']}")
+        if event_starts:
+            cutoff = (datetime.fromisoformat(event_starts) - timedelta(hours=CUTOFF_HOURS)).isoformat()
+            if placed_at >= cutoff:
+                raise ValueError(f"bets close {CUTOFF_HOURS} hours before the card starts ({cutoff} UTC)")
+        week = next((w for w in self.weeks if w["event"] == event["name"]), None)
+        if week is not None and any(b["status"] != "open" for b in week["bets"]):
+            raise ValueError(f"{event['name']} is already being graded")
+        wn = self.weeks.index(week) + 1 if week is not None else len(self.weeks) + 1
+        done = len(week["bets"]) if week is not None else 0
         bets = []
         total = 0.0
-        for i, pk in enumerate(picks, 1):
+        for i, pk in enumerate(picks, done + 1):
             stake = round(float(pk["stake"]), 2)
             if stake < MIN_STAKE:
                 raise ValueError(f"minimum stake is ${MIN_STAKE:.2f}")
@@ -491,23 +503,33 @@ class Ledger:
                 dec *= decimal(leg["odds"])
                 p *= leg["p"]
             bets.append({
-                "id": f"{len(self.weeks) + 1}-{i}", "kind": "parlay" if len(legs) > 1 else "single", "legs": legs,
+                "id": f"{wn}-{i}", "kind": "parlay" if len(legs) > 1 else "single", "legs": legs,
                 "odds": american(dec), "decimal": round(dec, 4), "stake": stake, "to_win": _money(stake * (dec - 1)),
                 "p": round(p, 4), "ev": round(p * dec - 1, 4), "reasoning": pk.get("reasoning", ""),
-                "status": "open", "profit": 0.0,
+                "status": "open", "profit": 0.0, "placed_at": placed_at,
             })
             total += stake
         if round(total, 2) > self.available() + 1e-9:
             raise ValueError(f"stakes ${total:.2f} exceed the available bankroll ${self.available():.2f}")
-        week = {
-            "id": f"w{len(self.weeks) + 1}", "event": event["name"], "event_date": event.get("date", ""),
-            "odds_url": event.get("url", ""), "results_url": event.get("results_url", ""), "book": "FanDuel",
-            "placed_at": placed_at, "bankroll_before": self.bankroll(), "available_before": self.available(),
-            "note": card_note, "bets": bets, "staked": round(total, 2), "settled": not bets, "settled_at": None,
-        }
-        if not bets:
-            week["settled_at"] = placed_at
-        self.weeks.append(week)
+        placement = {"placed_at": placed_at, "note": card_note, "bets": [b["id"] for b in bets], "staked": round(total, 2)}
+        if week is None:
+            week = {
+                "id": f"w{wn}", "event": event["name"], "event_date": event.get("date", ""),
+                "odds_url": event.get("url", ""), "results_url": event.get("results_url", ""), "book": "FanDuel",
+                "placed_at": placed_at, "bankroll_before": self.bankroll(), "available_before": self.available(),
+                "note": card_note, "bets": [], "staked": 0.0, "settled": True, "settled_at": placed_at, "placements": [],
+            }
+            self.weeks.append(week)
+        week.setdefault("placements", [{"placed_at": week["placed_at"], "note": week["note"], "bets": [b["id"] for b in week["bets"]],
+                                         "staked": week["staked"]}] if week["bets"] or week["note"] else [])
+        week["placements"].append(placement)
+        week["bets"].extend(bets)
+        week["staked"] = round(week["staked"] + total, 2)
+        if card_note and card_note != week["note"]:
+            week["note"] = f"{week['note']}\n\n{card_note}" if week["note"] else card_note
+        week["last_placed_at"] = placed_at
+        if bets:
+            week["settled"], week["settled_at"] = False, None
         return week
 
     def settle(self, week: Dict[str, object], results: Dict[str, Optional[Result]], sources: List[str]) -> List[str]:
