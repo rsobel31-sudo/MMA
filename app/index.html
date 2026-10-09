@@ -563,6 +563,7 @@ button.namelink:hover { color: var(--red); }
     <div class="more-menu" id="more-menu" role="menu" aria-labelledby="more-btn" hidden>
       <button type="button" role="menuitem" data-tab="picks">AI Bets <span class="count alert" id="picks-alert" hidden>!</span></button>
       <button type="button" role="menuitem" data-tab="mypicks">My Bets</button>
+      <button type="button" role="menuitem" data-tab="minors">Minor Leagues</button>
       <button type="button" role="menuitem" data-tab="matchup">Create a Matchup</button>
       <button type="button" role="menuitem" data-tab="model">Model weights</button>
       <button type="button" role="menuitem" data-tab="adjust">My adjustments</button>
@@ -639,6 +640,8 @@ button.namelink:hover { color: var(--red); }
     dwcs: { data: null, loading: false },
     scout: { reports: {}, reads: {}, board: null, loaded: false },
     pros: { data: null, loading: false, error: "", view: "classes", gender: "", wc: "", q: "", unbeaten: false, open: null },
+    minors: { data: null, loading: false, error: "", q: "", tier: "", active: true, open: null },
+    opp: { data: null, loading: false },
     my: { pk: { sub: "card", docs: {}, standings: {}, lb: null, status: "", cardId: null }, sub: "bet", board: null, standings: {}, lb: null, bets: [], slip: [], stake: "", uid: null, db: null, user: null, names: {}, busy: false, msg: "", player: null, readOnly: false, loaded: false },
     m: { a: null, b: null, rounds: 3, oddsA: "", oddsB: "" },
     roster: { view: "classes", sort: "proven", dir: -1, ufcOnly: true, q: "", wc: "", gender: "", style: "", stance: "", nat: "", disc: "", ageMin: "", ageMax: "", minFights: "1", inferred: true },
@@ -846,7 +849,7 @@ button.namelink:hover { color: var(--red); }
     const focusId = document.activeElement && document.activeElement.id;
     const selStart = document.activeElement && document.activeElement.selectionStart;
     if (state.profile && state.byName.has(state.profile)) renderProfile(view);
-    else ({ matchup: renderMatchup, card: renderCard, cardpicks: renderCardPicks, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, mypickem: renderMyPickem, prospects: renderProspects, model: renderModel, adjust: renderAdjust })[state.tab](view);
+    else ({ matchup: renderMatchup, card: renderCard, cardpicks: renderCardPicks, insights: renderInsights, roster: renderRoster, picks: renderPicks, mypicks: renderMyPicks, mypickem: renderMyPickem, prospects: renderProspects, minors: renderMinors, model: renderModel, adjust: renderAdjust })[state.tab](view);
     if (focusId) {
       const el = document.getElementById(focusId);
       if (el) { el.focus(); try { if (selStart != null) el.setSelectionRange(selStart, selStart); } catch (e) { /* not a text input */ } }
@@ -897,6 +900,34 @@ button.namelink:hover { color: var(--red); }
         <a href="${esc(fm.url)}" target="_blank" rel="noopener">profile</a></p>` : ""}
     </section>`;
   }
+
+  // Opposition quality (app/opponents.json): each recent opponent's rating going in, as a percentile of every
+  // opponent faced in a major promotion since 2008 (our regional rating). Shown only on full profiles.
+  function loadOpp() {
+    const O = state.opp;
+    if (O.data || O.loading) return;
+    O.loading = true;
+    fetch("opponents.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => { O.data = d.fighters || {}; O.loading = false; render(); })
+      .catch(() => { O.loading = false; O.data = {}; });
+  }
+  function oppQuality(name) {
+    loadOpp();
+    const O = state.opp;
+    if (!O.data) return `<p class="muted" style="font-size:13px;margin:4px 0">Loading…</p>`;
+    const q = O.data[name];
+    if (!q) return `<p class="muted" style="font-size:13px;margin:4px 0">No opponent ratings for this fighter yet.</p>`;
+    const ord = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+    const bar = (v) => v == null ? `<span class="muted" title="No rated bouts before this fight">unrated</span>`
+      : `<span class="mtrack" style="display:inline-block;width:60px;vertical-align:middle"><div style="width:${v}%;background:var(--ink)"></div></span> <span class="num">${ord(v)}</span>`;
+    const sum = [q.avg5 != null ? `Last five opponents averaged the <strong>${ord(q.avg5)}</strong> percentile` : "",
+      q.major_n ? `${q.major_n} major-promotion opponent${q.major_n === 1 ? "" : "s"} averaged the <strong>${ord(q.major_avg)}</strong>` : "",
+      q.best_win ? `best win: ${esc(q.best_win[1])} (${ord(q.best_win[3])}, ${esc(q.best_win[0].slice(0, 4))})` : ""].filter(Boolean).join(" · ");
+    return `<p style="font-size:13.5px;margin:4px 0 8px">${sum}.</p>
+      <table class="recent"><thead><tr><th>Date</th><th>Res</th><th>Opponent</th><th>Strength</th><th>Where</th></tr></thead><tbody>
+      ${q.last.map((x) => `<tr><td class="num" style="white-space:nowrap">${esc(x[0].slice(0, 7))}</td><td class="res-${x[2]}">${x[2]}</td><td>${esc(x[1])}</td><td style="white-space:nowrap">${bar(x[3])}</td><td class="muted">${esc(x[4])}</td></tr>`).join("")}
+      </tbody></table>
+      <p class="muted" style="font-size:12px;margin:6px 0 0">Strength: the opponent's rating going into the fight, as a percentile of every opponent faced in the UFC, PFL, Bellator, ONE and other majors since 2008 (50th = a typical major-promotion opponent). From our own rating of every fight on record.</p>`;
+  }
   function renderProfile(view) {
     const n = state.profile, f = fighter(n), peers = divisionPeers(f);
     const facts = [
@@ -939,6 +970,7 @@ button.namelink:hover { color: var(--red); }
         </div>
         <div class="stack">
           <section class="panel"><h3>Ratings</h3>${ratingBars(f, peers)}</section>
+          <section class="panel"><h3>Opposition quality</h3>${oppQuality(n)}</section>
           ${sourcesPanel(f)}
           <section class="panel">${commentaryList(n, f) || '<div class="label">Fight commentary</div><p class="muted" style="font-size:13px;margin:4px 0 0">No judged fights yet. Use Judge in the fight history below.</p>'}</section>
         </div>
@@ -2079,7 +2111,7 @@ button.namelink:hover { color: var(--red); }
       return;
     }
     if (e.target.closest("a")) return;
-    const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open], tr[data-prospect], li[data-prospect-open]");
+    const t = e.target.closest("button, tr[data-pick], tr[data-profile], li[data-profile], tr[data-open], tr[data-prospect], li[data-prospect-open], tr[data-minor]");
     if (!t) return;
     if (t.dataset.follow) {
       const u = t.dataset.follow;
@@ -2158,7 +2190,8 @@ button.namelink:hover { color: var(--red); }
     if (t.dataset.suggDel) { const id = t.dataset.suggDel; delete state.sugg[id]; state.store.deleteSuggestion(id); render(); return; }
     if (t.dataset.prosView) { state.pros.view = t.dataset.prosView; render(); return; }
     if (t.dataset.prosClass) { Object.assign(state.pros, { view: "table", wc: t.dataset.prosClass, open: null }); render(); return; }
-    if (t.dataset.prospectOpen) { Object.assign(state.pros, { view: "table", open: t.dataset.prospectOpen, q: "", wc: "" }); render(); const el = document.querySelector(`[data-prospect="${CSS.escape(t.dataset.prospectOpen)}"]`); if (el) el.scrollIntoView({ block: "center" }); return; }
+    if (t.dataset.prospectOpen) { if (state.tab !== "prospects") { state.tab = "prospects"; ls.set(LOCAL_KEY + ":tab", "prospects"); window.scrollTo(0, 0); } Object.assign(state.pros, { view: "table", open: t.dataset.prospectOpen, q: "", wc: "" }); render(); const el = document.querySelector(`[data-prospect="${CSS.escape(t.dataset.prospectOpen)}"]`); if (el) el.scrollIntoView({ block: "center" }); return; }
+    if (t.dataset.minor) { state.minors.open = state.minors.open === t.dataset.minor ? null : t.dataset.minor; render(); return; }
     if (t.dataset.prospect) { state.pros.open = state.pros.open === t.dataset.prospect ? null : t.dataset.prospect; render(); return; }
     if (t.dataset.mySub) { state.my.sub = t.dataset.mySub; state.my.msg = ""; render(); return; }
     if (t.dataset.pkSub) { state.my.pk.sub = t.dataset.pkSub; render(); return; }
@@ -2202,6 +2235,7 @@ button.namelink:hover { color: var(--red); }
         || (state.data.fighters.find((f) => (f.aka || []).some((x) => x.toLowerCase() === low)) || {}).name || (searchFighters(v)[0] || {}).name || v);
       state.m[t.id === "in-a" ? "a" : "b"] = name || null; render(); return;
     }
+    if (t.dataset.mlFilter) { const k = t.dataset.mlFilter; state.minors[k] = t.type === "checkbox" ? t.checked : t.value; render(); return; }
     if (t.dataset.prosFilter) {
       const k = t.dataset.prosFilter;
       state.pros[k] = t.type === "checkbox" ? t.checked : t.value;
@@ -2283,6 +2317,7 @@ button.namelink:hover { color: var(--red); }
     }
     if (t.id === "roster-q") { state.roster.q = t.value; render(); return; }
     if (t.id === "pros-q") { state.pros.q = t.value; render(); return; }
+    if (t.id === "ml-q") { state.minors.q = t.value; render(); return; }
     if (t.id === "mp-stake") {
       state.my.stake = t.value;
       const out = t.closest(".mp-stake").querySelector(".num strong");
@@ -2394,6 +2429,78 @@ button.namelink:hover { color: var(--red); }
     return top && total ? { pick: top[0], share: top[1] / total, n: list.length } : null;
   }
 
+
+  // ------------------------------------------------------------ Minor Leagues
+  // Regional promotions in tiers by how strong their fighters are (our own rating of every fight on the regional
+  // scene), each with a short overview: home base, history, alumni who reached the majors, prospects there now.
+  function loadMinors() {
+    const M = state.minors;
+    if (M.data || M.loading) return;
+    M.loading = true;
+    fetch("minor_leagues.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => { M.data = d; M.loading = false; render(); })
+      .catch(() => { M.loading = false; M.error = "Couldn't load the promotions."; render(); });
+  }
+  const mlHome = (x) => (x.countries && x.countries.length ? x.countries[0][0] : "");
+  const fmtDay = (d) => { if (!d) return ""; const t = new Date(d + "T12:00:00"); return t.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }); };
+  function minorDetail(x) {
+    const ev = (e) => e ? `${esc(e[1])} <span class="muted">· ${esc(fmtDay(e[0]))}${e[2] ? " · " + esc(e[2].split(",").slice(-3).join(",").trim()) : ""}</span>` : "—";
+    const where = (x.countries || []).map(([c, n]) => esc(c)).join(", ");
+    const pros = state.pros.data ? new Set(state.pros.data.prospects.map((p) => p.name)) : null;
+    return `<div class="pr-detail"><div class="pr-cols">
+      <div>
+        <p style="margin:0 0 6px;font-size:14px"><strong>${esc(x.org_name || x.promotion)}</strong>${x.active === false ? ' <span class="pill">inactive</span>' : ""}</p>
+        <dl class="srcs">
+          <dt>Based in</dt><dd>${where || "—"}${x.cities && x.cities.length ? `<div class="muted" style="font-size:12.5px">${x.cities.map(esc).join(" · ")}</div>` : ""}</dd>
+          <dt>History</dt><dd>${x.events_total ? `${x.events_total} event${x.events_total === 1 ? "" : "s"} since ${esc((x.first_event || "").slice(0, 4))}` : "—"}</dd>
+          <dt>Last event</dt><dd>${ev(x.last_event)}</dd>
+          ${x.next_event ? `<dt>Next event</dt><dd>${ev(x.next_event)}</dd>` : ""}
+          <dt>Since 2020</dt><dd>${x.bouts.toLocaleString()} bouts · ${x.fighters.toLocaleString()} fighters · ${Math.round(x.to_major * 100)}% went on to a major · ${Math.round(x.fought_elsewhere * 100)}% also fought elsewhere</dd>
+        </dl>
+        ${x.org_url ? `<p class="muted" style="font-size:12px;margin:8px 0 0"><a href="${esc(x.org_url)}" target="_blank" rel="noopener">Sherdog</a></p>` : ""}
+      </div>
+      <div>
+        <div class="label">Notable alumni <span class="muted">(${x.alumni_count} reached a major)</span></div>
+        ${x.alumni.length ? `<table class="recent"><thead><tr><th>Fighter</th><th>Here</th><th>Went to</th><th>Major record</th></tr></thead><tbody>
+          ${x.alumni.map((a) => `<tr><td>${nameLink(a.name)}</td><td class="num">${esc(a.here)}</td><td>${esc(a.went_to)} <span class="muted num" style="font-size:12px">${esc(a.debut.slice(0, 4))}</span></td><td class="num">${esc(a.major)}</td></tr>`).join("")}
+        </tbody></table>` : `<p class="muted" style="font-size:13px;margin:4px 0">None yet.</p>`}
+        ${x.prospects.length ? `<div class="label" style="margin-top:10px">Prospects fighting here now</div><ul class="notes">${x.prospects.map((p) => `<li data-prospect-open="${esc(p.name)}" class="clickable"><strong>${esc(p.name)}</strong> <span class="muted">#${p.rank} · ${esc(p.division)} · ${esc(p.record)}</span></li>`).join("")}</ul>` : ""}
+      </div>
+    </div></div>`;
+  }
+  function renderMinors(view) {
+    const M = state.minors;
+    loadMinors(); loadProspects();
+    const intro = `<section class="panel"><h2 style="margin:0">Minor Leagues</h2>
+      <p class="muted" style="margin:6px 0 0;font-size:14px;max-width:80ch">Regional promotions ranked by how strong their fighters are: the average rating of everyone who fought there since 2020, from our own rating of every fight on the regional scene (about 175,000 bouts, each opponent weighted by how good they were at the time). The tiers are cut on that average. Click a promotion for an overview.</p></section>`;
+    if (!M.data) { view.innerHTML = `<div class="stack">${intro}<div class="${M.error ? "empty" : "loading"}">${M.error || "Loading promotions…"}</div></div>`; return; }
+    const q = M.q.trim().toLowerCase();
+    const list = M.data.promotions.filter((x) => (!M.tier || x.tier === +M.tier) && (!M.active || x.active !== false) &&
+      (!q || [x.promotion, x.org_name, mlHome(x), ...(x.cities || [])].some((v) => (v || "").toLowerCase().includes(q))));
+    const top = Math.max(...M.data.promotions.map((x) => x.mean_rating)), bottom = Math.min(...M.data.promotions.map((x) => x.mean_rating));
+    const bar = (r) => `<span class="mtrack" style="display:inline-block;width:56px;vertical-align:middle"><div style="width:${Math.round(((r - bottom) / (top - bottom)) * 100)}%;background:var(--ink)"></div></span>`;
+    const head = `<div class="toolbar">
+      <label class="label" for="ml-q">Search</label><input id="ml-q" type="search" value="${esc(M.q)}" placeholder="Promotion, country, city">
+      <select data-ml-filter="tier"><option value="">All tiers</option>${M.data.tiers.map((t) => `<option value="${t.tier}" ${+M.tier === t.tier ? "selected" : ""}>Tier ${t.tier} · ${esc(t.label)}</option>`).join("")}</select>
+      <label style="font-size:13.5px"><input type="checkbox" data-ml-filter="active" ${M.active ? "checked" : ""}> Active only</label>
+      <span class="muted" style="font-size:13px">${list.length} promotion${list.length === 1 ? "" : "s"}</span></div>`;
+    const sections = M.data.tiers.map((t) => {
+      const rows = list.filter((x) => x.tier === t.tier);
+      if (!rows.length) return "";
+      return `<section class="panel"><h3 style="margin:0 0 4px">Tier ${t.tier} · ${esc(t.label)}</h3>
+        <p class="muted" style="margin:0 0 8px;font-size:13px">Average fighter rating ${t.min_rating ? `${t.min_rating}+` : "under 1650"}${t.tier > 1 ? ` (below ${M.data.tiers[t.tier - 2].min_rating})` : ""}.</p>
+        <div class="table-wrap"><table class="list"><thead><tr><th>#</th><th>Promotion</th><th>Based in</th><th>Strength</th><th class="num">Reached a major</th><th class="num">Alumni</th><th>Last event</th></tr></thead><tbody>
+        ${rows.map((x) => {
+          const open = M.open === x.promotion, rank = M.data.promotions.indexOf(x) + 1;
+          return `<tr class="clickable pr-row" data-minor="${esc(x.promotion)}" aria-expanded="${open}"><td class="num">${rank}</td>
+            <td><strong>${esc(x.promotion)}</strong>${x.org_name && /^[A-Z0-9 .&-]{2,8}$/.test(x.promotion) ? `<div class="muted" style="font-size:12px">${esc(x.org_name)}</div>` : ""}${x.prospects.length ? `<div class="muted" style="font-size:12px" title="Prospects whose latest fight was here">${x.prospects.length} prospect${x.prospects.length === 1 ? "" : "s"} fighting here</div>` : ""}</td>
+            <td>${esc(mlHome(x) || "—")}</td><td class="num">${bar(x.mean_rating)} ${x.mean_rating}</td>
+            <td class="num">${Math.round(x.to_major * 100)}%</td><td class="num">${x.alumni_count}</td>
+            <td class="num muted" style="font-size:12.5px">${esc(x.last_event ? fmtDay(x.last_event[0]) : "")}</td></tr>${open ? `<tr class="pr-open"><td colspan="7">${minorDetail(x)}</td></tr>` : ""}`;
+        }).join("")}</tbody></table></div></section>`;
+    }).join("");
+    view.innerHTML = `<div class="stack">${intro}${head}${sections || `<div class="empty">No promotions match.</div>`}</div>`;
+  }
+
   // ------------------------------------------------------------ Prospects
   function loadProspects() {
     const P = state.pros;
@@ -2438,6 +2545,8 @@ button.namelink:hover { color: var(--red); }
           <table class="recent"><thead><tr><th>Date</th><th>Res</th><th>Opponent</th><th>Method</th><th>Event</th></tr></thead><tbody>
             ${x.recent.map((b) => `<tr><td class="num">${esc(b.date)}</td><td class="res-${b.result === "win" ? "W" : b.result === "loss" ? "L" : "D"}">${b.result === "win" ? "W" : b.result === "loss" ? "L" : b.result.toUpperCase()}</td><td>${esc(b.opponent)}</td><td>${esc(b.method)} R${b.round}</td><td class="muted">${esc(b.event)}</td></tr>`).join("")}
           </tbody></table>
+          <div class="label" style="margin-top:12px">Opposition quality</div>
+          ${oppQuality(x.name)}
         </div>
         <div>
           <div class="label">Prospect score ${x.score} ${starBtn(x)}</div>
