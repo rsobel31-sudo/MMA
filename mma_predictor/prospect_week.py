@@ -168,33 +168,6 @@ def ufc_bookings(fetcher, prospects: Dict[str, dict], today: date, log=print) ->
     return out
 
 
-def major_bookings(fetcher, bouts: List[dict], today: date, log=print) -> Dict[str, dict]:
-    """Listed prospects booked to debut in another major promotion (PFL, ONE, RIZIN, ACA...): they come off the
-    rankings, but aren't shown on Signed! (that's for the UFC). Two sources: the bout on Sherdog's event listing
-    (found by find_bouts) and the same bout on the fighter's BestFightOdds page."""
-    from .prospects import fold, promotion_of
-    from .sources import bestfightodds as bfo
-
-    out = {}
-    for b in bouts:
-        if b.get("result") or b["date"] < today.isoformat() or not b.get("major_debut") or promotion_of(b["event"]) == "UFC":
-            continue
-        try:
-            hits = [u for n, u in bfo.search_results(fetcher.get(bfo.search_url(b["prospect"]), cache=False, fresh=True))
-                    if fold(n) == fold(b["prospect"])]
-            seen = any(abs((ob.date - date.fromisoformat(b["date"])).days) <= 1 and is_major(ob.event)
-                       for u in hits[:2] for ob in bfo.parse_fighter(fetcher.get(u, cache=False, fresh=True), u))
-        except Exception as exc:  # noqa: BLE001
-            log(f"  {b['prospect']}: {exc}")
-            continue
-        if seen:
-            out[b["prospect_url"]] = {"name": b["prospect"], "promotion": promotion_of(b["event"]), "date": b["date"], "event": b["event"],
-                                      "sherdog_event": b["event_url"], "sources": ["Sherdog", "BestFightOdds"]}
-        else:
-            log(f"  {b['prospect']}: {promotion_of(b['event'])} debut on Sherdog only, waiting for BestFightOdds")
-    return out
-
-
 def refresh_records(fetcher, bouts: List[dict], pages: Dict[str, object], today: date, log=print) -> List[str]:
     """After a prospect fights, store their fresh Sherdog record (the prospect list is built from the stored
     one), so the record, recent fights and score reflect the result. Covers every result in the last 60 days
@@ -253,7 +226,6 @@ def cmd_prospect_week(args) -> int:
     # cancelled, so that prospect is ranked again.
     booked = {u: b for u, b in old_booked.items() if b["date"] < today.isoformat()}
     booked.update(ufc_bookings(f, {**prospects, **{u: {"name": b["name"]} for u, b in old_booked.items()}}, today))
-    booked.update(major_bookings(f, known, today))
     BOOKED.write_text(json.dumps(booked, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
     newly = [b["name"] for u, b in booked.items() if u not in old_booked]
     known.sort(key=lambda b: (b["date"], b.get("p4p_rank") or 9999))
@@ -265,7 +237,7 @@ def cmd_prospect_week(args) -> int:
                     "recent": sorted(recent, key=lambda b: b["date"], reverse=True)}
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     if newly:
-        print(f"Booked with a major promotion (two sources), off the rankings: {', '.join(newly)}")
+        print(f"Signed (booked on a UFC card, Sherdog and Wikipedia agree), moved to Signed!: {', '.join(newly)}")
     if refreshed or newly:
         # Re-score and re-rank with the new results (the build keeps this file's "week" section).
         from types import SimpleNamespace
