@@ -1223,8 +1223,8 @@
 "stats_official": "15"
 },
 "Anthony Romero": {
-"dob": "Sherdog + UFCStats agree",
-"height": "Sherdog + UFCStats agree",
+"dob": "disputed: Sherdog 1996-10-22, UFCStats 1997-02-25",
+"height": "disputed: Sherdog 168 cm, UFCStats 180 cm",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2129,6 +2129,8 @@
 "stats_official": "1"
 },
 "Brandon Holmes": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -5686,6 +5688,8 @@
 "stats_verified": "3"
 },
 "Ernie Juarez": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -8272,6 +8276,8 @@
 "stats_official": "1"
 },
 "Jesse Murray": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (198 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -8361,6 +8367,8 @@
 "stats_official": "1"
 },
 "Jhonoven Pati": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -9962,8 +9970,10 @@
 "stats_verified": "1"
 },
 "Kangjie Zhu": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
-"stats_official": "3"
+"stats_official": "4"
 },
 "Karen Darabedyan": {
 "dob": "Sherdog + UFCStats agree",
@@ -10953,6 +10963,8 @@
 "stats_official": "7"
 },
 "Levan Chokheli": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 185 cm, UFCStats 180 cm",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -11211,6 +11223,8 @@
 "stats_official": "1"
 },
 "Lucas Triverio Camacho": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (203 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14654,6 +14668,8 @@
 "stats_official": "8"
 },
 "Raffael Cerqueira": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_verified": "4"
 },
@@ -17102,6 +17118,10 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "3",
 "stats_verified": "7"
+},
+"Tatsuya Ando": {
+"reach": "UFCStats only (173 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Tatsuya Iwasaki": {
 "stats_official": "1"

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-08",
+ "fetched": "2026-10-09",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -315,6 +315,20 @@
     {
      "order": 9,
      "segment": "Preliminary card",
+     "weight_class": "Women's Flyweight",
+     "a": "Katlyn Cerminara",
+     "b": "Mackenzie Stiller",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 10,
+     "segment": "Preliminary card",
      "weight_class": "Bantamweight",
      "a": "Chad Anheliger",
      "b": "Steven Koslow",
@@ -327,7 +341,7 @@
      "main_event": false
     },
     {
-     "order": 10,
+     "order": 11,
      "segment": "Preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Melissa Croden",
@@ -341,7 +355,7 @@
      "main_event": false
     },
     {
-     "order": 11,
+     "order": 12,
      "segment": "Preliminary card",
      "weight_class": "Bantamweight",
      "a": "Cody Chovancek",
@@ -351,17 +365,6 @@
      "decided": false,
      "round": "",
      "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Announced",
-     "weight_class": "Women's Flyweight",
-     "a": "Katlyn Cerminara",
-     "b": "Mackenzie Stiller",
-     "title": false,
-     "result": "",
      "rounds": 3,
      "main_event": false
     }
@@ -581,20 +584,6 @@
     {
      "order": 1,
      "segment": "Fight card",
-     "weight_class": "Welterweight",
-     "a": "Randy Brown",
-     "b": "Carlos Leal",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 2,
-     "segment": "Fight card",
      "weight_class": "Women's Bantamweight",
      "a": "Lucia Szabov\u00e1",
      "b": "Tainara Lisboa",
@@ -607,7 +596,7 @@
      "main_event": false
     },
     {
-     "order": 3,
+     "order": 2,
      "segment": "Fight card",
      "weight_class": "Women's Bantamweight",
      "a": "Yana Santos",
@@ -621,7 +610,7 @@
      "main_event": false
     },
     {
-     "order": 4,
+     "order": 3,
      "segment": "Fight card",
      "weight_class": "Women's Strawweight",
      "a": "Talita Alencar",
@@ -635,7 +624,7 @@
      "main_event": false
     },
     {
-     "order": 5,
+     "order": 4,
      "segment": "Fight card",
      "weight_class": "Middleweight",
      "a": "Nick Klein",
@@ -649,7 +638,7 @@
      "main_event": false
     },
     {
-     "order": 6,
+     "order": 5,
      "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Rodrigo Sezinando",
@@ -663,7 +652,7 @@
      "main_event": false
     },
     {
-     "order": 7,
+     "order": 6,
      "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Jean-Paul Lebosnoyani",
@@ -677,7 +666,7 @@
      "main_event": false
     },
     {
-     "order": 8,
+     "order": 7,
      "segment": "Fight card",
      "weight_class": "Middleweight",
      "a": "Azamat Bekoev",
@@ -691,7 +680,7 @@
      "main_event": false
     },
     {
-     "order": 9,
+     "order": 8,
      "segment": "Fight card",
      "weight_class": "Featherweight",
      "a": "Julian Erosa",
@@ -705,16 +694,35 @@
      "main_event": false
     },
     {
-     "order": 10,
-     "segment": "Fight card",
+     "order": 9,
+     "segment": "Announced",
      "weight_class": "Featherweight",
      "a": "Francis Marshall",
-     "b": "Gast\u00f3n Bola\u00f1os",
+     "b": "Dakota Hope",
      "title": false,
      "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 10,
+     "segment": "Announced",
+     "weight_class": "Flyweight",
+     "a": "Ode' Osbourne",
+     "b": "Cody Durden",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 11,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Randy Brown",
+     "b": "TBD",
+     "title": false,
+     "result": "",
      "rounds": 3,
      "main_event": false
     }
