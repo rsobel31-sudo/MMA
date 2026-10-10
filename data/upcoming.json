@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-09",
+ "fetched": "2026-10-10",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -40,7 +40,7 @@
     {
      "order": 2,
      "segment": "Fight card",
-     "weight_class": "Women's Strawweight",
+     "weight_class": "Catchweight (117 lb)",
      "a": "Loopy God\u00ednez",
      "b": "Ketlen Souza",
      "title": false,
@@ -96,7 +96,7 @@
     {
      "order": 6,
      "segment": "Preliminary card",
-     "weight_class": "Lightweight",
+     "weight_class": "Catchweight (163.5 lb)",
      "a": "Francisco Prado",
      "b": "Ismael Bonfim",
      "title": false,
@@ -124,7 +124,7 @@
     {
      "order": 8,
      "segment": "Preliminary card",
-     "weight_class": "Light Heavyweight",
+     "weight_class": "Catchweight (208.5 lb)",
      "a": "Felipe Franco",
      "b": "Brendson Ribeiro",
      "title": false,

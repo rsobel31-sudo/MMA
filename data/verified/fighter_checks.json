@@ -519,6 +519,8 @@
 "stats_verified": "1"
 },
 "Alex Nicholson": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
 "stats_official": "4"
 },
@@ -2573,6 +2575,8 @@
 "stats_official": "15"
 },
 "Cam Teague": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -4545,6 +4549,8 @@
 "stats_verified": "1"
 },
 "David Mgoyan": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -6660,6 +6666,8 @@
 "stats_verified": "3"
 },
 "Haitao Ti": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7408,6 +7416,8 @@
 "stats_verified": "3"
 },
 "Jacob Kilburn": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "3"
 },
@@ -10171,6 +10181,10 @@
 "height": "Sherdog + UFCStats agree",
 "stats_official": "3"
 },
+"Keisuke Sasu": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Keita Nakamura": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -10278,6 +10292,12 @@
 },
 "Kenneth Bergh": {
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
+"Kenneth Cross": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Kenneth Seegrist": {
@@ -10423,7 +10443,7 @@
 },
 "Kevin Syler": {
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Kevin Szaflarski": {
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
@@ -12791,6 +12811,8 @@
 "stats_official": "1"
 },
 "Michelle Montague": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "disputed: UFCStats 173 cm, StatsFight 180 cm (not used)",
 "stats_official": "1",
 "stats_verified": "1"
@@ -13435,6 +13457,8 @@
 "stats_official": "2"
 },
 "Naoki Inoue": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -15861,6 +15885,8 @@
 "stats_official": "1"
 },
 "Ryuho Miyaguchi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -16014,6 +16040,12 @@
 },
 "Sang Hoon Yoo": {
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
+"Sang Won Kim": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Sang Wook Kim": {
