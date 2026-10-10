@@ -228,6 +228,18 @@ def cmd_prospect_week(args) -> int:
     booked.update(ufc_bookings(f, {**prospects, **{u: {"name": b["name"]} for u, b in old_booked.items()}}, today))
     BOOKED.write_text(json.dumps(booked, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
     newly = [b["name"] for u, b in booked.items() if u not in old_booked]
+    # UFC roster moves (Wikipedia's signings and releases, each confirmed by a second source).
+    from .roster_moves import STATE as MOVES, sweep as roster_sweep
+
+    before_moves = MOVES.read_text() if MOVES.exists() else ""
+    try:
+        moves = roster_sweep(f)
+        moved = MOVES.read_text() != before_moves
+        print(f"Roster moves: {sum(1 for m in moves['signings'] if m.get('confirmed_by') and not m.get('left_table'))} confirmed signings "
+              f"awaiting a debut, {sum(1 for m in moves['releases'] if m.get('confirmed_by'))} confirmed releases")
+    except Exception as exc:  # noqa: BLE001 - the rest of the run doesn't depend on it
+        print(f"Roster moves: skipped ({str(exc)[:100]})")
+        moved = False
     known.sort(key=lambda b: (b["date"], b.get("p4p_rank") or 9999))
     FIGHTS.parent.mkdir(parents=True, exist_ok=True)
     FIGHTS.write_text("".join(json.dumps(b, ensure_ascii=False) + "\n" for b in known))
@@ -238,7 +250,7 @@ def cmd_prospect_week(args) -> int:
     PROSPECTS.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     if newly:
         print(f"Signed (booked on a UFC card, Sherdog and Wikipedia agree), on Signed! and still ranked until the debut: {', '.join(newly)}")
-    if refreshed or newly:
+    if refreshed or newly or moved:
         # Re-score and re-rank with the new results (the build keeps this file's "week" section).
         from types import SimpleNamespace
 

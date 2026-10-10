@@ -654,6 +654,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_refresh(sub)
     from .prospect_week import register as register_week
     register_week(sub)
+    from .roster_moves import register as register_roster_moves
+    register_roster_moves(sub)
     from .health import register as register_health
     register_health(sub)
     from .recap_cli import register as register_recap

@@ -148,7 +148,7 @@ here against the market.
 
 Each pick is tied to a bout in `data/verified/fights.csv` (two sources agree on the winner) and its closing no-vig
 odds; a pick that can't be tied to one bout and one fighter is skipped and listed with `--verbose`, never guessed.
-Never use Tapology or MMA Junkie (blocked). To add a source: put its articles in `pick_sources.json` with
+Never use Tapology. MMA Junkie is an approved source (owner, Oct 2026), but it refuses automated reads (HTTP 402), so in practice its stories can't be fetched. To add a source: put its articles in `pick_sources.json` with
 `source: "staff"` (or write a parser if the format is new), run `scout history`, and check the `--verbose` skips.
 
 Every Tuesday, after the Sunday data refresh has verified the last card's results: search for that card's

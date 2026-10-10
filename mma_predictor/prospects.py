@@ -358,20 +358,23 @@ def signings(noted: Dict[str, object], candidates: List[Dict[str, object]], list
         fm = first_major([b for b in sd["bouts"] if str(b.get("date", "")) >= min(starts)])
         bk = (booked or {}).get(sd.get("url", "").rstrip("/"))
         if fm is None and bk:  # signed, debut booked: the booking dates it until the fight happens
-            fm = {"date": bk["date"], "event": bk["event"], "result": None, "method": None}
+            fm = {"date": bk["date"], "event": bk["event"], "result": None, "method": None, "promotion": bk.get("promotion")}
         if fm is None:
             continue
         before = [c for c in valid if c["date"] <= str(fm["date"])]
         ours_before = ours if ours and str(ours.get("first_listed", "9999")) <= str(fm["date"]) and str(ours["first_listed"]) in starts else None
+        if bk and fm.get("result") is None and ours and not ours_before:
+            ours_before = ours  # signed or booked but not yet debuted: we listed them before the debut
         if not before and not ours_before:
             continue
-        out.append({"name": name, "sherdog_url": sd.get("url", ""), "promotion": promotion_of(str(fm["event"])),
+        out.append({"name": name, "sherdog_url": sd.get("url", ""), "promotion": fm.get("promotion") or promotion_of(str(fm["event"])),
                     "debut": str(fm["date"]), "event": fm["event"], "result": fm.get("result"), "method": fm.get("method"),
                     "called_by": before, "first_call": before[0] if before else None,
                     "lead_days": (date.fromisoformat(str(fm["date"])) - date.fromisoformat(before[0]["date"])).days if before else None,
                     "on_our_list": bool(ours_before), "our_rank": (ours_before or {}).get("best_rank"),
                     "confirmed_by": (checks or {}).get(sd.get("url", "")),
-                    "booked": bool(bk) and fm.get("result") is None})
+                    "booked": bool(bk) and fm.get("result") is None,
+                    "signed_only": bool(bk) and fm.get("result") is None and bk.get("kind") == "signed"})
     return sorted(out, key=lambda s: s["debut"], reverse=True)
 
 
@@ -545,8 +548,9 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
             "nationality": sd.get("nationality", ""), "team": sd.get("team", "") or (c.get("fm", {}).get("stats", {}) or {}).get("Association", ""),
             "height_cm": sd.get("height_cm"), "reach_cm": sd.get("reach_cm"), "stance": sd.get("stance"), "nickname": sd.get("nickname", ""),
             "recent": [{k: b[k] for k in ("date", "opponent", "result", "method", "round", "event")} for b in bouts[:6]],
-            "booked": {k: booked[sd.get("url", "").rstrip("/")][k] for k in ("promotion", "date", "event")}
-                      if sd.get("url", "").rstrip("/") in booked and booked[sd.get("url", "").rstrip("/")]["date"] >= today.isoformat() else None,
+            "booked": {k: booked[sd.get("url", "").rstrip("/")].get(k) for k in ("promotion", "date", "event", "kind")}
+                      if sd.get("url", "").rstrip("/") in booked and (booked[sd.get("url", "").rstrip("/")].get("kind") == "signed"
+                                                                      or booked[sd.get("url", "").rstrip("/")]["date"] >= today.isoformat()) else None,
             "sherdog_url": sd.get("url", ""), "fm_url": c.get("fm_url") or c.get("fm_rank_url", ""),
             "noted_by": [dict(n, weight=weights.get(n["source"], 1.0)) for n in idx.get(key, [])],
             "sources": [s for s in ("Fight Matrix" if c.get("fm_url") else "", "Sherdog", "outlet list" if c.get("via") == "noted" else "") if s],
@@ -585,6 +589,23 @@ def cmd_build(args) -> int:
     bpath = Path(args.candidates).with_name("booked.json")
     booked = {u.rstrip("/"): b for u, b in (json.loads(bpath.read_text()) if bpath.exists() else {}).items()
               if b["date"] >= (today - timedelta(days=14)).isoformat()}
+    # A confirmed UFC signing (Wikipedia's recent signings plus a second source, see roster_moves.py) counts like
+    # a booking before the debut is booked: the prospect is marked signed and shown on Signed!.
+    mpath = Path(args.candidates).parent.parent / "roster" / "moves.json"
+    moves = json.loads(mpath.read_text()) if mpath.exists() else {}
+    from .roster_moves import current_signings
+    from .sources.events import link_names
+
+    with_sd = {c["name"]: c for c in cands if c.get("sherdog") and c["sherdog"].get("url")}
+    apath = Path(args.candidates).parent.parent / "name_aliases.json"
+    sig = current_signings(moves)
+    linked = link_names([m["name"] for m in sig], list(with_sd), json.loads(apath.read_text()) if apath.exists() else {})
+    for m in sig:
+        c = with_sd.get(linked.get(m["name"], ""))
+        if c:
+            booked.setdefault(c["sherdog"]["url"].rstrip("/"), {"name": c["name"], "promotion": "UFC", "date": m["date"],
+                                                                 "event": "Signed with the UFC", "kind": "signed",
+                                                                 "sources": ["Wikipedia", m["confirmed_by"]["source"]]})
     pros = build(cands, noted, today, booked)
     # Our own list's history: who we listed, from when, at best what rank (credits us when they sign).
     lpath = Path(args.candidates).with_name("listed.json")
@@ -604,7 +625,13 @@ def cmd_build(args) -> int:
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
            "rules": {"max_age": MAX_AGE, "max_age_by_division": DIVISION_MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
-           "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
+           "callers": getattr(build, "track", []), "signed": signed, "prospects": pros,
+           "roster_moves": {"fetched": moves.get("fetched"), "source": moves.get("source"),
+                            "signings": sorted(({k: m.get(k) for k in ("name", "date", "division", "confirmed_by")} for m in sig),
+                                               key=lambda m: m["date"], reverse=True),
+                            "releases": sorted(({k: m.get(k) for k in ("name", "date", "division", "reason", "confirmed_by")}
+                                                for m in moves.get("releases", []) if m.get("confirmed_by")),
+                                               key=lambda m: m["date"], reverse=True)}}
     from .prospect_report import attach  # each prospect's move since the last monthly snapshot, and the latest report
 
     attach(out, today)

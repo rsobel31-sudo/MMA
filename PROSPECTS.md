@@ -98,3 +98,13 @@ LUX, Road FC, Pancrase). Each fighter costs one Sherdog page: anyone it already 
 bout, too old, too many fights) goes into `sweep_seen.json` and is never fetched again, so after the first
 full pass the daily `--sweep-only` run only checks fighters new to those cards.
 
+
+## UFC roster moves
+
+`python -m mma_predictor roster-moves` (run inside the daily `prospect-week`) reads Wikipedia's "List of current UFC
+fighters": its Recent signings table (fighters new to the UFC who haven't debuted; contract renewals never appear
+there) and Recent releases and retirements. A move counts once a second source agrees: the row's cited report
+(it must name the fighter and the move), an outlet story in the news index, or the outlets' archive search
+(Cageside Press, BJPenn.com, LowKick MMA). Tapology and social media aren't used; MMA Junkie is approved but
+refuses automated reads. Confirmed signings mark a listed prospect "UFC signed" (still ranked until the debut) and
+put them on Signed!; signings and releases show in the Roster moves panel on UFC Rankings. State: data/roster/moves.json.

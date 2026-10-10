@@ -32,3 +32,21 @@ def test_a_promotions_old_event_names_count_with_its_new_ones():
     canon = ML.canonicalizer(orgs)
     assert canon("CWFC 60 - Cage Warriors Fighting Championship 60") == "CW"
     assert canon("UFC 300 - Pereira vs. Hill") == "UFC"
+
+
+def test_roster_moves_parse_wikipedia_tables():
+    from mma_predictor import roster_moves as RM
+
+    html = """<h2 id="Recent_releases_and_retirements">x</h2><table><tr><th>Date</th><th>Country</th><th>Name</th><th>Nickname</th>
+    <th>Reason</th><th>Division</th><th>Ref</th></tr><tr><td>Sep 16, 2026</td><td></td><td>Lyman Good</td><td>Cyborg</td>
+    <td>Released</td><td>Welterweight</td><td><a href="#cite_note-2">[2]</a></td></tr></table>
+    <h2 id="Recent_signings">y</h2><table><tr><th>Date</th><th>ISO</th><th>Name</th><th>Nickname</th><th>Division</th>
+    <th>Status / next fight / Info</th><th>Ref</th></tr><tr><td>October 6, 2026</td><td></td><td>Preston LaGrange</td>
+    <td>One Shot</td><td>Light Heavyweight</td><td></td><td><a href="#cite_note-9">[9]</a></td></tr></table><h2 id="z">z</h2>
+    <ol><li id="cite_note-2"><a rel="nofollow" class="external text" href="https://www.mmamania.com/cuts">a</a></li>
+    <li id="cite_note-9"><a rel="nofollow" class="external text" href="https://cagesidepress.com/dwcs">b</a></li></ol>"""
+    got = RM.parse(html)
+    assert got["releases"] == [{"name": "Lyman Good", "date": "2026-09-16", "division": "Welterweight",
+                                "refs": ["https://www.mmamania.com/cuts"], "reason": "Released"}]
+    assert got["signings"][0]["name"] == "Preston LaGrange" and got["signings"][0]["date"] == "2026-10-06"
+    assert got["signings"][0]["refs"] == ["https://cagesidepress.com/dwcs"]
