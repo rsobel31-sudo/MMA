@@ -175,4 +175,6 @@ def test_heavyweights_stay_prospects_through_31():
     assert PR.max_age("Heavyweight") == 32 and PR.max_age("Lightweight") == 28
     assert PR.screen(row(division="Heavyweight", age=31), TODAY)
     assert not PR.screen(row(division="Heavyweight", age=32), TODAY)
-    assert not PR.screen(row(division="Light Heavyweight", age=29), TODAY)
+    assert PR.screen(row(division="Light Heavyweight", age=30), TODAY)
+    assert not PR.screen(row(division="Light Heavyweight", age=31), TODAY)
+    assert not PR.screen(row(division="Middleweight", age=28), TODAY)

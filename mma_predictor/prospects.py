@@ -17,7 +17,7 @@ Prospect score (0-100), within the eligible pool:
   50%  Fight Matrix rating, as a percentile (it already weighs opposition)
   15%  winning: win share, with an unbeaten bonus
   10%  finishing: share of wins inside the distance
-  10%  youth: younger is better, below 28 (heavyweights: 31 and under)
+  10%  youth: younger is better, below 28 (light heavyweights 30 and under, heavyweights 31 and under)
    5%  activity: fought in the last 12 months
   10%  buzz: independent outlet lists and coverage naming them (capped)
 """
@@ -44,12 +44,13 @@ MAJOR = re.compile(r"^\s*(UFC|PFL|Professional Fighters League|Bellator|ONE\b|ON
                    r"|Absolute Championship Akhmat|Rizin|RIZIN)", re.I)
 NOT_MAJOR = re.compile(r"Contender Series|Road to UFC|Road to ONE|Fight Pass Invitational", re.I)
 MAX_AGE, MAX_FIGHTS = 28, 14
-# Heavyweights mature later: they stay prospects through age 31 (owner's rule, Oct 2026). Other divisions: under 28.
-DIVISION_MAX_AGE = {"Heavyweight": 32}
+# The big men mature later (owner's rule, Oct 2026): heavyweights stay prospects through age 31, light
+# heavyweights through 30. Other divisions: under 28.
+DIVISION_MAX_AGE = {"Heavyweight": 32, "Light Heavyweight": 31}
 
 
 def max_age(division: Optional[str]) -> int:
-    """A prospect must be younger than this (28, or 32 for heavyweights: 31 and under)."""
+    """A prospect must be younger than this: 28, 31 at light heavyweight (30 and under), 32 at heavyweight (31 and under)."""
     return DIVISION_MAX_AGE.get(division or "", MAX_AGE)
 PER_DIVISION = 100  # the list keeps each division's top 100 by score
 UNRATED_LADDER = ((3, 0.15), (4, 0.25), (5, 0.40))  # pro fights -> rating percentile for prospects Fight Matrix
