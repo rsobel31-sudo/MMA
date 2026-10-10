@@ -7,7 +7,7 @@ The list keeps the top 100 by score in each division (`PER_DIVISION`; owner's pi
 A prospect Fight Matrix doesn't rank gets a stand-in rating percentile by pro fights (`UNRATED_LADDER`): 3 or fewer 15th,
 4 25th, 5 40th, 6+ the division's middle (50th). Many regional fighters simply aren't in its rankings, but a 2-0
 teenager shouldn't outrank proven fighters on youth alone.
-Rules: under 28, fewer than 14 pro fights, a winning record, not in a major promotion (UFC,
+Rules: under 28 (heavyweights: 31 and under, since they mature later), fewer than 14 pro fights, a winning record, not in a major promotion (UFC,
 PFL/Bellator, ONE, ACA, RIZIN; Contender Series / Road to UFC don't count), active
 in the last two years. Anyone who has fought in the UFC is out for good; a fighter who
 has formally left PFL, ONE, ACA or RIZIN (most recent fight outside the majors) is
@@ -70,7 +70,7 @@ rates them, with the owner's background notes. Every routine run:
 1. ArtifactData `list` the `prospect_suggestions` collection with
    `out_dir: .cache/suggestions` (documents with `status: "pending"` are new).
 2. `python -m mma_predictor prospect-suggestions --docs .cache/suggestions`: finds each fighter on
-   Sherdog (and Fight Matrix if ranked), applies the rules (under 28, fewer than 14 fights, no
+   Sherdog (and Fight Matrix if ranked), applies the rules (under 28, or 31 and under at heavyweight; fewer than 14 fights, no
    major-promotion bout, active), logs the call under the commentator's name with the background,
    rebuilds the list, and writes each outcome to `data/prospects/suggestion_updates.json`.
 3. Write each outcome back with one ArtifactData batch of `update`s to

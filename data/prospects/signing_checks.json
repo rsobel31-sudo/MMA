@@ -148,5 +148,35 @@
   "event": "UFC on ESPN: Gane vs. Spivak",
   "date": "2023-09-02",
   "url": "https://www.bestfightodds.com/fighters/caolan-loughran-13592"
+ },
+ "https://www.sherdog.com/fighter/Hyuma-Yasui-430430": {
+  "source": "BestFightOdds",
+  "event": "RIZIN Landmark 16",
+  "date": "2026-10-03",
+  "url": "https://www.bestfightodds.com/fighters/hyuma-yasui-19008"
+ },
+ "https://www.sherdog.com/fighter/Youssef-Ramadan-446100": {
+  "source": "BestFightOdds",
+  "event": "One Friday Fights 173",
+  "date": "2026-10-02",
+  "url": "https://www.bestfightodds.com/fighters/youssef-ramadan-22915"
+ },
+ "https://www.sherdog.com/fighter/Babar-Ali-321159": {
+  "source": "BestFightOdds",
+  "event": "One Friday Fights 173",
+  "date": "2026-10-02",
+  "url": "https://www.bestfightodds.com/fighters/babar-ali-18937"
+ },
+ "https://www.sherdog.com/fighter/Mitchell-McKee-57183": {
+  "source": "BestFightOdds",
+  "event": "PFL Chicago",
+  "date": "2026-04-11",
+  "url": "https://www.bestfightodds.com/fighters/mitch-mckee-21784"
+ },
+ "https://www.sherdog.com/fighter/Ante-Delija-75487": {
+  "source": "BestFightOdds",
+  "event": "PFL 2021 3: Werdum vs. Ferreira",
+  "date": "2021-05-06",
+  "url": "https://www.bestfightodds.com/fighters/ante-delija-8016"
  }
 }

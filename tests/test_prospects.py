@@ -169,3 +169,10 @@ def test_a_fight_fight_matrix_has_not_caught_up_on_is_not_a_disagreement():
                    {"date": "2026-09-01", "result": "win", "event": "FCR 32", "method": "SUB", "opponent": "w", "round": 1}]
     chk = PR.verify(r, {"stats": {"Birth Date": "2003-01-01"}, "bouts": []}, s, TODAY)
     assert chk["verified"] and chk["eligible"] and chk["fights"] == 8
+
+
+def test_heavyweights_stay_prospects_through_31():
+    assert PR.max_age("Heavyweight") == 32 and PR.max_age("Lightweight") == 28
+    assert PR.screen(row(division="Heavyweight", age=31), TODAY)
+    assert not PR.screen(row(division="Heavyweight", age=32), TODAY)
+    assert not PR.screen(row(division="Light Heavyweight", age=29), TODAY)

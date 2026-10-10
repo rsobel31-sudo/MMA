@@ -17,7 +17,7 @@ Prospect score (0-100), within the eligible pool:
   50%  Fight Matrix rating, as a percentile (it already weighs opposition)
   15%  winning: win share, with an unbeaten bonus
   10%  finishing: share of wins inside the distance
-  10%  youth: younger is better, below 28
+  10%  youth: younger is better, below 28 (heavyweights: 31 and under)
    5%  activity: fought in the last 12 months
   10%  buzz: independent outlet lists and coverage naming them (capped)
 """
@@ -44,6 +44,13 @@ MAJOR = re.compile(r"^\s*(UFC|PFL|Professional Fighters League|Bellator|ONE\b|ON
                    r"|Absolute Championship Akhmat|Rizin|RIZIN)", re.I)
 NOT_MAJOR = re.compile(r"Contender Series|Road to UFC|Road to ONE|Fight Pass Invitational", re.I)
 MAX_AGE, MAX_FIGHTS = 28, 14
+# Heavyweights mature later: they stay prospects through age 31 (owner's rule, Oct 2026). Other divisions: under 28.
+DIVISION_MAX_AGE = {"Heavyweight": 32}
+
+
+def max_age(division: Optional[str]) -> int:
+    """A prospect must be younger than this (28, or 32 for heavyweights: 31 and under)."""
+    return DIVISION_MAX_AGE.get(division or "", MAX_AGE)
 PER_DIVISION = 100  # the list keeps each division's top 100 by score
 UNRATED_LADDER = ((3, 0.15), (4, 0.25), (5, 0.40))  # pro fights -> rating percentile for prospects Fight Matrix
 UNRATED_TOP = 0.50                                   # doesn't rank; 6 or more fights get the division's middle
@@ -93,7 +100,7 @@ def parse_rank_page(page: str, division: str) -> List[Dict[str, object]]:
 def screen(row: Dict[str, object], today: date) -> bool:
     """First pass on the rankings row alone."""
     n = row["wins"] + row["losses"] + row["draws"]
-    if row["age"] is None or row["age"] >= MAX_AGE or n >= MAX_FIGHTS or n == 0:
+    if row["age"] is None or row["age"] >= max_age(row.get("division")) or n >= MAX_FIGHTS or n == 0:
         return False
     if is_major(str(row["last_org"])):
         return False
@@ -156,7 +163,7 @@ def verify(row: Dict[str, object], fm: Dict[str, object], sherdog: Optional[Dict
     age = age_on(dob, today)
     if age is None:
         issues.append("no birth date")
-    elif age >= MAX_AGE:
+    elif age >= max_age(row.get("division")):
         issues.append(f"age {age:.1f}")
     if sd_n >= MAX_FIGHTS:
         issues.append(f"{sd_n} fights on Sherdog")
@@ -195,7 +202,8 @@ def score_pool(prospects: List[Dict[str, object]], today: date) -> None:
             n = p["wins"] + p["losses"] + p["draws"]
             win = (p["wins"] + 1) / (n + 2) + (0.08 if p["losses"] == 0 and p["wins"] >= 5 else 0)
             fin = p.get("finish_rate") or 0.0
-            youth = max(0.0, min(1.0, (MAX_AGE - (p.get("age") or MAX_AGE)) / 7))
+            top = max_age(p.get("division"))  # youth is measured against the division's own age limit
+            youth = max(0.0, min(1.0, (top - (p.get("age") or top)) / 7))
             days = (today - date.fromisoformat(p["last_fight"])).days if p.get("last_fight") else 999
             active = 1.0 if days <= 365 else 0.4
             # Buzz: sources naming them, each weighted by its graded track record (source_track).
@@ -593,7 +601,7 @@ def cmd_build(args) -> int:
     signed = [x for x in signings(noted, cands, listed, json.loads(cpath.read_text()) if cpath.exists() else {}, booked)
               if x["promotion"] == "UFC"]
     out = {"built": datetime.utcnow().replace(microsecond=0).isoformat() + "Z", "screened": screened, "checked": len(cands),
-           "rules": {"max_age": MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
+           "rules": {"max_age": MAX_AGE, "max_age_by_division": DIVISION_MAX_AGE, "max_fights": MAX_FIGHTS, "per_division": PER_DIVISION, "major": "UFC, PFL/Bellator, ONE, ACA, RIZIN"},
            "lists": [{k: l.get(k, "") for k in ("outlet", "author", "title", "url", "date")} for l in noted.get("lists", [])],
            "callers": getattr(build, "track", []), "signed": signed, "prospects": pros}
     from .prospect_report import attach  # each prospect's move since the last monthly snapshot, and the latest report
