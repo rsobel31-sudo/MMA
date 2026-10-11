@@ -805,6 +805,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Danilo Suzart",
+   "sherdog": "1991-04-12",
+   "ufcstats": "1991-12-04",
+   "fightmatrix": null
+  },
+  {
    "name": "Michal Figlak",
    "sherdog": "1996-08-16",
    "ufcstats": "1996-08-15",
@@ -841,20 +847,32 @@
    "fightmatrix": null
   },
   {
+   "name": "Ethyn Ewing",
+   "sherdog": "1998-02-16",
+   "ufcstats": "1996-02-19",
+   "fightmatrix": null
+  },
+  {
    "name": "Gianni Vazquez",
    "sherdog": "1994-07-13",
    "ufcstats": "1994-07-17",
    "fightmatrix": null
+  },
+  {
+   "name": "Gokhan Saricam",
+   "sherdog": "1991-02-26",
+   "ufcstats": "1991-02-28",
+   "fightmatrix": null
   }
  ],
  "dob": {
-  "agree": 2248,
-  "differ, unresolved (Sherdog kept)": 92,
+  "agree": 2260,
+  "differ, unresolved (Sherdog kept)": 95,
   "differ, Fight Matrix sides with Sherdog": 65
  },
  "height": {
-  "agree": 2267,
-  "differ": 162
+  "agree": 2280,
+  "differ": 164
  },
  "reach": {
   "no second source": 1695,
@@ -863,11 +881,11 @@
  },
  "odds": {
   "odds bouts": 16711,
-  "matched": 12992,
-  "unmatched": 2374,
+  "matched": 13031,
+  "unmatched": 2331,
   "bad lines": 0,
-  "pages disagree": 3,
-  "both pages": 8975,
-  "no lines": 1342
+  "pages disagree": 4,
+  "both pages": 8983,
+  "no lines": 1345
  }
 }

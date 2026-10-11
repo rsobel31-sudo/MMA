@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-10T17:37:01+00:00",
+ "fetched": "2026-10-11T11:15:17+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -652,15 +652,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Hu Yong",
-   "date": "2026-09-24",
-   "division": "Bantamweight",
-   "refs": [],
-   "info": "",
-   "confirmed_by": null,
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Aieza Ramos Bertolso",
    "date": "2026-09-29",
    "division": "Women's Strawweight",
@@ -779,6 +770,16 @@
     "url": "https://cagesidepress.com/2026/10/07/dwcs-preston-lagrange-weight/"
    },
    "first_seen": "2026-10-10"
+  },
+  {
+   "name": "Hu Yong",
+   "date": "2026-09-24",
+   "division": "Bantamweight",
+   "refs": [],
+   "info": "",
+   "confirmed_by": null,
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-11"
   }
  ],
  "releases": [
@@ -823,6 +824,34 @@
     "url": "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
    },
    "first_seen": "2026-10-10"
+  },
+  {
+   "name": "Niko Price",
+   "date": "2026-10-10",
+   "division": "Welterweight",
+   "refs": [
+    "https://cagesidepress.com/2026/10/10/ufc-vegas-122-niko-price-blitzes-leon-shahbazyan-wins-retirement-fight/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "cagesidepress.com",
+    "url": "https://cagesidepress.com/2026/10/10/ufc-vegas-122-niko-price-blitzes-leon-shahbazyan-wins-retirement-fight/"
+   },
+   "first_seen": "2026-10-11"
+  },
+  {
+   "name": "Gerald Meerschaert",
+   "date": "2026-10-10",
+   "division": "Light Heavyweight",
+   "refs": [
+    "https://cagesidepress.com/2026/10/10/ufc-vegas-122-julius-walker-retires-60-fight-vet-gerald-meerschaert/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "cagesidepress.com",
+    "url": "https://cagesidepress.com/2026/10/10/ufc-vegas-122-julius-walker-retires-60-fight-vet-gerald-meerschaert/"
+   },
+   "first_seen": "2026-10-11"
   }
  ]
 }
