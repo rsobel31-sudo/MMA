@@ -1,6 +1,6 @@
 {
  "name": "Leon Shahbazyan",
- "updated": "2026-09-30T23:40:00+00:00",
+ "updated": "2026-10-11T16:50:00+00:00",
  "event": "UFC Fight Night: Allen vs. Duncan",
  "summary": "Edmen Shahbazyan's younger brother, a submission-heavy regional fighter (four straight first-round submissions) knocked out in 23 seconds by Levan Chokheli in his UFC debut.",
  "how_they_fight": {
@@ -15,7 +15,8 @@
  ],
  "concerns": [
   "Durability",
-  "Tiny UFC sample"
+  "Tiny UFC sample",
+  "Durability: stopped in round one by Niko Price at UFC Fight Night 290, his second quick UFC stoppage loss; the owner's view is that his career is near its end (owner's notes, UFC Fight Night 290)."
  ],
  "keys_to_beat": [
   "Strike early"
@@ -35,6 +36,13 @@
    "title": "UFC Fight Night: Allen vs Duncan",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
    "date": "2026-09"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Owner's notes, UFC Fight Night 290 - Allen vs. Duncan",
+   "url": "",
+   "date": "2026-10-10"
   }
  ],
  "depth": "thin"

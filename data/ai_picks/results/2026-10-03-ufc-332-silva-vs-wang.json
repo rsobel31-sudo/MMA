@@ -1,0 +1,94 @@
+{
+ "event": "UFC 332: Silva vs. Wang",
+ "date": "2026-10-03",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Alden Coria vs Imanol Rodriguez": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 191
+  },
+  "Alexander Hernandez vs Rafael Dos Anjos": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 192
+  },
+  "Andrey Pulyaev vs Damian Pinas": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 75
+  },
+  "Anthony Romero vs Marcus McGhee": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 298
+  },
+  "Anthony Wint vs Lucas Armand": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 23
+  },
+  "Ateba Gautier vs Roman Kopylov": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 192
+  },
+  "Bruce Whitehead vs Jacobe Smith": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 92
+  },
+  "Court McGee vs Eric Nolan": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 206
+  },
+  "Deiveson Figueiredo vs Payton Talbott": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 129
+  },
+  "Esteban Ribovics vs King Green": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 248
+  },
+  "Ismail Naurdiev vs Marvin Vettori": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300
+  },
+  "Johnny Walker vs Mick Parkin": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 215
+  },
+  "Khaos Williams vs Roberto Soldic": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300
+  },
+  "Natalia Silva vs Wang Cong": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 5,
+   "seconds": 300
+  }
+ }
+}

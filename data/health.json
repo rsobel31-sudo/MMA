@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-11T10:54:38+00:00",
+ "checked": "2026-10-11T16:00:35+00:00",
  "ok": false,
  "failed": [
   "StatsFight"
@@ -26,7 +26,7 @@
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "8 UFC events in the last 45 days",
-   "seconds": 1.5,
+   "seconds": 1.3,
    "last_ok": "2026-10-11"
   },
   {
@@ -49,8 +49,8 @@
    "source": "BestFightOdds events",
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
-   "detail": "7 events; UFC 332 for October 11 | Best Fight: 12 bouts, 12 with FanDuel moneylines",
-   "seconds": 2.8,
+   "detail": "8 events; UFC 332 for October 11 | Best Fight: 12 bouts, 12 with FanDuel moneylines",
+   "seconds": 2.4,
    "last_ok": "2026-10-11"
   },
   {
@@ -66,7 +66,7 @@
    "used_by": "upcoming cards, results",
    "ok": true,
    "detail": "9 scheduled UFC events",
-   "seconds": 0.9,
+   "seconds": 0.8,
    "last_ok": "2026-10-11"
   },
   {
@@ -74,7 +74,7 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "645 fighters on the UFC roster",
-   "seconds": 1.5,
+   "seconds": 1.7,
    "last_ok": "2026-10-11"
   },
   {
@@ -82,7 +82,7 @@
    "used_by": "rankings comparison",
    "ok": true,
    "detail": "329 ranked fighters",
-   "seconds": 0.9,
+   "seconds": 1.0,
    "last_ok": "2026-10-11"
   },
   {
@@ -90,7 +90,7 @@
    "used_by": "stat verification",
    "ok": false,
    "detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
-   "seconds": 23.0,
+   "seconds": 22.9,
    "last_ok": "2026-10-10"
   },
   {
@@ -98,7 +98,7 @@
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.7,
+   "seconds": 0.6,
    "last_ok": "2026-10-11"
   },
   {
@@ -106,7 +106,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.7,
+   "seconds": 0.6,
    "last_ok": "2026-10-11"
   },
   {
@@ -114,7 +114,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 0.2,
+   "seconds": 0.5,
    "last_ok": "2026-10-11"
   },
   {
@@ -122,7 +122,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.5,
+   "seconds": 0.6,
    "last_ok": "2026-10-11"
   },
   {
@@ -146,7 +146,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.5,
+   "seconds": 1.3,
    "last_ok": "2026-10-11"
   },
   {
@@ -154,7 +154,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.5,
    "last_ok": "2026-10-11"
   },
   {
@@ -162,7 +162,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 3.3,
+   "seconds": 2.2,
    "last_ok": "2026-10-11"
   },
   {
@@ -170,7 +170,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.3,
+   "seconds": 0.5,
    "last_ok": "2026-10-11"
   },
   {
@@ -178,7 +178,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.6,
+   "seconds": 1.7,
    "last_ok": "2026-10-11"
   },
   {

@@ -80,7 +80,25 @@
      ]
     }
    },
-   "market_p_a": 0.546
+   "market_p_a": 0.546,
+   "result": {
+    "winner": "Brendan Allen",
+    "side": "a",
+    "method": "SUB",
+    "round": 5
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Matheus Camilo vs Jai Herbert",
@@ -142,7 +160,25 @@
      ]
     }
    },
-   "market_p_a": 0.63
+   "market_p_a": 0.63,
+   "result": {
+    "winner": "Jai Herbert",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Loopy Godínez vs Ketlen Souza",
@@ -266,7 +302,25 @@
      ]
     }
    },
-   "market_p_a": 0.5781
+   "market_p_a": 0.5781,
+   "result": {
+    "winner": "Andre Fili",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Malcolm Wellmaker vs Otari Tanzilovi",
@@ -328,7 +382,25 @@
      ]
     }
    },
-   "market_p_a": 0.6644
+   "market_p_a": 0.6644,
+   "result": {
+    "winner": "Otari Tanzilovi",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Julius Walker vs Gerald Meerschaert",
@@ -390,7 +462,26 @@
      ]
     }
    },
-   "market_p_a": 0.7169
+   "market_p_a": 0.7169,
+   "result": {
+    "winner": "Julius Walker",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "round_confirmed": false
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Francisco Prado vs Ismael Bonfim",
@@ -452,7 +543,25 @@
      ]
     }
    },
-   "market_p_a": 0.5236
+   "market_p_a": 0.5236,
+   "result": {
+    "winner": "Francisco Prado",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Niko Price vs Leon Shahbazyan",
@@ -514,7 +623,25 @@
      ]
     }
    },
-   "market_p_a": 0.4324
+   "market_p_a": 0.4324,
+   "result": {
+    "winner": "Niko Price",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Felipe Franco vs Brendson Ribeiro",
@@ -576,7 +703,25 @@
      ]
     }
    },
-   "market_p_a": 0.7559
+   "market_p_a": 0.7559,
+   "result": {
+    "winner": "Brendson Ribeiro",
+    "side": "b",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Allen Frye Jr. vs RJ Harris",
@@ -700,7 +845,25 @@
      ]
     }
    },
-   "market_p_a": 0.5627
+   "market_p_a": 0.5627,
+   "result": {
+    "winner": "Alice Pereira",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Ernesta Kareckaitė vs Melissa Gatto",
@@ -762,8 +925,12 @@
      ]
     }
    },
-   "market_p_a": 0.4892
+   "market_p_a": 0.4892,
+   "result": {
+    "void": "draw"
+   }
   }
  ],
- "graded": false
+ "graded": false,
+ "graded_at": "2026-10-11T16:15:16+00:00"
 }

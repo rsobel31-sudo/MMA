@@ -1,6 +1,6 @@
 {
  "name": "Niko Price",
- "updated": "2026-09-30T23:40:00+00:00",
+ "updated": "2026-10-11T16:50:00+00:00",
  "event": "UFC Fight Night: Allen vs. Duncan",
  "summary": "A 37-year-old action fighter returning from a brief retirement for a last dance after four straight losses (Chiesa by submission, Veretennikov by KO); the knee injury and stoppage losses have taken their toll.",
  "how_they_fight": {
@@ -11,7 +11,8 @@
   "Fight IQ": "Chaos by design."
  },
  "patterns": [
-  "Brawls and wild exchanges"
+  "Brawls and wild exchanges",
+  "Power lingers: at 37 and on four straight losses he still stopped Shahbazyan in round one (UFC Fight Night 290), though the owner judges him near the end (owner's notes, UFC Fight Night 290)."
  ],
  "concerns": [
   "Age, knee, four losses"
@@ -40,6 +41,13 @@
    "title": "UFC Fight Night: Allen vs Duncan",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
    "date": "2026-09"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Owner's notes, UFC Fight Night 290 - Allen vs. Duncan",
+   "url": "",
+   "date": "2026-10-10"
   }
  ],
  "depth": "moderate"

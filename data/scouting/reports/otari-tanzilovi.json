@@ -1,6 +1,6 @@
 {
  "name": "Otari Tanzilovi",
- "updated": "2026-09-30T23:40:00+00:00",
+ "updated": "2026-10-11T16:50:00+00:00",
  "event": "UFC Fight Night: Allen vs. Duncan",
  "summary": "A Georgian featherweight-bantamweight wrestler (about 3.4 takedowns per 15 minutes) who lost his UFC debut to Shane Collins on the cards.",
  "how_they_fight": {
@@ -14,7 +14,8 @@
   "Takedowns"
  ],
  "concerns": [
-  "Small UFC sample"
+  "Small UFC sample",
+  "Cardio: the owner's fight-night read is that he has no gas tank (owner's notes, UFC Fight Night 290). He finished Wellmaker in round two before it mattered; treat later rounds as his risk."
  ],
  "keys_to_beat": [
   "Stuff takedowns and strike"
@@ -34,6 +35,13 @@
    "title": "UFC Fight Night: Allen vs Duncan",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
    "date": "2026-09"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Owner's notes, UFC Fight Night 290 - Allen vs. Duncan",
+   "url": "",
+   "date": "2026-10-10"
   }
  ],
  "depth": "thin"

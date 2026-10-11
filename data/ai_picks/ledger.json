@@ -130,7 +130,15 @@
        "selection": "Goes to decision",
        "odds": 136,
        "p": 0.5252,
-       "p_fanduel": 0.4002
+       "p_fanduel": 0.4002,
+       "close_odds": 136,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "SUB",
+        "round": 5,
+        "seconds": 166
+       }
       }
      ],
      "odds": 136,
@@ -140,9 +148,10 @@
      "p": 0.5252,
      "ev": 0.2395,
      "reasoning": "Five rounds between a grinder who wins late and a striker who has never been submitted: Allen's path is control and a decision, and Duncan's knockouts come early against lesser opposition, not against a durable top-five middleweight. FanDuel's 40% for the distance looks low for this matchup; I make it about half.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-09T18:21:56+00:00"
+     "status": "lost",
+     "profit": -3.0,
+     "placed_at": "2026-10-09T18:21:56+00:00",
+     "clv": -0.0
     },
     {
      "id": "2-2",
@@ -159,7 +168,8 @@
        "selection": "Rj Harris by decision",
        "odds": 500,
        "p": 0.2489,
-       "p_fanduel": 0.1446
+       "p_fanduel": 0.1446,
+       "close_odds": 500
       }
      ],
      "odds": 500,
@@ -171,7 +181,8 @@
      "reasoning": "Harris is the deserved favourite (about 73%), but Frye has never been finished (his only UFC fight went the distance) and comes in 15 lb lighter at 246, so a Harris win on the cards is likelier than FanDuel's 14.5%. Small stake: heavyweight finish rates make this a long shot either way.",
      "status": "open",
      "profit": 0.0,
-     "placed_at": "2026-10-09T18:21:56+00:00"
+     "placed_at": "2026-10-09T18:21:56+00:00",
+     "clv": 0.0
     }
    ],
    "staked": 5.0,

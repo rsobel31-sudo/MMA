@@ -42,7 +42,15 @@
      "method": "",
      "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-122-139443"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Brendan Allen",
+   "result": {
+    "method": "SUB",
+    "round": 5,
+    "seconds": 166
+   }
   },
   {
    "a": "Jai Herbert",
@@ -83,7 +91,15 @@
      "method": "KO/TKO",
      "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-122-139443"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.1,
+   "winner": "Jai Herbert",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Ketlen Souza",
@@ -124,7 +140,9 @@
      "method": "",
      "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-122-139443"
     }
-   ]
+   ],
+   "y": null,
+   "outcome": "void"
   },
   {
    "a": "Andre Fili",
@@ -158,7 +176,15 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Andre Fili",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 22
+   }
   },
   {
    "a": "Malcolm Wellmaker",
@@ -192,7 +218,15 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Otari Tanzilovi",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 159
+   }
   },
   {
    "a": "Gerald Meerschaert",
@@ -253,7 +287,15 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Francisco Prado",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 263
+   }
   },
   {
    "a": "Leon Shahbazyan",
@@ -272,7 +314,15 @@
    "p_model": 0.64,
    "p_market": 0.568,
    "created": "2026-10-09T16:45:00+00:00",
-   "pundits": []
+   "pundits": [],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Niko Price",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 118
+   }
   },
   {
    "a": "Brendson Ribeiro",
@@ -298,7 +348,15 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.0,
+   "winner": "Brendson Ribeiro",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 109
+   }
   },
   {
    "a": "Allen Frye",
@@ -332,7 +390,9 @@
      "method": "",
      "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-122-139443"
     }
-   ]
+   ],
+   "y": null,
+   "outcome": "void"
   },
   {
    "a": "Alice Pereira",
@@ -357,7 +417,15 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Alice Pereira",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 300
+   }
   },
   {
    "a": "Ernesta Kareckaite",
@@ -382,7 +450,9 @@
      "method": "",
      "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-allen-vs-duncan-picks-predictions-and-odds-october-10-2026/"
     }
-   ]
+   ],
+   "y": null,
+   "outcome": "DRAW"
   }
  ]
 }

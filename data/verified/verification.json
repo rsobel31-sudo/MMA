@@ -1,13 +1,13 @@
 {
  "results": {
-  "no second source": 879,
+  "no second source": 876,
   "method": 21,
-  "agree": 10526,
+  "agree": 10529,
   "round": 12,
   "winner": 3
  },
  "stats": {
-  "official only": 9393,
+  "official only": 9396,
   "verified": 1130,
   "disputed": 36
  },
@@ -811,6 +811,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Anvar Boynazarov",
+   "sherdog": "1989-01-01",
+   "ufcstats": "1989-01-10",
+   "fightmatrix": null
+  },
+  {
    "name": "Michal Figlak",
    "sherdog": "1996-08-16",
    "ufcstats": "1996-08-15",
@@ -866,26 +872,26 @@
   }
  ],
  "dob": {
-  "agree": 2260,
-  "differ, unresolved (Sherdog kept)": 95,
+  "agree": 2268,
+  "differ, unresolved (Sherdog kept)": 96,
   "differ, Fight Matrix sides with Sherdog": 65
  },
  "height": {
-  "agree": 2280,
-  "differ": 164
+  "agree": 2288,
+  "differ": 165
  },
  "reach": {
-  "no second source": 1695,
+  "no second source": 1698,
   "agree": 704,
   "differ": 68
  },
  "odds": {
   "odds bouts": 16711,
-  "matched": 13031,
-  "unmatched": 2331,
+  "matched": 13061,
+  "unmatched": 2297,
   "bad lines": 0,
   "pages disagree": 4,
   "both pages": 8983,
-  "no lines": 1345
+  "no lines": 1349
  }
 }

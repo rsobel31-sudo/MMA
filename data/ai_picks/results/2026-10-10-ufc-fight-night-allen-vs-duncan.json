@@ -1,0 +1,64 @@
+{
+ "event": "UFC Fight Night: Allen vs. Duncan",
+ "date": "2026-10-10",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Alice Pereira vs Darya Zheleznyakova": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 300
+  },
+  "Andre Fili vs Kai Kamaka III": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 22
+  },
+  "Brendan Allen vs Christian Leroy Duncan": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 5,
+   "seconds": 166
+  },
+  "Brendson Ribeiro vs Felipe Franco": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 109
+  },
+  "Ernesta Kareckaite vs Melissa Gatto": {
+   "winner": null,
+   "method": "DRAW",
+   "round": 3,
+   "seconds": 300
+  },
+  "Francisco Prado vs Ismael Bonfim": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 263
+  },
+  "Jai Herbert vs Matheus Camilo": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300
+  },
+  "Leon Shahbazyan vs Niko Price": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 118
+  },
+  "Malcolm Wellmaker vs Otari Tanzilovi": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 159
+  }
+ }
+}

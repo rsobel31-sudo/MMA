@@ -717,6 +717,8 @@
 "stats_official": "3"
 },
 "Alibi Idiris": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -1365,6 +1367,8 @@
 "stats_official": "4"
 },
 "Anvar Boynazarov": {
+"dob": "disputed: Sherdog 1989-01-01, UFCStats 1989-01-10",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Anying Wang": {
@@ -6728,6 +6732,8 @@
 "stats_official": "3"
 },
 "Harry Hardwick": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 178 cm, UFCStats 173 cm",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "1"
@@ -6774,8 +6780,10 @@
 "stats_official": "3"
 },
 "Hecher Sosa": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Hector Aldana": {
 "dob": "Sherdog + UFCStats agree",
@@ -8912,6 +8920,8 @@
 "stats_official": "4"
 },
 "John Teixeira": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "John Yannis": {
@@ -9255,6 +9265,8 @@
 "stats_verified": "1"
 },
 "Jose Medina": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "2",
 "stats_verified": "1"
@@ -9728,6 +9740,8 @@
 "stats_official": "16"
 },
 "Justice Torres": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -10154,6 +10168,10 @@
 "Kazuki Tokudome": {
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "4"
+},
+"Kazuma Maruyama": {
+"reach": "UFCStats only (183 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Kazunari Murakami": {
 "stats_official": "1"
@@ -11511,6 +11529,10 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "11",
 "stats_verified": "4"
+},
+"Macksom Lee": {
+"reach": "UFCStats only (190 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Macy Chiasson": {
 "dob": "Sherdog + UFCStats agree",
@@ -15909,6 +15931,8 @@
 "stats_official": "1"
 },
 "Ryoga Arimoto": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (160 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -16077,8 +16101,10 @@
 "stats_official": "1"
 },
 "Sang Wook Kim": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
-"stats_official": "2"
+"stats_official": "4"
 },
 "Santiago Luna": {
 "dob": "Sherdog + UFCStats agree",
@@ -18613,6 +18639,10 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "disputed: Sherdog 180 cm, UFCStats 175 cm",
 "stats_official": "2"
+},
+"Yawei Ren": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Yazan Hajeh": {
 "stats_official": "1"
