@@ -230,6 +230,24 @@ def refresh_bestfightodds(names: List[str], delay: float, log=print) -> Dict[str
     return {"refreshed": replaced + new, "unknown": unknown}
 
 
+def refresh_rankings(delay: float, path: Optional[Path] = None) -> Dict[str, object]:
+    """The official UFC rankings (Wikipedia's mirror of the media panel, plus its Meta rankings) into
+    data/ranked_fighters.json, which the export reads for each fighter's official rank. The UFC re-ranks
+    each week after a card, so this runs with every refresh."""
+    from .sources import wikipedia
+
+    path = path or ROOT / "data" / "ranked_fighters.json"
+    rows = wikipedia.parse_rankings(_fetcher(delay).get(wikipedia.RANKINGS_URL, cache=False, fresh=True))
+    if len(rows) < 150:  # a broken or half-loaded page; keep the last good copy
+        raise RuntimeError(f"only {len(rows)} ranked fighters parsed")
+    old = json.loads(path.read_text()) if path.exists() else {}
+    key = lambda r: (r["system"], r["division"], r["rank"], r["name"])  # noqa: E731
+    changed = len({key(r) for r in rows} ^ {key(r) for r in old.get("rankings", [])})
+    old.update({"rankings": rows, "fetched": date.today().isoformat(), "source": wikipedia.RANKINGS_URL})
+    path.write_text(json.dumps(old, ensure_ascii=False, indent=1) + "\n")
+    return {"ranked": len(rows), "changed": changed}
+
+
 def refresh_kaggle(log=print) -> Dict[str, object]:
     """Re-download the UFCStats scrape; import it only if the dump is newer than ours."""
     from .sources import kaggle_ufc
@@ -306,6 +324,7 @@ def cmd_refresh(args) -> int:
         ("bestfightodds", lambda: refresh_bestfightodds(names, args.delay)),
         ("enrich", lambda: {"tail": _run(["enrich", "--data", "data/sherdog"]).strip()[-200:]}),
         ("upcoming", lambda: {"tail": _run(["upcoming", "--refresh"]).strip()[-200:]}),
+        ("rankings", lambda: refresh_rankings(args.delay)),
         ("verify", lambda: {"tail": _run(["verify"]).strip()[-300:]}),
         ("export", lambda: {"tail": _run(["export"] + EXPORT_ARGS).strip()[-300:]}),
     ]
