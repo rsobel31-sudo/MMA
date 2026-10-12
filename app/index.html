@@ -1806,6 +1806,7 @@ button.namelink:hover { color: var(--red); }
       ${scoreboard}
       ${verifyPanel}
       ${marketPanel}
+      ${reviewPanel()}
       <section class="panel">
         <h3>How the model has done</h3>
         <p class="num" style="margin:6px 0 0">Walk-forward backtest on ${bt.n ? bt.n.toLocaleString() : "?"} past UFC bouts, each predicted using only what was known beforehand: picked the winner <strong>${bt.accuracy ? pct(bt.accuracy) : "?"}</strong>${bt.high_conf_n ? `, and <strong>${pct(bt.high_conf_accuracy)}</strong> of the ${bt.high_conf_n} fights where it was at least 65% sure` : ""}. Confidence is calibrated (logits × ${state.data.calibration_scale || 1}) because the raw model was ${(state.data.calibration_scale || 1) >= 1 ? "hedging toward 50/50" : "slightly overconfident"} on past bouts.</p>
@@ -2519,6 +2520,49 @@ button.namelink:hover { color: var(--red); }
   }
 
   // ------------------------------------------------------------ Prospects
+  // Model review after each card (review.py): which decision-chance correction won the out-of-sample test,
+  // whether lopsided matchmaking explains the early finishes, the veteran check, and underdog patterns.
+  const review = { data: null, loading: false };
+  function reviewPanel() {
+    if (!review.data && !review.loading) {
+      review.loading = true;
+      fetch("review.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => { review.data = d; render(); }).catch(() => {});
+    }
+    const R = review.data;
+    if (!R) return "";
+    const pct = (x) => x == null ? "—" : Math.round(x * 100) + "%";
+    const sgn = (x) => (x >= 0 ? "+" : "−") + Math.abs(Math.round(x * 1000) / 10).toFixed(1);
+    const D = R.decision, V = R.veterans, U = R.underdogs;
+    const years = Object.keys(D.by_year_mismatch).filter((y) => +y >= 2019);
+    const band = (y, b) => D.by_year_mismatch[y].decision_rate[b];
+    const cands = Object.entries(D.candidates).sort((a, b) => a[1].log_loss - b[1].log_loss);
+    const traits = Object.entries(U.traits).filter(([, t]) => t.consistent).sort((a, b) => b[1].edge - a[1].edge);
+    const row = ([k, t]) => `<tr><td>${esc(t.desc)}</td><td>${t.n}</td><td>${pct(t.won)}</td><td>${pct(t.line)}</td><td><strong>${sgn(t.edge)}</strong></td><td>${t.return >= 0 ? "+" : "−"}${Math.abs(Math.round(t.return * 100))}%</td><td class="muted">${Object.values(t.eras).map((e) => e ? sgn(e.edge) : "—").join(" / ")}</td></tr>`;
+    return `<section class="panel">
+      <h3>Model review <span class="muted" style="font-size:13px;font-weight:400">after every card · through ${esc(R.through)} · ${R.bouts.toLocaleString()} UFC bouts</span></h3>
+      <p class="muted" style="font-size:13px;margin:4px 0 10px">Each candidate is fitted on the years before a test year and scored on that year (2021 on). A setting changes only when the new one beats the current one overall and in at least half the years.${R.switched.length ? ` <strong>Changed this run:</strong> ${esc(R.switched.join("; "))}.` : ""}</p>
+      <div class="stack" style="gap:14px"><div>
+        <div class="label">Chance the fight goes the distance</div>
+        <div class="table-wrap"><table class="list num"><thead><tr><th>Version</th><th>Log loss</th></tr></thead><tbody>
+          ${cands.map(([k, c]) => `<tr><td>${k === D.chosen ? "<strong>" + esc(k) + "</strong> · in use" : esc(k)}</td><td>${c.log_loss.toFixed(4)}</td></tr>`).join("")}
+        </tbody></table></div>
+        <p class="muted" style="font-size:12px;margin:6px 0 0">Lower log loss is better. Weighting recent years (a trend) doesn't help; knowing how lopsided the matchup is does. More finishes this year come from more mismatches on the cards, not from fights changing.</p>
+      </div><div>
+        <div class="label">Share of bouts with a 73%+ favourite, and how often each kind of bout goes the distance</div>
+        <div class="table-wrap"><table class="list num"><thead><tr><th>Year</th><th>73%+ favs</th><th>Close</th><th>Clear fav</th><th>Mismatch</th></tr></thead><tbody>
+          ${years.map((y) => `<tr><td>${y}</td><td>${pct(D.by_year_mismatch[y].mismatch_share)}</td><td>${pct(band(y, "close (fav under ~60%)"))}</td><td>${pct(band(y, "clear fav (60-73%)"))}</td><td>${pct(band(y, "mismatch (fav over 73%)"))}</td></tr>`).join("")}
+        </tbody></table></div>
+      </div></div>
+      <h3 style="margin-top:14px">Veterans (${V.age}+ against a younger opponent)</h3>
+      <p style="font-size:14px;margin:4px 0">${V.n.toLocaleString()} bouts: veterans won <strong>${pct(V.veteran_won)}</strong>; the model gave them ${pct(V.model_gave)}, the line ${pct(V.market_gave)}. ${V.improves ? `A veteran shift (${V.shift > 0 ? "up" : "down"}) tested better in ${esc(V.years_won)} years and is flagged for a change.` : `Over the full record the model ${V.model_gave > V.veteran_won ? "slightly overrates" : "slightly underrates"} them, and a veteran shift didn't pass the out-of-sample test (better in ${esc(V.years_won)} years), so the model is left as is. A hot stretch for older fighters in one season is noise against the full record.`}</p>
+      <h3 style="margin-top:14px">Underdogs: what holds up</h3>
+      <p class="muted" style="font-size:13px;margin:4px 0 8px">All underdogs: won ${pct(U.all.won)} against a line of ${pct(U.all.line)}; betting every one lost ${Math.abs(Math.round(U.all.return * 100))}% at closing prices. Only patterns pointing the same way in all three eras (2016-19 / 2020-22 / 2023-26) are listed; "edge" is wins above the line, in points.</p>
+      <div class="table-wrap"><table class="list num"><thead><tr><th>Underdog spot</th><th>Bouts</th><th>Won</th><th>Line</th><th>Edge</th><th>Return</th><th>Edge by era</th></tr></thead><tbody>
+        ${traits.map(row).join("")}
+      </tbody></table></div>
+      <p class="muted" style="font-size:12px;margin:6px 0 0">Closing lines, flat stakes, a typical 4.5% margin. Positive spots are leads to check against the read, not bets on their own.</p>
+    </section>`;
+  }
   function loadProspects() {
     const P = state.pros;
     if (P.data || P.loading) return;

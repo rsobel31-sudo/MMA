@@ -30,7 +30,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple, Sequence
 
 from .data import METHOD_BUCKETS, Fight, Method
 from .model import sigmoid
@@ -233,19 +233,30 @@ def blend(p_model: float, p_market: Optional[float], weights: Optional[Dict[str,
     return sigmoid(weights["model"] * _logit(p_model) + weights["market"] * _logit(p_market))
 
 
+def dec_chance(raw: float, dec_cal: Sequence[float], pa: float, p_line: Optional[float] = None) -> float:
+    """The calibrated chance a fight goes the distance. (intercept, slope) recalibrates the method model's own
+    chance; a third coefficient adds how lopsided the matchup is, |logit| of the favourite's chance on the line
+    (else ours): mismatches end early, which is matchmaking rather than a change in how fights go
+    (review.py tests this against the alternatives after every card)."""
+    z = dec_cal[0] + dec_cal[1] * _logit(raw)
+    if len(dec_cal) > 2:
+        z += dec_cal[2] * abs(_logit(p_line if p_line is not None else pa))
+    return sigmoid(z)
+
+
 def model_prob(market: Tuple, pa: float, dist_a: Dict[str, float], dist_b: Dict[str, float], rounds: int, timing: Timing,
-               dec_cal: Optional[Tuple[float, float]] = None) -> float:
+               dec_cal: Optional[Sequence[float]] = None, p_line: Optional[float] = None) -> float:
     """Our probability of a market from the win probability and method split.
 
-    `dec_cal` = (intercept, slope) recalibrates the chance the fight goes the
-    distance (the method model finishes too many fights; see `fit_distance`).
+    `dec_cal` recalibrates the chance the fight goes the distance (see `dec_chance`); `p_line` is the no-vig
+    line's chance for A, when there is one.
     """
     pb = 1 - pa
     joint = {("a", m): pa * dist_a[m] for m in METHOD_BUCKETS}
     joint.update({("b", m): pb * dist_b[m] for m in METHOD_BUCKETS})
     if dec_cal:
         raw = joint[("a", "DEC")] + joint[("b", "DEC")]
-        cal = sigmoid(dec_cal[0] + dec_cal[1] * _logit(raw))
+        cal = dec_chance(raw, dec_cal, pa, p_line)
         for k in joint:
             joint[k] *= cal / raw if k[1] == "DEC" else (1 - cal) / (1 - raw)
     finishes = [(s, m) for (s, m) in joint if m != "DEC"]
@@ -342,7 +353,7 @@ def price_bout(bout: Dict[str, object], pa_model: float, dist_a: Dict[str, float
     out = []
     for m in raw:
         key = m["market"]
-        ours = model_prob(key, pa, dist_a, dist_b, rounds, timing, dec_cal)
+        ours = model_prob(key, pa, dist_a, dist_b, rounds, timing, dec_cal, p_mkt_a)
         if key[0] == "ml":
             p = ours  # already blended with the market
         else:

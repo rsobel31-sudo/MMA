@@ -74,6 +74,17 @@ The sheet shows each bout (model vs FanDuel) and every market sorted by expected
 
 It's saved to `data/ai_picks/sheets/<date>-<event>.json`; market ids like `45058:ml:a` go in the bets file.
 
+**Underdog check (from the model review, `data/analysis/review.json` > `underdogs`).** Before backing an underdog, check
+it against the patterns that have held in all three eras since 2016 (Insights > Model review lists the current ones):
+
+- Leans toward: five-round bouts (dogs +3.5 pts over the line, the one spot with a positive return at closing prices);
+  a dog on a 3+ win streak (+1.7, still slightly negative after the margin).
+- Leans against: a dog under 25% on the line (-5, -30% return: the longshot bias), heavyweight dogs (-5.8), our model
+  rating the dog below the line, a dog 4+ years older, a dog off a 400+ day layoff, a favourite coming off a KO loss
+  (the line already overreacts to it in the dog's favour).
+- Underdogs as a whole lose about 11% at closing prices, and when the model and the line disagree on the winner the
+  line is usually right. A positive spot is a reason to look closer, not a bet on its own.
+
 How to read it honestly:
 
 - **Win probabilities**:
@@ -207,6 +218,29 @@ After the refresh (so the recap includes last night's card):
    - `notes_used` is true only if the owner left notes for this card.
 4. Fold what holds up into the scouting reports (SCOUTING.md) for the fighters concerned, citing "owner's notes, <event>" as the source. A note can inform a future read but never moves a prediction on its own.
 
+## After every card: model review
+
+`python -m mma_predictor model-review` (run automatically as the last step of `refresh` whenever a UFC bout has been
+added since the last review) rebuilds `.cache/review/bouts.jsonl` (`review-data`: every UFC bout since 2016 with the
+walk-forward win chance, the method model's decision chance, the closing line and both fighters' traits) and re-tests:
+
+- **Decision chance.** Candidates: the plain correction, one weighting recent years (a trend), and ones that add how
+  lopsided the matchup is (|logit| of the favourite's chance on the line, else ours: matchmaking). Each is fitted on the
+  years before a test year and scored on that year, 2021 on. The chosen method is refitted on every bout each time; a
+  different method replaces it only if it beats it pooled by 0.0005 log loss **and** in at least half the test years.
+  On 2026-10-12 the matchup-mismatch version replaced the plain one (0.66291 -> 0.66075, better in 4 of 6 years);
+  weighting recent years tested worse. The extra 2026 finishes come from more lopsided cards (33% of bouts had a 73%+
+  favourite, against 16-21% in 2019-2022), which the line captures, not from fights changing.
+- **Veterans** (35+ against a younger opponent): a shift on the win chance is adopted by the same rule. Over the full
+  record the model slightly overrates them (36% won, 37% given); the shift didn't pass, so nothing changed.
+- **Underdogs:** results against the line by trait, each checked in 2016-19, 2020-22 and 2023-26, with a line-controlled
+  regression (`z`). Feeds the underdog check on Friday.
+
+The choice and its evidence go in `data/ai_picks/calibration.json` (`method`, `dec_cal`, `evidence`, `previous`), the
+full report in `data/analysis/review.json`, one line per run in `data/analysis/review_log.jsonl`, and the page's copy in
+`app/review.json` (Insights > Model review). `--no-adopt` reports without changing anything. Publish `review.json`
+with the other app files.
+
 ## Sunday: refresh the data
 
 After grading, bring the fighter data up to date so next week's sheet sees last night's results:
@@ -216,9 +250,9 @@ python -m mma_predictor refresh          # about 20 minutes
 ```
 
 - It fetches the Sherdog pages of everyone on UFC events since our last bout, plus a rotating batch of 150 exported fighters whose pages were checked longest ago (catches non-UFC bouts and corrected results), and merges them into `data/sherdog` by date and both names.
-- It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, the official UFC rankings (Wikipedia's UFC rankings page, into `data/ranked_fighters.json`), verify and export.
+- It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, the official UFC rankings (Wikipedia's UFC rankings page, into `data/ranked_fighters.json`), verify, export, and the model review after a new card.
 - One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
-- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json` and `prospects.json`, and commit `data/` and `app/data.json`.
+- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json`, `prospects.json` and `review.json`, and commit `data/`, `app/data.json` and `app/review.json`.
 
 ## Betting lines: the odds sweep
 

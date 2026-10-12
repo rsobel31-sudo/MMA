@@ -664,6 +664,10 @@ def build_parser() -> argparse.ArgumentParser:
     register_tapology_import(sub)
     from .suggestions import register as register_suggestions
     register_suggestions(sub)
+    from .review_data import register as register_review_data
+    register_review_data(sub)
+    from .review import register as register_review
+    register_review(sub)
     return ap
 
 

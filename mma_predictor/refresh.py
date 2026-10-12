@@ -248,6 +248,21 @@ def refresh_rankings(delay: float, path: Optional[Path] = None) -> Dict[str, obj
     return {"ranked": len(rows), "changed": changed}
 
 
+def refresh_review(log=print) -> Dict[str, object]:
+    """After each UFC card: rebuild the review dataset and re-run the model review (review.py), which refits the
+    decision-chance correction and switches method only when another one beats it out of sample. Skipped when
+    no UFC bout has been added since the last review."""
+    from . import review, review_data
+
+    last = json.loads(review.OUT.read_text()).get("through", "") if review.OUT.exists() else ""
+    newest = max((r["date"] for r in _read_csv(ROOT / "data" / "verified" / "fights.csv") if r["event"].startswith("UFC")), default="")
+    if newest <= last:
+        return {"skipped": f"no UFC bout after {last}"}
+    out = review.run(review_data.build(log=lambda m: None))
+    review.publish(out)
+    return {"through": out["through"], "decision": out["decision"]["chosen"], "switched": out["switched"]}
+
+
 def refresh_kaggle(log=print) -> Dict[str, object]:
     """Re-download the UFCStats scrape; import it only if the dump is newer than ours."""
     from .sources import kaggle_ufc
@@ -327,6 +342,7 @@ def cmd_refresh(args) -> int:
         ("rankings", lambda: refresh_rankings(args.delay)),
         ("verify", lambda: {"tail": _run(["verify"]).strip()[-300:]}),
         ("export", lambda: {"tail": _run(["export"] + EXPORT_ARGS).strip()[-300:]}),
+        ("review", lambda: refresh_review()),
     ]
     for name, step in steps:
         if name in (args.skip or []):

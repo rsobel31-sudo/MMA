@@ -62,12 +62,13 @@ def load_adjust() -> Dict[str, float]:
 
 
 def joint_methods(pa: float, dist_a: Dict[str, float], dist_b: Dict[str, float],
-                  dec_cal: Optional[tuple], adjust: Optional[Dict[str, float]] = None) -> Dict[str, Dict[str, float]]:
+                  dec_cal: Optional[tuple], adjust: Optional[Dict[str, float]] = None,
+                  p_line: Optional[float] = None) -> Dict[str, Dict[str, float]]:
     """P(side wins by method), with the decision calibration and any learned method re-weighting applied.
     The re-weighting moves probability between methods inside each fighter's wins, so the win chance is unchanged."""
     out = {}
     for side in ("a", "b"):
-        out[side] = {m: P.model_prob(("method", side, m), pa, dist_a, dist_b, 3, None, dec_cal) for m in METHODS}
+        out[side] = {m: P.model_prob(("method", side, m), pa, dist_a, dist_b, 3, None, dec_cal, p_line) for m in METHODS}
         if adjust:
             w = {m: out[side][m] * adjust.get(m, 1.0) for m in METHODS}
             t = sum(w.values()) or 1.0
@@ -186,12 +187,19 @@ def cmd_draft(args) -> int:
         rounds = int(w.get("rounds") or 3)
         row = {"bout": f"{w['a']} vs {w['b']}", "a": w["a"], "b": w["b"], "segment": w.get("segment", ""),
                "weight_class": w.get("weight_class", ""), "rounds": rounds, "title": bool(w.get("title"))}
+        hit = ml.get(_pair(w["a"], w["b"]))
+        if hit and hit[1].get("a") is not None and hit[1].get("b") is not None:
+            pa_m = P.implied(hit[1]["a"]) / (P.implied(hit[1]["a"]) + P.implied(hit[1]["b"]))
+            if _pair(hit[0], hit[0]) != _pair(w["a"], w["a"]):  # the sheet lists the bout the other way round
+                pa_m = 1 - pa_m
+            row["market_p_a"] = round(pa_m, 4)
         a, b = linked.get(w["a"]), linked.get(w["b"])
         if a and b:
             sa, sb, x = pr.features(a, b, when, BoutContext(rounds, bool(w.get("title"))))
             # The model's own pick is the statistics alone; Claude's scouting read is Claude's, so it belongs to Claude's pick.
             pa = sigmoid_logit(model, x)
-            j = joint_methods(pa, method_distribution(sa, sb, rounds), method_distribution(sb, sa, rounds), dec_cal, adjust)
+            j = joint_methods(pa, method_distribution(sa, sb, rounds), method_distribution(sb, sa, rounds), dec_cal, adjust,
+                              row.get("market_p_a"))
             side = "a" if pa >= 0.5 else "b"
             method = max(METHODS, key=lambda m: j[side][m])
             row["read_a"] = round(reads.logit(a, b), 3)
@@ -201,12 +209,6 @@ def cmd_draft(args) -> int:
         else:
             row["model"] = None
             row["no_data"] = [n for n, l in ((w["a"], a), (w["b"], b)) if not l]
-        hit = ml.get(_pair(w["a"], w["b"]))
-        if hit and hit[1].get("a") is not None and hit[1].get("b") is not None:
-            pa_m = P.implied(hit[1]["a"]) / (P.implied(hit[1]["a"]) + P.implied(hit[1]["b"]))
-            if _pair(hit[0], hit[0]) != _pair(w["a"], w["a"]):  # the sheet lists the bout the other way round
-                pa_m = 1 - pa_m
-            row["market_p_a"] = round(pa_m, 4)
         bouts.append(row)
     draft = {"event": ev["name"], "date": ev["date"], "results_url": ev["url"], "location": ev.get("location", ""),
              "locks_at": _lock_time(ev["date"], _in_us(ev.get("location", ""))), "drafted_at": _now(),
