@@ -317,6 +317,8 @@
 "stats_official": "15"
 },
 "Al Matavao": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -1065,6 +1067,8 @@
 "stats_official": "1"
 },
 "Anelya Toktogonova": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (160 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2108,6 +2112,8 @@
 "stats_official": "1"
 },
 "Brahyam Zurcher": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2540,6 +2546,8 @@
 "stats_official": "17"
 },
 "Caio Bittencourt": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -4926,6 +4934,8 @@
 "stats_verified": "2"
 },
 "Djani Barbir": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (201 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -5530,6 +5540,8 @@
 "stats_official": "1"
 },
 "Emiliano Sordi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Emily Ducote": {
@@ -7810,6 +7822,8 @@
 "stats_official": "2"
 },
 "Janaina Silva": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (152 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -9927,6 +9941,8 @@
 "stats_official": "1"
 },
 "Kai Yoshida": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -10713,6 +10729,12 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "2"
+},
+"Kuya Ito": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (168 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Kwan Ho Kwak": {
 "dob": "Sherdog + UFCStats agree",
@@ -11765,6 +11787,8 @@
 "stats_verified": "1"
 },
 "Manuel Exposito": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14798,6 +14822,10 @@
 "height": "Sherdog + UFCStats agree",
 "stats_official": "2"
 },
+"Ramiro Jimenez": {
+"reach": "UFCStats only (185 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Ramiz Brahimaj": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -15880,6 +15908,8 @@
 "stats_official": "10"
 },
 "Ryan Loder": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "2",
 "stats_verified": "1"
@@ -16725,6 +16755,10 @@
 "reach": "disputed: UFCStats 165 cm, StatsFight 160 cm (not used)",
 "stats_official": "3",
 "stats_verified": "1"
+},
+"Sim Kai Xiong": {
+"reach": "UFCStats only (170 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Simeon Thoresen": {
 "dob": "Sherdog + UFCStats agree",
@@ -17662,6 +17696,12 @@
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "6"
 },
+"Tommy Cuozzi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (180 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Tommy Hayden": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -17899,6 +17939,8 @@
 "stats_official": "2"
 },
 "Ty Flores": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
