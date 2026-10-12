@@ -1512,11 +1512,14 @@ button.namelink:hover { color: var(--red); }
       const loser = b.winner === b.a ? b.b : b.a;
       const bk = boutKey(b), note = (notes.bouts || {})[bk] || "", open = state.recapOpen === bk;
       const noteBtn = canEdit ? `<button type="button" class="linklike muted" style="font-size:12.5px" data-recap-open="${esc(bk)}" aria-expanded="${open}">${note ? "✎ your note" : "+ note"}</button>` : "";
+      const st = review && review.stories && review.stories[bk];
+      const storyRow = st && st.summary ? `<tr class="rc-note"><td colspan="7"><span class="label" style="margin-right:6px">What happened</span>${esc(st.summary)}${st.turning_point ? ` <em>${esc(st.turning_point)}</em>` : ""}
+        <span class="muted" style="font-size:12px"> · ${(st.sources || []).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"${x.round_scores ? ` title="${esc(x.round_scores)}"` : ""}>${esc(x.outlet)}</a>`).join(", ")}</span></td></tr>` : "";
       const noteRow = open && canEdit ? `<tr class="rc-note"><td colspan="7"><textarea rows="2" data-recap-note="${esc(bk)}" data-recap-id="${esc(rid)}" placeholder="What did you see in ${esc(b.winner)} vs ${esc(loser)}? Styles, momentum, judging, what the numbers missed…" style="width:100%">${esc(note)}</textarea></td></tr>`
         : note ? `<tr class="rc-note"><td colspan="7"><span class="label" style="margin-right:6px">Your note</span>${esc(note)}</td></tr>` : "";
       return `<tr><td><strong>${esc(b.winner)}</strong> <span class="muted">def.</span> ${esc(loser)}${b.title ? ' <span class="chip">title</span>' : ""}</td>
         <td class="muted">${esc(b.method)}${b.round ? ` R${b.round}` : ""}</td>${cell(w("model"))}${cell(w("market"))}${cell(w("blend"))}
-        <td><span class="chip" title="${b.source === "live" ? "Frozen before the card" : "Walk-forward: made with only earlier fights, but computed after the fact"}">${b.source === "live" ? "live" : "backtest"}</span></td><td>${noteBtn}</td></tr>${noteRow}`;
+        <td><span class="chip" title="${b.source === "live" ? "Frozen before the card" : "Walk-forward: made with only earlier fights, but computed after the fact"}">${b.source === "live" ? "live" : "backtest"}</span></td><td>${noteBtn}</td></tr>${storyRow}${noteRow}`;
     }).join("");
     const sm = ev.summary, line = (k, x) => x && x.n ? `${NAMES[k][0].toUpperCase() + NAMES[k].slice(1)} ${x.correct}/${x.n}` : "";
     const card = `<section class="panel stack"><div><h2 style="font-size:30px;margin:0">${esc(ev.event)}</h2>

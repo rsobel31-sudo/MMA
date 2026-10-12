@@ -250,8 +250,8 @@ def refresh_rankings(delay: float, path: Optional[Path] = None) -> Dict[str, obj
 
 def refresh_review(log=print) -> Dict[str, object]:
     """After each UFC card: rebuild the review dataset and re-run the model review (review.py), which refits the
-    decision-chance correction and switches method only when another one beats it out of sample. Skipped when
-    no UFC bout has been added since the last review."""
+    decision-chance correction and switches method only when another one beats it out of sample; then sweep the
+    card's play-by-play and recaps (fight_recaps.py). Skipped when no UFC bout has been added since the last review."""
     from . import review, review_data
 
     last = json.loads(review.OUT.read_text()).get("through", "") if review.OUT.exists() else ""
@@ -260,7 +260,21 @@ def refresh_review(log=print) -> Dict[str, object]:
         return {"skipped": f"no UFC bout after {last}"}
     out = review.run(review_data.build(log=lambda m: None))
     review.publish(out)
-    return {"through": out["through"], "decision": out["decision"]["chosen"], "switched": out["switched"]}
+    res = {"through": out["through"], "decision": out["decision"]["chosen"], "switched": out["switched"]}
+    # The post-fight play-by-play sweep for the newest recapped card (Sherdog's round-by-round with round scores,
+    # MMA Mania's live blog, outlet recaps): the packet the Sunday card review reads, plus the committed index.
+    try:
+        from . import fight_recaps
+        from .sources.common import Fetcher
+
+        ev = (json.loads((ROOT / "app" / "data.json").read_text()).get("recaps") or {}).get("events", [None])[0]
+        if ev:
+            pk = fight_recaps.collect(ev, Fetcher(ROOT / ".cache" / "pages", delay=1.5, user_agent=UA), log=lambda m: None)
+            res["play_by_play"] = {"event": ev["event"], "two_outlets": sum(len({s["outlet"] for s in b["sources"]}) >= 2 for b in pk["bouts"].values()),
+                                   "bouts": len(pk["bouts"])}
+    except Exception as exc:  # noqa: BLE001 - the review itself already ran
+        res["play_by_play"] = {"error": str(exc)[:200]}
+    return res
 
 
 def refresh_kaggle(log=print) -> Dict[str, object]:

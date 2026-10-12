@@ -1,13 +1,13 @@
 {
  "name": "Jai Herbert",
- "updated": "2026-09-30T23:40:00+00:00",
+ "updated": "2026-10-12T16:00:00+00:00",
  "event": "UFC Fight Night: Allen vs. Duncan",
- "summary": "A tall, rangy English striker and former Cage Warriors lightweight champion, now 38; ten knockout wins. Back in the win column with a first-round KO of Mandel Nallo in April.",
+ "summary": "A tall, rangy English striker and former Cage Warriors lightweight champion, now 38; ten knockout wins. Beat Matheus Camilo by unanimous decision in October 2026 (29-28 x3) after a first-round KO of Mandel Nallo in April.",
  "how_they_fight": {
   "Striking": "Long, straight punching from range; reach about 196 cm, big for lightweight.",
-  "Grappling": "Defends takedowns well (about 78%) but offers little offense on the mat.",
+  "Grappling": "Defends takedowns well (about 78%) and is better off his back than his numbers suggest: against Camilo he gave up mount and his back, reversed to top and won the round with ground-and-pound.",
   "Defense": "Decision losses when out-worked (Chris Padilla, Fares Ziam).",
-  "Pace & cardio": "Steady three-round pace.",
+  "Pace & cardio": "Steady three-round pace; at 38 still out-worked a 25-year-old in round 3 behind the jab and leg kicks.",
   "Fight IQ": "Experienced; must keep a wrestler at range."
  },
  "patterns": [
@@ -16,7 +16,7 @@
  ],
  "concerns": [
   "Age (38)",
-  "Being out-worked or wrestled"
+  "Gets taken down by strong clinch wrestlers (twice by Camilo), though he scrambles back"
  ],
  "keys_to_beat": [
   "Close the distance and wrestle"
@@ -36,6 +36,13 @@
    "title": "UFC Fight Night: Allen vs Duncan",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
    "date": "2026-09"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Brian Knapp",
+   "title": "UFC Vegas 122 'Allen vs. Duncan' play-by-play, results & round scoring",
+   "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155",
+   "date": "2026-10-10"
   }
  ],
  "depth": "thin"

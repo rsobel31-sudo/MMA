@@ -1,0 +1,392 @@
+{
+ "id": "2026-10-10-ufc-fight-night-290-allen-vs-duncan",
+ "event": "UFC Fight Night 290 - Allen vs. Duncan",
+ "date": "2026-10-10",
+ "stories": {
+  "jai-herbert-matheus-camilo": {
+   "summary": "Herbert's jab and right hand had the early edge until Camilo wobbled him with an overhand and took him down late in round 1. Camilo took him down again in round 2 and reached mount and the back, but lost top position with two minutes left and Herbert won the round with ground-and-pound. A tiring Camilo was out-jabbed and stuffed on his shots in round 3: 29-28 on every card.",
+   "turning_point": "Round 2: Camilo lost mount; Herbert's top position from there swung the round and the fight.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155",
+     "round_scores": [
+      [
+       1,
+       "10-9 Camilo"
+      ],
+      [
+       2,
+       "10-9 Herbert"
+      ],
+      [
+       3,
+       "10-9 Herbert"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
+    }
+   ],
+   "written": "2026-10-12"
+  }
+ },
+ "coverage": {
+  "brendan-allen-christian-leroy-duncan": {
+   "a": "Brendan Allen",
+   "b": "Christian Leroy Duncan",
+   "winner": "Brendan Allen",
+   "method": "SUB",
+   "round": 5,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    },
+    {
+     "outlet": "Sherdog",
+     "kind": "recap",
+     "url": "https://www.sherdog.com/news/news/Brendan-Allen-disappointed-despite-UFC-Vegas-122-finish-bonus-203169"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-results/477898/ufc-vegas-122-results-matches-to-make-for-allen-vs-duncan-main-card-winners"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Duncan",
+     "10-9 Duncan",
+     "10-9 Duncan"
+    ],
+    [
+     2,
+     "10-8 Allen",
+     "10-8 Allen",
+     "10-8 Allen"
+    ],
+    [
+     3,
+     "10-9 Duncan",
+     "10-9 Duncan",
+     "10-9 Allen"
+    ],
+    [
+     4,
+     "10-9 Duncan",
+     "10-9 Duncan",
+     "10-9 Duncan"
+    ]
+   ],
+   "closeness": "from behind"
+  },
+  "jai-herbert-matheus-camilo": {
+   "a": "Jai Herbert",
+   "b": "Matheus Camilo",
+   "winner": "Jai Herbert",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Camilo",
+     "10-9 Camilo",
+     "10-9 Camilo"
+    ],
+    [
+     2,
+     "10-9 Herbert",
+     "10-9 Herbert",
+     "10-9 Herbert"
+    ],
+    [
+     3,
+     "10-9 Herbert",
+     "10-9 Herbert",
+     "10-9 Herbert"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "lupita-godinez-ketlen-souza": {
+   "a": "Lupita Godinez",
+   "b": "Ketlen Souza",
+   "winner": "Lupita Godinez",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Souza",
+     "10-9 Souza",
+     "10-9 Souza"
+    ],
+    [
+     2,
+     "10-9 Souza",
+     "10-9 Souza",
+     "10-9 Souza"
+    ],
+    [
+     3,
+     "10-9 Godinez",
+     "10-9 Godinez",
+     "10-9 Godinez"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "andre-fili-kai-kamaka-iii": {
+   "a": "Andre Fili",
+   "b": "Kai Kamaka III",
+   "winner": "Andre Fili",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-paramount-plus-news-hub-fight-cards-schedule/478024/watch-ufc-vegas-122-video-highlights-results-paramount-fili-knockout-head-kick-kamaka"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/515156/video-andre-fili-brutally-knocks-out-kai-kamaka-iii-at-ufc-vegas-122"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/515126/sick-head-kick-classy-move-pros-react-to-andre-filis-brutal-knockout-win-at-ufc-vegas-122"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Fili",
+     "10-9 Fili",
+     "10-9 Fili"
+    ]
+   ],
+   "closeness": null
+  },
+  "otari-tanzilovi-malcolm-wellmaker": {
+   "a": "Otari Tanzilovi",
+   "b": "Malcolm Wellmaker",
+   "winner": "Otari Tanzilovi",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Tanzilovi",
+     "10-9 Tanzilovi",
+     "10-9 Tanzilovi"
+    ]
+   ],
+   "closeness": null
+  },
+  "julius-walker-gerald-meerschaert": {
+   "a": "Julius Walker",
+   "b": "Gerald Meerschaert",
+   "winner": "Julius Walker",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/ufc-vegas-122-prelims-results-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Walker",
+     "10-9 Walker",
+     "10-9 Walker"
+    ]
+   ],
+   "closeness": null
+  },
+  "francisco-prado-ismael-bonfim": {
+   "a": "Francisco Prado",
+   "b": "Ismael Bonfim",
+   "winner": "Francisco Prado",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/ufc-vegas-122-prelims-results-highlights/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "niko-price-leon-shahbazyan": {
+   "a": "Niko Price",
+   "b": "Leon Shahbazyan",
+   "winner": "Niko Price",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/10/ufc-vegas-122-niko-price-blitzes-leon-shahbazyan-wins-retirement-fight/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "brendson-ribeiro-felipe-franco": {
+   "a": "Brendson Ribeiro",
+   "b": "Felipe Franco",
+   "winner": "Brendson Ribeiro",
+   "method": "SUB",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "Sherdog",
+     "kind": "recap",
+     "url": "https://www.sherdog.com/news/news/Brendson-Ribeiro-asks-for-help-finding-missing-brother-following-UFC-win-203177"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/ufc-vegas-122-prelims-results-highlights/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "allen-frye-richard-harris": {
+   "a": "Allen Frye",
+   "b": "Richard Harris",
+   "winner": "Allen Frye",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/ufc-vegas-122-prelims-results-highlights/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "alice-pereira-darya-zheleznyakova": {
+   "a": "Alice Pereira",
+   "b": "Darya Zheleznyakova",
+   "winner": "Alice Pereira",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/boxing/478407/pereira-coach-plinio-cruz-rips-into-chase-demoor-after-misfits-win-your-time-is-up-pinocchio"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  }
+ }
+}

@@ -1,31 +1,73 @@
 [
-  {
-    "date": "2023-02-11",
-    "fighter": "Alexander Volkanovski",
-    "opponent": "Islam Makhachev",
-    "category": "grappling",
-    "rating": -0.5,
-    "skills": ["scramble", "sub_def"],
-    "note": "Lost the decision but repeatedly got back up and reversed position; Makhachev held his back through round 4 without finishing.",
-    "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
-  },
-  {
-    "date": "2023-02-11",
-    "fighter": "Alexander Volkanovski",
-    "opponent": "Islam Makhachev",
-    "category": "wrestling",
-    "rating": 0,
-    "skills": ["td_def"],
-    "note": "Stuffed five of Makhachev's nine takedown attempts, a near-even wrestling showing against an elite wrestler.",
-    "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
-  },
-  {
-    "date": "2024-03-09",
-    "fighter": "Gilbert Burns",
-    "opponent": "Jack Della Maddalena",
-    "category": "grappling",
-    "rating": 1,
-    "note": "Took Della Maddalena down, nearly took his back and won the grappling exchanges through two rounds before being knocked out in the third.",
-    "source": "https://www.espn.com/mma/story/_/id/39723387/ufc-jack-della-madallena-broke-forearm-win-vs-gilbert-burns"
-  }
+ {
+  "date": "2023-02-11",
+  "fighter": "Alexander Volkanovski",
+  "opponent": "Islam Makhachev",
+  "category": "grappling",
+  "rating": -0.5,
+  "skills": [
+   "scramble",
+   "sub_def"
+  ],
+  "note": "Lost the decision but repeatedly got back up and reversed position; Makhachev held his back through round 4 without finishing.",
+  "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
+ },
+ {
+  "date": "2023-02-11",
+  "fighter": "Alexander Volkanovski",
+  "opponent": "Islam Makhachev",
+  "category": "wrestling",
+  "rating": 0,
+  "skills": [
+   "td_def"
+  ],
+  "note": "Stuffed five of Makhachev's nine takedown attempts, a near-even wrestling showing against an elite wrestler.",
+  "source": "https://www.espn.com/mma/story/_/id/35639428/ufc-284-volkanovski-vs-makhachev-live-results-results"
+ },
+ {
+  "date": "2024-03-09",
+  "fighter": "Gilbert Burns",
+  "opponent": "Jack Della Maddalena",
+  "category": "grappling",
+  "rating": 1,
+  "note": "Took Della Maddalena down, nearly took his back and won the grappling exchanges through two rounds before being knocked out in the third.",
+  "source": "https://www.espn.com/mma/story/_/id/39723387/ufc-jack-della-madallena-broke-forearm-win-vs-gilbert-burns"
+ },
+ {
+  "date": "2026-10-10",
+  "fighter": "Jai Herbert",
+  "opponent": "Matheus Camilo",
+  "category": "grappling",
+  "rating": 1.0,
+  "skills": [
+   "scramble",
+   "gnp"
+  ],
+  "note": "Gave up mount and his back in round 2 but reversed to top with two minutes left and won the round with ground-and-pound (all three Sherdog scorers 10-9 Herbert); ended round 3 on top again after stuffing a shot.",
+  "source": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155; https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan; https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
+ },
+ {
+  "date": "2026-10-10",
+  "fighter": "Jai Herbert",
+  "opponent": "Matheus Camilo",
+  "category": "striking",
+  "rating": 0.5,
+  "skills": [
+   "strike_off"
+  ],
+  "note": "Jab, leg kicks and body kicks took over a visibly tiring Camilo in round 3 and bloodied him; Camilo had the bigger single shots (wobbled Herbert with an overhand late in round 1).",
+  "source": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155; https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan; https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
+ },
+ {
+  "date": "2026-10-10",
+  "fighter": "Matheus Camilo",
+  "opponent": "Jai Herbert",
+  "category": "wrestling",
+  "rating": 0.5,
+  "skills": [
+   "td_off"
+  ],
+  "note": "Took Herbert down in rounds 1 and 2 (clinch and bodylock), but missed both shots in round 3 as he tired.",
+  "source": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155; https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan; https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
+ }
 ]

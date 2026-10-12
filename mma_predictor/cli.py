@@ -668,6 +668,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_review_data(sub)
     from .review import register as register_review
     register_review(sub)
+    from .fight_recaps import register as register_fight_recaps
+    register_fight_recaps(sub)
     return ap
 
 

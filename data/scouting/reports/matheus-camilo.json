@@ -1,13 +1,13 @@
 {
  "name": "Matheus Camilo",
- "updated": "2026-09-30T23:40:00+00:00",
+ "updated": "2026-10-12T16:00:00+00:00",
  "event": "UFC Fight Night: Allen vs. Duncan",
- "summary": "A 25-year-old Nova Uniao wrestler: 11-3, about three takedowns per 15 minutes in the UFC. Knocked out Nazim Sadykhov in 91 seconds in June after out-working Viacheslav Borshchev.",
+ "summary": "A 25-year-old Nova Uniao wrestler: 11-4. Lost a 29-28 decision to Jai Herbert in October 2026 after taking him down twice; faded badly in round 3. Before that, knocked out Nazim Sadykhov in 91 seconds.",
  "how_they_fight": {
   "Striking": "Low UFC volume (about 1.7 significant strikes a minute) but showed power against Sadykhov.",
-  "Grappling": "Wrestling-heavy: chains takedowns and controls; was submitted by Gabriel Green in 2025.",
+  "Grappling": "Wrestling-heavy: chains clinch and bodylock takedowns and reaches dominant positions, but struggles to hold them (lost mount to Herbert in round 2); was submitted by Gabriel Green in 2025.",
   "Defense": "Hard to hit (about 70% striking defense).",
-  "Pace & cardio": "Fine for three rounds.",
+  "Pace & cardio": "Tired visibly in round 3 against Herbert: slower, head movement gone, missed both late shots. Treat his 15-minute cardio as a question.",
   "Fight IQ": "Says he respects Herbert's experience (Yahoo Sports)."
  },
  "patterns": [
@@ -15,7 +15,9 @@
  ],
  "concerns": [
   "Submission defense (the Green loss)",
-  "Long striker's range"
+  "Long striker's range",
+  "Holding top position",
+  "Cardio in the third round"
  ],
  "keys_to_beat": [
   "Keep it standing and long"
@@ -35,6 +37,13 @@
    "title": "UFC Fight Night: Allen vs Duncan",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
    "date": "2026-09"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Brian Knapp",
+   "title": "UFC Vegas 122 'Allen vs. Duncan' play-by-play, results & round scoring",
+   "url": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155",
+   "date": "2026-10-10"
   }
  ],
  "depth": "thin"
