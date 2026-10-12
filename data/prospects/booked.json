@@ -58,17 +58,5 @@
    "Wikipedia"
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
- },
- "https://www.sherdog.com/fighter/Samuel-Sanches-389956": {
-  "date": "2026-11-14",
-  "event": "UFC 334 - Gane vs. Hokit",
-  "name": "Samuel Sanches",
-  "promotion": "UFC",
-  "sherdog_event": "https://www.sherdog.com/events/UFC-334-Gane-vs-Hokit-114293",
-  "sources": [
-   "Sherdog",
-   "Wikipedia"
-  ],
-  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_334"
  }
 }
