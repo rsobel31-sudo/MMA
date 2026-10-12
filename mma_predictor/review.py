@@ -14,6 +14,8 @@ chance of a decision, closing lines, both fighters' traits before the bout):
 3. Underdogs. Who wins as an underdog more than the line says, by trait, with each pattern checked in three
    separate eras so one hot season doesn't count as a finding, plus the flat-stake return at the closing price.
 
+4. Pre-fight claims vs the fights: the Sunday review's per-bout checks (fight_recaps.py) tallied by factor.
+
     python -m mma_predictor model-review            # writes data/analysis/review.json (+ a line in review_log.jsonl)
 """
 
@@ -346,6 +348,42 @@ def underdog_study(rows: List[dict], vig: float = 0.045) -> Dict[str, object]:
     return {"all": base, "by_year": {y: summary(v) for y, v in sorted(years.items())}, "traits": out}
 
 
+# ------------------------------------------------------------------ 4. pre-fight claims vs the fights
+def fight_checks() -> Dict[str, object]:
+    """The Sunday review's checks (data/scouting/recaps/*.json, stories.*.checks): each pre-fight claim (Claude's pick,
+    the scouting read, the model's biggest drivers) marked held / failed / mixed / untested against the play-by-play.
+    Tallied by factor so a driver that keeps failing in the fights shows up before the backtest can see it."""
+    by_tag: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    by_source: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    verdicts: Dict[str, int] = defaultdict(int)
+    cards = bouts = 0
+    for f in sorted((ROOT / "data" / "scouting" / "recaps").glob("*.json")):
+        doc = json.loads(f.read_text())
+        stories = [s for s in doc.get("stories", {}).values() if s.get("checks")]
+        if not stories:
+            continue
+        cards += 1
+        for st in stories:
+            bouts += 1
+            verdicts[st.get("verdict", "")] += 1
+            for c in st["checks"]:
+                by_tag[c.get("tag") or "other"][c["verdict"]] += 1
+                by_source[c["by"]][c["verdict"]] += 1
+
+    def rate(d):
+        tested = d.get("held", 0) + d.get("failed", 0) + d.get("mixed", 0)
+        return {**d, "tested": tested, "held_rate": round((d.get("held", 0) + 0.5 * d.get("mixed", 0)) / tested, 3) if tested else None}
+
+    tags = {k: rate(dict(v)) for k, v in by_tag.items()}
+    # A model driver that keeps failing in the fights gets a targeted backtest (like the wear and age caps tested
+    # on 2026-10-12), never an automatic change: the fights are a few dozen claims, the backtest thousands of bouts.
+    from .fight_recaps import FEATURE_TEXT
+    watch = [k for k, v in tags.items() if k in FEATURE_TEXT and v["tested"] >= 10 and (v["held_rate"] or 0) < 0.4]
+    return {"cards": cards, "bouts": bouts, "verdicts": dict(verdicts), "watch": watch,
+            "by_source": {k: rate(dict(v)) for k, v in by_source.items()},
+            "by_tag": dict(sorted(tags.items(), key=lambda kv: -kv[1]["tested"]))}
+
+
 # ------------------------------------------------------------------ run
 def run(rows: List[dict], adopt: bool = True, log=print) -> Dict[str, object]:
     cal = json.loads(CALIBRATION.read_text()) if CALIBRATION.exists() else {}
@@ -353,7 +391,8 @@ def run(rows: List[dict], adopt: bool = True, log=print) -> Dict[str, object]:
     vet = veteran_study(rows)
     dogs = underdog_study(rows)
     out = {"run": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), "bouts": len(rows),
-           "through": max(r["date"] for r in rows), "decision": dec, "veterans": vet, "underdogs": dogs, "switched": []}
+           "through": max(r["date"] for r in rows), "decision": dec, "veterans": vet, "underdogs": dogs,
+           "checks": fight_checks(), "switched": []}
     kind = KINDS.get(dec["chosen"])
     if adopt and kind:
         # Every review refits the chosen method on all bouts so far (new cards included); the method itself
@@ -390,6 +429,7 @@ def publish(out: Dict[str, object]) -> None:
                                     for k, c in d["candidates"].items() if k != "current"},
                      "by_year_mismatch": d["by_year_mismatch"]},
         "veterans": {k: v[k] for k in ("age", "n", "veteran_won", "model_gave", "market_gave", "by_era", "shift", "with_shift", "without", "years_won", "improves")},
+        "checks": out.get("checks") or fight_checks(),
         "underdogs": {"all": u["all"], "by_year": u["by_year"],
                       "traits": {k: {x: t[x] for x in ("desc", "n", "won", "line", "edge", "return", "z", "consistent", "eras")}
                                  for k, t in u["traits"].items()}},

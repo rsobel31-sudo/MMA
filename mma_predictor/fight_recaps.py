@@ -47,8 +47,12 @@ def _text(page: str) -> str:
     return html.unescape(re.sub(r"[ \t\r\f\v]+", " ", body)).strip()
 
 
+SUFFIXES = {"jr", "sr", "ii", "iii", "iv"}
+
+
 def _surname(name: str) -> str:
-    return fold(name).split()[-1]
+    words = [w for w in fold(name).split() if w not in SUFFIXES] or fold(name).split()
+    return words[-1]
 
 
 def play_by_play(page: str, bouts: List[dict]) -> Dict[str, str]:
@@ -254,6 +258,65 @@ def save_index(packet: dict) -> None:
     f.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
 
 
+FEATURE_TEXT = {  # model feature -> what it claims about the fight, for the factor checks
+    "wear_and_tear": "fresher body (fights, cage time, damage taken)", "age_curve": "age", "reach": "reach",
+    "height": "height", "outside_rating": "Fight Matrix rating", "wrestling_edge": "wrestling edge",
+    "striking_defense": "striking defence", "striking_exchange": "striking exchange", "power_vs_chin": "power vs chin",
+    "submission_threat": "submission threat", "control": "control time", "experience": "experience",
+    "schedule_strength": "strength of schedule", "form": "recent form", "overall": "overall rating",
+    "striking_rating": "striking rating", "wrestling_rating": "wrestling rating", "grappling_rating": "grappling rating",
+}
+
+
+def _same_bout(x: dict, b: dict) -> bool:
+    return {_surname(x["a"]), _surname(x["b"])} == {_surname(b["a"]), _surname(b["b"])}
+
+
+def pre_fight(ev: dict, bouts: Dict[str, dict], log=print) -> None:
+    """Attach what we said before the fight to each bout: Claude's pick and reason (card picks), the scouting read's
+    factors, the model's chance with its biggest drivers, and the closing line, so the review can check each claim
+    against what happened."""
+    from types import SimpleNamespace
+
+    from .cli import _history
+    from .features import BoutContext
+    from .picks_cli import _model
+    from .predictor import FightPredictor
+
+    picks = next((json.loads(f.read_text()) for f in sorted((ROOT / "data" / "card_picks").glob(f"{ev['date']}-*.json"))), {})
+    reads = next((json.loads(f.read_text()) for f in sorted((ROOT / "data" / "scouting" / "reads").glob(f"{ev['date']}-*.json"))), {})
+    try:
+        h = _history(SimpleNamespace(data=str(ROOT / "data" / "verified"), scouting=str(ROOT / "data" / "scouting")))
+        model, _ = _model(ROOT / "app" / "data.json")
+        pr = FightPredictor(h, model)
+    except Exception as exc:  # noqa: BLE001 - the picks and reads still go in
+        log(f"  model drivers unavailable: {str(exc)[:80]}")
+        pr = None
+    when = date.fromisoformat(ev["date"])
+    for k, b in bouts.items():
+        pf: Dict[str, object] = {}
+        cp = next((x for x in picks.get("bouts", []) if _same_bout(x, b)), None)
+        if cp:
+            pf["pick"] = {k2: cp["pick"].get(k2) for k2 in ("winner", "method", "round", "confidence", "why")}
+            if cp.get("model"):
+                pf["model"] = {"winner": cp["model"]["winner"], "method": cp["model"]["method"], "p_win": cp["model"]["p_win"]}
+            if cp.get("market_p_a") is not None:
+                pf["market"] = {"fav": cp["a"] if cp["market_p_a"] >= 0.5 else cp["b"], "p": round(max(cp["market_p_a"], 1 - cp["market_p_a"]), 3)}
+        rd = next((x for x in reads.get("bouts", []) if _same_bout(x, b)), None)
+        if rd:
+            pf["read"] = {"favours": rd.get("favours"), "confidence": rd.get("confidence"), "factors": rd.get("factors", []),
+                          "reasoning": rd.get("reasoning", "")}
+        if pr is not None:
+            try:
+                sa, sb, x = pr.features(b["a"], b["b"], when, BoutContext(int(cp.get("rounds", 3)) if cp else 3, False))
+                c = sorted(((f, model.scale * v) for f, v in model.contributions(x).items()), key=lambda t: -abs(t[1]))[:5]
+                pf["drivers"] = [{"feature": f, "means": FEATURE_TEXT.get(f, f), "favours": b["a"] if v > 0 else b["b"],
+                                  "logit": round(abs(v), 3)} for f, v in c if abs(v) >= 0.03]
+            except KeyError:
+                pass
+        b["pre_fight"] = pf
+
+
 def cmd_fight_recaps(args) -> int:
     from .sources.common import Fetcher
 
@@ -266,6 +329,8 @@ def cmd_fight_recaps(args) -> int:
     f = Fetcher(ROOT / ".cache" / "pages", delay=args.delay, user_agent=UA)
     print(f"{ev['event']} ({ev['date']}): recap id {recap_id(ev)}")
     packet = collect(ev, f)
+    pre_fight(ev, packet["bouts"])
+    (PACKETS / f"{packet['id']}.json").write_text(json.dumps(packet, ensure_ascii=False, indent=1))
     two = 0
     for k, b in packet["bouts"].items():
         outlets = sorted({s["outlet"] for s in b["sources"]})
@@ -279,6 +344,7 @@ def cmd_fight_recaps(args) -> int:
     if args.show:
         for k, b in packet["bouts"].items():
             print(f"\n===== {b['a']} vs {b['b']} [{k}] — {b['winner']} by {b['method']} R{b['round']}")
+            print("--- BEFORE THE FIGHT\n" + json.dumps(b.get("pre_fight", {}), ensure_ascii=False, indent=1))
             for s in b["sources"]:
                 print(f"--- {s['outlet']} ({s['kind']}): {s['url']}\n{s['text'][:2500]}")
     return 0

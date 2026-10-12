@@ -221,6 +221,18 @@ After the refresh (so the recap includes last night's card):
      page shows it under the bout, with the source links; the bout key is the brief's `key`). Every bout gets one: if
      only one outlet described it, look again (the outlets' archive search, the next day's news) and, if it is still
      one, write it from that outlet and add `"single_source": true`. Check the count before finishing: stories = bouts;
+   - **check the prediction against the fight.** The packet prints, per bout, what we said before it (`--show`,
+     "BEFORE THE FIGHT"): Claude's pick and its reason, the scouting read's factors, the model's chance and its biggest
+     drivers (feature, which fighter it favoured, size), and the closing line. In the same story add `checks`: one
+     entry per claim (each driver of 0.1+ logit, the pick's reason, the read's factors):
+     `{"by": "pick"|"read"|"model", "claim", "tag", "favoured", "verdict": "held"|"failed"|"mixed"|"untested", "note"}`.
+     `tag` is the model feature for a driver (`wear_and_tear`, `wrestling_edge`, `reach`, ...) and a short theme
+     otherwise (`cardio`, `durability`, `short_notice`, `inactivity`, `style`, ...); judge only what the fight
+     showed ("untested" when it ended before the claim could show). Then a `verdict` for the prediction: "right, for
+     our reasons", "right, partly for our reasons", "right, other reasons", "right on the cards, wrong on the fight",
+     "wrong, close fight", "wrong, claim failed". The model review tallies these by factor (Insights > Model review,
+     "Pre-fight claims vs the fights"); a model driver that holds under 40% of the time over 10+ checks is put on
+     watch and gets a targeted backtest (a cap or reweight, adopted only if it passes the usual out-of-sample rule);
    - record **judged performances** in `data/scouting/fight_notes.json` where two outlets agree: per domain
      (striking / wrestling / grappling), -2..+2 for the fighter against the opponent, with the skills involved
      (e.g. `scramble`, `gnp`, `td_off`), the note and the source links. One entry per domain covers both fighters.

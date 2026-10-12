@@ -1,5 +1,5 @@
 {
- "run": "2026-10-12T15:17:24+00:00",
+ "run": "2026-10-12T16:55:42+00:00",
  "bouts": 5359,
  "through": "2026-10-10",
  "decision": {
@@ -1512,6 +1512,140 @@
     "consistent": false,
     "coef": -0.0,
     "z": -0.0
+   }
+  }
+ },
+ "checks": {
+  "cards": 1,
+  "bouts": 11,
+  "verdicts": {
+   "wrong, close fight": 1,
+   "right, for our reasons": 4,
+   "right on the cards, wrong on the fight": 1,
+   "wrong, claim failed": 4,
+   "right, partly for our reasons": 1
+  },
+  "watch": [],
+  "by_source": {
+   "pick": {
+    "failed": 5,
+    "held": 6,
+    "mixed": 3,
+    "tested": 14,
+    "held_rate": 0.536
+   },
+   "model": {
+    "failed": 7,
+    "held": 8,
+    "untested": 2,
+    "tested": 15,
+    "held_rate": 0.533
+   },
+   "read": {
+    "mixed": 1,
+    "failed": 1,
+    "held": 2,
+    "tested": 4,
+    "held_rate": 0.625
+   }
+  },
+  "by_tag": {
+   "wear_and_tear": {
+    "failed": 4,
+    "held": 1,
+    "tested": 5,
+    "held_rate": 0.2
+   },
+   "wrestling_edge": {
+    "mixed": 3,
+    "held": 1,
+    "failed": 1,
+    "tested": 5,
+    "held_rate": 0.5
+   },
+   "durability": {
+    "failed": 1,
+    "held": 3,
+    "tested": 4,
+    "held_rate": 0.75
+   },
+   "striking_rating": {
+    "held": 3,
+    "tested": 3,
+    "held_rate": 1.0
+   },
+   "age_curve": {
+    "failed": 1,
+    "held": 1,
+    "tested": 2,
+    "held_rate": 0.5
+   },
+   "reach": {
+    "held": 2,
+    "tested": 2,
+    "held_rate": 1.0
+   },
+   "short_notice": {
+    "held": 1,
+    "failed": 1,
+    "tested": 2,
+    "held_rate": 0.5
+   },
+   "cardio": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "style": {
+    "failed": 1,
+    "tested": 1,
+    "held_rate": 0.0
+   },
+   "striking_exchange": {
+    "mixed": 1,
+    "tested": 1,
+    "held_rate": 0.5
+   },
+   "power_vs_chin": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "submission_threat": {
+    "untested": 1,
+    "failed": 1,
+    "tested": 1,
+    "held_rate": 0.0
+   },
+   "wrestling_rating": {
+    "failed": 1,
+    "tested": 1,
+    "held_rate": 0.0
+   },
+   "inactivity": {
+    "failed": 1,
+    "tested": 1,
+    "held_rate": 0.0
+   },
+   "striking_defense": {
+    "failed": 1,
+    "tested": 1,
+    "held_rate": 0.0
+   },
+   "finishing_history": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "overall": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "size_gap": {
+    "untested": 1,
+    "tested": 0,
+    "held_rate": null
    }
   }
  },

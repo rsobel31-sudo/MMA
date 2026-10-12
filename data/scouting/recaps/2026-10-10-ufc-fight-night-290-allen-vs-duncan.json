@@ -34,7 +34,42 @@
      "url": "https://cagesidepress.com/2026/10/10/black-country-banger-turns-back-matheus-camilo-in-ufc-vegas-122-co-headliner/"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "25-year-old wrestler out-works a 38-year-old",
+     "tag": "age_curve",
+     "favoured": "Matheus Camilo",
+     "verdict": "failed",
+     "note": "Camilo tired in round 3 and Herbert out-worked him."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Camilo",
+     "tag": "wear_and_tear",
+     "favoured": "Matheus Camilo",
+     "verdict": "failed",
+     "note": "The older, more worn fighter had the better third round."
+    },
+    {
+     "by": "read",
+     "claim": "Camilo's wrestling against Herbert being out-worked",
+     "tag": "wrestling_edge",
+     "favoured": "Matheus Camilo",
+     "verdict": "mixed",
+     "note": "Two takedowns, but lost mount and couldn't hold top; stuffed late."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Herbert",
+     "tag": "reach",
+     "favoured": "Jai Herbert",
+     "verdict": "held",
+     "note": "The long jab won round 3 and cut Camilo up."
+    }
+   ]
   },
   "brendan-allen-christian-leroy-duncan": {
    "summary": "Duncan was the sharper striker for most of the fight, rocking Allen with a spinning elbow in round 1 and out-jabbing a slowing Allen in round 4. Allen's wrestling kept him in it: a takedown and heavy ground-and-pound won round 2 (Duncan was also docked a point for an eye poke), and round 3 was a grappling grind. Early in round 5 Allen dragged Duncan down from a bodylock, took his back and choked him out at 2:46.",
@@ -50,7 +85,42 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Five rounds favour Allen's grinding top game",
+     "tag": "cardio",
+     "favoured": "Brendan Allen",
+     "verdict": "held",
+     "note": "Allen's takedowns won round 2 and finished it in round 5; Duncan slowed by round 4."
+    },
+    {
+     "by": "model",
+     "claim": "Duncan's striking rating",
+     "tag": "striking_rating",
+     "favoured": "Christian Leroy Duncan",
+     "verdict": "held",
+     "note": "Duncan won the standing rounds (1 and 4) on every Sherdog card."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Duncan",
+     "tag": "wear_and_tear",
+     "favoured": "Christian Leroy Duncan",
+     "verdict": "failed",
+     "note": "Duncan was the one fading late, and was choked out."
+    },
+    {
+     "by": "pick",
+     "claim": "Duncan has never been submitted, so a decision",
+     "tag": "durability",
+     "favoured": "Christian Leroy Duncan",
+     "verdict": "failed",
+     "note": "Submitted in round 5."
+    }
+   ]
   },
   "lupita-godinez-ketlen-souza": {
    "summary": "Souza, who missed weight, out-struck Godinez for two rounds with jabs, uppercuts and leg kicks, stuffing her early takedown attempts and leaving her bloodied. Godinez finally landed a single-leg in round 3 and rode out the round with ground-and-pound from guard. All three judges gave it to Godinez 29-28; all three Sherdog scorers and MMA Mania had Souza 29-28.",
@@ -66,7 +136,34 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Godinez's volume and takedowns",
+     "tag": "wrestling_edge",
+     "favoured": "Lupita Godinez",
+     "verdict": "mixed",
+     "note": "Takedowns stuffed for two rounds; one in round 3 won that round."
+    },
+    {
+     "by": "model",
+     "claim": "Souza's striking rating",
+     "tag": "striking_rating",
+     "favoured": "Ketlen Souza",
+     "verdict": "held",
+     "note": "Souza won the striking clearly; media scorers had her 29-28."
+    },
+    {
+     "by": "read",
+     "claim": "Souza drifts into clinches",
+     "tag": "style",
+     "favoured": "Lupita Godinez",
+     "verdict": "failed",
+     "note": "Souza used the clinch well (shoulder strikes, elbows) rather than getting stuck there."
+    }
+   ]
   },
   "andre-fili-kai-kamaka-iii": {
    "summary": "A close, fun first round: Kamaka pressured and landed combinations to the body, while Fili answered with a long jab and clinch knees and edged it. Twenty-two seconds into round 2, Fili staggered Kamaka with a left hook and knocked him out cold with a head kick.",
@@ -82,7 +179,42 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Kamaka's accuracy and volume",
+     "tag": "striking_exchange",
+     "favoured": "Kai Kamaka III",
+     "verdict": "mixed",
+     "note": "Kamaka landed combinations in a close round 1, then was knocked out."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Kamaka",
+     "tag": "wear_and_tear",
+     "favoured": "Kai Kamaka III",
+     "verdict": "failed",
+     "note": "Kamaka was the one knocked out; Fili's age and mileage didn't show."
+    },
+    {
+     "by": "read",
+     "claim": "Kamaka's defensive leaks and July KO loss",
+     "tag": "durability",
+     "favoured": "Andre Fili",
+     "verdict": "held",
+     "note": "Stopped cold by a head kick, his second straight stoppage loss."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Fili",
+     "tag": "reach",
+     "favoured": "Andre Fili",
+     "verdict": "held",
+     "note": "Fili's long jab set the range."
+    }
+   ]
   },
   "otari-tanzilovi-malcolm-wellmaker": {
    "summary": "Wellmaker pressured and hurt Tanzilovi in round 1, dropping him with a body shot, but Tanzilovi survived, completed takedowns and edged the round on Sherdog's cards (MMA Mania gave it to Wellmaker). In round 2 Tanzilovi had a head kick blocked, came back with another that dropped Wellmaker even through his raised hand, and finished it with punches at 2:39.",
@@ -98,7 +230,26 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Tanzilovi's wrestling against Wellmaker's grappling defence",
+     "tag": "wrestling_edge",
+     "favoured": "Otari Tanzilovi",
+     "verdict": "mixed",
+     "note": "He landed takedowns in round 1 but was stuffed in round 2; the head kick won it."
+    },
+    {
+     "by": "pick",
+     "claim": "Wellmaker's power is the risk",
+     "tag": "power_vs_chin",
+     "favoured": "Malcolm Wellmaker",
+     "verdict": "held",
+     "note": "Wellmaker dropped him with a body shot in round 1."
+    }
+   ]
   },
   "julius-walker-gerald-meerschaert": {
    "summary": "Walker, younger and far stronger, clinched, took Meerschaert down and battered him with elbows and punches from top for all of round 1 (Meerschaert's armbar attempt went nowhere). He took him down again in round 2 and finished with ground-and-pound at 3:35. Meerschaert left his gloves in the cage.",
@@ -113,7 +264,34 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Meerschaert, 38 and up a weight, gets stopped early",
+     "tag": "age_curve",
+     "favoured": "Julius Walker",
+     "verdict": "held",
+     "note": "Overpowered and stopped in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Walker",
+     "tag": "wear_and_tear",
+     "favoured": "Julius Walker",
+     "verdict": "held",
+     "note": "Walker was stronger throughout."
+    },
+    {
+     "by": "model",
+     "claim": "Walker's wrestling edge",
+     "tag": "wrestling_edge",
+     "favoured": "Julius Walker",
+     "verdict": "held",
+     "note": "Took him down at will."
+    }
+   ]
   },
   "francisco-prado-ismael-bonfim": {
    "summary": "Bonfim missed weight by 8.5 pounds. Prado out-boxed him early, landed an overhand left, then took him down and kept him there with knees and punches. When Bonfim got up he was taken down again, and a hard elbow from full guard started the ground-and-pound that ended it at 4:23 of round 1.",
@@ -127,7 +305,34 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Bonfim on short notice and a skid; Prado at his natural weight",
+     "tag": "short_notice",
+     "favoured": "Francisco Prado",
+     "verdict": "held",
+     "note": "Bonfim missed weight by 8.5 lb and was dominated."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Prado",
+     "tag": "submission_threat",
+     "favoured": "Francisco Prado",
+     "verdict": "untested",
+     "note": "Won by ground-and-pound, not a submission."
+    },
+    {
+     "by": "model",
+     "claim": "Bonfim's wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Ismael Bonfim",
+     "verdict": "failed",
+     "note": "Prado took Bonfim down twice."
+    }
+   ]
   },
   "niko-price-leon-shahbazyan": {
    "summary": "Price, in what was billed as his retirement fight, rushed Shahbazyan, shrugged off a guillotine and stayed on top. Shahbazyan offered almost no defence as Price rained elbows and punches from half guard and on the feet over him, and the referee stopped it at 1:58 of round 1.",
@@ -145,7 +350,42 @@
      "url": "https://cagesidepress.com/2026/10/10/ufc-vegas-122-niko-price-blitzes-leon-shahbazyan-wins-retirement-fight/"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Shahbazyan's first-round submissions against a declining Price",
+     "tag": "submission_threat",
+     "favoured": "Leon Shahbazyan",
+     "verdict": "failed",
+     "note": "His guillotine attempt failed and he barely defended."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Shahbazyan",
+     "tag": "wear_and_tear",
+     "favoured": "Leon Shahbazyan",
+     "verdict": "failed",
+     "note": "The 37-year-old ran him over in under two minutes."
+    },
+    {
+     "by": "read",
+     "claim": "Shahbazyan's chin (against)",
+     "tag": "durability",
+     "favoured": "Niko Price",
+     "verdict": "held",
+     "note": "Stopped quickly again, as in his UFC debut."
+    },
+    {
+     "by": "model",
+     "claim": "Price's striking rating",
+     "tag": "striking_rating",
+     "favoured": "Niko Price",
+     "verdict": "held",
+     "note": "Price's ground-and-pound ended it."
+    }
+   ]
   },
   "brendson-ribeiro-felipe-franco": {
    "summary": "After a minute of feeling out, Franco shot for a takedown and put his neck straight into a guillotine. Ribeiro (who missed weight) held it as Franco tried to slam free, rolled to mount and got the tap at 1:49 of round 1.",
@@ -159,7 +399,34 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Ribeiro on short notice and a losing run",
+     "tag": "short_notice",
+     "favoured": "Felipe Franco",
+     "verdict": "failed",
+     "note": "Ribeiro (who missed weight) won in 1:49."
+    },
+    {
+     "by": "model",
+     "claim": "Franco's wrestling edge",
+     "tag": "wrestling_edge",
+     "favoured": "Felipe Franco",
+     "verdict": "failed",
+     "note": "His takedown attempt walked straight into the guillotine."
+    },
+    {
+     "by": "model",
+     "claim": "Size favours Franco",
+     "tag": "size_gap",
+     "favoured": "Felipe Franco",
+     "verdict": "untested",
+     "note": "Over too quickly to tell."
+    }
+   ]
   },
   "allen-frye-richard-harris": {
    "summary": "The unbeaten Harris started well, landing jabs, an overhand right and steady leg kicks, but with his hands low and his chin up. Midway through round 1 Frye landed a right hand that sent him backward, followed with a left hook and three more rights, and finished him on the floor at 2:59.",
@@ -174,7 +441,34 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Harris unbeaten and active; Frye inactive",
+     "tag": "inactivity",
+     "favoured": "RJ Harris",
+     "verdict": "failed",
+     "note": "Frye, out of action, knocked him out in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Harris's striking defence",
+     "tag": "striking_defense",
+     "favoured": "Richard Harris",
+     "verdict": "failed",
+     "note": "Hands low, chin up: dropped by the first clean right."
+    },
+    {
+     "by": "pick",
+     "claim": "Frye has never been finished, so a decision",
+     "tag": "durability",
+     "favoured": "Allen Frye",
+     "verdict": "held",
+     "note": "Frye absorbed Harris's early shots and wasn't hurt."
+    }
+   ]
   },
   "alice-pereira-darya-zheleznyakova": {
    "summary": "Pereira landed the harder shots standing, clinched and took Zheleznyakova down. From mount and the back she rained elbows and punches over the last two minutes, opening a deep cut, and Zheleznyakova told the referee between rounds that she would not continue.",
@@ -188,7 +482,26 @@
      "url": "https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
     }
    ],
-   "written": "2026-10-12"
+   "written": "2026-10-12",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Pereira's round-one finishing and Zheleznyakova's early stoppages",
+     "tag": "finishing_history",
+     "favoured": "Alice Pereira",
+     "verdict": "held",
+     "note": "Finished at the end of round 1 (corner retirement)."
+    },
+    {
+     "by": "model",
+     "claim": "Pereira's overall rating",
+     "tag": "overall",
+     "favoured": "Alice Pereira",
+     "verdict": "held",
+     "note": "Better on the feet and on the floor."
+    }
+   ]
   }
  },
  "coverage": {
