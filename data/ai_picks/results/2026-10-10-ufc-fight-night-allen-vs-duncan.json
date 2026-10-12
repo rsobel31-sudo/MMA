@@ -59,6 +59,25 @@
    "method": "KO/TKO",
    "round": 2,
    "seconds": 159
+  },
+  "Allen Frye Jr. vs Rj Harris": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 179
+  },
+  "Ketlen Souza vs Loopy Godinez": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300
+  },
+  "Gerald Meerschaert vs Julius Walker": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 215,
+   "round_agreed": false
   }
  }
 }

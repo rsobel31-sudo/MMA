@@ -169,7 +169,14 @@
        "odds": 500,
        "p": 0.2489,
        "p_fanduel": 0.1446,
-       "close_odds": 500
+       "close_odds": 500,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 1,
+        "seconds": 179
+       }
       }
      ],
      "odds": 500,
@@ -179,15 +186,15 @@
      "p": 0.2489,
      "ev": 0.4934,
      "reasoning": "Harris is the deserved favourite (about 73%), but Frye has never been finished (his only UFC fight went the distance) and comes in 15 lb lighter at 246, so a Harris win on the cards is likelier than FanDuel's 14.5%. Small stake: heavyweight finish rates make this a long shot either way.",
-     "status": "open",
-     "profit": 0.0,
+     "status": "lost",
+     "profit": -2.0,
      "placed_at": "2026-10-09T18:21:56+00:00",
      "clv": 0.0
     }
    ],
    "staked": 5.0,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-10-12T00:18:11+00:00",
    "placements": [
     {
      "placed_at": "2026-10-09T18:21:56+00:00",
@@ -206,7 +213,12 @@
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-332-4378"
    ],
-   "sheet_fetched_at": "2026-10-09T18:21:45+00:00"
+   "sheet_fetched_at": "2026-10-09T18:21:45+00:00",
+   "bankroll_after": 94.0,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }

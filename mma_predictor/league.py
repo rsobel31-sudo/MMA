@@ -70,11 +70,16 @@ def load_boards(folder: Path = BOARDS) -> Dict[str, List[Dict[str, object]]]:
     return out
 
 
+ROUND_MARKETS = {"win_round", "total", "ends_round", "starts_round"}  # legs that need the round itself
+ROUND_UNSURE: set = set()  # (event, bout) whose sources agree on winner and method but not the round
+
+
 def load_results(folder: Path = RESULTS) -> Dict[str, Dict[str, Optional[P.Result]]]:
     out: Dict[str, Dict[str, Optional[P.Result]]] = {}
     for p in sorted(Path(folder).glob("*.json")) if Path(folder).exists() else []:
         d = json.loads(p.read_text())
         out[d["event"]] = {k: (None if v is None else P.Result(v["winner"], v["method"], v["round"], v["seconds"])) for k, v in d["bouts"].items()}
+        ROUND_UNSURE.update((d["event"], k) for k, v in d["bouts"].items() if v and v.get("round_agreed") is False)
     return out
 
 
@@ -146,6 +151,8 @@ def standings_for(uid: str, bets: Iterable[Dict[str, object]], boards: Dict[str,
                 gl = []
                 for l in legs:
                     r = res.get(l["bout"], "missing")
+                    if r != "missing" and (ev, l["bout"]) in ROUND_UNSURE and l["market"][0] in ROUND_MARKETS:
+                        r = "missing"  # the sources disagree on the round this leg depends on: it waits
                     gl.append(dict(l, grade=None if r == "missing" else P.grade_leg(l["market"], r)))
                 if any(x["grade"] is None for x in gl):
                     bet.update(legs=gl, status="open", profit=0.0)

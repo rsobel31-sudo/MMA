@@ -240,7 +240,25 @@
      ]
     }
    },
-   "market_p_a": 0.6804
+   "market_p_a": 0.6804,
+   "result": {
+    "winner": "Loopy Godínez",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Andre Fili vs Kai Kamaka III",
@@ -783,7 +801,25 @@
      ]
     }
    },
-   "market_p_a": 0.272
+   "market_p_a": 0.272,
+   "result": {
+    "winner": "Allen Frye Jr.",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Alice Pereira vs Darya Zheleznyakova",
@@ -931,6 +967,6 @@
    }
   }
  ],
- "graded": false,
- "graded_at": "2026-10-11T16:15:16+00:00"
+ "graded": true,
+ "graded_at": "2026-10-12T00:18:56+00:00"
 }

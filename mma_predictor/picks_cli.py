@@ -297,6 +297,31 @@ def cmd_place(args) -> int:
 
 
 # ------------------------------------------------------------------ settle
+def _sherdog_url(name: str) -> Optional[str]:
+    """A fighter's Sherdog page from our data (data/sherdog/fighters.csv), through the name aliases
+    ("RJ Harris" is "Richard Harris" on Sherdog); None unless exactly one fighter matches."""
+    import csv
+
+    from .sources.wikipedia import match_key
+
+    if not hasattr(_sherdog_url, "index"):
+        idx: Dict[str, set] = {}
+        path = Path("data/sherdog/fighters.csv")
+        if path.exists():
+            for r in csv.DictReader(path.open(encoding="utf-8")):
+                if r.get("url"):
+                    idx.setdefault(match_key(r["name"]), set()).add(r["url"])
+        apath = Path("data/name_aliases.json")
+        _sherdog_url.aliases = {match_key(k): v for k, v in (json.loads(apath.read_text()) if apath.exists() else {}).items()
+                                if not k.startswith("_")}
+        _sherdog_url.index = idx
+    for key in (match_key(name), match_key(_sherdog_url.aliases.get(match_key(name), ""))):
+        urls = _sherdog_url.index.get(key) if key else None
+        if urls and len(urls) == 1:
+            return next(iter(urls))
+    return None
+
+
 def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dict[str, Optional[P.Result]]:
     """Results for this week's bouts that Wikipedia and Sherdog agree on (`agree`: what must match; default everything bets need).
     `round_agrees`, if given, is filled with whether the two sources also agree on the round of each accepted result."""
@@ -329,12 +354,14 @@ def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dic
         # Second source: the fighter's Sherdog record.
         sr = None
         for name, opp in ((a, b), (b, a)):
-            try:
-                hits = sherdog.search_fighter(fetcher, name)
-            except OSError as exc:
-                log(f"  {bout}: Sherdog search failed ({exc})")
-                continue
-            hit = next((u for n, u in hits if match_key(n) == match_key(name)), None)
+            hit = _sherdog_url(name)  # our own fighter data first: Sherdog's fight finder can come back empty
+            if not hit:
+                try:
+                    hits = sherdog.search_fighter(fetcher, name)
+                except OSError as exc:
+                    log(f"  {bout}: Sherdog search failed ({exc})")
+                    continue
+                hit = next((u for n, u in hits if match_key(n) == match_key(name)), None)
             if not hit:
                 continue
             page = sherdog.parse_fighter(_fresh(fetcher, hit), hit)
@@ -427,9 +454,14 @@ def cmd_results(args) -> int:
         if not todo:
             continue
         week = {"results_url": b.get("results_url", ""), "event_date": b["date"], "bets": [{"legs": [{"bout": x}]} for x in todo]}
-        res = _results_for(fetcher, week)
+        # Winner and method must agree; a round the sources disagree on is kept but flagged, and only bets that
+        # depend on the round (round props, totals, starts round N) wait for it (league.ROUND_MARKETS).
+        agrees: Dict[str, bool] = {}
+        res = _results_for(fetcher, week, agree=lambda x, y: x is not None and y is not None and x.winner == y.winner and x.method == y.method,
+                           round_agrees=agrees)
         for k, r in res.items():
-            have[k] = None if r is None else {"winner": r.winner, "method": r.method, "round": r.round, "seconds": r.seconds}
+            have[k] = None if r is None else {"winner": r.winner, "method": r.method, "round": r.round, "seconds": r.seconds,
+                                              "round_agreed": agrees.get(k, True)}
         RESULTS.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps({"event": ev, "date": b["date"], "sources": ["Wikipedia event page", "Sherdog fighter records"],
                                     "bouts": have}, indent=1, ensure_ascii=False) + "\n")

@@ -203,7 +203,25 @@
      }
     }
    },
-   "market_p_a": 0.7086
+   "market_p_a": 0.7086,
+   "result": {
+    "winner": "Roberto Soldić",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Ateba Gautier vs Roman Kopylov",
@@ -736,7 +754,7 @@
    }
   }
  ],
- "graded": false,
- "graded_at": "2026-10-11T16:15:14+00:00",
+ "graded": true,
+ "graded_at": "2026-10-12T00:18:49+00:00",
  "rounds_picked": false
 }
