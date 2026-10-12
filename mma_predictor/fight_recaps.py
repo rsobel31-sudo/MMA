@@ -56,7 +56,16 @@ def play_by_play(page: str, bouts: List[dict]) -> Dict[str, str]:
     flat = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style).*?</\1>", " ", page, flags=re.S))))
     start = flat.upper().find("PLAY-BY-PLAY")
     flat = flat[start:] if start >= 0 else flat
+    out_prelims: Dict[str, str] = {}
     heads = list(re.finditer(r"([A-Z][^.:]{2,60}? vs\. [A-Z][^.:]{2,60}?) Round 1:", flat))
+    # Prelims get one paragraph each: '<A> vs. <B>: <summary> Official decision: ...'
+    pre = flat.find("Prelims", heads[-1].end()) if heads else -1
+    if pre >= 0:
+        for m in re.finditer(r"([A-Z][\w'.\- ]{2,40}? vs\. [A-Z][\w'.\- ]{2,40}?)\s?: (.+?Official (?:decision|result): [^()]+?\([^)]*\)(?:, round \d \([\d:]+\))?)", flat[pre:pre + 8000]):
+            title = fold(m.group(1))
+            for b in bouts:
+                if _surname(b["a"]) in title and _surname(b["b"]) in title:
+                    out_prelims.setdefault(bout_key(b), m.group(0).strip())
     out = {}
     for i, m in enumerate(heads):
         seg = flat[m.start(): heads[i + 1].start() if i + 1 < len(heads) else min(len(flat), m.start() + 6000)]
@@ -64,6 +73,8 @@ def play_by_play(page: str, bouts: List[dict]) -> Dict[str, str]:
         for b in bouts:
             if _surname(b["a"]) in title and _surname(b["b"]) in title:
                 out[bout_key(b)] = seg.strip()[:5000]
+    for k, t in out_prelims.items():
+        out.setdefault(k, t)
     return out
 
 
@@ -171,7 +182,7 @@ def collect(ev: dict, fetcher, log=print) -> dict:
             except Exception as exc:  # noqa: BLE001
                 log(f"  {n['outlet']} {n['url'][:60]}: {str(exc)[:60]}")
                 continue
-            if t:
+            if t and sa in fold(t) and sb in fold(t):  # a story about this bout, not a namesake's
                 b["sources"].append({"outlet": n["outlet"], "kind": "recap", "url": n["url"], "title": n.get("title", ""), "text": t})
                 seen.add(n["url"])
         if len({s["outlet"] for s in b["sources"]}) < 2:
@@ -261,6 +272,10 @@ def cmd_fight_recaps(args) -> int:
         two += len(outlets) >= 2
         print(f"  {b['winner'] or 'draw':<26} {b['a']} vs {b['b']}: {', '.join(outlets) or 'no recap found'}")
     print(f"{two} of {len(packet['bouts'])} bouts described by two outlets; packet: {PACKETS / (packet['id'] + '.json')}")
+    written = json.loads((STORIES / f"{packet['id']}.json").read_text()).get("stories", {})
+    missing = [f"{b['a']} vs {b['b']} [{k}]" for k, b in packet["bouts"].items() if k not in written]
+    print(f"'What happened' written for {len(packet['bouts']) - len(missing)} of {len(packet['bouts'])} bouts"
+          + (": still to write: " + "; ".join(missing) if missing else ""))
     if args.show:
         for k, b in packet["bouts"].items():
             print(f"\n===== {b['a']} vs {b['b']} [{k}] — {b['winner']} by {b['method']} R{b['round']}")

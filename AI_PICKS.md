@@ -210,16 +210,18 @@ After the refresh (so the recap includes last night's card):
 2. **Play-by-play sweep.** `python -m mma_predictor fight-recaps --show` (the refresh already collected it; this
    re-runs it and prints the reading packet). For every bout it gathers, through each outlet's RSS feed and our news
    index: Sherdog's "play-by-play, results & round scoring" (every bout, round by round, with three Sherdog writers'
-   score for each round), MMA Mania's live results (main card, round by round), and per-bout recaps (Cageside Press,
+   score for each round), MMA Mania's live results (main card round by round, a paragraph per prelim), and per-bout recaps (Cageside Press,
    MMA Fighting, Sherdog, BJPenn, LowKick MMA). Yahoo republishes Sherdog's play-by-play, so it isn't a second source;
    MMA Junkie's live blog refuses automated reads. The outlets' text stays in `.cache/recaps/`; the committed index
    `data/scouting/recaps/<id>.json` keeps the links, Sherdog's round scores and a label per bout: `clear`, `close`,
    `disputed` (Sherdog's scorers had the loser ahead) for decisions, `from behind` for a finish by a fighter who was
-   trailing. Then, for each bout two outlets describe:
+   trailing. Then, for **every bout on the card, without exception**:
    - write a two-or-three sentence **what happened** in our own words, plus the **turning point** when there was one,
      into `stories.<bout key>` of the card's `data/scouting/recaps/<id>.json` and of `recap_reviews/<id>` (the Recaps
-     page shows it under the bout, with the source links; the bout key is the brief's `key`);
-   - record **judged performances** in `data/scouting/fight_notes.json` where the outlets agree: per domain
+     page shows it under the bout, with the source links; the bout key is the brief's `key`). Every bout gets one: if
+     only one outlet described it, look again (the outlets' archive search, the next day's news) and, if it is still
+     one, write it from that outlet and add `"single_source": true`. Check the count before finishing: stories = bouts;
+   - record **judged performances** in `data/scouting/fight_notes.json` where two outlets agree: per domain
      (striking / wrestling / grappling), -2..+2 for the fighter against the opponent, with the skills involved
      (e.g. `scramble`, `gnp`, `td_off`), the note and the source links. One entry per domain covers both fighters.
      They feed the sub-ratings on the next export, judged against what the ratings expected;
