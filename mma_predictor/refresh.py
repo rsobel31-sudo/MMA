@@ -261,6 +261,14 @@ def refresh_review(log=print) -> Dict[str, object]:
     out = review.run(review_data.build(log=lambda m: None))
     review.publish(out)
     res = {"through": out["through"], "decision": out["decision"]["chosen"], "switched": out["switched"]}
+    # Our division rankings after this card, for the monthly movement on UFC Rankings (rank_moves.py).
+    try:
+        from . import rank_moves
+
+        mv = rank_moves.after_card(json.loads((ROOT / "app" / "data.json").read_text()))
+        res["rank_moves"] = {"month": mv.get("month"), "from": mv.get("from"), "latest": mv.get("latest")}
+    except Exception as exc:  # noqa: BLE001
+        res["rank_moves"] = {"error": str(exc)[:200]}
     # The post-fight play-by-play sweep for the newest recapped card (Sherdog's round-by-round with round scores,
     # MMA Mania's live blog, outlet recaps): the packet the Sunday card review reads, plus the committed index.
     try:

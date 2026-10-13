@@ -670,6 +670,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_review(sub)
     from .fight_recaps import register as register_fight_recaps
     register_fight_recaps(sub)
+    from .rank_moves import register as register_rank_moves
+    register_rank_moves(sub)
     return ap
 
 

@@ -287,9 +287,9 @@ python -m mma_predictor refresh          # about 20 minutes
 ```
 
 - It fetches the Sherdog pages of everyone on UFC events since our last bout, plus a rotating batch of 150 exported fighters whose pages were checked longest ago (catches non-UFC bouts and corrected results), and merges them into `data/sherdog` by date and both names.
-- It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, the official UFC rankings (Wikipedia's UFC rankings page, into `data/ranked_fighters.json`), verify, export, and after a new card the model review and the play-by-play sweep (`fight-recaps`).
+- It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, the official UFC rankings (Wikipedia's UFC rankings page, into `data/ranked_fighters.json`), verify, export, and after a new card the model review, the play-by-play sweep (`fight-recaps`) and a snapshot of our division rankings for the monthly movement on UFC Rankings (`rank-moves`; baseline 2026-10-13, snapshots in `data/rankings/snapshots/`, page file `app/rank_moves.json`).
 - One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
-- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json`, `prospects.json` and `review.json`, and commit `data/`, `app/data.json` and `app/review.json`.
+- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json`, `prospects.json`, `review.json` and `rank_moves.json`, and commit `data/`, `app/data.json`, `app/review.json` and `app/rank_moves.json`.
 
 ## Betting lines: the odds sweep
 

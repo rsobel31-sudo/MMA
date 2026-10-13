@@ -543,6 +543,8 @@ button.namelink:hover { color: var(--red); }
   button.star { background: none; border: 0; padding: 0 2px; font-size: 16px; line-height: 1; cursor: pointer; color: var(--muted); vertical-align: -1px; }
   button.star[aria-pressed="true"], .star-on { color: #d4a017; }
   button.star:hover { color: #d4a017; }
+  .mv { font-size: 11px; font-variant-numeric: tabular-nums; margin-left: 4px; white-space: nowrap; }
+  .mv-up { color: var(--good, #2e7d32); } .mv-down { color: var(--bad, #c62828); } .mv-new { color: var(--accent, #8a6d1d); text-transform: uppercase; letter-spacing: .04em; }
 </style>
 
 <div class="masthead"><div class="mast-in">
@@ -1980,7 +1982,43 @@ button.namelink:hover { color: var(--red); }
       ${Object.entries(r).some(([k, v]) => k in ROSTER_FILTERS && v !== ROSTER_FILTERS[k]) ? `<button class="btn small" type="button" id="roster-reset">Clear filters</button>` : ""}
     </div>`;
     loadProspects();
-    view.innerHTML = `<div class="stack"><section class="panel stack">${head}${filters}${r.view === "classes" ? classBreakout(list) : rosterTable(list)}</section>${rosterMovesPanel()}</div>`;
+    loadRankMoves();
+    view.innerHTML = `<div class="stack"><section class="panel stack">${head}${filters}${r.view === "classes" ? classBreakout(list) : rosterTable(list)}</section>${rankMovesPanel()}${rosterMovesPanel()}</div>`;
+  }
+  // Monthly movement in our division rankings (rank_moves.py): a snapshot after every card, compared with the
+  // last snapshot before the month began; the first snapshot (2026-10-13) is the baseline.
+  const rankMoves = { data: null, loading: false };
+  function loadRankMoves() {
+    if (rankMoves.data || rankMoves.loading) return;
+    rankMoves.loading = true;
+    fetch("rank_moves.json").then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => { rankMoves.data = d; render(); }).catch(() => {});
+  }
+  function rankMoveBadge(name, wc) {
+    const M = rankMoves.data, r = state.roster;
+    if (!M || !M.tracking || r.sort !== "proven" || Object.entries(r).some(([k, v]) => k in ROSTER_FILTERS && k !== "wc" && v !== ROSTER_FILTERS[k])) return "";
+    const row = ((M.divisions[wc] || {}).rows || []).find((x) => x.name === name);
+    if (!row) return "";
+    const since = ` since ${M.from}`;
+    if (row.was == null) return `<span class="mv mv-new" title="New to our top 30${since}">new</span>`;
+    if (!row.change) return `<span class="mv muted" title="No change${since}">–</span>`;
+    return `<span class="mv ${row.change > 0 ? "mv-up" : "mv-down"}" title="Was #${row.was}${since}">${row.change > 0 ? "▲" : "▼"}${Math.abs(row.change)}</span>`;
+  }
+  function rankMovesPanel() {
+    const M = rankMoves.data;
+    if (!M || !M.baseline) return "";
+    const day = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    const monthName = (m) => new Date(m + "-15T12:00:00").toLocaleDateString("en-US", { month: "long", year: "numeric" });
+    if (!M.tracking) return `<section class="panel"><h3 style="margin:0 0 4px">Monthly movement</h3><p class="muted" style="font-size:13px;margin:0">Baseline set ${esc(day(M.baseline))} (results through ${esc(day(M.through))}). Our division rankings are snapshotted after every card; movement shows here from the next card on, month by month.</p></section>`;
+    const divs = Object.keys(M.divisions).sort(divisionOrder).map((d) => {
+      const v = M.divisions[d], moved = v.rows.filter((x) => x.change || x.was == null);
+      if (!moved.length && !v.left.length) return "";
+      return `<div><div class="label">${esc(d)}</div><ul class="notes" style="margin:2px 0 10px">${moved.map((x) => `<li>#${x.rank} ${state.byName.has(x.name) ? nameLink(x.name) : esc(x.name)} ${x.was == null ? '<span class="mv mv-new">new</span>' : `<span class="mv ${x.change > 0 ? "mv-up" : "mv-down"}">${x.change > 0 ? "▲" : "▼"}${Math.abs(x.change)}</span> <span class="muted">from #${x.was}</span>`}</li>`).join("")}${v.left.map((x) => `<li class="muted">${esc(x.name)} out of the top 15 (was #${x.was})</li>`).join("")}</ul></div>`;
+    }).join("");
+    const hist = (M.history || []).map((h) => `<details><summary>${esc(monthName(h.month))} <span class="muted">(${esc(day(h.from))} → ${esc(day(h.to))})</span></summary><ul class="notes">${h.biggest.map((x) => `<li>${esc(x.division)}: ${esc(x.name)} <span class="mv ${x.change > 0 ? "mv-up" : "mv-down"}">${x.change > 0 ? "▲" : "▼"}${Math.abs(x.change)}</span> to #${x.rank}</li>`).join("")}</ul></details>`).join("");
+    return `<section class="panel"><h3 style="margin:0 0 4px">Monthly movement · ${esc(monthName(M.month))}</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 10px">Our ranking (top 15 per division) now against ${esc(day(M.from))}${M.from === M.baseline ? " (the baseline)" : ""}; updated after every card, results through ${esc(day(M.through))}.</p>
+      ${divs ? `<div class="grid2">${divs}</div>` : '<p class="muted" style="font-size:13px">No changes in any top 15 yet this month.</p>'}
+      ${hist ? `<div class="label" style="margin-top:6px">Earlier months</div>${hist}` : ""}</section>`;
   }
   // UFC roster moves: newly signed fighters (not contract renewals) and releases, from Wikipedia's list of
   // current UFC fighters, each confirmed by a second report (roster_moves.py). Carried in prospects.json.
@@ -2036,7 +2074,7 @@ button.namelink:hover { color: var(--red); }
       return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} fighters · avg ${Math.round(avg)}</span></div>
         <ol>${g.slice(0, 10).map((f, i) => {
           const v = sortValue(f, key), w = Math.max(4, 100 - (top - v) / 4);
-          return `<li class="clickable" data-profile="${esc(f.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(f.name)}">${esc(f.name)}${f.weight_class_inferred ? '<span class="muted">*</span>' : ""}</span>
+          return `<li class="clickable" data-profile="${esc(f.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(f.name)}">${esc(f.name)}${f.weight_class_inferred ? '<span class="muted">*</span>' : ""} ${rankMoveBadge(f.name, wc)}</span>
             <span class="bar"><span style="width:${w.toFixed(1)}%"></span></span><span class="v num" title="Official UFC rank: ${officialLabel(f)}">${Math.round(v)}<span class="uf">${officialRank(f) === null ? "" : officialLabel(f)}</span></span></li>`;
         }).join("")}</ol>
         ${g.length > 10 ? `<button class="btn link" type="button" data-show-class="${esc(wc)}">All ${g.length} in the table</button>` : ""}</div>`;
