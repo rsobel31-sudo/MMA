@@ -1,0 +1,72 @@
+{
+ "name": "You Su-young",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A Korean grappler-wrestler (16-4, 2 NC; 2-1 UFC) who won Road to UFC Season 3 and grinds out decisions: his last six wins all went the distance. Coming off his first UFC loss, a second-round rear-naked choke against Elijah Smith in March after he won round one on the mat.",
+ "how_they_fight": {
+  "Striking": "Functional, mostly to set up level changes and clinches; calf kicks and knees in the clinch. Low output (about 2 significant strikes per minute) but hard to hit cleanly (68% striking defence in our numbers). When his takedowns fail he can be out-landed: Long Xiao out-struck him 68-58 and he still won 29-28 x3 on a cut.",
+  "Grappling": "Chain wrestler: 4 of 5 takedowns and over 10 minutes of control vs Shohei Nose, 8 of 14 vs Zhawupasi Daermisi, 5 of 10 vs A.J. Cunningham, 4 of 8 in round one vs Smith. Regionally a submission threat (five sub wins, including a fourth-round finish).",
+  "Defense": "Danger zone is the entry: Smith met his second-round rush with an uppercut and hook, dropped him and choked him out. Also stopped by Dastan Amangeldy at 4:57 of R3 in 2023. Stopped twice in 22 fights.",
+  "Pace & cardio": "Grinds three hard rounds and is usually ahead early via wrestling; recent pattern is decisions, not finishes (finishes overall: R1 x6, R2 x1, R4 x1, none since 2023). Absorbed a late elbow storm from Xiao and survived. Both stoppage losses came after he had been controlling or competitive: R2 (Smith) and late R3 (Amangeldy).",
+  "Fight IQ": "Disciplined game-planner who takes rounds with control; weakness is shooting straight in on hitters when the takedown isn't set up."
+ },
+ "patterns": [
+  "Wins on the scorecards: last six wins all decisions",
+  "Front-loads takedowns; strong round one",
+  "Takedowns dry up against good defenders (0 for 6 vs Xiao)",
+  "Vulnerable to counters on his entries (Smith R2 KD then RNC)"
+ ],
+ "concerns": [
+  "First career back-to-back losses if he drops this one",
+  "Counter-punching on his shots",
+  "Low strike output if takedowns fail"
+ ],
+ "keys_to_beat": [
+  "Defend the first takedown and punish the entry with uppercuts/elbows",
+  "Keep it standing and outwork him on volume",
+  "Threaten from bottom; don't accept long control"
+ ],
+ "news": [
+  {
+   "date": "2026-03-14",
+   "text": "Lost to Elijah Smith by rear-naked choke at 1:04 of round 2 after winning round one with chain takedowns; first UFC loss.",
+   "source": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-elijah-smith-claims-another-finish-subs-su-young-you"
+  },
+  {
+   "date": "2026-09-04",
+   "text": "Faces UFC debutant Cody Chovancek at UFC Edmonton.",
+   "source": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Vegas 114: Elijah Smith Claims Another Finish, Subs Su Young You",
+   "url": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-elijah-smith-claims-another-finish-subs-su-young-you",
+   "date": "2026-03-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Shanghai: You Su-young Weathers Late Storm, Claims Decision Over Xiao Long",
+   "url": "https://cagesidepress.com/2025/08/23/ufc-shanghai-you-su-young-weathers-late-storm-claims-decision-over-xiao-long",
+   "date": "2025-08-23"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "SuYoung You Triumphs Over Long Xiao in Epic Back-and-Forth Battle",
+   "url": "https://www.lowkickmma.com/long-xiao-vs-suyoung-you-ufc-shanghai/",
+   "date": "2025-08-23"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Undefeated Canadian Debuts at UFC Edmonton",
+   "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
+   "date": "2026-09-04"
+  }
+ ],
+ "depth": "moderate"
+}

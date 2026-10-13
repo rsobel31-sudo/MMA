@@ -1,0 +1,122 @@
+{
+ "name": "Erin Blanchfield",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "The No. 4 flyweight (14-2, 8-1 UFC), a 27-year-old BJJ black belt from Renzo Gracie who mixes high-volume boxing with chain wrestling and back takes. Returns from an undisclosed injury that pulled her out of the August date with Jasudavicius; she has not fought since submitting Tracy Cortez in November 2025. Never finished; both losses are decisions.",
+ "how_they_fight": {
+  "Striking": "Busy, straight-punching boxer (about 5.2 significant strikes a minute) who uses volume to set up entries more than to hurt people: no knockdowns in her UFC fights in our data. Lost the striking early against Rose Namajunas and Tracy Cortez, and Manon Fiorot out-landed her 172-130 at range over five rounds.",
+  "Grappling": "The weapon: four UFC submission wins (McCann R1; J.J. Aldrich, Jessica Andrade and Tracy Cortez all R2). Against Cortez she got the takedown and immediately took the back for a rear-naked choke at 4:44 of R2. Took Miranda Maverick down 7 of 8 times for 12 minutes of control. Not unstoppable as a wrestler: 0-for-14 on takedowns against Taila Santos and 0-for-3 against Fiorot (per our data).",
+  "Defense": "Never stopped in 16 pro fights. Good takedown defense (about 83%) and very hard to hold down. Can be out-struck at range by longer, sharper kickboxers.",
+  "Pace & cardio": "Slow starter, strong finisher. Dropped rounds 1-2 to Namajunas before taking rounds 3-5 (48-47 x3), and lost R1 to Cortez on all cards without a takedown attempt before finishing her in R2. Her finishes cluster in round 2 (3 of 4 UFC subs). Has gone five rounds twice (beat Namajunas, lost to Fiorot) and her pace holds up.",
+  "Fight IQ": "Adjusts well between rounds: when the striking isn't working she switches to wrestling and grinds. Patient on top; hunts the back rather than wild submissions."
+ },
+ "patterns": [
+  "Gives away round 1 on the feet, then takes over with takedowns from round 2",
+  "Takedown -> immediate back take -> rear-naked choke",
+  "UFC submissions in R1 (1) and R2 (3); otherwise wins clear decisions",
+  "Never finished: both career losses are decisions (Cortez 2019 split, Fiorot 2024)",
+  "Outworks opponents late; won the championship rounds against Namajunas"
+ ],
+ "concerns": [
+  "Coming back from an injury that forced her out of UFC 330; nearly a year out of the cage",
+  "Takedowns don't land against strong, bigger wrestlers (Santos) or rangy strikers (Fiorot)",
+  "Early-round striking deficits leave her behind on the cards",
+  "Fighting a home favourite in Canada"
+ ],
+ "keys_to_beat": [
+  "Win round 1 clearly on the feet and keep it at range",
+  "Defend the first takedown and get up before she reaches the back",
+  "Use size and strength in the clinch (as Santos did) to deny her wrestling",
+  "Out-land her at distance as Fiorot did; don't grapple on her terms"
+ ],
+ "news": [
+  {
+   "date": "2026-07-23",
+   "text": "Withdrew from the August 15 UFC 330 bout with Jasudavicius with an undisclosed injury; the fight was moved to UFC Edmonton.",
+   "source": "https://cagesidepress.com/2026/07/23/erin-blanchfield-jasmine-jasudavicius-shifts-from-ufc-330-targeted-edmonton/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Betting favourite at -300 (Jasudavicius +240), per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Per UFC.com, Jasudavicius handed Blanchfield's training partner and close friend Fatima Kline her first loss, adding a personal edge.",
+   "source": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC Edmonton",
+   "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Pivotal Welterweight Bout Between Joaquin Buckley and Mike Malott Headlines UFC Return to Edmonton",
+   "url": "https://www.ufc.com/news/pivotal-welterweight-bout-between-joaquin-buckley-and-mike-malott-headlines-ufc-return",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "Matt Erickson",
+   "title": "UFC Edmonton: How to watch Joaquin Buckley vs. Mike Malott, lineup, odds, more",
+   "url": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Erin Blanchfield vs. Jasmine Jasudavicius Shifts from UFC 330, Targeted for Edmonton",
+   "url": "https://cagesidepress.com/2026/07/23/erin-blanchfield-jasmine-jasudavicius-shifts-from-ufc-330-targeted-edmonton/",
+   "date": "2026-07-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Erin Blanchfield vs. Jasmine Jasudavicius Announced for UFC 330",
+   "url": "https://cagesidepress.com/2026/06/17/erin-blanchfield-vs-jasmine-jasudavicius-announced-for-ufc-330/",
+   "date": "2026-06-17"
+  },
+  {
+   "outlet": "CBS Sports",
+   "author": "",
+   "title": "UFC 322 results: Erin Blanchfield rallies to submit Tracy Cortez in Round 2, moves closer to title shot",
+   "url": "https://www.cbssports.com/ufc/news/ufc-322-results-highlights-erin-blanchfield-tracy-cortez-submission",
+   "date": "2025-11-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 322: Erin Blanchfield Gets Revenge, Subs Tracy Cortez in Rematch",
+   "url": "https://cagesidepress.com/2025/11/15/ufc-322-erin-blanchfield-gets-revenge-subs-tracy-cortez-in-rematch",
+   "date": "2025-11-15"
+  },
+  {
+   "outlet": "CBS Sports",
+   "author": "",
+   "title": "UFC Fight Night results, highlights: Erin Blanchfield overcomes slow start to beat Rose Namajunas",
+   "url": "https://new.cbssports.com/mma/news/ufc-fight-night-results-highlights-erin-blanchfield-overcomes-slow-start-to-beat-rose-namajunas/",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "Sports Illustrated",
+   "author": "",
+   "title": "Erin Blanchfield Outlasts Ex-Champ Rose Namajunas at UFC Edmonton",
+   "url": "https://www.si.com/fannation/mma/news/erin-blanchfield-outlasts-ex-champ-rose-namajunas-ufc-edmonton",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Erin Blanchfield set for long-awaited return at UFC 330 with title shot on the line",
+   "url": "https://www.bjpenn.com/mma-news/erin-blanchfield/erin-blanchfield-long-awaited-return-ufc-330/",
+   "date": "2026-06-17"
+  }
+ ],
+ "depth": "good"
+}

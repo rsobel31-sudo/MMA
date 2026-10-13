@@ -1,0 +1,107 @@
+{
+ "name": "Colby Thicknesse",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Australian bantamweight (9-1, 2-1 UFC) from Volkanovski's Freestyle Fighting gym, fighting outside Australia for the first time. A scrappy, opportunistic grappler with a dangerous guard (triangle-armbar chains) but poor takedown offence; all three of his UFC fights went to decision, with narrow 29-28 wins over Josias Musasa and Vince Morales.",
+ "how_they_fight": {
+  "Striking": "Moderate output (about 3.3 landed and 3.3 absorbed a minute) at a low 37% accuracy; his right hand is the main weapon but often misses (Morales fight). Throws flashy extras like a spinning back elbow. Not a knockout threat at UFC level so far.",
+  "Grappling": "Best from bottom and in scrambles: nearly finished Morales with a triangle into armbar in round one and threw elbows from the triangle (Volkanovski claimed a tap; Morales denied it). Takedown offence is weak: 2 of 28 across three UFC fights, including 0 of 8 against Aleksandre Topuria and 0 of 6 against Morales.",
+  "Defense": "Never stopped. Takedown defense around 50% and he gives up positions: Morales went 2 for 2 on takedowns, took him down in round one and took his back late in round three; Topuria controlled him for about five minutes. Against Musasa he was the one in control (nearly eight minutes, 62-43 in significant strikes in our stats) despite landing only 2 of 14 takedowns.",
+  "Pace & cardio": "Not a fader so far but not a late surger either; he tends to win round one or two with scramble activity and then hold on, losing the last minutes to Morales. Regional finishes all came in round one (two KOs, two subs); at UFC level every fight has gone 15 minutes. Showed toughness: found a second wind after a disputed low-blow break in round three vs Musasa.",
+  "Fight IQ": "Willing and gritty, took the Topuria debut on roughly two weeks' notice. Tends to force grappling exchanges he cannot complete, which costs position."
+ },
+ "patterns": [
+  "All three UFC fights went to decision (1 loss 30-27 x3, 2 wins 29-28 x3)",
+  "Submission threats off his back and in scrambles (triangle, armbar, guillotine)",
+  "Low-percentage takedown attempts (2 of 28 in the UFC)",
+  "Loses ground in the final minute of fights when tired opponents push"
+ ],
+ "concerns": [
+  "Chopurov is a high-pressure finisher (10 of 11 wins inside the distance), a step up in danger",
+  "First fight outside Australia, losing home-crowd scoring help some felt he received vs Morales",
+  "Low striking accuracy and porous positional defense",
+  "Has never been tested against a fighter with real knockout power at UFC level"
+ ],
+ "keys_to_beat": [
+  "Pressure him to the fence and deny his scrambles",
+  "Stay out of his guard; ground-and-pound from posture rather than diving",
+  "Win the final minutes of each round, where he has lost position",
+  "Make him lead with low-accuracy right hands and counter"
+ ],
+ "news": [
+  {
+   "date": "2026-09-25",
+   "text": "Booked against unbeaten UFC newcomer Asaf Chopurov at UFC 333 in Abu Dhabi, his fourth UFC fight and first outside Australia.",
+   "source": "https://sports.yahoo.com/articles/colby-thicknesse-draws-undefeated-newcomer-030633078.html"
+  },
+  {
+   "date": "2026-09-26",
+   "text": "Chopurov dismissed him in an interview, saying he sees no danger in his striking or grappling and that he got to the UFC via Volkanovski.",
+   "source": "https://www.telecomasia.net/news/mma/chopurov-tickness-isn-t-high-level-i-see-no-danger-in-his-striking-or-grappling/"
+  },
+  {
+   "date": "2026-05-02",
+   "text": "Beat Vince Morales 29-28 x3 at UFC Perth; Volkanovski claimed Morales tapped to an early triangle, which Morales disputed.",
+   "source": "https://bloodyelbow.com/2026/05/03/alexander-volkanovskis-tap-accusation-disputed-by-vince-morales-after-ufc-perth-controversy/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Staff",
+   "title": "UFC Perth: Colby Thicknesse Withstands Late Surge, Beats Vince Morales",
+   "url": "https://cagesidepress.com/2026/05/02/ufc-perth-colby-thicknesse-withstands-late-surge-beats-vince-morales/",
+   "date": "2026-05-02"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Alexander Volkanovski's 'tap' accusation disputed by Vince Morales after UFC Perth controversy",
+   "url": "https://bloodyelbow.com/2026/05/03/alexander-volkanovskis-tap-accusation-disputed-by-vince-morales-after-ufc-perth-controversy/",
+   "date": "2026-05-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Perth: Colby Thicknesse Narrowly Defeats Josias Musasa, Earns First UFC Win",
+   "url": "https://cagesidepress.com/2025/09/27/ufc-perth-colby-thicknesse-narrowly-defeats-josias-musasa-earns-first-ufc-win/",
+   "date": "2025-09-27"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "UFC 312 Update: Colby Thicknesse Steps in to Face Aleksandre Topuria in Sydney",
+   "url": "https://www.sherdog.com/news/news/UFC-312-Update-Colby-Thicknesse-Steps-in-to-Face-Aleksandre-Topuria-in-Sydney-196024",
+   "date": "2025-01"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Colby Thicknesse's Moment Has Arrived",
+   "url": "https://www.ufc.com/news/colby-thicknesses-moment-has-arrived-ufc-312-sydney",
+   "date": "2025-02"
+  },
+  {
+   "outlet": "Yahoo Sports (Heavy)",
+   "author": "Marcel Dorff",
+   "title": "Colby Thicknesse Draws Undefeated Newcomer at UFC 333",
+   "url": "https://sports.yahoo.com/articles/colby-thicknesse-draws-undefeated-newcomer-030633078.html",
+   "date": "2026-09-25"
+  },
+  {
+   "outlet": "Telecomasia",
+   "author": "Marina Magomedova",
+   "title": "Chopurov: Tickness Isn't High-Level; I See No Danger in His Striking or Grappling",
+   "url": "https://www.telecomasia.net/news/mma/chopurov-tickness-isn-t-high-level-i-see-no-danger-in-his-striking-or-grappling/",
+   "date": "2026-09-26"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "good"
+}

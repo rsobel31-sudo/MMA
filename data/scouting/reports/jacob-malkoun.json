@@ -1,0 +1,113 @@
+{
+ "name": "Jacob Malkoun",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Whittaker training partner and 31-year-old Australian middleweight (10-3; 6-3 in the UFC) on a three-fight win streak. A pressure wrestler who has added real striking since his long injury layoff, battering Torrez Finney (117 significant strikes, a knockdown) before edging Gerald Meerschaert on his jab. Seven of his ten wins are three-round decisions.",
+ "how_they_fight": {
+  "Striking": "Much improved: about 5 significant strikes a minute at 52% with 64% defense. Against Meerschaert he walked him to the fence behind a steady jab; against Finney he dropped him twice per Cageside Press (one knockdown in our stats) and won every round. Finished Andre Petroski with strikes 39 seconds into round two.",
+  "Grappling": "Chain wrestler with a high-volume shot (3.6 takedowns per 15, 39% accuracy): 8 of 24 vs Abdul Razak Alhassan with almost 12 minutes of control, 9 of 13 vs Nick Maximov, 7 of 14 vs Brendan Allen. Not a submission threat himself, and his grappling can backfire: Meerschaert reversed his first-round shot and rode him, then had a guillotine late in round three.",
+  "Defense": "Durable since the debut: stopped once, by Phil Hawes in 18 seconds in 2020. About 69% takedown defense; Allen out-grappled him in a close decision loss in 2022.",
+  "Pace & cardio": "Three-round grinder who keeps the same pace for 15 minutes; he has gone the distance in 7 of 10 wins plus the Allen loss. Finishes are rare and scattered (regional R1 and R3 KOs, Petroski early R2). Losses: R1 KO (Hawes), R1 DQ (Brundage), R3 decision (Allen). Opponents describe his stamina as a strength; Vagaev said he has seen Malkoun 'go all the way' with a steady pace.",
+  "Fight IQ": "Mostly sound and adaptable: after losing round one on control to Meerschaert, he kept the fight standing in round two. Discipline lapse on record: the 2023 loss to Cody Brundage was a first-round disqualification, which Heavy ties to an illegal elbow."
+ },
+ "patterns": [
+  "Goes to decision: 7 of 10 wins and 6 of 9 UFC fights",
+  "Wins later rounds with volume and pressure rather than early finishes",
+  "Mixes jab-led pressure with repeated takedown attempts",
+  "Bounced back from layoffs and losses with three straight wins (Petroski, Finney, Meerschaert)"
+ ],
+ "concerns": [
+  "Size: a compact middleweight (175 cm) facing a 183 cm opponent moving up from welterweight",
+  "Strong grapplers can reverse or ride him (Allen, Meerschaert round one)",
+  "Was stopped in 18 seconds in his debut; early chaos is his only stoppage risk on record",
+  "Injury-prone stretch: about 22 months out between March 2024 and January 2026, with cancelled fights he acknowledged per Cageside Press",
+  "Fighting in Abu Dhabi, far from his Australian base, on his third UFC card of 2026"
+ ],
+ "keys_to_beat": [
+  "Defend his early shots and make him pay for level changes",
+  "Get top position in scrambles; he does not threaten much off his back",
+  "Hurt him early before his volume takes over",
+  "Match his pace with clinch control to steal rounds"
+ ],
+ "news": [
+  {
+   "date": "2026-09-23",
+   "text": "Booked vs Abubakar Vagaev at middleweight for UFC 333 in Abu Dhabi, his third UFC appearance of 2026; aiming for a fourth straight win.",
+   "source": "https://sports.yahoo.com/articles/ufc-adds-middleweight-bout-ufc-234746028.html"
+  },
+  {
+   "date": "2026-05-02",
+   "text": "Beat Gerald Meerschaert 29-28 x3 at UFC Perth after losing round one on control and surviving a late guillotine.",
+   "source": "https://cagesidepress.com/2026/05/02/ufc-perth-third-straight-win-sees-jacob-malkoun-best-gerald-meerschaert/"
+  },
+  {
+   "date": "2026-01-31",
+   "text": "Returned from a long injury layoff to beat unbeaten Torrez Finney 30-27, 30-26, 30-26 at UFC 325; Finney later said he tore his ACL and menisci 15 seconds in.",
+   "source": "https://cagesidepress.com/2026/01/31/jacob-malkoun-returns-in-style-dominates-torrez-with-striking/"
+  },
+  {
+   "date": "2026-09-23",
+   "text": "Record note: Heavy (via Yahoo) lists the 2023 Cody Brundage fight as a Malkoun win by disqualification; our verified data has Brundage winning by DQ in R1 (4:15), so Malkoun is 10-3, not 11-2.",
+   "source": "https://sports.yahoo.com/articles/ufc-adds-middleweight-bout-ufc-234746028.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Perth: Third Straight Win Sees Jacob Malkoun Best Gerald Meerschaert",
+   "url": "https://cagesidepress.com/2026/05/02/ufc-perth-third-straight-win-sees-jacob-malkoun-best-gerald-meerschaert/",
+   "date": "2026-05-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Perth's Jacob Malkoun Hates Losing More Than He Likes Winning",
+   "url": "https://cagesidepress.com/2026/04/30/jacob-malkoun-ufc-perth-winning-losing/",
+   "date": "2026-04-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Jacob Malkoun Returns in Style, Dominates Torrez With Striking",
+   "url": "https://cagesidepress.com/2026/01/31/jacob-malkoun-returns-in-style-dominates-torrez-with-striking/",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Jacob Malkoun Delivers Dominant Performance In Octagon Return - UFC 325 Highlights",
+   "url": "https://www.lowkickmma.com/jacob-malkoun-vs-torrez-finney-ufc-325/",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "Sports Illustrated",
+   "author": "",
+   "title": "UFC Fighter Reveals Brutal Injury Suffered Just 15 Seconds Into First Career Loss",
+   "url": "https://www.si.com/fannation/mma/news/ufc-fighter-torrez-finney--brutal-injury-15-seconds-first-career-loss",
+   "date": "2026-02"
+  },
+  {
+   "outlet": "Yahoo Sports (Heavy)",
+   "author": "Marcel Dorff",
+   "title": "UFC Adds Middleweight Bout to UFC 333 in Abu Dhabi",
+   "url": "https://sports.yahoo.com/articles/ufc-adds-middleweight-bout-ufc-234746028.html",
+   "date": "2026-09-23"
+  },
+  {
+   "outlet": "Metaratings",
+   "author": "Salam Umarov",
+   "title": "Vagaev: Malkoun is a tough fighter, a good test for me",
+   "url": "https://mma.metaratings.ru/news/vagaev-malkun-krepkii-boec-eto-khoroshaya-proverka-dlya-menya-659829",
+   "date": "2026-10-06"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "good"
+}

@@ -1,0 +1,100 @@
+{
+ "name": "Mandel Nallo",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Tristar-based Bellator veteran ('Rat Garbage', 14-4, 1 NC) who earned a contract on the 2025 Contender Series at 36. An all-or-nothing first-round finisher: every one of his 14 wins is a stoppage, 12 of them in round one, but he was dropped and stopped by Jai Herbert in a wild 2:05 UFC debut in April.",
+ "how_they_fight": {
+  "Striking": "Loose, aggressive kickboxer: stiff jab, calf kicks, front and question-mark kicks to the head, hard right hand and overhand (UFC.com, Cageside Press). Dropped Samuel Silva with a right as Silva closed distance, and had Herbert down early in their fight (Cageside reports two knockdowns; our verified data credits him with one). Has a flying-knee KO of Carrington Banks in Bellator.",
+  "Grappling": "Underused but dangerous: four submission wins, all R1 or R2, and he used a leg lock to scramble up after Herbert dropped him. Finished Silva with ground-and-pound.",
+  "Defense": "The weak point. Comes in with his hands low and has been stopped in all four losses: KO R3 (Killys Mota 2019), KO R2 (Nick Browne 2022), submission R3 (Adam Piccolotti 2023), KO R1 (Herbert 2026). Rotowire notes he stepped in low-handed and ate the counter that ended the Herbert fight.",
+  "Pace & cardio": "Extreme fast starter: 12 of 14 wins in R1, two in R2, none later, and no decision in 19 pro fights (wins or losses). When the fight survives his opening burst, his results turn: three of four losses came in R2-R3. At 37 the late-round picture is a real question mark.",
+  "Fight IQ": "Wants a fight, not a points race; recklessness after hurting someone cost him against Herbert, who took advantage when he overextended."
+ },
+ "patterns": [
+  "Explodes in round 1: 12 of 14 wins in R1, 2 in R2, none in R3",
+  "Never been to a decision; every fight ends inside the distance",
+  "Leads with kicks and the jab, then commits to the right hand",
+  "Stopped in all four losses, three of them in R2 or R3"
+ ],
+ "concerns": [
+  "Chin and defensive responsibility when he presses for the finish",
+  "Late-round cardio is unproven; at 37 with almost no deep fights",
+  "Weight class unclear: UFC.com lists lightweight, AgentMMA reported featherweight"
+ ],
+ "keys_to_beat": [
+  "Survive the first five minutes; he has never won after round 2",
+  "Counter his forward rushes with the right hand; he enters low-handed",
+  "Make it a grind and push him into round 3"
+ ],
+ "news": [
+  {
+   "date": "2026-08-07",
+   "text": "Booked against Nate Landwehr in Edmonton on the main card. UFC.com lists it at lightweight; AgentMMA's announcement called it featherweight.",
+   "source": "https://www.rotowire.com/mma/player/mandel-nallo-1741"
+  },
+  {
+   "date": "2026-04-18",
+   "text": "Lost his UFC debut to Jai Herbert by R1 TKO at 2:05 after dropping Herbert early; weighed 155.5 for that lightweight bout.",
+   "source": "https://cagesidepress.com/2026/04/18/jai-herbert-stuns-mandel-nallo-with-comeback-tko-at-ufc-winnipeg/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Jai Herbert Stuns Mandel Nallo With Comeback TKO at UFC Winnipeg",
+   "url": "https://cagesidepress.com/2026/04/18/jai-herbert-stuns-mandel-nallo-with-comeback-tko-at-ufc-winnipeg/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Jai Herbert Rallies from Chaos to Finish Mandel Nallo in “Maddest Two Minutes”",
+   "url": "https://cagesidepress.com/2026/04/20/jai-herbert-rallies-from-chaos-to-finish-mandel-nallo-in-maddest-two-minutes/",
+   "date": "2026-04-20"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Jai Herbert Delivers Insane Comeback KO to Defeat Mandel Nallo in Round 1 - UFC Winnipeg Highlights",
+   "url": "https://www.lowkickmma.com/mandel-nallo-vs-jai-herbert-highlights/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "Kevin Schuster",
+   "title": "Mandel Nallo: Don't Miss The Debut",
+   "url": "https://www.ufc.com/news/mandel-nallo-dont-miss-the-debut-ufc-winnipeg",
+   "date": "2026-04-16"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Mandel Nallo MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/mandel-nallo-1741",
+   "date": "2026-08-07"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Mandel Nallo vs. Nate Landwehr booked for UFC Edmonton on Oct. 17",
+   "url": "https://agentmma.com/news/88168-mandel-nallo-vs-nate-landwehr-booked-for-ufc-edmonton-on-oct-17",
+   "date": "2026-08-05"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Winnipeg: Burns vs. Malott Weigh-In Results",
+   "url": "https://cagesidepress.com/2026/04/17/ufc-winnipeg-burns-vs-malott-weigh-in-results/",
+   "date": "2026-04-17"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

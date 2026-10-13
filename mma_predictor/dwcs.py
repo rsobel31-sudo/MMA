@@ -306,7 +306,9 @@ def export() -> Dict:
         if rec:  # picks, and results once graded, for each bout
             by = {_pair(b["a"], b["b"]): b for b in rec["bouts"]}
             for b in d["bouts"]:
-                r = by.get(_pair(b["a"], b["b"]))
+                r = by.get(_pair(b["a"], b["b"])) or next(  # a renamed fighter ('Greg'/'Gregory Foster') after the lock
+                    (x for x in rec["bouts"] if (_same(b["a"], x["a"]) and _same(b["b"], x["b"]))
+                     or (_same(b["a"], x["b"]) and _same(b["b"], x["a"]))), None)
                 if r:
                     b.update({k: r[k] for k in ("pick", "result", "claude", "model_score") if k in r})
             d["locked_at"], d["note"] = rec.get("locked_at"), rec.get("note", "")

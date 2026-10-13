@@ -1,0 +1,92 @@
+{
+ "name": "Cristian Perez",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 27-year-old Mexican lightweight from Baja California (15-2) making his UFC debut after earning a contract on his second Contender Series try, a round-two left-hook TKO of Logan Paxton in August. A pressure fighter who finishes (12 of 15 wins, split evenly between KO/TKO and submission), but his first Contender Series fight showed he can empty the tank wrestling and get stopped late.",
+ "how_they_fight": {
+  "Striking": "Stalking pressure with body shots and combinations; the left hook is the finisher. Per MMA Sucka he trailed Paxton 27-21 in significant strikes in round one, then rocked him with a left hook early in round two, dropped him with another and finished with ground-and-pound at 1:06.",
+  "Grappling": "Wrestling-heavy with a real submission game: six career submissions (four in round one) from his Combate Global run, and 466 seconds of control against Manoel Sousa in 2025. Got back up quickly when Paxton took him down and stuffed a later shot.",
+  "Defense": "Stopped once: Manoel Sousa TKO R3 (3:00) on the 2025 Contender Series, after he had controlled the first two rounds. His only other loss is a decision to Enrique Gonzalez in a 2021 Combate Global tournament final. Striking defense has looked loose in small samples.",
+  "Pace & cardio": "Fast starter and front-loaded finisher: 7 of 12 stoppage wins came in round one, four in round two, only two in round three. The concern is the Sousa fight: per Cageside Press he exhausted himself grappling and Sousa rallied, stuffed his desperate shots and finished him in round three.",
+  "Fight IQ": "Patient early against Paxton, then turned up the pressure once he had the read. Against Sousa he kept wrestling after his gas ran low instead of managing the lead."
+ },
+ "patterns": [
+  "Early finisher: 7 of 12 stoppage wins in round 1, 4 in round 2",
+  "Pressure, body work, then the left hook",
+  "Heavy wrestling/top control when he chooses to grapple",
+  "Faded and was finished in round 3 after a grappling-heavy start (Sousa, DWCS 2025)"
+ ],
+ "concerns": [
+  "Late-round cardio after heavy wrestling",
+  "UFC debut against an experienced veteran in the veteran's home country",
+  "Thin footage against UFC-level opposition; record built mostly in Combate Global",
+  "Gym listed differently by sources: UFC.com says The Goat Shed in Miami; our data lists Victory Fight Club"
+ ],
+ "keys_to_beat": [
+  "Survive the first round and drag him into round 3",
+  "Defend the takedowns and make him carry his own weight",
+  "Counter his forward pressure; he gets hit coming in"
+ ],
+ "news": [
+  {
+   "date": "2026-08-18",
+   "text": "Earned a UFC contract on the Contender Series with a round-two TKO of Logan Paxton, a year after a late TKO loss on the same show.",
+   "source": "https://mmasucka.com/news/cristian-perez-makes-good-second-chance-contender-series-explosive-ko/"
+  },
+  {
+   "date": "2026-09-22",
+   "text": "Booked for his UFC debut against Kyle Nelson in Edmonton.",
+   "source": "https://cagesidepress.com/2026/09/22/kyle-nelson-ufc-edmonton-cristian-perez/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Opens as a -300 favourite on debut, per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC Edmonton",
+   "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "Matt Erickson",
+   "title": "UFC Edmonton: How to watch Joaquin Buckley vs. Mike Malott, lineup, odds, more",
+   "url": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Kyle Nelson vs. Cristian Perez Added to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/09/22/kyle-nelson-ufc-edmonton-cristian-perez/",
+   "date": "2026-09-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Bryson Hester",
+   "title": "Redemption: Second Chances on Dana White's Contender Series — Cristian Perez",
+   "url": "https://cagesidepress.com/2026/08/18/redemption-second-chances-on-dana-whites-contender-series-cristian-perez/",
+   "date": "2026-08-18"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Drew Zuhosky",
+   "title": "Cristian Perez makes good on second chance at Contender Series with explosive KO",
+   "url": "https://mmasucka.com/news/cristian-perez-makes-good-second-chance-contender-series-explosive-ko/",
+   "date": "2026-08-19"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Dana White's Contender Series 2025 Week 3 – Play-by-Play & Results",
+   "url": "https://cagesidepress.com/2025/08/26/dana-whites-contender-series-2025-week-3-play-by-play-results",
+   "date": "2025-08-26"
+  }
+ ],
+ "depth": "thin"
+}

@@ -1,0 +1,121 @@
+{
+ "name": "Kyle Nelson",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Veteran Canadian lightweight (17-7-1, 5-6-1 UFC) from House of Champions in Stoney Creek, Ontario: a solid counter-punching boxer who is dangerous early but has been finished in the first round in both of his last two losses. Back at 155 after missing weight at featherweight in 2024; beat Matt Frevola in Vancouver, then was knocked out in 24 seconds by Terrance McKinney in March.",
+ "how_they_fight": {
+  "Striking": "Compact boxing with good power for his size: six career KO/TKO wins (five in round one), including Marco Polo Reyes (R1) and Bill Algeo (R1) in the UFC. Out-landed Fernando Padilla on volume and dropped Matt Frevola late in round one (the referee briefly waved it off, thinking he heard the horn, then restarted it); won 30-27, 29-28, 29-28.",
+  "Grappling": "Mostly defensive: takedown accuracy around 25%. Uses clinch and occasional takedowns to win rounds (two vs Frevola) but rarely threatens submissions in the UFC.",
+  "Defense": "The weak point. Stopped five times: Diego Ferreira (TKO R2), Matt Sayles (sub R3), Billy Quarantillo (TKO R3), Steve Garcia (TKO R1) and Terrance McKinney (TKO R1, head kick and punches at 0:24). Gets hit early by explosive starters.",
+  "Pace & cardio": "Steady three-round pace; seven of his 17 wins are decisions, including three straight UFC decisions in 2023 and the Frevola win. When he finishes, it is usually early (8 of 10 stoppage wins in R1). His losses split between early blitzes (Garcia and McKinney in R1) and late breaks (Sayles sub R3, Quarantillo TKO R3 at 0:07).",
+  "Fight IQ": "Experienced and calm; fights at a measured pace and counters. Has had trouble making 145 (missed by 2.5 lb vs Garcia) and now says lightweight suits him."
+ },
+ "patterns": [
+  "Finishes come early: 8 of 10 stoppage wins in round 1",
+  "Wins decisions on steady volume when he can't finish",
+  "Vulnerable in the opening minutes to explosive starters (Garcia R1, McKinney R1)",
+  "Has also been worn down late (Sayles sub R3, Quarantillo TKO R3)",
+  "Fights at home: UFC.com notes he has done well in his recent Canadian appearances (including the Frevola win in Vancouver)"
+ ],
+ "concerns": [
+  "Finished in the first round in both of his last two losses",
+  "Missed weight at featherweight in 2024 (148.5 for a 145 bout) before the Garcia loss",
+  "Takedown defense around 62% against a wrestling-heavy debutant",
+  "Mid-30s, coming off a knockout"
+ ],
+ "keys_to_beat": [
+  "Start fast and hard; he has been caught early twice in a row",
+  "Wrestle him and make him work off his back",
+  "Mix head kicks and level changes; he reads straight punches well"
+ ],
+ "news": [
+  {
+   "date": "2026-09-22",
+   "text": "Booked against Contender Series signee Cristian Perez at lightweight in Edmonton (UFC.com's fight-week preview labels it featherweight; Cageside and Nelson's recent moves point to 155).",
+   "source": "https://cagesidepress.com/2026/09/22/kyle-nelson-ufc-edmonton-cristian-perez/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Underdog at +240 (Perez -300), per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html"
+  },
+  {
+   "date": "2024-09-07",
+   "text": "Missed weight for his featherweight fight with Steve Garcia (148.5 lb) and was stopped in round one; he has fought at lightweight since.",
+   "source": "https://bloodyelbow.com/2024/09/08/this-should-be-a-no-contest-ufc-fighters-wife-calls-for-first-round-ko-loss-to-be-overturned-after-illegal-elbow"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC Edmonton",
+   "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "Matt Erickson",
+   "title": "UFC Edmonton: How to watch Joaquin Buckley vs. Mike Malott, lineup, odds, more",
+   "url": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Kyle Nelson vs. Cristian Perez Added to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/09/22/kyle-nelson-ufc-edmonton-cristian-perez/",
+   "date": "2026-09-22"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "Cole Shelton",
+   "title": "Just Scrap Radio Ep. 232 with Jasmine Jasudavicius and Kyle Nelson",
+   "url": "https://www.bjpenn.com/mma-news/jasmine-jasudavicius/just-scradp-radio-ep-232-with-jasmine-jasudavicius-and-kyle-nelson/",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Kyle Nelson Dominates Frevola at UFC Vancouver Despite Referee Controversy",
+   "url": "https://cagesidepress.com/2025/10/18/kyle-nelson-dominates-frevola-at-ufc-vancouver-despite-referee-controversy",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Kyle Nelson Breaks Down Weird Scene at UFC Vancouver, Says Big Dan is a \"Great Ref\"",
+   "url": "https://cagesidepress.com/2025/10/19/kyle-nelson-ufc-vancouver-big-dan/",
+   "date": "2025-10-19"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Seattle's Kyle Nelson Feeling at Home at Lightweight",
+   "url": "https://cagesidepress.com/2026/03/28/ufc-seattles-kyle-nelson-feeling-at-home-at-lightweight",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Seattle Losers",
+   "url": "https://cagesidepress.com/2026/03/30/whats-next-ufc-seattle-losers-2/",
+   "date": "2026-03-30"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Seattle: 'Adesanya vs. Pyfer' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-seattle/ufc-seattle-adesanya-vs-pyfer-live-results-and-highlights/",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "'This should be a no contest' - UFC fighter's wife calls for first-round KO loss to be overturned after illegal elbow",
+   "url": "https://bloodyelbow.com/2024/09/08/this-should-be-a-no-contest-ufc-fighters-wife-calls-for-first-round-ko-loss-to-be-overturned-after-illegal-elbow",
+   "date": "2024-09-08"
+  }
+ ],
+ "depth": "good"
+}

@@ -1,0 +1,86 @@
+{
+ "name": "Javad Mahjoub",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 35-year-old Iranian-born heavyweight (5-0) and two-time Olympic judoka (Rio 2016 for Iran, Tokyo 2020 on the Refugee Olympic Team, 2013 Asian champion at -100 kg) who turned to MMA in 2022. Four of his five wins ended in round one; he makes his UFC debut against fellow newcomer Joel Faglier after Louie Sutherland withdrew.",
+ "how_they_fight": {
+  "Striking": "Three first-round TKOs (Navarrete 1:45, Patry 0:55 on a knee injury, Duarte 2:07), but against modest regional opposition; little film or stat detail exists.",
+  "Grappling": "Elite judo base: throws, top control and finishing from top. Submitted Pietro Gentile with an armbar at 4:59 of round one in February 2026.",
+  "Defense": "Never stopped or dropped a decision; only one fight (WXF, Seoul, 2025, three 4-minute rounds) went the distance. Unknown how he handles heavyweight power over time.",
+  "Pace & cardio": "A first-round finisher: 4 of 5 wins in R1 and the other a 12-minute decision over Gamzat Sirazhudinov. Never been past the 12-minute mark; at 35 with only ~22 minutes of pro cage time, cardio over 15 minutes is unproven.",
+  "Fight IQ": "Decades of elite competition experience in judo, but only five pro MMA fights, with long gaps (Aug 2023 to Sep 2025)."
+ },
+ "patterns": [
+  "Ends fights early: 4 of 5 wins in round one",
+  "Mix of ground strikes and submissions after getting on top",
+  "One decision win, over three 4-minute rounds"
+ ],
+ "concerns": [
+  "Age 35 with thin MMA experience and a two-year gap in 2023-2025",
+  "Untested beyond 12 minutes",
+  "Opponent changed from Louie Sutherland to Joel Faglier about two and a half weeks out",
+  "Team listings disagree: our data has Alavanca Calgary; Wikipedia lists Tristar Gym in Montreal"
+ ],
+ "keys_to_beat": [
+  "Avoid the clinch and upper-body ties where his judo works",
+  "Keep it at range and drag him into rounds 2 and 3",
+  "Make him strike for long stretches against a heavyweight with real power"
+ ],
+ "news": [
+  {
+   "date": "2026-08-09",
+   "text": "Signed by the UFC as an undefeated (5-0) heavyweight prospect.",
+   "source": "https://agentmma.com/news/88399-undefeated-heavyweight-javad-mahjoub-signs-with-the-ufc"
+  },
+  {
+   "date": "2026-09-30",
+   "text": "Louie Sutherland pulled out (no reason given); fellow newcomer Joel Faglier replaces him.",
+   "source": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Javad Mahjoub",
+   "url": "https://en.wikipedia.org/wiki/Javad_Mahjoub",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Undefeated heavyweight Javad Mahjoub signs with the UFC",
+   "url": "https://agentmma.com/news/88399-undefeated-heavyweight-javad-mahjoub-signs-with-the-ufc",
+   "date": "2026-08-09"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Undefeated Canadian debuts at UFC Edmonton",
+   "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
+   "date": "2026-09-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 331 Losers",
+   "url": "https://cagesidepress.com/2026/09/21/whats-next-ufc-331-losers/",
+   "date": "2026-09-21"
+  },
+  {
+   "outlet": "Sportsnet",
+   "author": "Staff",
+   "title": "Faglier to replace Sutherland at UFC Edmonton",
+   "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "thin"
+}

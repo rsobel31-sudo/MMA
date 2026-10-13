@@ -1,0 +1,109 @@
+{
+ "name": "Movsar Evloev",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Undefeated (20-0, 10-0 UFC) featherweight wrestler who has won every UFC fight on the scorecards, most recently a five-round decision over Lerone Murphy in London. Wins by mixing just enough striking to set up chain wrestling and by banking close rounds; gets his first title shot.",
+ "how_they_fight": {
+  "Striking": "Functional, not polished: jab, one-two, the odd inside low kick and spinning attacks that per MMA Sucka are often thrown without setup. About 4.6 significant strikes a minute at 52%. Used strikes mainly to cover entries; against Murphy he finished round 3 strongly with an overhand right and a flurry (Reuters via Al Jazeera). Says he has more power this camp (Sherdog).",
+  "Grappling": "The base. About 4.5 takedowns per 15 minutes at 55%. Single-leg into inside trip, bodylock slams and back takes, ankle pick paired with an overhand, and re-shoots straight after failed shots (MMA Sucka). Ground-and-pound is light and he rarely threatens submissions in the UFC; Murphy kept getting up in round 5.",
+  "Defense": "Never stopped and never seriously hurt in the UFC; 63% strike defence and about 66% takedown defence. Out-struck at range by Murphy in rounds 1-2 before turning the fight with wrestling.",
+  "Pace & cardio": "Slow burner who wins late. All 10 UFC wins are decisions; his last finish was in 2018 (Rafael Dias, KO R5, M-1). Career finishes (verified): R1 x2, R2 x3, R3 x1, R5 x1, so 7 of 20 wins inside the distance and none in 7+ years. Against Murphy he lost the early rounds, took R3, and took over R4-R5 with takedowns (late_win_rate 0.81). Has gone five rounds twice (Vitruk 2017, Murphy 2026) plus the R5 KO of Dias. Never been stopped.",
+  "Fight IQ": "Disciplined round-banker who wants five rounds ('more time to spend in the cage', UFC.com). Fouls under pressure: a groin kick cost him a point in round 4 against Murphy."
+ },
+ "patterns": [
+  "Starts slowly on the feet, then grows into the fight as wrestling accumulates",
+  "Chain wrestling: shot -> combination -> re-shot; bodylock to back",
+  "Wins close decisions: Lentz (S-DEC) and Murphy (verified S-DEC; Reuters/UFC.com report a majority decision 48-46, 48-46, 47-47)",
+  "No finish since 2018; wins ride on scorecards"
+ ],
+ "concerns": [
+  "Striking is exploitable at range; Murphy out-landed him early",
+  "Little ground-and-pound or submission threat, so opponents get up and reset",
+  "Point deduction for a low blow vs Murphy",
+  "Long layoffs and many cancelled bouts (UFC.com notes visa trouble before London and that most of his UFC bookings changed); 15 months out before Murphy"
+ ],
+ "keys_to_beat": [
+  "Win the early rounds at range with jab and movement before his wrestling builds",
+  "Get up immediately; his top game is control without much damage",
+  "Make him strike first and counter as he rushes entries or throws unset-up spinning attacks"
+ ],
+ "news": [
+  {
+   "date": "2026-10-13",
+   "text": "Says he is entering his prime and has had his best camp, with more power and conditioning.",
+   "source": "https://www.sherdog.com/news/news/Movsar-Evloev-says-hes-entering-his-prime-before-Alexander-Volkanovski-title-fight-203185"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Claims Volkanovski was distracted by helping Mauricio Ruffy's camp.",
+   "source": "https://bloodyelbow.com/2026/10/12/movsar-evloev-pushes-back-on-alexander-volkanovskis-career-best-prediction-as-he-claims-hes-distracted/"
+  },
+  {
+   "date": "2026-10-13",
+   "text": "A slight favourite: -115 to Volkanovski's -105 on FanDuel, per BJPenn.com.",
+   "source": "https://www.bjpenn.com/mma-news/alex-volkanovski/alexander-volkanovski-explains-why-he-believes-movsar-evloev-is-one-of-the-better-matchups-for-him-ahead-of-ufc-333/"
+  },
+  {
+   "date": "2026-09-29",
+   "text": "Targets his first UFC finish in his first title fight.",
+   "source": "https://www.sherdog.com/news/news/Movsar-Evloev-targets-first-UFC-finish-in-title-fight-vs-Alexander-Volkanovski-203002"
+  },
+  {
+   "date": "2026-03-21",
+   "text": "Before London: visa problems delayed his arrival and he cut weight while fasting for Ramadan (UFC.com).",
+   "source": "https://www.ufc.com/news/movsar-evloev-overcoming-hurdles-ufc-london"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Al Jazeera (Reuters)",
+   "author": "",
+   "title": "Evloev upsets Murphy, sets up featherweight title shot against Volkanovski",
+   "url": "https://www.aljazeera.com/amp/sports/2026/3/22/evloev-upsets-murphy-sets-up-featherweight-title-shot-against-volkanovski",
+   "date": "2026-03-22"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Movsar Evloev overcoming hurdles at UFC London",
+   "url": "https://www.ufc.com/news/movsar-evloev-overcoming-hurdles-ufc-london",
+   "date": "2026-03-21"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Ricardo Viagem",
+   "title": "An early preview of Alexander Volkanovski vs. Movsar Evloev: fight breakdown",
+   "url": "https://mmasucka.com/opinion/an-early-preview-of-alexander-volkanovski-vs-movsar-evloev-fight-breakdown/",
+   "date": "2026-08-31"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Movsar Evloev says he's entering his prime before Alexander Volkanovski title fight",
+   "url": "https://www.sherdog.com/news/news/Movsar-Evloev-says-hes-entering-his-prime-before-Alexander-Volkanovski-title-fight-203185",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Movsar Evloev told he must do something he hasn't done since 2018 to beat Alexander Volkanovski",
+   "url": "https://bloodyelbow.com/2026/10/07/movsar-evloev-told-he-must-do-something-he-hasnt-done-since-2018-to-beat-alexander-volkanovski/",
+   "date": "2026-10-07"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Movsar Evloev pushes back on Alexander Volkanovski's 'career-best' prediction as he claims he's distracted",
+   "url": "https://bloodyelbow.com/2026/10/12/movsar-evloev-pushes-back-on-alexander-volkanovskis-career-best-prediction-as-he-claims-hes-distracted/",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "good"
+}

@@ -1,0 +1,98 @@
+{
+ "name": "Louis Jourdain",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Younger brother of Charles Jourdain and a 2025 Contender Series contract winner (9-3, four straight wins) making his UFC debut a year after that fight. A creative, kick-heavy striker who uses range and counters, and who finished Magno Dias with a no-hooks rear-naked choke early in round three. His record is built on regional Quebec cards with long gaps, so the UFC level is untested.",
+ "how_they_fight": {
+  "Striking": "Kicker in his brother's mold: works from space, attacks the lead leg and counters as opponents come in. On DWCS he chopped Dias's lead leg for two rounds and hurt him twice on counters (78 significant strikes landed to 26, one knockdown, per our data). Rotowire calls him creative and varied; a 2025 Combat Edge interview describes him as more technical and less wild than Charles.",
+  "Grappling": "Opportunistic finisher off the strikes: the Dias choke came from a scramble after damage, without hooks. Two of his nine wins are submissions (R2 in 2016, R3 on DWCS). Dias got in on his hips repeatedly and banked about 1:37 of control; Jourdain seems confident he can scramble back up rather than stopping the shot at the door.",
+  "Defense": "Never stopped by strikes in 12 pro fights. Both losses inside the distance were submissions in round 2, but both came in 2017 (Tyler Wilson, Atsushi Fujino); his only loss since was a 2021 decision to Avliyohon Hamidov in UAE Warriors. Gives up takedown entries.",
+  "Pace & cardio": "Slow burner who finishes in the middle and late rounds: of six stoppage wins, one came in R1, four in R2 and one in R3 (two of the R2/R1 'KO/TKO' results are listed at 5:00, i.e. between-round stoppages). Three wins went to decision, all three-rounders. Builds damage over two rounds and then accelerates, as against Dias. Big question is ring rust: a two-year gap tied to a knee injury earlier in his career, and no fight since September 30, 2025.",
+  "Fight IQ": "Patient and methodical rather than reckless. Has studied his brother's UFC career and says he can correct Charles's mistakes (Cageside Press). Fought with Charles in his corner on DWCS."
+ },
+ "patterns": [
+  "Attacks the lead leg early, then cashes in later: finishes cluster in round 2 (4 of 6) with one each in R1 and R3",
+  "Hurts opponents on counters as they step in",
+  "Wins the scramble after a takedown attempt rather than stopping it at the hips",
+  "Never KO'd; only stoppage losses are two R2 submissions from 2017"
+ ],
+ "concerns": [
+  "UFC debut after a 12-month layoff; history of long gaps and a knee injury (UFC.com)",
+  "Lets wrestlers reach his hips; spent stretches under Dias's control on DWCS",
+  "Regional strength of schedule; DWCS was his first fight against UFC-level opposition"
+ ],
+ "keys_to_beat": [
+  "Close distance behind feints so he can't kick from range or time counters",
+  "Wrestle early and stay heavy; make him carry weight before his kicking game builds",
+  "Win round 1 before he settles in; he historically does his damage in rounds 2-3"
+ ],
+ "news": [
+  {
+   "date": "2026-08-11",
+   "text": "Booked for his UFC debut against Timmy Cuamba at bantamweight in Edmonton; UFC.com lists the bout on the main card.",
+   "source": "https://cagesidepress.com/2026/08/11/louis-jourdain-ufc-debut-timmy-cuamba-edmonton/"
+  },
+  {
+   "date": "2025-11-25",
+   "text": "Came out of the Contender Series win 'a little banged up', which kept him off the October 2025 Vancouver card; earlier a knee injury contributed to a two-year layoff (UFC.com).",
+   "source": "https://www.ufc.com/news/louis-jourdain-ready-stand-alongside-his-big-brother-again-dana-white-contender-series"
+  },
+  {
+   "date": "2025-10-01",
+   "text": "Was on a medical suspension after the Dias fight while asking for a spot on the next Canadian card.",
+   "source": "https://cagesidepress.com/2025/10/01/louis-jourdain-dwcs-brother/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Louis Jourdain to Make UFC Debut Opposite Timmy Cuamba in Edmonton",
+   "url": "https://cagesidepress.com/2026/08/11/louis-jourdain-ufc-debut-timmy-cuamba-edmonton/",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Louis Jourdain Ready to Stand Alongside His Big Brother Again",
+   "url": "https://www.ufc.com/news/louis-jourdain-ready-stand-alongside-his-big-brother-again-dana-white-contender-series",
+   "date": "2025-11-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Gabriel Gonzalez, Jay Anderson",
+   "title": "DWCS: Louis Jourdain Looks to Build Off Brother's Experience As He Enters UFC",
+   "url": "https://cagesidepress.com/2025/10/01/louis-jourdain-dwcs-brother/",
+   "date": "2025-10-01"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Louis Jourdain MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/louis-jourdain-2726",
+   "date": "2026-07-29"
+  },
+  {
+   "outlet": "Combat Edge",
+   "author": "",
+   "title": "Louis Jourdain interview ahead of Contender Series fight",
+   "url": "https://combat-edge.com/news/louis-jourdain-interview-ufc-contender-series-fight",
+   "date": "2025-09-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Canadian Talents Anchor Four Additions to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "thin"
+}

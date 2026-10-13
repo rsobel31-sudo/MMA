@@ -1,0 +1,88 @@
+{
+ "name": "Julien Leblanc",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 35-year-old Gatineau middleweight (10-3) from Patenaude Martial Arts who finished eight of his ten regional wins, then lost his UFC debut to Robert Valentin by first-round rear-naked choke in April 2026. Per Radio-Canada, his knee gave out on the first kick of that fight (kneecap micro-fractures, two torn ligaments), so this is a comeback from a serious injury on a fresh opponent swap.",
+ "how_they_fight": {
+  "Striking": "A regional finisher with a stoppage on the feet in four of his wins (Rossi R2, Angus R1, Kolker R2, Weeks R3). Low-volume, power-first; the UFC sample is tiny (4 of 6 significant strikes in 2:22 vs. Valentin, per our verified data).",
+  "Grappling": "Four submission wins (Thouin R2, Swilling R1, Kent R1, Rohovich R2), so he is dangerous in scrambles. But against Valentin he was taken down once, mounted and gave up his back inside two and a half minutes; UFC.com's recap has Valentin pressuring him onto the back foot, Leblanc tying up and the fight hitting the mat, where Valentin took over.",
+  "Defense": "Never stopped on the regional scene: his two pre-UFC losses were decisions (Damien Lapilus, TKO 44, 2018; Joel Bauman, LFA 104, 2021). The only stoppage loss is the Valentin choke, which came with the knee injury.",
+  "Pace & cardio": "Finishes spread through the fight rather than front-loaded: of ten wins, 3 came in R1, 4 in R2, 1 in R3 (Weeks, at 5:00 of R3) and 2 by decision. A middle-rounds finisher more than a fast starter. Has gone the full 15 minutes four times (2-2) and was never stopped before the UFC. Long gaps between fights (2018-2021, 2021-2023).",
+  "Fight IQ": "Experienced (pro since 2014) but untested at this level; the one UFC appearance was over before he could settle. Coach Patrick Marcil (15 years together) told Radio-Canada the main job this camp was getting Leblanc to stop thinking about the knee."
+ },
+ "patterns": [
+  "Wins usually come by stoppage in rounds 1-2 (7 of 10 wins), sometimes late (Weeks, end of R3)",
+  "Balanced finisher: 4 KO/TKO, 4 submissions, 2 decisions in verified wins",
+  "Decision losses to good regional opponents (Lapilus, Bauman); only stopped once, in his UFC debut",
+  "Long inactivity spells; this is his second fight in seven months after a six-month recovery"
+ ],
+ "concerns": [
+  "Knee: per Radio-Canada, micro-fractures in the kneecap and two torn ligaments from the first kick vs. Valentin; cleared to train, but confidence in the knee was the camp's stated issue",
+  "Age 35 and coming off a first-round submission loss",
+  "Prepared for Gilbert Urbina, now faces a different opponent (Nick Galanti) about two and a half weeks out (switch reported Oct. 1)",
+  "Got taken down and lost position quickly once the fight hit the floor at UFC level"
+ ],
+ "keys_to_beat": [
+  "Test the knee early with leg kicks and level changes",
+  "Pressure him onto the back foot, then take the fight to the mat (the Valentin blueprint)",
+  "Avoid loose scrambles: he has four submission wins",
+  "Push the pace; his regional wins came against a lower level of opposition"
+ ],
+ "news": [
+  {
+   "date": "2026-08-19",
+   "text": "Radio-Canada: Leblanc says his knee 'burst' on the first kick of the Valentin fight (kneecap micro-fractures, two torn ligaments); doctors cleared him and the UFC gave him a second fight, originally vs. Gilbert Urbina.",
+   "source": "https://ici.radio-canada.ca/nouvelle/2276116/julien-leblanc-marc-andre-barriault-ufc-edmonton"
+  },
+  {
+   "date": "2026-10-01",
+   "text": "Gilbert Urbina withdrew for undisclosed reasons; UFC newcomer Nick Galanti (fresh off a Contender Series contract) steps in (per Wikipedia, citing an Oct. 1 MMA Junkie report).",
+   "source": "https://agentmma.com/news/90964-julian-leblanc-vs-nick-galanti-set-for-ufc-edmonton-on-october-17"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Radio-Canada",
+   "author": "Martin Comtois",
+   "title": "Julien Leblanc et Marc-André Barriault à UFC Edmonton",
+   "url": "https://ici.radio-canada.ca/nouvelle/2276116/julien-leblanc-marc-andre-barriault-ufc-edmonton",
+   "date": "2026-08-19"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "UFC Winnipeg results: Burns vs. Malott prelims highlights, winners, interviews",
+   "url": "https://www.ufc.com/news/ufc-winnipeg-results-burns-vs-malott-prelims-highlights-winners-interviews",
+   "date": "2026-04-19"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Winnipeg: Burns vs. Malott – Full Results and Highlights",
+   "url": "https://www.lowkickmma.com/ufc-winnipeg-burns-vs-malott-full-results/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Winnipeg: 'Burns vs. Malott' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-winnipeg/ufc-winnipeg-burns-vs-malott-live-results-and-highlights/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Julian Leblanc vs. Nick Galanti set for UFC Edmonton on October 17",
+   "url": "https://agentmma.com/news/90964-julian-leblanc-vs-nick-galanti-set-for-ufc-edmonton-on-october-17",
+   "date": ""
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

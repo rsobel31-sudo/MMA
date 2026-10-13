@@ -1,0 +1,115 @@
+{
+ "name": "Joaquin Buckley",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A top-10 welterweight (21-8, 11-6 UFC) with real one-shot power who won six straight from 2023-24, capped by a doctor-stoppage TKO of Colby Covington, then lost back-to-back lopsided decisions to elite wrestlers Kamaru Usman and Sean Brady. Dangerous on the feet in rounds two and three; the open question is whether he can stay upright against anyone who can wrestle.",
+ "how_they_fight": {
+  "Striking": "Explosive, compact power puncher with a big left hook and athletic kicks (the spinning back kick KO of Impa Kasanganay). About 4 significant strikes a minute at 40% accuracy: he loads up and accepts misses to land the heavy shot. Before the two losses he finished Vicente Luque, Stephen Thompson and Colby Covington, and he hurt Usman with a left hook in round three.",
+  "Grappling": "Can wrestle offensively (he out-grappled Nursulton Ruziboev and Alex Morono) but has little off his back. Brady took him down repeatedly and kept him there for over 12 minutes of control (30-25 x2, 30-27); Usman did the same with four takedowns and nearly 13 minutes of control (49-46 x2, 48-47). In both fights he could not get back up.",
+  "Defense": "Stopped four times by strikes (Jackie Gosh 2016 R1, Kevin Holland 2020 R3, Alessio Di Chirico 2021 R1, Chris Curtis 2022 R2), but never since dropping to welterweight in 2023. His weakness now is takedown defense against chain wrestlers and getting pinned against the fence, not his chin.",
+  "Pace & cardio": "Slow burner who finishes in the middle rounds. All eight of his UFC stoppage wins came in round 2 (5) or round 3 (3): none in round 1. Has gone 25 minutes once (Usman, a loss) and rallied in round five there, stuffing several takedowns. His UFC stoppage losses came in R1 (Di Chirico), R2 (Curtis) and R3 (Holland).",
+  "Fight IQ": "Patient stalker who waits for a clean counter or a hurt opponent, then swarms. Against wrestlers he has struggled to adjust: per Cageside Press his corner told him between rounds against Brady to stop throwing kicks and knees (which gave Brady entries) and work his hands."
+ },
+ "patterns": [
+  "Finishes come in rounds 2-3: 8 UFC stoppage wins, 0 in round 1 (5 in R2, 3 in R3)",
+  "Builds slowly, then hurts opponents with the left hook or a power right once they have been read",
+  "Swarms immediately when an opponent is hurt; good finisher",
+  "Kicks are a liability against wrestlers: Brady's first takedown came off a Buckley kick (per Cageside Press)",
+  "Has not been stopped since December 2022; both recent losses were wide decisions on the ground"
+ ],
+ "concerns": [
+  "Two straight decision losses where he was taken down and controlled for most of the fight (Usman 2025, Brady 2026)",
+  "Gets stuck on his back: little offense or scrambling once down",
+  "Low output and accuracy if he can't find the knockout; can lose rounds on volume",
+  "Coming off five months after the Brady loss, fighting in Canada against a home favourite"
+ ],
+ "keys_to_beat": [
+  "Wrestle him: level changes against the fence, especially off his kicks",
+  "Win the first round on volume while he is still reading",
+  "Stay out of the pocket for his left hook; don't trade when he starts to swarm",
+  "Make him carry weight late; he has lost the only 25-minute fight he's had"
+ ],
+ "news": [
+  {
+   "date": "2026-07-28",
+   "text": "Booked to headline UFC Edmonton against Mike Malott over five rounds at Rogers Place on October 17.",
+   "source": "https://cagesidepress.com/2026/07/28/buckley-vs-malott-headlines-ufc-edmonton/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Is the underdog in his own main event: MMA Junkie lists Buckley +120, Malott -140.",
+   "source": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html"
+  },
+  {
+   "date": "2026-05-09",
+   "text": "Lost a unanimous decision to Sean Brady at UFC 328 (30-25, 30-25, 30-27), dominated on the ground.",
+   "source": "https://cagesidepress.com/2026/05/09/ufc-328-sean-brady-cruises-in-dominant-showing-against-joaquin-buckley/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC Edmonton",
+   "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Pivotal Welterweight Bout Between Joaquin Buckley and Mike Malott Headlines UFC Return to Edmonton",
+   "url": "https://www.ufc.com/news/pivotal-welterweight-bout-between-joaquin-buckley-and-mike-malott-headlines-ufc-return",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "Matt Erickson",
+   "title": "UFC Edmonton: How to watch Joaquin Buckley vs. Mike Malott, lineup, odds, more",
+   "url": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Buckley vs. Malott Headlines UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/07/28/buckley-vs-malott-headlines-ufc-edmonton/",
+   "date": "2026-07-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 328: Sean Brady Cruises in Dominant Showing Against Joaquin Buckley",
+   "url": "https://cagesidepress.com/2026/05/09/ufc-328-sean-brady-cruises-in-dominant-showing-against-joaquin-buckley/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Sean Brady Wows with Clinical, Dominant Win Over Joaquin Buckley – UFC 328 Highlights",
+   "url": "https://www.lowkickmma.com/sean-brady-vs-joaquin-buckley-ufc-328/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Vintage Kamaru Usman Dismantles Joaquin Buckley with Dominant Decision Victory – UFC Atlanta Highlights",
+   "url": "https://www.lowkickmma.com/kamaru-usman-vs-joaquin-buckley-highlights/",
+   "date": "2025-06-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Joaquin Buckley Keeps Rolling, Stops Covington in Round 3",
+   "url": "https://cagesidepress.com/2024/12/15/joaquin-buckley-keeps-rolling-stops-covington-in-round-3",
+   "date": "2024-12-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Colby Covington Claims Doctor is the One That Beat Me in UFC Tampa Headliner",
+   "url": "https://sherdog.com/news/news/Colby-Covington-Claims-Doctor-is-the-One-That-Beat-Me-in-UFC-Tampa-Headliner-195733",
+   "date": "2024-12-15"
+  }
+ ],
+ "depth": "good"
+}

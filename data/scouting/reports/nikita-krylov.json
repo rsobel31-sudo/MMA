@@ -1,0 +1,86 @@
+{
+ "name": "Nikita Krylov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Long-time light heavyweight veteran (31-12, 12-10 UFC), big and well rounded, with heavy hands and a strong top/submission game. Has gone 1-3 since 2025: KO'd in R1 by Reyes and Guskov, beat Modestas Bukauskas with a KO at 4:57 of R3, then was stopped by Robert Whittaker in R3. Now in his mid-30s and stopped in three of his last four fights.",
+ "how_they_fight": {
+  "Striking": "Aggressive and powerful, throws long kicks and overhands; the Bukauskas KO came from a counter overhand right as Bukauskas pushed late. Defense breaks down in exchanges against sharper boxers.",
+  "Grappling": "His best route: big, strong wrestler with good top control and 16 career submission wins (14 in R1). Took Whittaker down 3 times early and has controlled the likes of Johnny Walker and Volkan Oezdemir (7 of 20 takedowns and over 9 minutes of control vs Oezdemir).",
+  "Defense": "Chin and composure are the issues: 10 career stoppage losses, incl. Reyes (R1), Guskov (R1) and Whittaker (R3, turned away holding his jaw). Has been submitted 6 times, mostly early in his career.",
+  "Pace & cardio": "Historically a first-round finisher (23 of his 29 stoppage wins came in R1, 5 in R2, 1 in R3). In the UFC lately the early phase is where he is most effective (had early success vs Whittaker), and he can still land a late bomb (Bukauskas R3). Losses: 7 in R1, 1 in R2, 2 in R3 (Palelei, Whittaker), 2 decisions.",
+  "Fight IQ": "Experienced but emotional; said the Bukauskas win 'lifted' a depression after two KO losses, and that he changed team, academy and head coach (per MMA Junkie via Yahoo). Can make reckless exchanges when behind."
+ },
+ "patterns": [
+  "Early takedowns and top pressure; R1 submissions historically",
+  "Late power punch even when tired (Bukauskas at 4:57 of R3)",
+  "Breaks under clean, accurate boxing (Reyes, Guskov, Whittaker)",
+  "Stopped in 3 of his last 4 fights"
+ ],
+ "concerns": [
+  "Durability: KO'd in R1 twice in 2025 and in R3 by Whittaker (jaw) in July 2026",
+  "Mid-30s and 1-3 since 2025, fell out of the rankings (per LowKick)",
+  "Facing a younger, explosive finisher who wins in R1"
+ ],
+ "keys_to_beat": [
+  "Land clean, straight punches in exchanges",
+  "Stuff or scramble out of early takedowns",
+  "Pressure him: he has been stopped by forward boxers"
+ ],
+ "news": [
+  {
+   "date": "2026-07-11",
+   "text": "Stopped by Robert Whittaker at 1:01 of R3 at UFC 329 after a right hand; turned away holding his jaw (per Sherdog). No confirmed diagnosis.",
+   "source": "https://www.sherdog.com/news/news/Robert-Whittaker-silences-doubters-with-UFC-329-TKO-of-Nikita-Krylov-201862"
+  },
+  {
+   "date": "2026-01-26",
+   "text": "After beating Bukauskas, said the win lifted his depression and that he had changed team, academy and head coach after his 2025 losses (MMA Junkie via Yahoo).",
+   "source": "https://sports.yahoo.com/articles/nikita-krylov-says-ufc-324-175018554.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Robert Whittaker silences doubters with UFC 329 TKO of Nikita Krylov",
+   "url": "https://www.sherdog.com/news/news/Robert-Whittaker-silences-doubters-with-UFC-329-TKO-of-Nikita-Krylov-201862",
+   "date": "2026-07-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 324: Nikita Krylov Hits Buzzer-Beater on Modesta Bukauskas",
+   "url": "https://cagesidepress.com/2026/01/24/ufc-324-nikita-krylov-hits-buzzer-beater-on-modesta-bukauskas/",
+   "date": "2026-01-24"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson, Ken Hathaway",
+   "title": "Nikita Krylov says UFC 324 lifted depression, wants Blachowicz again",
+   "url": "https://sports.yahoo.com/articles/nikita-krylov-says-ufc-324-175018554.html",
+   "date": "2026-01-26"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC 329 Power Rankings: Rating The Night's Big Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-329-power-rankings-rating-the-nights-big-winners-in-las-vegas/",
+   "date": "2026-07-13"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Abu Dhabi: Matchmaking for All the Losers from Saturday",
+   "url": "https://www.lowkickmma.com/ufc-abu-dhabi-matchmaking-for-all-the-losers/",
+   "date": "2026-07-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Redemption: Second Chances on Dana White's Contender Series — Alik Lorenz",
+   "url": "https://cagesidepress.com/2026/08/18/redemption-second-chances-on-dana-whites-contender-series-alik-lorenz/",
+   "date": "2026-08-18"
+  }
+ ],
+ "depth": "good"
+}

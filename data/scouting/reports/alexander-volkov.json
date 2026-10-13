@@ -1,0 +1,85 @@
+{
+ "name": "Alexander Volkov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Veteran 6'7\" heavyweight kickboxer (40-11), 6-1 in his last seven with the only loss a split decision to Ciryl Gane. Fights long behind the jab and kicks; once a first-round finisher, he has gone the distance in his last four fights.",
+ "how_they_fight": {
+  "Striking": "Range management: jab, inside and outside leg kicks, body and head kicks, straight right (Cageside on Cortes-Acosta). About 5.3 significant strikes a minute at 58%. Landed 88 significant strikes vs Cortes-Acosta and closed his eye.",
+  "Grappling": "Not a wrestler (0.7 takedowns per 15). Gave up seven takedowns and over 10 minutes of control to Jailton Almeida but kept getting up, reversing, landing elbows and threatening a triangle; won a split decision (Cageside, Rotowire). Submitted Tuivasa (R2, 2023).",
+  "Defense": "About 69% takedown defence; can be taken down but rarely kept there for damage. Stopped five times: subs in R1 twice early in his career and by Tom Aspinall (R1, 2022), KO by Vitaly Minakov (R1, 2013) and Derrick Lewis (R3 at 4:49, 2018). Was bloodied and pressured late by Cortes-Acosta.",
+  "Pace & cardio": "Was a fast starter: 17 of his 28 finishes came in R1, 8 in R2, 2 in R3 and 1 in R4 (verified). Recently a decision fighter: Pavlovich, Gane (L), Almeida and Cortes-Acosta all went three rounds; last finish Tuivasa (R2, Sept 2023). Lets opponents rally late (Cortes-Acosta's third round, Lewis's late KO).",
+  "Fight IQ": "Patient and disciplined at range; manages risk well but can coast after banking rounds."
+ },
+ "patterns": [
+  "Jab and kicks at range; leg kicks early",
+  "Wins the first two rounds, survives a late push",
+  "Recent wins on the cards, not by finish"
+ ],
+ "concerns": [
+  "Concedes takedowns to strong wrestlers",
+  "Late-round surges from heavy hitters (Lewis KO R3, Cortes-Acosta R3)",
+  "Age (38) and a run of close decisions"
+ ],
+ "keys_to_beat": [
+  "Close distance and clinch against the fence",
+  "Wrestle and stay heavy",
+  "Pressure late in rounds 2-3"
+ ],
+ "news": [
+  {
+   "date": "2026-10-08",
+   "text": "Called Josh Hokit 'the easiest title shot' and is rooting for Hokit to beat Ciryl Gane.",
+   "source": "https://www.mmamania.com/ufc-news/477431/josh-hokit-a-nice-guy-but-easiest-title-shot-claims-alexander-volkov"
+  },
+  {
+   "date": "2026-08-17",
+   "text": "Volkov vs Kuniev described as a heavyweight title eliminator (per AgentMMA, which noted it was not yet official then).",
+   "source": "https://agentmma.com/news/88801-volkov-vs-kuniev-set-as-title-eliminator-at-ufc-333-in-abu-dhabi"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Alexander Volkov Beats Waldo Cortes-Acosta, Calls for Title Shot Saying Pereira 'Not a Heavyweight'",
+   "url": "https://cagesidepress.com/2026/05/09/alexander-volkov-beats-waldo-cortes-acosta-calls-for-title-shot-saying-pereira-not-a-heavyweight/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "UFC 321: Alexander Volkov Halts Jailton Almeida's Progress In Stalling Match",
+   "url": "https://cagesidepress.com/2025/10/25/ufc-321-alexander-volkov-halts-jailton-almeidas-progress-in-stalling-match",
+   "date": "2025-10-25"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Alexander Volkov player page",
+   "url": "https://www.rotowire.com/mma/player/alexander-volkov-717",
+   "date": "2026-05"
+  },
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Josh Hokit a 'nice guy', but 'easiest title shot' claims Alexander Volkov",
+   "url": "https://www.mmamania.com/ufc-news/477431/josh-hokit-a-nice-guy-but-easiest-title-shot-claims-alexander-volkov",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Volkov vs. Kuniev set as title eliminator at UFC 333 in Abu Dhabi",
+   "url": "https://agentmma.com/news/88801-volkov-vs-kuniev-set-as-title-eliminator-at-ufc-333-in-abu-dhabi",
+   "date": "2026-08-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,130 @@
+{
+ "name": "Daniel Santos",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Chute Boxe Diego Lima's \"Willycat\" is a compact, explosive Brazilian pressure fighter with power in both hands, low kicks, clinch knees and a willingness to wrestle; 4-2 in the UFC and 14-4 in our data. He was on a four-fight run before Doo Ho Choi weathered his first-round storm and stopped him with a body shot in round two.",
+ "how_they_fight": {
+  "Striking": "Walks opponents down throwing hard combinations, spinning techniques (a spinning wheel kick vs Jeong Yeong Lee) and chopping low kicks; against Joo Sang Yoo the leg kicks set up the left hand that ended it. Dangerous exiting the clinch: a big uppercut bloodied Choi, and per AgentMMA he stopped John Castaneda with a clinch knee. Out-landed heavily in his UFC debut (49 to 127 vs Julio Arce in our data).",
+  "Grappling": "Uses takedowns as a second weapon: 6 of 18 against Lee (all in rounds two and three after he was stuffed early, per RotoWire), with back takes, and over ten minutes of control against Johnny Munoz Jr. When the shots are not landing he keeps trying (0 of 6 against Choi).",
+  "Defense": "Hittable. He absorbs a lot coming forward, his striking defense is middling, and when Choi sharpened his jab and cut off his entries in round two Santos backed toward the fence, got rocked by a right hand and folded by a body shot. Also stopped once on the regionals (round three, 2020).",
+  "Pace & cardio": "Fast starter who wins first rounds. In our data his nine finishes came three in round one, four in round two and two in round three; his last two UFC finishes both came in round two (Castaneda 4:28, Yoo 0:21) after he softened the man up in round one. He has also won three UFC decisions by turning to wrestling later. Stopped twice: round three (2020) and round two (Choi), and RotoWire described him as fading badly once Choi took over.",
+  "Fight IQ": "Adapts by mixing in wrestling when striking stalls (Lee), but can get drawn into firefights and has no obvious plan B when a sharper boxer takes the centre. Coach Diego Lima has had to step in on weight before."
+ },
+ "patterns": [
+  "Wins round one with forward pressure and power",
+  "Low kicks to set up the left hand",
+  "Uppercuts and knees on the break from the clinch",
+  "Switches to takedowns and back takes in rounds two and three",
+  "Finishes cluster in round two (4 of 9 career finishes)"
+ ],
+ "concerns": [
+  "Weight cut: a doctor stopped his cut before UFC 320 and the Yoo fight moved to a 153 lb catchweight; he called it an amateur mistake",
+  "Long injury layoffs: withdrew from bouts with Daniel Marcos, Said Nurmagomedov and Davey Grant between 2023 and 2025",
+  "Coming off a stoppage loss to the body",
+  "Shorter (170 cm reach in our data) against a long kickboxer",
+  "Has bounced between 135, 145 and catchweights in the UFC",
+  "Record note: Cageside and LowKick list him at 13-3, AgentMMA 14-3; our data has 14-4"
+ ],
+ "keys_to_beat": [
+  "Survive the first-round onslaught without trading in the pocket",
+  "Stiff jab and cut off his entries, as Choi did",
+  "Attack the body when he pressures",
+  "Keep him off the fence-clinch where his uppercuts and knees land",
+  "Defend the early takedowns; he gets them later in fights"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Bolaji Oki at featherweight on the UFC 333 prelims.",
+   "source": "https://heavy.com/sports/ufc/featherweight-banger-added-to-ufc-333-in-abu-dhabi/"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Stopped by Doo Ho Choi with a body shot at 4:29 of round two after winning round one; Fight of the Night.",
+   "source": "https://cagesidepress.com/2026/05/16/doo-ho-choi-stops-daniel-santos-with-body-shot-tko/"
+  },
+  {
+   "date": "2025-10-06",
+   "text": "Said he botched his UFC 320 cut; a doctor stopped it and his coach negotiated a 153 lb catchweight with Joo Sang Yoo.",
+   "source": "https://cagesidepress.com/2025/10/06/ufc-320-daniel-santos-weight/"
+  },
+  {
+   "date": "2024-10-23",
+   "text": "Removed from a UFC 308 bout with Said Nurmagomedov days out, no reason given.",
+   "source": "https://cagesidepress.com/2024/10/23/daniel-santos-out-ufc-308-fight-with-said-nurmagomedov-cancelled/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "Doo Ho Choi Stops Daniel Santos with Body Shot TKO",
+   "url": "https://cagesidepress.com/2026/05/16/doo-ho-choi-stops-daniel-santos-with-body-shot-tko/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Doo Ho Choi Folds Daniel Santos with Sickening Body Shot KO in Round 2 – UFC Vegas 117 Highlights",
+   "url": "https://www.lowkickmma.com/doo-ho-choi-vs-daniel-santos-ufc-vegas-117/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 117 Losers",
+   "url": "https://cagesidepress.com/2026/05/18/whats-next-ufc-vegas-117-losers/",
+   "date": "2026-05-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 320: Daniel Santos takes Joo Sang Yoo's 0, Wins Fourth Straight",
+   "url": "https://cagesidepress.com/2025/10/04/ufc-320-daniel-santos-takes-joo-sang-yoos-0-wins-fourth-straight",
+   "date": "2025-10-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Gabriel Gonzalez, Jay Anderson",
+   "title": "Daniel Santos Opens Up on Botched UFC 320 Weight Cut",
+   "url": "https://cagesidepress.com/2025/10/06/ufc-320-daniel-santos-weight/",
+   "date": "2025-10-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Daniel Santos Puts It All Together, Takes Decision vs Lee",
+   "url": "https://cagesidepress.com/2025/05/10/daniel-santos-puts-it-all-together-takes-decision-vs-lee",
+   "date": "2025-05-10"
+  },
+  {
+   "outlet": "RotoWire",
+   "author": "",
+   "title": "Daniel Santos MMA news",
+   "url": "https://www.rotowire.com/mma/player.php?id=2208",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Daniel Santos Out, UFC 308 Fight with Said Nurmagomedov Cancelled",
+   "url": "https://cagesidepress.com/2024/10/23/daniel-santos-out-ufc-308-fight-with-said-nurmagomedov-cancelled/",
+   "date": "2024-10-23"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Featherweight Banger Added to UFC 333 in Abu Dhabi",
+   "url": "https://heavy.com/sports/ufc/featherweight-banger-added-to-ufc-333-in-abu-dhabi/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Bolaji Oki vs. Daniel Santos",
+   "url": "https://agentmma.com/articles/3835-5626-bolaji-oki-vs-daniel-santos",
+   "date": "2026-09-30"
+  }
+ ],
+ "depth": "moderate"
+}

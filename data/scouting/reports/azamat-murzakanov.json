@@ -1,0 +1,86 @@
+{
+ "name": "Azamat Murzakanov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Compact Russian power puncher (16-1, 6-1 UFC) who went unbeaten for 16 fights before Paulo Costa stopped him with a head kick in round three at UFC 327. A patient counter-striker with one-shot power (Rakic, Ribeiro both in R1) who has also won late by attrition (Nchukwi and Clark in R3). Short for the division, so he gives up reach to most opponents, Reyes included.",
+ "how_they_fight": {
+  "Striking": "Patient, economical counter-puncher with very heavy hands (about 1.2 knockdowns per 15 minutes). Waits for entries and times short right hands: Rakic was dropped stepping in at 3:11 of R1. Low volume (about 3.8 significant strikes a minute) but accurate (53%).",
+  "Grappling": "Strong in the clinch; rarely shoots (under 1 takedown per 15) but can ride and punish on top, e.g. 220 seconds of control and 46 ground strikes in the R3 TKO of Devin Clark.",
+  "Defense": "Generally hard to hit cleanly (61% striking defense) and durable until Costa: dropped by a right hand in R1, cut by an elbow, then finished by head kicks in R3 after he seemed to hurt his arm blocking one (per LowKick). Costa's body and leg kicks from range were the problem; he was out-landed 55 to 34.",
+  "Pace & cardio": "Two modes: early one-shot finishes (10 of 13 career finishes in R1, incl. Ribeiro and Rakic) and late attrition stoppages in the UFC (Nchukwi R3, Clark R3, Menifield R2). In R2 vs Costa he rallied and hurt Costa when Costa slowed. Only loss came in R3. In the UFC his finishes are spread out, so don't assume R1.",
+  "Fight IQ": "Calm and patient; happy to concede early volume to set up counters. That passivity let a rangy kicker (Costa) bank damage from outside."
+ },
+ "patterns": [
+  "Counter right hand as opponents step in",
+  "Early KOs vs fighters who come to him; late stoppages vs fighters who don't",
+  "Low output, high power; gives up early volume",
+  "Rallies under adversity (hurt Costa in R2 after being dropped in R1)"
+ ],
+ "concerns": [
+  "Coming off his first loss: a head-kick KO with possible arm injury (unconfirmed, per LowKick)",
+  "Reach disadvantage against long kickers; body and leg kicks from range worked for Costa",
+  "Age: 37"
+ ],
+ "keys_to_beat": [
+  "Stay long and kick (legs and body) rather than step into his counter range",
+  "Don't make predictable straight-line entries",
+  "Win volume rounds; make him lead"
+ ],
+ "news": [
+  {
+   "date": "2026-04-11",
+   "text": "Suffered first career loss: TKO (head kick) at 1:23 of R3 to Paulo Costa at UFC 327; appeared to hurt his arm blocking a head kick before the finish (per LowKick).",
+   "source": "https://www.lowkickmma.com/azamat-murzakanov-vs-paulo-costa-highlights/"
+  },
+  {
+   "date": "2026-10-13",
+   "text": "Booked against Dominick Reyes on the UFC 333 prelims; no injury or camp news found.",
+   "source": "https://en.wikipedia.org/wiki/UFC_333"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "CBS Sports",
+   "author": "Shakiel Mahjouri",
+   "title": "UFC 327: Paulo Costa puts out Azamat Murzakanov with brutal head kick knockout",
+   "url": "https://www.cbssports.com/ufc/news/ufc-327-paulo-costa-azamat-murzakanov-knockout-results-highlights/",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Paulo Costa Takes Azamat Murzakanov's 'O' With Insane Head-Kick Knockout - UFC 327 Highlights",
+   "url": "https://www.lowkickmma.com/azamat-murzakanov-vs-paulo-costa-highlights/",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 327 Losers",
+   "url": "https://cagesidepress.com/2026/04/13/whats-next-ufc-327-losers/",
+   "date": "2026-04-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 321: Azamat Murzakanov Crumbles Aleksandar Rakic, Improves to 16-0",
+   "url": "https://cagesidepress.com/2025/10/25/ufc-321-azamat-murzakanov-crumbles-aleksandar-rakic-improves-to-16-0/",
+   "date": "2025-10-25"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC 327 Power Rankings: Rating The Night's Big Winners In Miami",
+   "url": "https://www.lowkickmma.com/ufc-327-power-rankings-rating-the-nights-big-winners-in-miami/",
+   "date": "2026-04-13"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": ""
+  }
+ ],
+ "depth": "moderate"
+}

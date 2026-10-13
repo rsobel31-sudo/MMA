@@ -1,0 +1,90 @@
+{
+ "name": "Lone'er Kavanagh",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Hard-hitting 27-year-old English flyweight (10-2) whose UFC run swings between big moments and costly lapses: a late-notice five-round upset of Brandon Moreno in February, but stoppage losses to Charles Johnson (KO R2) and Brandon Royval (RNC R3).",
+ "how_they_fight": {
+  "Striking": "Counter-puncher with real power in the right hand: dropped Royval with a counter right in R2 and hurt Moreno with one in R2 (Cageside, LowKick). Chops the calf relentlessly; Moreno was visibly compromised by the kicks. About 0.34 knockdowns per 15 minutes.",
+  "Grappling": "Defensive more than offensive. Stuffed Moreno's takedowns and clinch pressure across five rounds, but Royval took him down in R1 and R3 and his guillotine attempt off the shot failed. Escaped an arm-triangle before giving up the back.",
+  "Defense": "About 52% strike defence; has been caught clean on the counter (Johnson's right while Kavanagh was winning the standup). Stopped twice in his last three fights, both in the middle-to-late rounds.",
+  "Pace & cardio": "Builds through rounds and carried his pace through 25 minutes vs Moreno. Finishes (verified): R1 x2, R2 x1, R3 x2. Both losses are stoppages, KO R2 (4:35) and SUB R3 (3:40), each coming after he had won or competed well in the earlier rounds, so his danger window is late R2 and R3.",
+  "Fight IQ": "Smart leg-kick game plans, but lets hurt opponents off the hook (Royval recovered from the R2 knockdown) and over-commits in exchanges."
+ },
+ "patterns": [
+  "Calf kicks early to slow the opponent, then counter rights",
+  "Hurts people in round 2 (Moreno, Royval)",
+  "Fades into trouble late: both losses are R2-R3 stoppages"
+ ],
+ "concerns": [
+  "Chin: flattened by one Charles Johnson counter right",
+  "Back-take and choke defence once taken down (Royval)",
+  "Struggles to close distance on longer fighters"
+ ],
+ "keys_to_beat": [
+  "Counter him as he commits to the right hand",
+  "Wrestle late and attack the back",
+  "Check or punish the calf kick"
+ ],
+ "news": [
+  {
+   "date": "2026-08-15",
+   "text": "Booked against Ramazonbek (Ramazan) Temirov at UFC 333, announced on the UFC 330 broadcast.",
+   "source": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/"
+  },
+  {
+   "date": "2026-07-11",
+   "text": "Lost to Brandon Royval by rear-naked choke at 3:40 of R3 at UFC 329 in a Fight of the Night bout after dropping Royval in R2.",
+   "source": "https://cagesidepress.com/2026/07/11/ufc-329-action-packed-affair-sees-brandon-royval-submit-loneer-kavangh/"
+  },
+  {
+   "date": "2026-02-28",
+   "text": "Took the UFC Mexico main event on less than four weeks' notice after Asu Almabayev withdrew, and beat Moreno 49-46, 48-47, 48-47.",
+   "source": "https://www.thescore.com/mma/news/3488528/kavanagh-upsets-moreno-in-ufc-mexico-main-event"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 329: Action-Packed Affair Sees Brandon Royval Submit Lone'er Kavangh",
+   "url": "https://cagesidepress.com/2026/07/11/ufc-329-action-packed-affair-sees-brandon-royval-submit-loneer-kavangh/",
+   "date": "2026-07-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Lone'er Kavanagh Lights Up the Octagon, Batters Brandon Moreno in Show-Stealing Win",
+   "url": "https://www.lowkickmma.com/brandon-moreno-vs-loneer-kavanagh-ufc-mexico/",
+   "date": "2026-02-28"
+  },
+  {
+   "outlet": "theScore",
+   "author": "",
+   "title": "Kavanagh upsets Moreno in UFC Mexico main event",
+   "url": "https://www.thescore.com/mma/news/3488528/kavanagh-upsets-moreno-in-ufc-mexico-main-event",
+   "date": "2026-02-28"
+  },
+  {
+   "outlet": "SI",
+   "author": "",
+   "title": "UFC veteran silences favored prospect with shocking prelim knockout",
+   "url": "https://www.si.com/fannation/mma/news/ufc-veteran-silences-favored-prospect-with-shocking-prelim-knockout",
+   "date": "2025-08-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 329 Losers",
+   "url": "https://cagesidepress.com/2026/07/13/whats-next-ufc-329-losers/",
+   "date": "2026-07-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "moderate"
+}

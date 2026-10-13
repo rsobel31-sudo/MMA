@@ -1,0 +1,73 @@
+{
+ "name": "Joel Faglier",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 25-year-old heavyweight (6-0) out of Augusta, Georgia, nicknamed \"The Sniper\" and trained at his family's gym, Faglier's Mixed Martial Arts. Five of six wins are finishes (three submissions, two TKOs), mostly in round one on the regional and Fury FC circuit; he steps in for Louie Sutherland against Javad Mahjoub. He did not come via the Contender Series.",
+ "how_they_fight": {
+  "Striking": "Two first-round TKOs (Cameron Graham at Conflict MMA 68; Austin Green at Fury Challenger Series 15, where Sherdog has Green giving up to leg kicks and punches). Sherdog and ESPN reportedly disagree on the Green method; our verified data has it as KO/TKO, R1.",
+  "Grappling": "Three submissions per Sherdog: armbar (Graham, R1), rear-naked choke (El-Sahlah, R2) and arm-triangle (Abunaw, R1). Comfortable finishing from top for a heavyweight.",
+  "Defense": "Never stopped or beaten. Opposition is regional; his best name, UFC veteran Cody East, took him the distance at Fury FC 116 (unanimous decision).",
+  "Pace & cardio": "Early finisher: 4 of 6 wins in R1, 1 in R2 (El-Sahlah), and one three-round decision (East). Has gone 15 minutes once and won. No film-based detail found on how he holds his pace.",
+  "Fight IQ": "Young and active (six fights in 17 months), but no coverage of how he handles adversity; few sources exist."
+ },
+ "patterns": [
+  "Mostly round-one finishes (4 of 6)",
+  "Balanced finishing: 3 submissions, 2 TKOs",
+  "Went 15 minutes with UFC veteran Cody East and won the decision"
+ ],
+ "concerns": [
+  "Regional-level opposition; UFC debut on short notice (booked Sept. 30)",
+  "Very little coverage or film breakdown available",
+  "Facing an Olympic-level judoka, which may blunt his top game"
+ ],
+ "keys_to_beat": [
+  "Survive the first round",
+  "Take him into the second half of the fight, where he has little proven",
+  "Win the grappling exchanges rather than conceding top position"
+ ],
+ "news": [
+  {
+   "date": "2026-09-30",
+   "text": "Replaces Louie Sutherland against Javad Mahjoub at UFC Edmonton, his UFC debut.",
+   "source": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Joel Faglier fighter profile",
+   "url": "https://www.sherdog.com/fighter/Joel-Faglier-325449",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "ESPN",
+   "author": "",
+   "title": "Joel Faglier fighter page",
+   "url": "https://www.espn.com.co/mma/peleador/_/id/5454260/joel-faglier",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Sportsnet",
+   "author": "Staff",
+   "title": "Faglier to replace Sutherland at UFC Edmonton",
+   "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Javad Mahjoub",
+   "url": "https://en.wikipedia.org/wiki/Javad_Mahjoub",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "thin"
+}

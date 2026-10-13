@@ -1,0 +1,104 @@
+{
+ "name": "Merab Dvalishvili",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Former bantamweight champion (21-5) and the division's most relentless wrestler: three title defences in 2025 before Petr Yan took the belt on a unanimous decision in December. Wins by sheer volume of takedown attempts and pace over 15 or 25 minutes.",
+ "how_they_fight": {
+  "Striking": "Busy but light: about 4.8 significant strikes a minute at 46%, used to cover level changes. Only three KO/TKO wins (verified), last one Marlon Moraes R2 in 2021. Out-landed Yan on volume in the rematch, but Yan's shots did more damage (POST Wrestling).",
+  "Grappling": "Elite chain wrestler: about 3.9 takedowns per 15 at 40%, i.e. huge attempt volume. Shoots, gets stuffed, backs out and re-shoots (Cageside on O'Malley 2). Submitted O'Malley with a modified D'Arce/guillotine at 4:42 of R3. Yan stuffed more than two dozen attempts in December.",
+  "Defense": "Durable: stopped once in 26 fights (Ricky Simon, submission at 5:00 of R3, 2018). Absorbs only about 2.1 strikes a minute. Nose broken repeatedly; he said in April it was broken in two places and he is deferring reconstruction until retirement (LowKick MMA).",
+  "Pace & cardio": "The pace is the weapon: gets stronger as opponents tire, and 16 of 21 wins are decisions. Finishes (verified): R1 x1, R2 x2, R3 x2, so he almost never finishes early; his only UFC title-fight finish came late in R3 (O'Malley). Losses are all decisions except the Simon sub. Lost the Yan rematch on the cards (49-46, 49-47, 48-47 per POST Wrestling) when the takedowns dried up.",
+  "Fight IQ": "Single-minded game plan, high work rate, strong in scrambles. When the shot isn't working he keeps shooting rather than switching approach, which is how Yan beat him."
+ },
+ "patterns": [
+  "Takedown volume from the opening bell; re-shoots after every stuff",
+  "Wins late rounds by out-pacing tired opponents",
+  "Most wins on the scorecards; finishes, when they come, are R2-R3",
+  "Very hard to stop; has never been KO'd"
+ ],
+ "concerns": [
+  "Yan's takedown defence neutralised him in the rematch; no clear plan B on the feet",
+  "Low-power striking lets counter-punchers land the heavier shots",
+  "Repeatedly broken nose; Yan says he will target it",
+  "Lost a freestyle wrestling rematch to Henry Cejudo by pin in 36 seconds at RAF 12 in August (after beating him 11-8 at RAF Georgia in July), per EssentiallySports"
+ ],
+ "keys_to_beat": [
+  "Stuff the first shots and punish the re-shot with knees and uppercuts",
+  "Attack the body to blunt his pace",
+  "Win the exchanges with heavier strikes; don't get drawn into a scramble-fest"
+ ],
+ "news": [
+  {
+   "date": "2026-09-28",
+   "text": "Coach John Wood says this is 'a different Merab' after strong sparring and conditioning; he is motivated to reclaim the title.",
+   "source": "https://www.bjpenn.com/mma-news/ufc/petr-yan-will-face-a-different-version-of-merab-dvalishvili-in-ufc-333-trilogy-says-coach/"
+  },
+  {
+   "date": "2026-08-23",
+   "text": "Lost an RAF 12 freestyle wrestling rematch to Henry Cejudo by pinfall in 36 seconds; he had won their first RAF match 11-8 in Tbilisi on July 11.",
+   "source": "https://www.essentiallysports.com/ufc-mma-news-merab-is-a-fraud-fans-tear-into-dvalishvili-after-thirty-six-second-loss-against-henry-cejudo-at-raf-twelve/"
+  },
+  {
+   "date": "2026-04-02",
+   "text": "Broke his nose again in sparring (a knee); deferring reconstruction until after retirement.",
+   "source": "https://www.lowkickmma.com/merab-dvalishvili-shattered-nose-but-is-refusing-surgery-i-cant-even-breathe/"
+  },
+  {
+   "date": "2026-08-15",
+   "text": "Opened a +140 underdog to Yan at DraftKings.",
+   "source": "https://dknetwork.draftkings.com/2026/08/15/opening-odds-for-petr-yan-vs-merab-dvalishvili-3-at-ufc-333/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "POST Wrestling",
+   "author": "Jack Wannan",
+   "title": "UFC 323: Petr Yan reclaims bantamweight title with upset decision win over Merab Dvalishvili",
+   "url": "https://www.postwrestling.com/?p=126438",
+   "date": "2025-12-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Merab Dvalishvili Finishes O'Malley, Calls For Sandhagen Next",
+   "url": "https://cagesidepress.com/2025/06/08/merab-dvalishvili-finishes-omalley-calls-for-sandhagen-next",
+   "date": "2025-06-08"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "Fernando Quiles Jr.",
+   "title": "Petr Yan will face a 'different' version of Merab Dvalishvili in UFC 333 trilogy, says coach",
+   "url": "https://www.bjpenn.com/mma-news/ufc/petr-yan-will-face-a-different-version-of-merab-dvalishvili-in-ufc-333-trilogy-says-coach/",
+   "date": "2026-09-28"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Subham",
+   "title": "Merab Dvalishvili Shattered Nose But Is Refusing Surgery",
+   "url": "https://www.lowkickmma.com/merab-dvalishvili-shattered-nose-but-is-refusing-surgery-i-cant-even-breathe/",
+   "date": "2026-04-02"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "Papiya Chatterjee",
+   "title": "Fans tear into Dvalishvili after 36-second loss against Henry Cejudo at RAF 12",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-merab-is-a-fraud-fans-tear-into-dvalishvili-after-thirty-six-second-loss-against-henry-cejudo-at-raf-twelve/",
+   "date": "2026-08-23"
+  },
+  {
+   "outlet": "MMA Weekly",
+   "author": "",
+   "title": "Merab Dvalishvili in the best shape of his life ahead of Petr Yan trilogy, says coach",
+   "url": "https://www.mmaweekly.com/news/merab-dvalishvili-in-the-best-shape-of-his-life-ahead-of-petr-yan-trilogy-says-coach",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "good"
+}

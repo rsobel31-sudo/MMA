@@ -1,0 +1,93 @@
+{
+ "name": "Abdul-Rakhman Yakhyaev",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Unbeaten 25-year-old Chechen-born light heavyweight (10-0, 3-0 UFC) with a combat sambo base who trains at MMA Nuernberg and with Fight Sports in Florida. All three UFC wins and his Contender Series win came in round one: 33-second RNC of Raffael Cerqueira, RNC of Brendson Ribeiro, and an 8-second KO of Julius Walker. Not yet tested past the first round in the UFC.",
+ "how_they_fight": {
+  "Striking": "Explosive starter who throws spinning kicks, head kicks and a heavy right hand from the opening bell; the Walker KO was a right hand over the lead shoulder at 0:08. Long reach (about 198 cm) for the division.",
+  "Grappling": "Strongest suit: sambo/wrestling base, quick takedowns off strikes, ground-and-pound and fast back takes; 5 career submissions (4 in R1). Took Ribeiro down after being hit, then took the back for the RNC.",
+  "Defense": "The gap: overly aggressive starts. Ribeiro landed a high kick and a right hand that nearly cost him (per LowKick), and he ate another shot while shooting; he admitted taking more punches than planned (UFC.com).",
+  "Pace & cardio": "Extreme fast starter: 8 of 9 finishes in R1, one sub in R2. Only one fight past round two, a five-round decision over Nikolay Kovalenko (Khan Fight, 2023), so cardio over 15 minutes at UFC level is largely unknown. Never been stopped.",
+  "Fight IQ": "Decisive and confident; recovers quickly from adversity by switching to grappling. Wants to stay very active and calls fighting 'like a drug' (UFC.com)."
+ },
+ "patterns": [
+  "Blitz from the opening bell; R1 finishes (8 of 9)",
+  "Strikes to level change; back takes and RNC",
+  "Responds to being hit by shooting and grappling",
+  "Little UFC data beyond five minutes"
+ ],
+ "concerns": [
+  "Hittable on entries early (Ribeiro clipped him twice)",
+  "Untested in deep waters at UFC level",
+  "Step up in experience against a 43-fight veteran"
+ ],
+ "keys_to_beat": [
+  "Survive the first round and make him work late",
+  "Counter his aggressive entries",
+  "Defend the back in scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-06-27",
+   "text": "KO'd Julius Walker in 8 seconds at UFC Baku; earned Performance of the Night.",
+   "source": "https://cagesidepress.com/2026/06/27/four-including-headliner-fiziev-earn-performance-bonuses-at-ufc-baku/"
+  },
+  {
+   "date": "2026-08-18",
+   "text": "Booked against Nikita Krylov at UFC 333, a big step up per Cageside Press; no injury or camp news found.",
+   "source": "https://cagesidepress.com/2026/08/18/redemption-second-chances-on-dana-whites-contender-series-alik-lorenz/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Abdul Rakhman Yakhyaev: Active, Successful and Hungry for More at UFC Baku",
+   "url": "https://www.ufc.com/news/abdul-rakhman-yakhyaev-active-successful-and-hungry-more-ufc-baku",
+   "date": "2026-06-24"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Abdul Rakhman Yakhyaev Taps Out Brendson Ribeiro to Stay Undefeated - UFC Vegas 115 Highlights",
+   "url": "https://www.lowkickmma.com/abdul-rakhman-yakhyaev-vs-ribeiro-ufc-vegas-115/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 115: Abdul Rakhman Yakhyaev Stays Perfect, Subs Brendson Ribeiro",
+   "url": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-abdul-rakhman-yakhyaev-stays-perfect-subs-brendson-ribeiro/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Abdul Rakhman Yakhyaev Flattens Walker With Nasty KO at UFC Baku",
+   "url": "https://cagesidepress.com/2026/06/27/abdul-rakhman-yakhyaev-flattens-walker-with-nasty-ko-at-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "UFC Qatar Highlight Video: Abdul-Rakhman Yakhyaev Submits Raffael Cerqueira in 33 Seconds",
+   "url": "https://www.sherdog.com/videos/highlightreels/UFC-Qatar-Highlight-Video-AbdulRakhman-Yakhyaev-Submits-Raffael-Cerqueira-in-33-Seconds-23025",
+   "date": "2025-11-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Four Including Headliner Fiziev Earn Performance Bonuses at UFC Baku",
+   "url": "https://cagesidepress.com/2026/06/27/four-including-headliner-fiziev-earn-performance-bonuses-at-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Redemption: Second Chances on Dana White's Contender Series — Alik Lorenz",
+   "url": "https://cagesidepress.com/2026/08/18/redemption-second-chances-on-dana-whites-contender-series-alik-lorenz/",
+   "date": "2026-08-18"
+  }
+ ],
+ "depth": "moderate"
+}

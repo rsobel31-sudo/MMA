@@ -1,0 +1,86 @@
+{
+ "name": "Mackenzie Stiller",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 27-year-old judo-based grappler, \"Mack-Judo\" (6-1, One Touch Fight Team in our data), who has submitted five of her six pro opponents. She came through The Ultimate Fighter 34 at strawweight, not the Contender Series, losing her opening bout to Delphine Benouaich, and moves up to 125 lb to replace the injured Jamey-Lyn Horth on under three weeks' notice.",
+ "how_they_fight": {
+  "Striking": "Aggressive but raw: on TUF she pressed forward with overhands, and late in that fight added a high kick, superman punch and spinning elbow, but Benouaich's tighter, more technical kickboxing won all three rounds (Cageside Press). Striking mainly serves to set up level changes.",
+  "Grappling": "The weapon. Five submissions: Henderson R1 (Bellator 293), Rampage R1, Trillo R2, Brador R1 and a scarf-hold armlock on McIntyre at 1:48 of R1 (LFA 226). Per SI, her four amateur wins were all first-round submissions. Lands takedowns but on TUF couldn't keep Benouaich down.",
+  "Defense": "Stopped once: TKO by Sumiko Inaba at 4:25 of R2 at Bellator in 2024, her last flyweight fight. Absorbed clean kicks, knees and uppercuts on TUF.",
+  "Pace & cardio": "Fast starter: 4 of 5 submissions in round one, one in R2; her only decision win was over Chiara Penco (Bellator 299). Her losses came when the fight got past round one: TKO in R2 (Inaba) and a three-round decision on TUF where her late takedown attempts failed.",
+  "Fight IQ": "Commits fully to the grappling plan; on TUF she was warned for outstretched fingers. Brings real resilience: she has spoken about surviving childhood abuse and says martial arts saved her."
+ },
+ "patterns": [
+  "Early submissions: 4 of 5 in R1, from judo-style top positions (armlocks)",
+  "Forward pressure with overhands to get to the clinch and takedown",
+  "Struggles when opponents stop the first takedowns and strike at range"
+ ],
+ "concerns": [
+  "Short notice and moving up from 115 lb; her last 125-lb fight was a TKO loss",
+  "Much smaller frame: 157.5 cm in our data vs. Cerminara's 175 cm",
+  "Lost on TUF to a technical striker who out-landed her at range",
+  "UFC debut against a veteran with 17 UFC fights"
+ ],
+ "keys_to_beat": [
+  "Stop the first takedowns and keep her at kicking range",
+  "Use jabs and teeps against her forward overhands",
+  "Get past round one; her submissions come early"
+ ],
+ "news": [
+  {
+   "date": "2026-07-21",
+   "text": "Lost a unanimous decision to Delphine Benouaich on TUF 34 (exhibition; not on her pro record).",
+   "source": "https://cagesidepress.com/2026/07/21/the-ultimate-fighter-34-one-last-strawweight-semifinal-spot-secured-ep-7/"
+  },
+  {
+   "date": "2026-10-01",
+   "text": "Replaces the injured Jamey-Lyn Horth against Katlyn Cerminara on under three weeks' notice, moving up to flyweight.",
+   "source": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "SI (MMA Knockout)",
+   "author": "Drew Beaupre",
+   "title": "Ex-UFC title challenger gets new opponent just weeks out from UFC Edmonton",
+   "url": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "The Ultimate Fighter 34: One Last Strawweight Semifinal Spot Secured In Ep. 7",
+   "url": "https://cagesidepress.com/2026/07/21/the-ultimate-fighter-34-one-last-strawweight-semifinal-spot-secured-ep-7/",
+   "date": "2026-07-21"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Daniel Vreeland",
+   "title": "TTP Ep. 538: Mackenzie Stiller, Logan Paxton, and Top 5 Favorite \"Weird\" Submissions",
+   "url": "https://cagesidepress.com/2026/07/01/ttp-ep-538-mackenzie-stiller-logan-paxton-and-top-5-favorite-weird-submissions/",
+   "date": "2026-07-01"
+  },
+  {
+   "outlet": "ESPN",
+   "author": "",
+   "title": "Mackenzie Stiller fighter page",
+   "url": "https://www.espn.com/mma/fighter/_/id/5130806/mackenzie-stiller",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Agent MMA",
+   "author": "",
+   "title": "Katelyn Cerminara vs. Mackenzie Stiller set for UFC Edmonton on October 17",
+   "url": "https://agentmma.com/news/90938-katelyn-cerminara-vs-mackenzie-stiller-set-for-ufc-edmonton-on-october-17",
+   "date": ""
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,100 @@
+{
+ "name": "Tanner Boser",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Edmonton-based kickboxer (22-11-1, 5-6 UFC) and a small, fast heavyweight who out-lands most opponents but gets hurt by bigger punchers and controlled by wrestlers. Back in the UFC after a regional win, he lost his April return to Gokhan Saricam by R2 TKO and now fights at home.",
+ "how_they_fight": {
+  "Striking": "High-volume, accurate boxing with leg kicks (about 5 significant strikes a minute at 54%): out-landed Aleksa Camur 120-68 and even out-landed Saricam 60-57 before being knocked out. Blitzing combinations, and he has finishing power: knocked out Philipe Lins (R1), Raphael Pessoa (R2) and Ovince St. Preux (R2) in the UFC.",
+  "Grappling": "Defensive only (about 0.4 takedowns per 15 minutes). His two split-decision losses came against grapplers: Ilir Latifi (6:38 control) and Rodrigo Nascimento (8:01 control).",
+  "Defense": "Takedown defense is solid on paper (71%) and he stuffed Saricam's shots, but his chin has become a concern: stopped three times, all by punches (Tim Hague R1 in 2015, Ion Cutelaba R1 in 2023, Saricam R2 in 2026). Saricam caught him with a straight right as he threw a leg kick.",
+  "Pace & cardio": "Strong pace for a heavyweight; built for three or five rounds (three five-round decision wins and a R4 stoppage regionally). Finishes are spread out: 4 in R1, 6 in R2, 3 in R3, 1 in R4; 8 decision wins. Loses on scorecards more often than by stoppage (8 of 11 losses are decisions). When he loses early it's to a single big shot from a heavier hitter.",
+  "Fight IQ": "Smart volume striker who manages range, but tends to trade in the pocket and throw kicks within his opponent's punching range. Rotowire's view: too small for heavyweight and not quick enough for the best at 205."
+ },
+ "patterns": [
+  "Wins the volume battle; usually lands more than his opponent",
+  "Finishes spread across rounds (4 R1, 6 R2, 3 R3, 1 R4)",
+  "Loses decisions to grapplers who hold him down",
+  "Stopped three times by punches, two of them in his last three losses"
+ ],
+ "concerns": [
+  "Undersized heavyweight; recent knockout losses to heavy hitters (Cutelaba, Saricam)",
+  "Can be ridden out by heavier wrestlers",
+  "Age 35, with one UFC win since June 2021 (Camur)"
+ ],
+ "keys_to_beat": [
+  "Wrestle him and hold top position; he has no offense from his back",
+  "Counter his leg kicks with straight right hands",
+  "Use size and reach to keep him from closing the distance with combinations"
+ ],
+ "news": [
+  {
+   "date": "2026-08-10",
+   "text": "Booked to face Jhonata Diniz at heavyweight on the Edmonton prelims, fighting at home in Alberta.",
+   "source": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/"
+  },
+  {
+   "date": "2026-04-18",
+   "text": "Lost his UFC return to Gokhan Saricam by R2 TKO (punches); our verified data and BJPenn list the time as 4:43. He weighed 244.5.",
+   "source": "https://cagesidepress.com/2026/04/18/gokhan-saricam-spoils-tanner-bosers-homecoming-with-brutal-finish/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Gokhan Saricam Spoils Tanner Boser's Homecoming With Brutal Finish",
+   "url": "https://cagesidepress.com/2026/04/18/gokhan-saricam-spoils-tanner-bosers-homecoming-with-brutal-finish/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Winnipeg: 'Burns vs. Malott' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-winnipeg/ufc-winnipeg-burns-vs-malott-live-results-and-highlights/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Tanner Boser vs. Gokhan Saricam Signed for UFC Winnipeg, Per Promotion",
+   "url": "https://cagesidepress.com/2026/03/02/tanner-boser-vs-gokhan-saricam-signed-for-ufc-winnipeg-per-promotion/",
+   "date": "2026-03-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Winnipeg: Burns vs. Malott Weigh-In Results",
+   "url": "https://cagesidepress.com/2026/04/17/ufc-winnipeg-burns-vs-malott-weigh-in-results/",
+   "date": "2026-04-17"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Tanner Boser MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player.php?id=1900",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Abu Dhabi: Matchmaking for All the Losers from Saturday",
+   "url": "https://www.lowkickmma.com/ufc-abu-dhabi-matchmaking-for-all-the-losers/",
+   "date": "2026-07-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Canadian Talents Anchor Four Additions to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,89 @@
+{
+ "name": "Noah Gugnon",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "A 25-year-old French lightweight (10-2), formerly of Bellator and ARES FC, with every win by stoppage: on a six-fight finishing streak in our data, including a 1:21 rear-naked choke of Milos Janicic in his UFC debut. There is little UFC footage, and he has only ever seen a third round once, in a decision loss.",
+ "how_they_fight": {
+  "Striking": "Heavy leg kicks and ground strikes: Janicic could not put weight on his leg after a few low kicks, and per Heavy he finished Adrian Prisceanu with elbows. Six KO/TKO wins in our data, all in round one or two.",
+  "Grappling": "Finishes when people go down: he followed Janicic to the mat, took the back, put the hooks in and choked him out. Four submission wins (rounds one and two). Heavy describes his ground game as solid.",
+  "Defense": "Largely untested at this level. He was stopped in round two by Mark Ewen at Bellator 299 (2023, as a big underdog) and lost a decision to Samvel Vardanyan in 2024, back-to-back losses after a 4-0 start.",
+  "Pace & cardio": "An early finisher: in our data seven of his ten wins came in round one and three in round two; he has never won in round three or on the cards. His only 15-minute fight was the loss to Vardanyan. Stopped once (round two, Ewen). Late-round cardio against a durable opponent is the open question.",
+  "Fight IQ": "Ruthless follow-up when he hurts someone, but there is almost no tape of him under sustained pressure or behind on the cards. Took the Janicic bout on short notice per Heavy."
+ },
+ "patterns": [
+  "All ten wins by finish, seven in round one",
+  "Leg kicks to compromise the base, then pounce",
+  "Back takes and rear-naked choke",
+  "Elbows and ground strikes",
+  "Never won past round two"
+ ],
+ "concerns": [
+  "Unproven over three rounds; 0-1 in decisions",
+  "Two losses in 2023-24 to Bellator/regional opponents, one by round-two KO",
+  "One UFC fight, under 90 seconds long",
+  "Quick turnaround: under three months since his debut"
+ ],
+ "keys_to_beat": [
+  "Survive round one and drag him into rounds two and three",
+  "Check the leg kicks and stay on your feet",
+  "Don't give up the back in scrambles",
+  "Make him fight from behind; there is no tape of him rallying after losing early rounds"
+ ],
+ "news": [
+  {
+   "date": "2026-10-02",
+   "text": "Booked against Kody Steele at lightweight on the UFC 333 prelims, his second UFC fight.",
+   "source": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/"
+  },
+  {
+   "date": "2026-08-01",
+   "text": "UFC debut: rear-naked choke of fellow newcomer Milos Janicic at 1:21 of round one at UFC Belgrade.",
+   "source": "https://cagesidepress.com/2026/08/01/ufc-belgrade-noah-gugnon-subs-fellow-newcomer-milos-janicic/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Belgrade: Noah Gugnon Subs Fellow Newcomer Milos Janicic",
+   "url": "https://cagesidepress.com/2026/08/01/ufc-belgrade-noah-gugnon-subs-fellow-newcomer-milos-janicic/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Mathis Desjardins",
+   "title": "What's Next: UFC Belgrade Winners",
+   "url": "https://cagesidepress.com/2026/08/04/whats-next-ufc-belgrade-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Serbia: Matchmaking for All of Saturday's Winners",
+   "url": "https://www.lowkickmma.com/matchmaking-for-all-of-saturdays-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Belgrade: 'Medić vs. Rodriguez' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-belgrade/ufc-belgrade-medic-vs-rodriguez-live-results-and-highlights/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Lightweight Prospects Battle in Abu Dhabi at UFC 333",
+   "url": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/",
+   "date": "2026-10-02"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Kody Steele vs. Noah Gugnon",
+   "url": "https://agentmma.com/articles/5496-19134-kody-steele-vs-noah-gugnon",
+   "date": "2026-10-02"
+  }
+ ],
+ "depth": "thin"
+}

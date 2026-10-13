@@ -1,0 +1,114 @@
+{
+ "name": "Nurullo Aliev",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Unbeaten (12-0) 27-year-old Tajik lightweight and 4-0 in the UFC, all four by decision. A grinding wrestler who wins by takedowns, cage pressure and top control rather than damage; his last outing was a 30-27 x3 shutout of Mike Davis built on 8 takedowns and about 12.5 minutes of control. Has never been stopped, but has finished only one of his last nine opponents.",
+ "how_they_fight": {
+  "Striking": "Low volume (about 2.6 significant strikes a minute, 42% accuracy) and mostly a tool to close distance. Has some pop in the left hand, hurting Shem Rock early, and per MMA Junkie (via Yahoo) he dropped Joe Solecki, though our verified stats record no knockdown in that fight. Landed only 13 significant strikes against Davis.",
+  "Grappling": "The whole plan: about 3.1 takedowns per 15 minutes, clinch along the fence, knees to the thigh, re-shots the moment the opponent stands. Rides from half guard and inside guard but rarely threatens submissions (0.5 attempts per 15). Davis caught him briefly in a triangle in round two; Solecki also had a tight triangle on him, so guard players can threaten him.",
+  "Defense": "Hard to hit cleanly (59% striking defense) and about 74% takedown defense. Never stopped or seriously hurt in our records.",
+  "Pace & cardio": "Steady, consistent three-round grinder with no visible fade: 10 of 12 wins are decisions (two split), and his only two stoppages came in R1 (Josh Wick on DWCS at 4:36) and at the end of R2 on the Russian regional scene in 2018. Tends to win every round on control rather than surge late; scored a takedown in the final seconds against Rock. Not a finisher, so expect 15 minutes.",
+  "Fight IQ": "Disciplined and game-plan driven: takes the safest route to rounds and does not chase damage. That made him unpopular with Davis, who complained he 'did zero damage' before apologising."
+ },
+ "patterns": [
+  "Decision machine: 4-0 in the UFC, all by decision (one split, vs Rafael Alves)",
+  "Wrestles from round one and stays on top through round three",
+  "Fence clinch, knees to the legs, immediate re-shots",
+  "Low strike output; wins rounds on control time"
+ ],
+ "concerns": [
+  "Very low finishing threat, so close rounds can swing on the scorecards (split decision vs Alves)",
+  "Guard-player triangles have caught him (Solecki, Davis)",
+  "Faces a fellow wrestler in Dawson who is dangerous from the back in scrambles",
+  "Injury history: pulled out of a UFC 295 bout with Mateusz Rebecki in November 2023 with a leg injury, had surgery and was out about two years (Feb 2023 to Jan 2025)"
+ ],
+ "keys_to_beat": [
+  "Stuff the early takedowns and make him strike at range",
+  "Attack from guard (triangles, armbars) and scramble back up quickly",
+  "Out-land him in the open; his volume is low enough to lose striking rounds",
+  "Avoid long fence clinches where he banks control"
+ ],
+ "news": [
+  {
+   "date": "2026-10-02",
+   "text": "Faces Grant Dawson on the UFC 333 prelims in Abu Dhabi; no new injury reported.",
+   "source": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/"
+  },
+  {
+   "date": "2026-07-25",
+   "text": "Beat Mike Davis 30-27 x3 at UFC Abu Dhabi; Davis called for his release after the fight, then apologised the next day.",
+   "source": "https://www.sherdog.com/news/news/Mike-Davis-apologizes-to-Nurullo-Aliev-after-UFC-Abu-Dhabi-outburst-202080"
+  },
+  {
+   "date": "2023-11-03",
+   "text": "Withdrew from UFC 295 bout with Mateusz Rebecki with a leg injury; surgery followed and he did not fight again until January 2025.",
+   "source": "https://sports.yahoo.com/nurullo-aliev-announces-ufc-295-193046754.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Abu Dhabi: Nurullo Aliev Wrestles Way to Victory Over Mike Davis",
+   "url": "https://cagesidepress.com/2026/07/25/ufc-abu-dhabi-nurullo-aliev-wrestles-way-to-victory-over-mike-davis/",
+   "date": "2026-07-25"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Abu Dhabi: Nurullo Aliev Keeps Undefeated Record Intact As He Dominates Mike Davis",
+   "url": "https://www.lowkickmma.com/nurullo-aliev-vs-mike-davis-ufc-abu-dhabi/",
+   "date": "2026-07-25"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Mike Davis apologizes to Nurullo Aliev after UFC Abu Dhabi outburst",
+   "url": "https://www.sherdog.com/news/news/Mike-Davis-apologizes-to-Nurullo-Aliev-after-UFC-Abu-Dhabi-outburst-202080",
+   "date": "2026-07-27"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "",
+   "title": "Mike Davis: Nurullo Aliev did zero damage, 'worst fighter I've ever fought'",
+   "url": "https://sports.yahoo.com/articles/mike-davis-nurullo-aliev-did-002020098.html",
+   "date": "2026-07-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Qatar: Nurullo Aliev Turns Back Debuting Shem Rock",
+   "url": "https://cagesidepress.com/2025/11/22/ufc-qatar-nurullo-aliev-turns-back-debuting-shem-rock/",
+   "date": "2025-11-22"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson, Ken Hathaway",
+   "title": "Nurullo Aliev glad to be past lengthy injury layoff after UFC Fight Night 249 win",
+   "url": "https://sports.yahoo.com/nurullo-aliev-glad-past-lengthy-233049826.html",
+   "date": "2025-01-14"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "",
+   "title": "Nurullo Aliev announces UFC 295 withdrawal due to injury",
+   "url": "https://sports.yahoo.com/nurullo-aliev-announces-ufc-295-193046754.html",
+   "date": "2023-11-03"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Lightweight Prospects Battle in Abu Dhabi at UFC 333",
+   "url": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/",
+   "date": "2026-10-02"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "good"
+}

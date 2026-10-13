@@ -1,0 +1,107 @@
+{
+ "name": "Marc-Andre Barriault",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Quebec's 'PowerBar' (17-11, 1 NC; 6-10, 1 NC UFC), a 36-year-old pressure brawler who wins with volume, clinch work and toughness and has earned Fight of the Night in each of his last two fights while losing both. He is 1-5 in his last six and badly needs a win, likely to keep his roster spot.",
+ "how_they_fight": {
+  "Striking": "Relentless forward pressure and high volume (about 4.9 significant strikes a minute) with hooks, uppercuts and knees in the clinch. Per UFC.com, his strength is closing distance fast and creating chaotic exchanges. Also absorbs a lot (about 5.7 a minute). Hurt Michal Oleksiejczuk with clinch work in round two but lost 29-28 x3.",
+  "Grappling": "Rarely wrestles (about 0.6 takedowns per 15 minutes); his clinch is for striking. Has been taken down and submitted by a strong grappler (Anthony Hernandez, sub R3) and controlled by Sharabutdin Magomedov.",
+  "Defense": "Tough over three rounds but has been stopped early by power: Chidi Njokuani (R1, 0:16), Joe Pyfer (R1, 1:25), Dustin Stoltzfus (R1, 4:28). All three of his KO/TKO losses came in round one.",
+  "Pace & cardio": "Gets better as the fight goes: his UFC stoppage wins came late in rounds (Abu Azaitar R3 at 4:56, Julian Marquez R2 at 4:12) or with an early blitz (Bruno Silva R1). Outworks people in round three. Danger zone is the first round, where all three of his KO losses happened.",
+  "Fight IQ": "Honest, all-action fighter with one gear; trades rather than manages. Prone to getting hit clean early while walking forward."
+ },
+ "patterns": [
+  "Pressure and volume; wins late rounds on output",
+  "Late-round stoppages: R3 (Azaitar) and R2 at 4:12 (Marquez); early blitz finish of Bruno Silva (R1)",
+  "All three KO/TKO losses came in round 1",
+  "Fight of the Night in each of his last two fights (both losses), per UFC.com",
+  "Seven of his 11 career losses are decisions"
+ ],
+ "concerns": [
+  "1-5 in his last six fights; likely fighting for his job",
+  "Defensive leaks early against power punchers",
+  "Takedown and submission defense against a skilled grappler like Daukaus",
+  "Age (36) and accumulated damage from high-volume wars"
+ ],
+ "keys_to_beat": [
+  "Hurt him in round one before his pace builds",
+  "Take him down and work for submissions; he rarely threatens off his back",
+  "Avoid prolonged clinch exchanges against the fence"
+ ],
+ "news": [
+  {
+   "date": "2026-08-10",
+   "text": "Booked against Kyle Daukaus at middleweight in Edmonton; Cageside notes he is 1-5 in his last six.",
+   "source": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Underdog at +185 (Daukaus -225), per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html"
+  },
+  {
+   "date": "2026-02-07",
+   "text": "Lost a unanimous decision (29-28 x3) to Michal Oleksiejczuk at UFC Vegas 113 after a rough first round; Fight of the Night.",
+   "source": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-michal-oleksiejczuk-slugs-it-out-with-marc-andre-barriault"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Fight By Fight Preview | UFC Edmonton",
+   "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-edmonton-buckley-malott",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Pivotal Welterweight Bout Between Joaquin Buckley and Mike Malott Headlines UFC Return to Edmonton",
+   "url": "https://www.ufc.com/news/pivotal-welterweight-bout-between-joaquin-buckley-and-mike-malott-headlines-ufc-return",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "Matt Erickson",
+   "title": "UFC Edmonton: How to watch Joaquin Buckley vs. Mike Malott, lineup, odds, more",
+   "url": "https://sports.yahoo.com/articles/ufc-edmonton-watch-joaquin-buckley-134252137.html",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Canadian Talents Anchor Four Additions to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 113: Michal Oleksiejczuk Slugs It Out With Marc-Andre Barriault",
+   "url": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-michal-oleksiejczuk-slugs-it-out-with-marc-andre-barriault",
+   "date": "2026-02-07"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Michał Oleksiejczuk Edges Out Marc-André Barriault in Thrilling Slugfest – UFC Vegas 113 Highlights",
+   "url": "https://www.lowkickmma.com/michal-oleksiejczuk-vs-barriault-highlights/",
+   "date": "2026-02-07"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 113 Power Rankings: Rating The Main Card Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-vegas-113-power-rankings-rating-the-main-card-winners-in-las-vegas/",
+   "date": "2026-02-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Abu Dhabi Losers",
+   "url": "https://cagesidepress.com/2025/07/28/whats-next-ufc-abu-dhabi-losers-2/",
+   "date": "2025-07-28"
+  }
+ ],
+ "depth": "moderate"
+}

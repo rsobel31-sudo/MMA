@@ -1,0 +1,93 @@
+{
+ "name": "Dominick Reyes",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Former two-time title challenger (16-5, 10-5 UFC), a long southpaw with a sharp left hand and knockout power. Rebuilt with three straight stoppages (Jacoby, Smith, Krylov), was knocked out by Carlos Ulberg in R1, then edged Johnny Walker by split decision in a low-output fight. Dangerous early, but he has been stopped four times.",
+ "how_they_fight": {
+  "Striking": "Rangy southpaw (about 196 cm reach) who works off the jab and straight left and counters well; 9 of his 16 wins are R1 KOs, incl. Krylov at 2:24 and Jacoby at 2:00. Can also pour on volume when comfortable: 121 significant strikes in the R2 TKO of Anthony Smith.",
+  "Grappling": "Mostly defensive: strong takedown defense (about 80%) and rarely shoots. Can finish on top when he hurts people (ground strikes vs Smith).",
+  "Defense": "Durability is the question: KO'd by Jan Blachowicz (R2), Jiri Prochazka (R2), Ryan Spann (R1) and Ulberg (R1, 4:27), who pressed forward and smothered his punches. Walker chopped his lead leg with low kicks through R1 and R2 at UFC 327 (per LowKick).",
+  "Pace & cardio": "Fast finisher: 11 of 12 finishes in round one, one in R2; 4 wins by decision (two of them split). Losses: 4 stoppages (R1 x2, R2 x2) plus the five-round decision to Jon Jones. If the fight passes R1 he tends to slow down and fight cautiously, as vs Walker, where he was out-landed 42 to 34 but won a split decision.",
+  "Fight IQ": "Has become risk-averse since his KO losses; told Cageside Press that getting 'two checks means more than entertaining.' Patient, but can be passive enough to put close fights in the judges' hands."
+ },
+ "patterns": [
+  "Straight left / counter left hand early; most finishes in R1",
+  "Becomes cautious and low-volume if no early finish",
+  "Hurt by forward pressure (Ulberg, Blachowicz, Prochazka)",
+  "Strong takedown defense; rarely wrestles"
+ ],
+ "concerns": [
+  "Stopped 4 times (2 in R1, 2 in R2), including R1 by Ulberg in Sept 2025",
+  "Age 36 and lower output; out-landed by Walker",
+  "Lead-leg kicks have been an issue"
+ ],
+ "keys_to_beat": [
+  "Press forward and crowd him; don't give him range for the straight left",
+  "Attack the lead leg",
+  "Out-work him after round one"
+ ],
+ "news": [
+  {
+   "date": "2026-04-11",
+   "text": "Beat Johnny Walker by split decision (29-28, 28-29, 29-28) at UFC 327 in a fight the crowd booed; Reyes called it 'a good technical fight.'",
+   "source": "https://cagesidepress.com/2026/04/12/ufc-327-dominick-reyes-two-checks/"
+  },
+  {
+   "date": "2026-08-19",
+   "text": "Cageside Press wrote that Reyes had made a heavyweight debut by beating Marcin Tybura. Our verified data has no such fight; Tybura's 2026-08-01 loss was to Aleksandar Rakic, so this looks like an outlet error. Reyes stays at light heavyweight for UFC 333.",
+   "source": "https://cagesidepress.com/2026/08/19/figueiredo-vs-talbott-walker-vs-parkin-among-ufc-332-additions/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 327's Dominick Reyes: Two Checks Means More Than Entertaining",
+   "url": "https://cagesidepress.com/2026/04/12/ufc-327-dominick-reyes-two-checks/",
+   "date": "2026-04-12"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Dominick Reyes Defeats Johnny Walker in Bout So Boring It Should Require a Sleep Study - UFC 327 Highlights",
+   "url": "https://www.lowkickmma.com/dominick-reyes-defeats-johnny-walker-ufc-327/",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC 327 Power Rankings: Rating The Night's Big Winners In Miami",
+   "url": "https://www.lowkickmma.com/ufc-327-power-rankings-rating-the-nights-big-winners-in-miami/",
+   "date": "2026-04-13"
+  },
+  {
+   "outlet": "ESPN",
+   "author": "",
+   "title": "UFC Perth: Ulberg makes statement, drops Reyes in first round",
+   "url": "https://www.espn.com/mma/story/_/id/46405457/ufc-perth-fight-night-result-carlos-ulberg-makes-statement-ko-win-dominick-reyes",
+   "date": "2025-09-27"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Dominick Reyes defends UFC 327 win over Johnny Walker: 'It was a good technical fight'",
+   "url": "https://www.bjpenn.com/mma-news/dominick-reyes/dominick-reyes-defends-ufc-327-win-over-johnny-walker-it-was-a-good-technical-fight/",
+   "date": "2026-04-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Figueiredo vs. Talbott, Walker vs. Parkin Among UFC 332 Additions",
+   "url": "https://cagesidepress.com/2026/08/19/figueiredo-vs-talbott-walker-vs-parkin-among-ufc-332-additions/",
+   "date": "2026-08-19"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": ""
+  }
+ ],
+ "depth": "good"
+}

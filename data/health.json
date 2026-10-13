@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-13T10:56:28+00:00",
+ "checked": "2026-10-13T16:00:20+00:00",
  "ok": false,
  "failed": [
   "StatsFight"
@@ -10,7 +10,7 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "17 bouts on a known fighter page",
-   "seconds": 1.2,
+   "seconds": 6.6,
    "last_ok": "2026-10-13"
   },
   {
@@ -18,7 +18,7 @@
    "used_by": "prospect fights this week",
    "ok": true,
    "detail": "231 upcoming events listed",
-   "seconds": 2.7,
+   "seconds": 3.9,
    "last_ok": "2026-10-13"
   },
   {
@@ -26,7 +26,7 @@
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "7 UFC events in the last 45 days",
-   "seconds": 1.3,
+   "seconds": 1.6,
    "last_ok": "2026-10-13"
   },
   {
@@ -50,7 +50,7 @@
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
    "detail": "7 events; UFC Edmonton for October 17 | Best Fight: 8 bouts, 8 with FanDuel moneylines",
-   "seconds": 2.3,
+   "seconds": 4.1,
    "last_ok": "2026-10-13"
   },
   {
@@ -58,7 +58,7 @@
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "15 bouts with lines",
-   "seconds": 2.8,
+   "seconds": 3.7,
    "last_ok": "2026-10-13"
   },
   {
@@ -66,7 +66,7 @@
    "used_by": "upcoming cards, results",
    "ok": true,
    "detail": "9 scheduled UFC events",
-   "seconds": 1.0,
+   "seconds": 1.2,
    "last_ok": "2026-10-13"
   },
   {
@@ -82,7 +82,7 @@
    "used_by": "rankings comparison",
    "ok": true,
    "detail": "329 ranked fighters",
-   "seconds": 1.1,
+   "seconds": 1.0,
    "last_ok": "2026-10-13"
   },
   {
@@ -90,7 +90,7 @@
    "used_by": "stat verification",
    "ok": false,
    "detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
-   "seconds": 23.2,
+   "seconds": 23.0,
    "last_ok": "2026-10-10"
   },
   {
@@ -98,7 +98,7 @@
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.7,
+   "seconds": 0.9,
    "last_ok": "2026-10-13"
   },
   {
@@ -106,7 +106,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.0,
+   "seconds": 0.8,
    "last_ok": "2026-10-13"
   },
   {
@@ -122,7 +122,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.6,
+   "seconds": 0.8,
    "last_ok": "2026-10-13"
   },
   {
@@ -130,7 +130,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
+   "seconds": 1.4,
    "last_ok": "2026-10-13"
   },
   {
@@ -146,7 +146,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.4,
+   "seconds": 1.5,
    "last_ok": "2026-10-13"
   },
   {
@@ -162,7 +162,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.6,
+   "seconds": 2.7,
    "last_ok": "2026-10-13"
   },
   {
@@ -177,8 +177,8 @@
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "30 items, 30 from the last 14 days",
-   "seconds": 1.0,
+   "detail": "32 items, 32 from the last 14 days",
+   "seconds": 1.1,
    "last_ok": "2026-10-13"
   },
   {
@@ -186,7 +186,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.7,
+   "seconds": 4.3,
    "last_ok": "2026-10-13"
   },
   {
@@ -194,7 +194,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 3.3,
+   "seconds": 3.0,
    "last_ok": "2026-10-13"
   },
   {
@@ -202,7 +202,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 4.5,
+   "seconds": 4.6,
    "last_ok": "2026-10-13"
   }
  ]

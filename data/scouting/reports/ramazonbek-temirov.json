@@ -1,0 +1,82 @@
+{
+ "name": "Ramazonbek Temirov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Uzbek flyweight power puncher (20-3, 3-0 UFC; also billed as Ramazan Temirov) on a 12-fight win streak. Came back from a doping suspension in July to knock out Steve Erceg in round 1; 11 of his 20 wins are first-round finishes.",
+ "how_they_fight": {
+  "Striking": "Forward-marching pressure with a heavy right hand: dropped Erceg with the first right he landed, then twice more in the last minute before the finish at 4:21 of R1 (LowKick MMA). Hand-to-hand and karate background. Lower accuracy (43%) but a very high knockdown rate (2.0 per 15 min in a small UFC sample).",
+  "Grappling": "Rarely wrestles (about 1 takedown per 15); about 73% takedown defence. One submission win (R1, 2021).",
+  "Defense": "About 65% strike defence. Never KO'd; only stopped once (submission R2, 2019). Erceg survived the first knockdown by shooting, so a takedown on the counter is a way to reset him.",
+  "Pace & cardio": "A fast starter: 11 R1 finishes and 2 R2 finishes (verified); never finished anyone after round 2. When it goes long he has won decisions (Charles Johnson, 3 rounds, UFC 2025), but his three losses are two 3-round decisions and a R2 submission. Danger is front-loaded: survive R1 and the fight changes.",
+  "Fight IQ": "Simple and effective: pressure, right hand, finish. Untested against a high-level grappler in the UFC."
+ },
+ "patterns": [
+  "Walks opponents to the fence behind the right hand",
+  "Ends fights in round 1 (11 times)",
+  "No finishes after round 2 in his career"
+ ],
+ "concerns": [
+  "Served a one-year suspension (positive test for trimetazidine, per AAP/Rotowire); out about 16-17 months before Erceg",
+  "Little wrestling; three-round decision fights are his weakest form"
+ ],
+ "keys_to_beat": [
+  "Survive round 1: circle off the right hand and clinch or shoot when he loads up",
+  "Drag him into rounds 2-3 and make it a volume fight",
+  "Counter as he marches forward"
+ ],
+ "news": [
+  {
+   "date": "2026-07-25",
+   "text": "Knocked out Steve Erceg at 4:21 of R1 in the UFC Abu Dhabi co-main for Performance of the Night, his first fight back from a PED suspension (17-month layoff per LowKick MMA).",
+   "source": "https://www.lowkickmma.com/ramazan-temirov-ko-steve-erceg-at-ufc-abu-dhabi/"
+  },
+  {
+   "date": "2026-07-27",
+   "text": "Cageside Press: 'after missing a year of action following a steroid suspension', he delivered the best performance of his career.",
+   "source": "https://cagesidepress.com/2026/07/27/whats-next-ufc-abu-dhabi-winners-3/"
+  },
+  {
+   "date": "2026-08-15",
+   "text": "Booked against Lone'er Kavanagh at UFC 333.",
+   "source": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "LowKick MMA",
+   "author": "Pranav Pandey",
+   "title": "VIDEO: Ramazan Temirov Sleeps Steve Erceg In Round 1 With Devastating Right Hand In UFC Abu Dhabi Co-Main Event",
+   "url": "https://www.lowkickmma.com/ramazan-temirov-ko-steve-erceg-at-ufc-abu-dhabi/",
+   "date": "2026-07-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Abu Dhabi Winners",
+   "url": "https://cagesidepress.com/2026/07/27/whats-next-ufc-abu-dhabi-winners-3/",
+   "date": "2026-07-27"
+  },
+  {
+   "outlet": "AAP",
+   "author": "",
+   "title": "Aussie suffers devastating knockout UFC loss",
+   "url": "https://aapnews.aap.com.au/news/aussie-suffers-devastating-knockout-ufc-loss",
+   "date": "2026-07-26"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Ramazan Temirov player page",
+   "url": "https://www.rotowire.com/mma/player/ramazan-temirov-2575",
+   "date": "2026-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "moderate"
+}

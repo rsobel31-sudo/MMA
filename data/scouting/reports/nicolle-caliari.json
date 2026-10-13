@@ -1,0 +1,101 @@
+{
+ "name": "Nicolle Caliari",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "A Thai Brasil Floripa grappler (9-4) whose every win in our data came by stoppage: five early KOs on the regionals, then four submissions. After going 0-2 at flyweight in the UFC she dropped to strawweight and submitted Shauna Bannon with a round-three arm-triangle, but on the feet she is usually out-landed badly.",
+ "how_they_fight": {
+  "Striking": "Limited and low-volume (about 1.8 significant strikes a minute). She uses punches mainly to get into the clinch. Out-landed 109-32 by Carli Judice and 95-67 by Ernesta Kareckaite in our data.",
+  "Grappling": "The weapon: throws and trips from the clinch against the fence, heavy top pressure, kimura and arm-triangle threats. Against Bannon she had over nine minutes of control (our data) and finished by stepping to mount with the arm-triangle. Persistent rather than efficient: 3 of 14 takedowns vs Kareckaite, 1 of 8 vs Judice.",
+  "Defense": "Takes a lot of damage when she can't get hold of opponents; Judice's body kicks and left hand wore her down until a knee to the body finished her. Bannon reversed her and landed elbows from top in round two, so her position control can slip.",
+  "Pace & cardio": "Keeps shooting all fight, but her finishes come early: in our data four came in round one, four in round two and one in round three (Bannon at 3:08). Her UFC record is all late: a split-decision loss, a round-three TKO loss and a round-three submission win. Stopped twice, both in round three (Kay Hansen submission at Invicta in 2019, Judice body-knee TKO in 2025). She has never won a decision in our data.",
+  "Fight IQ": "Single-minded: she will keep chasing the clinch and takedown even when it is failing, which wins rounds with control (two minutes of control in rounds one and three vs Kareckaite) but leaves her eating strikes in between."
+ },
+ "patterns": [
+  "All nine career wins inside the distance",
+  "Clinch, fence, throw or trip, then top pressure",
+  "Arm-triangle and kimura from top",
+  "Late finishes in the UFC (R3 sub win, R3 TKO loss)",
+  "Heavily out-struck when takedowns fail"
+ ],
+ "concerns": [
+  "Low takedown accuracy against good defenders",
+  "Striking volume and defense",
+  "Body shots: stopped by a knee to the body",
+  "Only one fight at strawweight in the UFC"
+ ],
+ "keys_to_beat": [
+  "Keep her off the fence clinch and punish her entries",
+  "Out-volume her at range; she rarely wins the striking",
+  "Attack the body",
+  "Be ready for scrambles; Bannon reversed her and won a round from top"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Booked against Iasmin Lucindo at strawweight for UFC 333.",
+   "source": "https://www.rotowire.com/mma/player/nicolle-caliari-2602"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "First UFC win, an arm-triangle submission of Shauna Bannon at 3:08 of round three after moving down to strawweight; earned a finishing bonus.",
+   "source": "https://cagesidepress.com/2026/05/16/nicolle-caliari-snags-first-ufc-win-subs-shauna-bannon-in-strawweight-move/"
+  },
+  {
+   "date": "2026-01-29",
+   "text": "Per RotoWire, she withdrew from a booking against Carol Foro at UFC Seattle, reason not given. (RotoWire also wrongly lists the Bannon win as a decision.)",
+   "source": "https://www.rotowire.com/mma/player/nicolle-caliari-2602"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Nicolle Caliari Snags First UFC Win, Subs Shauna Bannon in Strawweight Move",
+   "url": "https://cagesidepress.com/2026/05/16/nicolle-caliari-snags-first-ufc-win-subs-shauna-bannon-in-strawweight-move/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Ingenious Submission Lands Bonus at UFC Vegas 117",
+   "url": "https://cagesidepress.com/2026/05/17/ingenious-submission-lands-bonus-at-ufc-vegas-117/",
+   "date": "2026-05-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 318: Carli Judice Folds Up Nicolle Caliari with Knee to Body",
+   "url": "https://cagesidepress.com/2025/07/19/ufc-318-carli-judice-folds-up-nicolle-caliari-with-knee-to-body",
+   "date": "2025-07-19"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 318: 'Poirier vs. Holloway 3' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-318/ufc-318-poirier-vs-holloway-3-live-results-and-highlights/",
+   "date": "2025-07-19"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 101: Ernesta Kareckaitė Fends Off Game Newcomer Nicolle Caliari",
+   "url": "https://cagesidepress.com/2025/01/11/ufc-vegas-101-ernesta-kareckaite-fends-off-game-newcomer-nicolle-caliari",
+   "date": "2025-01-11"
+  },
+  {
+   "outlet": "RotoWire",
+   "author": "",
+   "title": "Nicolle Caliari MMA news",
+   "url": "https://www.rotowire.com/mma/player/nicolle-caliari-2602",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Iasmin Lucindo vs. Nicolle Caliari",
+   "url": "https://agentmma.com/articles/5449-6779-iasmin-lucindo-vs-nicolle-caliari",
+   "date": "2026-10-01"
+  }
+ ],
+ "depth": "moderate"
+}

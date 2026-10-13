@@ -1,0 +1,80 @@
+{
+ "name": "Chad Anheliger",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 39-year-old Alberta bantamweight (13-8, 2-3 UFC) who hits hard with his right hand but is a soft spot for wrestlers: Strader, Grigoriou and Cody Gibson each took him down four or five times. Returns from nearly two years out, which he spent rehabbing a knee, against a submission-first grappler.",
+ "how_they_fight": {
+  "Striking": "Right-hand puncher who likes to bait opponents forward and load up; landed 85 of 155 significant strikes in his decision over Charalampos Grigoriou and dropped Jesse Strader twice before stopping him in the third. Offence gets one-dimensional (the right hand) when he is behind, per Cageside Press on the Gibson loss.",
+  "Grappling": "Can wrestle offensively when it suits him (5 of 12 takedowns and 7:37 of control in his Contender Series upset of Muin Gafurov; 4 of 8 against Jose Johnson), but his bottom game is mostly survival: he defended Cody Gibson's arm triangles and front chokes, yet ate 12:25 of control.",
+  "Defense": "Takedown defence is the hole: Gibson went 5 for 6, Grigoriou 4 for 5, Strader 4 for 7, Johnson 1 for 2 and then finished him. Never stopped by strikes in 21 pro fights; all six of his stoppage losses are submissions (three of them in round one early in his career, then rounds two and three).",
+  "Pace & cardio": "Slow burner in the UFC: his only UFC finish (Strader) came at 3:33 of round three and his last three KO/TKO wins overall were all in round three. Regionally he was a fast finisher (six of his ten stoppage wins came in round one). Goes hard in the third when behind (rocked Gibson late) but has also been submitted late (Johnson, R3 4:49). Two-year layoff and age 39 are real cardio and rust questions.",
+  "Fight IQ": "Experienced and tough; won the Gafurov fight as a +320 underdog by grinding. Tends to start patiently and leave himself needing a late rally."
+ },
+ "patterns": [
+  "Right hand as the main weapon; baits forward pressure",
+  "Late finisher: last three KO/TKO wins (Maclean, Hiestand, Strader) all in round 3",
+  "Gets taken down repeatedly and spends long stretches on his back",
+  "Never KO'd/TKO'd in 21 fights; 6 submission losses (R1 x3, R2 x1, R3 x2)",
+  "UFC fights: 3 of 5 went the distance; losses came by decision (Alateng, Gibson) and late submission (Johnson, R3 4:49)"
+ ],
+ "concerns": [
+  "Takedown defence (about 40% in our numbers) against a pure grappler",
+  "Nearly two years out with a knee rehab; 39 years old",
+  "Submission losses: six of his eight defeats"
+ ],
+ "keys_to_beat": [
+  "Take him down early and often; he struggles to get back up",
+  "Hunt the back and chokes: he has been submitted six times",
+  "Avoid standing in front of the right hand, especially in round 3"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Per Cageside Press, he spent his layoff rehabbing a knee injury; an August Shanghai booking clashed with his wife's due date and a visa lapse ruled out Las Vegas, so he lands at home in Edmonton. Says his body is the best it has been.",
+   "source": "https://cagesidepress.com/2026/10/01/ufc-edmontons-chad-anheliger-ive-got-this-fire-still-burning/"
+  },
+  {
+   "date": "2024-11-02",
+   "text": "Last fight: lost a unanimous decision to Cody Gibson in Edmonton (30-27, 30-27, 30-26) after being taken down 5 of 6 times.",
+   "source": "https://cagesidepress.com/2024/11/02/cody-gibson-dominates-anheliger-to-unanimous-decision-win"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Edmonton's Chad Anheliger: \"I've Got This Fire Still Burning\"",
+   "url": "https://cagesidepress.com/2026/10/01/ufc-edmontons-chad-anheliger-ive-got-this-fire-still-burning/",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Cody Gibson Dominates Anheliger To Unanimous Decision Win",
+   "url": "https://cagesidepress.com/2024/11/02/cody-gibson-dominates-anheliger-to-unanimous-decision-win",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Edmonton: 'Moreno vs. Albazi' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-edmonton/ufc-edmonton-moreno-vs-albazi-live-results-and-highlights/",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "LFA 134: Gafurov vs. Sousa Results",
+   "url": "https://cagesidepress.com/2022/06/10/lfa-134-results/",
+   "date": "2022-06-10"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Undefeated Canadian Debuts at UFC Edmonton",
+   "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
+   "date": "2026-09-04"
+  }
+ ],
+ "depth": "moderate"
+}

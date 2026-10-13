@@ -1,0 +1,64 @@
+{
+ "name": "Steven Koslow",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 10th Planet Jacksonville submission specialist (6-1) who won all six regional fights by first-round submission, then lost his short-notice UFC debut to Cameron Saaiman by third-round TKO in December 2022. Returns after nearly four years away; no public reason for the layoff found.",
+ "how_they_fight": {
+  "Striking": "Minimal: landed 11 of 29 significant strikes against Saaiman, who out-landed him 53 to 11 (verified data; one search summary claimed 105-20, which we do not use). Strikes mainly to set up clinch and level changes.",
+  "Grappling": "The whole game. Chain takedowns (5 of 9 vs Saaiman), quick mount, rubber guard and leg-led scrambles, jumping guillotines. Six regional wins all by submission in round one (0:21 to 4:05).",
+  "Defense": "Overcommits on positions and gets reversed: Saaiman repeatedly swept him and took his back. Struck badly when standing and tired.",
+  "Pace & cardio": "Extreme fast starter: every win in round one, never past the first round before the UFC. Against Saaiman he was visibly tired by round three, his takedowns were stuffed, and he was stopped at 4:13 of R3 while not defending himself (per Cageside Press). Only stoppage loss came late, from fatigue.",
+  "Fight IQ": "Tough (chose to continue after an illegal knee in round two) but shot-heavy without a plan B once tired."
+ },
+ "patterns": [
+  "All six wins: submission in round 1",
+  "Front-loads takedown and submission attempts",
+  "Fades badly if the early grappling doesn't finish it; only loss a R3 TKO"
+ ],
+ "concerns": [
+  "Nearly four years inactive (last fight 2022-12-10)",
+  "Cardio over three rounds at UFC level unproven",
+  "Striking defence on the feet"
+ ],
+ "keys_to_beat": [
+  "Survive and scramble out of round one",
+  "Sprawl and make him carry his weight; punish failed shots",
+  "Push the pace in rounds two and three when his shots slow"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Returns against Chad Anheliger; Anheliger noted Koslow has been out about four years and is hard to prepare for (per Cageside Press). No reported reason for the layoff.",
+   "source": "https://cagesidepress.com/2026/10/01/ufc-edmontons-chad-anheliger-ive-got-this-fire-still-burning/"
+  },
+  {
+   "date": "2022-11-30",
+   "text": "UFC debut came as a replacement for Ronnie Lawrence about ten days out at UFC 282.",
+   "source": "https://www.sherdog.com/news/news/Steven-Koslow-Replaces-Ronnie-Lawrence-Faces-Cameron-Saaiman-at-UFC-282-188582"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Tristen Critchfield",
+   "title": "Steven Koslow Replaces Ronnie Lawrence, Faces Cameron Saaiman at UFC 282",
+   "url": "https://www.sherdog.com/news/news/Steven-Koslow-Replaces-Ronnie-Lawrence-Faces-Cameron-Saaiman-at-UFC-282-188582",
+   "date": "2022-11-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC 282: Bizarre Fight Sees Cameron Saaiman TKO Steven Koslow After Earlier Foul",
+   "url": "https://cagesidepress.com/2022/12/10/ufc-282-cameron-saaiman-vs-steven-koslow",
+   "date": "2022-12-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Edmonton's Chad Anheliger: \"I've Got This Fire Still Burning\"",
+   "url": "https://cagesidepress.com/2026/10/01/ufc-edmontons-chad-anheliger-ive-got-this-fire-still-burning/",
+   "date": "2026-10-01"
+  }
+ ],
+ "depth": "thin"
+}

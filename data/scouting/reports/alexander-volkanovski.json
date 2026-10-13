@@ -1,0 +1,124 @@
+{
+ "name": "Alexander Volkanovski",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "The two-time featherweight champion (28-4), now 38, back on top after two five-round decisions over Diego Lopes (UFC 314, UFC 325). A high-volume, feint-heavy pressure kickboxer with strong takedown defence who wins by out-working people over 25 minutes; the worry is that his last three losses include back-to-back knockouts (Makhachev R1, Topuria R2).",
+ "how_they_fight": {
+  "Striking": "About 5.3 significant strikes a minute at 58% accuracy. Feints constantly, jabs to break up entries, and lands inside low kicks on opponents who step in; per MMA Sucka the low kick often forces a stance switch that opens his lead hook. Against Lopes in the rematch he won most exchanges with counter rights going backwards (POST Wrestling). Leans back in pocket exchanges and has been countered over the top while his kicking leg is up (MMA Sucka).",
+  "Grappling": "Uses takedowns opportunistically (about 1.3 per 15 min at 32%) rather than as a base; tried early takedowns on Lopes in the rematch, shelved them, then went back to them in round five and had to defend several submissions in the scrambles (POST Wrestling). Hard to hold down: about 74% takedown defence and quick to the feet, the point Aaron Pico made about his fights with Makhachev.",
+  "Defense": "Good head movement and footwork at range (61% strike defence), but the chin is the question at 38: knocked out by Makhachev (R1, Oct 2023, on short notice) and Topuria (R2, Feb 2024). In Lopes 2 a third-round counter right put him briefly on a knee, not scored a knockdown (POST Wrestling).",
+  "Pace & cardio": "A slow-burn volume fighter. Of his 28 wins (verified), 12 are decisions, including six five-round decisions; his finishes are spread R1 (7), R2 (4), R3 (2), R4 (3, incl. Korean Zombie R4 and Yachi sub R4). In five-round title fights he is 8-3 and usually gets stronger through the championship rounds (late_win_rate 0.75). Stopped three times: Corey Nelson R3 (2013), Makhachev R1, Topuria R2, so when he loses inside the distance it tends to be early-to-middle rounds against a big puncher.",
+  "Fight IQ": "Elite in-fight adjuster: changed his approach between the two Lopes fights and between rounds. Plans to absorb Evloev's takedown attempts and drown him late, predicting a stoppage before round five (LowKick MMA). Will take risks to chase a finish."
+ },
+ "patterns": [
+  "Feints and jab to set the rhythm early, then compounds volume from round 2 onward",
+  "Inside low kick -> lead hook / combination over the top",
+  "Wins the championship rounds: six of his eight five-round title wins went the full 25 minutes",
+  "Counters off the back foot when pressured (Lopes 2)",
+  "Last UFC finish: Yair Rodriguez R3 TKO (July 2023); his two wins since are both five-round decisions"
+ ],
+ "concerns": [
+  "Age 38 and two KO losses in his last five fights; got clipped to a knee by Lopes in round 3 of the rematch",
+  "Leans back in the pocket and can be countered over the top when kicking",
+  "Evloev is a five-round chain wrestler: the first time since Makhachev he faces sustained takedown pressure",
+  "Said a bad loss (heavy damage or being finished) could end his career (per Newsweek/MMA Sucka); Evloev says Volkanovski was distracted helping Mauricio Ruffy's camp (Bloody Elbow)"
+ ],
+ "keys_to_beat": [
+  "Hit him early, over the top of his low kick or as he leans back; his losses inside the distance came in R1-R3",
+  "Mix takedowns with strikes so he can't settle into his feint-and-counter rhythm",
+  "Keep him on the fence and make him carry weight for 25 minutes; deny him the late-round volume surge"
+ ],
+ "news": [
+  {
+   "date": "2026-10-12",
+   "text": "Calls Evloev a favourable matchup and predicts a stoppage before round five, saying he is happy to absorb the takedown attempts.",
+   "source": "https://www.lowkickmma.com/alexander-volkanovski-sees-a-favorable-matchup-against-movsar-evloev-predicts-how-ufc-333-fight-will-unfold/"
+  },
+  {
+   "date": "2026-10-12",
+   "text": "Evloev says Volkanovski spent the camp distracted helping Mauricio Ruffy (knocked out by Arman Tsarukyan); Volkanovski predicts a career-best performance.",
+   "source": "https://bloodyelbow.com/2026/10/12/movsar-evloev-pushes-back-on-alexander-volkanovskis-career-best-prediction-as-he-claims-hes-distracted/"
+  },
+  {
+   "date": "2026-10-07",
+   "text": "Said he would consider retiring if the Evloev fight goes badly (heavy damage or a finish); his coach Joe Lopez does not expect a retirement.",
+   "source": "https://www.lowkickmma.com/145-champ-is-my-friend-petr-yan-doesnt-wanna-beat-up-alexander-volkanovski/"
+  },
+  {
+   "date": "2026-10-13",
+   "text": "Odds near pick'em: BJPenn.com reported Volkanovski a -105 underdog to Evloev's -115 on FanDuel.",
+   "source": "https://www.bjpenn.com/mma-news/alex-volkanovski/alexander-volkanovski-explains-why-he-believes-movsar-evloev-is-one-of-the-better-matchups-for-him-ahead-of-ufc-333/"
+  },
+  {
+   "date": "2026-08-15",
+   "text": "Defends the featherweight title against Movsar Evloev in the UFC 333 main event, Abu Dhabi, Oct. 24. (Cageside says his first defence was in April; our verified data has Lopes 2 on 2026-01-31, UFC 325.)",
+   "source": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "POST Wrestling",
+   "author": "Jack Wannan",
+   "title": "UFC 325: Alexander Volkanovski beats Diego Lopes in rematch to retain featherweight title",
+   "url": "https://www.postwrestling.com/?p=129181",
+   "date": "2026-02-01"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Ricardo Viagem",
+   "title": "An early preview of Alexander Volkanovski vs. Movsar Evloev: fight breakdown",
+   "url": "https://mmasucka.com/opinion/an-early-preview-of-alexander-volkanovski-vs-movsar-evloev-fight-breakdown/",
+   "date": "2026-08-31"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Subham",
+   "title": "Alexander Volkanovski Sees a Favorable Matchup Against Movsar Evloev, Predicts How UFC 333 Fight Will Unfold",
+   "url": "https://www.lowkickmma.com/alexander-volkanovski-sees-a-favorable-matchup-against-movsar-evloev-predicts-how-ufc-333-fight-will-unfold/",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Movsar Evloev pushes back on Alexander Volkanovski's 'career-best' prediction as he claims he's distracted",
+   "url": "https://bloodyelbow.com/2026/10/12/movsar-evloev-pushes-back-on-alexander-volkanovskis-career-best-prediction-as-he-claims-hes-distracted/",
+   "date": "2026-10-12"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Movsar Evloev told he must do something he hasn't done since 2018 to beat Alexander Volkanovski",
+   "url": "https://bloodyelbow.com/2026/10/07/movsar-evloev-told-he-must-do-something-he-hasnt-done-since-2018-to-beat-alexander-volkanovski/",
+   "date": "2026-10-07"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Alexander Volkanovski explains why he believes Movsar Evloev is 'one of the better matchups' for him ahead of UFC 333",
+   "url": "https://www.bjpenn.com/mma-news/alex-volkanovski/alexander-volkanovski-explains-why-he-believes-movsar-evloev-is-one-of-the-better-matchups-for-him-ahead-of-ufc-333/",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Newsweek",
+   "author": "",
+   "title": "Alex Volkanovski shares future retirement plans ahead of UFC 333 fight",
+   "url": "https://www.newsweek.com/sports/mma/alex-volkanovski-shares-future-retirement-plans-ahead-of-ufc-333-fight-12354236",
+   "date": "2026-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "Zac Pacleb",
+   "title": "Where We Stand: Featherweight Division",
+   "url": "https://www.ufc.com/news/where-we-stand-ufc-featherweight-division",
+   "date": "2026-02-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "good"
+}

@@ -1,0 +1,114 @@
+{
+ "name": "Asaf Chopurov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Unbeaten 24-year-old Azerbaijani bantamweight (11-0) based in Volgograd, signed from UAE Warriors where he won and twice defended the bantamweight title. Our prospect list ranks him No. 1 and MMA Prospect Vault named him among its top 25 worldwide. A relentless pressure finisher: 10 of 11 wins inside the distance, mostly in round one.",
+ "how_they_fight": {
+  "Striking": "Pressure striker with fight-ending power: knocked out Reece McLaren (17-0 in ONE per reports) with a counter overhand right at 1:03 as McLaren blitzed in. His base is reportedly Jeet Kune Do and he trains under kickboxer Chingiz Allazov per UAE Warriors; Heavy and MMA Mania describe him as a Petr Yan training partner, and our data lists his team as Sambo 34.",
+  "Grappling": "Finishes on the mat as often as on the feet: five submissions, mostly rear-naked chokes per UAE Warriors, including Adriano Ramos in round one (our verified data has a submission; SI described it as a knockout). Ground-and-pound and back takes off scrambles. Former IMMAF junior world champion with a reported 35-1 amateur record.",
+  "Defense": "Never stopped or beaten. Little tape of him in deep water against UFC-level opposition; McLaren and Demarte Pena are his best names.",
+  "Pace & cardio": "Fast starter and finisher: 7 of 11 wins came in round one (4 KO/TKO, 3 subs), 3 more in round three (two subs, and Pena retiring on his stool after three rounds of pressure in a five-round title fight), and only one decision (Nikita Mikhailov, RCC 2024). So he has gone 15 minutes twice and still won clearly, which suggests his pace holds; he wins early or breaks people late.",
+  "Fight IQ": "Confident to the point of brash: asked Sean Shelby for the toughest fight available and dismissed Thicknesse publicly. Shows patience in long fights (Pena) but prefers to force the finish."
+ },
+ "patterns": [
+  "First-round finisher: 7 of 11 wins in round one",
+  "Late finishes when the early one doesn't come (3 wins in round three)",
+  "Counter right hand against opponents rushing in",
+  "Rear-naked choke off scrambles and back takes"
+ ],
+ "concerns": [
+  "UFC debut; first fight against a UFC-level opponent",
+  "Opposition quality on the regional/UAE Warriors scene; no verified UFC stats",
+  "Team details differ across sources (Sambo 34, Allazov, Petr Yan camp)",
+  "Nationality reported differently (Azerbaijani per UAE Warriors and Heavy, Russian per Telecomasia); he competes under the Azerbaijani flag and lives in Russia"
+ ],
+ "keys_to_beat": [
+  "Survive the first round without exchanging recklessly",
+  "Don't rush in straight lines into his counter right",
+  "Protect the back in scrambles",
+  "Drag him into long, close rounds and test the cage experience"
+ ],
+ "news": [
+  {
+   "date": "2026-09-25",
+   "text": "Signed by the UFC and booked for his debut against Colby Thicknesse at UFC 333 in Abu Dhabi.",
+   "source": "https://www.si.com/fannation/mma/news/ufc-signs-top-mma-prospect-highly-anticipated-debut-fight-ufc-333-asaf-chopurov"
+  },
+  {
+   "date": "2026-09-26",
+   "text": "Says he was first offered Said Nurmagomedov before Thicknesse was named, and that he asked matchmaker Sean Shelby for the toughest available fight.",
+   "source": "https://www.telecomasia.net/news/mma/chopurov-tickness-isn-t-high-level-i-see-no-danger-in-his-striking-or-grappling/"
+  },
+  {
+   "date": "2026-07-23",
+   "text": "Knocked out Reece McLaren at 1:03 of round one at UAE Warriors 72 for his second title defence.",
+   "source": "https://www.uaewarriors.com/chopurov-retains-bantamweight-title-with-first-round-knockout-in-abu-dhabi/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sports Illustrated",
+   "author": "Drew Beaupre",
+   "title": "UFC Signs Top MMA Prospect for Highly-Anticipated Debut Fight at UFC 333",
+   "url": "https://www.si.com/fannation/mma/news/ufc-signs-top-mma-prospect-highly-anticipated-debut-fight-ufc-333-asaf-chopurov",
+   "date": "2026-09-25"
+  },
+  {
+   "outlet": "Yahoo Sports (Heavy)",
+   "author": "Marcel Dorff",
+   "title": "Colby Thicknesse Draws Undefeated Newcomer at UFC 333",
+   "url": "https://sports.yahoo.com/articles/colby-thicknesse-draws-undefeated-newcomer-030633078.html",
+   "date": "2026-09-25"
+  },
+  {
+   "outlet": "Telecomasia",
+   "author": "Marina Magomedova",
+   "title": "Chopurov: Tickness Isn't High-Level; I See No Danger in His Striking or Grappling",
+   "url": "https://www.telecomasia.net/news/mma/chopurov-tickness-isn-t-high-level-i-see-no-danger-in-his-striking-or-grappling/",
+   "date": "2026-09-26"
+  },
+  {
+   "outlet": "UAE Warriors",
+   "author": "",
+   "title": "The Honey Badger Has Never Been Stopped — And Now He Faces Reece McLaren",
+   "url": "https://www.uaewarriors.com/the-honey-badger-has-never-been-stopped-and-now-he-faces-reece-mclaren/",
+   "date": "2026-06-25"
+  },
+  {
+   "outlet": "UAE Warriors",
+   "author": "",
+   "title": "Chopurov Retains Bantamweight Title with First-Round Knockout in Abu Dhabi",
+   "url": "https://www.uaewarriors.com/chopurov-retains-bantamweight-title-with-first-round-knockout-in-abu-dhabi/",
+   "date": "2026-07-23"
+  },
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Best prospect in the sport? UFC 333 adds Petr Yan's undefeated training partner, Asaf Chopurov",
+   "url": "https://www.mmamania.com/latest-news/474635/best-prospect-in-the-sport-ufc-333-adds-petr-yans-undefeated-training-partner-asaf-chopurov",
+   "date": "2026-09"
+  },
+  {
+   "outlet": "MMA Prospect Vault",
+   "author": "",
+   "title": "Top 25 Prospects Worldwide",
+   "url": "https://mmaprospectvault.com/top-25-prospects-worldwide",
+   "date": "2026-08"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Asaf Chopurov fighter profile",
+   "url": "https://www.sherdog.com/fighter/Asaf-Chopurov-399679",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,112 @@
+{
+ "name": "Jhonata Diniz",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Big, rangy Brazilian kickboxer (9-2, 3-2 UFC; 193 cm, 201 cm reach) who wins standing and has lost only when heavier grapplers took him down and beat him up from top position. Hasn't fought since an October 2025 loss to Mario Pinto and withdrew from a June 2026 bout for undisclosed reasons.",
+ "how_they_fight": {
+  "Striking": "Switches stances and comes forward at a measured pace, throwing basic combinations that add up (Sherdog). Accurate (about 56%) and more athletic than his size suggests, but not a one-shot knockout artist per Sherdog. Out-landed Alvin Hines 112-82 and Karl Williams 59-29; finished with a head kick against Hines.",
+  "Grappling": "The hole in his game. Tybura and Pinto both took him down, controlled him for over seven minutes, and finished him with ground strikes; Pinto also hunted a kimura, armbar and triangle. Survives a while underneath and tries to stand on the cage, but rarely reverses.",
+  "Defense": "On the feet he's been hard to hurt: never stopped by standing strikes, and our data shows no UFC knockdowns against him. (Sherdog says he dropped Tybura early in that fight; our verified data records no knockdown for him.) Takedown defense is decent against weaker wrestlers (stopped 9 of 10 Hines shots) but not against good ones. Cuts badly under elbows (Tybura fight stopped by the doctor).",
+  "Pace & cardio": "Front-loaded finisher: six of seven stoppage wins came in R1 (all regional plus DWCS), one in R2 (Austen Lane, after spending long stretches under Lane's control). Both UFC decisions went the full 15 minutes. Both losses came in R2 (Tybura at 5:00 of R2, Pinto at 4:10 of R2). Looked tired in R3 against Hines, though he said he was coasting with the lead (Cageside Press).",
+  "Fight IQ": "Sensible when ahead, but lacks a plan when an opponent changes the fight to grappling. Has dealt with cancellations and short-notice swaps: his 2024 bout with Derrick Lewis in Edmonton was scrapped and he faced Tybura two weeks later."
+ },
+ "patterns": [
+  "Wins the striking with length and accuracy",
+  "Early finisher on the regionals (six R1 stoppages), slower in the UFC (one R2 TKO, two decisions)",
+  "Both losses in R2 by ground strikes after takedowns and long control",
+  "Fades or slows in R3"
+ ],
+ "concerns": [
+  "Takedown and bottom-position defense against heavier wrestlers",
+  "A year out after a finish loss, and withdrew from his June 2026 bout (reason undisclosed)",
+  "Third-round cardio"
+ ],
+ "keys_to_beat": [
+  "Take him down and hold top position; the damage piles up from there",
+  "Pressure through his range rather than kickbox at a distance",
+  "Make the third round matter"
+ ],
+ "news": [
+  {
+   "date": "2026-08-10",
+   "text": "Booked against Tanner Boser at heavyweight in Edmonton, his first fight since October 2025.",
+   "source": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/"
+  },
+  {
+   "date": "2026-06-08",
+   "text": "Withdrew from his June 20 bout against Jose Luiz 'Montanha' at UFC Vegas 119; no reason given (Rotowire, citing Heavy).",
+   "source": "https://www.rotowire.com/mma/player/jhonata-diniz-2499"
+  },
+  {
+   "date": "2024-11-02",
+   "text": "His earlier Edmonton bout with Derrick Lewis was cancelled due to a medical issue on Lewis's side (ESPN).",
+   "source": "https://africa.espn.com/mma/story/_/id/42141054/derrick-lewis-medical-issue-forces-ufc-nix-bout-diniz"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Rio: Mário Pinto Pounds Out Jhonata Diniz",
+   "url": "https://cagesidepress.com/2025/10/11/ufc-rio-mario-pinto-pounds-out-jhonata-diniz",
+   "date": "2025-10-11"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Rio Oliveira vs. Gamrot",
+   "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-Rio-Oliveira-vs-Gamrot-198650",
+   "date": "2025-10-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 317: Jhonata Diniz Beats Newcomer Alvin Hines in Fun Scrap",
+   "url": "https://cagesidepress.com/2025/06/28/ufc-317-jhonata-diniz-beats-newcomer-alvin-hines-in-fun-scrap",
+   "date": "2025-06-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Gabriel Gonzalez, Jay Anderson",
+   "title": "UFC 317: Jhonata Diniz post-fight interview",
+   "url": "https://cagesidepress.com/2025/06/29/ufc-317-jhonata-diniz-hot-air-balloon",
+   "date": "2025-06-29"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Heavyweight prospect furiously protests doctor stoppage at UFC 309",
+   "url": "https://bloodyelbow.com/2024/11/16/heavyweight-prospect-furiously-protests-doctor-stoppage-after-flurry-of-elbows-leave-him-leaking-like-a-faucet-at-ufc-309",
+   "date": "2024-11-16"
+  },
+  {
+   "outlet": "ESPN",
+   "author": "",
+   "title": "Derrick Lewis medical issue forces UFC to nix bout with Diniz",
+   "url": "https://africa.espn.com/mma/story/_/id/42141054/derrick-lewis-medical-issue-forces-ufc-nix-bout-diniz",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Jhonata Diniz MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/jhonata-diniz-2499",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Canadian Talents Anchor Four Additions to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/",
+   "date": "2026-08-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

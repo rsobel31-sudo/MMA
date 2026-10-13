@@ -1,0 +1,346 @@
+{
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "date": "2026-10-17",
+ "locks_at": "2026-10-17T12:00:00+00:00",
+ "fetched_at": "2026-10-13T16:04:14+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-edmonton-4402",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+ "bouts": [
+  {
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "a": "Joaquin Buckley",
+   "b": "Mike Malott",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "a": "Erin Blanchfield",
+   "b": "Jasmine Jasudavicius",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "a": "Cristian Perez",
+   "b": "Kyle Nelson",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "a": "Kyle Daukaus",
+   "b": "Marc-Andre Barriault",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Louis Jourdain vs Timothy Cuamba",
+   "a": "Louis Jourdain",
+   "b": "Timothy Cuamba",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "a": "Mandel Nallo",
+   "b": "Nate Landwehr",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "a": "Jhonata Diniz",
+   "b": "Tanner Boser",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "a": "Julien Leblanc",
+   "b": "Nick Galanti",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "a": "Javad Mahjoub",
+   "b": "Joel Faglier",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "a": "Katlyn Cerminara",
+   "b": "Mackenzie Stiller",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "a": "Chad Anheliger",
+   "b": "Steven Koslow",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "a": "Chelsea Chandler",
+   "b": "Melissa Croden",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cody Chovancek vs You Su-young",
+   "a": "Cody Chovancek",
+   "b": "You Su-young",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45248:ml:a",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Joaquin Buckley to win",
+   "odds": -102,
+   "p_fanduel": 0.4761
+  },
+  {
+   "id": "45248:ml:b",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mike Malott to win",
+   "odds": -125,
+   "p_fanduel": 0.5239
+  },
+  {
+   "id": "45249:ml:a",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Erin Blanchfield to win",
+   "odds": -340,
+   "p_fanduel": 0.7301
+  },
+  {
+   "id": "45249:ml:b",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jasmine Jasudavicius to win",
+   "odds": 250,
+   "p_fanduel": 0.2699
+  },
+  {
+   "id": "45250:ml:a",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Cristian Perez to win",
+   "odds": -340,
+   "p_fanduel": 0.7301
+  },
+  {
+   "id": "45250:ml:b",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kyle Nelson to win",
+   "odds": 250,
+   "p_fanduel": 0.2699
+  },
+  {
+   "id": "45251:ml:a",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Kyle Daukaus to win",
+   "odds": -235,
+   "p_fanduel": 0.6626
+  },
+  {
+   "id": "45251:ml:b",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Marc-Andre Barriault to win",
+   "odds": 180,
+   "p_fanduel": 0.3374
+  },
+  {
+   "id": "45253:ml:a",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Mandel Nallo to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45253:ml:b",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nate Landwehr to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45254:ml:a",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jhonata Diniz to win",
+   "odds": -260,
+   "p_fanduel": 0.6813
+  },
+  {
+   "id": "45254:ml:b",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tanner Boser to win",
+   "odds": 196,
+   "p_fanduel": 0.3187
+  },
+  {
+   "id": "45255:ml:a",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Julien Leblanc to win",
+   "odds": 420,
+   "p_fanduel": 0.1816
+  },
+  {
+   "id": "45255:ml:b",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nick Galanti to win",
+   "odds": -650,
+   "p_fanduel": 0.8184
+  },
+  {
+   "id": "45256:ml:a",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Javad Mahjoub to win",
+   "odds": -120,
+   "p_fanduel": 0.5146
+  },
+  {
+   "id": "45256:ml:b",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Joel Faglier to win",
+   "odds": -106,
+   "p_fanduel": 0.4854
+  },
+  {
+   "id": "45257:ml:a",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Katlyn Cerminara to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45257:ml:b",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mackenzie Stiller to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45258:ml:a",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Chad Anheliger to win",
+   "odds": -108,
+   "p_fanduel": 0.4896
+  },
+  {
+   "id": "45258:ml:b",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Steven Koslow to win",
+   "odds": -118,
+   "p_fanduel": 0.5104
+  },
+  {
+   "id": "45259:ml:a",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Chelsea Chandler to win",
+   "odds": 220,
+   "p_fanduel": 0.295
+  },
+  {
+   "id": "45259:ml:b",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Melissa Croden to win",
+   "odds": -295,
+   "p_fanduel": 0.705
+  }
+ ]
+}

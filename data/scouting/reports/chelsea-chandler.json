@@ -1,0 +1,98 @@
+{
+ "name": "Chelsea Chandler",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A powerful, physical former featherweight (7-4, 3-3 UFC) out of Cesar Gracie Jiu-Jitsu who does her best work early: all four of her stoppage wins came in rounds one or two, most recently a round-one armbar of Priscila Cachoeira in June. Has a history of weight misses at 135 and was TKO'd in round one by Joselyne Edwards.",
+ "how_they_fight": {
+  "Striking": "Short, heavy punches (uppercut, short right); the right hand that dropped Cachoeira and the stoppage of Julija Stoliarenko both came in round one. Hittable at range: Yana Santos out-landed her 94-56 and Edwards finished her against the fence.",
+  "Grappling": "Strong top game and back-taking: took Josiane Nunes's back and mounted her (7 minutes of control), and against Cachoeira took the back with both hooks before switching to the armbar. Can be held down by bigger wrestlers (Norma Dumont, 9 minutes of control).",
+  "Defense": "Defensive striking is the weakness (absorbs more than she lands per our numbers). Stopped once: TKO at 2:31 of round one vs Edwards after going down covering up.",
+  "Pace & cardio": "Fast starter who fades or gets out-worked late. Finishes: R1 x3, R2 x1, none in round three. Against Nunes she won rounds one and two but was walked down in round three; her three decision losses were to fighters who out-worked her over 15 minutes. If she doesn't hurt you early, the later rounds tend to belong to the opponent.",
+  "Fight IQ": "Opportunistic: capitalises quickly when an opponent is hurt. Recovered from falling to her back early against Cachoeira."
+ },
+ "patterns": [
+  "All stoppage wins in rounds 1-2",
+  "Explodes on hurt opponents; takes the back",
+  "Out-worked late in decisions",
+  "Missed weight twice in 2024 (Nunes, 1 lb; Yana Santos, 141 lb, 5 over)"
+ ],
+ "concerns": [
+  "Weight cut to 135 (two misses in 2024; made 135 vs Cachoeira)",
+  "Fighting with injuries per her own comments; neck treatment",
+  "Durability in exchanges at range (R1 TKO loss)"
+ ],
+ "keys_to_beat": [
+  "Survive round one; drag her into rounds two and three",
+  "Work at range with volume and kicks; avoid the clinch",
+  "Don't scramble loosely: she takes backs"
+ ],
+ "news": [
+  {
+   "date": "2026-06-07",
+   "text": "After the Cachoeira win she said she threw up more in camp than ever, had been fighting with injuries, and had stem-cell treatment on her neck; camp expanded beyond Cesar Gracie to more cross-training (per Cageside Press).",
+   "source": "https://cagesidepress.com/2026/06/07/ufc-vegas-118-chelsea-chandler-throwing-up/"
+  },
+  {
+   "date": "2026-06-06",
+   "text": "Ended a two-fight skid with a round-one armbar of Priscila Cachoeira (3:42) after more than a year away; earned a $25,000 finisher bonus per Cageside Press.",
+   "source": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-returning-chelsea-chandler-taps-priscila-cachoeira/"
+  },
+  {
+   "date": "2024-08-13",
+   "text": "Weighed 141 lb for Yana Santos fight, five over the bantamweight limit; also missed by a pound for Josiane Nunes in March 2024.",
+   "source": "https://www.lowkickmma.com/yana-santos-chelsea-chandler-weight/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 118: Returning Chelsea Chandler Taps Priscila Cachoeira",
+   "url": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-returning-chelsea-chandler-taps-priscila-cachoeira/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Jay Anderson",
+   "title": "Chelsea Chandler Was Throwing Up In Camp Ahead of UFC Vegas 118",
+   "url": "https://cagesidepress.com/2026/06/07/ufc-vegas-118-chelsea-chandler-throwing-up/",
+   "date": "2026-06-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 118 Bonuses See Baraniewski, Chairez Rewarded",
+   "url": "https://cagesidepress.com/2026/06/07/ufc-vegas-118-bonuses-see-baraniewski-chairez-rewarded/",
+   "date": "2026-06-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Joselyne Edwards Finishes Chelsea Chandler to Open UFC Kansas City",
+   "url": "https://cagesidepress.com/2025/04/26/joselyne-edwards-finishes-chelsea-chandler-to-open-ufc-kansas-city",
+   "date": "2025-04-26"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "William Goodson",
+   "title": "'She Came Fat' UFC's Yana Santos Rages Over Chelsea Chandler's Weight Flub",
+   "url": "https://www.lowkickmma.com/yana-santos-chelsea-chandler-weight/",
+   "date": "2024-08-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 88: Chelsea Chandler Survives Late Surge by Bloodied Josiane Nunes",
+   "url": "https://cagesidepress.com/2024/03/16/ufc-vegas-88-chelsea-chandler-survives-late-surge-by-bloodied-josiane-nunes",
+   "date": "2024-03-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Canadian Talents Anchor Four Additions to UFC Edmonton",
+   "url": "https://cagesidepress.com/2026/08/10/canadian-talents-anchor-four-additions-to-ufc-edmonton/",
+   "date": "2026-08-10"
+  }
+ ],
+ "depth": "moderate"
+}

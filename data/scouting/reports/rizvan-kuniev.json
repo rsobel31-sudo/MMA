@@ -1,0 +1,85 @@
+{
+ "name": "Rizvan Kuniev",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Russian heavyweight (13-3 with a draw and a no-contest in our verified data; outlets list 14-3-1) with elite takedown defence and a punishing clinch. 2-1 in the UFC: a split loss to Curtis Blaydes on debut, a grinding decision over Jailton Almeida, and a third-round knee TKO of Tyrell Fortune.",
+ "how_they_fight": {
+  "Striking": "Pressure and clinch work: doubles the jab, straight right at range, but his best weapons are knees (running, jumping and in the clinch), uppercuts and standing elbows (Cageside on Fortune). Also landed a spinning backfist to the body.",
+  "Grappling": "Defensive wall: stuffed all of Almeida's shots and 13 of 15 Blaydes attempts (Rotowire), reversing on the fence with underhooks. Rarely shoots himself but wins the fence position and holds it.",
+  "Defense": "Never stopped in 18 fights. Was taken down early by Blaydes and held on the cage in R1; ate a big right hand and an uppercut from Fortune.",
+  "Pace & cardio": "A late finisher who gets better as the fight goes on. Finishes (verified): R1 x4, R2 x1, R3 x4, so nearly half come in the final round. Lost R1 to Blaydes and won the later rounds on the feet; broke Fortune down over two rounds before the R3 finish at 1:12. His decisions can be low-action (Almeida).",
+  "Fight IQ": "Patient and methodical; picks the clinch and the knee when opponents come forward. Can sit in control and win rounds without much offence."
+ },
+ "patterns": [
+  "Walks opponents to the fence, then knees and uppercuts",
+  "Late finisher: four R3 stoppages",
+  "Neutralises wrestlers with takedown defence and clinch reversals"
+ ],
+ "concerns": [
+  "Slow starts and low-output rounds",
+  "Untested against a long, technical kickboxer like Volkov",
+  "Lost his UFC debut on a split decision after giving up R1 to Blaydes' takedown and cage control"
+ ],
+ "keys_to_beat": [
+  "Keep him at range with kicks and the jab; deny the clinch",
+  "Win the early rounds before he settles",
+  "Avoid lowering the head on entries (knees)"
+ ],
+ "news": [
+  {
+   "date": "2026-07-25",
+   "text": "Stopped Tyrell Fortune with knees at 1:12 of R3 at UFC Abu Dhabi; Fortune told his corner a knee had hurt his ribs (Cageside).",
+   "source": "https://cagesidepress.com/2026/07/25/ufc-abu-dhabi-rizvan-kuniev-crashes-through-tyrell-fortune-with-knees/"
+  },
+  {
+   "date": "2026-08-15",
+   "text": "Booked against Alexander Volkov at UFC 333.",
+   "source": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Abu Dhabi: Rizvan Kuniev Crashes Through Tyrell Fortune with Knees",
+   "url": "https://cagesidepress.com/2026/07/25/ufc-abu-dhabi-rizvan-kuniev-crashes-through-tyrell-fortune-with-knees/",
+   "date": "2026-07-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 113: No Real Winners As Rizvan Kuniev Beats Jailton Almeida",
+   "url": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-no-real-winners-as-rizvan-kuniev-beats-jailton-almeida",
+   "date": "2026-02-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Baku: Curtis Blaydes Takes Razor-Thin Decision Over Debuting Rizvan Kuniev",
+   "url": "https://cagesidepress.com/2025/06/21/ufc-baku-curtis-blaydes-takes-razor-thin-decision-over-debuting-rizvan-kuniev",
+   "date": "2025-06-21"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Rizvan Kuniev player page",
+   "url": "https://www.rotowire.com/mma/player.php?id=2586",
+   "date": "2026"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Volkov vs. Kuniev set as title eliminator at UFC 333 in Abu Dhabi",
+   "url": "https://agentmma.com/news/88801-volkov-vs-kuniev-set-as-title-eliminator-at-ufc-333-in-abu-dhabi",
+   "date": "2026-08-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 333 Lands Volkanovski vs. Evloev, Yan vs. Dvalishvili 3",
+   "url": "https://cagesidepress.com/2026/08/15/ufc-333-lands-volkanovski-vs-evloev-yan-vs-dvalishvili-3/",
+   "date": "2026-08-15"
+  }
+ ],
+ "depth": "moderate"
+}

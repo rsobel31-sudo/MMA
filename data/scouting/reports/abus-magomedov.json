@@ -1,0 +1,86 @@
+{
+ "name": "Abus Magomedov",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "Veteran Dagestan-born, Germany-based middleweight (29-7-1, 5-3 UFC), a rangy kickboxer with real grappling (subs of Brunno Ferreira and Michal Oleksiejczuk). His UFC losses are to Sean Strickland (R2 KO), Caio Borralho (decision) and Joe Pyfer (R2 sub), all after he won or competed well early. Last out, he dropped Oleksiejczuk with a counter elbow and finished with a guillotine at 3:25 of R1.",
+ "how_they_fight": {
+  "Striking": "Long, varied kickboxer: kicks and straight shots from range, with sharp counters (the elbow that dropped Oleksiejczuk as he crashed in). Moderate volume (about 3.2 significant strikes a minute).",
+  "Grappling": "Underrated: 8 career submissions, a guillotine on Oleksiejczuk, an R3 sub of Ferreira, and he out-wrestled Warlley Alves (6 of 7 takedowns, about 12 minutes of control). Strong takedown defense (about 82%) and quick reversals; reversed Pyfer immediately in R1.",
+  "Defense": "Durable in most fights but breaks when pressured: dropped by a big right and choked by Pyfer in R2 after a strong R1; stopped by Strickland in R2 of a five-rounder after hurting him early.",
+  "Pace & cardio": "Fast starter who can fade: 16 of 22 finishes in R1, 5 in R2, 1 in R3. Losses: 2 in R1 (both 2013/2018), 3 in R2, 2 decisions, so round two is his danger zone. Has gone the distance and won (Alves, Michel Pereira).",
+  "Fight IQ": "Experienced and composed; weathered Oleksiejczuk's early power before countering. Can get drawn into a pressure fight when his early work doesn't end it."
+ },
+ "patterns": [
+  "Wins R1 behind range kickboxing and counters",
+  "Opportunistic front-headlock/guillotine and back takes",
+  "Round two is where he has been stopped (Strickland, Pyfer)",
+  "Will wrestle to win rounds if needed (Alves)"
+ ],
+ "concerns": [
+  "Fades or breaks under sustained pressure after a strong start",
+  "Mid-30s",
+  "Limited UFC wins over top-15 opposition"
+ ],
+ "keys_to_beat": [
+  "Survive his first-round range work, then pressure in R2",
+  "Avoid predictable straight-line entries into his counter elbow/knee",
+  "Keep the head out of front-headlock positions on takedowns"
+ ],
+ "news": [
+  {
+   "date": "2026-06-27",
+   "text": "Submitted Michal Oleksiejczuk by guillotine at 3:25 of R1 at UFC Baku after a counter elbow knockdown; earned a finish bonus and called out Israel Adesanya.",
+   "source": "https://www.lowkickmma.com/abus-magomedov-submission-win-ufc-baku/"
+  },
+  {
+   "date": "2026-10-13",
+   "text": "Faces Cameron Rowston on the UFC 333 prelims; no injury or camp news found.",
+   "source": "https://en.wikipedia.org/wiki/UFC_333"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Baku: Abus Magomedov Floors Michal Oleksiejczuk With Crushing Elbow, Then Secures Submission In Round 1",
+   "url": "https://www.lowkickmma.com/abus-magomedov-submission-win-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Baku Winners",
+   "url": "https://cagesidepress.com/2026/06/30/whats-next-ufc-baku-winners-2/",
+   "date": "2026-06-30"
+  },
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "UFC 320 results: Joe Pyfer survives early Abus Magomedov onslaught, scores slick submission",
+   "url": "https://www.mmamania.com/ufc-320-ankalaev-vs-pereira-rematch-start-time-full-results-espn-mma/393729/ufc-320-results-joe-pyfer-survives-early-abus-magomedov-onslaught-scores-slick-submission",
+   "date": "2025-10-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 320: Joe Pyfer Makes Statement with Sub of Abus Magomedov",
+   "url": "https://cagesidepress.com/2025/10/04/ufc-320-joe-pyfer-makes-statement-with-sub-of-abus-magomedov/",
+   "date": "2025-10-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Four Including Headliner Fiziev Earn Performance Bonuses at UFC Baku",
+   "url": "https://cagesidepress.com/2026/06/27/four-including-headliner-fiziev-earn-performance-bonuses-at-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 333",
+   "url": "https://en.wikipedia.org/wiki/UFC_333",
+   "date": ""
+  }
+ ],
+ "depth": "moderate"
+}

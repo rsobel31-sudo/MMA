@@ -1,0 +1,101 @@
+{
+ "name": "Kody Steele",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "A jiu-jitsu black belt out of Syndicate MMA (8-1 in our data) who went 6-0 in Fury FC, won his Contender Series fight with a body shot and is 1-1 in the UFC. He is a willing, fan-friendly brawler who calls himself a grappler first; his debut loss to Rongzhu came when he abandoned the game plan to slug.",
+ "how_they_fight": {
+  "Striking": "Aggressive and hittable: he will stand and trade, which earned a Fight of the Night against Rongzhu but cost him a 30-27 decision. Has real body punching: he stopped Chasen Blair with a body shot in round two of the Contender Series after scoring a knockdown (our data).",
+  "Grappling": "The strength. Forceful takedown inside the first minute against Dom Mar Fan, a choke threat from half guard, mount, and when Fan reversed him he went to the legs and finished with a heel hook at 3:56 of round one (our data; BJPenn.com lists 3:53). Comfortable in leg-lock scrambles.",
+  "Defense": "Never stopped. His only loss is a decision. Defensive striking is the weak point: he took heavy volume from Rongzhu and said he got caught up in the moment.",
+  "Pace & cardio": "Has gone 15 hard minutes in a firefight (Rongzhu). In our data his six finishes came two in round one, three in round two and one in round three (Alejandro Martinez at 2:09), so he finishes at any point and does not fade badly. His two decision wins were early in his career.",
+  "Fight IQ": "Confident and opportunistic on the ground (\"When I saw it, I just had to take it\"), but his own words after the Zhu loss show he can be drawn into brawls that suit the other man."
+ },
+ "patterns": [
+  "Early takedown attempt, then hunts for submissions",
+  "Leg locks in scrambles",
+  "Body punches on the feet",
+  "Finishes spread across rounds 1-3",
+  "Never finished; only loss a unanimous decision"
+ ],
+ "concerns": [
+  "Withdrew from an August 2026 bout with Gauge Young at UFC Sacramento, reason undisclosed (RotoWire, citing Heavy)",
+  "Gets dragged into slugfests",
+  "Age 31 with only two UFC fights",
+  "Record discrepancy: Cageside said 10-2 after the Fan win; our data and AgentMMA have 8-1, and he has only one known pro loss"
+ ],
+ "keys_to_beat": [
+  "Keep it standing and out-volume him, as Rongzhu did",
+  "Stuff the first takedown and don't follow him into leg entanglements",
+  "Don't get reversed into scrambles where he attacks legs",
+  "Make him chase on the feet so he abandons the grappling"
+ ],
+ "news": [
+  {
+   "date": "2026-10-02",
+   "text": "Booked against Noah Gugnon at lightweight on the UFC 333 prelims.",
+   "source": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/"
+  },
+  {
+   "date": "2026-08-12",
+   "text": "Out of an Aug. 22 bout with Gauge Young at UFC Sacramento, reason unclear; Young instead faced Stan Dorsainvil. Heavy says the withdrawal was injury-related.",
+   "source": "https://www.rotowire.com/mma/player/kody-steele-2624"
+  },
+  {
+   "date": "2026-05-02",
+   "text": "First UFC win: heel hook of Road to UFC winner Dom Mar Fan in round one at UFC Perth.",
+   "source": "https://cagesidepress.com/2026/05/02/ufc-perth-kody-steele-earns-first-ufc-win-with-stylish-submission-of-dom-mar-fan/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Perth: Kody Steele Earns First UFC Win with Stylish Submission of Dom Mar Fan",
+   "url": "https://cagesidepress.com/2026/05/02/ufc-perth-kody-steele-earns-first-ufc-win-with-stylish-submission-of-dom-mar-fan/",
+   "date": "2026-05-02"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Perth: 'Della Maddalena vs. Prates' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-perth/ufc-perth-della-maddalena-vs-prates-live-results-and-highlights/",
+   "date": "2026-05-02"
+  },
+  {
+   "outlet": "Sports Illustrated",
+   "author": "Chris De Santiago",
+   "title": "(Exclusive) Kody Steele talks first loss at UFC 312, viral slugfest vs. Rongzhu",
+   "url": "https://www.si.com/fannation/mma/news/exclusive-kody-steele-talks-first-loss-ufc-312-viral-slugfest-vs-rongzhu",
+   "date": "2025-02-13"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 312: 'Du Plessis vs. Strickland 2' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-312/ufc-312-du-plessis-vs-strickland-2-live-results-and-highlights/",
+   "date": "2025-02-08"
+  },
+  {
+   "outlet": "RotoWire",
+   "author": "",
+   "title": "Kody Steele MMA news",
+   "url": "https://www.rotowire.com/mma/player/kody-steele-2624",
+   "date": "2026-08-12"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Lightweight Prospects Battle in Abu Dhabi at UFC 333",
+   "url": "https://heavy.com/sports/ufc/lightweight-prospects-battle-at-ufc-333/",
+   "date": "2026-10-02"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Kody Steele vs. Noah Gugnon",
+   "url": "https://agentmma.com/articles/5496-19134-kody-steele-vs-noah-gugnon",
+   "date": "2026-10-02"
+  }
+ ],
+ "depth": "moderate"
+}

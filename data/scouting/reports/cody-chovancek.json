@@ -1,0 +1,71 @@
+{
+ "name": "Cody Chovancek",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "An unbeaten (9-0) Niagara Top Team bantamweight from Petrolia, Ontario and former Unified MMA champion, making his UFC debut 13 months after knocking out Raphael Uchegbu on the Contender Series. A finisher who has gone five rounds twice and won, including a fifth-round calf slicer.",
+ "how_they_fight": {
+  "Striking": "Compact power puncher with elbows: dropped Uchegbu with an elbow in round one and finished him with an overhand right/left hook 10 seconds into round three (two knockdowns in that fight per our data). Four of his six stoppages are KO/TKOs, two are submissions.",
+  "Grappling": "Solid top game (5:09 of control on Uchegbu, passed to half guard and landed ground strikes); hunts submissions off his back when taken down and can reverse. Owns a calf-slicer finish (Gage Gill, R5).",
+  "Defense": "Was taken down once by Uchegbu and needed a fence grab to stay up early (per Cageside Press). Never been stopped or even lost a decision; untested against UFC-level wrestlers.",
+  "Pace & cardio": "Finishes spread across the fight: R1 x2, R2 x2, R3 x1, R5 x1; won a five-round decision (Jordan Howard) and stopped Gill in the fifth. Pre-UFC proof he can push 25 minutes; likes to land damage late in rounds and start the next one fast (finished Uchegbu at 0:10 of R3).",
+  "Fight IQ": "Composed under adversity (recovered after being taken down in R2 vs Uchegbu). Thirteen-month gap since his last fight; no reported injury."
+ },
+ "patterns": [
+  "Elbows and hooks in close; capitalises on knockdowns with ground strikes",
+  "Comes out of the corner fast (Uchegbu finished at 0:10 of R3)",
+  "Can go five rounds; 3 of 9 wins on the cards"
+ ],
+ "concerns": [
+  "Step up in competition; UFC debut",
+  "13 months out since the Contender Series",
+  "Takedown defence vs a volume wrestler"
+ ],
+ "keys_to_beat": [
+  "Chain wrestling and long top control",
+  "Don't engage in the pocket where his elbows and hooks live",
+  "Make him work off his back for long stretches"
+ ],
+ "news": [
+  {
+   "date": "2026-09-04",
+   "text": "Debuts against Su Young You at UFC Edmonton; Heavy notes he won the Unified MMA title by fifth-round calf slicer over Gage Gill and defended it vs Jordan Howard. No reason given for the gap since DWCS.",
+   "source": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
+  },
+  {
+   "date": "2025-09-17",
+   "text": "Earned his contract by third-round KO of Raphael Uchegbu on the Contender Series; trains with Malott and Jasudavicius at Niagara Top Team.",
+   "source": "https://cagesidepress.com/2025/09/17/cody-chovancek-dwcs-ufc-fisherman/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Undefeated Canadian Debuts at UFC Edmonton",
+   "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
+   "date": "2026-09-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "Cody Chovancek Eyes UFC Vancouver Card, Says He's the Best Fisherman in MMA",
+   "url": "https://cagesidepress.com/2025/09/17/cody-chovancek-dwcs-ufc-fisherman/",
+   "date": "2025-09-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Dana White's Contender Series 2025: Week 6 - Play-by-Play & Results",
+   "url": "https://cagesidepress.com/2025/09/16/dana-whites-contender-series-2025-week-6-play-by-play-results",
+   "date": "2025-09-16"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Cody Chovancek: Pressure Makes Diamonds",
+   "url": "https://kr.ufc.com/news/cody-chovancek-pressure-makes-diamonds-ufc-fight-pass",
+   "date": "2024-06-10"
+  }
+ ],
+ "depth": "moderate"
+}

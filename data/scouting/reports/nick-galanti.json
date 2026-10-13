@@ -1,0 +1,93 @@
+{
+ "name": "Nick Galanti",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "A 28-year-old Dante Rivera BJJ middleweight (8-1) and the reigning CFFC middleweight champion, who earned his UFC contract with a 35-second knockout of Carlos Petruzzella on the Contender Series in August. A submission-first grappler who has added power on the feet; he takes this fight as the replacement for Gilbert Urbina.",
+ "how_they_fight": {
+  "Striking": "Heavy hands used behind his wrestling threat: on DWCS his first shot was stuffed, he switched to punching, backed Petruzzella to the fence and dropped him with a right hook before finishing with ground strikes (UFC.com). Also stopped Ty Gwerder with strikes in R3.",
+  "Grappling": "The base. Four submission wins (Cromartie R1, Morrison R2, Sobnosky R1, Benoit R1). Against Austin Clayton he took him down early and hunted a guillotine and inverted triangle in round one (per CFFC's recap).",
+  "Defense": "Never stopped. His one loss was a unanimous decision (29-28 x3) to fellow prospect Brandon Holmes at CFFC 134 in 2024. Clayton out-grappled him in rounds 3 and 4 of their title fight, so he can be held down by a strong wrestler.",
+  "Pace & cardio": "A fast starter: 4 of his 6 stoppages came in round 1 (two of them inside two minutes), 1 in R2 and 1 late (Gwerder, 4:03 of R3). Over five rounds with Clayton, CFFC's recap says the first-round pace tired both men and he faded in the middle rounds before rallying to win the fifth on all three cards (48-47 x3, with a debatable round two).",
+  "Fight IQ": "Adapts in the moment (switched from a failed shot to strikes on DWCS) and found a gear late when the Clayton title was on the line. Has fought only under the CFFC banner before the Contender Series."
+ },
+ "patterns": [
+  "Fast starter: 4 of 6 finishes in round 1",
+  "Takedown or shot first, then submissions (guillotine, chokes) or ground strikes",
+  "Can still finish late (Gwerder, R3 TKO)",
+  "Slows after a high-output first round; won a five-round decision by rallying late"
+ ],
+ "concerns": [
+  "Stamina dip after a fast opening, seen in rounds 3-4 against Clayton",
+  "Out-wrestled for stretches by Clayton; lost a decision to Holmes",
+  "UFC debut; quick turnaround after the Aug. 25 DWCS fight"
+ ],
+ "keys_to_beat": [
+  "Survive the first round; his finishes come early",
+  "Wrestle with him and make him carry weight in rounds 2-3",
+  "Defend the first shot and avoid backing straight to the fence, where he lands his power"
+ ],
+ "news": [
+  {
+   "date": "2026-08-25",
+   "text": "Won a UFC contract on Dana White's Contender Series with a 35-second knockout of Carlos Petruzzella.",
+   "source": "https://www.ufc.com/news/dana-whites-contender-series-season-10-week-3-results"
+  },
+  {
+   "date": "2026-10-01",
+   "text": "Booked as the replacement for Gilbert Urbina against Julien Leblanc, his UFC debut (date per Wikipedia, citing MMA Junkie).",
+   "source": "https://agentmma.com/news/90964-julian-leblanc-vs-nick-galanti-set-for-ufc-edmonton-on-october-17"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "Simon Head",
+   "title": "Dana White's Contender Series Season 10, Week 3 results",
+   "url": "https://www.ufc.com/news/dana-whites-contender-series-season-10-week-3-results",
+   "date": "2026-08-26"
+  },
+  {
+   "outlet": "CFFC",
+   "author": "Cage Fury Admin",
+   "title": "Nick Galanti, Ronald Humphrey claim UFC contracts with Dana White's Contender Series wins",
+   "url": "https://cffc.tv/news/2026/8/25/nick-galanti-ronald-humphrey-claim-ufc-contracts-with-dana-whites-contender-series-wins",
+   "date": "2026-08-25"
+  },
+  {
+   "outlet": "CFFC",
+   "author": "Cage Fury Admin",
+   "title": "CFFC 152 results: Nick Galanti pushed to limit, narrowly outlasts Austin Clayton to claim title",
+   "url": "https://cffc.tv/news/2026/3/28/cffc-152-results-nick-galanti-pushed-to-limit-narrowly-outlasts-austin-clayton-claim-title",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "CFFC",
+   "author": "Cage Fury Admin",
+   "title": "CFFC 152 preview: Former NextGen champ and undefeated contender clash for vacant middleweight title",
+   "url": "https://cffc.tv/news/2026/3/24/cffc-152-preview-former-nextgen-champ-undefeated-contender-clash-vacant-middleweight-title",
+   "date": "2026-03-24"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "CFFC 134: Daukaus vs. Nchukwi Full Results",
+   "url": "https://cagesidepress.com/2024/08/16/cffc-134-daukaus-vs-nchukwi-full-results",
+   "date": "2024-08-16"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Julian Leblanc vs. Nick Galanti set for UFC Edmonton on October 17",
+   "url": "https://agentmma.com/news/90964-julian-leblanc-vs-nick-galanti-set-for-ufc-edmonton-on-october-17",
+   "date": ""
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}

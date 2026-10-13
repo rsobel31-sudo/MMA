@@ -1,0 +1,109 @@
+{
+ "name": "Bolaji Oki",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "summary": "A rangy Belgian kickboxer (10-4 in our data, 3-3 counting his Contender Series win) who is dangerous early with a jab, leg kicks, body work and a heavy right hand. He drops to featherweight for this fight after losing three of his last four UFC bouts, all three losses by stoppage (guillotine, ground-and-pound, knockout).",
+ "how_they_fight": {
+  "Striking": "Long, busy kickboxing: jab up and down, outside leg kicks, body hooks, knees in the clinch and a right hand he likes to throw after dipping off the centre line (Cageside on the Aswell win). High output (136 significant strikes landed against Aswell in our data) and real power: he dropped Mason Jones early and stopped Dylan Salvador in round one on the Contender Series as an underdog.",
+  "Grappling": "Mostly a striker. He can scramble to top position and land hammerfists (he did after Sousa's kimura attempt) and holds a clinch well, but he does not chain takedowns, and when he is taken down by a committed wrestler he has not got back up reliably.",
+  "Defense": "Decent shell and head movement at range, and he caught Manoel Sousa coming in during round two. The holes: getting backed onto the fence (Sousa's KO), getting taken down and mounted (Jones), and a guillotine caught while he was winning the striking against Chris Duncan (28-10 in significant strikes per our data).",
+  "Pace & cardio": "Fast starter. Against Aswell he kept a high pace for 15 minutes, but against Jones he emptied the tank chasing a finish in round one and was flat and dominated in round two (Cageside). Of his six career finishes in our data, four came in round one, one in round two and one in round three; he has gone the distance five times (4-1). Stopped three times: round one (Duncan, submission), round two (Jones, elbows from mount) and round three (Sousa, punch at 4:12 in our data).",
+  "Fight IQ": "Composed against volume strikers and willing to show new looks (spinning backfist into head kick vs Aswell), but in his losses he has spent energy recklessly when he smells a finish and kept fighting near the fence late. Coverage of the Jones loss flagged cardio and fight IQ as concerns."
+ },
+ "patterns": [
+  "Front-loads his offence: four of six career finishes came in round one",
+  "Jab to the body, outside leg kicks, right hand off a dip",
+  "Clinch knees to the body",
+  "Lost three of his last four UFC fights, all inside the distance (R1 sub, R2 TKO, R3 KO)",
+  "Late damage: buckled at the end of R2 and knocked out in the last minute of R3 against Sousa"
+ ],
+ "concerns": [
+  "First UFC fight at 145 after competing at 155; cut and power at the new weight are unknowns",
+  "Chin and durability: dropped by Sousa in R1 and finished in R3",
+  "Fades after a big first-round effort (Jones)",
+  "Takedown defense against a determined wrestler",
+  "Guillotine exposure in scrambles (Duncan)"
+ ],
+ "keys_to_beat": [
+  "Survive his first-round power, then push the pace into rounds two and three",
+  "Pressure him to the fence and land the right hand",
+  "Take him down after he has spent energy and work from top position",
+  "Make him grapple; he has been submitted and stopped from mount"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Daniel Santos on the UFC 333 prelims; Oki moves down to featherweight for the bout.",
+   "source": "https://heavy.com/sports/ufc/featherweight-banger-added-to-ufc-333-in-abu-dhabi/"
+  },
+  {
+   "date": "2026-03-14",
+   "text": "Knocked out by debuting Manoel Sousa at 4:12 of round three (our data; Cageside lists 4:14), his second straight stoppage loss.",
+   "source": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-debuting-manoel-sousa-knocks-out-bolaji-oki"
+  },
+  {
+   "date": "2025-10-23",
+   "text": "Per BJPenn.com, he withdrew injured from a February 2025 booking against Mohammad Al-Selwady.",
+   "source": "https://www.bjpenn.com/mma-news/ufc/ufc-321-loses-fight-featuring-two-touted-prospects-just-days-before-abu-dhabi-ppv/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 114: Debuting Manoel Sousa Knocks Out Bolaji Oki",
+   "url": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-debuting-manoel-sousa-knocks-out-bolaji-oki",
+   "date": "2026-03-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Mason Jones Survives First Round Scare, Scores R2 TKO",
+   "url": "https://cagesidepress.com/2025/09/06/mason-jones-survives-first-round-scare-scores-r2-tko",
+   "date": "2025-09-06"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Mason Jones Pulls Off Jaw-Dropping Come-From-Behind TKO – UFC Paris Highlights",
+   "url": "https://www.lowkickmma.com/bolaji-oki-vs-mason-jones-ufc-paris/",
+   "date": "2025-09-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 107: Bolaji Oki Turns Back Short-Notice Newcomer Michael Aswell",
+   "url": "https://cagesidepress.com/2025/05/31/ufc-vegas-107-bolaji-oki-turns-back-short-notice-newcomer-michael-aswell",
+   "date": "2025-05-31"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 115 Odds: Why Chris Duncan Opens as Favorite Over Renato Moicano",
+   "url": "https://www.lowkickmma.com/ufc-vegas-115-odds-why-chris-duncan-opens-as-favorite-over-renato-moicano/",
+   "date": "2026-03-30"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 321 loses fight featuring two touted prospects just days before Abu Dhabi PPV",
+   "url": "https://www.bjpenn.com/mma-news/ufc/ufc-321-loses-fight-featuring-two-touted-prospects-just-days-before-abu-dhabi-ppv/",
+   "date": "2025-10-23"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Featherweight Banger Added to UFC 333 in Abu Dhabi",
+   "url": "https://heavy.com/sports/ufc/featherweight-banger-added-to-ufc-333-in-abu-dhabi/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Bolaji Oki vs. Daniel Santos",
+   "url": "https://agentmma.com/articles/3835-5626-bolaji-oki-vs-daniel-santos",
+   "date": "2026-09-30"
+  }
+ ],
+ "depth": "moderate"
+}

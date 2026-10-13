@@ -1,0 +1,112 @@
+{
+ "name": "Timothy Cuamba",
+ "updated": "2026-10-13T17:00:00+00:00",
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "summary": "Xtreme Couture boxer-wrestler ('Twilight Timmy', 10-4, 2-3 UFC) now at bantamweight after struggling with bigger men at 145 and 155. Good when he's the aggressor, uncomfortable on the back foot, and his last fight ended with a knockdown and a rear-naked choke against Benardo Sopaj in May.",
+ "how_they_fight": {
+  "Striking": "Sherdog's Ben Duffy calls him a solid boxer with good power whose output depends on the opponent: comfortable leading, less so when pushed back. Uses length and speed (180 cm reach), body kicks and occasional flying knees; the April 2025 Romero win was a flying-knee TKO in R2 that drew complaints about an early stoppage. Low volume overall (about 2.75 significant strikes per minute).",
+  "Grappling": "Willing wrestler who relies on timing more than technique (Sherdog). Reversed Chang Ho Lee in R2-R3 with his own takedown and back take after losing R1 under nearly five minutes of control. Offers little off his back, and gave up his back twice to Sopaj.",
+  "Defense": "Never stopped by strikes, but has been dropped (Lucas Almeida knocked him down; Sopaj dropped him with a left hook in R2). Both submission losses (Ivan Tena 2021 R1, Sopaj 2026 R2) followed him being taken down and giving up the back. Spends too long with his back to the fence, letting pressure fighters cut the cage off (Cageside Press on the Sopaj fight).",
+  "Pace & cardio": "Slow-to-medium starter who tends to improve as the fight goes: lost R1 to Lee and won the next two. Finishes come in R1 (2) and R2 (3); half his wins (5 of 10) are decisions and three of his four losses went at least into R2 (two decisions, one R2 sub). Stopped twice, both by submission (R1 in 2021, R2 in 2026); never KO'd.",
+  "Fight IQ": "Adjusts mid-fight (Lee) but can be dragged into reactive fights; Sherdog noted bigger men Oki and Almeida simply out-muscled him. The drop to 135 has helped his physical matchups."
+ },
+ "patterns": [
+  "Better as the aggressor; output falls when pushed onto the back foot",
+  "Improves after round 1: comeback decision over Chang Ho Lee",
+  "Stoppage wins land in R1-R2 (2 in R1, 3 in R2); five of ten wins are decisions",
+  "Losses come from being out-grappled or out-muscled: two subs (R1, R2) and two decisions"
+ ],
+ "concerns": [
+  "Back-take and choke defense after takedowns (Tena, Sopaj)",
+  "Gets backed into the fence by pressure and walks into counters",
+  "Coming off a finish loss; 2-3 in the UFC"
+ ],
+ "keys_to_beat": [
+  "Take the center and walk him to the fence",
+  "Chain takedowns into back control; he has little offense underneath",
+  "Counter his forward entries with the jab and straight shots"
+ ],
+ "news": [
+  {
+   "date": "2026-08-11",
+   "text": "Faces UFC newcomer Louis Jourdain at bantamweight in Edmonton, his third fight at 135.",
+   "source": "https://cagesidepress.com/2026/08/11/louis-jourdain-ufc-debut-timmy-cuamba-edmonton/"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Submitted by Benardo Sopaj (rear-naked choke, R2 2:25) after a knockdown; weighed 136 for that fight. Our verified data spells the opponent 'Bernardo Sopai'.",
+   "source": "https://cagesidepress.com/2026/05/16/benardo-sopaj-submits-cuamba-after-knockdown-at-ufc-vegas-117/"
+  },
+  {
+   "date": "2025-10-29",
+   "text": "Dropped to bantamweight for the Chang Ho Lee fight after earlier UFC bouts at 145 and 155.",
+   "source": "https://www.sherdog.com/news/articles/2/Preview-UFC-Vegas-110-Prelims-198875"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Benardo Sopaj Submits Cuamba After Knockdown at UFC Vegas 117",
+   "url": "https://cagesidepress.com/2026/05/16/benardo-sopaj-submits-cuamba-after-knockdown-at-ufc-vegas-117/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Benardo Sopaj Bloodies Timmy Cuamba Before Locking in Submission Victory - UFC Vegas 117 Highlights",
+   "url": "https://www.lowkickmma.com/timmy-cuamba-vs-benardo-sopaj-ufc-vegas-117/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 117: Allen vs. Costa Weigh-In Results",
+   "url": "https://cagesidepress.com/2026/05/15/ufc-vegas-117-allen-vs-costa-weigh-in-results/",
+   "date": "2026-05-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Vegas 110 Prelims",
+   "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-Vegas-110-Prelims-198875",
+   "date": "2025-10-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 110: Timothy Cuamba Collects Unanimous Decision Over Chang-ho Lee",
+   "url": "https://cagesidepress.com/2025/11/01/ufc-vegas-110-timothy-cuamba-collects-unanimous-decision-over-chang-ho-lee",
+   "date": "2025-11-01"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC Kansas City Prelims",
+   "url": "https://www.sherdog.com/news/articles/7/Preview-UFC-Kansas-City-Prelims-196751",
+   "date": "2025-04-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Kansas City: Timmy Cuamba Earns Style Points with Flying Knee KO of Roberto Romero",
+   "url": "https://cagesidepress.com/2025/04/26/ufc-kansas-city-timmy-cuamba-earns-style-points-with-flying-knee-ko-of-roberto-romero",
+   "date": "2025-04-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Louis Jourdain to Make UFC Debut Opposite Timmy Cuamba in Edmonton",
+   "url": "https://cagesidepress.com/2026/08/11/louis-jourdain-ufc-debut-timmy-cuamba-edmonton/",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Buckley vs. Malott (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "moderate"
+}
