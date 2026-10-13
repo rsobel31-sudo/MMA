@@ -37,7 +37,12 @@ FEEDS = {
     "MMA Weekly": "https://www.mmaweekly.com/feed",
     "LowKick MMA": "https://www.lowkickmma.com/feed/",
     "ESPN": "https://www.espn.com/espn/rss/mma/news",
+    # Yahoo's MMA page republishes other outlets; each item is credited to its <source>. The one way to read MMA
+    # Junkie, whose own site and feed refuse automated reads (HTTP 402). Only outlets we already use count.
+    "Yahoo Sports": "https://sports.yahoo.com/mma/rss/",
 }
+SYNDICATED = {"MMA Junkie": "MMA Junkie", "Uncrowned": "Uncrowned", "SB Nation": "SB Nation",
+              "MMA Knockout On SI": "MMA Knockout (SI)", "Sherdog": "Sherdog"}
 # Outlets whose archives answer https://<host>/wp-json/wp/v2/posts?search=...
 SEARCHABLE = {
     "Cageside Press": "https://cagesidepress.com",
@@ -82,8 +87,14 @@ def parse_feed(xml: str, outlet: str) -> List[Dict[str, str]]:
         if not title or not link:
             continue
         unwrap = lambda s: re.sub(r"^<!\[CDATA\[|\]\]>$", "", s.strip())  # noqa: E731
+        src = re.search(r"<source[^>]*>(.*?)</source>", block, re.S)
+        credit = outlet
+        if src:  # a syndication feed (Yahoo): credit the original outlet, and skip outlets we don't use
+            credit = SYNDICATED.get(htmllib.unescape(unwrap(src.group(1))).strip())
+            if not credit:
+                continue
         out.append({
-            "outlet": outlet, "title": text_of(unwrap(title.group(1))), "url": unwrap(link.group(1)).strip(),
+            "outlet": credit, "title": text_of(unwrap(title.group(1))), "url": unwrap(link.group(1)).strip(),
             "date": _date(date.group(1)) if date else "", "teaser": text_of(unwrap(htmllib.unescape(desc.group(1)))) if desc else "",
         })
     return out

@@ -36,8 +36,8 @@ NEWS = ROOT / "data" / "scouting" / "news.jsonl"
 PACKETS = ROOT / ".cache" / "recaps"
 STORIES = ROOT / "data" / "scouting" / "recaps"
 UA = "mma-predictor/0.1 (personal research)"
-RECAP_OUTLETS = ("Cageside Press", "MMA Fighting", "Sherdog", "BJPenn.com", "LowKick MMA", "MMA Mania", "MMA Junkie")
-RECAP_WORDS = re.compile(r"\b(def(eats?|eated)?\.?|results?|wins?|won|stops?|submits?|knocks? out|finish(es|ed)?|turns back|decision|edges?|outpoints?|taps?|recap)\b", re.I)
+RECAP_OUTLETS = ("Cageside Press", "MMA Fighting", "Sherdog", "BJPenn.com", "LowKick MMA", "MMA Mania", "MMA Junkie", "Uncrowned")
+RECAP_WORDS = re.compile(r"\b(def(eats?|eated)?\.?|results?|wins?|won|victory|victorious|loss|stops?|submits?|knocks? out|finish(es|ed)?|turns back|decision|edges?|outpoints?|taps?|recap|after (UFC|the fight)|post-?fight)\b", re.I)
 
 
 def _text(page: str) -> str:
@@ -107,21 +107,27 @@ def sherdog_play_by_play(page: str, bouts: List[dict]) -> Dict[str, dict]:
 PLAY_BY_PLAY_FEEDS = {
     # outlet: (RSS feed, link test, parser kind). MMA Junkie's live blog refuses automated reads (HTTP 402) and Yahoo
     # republishes Sherdog's play-by-play, so neither counts as another source.
-    "Sherdog": ("https://www.sherdog.com/rss/news.xml", lambda u: "playbyplay" in u.lower(), "sherdog"),
-    "MMA Mania": ("https://www.mmamania.com/rss/index.xml", lambda u: "/ufc-results/" in u and "live-results" in u, "mmamania"),
+    "Sherdog": ("https://www.sherdog.com/rss/news.xml", lambda t, u, src: "playbyplay" in u.lower(), "sherdog"),
+    "MMA Mania": ("https://www.mmamania.com/rss/index.xml", lambda t, u, src: "/ufc-results/" in u and "live-results" in u, "mmamania"),
+    # MMA Junkie's live blog, when Yahoo republishes it (their own site refuses automated reads), matched on the
+    # title and Yahoo's credit line (Yahoo also reprints Sherdog's play-by-play, which is not a second source).
+    "MMA Junkie": ("https://sports.yahoo.com/mma/rss/",
+                   lambda t, u, src: src == "MMA Junkie" and re.search(r"play-by-play|live updates|live results", t, re.I), "generic"),
 }
 
 
-def _feed_links(fetcher, url: str) -> List[Tuple[str, str]]:
+def _feed_links(fetcher, url: str) -> List[Tuple[str, str, str]]:
+    """(title, link, credited source) for each feed item; the source is Yahoo's <source> credit, else ''."""
     xml = fetcher.get(url, cache=False, fresh=True)
     items = re.findall(r"<(?:item|entry)\b.*?</(?:item|entry)>", xml, flags=re.S)
+    unwrap = lambda x: html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", x)).strip()  # noqa: E731
     out = []
     for it in items:
         t = re.search(r"<title[^>]*>(.*?)</title>", it, flags=re.S)
         l = re.search(r"<link[^>]*>(.*?)</link>|<link[^>]*href=\"([^\"]+)\"", it, flags=re.S)
+        src = re.search(r"<source[^>]*>(.*?)</source>", it, flags=re.S)
         if t and l:
-            title = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", t.group(1))).strip()
-            out.append((title, (l.group(1) or l.group(2) or "").strip()))
+            out.append((unwrap(t.group(1)), (l.group(1) or l.group(2) or "").strip(), unwrap(src.group(1)) if src else ""))
     return out
 
 
@@ -150,10 +156,10 @@ def collect(ev: dict, fetcher, log=print) -> dict:
     for outlet, (feed, test, kind) in PLAY_BY_PLAY_FEEDS.items():
         links = []
         try:
-            links = [u for t, u in _feed_links(fetcher, feed) if test(u) and all(w in fold(t + " " + u) for w in words)]
+            links = [u for t, u, src in _feed_links(fetcher, feed) if test(t, u, src) and all(w in fold(t + " " + u) for w in words)]
         except Exception as exc:  # noqa: BLE001 - fall back to the news index
             log(f"  {outlet} feed: {str(exc)[:80]}")
-        links += [n["url"] for n in near if n.get("outlet") == outlet and test(n.get("url", ""))
+        links += [n["url"] for n in near if n.get("outlet") == outlet and test(n.get("title", ""), n.get("url", ""), outlet)
                   and all(w in fold(n.get("title", "") + " " + n["url"]) for w in words)]
         for url in list(dict.fromkeys(links))[:1]:
             try:
@@ -166,10 +172,18 @@ def collect(ev: dict, fetcher, log=print) -> dict:
                 for k, v in got.items():
                     bouts[k]["sources"].append({"outlet": outlet, "kind": "play-by-play", "url": url, "text": v["text"],
                                                 "round_scores": v["scores"]})
-            else:
+            elif kind == "mmamania":
                 got = play_by_play(page, ev["bouts"])
                 for k, t in got.items():
                     bouts[k]["sources"].append({"outlet": outlet, "kind": "play-by-play", "url": url, "text": t})
+            else:  # an unknown live-blog layout: each bout's paragraphs that name both fighters
+                text = _text(page)
+                got = {}
+                for k, b in bouts.items():
+                    t = "\n".join(p for p in text.split("\n") if _surname(b["a"]) in fold(p) and _surname(b["b"]) in fold(p))
+                    if t:
+                        got[k] = t[:5000]
+                        b["sources"].append({"outlet": outlet, "kind": "play-by-play", "url": url, "text": got[k]})
             log(f"  {outlet} play-by-play: {len(got)} of {len(bouts)} bouts ({url})")
     # 2. Per-bout recap stories: the news index first, then the outlets' archive search.
     for k, b in bouts.items():

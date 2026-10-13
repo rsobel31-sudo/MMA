@@ -211,8 +211,12 @@ After the refresh (so the recap includes last night's card):
    re-runs it and prints the reading packet). For every bout it gathers, through each outlet's RSS feed and our news
    index: Sherdog's "play-by-play, results & round scoring" (every bout, round by round, with three Sherdog writers'
    score for each round), MMA Mania's live results (main card round by round, a paragraph per prelim), and per-bout recaps (Cageside Press,
-   MMA Fighting, Sherdog, BJPenn, LowKick MMA). Yahoo republishes Sherdog's play-by-play, so it isn't a second source;
-   MMA Junkie's live blog refuses automated reads. The outlets' text stays in `.cache/recaps/`; the committed index
+   MMA Fighting, Sherdog, BJPenn, LowKick MMA, and MMA Junkie and Uncrowned through Yahoo). Play-by-play sources:
+   Sherdog (sherdog.com/news, "...-playbyplay-results-round-scoring"), MMA Mania (mmamania.com/ufc-results,
+   "...-live-results-highlights-play-by-play") and MMA Junkie's live updates when Yahoo republishes them. MMA Junkie's
+   own site and feed refuse automated reads (HTTP 402), so its stories come only through Yahoo's MMA feed
+   (`sports.yahoo.com/mma/rss/`, collected daily by `scout news`, each item credited to its original outlet; outlets
+   we don't use are skipped). Yahoo's copy of Sherdog's play-by-play is the same article, not a second source. The outlets' text stays in `.cache/recaps/`; the committed index
    `data/scouting/recaps/<id>.json` keeps the links, Sherdog's round scores and a label per bout: `clear`, `close`,
    `disputed` (Sherdog's scorers had the loser ahead) for decisions, `from behind` for a finish by a fighter who was
    trailing. Then, for **every bout on the card, without exception**:
