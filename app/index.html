@@ -3116,6 +3116,40 @@ button.namelink:hover { color: var(--red); }
   const signed = (x) => (x > 0 ? "+" : x < 0 ? "−" : "") + "$" + Math.abs(x).toFixed(2);
   const amer = (o) => (o > 0 ? "+" : "") + o;
   const STATUS = { open: ["Open", "tier-toss"], won: ["Won", "tier-best"], lost: ["Lost", "tier-caution"], void: ["Void (refunded)", "tier-toss"] };
+  // "Up next": the next UFC card from the moment its picks/bets aren't in yet (Claude picks and bets on the Friday
+  // before, about noon ET, after the weigh-ins), so the page looks ahead all week with last card's results below.
+  function nextCard() {
+    const today = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toISOString().slice(0, 10);
+    return ((state.data.upcoming || { events: [] }).events || []).filter((e) => e.date >= today && e.bouts && e.bouts.length).sort((x, y) => x.date.localeCompare(y.date))[0] || null;
+  }
+  function fridayBefore(iso) {
+    const d = new Date(iso + "T12:00:00");
+    d.setDate(d.getDate() - ((d.getDay() - 5 + 7) % 7));
+    return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+  }
+  function upNextPanel(ev, kind) {
+    const day = new Date(ev.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+    const fri = fridayBefore(ev.date);
+    const lead = kind === "bets"
+      ? `Claude's bets go in on <strong>${esc(fri)}, about noon ET</strong>, after the weigh-ins. Early bets are possible Wednesday or Thursday (1:13 PM ET check) when a price looks clearly wrong; most weeks that's a pass.`
+      : `Claude's picks for every bout lock on <strong>${esc(fri)}, about noon ET</strong>, after the weigh-ins and the last fight-week news. Until then, here's how the model and the betting line see the card.`;
+    const rows = ev.bouts.slice().sort((x, y) => (x.order ?? 99) - (y.order ?? 99)).map((b) => {
+      let lean = '<span class="muted">no data</span>';
+      if (b.a_id && b.b_id) {
+        const r = predict(b.a_id, b.b_id, b.rounds || 3), pa = r.p;
+        lean = `<strong>${esc(pa >= 0.5 ? b.a : b.b)}</strong> <span class="muted num">${Math.round(Math.max(pa, 1 - pa) * 100)}%</span>`;
+      }
+      const mk = b.a_id && b.b_id ? marketFor(b.a_id, b.b_id) : null;
+      const pm = mk && mk.a_now != null && mk.b_now != null ? fairP(mk.a_now, mk.b_now) : null;
+      const line = pm == null ? '<span class="muted">no line yet</span>' : `${esc(pm >= 0.5 ? b.a : b.b)} <span class="muted num">${Math.round(Math.max(pm, 1 - pm) * 100)}%</span>`;
+      return `<tr><td><span style="color:var(--red)">${esc(b.a)}</span> <span class="muted">vs</span> <span style="color:var(--blue)">${esc(b.b)}</span><div class="muted" style="font-size:12px">${esc(b.weight_class || "")}${b.rounds === 5 ? " · 5 rds" : ""}</div></td><td>${lean}</td><td>${line}</td></tr>`;
+    }).join("");
+    return `<section class="panel stack"><div><div class="label">Up next</div><h3 style="margin:2px 0 0">${esc(ev.name)}</h3>
+      <div class="muted" style="font-size:13px">${esc(day)}${ev.location ? ` · ${esc(ev.location)}` : ""}</div></div>
+      <p style="margin:0;font-size:14px">${lead}</p>
+      <div class="table-wrap"><table class="list"><thead><tr><th>Bout</th><th>Model leans</th><th>Betting line</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <p class="muted" style="font-size:12px;margin:0">The model's lean updates with each data refresh; the line with each odds sweep. Last card's ${kind === "bets" ? "bets" : "picks"} are below.</p></section>`;
+  }
   function nextFriday() {
     // Friday in Eastern time.
     const et = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
@@ -3186,8 +3220,9 @@ button.namelink:hover { color: var(--red); }
     }
     let body;
     if (P.sub === "week") {
-      const latest = P.weeks[0];
-      body = `${picksStats(s)}${latest ? weekPanel(latest) : ""}${!latest || latest.settled ? `<div class="empty">Next picks: <strong>${esc(nextFriday())}</strong>.</div>` : ""}`;
+      const latest = P.weeks[0], nx = nextCard();
+      const ahead = nx && (!latest || (latest.event_date || "") < nx.date);
+      body = `${picksStats(s)}${ahead ? upNextPanel(nx, "bets") : ""}${latest ? weekPanel(latest) : ""}${!ahead && (!latest || latest.settled) ? `<div class="empty">Next picks: <strong>${esc(nextFriday())}</strong>.</div>` : ""}`;
     } else {
       const kinds = Object.entries(s.by_kind || {});
       const luck = s.bets ? `<p style="font-size:14px;margin:8px 0 0">Expected profit at the prices taken: <strong class="num">${signed(s.expected_profit)}</strong>; actual: <strong class="num">${signed(s.profit)}</strong>. ${Math.abs(s.profit - s.expected_profit) > Math.max(10, Math.abs(s.expected_profit)) ? "The gap is mostly variance: a handful of cards can't tell skill from luck." : ""}</p>` : "";
@@ -3245,10 +3280,11 @@ button.namelink:hover { color: var(--red); }
     let body;
     if (C.sub === "card") {
       const card = C.cards.find((c) => c.event === C.ev) || C.cards[0];
+      const nx = nextCard(), ahead = nx && !C.cards.some((c) => c.date >= nx.date);
       const g = card.bouts.filter((b) => b.claude), gm = card.bouts.filter((b) => b.model_score);
       const sum = (xs, k, f) => xs.reduce((t, b) => t + (b[k][f] ? (f === "points" ? b[k][f] : 1) : 0), 0);
       const tabs = C.cards.length > 1 ? `<div class="evtabs" role="tablist">${C.cards.map((c) => `<button type="button" role="tab" data-cp-ev="${esc(c.event)}" aria-selected="${c === card}"><span class="num">${esc(c.date)}</span><strong>${esc(c.event.split(":")[0])}</strong><span class="muted num">${c.bouts.filter((b) => b.claude).reduce((t, b) => t + b.claude.points, 0)} pts</span></button>`).join("")}</div>` : "";
-      body = `${tabs}<section class="panel stack"><div class="toolbar" style="justify-content:space-between;margin:0"><div><h3 style="margin:0">${esc(card.event)}</h3>
+      body = `${ahead ? upNextPanel(nx, "picks") : ""}${tabs}<section class="panel stack"><div class="toolbar" style="justify-content:space-between;margin:0"><div>${ahead && card === C.cards[0] ? '<div class="label">Last card</div>' : ""}<h3 style="margin:0">${esc(card.event)}</h3>
           <div class="muted num" style="font-size:13px">${esc(card.date)} · ${card.bouts.length} bouts · picks locked ${esc(when(card.locked_at))}${card.revision ? ` (revision ${card.revision})` : ""}${card.rounds_picked ? "" : " · picked before rounds were added: winner and method only, 3 points a bout at most"}</div></div>
           ${g.length ? `<span class="pill num">Claude ${sum(g, "claude", "points")} pts · ${sum(g, "claude", "winner")}/${g.length} winners${gm.length ? ` · model ${sum(gm, "model_score", "points")} pts` : ""}</span>` : `<span class="pill">Locked, awaiting results</span>`}</div>
         ${card.note ? `<div class="pk-note"><div class="label">The read</div><p>${esc(card.note)}</p></div>` : ""}
