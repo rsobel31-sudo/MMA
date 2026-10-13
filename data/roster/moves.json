@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-12T11:16:41+00:00",
+ "fetched": "2026-10-13T11:32:01+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -852,6 +852,20 @@
     "url": "https://cagesidepress.com/2026/10/10/ufc-vegas-122-julius-walker-retires-60-fight-vet-gerald-meerschaert/"
    },
    "first_seen": "2026-10-11"
+  },
+  {
+   "name": "Ismael Bonfim",
+   "date": "2026-10-12",
+   "division": "Lightweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/515413/ismael-bonfim-removed-from-ufc-roster-after-3rd-weight-miss-knockout-loss-to-francisco-prado"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/515413/ismael-bonfim-removed-from-ufc-roster-after-3rd-weight-miss-knockout-loss-to-francisco-prado"
+   },
+   "first_seen": "2026-10-13"
   }
  ]
 }

@@ -404,6 +404,8 @@
 "stats_verified": "2"
 },
 "Alejandro Flores": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2956,8 +2958,10 @@
 "stats_official": "1"
 },
 "Chang Ho Lee": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "3"
+"stats_official": "4"
 },
 "Chang Min Yoon": {
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
@@ -3057,6 +3061,8 @@
 "stats_official": "2"
 },
 "Charon Spain": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Chas Skelly": {
@@ -5536,6 +5542,8 @@
 "stats_official": "4"
 },
 "Emiliano Linares": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -6619,6 +6627,8 @@
 "stats_official": "4"
 },
 "Gugun Gusman": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -8649,6 +8659,8 @@
 "stats_official": "2"
 },
 "Joe Giannetti": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14517,6 +14529,8 @@
 "stats_official": "13"
 },
 "Phil De Fries": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (201 cm), not used until a second source confirms it",
 "stats_official": "5"
 },
@@ -14617,6 +14631,8 @@
 "stats_verified": "5"
 },
 "Priya Sharma": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (150 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14852,6 +14868,10 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "10"
+},
+"Rana Rudra Pratap Singh": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Randa Markos": {
 "dob": "Sherdog + UFCStats agree",
@@ -15223,6 +15243,8 @@
 "stats_official": "19"
 },
 "Rickson Thai Zenidim Bueno": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
