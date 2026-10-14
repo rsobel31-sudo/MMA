@@ -430,15 +430,15 @@
    "system": "meta",
    "division": "Middleweight",
    "rank": "4",
-   "name": "Joe Pyfer",
-   "wiki": "https://en.wikipedia.org/wiki/Joe_Pyfer"
+   "name": "Brendan Allen",
+   "wiki": "https://en.wikipedia.org/wiki/Brendan_Allen"
   },
   {
    "system": "meta",
    "division": "Middleweight",
    "rank": "5",
-   "name": "Brendan Allen",
-   "wiki": "https://en.wikipedia.org/wiki/Brendan_Allen"
+   "name": "Joe Pyfer",
+   "wiki": "https://en.wikipedia.org/wiki/Joe_Pyfer"
   },
   {
    "system": "meta",
@@ -472,15 +472,15 @@
    "system": "meta",
    "division": "Middleweight",
    "rank": "10",
-   "name": "Christian Leroy Duncan",
-   "wiki": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan"
+   "name": "Ikram Aliskerov",
+   "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
   },
   {
    "system": "meta",
    "division": "Middleweight",
    "rank": "11",
-   "name": "Ikram Aliskerov",
-   "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
+   "name": "Christian Leroy Duncan",
+   "wiki": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan"
   },
   {
    "system": "meta",
@@ -941,15 +941,15 @@
    "system": "meta",
    "division": "Bantamweight",
    "rank": "14",
-   "name": "Marlon Vera",
-   "wiki": "https://en.wikipedia.org/wiki/Marlon_Vera"
+   "name": "Bryce Mitchell",
+   "wiki": "https://en.wikipedia.org/wiki/Bryce_Mitchell"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
    "rank": "15",
-   "name": "Bryce Mitchell",
-   "wiki": "https://en.wikipedia.org/wiki/Bryce_Mitchell"
+   "name": "Marlon Vera",
+   "wiki": "https://en.wikipedia.org/wiki/Marlon_Vera"
   },
   {
    "system": "meta",
@@ -999,6 +999,13 @@
    "rank": "6",
    "name": "Lone'er Kavanagh",
    "wiki": "https://en.wikipedia.org/wiki/Lone'er_Kavanagh"
+  },
+  {
+   "system": "meta",
+   "division": "Flyweight",
+   "rank": "7",
+   "name": "Ramazan Temirov",
+   "wiki": "https://en.wikipedia.org/wiki/Ramazonbek_Yuldosh"
   },
   {
    "system": "meta",
@@ -1115,14 +1122,14 @@
   {
    "system": "meta",
    "division": "Women's Bantamweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Nora Cornolle",
    "wiki": "https://en.wikipedia.org/wiki/Nora_Cornolle"
   },
   {
    "system": "meta",
    "division": "Women's Bantamweight",
-   "rank": "13",
+   "rank": "14",
    "name": "Macy Chiasson",
    "wiki": "https://en.wikipedia.org/wiki/Macy_Chiasson"
   },
@@ -1130,8 +1137,8 @@
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "15",
-   "name": "Raquel Pennington",
-   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
+   "name": "Chelsea Chandler",
+   "wiki": "https://en.wikipedia.org/wiki/Chelsea_Chandler"
   },
   {
    "system": "meta",
@@ -1290,23 +1297,23 @@
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "9",
+   "rank": "8",
+   "name": "Loopy Godínez",
+   "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "10",
    "name": "Yan Xiaonan",
    "wiki": "https://en.wikipedia.org/wiki/Yan_Xiaonan"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "10",
+   "rank": "11",
    "name": "Mizuki Inoue",
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Strawweight",
-   "rank": "11",
-   "name": "Loopy Godínez",
-   "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
   },
   {
    "system": "meta",
@@ -2179,6 +2186,13 @@
   {
    "system": "media",
    "division": "Flyweight",
+   "rank": "10",
+   "name": "Ramazan Temirov",
+   "wiki": "https://en.wikipedia.org/wiki/Ramazonbek_Yuldosh"
+  },
+  {
+   "system": "media",
+   "division": "Flyweight",
    "rank": "11",
    "name": "Tim Elliott",
    "wiki": "https://en.wikipedia.org/wiki/Tim_Elliott"
@@ -2492,6 +2506,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-10-13",
+ "fetched": "2026-10-14",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }

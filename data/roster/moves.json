@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-13T11:32:01+00:00",
+ "fetched": "2026-10-14T11:18:27+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -770,6 +770,53 @@
     "url": "https://cagesidepress.com/2026/10/07/dwcs-preston-lagrange-weight/"
    },
    "first_seen": "2026-10-10"
+  },
+  {
+   "name": "Gregory Foster",
+   "date": "2026-10-13",
+   "division": "Lightweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/13/dana-whites-contender-series-96-live-updates-results--live/92238352007/"
+   ],
+   "info": "",
+   "confirmed_by": null,
+   "first_seen": "2026-10-14"
+  },
+  {
+   "name": "Douglas da Lapa",
+   "date": "2026-10-13",
+   "division": "Middleweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/13/dana-whites-contender-series-96-live-updates-results--live/92238352007/"
+   ],
+   "info": "",
+   "confirmed_by": null,
+   "first_seen": "2026-10-14"
+  },
+  {
+   "name": "Luis Francischinelli",
+   "date": "2026-10-13",
+   "division": "Welterweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/13/dana-whites-contender-series-96-live-updates-results--live/92238352007/"
+   ],
+   "info": "",
+   "confirmed_by": null,
+   "first_seen": "2026-10-14"
+  },
+  {
+   "name": "Smilla Sundell",
+   "date": "2026-10-13",
+   "division": "Women's Bantamweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/13/dana-whites-contender-series-96-live-updates-results--live/92238352007/"
+   ],
+   "info": "",
+   "confirmed_by": {
+    "source": "LowKick MMA",
+    "url": "https://www.lowkickmma.com/smilla-sundell-dominates-aline-pereira-to-earn-ufc-contract-in-dwcs-season-10-finale/"
+   },
+   "first_seen": "2026-10-14"
   },
   {
    "name": "Hu Yong",

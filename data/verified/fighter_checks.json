@@ -1,5 +1,7 @@
 {
 "A.J. Cunningham": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "2"
@@ -1010,6 +1012,8 @@
 "stats_official": "48"
 },
 "Andres Luna Martinetti": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2383,6 +2387,8 @@
 "stats_official": "2"
 },
 "Brogan Walker": {
+"dob": "Sherdog + Fight Matrix agree (UFCStats differs)",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "2"
@@ -2799,6 +2805,8 @@
 "stats_official": "3"
 },
 "Carlton Minus": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -6115,6 +6123,8 @@
 "stats_official": "10"
 },
 "Freddy Vidal": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (203 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -8447,8 +8457,10 @@
 "stats_official": "5"
 },
 "Jilunzhou Qiu": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Jim Alers": {
 "dob": "Sherdog + UFCStats agree",
@@ -8523,6 +8535,10 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "2"
+},
+"Jinensibieke Asikeerbai": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Jingliang Li": {
 "dob": "Sherdog + UFCStats agree",
@@ -10667,6 +10683,8 @@
 "stats_official": "1"
 },
 "Kouya Kanda": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 180 cm, UFCStats 175 cm",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -10848,8 +10866,10 @@
 "stats_verified": "3"
 },
 "Kyung Pyo Kim": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "L.C. Davis": {
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
@@ -15200,6 +15220,8 @@
 "stats_verified": "1"
 },
 "Richard Jacobi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18437,6 +18459,10 @@
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "4"
 },
+"Wallen del Rosario": {
+"reach": "UFCStats only (170 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Wallid Ismail": {
 "stats_official": "1"
 },
@@ -18530,6 +18556,8 @@
 "stats_official": "1"
 },
 "Will Currie": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18584,6 +18612,8 @@
 "stats_official": "1"
 },
 "Won Il Kwon": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18786,6 +18816,8 @@
 "stats_official": "5"
 },
 "Yoshinori Horie": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18975,6 +19007,8 @@
 "stats_official": "7"
 },
 "Zach Scroggin": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_verified": "1"
 },
@@ -18985,6 +19019,8 @@
 "stats_official": "1"
 },
 "Zachary Borrego": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (198 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
