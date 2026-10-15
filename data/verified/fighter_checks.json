@@ -680,6 +680,8 @@
 "stats_official": "1"
 },
 "Alexey Kunchenko": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "4"
 },
@@ -1190,6 +1192,8 @@
 "stats_verified": "4"
 },
 "Anthony Ivy": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -1791,6 +1795,10 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "4",
 "stats_verified": "1"
+},
+"Benjamin Bennett": {
+"reach": "UFCStats only (185 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Benji Radach": {
 "dob": "Sherdog + UFCStats agree",
@@ -3437,6 +3445,12 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
+"Christopher Ewert": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Christopher Mario Beal": {
@@ -5366,6 +5380,8 @@
 "stats_verified": "6"
 },
 "Ednaldo Oliveira": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 201 cm, UFCStats 196 cm",
 "stats_official": "2"
 },
 "Edson Barboza": {
@@ -8790,6 +8806,12 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "3"
+},
+"Joey Hart": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (201 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Joey Villasenor": {
 "dob": "Sherdog + UFCStats agree",
@@ -12368,6 +12390,8 @@
 "stats_official": "2"
 },
 "Matej Penaz": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (211 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15598,6 +15622,8 @@
 "stats_official": "7"
 },
 "Rolando Bedoya": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_verified": "4"
 },
@@ -18319,6 +18345,8 @@
 "stats_verified": "2"
 },
 "Vinicius Sacchelli Cenci": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18361,6 +18389,8 @@
 "stats_official": "39"
 },
 "Vitor Costa": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18919,7 +18949,7 @@
 },
 "Yuri Panferov": {
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Yuri Villefort": {
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",

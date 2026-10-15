@@ -59,6 +59,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
  },
+ "https://www.sherdog.com/fighter/Quentin-Pasley-400375": {
+  "date": "2026-12-12",
+  "event": "UFC 335 - Oliveira vs. Lopes",
+  "name": "Quentin Pasley",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-335-Oliveira-vs-Lopes-114294",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_335"
+ },
  "https://www.sherdog.com/fighter/Samuel-Sanches-389956": {
   "date": "2026-11-14",
   "event": "UFC 334 - Gane vs. Hokit",
