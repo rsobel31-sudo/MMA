@@ -219,6 +219,71 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w3",
+   "event": "UFC Fight Night: Buckley vs. Malott",
+   "event_date": "2026-10-17",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-edmonton-4402",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+   "book": "FanDuel",
+   "placed_at": "2026-10-15T17:15:09+00:00",
+   "bankroll_before": 94.0,
+   "available_before": 94.0,
+   "note": "Thursday early check. One prop with a nameable reason; everything else passes. The positive-EV decision props on the heavyweight debut (Mahjoub vs Faglier) and on Leblanc vs Galanti run against the scouting: both heavyweights finish early and Galanti is a submission grappler facing a fighter with a damaged knee. Moneyline gaps are within noise.",
+   "bets": [
+    {
+     "id": "3-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45259:method:b:KO/TKO",
+       "bout": "Chelsea Chandler vs Melissa Croden",
+       "market": [
+        "method",
+        "b",
+        "KO/TKO"
+       ],
+       "selection": "Melissa Croden by KO/TKO",
+       "odds": 340,
+       "p": 0.3049,
+       "p_fanduel": 0.1967
+      }
+     ],
+     "odds": 340,
+     "decimal": 4.4,
+     "stake": 2.0,
+     "to_win": 6.8,
+     "p": 0.3049,
+     "ev": 0.3416,
+     "reasoning": "Croden by KO/TKO at +340 (about 23% implied). Four of her last six wins are by strikes, mostly late ground-and-pound as opponents fade, and she has never been finished. Chandler was stopped by strikes in round 1 by Edwards, has missed weight twice at 135 and says she is fighting through injuries. With Croden a -330 favourite, even a 45% KO share of her wins puts this near 34%. Small stake: method props rest on thinner modelling.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-15T17:15:09+00:00"
+    }
+   ],
+   "staked": 2.0,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-10-15T17:15:09+00:00",
+     "note": "Thursday early check. One prop with a nameable reason; everything else passes. The positive-EV decision props on the heavyweight debut (Mahjoub vs Faglier) and on Leblanc vs Galanti run against the scouting: both heavyweights finish early and Galanti is a submission grappler facing a fighter with a damaged knee. Moneyline gaps are within noise.",
+     "bets": [
+      "3-1"
+     ],
+     "staked": 2.0,
+     "sheet": "data/ai_picks/sheets/2026-10-17-ufc-fight-night-buckley-vs-malott.json",
+     "sheet_fetched_at": "2026-10-15T17:14:47+00:00"
+    }
+   ],
+   "last_placed_at": "2026-10-15T17:15:09+00:00",
+   "sheet": "data/ai_picks/sheets/2026-10-17-ufc-fight-night-buckley-vs-malott.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-edmonton-4402",
+    "https://www.bestfightodds.com/events/ufc-edmonton-4403"
+   ],
+   "sheet_fetched_at": "2026-10-15T17:14:47+00:00"
   }
  ]
 }

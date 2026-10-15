@@ -1,0 +1,3421 @@
+{
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "date": "2026-10-17",
+ "locks_at": "2026-10-17T12:00:00+00:00",
+ "fetched_at": "2026-10-15T17:14:47+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-edmonton-4402",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+ "bouts": [
+  {
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "a": "Joaquin Buckley",
+   "b": "Mike Malott",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "a": "Erin Blanchfield",
+   "b": "Jasmine Jasudavicius",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "a": "Cristian Perez",
+   "b": "Kyle Nelson",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "a": "Kyle Daukaus",
+   "b": "Marc-Andre Barriault",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Louis Jourdain vs Timothy Cuamba",
+   "a": "Louis Jourdain",
+   "b": "Timothy Cuamba",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "a": "Mandel Nallo",
+   "b": "Nate Landwehr",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "a": "Jhonata Diniz",
+   "b": "Tanner Boser",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "a": "Julien Leblanc",
+   "b": "Nick Galanti",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "a": "Javad Mahjoub",
+   "b": "Joel Faglier",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "a": "Katlyn Cerminara",
+   "b": "Mackenzie Stiller",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "a": "Chad Anheliger",
+   "b": "Steven Koslow",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "a": "Chelsea Chandler",
+   "b": "Melissa Croden",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cody Chovancek vs You Su-young",
+   "a": "Cody Chovancek",
+   "b": "You Su-young",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45248:ml:a",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Joaquin Buckley to win",
+   "odds": 112,
+   "p_fanduel": 0.4456
+  },
+  {
+   "id": "45248:ml:b",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mike Malott to win",
+   "odds": -142,
+   "p_fanduel": 0.5544
+  },
+  {
+   "id": "45248:distance:False",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -184,
+   "p_fanduel": 0.6106
+  },
+  {
+   "id": "45248:distance:True",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 142,
+   "p_fanduel": 0.3894
+  },
+  {
+   "id": "45248:ends_round:1",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 450,
+   "p_fanduel": 0.1623
+  },
+  {
+   "id": "45248:ends_round:2",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45248:ends_round:3",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45248:ends_round:4",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45248:ends_round:5",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "45248:method:a:DEC",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Joaquin Buckley by decision",
+   "odds": 500,
+   "p_fanduel": 0.1434
+  },
+  {
+   "id": "45248:method:a:KO/TKO",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Joaquin Buckley by KO/TKO",
+   "odds": 230,
+   "p_fanduel": 0.2607
+  },
+  {
+   "id": "45248:method:a:SUB",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Joaquin Buckley by submission",
+   "odds": 1800,
+   "p_fanduel": 0.0453
+  },
+  {
+   "id": "45248:method:b:DEC",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Mike Malott by decision",
+   "odds": 260,
+   "p_fanduel": 0.239
+  },
+  {
+   "id": "45248:method:b:KO/TKO",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Mike Malott by KO/TKO",
+   "odds": 380,
+   "p_fanduel": 0.1792
+  },
+  {
+   "id": "45248:method:b:SUB",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Mike Malott by submission",
+   "odds": 550,
+   "p_fanduel": 0.1324
+  },
+  {
+   "id": "45248:starts_round:2:False",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 460,
+   "p_fanduel": 0.1683
+  },
+  {
+   "id": "45248:starts_round:2:True",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -750,
+   "p_fanduel": 0.8317
+  },
+  {
+   "id": "45248:starts_round:3:False",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 210,
+   "p_fanduel": 0.3026
+  },
+  {
+   "id": "45248:starts_round:3:True",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -290,
+   "p_fanduel": 0.6974
+  },
+  {
+   "id": "45248:starts_round:4:False",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": 126,
+   "p_fanduel": 0.4183
+  },
+  {
+   "id": "45248:starts_round:4:True",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -160,
+   "p_fanduel": 0.5817
+  },
+  {
+   "id": "45248:starts_round:5:False",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "45248:starts_round:5:True",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "45248:win_round:a:1",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Joaquin Buckley in round 1",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45248:win_round:a:2",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Joaquin Buckley in round 2",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45248:win_round:a:3",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Joaquin Buckley in round 3",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45248:win_round:a:4",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Joaquin Buckley in round 4",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "45248:win_round:a:5",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Joaquin Buckley in round 5",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45248:win_round:b:1",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Mike Malott in round 1",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45248:win_round:b:2",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Mike Malott in round 2",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45248:win_round:b:3",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Mike Malott in round 3",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45248:win_round:b:4",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Mike Malott in round 4",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45248:win_round:b:5",
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Mike Malott in round 5",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "45249:ml:a",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Erin Blanchfield to win",
+   "odds": -350,
+   "p_fanduel": 0.7341
+  },
+  {
+   "id": "45249:ml:b",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jasmine Jasudavicius to win",
+   "odds": 255,
+   "p_fanduel": 0.2659
+  },
+  {
+   "id": "45249:distance:False",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 250,
+   "p_fanduel": 0.2699
+  },
+  {
+   "id": "45249:distance:True",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -340,
+   "p_fanduel": 0.7301
+  },
+  {
+   "id": "45249:ends_round:1",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45249:ends_round:2",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45249:ends_round:3",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45249:method:a:DEC",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Erin Blanchfield by decision",
+   "odds": -140,
+   "p_fanduel": 0.5085
+  },
+  {
+   "id": "45249:method:a:KO/TKO",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Erin Blanchfield by KO/TKO",
+   "odds": 1000,
+   "p_fanduel": 0.0793
+  },
+  {
+   "id": "45249:method:a:SUB",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Erin Blanchfield by submission",
+   "odds": 550,
+   "p_fanduel": 0.1341
+  },
+  {
+   "id": "45249:method:b:DEC",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Jasmine Jasudavicius by decision",
+   "odds": 390,
+   "p_fanduel": 0.1779
+  },
+  {
+   "id": "45249:method:b:KO/TKO",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Jasmine Jasudavicius by KO/TKO",
+   "odds": 2200,
+   "p_fanduel": 0.0379
+  },
+  {
+   "id": "45249:method:b:SUB",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Jasmine Jasudavicius by submission",
+   "odds": 1300,
+   "p_fanduel": 0.0623
+  },
+  {
+   "id": "45249:starts_round:2:False",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 640,
+   "p_fanduel": 0.1274
+  },
+  {
+   "id": "45249:starts_round:2:True",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1250,
+   "p_fanduel": 0.8726
+  },
+  {
+   "id": "45249:starts_round:3:False",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 340,
+   "p_fanduel": 0.2117
+  },
+  {
+   "id": "45249:starts_round:3:True",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -550,
+   "p_fanduel": 0.7883
+  },
+  {
+   "id": "45249:total:False:2.5",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 290,
+   "p_fanduel": 0.2437
+  },
+  {
+   "id": "45249:total:True:2.5",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -390,
+   "p_fanduel": 0.7563
+  },
+  {
+   "id": "45249:win_round:a:1",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Erin Blanchfield in round 1",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45249:win_round:a:2",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Erin Blanchfield in round 2",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45249:win_round:a:3",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Erin Blanchfield in round 3",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45249:win_round:b:1",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Jasmine Jasudavicius in round 1",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45249:win_round:b:2",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Jasmine Jasudavicius in round 2",
+   "odds": 2700,
+   "p_fanduel": 0.0319
+  },
+  {
+   "id": "45249:win_round:b:3",
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Jasmine Jasudavicius in round 3",
+   "odds": 3000,
+   "p_fanduel": 0.0288
+  },
+  {
+   "id": "45250:ml:a",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Cristian Perez to win",
+   "odds": -400,
+   "p_fanduel": 0.7549
+  },
+  {
+   "id": "45250:ml:b",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kyle Nelson to win",
+   "odds": 285,
+   "p_fanduel": 0.2451
+  },
+  {
+   "id": "45250:distance:False",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -590,
+   "p_fanduel": 0.8073
+  },
+  {
+   "id": "45250:distance:True",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 390,
+   "p_fanduel": 0.1927
+  },
+  {
+   "id": "45250:ends_round:1",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 115,
+   "p_fanduel": 0.4153
+  },
+  {
+   "id": "45250:ends_round:2",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 210,
+   "p_fanduel": 0.288
+  },
+  {
+   "id": "45250:ends_round:3",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "45250:method:a:DEC",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Cristian Perez by decision",
+   "odds": 600,
+   "p_fanduel": 0.1251
+  },
+  {
+   "id": "45250:method:a:KO/TKO",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Cristian Perez by KO/TKO",
+   "odds": 115,
+   "p_fanduel": 0.4073
+  },
+  {
+   "id": "45250:method:a:SUB",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Cristian Perez by submission",
+   "odds": 320,
+   "p_fanduel": 0.2085
+  },
+  {
+   "id": "45250:method:b:DEC",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kyle Nelson by decision",
+   "odds": 1200,
+   "p_fanduel": 0.0674
+  },
+  {
+   "id": "45250:method:b:KO/TKO",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kyle Nelson by KO/TKO",
+   "odds": 470,
+   "p_fanduel": 0.1536
+  },
+  {
+   "id": "45250:method:b:SUB",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Kyle Nelson by submission",
+   "odds": 2200,
+   "p_fanduel": 0.0381
+  },
+  {
+   "id": "45250:starts_round:2:False",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 128,
+   "p_fanduel": 0.4138
+  },
+  {
+   "id": "45250:starts_round:2:True",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -164,
+   "p_fanduel": 0.5862
+  },
+  {
+   "id": "45250:starts_round:3:False",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -280,
+   "p_fanduel": 0.6921
+  },
+  {
+   "id": "45250:starts_round:3:True",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 205,
+   "p_fanduel": 0.3079
+  },
+  {
+   "id": "45250:total:False:1.5",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -136,
+   "p_fanduel": 0.5499
+  },
+  {
+   "id": "45250:total:True:1.5",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 112,
+   "p_fanduel": 0.4501
+  },
+  {
+   "id": "45250:win_round:a:1",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Cristian Perez in round 1",
+   "odds": 175,
+   "p_fanduel": 0.3247
+  },
+  {
+   "id": "45250:win_round:a:2",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Cristian Perez in round 2",
+   "odds": 290,
+   "p_fanduel": 0.2289
+  },
+  {
+   "id": "45250:win_round:a:3",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Cristian Perez in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45250:win_round:b:1",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Kyle Nelson in round 1",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45250:win_round:b:2",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Kyle Nelson in round 2",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45250:win_round:b:3",
+   "bout": "Cristian Perez vs Kyle Nelson",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Kyle Nelson in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45251:ml:a",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Kyle Daukaus to win",
+   "odds": -210,
+   "p_fanduel": 0.6396
+  },
+  {
+   "id": "45251:ml:b",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Marc-Andre Barriault to win",
+   "odds": 162,
+   "p_fanduel": 0.3604
+  },
+  {
+   "id": "45251:distance:False",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -260,
+   "p_fanduel": 0.6813
+  },
+  {
+   "id": "45251:distance:True",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 196,
+   "p_fanduel": 0.3187
+  },
+  {
+   "id": "45251:ends_round:1",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 170,
+   "p_fanduel": 0.3307
+  },
+  {
+   "id": "45251:ends_round:2",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45251:ends_round:3",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45251:method:a:DEC",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Kyle Daukaus by decision",
+   "odds": 440,
+   "p_fanduel": 0.1615
+  },
+  {
+   "id": "45251:method:a:KO/TKO",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Kyle Daukaus by KO/TKO",
+   "odds": 280,
+   "p_fanduel": 0.2295
+  },
+  {
+   "id": "45251:method:a:SUB",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Kyle Daukaus by submission",
+   "odds": 270,
+   "p_fanduel": 0.2357
+  },
+  {
+   "id": "45251:method:b:DEC",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Marc-Andre Barriault by decision",
+   "odds": 470,
+   "p_fanduel": 0.153
+  },
+  {
+   "id": "45251:method:b:KO/TKO",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Marc-Andre Barriault by KO/TKO",
+   "odds": 400,
+   "p_fanduel": 0.1744
+  },
+  {
+   "id": "45251:method:b:SUB",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Marc-Andre Barriault by submission",
+   "odds": 1800,
+   "p_fanduel": 0.0459
+  },
+  {
+   "id": "45251:starts_round:2:False",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 180,
+   "p_fanduel": 0.3374
+  },
+  {
+   "id": "45251:starts_round:2:True",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -235,
+   "p_fanduel": 0.6626
+  },
+  {
+   "id": "45251:starts_round:3:False",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -140,
+   "p_fanduel": 0.5506
+  },
+  {
+   "id": "45251:starts_round:3:True",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 110,
+   "p_fanduel": 0.4494
+  },
+  {
+   "id": "45251:total:False:1.5",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": 116,
+   "p_fanduel": 0.4425
+  },
+  {
+   "id": "45251:total:True:1.5",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": -140,
+   "p_fanduel": 0.5575
+  },
+  {
+   "id": "45251:win_round:a:1",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Kyle Daukaus in round 1",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45251:win_round:a:2",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Kyle Daukaus in round 2",
+   "odds": 470,
+   "p_fanduel": 0.1566
+  },
+  {
+   "id": "45251:win_round:a:3",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Kyle Daukaus in round 3",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45251:win_round:b:1",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Marc-Andre Barriault in round 1",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45251:win_round:b:2",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Marc-Andre Barriault in round 2",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45251:win_round:b:3",
+   "bout": "Kyle Daukaus vs Marc-Andre Barriault",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Marc-Andre Barriault in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45253:ml:a",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Mandel Nallo to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45253:ml:b",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nate Landwehr to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45253:distance:False",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -1200,
+   "p_fanduel": 0.8708
+  },
+  {
+   "id": "45253:distance:True",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 630,
+   "p_fanduel": 0.1292
+  },
+  {
+   "id": "45253:ends_round:1",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -165,
+   "p_fanduel": 0.5559
+  },
+  {
+   "id": "45253:ends_round:2",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 290,
+   "p_fanduel": 0.2289
+  },
+  {
+   "id": "45253:ends_round:3",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "45253:method:a:DEC",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Mandel Nallo by decision",
+   "odds": 1200,
+   "p_fanduel": 0.0669
+  },
+  {
+   "id": "45253:method:a:KO/TKO",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Mandel Nallo by KO/TKO",
+   "odds": -130,
+   "p_fanduel": 0.4914
+  },
+  {
+   "id": "45253:method:a:SUB",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Mandel Nallo by submission",
+   "odds": 550,
+   "p_fanduel": 0.1338
+  },
+  {
+   "id": "45253:method:b:DEC",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Nate Landwehr by decision",
+   "odds": 1500,
+   "p_fanduel": 0.0543
+  },
+  {
+   "id": "45253:method:b:KO/TKO",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Nate Landwehr by KO/TKO",
+   "odds": 500,
+   "p_fanduel": 0.1449
+  },
+  {
+   "id": "45253:method:b:SUB",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Nate Landwehr by submission",
+   "odds": 700,
+   "p_fanduel": 0.1087
+  },
+  {
+   "id": "45253:starts_round:2:False",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -148,
+   "p_fanduel": 0.5631
+  },
+  {
+   "id": "45253:starts_round:2:True",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": 116,
+   "p_fanduel": 0.4369
+  },
+  {
+   "id": "45253:starts_round:3:False",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -550,
+   "p_fanduel": 0.7883
+  },
+  {
+   "id": "45253:starts_round:3:True",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 340,
+   "p_fanduel": 0.2117
+  },
+  {
+   "id": "45253:total:False:1.5",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -240,
+   "p_fanduel": 0.6733
+  },
+  {
+   "id": "45253:total:True:1.5",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 192,
+   "p_fanduel": 0.3267
+  },
+  {
+   "id": "45253:win_round:a:1",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Mandel Nallo in round 1",
+   "odds": 105,
+   "p_fanduel": 0.4355
+  },
+  {
+   "id": "45253:win_round:a:2",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Mandel Nallo in round 2",
+   "odds": 470,
+   "p_fanduel": 0.1566
+  },
+  {
+   "id": "45253:win_round:a:3",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Mandel Nallo in round 3",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45253:win_round:b:1",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Nate Landwehr in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45253:win_round:b:2",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Nate Landwehr in round 2",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45253:win_round:b:3",
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Nate Landwehr in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45254:ml:a",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jhonata Diniz to win",
+   "odds": -265,
+   "p_fanduel": 0.6853
+  },
+  {
+   "id": "45254:ml:b",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tanner Boser to win",
+   "odds": 200,
+   "p_fanduel": 0.3147
+  },
+  {
+   "id": "45254:distance:False",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -200,
+   "p_fanduel": 0.6287
+  },
+  {
+   "id": "45254:distance:True",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 154,
+   "p_fanduel": 0.3713
+  },
+  {
+   "id": "45254:ends_round:1",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 220,
+   "p_fanduel": 0.279
+  },
+  {
+   "id": "45254:ends_round:2",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45254:ends_round:3",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45254:method:a:DEC",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Jhonata Diniz by decision",
+   "odds": 350,
+   "p_fanduel": 0.1935
+  },
+  {
+   "id": "45254:method:a:KO/TKO",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jhonata Diniz by KO/TKO",
+   "odds": 105,
+   "p_fanduel": 0.4247
+  },
+  {
+   "id": "45254:method:a:SUB",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jhonata Diniz by submission",
+   "odds": 1800,
+   "p_fanduel": 0.0458
+  },
+  {
+   "id": "45254:method:b:DEC",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Tanner Boser by decision",
+   "odds": 430,
+   "p_fanduel": 0.1643
+  },
+  {
+   "id": "45254:method:b:KO/TKO",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Tanner Boser by KO/TKO",
+   "odds": 550,
+   "p_fanduel": 0.1339
+  },
+  {
+   "id": "45254:method:b:SUB",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Tanner Boser by submission",
+   "odds": 2200,
+   "p_fanduel": 0.0379
+  },
+  {
+   "id": "45254:starts_round:2:False",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 240,
+   "p_fanduel": 0.2771
+  },
+  {
+   "id": "45254:starts_round:2:True",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -330,
+   "p_fanduel": 0.7229
+  },
+  {
+   "id": "45254:starts_round:3:False",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -108,
+   "p_fanduel": 0.4896
+  },
+  {
+   "id": "45254:starts_round:3:True",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -118,
+   "p_fanduel": 0.5104
+  },
+  {
+   "id": "45254:total:False:2.5",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": -140,
+   "p_fanduel": 0.5575
+  },
+  {
+   "id": "45254:total:True:2.5",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": 116,
+   "p_fanduel": 0.4425
+  },
+  {
+   "id": "45254:win_round:a:1",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Jhonata Diniz in round 1",
+   "odds": 320,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "45254:win_round:a:2",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Jhonata Diniz in round 2",
+   "odds": 430,
+   "p_fanduel": 0.1685
+  },
+  {
+   "id": "45254:win_round:a:3",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jhonata Diniz in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45254:win_round:b:1",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Tanner Boser in round 1",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45254:win_round:b:2",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Tanner Boser in round 2",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "45254:win_round:b:3",
+   "bout": "Jhonata Diniz vs Tanner Boser",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Tanner Boser in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45255:ml:a",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Julien Leblanc to win",
+   "odds": 440,
+   "p_fanduel": 0.1747
+  },
+  {
+   "id": "45255:ml:b",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nick Galanti to win",
+   "odds": -700,
+   "p_fanduel": 0.8253
+  },
+  {
+   "id": "45255:distance:False",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -720,
+   "p_fanduel": 0.8285
+  },
+  {
+   "id": "45255:distance:True",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 450,
+   "p_fanduel": 0.1715
+  },
+  {
+   "id": "45255:ends_round:1",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -135,
+   "p_fanduel": 0.5129
+  },
+  {
+   "id": "45255:ends_round:2",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 270,
+   "p_fanduel": 0.2413
+  },
+  {
+   "id": "45255:ends_round:3",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45255:method:a:DEC",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Julien Leblanc by decision",
+   "odds": 1400,
+   "p_fanduel": 0.0582
+  },
+  {
+   "id": "45255:method:a:KO/TKO",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Julien Leblanc by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.092
+  },
+  {
+   "id": "45255:method:a:SUB",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Julien Leblanc by submission",
+   "odds": 2000,
+   "p_fanduel": 0.0416
+  },
+  {
+   "id": "45255:method:b:DEC",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Nick Galanti by decision",
+   "odds": 650,
+   "p_fanduel": 0.1165
+  },
+  {
+   "id": "45255:method:b:KO/TKO",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Nick Galanti by KO/TKO",
+   "odds": 360,
+   "p_fanduel": 0.1899
+  },
+  {
+   "id": "45255:method:b:SUB",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Nick Galanti by submission",
+   "odds": -135,
+   "p_fanduel": 0.5018
+  },
+  {
+   "id": "45255:starts_round:2:False",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -118,
+   "p_fanduel": 0.5127
+  },
+  {
+   "id": "45255:starts_round:2:True",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -106,
+   "p_fanduel": 0.4873
+  },
+  {
+   "id": "45255:starts_round:3:False",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -380,
+   "p_fanduel": 0.7455
+  },
+  {
+   "id": "45255:starts_round:3:True",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 270,
+   "p_fanduel": 0.2545
+  },
+  {
+   "id": "45255:total:False:1.5",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -190,
+   "p_fanduel": 0.6246
+  },
+  {
+   "id": "45255:total:True:1.5",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": 154,
+   "p_fanduel": 0.3754
+  },
+  {
+   "id": "45255:win_round:a:1",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Julien Leblanc in round 1",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45255:win_round:a:2",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Julien Leblanc in round 2",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45255:win_round:a:3",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Julien Leblanc in round 3",
+   "odds": 3300,
+   "p_fanduel": 0.0263
+  },
+  {
+   "id": "45255:win_round:b:1",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Nick Galanti in round 1",
+   "odds": -105,
+   "p_fanduel": 0.4573
+  },
+  {
+   "id": "45255:win_round:b:2",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Nick Galanti in round 2",
+   "odds": 340,
+   "p_fanduel": 0.2029
+  },
+  {
+   "id": "45255:win_round:b:3",
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Nick Galanti in round 3",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45256:ml:a",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Javad Mahjoub to win",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "45256:ml:b",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Joel Faglier to win",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "45256:distance:False",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -350,
+   "p_fanduel": 0.7341
+  },
+  {
+   "id": "45256:distance:True",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 255,
+   "p_fanduel": 0.2659
+  },
+  {
+   "id": "45256:ends_round:1",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 125,
+   "p_fanduel": 0.3968
+  },
+  {
+   "id": "45256:ends_round:2",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 280,
+   "p_fanduel": 0.235
+  },
+  {
+   "id": "45256:ends_round:3",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "45256:method:a:DEC",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Javad Mahjoub by decision",
+   "odds": 550,
+   "p_fanduel": 0.133
+  },
+  {
+   "id": "45256:method:a:KO/TKO",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Javad Mahjoub by KO/TKO",
+   "odds": 380,
+   "p_fanduel": 0.1801
+  },
+  {
+   "id": "45256:method:a:SUB",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Javad Mahjoub by submission",
+   "odds": 420,
+   "p_fanduel": 0.1662
+  },
+  {
+   "id": "45256:method:b:DEC",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Joel Faglier by decision",
+   "odds": 550,
+   "p_fanduel": 0.133
+  },
+  {
+   "id": "45256:method:b:KO/TKO",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Joel Faglier by KO/TKO",
+   "odds": 420,
+   "p_fanduel": 0.1662
+  },
+  {
+   "id": "45256:method:b:SUB",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Joel Faglier by submission",
+   "odds": 290,
+   "p_fanduel": 0.2216
+  },
+  {
+   "id": "45256:starts_round:2:False",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 138,
+   "p_fanduel": 0.3982
+  },
+  {
+   "id": "45256:starts_round:2:True",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -174,
+   "p_fanduel": 0.6018
+  },
+  {
+   "id": "45256:starts_round:3:False",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -196,
+   "p_fanduel": 0.6234
+  },
+  {
+   "id": "45256:starts_round:3:True",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 150,
+   "p_fanduel": 0.3766
+  },
+  {
+   "id": "45256:total:False:1.5",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "total",
+    false,
+    1.5
+   ],
+   "selection": "Under 1.5 rounds",
+   "odds": -116,
+   "p_fanduel": 0.5107
+  },
+  {
+   "id": "45256:total:True:1.5",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "total",
+    true,
+    1.5
+   ],
+   "selection": "Over 1.5 rounds",
+   "odds": -106,
+   "p_fanduel": 0.4893
+  },
+  {
+   "id": "45256:win_round:a:1",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Javad Mahjoub in round 1",
+   "odds": 360,
+   "p_fanduel": 0.1941
+  },
+  {
+   "id": "45256:win_round:a:2",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Javad Mahjoub in round 2",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45256:win_round:a:3",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Javad Mahjoub in round 3",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "45256:win_round:b:1",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Joel Faglier in round 1",
+   "odds": 330,
+   "p_fanduel": 0.2076
+  },
+  {
+   "id": "45256:win_round:b:2",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Joel Faglier in round 2",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45256:win_round:b:3",
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Joel Faglier in round 3",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45257:ml:a",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Katlyn Cerminara to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45257:ml:b",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mackenzie Stiller to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45257:distance:False",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 210,
+   "p_fanduel": 0.3045
+  },
+  {
+   "id": "45257:distance:True",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -280,
+   "p_fanduel": 0.6955
+  },
+  {
+   "id": "45257:ends_round:1",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45257:ends_round:2",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45257:ends_round:3",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45257:method:a:DEC",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Katlyn Cerminara by decision",
+   "odds": -155,
+   "p_fanduel": 0.5304
+  },
+  {
+   "id": "45257:method:a:KO/TKO",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Katlyn Cerminara by KO/TKO",
+   "odds": 650,
+   "p_fanduel": 0.1163
+  },
+  {
+   "id": "45257:method:a:SUB",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Katlyn Cerminara by submission",
+   "odds": 1700,
+   "p_fanduel": 0.0485
+  },
+  {
+   "id": "45257:method:b:DEC",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Mackenzie Stiller by decision",
+   "odds": 600,
+   "p_fanduel": 0.1246
+  },
+  {
+   "id": "45257:method:b:KO/TKO",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Mackenzie Stiller by KO/TKO",
+   "odds": 1800,
+   "p_fanduel": 0.0459
+  },
+  {
+   "id": "45257:method:b:SUB",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Mackenzie Stiller by submission",
+   "odds": 550,
+   "p_fanduel": 0.1342
+  },
+  {
+   "id": "45257:starts_round:2:False",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 570,
+   "p_fanduel": 0.141
+  },
+  {
+   "id": "45257:starts_round:2:True",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1000,
+   "p_fanduel": 0.859
+  },
+  {
+   "id": "45257:starts_round:3:False",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 290,
+   "p_fanduel": 0.2418
+  },
+  {
+   "id": "45257:starts_round:3:True",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -410,
+   "p_fanduel": 0.7582
+  },
+  {
+   "id": "45257:total:False:2.5",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 250,
+   "p_fanduel": 0.2727
+  },
+  {
+   "id": "45257:total:True:2.5",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -320,
+   "p_fanduel": 0.7273
+  },
+  {
+   "id": "45257:win_round:a:1",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Katlyn Cerminara in round 1",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45257:win_round:a:2",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Katlyn Cerminara in round 2",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45257:win_round:a:3",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Katlyn Cerminara in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45257:win_round:b:1",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Mackenzie Stiller in round 1",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45257:win_round:b:2",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Mackenzie Stiller in round 2",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45257:win_round:b:3",
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Mackenzie Stiller in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45258:ml:a",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Chad Anheliger to win",
+   "odds": 132,
+   "p_fanduel": 0.4064
+  },
+  {
+   "id": "45258:ml:b",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Steven Koslow to win",
+   "odds": -170,
+   "p_fanduel": 0.5936
+  },
+  {
+   "id": "45258:distance:False",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -192,
+   "p_fanduel": 0.6199
+  },
+  {
+   "id": "45258:distance:True",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 148,
+   "p_fanduel": 0.3801
+  },
+  {
+   "id": "45258:ends_round:1",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 200,
+   "p_fanduel": 0.2976
+  },
+  {
+   "id": "45258:ends_round:2",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 330,
+   "p_fanduel": 0.2076
+  },
+  {
+   "id": "45258:ends_round:3",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45258:method:a:DEC",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Chad Anheliger by decision",
+   "odds": 310,
+   "p_fanduel": 0.2128
+  },
+  {
+   "id": "45258:method:a:KO/TKO",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Chad Anheliger by KO/TKO",
+   "odds": 550,
+   "p_fanduel": 0.1342
+  },
+  {
+   "id": "45258:method:a:SUB",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Chad Anheliger by submission",
+   "odds": 1100,
+   "p_fanduel": 0.0727
+  },
+  {
+   "id": "45258:method:b:DEC",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Steven Koslow by decision",
+   "odds": 470,
+   "p_fanduel": 0.153
+  },
+  {
+   "id": "45258:method:b:KO/TKO",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Steven Koslow by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.0918
+  },
+  {
+   "id": "45258:method:b:SUB",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Steven Koslow by submission",
+   "odds": 160,
+   "p_fanduel": 0.3355
+  },
+  {
+   "id": "45258:starts_round:2:False",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 220,
+   "p_fanduel": 0.2941
+  },
+  {
+   "id": "45258:starts_round:2:True",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -300,
+   "p_fanduel": 0.7059
+  },
+  {
+   "id": "45258:starts_round:3:False",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -112,
+   "p_fanduel": 0.4959
+  },
+  {
+   "id": "45258:starts_round:3:True",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -116,
+   "p_fanduel": 0.5041
+  },
+  {
+   "id": "45258:total:False:2.5",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": -138,
+   "p_fanduel": 0.5537
+  },
+  {
+   "id": "45258:total:True:2.5",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": 114,
+   "p_fanduel": 0.4463
+  },
+  {
+   "id": "45258:win_round:a:1",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Chad Anheliger in round 1",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45258:win_round:a:2",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Chad Anheliger in round 2",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45258:win_round:a:3",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Chad Anheliger in round 3",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45258:win_round:b:1",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Steven Koslow in round 1",
+   "odds": 320,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "45258:win_round:b:2",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Steven Koslow in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45258:win_round:b:3",
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Steven Koslow in round 3",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45259:ml:a",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Chelsea Chandler to win",
+   "odds": 240,
+   "p_fanduel": 0.2771
+  },
+  {
+   "id": "45259:ml:b",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Melissa Croden to win",
+   "odds": -330,
+   "p_fanduel": 0.7229
+  },
+  {
+   "id": "45259:distance:False",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 104,
+   "p_fanduel": 0.4628
+  },
+  {
+   "id": "45259:distance:True",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -132,
+   "p_fanduel": 0.5372
+  },
+  {
+   "id": "45259:ends_round:1",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 350,
+   "p_fanduel": 0.1984
+  },
+  {
+   "id": "45259:ends_round:2",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 450,
+   "p_fanduel": 0.1623
+  },
+  {
+   "id": "45259:ends_round:3",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45259:method:a:DEC",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Chelsea Chandler by decision",
+   "odds": 500,
+   "p_fanduel": 0.1442
+  },
+  {
+   "id": "45259:method:a:KO/TKO",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Chelsea Chandler by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.0911
+  },
+  {
+   "id": "45259:method:a:SUB",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Chelsea Chandler by submission",
+   "odds": 1200,
+   "p_fanduel": 0.0666
+  },
+  {
+   "id": "45259:method:b:DEC",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Melissa Croden by decision",
+   "odds": 135,
+   "p_fanduel": 0.3683
+  },
+  {
+   "id": "45259:method:b:KO/TKO",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Melissa Croden by KO/TKO",
+   "odds": 340,
+   "p_fanduel": 0.1967
+  },
+  {
+   "id": "45259:method:b:SUB",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Melissa Croden by submission",
+   "odds": 550,
+   "p_fanduel": 0.1331
+  },
+  {
+   "id": "45259:starts_round:2:False",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 370,
+   "p_fanduel": 0.1989
+  },
+  {
+   "id": "45259:starts_round:2:True",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -600,
+   "p_fanduel": 0.8011
+  },
+  {
+   "id": "45259:starts_round:3:False",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 164,
+   "p_fanduel": 0.3569
+  },
+  {
+   "id": "45259:starts_round:3:True",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -215,
+   "p_fanduel": 0.6431
+  },
+  {
+   "id": "45259:total:False:2.5",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "total",
+    false,
+    2.5
+   ],
+   "selection": "Under 2.5 rounds",
+   "odds": 132,
+   "p_fanduel": 0.4108
+  },
+  {
+   "id": "45259:total:True:2.5",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "total",
+    true,
+    2.5
+   ],
+   "selection": "Over 2.5 rounds",
+   "odds": -162,
+   "p_fanduel": 0.5892
+  },
+  {
+   "id": "45259:win_round:a:1",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Chelsea Chandler in round 1",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45259:win_round:a:2",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Chelsea Chandler in round 2",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45259:win_round:a:3",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Chelsea Chandler in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45259:win_round:b:1",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Melissa Croden in round 1",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45259:win_round:b:2",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Melissa Croden in round 2",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "45259:win_round:b:3",
+   "bout": "Chelsea Chandler vs Melissa Croden",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Melissa Croden in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  }
+ ]
+}
