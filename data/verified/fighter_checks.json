@@ -156,6 +156,8 @@
 "stats_verified": "6"
 },
 "Acacio dos Santos": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (201 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -661,6 +663,9 @@
 "stats_official": "9"
 },
 "Alexandre Barros": {
+"stats_official": "1"
+},
+"Alexandre Dantas": {
 "stats_official": "1"
 },
 "Alexandre Ferreira": {
@@ -1635,6 +1640,12 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "3",
 "stats_verified": "1"
+},
+"Aziz Khaydarov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (183 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Azunna Anyanwu": {
 "dob": "Sherdog + UFCStats agree",
@@ -3121,6 +3132,8 @@
 "stats_official": "1"
 },
 "Chasen Blair": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -5037,6 +5050,8 @@
 "stats_official": "2"
 },
 "Don Shainis": {
+"dob": "disputed: Sherdog 1991-09-16, UFCStats 1990-09-16",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_verified": "2"
 },
@@ -7578,6 +7593,8 @@
 "stats_official": "1"
 },
 "Jair de Oliveira": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -10226,7 +10243,7 @@
 },
 "Kazuhiro Nakamura": {
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
-"stats_official": "10"
+"stats_official": "11"
 },
 "Kazuhisa Watanabe": {
 "stats_official": "1"
@@ -11680,6 +11697,8 @@
 "stats_verified": "1"
 },
 "Mahamed Aly": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (198 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -11825,6 +11844,10 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "6",
 "stats_verified": "2"
+},
+"Mansher Khera": {
+"reach": "UFCStats only (173 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Mansur Abdul-Malik": {
 "dob": "Sherdog + UFCStats agree",
@@ -12133,7 +12156,7 @@
 "stats_official": "3"
 },
 "Mario Sperry": {
-"stats_official": "3"
+"stats_official": "4"
 },
 "Marion Reneau": {
 "dob": "Sherdog + UFCStats agree",
@@ -12894,6 +12917,8 @@
 "stats_verified": "2"
 },
 "Michal Martinek": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Michal Oleksiejczuk": {
@@ -14482,6 +14507,8 @@
 "stats_verified": "3"
 },
 "Pedro Nobre": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Pedro Rizzo": {
@@ -14705,6 +14732,8 @@
 "stats_official": "1"
 },
 "Quang Le": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "3"
@@ -14976,6 +15005,8 @@
 "stats_official": "3"
 },
 "Raphael Uchegbu": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15193,6 +15224,8 @@
 "stats_official": "2"
 },
 "Ricardo Prasel": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (198 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -17656,7 +17689,7 @@
 },
 "Tito Ortiz": {
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
-"stats_official": "16"
+"stats_official": "17"
 },
 "Toby Misech": {
 "dob": "Sherdog + UFCStats agree",
@@ -18914,7 +18947,9 @@
 "stats_official": "1"
 },
 "Yuki Kondo": {
-"stats_official": "6"
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"stats_official": "10"
 },
 "Yuki Sasaki": {
 "stats_official": "1"

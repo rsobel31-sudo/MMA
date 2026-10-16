@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-15",
+ "fetched": "2026-10-16",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -891,20 +891,6 @@
     },
     {
      "order": 9,
-     "segment": "Fight card",
-     "weight_class": "Bantamweight",
-     "a": "Adrian Ya\u00f1ez",
-     "b": "Juan D\u00edaz",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
      "segment": "Announced",
      "weight_class": "Middleweight",
      "a": "Donte Johnson",
@@ -915,7 +901,7 @@
      "main_event": false
     },
     {
-     "order": 11,
+     "order": 10,
      "segment": "Announced",
      "weight_class": "Lightweight",
      "a": "Jared Gordon",
@@ -926,7 +912,7 @@
      "main_event": false
     },
     {
-     "order": 12,
+     "order": 11,
      "segment": "Announced",
      "weight_class": "Lightweight",
      "a": "Evan Elder",
@@ -948,7 +934,7 @@
   },
   {
    "name": "UFC Fight Night 295",
-   "date": "2026-11-28",
+   "date": "2026-12-05",
    "venue": "TBA",
    "location": "Riyadh, Saudi Arabia",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295",
@@ -956,9 +942,9 @@
     {
      "order": 0,
      "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Abdul Hussein",
-     "b": "Hecher Sosa",
+     "weight_class": "Middleweight",
+     "a": "Israel Adesanya",
+     "b": "Sharabutdin Magomedov",
      "title": false,
      "result": "",
      "rounds": 5,
@@ -966,6 +952,17 @@
     },
     {
      "order": 1,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Abdul Hussein",
+     "b": "Hecher Sosa",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
      "segment": "Announced",
      "weight_class": "Middleweight",
      "a": "Matthieu Letho Duclos",
@@ -1015,20 +1012,6 @@
     {
      "order": 2,
      "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Joe Pyfer",
-     "b": "Bo Nickal",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Fight card",
      "weight_class": "Flyweight",
      "a": "Brandon Moreno",
      "b": "Charles Johnson",
@@ -1041,7 +1024,7 @@
      "main_event": false
     },
     {
-     "order": 4,
+     "order": 3,
      "segment": "Fight card",
      "weight_class": "Women's Flyweight",
      "a": "Maycee Barber",
@@ -1055,7 +1038,7 @@
      "main_event": false
     },
     {
-     "order": 5,
+     "order": 4,
      "segment": "Fight card",
      "weight_class": "Light Heavyweight",
      "a": "Quentin Pasley",
@@ -1065,6 +1048,17 @@
      "decided": false,
      "round": "",
      "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 5,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Chase Hooper",
+     "b": "Chris Padilla",
+     "title": false,
+     "result": "",
      "rounds": 3,
      "main_event": false
     }
