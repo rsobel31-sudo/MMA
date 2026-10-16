@@ -9,7 +9,7 @@
    "favours": "Mike Malott",
    "logit": 0.0,
    "confidence": "low",
-   "reasoning": "Buckley's two straight losses came to elite wrestlers (Usman, Brady); Malott is a long kickboxer with submissions, not a chain wrestler, so the fight Buckley lost twice isn't the obvious one here. Against that, Malott faded and was stopped late by Magny and has never gone five rounds, and Buckley's power grows in rounds two and three. Home crowd for Malott. Model and market agree; no lean.",
+   "reasoning": "Buckley's two straight losses came to elite wrestlers (Usman, Brady); Malott is a long kickboxer with submissions, not a chain wrestler, so the fight Buckley lost twice isn't the obvious one here. Against that, Malott faded and was stopped late by Magny and has never gone five rounds, and Buckley's power grows in rounds two and three. Home crowd for Malott, who calls this the best camp of his career. Pundits go 12-7 Malott with no proven picker apart. Model and market agree; no lean.",
    "factors": [
     "Malott's five-round cardio (against)",
     "Buckley's trouble off his back",
@@ -19,9 +19,143 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.46,
-   "p_market": 0.468,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.445,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Joaquin Buckley",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Joaquin Buckley",
+     "method": "KO/TKO",
+     "url": "https://mmasucka.com/predictions/ufc-fight-night-buckley-vs-mallott-betting-tips/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Mike Malott",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-edmonton-141082"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Mike Malott",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Mike Malott",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Joaquin Buckley",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Mike Malott",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Mike Malott",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Joaquin Buckley",
+     "method": "",
+     "url": "https://vsin.com/mma/ufc-edmonton-malott-vs-buckley-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Joaquin Buckley",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/joaquin-buckley-vs-mike-malott-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Mike Malott",
+     "method": "DEC",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Mike Malott",
+     "method": "",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Mike Malott",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-buckley-malott-fight-card-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Joaquin Buckley",
+     "method": "",
+     "url": "https://rg.org/en-ca/news/mma/malott-vs-buckley-jasudavicius-vs-blanchfield-ufc-edmonton-odds"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Mike Malott",
+     "method": "",
+     "url": "https://www.pickswise.com/ufc/news/ufc-fight-night-291-best-bets-mike-malott-vs-joaquin-buckley/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Mike Malott",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    },
+    {
+     "outlet": "Fight Matrix",
+     "author": "Vitaliy Vovk",
+     "pick": "Mike Malott",
+     "method": "DEC",
+     "url": "https://www.fightmatrix.com/2026/10/12/ufc-fight-night-291-joaquin-buckley-vs-mike-malott-fight-preview-and-prediction/"
+    },
+    {
+     "outlet": "The Grueling Truth",
+     "author": "James Ernest",
+     "pick": "Mike Malott",
+     "method": "SUB",
+     "url": "https://thegruelingtruth.com/mma/ufc-fight-night-buckley-vs-malott-prediction/"
+    },
+    {
+     "outlet": "FightDesk (Substack)",
+     "author": "Anthony Lopez",
+     "pick": "Joaquin Buckley",
+     "method": "KO/TKO",
+     "url": "https://fightdesk.substack.com/p/ufc-fight-night-buckley-vs-malott"
+    }
+   ]
   },
   {
    "a": "Erin Blanchfield",
@@ -38,9 +172,115 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.74,
-   "p_market": 0.746,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.736,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-edmonton-141082"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Erin Blanchfield",
+     "method": "SUB",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Jasmine Jasudavicius",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/erin-blanchfield-vs-jasmine-jasudavicius-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "TWSN (via Yardbarker)",
+     "author": "Devin Jasso",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://www.yardbarker.com/mma/articles/erin_blanchfield_to_dominate_jasmine_jasudavicius_ufc_edmonton_breakdowns_picks_and_predictions/s1_17814_44433991"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Erin Blanchfield",
+     "method": "",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-erin-blanchfield-jasmine-jasudavicius-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Jasmine Jasudavicius",
+     "method": "",
+     "url": "https://rg.org/en-ca/news/mma/malott-vs-buckley-jasudavicius-vs-blanchfield-ufc-edmonton-odds"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://www.pickswise.com/ufc/news/ufc-fight-night-291-best-bets-mike-malott-vs-joaquin-buckley/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Erin Blanchfield",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Cristian Perez",
@@ -57,9 +297,87 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.67,
-   "p_market": 0.746,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.756,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Cristian Perez",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Cristian Perez",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Andrew Richardson",
+     "pick": "Kyle Nelson",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-edmonton-125500627.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Cristian Perez",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Cristian Perez",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Cristian Perez",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Kyle Nelson",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/kyle-nelson-vs-cristian-perez-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Cristian Perez",
+     "method": "DEC",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Cristian Perez",
+     "method": "KO/TKO",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Cristian Perez",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-kyle-nelson-cristian-perez-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Cristian Perez",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Kyle Daukaus",
@@ -75,10 +393,109 @@
    ],
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
-   "p_model": 0.74,
-   "p_market": 0.654,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_model": 0.75,
+   "p_market": 0.634,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Kyle Daukaus",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Kyle Daukaus",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-edmonton-141082"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Kyle Daukaus",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Andrew Richardson",
+     "pick": "Kyle Daukaus",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-edmonton-125500627.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Marc-Andre Barriault",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Kyle Daukaus",
+     "method": "SUB",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Marc-Andre Barriault",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Kyle Daukaus",
+     "method": "SUB",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Kyle Daukaus",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/marc-andre-barriault-vs-kyle-daukaus-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Kyle Daukaus",
+     "method": "SUB",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Kyle Daukaus",
+     "method": "SUB",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Marc-Andre Barriault",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-marc-andre-barriault-kyle-daukus-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Kyle Daukaus",
+     "method": "",
+     "url": "https://rg.org/en-ca/news/mma/malott-vs-buckley-jasudavicius-vs-blanchfield-ufc-edmonton-odds"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Kyle Daukaus",
+     "method": "SUB",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Mandel Nallo",
@@ -95,9 +512,101 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.69,
-   "p_market": 0.726,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.707,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Mandel Nallo",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Mandel Nallo",
+     "method": "",
+     "url": "https://mmasucka.com/predictions/ufc-fight-night-buckley-vs-mallott-betting-tips/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Nate Landwehr",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Andrew Richardson",
+     "pick": "Mandel Nallo",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-edmonton-125500627.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Mandel Nallo",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Nate Landwehr",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Mandel Nallo",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Nate Landwehr",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/mandel-nallo-vs-nate-landwehr-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Mandel Nallo",
+     "method": "KO/TKO",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Mandel Nallo",
+     "method": "DEC",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Mandel Nallo",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-mandel-nallo-nate-landwehr-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Mandel Nallo",
+     "method": "",
+     "url": "https://rg.org/en-ca/news/mma/malott-vs-buckley-jasudavicius-vs-blanchfield-ufc-edmonton-odds"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Mandel Nallo",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Jhonata Diniz",
@@ -113,10 +622,74 @@
    ],
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
-   "p_model": 0.76,
-   "p_market": 0.704,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_model": 0.74,
+   "p_market": 0.68,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Tanner Boser",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Jhonata Diniz",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Jhonata Diniz",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Tanner Boser",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Tanner Boser",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Jhonata Diniz",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Tanner Boser",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/tanner-boser-vs-jhonata-diniz-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Jhonata Diniz",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-tanner-boser-jhonata-diniz-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Jhonata Diniz",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Julien Leblanc",
@@ -132,10 +705,60 @@
    ],
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
-   "p_model": 0.32,
-   "p_market": 0.16,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_model": 0.29,
+   "p_market": 0.176,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Nick Galanti",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Nick Galanti",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Nick Galanti",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Julien Leblanc",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Nick Galanti",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Nick Galanti",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/julien-leblanc-vs-nick-galanti-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Nick Galanti",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Javad Mahjoub",
@@ -143,7 +766,7 @@
    "favours": "Javad Mahjoub",
    "logit": 0.1,
    "confidence": "low",
-   "reasoning": "Faglier took this on two and a half weeks' notice for his UFC debut against regional opposition, and his top game runs into a two-time Olympic judoka. Mahjoub's age (35) and thin MMA experience keep it small.",
+   "reasoning": "Faglier took this on two and a half weeks' notice for his UFC debut against regional opposition, and his top game runs into a two-time Olympic judoka. Mahjoub's age (35) and thin MMA experience keep it small, and the market has moved to Faglier (-140) while the pundits split 4-4.",
    "factors": [
     "Faglier on short notice",
     "Mahjoub's Olympic judo",
@@ -151,10 +774,67 @@
    ],
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
-   "p_model": 0.4,
-   "p_market": 0.522,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_model": 0.39,
+   "p_market": 0.447,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Javad Mahjoub",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Joel Faglier",
+     "method": "KO/TKO",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-edmonton-141082"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Joel Faglier",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Joel Faglier",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Javad Mahjoub",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Javad Mahjoub",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Joel Faglier",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Javad Mahjoub",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Katlyn Cerminara",
@@ -171,9 +851,73 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.55,
-   "p_market": 0.726,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.707,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Mackenzie Stiller",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Katlyn Cerminara",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-edmonton-141082"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Katlyn Cerminara",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Katlyn Cerminara",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Katlyn Cerminara",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Katlyn Cerminara",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Katlyn Cerminara",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Katlyn Cerminara",
+     "method": "DEC",
+     "url": "https://vsin.com/mma/ufc-edmonton-malott-vs-buckley-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Katlyn Cerminara",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Chad Anheliger",
@@ -190,9 +934,59 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": 0.47,
-   "p_market": 0.512,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.408,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Steven Koslow",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Steven Koslow",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Chad Anheliger",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Chad Anheliger",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Steven Koslow",
+     "method": "SUB",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Chad Anheliger",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/chad-anheliger-vs-steven-koslow-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Chad Anheliger",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Chelsea Chandler",
@@ -200,7 +994,7 @@
    "favours": "Melissa Croden",
    "logit": 0.1,
    "confidence": "low",
-   "reasoning": "Chandler has missed weight at 135 twice and says she has been fighting through injuries; Croden has never been finished and builds late. Chandler's early power and armbar are the danger, so the lean stays small.",
+   "reasoning": "Chandler has missed weight at 135 twice and says she has been fighting through injuries; Croden has never been finished and builds late. Chandler's early power and armbar are the danger, so the lean stays small. Both made weight (Croden's number is blank on the published results but no miss was reported).",
    "factors": [
     "Chandler's weight cut and injuries",
     "Croden's durability and late pressure",
@@ -208,10 +1002,81 @@
    ],
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
-   "p_model": 0.39,
-   "p_market": 0.293,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_model": 0.4,
+   "p_market": 0.28,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://mmasucka.com/predictions/ufc-fight-night-buckley-vs-mallott-betting-tips/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Melissa Croden",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Chelsea Chandler",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/melissa-croden-vs-chelsea-chandler-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Melissa Croden",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-melissa-croden-chelsea-chandler-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Melissa Croden",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Louis Jourdain",
@@ -228,9 +1093,94 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": null,
-   "p_market": null,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.614,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Timothy Cuamba",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Louis Jourdain",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Andrew Richardson",
+     "pick": "Louis Jourdain",
+     "method": "SUB",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-edmonton-125500627.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Timothy Cuamba",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Louis Jourdain",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Louis Jourdain",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Louis Jourdain",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Louis Jourdain",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/louis-jourdain-vs-timmy-cuamba-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "World in Sport",
+     "author": "Adam Davis",
+     "pick": "Louis Jourdain",
+     "method": "DEC",
+     "url": "https://worldinsport.com/buckley-malott-ufc-edmonton-preview-predictions/"
+    },
+    {
+     "outlet": "BestFightOdds",
+     "author": "Garrett Kerman",
+     "pick": "Louis Jourdain",
+     "method": "DEC",
+     "url": "https://www.bestfightodds.com/news/ufc-edmonton-picks-odds-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Louis Jourdain",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-louis-jourdain-timmy-cuamba-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Louis Jourdain",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   },
   {
    "a": "Cody Chovancek",
@@ -247,9 +1197,73 @@
    "event": "UFC Fight Night: Buckley vs. Malott",
    "date": "2026-10-17",
    "p_model": null,
-   "p_market": 0.581,
-   "created": "2026-10-13T16:20:00+00:00",
-   "pundits": []
+   "p_market": 0.545,
+   "created": "2026-10-16T17:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Cody Chovancek",
+     "method": "SUB",
+     "url": "https://www.wagertalk.com/news/mma/ufc-fight-night-buckley-vs-malott-picks-predictions-and-odds-october-17-2026/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Cody Chovancek",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-edmonton-buckley-vs-malott-dfs-analysis-drakes-takes-141200"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "You Su-young",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-best-betting-props-031100192.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Cody Chovancek",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Cody Chovancek",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-edmonton-buckley-vs-malott-preview-and-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Cody Chovancek",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-edmonton-joaquin-buckley-v-mike"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "You Su-young",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/cody-chovancek-vs-suyoung-you-pick-10-17-2026-predictions-ufc-edmonton-odds.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "You Su-young",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/edmonton-cody-chovencek-suyoung-you-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Cody Chovancek",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
+    }
+   ]
   }
  ]
 }

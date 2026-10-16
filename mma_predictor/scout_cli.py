@@ -144,7 +144,9 @@ def cmd_card(args) -> int:
             r = _report(name)
             row.append(f"{name} [{('report ' + r['updated'][:10]) if r else 'NO REPORT'}]")
         print("  " + "  vs  ".join(row))
-        mine = [p for p in pun.rows if not p.get("grade") and {p["a"], p["b"]} == {b["a"], b["b"]}]
+        from .sources.wikipedia import match_key
+        bout = {match_key(b["a"]), match_key(b["b"])}  # accent-insensitive: the card says Pérez, picks say Perez
+        mine = [p for p in pun.rows if not p.get("grade") and {match_key(p["a"]), match_key(p["b"])} == bout]
         cs = pundit_consensus(mine, board)
         if cs:
             print(f"      pundits: {cs['pick']} {cs['share']:.0%} weighted by track record ({cs['raw_share']:.0%} by headcount, {cs['n']} picks)")

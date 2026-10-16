@@ -1,0 +1,31 @@
+{
+ "note": "A card of finishers against fighters with a history of getting finished: Nelson and Landwehr stopped in their last losses, Leblanc tapped in round one on a bad knee, Barriault 1-5 and open to chokes. One override of the model: Jourdain, whom the model barely knows. At the top, Malott at home over five rounds on the cards, Blanchfield's grappling over Jasudavicius, and Cerminara's range over a short-notice strawweight.",
+ "picks": [
+  {"bout": "Joaquin Buckley vs Mike Malott", "winner": "Mike Malott", "method": "DEC", "confidence": 0.55,
+   "why": "Malott's length and kicking at range, at home, after what he calls the best camp of his career; Buckley loses when he can't land the big shot. Buckley's two losses went the distance and Malott's cardio past round three is unproven, so a decision rather than a finish."},
+  {"bout": "Erin Blanchfield vs Jasmine Jasudavicius", "winner": "Erin Blanchfield", "method": "DEC", "confidence": 0.73,
+   "why": "Blanchfield's back takes punish the wrestling exchanges Jasudavicius needs; Jasudavicius has been stopped only once and Blanchfield's UFC wins mostly go the distance: decision."},
+  {"bout": "Kyle Nelson vs Cristian Pérez", "winner": "Cristian Pérez", "method": "KO/TKO", "round": 1, "confidence": 0.73,
+   "why": "Nelson was stopped in round one in both of his last two losses (24 seconds by McKinney); Pérez has finished 12 of 15, seven in round one, and fades late, so his best chance and Nelson's worst both fall early: R1."},
+  {"bout": "Marc-André Barriault vs Kyle Daukaus", "winner": "Kyle Daukaus", "method": "SUB", "round": 1, "confidence": 0.65,
+   "why": "Daukaus's front-headlock chokes against a forward-pressing brawler who is 1-5 in his last six; both of his 2025 wins were sub-minute finishes and eight of his finishes came in round one, while Barriault's three stoppage losses mostly came early: R1."},
+  {"bout": "Louis Jourdain vs Timothy Cuamba", "winner": "Louis Jourdain", "method": "DEC", "confidence": 0.58,
+   "why": "Override: the model knows little of Jourdain's regional record and sides with Cuamba, but Cuamba has been taken down and choked twice recently and struggles going backwards; the market and the pundits (10-2) have Jourdain. A first UFC fight after a year out, so the cards rather than a finish."},
+  {"bout": "Mandel Nallo vs Nate Landwehr", "winner": "Mandel Nallo", "method": "KO/TKO", "round": 1, "confidence": 0.72,
+   "why": "Twelve of Nallo's 14 wins came in round one, and Landwehr, 38 and moving up, has been knocked out three straight times while walking forward: R1."},
+  {"bout": "Tanner Boser vs Jhonata Diniz", "winner": "Jhonata Diniz", "method": "KO/TKO", "round": 1, "confidence": 0.67,
+   "why": "The bigger, rangier striker against an undersized heavyweight who has been stopped by bigger punchers and now says he'll be 'intentionally violent', which means trading early. Six of Diniz's finishes came in round one: R1."},
+  {"bout": "Julien Leblanc vs Nick Galanti", "winner": "Nick Galanti", "method": "SUB", "round": 1, "confidence": 0.8,
+   "why": "A submission grappler against a 35-year-old coming off a damaged knee who was taken down and choked in round one of his debut; Galanti's finishes come early: R1."},
+  {"bout": "Javad Mahjoub vs Joel Faglier", "winner": "Joel Faglier", "method": "KO/TKO", "round": 1, "confidence": 0.54,
+   "why": "The model and the market both lean Faglier, 25 and nine pounds heavier, against a 35-year-old judoka with five fights. Two heavyweights who finish in round one, neither stopped before: Faglier's hands early, R1."},
+  {"bout": "Katlyn Cerminara vs Mackenzie Stiller", "winner": "Katlyn Cerminara", "method": "DEC", "confidence": 0.72,
+   "why": "A strawweight moving up on short notice, much smaller, against a long volume striker whose 11 UFC wins were all decisions; the layoff is the risk, not the matchup: decision."},
+  {"bout": "Chad Anheliger vs Steven Koslow", "winner": "Steven Koslow", "method": "SUB", "round": 1, "confidence": 0.55,
+   "why": "Six of Anheliger's eight losses are submissions and he defends about 40% of takedowns; all six of Koslow's wins are first-round submissions. Four years out is the worry, which is another reason his chance is early: R1."},
+  {"bout": "Melissa Croden vs Chelsea Chandler", "winner": "Melissa Croden", "method": "KO/TKO", "round": 3, "confidence": 0.7,
+   "why": "Croden builds late: four of her seven stoppages came in round three as opponents faded, and she has never been finished. Chandler is dangerous early and has had trouble with her cut and injuries, so the stoppage comes late: R3."},
+  {"bout": "Cody Chovancek vs You Su-young", "winner": "Cody Chovancek", "method": "DEC", "confidence": 0.55,
+   "why": "The unbeaten finisher at home, but You's chain wrestling and durability (stopped once) make this a grind; the market and pundits lean Chovancek: decision."}
+ ]
+}

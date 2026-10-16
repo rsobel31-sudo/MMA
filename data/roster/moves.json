@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-15T11:19:45+00:00",
+ "fetched": "2026-10-16T16:06:57+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -56,20 +56,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Cody Chovancek",
-   "date": "2025-09-16",
-   "division": "Bantamweight",
-   "refs": [
-    "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – You Su-young",
-   "confirmed_by": {
-    "source": "heavy.com",
-    "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Christopher Alvidrez",
    "date": "2025-10-01",
    "division": "Welterweight",
@@ -80,20 +66,6 @@
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2025/10/01/dwcs-christopher-alvidrez-family/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Louis Jourdain",
-   "date": "2025-10-01",
-   "division": "Bantamweight",
-   "refs": [
-    "https://www.sportsnet.ca/ufc/article/louis-jourdain-to-make-debut-at-ufc-fight-night-in-edmonton/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Timothy Cuamba",
-   "confirmed_by": {
-    "source": "sportsnet.ca",
-    "url": "https://www.sportsnet.ca/ufc/article/louis-jourdain-to-make-debut-at-ufc-fight-night-in-edmonton/"
    },
    "first_seen": "2026-10-10"
   },
@@ -120,34 +92,6 @@
    ],
    "info": "(June 21, 2026) – Unknown reasons – Pulled out of UFC Fight Night 282 (Abu Dhabi) – Abubakar Vagaev",
    "confirmed_by": null,
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Javad Mahjoub",
-   "date": "2026-08-08",
-   "division": "Heavyweight",
-   "refs": [
-    "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Joel Faglier",
-   "confirmed_by": {
-    "source": "sportsnet.ca",
-    "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Katlyn Cerminara",
-   "date": "2026-08-10",
-   "division": "Women's Flyweight",
-   "refs": [
-    "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Mackenzie Stiller",
-   "confirmed_by": {
-    "source": "si.com",
-    "url": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
-   },
    "first_seen": "2026-10-10"
   },
   {
@@ -209,28 +153,14 @@
   {
    "name": "Alik Lorenz",
    "date": "2026-08-18",
-   "division": "Middleweight",
+   "division": "Light Heavyweight",
    "refs": [
-    "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/15/ufc-qatar-diyar-nurgozhay-vs-alik-lorenz-light-heavyweight-mma-fight-booking-announcement/92266930007/"
    ],
-   "info": "",
+   "info": "UFC Fight Night 294 (Al Rayyan) – Diyar Nurgozhay",
    "confirmed_by": {
     "source": "mmafighting.com",
     "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Cristian Pérez",
-   "date": "2026-08-18",
-   "division": "Lightweight",
-   "refs": [
-    "https://paralelo32.com.mx/cristian-puas-perez-ya-tiene-rival-para-su-primera-pelea-en-ufc/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Kyle Nelson",
-   "confirmed_by": {
-    "source": "paralelo32.com.mx",
-    "url": "https://paralelo32.com.mx/cristian-puas-perez-ya-tiene-rival-para-su-primera-pelea-en-ufc/"
    },
    "first_seen": "2026-10-10"
   },
@@ -273,34 +203,6 @@
    "confirmed_by": {
     "source": "sport.aktuality.sk",
     "url": "https://sport.aktuality.sk/mma-fanatik/na-ufc-debut-velmi-hratelna-superka-lucia-szabova-nastupi-proti-tejto-bojovnicke/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Steven Koslow",
-   "date": "2026-08-24",
-   "division": "Bantamweight",
-   "refs": [
-    "https://www.sportsnet.ca/ufc/article/canadas-chad-anheliger-added-to-ufc-edmonton-card/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Chad Anheliger",
-   "confirmed_by": {
-    "source": "sportsnet.ca",
-    "url": "https://www.sportsnet.ca/ufc/article/canadas-chad-anheliger-added-to-ufc-edmonton-card/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Nick Galanti",
-   "date": "2026-08-25",
-   "division": "Middleweight",
-   "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/01/ufc-edmonton-nick-galanti-vs-julien-leblanc-middleweight-mma-fight-booking-gilbert-urbina-out/92041488007/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Julien Leblanc",
-   "confirmed_by": {
-    "source": "Cageside Press",
-    "url": "https://cagesidepress.com/2026/08/26/dwcs-nick-galanti-growth-career/"
    },
    "first_seen": "2026-10-10"
   },
@@ -638,20 +540,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Joel Faglier",
-   "date": "2026-09-24",
-   "division": "Heavyweight",
-   "refs": [
-    "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Javad Mahjoub",
-   "confirmed_by": {
-    "source": "sportsnet.ca",
-    "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Aieza Ramos Bertolso",
    "date": "2026-09-29",
    "division": "Women's Strawweight",
@@ -699,20 +587,6 @@
    ],
    "info": "",
    "confirmed_by": null,
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Mackenzie Stiller",
-   "date": "2026-10-01",
-   "division": "Women's Flyweight",
-   "refs": [
-    "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
-   ],
-   "info": "UFC Fight Night 291 (Edmonton) – Katlyn Cerminara",
-   "confirmed_by": {
-    "source": "si.com",
-    "url": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
-   },
    "first_seen": "2026-10-10"
   },
   {
@@ -819,6 +693,152 @@
    "first_seen": "2026-10-14"
   },
   {
+   "name": "Ivan Gnizditskiy",
+   "date": "2026-10-15",
+   "division": "Light Heavyweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/15/ufc-news-ivan-gnizditskiy-signs-one-championship/92264922007/"
+   ],
+   "info": "",
+   "confirmed_by": null,
+   "first_seen": "2026-10-16"
+  },
+  {
+   "name": "Cody Chovancek",
+   "date": "2025-09-16",
+   "division": "Bantamweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – You Su-young",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Louis Jourdain",
+   "date": "2025-10-01",
+   "division": "Bantamweight",
+   "refs": [
+    "https://www.sportsnet.ca/ufc/article/louis-jourdain-to-make-debut-at-ufc-fight-night-in-edmonton/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Timothy Cuamba",
+   "confirmed_by": {
+    "source": "sportsnet.ca",
+    "url": "https://www.sportsnet.ca/ufc/article/louis-jourdain-to-make-debut-at-ufc-fight-night-in-edmonton/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Javad Mahjoub",
+   "date": "2026-08-08",
+   "division": "Heavyweight",
+   "refs": [
+    "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Joel Faglier",
+   "confirmed_by": {
+    "source": "sportsnet.ca",
+    "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Katlyn Cerminara",
+   "date": "2026-08-10",
+   "division": "Women's Flyweight",
+   "refs": [
+    "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Mackenzie Stiller",
+   "confirmed_by": {
+    "source": "si.com",
+    "url": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Cristian Pérez",
+   "date": "2026-08-18",
+   "division": "Lightweight",
+   "refs": [
+    "https://paralelo32.com.mx/cristian-puas-perez-ya-tiene-rival-para-su-primera-pelea-en-ufc/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Kyle Nelson",
+   "confirmed_by": {
+    "source": "paralelo32.com.mx",
+    "url": "https://paralelo32.com.mx/cristian-puas-perez-ya-tiene-rival-para-su-primera-pelea-en-ufc/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Steven Koslow",
+   "date": "2026-08-24",
+   "division": "Bantamweight",
+   "refs": [
+    "https://www.sportsnet.ca/ufc/article/canadas-chad-anheliger-added-to-ufc-edmonton-card/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Chad Anheliger",
+   "confirmed_by": {
+    "source": "sportsnet.ca",
+    "url": "https://www.sportsnet.ca/ufc/article/canadas-chad-anheliger-added-to-ufc-edmonton-card/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Nick Galanti",
+   "date": "2026-08-25",
+   "division": "Middleweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/01/ufc-edmonton-nick-galanti-vs-julien-leblanc-middleweight-mma-fight-booking-gilbert-urbina-out/92041488007/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Julien Leblanc",
+   "confirmed_by": {
+    "source": "Cageside Press",
+    "url": "https://cagesidepress.com/2026/08/26/dwcs-nick-galanti-growth-career/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Joel Faglier",
+   "date": "2026-09-24",
+   "division": "Heavyweight",
+   "refs": [
+    "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Javad Mahjoub",
+   "confirmed_by": {
+    "source": "sportsnet.ca",
+    "url": "https://www.sportsnet.ca/ufc/article/faglier-to-replace-sutherland-at-ufc-edmonton/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
+   "name": "Mackenzie Stiller",
+   "date": "2026-10-01",
+   "division": "Women's Flyweight",
+   "refs": [
+    "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
+   ],
+   "info": "UFC Fight Night 291 (Edmonton) – Katlyn Cerminara",
+   "confirmed_by": {
+    "source": "si.com",
+    "url": "https://www.si.com/fannation/mma/news/ex-ufc-title-challenger-gets-new-opponent-just-weeks-out-from-ufc-edmonton"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-16"
+  },
+  {
    "name": "Hu Yong",
    "date": "2026-09-24",
    "division": "Bantamweight",
@@ -871,6 +891,24 @@
     "url": "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
    },
    "first_seen": "2026-10-10"
+  },
+  {
+   "name": "Muhammad Naimov",
+   "date": "2026-10-09",
+   "division": "Featherweight",
+   "refs": [],
+   "reason": "Released",
+   "confirmed_by": null,
+   "first_seen": "2026-10-16"
+  },
+  {
+   "name": "Dennis Buzukja",
+   "date": "2026-10-09",
+   "division": "Featherweight",
+   "refs": [],
+   "reason": "Released",
+   "confirmed_by": null,
+   "first_seen": "2026-10-16"
   },
   {
    "name": "Niko Price",

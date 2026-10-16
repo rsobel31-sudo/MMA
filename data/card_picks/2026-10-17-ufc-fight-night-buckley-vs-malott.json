@@ -1,0 +1,832 @@
+{
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "date": "2026-10-17",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
+ "locks_at": "2026-10-17T12:00:00+00:00",
+ "locked_at": "2026-10-16T16:14:06+00:00",
+ "note": "A card of finishers against fighters with a history of getting finished: Nelson and Landwehr stopped in their last losses, Leblanc tapped in round one on a bad knee, Barriault 1-5 and open to chokes. One override of the model: Jourdain, whom the model barely knows. At the top, Malott at home over five rounds on the cards, Blanchfield's grappling over Jasudavicius, and Cerminara's range over a short-notice strawweight.",
+ "dec_cal": [
+  0.448947,
+  0.671137,
+  -0.371735
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Joaquin Buckley vs Mike Malott",
+   "a": "Joaquin Buckley",
+   "b": "Mike Malott",
+   "segment": "Fight card",
+   "weight_class": "Welterweight",
+   "rounds": 5,
+   "title": false,
+   "pick": {
+    "winner": "Mike Malott",
+    "side": "b",
+    "method": "DEC",
+    "round": 5,
+    "confidence": 0.55,
+    "why": "Malott's length and kicking at range, at home, after what he calls the best camp of his career; Buckley loses when he can't land the big shot. Buckley's two losses went the distance and Malott's cardio past round three is unproven, so a decision rather than a finish."
+   },
+   "model": {
+    "p_a": 0.4563,
+    "winner": "Mike Malott",
+    "method": "DEC",
+    "p_win": 0.5437,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2531,
+      "SUB": 0.0118,
+      "DEC": 0.1631
+     },
+     "b": {
+      "KO/TKO": 0.1937,
+      "SUB": 0.0337,
+      "DEC": 0.3446
+     }
+    },
+    "round": 5,
+    "p_exact": 0.3446,
+    "round_chances": {
+     "KO/TKO": [
+      0.463,
+      0.249,
+      0.137,
+      0.077,
+      0.074
+     ],
+     "SUB": [
+      0.391,
+      0.232,
+      0.191,
+      0.116,
+      0.07
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      9,
+      2,
+      1,
+      0,
+      0
+     ],
+     "losses": [
+      2,
+      1,
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.4448
+  },
+  {
+   "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
+   "a": "Erin Blanchfield",
+   "b": "Jasmine Jasudavicius",
+   "segment": "Fight card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Erin Blanchfield",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.73,
+    "why": "Blanchfield's back takes punish the wrestling exchanges Jasudavicius needs; Jasudavicius has been stopped only once and Blanchfield's UFC wins mostly go the distance: decision."
+   },
+   "model": {
+    "p_a": 0.7406,
+    "winner": "Erin Blanchfield",
+    "method": "DEC",
+    "p_win": 0.7406,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1334,
+      "SUB": 0.1605,
+      "DEC": 0.4498
+     },
+     "b": {
+      "KO/TKO": 0.0202,
+      "SUB": 0.0541,
+      "DEC": 0.182
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4498,
+    "round_chances": {
+     "KO/TKO": [
+      0.536,
+      0.34,
+      0.125
+     ],
+     "SUB": [
+      0.491,
+      0.363,
+      0.146
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      4,
+      0
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.7356
+  },
+  {
+   "bout": "Kyle Nelson vs Cristian Pérez",
+   "a": "Kyle Nelson",
+   "b": "Cristian Pérez",
+   "segment": "Fight card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Cristian Pérez",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.73,
+    "why": "Nelson was stopped in round one in both of his last two losses (24 seconds by McKinney); Pérez has finished 12 of 15, seven in round one, and fades late, so his best chance and Nelson's worst both fall early: R1."
+   },
+   "model": {
+    "p_a": 0.3344,
+    "winner": "Cristian Pérez",
+    "method": "KO/TKO",
+    "p_win": 0.6656,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1235,
+      "SUB": 0.0181,
+      "DEC": 0.2228
+     },
+     "b": {
+      "KO/TKO": 0.4277,
+      "SUB": 0.0769,
+      "DEC": 0.1311
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2305,
+    "round_chances": {
+     "KO/TKO": [
+      0.539,
+      0.286,
+      0.175
+     ],
+     "SUB": [
+      0.501,
+      0.306,
+      0.193
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      3,
+      2
+     ],
+     "losses": [
+      2,
+      1,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.2441
+  },
+  {
+   "bout": "Marc-André Barriault vs Kyle Daukaus",
+   "a": "Marc-André Barriault",
+   "b": "Kyle Daukaus",
+   "segment": "Fight card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Kyle Daukaus",
+    "side": "b",
+    "method": "SUB",
+    "round": 1,
+    "confidence": 0.65,
+    "why": "Daukaus's front-headlock chokes against a forward-pressing brawler who is 1-5 in his last six; both of his 2025 wins were sub-minute finishes and eight of his finishes came in round one, while Barriault's three stoppage losses mostly came early: R1."
+   },
+   "model": {
+    "p_a": 0.2486,
+    "winner": "Kyle Daukaus",
+    "method": "DEC",
+    "p_win": 0.7514,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1579,
+      "SUB": 0.0081,
+      "DEC": 0.0738
+     },
+     "b": {
+      "KO/TKO": 0.2523,
+      "SUB": 0.2074,
+      "DEC": 0.3005
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3005,
+    "round_chances": {
+     "KO/TKO": [
+      0.564,
+      0.281,
+      0.155
+     ],
+     "SUB": [
+      0.527,
+      0.3,
+      0.173
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      8,
+      4,
+      2
+     ],
+     "losses": [
+      3,
+      0,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.3659
+  },
+  {
+   "bout": "Louis Jourdain vs Timothy Cuamba",
+   "a": "Louis Jourdain",
+   "b": "Timothy Cuamba",
+   "segment": "Fight card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Louis Jourdain",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.58,
+    "why": "Override: the model knows little of Jourdain's regional record and sides with Cuamba, but Cuamba has been taken down and choked twice recently and struggles going backwards; the market and the pundits (10-2) have Jourdain. A first UFC fight after a year out, so the cards rather than a finish."
+   },
+   "model": {
+    "p_a": 0.4016,
+    "winner": "Timothy Cuamba",
+    "method": "DEC",
+    "p_win": 0.5984,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0642,
+      "SUB": 0.1874,
+      "DEC": 0.1201
+     },
+     "b": {
+      "KO/TKO": 0.1766,
+      "SUB": 0.0318,
+      "DEC": 0.42
+     }
+    },
+    "round": 3,
+    "p_exact": 0.42,
+    "round_chances": {
+     "KO/TKO": [
+      0.504,
+      0.368,
+      0.128
+     ],
+     "SUB": [
+      0.458,
+      0.392,
+      0.15
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      3,
+      0
+     ],
+     "losses": [
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Mandel Nallo vs Nate Landwehr",
+   "a": "Mandel Nallo",
+   "b": "Nate Landwehr",
+   "segment": "Fight card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Mandel Nallo",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.72,
+    "why": "Twelve of Nallo's 14 wins came in round one, and Landwehr, 38 and moving up, has been knocked out three straight times while walking forward: R1."
+   },
+   "model": {
+    "p_a": 0.6856,
+    "winner": "Mandel Nallo",
+    "method": "KO/TKO",
+    "p_win": 0.6856,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.5288,
+      "SUB": 0.0325,
+      "DEC": 0.0954
+     },
+     "b": {
+      "KO/TKO": 0.1659,
+      "SUB": 0.0579,
+      "DEC": 0.1195
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3236,
+    "round_chances": {
+     "KO/TKO": [
+      0.612,
+      0.255,
+      0.133
+     ],
+     "SUB": [
+      0.576,
+      0.274,
+      0.15
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      12,
+      2,
+      0
+     ],
+     "losses": [
+      3,
+      1,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.7073
+  },
+  {
+   "bout": "Tanner Boser vs Jhonata Diniz",
+   "a": "Tanner Boser",
+   "b": "Jhonata Diniz",
+   "segment": "Preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Jhonata Diniz",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.67,
+    "why": "The bigger, rangier striker against an undersized heavyweight who has been stopped by bigger punchers and now says he'll be 'intentionally violent', which means trading early. Six of Diniz's finishes came in round one: R1."
+   },
+   "model": {
+    "p_a": 0.2585,
+    "winner": "Jhonata Diniz",
+    "method": "KO/TKO",
+    "p_win": 0.7415,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.158,
+      "SUB": 0.0091,
+      "DEC": 0.0882
+     },
+     "b": {
+      "KO/TKO": 0.4488,
+      "SUB": 0.0112,
+      "DEC": 0.2847
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2666,
+    "round_chances": {
+     "KO/TKO": [
+      0.594,
+      0.286,
+      0.12
+     ],
+     "SUB": [
+      0.551,
+      0.308,
+      0.141
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      6,
+      1,
+      0
+     ],
+     "losses": [
+      2,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.3196
+  },
+  {
+   "bout": "Julien Leblanc vs Nick Galanti",
+   "a": "Julien Leblanc",
+   "b": "Nick Galanti",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Nick Galanti",
+    "side": "b",
+    "method": "SUB",
+    "round": 1,
+    "confidence": 0.8,
+    "why": "A submission grappler against a 35-year-old coming off a damaged knee who was taken down and choked in round one of his debut; Galanti's finishes come early: R1."
+   },
+   "model": {
+    "p_a": 0.2878,
+    "winner": "Nick Galanti",
+    "method": "SUB",
+    "p_win": 0.7122,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0756,
+      "SUB": 0.0458,
+      "DEC": 0.1785
+     },
+     "b": {
+      "KO/TKO": 0.0694,
+      "SUB": 0.4778,
+      "DEC": 0.1528
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2494,
+    "round_chances": {
+     "KO/TKO": [
+      0.568,
+      0.283,
+      0.149
+     ],
+     "SUB": [
+      0.522,
+      0.307,
+      0.171
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      1
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.1761
+  },
+  {
+   "bout": "Javad Mahjoub vs Joel Faglier",
+   "a": "Javad Mahjoub",
+   "b": "Joel Faglier",
+   "segment": "Preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Joel Faglier",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.54,
+    "why": "The model and the market both lean Faglier, 25 and nine pounds heavier, against a 35-year-old judoka with five fights. Two heavyweights who finish in round one, neither stopped before: Faglier's hands early, R1."
+   },
+   "model": {
+    "p_a": 0.3902,
+    "winner": "Joel Faglier",
+    "method": "DEC",
+    "p_win": 0.6098,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1135,
+      "SUB": 0.0606,
+      "DEC": 0.2252
+     },
+     "b": {
+      "KO/TKO": 0.1491,
+      "SUB": 0.1576,
+      "DEC": 0.2941
+     }
+    },
+    "round": 3,
+    "p_exact": 0.2941,
+    "round_chances": {
+     "KO/TKO": [
+      0.571,
+      0.296,
+      0.133
+     ],
+     "SUB": [
+      0.523,
+      0.321,
+      0.156
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.4471
+  },
+  {
+   "bout": "Katlyn Cerminara vs Mackenzie Stiller",
+   "a": "Katlyn Cerminara",
+   "b": "Mackenzie Stiller",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Katlyn Cerminara",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.72,
+    "why": "A strawweight moving up on short notice, much smaller, against a long volume striker whose 11 UFC wins were all decisions; the layoff is the risk, not the matchup: decision."
+   },
+   "model": {
+    "p_a": 0.5511,
+    "winner": "Katlyn Cerminara",
+    "method": "DEC",
+    "p_win": 0.5511,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1379,
+      "SUB": 0.0438,
+      "DEC": 0.3706
+     },
+     "b": {
+      "KO/TKO": 0.0564,
+      "SUB": 0.1827,
+      "DEC": 0.2086
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3706,
+    "round_chances": {
+     "KO/TKO": [
+      0.539,
+      0.302,
+      0.159
+     ],
+     "SUB": [
+      0.49,
+      0.328,
+      0.182
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      0,
+      1
+     ],
+     "losses": [
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.7073
+  },
+  {
+   "bout": "Chad Anheliger vs Steven Koslow",
+   "a": "Chad Anheliger",
+   "b": "Steven Koslow",
+   "segment": "Preliminary card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Steven Koslow",
+    "side": "b",
+    "method": "SUB",
+    "round": 1,
+    "confidence": 0.55,
+    "why": "Six of Anheliger's eight losses are submissions and he defends about 40% of takedowns; all six of Koslow's wins are first-round submissions. Four years out is the worry, which is another reason his chance is early: R1."
+   },
+   "model": {
+    "p_a": 0.4667,
+    "winner": "Steven Koslow",
+    "method": "SUB",
+    "p_win": 0.5333,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.18,
+      "SUB": 0.0366,
+      "DEC": 0.2686
+     },
+     "b": {
+      "KO/TKO": 0.031,
+      "SUB": 0.2763,
+      "DEC": 0.2075
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1517,
+    "round_chances": {
+     "KO/TKO": [
+      0.59,
+      0.256,
+      0.154
+     ],
+     "SUB": [
+      0.549,
+      0.277,
+      0.174
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      6,
+      0,
+      0
+     ],
+     "losses": [
+      3,
+      1,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.4076
+  },
+  {
+   "bout": "Melissa Croden vs Chelsea Chandler",
+   "a": "Melissa Croden",
+   "b": "Chelsea Chandler",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Melissa Croden",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 3,
+    "confidence": 0.7,
+    "why": "Croden builds late: four of her seven stoppages came in round three as opponents faded, and she has never been finished. Chandler is dangerous early and has had trouble with her cut and injuries, so the stoppage comes late: R3."
+   },
+   "model": {
+    "p_a": 0.6003,
+    "winner": "Melissa Croden",
+    "method": "KO/TKO",
+    "p_win": 0.6003,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3704,
+      "SUB": 0.0218,
+      "DEC": 0.1937
+     },
+     "b": {
+      "KO/TKO": 0.0494,
+      "SUB": 0.0577,
+      "DEC": 0.307
+     }
+    },
+    "round": 1,
+    "p_exact": 0.183,
+    "round_chances": {
+     "KO/TKO": [
+      0.494,
+      0.298,
+      0.208
+     ],
+     "SUB": [
+      0.449,
+      0.321,
+      0.23
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      2,
+      4
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.7199
+  },
+  {
+   "bout": "Cody Chovancek vs You Su-young",
+   "a": "Cody Chovancek",
+   "b": "You Su-young",
+   "segment": "Preliminary card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Cody Chovancek",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "The unbeaten finisher at home, but You's chain wrestling and durability (stopped once) make this a grind; the market and pundits lean Chovancek: decision."
+   },
+   "model": {
+    "p_a": 0.5323,
+    "winner": "Cody Chovancek",
+    "method": "KO/TKO",
+    "p_win": 0.5323,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2119,
+      "SUB": 0.1016,
+      "DEC": 0.1693
+     },
+     "b": {
+      "KO/TKO": 0.0518,
+      "SUB": 0.0416,
+      "DEC": 0.4238
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1068,
+    "round_chances": {
+     "KO/TKO": [
+      0.504,
+      0.326,
+      0.17
+     ],
+     "SUB": [
+      0.458,
+      0.349,
+      0.192
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      2,
+      1
+     ],
+     "losses": [
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": null
+  }
+ ],
+ "graded": false
+}
