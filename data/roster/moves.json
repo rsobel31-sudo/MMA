@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-16T16:06:57+00:00",
+ "fetched": "2026-10-17T11:30:44+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -851,34 +851,6 @@
  ],
  "releases": [
   {
-   "name": "Lyman Good",
-   "date": "2026-09-16",
-   "division": "Welterweight",
-   "refs": [
-    "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
-   ],
-   "reason": "Released",
-   "confirmed_by": {
-    "source": "mmamania.com",
-    "url": "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Saygid Izagakhmaev",
-   "date": "2026-09-16",
-   "division": "Welterweight",
-   "refs": [
-    "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
-   ],
-   "reason": "Released",
-   "confirmed_by": {
-    "source": "mmamania.com",
-    "url": "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Court McGee",
    "date": "2026-10-03",
    "division": "Welterweight",
@@ -965,6 +937,36 @@
     "url": "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
    },
    "first_seen": "2026-10-15"
+  },
+  {
+   "name": "Lyman Good",
+   "date": "2026-09-16",
+   "division": "Welterweight",
+   "refs": [
+    "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmamania.com",
+    "url": "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-17"
+  },
+  {
+   "name": "Saygid Izagakhmaev",
+   "date": "2026-09-16",
+   "division": "Welterweight",
+   "refs": [
+    "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmamania.com",
+    "url": "https://www.mmamania.com/ufc-roster-watch-cuts-tracker-free-agent-aquisitions-mma/472728/ufc-roster-cuts-nine-fighters-contender-series-2026"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-17"
   }
  ]
 }
