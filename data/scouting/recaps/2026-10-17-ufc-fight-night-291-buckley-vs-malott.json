@@ -1,0 +1,427 @@
+{
+ "id": "2026-10-17-ufc-fight-night-291-buckley-vs-malott",
+ "event": "UFC Fight Night 291 - Buckley vs. Malott",
+ "date": "2026-10-17",
+ "stories": {},
+ "coverage": {
+  "mike-malott-joaquin-buckley": {
+   "a": "Mike Malott",
+   "b": "Joaquin Buckley",
+   "winner": "Mike Malott",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/515989/ufc-edmonton-results-buckley-vs-malott"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Buckley",
+     "10-9 Buckley",
+     "10-9 Malott"
+    ]
+   ],
+   "closeness": "from behind"
+  },
+  "jasmine-jasudavicius-erin-blanchfield": {
+   "a": "Jasmine Jasudavicius",
+   "b": "Erin Blanchfield",
+   "winner": "Jasmine Jasudavicius",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Jasudavicius",
+     "10-9 Jasudavicius",
+     "10-9 Jasudavicius"
+    ],
+    [
+     2,
+     "10-9 Jasudavicius",
+     "10-9 Jasudavicius",
+     "10-9 Jasudavicius"
+    ],
+    [
+     3,
+     "10-9 Blanchfield",
+     "10-9 Blanchfield",
+     "10-9 Blanchfield"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "cristian-perez-kyle-nelson": {
+   "a": "Cristian Perez",
+   "b": "Kyle Nelson",
+   "winner": "Cristian Perez",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "marc-andre-barriault-kyle-daukaus": {
+   "a": "Marc-Andre Barriault",
+   "b": "Kyle Daukaus",
+   "winner": "Marc-Andre Barriault",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "timothy-cuamba-louis-jourdain": {
+   "a": "Timothy Cuamba",
+   "b": "Louis Jourdain",
+   "winner": "Timothy Cuamba",
+   "method": "SUB",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Cuamba",
+     "10-9 Cuamba",
+     "10-9 Cuamba"
+    ]
+   ],
+   "closeness": null
+  },
+  "mandel-nallo-nate-landwehr": {
+   "a": "Mandel Nallo",
+   "b": "Nate Landwehr",
+   "winner": "Mandel Nallo",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-8 Nallo",
+     "10-8 Nallo",
+     "10-8 Nallo"
+    ]
+   ],
+   "closeness": null
+  },
+  "tanner-boser-jhonata-diniz": {
+   "a": "Tanner Boser",
+   "b": "Jhonata Diniz",
+   "winner": "Tanner Boser",
+   "method": "KO/TKO",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Boser",
+     "10-9 Boser",
+     "10-9 Boser"
+    ],
+    [
+     2,
+     "10-8 Boser",
+     "10-8 Boser",
+     "10-8 Boser"
+    ]
+   ],
+   "closeness": null
+  },
+  "nick-galanti-julien-leblanc": {
+   "a": "Nick Galanti",
+   "b": "Julien Leblanc",
+   "winner": "Nick Galanti",
+   "method": "SUB",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "joel-faglier-javad-mahjoub": {
+   "a": "Joel Faglier",
+   "b": "Javad Mahjoub",
+   "winner": "Joel Faglier",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-8 Mahjoub",
+     "10-8 Mahjoub",
+     "10-8 Mahjoub"
+    ]
+   ],
+   "closeness": "from behind"
+  },
+  "katlyn-cerminara-mackenzie-stiller": {
+   "a": "Katlyn Cerminara",
+   "b": "Mackenzie Stiller",
+   "winner": "Katlyn Cerminara",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "steven-koslow-chad-anheliger": {
+   "a": "Steven Koslow",
+   "b": "Chad Anheliger",
+   "winner": "Steven Koslow",
+   "method": "SUB",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Koslow",
+     "10-9 Koslow",
+     "10-9 Koslow"
+    ],
+    [
+     2,
+     "10-9 Koslow",
+     "10-9 Koslow",
+     "10-9 Koslow"
+    ]
+   ],
+   "closeness": null
+  },
+  "chelsea-chandler-melissa-croden": {
+   "a": "Chelsea Chandler",
+   "b": "Melissa Croden",
+   "winner": "Chelsea Chandler",
+   "method": "SUB",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "su-young-you-cody-chovancek": {
+   "a": "Su Young You",
+   "b": "Cody Chovancek",
+   "winner": "Su Young You",
+   "method": "SUB",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 You",
+     "10-9 You",
+     "10-9 You"
+    ],
+    [
+     2,
+     "10-9 You",
+     "10-9 You",
+     "10-9 You"
+    ]
+   ],
+   "closeness": null
+  }
+ }
+}

@@ -639,6 +639,12 @@
 "stats_official": "5",
 "stats_verified": "3"
 },
+"Alexander Soldatkin": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (190 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Alexander Trevino": {
 "stats_official": "4"
 },
@@ -1759,6 +1765,8 @@
 "stats_official": "1"
 },
 "Ben Johnston": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -2997,6 +3005,8 @@
 "stats_official": "4"
 },
 "Chang Min Yoon": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -3433,6 +3443,12 @@
 "stats_official": "4",
 "stats_verified": "6"
 },
+"Christian Lohsen": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (196 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Christian Morecraft": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -3453,6 +3469,8 @@
 "stats_official": "5"
 },
 "Christien Savoie": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -4720,6 +4738,10 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "33"
+},
+"Deni Daffa": {
+"reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Denis Kang": {
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
@@ -6704,6 +6726,8 @@
 "stats_verified": "1"
 },
 "Guilherme Uriel": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7347,6 +7371,8 @@
 "stats_official": "1"
 },
 "Issa Isakov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7431,6 +7457,10 @@
 "stats_verified": "2"
 },
 "J.J. Ambrose": {
+"stats_official": "1"
+},
+"J.J. Okanovich": {
+"reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "J.P. Buys": {
@@ -7565,6 +7595,8 @@
 "stats_official": "1"
 },
 "Jae Hyun Park": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 178 cm, UFCStats 173 cm",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "3"
 },
@@ -11055,6 +11087,8 @@
 "stats_official": "1"
 },
 "Leomana Martinez": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "4",
 "stats_verified": "1"
@@ -11642,6 +11676,8 @@
 "stats_verified": "4"
 },
 "Macksom Lee": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -12104,6 +12140,8 @@
 "stats_verified": "3"
 },
 "Marek Bujlo": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -12156,6 +12194,10 @@
 },
 "Mario Neto": {
 "height": "Sherdog + UFCStats agree",
+"stats_official": "1"
+},
+"Mario Piazzon": {
+"reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Mario Pinto": {
@@ -13543,6 +13585,8 @@
 "stats_official": "18"
 },
 "Murtaza Talha Ali": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -13846,6 +13890,8 @@
 "stats_official": "1"
 },
 "Nick Fiore": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_verified": "2"
 },
@@ -18826,8 +18872,10 @@
 "stats_official": "2"
 },
 "Yawei Ren": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Yazan Hajeh": {
 "stats_official": "1"
@@ -19013,6 +19061,8 @@
 "stats_official": "1"
 },
 "Yuri Panferov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "2"
 },

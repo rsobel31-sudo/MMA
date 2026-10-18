@@ -1,198 +1,7 @@
 {
- "fetched": "2026-10-17",
+ "fetched": "2026-10-18",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
-  {
-   "name": "UFC Fight Night: Buckley vs. Malott",
-   "date": "2026-10-17",
-   "venue": "Rogers Place",
-   "location": "Edmonton, Alberta, Canada",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Fight card",
-     "weight_class": "Welterweight",
-     "a": "Joaquin Buckley",
-     "b": "Mike Malott",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 5,
-     "main_event": true
-    },
-    {
-     "order": 1,
-     "segment": "Fight card",
-     "weight_class": "Women's Flyweight",
-     "a": "Erin Blanchfield",
-     "b": "Jasmine Jasudavicius",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 2,
-     "segment": "Fight card",
-     "weight_class": "Lightweight",
-     "a": "Kyle Nelson",
-     "b": "Cristian P\u00e9rez",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Marc-Andr\u00e9 Barriault",
-     "b": "Kyle Daukaus",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 4,
-     "segment": "Fight card",
-     "weight_class": "Bantamweight",
-     "a": "Louis Jourdain",
-     "b": "Timothy Cuamba",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 5,
-     "segment": "Fight card",
-     "weight_class": "Lightweight",
-     "a": "Mandel Nallo",
-     "b": "Nate Landwehr",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 6,
-     "segment": "Preliminary card",
-     "weight_class": "Heavyweight",
-     "a": "Tanner Boser",
-     "b": "Jhonata Diniz",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 7,
-     "segment": "Preliminary card",
-     "weight_class": "Middleweight",
-     "a": "Julien Leblanc",
-     "b": "Nick Galanti",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Preliminary card",
-     "weight_class": "Heavyweight",
-     "a": "Javad Mahjoub",
-     "b": "Joel Faglier",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 9,
-     "segment": "Preliminary card",
-     "weight_class": "Women's Flyweight",
-     "a": "Katlyn Cerminara",
-     "b": "Mackenzie Stiller",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Preliminary card",
-     "weight_class": "Bantamweight",
-     "a": "Chad Anheliger",
-     "b": "Steven Koslow",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 11,
-     "segment": "Preliminary card",
-     "weight_class": "Women's Bantamweight",
-     "a": "Melissa Croden",
-     "b": "Chelsea Chandler",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Preliminary card",
-     "weight_class": "Bantamweight",
-     "a": "Cody Chovancek",
-     "b": "You Su-young",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    }
-   ]
-  },
   {
    "name": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
@@ -392,7 +201,7 @@
   {
    "name": "UFC Fight Night: Moicano vs. Nolan",
    "date": "2026-10-31",
-   "venue": "[ 18 ]",
+   "venue": "[ 19 ]",
    "location": "",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
    "bouts": [
@@ -1074,6 +883,14 @@
      "main_event": false
     }
    ]
+  },
+  {
+   "name": "UFC 336",
+   "date": "2027-01-30",
+   "venue": "Scotiabank Arena",
+   "location": "Toronto, Ontario, Canada",
+   "url": "https://en.wikipedia.org/wiki/UFC_336",
+   "bouts": []
   },
   {
    "name": "UFC Fight Night 296",
