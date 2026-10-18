@@ -71,7 +71,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Douglas da Lapa",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Luis Francischinelli vs William Rentz",
@@ -133,7 +151,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Luis Francischinelli",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Aline Pereira vs Smilla Sundell",
@@ -195,7 +231,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Smilla Sundell",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Ilias Bulaid vs Erick Visconde",
@@ -257,7 +311,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Erick Visconde",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Jason Asher vs Greg Foster",
@@ -319,11 +391,15 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "void": "did not take place"
+   }
   }
  ],
- "graded": false,
+ "graded": true,
  "rounds_picked": true,
  "revision": 2,
- "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged."
+ "revision_note": "2026-10-05, before the card: rounds added when the pick'em added the round (a read per fight from each fighter's record); winners and methods unchanged.",
+ "graded_at": "2026-10-18T16:01:38+00:00"
 }

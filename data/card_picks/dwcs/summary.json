@@ -1,51 +1,51 @@
 {
- "updated": "2026-10-11T16:02:02+00:00",
- "cards": 1,
- "bouts": 5,
+ "updated": "2026-10-18T16:01:38+00:00",
+ "cards": 2,
+ "bouts": 9,
  "scoring": {
   "winner": 2,
   "method": 1,
   "round": 1
  },
  "claude": {
-  "n": 5,
-  "winners": 1,
-  "methods": 1,
-  "rounds": 1,
-  "points": 4,
-  "possible": 20,
-  "log_loss": 0.8301
+  "n": 9,
+  "winners": 5,
+  "methods": 4,
+  "rounds": 3,
+  "points": 17,
+  "possible": 36,
+  "log_loss": 0.7084
  },
  "model": {
-  "n": 5,
-  "winners": 2,
-  "methods": 1,
-  "rounds": 1,
-  "points": 6,
-  "log_loss": 0.8171
+  "n": 9,
+  "winners": 5,
+  "methods": 3,
+  "rounds": 3,
+  "points": 16,
+  "log_loss": 0.717
  },
  "finish_rounds": {
-  "n": 1,
-  "right": 1
+  "n": 3,
+  "right": 2
  },
  "market": {
   "n": 0,
   "winners": 0
  },
  "overrides": {
-  "n": 1,
-  "claude_right": 0
+  "n": 2,
+  "claude_right": 1
  },
  "method_overrides": {
-  "n": 0,
-  "claude_right": 0,
-  "model_right": 0
+  "n": 2,
+  "claude_right": 1,
+  "model_right": 1
  },
  "by_method": {
   "KO/TKO": {
-   "picked": 4,
-   "right": 1,
-   "happened": 3
+   "picked": 7,
+   "right": 3,
+   "happened": 5
   },
   "SUB": {
    "picked": 0,
@@ -53,36 +53,36 @@
    "happened": 1
   },
   "DEC": {
-   "picked": 1,
-   "right": 0,
-   "happened": 1
+   "picked": 2,
+   "right": 1,
+   "happened": 3
   }
  },
  "method_calibration": {
-  "n": 5,
+  "n": 9,
   "KO/TKO": {
-   "expected": 2.26,
-   "actual": 3,
-   "z": 0.67
+   "expected": 3.86,
+   "actual": 5,
+   "z": 0.78
   },
   "SUB": {
-   "expected": 0.66,
+   "expected": 1.19,
    "actual": 1,
-   "z": 0.46
+   "z": -0.19
   },
   "DEC": {
-   "expected": 2.09,
-   "actual": 1,
-   "z": -0.99
+   "expected": 3.94,
+   "actual": 3,
+   "z": -0.65
   }
  },
  "confidence": [
   {
    "from": 0.5,
    "to": 0.6,
-   "n": 3,
-   "said": 0.54,
-   "won": 0.333
+   "n": 6,
+   "said": 0.538,
+   "won": 0.667
   },
   {
    "from": 0.6,
@@ -90,16 +90,23 @@
    "n": 2,
    "said": 0.635,
    "won": 0.0
+  },
+  {
+   "from": 0.7,
+   "to": 0.8,
+   "n": 1,
+   "said": 0.7,
+   "won": 1.0
   }
  ],
  "lessons": [
   {
    "kind": "wait",
-   "text": "Method model: 5 of 100 graded bouts needed before its KO/TKO, submission and decision rates are re-weighted."
+   "text": "Method model: 9 of 100 graded bouts needed before its KO/TKO, submission and decision rates are re-weighted."
   },
   {
    "kind": "wait",
-   "text": "Overrides: Claude has picked against the model 1 times; 30 needed before judging them."
+   "text": "Overrides: Claude has picked against the model 2 times; 30 needed before judging them."
   }
  ]
 }

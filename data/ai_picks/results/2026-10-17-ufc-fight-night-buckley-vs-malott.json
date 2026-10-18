@@ -1,0 +1,101 @@
+{
+ "event": "UFC Fight Night: Buckley vs. Malott",
+ "date": "2026-10-17",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Chad Anheliger vs Steven Koslow": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 3,
+   "seconds": 271,
+   "round_agreed": true
+  },
+  "Chelsea Chandler vs Melissa Croden": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 292,
+   "round_agreed": true
+  },
+  "Cody Chovancek vs You Su-young": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 3,
+   "seconds": 259,
+   "round_agreed": true
+  },
+  "Cristian Perez vs Kyle Nelson": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 27,
+   "round_agreed": true
+  },
+  "Erin Blanchfield vs Jasmine Jasudavicius": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Javad Mahjoub vs Joel Faglier": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 131,
+   "round_agreed": true
+  },
+  "Jhonata Diniz vs Tanner Boser": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 266,
+   "round_agreed": true
+  },
+  "Joaquin Buckley vs Mike Malott": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 152,
+   "round_agreed": true
+  },
+  "Julien Leblanc vs Nick Galanti": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 86,
+   "round_agreed": true
+  },
+  "Katlyn Cerminara vs Mackenzie Stiller": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 286,
+   "round_agreed": true
+  },
+  "Kyle Daukaus vs Marc-Andre Barriault": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 268,
+   "round_agreed": true
+  },
+  "Louis Jourdain vs Timothy Cuamba": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 2,
+   "seconds": 168,
+   "round_agreed": true
+  },
+  "Mandel Nallo vs Nate Landwehr": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 47,
+   "round_agreed": true
+  }
+ }
+}

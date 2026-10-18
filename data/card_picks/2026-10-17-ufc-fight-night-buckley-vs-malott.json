@@ -81,7 +81,25 @@
      ]
     }
    },
-   "market_p_a": 0.4448
+   "market_p_a": 0.4448,
+   "result": {
+    "winner": "Mike Malott",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Erin Blanchfield vs Jasmine Jasudavicius",
@@ -143,7 +161,25 @@
      ]
     }
    },
-   "market_p_a": 0.7356
+   "market_p_a": 0.7356,
+   "result": {
+    "winner": "Jasmine Jasudavicius",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Kyle Nelson vs Cristian Pérez",
@@ -205,7 +241,25 @@
      ]
     }
    },
-   "market_p_a": 0.2441
+   "market_p_a": 0.2441,
+   "result": {
+    "winner": "Cristian Pérez",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Marc-André Barriault vs Kyle Daukaus",
@@ -267,7 +321,25 @@
      ]
     }
    },
-   "market_p_a": 0.3659
+   "market_p_a": 0.3659,
+   "result": {
+    "winner": "Marc-André Barriault",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Louis Jourdain vs Timothy Cuamba",
@@ -329,7 +401,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Timothy Cuamba",
+    "side": "b",
+    "method": "SUB",
+    "round": 2
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Mandel Nallo vs Nate Landwehr",
@@ -391,7 +481,25 @@
      ]
     }
    },
-   "market_p_a": 0.7073
+   "market_p_a": 0.7073,
+   "result": {
+    "winner": "Mandel Nallo",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Tanner Boser vs Jhonata Diniz",
@@ -453,7 +561,25 @@
      ]
     }
    },
-   "market_p_a": 0.3196
+   "market_p_a": 0.3196,
+   "result": {
+    "winner": "Tanner Boser",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Julien Leblanc vs Nick Galanti",
@@ -515,7 +641,25 @@
      ]
     }
    },
-   "market_p_a": 0.1761
+   "market_p_a": 0.1761,
+   "result": {
+    "winner": "Nick Galanti",
+    "side": "b",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Javad Mahjoub vs Joel Faglier",
@@ -577,7 +721,25 @@
      ]
     }
    },
-   "market_p_a": 0.4471
+   "market_p_a": 0.4471,
+   "result": {
+    "winner": "Joel Faglier",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Katlyn Cerminara vs Mackenzie Stiller",
@@ -639,7 +801,25 @@
      ]
     }
    },
-   "market_p_a": 0.7073
+   "market_p_a": 0.7073,
+   "result": {
+    "winner": "Katlyn Cerminara",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Chad Anheliger vs Steven Koslow",
@@ -701,7 +881,25 @@
      ]
     }
    },
-   "market_p_a": 0.4076
+   "market_p_a": 0.4076,
+   "result": {
+    "winner": "Steven Koslow",
+    "side": "b",
+    "method": "SUB",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Melissa Croden vs Chelsea Chandler",
@@ -763,7 +961,25 @@
      ]
     }
    },
-   "market_p_a": 0.7199
+   "market_p_a": 0.7199,
+   "result": {
+    "winner": "Chelsea Chandler",
+    "side": "b",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Cody Chovancek vs You Su-young",
@@ -825,8 +1041,27 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "You Su-young",
+    "side": "b",
+    "method": "SUB",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   }
  ],
- "graded": false
+ "graded": true,
+ "graded_at": "2026-10-18T16:01:09+00:00"
 }
