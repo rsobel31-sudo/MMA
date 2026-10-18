@@ -2,7 +2,1232 @@
  "id": "2026-10-17-ufc-fight-night-291-buckley-vs-malott",
  "event": "UFC Fight Night 291 - Buckley vs. Malott",
  "date": "2026-10-17",
- "stories": {},
+ "stories": {
+  "mike-malott-joaquin-buckley": {
+   "summary": "A tight first round at range: Malott's body kicks and one-twos against Buckley's lunging right hooks, scored 2-1 Buckley by Sherdog's panel. Buckley clinched early in round 2 and Malott turned him on the fence and kneed the body; when they separated Buckley ducked in to throw and Malott timed a knee to the head that sent the mouthpiece flying, and a final right hand ended it at 2:32.",
+   "turning_point": "Round 2: Buckley changed levels into the knee; Malott had been landing knees in the clinch moments earlier.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 Buckley",
+       "10-9 Buckley",
+       "10-9 Malott"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/480068/ufc-edmonton-results-biggest-winners-losers-from-buckley-vs-malott-last-night"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/516502/ufc-edmonton-post-fight-show-reaction-to-mike-malotts-highlight-reel-knockout-of-joaquin-buckley"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/mike-malott/watch-jeff-malott-and-the-anaheim-ducks-go-wild-after-his-brother-mike-malotts-ko-win/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=watch-jeff-malott-and-the-anaheim-ducks-go-wild-after-his-brother-mike-malotts-ko-win"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Malott's length and kicking at range, Buckley loses when he can't land the big shot",
+     "tag": "style",
+     "favoured": "Mike Malott",
+     "verdict": "mixed",
+     "note": "Range was even in round 1 (Buckley took it on two of three cards); the fight was won in the clinch and on a counter knee."
+    },
+    {
+     "by": "pick",
+     "claim": "Decision: Malott's cardio past round three unproven",
+     "tag": "durability",
+     "favoured": "Mike Malott",
+     "verdict": "failed",
+     "note": "Malott finished it in round 2; the five-round cardio question never came up."
+    },
+    {
+     "by": "read",
+     "claim": "Buckley's mid-fight power",
+     "tag": "power",
+     "favoured": "Joaquin Buckley",
+     "verdict": "failed",
+     "note": "Buckley's best moments were round 1 right hooks; he was out in round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Malott's five-round cardio (against)",
+     "tag": "cardio",
+     "favoured": "Joaquin Buckley",
+     "verdict": "untested",
+     "note": "Over in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Malott",
+     "tag": "wear_and_tear",
+     "favoured": "Mike Malott",
+     "verdict": "held",
+     "note": "Buckley, with far more cage time and damage, was the one who couldn't take the shot."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Buckley",
+     "tag": "striking_rating",
+     "favoured": "Joaquin Buckley",
+     "verdict": "failed",
+     "note": "Malott landed the cleaner, fight-ending strikes."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Malott",
+     "tag": "height",
+     "favoured": "Mike Malott",
+     "verdict": "held",
+     "note": "The knee came from Malott's height against a ducking opponent."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Buckley",
+     "tag": "outside_rating",
+     "favoured": "Joaquin Buckley",
+     "verdict": "failed",
+     "note": "The lower-rated fighter won clearly."
+    },
+    {
+     "by": "model",
+     "claim": "Grappling rating favours Malott",
+     "tag": "grappling_rating",
+     "favoured": "Mike Malott",
+     "verdict": "untested",
+     "note": "Never went to the floor."
+    }
+   ]
+  },
+  "jasmine-jasudavicius-erin-blanchfield": {
+   "summary": "Jasudavicius won the wrestling Blanchfield was supposed to own: she took Blanchfield down twice in round 1, took the back with a body triangle and cranked the neck to the horn, then did it again in round 2 after a single leg, finishing the round in mount. Blanchfield won round 3 on the feet with combinations before Jasudavicius dragged her down late: 29-28 on all three Sherdog cards and a unanimous decision.",
+   "turning_point": "Round 1: Jasudavicius's second takedown and back take; from there the bigger woman controlled every grappling exchange.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 Jasudavicius",
+       "10-9 Jasudavicius",
+       "10-9 Jasudavicius"
+      ],
+      [
+       2,
+       "10-9 Jasudavicius",
+       "10-9 Jasudavicius",
+       "10-9 Jasudavicius"
+      ],
+      [
+       3,
+       "10-9 Blanchfield",
+       "10-9 Blanchfield",
+       "10-9 Blanchfield"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/jasmine-jasudavicius/ufc-edmonton-results-jasmine-jasudavicius-defeats-erin-blanchfield-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-jasmine-jasudavicius-defeats-erin-blanchfield-highlights"
+    },
+    {
+     "outlet": "Uncrowned",
+     "url": "https://sports.yahoo.com/mma/article/ufc-edmonton-results-mike-malott-viciously-folds-joaquin-buckley-jasmine-jasudavicius-shocks-erin-blanchfield-032744371.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-results-jasmine-jasudavicius-021805913.html"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Blanchfield's back takes punish the wrestling exchanges Jasudavicius needs",
+     "tag": "wrestling_edge",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "Jasudavicius won every grappling exchange and took Blanchfield's back twice."
+    },
+    {
+     "by": "read",
+     "claim": "Blanchfield's grappling edge",
+     "tag": "grappling",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "Out-grappled for two rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Blanchfield's layoff and injury (against)",
+     "tag": "inactivity",
+     "favoured": "Jasmine Jasudavicius",
+     "verdict": "mixed",
+     "note": "Blanchfield looked sharp standing in round 3; it was the size and grappling, not rust, that beat her."
+    },
+    {
+     "by": "read",
+     "claim": "Jasudavicius's disrupted camp",
+     "tag": "camp",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "Jasudavicius looked prepared and strong for three rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Blanchfield",
+     "tag": "overall",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "Lost two of three rounds clearly."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Blanchfield",
+     "tag": "wear_and_tear",
+     "favoured": "Erin Blanchfield",
+     "verdict": "untested",
+     "note": "No sign either fighter faded."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Blanchfield",
+     "tag": "age_curve",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "The older fighter won the physical battle."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Blanchfield",
+     "tag": "outside_rating",
+     "favoured": "Erin Blanchfield",
+     "verdict": "failed",
+     "note": "Lost."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Blanchfield",
+     "tag": "striking_rating",
+     "favoured": "Erin Blanchfield",
+     "verdict": "held",
+     "note": "Blanchfield won the only round on the feet."
+    }
+   ]
+  },
+  "cristian-perez-kyle-nelson": {
+   "summary": "Pérez opened with a rolling leglock attempt, stood up into a hard Nelson right hand that dropped him to a knee, and came straight back firing: a knee and a four-punch combination on the fence put Nelson down and hammerfists finished it at 0:27.",
+   "turning_point": "Pérez absorbed Nelson's right hand and answered immediately instead of resetting.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/cristian-perez/ufc-edmonton-results-cristian-perez-kos-kyle-nelson-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-cristian-perez-kos-kyle-nelson-video"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/17/cristian-perez-lives-up-to-the-hype-with-violent-finish-of-kyle-nelson-at-ufc-edmonton/"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Nelson stopped in round one in both recent losses; Pérez's chance and Nelson's worst both fall early",
+     "tag": "durability",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "Stopped in 27 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Nelson's recent first-round stoppages",
+     "tag": "durability",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "A third straight first-round stoppage loss."
+    },
+    {
+     "by": "read",
+     "claim": "Age",
+     "tag": "age",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "The 27-year-old took the bigger shot and recovered first."
+    },
+    {
+     "by": "read",
+     "claim": "Perez's late cardio (against)",
+     "tag": "cardio",
+     "favoured": "Kyle Nelson",
+     "verdict": "untested",
+     "note": "Over in under half a minute."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Pérez",
+     "tag": "wear_and_tear",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "Nelson couldn't take the follow-up."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Pérez",
+     "tag": "wrestling_edge",
+     "favoured": "Cristian Perez",
+     "verdict": "untested",
+     "note": "No wrestling."
+    },
+    {
+     "by": "model",
+     "claim": "Striking defence favours Nelson",
+     "tag": "striking_defense",
+     "favoured": "Kyle Nelson",
+     "verdict": "failed",
+     "note": "Nelson was hit cleanly and finished."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Pérez",
+     "tag": "overall",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "Won inside 30 seconds."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Pérez",
+     "tag": "age_curve",
+     "favoured": "Cristian Perez",
+     "verdict": "held",
+     "note": "See the read."
+    }
+   ]
+  },
+  "marc-andre-barriault-kyle-daukaus": {
+   "summary": "Daukaus took Barriault down, reached mount and the back with a body triangle and hunted the choke for two minutes, but Barriault broke the triangle and stood. When Daukaus shot again Barriault met him with a knee, then a second knee that dropped him, and elbows and punches on the turtled Daukaus brought the stoppage at 4:28 of round 1.",
+   "turning_point": "Barriault's escape to his feet; Daukaus kept shooting into knees instead of resetting at range.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/17/marc-andre-barriault-stuffs-kyle-daukaus-with-big-knee-gets-tko-victory/"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Daukaus's chokes against a forward-pressing brawler: SUB R1",
+     "tag": "style",
+     "favoured": "Kyle Daukaus",
+     "verdict": "mixed",
+     "note": "He got the takedown and the back exactly as expected but couldn't finish, and Barriault escaped."
+    },
+    {
+     "by": "read",
+     "claim": "Daukaus's chokes vs Barriault's pressure",
+     "tag": "grappling",
+     "favoured": "Kyle Daukaus",
+     "verdict": "mixed",
+     "note": "The chokes came close; Barriault survived them."
+    },
+    {
+     "by": "read",
+     "claim": "Daukaus's durability (against)",
+     "tag": "durability",
+     "favoured": "Marc-Andre Barriault",
+     "verdict": "held",
+     "note": "Stopped by knees and ground strikes again, his second straight stoppage loss."
+    },
+    {
+     "by": "read",
+     "claim": "Barriault 1-5 in his last six",
+     "tag": "form",
+     "favoured": "Kyle Daukaus",
+     "verdict": "failed",
+     "note": "Barriault won in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Daukaus",
+     "tag": "wear_and_tear",
+     "favoured": "Kyle Daukaus",
+     "verdict": "failed",
+     "note": "The more worn fighter absorbed the grappling and the fresher one was stopped."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Daukaus",
+     "tag": "overall",
+     "favoured": "Kyle Daukaus",
+     "verdict": "failed",
+     "note": "Lost in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Barriault",
+     "tag": "striking_rating",
+     "favoured": "Marc-Andre Barriault",
+     "verdict": "held",
+     "note": "The knees decided it."
+    },
+    {
+     "by": "model",
+     "claim": "Grappling rating favours Daukaus",
+     "tag": "grappling_rating",
+     "favoured": "Kyle Daukaus",
+     "verdict": "held",
+     "note": "Daukaus dominated the ground for two minutes."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Daukaus",
+     "tag": "wrestling_rating",
+     "favoured": "Kyle Daukaus",
+     "verdict": "held",
+     "note": "Took Barriault down at will."
+    }
+   ]
+  },
+  "timothy-cuamba-louis-jourdain": {
+   "summary": "After an even first two minutes of kicks, Cuamba took Jourdain down, survived a loose guillotine and dragged him back down every time he stood, ending round 1 with elbows from side control. In round 2 he worked the body, caught a kick for another takedown, trapped the wrist and punched until Jourdain gave his back, then finished with a choke at 2:48.",
+   "turning_point": "Cuamba's first takedown; Jourdain never stopped one after that.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 Cuamba",
+       "10-9 Cuamba",
+       "10-9 Cuamba"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/17/timmy-cuamba-drags-louis-jourdain-into-deep-water-finishes-him-at-ufc-edmonton/"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Cuamba has been taken down and choked recently and struggles going backwards",
+     "tag": "style",
+     "favoured": "Louis Jourdain",
+     "verdict": "failed",
+     "note": "Cuamba was the one taking the back; Jourdain never got him moving backwards."
+    },
+    {
+     "by": "read",
+     "claim": "Cuamba's back-take defence",
+     "tag": "grappling",
+     "favoured": "Louis Jourdain",
+     "verdict": "untested",
+     "note": "Jourdain never got a takedown or the back."
+    },
+    {
+     "by": "read",
+     "claim": "Jourdain's range and counters",
+     "tag": "style",
+     "favoured": "Louis Jourdain",
+     "verdict": "failed",
+     "note": "Kicks early, then taken down repeatedly."
+    },
+    {
+     "by": "read",
+     "claim": "Jourdain's layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Timothy Cuamba",
+     "verdict": "held",
+     "note": "Looked flat and was out-wrestled after a year out."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Cuamba",
+     "tag": "outside_rating",
+     "favoured": "Timothy Cuamba",
+     "verdict": "held",
+     "note": "The UFC-tested fighter won clearly."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Jourdain",
+     "tag": "submission_threat",
+     "favoured": "Louis Jourdain",
+     "verdict": "failed",
+     "note": "His guillotine and kimura went nowhere; he was submitted."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Cuamba",
+     "tag": "overall",
+     "favoured": "Timothy Cuamba",
+     "verdict": "held",
+     "note": "Won every minute after the first two."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Cuamba",
+     "tag": "striking_rating",
+     "favoured": "Timothy Cuamba",
+     "verdict": "held",
+     "note": "Cleaner combinations and body shots."
+    }
+   ]
+  },
+  "mandel-nallo-nate-landwehr": {
+   "summary": "Nallo controlled range from the opening exchange with his jab, front kicks and calf kicks, wobbled Landwehr with a straight right, battered him along the fence and hobbled his lead leg: a 10-8 round on every Sherdog card, ending with Nallo on the back. Two more leg kicks in round 2 dropped Landwehr and the referee stopped it at 0:47.",
+   "turning_point": "The calf kicks late in round 1: Landwehr could barely stand on the leg by the bell.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-8 Nallo",
+       "10-8 Nallo",
+       "10-8 Nallo"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/mandel-nallo/ufc-edmonton-results-mandel-nallo-tkos-nate-landwehr-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-mandel-nallo-tkos-nate-landwehr-video"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/17/mandel-nallo-batters-nate-landwehr-earns-first-ufc-victory/"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Landwehr, 38 and moving up, has been knocked out three straight times walking forward: KO R1",
+     "tag": "durability",
+     "favoured": "Mandel Nallo",
+     "verdict": "held",
+     "note": "Hurt badly in round 1 and stopped early in round 2 (the round was off by one)."
+    },
+    {
+     "by": "read",
+     "claim": "Landwehr's three straight KO losses",
+     "tag": "durability",
+     "favoured": "Mandel Nallo",
+     "verdict": "held",
+     "note": "A fourth straight stoppage loss."
+    },
+    {
+     "by": "read",
+     "claim": "Landwehr moving up at 38",
+     "tag": "age",
+     "favoured": "Mandel Nallo",
+     "verdict": "held",
+     "note": "Out-sized and out-reached all fight."
+    },
+    {
+     "by": "read",
+     "claim": "Nallo's chin (against)",
+     "tag": "durability",
+     "favoured": "Nate Landwehr",
+     "verdict": "untested",
+     "note": "Landwehr landed almost nothing clean."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Nallo",
+     "tag": "wear_and_tear",
+     "favoured": "Mandel Nallo",
+     "verdict": "held",
+     "note": "Landwehr's accumulated damage showed."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Nallo",
+     "tag": "power_vs_chin",
+     "favoured": "Mandel Nallo",
+     "verdict": "held",
+     "note": "Hurt early and stopped."
+    }
+   ]
+  },
+  "tanner-boser-jhonata-diniz": {
+   "summary": "Boser, the smaller man, took Diniz down with a single leg in every round and Diniz never stopped one. Round 1 was side control and knees, round 2 a crucifix with elbows and punches (10-8 on every card), and in round 3 Boser mounted, took the back and kept punching until Herzog stopped it at 4:26.",
+   "turning_point": "Boser's first takedown in round 1 showed Diniz had no answer on the floor.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 Boser",
+       "10-9 Boser",
+       "10-9 Boser"
+      ],
+      [
+       2,
+       "10-8 Boser",
+       "10-8 Boser",
+       "10-8 Boser"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "The bigger, rangier striker against an undersized heavyweight; trading early: KO R1",
+     "tag": "size",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "Boser wrestled instead of trading and the size never mattered on the floor."
+    },
+    {
+     "by": "read",
+     "claim": "Size and reach",
+     "tag": "size",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "Taken down at will."
+    },
+    {
+     "by": "read",
+     "claim": "Diniz's layoff and withdrawal (against)",
+     "tag": "inactivity",
+     "favoured": "Tanner Boser",
+     "verdict": "held",
+     "note": "Diniz looked unprepared for the wrestling."
+    },
+    {
+     "by": "read",
+     "claim": "Boser at home",
+     "tag": "home",
+     "favoured": "Tanner Boser",
+     "verdict": "held",
+     "note": "Won at home."
+    },
+    {
+     "by": "model",
+     "claim": "Size gap favours Diniz",
+     "tag": "size_gap",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "The smaller heavyweight controlled him for three rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Diniz",
+     "tag": "wear_and_tear",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "The older, more worn fighter won every round."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Diniz",
+     "tag": "reach",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "Never got to use it."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Diniz",
+     "tag": "wrestling_rating",
+     "favoured": "Jhonata Diniz",
+     "verdict": "failed",
+     "note": "Taken down in every round, stopped nothing."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Boser",
+     "tag": "experience",
+     "favoured": "Tanner Boser",
+     "verdict": "held",
+     "note": "The veteran's game plan won."
+    }
+   ]
+  },
+  "nick-galanti-julien-leblanc": {
+   "summary": "Galanti shot inside 15 seconds, took Leblanc down, dragged him back when he stood, took the back with both hooks and forced the tap with a face crank at 1:26 of round 1.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "A submission grappler against a 35-year-old off a damaged knee, choked in round one of his debut: SUB R1",
+     "tag": "grappling",
+     "favoured": "Nick Galanti",
+     "verdict": "held",
+     "note": "Taken down, back taken and submitted in 86 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Leblanc's knee injury",
+     "tag": "injury",
+     "favoured": "Nick Galanti",
+     "verdict": "untested",
+     "note": "Over before the knee was tested on the feet."
+    },
+    {
+     "by": "read",
+     "claim": "Galanti's grappling vs Leblanc's ground defence",
+     "tag": "grappling",
+     "favoured": "Nick Galanti",
+     "verdict": "held",
+     "note": "No defence to the takedown or the back."
+    },
+    {
+     "by": "read",
+     "claim": "Leblanc's late opponent switch",
+     "tag": "short_notice",
+     "favoured": "Nick Galanti",
+     "verdict": "untested",
+     "note": "Can't tell from 86 seconds."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Galanti",
+     "tag": "overall",
+     "favoured": "Nick Galanti",
+     "verdict": "held",
+     "note": "Won easily."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Galanti",
+     "tag": "wrestling_rating",
+     "favoured": "Nick Galanti",
+     "verdict": "held",
+     "note": "Two easy takedowns."
+    }
+   ]
+  },
+  "joel-faglier-javad-mahjoub": {
+   "summary": "Mahjoub surprised everyone with his hands: he dropped Faglier with a one-two, swarmed him on the fence and floored him again with a straight right, a 10-8 round on every card. But he was exhausted by the bell; Faglier went to the body in round 2, and once Mahjoub's punches lost their steam a big right hand put him down and hammerfists ended it at 2:11.",
+   "turning_point": "The end of round 1: Mahjoub punched himself out trying to finish, and Faglier survived.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-8 Mahjoub",
+       "10-8 Mahjoub",
+       "10-8 Mahjoub"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/516279/ufc-edmonton-video-joel-faglier-survives-multiple-knockdowns-knocks-out-javad-mahjoub-in-wild-comeback"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Faglier, 25 and heavier, against a 35-year-old judoka: Faglier's hands early, R1",
+     "tag": "age",
+     "favoured": "Joel Faglier",
+     "verdict": "mixed",
+     "note": "Faglier won late, on the older man's cardio, after nearly being finished himself in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Faglier on short notice",
+     "tag": "short_notice",
+     "favoured": "Javad Mahjoub",
+     "verdict": "failed",
+     "note": "Faglier lasted; Mahjoub was the one who faded."
+    },
+    {
+     "by": "read",
+     "claim": "Mahjoub's Olympic judo",
+     "tag": "grappling",
+     "favoured": "Javad Mahjoub",
+     "verdict": "untested",
+     "note": "Mahjoub won round 1 with his hands, not judo."
+    },
+    {
+     "by": "read",
+     "claim": "Mahjoub's age and inexperience (against)",
+     "tag": "cardio",
+     "favoured": "Joel Faglier",
+     "verdict": "held",
+     "note": "Gassed after one round and stopped in the second."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Faglier",
+     "tag": "overall",
+     "favoured": "Joel Faglier",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Faglier",
+     "tag": "age_curve",
+     "favoured": "Joel Faglier",
+     "verdict": "held",
+     "note": "The younger man's gas tank decided it."
+    }
+   ]
+  },
+  "katlyn-cerminara-mackenzie-stiller": {
+   "summary": "Stiller started fast with combinations and low kicks, but Cerminara settled behind her jab, check hooks and knees, and Stiller's punches started falling short. When Stiller shot a single leg late in round 1 Cerminara sprawled and punched, Stiller hit the mat under fire and the referee stopped it at 4:46: Cerminara's first finish in more than a decade.",
+   "turning_point": "Stiller's desperation single leg at the fence, which put her on the mat under punches.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-video-katlyn-cerminara-224746089.html"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "A strawweight moving up on short notice, much smaller, against a long volume striker: decision",
+     "tag": "size",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "mixed",
+     "note": "Size and range won it as expected, but by stoppage, not on the cards."
+    },
+    {
+     "by": "read",
+     "claim": "Stiller on short notice and moving up",
+     "tag": "short_notice",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "held",
+     "note": "Came up short on her punches after a fast start."
+    },
+    {
+     "by": "read",
+     "claim": "Size and range",
+     "tag": "reach",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "held",
+     "note": "The jab and knees controlled the fight."
+    },
+    {
+     "by": "read",
+     "claim": "Cerminara's age and layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Mackenzie Stiller",
+     "verdict": "failed",
+     "note": "Looked sharper than before the layoff."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Stiller",
+     "tag": "wear_and_tear",
+     "favoured": "Mackenzie Stiller",
+     "verdict": "failed",
+     "note": "The fresher fighter faded and was stopped."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Cerminara",
+     "tag": "outside_rating",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Cerminara",
+     "tag": "overall",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Stiller",
+     "tag": "age_curve",
+     "favoured": "Mackenzie Stiller",
+     "verdict": "failed",
+     "note": "The 38-year-old won in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Cerminara",
+     "tag": "striking_rating",
+     "favoured": "Katlyn Cerminara",
+     "verdict": "held",
+     "note": "Won it standing."
+    }
+   ]
+  },
+  "steven-koslow-chad-anheliger": {
+   "summary": "Anheliger landed the cleaner leg kicks and right hands at range, but Koslow took him down midway through every round and won the first two from top position with punches and elbows. In round 3 he got a body-lock takedown, moved through mount to the back with a body triangle and finished with a rear-naked choke at 4:31.",
+   "turning_point": "Koslow's takedown in round 1: from then on Anheliger spent most of the fight underneath him.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 Koslow",
+       "10-9 Koslow",
+       "10-9 Koslow"
+      ],
+      [
+       2,
+       "10-9 Koslow",
+       "10-9 Koslow",
+       "10-9 Koslow"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-video-steven-koslow-223821647.html"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Six of Anheliger's eight losses are submissions and he defends few takedowns; Koslow's chance is early: SUB R1",
+     "tag": "grappling",
+     "favoured": "Steven Koslow",
+     "verdict": "mixed",
+     "note": "The grappling read held, but Koslow lasted three rounds and finished late, not early."
+    },
+    {
+     "by": "read",
+     "claim": "Anheliger's takedown defence",
+     "tag": "td_def",
+     "favoured": "Steven Koslow",
+     "verdict": "held",
+     "note": "Taken down in all three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Koslow's four-year layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Chad Anheliger",
+     "verdict": "failed",
+     "note": "Koslow showed no rust or cardio problem over three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Anheliger's age and knee",
+     "tag": "age",
+     "favoured": "Steven Koslow",
+     "verdict": "held",
+     "note": "Close to 40 and it showed."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Anheliger",
+     "tag": "striking_rating",
+     "favoured": "Chad Anheliger",
+     "verdict": "held",
+     "note": "Won the exchanges on the feet."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Koslow",
+     "tag": "age_curve",
+     "favoured": "Steven Koslow",
+     "verdict": "held",
+     "note": "The younger man was stronger late."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Koslow",
+     "tag": "wrestling_edge",
+     "favoured": "Steven Koslow",
+     "verdict": "held",
+     "note": "Took him down every round."
+    },
+    {
+     "by": "model",
+     "claim": "Layoff favours Anheliger",
+     "tag": "layoff",
+     "favoured": "Chad Anheliger",
+     "verdict": "failed",
+     "note": "The four-year layoff didn't show."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Anheliger",
+     "tag": "outside_rating",
+     "favoured": "Chad Anheliger",
+     "verdict": "failed",
+     "note": "Lost every round."
+    }
+   ]
+  },
+  "chelsea-chandler-melissa-croden": {
+   "summary": "Croden was winning round 1 clearly: she stalked, landed the one-two, elbows and knees to the body, and Chandler kept clinching to survive. With seconds left Croden tripped her in the clinch, Chandler rolled into top position and caught a kimura that she cranked until the arm gave, a submission at 4:52.",
+   "turning_point": "Croden's trip takedown in the last 20 seconds put her arm where Chandler could catch it.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc/melissa-croden-hopes-people-stop-sg-on-womens-mma-laments-the-red-pill-bandwagon-and-caveman-perspective/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=melissa-croden-hopes-people-stop-sg-on-womens-mma-laments-the-red-pill-bandwagon-and-caveman-perspective"
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Croden builds late and has never been finished; Chandler is dangerous early: Croden KO R3",
+     "tag": "durability",
+     "favoured": "Melissa Croden",
+     "verdict": "failed",
+     "note": "Croden was out-striking her, but Chandler's early danger (the grappling, not the power) finished it in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Chandler's weight cut and injuries",
+     "tag": "weight_cut",
+     "favoured": "Melissa Croden",
+     "verdict": "untested",
+     "note": "Chandler looked fine and the fight lasted under five minutes."
+    },
+    {
+     "by": "read",
+     "claim": "Croden's durability and late pressure",
+     "tag": "durability",
+     "favoured": "Melissa Croden",
+     "verdict": "failed",
+     "note": "Finished for the first time, by submission."
+    },
+    {
+     "by": "read",
+     "claim": "Chandler's early finishes (against)",
+     "tag": "style",
+     "favoured": "Chelsea Chandler",
+     "verdict": "held",
+     "note": "Exactly the danger: a round-1 submission off a scramble."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Chandler",
+     "tag": "wrestling_rating",
+     "favoured": "Chelsea Chandler",
+     "verdict": "held",
+     "note": "Won the scramble that mattered."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Croden",
+     "tag": "striking_exchange",
+     "favoured": "Melissa Croden",
+     "verdict": "held",
+     "note": "Croden was landing at will before the finish."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Croden",
+     "tag": "wrestling_edge",
+     "favoured": "Melissa Croden",
+     "verdict": "mixed",
+     "note": "She got the takedown, and it cost her the arm."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Croden",
+     "tag": "striking_rating",
+     "favoured": "Melissa Croden",
+     "verdict": "held",
+     "note": "Won the striking."
+    }
+   ]
+  },
+  "su-young-you-cody-chovancek": {
+   "summary": "You out-wrestled the unbeaten Chovancek for three rounds: single legs and mat returns in round 1, a leglock sweep and mount with punches in round 2, and in round 3 he took the back, chased the arm triangle and wrenched a kimura from side control for the tap at 4:19.",
+   "turning_point": "Round 1: You's first mat return; Chovancek never found a way back to his feet that lasted.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257",
+     "round_scores": [
+      [
+       1,
+       "10-9 You",
+       "10-9 You",
+       "10-9 You"
+      ],
+      [
+       2,
+       "10-9 You",
+       "10-9 You",
+       "10-9 You"
+      ]
+     ]
+    }
+   ],
+   "written": "2026-10-18",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "The unbeaten finisher at home, but You's chain wrestling and durability make it a grind: Chovancek DEC",
+     "tag": "wrestling_edge",
+     "favoured": "Cody Chovancek",
+     "verdict": "failed",
+     "note": "The grind was all You's; Chovancek was controlled on the floor for three rounds and submitted."
+    },
+    {
+     "by": "read",
+     "claim": "You's wrestling volume",
+     "tag": "wrestling",
+     "favoured": "You Su-young",
+     "verdict": "held",
+     "note": "Took him down whenever he wanted."
+    },
+    {
+     "by": "read",
+     "claim": "Chovancek's finishing and cardio",
+     "tag": "style",
+     "favoured": "Cody Chovancek",
+     "verdict": "failed",
+     "note": "Never threatened a finish."
+    },
+    {
+     "by": "read",
+     "claim": "Chovancek's layoff",
+     "tag": "inactivity",
+     "favoured": "You Su-young",
+     "verdict": "held",
+     "note": "Flat and out-wrestled after 13 months out."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours You",
+     "tag": "wrestling_edge",
+     "favoured": "You Su-young",
+     "verdict": "held",
+     "note": "Decisive."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Chovancek",
+     "tag": "wear_and_tear",
+     "favoured": "Cody Chovancek",
+     "verdict": "failed",
+     "note": "The more experienced fighter won comfortably."
+    },
+    {
+     "by": "model",
+     "claim": "Striking defence favours You",
+     "tag": "striking_defense",
+     "favoured": "You Su-young",
+     "verdict": "untested",
+     "note": "Little striking happened."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Chovancek",
+     "tag": "striking_rating",
+     "favoured": "Cody Chovancek",
+     "verdict": "untested",
+     "note": "Little striking happened."
+    }
+   ],
+   "single_source": true
+  }
+ },
  "coverage": {
   "mike-malott-joaquin-buckley": {
    "a": "Mike Malott",
@@ -27,9 +1252,19 @@
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
     },
     {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-results/480068/ufc-edmonton-results-biggest-winners-losers-from-buckley-vs-malott-last-night"
+    },
+    {
      "outlet": "MMA Fighting",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/515989/ufc-edmonton-results-buckley-vs-malott"
+     "url": "https://www.mmafighting.com/ufc/516502/ufc-edmonton-post-fight-show-reaction-to-mike-malotts-highlight-reel-knockout-of-joaquin-buckley"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/mike-malott/watch-jeff-malott-and-the-anaheim-ducks-go-wild-after-his-brother-mike-malotts-ko-win/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=watch-jeff-malott-and-the-anaheim-ducks-go-wild-after-his-brother-mike-malotts-ko-win"
     }
    ],
    "round_scores": [
@@ -58,6 +1293,21 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/jasmine-jasudavicius/ufc-edmonton-results-jasmine-jasudavicius-defeats-erin-blanchfield-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-jasmine-jasudavicius-defeats-erin-blanchfield-highlights"
+    },
+    {
+     "outlet": "Uncrowned",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/mma/article/ufc-edmonton-results-mike-malott-viciously-folds-joaquin-buckley-jasmine-jasudavicius-shocks-erin-blanchfield-032744371.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-results-jasmine-jasudavicius-021805913.html"
     }
    ],
    "round_scores": [
@@ -103,6 +1353,16 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/cristian-perez/ufc-edmonton-results-cristian-perez-kos-kyle-nelson-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-cristian-perez-kos-kyle-nelson-video"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/17/cristian-perez-lives-up-to-the-hype-with-violent-finish-of-kyle-nelson-at-ufc-edmonton/"
     }
    ],
    "round_scores": null,
@@ -129,6 +1389,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/17/marc-andre-barriault-stuffs-kyle-daukaus-with-big-knee-gets-tko-victory/"
     }
    ],
    "round_scores": null,
@@ -155,6 +1420,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/17/timmy-cuamba-drags-louis-jourdain-into-deep-water-finishes-him-at-ufc-edmonton/"
     }
    ],
    "round_scores": [
@@ -188,6 +1458,16 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/mandel-nallo/ufc-edmonton-results-mandel-nallo-tkos-nate-landwehr-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-edmonton-results-mandel-nallo-tkos-nate-landwehr-video"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/17/mandel-nallo-batters-nate-landwehr-earns-first-ufc-victory/"
     }
    ],
    "round_scores": [
@@ -286,6 +1566,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/516279/ufc-edmonton-video-joel-faglier-survives-multiple-knockdowns-knocks-out-javad-mahjoub-in-wild-comeback"
     }
    ],
    "round_scores": [
@@ -319,6 +1604,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-video-katlyn-cerminara-224746089.html"
     }
    ],
    "round_scores": null,
@@ -345,6 +1635,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-edmonton-video-steven-koslow-223821647.html"
     }
    ],
    "round_scores": [
@@ -384,6 +1679,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-edmonton-live-updates-buckley-200051678.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc/melissa-croden-hopes-people-stop-sg-on-womens-mma-laments-the-red-pill-bandwagon-and-caveman-perspective/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=melissa-croden-hopes-people-stop-sg-on-womens-mma-laments-the-red-pill-bandwagon-and-caveman-perspective"
     }
    ],
    "round_scores": null,

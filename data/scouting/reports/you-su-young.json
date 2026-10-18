@@ -1,6 +1,6 @@
 {
  "name": "You Su-young",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "A Korean grappler-wrestler (16-4, 2 NC; 2-1 UFC) who won Road to UFC Season 3 and grinds out decisions: his last six wins all went the distance. Coming off his first UFC loss, a second-round rear-naked choke against Elijah Smith in March after he won round one on the mat.",
  "how_they_fight": {
@@ -14,7 +14,8 @@
   "Wins on the scorecards: last six wins all decisions",
   "Front-loads takedowns; strong round one",
   "Takedowns dry up against good defenders (0 for 6 vs Xiao)",
-  "Vulnerable to counters on his entries (Smith R2 KD then RNC)"
+  "Vulnerable to counters on his entries (Smith R2 KD then RNC)",
+  "Top control and submissions against strikers: held the unbeaten Chovancek down for three rounds; the owner's note: \"You is a good grappler\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "concerns": [
   "First career back-to-back losses if he drops this one",
@@ -41,6 +42,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 135.5 lb for the bantamweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Beat Cody Chovancek by R3 kimura after out-wrestling him in every round.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -71,6 +77,13 @@
    "title": "Undefeated Canadian Debuts at UFC Edmonton",
    "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
    "date": "2026-09-04"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

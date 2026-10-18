@@ -1,6 +1,6 @@
 {
  "name": "Cody Chovancek",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "An unbeaten (9-0) Niagara Top Team bantamweight from Petrolia, Ontario and former Unified MMA champion, making his UFC debut 13 months after knocking out Raphael Uchegbu on the Contender Series. A finisher who has gone five rounds twice and won, including a fifth-round calf slicer.",
  "how_they_fight": {
@@ -18,7 +18,8 @@
  "concerns": [
   "Step up in competition; UFC debut",
   "13 months out since the Contender Series",
-  "Takedown defence vs a volume wrestler"
+  "Takedown defence vs a volume wrestler",
+  "Couldn't get up against a chain wrestler; the owner's note: \"Cody did not so much at all\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "keys_to_beat": [
   "Chain wrestling and long top control",
@@ -40,6 +41,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 135.5 lb for the bantamweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to You Su-young by R3 kimura: taken down repeatedly and controlled for three rounds in his debut.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -70,6 +76,13 @@
    "title": "Cody Chovancek: Pressure Makes Diamonds",
    "url": "https://kr.ufc.com/news/cody-chovancek-pressure-makes-diamonds-ufc-fight-pass",
    "date": "2024-06-10"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

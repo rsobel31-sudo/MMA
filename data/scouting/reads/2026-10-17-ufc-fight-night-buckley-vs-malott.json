@@ -155,7 +155,15 @@
      "method": "KO/TKO",
      "url": "https://fightdesk.substack.com/p/ufc-fight-night-buckley-vs-malott"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Mike Malott",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 152
+   }
   },
   {
    "a": "Erin Blanchfield",
@@ -280,7 +288,15 @@
      "method": "DEC",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Jasmine Jasudavicius",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Cristian Perez",
@@ -377,7 +393,15 @@
      "method": "KO/TKO",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Cristian Perez",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 27
+   }
   },
   {
    "a": "Kyle Daukaus",
@@ -495,7 +519,15 @@
      "method": "SUB",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Marc-Andre Barriault",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 268
+   }
   },
   {
    "a": "Mandel Nallo",
@@ -606,7 +638,15 @@
      "method": "KO/TKO",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Mandel Nallo",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 47
+   }
   },
   {
    "a": "Jhonata Diniz",
@@ -689,7 +729,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Tanner Boser",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 266
+   }
   },
   {
    "a": "Julien Leblanc",
@@ -758,7 +806,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.3,
+   "winner": "Nick Galanti",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 86
+   }
   },
   {
    "a": "Javad Mahjoub",
@@ -834,7 +890,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Joel Faglier",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 131
+   }
   },
   {
    "a": "Katlyn Cerminara",
@@ -917,7 +981,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.25,
+   "winner": "Katlyn Cerminara",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 286
+   }
   },
   {
    "a": "Chad Anheliger",
@@ -986,7 +1058,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Steven Koslow",
+   "result": {
+    "method": "SUB",
+    "round": 3,
+    "seconds": 271
+   }
   },
   {
    "a": "Chelsea Chandler",
@@ -1076,7 +1156,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.1,
+   "winner": "Chelsea Chandler",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 292
+   }
   },
   {
    "a": "Louis Jourdain",
@@ -1180,7 +1268,15 @@
      "method": "DEC",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Timothy Cuamba",
+   "result": {
+    "method": "SUB",
+    "round": 2,
+    "seconds": 168
+   }
   },
   {
    "a": "Cody Chovancek",
@@ -1263,7 +1359,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-291-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "You Su-young",
+   "result": {
+    "method": "SUB",
+    "round": 3,
+    "seconds": 259
+   }
   }
  ]
 }

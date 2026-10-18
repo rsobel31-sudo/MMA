@@ -1,6 +1,6 @@
 {
  "name": "Chad Anheliger",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "A 39-year-old Alberta bantamweight (13-8, 2-3 UFC) who hits hard with his right hand but is a soft spot for wrestlers: Strader, Grigoriou and Cody Gibson each took him down four or five times. Returns from nearly two years out, which he spent rehabbing a knee, against a submission-first grappler.",
  "how_they_fight": {
@@ -20,7 +20,8 @@
  "concerns": [
   "Takedown defence (about 40% in our numbers) against a pure grappler",
   "Nearly two years out with a knee rehab; 39 years old",
-  "Submission losses: six of his eight defeats"
+  "Submission losses: six of his eight defeats",
+  "Close to 40 and taken down in every round by Koslow; the owner's note suggests retirement (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "keys_to_beat": [
   "Take him down early and often; he struggles to get back up",
@@ -42,6 +43,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 135 lb for the bantamweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to Steven Koslow by R3 rear-naked choke after being taken down in every round.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -79,6 +85,13 @@
    "title": "Undefeated Canadian Debuts at UFC Edmonton",
    "url": "https://heavy.com/sports/ufc/undefeated-canadian-debuts-at-ufc-edmonton/",
    "date": "2026-09-04"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

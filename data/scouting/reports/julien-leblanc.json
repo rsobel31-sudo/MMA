@@ -1,6 +1,6 @@
 {
  "name": "Julien Leblanc",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "A 35-year-old Gatineau middleweight (10-3) from Patenaude Martial Arts who finished eight of his ten regional wins, then lost his UFC debut to Robert Valentin by first-round rear-naked choke in April 2026. Per Radio-Canada, his knee gave out on the first kick of that fight (kneecap micro-fractures, two torn ligaments), so this is a comeback from a serious injury on a fresh opponent swap.",
  "how_they_fight": {
@@ -20,7 +20,8 @@
   "Knee: per Radio-Canada, micro-fractures in the kneecap and two torn ligaments from the first kick vs. Valentin; cleared to train, but confidence in the knee was the camp's stated issue",
   "Age 35 and coming off a first-round submission loss",
   "Prepared for Gilbert Urbina, now faces a different opponent (Nick Galanti) about two and a half weeks out (switch reported Oct. 1)",
-  "Got taken down and lost position quickly once the fight hit the floor at UFC level"
+  "Got taken down and lost position quickly once the fight hit the floor at UFC level",
+  "0-2 in the UFC, both quick submission losses; the owner's note: \"Leblanc is not UFC level\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "keys_to_beat": [
   "Test the knee early with leg kicks and level changes",
@@ -43,6 +44,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 185 lb for the middleweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to Nick Galanti by R1 face crank at 1:26 after an immediate takedown and back take.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -87,6 +93,13 @@
    "title": "UFC Fight Night: Buckley vs. Malott",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
    "date": "2026-10-13"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

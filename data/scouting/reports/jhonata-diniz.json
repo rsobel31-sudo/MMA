@@ -1,6 +1,6 @@
 {
  "name": "Jhonata Diniz",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "Big, rangy Brazilian kickboxer (9-2, 3-2 UFC; 193 cm, 201 cm reach) who wins standing and has lost only when heavier grapplers took him down and beat him up from top position. Hasn't fought since an October 2025 loss to Mario Pinto and withdrew from a June 2026 bout for undisclosed reasons.",
  "how_they_fight": {
@@ -19,7 +19,8 @@
  "concerns": [
   "Takedown and bottom-position defense against heavier wrestlers",
   "A year out after a finish loss, and withdrew from his June 2026 bout (reason undisclosed)",
-  "Third-round cardio"
+  "Third-round cardio",
+  "Taken down at will even by a smaller heavyweight (Boser, Oct 2026); the owner's note: \"Diniz falls down when you touch his legs\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "keys_to_beat": [
   "Take him down and hold top position; the damage piles up from there",
@@ -46,6 +47,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 251.5 lb for the heavyweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to Tanner Boser by R3 TKO: taken down in every round by a smaller heavyweight and beaten up from side control, a crucifix and mount (10-8 R2 on every Sherdog card).",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -111,6 +117,13 @@
    "title": "UFC Fight Night: Buckley vs. Malott (event page)",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
    "date": "2026-10-13"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

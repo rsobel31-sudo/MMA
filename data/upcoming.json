@@ -585,7 +585,7 @@
    "bouts": [
     {
      "order": 0,
-     "segment": "Fight card",
+     "segment": "Main card",
      "weight_class": "Heavyweight",
      "a": "Ciryl Gane",
      "b": "Josh Hokit",
@@ -599,7 +599,7 @@
     },
     {
      "order": 1,
-     "segment": "Fight card",
+     "segment": "Main card",
      "weight_class": "Women's Bantamweight",
      "a": "Kayla Harrison",
      "b": "Amanda Nunes",
@@ -613,7 +613,7 @@
     },
     {
      "order": 2,
-     "segment": "Fight card",
+     "segment": "Main card",
      "weight_class": "Middleweight",
      "a": "Caio Borralho",
      "b": "Yousri Belgaroui",
@@ -627,7 +627,7 @@
     },
     {
      "order": 3,
-     "segment": "Fight card",
+     "segment": "Main card",
      "weight_class": "Welterweight",
      "a": "Uro\u0161 Medi\u0107",
      "b": "Kevin Holland",
@@ -641,7 +641,7 @@
     },
     {
      "order": 4,
-     "segment": "Fight card",
+     "segment": "Main card",
      "weight_class": "Flyweight",
      "a": "Bilal Hasan",
      "b": "Luis Gurule",
@@ -655,21 +655,7 @@
     },
     {
      "order": 5,
-     "segment": "Fight card",
-     "weight_class": "Lightweight",
-     "a": "Drew Dober",
-     "b": "Chris Duncan",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 6,
-     "segment": "Fight card",
+     "segment": "Preliminary card",
      "weight_class": "Welterweight",
      "a": "Stephen Thompson",
      "b": "Charles Radtke",
@@ -682,8 +668,22 @@
      "main_event": false
     },
     {
+     "order": 6,
+     "segment": "Preliminary card",
+     "weight_class": "Lightweight",
+     "a": "Drew Dober",
+     "b": "Chris Duncan",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
      "order": 7,
-     "segment": "Fight card",
+     "segment": "Preliminary card",
      "weight_class": "Lightweight",
      "a": "Jim Miller",
      "b": "Terrance McKinney",
@@ -697,7 +697,7 @@
     },
     {
      "order": 8,
-     "segment": "Fight card",
+     "segment": "Early preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Macy Chiasson",
      "b": "Beatriz Mesquita",
@@ -737,6 +737,17 @@
      "weight_class": "Lightweight",
      "a": "Evan Elder",
      "b": "Samuel Sanches",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 12,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Juan D\u00edaz",
+     "b": "TBA",
      "title": false,
      "result": "",
      "rounds": 3,

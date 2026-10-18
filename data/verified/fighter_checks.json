@@ -2464,6 +2464,8 @@
 "stats_official": "2"
 },
 "Bruno Oliveira": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (203 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7276,6 +7278,12 @@
 "stats_official": "6"
 },
 "In Seok Kim": {
+"stats_official": "1"
+},
+"In Su Hwang": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Ion Cutelaba": {
@@ -12197,6 +12205,8 @@
 "stats_official": "1"
 },
 "Mario Piazzon": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 180 cm, UFCStats 175 cm",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14311,6 +14321,10 @@
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "7"
 },
+"Paddy McCorry": {
+"reach": "UFCStats only (185 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Paddy Pimblett": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -14833,6 +14847,8 @@
 "stats_official": "4"
 },
 "Radley Da Silva": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15870,6 +15886,8 @@
 "stats_verified": "2"
 },
 "Roque Conceicao Moreira Junior": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15953,6 +15971,8 @@
 "stats_official": "21"
 },
 "Roybert Echeverria": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18290,6 +18310,8 @@
 "stats_official": "4"
 },
 "Vanilton Antunes": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },

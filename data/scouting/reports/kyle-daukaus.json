@@ -1,6 +1,6 @@
 {
  "name": "Kyle Daukaus",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "Philadelphia submission specialist (17-5, 1 NC; 4-5, 1 NC UFC), the 'D'arce Knight', who returned to the UFC in 2025 with two sub-minute finishes (Michel Pereira KO 0:43, Gerald Meerschaert d'arce 0:50) before Bo Nickal stopped him in the first round at UFC Freedom 250 in June. Elite front-headlock and choke game; his chin against power strikers is the issue.",
  "how_they_fight": {
@@ -19,7 +19,9 @@
  "concerns": [
   "Durability against heavy hitters coming forward",
   "Off a first-round TKO loss in June",
-  "Withdrew from a booked UFC 327 bout with Vicente Luque before being moved to the White House card (reason not reported)"
+  "Withdrew from a booked UFC 327 bout with Vicente Luque before being moved to the White House card (reason not reported)",
+  "A second straight stoppage loss; the owner's note: \"Kyle just has too shaky a chin\" (owner's notes, UFC Fight Night: Buckley vs. Malott)",
+  "Keeps shooting into knees after a failed takedown"
  ],
  "keys_to_beat": [
   "Pressure him and make the exchanges chaotic early",
@@ -51,6 +53,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 186 lb for the middleweight (on the limit) bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to Marc-Andre Barriault by R1 TKO: took him down to mount and the back, but was dropped by a knee when he shot again and finished with ground strikes.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -123,6 +130,13 @@
    "title": "Five Big Fights Added to UFC 327 in Miami",
    "url": "https://cagesidepress.com/2026/02/24/five-big-fights-added-to-ufc-327-in-miami/",
    "date": "2026-02-24"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "moderate"

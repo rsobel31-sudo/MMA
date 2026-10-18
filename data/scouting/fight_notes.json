@@ -222,5 +222,195 @@
   ],
   "note": "Took Zheleznyakova down, reached mount and the back, and opened a fight-ending cut with elbows; corner retirement after round 1.",
   "source": "https://www.sherdog.com/news/news/UFC-Vegas-122-Allen-vs-Duncan-playbyplay-results-round-scoring-203155; https://www.mmamania.com/ufc-results/476968/ufc-vegas-122-live-results-highlights-play-by-play-allen-vs-duncan"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Mike Malott",
+  "opponent": "Joaquin Buckley",
+  "category": "striking",
+  "rating": 1.5,
+  "skills": [
+   "clinch",
+   "timing",
+   "power"
+  ],
+  "note": "Neutralised Buckley in the clinch with knees, then timed a level change with a knee for a round-2 KO.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Jasmine Jasudavicius",
+  "opponent": "Erin Blanchfield",
+  "category": "grappling",
+  "rating": 2.0,
+  "skills": [
+   "back_take",
+   "control",
+   "td_off"
+  ],
+  "note": "Took Blanchfield down and took her back with a body triangle in two straight rounds; controlled every grappling exchange.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Jasmine Jasudavicius",
+  "opponent": "Erin Blanchfield",
+  "category": "striking",
+  "rating": -0.5,
+  "skills": [
+   "strike_def"
+  ],
+  "note": "Lost round 3 on the feet to Blanchfield's combinations.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Marc-Andre Barriault",
+  "opponent": "Kyle Daukaus",
+  "category": "striking",
+  "rating": 1.5,
+  "skills": [
+   "clinch",
+   "knees",
+   "gnp"
+  ],
+  "note": "Escaped Daukaus's back control, met his shots with knees and finished with ground strikes in round 1.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Marc-Andre Barriault",
+  "opponent": "Kyle Daukaus",
+  "category": "grappling",
+  "rating": -1.0,
+  "skills": [
+   "td_def"
+  ],
+  "note": "Taken down, mounted and back-controlled for two minutes before escaping.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Timothy Cuamba",
+  "opponent": "Louis Jourdain",
+  "category": "wrestling",
+  "rating": 2.0,
+  "skills": [
+   "td_off",
+   "chain_wrestling",
+   "back_take"
+  ],
+  "note": "Took Jourdain down repeatedly, kept him down and choked him out from the back in round 2.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Mandel Nallo",
+  "opponent": "Nate Landwehr",
+  "category": "striking",
+  "rating": 2.0,
+  "skills": [
+   "jab",
+   "leg_kicks",
+   "range"
+  ],
+  "note": "Controlled range with the jab, front kick and calf kicks, a 10-8 round, then stopped Landwehr with leg kicks.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Tanner Boser",
+  "opponent": "Jhonata Diniz",
+  "category": "wrestling",
+  "rating": 2.0,
+  "skills": [
+   "td_off",
+   "control",
+   "gnp"
+  ],
+  "note": "Took the bigger man down at will in all three rounds and finished from a crucifix and mount.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Nick Galanti",
+  "opponent": "Julien Leblanc",
+  "category": "grappling",
+  "rating": 1.5,
+  "skills": [
+   "td_off",
+   "back_take",
+   "submission"
+  ],
+  "note": "Takedown in 15 seconds, back take and face-crank submission at 1:26.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Joel Faglier",
+  "opponent": "Javad Mahjoub",
+  "category": "striking",
+  "rating": 0.5,
+  "skills": [
+   "durability",
+   "body_work"
+  ],
+  "note": "Survived two knockdowns in round 1, then broke the tired Mahjoub with body shots in round 2.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Katlyn Cerminara",
+  "opponent": "Mackenzie Stiller",
+  "category": "striking",
+  "rating": 1.5,
+  "skills": [
+   "jab",
+   "knees",
+   "range"
+  ],
+  "note": "Settled behind the jab and knees after Stiller's fast start and stopped her late in round 1.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Steven Koslow",
+  "opponent": "Chad Anheliger",
+  "category": "wrestling",
+  "rating": 1.5,
+  "skills": [
+   "td_off",
+   "control",
+   "back_take"
+  ],
+  "note": "Took Anheliger down in every round and finished with a rear-naked choke in round 3.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "Chelsea Chandler",
+  "opponent": "Melissa Croden",
+  "category": "grappling",
+  "rating": 1.0,
+  "skills": [
+   "scramble",
+   "submission"
+  ],
+  "note": "Out-struck for most of round 1, then reversed a trip takedown into a fight-ending kimura.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
+ },
+ {
+  "date": "2026-10-17",
+  "fighter": "You Su-young",
+  "opponent": "Cody Chovancek",
+  "category": "wrestling",
+  "rating": 2.0,
+  "skills": [
+   "td_off",
+   "control",
+   "submission"
+  ],
+  "note": "Out-wrestled the unbeaten Chovancek for three rounds and finished with a kimura.",
+  "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257; https://www.mmamania.com/ufc-results/478559/ufc-edmonton-live-results-highlights-play-by-play-malott-vs-buckley"
  }
 ]

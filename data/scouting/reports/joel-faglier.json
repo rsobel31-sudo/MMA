@@ -1,6 +1,6 @@
 {
  "name": "Joel Faglier",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "A 25-year-old heavyweight (6-0) out of Augusta, Georgia, nicknamed \"The Sniper\" and trained at his family's gym, Faglier's Mixed Martial Arts. Five of six wins are finishes (three submissions, two TKOs), mostly in round one on the regional and Fury FC circuit; he steps in for Louie Sutherland against Javad Mahjoub. He did not come via the Contender Series.",
  "how_they_fight": {
@@ -13,12 +13,14 @@
  "patterns": [
   "Mostly round-one finishes (4 of 6)",
   "Balanced finishing: 3 submissions, 2 TKOs",
-  "Went 15 minutes with UFC veteran Cody East and won the decision"
+  "Went 15 minutes with UFC veteran Cody East and won the decision",
+  "Durability and composure: weathered a 10-8 round and came back; the owner's note: \"showed heart, good strategy\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "concerns": [
   "Regional-level opposition; UFC debut on short notice (booked Sept. 30)",
   "Very little coverage or film breakdown available",
-  "Facing an Olympic-level judoka, which may blunt his top game"
+  "Facing an Olympic-level judoka, which may blunt his top game",
+  "Dropped twice in R1 by Mahjoub's straight punches"
  ],
  "keys_to_beat": [
   "Survive the first round",
@@ -35,6 +37,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 261 lb for the heavyweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Beat Javad Mahjoub by R2 TKO after surviving two knockdowns in R1; broke him with body shots.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -72,6 +79,13 @@
    "title": "UFC Fight Night: Buckley vs. Malott",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott",
    "date": "2026-10-13"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "thin"

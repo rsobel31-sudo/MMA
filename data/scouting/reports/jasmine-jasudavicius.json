@@ -1,6 +1,6 @@
 {
  "name": "Jasmine Jasudavicius",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "The No. 6-7 flyweight (15-4, 9-3 UFC), a big, physical Niagara Top Team grinder whose game is takedowns, heavy top control and late submissions. Bounced back from her first career stoppage loss (Manon Fiorot, TKO R1, October 2025) with a grinding decision over Karine Silva, and fights at home with the delay from August having reshaped her camp.",
  "how_they_fight": {
@@ -15,7 +15,8 @@
   "Late finisher: UFC subs in R3 (2) and R1 (1); otherwise decisions (9 of 15 career wins)",
   "Wins rounds with control time rather than damage",
   "Struggles when she can't get the fight down (Natalia Silva, Cortez)",
-  "Only stoppage loss: early, on the feet, to a sharp striker (Fiorot R1)"
+  "Only stoppage loss: early, on the feet, to a sharp striker (Fiorot R1)",
+  "Uses her size in the grappling: out-wrestled and back-took Blanchfield, a better-credentialed grappler, for two rounds; the owner's note: \"Jasmine uses her size really well in grappling\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "concerns": [
   "Chin/defence on the feet after the Fiorot knockout",
@@ -54,6 +55,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 124.5 lb for the women's flyweight bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Beat Erin Blanchfield by unanimous decision (29-28 x3 on Sherdog): two takedowns and a back take with a body triangle in R1, the same in R2, lost R3 on the feet.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -126,6 +132,13 @@
    "title": "Watch: Manon Fiorot Stops Jasmine Jasudavicius in 74 Seconds at UFC Vancouver",
    "url": "https://www.lowkickmma.com/watch-manon-fiorot-stops-jasmine-jasudavicius-in-74-seconds-at-ufc-vancouver/",
    "date": "2025-10-18"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "good"

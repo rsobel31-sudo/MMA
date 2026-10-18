@@ -1,6 +1,6 @@
 {
  "name": "Nate Landwehr",
- "updated": "2026-10-16T17:00:00+00:00",
+ "updated": "2026-10-18T18:00:00+00:00",
  "event": "UFC Fight Night: Buckley vs. Malott",
  "summary": "'The Train' (18-8, 5-6 UFC), a former M-1 featherweight champion and pressure brawler who drags opponents into attrition fights. At 38 he is on a three-fight skid, all knockouts, and now moves up to lightweight per UFC.com.",
  "how_they_fight": {
@@ -19,7 +19,8 @@
  "concerns": [
   "Shrinking chin at 38 after three straight knockout losses",
   "Calf-kick and counter vulnerability as he walks forward",
-  "Moving up to 155 against a bigger, longer striker (UFC.com lists lightweight; AgentMMA said featherweight)"
+  "Moving up to 155 against a bigger, longer striker (UFC.com lists lightweight; AgentMMA said featherweight)",
+  "Shot: four straight stoppage losses; the owner's note: \"Nate is shot and should retire\" (owner's notes, UFC Fight Night: Buckley vs. Malott)"
  ],
  "keys_to_beat": [
   "Kick the lead calf early to slow the march",
@@ -46,6 +47,11 @@
    "date": "2026-10-16",
    "text": "Official weigh-in: 155 lb for the lightweight, his first fight at 155 bout; no misses reported on the card.",
    "source": "https://www.ufc.com/news/official-weigh-in-results-buckley-malott-fight-night-edmonton"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Lost to Mandel Nallo by R2 TKO (leg kicks): a fourth straight stoppage loss, 1-5 in his last six.",
+   "source": "https://www.sherdog.com/news/news/UFC-Edmonton-Buckley-vs-Malott-playbyplay-results-round-scoring-203257"
   }
  ],
  "sources": [
@@ -104,6 +110,13 @@
    "title": "UFC Fight Night: Buckley vs. Malott (event page)",
    "url": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
    "date": "2026-10-13"
+  },
+  {
+   "outlet": "Owner's notes",
+   "author": "",
+   "title": "Fight-night notes, UFC Fight Night: Buckley vs. Malott",
+   "url": "",
+   "date": "2026-10-17"
   }
  ],
  "depth": "good"
