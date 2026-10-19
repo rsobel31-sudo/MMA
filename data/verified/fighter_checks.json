@@ -8598,6 +8598,8 @@
 "stats_verified": "2"
 },
 "Jimmy Drago": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -10251,7 +10253,7 @@
 "Katlyn Cerminara": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
-"reach": "UFCStats only (173 cm), not used until a second source confirms it",
+"reach": "UFCStats + StatsFight agree",
 "stats_official": "17"
 },
 "Katsuhiko Nagata": {
@@ -11483,6 +11485,8 @@
 "stats_official": "2"
 },
 "Luis Gomez": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -12526,6 +12530,8 @@
 "stats_verified": "2"
 },
 "Matheus Scheffel": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -16724,6 +16730,8 @@
 "stats_official": "7"
 },
 "Shane Collins": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_verified": "1"
 },
