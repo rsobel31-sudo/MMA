@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-20T10:55:17+00:00",
+ "checked": "2026-10-20T16:00:07+00:00",
  "ok": true,
  "failed": [],
  "sources": [
@@ -8,7 +8,7 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "17 bouts on a known fighter page",
-   "seconds": 2.1,
+   "seconds": 1.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -16,7 +16,7 @@
    "used_by": "prospect fights this week",
    "ok": true,
    "detail": "220 upcoming events listed",
-   "seconds": 2.2,
+   "seconds": 1.9,
    "last_ok": "2026-10-20"
   },
   {
@@ -24,7 +24,7 @@
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "7 UFC events in the last 45 days",
-   "seconds": 4.0,
+   "seconds": 1.8,
    "last_ok": "2026-10-20"
   },
   {
@@ -48,7 +48,7 @@
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
    "detail": "7 events; UFC 333: Volkanovski vs Evloev: 14 bouts, 14 with FanDuel moneylines",
-   "seconds": 2.5,
+   "seconds": 3.8,
    "last_ok": "2026-10-20"
   },
   {
@@ -56,7 +56,7 @@
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "15 bouts with lines",
-   "seconds": 2.8,
+   "seconds": 3.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -72,7 +72,7 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "650 fighters on the UFC roster",
-   "seconds": 1.5,
+   "seconds": 1.6,
    "last_ok": "2026-10-20"
   },
   {
@@ -80,7 +80,7 @@
    "used_by": "rankings comparison",
    "ok": true,
    "detail": "331 ranked fighters",
-   "seconds": 0.8,
+   "seconds": 1.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -88,7 +88,7 @@
    "used_by": "stat verification",
    "ok": true,
    "detail": "2357 UFC bouts in the sitemap",
-   "seconds": 7.2,
+   "seconds": 6.6,
    "last_ok": "2026-10-20"
   },
   {
@@ -104,7 +104,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.7,
+   "seconds": 0.5,
    "last_ok": "2026-10-20"
   },
   {
@@ -120,7 +120,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.5,
+   "seconds": 0.6,
    "last_ok": "2026-10-20"
   },
   {
@@ -128,7 +128,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 2.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -136,7 +136,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.8,
+   "seconds": 0.7,
    "last_ok": "2026-10-20"
   },
   {
@@ -144,7 +144,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.6,
+   "seconds": 1.4,
    "last_ok": "2026-10-20"
   },
   {
@@ -152,7 +152,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 3.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -160,7 +160,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.9,
    "last_ok": "2026-10-20"
   },
   {
@@ -168,15 +168,15 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "17 items, 17 from the last 14 days",
-   "seconds": 0.3,
+   "seconds": 0.4,
    "last_ok": "2026-10-20"
   },
   {
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "31 items, 31 from the last 14 days",
-   "seconds": 1.2,
+   "detail": "30 items, 30 from the last 14 days",
+   "seconds": 1.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -184,7 +184,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.2,
+   "seconds": 2.0,
    "last_ok": "2026-10-20"
   },
   {
@@ -192,7 +192,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.8,
+   "seconds": 3.4,
    "last_ok": "2026-10-20"
   },
   {
@@ -200,7 +200,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 3.0,
+   "seconds": 3.4,
    "last_ok": "2026-10-20"
   }
  ]

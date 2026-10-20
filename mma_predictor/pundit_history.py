@@ -368,6 +368,7 @@ def parse_over(page: str, author: str) -> List[Tuple[str, str, str, str]]:
 
 _PRED = re.compile(r"(?:Prediction|Pick|Official pick|My pick|Verdict)\s*:\s*([^\n)]{2,120})", re.I)
 _NAME = re.compile(r"^([A-Z][\w'.À-ſ-]+(?: [A-Z][\w'.À-ſ-]+){0,2})\s*:\s*(.*)$")
+_CREDIT = re.compile(r"(?i)\b(images?|photo|getty|reuters|imagn|usa today|odds|draftkings|fanduel|betmgm|credit)\b.{0,40}\b(by|via)\b|\b(by|via)\b.{0,40}\b(images?|getty|reuters|imagn|usa today|draftkings|fanduel|betmgm)\b")
 _NOT_WRITER = r"(?i)^(prediction|pick|odds|records?|staff|note|official|verdict|result|method|round|editor|photo|related|read|also|update|my pick|the pick|bet|best bet|lean|weight|why)\b"
 
 
@@ -416,7 +417,7 @@ def _parse_staff(page: str, B: Bouts, cands: List[Dict[str, str]], default_write
     def flush():
         if not (bout and writer):
             return
-        txt = "\n".join(buf)
+        txt = "\n".join(l for l in buf if not _CREDIT.search(l))  # 'IMAGN IMAGES by Reuters Connect' is a caption, not a pick
         m = _PRED.search(txt) or re.search(r"^([A-Z][\w'.-]+(?: [A-Z][\w'.-]+)?) (?:by|via) ([^\n]{2,80})$", txt, re.M)
         pick = None
         if m and m.re is _PRED:

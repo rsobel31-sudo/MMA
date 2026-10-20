@@ -62,6 +62,15 @@ def test_staff_articles_follow_bouts_and_first_name_writers(tmp_path):
                    ("Mat Riddle", "Cy Cole", "DEC"), ("Zain Bando", "Doo Ho Choi", "KO/TKO")}
 
 
+def test_staff_photo_credit_is_not_a_pick(tmp_path):
+    B = _bouts(tmp_path)
+    page = """<p>Our staff picks.</p><h2>Ann Ace vs. Bea Bold</h2>
+      <p>Drew: Bold walks her down late.</p><p>IMAGN IMAGES by Reuters Connect</p><p>Bea Bold by TKO</p>"""
+    cands = B.window("2099-04-30")
+    rows, skipped = H.resolve(B, H.parse_staff(page, B, cands, "Drew Beaupre"), "SI", "u", "2099-04-30", cands)
+    assert not skipped and [(r["pick"], r["pick_method"]) for r in rows] == [("Bea Bold", "KO/TKO")]
+
+
 def test_cageside_headshots_and_void_bouts(tmp_path):
     B = _bouts(tmp_path)
     content = """<table><thead><tr><th>Writer / Fight</th><th>Ace vs. Bold</th><th>Eel vs. Fox</th></tr></thead><tbody>

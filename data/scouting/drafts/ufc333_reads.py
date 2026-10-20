@@ -1,0 +1,114 @@
+"""Scouting reads for UFC 333: Volkanovski vs. Evloev (Abu Dhabi, 2026-10-24).
+
+logit: how far (log-odds, 0..0.8) the read moves the model toward `favours`, for what the model can't see.
+The model's number at the time is recorded (p_model, toward a) so the read can be graded against it.
+Drafted Tuesday 2026-10-20 from the reports and the picks sheet; the Friday run finalizes them with fight-week
+news, weigh-ins and pundit picks.
+"""
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1]))
+from mma_predictor.reads import check_read  # noqa: E402
+
+EVENT, DATE = "UFC 333: Volkanovski vs. Evloev", "2026-10-24"
+RESULTS = "https://en.wikipedia.org/wiki/UFC_333"
+
+# Model and FanDuel no-vig numbers toward a, from the picks sheet of 2026-10-20 16:05 UTC.
+# Magomedov-Rowston has no model number (too little data on Rowston); Kavanagh-Temirov and Lucindo-Caliari no line yet.
+P = {
+    ("Alexander Volkanovski", "Movsar Evloev"): (0.26, 0.50),
+    ("Merab Dvalishvili", "Petr Yan"): (0.54, 0.389),
+    ("Lone'er Kavanagh", "Ramazonbek Temirov"): (None, None),
+    ("Alexander Volkov", "Rizvan Kuniev"): (0.63, 0.519),
+    ("Aaron Pico", "Losene Keita"): (0.51, 0.50),
+    ("Azamat Murzakanov", "Dominick Reyes"): (0.56, 0.648),
+    ("Abdul-Rakhman Yakhyaev", "Nikita Krylov"): (0.79, 0.786),
+    ("Abus Magomedov", "Cameron Rowston"): (None, None),
+    ("Grant Dawson", "Nurullo Aliev"): (0.53, 0.537),
+    ("Asaf Chopurov", "Colby Thicknesse"): (0.78, 0.791),
+    ("Abubakar Vagaev", "Jacob Malkoun"): (0.60, 0.616),
+    ("Bolaji Oki", "Daniel Santos"): (0.36, 0.457),
+    ("Kody Steele", "Noah Gugnon"): (0.52, 0.597),
+    ("Iasmin Lucindo", "Nicolle Caliari"): (None, None),
+}
+
+READS = [
+    dict(a="Alexander Volkanovski", b="Movsar Evloev", favours="Alexander Volkanovski", logit=0.15, confidence="low",
+         reasoning="The model has the champion at 26% against a market at 50%, which looks like age and his two knockout losses "
+                   "weighing heavily. Neither applies cleanly here: Evloev has never finished a UFC opponent and has little power, so the "
+                   "chin question matters less than against Topuria or Makhachev, and Volkanovski's takedown defence and five-round pace "
+                   "are built for exactly this. Evloev's chain wrestling and youth keep it small.",
+         factors=["Evloev's lack of finishing power", "Volkanovski's takedown defence and pace", "Age 38 (against)", "Evloev's chain wrestling (against)"]),
+    dict(a="Merab Dvalishvili", b="Petr Yan", favours="Petr Yan", logit=0.0, confidence="low",
+         reasoning="Yan's takedown defence beat Dvalishvili's wrestling in the rematch, and Dvalishvili has no plan B on the feet. Against "
+                   "that, Yan comes off lumbar disc surgery and ten months out, and a back injury is the worst thing to bring into a fight "
+                   "with the busiest wrestler in the sport. The model leans Dvalishvili, the market Yan; the factors cancel: no lean.",
+         factors=["Yan's takedown defence in the rematch", "Yan's back surgery and layoff (against)", "Dvalishvili's pace"]),
+    dict(a="Lone'er Kavanagh", b="Ramazonbek Temirov", favours="Ramazonbek Temirov", logit=0.10, confidence="low",
+         reasoning="Kavanagh has been knocked out by one counter (Charles Johnson) and choked when taken down (Royval); Temirov has 11 "
+                   "first-round finishes and knocked out Erceg in round one on his return. Temirov's year-long suspension and thin wrestling "
+                   "keep it small. No line or model number yet.",
+         factors=["Kavanagh's chin", "Temirov's first-round power", "Temirov's suspension layoff (against)"]),
+    dict(a="Alexander Volkov", b="Rizvan Kuniev", favours="Alexander Volkov", logit=0.0, confidence="low",
+         reasoning="Volkov concedes takedowns to strong wrestlers, but Kuniev is a clinch and takedown-defence fighter more than a shooter, "
+                   "and his slow starts give the longer kickboxer rounds. The model is already well above the market on Volkov; no lean.",
+         factors=["Kuniev's slow starts", "Volkov's range", "Kuniev's clinch and knees (against)"]),
+    dict(a="Aaron Pico", b="Losene Keita", favours="Aaron Pico", logit=0.10, confidence="low",
+         reasoning="Keita has never faced a wrestler of Pico's level and took this on about five weeks' notice, two weeks after his last "
+                   "fight, with a weight miss in his history. Pico's chin (five early stoppage losses) against a heavy one-shot puncher "
+                   "keeps the lean small.",
+         factors=["Pico's wrestling vs Keita's untested defence", "Keita's short turnaround", "Pico's durability (against)"]),
+    dict(a="Azamat Murzakanov", b="Dominick Reyes", favours="Azamat Murzakanov", logit=0.0, confidence="low",
+         reasoning="Reyes has been stopped four times, twice in round one, and Murzakanov hits hard; but Murzakanov comes off his first "
+                   "loss, a head-kick knockout from range, and gives up reach to a long southpaw kicker. No lean.",
+         factors=["Reyes's durability", "Reach and kicks at range (against)", "Murzakanov's first loss"]),
+    dict(a="Abdul-Rakhman Yakhyaev", b="Nikita Krylov", favours="Abdul-Rakhman Yakhyaev", logit=0.0, confidence="low",
+         reasoning="Krylov has been stopped in three of his last four, and Yakhyaev finishes in round one; the model and market already "
+                   "agree at about 79%. Yakhyaev hasn't been past round one in the UFC, which is the only open question.",
+         factors=["Krylov's durability", "Yakhyaev untested late"]),
+    dict(a="Abus Magomedov", b="Cameron Rowston", favours="Abus Magomedov", logit=0.0, confidence="low",
+         reasoning="Rowston's wrestling defence (the DWCS loss to Finney) meets a veteran with real submissions, but Magomedov fades under "
+                   "sustained pressure and Rowston has won seven straight. No model number for this bout; no lean.",
+         factors=["Magomedov's grappling", "Magomedov fades under pressure (against)", "Rowston's streak"]),
+    dict(a="Grant Dawson", b="Nurullo Aliev", favours="Grant Dawson", logit=0.0, confidence="low",
+         reasoning="Dawson's three losses are all first-round knockouts, but Aliev has finished one of his last nine and is not a puncher, "
+                   "so Dawson's chin is less exposed than usual; Aliev's top control and youth balance Dawson's back takes in scrambles. "
+                   "Model and market agree; no lean.",
+         factors=["Aliev's low finishing threat", "Wrestler vs wrestler", "Dawson's back takes"]),
+    dict(a="Asaf Chopurov", b="Colby Thicknesse", favours="Asaf Chopurov", logit=0.0, confidence="low",
+         reasoning="A pressure finisher on debut against a scrappy guard player fighting outside Australia for the first time. The "
+                   "model and market agree near 79%; Thicknesse's triangles are the only route and Chopurov's first UFC fight the unknown.",
+         factors=["Chopurov's pressure and finishing", "UFC debut (against)", "Thicknesse's guard"]),
+    dict(a="Abubakar Vagaev", b="Jacob Malkoun", favours="Jacob Malkoun", logit=0.15, confidence="low",
+         reasoning="Vagaev moves up to middleweight after tiring and nearly being submitted in round three of his debut, and has been "
+                   "stopped three times by strikes; Malkoun is a pressure wrestler with improved striking and three-round cardio. "
+                   "Malkoun's size disadvantage and injury history keep it small.",
+         factors=["Vagaev moving up a division", "Vagaev's late-round fade", "Malkoun's size (against)"]),
+    dict(a="Bolaji Oki", b="Daniel Santos", favours="Daniel Santos", logit=0.0, confidence="low",
+         reasoning="Both bring weight-cut questions (Oki's first fight at 145, Santos's botched cut at UFC 320) and both have been "
+                   "stopped recently. The model is already below the market on Oki; no lean.",
+         factors=["Oki's first cut to 145", "Santos's weight-cut history", "Both coming off stoppage losses"]),
+    dict(a="Kody Steele", b="Noah Gugnon", favours="Kody Steele", logit=0.0, confidence="low",
+         reasoning="Gugnon has one UFC fight lasting 81 seconds and has seen a third round once; Steele is a grappler who gets dragged "
+                   "into slugfests and withdrew from his last booking. No lean.",
+         factors=["Gugnon unproven over three rounds", "Steele's withdrawal and brawling habit"]),
+    dict(a="Iasmin Lucindo", b="Nicolle Caliari", favours="Iasmin Lucindo", logit=0.10, confidence="low",
+         reasoning="Lucindo's clinch strength and takedowns against a grappler who is usually out-landed on the feet; Caliari's only "
+                   "strawweight fight is a third-round submission. Lucindo's 14 months out after a doping suspension keep it small. No "
+                   "line or model number yet.",
+         factors=["Lucindo's strength and top control", "Caliari out-landed on the feet", "Lucindo's layoff (against)"]),
+]
+
+bouts = []
+for r in READS:
+    pm, pf = P[(r["a"], r["b"])]
+    r.update(event=EVENT, date=DATE, p_model=pm, p_market=pf, created="2026-10-20T18:00:00+00:00", pundits=[])
+    check_read(r)
+    bouts.append(r)
+(ROOT / "reads" / "2026-10-24-ufc-333.json").write_text(
+    json.dumps({"event": EVENT, "date": DATE, "results_url": RESULTS, "bouts": bouts}, indent=1, ensure_ascii=False) + "\n")
+print(len(bouts), "reads")
