@@ -1,0 +1,99 @@
+{
+ "name": "Lucia Szabova",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "An unbeaten Slovakian (10-0 in our data; other outlets list 11-0 or 12-0) who signs with the UFC as Oktagon's two-division champion, the first woman to hold Oktagon titles at bantamweight and flyweight at once. Makes her debut at bantamweight; she finishes from mount and from the clinch, and has gone five rounds.",
+ "how_they_fight": {
+  "Striking": "Comes from Muay Thai and kickboxing (Cageside Press). Pressures and does damage in the clinch with knees and elbows: that is how she broke Leidiane Fernandes in rounds two and three before the finish (per LowKick MMA). Two first-round TKOs on top of that.",
+  "Grappling": "Trips and takedowns into mount, then ground strikes: both title-winning finishes (Bolander 2025, Fernandes 2026) were ground-and-pound from mount (Cageside Press). Four submission wins, two in R1, one in R2, one in R3.",
+  "Defense": "Never beaten. Took heavy shots in the first round against Fernandes before taking over (per a fan post quoted by LowKick MMA; treat as soft). We have no strike-by-strike data for her; the numbers in our brief are placeholders, not her stats.",
+  "Pace & cardio": "Finishes early or grinds late: of seven stoppages, four came in R1 (Petkeviciute sub, Netza TKO, Faria sub, Bolander TKO), one in R2 and two in R3 (Gumienna sub at 4:38, Fernandes TKO at 2:12). Went the full 25 minutes to beat ex-UFC fighter Lucie Pudilova in August. Against Fernandes she outlasted an opponent who tired in R2. Never stopped.",
+  "Fight IQ": "Composed; has dealt with title fights, a rebooked opponent and a five-rounder. A two-and-a-half-year gap between July 2021 and March 2024 (reason not found)."
+ },
+ "patterns": [
+  "Unbeaten; a -200 favourite or shorter in every fight with a line in our data",
+  "Four R1 finishes, but her two most recent title wins came by R3 TKO and a five-round decision",
+  "Clinch knees and elbows, then a trip to mount and ground strikes",
+  "Has gone five rounds; got stronger as Fernandes tired"
+ ],
+ "concerns": [
+  "UFC debut; every pro fight has been in Oktagon",
+  "Competition level: our data shows few opponents of UFC calibre (Pudilova is the best)",
+  "Was hit hard early by Fernandes (single, soft source)",
+  "Record differs between outlets (10-0 here, 11-0 or 12-0 elsewhere)"
+ ],
+ "keys_to_beat": [
+  "Keep her off the clinch and out of mount",
+  "Hit her early, before she settles into pressure",
+  "Make her deal with real takedown defense and scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-08-22",
+   "text": "Reported signed by the UFC (her Oktagon promoter acknowledged it, per AgentMMA) and booked against Tainara Lisboa at bantamweight for Oct. 31; Ag Fight first reported the bout (MMA Sucka).",
+   "source": "https://mmasucka.com/news/lucia-szabova-signs-with-ufc-set-to-face-tainara-lisboa-in-debut/"
+  },
+  {
+   "date": "2026-08-01",
+   "text": "Retained the Oktagon bantamweight title with a five-round unanimous decision over Lucie Pudilova in Prague.",
+   "source": "https://cagesidepress.com/2026/08/01/oktagon-92-szabova-vs-pudilova-full-results/"
+  },
+  {
+   "date": "2026-04-25",
+   "text": "Won the vacant Oktagon flyweight title, TKO of Leidiane Fernandes from mount at 2:12 of R3, becoming a two-division champion.",
+   "source": "https://www.lowkickmma.com/lucia-szabova-vs-fernandes-oktagon-87/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Lucia Szabova Signs With UFC, Set to Face Tainara Lisboa in Debut",
+   "url": "https://mmasucka.com/news/lucia-szabova-signs-with-ufc-set-to-face-tainara-lisboa-in-debut/",
+   "date": "2026-08-22"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "",
+   "title": "Unbeaten Oktagon Two-Division Champion Lucia Szabova Signs With UFC",
+   "url": "https://agentmma.com/news/88663-unbeaten-oktagon-two-division-champion-lucia-szabova-signs-with-ufc",
+   "date": "2026-08-21"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "History Made! Lucia Szabova Smashes Leidiane Fernandes to Claim Flyweight Gold - Oktagon 87 Highlights",
+   "url": "https://www.lowkickmma.com/lucia-szabova-vs-fernandes-oktagon-87/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Oktagon Double Champ Szabova to Face UFC Vet Pudilova",
+   "url": "https://cagesidepress.com/2026/05/26/oktagon-double-champ-szabova-to-face-ufc-vet-pudilova/",
+   "date": "2026-05-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Oktagon 92: Szabova vs. Pudilova Full Results",
+   "url": "https://cagesidepress.com/2026/08/01/oktagon-92-szabova-vs-pudilova-full-results/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Lucia Szabova fighter profile",
+   "url": "https://www.sherdog.com/fighter/Lucia-Szabova-363981",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 123 Card Set for Oct. 31 at Apex",
+   "url": "https://boxingnews.com/news/ufc-vegas-123-moicano-nolan-fight-card/",
+   "date": "2026-09-24"
+  }
+ ],
+ "depth": "moderate"
+}

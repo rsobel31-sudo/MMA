@@ -1,0 +1,86 @@
+{
+ "name": "Joseph Kropschot",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 31-year-old California middleweight (9-3) making his UFC debut off a Contender Series decision over the unbeaten Jon Kunneman; he came in as the reigning LFA middleweight champion after choking out David Allakhverdiev in February. A submission finisher by record (six subs, two KOs), with a five-fight win streak, but all three of his losses were stoppages.",
+ "how_they_fight": {
+  "Striking": "Against Kunneman he kickboxed from range: a long jab, leg kicks and body work, building output as the fight went on (per LowKick MMA). Rotowire lists a 79-inch reach (we have no verified reach). Only two KO wins, both in the first round on the regionals.",
+  "Grappling": "The finishing tool: six submission wins, four of them in round two, including a rear-naked choke on the previously unbeaten LFA champion Allakhverdiev (LFA). On the Contender Series he landed an early round-two takedown but couldn't hold it, then answered a late Kunneman takedown by rolling into an armbar that dislocated Kunneman's arm; Kunneman didn't tap (per LowKick MMA). Rotowire calls him a fighter who prefers to work on the ground.",
+  "Defense": "Hittable. Kunneman dropped him with a right hook in round two and bloodied him with follow-up combinations (per LowKick MMA; our verified data has no strike totals for that bout). Stopped three times: KO/TKO by Orion Cosce (R3, 2019), a submission by Cody Brundage (R3, 2021) and a KO/TKO by Daniel Compton (R1, 2021; time not recorded).",
+  "Pace & cardio": "Middle-rounds finisher: of eight stoppage wins, four came in R1 (all 2018-2023 regionals) and four in R2 (his last four finishes, 2019-2026). The Kunneman fight is the only time he has gone to the scorecards (Boxing News agrees), and he won the third round on output after being dropped in the second. His losses lean late: two of three stoppage losses came in R3, one in R1.",
+  "Fight IQ": "Showed he can win a range fight he wasn't expected to (+180 per our odds) and stay composed after a knockdown. Told Dana White his next fight would end in a finish (per LowKick MMA)."
+ },
+ "patterns": [
+  "Finishes in R1-R2 when he wins early: 4 R1 + 4 R2 stoppages, only one decision",
+  "Submission-first: six of nine wins by submission, mostly the rear-naked choke and armbar off scrambles",
+  "Jab and leg kicks at range to set up grappling",
+  "Never stopped since 2021; five straight wins, two over unbeaten opponents (Allakhverdiev, Kunneman)",
+  "All three losses were stoppages (2 x KO/TKO, 1 x SUB), two of them in R3"
+ ],
+ "concerns": [
+  "UFC debut, at 31, against a UFC-tested opponent",
+  "Dropped and bloodied by Kunneman's right hand on the Contender Series (per LowKick MMA)",
+  "Has been finished by strikes twice (2019, 2021); limited recent tape at UFC level",
+  "Only one 15-minute fight on record"
+ ],
+ "keys_to_beat": [
+  "Make him strike first and counter the jab with the right hand; he was dropped by a hook in his last fight",
+  "Stay out of scrambles: his submissions come off reversals and back takes",
+  "Push the pace into round three, where two of his three losses came"
+ ],
+ "news": [
+  {
+   "date": "2026-08-25",
+   "text": "Booked for his UFC debut against Nick Klein (6-3, 0-2 UFC, out since an August 2025 TKO loss to Andrey Pulyaev) at middleweight on Oct. 31 (Rotowire, citing Heavy; Boxing News, citing Sherdog).",
+   "source": "https://boxingnews.com/news/kropschot-ufc-debut-klein-october/"
+  },
+  {
+   "date": "2026-08-11",
+   "text": "Won a UFC contract with a unanimous decision (30-27, 30-27, 29-28) over Jon Kunneman on the Contender Series season 10 opener.",
+   "source": "https://cagesidepress.com/2026/08/11/dana-whites-contender-series-season-10-week-1-results/"
+  },
+  {
+   "date": "2026-02-06",
+   "text": "Became LFA middleweight champion, submitting the unbeaten David Allakhverdiev with a rear-naked choke at 3:24 of R2 (LFA). Cageside Press described it as a 170 lb title; LFA lists it at 185 lb.",
+   "source": "https://www.lfa.com/kropschot-takes-the-belt-in-lfa-226/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "LowKick MMA",
+   "author": "Subham",
+   "title": "Joe Kropschot Snaps Jon Kunneman's Arm at Dana White's Contender Series Season 10, Week 1",
+   "url": "https://www.lowkickmma.com/joe-kropschot-snaps-jon-kunnemans-arm-at-dana-whites-contender-series-season-10-week-1/",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Dana White's Contender Series Season 10, Week 1 Results",
+   "url": "https://cagesidepress.com/2026/08/11/dana-whites-contender-series-season-10-week-1-results/",
+   "date": "2026-08-11"
+  },
+  {
+   "outlet": "LFA",
+   "author": "",
+   "title": "Kropschot Takes the Belt in LFA 226",
+   "url": "https://www.lfa.com/kropschot-takes-the-belt-in-lfa-226/",
+   "date": "2026-02-06"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "MMA News Staff",
+   "title": "Kropschot Books UFC Debut Against Klein",
+   "url": "https://boxingnews.com/news/kropschot-ufc-debut-klein-october/",
+   "date": "2026-08-26"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Joe Kropschot MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/joe-kropschot-2816",
+   "date": "2026-08-25"
+  }
+ ],
+ "depth": "moderate"
+}

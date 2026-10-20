@@ -1,0 +1,102 @@
+{
+ "name": "Piera Rodriguez",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 34-year-old Venezuelan strawweight (12-2, 5-2 UFC) out of Black House MMA: a pressure fighter with heavy hands, Thai-clinch knees to the body and a volume of takedowns, on a three-fight win streak. Every one of her UFC wins has been a decision, and neither of her losses came by strikes.",
+ "how_they_fight": {
+  "Striking": "Comes forward with combinations and heavy single shots, then ties up in the Thai clinch for knees to the body (Cageside Press, LowKick MMA on the Souza and Hughes fights). Landed a career-best 107 significant strikes against Sam Hughes in March, out-landing her 107-77. About 4.3 significant strikes a minute at 49% in our data. Five KO wins, all on the regionals (one of them in R5 in LFA).",
+  "Grappling": "Wrestles a lot: 8-of-10 takedowns and 10:24 of control against Josefine Knutsson, seven takedowns against Ketlen Souza. Little submission threat (0.1 attempts per 15 minutes). Takedown defense is strong (77%; stuffed all seven of Hughes' shots), but when a real grappler did get on top, Gillian Robertson controlled her for over six minutes and armbarred her in R2.",
+  "Defense": "Never stopped by strikes. The Robertson submission is disputed: Rodriguez said she never tapped, and Cageside Press thought the replay showed a slight tap just before the referee stepped in. The Carnelossi loss was a DQ for an intentional headbutt in R2 while she was ahead (she had a knockdown and 3:53 of control in our data).",
+  "Pace & cardio": "Decision fighter who gets stronger late: all six of her DWCS/UFC wins went the full 15 minutes; her five stoppage wins (R2 x3, R3 x1, R5 x1) were all on the regionals before 2021. Both losses came in R2 (Robertson sub at 4:21, Carnelossi DQ at 3:16). Kept pressing through R3 against Hughes and took Souza down again in the last minute, so no sign of a fade.",
+  "Fight IQ": "Usually disciplined and sets the pace, but the Carnelossi DQ shows she can lose her head in a scrappy fight. Adapts the mix: more striking vs Hughes, more wrestling vs Knutsson and Souza."
+ },
+ "patterns": [
+  "Wins on pressure and volume across three rounds: six straight decisions in UFC/DWCS wins",
+  "Body knees from the Thai clinch, then takedowns late in rounds",
+  "Never stopped by strikes; both losses in R2 (one disputed submission, one DQ)",
+  "Has won as an underdog (+219 vs Knutsson)",
+  "Close fights can go either way: split decision over Souza"
+ ],
+ "concerns": [
+  "Bottom position against a high-level jiu-jitsu player (the Robertson armbar)",
+  "Discipline: DQ'd for an intentional headbutt in 2024",
+  "No UFC finish; leaves fights to the judges",
+  "Age 34"
+ ],
+ "keys_to_beat": [
+  "Get her to the mat or take her back; she has been submitted from underneath",
+  "Make her pay for clinch entries with trips and scrambles",
+  "Bank early rounds before her pressure builds"
+ ],
+ "news": [
+  {
+   "date": "2026-09-24",
+   "text": "Booked against Talita Alencar at strawweight for Oct. 31 (Rotowire, citing Nolan King of USA Today).",
+   "source": "https://www.rotowire.com/mma/player/piera-rodriguez-2253"
+  },
+  {
+   "date": "2026-03-14",
+   "text": "Beat Sam Hughes for the second time, unanimous decision (30-27 x3), with a career-best 107 significant strikes and 7-of-7 takedown defense.",
+   "source": "https://cagesidepress.com/2026/03/14/piera-rodriguez-outworks-sam-hughes-for-unanimous-decision-win"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Piera Rodriguez Outworks Sam Hughes for Unanimous Decision Win",
+   "url": "https://cagesidepress.com/2026/03/14/piera-rodriguez-outworks-sam-hughes-for-unanimous-decision-win",
+   "date": "2026-03-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Piera Rodriguez Controls Souza to a Split-Decision Victory",
+   "url": "https://cagesidepress.com/2025/08/02/piera-rodriguez-controls-souza-to-a-split-decision-victory/",
+   "date": "2025-08-02"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Piera Rodriguez Scores Close Split Decision Win Over Ketlen Souza - UFC Vegas 108 Highlights",
+   "url": "https://www.lowkickmma.com/piera-rodriguez-vs-ketlen-souza-ufc/",
+   "date": "2025-08-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Piera Rodriguez Uses Improved Wrestling, Dominates Knutsson",
+   "url": "https://cagesidepress.com/2024/12/14/piera-rodriguez-uses-improved-wrestling-dominates-knutsson",
+   "date": "2024-12-14"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 92: 'Barboza vs. Murphy' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-92/ufc-vegas-92-barboza-vs-murphy-live-results-and-highlights/",
+   "date": "2024-05-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Kansas City: Gillian Robertson Arm-Bars Piera Rodriguez to Extend Submissions Record",
+   "url": "https://cagesidepress.com/2023/04/15/ufc-kansas-city-gillian-robertson-vs-piera-rodriguez/",
+   "date": "2023-04-15"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Piera Rodriguez MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/piera-rodriguez-2253",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Talita Alancar vs Piera Rodriguez Targeted for UFC Vegas 123",
+   "url": "https://agentmma.com/news/89843-talita-alancar-vs-piera-rodriguez-targeted-for-ufc-vegas-123",
+   "date": "2026-09-10"
+  }
+ ],
+ "depth": "good"
+}

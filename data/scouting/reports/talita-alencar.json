@@ -1,0 +1,89 @@
+{
+ "name": "Talita Alencar",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 36-year-old Brazilian jiu-jitsu black belt and multiple-time IBJJF world champion (8-1-1, 4-1 UFC; ranked No. 14 at strawweight per Wikipedia) on a three-fight win streak. She wins by getting on top or to the back and grinding; she has never been finished, and her only loss and her draw both came against Stephanie Luciano, who kept the fight standing.",
+ "how_they_fight": {
+  "Striking": "Functional at best and usually out-landed: 36-57 vs Rayanne dos Santos, 41-72 vs Luciano and 60-78 vs Julia Polastri in our data. She throws to close distance and has some pop when she connects: a right hand and knee put Carnelossi on the mat in R2 (per Cageside Press; our data credits no knockdown).",
+  "Grappling": "Elite jiu-jitsu (IBJJF world champion 2017; world no-gi champion 2016, 2017, 2021, per Wikipedia). Every submission win is a rear-naked choke (Wikipedia). Takedowns are effortful rather than clean: 29% career accuracy; 1-of-9 vs dos Santos, 1-of-10 vs Luciano and 4-of-24 on the Contender Series, but 4-of-5 with 12:38 of control against Vanessa Demopoulos and 3-of-5 against Polastri, which won her that decision. Caught a kick to start the finishing sequence against Carnelossi.",
+  "Defense": "Never stopped in 10 fights. Luciano dropped her with a knee in R3 and stuffed nine of ten takedowns to win 30-27 x3 (Cageside Press). Takedown defense around 66%; nobody has controlled her for long (Luciano's 3:41 in the DWCS draw is the most).",
+  "Pace & cardio": "A slow burner who wins late: of four submission wins, two came in R1 (2021-22 regionals) and two in R3 (Contreras 2022, Carnelossi 2025 at 4:36). Six of ten fights have gone the distance, including four of five in the UFC. Cardio is a question: Cageside Press described her slowing in R2 and tiring in R3 against Carnelossi, though she still took her down and choked her late. Never stopped, so durability is not the worry; losing rounds on the feet is.",
+  "Fight IQ": "Patient and position-first; she will keep chaining shots until one lands. Struggles to change plans when an opponent stuffs the takedown and out-strikes her (Luciano twice)."
+ },
+ "patterns": [
+  "Wins by getting on top and grinding: three of four UFC wins went the distance",
+  "Rear-naked choke finisher; late finishes (two R3 subs) as well as early regional ones (two R1 subs)",
+  "Never finished; her only loss and draw are decisions to Luciano",
+  "Usually loses the striking count, even in wins",
+  "Has won as an underdog (+197 vs Polastri, +133 vs dos Santos)"
+ ],
+ "concerns": [
+  "Age 36",
+  "Low takedown accuracy against good defenders",
+  "Fades in the second half of fights (per Cageside Press, Carnelossi fight)",
+  "Out-landed on the feet in most UFC fights"
+ ],
+ "keys_to_beat": [
+  "Stuff the first shots and make her strike; Luciano's blueprint",
+  "Keep the fight at range and win the volume battle",
+  "Avoid scrambles where she can take the back",
+  "Push the pace early to tax her cardio"
+ ],
+ "news": [
+  {
+   "date": "2026-09-24",
+   "text": "Booked against Piera Rodriguez at strawweight for Oct. 31 (Rotowire, citing Nolan King of USA Today); AgentMMA first had the bout as 'targeted' on Sept. 10.",
+   "source": "https://www.rotowire.com/mma/player/talita-alencar-2522"
+  },
+  {
+   "date": "2026-04-25",
+   "text": "Beat Julia Polastri by unanimous decision (29-28 x3) as a +197 underdog; her takedowns (3 of 5) won the rounds despite being out-landed 60-78.",
+   "source": "https://www.bjpenn.com/mma-news/ufc-vegas-116/ufc-vegas-116-sterling-vs-zalal-live-results-and-highlights/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 110: Talita Alencar Overcomes Cardio Issues, Subs Ariane Carnelossi",
+   "url": "https://cagesidepress.com/2025/11/01/ufc-vegas-110-talita-alencar-overcomes-cardio-issues-subs-ariane-carnelossi",
+   "date": "2025-11-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Stephanie Luciano Kicks Off UFC Vegas 95 by Defeating Talita Alencar in Rematch",
+   "url": "https://cagesidepress.com/2024/08/10/stephanie-luciano-kicks-off-ufc-vegas-95-by-defeating-talita-alencar-in-rematch",
+   "date": "2024-08-10"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 116: 'Sterling vs. Zalal' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-116/ufc-vegas-116-sterling-vs-zalal-live-results-and-highlights/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Talita Alencar MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/talita-alencar-2522",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Talita Alencar",
+   "url": "https://en.wikipedia.org/wiki/Talita_Alencar",
+   "date": "2026-10-03"
+  },
+  {
+   "outlet": "AgentMMA",
+   "author": "Oscar Nascimento",
+   "title": "Talita Alancar vs Piera Rodriguez Targeted for UFC Vegas 123",
+   "url": "https://agentmma.com/news/89843-talita-alancar-vs-piera-rodriguez-targeted-for-ufc-vegas-123",
+   "date": "2026-09-10"
+  }
+ ],
+ "depth": "good"
+}

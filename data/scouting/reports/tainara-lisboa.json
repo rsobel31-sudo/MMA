@@ -1,0 +1,95 @@
+{
+ "name": "Tainara Lisboa",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 36-year-old Brazilian bantamweight (7-4, 2-2 UFC) and former Muay Thai world champion in Thailand (per MMA Sucka), on two straight stoppage losses and out for a year since a R3 TKO by Melissa Croden. Has early power and a sneaky back-take, but has been finished from bottom position and by late pressure.",
+ "how_they_fight": {
+  "Striking": "Muay Thai base; lands knees in the clinch (she won R1 against Croden that way, per Cageside Press). About 2.4 significant strikes a minute and absorbs more (3.4). Three KO wins on the regionals (two in R1, one in R3).",
+  "Grappling": "Opportunistic scrambler: took Jessica-Rose Clark's back after a scramble and choked her in R3 (Cageside Press). Three submission wins. Was still threatening submissions against Croden while hurt (Cageside Press). Wrestling offense is modest (32% takedown accuracy).",
+  "Defense": "The worry. Luana Santos took her down twice, held her for nearly eight minutes and finished her with an americana at 4:59 of R2. Croden dropped her late in R2 and stopped her with punches at 4:32 of R3. Clark held her down for 7:36 in a fight Lisboa still won. Takedown defense around 54%.",
+  "Pace & cardio": "Fast starter who fades: of six stoppage wins, four came in R1 and two in R3. All three stoppage losses came after she had been worn on: R1 sub in her 2016 debut (Norma Dumont), then R2 (Santos sub) and R3 (Croden TKO) in her last two. Against Croden she won R1 and was overwhelmed from late R2 on. Stopped three times in four losses (two submissions, one TKO).",
+  "Fight IQ": "Tough and keeps fighting when hurt; finished Clark through a bad cut. But she hasn't found answers once taken down by stronger grapplers."
+ },
+ "patterns": [
+  "Starts well: four R1 finishes, won R1 vs Croden",
+  "Back-take rear-naked choke out of scrambles (Clark, R3)",
+  "Fades and gets broken late: last two losses at 4:59 of R2 and 4:32 of R3",
+  "Stopped in three of four losses (2 SUB, 1 TKO)",
+  "Two straight losses after a 2-0 UFC start; Rotowire said she likely needs a win to stay"
+ ],
+ "concerns": [
+  "Bottom position against strong grapplers",
+  "Late-round durability",
+  "Year-long layoff and age 36",
+  "Faces an unbeaten debutant who finishes from mount"
+ ],
+ "keys_to_beat": [
+  "Weather the first round, then pressure",
+  "Take her down and hold top position; she was finished from underneath by Santos",
+  "Stay heavy in scrambles to avoid giving up the back"
+ ],
+ "news": [
+  {
+   "date": "2026-08-21",
+   "text": "Booked against unbeaten UFC debutant Lucia Szabova at bantamweight for Oct. 31 (Rotowire, citing Heavy; Rotowire's blurb gives 'Oct. 1', which is a typo for Oct. 31).",
+   "source": "https://www.rotowire.com/mma/player/tainara-lisboa-2299"
+  },
+  {
+   "date": "2025-10-18",
+   "text": "Lost to Melissa Croden by TKO (punches) at 4:32 of R3 in Vancouver as a slight favourite, after winning the first round in the clinch.",
+   "source": "https://cagesidepress.com/2025/10/18/melissa-croden-makes-statement-in-ufc-debut-stops-tainara-lisboa-in-vancouver"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Melissa Croden Makes Statement in UFC Debut, Stops Tainara Lisboa in Vancouver",
+   "url": "https://cagesidepress.com/2025/10/18/melissa-croden-makes-statement-in-ufc-debut-stops-tainara-lisboa-in-vancouver",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Hometown Hero Melissa Croden Crushes Tainara Lisboa in Round 3 - UFC Vancouver Highlights",
+   "url": "https://www.lowkickmma.com/hometown-hero-melissa-croden-crushes-tainara-lisboa-in-round-3-ufc-vancouver-highlights/",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 106: 'Burns vs. Morales' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-106/ufc-vegas-106-burns-vs-morales-live-results-and-highlights/",
+   "date": "2025-05-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Charlotte: Tainara Lisboa Endures Nasty Cut, Submits Jessica-Rose Clark",
+   "url": "https://cagesidepress.com/2023/05/13/ufc-charlotte-jessica-rose-clark-vs-tainara-lisboa",
+   "date": "2023-05-13"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Tainara Lisboa MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/tainara-lisboa-2299",
+   "date": "2026-08-21"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Lucia Szabova Signs With UFC, Set to Face Tainara Lisboa in Debut",
+   "url": "https://mmasucka.com/news/lucia-szabova-signs-with-ufc-set-to-face-tainara-lisboa-in-debut/",
+   "date": "2026-08-22"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 123 Card Set for Oct. 31 at Apex",
+   "url": "https://boxingnews.com/news/ufc-vegas-123-moicano-nolan-fight-card/",
+   "date": "2026-09-24"
+  }
+ ],
+ "depth": "moderate"
+}

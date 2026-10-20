@@ -1,0 +1,114 @@
+{
+ "name": "Francis Marshall",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 28-year-old American Top Team grappler (10-3, 4-3 UFC) back at featherweight after two straight wins, a first-round choke of Erik Silva and a short-notice lightweight decision over Lucas Brennan. His opponent changed three weeks out: Gaston Bolanos withdrew with a cut and Dakota Hope stepped in.",
+ "how_they_fight": {
+  "Striking": "The weak link. Only 34% accurate (15-of-132 against William Gomis); throws power shots off quick movement rather than volume. Has knockdowns (Rojo, Buzukja; Cageside Press also says he dropped Mairon Santos with a left hook, which our data doesn't record). Says his stand-up has improved at ATT (UFC.com).",
+  "Grappling": "The strength: takedowns (47% accuracy) into long top control (6:36 against Brennan, 5:49 on the Contender Series, 5:26 against Buzukja) and back takes. Five submission wins, mostly chokes. Calmly escaped a deep heel hook from Brennan (Cageside Press).",
+  "Defense": "Takedown defense about 80%, but when he does get taken down by a strong grappler it can go badly: Isaac Dulgarian took him down inside 30 seconds and finished him with elbows and punches from mount at 4:48 of R1 (Cageside Press). That is the only time he has been stopped.",
+  "Pace & cardio": "Early or late finisher, decision otherwise: of six stoppage wins, three came in R1, one in R2 and two in R3 (both regional subs late in the round). Five of his last seven fights went the full 15 minutes; two of those (Gomis, Santos) were split-decision losses. Holds position well into R3 (Brennan). One stoppage loss, in R1.",
+  "Fight IQ": "Leans on control to win rounds, which has left close fights to the judges (two split-decision losses; he felt he beat Santos, and Cageside Press reported fans and the broadcast agreed). Said before Mexico City he wants to finish rather than rely on judges (UFC.com)."
+ },
+ "patterns": [
+  "Takedowns and long top control; back takes into chokes",
+  "Finishes when he gets one early: R1 rear-naked choke of Erik Silva in 2:29",
+  "Otherwise goes the distance: five of last seven fights went to decision",
+  "Only stoppage loss: R1 TKO from mount after being wrestled by Dulgarian",
+  "Low-accuracy striking; loses close striking fights on the cards"
+ ],
+ "concerns": [
+  "Opponent switch three weeks out; Hope is a power striker per Heavy",
+  "Inaccurate striking in a range fight",
+  "Split decisions: has lost two of them",
+  "Injuries in 2025 (knee, torn rib cartilage) cost him a bout with Austin Bashi (UFC.com)"
+ ],
+ "keys_to_beat": [
+  "Stop the first takedowns and keep it standing",
+  "Out-land him at range; his accuracy is poor",
+  "If you wrestle, wrestle hard: Dulgarian finished him from top position"
+ ],
+ "news": [
+  {
+   "date": "2026-10-08",
+   "text": "Gaston Bolanos withdrew from their Oct. 31 bout with an eyebrow cut from training; Dakota Hope (11-2, 0-1 UFC, 4oz Fight Club) steps in on short notice at featherweight (MMA Mania, Heavy). EssentiallySports noted UFC.com still listed Bolanos on Oct. 9.",
+   "source": "https://www.mmamania.com/ufc-fight-announcements/477582/pic-nasty-cut-boots-gaston-bolanos-from-ufc-vegas-123-replacement-steps-in"
+  },
+  {
+   "date": "2026-04-25",
+   "text": "Beat Lucas Brennan by unanimous decision (30-27 x3) at lightweight on short notice: 2-of-3 takedowns, 6:36 of control, stuffed all six of Brennan's attempts.",
+   "source": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-francis-marshall-turns-back-bellator-standout-lucas-brennan/"
+  },
+  {
+   "date": "2026-02-28",
+   "text": "Submitted Erik Silva with a rear-naked choke at 2:29 of R1 in Mexico City; earned a finish bonus.",
+   "source": "https://www.bjpenn.com/mma-news/ufc-mexico/ufc-mexico-city-moreno-vs-kavanagh-live-results-and-highlights/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Pic: Nasty cut boots Gaston Bolanos from UFC Vegas 123, replacement steps in",
+   "url": "https://www.mmamania.com/ufc-fight-announcements/477582/pic-nasty-cut-boots-gaston-bolanos-from-ufc-vegas-123-replacement-steps-in",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Francis Marshall Draws New Opponent for UFC Halloween Event",
+   "url": "https://heavy.com/sports/ufc/francis-marshall-new-opponent-ufc-halloween/",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "",
+   "title": "Matchmakers scramble for replacements as multiple fighters pull out from UFC 334 and Vegas 123",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-matchmakers-scramble-for-replacements-as-multiple-fighters-pull-out-from-ufc-334-and-vegas-123/",
+   "date": "2026-10-09"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "Simon Head",
+   "title": "Francis Marshall Wants to Make It Emphatic at UFC Mexico",
+   "url": "https://www.ufc.com/news/francis-marshall-wants-make-it-emphatic-ufc-mexico",
+   "date": "2026-02-25"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "Thomas Gerbasi",
+   "title": "Francis Marshall Ready for His Breakthrough Moment at UFC 313",
+   "url": "https://www.ufc.com/news/francis-marshall-ready-for-his-breakthrough-moment-ufc-313",
+   "date": "2025-03-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 116: Francis Marshall Turns Back Bellator Standout Lucas Brennan",
+   "url": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-francis-marshall-turns-back-bellator-standout-lucas-brennan/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Mairon Santos Gets Split Nod Over Marshall, Fans Disagree",
+   "url": "https://cagesidepress.com/2025/03/08/mairon-santos-gets-split-nod-over-marshall-crowd-boos",
+   "date": "2025-03-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 78: Isaac Dulgarian Earns Another First Round Finish, Stops Francis Marshall in Debut",
+   "url": "https://cagesidepress.com/2023/08/12/ufc-vegas-78-francis-marshall-vs-isaac-dulgarian",
+   "date": "2023-08-12"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Mexico City: 'Moreno vs. Kavanagh' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-mexico/ufc-mexico-city-moreno-vs-kavanagh-live-results-and-highlights/",
+   "date": "2026-02-28"
+  }
+ ],
+ "depth": "good"
+}
