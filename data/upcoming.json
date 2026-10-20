@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-19",
+ "fetched": "2026-10-20",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -138,20 +138,6 @@
     {
      "order": 9,
      "segment": "Early preliminary card",
-     "weight_class": "Middleweight",
-     "a": "Abubakar Vagaev",
-     "b": "Jacob Malkoun",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Early preliminary card",
      "weight_class": "Bantamweight",
      "a": "Colby Thicknesse",
      "b": "Asaf Chopurov",
@@ -164,35 +150,58 @@
      "main_event": false
     },
     {
+     "order": 10,
+     "segment": "Early preliminary card",
+     "weight_class": "Middleweight",
+     "a": "Abubakar Vagaev",
+     "b": "Jacob Malkoun",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
      "order": 11,
-     "segment": "Announced",
-     "weight_class": "Featherweight",
+     "segment": "Early preliminary card",
+     "weight_class": "Lightweight",
      "a": "Bolaji Oki",
      "b": "Daniel Santos",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 12,
-     "segment": "Announced",
-     "weight_class": "Women's Strawweight",
-     "a": "Iasmin Lucindo",
-     "b": "Nicolle Caliari",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 13,
-     "segment": "Announced",
+     "segment": "Early preliminary card",
      "weight_class": "Lightweight",
      "a": "Kody Steele",
      "b": "Noah Gugnon",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 13,
+     "segment": "Early preliminary card",
+     "weight_class": "Women's Strawweight",
+     "a": "Iasmin Lucindo",
+     "b": "Nicole Caliari",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     }
@@ -358,7 +367,7 @@
      "segment": "Announced",
      "weight_class": "Welterweight",
      "a": "Randy Brown",
-     "b": "TBD",
+     "b": "Jacobe Smith",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -901,7 +910,19 @@
    "venue": "Scotiabank Arena",
    "location": "Toronto, Ontario, Canada",
    "url": "https://en.wikipedia.org/wiki/UFC_336",
-   "bouts": []
+   "bouts": [
+    {
+     "order": 0,
+     "segment": "Announced",
+     "weight_class": "UFC Welterweight Championship",
+     "a": "Islam Makhachev",
+     "b": "Carlos Prates",
+     "title": true,
+     "result": "",
+     "rounds": 5,
+     "main_event": true
+    }
+   ]
   },
   {
    "name": "UFC Fight Night 296",
