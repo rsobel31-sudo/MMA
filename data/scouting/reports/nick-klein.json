@@ -1,0 +1,78 @@
+{
+ "name": "Nick Klein",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A Pura Vida BJJ middleweight (6-3, 0-2 UFC) and Contender Series winner who starts like a house on fire with kicks, takedowns and back takes, then has been stopped in R2 of both UFC fights. Hasn't fought since August 2025.",
+ "how_they_fight": {
+  "Striking": "Long (196 cm reach) and kicks a lot early; landed a spinning backfist/elbow that wobbled Mansur Abdul-Malik in R1 (Cageside Press, MMA Mania). Striking is mostly a lead-in to wrestling; about 3.1 significant strikes a minute.",
+  "Grappling": "Primary weapon: 3.6 takedowns per 15 minutes and 1.1 sub attempts per 15. Three of his six wins are submissions (two in R1, including a 37-second finish on DWCS, one in R3). Took Andrey Pulyaev down three times in R1, forced his back and threatened a neck crank before losing position (Cageside Press). Struggles to finish shots against a real wrestler: 1 of 9 vs Abdul-Malik.",
+  "Defense": "Stopped in all three losses, all by strikes: Dorjan Dokaj (R3), Abdul-Malik (punches and knees from the back, R2) and Pulyaev (body kick and punches, R2, per Cageside Press). Gives up position when scrambles go wrong.",
+  "Pace & cardio": "Front-loaded. Finishes: R1 4 (two KOs inside 30 seconds, two subs), R3 1 (sub); one decision. Losses: R3 KO (regional), then R2 TKOs in both UFC fights (3:24, 1:31). Cageside Press described him as visibly fatigued in R2 against Abdul-Malik after a failed takedown-heavy R1; against Pulyaev he won R1 clearly and was stopped 91 seconds into R2. Fair to call him a fader against durable opposition.",
+  "Fight IQ": "Commits hard to the takedown, even when he had Abdul-Malik hurt on the feet (he shot instead of following up, per Cageside Press). Needs to pace himself better."
+ },
+ "patterns": [
+  "Explosive R1: kicks, takedowns, back takes",
+  "R2 stoppage losses in both UFC fights after big first rounds",
+  "Finishes come early (four in R1) or by late submission"
+ ],
+ "concerns": [
+  "Cardio and output in R2-R3",
+  "14-month layoff; 0-2 in the UFC and likely fighting for his job",
+  "Opponent Joseph Kropschot (9-3, five straight wins, DWCS) per BoxingNews"
+ ],
+ "keys_to_beat": [
+  "Defend the R1 takedown flurry and stay off your back",
+  "Body work and pressure early in R2 when his tank dips",
+  "Punish failed shots; he's been finished off scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-08-26",
+   "text": "Booked against Contender Series winner Joseph Kropschot (9-3) for Oct. 31, Kropschot's UFC debut (BoxingNews).",
+   "source": "https://boxingnews.com/news/kropschot-ufc-debut-klein-october"
+  },
+  {
+   "date": "2025-08-02",
+   "text": "Lost to Andrey Pulyaev by R2 TKO (1:31) after winning R1 with takedowns.",
+   "source": "https://cagesidepress.com/2025/08/02/andrey-pulyaev-turns-it-around-in-round-2-scores-tko-victory/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Mansur Abdul-Malik Survives Scare, Puts Away Nick Klein at UFC Seattle",
+   "url": "https://cagesidepress.com/2025/02/22/mansur-abdul-malik-survives-scare-puts-away-nick-klein-at-ufc-seattle/",
+   "date": "2025-02-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Andrey Pulyaev Turns It Around In Round 2, Scores TKO Victory",
+   "url": "https://cagesidepress.com/2025/08/02/andrey-pulyaev-turns-it-around-in-round-2-scores-tko-victory/",
+   "date": "2025-08-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 109 Losers",
+   "url": "https://cagesidepress.com/2025/08/11/whats-next-ufc-vegas-109-losers/",
+   "date": "2025-08-11"
+  },
+  {
+   "outlet": "BoxingNews",
+   "author": "MMA News Staff",
+   "title": "Kropschot Books UFC Debut Against Klein",
+   "url": "https://boxingnews.com/news/kropschot-ufc-debut-klein-october",
+   "date": "2026-08-26"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs Nolan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "moderate"
+}

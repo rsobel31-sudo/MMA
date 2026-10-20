@@ -1,0 +1,98 @@
+{
+ "name": "Lee Jeong-yeong",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "The Road to UFC season-one featherweight winner and a former Road FC champion (11-3, 2-2 UFC including the RTU final), a heavy-handed striker with a taekwondo and jiu-jitsu base per Korean outlets. Hasn't fought since May 2025 and missed weight so badly in March 2026 that his UFC 326 bout was scrapped.",
+ "how_they_fight": {
+  "Striking": "Hard right hand; Cageside Press credited him with a R1 knockdown of Daniel Santos and a hard right that stunned Yi Zha (our verified data records no knockdowns in the Santos fight). Out-landed Blake Bilder 49-19. Wants to trade in the pocket and loads up for knockouts, which leaves him open to counters and level changes.",
+  "Grappling": "Seven regional finishes include three submissions (R1-R2), and Korean outlets list him as a jiu-jitsu black belt. Defensively shaky against strong wrestlers: Zha controlled much of the RTU final, Santos took him down repeatedly (six-plus minutes of control in our data, back takes in R2 and R3).",
+  "Defense": "Stopped once: Hyder Amil swarmed him with about 30 unanswered punches on the fence in 65 seconds (Cageside Press), out-landed 4-42. Takedown defense ~72% on paper but poor against the two wrestlers he's faced recently.",
+  "Pace & cardio": "Early finisher on the regionals: KOs R1 3, R2 1; subs R1 2, R2 1; plus four decisions. His three UFC-era fights went the full 15 (split win vs Zha, decision wins vs Bilder, decision loss vs Santos) and he faded into being ridden late vs Santos (taken down in R2 and R3). Losses: decision (2017 Road FC), R1 TKO (Amil) and a 30-27 x3 decision (Santos). Durable over three rounds except for the Amil blitz.",
+  "Fight IQ": "Aggressive and heavy-handed, but over-commits to the right hand (missed one in R2 vs Santos and was taken down straight away, per Cageside Press). Weight management is a real question after UFC 326."
+ },
+ "patterns": [
+  "Looks for the KO with the right hand early",
+  "Regional finishes in R1-R2; UFC fights go the distance",
+  "Stopped once, in R1, by an all-out early blitz",
+  "Taken down and ridden by wrestlers in the later rounds"
+ ],
+ "concerns": [
+  "Weight cut: did not weigh in for UFC 326 (\"weight management issues\") in March 2026",
+  "17 months out of competition by fight night",
+  "Two straight losses; the UFC 326 scratch adds pressure on his roster spot"
+ ],
+ "keys_to_beat": [
+  "Blitz him early; he has been overwhelmed when pinned on the fence",
+  "Level-change behind his right hand and ride him in R2-R3",
+  "Make him work through scrambles; his grappling defense has been the weak link in the UFC"
+ ],
+ "news": [
+  {
+   "date": "2026-03-06",
+   "text": "His UFC 326 bout with Gaston Bolanos was cancelled at the weigh-ins over his \"weight management issues\"; Lee did not weigh in (Cageside Press). He had taken the fight as a late replacement.",
+   "source": "https://cagesidepress.com/2026/03/06/weight-management-issues-cause-fight-to-fall-off-ufc-326/"
+  },
+  {
+   "date": "2026-09-18",
+   "text": "Korean outlets report he moved to the United States in August 2025 and spent a year training there (gym not named).",
+   "source": "https://sports.news.nate.com/view/20260918n14119"
+  },
+  {
+   "date": "2026-08-14",
+   "text": "Booked against Julian Erosa at featherweight for Oct. 31 (Heavy).",
+   "source": "https://heavy.com/sports/ufc/ufc-books-fight-ufc-vegas-123/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Daniel Santos Puts It All Together, Takes Decision vs Lee",
+   "url": "https://cagesidepress.com/2025/05/10/daniel-santos-puts-it-all-together-takes-decision-vs-lee/",
+   "date": "2025-05-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Bryson Hester",
+   "title": "Hyder Amil Scores Highlight Reel TKO With 38-Punch Combo",
+   "url": "https://cagesidepress.com/2024/07/20/hyder-amil-scores-highlight-reel-tko-with-38-punch-combo/",
+   "date": "2024-07-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 68: Jeong-Yeong Lee Takes Close Decision Over Yi Zha in Road to UFC Featherweight Final",
+   "url": "https://cagesidepress.com/2023/02/05/ufc-vegas-68-lee-jeong-yeong-vs-yi-zha/",
+   "date": "2023-02-05"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "\"Weight Management Issues\" Cause Fight to Fall Off UFC 326",
+   "url": "https://cagesidepress.com/2026/03/06/weight-management-issues-cause-fight-to-fall-off-ufc-326/",
+   "date": "2026-03-06"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "UFC Books First Fight for UFC Vegas 123 Event",
+   "url": "https://heavy.com/sports/ufc/ufc-books-fight-ufc-vegas-123/",
+   "date": "2026-08-14"
+  },
+  {
+   "outlet": "Star News Korea",
+   "author": "Park Geon-do",
+   "title": "Korean Fighters Duo Set to Restore UFC Honor",
+   "url": "https://www.starnewskorea.com/en/sports/2026/10/08/2026100809530534759",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "Nate Sports",
+   "author": "",
+   "title": "Lee Jeong-yeong returns to the UFC after a year and a half, faces Erosa on Nov. 1 (KST)",
+   "url": "https://sports.news.nate.com/view/20260918n14119",
+   "date": "2026-09-18"
+  }
+ ],
+ "depth": "moderate"
+}

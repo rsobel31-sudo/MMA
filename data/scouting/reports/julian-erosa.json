@@ -1,0 +1,98 @@
+{
+ "name": "Julian Erosa",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 37-year-old Xtreme Couture veteran from Yakima (31-13, 9-9 UFC) who wins high-volume brawls and scrambles but has been knocked out often: two straight losses, the last a three-knockdown R1 KO by Lerryan Douglas in March. Has never been submitted.",
+ "how_they_fight": {
+  "Striking": "Volume brawler: about 6.3 significant strikes landed and 5.7 absorbed per minute. Long (188 cm reach) and busy with one-twos, knees, kicks and spinning backfists; content to trade in the pocket. Cageside Press: \"Defense has never been a staple\" of his game.",
+  "Grappling": "A real finishing threat: 14 of his 31 wins are submissions, including UFC finishes of Ricardo Ramos and Christian Rodriguez in R1 and come-from-behind R3 subs of Sean Woodson and Charles Jourdain after being knocked down in both. Hunts takedowns when the stand-up gets bad (3 of 10 vs Melquizael Costa).",
+  "Defense": "The weak point. Eight KO/TKO losses, five of them in R1 inside the UFC (Devonte Smith, Seung Woo Choi, Alex Caceres, Fernando Padilla, Douglas). Douglas dropped him three times in 3:33 (Cageside Press). Broke an orbital and his nose in the Costa fight, per MMA Mania. Never submitted.",
+  "Pace & cardio": "Tank is excellent; he gets better as a fight turns into a mess. Finishes by round across his career: R1 9, R2 10, R3 6, R4 1 (12 KO/TKO, 14 SUB, 5 decisions). Losses: eight KO/TKO (R1 6, R2 1, R3 1) and five decisions. The danger window is early: if he survives R1, he usually ends up in a high-output decision or a late scramble finish. His three-fight win streak (Ramos, Rodriguez, Darren Elkins) were all R1 finishes, though.",
+  "Fight IQ": "Experienced and opportunistic; rarely panics on the ground. Takes a lot of damage to land his own, and doesn't adjust his defense against faster, harder punchers."
+ },
+ "patterns": [
+  "Volume plus scrambles; submissions from front-headlocks and back takes",
+  "Comebacks: submitted Woodson and Jourdain in R3 after being dropped",
+  "R1 KO losses to fast power punchers (five in the UFC)",
+  "Never submitted; decision losses come against technical strikers (Costa) or wrestlers (Grant Dawson)"
+ ],
+ "concerns": [
+  "Age 37, two straight losses, the last a brutal R1 KO seven months ago",
+  "Chin and defense against an aggressive early puncher",
+  "Accumulated damage (orbital fracture vs Costa, May 2025)"
+ ],
+ "keys_to_beat": [
+  "Land clean early: most of his losses come in R1",
+  "Don't grapple loosely with him; avoid scrambles and front-headlock exchanges",
+  "Use speed and counters rather than a volume trade"
+ ],
+ "news": [
+  {
+   "date": "2026-08-14",
+   "text": "Booked against Lee Jeong-yeong at featherweight for Oct. 31; both on two-fight skids (Heavy).",
+   "source": "https://heavy.com/sports/ufc/ufc-books-fight-ufc-vegas-123/"
+  },
+  {
+   "date": "2026-03-28",
+   "text": "Lost to Lerryan Douglas by R1 KO (3:33) in Seattle after three knockdowns.",
+   "source": "https://cagesidepress.com/2026/03/28/ufc-seatte-lerryan-douglas-silences-crowd-finishes-local-hero-julian-erosa/"
+  },
+  {
+   "date": "2026-10-20",
+   "text": "Record disagreement: our verified data and the Yakima Herald have him 31-13; UFC.com lists 31-14.",
+   "source": "https://www.yakimaherald.com/sports/mma/yakimas-erosa-set-to-fight-on-halloween/article_303a3b5f-6f20-4dca-91c7-5dd3e1cb97a3.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Seattle: Lerryan Douglas Silences Crowd, Finishes Local Hero Julian Erosa",
+   "url": "https://cagesidepress.com/2026/03/28/ufc-seatte-lerryan-douglas-silences-crowd-finishes-local-hero-julian-erosa/",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Seattle Winners",
+   "url": "https://cagesidepress.com/2026/03/30/whats-next-ufc-seattle-winners-2/",
+   "date": "2026-03-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Melquizael Costa Decisions Julian Erosa to Kick Off UFC Vegas 106 Main Card",
+   "url": "https://cagesidepress.com/2025/05/17/melquizael-costa-decisions-julian-erosa-to-kick-off-ufc-vegas-106-main-card/",
+   "date": "2025-05-17"
+  },
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Both fighters from UFC Vegas 106's 'Fight of the Night' transported to hospital after wicked brawl",
+   "url": "https://www.mmamania.com/2025/5/18/24432439/julian-erosa-costa-ufc-vegas-106-fight-of-the-night-transported-to-hospital-after-wicked-brawl",
+   "date": "2025-05-18"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "UFC Books First Fight for UFC Vegas 123 Event",
+   "url": "https://heavy.com/sports/ufc/ufc-books-fight-ufc-vegas-123/",
+   "date": "2026-08-14"
+  },
+  {
+   "outlet": "Yakima Herald-Republic",
+   "author": "Luke Thompson",
+   "title": "Yakima's Erosa set to fight on Halloween",
+   "url": "https://www.yakimaherald.com/sports/mma/yakimas-erosa-set-to-fight-on-halloween/article_303a3b5f-6f20-4dca-91c7-5dd3e1cb97a3.html",
+   "date": "2026-08-15"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs Nolan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "good"
+}

@@ -1,0 +1,93 @@
+{
+ "name": "Andre Petroski",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 35-year-old Renzo Gracie Philly grappler (13-6, 8-5 UFC) who built an 8-2 UFC start on takedowns and long top control, but has now lost three straight, the last two by knockout. Wins by grinding; loses when someone lands clean on him.",
+ "how_they_fight": {
+  "Striking": "Functional at best: about 2.9 significant strikes landed a minute against 3.8 absorbed. Uses calf kicks and pressure mainly to set up level changes (Cageside Press, Sherdog on the Brundage fight). Out-struck at range by Edmen Shahbazyan over 15 minutes (34-53 in our data).",
+  "Grappling": "The engine of every win: about 2.4 takedowns per 15 minutes, 48% accuracy, and huge control numbers in his decision wins (12:50 of control vs Josh Fremd, 9:20 vs Dylan Budka, 8:00 vs Wellington Turman). Works elbows from side control, looks for cradles and mount (R1 vs Brundage). Submitted Yaozong Hu and Nick Maximov in the UFC. Against a better grappler (Rodolfo Vieira) he kept it standing and won 55-58 on strikes by decision, so he can adapt.",
+  "Defense": "Takedown defense is good (~79%), but the chin and the entry are the problem. Five of his six losses are KO/TKOs and three of the last four losses came from a single clean shot as he closed distance or exchanged: Michel Pereira (R1, 1:06), Cam Rowston (counter left hook on his entry, R1 2:41) and Cody Brundage (left hook after a feint, R2 0:44). Also knocked down by Shahbazyan in the decision loss.",
+  "Pace & cardio": "Slow burner. Of his 13 wins, five are decisions; two of his three UFC finishes came in R3 (Micheal Gillmore TKO R3, Yaozong Hu SUB R3 at 4:46). Career finishes: R1 4, R2 2, R3 2. His losses come early: KO/TKO losses in R1 (Pereira, Rowston) and R2 (Aaron Jeffery, Jacob Malkoun 0:39, Brundage 0:44); his only decision loss went the distance. He doesn't fade; he gets caught before his grinding pays off. Won R1 on all three Sherdog cards vs Brundage and was stopped 44 seconds into R2.",
+  "Fight IQ": "Knows his path (take it down, ride, elbow) and stuck to it in the win streak. Adapted against a BJJ ace in Vieira. His entries, though, have become predictable and he keeps walking into counters."
+ },
+ "patterns": [
+  "Grinds decisions with takedowns and long top control (5 of his 8 UFC wins went the distance)",
+  "UFC finishes came late: R3 TKO and R3 submission; R1 sub of Maximov the exception",
+  "Stopped early: all five KO/TKO losses in R1 or the first minute of R2 (Malkoun 0:39, Brundage 0:44)",
+  "Three straight losses (Shahbazyan dec, Rowston R1 TKO, Brundage R2 TKO); two straight knockouts"
+ ],
+ "concerns": [
+  "Durability: KO'd in three of his last four losses and dropped in the fourth",
+  "Age 35, three-fight skid; LowKick noted he went 8-2 to start his UFC run and then lost three straight",
+  "Opponent Azamat Bekoev is also on a two-fight skid, so both men's jobs may be on the line"
+ ],
+ "keys_to_beat": [
+  "Counter his entries: he telegraphs the level change behind calf kicks and pressure",
+  "Hurt him early; he's never been stopped late",
+  "Stay off the fence and get up fast; don't concede the long top-control rounds that win him decisions"
+ ],
+ "news": [
+  {
+   "date": "2026-08-20",
+   "text": "Booked against Azamat Bekoev (20-5) at middleweight for Oct. 31; Rotowire notes Petroski is on a three-fight skid and Bekoev on a two-fight skid.",
+   "source": "https://www.rotowire.com/mma/player/andre-petroski-2201"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Lost to Cody Brundage by R2 TKO (0:44) after winning R1 with a takedown and mount; dropped by a left hook after a feint (Sherdog, Cageside Press).",
+   "source": "https://www.sherdog.com/news/news/UFC-Vegas-117-Allen-vs-Costa-playbyplay-results-round-scoring-201198"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Cody Brundage TKO's Petroski, Snaps Losing Streak",
+   "url": "https://cagesidepress.com/2026/05/16/cody-brundage-tkos-petroski-snaps-losing-streak/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tristen Critchfield",
+   "title": "UFC Vegas 117 'Allen vs. Costa' play-by-play, results & round scoring",
+   "url": "https://www.sherdog.com/news/news/UFC-Vegas-117-Allen-vs-Costa-playbyplay-results-round-scoring-201198",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Perth: \"Battle Giraffe\" Cam Rowston Makes Splash in Debut, Stops Andre Petroski",
+   "url": "https://cagesidepress.com/2025/09/27/ufc-perth-battle-giraffe-cam-rowston-makes-splash-in-debut-stops-andre-petroski/",
+   "date": "2025-09-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Atlanta Losers",
+   "url": "https://cagesidepress.com/2025/06/16/whats-next-ufc-atlanta-losers/",
+   "date": "2025-06-16"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Serbia: Matchmaking for All of Saturday's Winners",
+   "url": "https://www.lowkickmma.com/matchmaking-for-all-of-saturdays-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Andre Petroski MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/andre-petroski-2201",
+   "date": "2026-08-20"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs Nolan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "moderate"
+}

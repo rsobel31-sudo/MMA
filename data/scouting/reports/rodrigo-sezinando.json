@@ -1,0 +1,105 @@
+{
+ "name": "Rodrigo Sezinando",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A Nova Uniao-trained Brazilian welterweight based in Canada (8-2) and the TUF 33 welterweight runner-up, a former BFL and Samourai MMA champion per Cageside Press. A front-running finisher who won his TUF fights on clinch work and takedowns, then was stopped in R1 of the final by Daniil Donchenko. Hasn't fought in 13 months.",
+ "how_they_fight": {
+  "Striking": "Aggressive and willing, with a counter left hook (staggered Diego Bianchini) and lots of close-range elbows (cut Bianchini, per Sherdog). In the TUF semifinal Jefferson Creighton was the better striker at range, per Sherdog and coach Daniel Cormier. Against Donchenko he kept charging forward into exchanges and was out-landed 10-39 in our data.",
+  "Grappling": "His most reliable path. Took Creighton down in all three rounds, reversed on the mat, took the back and threatened the neck (Sherdog); against Bianchini he sprawled and powered into top position with heavy ground strikes. Three submission wins on the regional scene, all in R1. Donchenko stuffed most of his shots (1 of 4) and took him down twice.",
+  "Defense": "The concern. Opened up badly by elbows against Donchenko (cut and bleeding heavily, doctor check), then dropped by a right hand after a stuffed takedown and finished on the ground (Sherdog, Cageside Press). Absorbs about 4.9 significant strikes a minute on our small UFC sample.",
+  "Pace & cardio": "Fast starter. Of his seven finishes, five came in R1 (three subs, two KOs) and two in R2 (KOs); only one win went to a decision. His two losses: a 15-minute decision on the Brazilian regionals (Willker Lemos, 2022) and the R1 TKO to Donchenko (4:27). On TUF he went the distance twice and finished strong (\"hit the accelerator\" in R2 vs Bianchini; landed a takedown and back take in R3 vs Creighton, per Sherdog), so the gas tank looked fine. Coaches on the show expected him to burn energy chasing an early finish (Cageside Press).",
+  "Fight IQ": "Emotional and aggressive; when his takedowns weren't landing against Donchenko he kept charging into exchanges rather than resetting. Clever about clinching when an opponent overextends (Cormier, via Sherdog)."
+ },
+ "patterns": [
+  "Finishes early: five of seven stoppage wins in R1, the other two in R2",
+  "Turns the fight into clinch and takedowns when out-struck at range",
+  "Stopped once, in R1, by punches after taking heavy elbows and a stuffed shot",
+  "TUF exhibition wins went 2 and 3 rounds (decisions), not on his pro record"
+ ],
+ "concerns": [
+  "13 months out; the TUF final was postponed from UFC 319 by an injury on his side (reported as an ankle in some outlets)",
+  "Defense in open exchanges and against elbows",
+  "Takedown accuracy against a good defender (1 of 4 vs Donchenko)"
+ ],
+ "keys_to_beat": [
+  "Stuff the first takedowns and make him reset in open space",
+  "Elbows and counters as he charges in; he bleeds and gets reckless",
+  "Survive the first round; most of his finishes come early"
+ ],
+ "news": [
+  {
+   "date": "2026-09-25",
+   "text": "Booked against Theodor Berggren at welterweight for Oct. 31 (Heavy). Both men lost to Daniil Donchenko in their last fight.",
+   "source": "https://heavy.com/sports/ufc/intriguing-welterweight-clash-ufc-vegas-123/"
+  },
+  {
+   "date": "2025-08-14",
+   "text": "The TUF 33 final was moved from UFC 319 to Noche UFC after Sezinando was injured; MMA News reported the injury, the specific nature was not confirmed by the UFC.",
+   "source": "https://www.mmanews.com/article/rodrigo-sezinando-injured-tuf-welterweight-finale-moved-from-ufc-319-to-noche-ufc-3"
+  },
+  {
+   "date": "2026-10-20",
+   "text": "Record disagreement: our verified data has him 8-2; one betting listing shows 9-2. TUF exhibition bouts are not counted in our record.",
+   "source": "https://www.ufc.com/event/ufc-fight-night-october-31-2026"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Brian Knapp",
+   "title": "Rodrigo Sezinando Tames Rival Diego Bianchini, Advances to 'TUF 33' Semifinals",
+   "url": "https://www.sherdog.com/news/news/Rodrigo-Sezinando-Tames-Rival-Diego-Bianchini-Advances-to-TUF-33-Semifinals-197710",
+   "date": "2025-07-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Brian Knapp",
+   "title": "Ground Superiority Carries Rodrigo Sezinando into 'TUF 33' Welterweight Final",
+   "url": "https://www.sherdog.com/news/news/Ground-Superiority-Carries-Rodrigo-Sezinando-into-TUF-33-Welterweight-Final-197875",
+   "date": "2025-07-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Daniil Donchenko Makes Quick Work Of Sezinando, Wins TUF 33",
+   "url": "https://cagesidepress.com/2025/09/13/daniil-donchenko-makes-quick-work-of-sezinando-wins-tuf-33/",
+   "date": "2025-09-13"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Noche UFC 'Lopes vs. Silva' Play-by-Play, Results & Round Scoring",
+   "url": "https://www.sherdog.com/news/news/Noche-UFC-Lopes-vs-Silva-PlaybyPlay-Results-Round-Scoring-198365",
+   "date": "2025-09-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "The Ultimate Fighter 33 Ep. 8: The Time For Talk is Over",
+   "url": "https://cagesidepress.com/2025/07/16/the-ultimate-fighter-33-ep-8-the-time-for-talk-is-over/",
+   "date": "2025-07-16"
+  },
+  {
+   "outlet": "MMA News",
+   "author": "",
+   "title": "Rodrigo Sezinando Injured, TUF Welterweight Finale Moved From UFC 319 To Noche UFC 3",
+   "url": "https://www.mmanews.com/article/rodrigo-sezinando-injured-tuf-welterweight-finale-moved-from-ufc-319-to-noche-ufc-3",
+   "date": "2025-08-14"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Intriguing Welterweight Clash Booked for UFC Vegas 123",
+   "url": "https://heavy.com/sports/ufc/intriguing-welterweight-clash-ufc-vegas-123/",
+   "date": "2026-09-25"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs Nolan",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "moderate"
+}

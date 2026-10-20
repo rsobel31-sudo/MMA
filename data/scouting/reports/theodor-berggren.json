@@ -1,0 +1,97 @@
+{
+ "name": "Theodor Berggren",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 27-year-old Swedish southpaw (8-4) from Fight Club Rush and Cage Warriors who has never won a decision: all eight wins are stoppages, six in R1. Took his UFC debut on about three weeks' notice in Baku and was stopped in R2 by Daniil Donchenko.",
+ "how_they_fight": {
+  "Striking": "Aggressive, forward striker who wants to win with strength, range and output (UFC.com). ClutchPoints' preview credits him with good timing, head/body/leg kicks and fast pressure. Against Donchenko he landed a step-in knee and a clean left hand but was out-landed 23-71 and hurt by a right hook in R1 (Sherdog play-by-play).",
+  "Grappling": "Three R1 submission wins on the regional scene (rear-naked chokes per MMA UK). Barely grappled in Baku (no takedown attempts). Tapped to an arm-triangle in R3 against Justin Burlinson at Cage Warriors 181.",
+  "Defense": "Leaky in his debut: kept a high guard but ate leg kicks and body shots, then a right head kick through the guard dropped him and two hooks finished it (Sherdog via Yahoo). Absorbed 5.4 significant strikes a minute on our small UFC sample.",
+  "Pace & cardio": "Fast starter whose results get worse the longer fights go. Finishes: R1 6, R2 1 (Battaglia, 4:44), R3 1 (Samedov TKO). Losses: two 15-minute decisions (Christian Stigenberg 2022, Leonardo Damiani 2025), an R3 submission (Burlinson, 2:44) and the R2 TKO to Donchenko (1:35). So three of his four losses came late or on the cards, and he is 0-2 in fights that reached the judges. Durability: stopped once by strikes (head kick plus punches), once by submission.",
+  "Fight IQ": "Confident and aggressive, says he has a 100% finish rate and expects a war (UFC.com). The short-notice debut against a rising TUF winner was a big step; his more recent two regional wins came later in fights (R2, R3), which ClutchPoints credited to better preparation."
+ },
+ "patterns": [
+  "Every win is a finish; six of eight in R1",
+  "Never won a decision (0-2 on the cards)",
+  "Late losses: R3 submission, two decisions, and an R2 TKO in his UFC debut"
+ ],
+ "concerns": [
+  "Defense against kicks and body work; dropped twice in his debut",
+  "Grappling defense late in fights (arm-triangle loss in R3)",
+  "Big jump in competition: 1-1 in Cage Warriors before the UFC call"
+ ],
+ "keys_to_beat": [
+  "Weather his early burst, then take over in R2 and R3",
+  "Chop the lead leg and body (Donchenko's blueprint)",
+  "Wrestle him late; he has been submitted in R3 and lost both fights that went the distance"
+ ],
+ "news": [
+  {
+   "date": "2026-09-25",
+   "text": "Booked against Rodrigo Sezinando at welterweight for Oct. 31 (Heavy).",
+   "source": "https://heavy.com/sports/ufc/intriguing-welterweight-clash-ufc-vegas-123/"
+  },
+  {
+   "date": "2026-06-27",
+   "text": "UFC debut on short notice (replacing Andreas Gustafsson, who withdrew with a medical issue): lost to Daniil Donchenko by R2 TKO (head kick and punches, 1:35).",
+   "source": "https://sports.yahoo.com/articles/ufc-baku-fiziev-vs-torres-164808677.html"
+  },
+  {
+   "date": "2026-06-25",
+   "text": "Sources disagree on his last regional fight: ClutchPoints (via Yahoo) listed a TKO loss to Abdulatip Samedov, while our verified data records an R3 TKO win over Samedov at FCR 27 (Feb. 2026).",
+   "source": "https://sports.yahoo.com/articles/daniil-donchenko-vs-theodor-berggren-175655714.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "Simon Head",
+   "title": "Theodor Berggren Answered The Call",
+   "url": "https://www.ufc.com/news/theodor-berggren-answered-call-ufc-baku",
+   "date": "2026-06-25"
+  },
+  {
+   "outlet": "Yahoo Sports (ClutchPoints)",
+   "author": "Dominik Zawartko",
+   "title": "Daniil Donchenko vs. Theodor Berggren prediction, odds, pick for UFC Baku",
+   "url": "https://sports.yahoo.com/articles/daniil-donchenko-vs-theodor-berggren-175655714.html",
+   "date": "2026-06-25"
+  },
+  {
+   "outlet": "Sherdog (via Yahoo Sports)",
+   "author": "",
+   "title": "UFC Baku 'Fiziev vs. Torres' play-by-play, results & round scoring",
+   "url": "https://sports.yahoo.com/articles/ufc-baku-fiziev-vs-torres-164808677.html",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Yardbarker (BoxingNews)",
+   "author": "Tom Rashid",
+   "title": "Daniil Donchenko flatlines UFC newcomer with head kick TKO at UFC Baku",
+   "url": "https://www.yardbarker.com/mma/articles/daniil_donchenko_flatlines_ufc_newcomer_with_head_kick_tko_at_ufc_baku/s1_17349_44001412",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Four Including Headliner Fiziev Earn Performance Bonuses at UFC Baku",
+   "url": "https://cagesidepress.com/2026/06/27/four-including-headliner-fiziev-earn-performance-bonuses-at-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "MMA UK",
+   "author": "Myles Painter",
+   "title": "Across The Pond Profile: Cage Warriors fighter Theodor Berggren",
+   "url": "https://mmauk.net/2025/09/22/across-the-pond-profile-cage-warriors-fighter-theodor-berggren/",
+   "date": "2025-09-22"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Intriguing Welterweight Clash Booked for UFC Vegas 123",
+   "url": "https://heavy.com/sports/ufc/intriguing-welterweight-clash-ufc-vegas-123/",
+   "date": "2026-09-25"
+  }
+ ],
+ "depth": "moderate"
+}
