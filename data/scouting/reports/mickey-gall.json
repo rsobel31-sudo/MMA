@@ -1,0 +1,76 @@
+{
+ "name": "Mickey Gall",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "Jiu-jitsu-first veteran (7-7; 6-7 UFC), 34-35, on a four-fight losing streak with no win since July 2021 and no fight since a R1 knockout loss to Ramiz Brahimaj in November 2024. Was pulled from a September return for failing medicals; now cleared and moving up to middleweight against Zach Reese.",
+ "how_they_fight": {
+  "Striking": "Upright and hittable: absorbs about 5.5 significant strikes a minute and lands about 4.3. Will throw a jab-right (stung Brahimaj with one per Cageside Press) but loses most kickboxing exchanges with real strikers.",
+  "Grappling": "All six of his stoppage wins are submissions (five in R1, Northcutt in R2), mostly rear-naked chokes off scrambles or a back-take. Takedown entries are weak (about 36%), so he needs opponents to grapple with him or give up a position.",
+  "Defense": "Stopped three times, all by strikes: Diego Sanchez (R2, after being taken down and controlled), Mike Malott (R1), Brahimaj (R1). Never submitted. Takedown defense about 45%.",
+  "Pace & cardio": "Early or not at all: every finish win came by R2 (five R1). Once past R1 he's 1-4 in decisions (beat Touahri; lost to Brown, Perry, Morono, Hafez). His KO losses came R1 (2) and R2 (1). Not a late-rounds fighter.",
+  "Fight IQ": "Reads submission chances quickly, but has tended to stand and trade when takedowns aren't there."
+ },
+ "patterns": [
+  "Back-takes and rear-naked chokes in R1",
+  "Loses decisions when he can't get the fight down",
+  "Knocked out in R1 in two of his last three"
+ ],
+ "concerns": [
+  "Nearly two years out, a medical flag in September, and a first fight at middleweight",
+  "Chin and defense: three KO losses, two in R1",
+  "Four straight losses"
+ ],
+ "keys_to_beat": [
+  "Stay on the feet and throw at volume; he gets hit a lot",
+  "Don't give up the back in scrambles; stay heavy on top or stand",
+  "Pressure early - he has not looked better as fights go on"
+ ],
+ "news": [
+  {
+   "date": "2026-09-24",
+   "text": "Pulled from his UFC Vegas 121 return against Sedriques Dumas after pre-fight medicals flagged an undisclosed issue; Gall called the fix a simple procedure.",
+   "source": "https://boxingnews.com/news/ufc-pulls-mickey-gall-medical-issue/"
+  },
+  {
+   "date": "2026-09-28",
+   "text": "Cageside Press said the Dumas bout would have been his first at middleweight; Boxing News listed it at welterweight.",
+   "source": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Cleared and booked against Zach Reese at middleweight for Oct 31 (MMA Junkie, two sources).",
+   "source": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Junkie (via Yahoo Sports)",
+   "author": "Nolan King",
+   "title": "UFC books Mickey Gall vs. Zach Reese",
+   "url": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html",
+   "date": "2026-10-17"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "Tom Rashid",
+   "title": "UFC Pulls Mickey Gall From Return Over Medical Issue",
+   "url": "https://boxingnews.com/news/ufc-pulls-mickey-gall-medical-issue/",
+   "date": "2026-09-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 121 Losers",
+   "url": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/",
+   "date": "2026-09-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 309: Ramiz Brahimaj KOs Mickey Gall Inside of a Round",
+   "url": "https://cagesidepress.com/2024/11/16/ufc-309-ramiz-brahimaj-kos-mickey-gall-inside-of-a-round",
+   "date": "2024-11-16"
+  }
+ ],
+ "depth": "moderate"
+}

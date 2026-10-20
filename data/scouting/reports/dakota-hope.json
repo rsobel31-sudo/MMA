@@ -1,0 +1,72 @@
+{
+ "name": "Dakota Hope",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "Aggressive, powerful regional finisher (11-2; former Peak Fighting featherweight champion) whose UFC debut was a short-notice split-decision loss to Kai Kamaka III at lightweight in April. Back down to featherweight and again on short notice, replacing Gaston Bolanos against Francis Marshall. Never been stopped.",
+ "how_they_fight": {
+  "Striking": "Front-foot pressure: backs opponents to the cage with short punches, body knees and clinch elbows (Cageside Press). Dropped Kamaka with a right hand in R1 and stunned him with a right hook in R2. Busy (106 of 258 significant strikes against Kamaka) but loose: Kamaka landed 105 of 159, so he gets hit a lot for the volume he throws. Five R1 knockouts on the regionals; Heavy calls it \"vicious power\".",
+  "Grappling": "Mostly a striker who clinches. Has a fifth-round submission (Patrick Connors, Peak Fighting title fight) and landed a late takedown on Kamaka, but takedowns are not his main route.",
+  "Defense": "Durability is good: 13 pro fights and never stopped (both losses are decisions). Defense is the issue: he walks through return fire, and Kamaka out-worked him on the body and with counters late.",
+  "Pace & cardio": "Fast starter. All five KO wins came in R1 (0:15 to 1:59); his only submission came in R5. The other five wins and both losses went the distance. He has gone 25 minutes three times on the regionals, yet against Kamaka his pace dipped in R2 and he was visibly tired in R3, leaning on the clinch and overreaching (Cageside Press) - he won R1 and lost the fight over R2-R3. Short notice twice in a row is worth keeping in mind for R3.",
+  "Fight IQ": "Commits to pressure and finishing; when the early storm doesn't land, he hasn't shown a plan B beyond more of the same. Took both UFC fights on short notice."
+ },
+ "patterns": [
+  "Early pressure and power: wins R1, five R1 KO wins",
+  "If it goes long he tends to fade; decision record 5-2",
+  "Never finished: both losses are decisions (Bosnick, Kamaka split)",
+  "Clinch work against the fence: knees to the body, elbows"
+ ],
+ "concerns": [
+  "R2-R3 cardio at UFC pace (faded vs Kamaka)",
+  "Absorbs a lot of strikes: 4.95 absorbed a minute",
+  "Second short-notice booking, and a cut back down to featherweight after debuting at lightweight"
+ ],
+ "keys_to_beat": [
+  "Survive the first five minutes; make him work at range",
+  "Body work and counters as he comes forward - Kamaka's recipe",
+  "Bank R2 and R3 once his pace drops"
+ ],
+ "news": [
+  {
+   "date": "2026-10-08",
+   "text": "Steps in for Gaston Bolanos (eyebrow cut in training) against Francis Marshall at featherweight; the official UFC page still listed Bolanos on Oct 20. Sources disagree on weight class (featherweight per Heavy, bantamweight in some listings).",
+   "source": "https://heavy.com/sports/ufc/francis-marshall-new-opponent-ufc-halloween/"
+  },
+  {
+   "date": "2026-04-04",
+   "text": "Lost UFC debut to Kai Kamaka III by split decision (29-28, 28-29, 29-28) at lightweight after dropping him in R1.",
+   "source": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-kai-kamaka-iii-victorious-in-return-beats-dakota-hope/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Francis Marshall Draws New Opponent for UFC Halloween Event",
+   "url": "https://heavy.com/sports/ufc/francis-marshall-new-opponent-ufc-halloween/",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "Jaideep R Unnithan",
+   "title": "Matchmakers scramble for replacements as multiple fighters pull out from UFC 334 and Vegas 123",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-matchmakers-scramble-for-replacements-as-multiple-fighters-pull-out-from-ufc-334-and-vegas-123/",
+   "date": "2026-10-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 115: Kai Kamaka III Victorious in Return, Beats Dakota Hope",
+   "url": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-kai-kamaka-iii-victorious-in-return-beats-dakota-hope/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo Sports)",
+   "author": "Nolan King",
+   "title": "UFC books Mickey Gall vs. Zach Reese",
+   "url": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html",
+   "date": "2026-10-17"
+  }
+ ],
+ "depth": "moderate"
+}

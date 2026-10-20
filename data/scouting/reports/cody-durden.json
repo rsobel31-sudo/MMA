@@ -1,0 +1,91 @@
+{
+ "name": "Cody Durden",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "Grinding ATT Atlanta wrestler (18-11-1; 7-9-1 UFC) who wins by takedowns and top control and loses when caught in scrambles or out-struck. 1-4 in his last five: snapped a four-fight skid by out-grinding Jafel Filho on six days' notice, then was choked out by Alessandro Costa in R2 at UFC 329 after Ode Osbourne withdrew.",
+ "how_they_fight": {
+  "Striking": "Functional, not dangerous: about 3.5 significant strikes landed a minute and 3.9 absorbed, with just one UFC knockdown (J.P. Buys). Out-landed 165-70 by Joshua Van. His striking exists to get to the clinch; a mistimed high kick set up the Costa loss (Cageside Press).",
+  "Grappling": "The weapon: about 3.1 takedowns per 15 minutes and 51% accuracy. Long control wins over Carlos Mota (12+ min), Charles Johnson (11 of 18 takedowns) and Jake Hadley; went 5 for 5 on Filho. But his scrambles are leaky: submitted six times (Hollis, Flick, Mokaev, Ulanbekov, Nascimento, Costa); Costa took his back after he slipped on a missed kick.",
+  "Defense": "Stopped eight times: six submissions and two knockouts (Bruno Silva, Jose Ochoa). Takedown defense about 55%; Tumendemberel went 4 for 4 on him in March.",
+  "Pace & cardio": "Slow burner who wins late but is finished in R2. Twelve stoppage wins (nine R1, two R2, one R3), but in the UFC only two (Buys R1, Schnell R2); five of his seven UFC wins are decisions, and he took R3 against Filho as Filho faded (Cageside Press; Rotowire also credits his conditioning). Of eight stoppage losses, six came in R2 (Hollis, Ulanbekov, Silva, Ochoa, Nascimento, Costa) and two in R1 (Flick, Mokaev). Every UFC stoppage loss since 2023 has come in R2.",
+  "Fight IQ": "Knows his lane and sticks to wrestling when it works, but gets drawn into exchanges and loose scrambles. Busy (takes short-notice fights) and announced a new four-fight UFC deal on Instagram in June 2026 (per the Covington News)."
+ },
+ "patterns": [
+  "Wins on volume of takedowns and control; decisions are his UFC win path (5 of 7)",
+  "Gets stronger as opponents tire (Filho R3)",
+  "Six of eight stoppage losses in R2, including the last five",
+  "Gives up the back/neck in scrambles"
+ ],
+ "concerns": [
+  "Age 36 and 1-4 in his last five",
+  "Submission defense in scrambles",
+  "Chin against hard counter-punchers (Silva, Ochoa)"
+ ],
+ "keys_to_beat": [
+  "Defend the first takedown and punish the re-shot with counters",
+  "Hunt the neck and back when he shoots or scrambles",
+  "Make R2 hurt - that's where he breaks"
+ ],
+ "news": [
+  {
+   "date": "2026-07-11",
+   "text": "Submitted by Alessandro Costa (RNC, 2:19 of R2) after Costa replaced the injured Ode Osbourne.",
+   "source": "https://cagesidepress.com/2026/07/11/alessandro-costa-submits-durden-in-second-round-at-ufc-329/"
+  },
+  {
+   "date": "2026-04-25",
+   "text": "Beat Jafel Filho by unanimous decision on six days' notice, snapping a four-fight losing streak.",
+   "source": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-cody-durden-secures-much-needed-win-over-jafel-filho/"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Rebooked against Ode Osbourne at flyweight for Oct 31 - the bout scrapped at UFC 329.",
+   "source": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Alessandro Costa Submits Durden in Second Round at UFC 329",
+   "url": "https://cagesidepress.com/2026/07/11/alessandro-costa-submits-durden-in-second-round-at-ufc-329/",
+   "date": "2026-07-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 116: Cody Durden Secures Much-Needed Win Over Jafel Filho",
+   "url": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-cody-durden-secures-much-needed-win-over-jafel-filho/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 116 Losers",
+   "url": "https://cagesidepress.com/2026/04/27/whats-next-ufc-vegas-116-losers/",
+   "date": "2026-04-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Perth Losers",
+   "url": "https://cagesidepress.com/2026/05/04/whats-next-ufc-perth-losers-2/",
+   "date": "2026-05-04"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "Tom Rashid",
+   "title": "Alessandro Costa replaces injured Ode Osbourne at UFC 329",
+   "url": "https://boxingnews.com/news/alessandro-costa-replaces-osbourne-ufc-329",
+   "date": "2026-07-02"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo Sports)",
+   "author": "Nolan King",
+   "title": "UFC books Mickey Gall vs. Zach Reese",
+   "url": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html",
+   "date": "2026-10-17"
+  }
+ ],
+ "depth": "good"
+}

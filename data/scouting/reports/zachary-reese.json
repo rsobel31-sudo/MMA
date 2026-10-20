@@ -1,0 +1,83 @@
+{
+ "name": "Zachary Reese",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "Tall Texan finisher (10-4, 1 NC; 4-4 UFC) who lives in the first round: seven R1 stoppage wins and all three of his losses by stoppage came in R1. Comes off back-to-back losses - a disputed split decision to Michel Pereira and a 75-second TKO by Ryan Gandra.",
+ "how_they_fight": {
+  "Striking": "Long middleweight (196 cm reach) with explosive early offense: 20-second KO of Julian Marquez; mixes body kicks and hooks (Cageside Press). Out-landed Pereira 74-63 and Todorovic 50-35. Hands can drop as he throws - Gandra's dipping left hook over his guard ended it.",
+  "Grappling": "Opportunistic submissions: rear-naked choke of Jackson McVey in R2 on less than a week's notice (3 for 3 on takedowns), R1 subs of Aronov (DWCS) and Phillips. Gets taken down and controlled when he can't keep separation (Todorovic, Bekoev, Brundage).",
+  "Defense": "The weakness. Takedown defense about 47%; finished by Brundage (R1, after a takedown) and Bekoev (R1, ground strikes after over two minutes of control), and dropped by Gandra (R1). Sources say Pereira scored an early knockdown in February; our data records none.",
+  "Pace & cardio": "Fast starter, both ways. Eight stoppage wins: seven R1, one R2 (McVey). Three stoppage losses, all R1 (Brundage 1:49, Bekoev 3:04, Gandra 1:15). Has gone the distance three times (2-1), finishing strongly against Pereira per Rotowire, so the tank holds up when he survives R1. BJPenn.com: \"tendency to get off to fast starts\".",
+  "Fight IQ": "Takes short-notice fights and accepts exchanges early; has been caught by counters when aggressive."
+ },
+ "patterns": [
+  "R1 is decisive either way: 7 R1 stoppage wins, 3 R1 stoppage losses",
+  "Rear-naked choke finishes after takedowns",
+  "Competitive over 15 minutes when it gets there (Todorovic win, Pereira split)"
+ ],
+ "concerns": [
+  "Defensive lapses early: finished in R1 three times",
+  "Two straight losses",
+  "Taken down and held by wrestlers (Bekoev, Todorovic)"
+ ],
+ "keys_to_beat": [
+  "Counter his early aggression with a hook as he comes in",
+  "Take him down and stay heavy in R1",
+  "If he survives R1, keep pace with him - he doesn't fade"
+ ],
+ "news": [
+  {
+   "date": "2026-07-11",
+   "text": "TKO'd by Ryan Gandra at 1:15 of R1 (dropped by a left hook, then ground strikes) at UFC 329.",
+   "source": "https://cagesidepress.com/2026/07/11/ufc-329-ryan-gandra-puts-away-zach-reese-early-violently/"
+  },
+  {
+   "date": "2026-02-21",
+   "text": "Lost a split decision to Michel Pereira in Houston that drew boos and robbery claims.",
+   "source": "https://www.lowkickmma.com/michel-pereira-bloodies-zachary-reese/"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Booked against Mickey Gall at middleweight for Oct 31 (MMA Junkie).",
+   "source": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC 329: Ryan Gandra Puts Away Zach Reese Early, Violently",
+   "url": "https://cagesidepress.com/2026/07/11/ufc-329-ryan-gandra-puts-away-zach-reese-early-violently/",
+   "date": "2026-07-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Michel Pereira Bloodies Zachary Reese for 32nd Career Victory - UFC Houston Highlights",
+   "url": "https://www.lowkickmma.com/michel-pereira-bloodies-zachary-reese/",
+   "date": "2026-02-21"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Zach Reese Taps Out Jackson McVey on Short Notice - UFC Vegas 111 Highlights",
+   "url": "https://www.lowkickmma.com/jackson-mcvey-vs-zach-reese-highlights/",
+   "date": "2025-11-08"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 329 Best Bets: Paddy Pimblett bounceback, quick finishes lead cash-ins",
+   "url": "https://www.bjpenn.com/mma-news/paddy-pimblett/ufc-329-best-bets-paddy-pimblett/",
+   "date": "2026-07-08"
+  },
+  {
+   "outlet": "MMA Junkie (via Yahoo Sports)",
+   "author": "Nolan King",
+   "title": "UFC books Mickey Gall vs. Zach Reese",
+   "url": "https://sports.yahoo.com/articles/ufc-books-mickey-gall-vs-012533985.html",
+   "date": "2026-10-17"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,98 @@
+{
+ "name": "Randy Brown",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "Long (198 cm reach), versatile Jamaican-American welterweight veteran (20-8; 14-8 UFC), age 36, on a two-fight skid (Bonfim TKO, Holland decision). Was booked against Carlos Leal, who withdrew injured; now faces unbeaten Jacobe Smith on less than two weeks' notice for Smith.",
+ "how_they_fight": {
+  "Striking": "Rangy kickboxer with real power: dropped Dalby face-first in R2 after breaking his nose in R1 (Cageside Press), buckled Kevin Holland with a left hook in R1. About 4.6 significant strikes a minute at 45%. Sherdog calls him \"capable of anything\" but says he can cycle through ideas without committing to one.",
+  "Grappling": "Dangerous off his back (elbows, triangle threat and up-kicks vs Holland; submissions of Warlley Alves and Alex Oliveira). Takedown offense is poor (0 for 4 vs Holland; about 26% career), and he has spent long stretches under wrestlers (Battle, Zaleski, Belal).",
+  "Defense": "Durability is the worry (Sherdog). Stopped five times: three KO/TKOs (Price, Luque, Bonfim - all R2) and two submissions (Graves R2, Della Maddalena R1). Dropped twice by Luque, once each by Della Maddalena, Dalby, Bonfim and Kalinn Williams, and Holland dropped him in R1 (Cageside Press; our data records no knockdown in that fight). Calf kicks have hurt him lately (Bonfim, Holland). Sources disagree on the Bonfim finish: a knee as he dipped to change levels (LowKick), off the clinch exit (Cageside), or a flying knee (Heavy).",
+  "Pace & cardio": "Middle-rounds finisher. Thirteen stoppage wins: four R1, seven R2, two R3 (Montano, Barberena). Of five stoppage losses, four were in R2 and one in R1. Decisions: 7-3 (lost to Belal, Battle split, Holland). Can go 15 minutes at a decent pace but R3 against Holland was a tired clinch battle (LowKick). The pattern: feels it out in R1, the fight swings in R2 either way.",
+  "Fight IQ": "Experienced and patient at his best (the Dalby range game). Can lose focus or wander between game plans; was warned for grabbing the fence vs Holland."
+ },
+ "patterns": [
+  "Range kickboxing with a long jab and right hand",
+  "R2 is the swing round: 7 of 13 stoppage wins and 4 of 5 stoppage losses",
+  "Dangerous guard: up-kicks, elbows and triangles off his back",
+  "Struggles against wrestlers who can hold him down (Battle, Belal)"
+ ],
+ "concerns": [
+  "Durability at 36: stopped in R2 by Bonfim and dropped by Holland",
+  "Two straight losses; hasn't won since April 2025",
+  "Late opponent change: prepared for Leal, now a younger undefeated finisher"
+ ],
+ "keys_to_beat": [
+  "Kick the lead leg early - Holland and Bonfim both did",
+  "Close the distance and hold him on the fence or mat rather than kickbox at his range",
+  "Push the pace in R2, where he's most vulnerable"
+ ],
+ "news": [
+  {
+   "date": "2026-10-02",
+   "text": "Carlos Leal withdrew from their Oct 31 bout with an undisclosed injury (AG Fight, via EssentiallySports).",
+   "source": "https://www.essentiallysports.com/ufc-mma-news-undisclosed-injury-results-in-first-fight-cancelation-for-renato-moicano-headlined-card/"
+  },
+  {
+   "date": "2026-10-19",
+   "text": "Unbeaten Jacobe Smith (13-0) replaces Leal, 28 days after his Oct 3 KO of Bruce Whitehead; Heavy says it's on the main card.",
+   "source": "https://heavy.com/sports/ufc/jacobe-smith-accepts-ufc-vegas-123/"
+  },
+  {
+   "date": "2026-04-11",
+   "text": "Lost a unanimous decision to Kevin Holland (30-27 x3) at UFC 327 after buckling him early.",
+   "source": "https://cagesidepress.com/2026/04/11/kevin-holland-takes-decision-win-after-fun-scrap-with-brown"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC 327 Prelims",
+   "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-327-prelims-200764",
+   "date": "2026-04-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Kevin Holland Takes Decision Win After Fun Scrap With Brown",
+   "url": "https://cagesidepress.com/2026/04/11/kevin-holland-takes-decision-win-after-fun-scrap-with-brown",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 111 Power Rankings: Rating The Main Card Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-vegas-111-power-rankings-rating-the-main-card-winners-in-las-vegas/",
+   "date": "2025-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Randy Brown Shuts Nicolas Dalby's Lights Off at UFC Kansas City",
+   "url": "https://cagesidepress.com/2025/04/26/randy-brown-shuts-nicolas-dalbys-lights-off-at-ufc-kansas-city",
+   "date": "2025-04-26"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "Biplob Chakraborty",
+   "title": "Undisclosed injury results in first fight cancelation for Renato Moicano-headlined card",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-undisclosed-injury-results-in-first-fight-cancelation-for-renato-moicano-headlined-card/",
+   "date": "2026-10-03"
+  },
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "Jacobe Smith Accepts Short Notice Fight for UFC Vegas 123",
+   "url": "https://heavy.com/sports/ufc/jacobe-smith-accepts-ufc-vegas-123/",
+   "date": "2026-10-19"
+  },
+  {
+   "outlet": "Yahoo Sports (republished from Heavy)",
+   "author": "Marcel Dorff",
+   "title": "Jacobe Smith Accepts Short Notice Fight for UFC Vegas 123",
+   "url": "https://sports.yahoo.com/articles/jacobe-smith-accepts-short-notice-053421856.html",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "good"
+}
