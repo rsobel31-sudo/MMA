@@ -1,0 +1,112 @@
+{
+ "name": "Yana Santos",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A veteran Russian bantamweight striker (17-8, 1 NC; 7-5 UFC; age 37), formerly Yana Kunitskaya and once a title challenger against Cris Cyborg. She has won three straight decisions (Chandler, Tate, Chiasson), but hasn't fought since October 2025 after pulling out of an April 2026 bout with Norma Dumont.",
+ "how_they_fight": {
+  "Striking": "Busy, accurate kickboxer: about 4.8 significant strikes a minute at 54%. Jab, straight cross, leg kicks and front kicks. She bloodied Chiasson in R1 and landed a front kick to the face in R2 (Cageside), and chopped Tate's legs. Cageside notes she threw over 150 total strikes in the first ten minutes against Chiasson.",
+  "Grappling": "Little offense on the mat (0.4 takedowns per 15, rarely tries a submission). She has some clinch takedowns and control time (Lansberg, Chiasson), but grappling is mostly defense for her.",
+  "Defense": "Solid striking defense (57%). Her takedown defense (about 59%) holds early and cracks late: Tate took her down in R3 and she survived a deep rear-naked choke at the bell, and Chiasson got to her back in R3 and hunted a choke (Cageside, Sherdog). She has been stopped five times: by strikes three times (Cyborg R1, Aldana R1, Ladd R3) and by submission twice (Dishekova R1, Evinger R2; both before 2018).",
+  "Pace & cardio": "Every UFC win (7) has been a decision. All nine finishes came before 2017: eight in R1, one in R2. The pattern in her recent fights is to win R1-R2 on the feet, then get taken down and lose R3, without being finished. Stoppage losses: three in R1, one in R2, one in R3 (Aspen Ladd TKO, 2019). Not a fader in output, but vulnerable to late wrestling.",
+  "Fight IQ": "Disciplined; knows she's winning the striking and banks the early rounds. A veteran who has seen everything, though she has historically lost the grappling-heavy fights (Holm controlled her for nearly ten minutes)."
+ },
+ "patterns": [
+  "Wins on volume and accuracy at range, all by decision in the UFC",
+  "Takes R1 and R2, then gets taken down in R3 (Tate, Chiasson)",
+  "Hasn't been finished since 2021 (Aldana)",
+  "Loses to bigger punchers and to wrestlers who hold her down"
+ ],
+ "concerns": [
+  "A year out of action and age 37",
+  "Late-round takedown defense against a grappler who controls opponents for most of the fight",
+  "Withdrew from her April bout; Dumont said Santos was injured, other outlets list the reason as undisclosed"
+ ],
+ "keys_to_beat": [
+  "Close distance and take her down; she gives little from bottom",
+  "Win the third round on the mat",
+  "Don't stand at range and trade with her for 15 minutes"
+ ],
+ "news": [
+  {
+   "date": "2026-04-27",
+   "text": "Pulled out of her April 25 fight with Norma Dumont at UFC Vegas 116; Cageside refers to an injury, Rotowire lists the reason as undisclosed.",
+   "source": "https://cagesidepress.com/2026/04/27/whats-next-ufc-vegas-116-losers/"
+  },
+  {
+   "date": "2026-08-20",
+   "text": "Announced a signed fight contract against what she called her highest-ranked UFC opponent yet, later confirmed as Luana Santos.",
+   "source": "https://middleeasy.com/mma-news/yana-santos-luana-santos-ufc-fight-night-292-contract"
+  },
+  {
+   "date": "2026-09-28",
+   "text": "Rankings disagree: Cageside lists Yana at No. 6 and Luana at No. 3; the UFC.com event page shows the two at No. 6 and No. 7.",
+   "source": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 320: Yana Santos Gets Last Laugh Over Overweight Macy Chiasson",
+   "url": "https://cagesidepress.com/2025/10/04/ufc-320-yana-santos-gets-last-laugh-over-overweight-macy-chiasson/",
+   "date": "2025-10-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Des Moines: Yana Santos Fends Off Late Surge, Beats Miesha Tate",
+   "url": "https://cagesidepress.com/2025/05/03/ufc-des-moines-yana-santos-fends-off-late-surge-beats-miesha-tate/",
+   "date": "2025-05-03"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "UFC Des Moines Prelims: Yana Santos Quells Miesha Tate Rally to Procure Decision",
+   "url": "https://www.sherdog.com/news/news/UFC-Des-Moines-Prelims-Yana-Santos-Quells-Miesha-Tate-Rally-to-Procure-Decision-196842",
+   "date": "2025-05-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Yana Santos Calls for Harsher Penalties After Chiasson Weight Miss",
+   "url": "https://cagesidepress.com/2025/10/06/yana-santos-calls-for-harsher-penalties-after-chiasson-weight-miss/",
+   "date": "2025-10-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 116 Losers",
+   "url": "https://cagesidepress.com/2026/04/27/whats-next-ufc-vegas-116-losers/",
+   "date": "2026-04-27"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Yana Santos MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/yana-santos-1507",
+   "date": "2026-08-20"
+  },
+  {
+   "outlet": "MiddleEasy",
+   "author": "Jake Blend",
+   "title": "Yana Santos Signs UFC Fight Contract, Luana Santos Matchup Reported For Oct. 31",
+   "url": "https://middleeasy.com/mma-news/yana-santos-luana-santos-ufc-fight-night-292-contract",
+   "date": "2026-08-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 121 Losers",
+   "url": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/",
+   "date": "2026-09-28"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "moderate"
+}

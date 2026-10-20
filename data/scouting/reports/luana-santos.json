@@ -1,0 +1,98 @@
+{
+ "name": "Luana Santos",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 27-year-old Brazilian grappler (11-2; 6-1 UFC) who moved up from flyweight and has won three straight at bantamweight. Most recently she shut out Karol Rosa 30-27 on all three cards with more than 12 minutes of control. She has never been finished, and calls herself a 'suffocating' fighter.",
+ "how_they_fight": {
+  "Striking": "Low volume (about 2.4 significant strikes a minute) but efficient and hard to hit. Mainly a leg kick and a sharp 1-2 to enter, plus overhand rights on the way to the clinch (Cageside, on Croden and Rosa). Has one TKO in the UFC (Juliana Miller, R1).",
+  "Grappling": "The core of her game: judo, takedowns in open space and against the fence, long top control (51% control share), back takes. Kept Rosa down for 741 seconds and Croden for 561 seconds. Five submissions, including an Americana of Tainara Lisboa at 4:59 of R2 and an R1 finish of Mariya Agapova.",
+  "Defense": "Very good: 70% striking defense, absorbs only 1.6 a minute, 77% takedown defense. Never stopped. Both losses were decisions (a split to Jena Bishop in LFA, and Casey O'Neill out-landing her 83-41 at UFC 305).",
+  "Pace & cardio": "Steady three-round grinder. Six finishes: four in R1 (three submissions plus the Miller TKO), one at 4:59 of R2 (Lisboa) and one early in R3 (regional, 2022). Her last two fights went the distance with control in every round, so she doesn't fade. Has never been stopped in any round.",
+  "Fight IQ": "Patient and disciplined: picks her entries, then stays heavy on top. She loses when out-worked at range by a volume striker who stays upright (O'Neill)."
+ },
+ "patterns": [
+  "Takedown, then long top control and back takes",
+  "Low-volume, efficient striking to set up entries",
+  "Never finished; both losses were decisions",
+  "Finishes come early (four of six in R1) or not at all; her last two wins were 15-minute grinds"
+ ],
+ "concerns": [
+  "Out-landed badly by a high-volume striker (O'Neill 83-41)",
+  "Low striking output means she can drop rounds where she doesn't get the takedown",
+  "Smaller frame than a natural bantamweight"
+ ],
+ "keys_to_beat": [
+  "Keep her at range and out-volume her",
+  "Defend the first takedown and make her strike",
+  "Punish her entries with counters"
+ ],
+ "news": [
+  {
+   "date": "2026-06-20",
+   "text": "Beat Karol Rosa by unanimous decision (30-27 x3), controlling most of the fight.",
+   "source": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-luana-santos-sails-past-karol-rosa/"
+  },
+  {
+   "date": "2026-06-23",
+   "text": "Said her goal is to be UFC champion in 2027 and called herself a fighter who can suffocate anyone in the division (Cageside).",
+   "source": "https://cagesidepress.com/2026/06/23/luana-santos-eyes-ufc-gold-in-2027-after-statement-win/"
+  },
+  {
+   "date": "2026-09-28",
+   "text": "Rankings disagree: Cageside lists her at No. 3; the UFC.com event page shows the pair at No. 6 and No. 7.",
+   "source": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 119: Luana Santos Sails Past Karol Rosa",
+   "url": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-luana-santos-sails-past-karol-rosa/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Eddie Law",
+   "title": "Luana Santos Eyes UFC Gold in 2027 After Statement Win",
+   "url": "https://cagesidepress.com/2026/06/23/luana-santos-eyes-ufc-gold-in-2027-after-statement-win/",
+   "date": "2026-06-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Luana Santos Outgrinds Melissa Croden to Earn Decision Win",
+   "url": "https://cagesidepress.com/2025/12/13/luana-santos-outgrinds-melissa-croden-to-earn-decision-win/",
+   "date": "2025-12-13"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 106: 'Burns vs. Morales' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-106/ufc-vegas-106-burns-vs-morales-live-results-and-highlights/",
+   "date": "2025-05-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 121 Losers",
+   "url": "https://cagesidepress.com/2026/09/28/whats-next-ufc-vegas-121-losers/",
+   "date": "2026-09-28"
+  },
+  {
+   "outlet": "MiddleEasy",
+   "author": "Jake Blend",
+   "title": "Yana Santos Signs UFC Fight Contract, Luana Santos Matchup Reported For Oct. 31",
+   "url": "https://middleeasy.com/mma-news/yana-santos-luana-santos-ufc-fight-night-292-contract",
+   "date": "2026-08-20"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "moderate"
+}

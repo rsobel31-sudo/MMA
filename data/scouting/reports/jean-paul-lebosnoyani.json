@@ -1,0 +1,106 @@
+{
+ "name": "Jean-Paul Lebosnoyani",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A 28-year-old California welterweight (11-2; 2-0 UFC) out of the 2025 Contender Series, nicknamed 'Mufasa'. An explosive, aggressive wrestle-boxer and front-end finisher on the regional scene (seven R1 stoppages) who has won two close UFC decisions over Phil Rowe and Seok Hyeon Ko.",
+ "how_they_fight": {
+  "Striking": "Throws first and likes chaotic exchanges: explosive entries, leg kick into overhand, clubbing hooks (Cageside). About 4.1 significant strikes a minute at 55%, with real power (0.63 knockdowns per 15). Rowe and Ko both landed heavier shots on him at range.",
+  "Grappling": "Sharp, well-timed double legs in open space and against the fence. He floats on top and threatens the neck in scrambles: d'Arce against Rowe, two tight guillotines against Ko. Five of his eight finishes are submissions. Ko went to judges after Lebosnoyani's takedown in the final 40 seconds sealed R3 (Korea Herald).",
+  "Defense": "Hittable: absorbs about 3.6 a minute, and he took visible facial damage against Rowe (Cageside). Both losses were knockouts by strikes: Spike Carlyle R1 (2019) and JaCobi Jones R2 (2023). Takedown defense is about 62%.",
+  "Pace & cardio": "Front-loaded finisher on the regionals: seven of eight stoppage wins came in R1, the other in R2. Has had three decisions, all 3-round fights (Kuiks 2024, Rowe, Ko). Didn't fade in either UFC fight: he won R3 against both Rowe and Ko with takedowns (Cageside). Note: in the Rowe fight, Rotowire credits him with three takedowns, 5:17 of control and a 66-54 striking edge, while our verified table has those numbers on Rowe's side, so treat that fight's per-fighter stats with care. Stopped twice, in R1 and R2, both by strikes.",
+  "Fight IQ": "Aggressive and willing to scramble. Makes close rounds count late with a takedown. Slow to find his range early (Cageside, on Rowe)."
+ },
+ "patterns": [
+  "Fast starter: seven R1 stoppages before the UFC",
+  "Wrestle-boxing: overhands into double legs",
+  "Guillotine and d'Arce threats in scrambles",
+  "Won R3 with a late takedown in both UFC fights",
+  "Both losses were knockouts by strikes"
+ ],
+ "concerns": [
+  "Gets hit; both losses by KO",
+  "Both UFC wins were close (one split decision)",
+  "A pure chain wrestler could take his takedown game away"
+ ],
+ "keys_to_beat": [
+  "Counter his entries; he comes in on straight lines",
+  "Make him wrestle off his back, or out-wrestle him and stay heavy",
+  "Win exchanges at range"
+ ],
+ "news": [
+  {
+   "date": "2026-09-01",
+   "text": "Announced his booking against Farman Hasanov himself; Azerbaijani outlets note his Armenian heritage against an Azerbaijani opponent.",
+   "source": "https://www.idman.biz/en/news/mma/153907"
+  },
+  {
+   "date": "2026-07-18",
+   "text": "Beat Seok Hyeon Ko by unanimous decision (29-28 x3), handing Ko his first UFC loss.",
+   "source": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-jean-paul-lebosnoyani-claims-decision-over-seok-hyeon-ko/"
+  },
+  {
+   "date": "2026-09-24",
+   "text": "Card placement varies: UFC.com and Wikipedia list the bout on the main card, while SB Nation's card list puts it on the prelims.",
+   "source": "https://sports.yahoo.com/articles/latest-ufc-vegas-123-fight-174019350.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Oklahoma City: Jean-Paul Lebosnoyani Claims Decision Over Seok Hyeon Ko",
+   "url": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-jean-paul-lebosnoyani-claims-decision-over-seok-hyeon-ko/",
+   "date": "2026-07-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Houston: Jean-Paul Lebosnoyani Takes Split Over Phil Rowe in Debut",
+   "url": "https://cagesidepress.com/2026/02/21/ufc-houston-jean-paul-lebosnoyani-takes-split-over-phil-rowe-in-debut/",
+   "date": "2026-02-21"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Jean-Paul Lebosnoyani MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/jean-paul-lebosnoyani-2701",
+   "date": "2026-09-01"
+  },
+  {
+   "outlet": "The Korea Herald",
+   "author": "",
+   "title": "Ko Seok-hyun suffers first UFC loss",
+   "url": "https://www.koreaherald.com/article/10812773",
+   "date": "2026-07-19"
+  },
+  {
+   "outlet": "Idman.biz",
+   "author": "",
+   "title": "Farman Hasanov learns opponent for second UFC fight",
+   "url": "https://www.idman.biz/en/news/mma/153907",
+   "date": "2026-09-01"
+  },
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Jesse Holland",
+   "title": "Latest UFC Vegas 123 fight card, start time, date and location",
+   "url": "https://sports.yahoo.com/articles/latest-ufc-vegas-123-fight-174019350.html",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
+   "date": "2026-10-19"
+  }
+ ],
+ "depth": "moderate"
+}

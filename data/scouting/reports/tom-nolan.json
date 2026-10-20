@@ -1,0 +1,121 @@
+{
+ "name": "Tom Nolan",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A huge Australian lightweight (11-1, age 27; about 188 cm) from Contender Series 2023, on a five-fight win streak capped by an upset decision over Fares Ziam in June as roughly a 3-to-1 underdog. He uses his size in the clinch, has real power, and has improved his grappling. This is his first main event and first scheduled five-rounder.",
+ "how_they_fight": {
+  "Striking": "Big power for 155 (5 KO/TKO wins, about 0.35 knockdowns per 15 minutes). Sherdog's Ben Duffy says he has added range management to his power: he met Victor Martinez's entries with uppercuts and knees, and a knee set up the finish. Spinning elbows were a weapon against Ziam (Cageside Press). Throws about 4.2 significant strikes a minute, but absorbs 3.5.",
+  "Grappling": "Duffy calls him 'a solid grappler' who likes back control and chokes that suit his long frame. He submitted Charlie Campbell with an RNC off a takedown in R1, and against Ziam he won key exchanges from top position and out-controlled him (about 6:47 to 5:07 in our data). He 'embraces the clinch' to cancel out faster opponents. Threatened with upkicks off his back against Borshchev (Cageside).",
+  "Defense": "The weak spot. Duffy flags his limited speed and 'tall-man defensive habits' and expects good overhand rights to find him. Nikolas Motta knocked him out in 63 seconds in his UFC debut, his only loss. Takedown defense is middling (about 55%); Ziam took him down and got to his back in R3.",
+  "Pace & cardio": "Early finisher, late decision winner. All six stoppage wins came in R1 or R2 (five in R1: four KOs and the Campbell submission; one KO in R2). His other five wins went the full 15 minutes, and he has won late rounds and close fights (29-28 x3 over Ziam; 29-28, 29-28, 30-27 over Borshchev). His only stoppage loss was in R1 (Motta). He has never fought past three rounds. Said in June that he used to come in too light and now does a proper water cut, which left him feeling 'normal' on fight night (Cageside).",
+  "Fight IQ": "Builds a specific plan for each opponent (a 'boxing camp approach', per Cageside) and said he borrowed ideas from Moicano's win over Benoit Saint-Denis for the Ziam fight. Has worked with a mental performance coach. Called Moicano out by name after beating Ziam and praised his 'scary' striking and grappling."
+ },
+ "patterns": [
+  "Uses height and length in the clinch, with knees and elbows",
+  "Finishes come early: six of six stoppages in R1-R2",
+  "Grinds out close decisions when he can't finish (five three-round wins)",
+  "Hittable early; his only loss was an R1 KO",
+  "Wins scrambles and takes the back"
+ ],
+ "concerns": [
+  "Never been past three rounds",
+  "Defensive habits and hand speed against a sharp boxer",
+  "Bottom position against an elite jiu-jitsu player: Moicano finishes from the back and from scrambles",
+  "First main event"
+ ],
+ "keys_to_beat": [
+  "Beat him to the punch with straight shots and overhands as he comes in upright",
+  "Make him defend takedowns early, then attack the neck in scrambles",
+  "Stay off the fence and out of his clinch"
+ ],
+ "news": [
+  {
+   "date": "2026-09-14",
+   "text": "Booked for his first UFC main event, replacing Brian Ortega as Renato Moicano's opponent. Cageside notes he was ranked No. 11 at the time; the UFC.com event page now shows the pair at No. 12 and No. 14.",
+   "source": "https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/"
+  },
+  {
+   "date": "2026-06-08",
+   "text": "After beating Ziam he called out Moicano, saying he'd admired him since childhood.",
+   "source": "https://cagesidepress.com/2026/06/08/ufc-vegas-118-tom-nolan-moicano/"
+  },
+  {
+   "date": "2026-06-06",
+   "text": "Beat Fares Ziam by unanimous decision (29-28 x3) as roughly a +270 underdog, snapping Ziam's win streak.",
+   "source": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-tom-nolan-snaps-fares-ziams-win-streak-extends-own/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "With Brian Ortega Out, Renato Moicano Gets Tom Nolan in UFC Vegas 123 Headliner",
+   "url": "https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/",
+   "date": "2026-09-14"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Weekly)",
+   "author": "Joshua Ryan",
+   "title": "Brian Ortega out of UFC 331 fight with injury, Renato Moicano gets new opponent",
+   "url": "https://sports.yahoo.com/articles/brian-ortega-ufc-331-fight-013215642.html",
+   "date": "2026-09-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Vegas 118 'Muhammad vs. Bonfim' - Ziam vs. Nolan",
+   "url": "https://www.sherdog.com/news/articles/3/Preview-UFC-Vegas-118-Muhammad-vs-Bonfim-201430",
+   "date": "2026-06-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Vegas 118: Tom Nolan Snaps Fares Ziam's Win Streak, Extends Own",
+   "url": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-tom-nolan-snaps-fares-ziams-win-streak-extends-own/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Jay Anderson",
+   "title": "UFC Vegas 118: Tom Nolan Wants to Fight \"Awesome,\" \"Scary\" Moicano",
+   "url": "https://cagesidepress.com/2026/06/08/ufc-vegas-118-tom-nolan-moicano/",
+   "date": "2026-06-08"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 118 Power Rankings: Rating The Night's Big Winners At The Meta APEX",
+   "url": "https://www.lowkickmma.com/ufc-vegas-118-power-rankings-rating-the-nights-big-winners-at-the-meta-apex/",
+   "date": "2026-06-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 312: Tom Nolan Stops Slava Claus From Delivering in Australia",
+   "url": "https://cagesidepress.com/2025/02/08/ufc-312-tom-nolan-stops-slava-claus-from-delivering-in-australia/",
+   "date": "2025-02-08"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Perth: 'Ulberg vs. Reyes' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-perth/ufc-perth-ulberg-vs-reyes-live-results-and-highlights/",
+   "date": "2025-09-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 331 Losers",
+   "url": "https://cagesidepress.com/2026/09/21/whats-next-ufc-331-losers/",
+   "date": "2026-09-21"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "good"
+}

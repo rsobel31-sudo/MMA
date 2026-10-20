@@ -1,0 +1,98 @@
+{
+ "name": "Azamat Bekoev",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "A Russian middleweight from Vladikavkaz (20-5; 2-2 UFC; American Top Team) and former LFA champion. He opened his UFC run with two R1 TKOs, then was stopped in R3 in back-to-back fights as a heavy favourite: by Yousri Belgaroui (TKO) and Tresean Gore (guillotine). Very dangerous early, with a clear late-fight problem.",
+ "how_they_fight": {
+  "Striking": "Utilitarian, pressure-first kickboxing: hard kicks and basic combinations that land when opponents worry about his wrestling (Sherdog). Real power (1.1 knockdowns per 15); dropped Gore with right hands in R2. His overhands get wild, which leaves him open to counters (Cageside, on Belgaroui).",
+  "Grappling": "Straightforward single and double legs from the outside, finished decisively. Prefers ground-and-pound to advancing position; will take the back or look for an arm-triangle (Sherdog). Eight career submission wins, all before the UFC.",
+  "Defense": "The problem. He absorbs about 5.9 significant strikes a minute and has 41% striking defense. Belgaroui out-landed him 102-24. Duffy (Sherdog) points to defensive lapses that power and durability had been covering. All three stoppage losses came in R3: Rafal Haratyk sub (2021), Belgaroui TKO (2025), Gore guillotine (2026).",
+  "Pace & cardio": "A clear fast starter who fades. Sixteen stoppage wins: ten in R1, five in R2, one in R3 (2016). Both UFC wins were R1 TKOs. All three stoppage losses were in R3, the last two after he was visibly exhausted: 'exhausted and retreating' against Belgaroui, and against Gore his leg was compromised by kicks and Gore was the fresher man (Cageside). He has gone 25 minutes twice in LFA title fights, but both were decisions.",
+  "Fight IQ": "Front-loads everything. Has been a big favourite in all four UFC fights and lost the last two."
+ },
+ "patterns": [
+  "R1 finisher: ten R1 stoppages, two R1 TKOs in the UFC",
+  "Pressure kickboxing into takedowns and ground-and-pound",
+  "Fades badly in R3; all three stoppage losses came in R3",
+  "Absorbs a lot of volume"
+ ],
+ "concerns": [
+  "Cardio and durability in the third round",
+  "Striking defense",
+  "Bout status: UFC.com and Wikipedia list it, but one stats site (GidStats) marks it cancelled with no reason given; unconfirmed"
+ ],
+ "keys_to_beat": [
+  "Survive the first five minutes, then drag him into a deep fight",
+  "Leg kicks and volume; he slows and gets hit late",
+  "Counter his overhand"
+ ],
+ "news": [
+  {
+   "date": "2026-08-21",
+   "text": "Booked against Andre Petroski (per Wikipedia, citing a regional Russian report).",
+   "source": "https://en.wikipedia.org/wiki/Azamat_Bekoev"
+  },
+  {
+   "date": "2026-10-20",
+   "text": "GidStats labels the Petroski bout cancelled, with no reason given; UFC.com still lists it. Unconfirmed; re-check at fight week.",
+   "source": "https://gidstats.com/events/ufc_fight_night-2026-11-01/andre_petroski_vs_azamat_bekoev.html"
+  },
+  {
+   "date": "2026-04-04",
+   "text": "Submitted by Tresean Gore (guillotine, 3:27 R3) as roughly an 8-to-1 favourite.",
+   "source": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-tresean-gore-upsets-azamat-bekoev-with-nasty-guillotine/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Vegas 115 prelims - Bekoev vs. Gore",
+   "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-Vegas-115-prelims-200690",
+   "date": "2026-04-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "UFC Vegas 115: Tresean Gore Upsets Azamat Bekoev With Nasty Guillotine",
+   "url": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-tresean-gore-upsets-azamat-bekoev-with-nasty-guillotine/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Yousri Belgaroui Breaks Down Bekoev for Late Finish in Violent UFC Debut",
+   "url": "https://cagesidepress.com/2025/10/18/yousri-belgaroui-breaks-down-bekoev-for-late-finish-in-violent-ufc-debut/",
+   "date": "2025-10-18"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Azamat Bekoev",
+   "url": "https://en.wikipedia.org/wiki/Azamat_Bekoev",
+   "date": "2026-10-19"
+  },
+  {
+   "outlet": "GidStats",
+   "author": "",
+   "title": "Andre Petroski vs Azamat Bekoev (bout page)",
+   "url": "https://gidstats.com/events/ufc_fight_night-2026-11-01/andre_petroski_vs_azamat_bekoev.html",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Jesse Holland",
+   "title": "Latest UFC Vegas 123 fight card, start time, date and location",
+   "url": "https://sports.yahoo.com/articles/latest-ufc-vegas-123-fight-174019350.html",
+   "date": "2026-09-24"
+  }
+ ],
+ "depth": "moderate"
+}

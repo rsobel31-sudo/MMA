@@ -1,0 +1,87 @@
+{
+ "name": "Farman Hasanov",
+ "updated": "2026-10-20T18:00:00+00:00",
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "summary": "An undefeated Azerbaijani welterweight wrestler ('The Lion', Renzo Gracie Academy) who made his UFC debut at home in Baku in June. He took Eric Nolan down 17 times (a welterweight single-round record of nine in R1) on the way to a 30-27 x3 decision. He was visibly tired from R2 on and did little damage. One UFC fight and long gaps between bouts.",
+ "how_they_fight": {
+  "Striking": "Limited sample: only 21 significant strikes landed against Nolan. Regionally, three of his wins were knockouts (R1 0:47, R2, R1 4:58), mostly off top pressure, though there's little footage-based detail on his striking.",
+  "Grappling": "Relentless chain wrestling: leg attacks, re-shots and level changes in scrambles (LowKick). He held Nolan for about 11 minutes of 15 in our data, but rarely advanced position or threatened submissions. MMA Mania said he was dominant with his wrestling but didn't do much with it.",
+  "Defense": "Not hit much against Nolan, because the fight was on the ground. His defense on the feet is untested at UFC level. Never been stopped or beaten.",
+  "Pace & cardio": "Huge output early, then a fade. He was 'awfully gassed' in R2 (MMA Mania) and visibly exhausted in R3 (LowKick), though he kept shooting through the horn. His finishes came in R1 (two) and R2 (one); his two decisions went 15 minutes. Long layoffs (2022 to 2024, 2024 to 2025) make his conditioning harder to read.",
+  "Fight IQ": "Single-minded: wrestle, wrestle again. Keeps re-shooting when stood up. It's unclear what his plan B is against a fighter who can stop the shot."
+ },
+ "patterns": [
+  "Chain wrestling from the first minute",
+  "Long top control, light damage",
+  "Fades in R2-R3 but keeps shooting",
+  "Undefeated; regional KOs came in R1-R2"
+ ],
+ "concerns": [
+  "Cardio after the R1 takedown burst",
+  "Thin striking and finishing game at UFC level",
+  "Record and age differ by source: our data has him 5-0 and age 31 (Idman.biz agrees on 31); LowKick and Idman list 6-0, and LowKick says 25",
+  "Only one UFC fight"
+ ],
+ "keys_to_beat": [
+  "Survive R1, defend and scramble, then hunt him in R2-R3 when he's tired",
+  "Threaten guillotines and front headlocks on his shots",
+  "Make him strike with you"
+ ],
+ "news": [
+  {
+   "date": "2026-06-27",
+   "text": "Debuted in Baku with a 30-27 x3 decision over Eric Nolan; credited with nine takedowns in R1, a welterweight single-round record.",
+   "source": "https://www.lowkickmma.com/farman-hasanov-defeats-eric-nolan-ufc-baku/"
+  },
+  {
+   "date": "2026-09-01",
+   "text": "Booked against Jean-Paul Lebosnoyani for his second UFC fight.",
+   "source": "https://www.idman.biz/en/news/mma/153907"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "LowKick MMA",
+   "author": "Pranav Pandey",
+   "title": "Farman Hasanov Grinds Out Eric Nolan To Remain Undefeated At UFC Baku",
+   "url": "https://www.lowkickmma.com/farman-hasanov-defeats-eric-nolan-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Rookie Report Card: Grading all Octagon newcomers UFC Baku post-mortem",
+   "url": "https://www.mmamania.com/latest-news/453399/rookie-report-card-grading-all-octagon-newcomers-ufc-baku-post-mortem",
+   "date": "2026-06-29"
+  },
+  {
+   "outlet": "Idman.biz",
+   "author": "",
+   "title": "Farman Hasanov learns opponent for second UFC fight",
+   "url": "https://www.idman.biz/en/news/mma/153907",
+   "date": "2026-09-01"
+  },
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Jesse Holland",
+   "title": "Latest UFC Vegas 123 fight card, start time, date and location",
+   "url": "https://sports.yahoo.com/articles/latest-ufc-vegas-123-fight-174019350.html",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Moicano vs. Nolan",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
+   "date": "2026-10-19"
+  }
+ ],
+ "depth": "thin"
+}
