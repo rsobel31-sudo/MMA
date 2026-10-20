@@ -1,0 +1,2564 @@
+{
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "date": "2026-10-24",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_333",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-333-4321",
+ "book": "FanDuel",
+ "fetched_at": "2026-10-20T16:05:37+00:00",
+ "event_starts": "2026-10-24T12:00:00+00:00",
+ "odds_urls": [
+  "https://www.bestfightodds.com/events/ufc-333-4321"
+ ],
+ "unpriced": [
+  "Lone'er Kavanagh vs Ramazan Temirov",
+  "Iasmin Lucindo vs Nicole Caliari"
+ ],
+ "blend_weights": {
+  "model": 0.3366295095174612,
+  "market": 0.877498481930016
+ },
+ "dec_cal": [
+  0.449064,
+  0.674786,
+  -0.376308
+ ],
+ "prop_shrink": 0.5,
+ "bouts": [
+  {
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "a": "Alexander Volkanovski",
+   "b": "Movsar Evloev",
+   "dataset": [
+    "Alexander Volkanovski",
+    "Movsar Evloev"
+   ],
+   "rounds": 5,
+   "title": true,
+   "p_model_a": 0.2615,
+   "p_stats_a": 0.2615,
+   "read_a": 0.0,
+   "ml": {
+    "a": -113,
+    "b": -113
+   },
+   "markets": 33
+  },
+  {
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "a": "Merab Dvalishvili",
+   "b": "Petr Yan",
+   "dataset": [
+    "Merab Dvalishvili",
+    "Petr Yan"
+   ],
+   "rounds": 5,
+   "title": true,
+   "p_model_a": 0.5355,
+   "p_stats_a": 0.5355,
+   "read_a": 0.0,
+   "ml": {
+    "a": 142,
+    "b": -184
+   },
+   "markets": 33
+  },
+  {
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "a": "Alexander Volkov",
+   "b": "Rizvan Kuniev",
+   "dataset": [
+    "Alexander Volkov",
+    "Rizvan Kuniev"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6308,
+   "p_stats_a": 0.6308,
+   "read_a": 0.0,
+   "ml": {
+    "a": -122,
+    "b": -104
+   },
+   "markets": 23
+  },
+  {
+   "bout": "Aaron Pico vs Losene Keita",
+   "a": "Aaron Pico",
+   "b": "Losene Keita",
+   "dataset": [
+    "Aaron Pico",
+    "Losene Keita"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.5109,
+   "p_stats_a": 0.5109,
+   "read_a": 0.0,
+   "ml": {
+    "a": -113,
+    "b": -113
+   },
+   "markets": 23
+  },
+  {
+   "bout": "Azamat Murzakanov vs Dominick Reyes",
+   "a": "Azamat Murzakanov",
+   "b": "Dominick Reyes",
+   "dataset": [
+    "Azamat Murzakanov",
+    "Dominick Reyes"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.5611,
+   "p_stats_a": 0.5611,
+   "read_a": 0.0,
+   "ml": {
+    "a": -220,
+    "b": 168
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Abdul Rakhman Yakhyaev vs Nikita Krylov",
+   "a": "Abdul Rakhman Yakhyaev",
+   "b": "Nikita Krylov",
+   "dataset": [
+    "Abdul-Rakhman Yakhyaev",
+    "Nikita Krylov"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.7858,
+   "p_stats_a": 0.7858,
+   "read_a": 0.0,
+   "ml": {
+    "a": -500,
+    "b": 340
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Grant Dawson vs Nurullo Aliev",
+   "a": "Grant Dawson",
+   "b": "Nurullo Aliev",
+   "dataset": [
+    "Grant Dawson",
+    "Nurullo Aliev"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.5278,
+   "p_stats_a": 0.5278,
+   "read_a": 0.0,
+   "ml": {
+    "a": -132,
+    "b": 104
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Asaf Chopurov vs Colby Thicknesse",
+   "a": "Asaf Chopurov",
+   "b": "Colby Thicknesse",
+   "dataset": [
+    "Asaf Chopurov",
+    "Colby Thicknesse"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.7789,
+   "p_stats_a": 0.7789,
+   "read_a": 0.0,
+   "ml": {
+    "a": -520,
+    "b": 350
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Abubakar Vagaev vs Jacob Malkoun",
+   "a": "Abubakar Vagaev",
+   "b": "Jacob Malkoun",
+   "dataset": [
+    "Abubakar Vagaev",
+    "Jacob Malkoun"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6038,
+   "p_stats_a": 0.6038,
+   "read_a": 0.0,
+   "ml": {
+    "a": -188,
+    "b": 146
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Bolaji Oki vs Daniel Santos",
+   "a": "Bolaji Oki",
+   "b": "Daniel Santos",
+   "dataset": [
+    "Bolaji Oki",
+    "Daniel Santos"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.3574,
+   "p_stats_a": 0.3574,
+   "read_a": 0.0,
+   "ml": {
+    "a": 106,
+    "b": -136
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Kody Steele vs Noah Gugnon",
+   "a": "Kody Steele",
+   "b": "Noah Gugnon",
+   "dataset": [
+    "Kody Steele",
+    "Noah Gugnon"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.5247,
+   "p_stats_a": 0.5247,
+   "read_a": 0.0,
+   "ml": {
+    "a": -172,
+    "b": 134
+   },
+   "markets": 2
+  }
+ ],
+ "skipped": [
+  "Abus Magomedov vs Cam Rowston (not enough data on Cam Rowston)"
+ ],
+ "card": [
+  {
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "a": "Alexander Volkanovski",
+   "b": "Movsar Evloev",
+   "rounds": 5,
+   "title": true
+  },
+  {
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "a": "Merab Dvalishvili",
+   "b": "Petr Yan",
+   "rounds": 5,
+   "title": true
+  },
+  {
+   "bout": "Lone'er Kavanagh vs Ramazan Temirov",
+   "a": "Lone'er Kavanagh",
+   "b": "Ramazan Temirov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "a": "Alexander Volkov",
+   "b": "Rizvan Kuniev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Aaron Pico vs Losene Keita",
+   "a": "Aaron Pico",
+   "b": "Losene Keita",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Azamat Murzakanov vs Dominick Reyes",
+   "a": "Azamat Murzakanov",
+   "b": "Dominick Reyes",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Abdul Rakhman Yakhyaev vs Nikita Krylov",
+   "a": "Abdul Rakhman Yakhyaev",
+   "b": "Nikita Krylov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Abus Magomedov vs Cam Rowston",
+   "a": "Abus Magomedov",
+   "b": "Cam Rowston",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Grant Dawson vs Nurullo Aliev",
+   "a": "Grant Dawson",
+   "b": "Nurullo Aliev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Asaf Chopurov vs Colby Thicknesse",
+   "a": "Asaf Chopurov",
+   "b": "Colby Thicknesse",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Abubakar Vagaev vs Jacob Malkoun",
+   "a": "Abubakar Vagaev",
+   "b": "Jacob Malkoun",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Bolaji Oki vs Daniel Santos",
+   "a": "Bolaji Oki",
+   "b": "Daniel Santos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Kody Steele vs Noah Gugnon",
+   "a": "Kody Steele",
+   "b": "Noah Gugnon",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Iasmin Lucindo vs Nicole Caliari",
+   "a": "Iasmin Lucindo",
+   "b": "Nicole Caliari",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45324:method:a:DEC",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Aaron Pico by decision",
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.3979,
+   "p_fanduel": 0.1748,
+   "p": 0.2723,
+   "edge": 0.0975,
+   "ev": 0.3614,
+   "kelly": 0.0904
+  },
+  {
+   "id": "45324:distance:True",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 172,
+   "decimal": 2.72,
+   "p_model": 0.5206,
+   "p_fanduel": 0.3469,
+   "p": 0.4316,
+   "edge": 0.0847,
+   "ev": 0.174,
+   "kelly": 0.1011
+  },
+  {
+   "id": "45323:method:a:DEC",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Alexander Volkov by decision",
+   "odds": 220,
+   "decimal": 3.2,
+   "p_model": 0.4476,
+   "p_fanduel": 0.2719,
+   "p": 0.3549,
+   "edge": 0.083,
+   "ev": 0.1356,
+   "kelly": 0.0616
+  },
+  {
+   "id": "44524:ml:b",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Movsar Evloev to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.5865,
+   "p_fanduel": 0.5,
+   "p": 0.5865,
+   "edge": 0.0865,
+   "ev": 0.1055,
+   "kelly": 0.1192
+  },
+  {
+   "id": "45324:starts_round:3:True",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.5934,
+   "p_fanduel": 0.4812,
+   "p": 0.5378,
+   "edge": 0.0565,
+   "ev": 0.0549,
+   "kelly": 0.0571
+  },
+  {
+   "id": "45323:distance:True",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -184,
+   "decimal": 1.5435,
+   "p_model": 0.715,
+   "p_fanduel": 0.6106,
+   "p": 0.6648,
+   "edge": 0.0542,
+   "ev": 0.0261,
+   "kelly": 0.0481
+  },
+  {
+   "id": "44524:method:b:DEC",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Movsar Evloev by decision",
+   "odds": 155,
+   "decimal": 2.55,
+   "p_model": 0.4604,
+   "p_fanduel": 0.3462,
+   "p": 0.402,
+   "edge": 0.0558,
+   "ev": 0.025,
+   "kelly": 0.0162
+  },
+  {
+   "id": "44524:distance:True",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -225,
+   "decimal": 1.4444,
+   "p_model": 0.758,
+   "p_fanduel": 0.6531,
+   "p": 0.7083,
+   "edge": 0.0552,
+   "ev": 0.0231,
+   "kelly": 0.0521
+  },
+  {
+   "id": "45323:ml:a",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alexander Volkov to win",
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.5612,
+   "p_fanduel": 0.5188,
+   "p": 0.5612,
+   "edge": 0.0425,
+   "ev": 0.0213,
+   "kelly": 0.0259
+  },
+  {
+   "id": "45383:ml:b",
+   "bout": "Bolaji Oki vs Daniel Santos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Daniel Santos to win",
+   "odds": -136,
+   "decimal": 1.7353,
+   "p_model": 0.5861,
+   "p_fanduel": 0.5428,
+   "p": 0.5861,
+   "edge": 0.0434,
+   "ev": 0.0171,
+   "kelly": 0.0233
+  },
+  {
+   "id": "41066:distance:True",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -340,
+   "decimal": 1.2941,
+   "p_model": 0.8232,
+   "p_fanduel": 0.7243,
+   "p": 0.7777,
+   "edge": 0.0534,
+   "ev": 0.0064,
+   "kelly": 0.0217
+  },
+  {
+   "id": "41066:ml:a",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Merab Dvalishvili to win",
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.4142,
+   "p_fanduel": 0.3894,
+   "p": 0.4142,
+   "edge": 0.0247,
+   "ev": 0.0023,
+   "kelly": 0.0016
+  },
+  {
+   "id": "44524:starts_round:5:True",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.7827,
+   "p_fanduel": 0.694,
+   "p": 0.7408,
+   "edge": 0.0468,
+   "ev": -0.0037,
+   "kelly": 0.0
+  },
+  {
+   "id": "45326:ml:a",
+   "bout": "Abdul Rakhman Yakhyaev vs Nikita Krylov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Abdul Rakhman Yakhyaev to win",
+   "odds": -500,
+   "decimal": 1.2,
+   "p_model": 0.8289,
+   "p_fanduel": 0.7857,
+   "p": 0.8289,
+   "edge": 0.0432,
+   "ev": -0.0053,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:starts_round:3:True",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -270,
+   "decimal": 1.3704,
+   "p_model": 0.76,
+   "p_fanduel": 0.6864,
+   "p": 0.7248,
+   "edge": 0.0383,
+   "ev": -0.0068,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:5:True",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": -430,
+   "decimal": 1.2326,
+   "p_model": 0.8411,
+   "p_fanduel": 0.7599,
+   "p": 0.8036,
+   "edge": 0.0438,
+   "ev": -0.0095,
+   "kelly": 0.0
+  },
+  {
+   "id": "45381:ml:a",
+   "bout": "Asaf Chopurov vs Colby Thicknesse",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Asaf Chopurov to win",
+   "odds": -520,
+   "decimal": 1.1923,
+   "p_model": 0.8305,
+   "p_fanduel": 0.7905,
+   "p": 0.8305,
+   "edge": 0.04,
+   "ev": -0.0098,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:starts_round:2:True",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -270,
+   "decimal": 1.3704,
+   "p_model": 0.7419,
+   "p_fanduel": 0.6864,
+   "p": 0.715,
+   "edge": 0.0285,
+   "ev": -0.0202,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:4:True",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -600,
+   "decimal": 1.1667,
+   "p_model": 0.864,
+   "p_fanduel": 0.8045,
+   "p": 0.8364,
+   "edge": 0.0319,
+   "ev": -0.0242,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:4:True",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -410,
+   "decimal": 1.2439,
+   "p_model": 0.8117,
+   "p_fanduel": 0.7534,
+   "p": 0.7839,
+   "edge": 0.0306,
+   "ev": -0.0249,
+   "kelly": 0.0
+  },
+  {
+   "id": "45382:ml:a",
+   "bout": "Abubakar Vagaev vs Jacob Malkoun",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Abubakar Vagaev to win",
+   "odds": -188,
+   "decimal": 1.5319,
+   "p_model": 0.6359,
+   "p_fanduel": 0.6162,
+   "p": 0.6359,
+   "edge": 0.0196,
+   "ev": -0.0259,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:a:DEC",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Merab Dvalishvili by decision",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.343,
+   "p_fanduel": 0.2845,
+   "p": 0.313,
+   "edge": 0.0285,
+   "ev": -0.0297,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:starts_round:2:True",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -600,
+   "decimal": 1.1667,
+   "p_model": 0.8501,
+   "p_fanduel": 0.8045,
+   "p": 0.8285,
+   "edge": 0.024,
+   "ev": -0.0334,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:2:True",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -2000,
+   "decimal": 1.05,
+   "p_model": 0.9413,
+   "p_fanduel": 0.8901,
+   "p": 0.9193,
+   "edge": 0.0293,
+   "ev": -0.0347,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:3:True",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -650,
+   "decimal": 1.1538,
+   "p_model": 0.8498,
+   "p_fanduel": 0.8155,
+   "p": 0.8333,
+   "edge": 0.0178,
+   "ev": -0.0385,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:3:True",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -1000,
+   "decimal": 1.1,
+   "p_model": 0.8943,
+   "p_fanduel": 0.8472,
+   "p": 0.8726,
+   "edge": 0.0254,
+   "ev": -0.0402,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:b:1",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Movsar Evloev in round 1",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0447,
+   "p_fanduel": 0.0388,
+   "p": 0.0417,
+   "edge": 0.0028,
+   "ev": -0.0416,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:2:True",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1600,
+   "decimal": 1.0625,
+   "p_model": 0.9153,
+   "p_fanduel": 0.8801,
+   "p": 0.8991,
+   "edge": 0.019,
+   "ev": -0.0447,
+   "kelly": 0.0
+  },
+  {
+   "id": "45328:ml:a",
+   "bout": "Grant Dawson vs Nurullo Aliev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Grant Dawson to win",
+   "odds": -132,
+   "decimal": 1.7576,
+   "p_model": 0.5419,
+   "p_fanduel": 0.5372,
+   "p": 0.5419,
+   "edge": 0.0048,
+   "ev": -0.0475,
+   "kelly": 0.0
+  },
+  {
+   "id": "45384:ml:b",
+   "bout": "Kody Steele vs Noah Gugnon",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Noah Gugnon to win",
+   "odds": 134,
+   "decimal": 2.34,
+   "p_model": 0.4068,
+   "p_fanduel": 0.4033,
+   "p": 0.4068,
+   "edge": 0.0035,
+   "ev": -0.048,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:ml:a",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aaron Pico to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.5037,
+   "p_fanduel": 0.5,
+   "p": 0.5037,
+   "edge": 0.0037,
+   "ev": -0.0506,
+   "kelly": 0.0
+  },
+  {
+   "id": "45325:ml:a",
+   "bout": "Azamat Murzakanov vs Dominick Reyes",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Azamat Murzakanov to win",
+   "odds": -220,
+   "decimal": 1.4545,
+   "p_model": 0.65,
+   "p_fanduel": 0.6482,
+   "p": 0.65,
+   "edge": 0.0018,
+   "ev": -0.0546,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:b:DEC",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Petr Yan by decision",
+   "odds": 110,
+   "decimal": 2.1,
+   "p_model": 0.4802,
+   "p_fanduel": 0.42,
+   "p": 0.4499,
+   "edge": 0.03,
+   "ev": -0.0552,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:b:1",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Losene Keita in round 1",
+   "odds": 490,
+   "decimal": 5.9,
+   "p_model": 0.168,
+   "p_fanduel": 0.1513,
+   "p": 0.1595,
+   "edge": 0.0082,
+   "ev": -0.059,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:method:b:KO/TKO",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Movsar Evloev by KO/TKO",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0997,
+   "p_fanduel": 0.0883,
+   "p": 0.0938,
+   "edge": 0.0055,
+   "ev": -0.0617,
+   "kelly": 0.0
+  },
+  {
+   "id": "45325:ml:b",
+   "bout": "Azamat Murzakanov vs Dominick Reyes",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Dominick Reyes to win",
+   "odds": 168,
+   "decimal": 2.68,
+   "p_model": 0.35,
+   "p_fanduel": 0.3518,
+   "p": 0.35,
+   "edge": -0.0018,
+   "ev": -0.0619,
+   "kelly": 0.0
+  },
+  {
+   "id": "45384:ml:a",
+   "bout": "Kody Steele vs Noah Gugnon",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Kody Steele to win",
+   "odds": -172,
+   "decimal": 1.5814,
+   "p_model": 0.5932,
+   "p_fanduel": 0.5967,
+   "p": 0.5932,
+   "edge": -0.0035,
+   "ev": -0.0619,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:ml:b",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Losene Keita to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.4963,
+   "p_fanduel": 0.5,
+   "p": 0.4963,
+   "edge": -0.0037,
+   "ev": -0.0644,
+   "kelly": 0.0
+  },
+  {
+   "id": "45328:ml:b",
+   "bout": "Grant Dawson vs Nurullo Aliev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nurullo Aliev to win",
+   "odds": 104,
+   "decimal": 2.04,
+   "p_model": 0.4581,
+   "p_fanduel": 0.4628,
+   "p": 0.4581,
+   "edge": -0.0048,
+   "ev": -0.0656,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:b:1",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Rizvan Kuniev in round 1",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0862,
+   "p_fanduel": 0.0812,
+   "p": 0.0836,
+   "edge": 0.0025,
+   "ev": -0.08,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ml:b",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Petr Yan to win",
+   "odds": -184,
+   "decimal": 1.5435,
+   "p_model": 0.5858,
+   "p_fanduel": 0.6106,
+   "p": 0.5858,
+   "edge": -0.0247,
+   "ev": -0.0958,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:method:b:SUB",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Rizvan Kuniev by submission",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0489,
+   "p_fanduel": 0.0458,
+   "p": 0.0473,
+   "edge": 0.0016,
+   "ev": -0.1004,
+   "kelly": 0.0
+  },
+  {
+   "id": "45382:ml:b",
+   "bout": "Abubakar Vagaev vs Jacob Malkoun",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jacob Malkoun to win",
+   "odds": 146,
+   "decimal": 2.46,
+   "p_model": 0.3641,
+   "p_fanduel": 0.3838,
+   "p": 0.3641,
+   "edge": -0.0196,
+   "ev": -0.1042,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:method:a:DEC",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Alexander Volkanovski by decision",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.2976,
+   "p_fanduel": 0.2943,
+   "p": 0.2959,
+   "edge": 0.0017,
+   "ev": -0.1122,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:b:2",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Rizvan Kuniev in round 2",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0517,
+   "p_fanduel": 0.0525,
+   "p": 0.0521,
+   "edge": -0.0004,
+   "ev": -0.1142,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:method:b:KO/TKO",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Losene Keita by KO/TKO",
+   "odds": 195,
+   "decimal": 2.95,
+   "p_model": 0.3028,
+   "p_fanduel": 0.2962,
+   "p": 0.2995,
+   "edge": 0.0033,
+   "ev": -0.1165,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:ml:b",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Rizvan Kuniev to win",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.4388,
+   "p_fanduel": 0.4812,
+   "p": 0.4388,
+   "edge": -0.0425,
+   "ev": -0.1393,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:starts_round:2:False",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.2581,
+   "p_fanduel": 0.3136,
+   "p": 0.285,
+   "edge": -0.0285,
+   "ev": -0.145,
+   "kelly": 0.0
+  },
+  {
+   "id": "45383:ml:a",
+   "bout": "Bolaji Oki vs Daniel Santos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Bolaji Oki to win",
+   "odds": 106,
+   "decimal": 2.06,
+   "p_model": 0.4139,
+   "p_fanduel": 0.4572,
+   "p": 0.4139,
+   "edge": -0.0434,
+   "ev": -0.1475,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:3:False",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 410,
+   "decimal": 5.1,
+   "p_model": 0.1502,
+   "p_fanduel": 0.1845,
+   "p": 0.1667,
+   "edge": -0.0178,
+   "ev": -0.15,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ends_round:1",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0847,
+   "p_fanduel": 0.094,
+   "p": 0.0892,
+   "edge": -0.0048,
+   "ev": -0.1524,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:b:2",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Movsar Evloev in round 2",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0346,
+   "p_fanduel": 0.0388,
+   "p": 0.0367,
+   "edge": -0.0022,
+   "ev": -0.1566,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:starts_round:3:False",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.4066,
+   "p_fanduel": 0.5188,
+   "p": 0.4622,
+   "edge": -0.0565,
+   "ev": -0.1589,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:starts_round:3:False",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.24,
+   "p_fanduel": 0.3136,
+   "p": 0.2752,
+   "edge": -0.0383,
+   "ev": -0.1743,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:starts_round:2:False",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 380,
+   "decimal": 4.8,
+   "p_model": 0.1499,
+   "p_fanduel": 0.1955,
+   "p": 0.1715,
+   "edge": -0.024,
+   "ev": -0.1767,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:4:False",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": 280,
+   "decimal": 3.8,
+   "p_model": 0.1883,
+   "p_fanduel": 0.2466,
+   "p": 0.2161,
+   "edge": -0.0306,
+   "ev": -0.179,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:distance:False",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -225,
+   "decimal": 1.4444,
+   "p_model": 0.4794,
+   "p_fanduel": 0.6531,
+   "p": 0.5684,
+   "edge": -0.0847,
+   "ev": -0.179,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:ends_round:1",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 190,
+   "decimal": 2.9,
+   "p_model": 0.2581,
+   "p_fanduel": 0.3079,
+   "p": 0.2823,
+   "edge": -0.0256,
+   "ev": -0.1813,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:method:b:DEC",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Rizvan Kuniev by decision",
+   "odds": 185,
+   "decimal": 2.85,
+   "p_model": 0.2674,
+   "p_fanduel": 0.3053,
+   "p": 0.286,
+   "edge": -0.0193,
+   "ev": -0.1849,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:distance:False",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.285,
+   "p_fanduel": 0.3894,
+   "p": 0.3352,
+   "edge": -0.0542,
+   "ev": -0.1888,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:method:b:KO/TKO",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Rizvan Kuniev by KO/TKO",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1147,
+   "p_fanduel": 0.1339,
+   "p": 0.124,
+   "edge": -0.0099,
+   "ev": -0.1941,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:b:SUB",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Petr Yan by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0318,
+   "p_fanduel": 0.0383,
+   "p": 0.0349,
+   "edge": -0.0034,
+   "ev": -0.1971,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:b:2",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Losene Keita in round 2",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0958,
+   "p_fanduel": 0.119,
+   "p": 0.1069,
+   "edge": -0.0122,
+   "ev": -0.1984,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:ends_round:1",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 370,
+   "decimal": 4.7,
+   "p_model": 0.1499,
+   "p_fanduel": 0.19,
+   "p": 0.169,
+   "edge": -0.021,
+   "ev": -0.2057,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ends_round:1",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0587,
+   "p_fanduel": 0.0744,
+   "p": 0.0661,
+   "edge": -0.0083,
+   "ev": -0.2066,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:distance:False",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 172,
+   "decimal": 2.72,
+   "p_model": 0.242,
+   "p_fanduel": 0.3469,
+   "p": 0.2917,
+   "edge": -0.0552,
+   "ev": -0.2067,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:5:False",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": 205,
+   "decimal": 3.05,
+   "p_model": 0.2173,
+   "p_fanduel": 0.306,
+   "p": 0.2592,
+   "edge": -0.0468,
+   "ev": -0.2095,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:starts_round:2:False",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 680,
+   "decimal": 7.8,
+   "p_model": 0.0847,
+   "p_fanduel": 0.1199,
+   "p": 0.1009,
+   "edge": -0.019,
+   "ev": -0.2128,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:4:False",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": 380,
+   "decimal": 4.8,
+   "p_model": 0.136,
+   "p_fanduel": 0.1955,
+   "p": 0.1636,
+   "edge": -0.0319,
+   "ev": -0.2147,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ends_round:2",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0656,
+   "p_fanduel": 0.085,
+   "p": 0.0747,
+   "edge": -0.0103,
+   "ev": -0.2154,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ml:a",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alexander Volkanovski to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.4135,
+   "p_fanduel": 0.5,
+   "p": 0.4135,
+   "edge": -0.0865,
+   "ev": -0.2205,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:3:False",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 510,
+   "decimal": 6.1,
+   "p_model": 0.1057,
+   "p_fanduel": 0.1528,
+   "p": 0.1274,
+   "edge": -0.0254,
+   "ev": -0.2227,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:5:False",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": 290,
+   "decimal": 3.9,
+   "p_model": 0.1589,
+   "p_fanduel": 0.2401,
+   "p": 0.1964,
+   "edge": -0.0438,
+   "ev": -0.2342,
+   "kelly": 0.0
+  },
+  {
+   "id": "45381:ml:b",
+   "bout": "Asaf Chopurov vs Colby Thicknesse",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Colby Thicknesse to win",
+   "odds": 350,
+   "decimal": 4.5,
+   "p_model": 0.1695,
+   "p_fanduel": 0.2095,
+   "p": 0.1695,
+   "edge": -0.04,
+   "ev": -0.2374,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:method:b:DEC",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Losene Keita by decision",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.1226,
+   "p_fanduel": 0.1618,
+   "p": 0.1411,
+   "edge": -0.0208,
+   "ev": -0.2381,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:distance:False",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.1768,
+   "p_fanduel": 0.2757,
+   "p": 0.2223,
+   "edge": -0.0534,
+   "ev": -0.2441,
+   "kelly": 0.0
+  },
+  {
+   "id": "45326:ml:b",
+   "bout": "Abdul Rakhman Yakhyaev vs Nikita Krylov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nikita Krylov to win",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.1711,
+   "p_fanduel": 0.2143,
+   "p": 0.1711,
+   "edge": -0.0432,
+   "ev": -0.2471,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:ends_round:2",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0901,
+   "p_fanduel": 0.1276,
+   "p": 0.1074,
+   "edge": -0.0202,
+   "ev": -0.2484,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:a:1",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Merab Dvalishvili in round 1",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0223,
+   "p_fanduel": 0.0319,
+   "p": 0.0267,
+   "edge": -0.0052,
+   "ev": -0.2528,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:b:1",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Petr Yan in round 1",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0364,
+   "p_fanduel": 0.0525,
+   "p": 0.0437,
+   "edge": -0.0088,
+   "ev": -0.2563,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:ends_round:2",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.1486,
+   "p_fanduel": 0.2178,
+   "p": 0.1806,
+   "edge": -0.0372,
+   "ev": -0.2596,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ends_round:2",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0471,
+   "p_fanduel": 0.0687,
+   "p": 0.0569,
+   "edge": -0.0118,
+   "ev": -0.2602,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:a:SUB",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Merab Dvalishvili by submission",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0386,
+   "p_fanduel": 0.0551,
+   "p": 0.0462,
+   "edge": -0.0089,
+   "ev": -0.2611,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:a:1",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Alexander Volkanovski in round 1",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.04,
+   "p_fanduel": 0.0595,
+   "p": 0.0488,
+   "edge": -0.0107,
+   "ev": -0.2677,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:b:3",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Rizvan Kuniev in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0258,
+   "p_fanduel": 0.0388,
+   "p": 0.0317,
+   "edge": -0.0071,
+   "ev": -0.2712,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:b:2",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Petr Yan in round 2",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0286,
+   "p_fanduel": 0.0446,
+   "p": 0.0358,
+   "edge": -0.0089,
+   "ev": -0.2847,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:a:2",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Merab Dvalishvili in round 2",
+   "odds": 3000,
+   "decimal": 31.0,
+   "p_model": 0.0185,
+   "p_fanduel": 0.0288,
+   "p": 0.0231,
+   "edge": -0.0057,
+   "ev": -0.2849,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:method:a:SUB",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Alexander Volkanovski by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0251,
+   "p_fanduel": 0.0384,
+   "p": 0.0311,
+   "edge": -0.0073,
+   "ev": -0.2851,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:method:a:SUB",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Alexander Volkov by submission",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0383,
+   "p_fanduel": 0.058,
+   "p": 0.0472,
+   "edge": -0.0108,
+   "ev": -0.2925,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:starts_round:2:False",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0587,
+   "p_fanduel": 0.1099,
+   "p": 0.0807,
+   "edge": -0.0293,
+   "ev": -0.3142,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:b:3",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Losene Keita in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0467,
+   "p_fanduel": 0.0812,
+   "p": 0.0618,
+   "edge": -0.0194,
+   "ev": -0.3207,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:a:KO/TKO",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Merab Dvalishvili by KO/TKO",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0318,
+   "p_fanduel": 0.0551,
+   "p": 0.0419,
+   "edge": -0.0132,
+   "ev": -0.3294,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:a:1",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Aaron Pico in round 1",
+   "odds": 450,
+   "decimal": 5.5,
+   "p_model": 0.0901,
+   "p_fanduel": 0.1623,
+   "p": 0.1217,
+   "edge": -0.0407,
+   "ev": -0.3308,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:a:2",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Alexander Volkanovski in round 2",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0309,
+   "p_fanduel": 0.0558,
+   "p": 0.0416,
+   "edge": -0.0142,
+   "ev": -0.3339,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:method:a:KO/TKO",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Aaron Pico by KO/TKO",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.1408,
+   "p_fanduel": 0.2497,
+   "p": 0.1893,
+   "edge": -0.0604,
+   "ev": -0.3373,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:a:1",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Alexander Volkov in round 1",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0637,
+   "p_fanduel": 0.119,
+   "p": 0.0875,
+   "edge": -0.0315,
+   "ev": -0.3436,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:ends_round:3",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0728,
+   "p_fanduel": 0.1374,
+   "p": 0.1006,
+   "edge": -0.0368,
+   "ev": -0.3463,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:ends_round:3",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.045,
+   "p_fanduel": 0.085,
+   "p": 0.0621,
+   "edge": -0.023,
+   "ev": -0.3481,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:method:a:KO/TKO",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Alexander Volkanovski by KO/TKO",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.0891,
+   "p_fanduel": 0.1698,
+   "p": 0.1239,
+   "edge": -0.0459,
+   "ev": -0.3558,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:b:3",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Movsar Evloev in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0201,
+   "p_fanduel": 0.0388,
+   "p": 0.028,
+   "edge": -0.0108,
+   "ev": -0.3562,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ends_round:3",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0381,
+   "p_fanduel": 0.0744,
+   "p": 0.0534,
+   "edge": -0.021,
+   "ev": -0.3591,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ends_round:3",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0303,
+   "p_fanduel": 0.0595,
+   "p": 0.0425,
+   "edge": -0.017,
+   "ev": -0.3618,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:a:2",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Aaron Pico in round 2",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0527,
+   "p_fanduel": 0.105,
+   "p": 0.0748,
+   "edge": -0.0303,
+   "ev": -0.3643,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:method:b:KO/TKO",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Petr Yan by KO/TKO",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0746,
+   "p_fanduel": 0.147,
+   "p": 0.1054,
+   "edge": -0.0415,
+   "ev": -0.3674,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:a:3",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Merab Dvalishvili in round 3",
+   "odds": 3300,
+   "decimal": 34.0,
+   "p_model": 0.0129,
+   "p_fanduel": 0.0263,
+   "p": 0.0184,
+   "edge": -0.0079,
+   "ev": -0.3744,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:b:4",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Movsar Evloev in round 4",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0153,
+   "p_fanduel": 0.0319,
+   "p": 0.0221,
+   "edge": -0.0098,
+   "ev": -0.3806,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:a:2",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Alexander Volkov in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0384,
+   "p_fanduel": 0.0812,
+   "p": 0.056,
+   "edge": -0.0251,
+   "ev": -0.3836,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ends_round:5",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0247,
+   "p_fanduel": 0.0525,
+   "p": 0.0361,
+   "edge": -0.0164,
+   "ev": -0.3859,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ends_round:4",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 1700,
+   "decimal": 18.0,
+   "p_model": 0.0229,
+   "p_fanduel": 0.0496,
+   "p": 0.0338,
+   "edge": -0.0158,
+   "ev": -0.3916,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:ends_round:4",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.029,
+   "p_fanduel": 0.0638,
+   "p": 0.0431,
+   "edge": -0.0206,
+   "ev": -0.3962,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:b:5",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Movsar Evloev in round 5",
+   "odds": 3000,
+   "decimal": 31.0,
+   "p_model": 0.013,
+   "p_fanduel": 0.0288,
+   "p": 0.0194,
+   "edge": -0.0094,
+   "ev": -0.3981,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:b:3",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Petr Yan in round 3",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0174,
+   "p_fanduel": 0.0388,
+   "p": 0.026,
+   "edge": -0.0128,
+   "ev": -0.4011,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:method:b:SUB",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Movsar Evloev by submission",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0281,
+   "p_fanduel": 0.0631,
+   "p": 0.0423,
+   "edge": -0.0208,
+   "ev": -0.4081,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:method:a:KO/TKO",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Alexander Volkov by KO/TKO",
+   "odds": 370,
+   "decimal": 4.7,
+   "p_model": 0.083,
+   "p_fanduel": 0.1851,
+   "p": 0.1254,
+   "edge": -0.0597,
+   "ev": -0.4105,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:a:3",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Alexander Volkanovski in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.018,
+   "p_fanduel": 0.0425,
+   "p": 0.0277,
+   "edge": -0.0148,
+   "ev": -0.4179,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:win_round:a:3",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Aaron Pico in round 3",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.026,
+   "p_fanduel": 0.0638,
+   "p": 0.0409,
+   "edge": -0.0228,
+   "ev": -0.4269,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:ends_round:5",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0179,
+   "p_fanduel": 0.0446,
+   "p": 0.0283,
+   "edge": -0.0163,
+   "ev": -0.4332,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:a:4",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Merab Dvalishvili in round 4",
+   "odds": 3500,
+   "decimal": 36.0,
+   "p_model": 0.0097,
+   "p_fanduel": 0.0248,
+   "p": 0.0155,
+   "edge": -0.0093,
+   "ev": -0.4403,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:b:4",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Petr Yan in round 4",
+   "odds": 2500,
+   "decimal": 26.0,
+   "p_model": 0.0132,
+   "p_fanduel": 0.0343,
+   "p": 0.0213,
+   "edge": -0.013,
+   "ev": -0.4451,
+   "kelly": 0.0
+  },
+  {
+   "id": "45323:win_round:a:3",
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Alexander Volkov in round 3",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0192,
+   "p_fanduel": 0.0525,
+   "p": 0.0319,
+   "edge": -0.0206,
+   "ev": -0.458,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:a:5",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Alexander Volkanovski in round 5",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0117,
+   "p_fanduel": 0.0319,
+   "p": 0.0193,
+   "edge": -0.0126,
+   "ev": -0.4587,
+   "kelly": 0.0
+  },
+  {
+   "id": "44524:win_round:a:4",
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Alexander Volkanovski in round 4",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0137,
+   "p_fanduel": 0.0388,
+   "p": 0.0231,
+   "edge": -0.0157,
+   "ev": -0.4685,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:method:a:SUB",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Aaron Pico by submission",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.028,
+   "p_fanduel": 0.0794,
+   "p": 0.0475,
+   "edge": -0.0319,
+   "ev": -0.4773,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:b:5",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Petr Yan in round 5",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0108,
+   "p_fanduel": 0.0319,
+   "p": 0.0186,
+   "edge": -0.0133,
+   "ev": -0.4785,
+   "kelly": 0.0
+  },
+  {
+   "id": "41066:win_round:a:5",
+   "bout": "Merab Dvalishvili vs Petr Yan",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Merab Dvalishvili in round 5",
+   "odds": 4000,
+   "decimal": 41.0,
+   "p_model": 0.0071,
+   "p_fanduel": 0.0218,
+   "p": 0.0124,
+   "edge": -0.0094,
+   "ev": -0.4905,
+   "kelly": 0.0
+  },
+  {
+   "id": "45324:method:b:SUB",
+   "bout": "Aaron Pico vs Losene Keita",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Losene Keita by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0078,
+   "p_fanduel": 0.038,
+   "p": 0.0173,
+   "edge": -0.0207,
+   "ev": -0.6019,
+   "kelly": 0.0
+  }
+ ]
+}
