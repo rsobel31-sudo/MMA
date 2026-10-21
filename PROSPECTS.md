@@ -51,7 +51,7 @@ outlet list + Sherdog).
    page carries the report and every prospect's arrow is measured from the new
    snapshot (from the day after it is taken; until then the old one stands).
 6. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab
-   artifact with files engine.js, data.json, prospects.json; delete
+   artifact with files engine.js, data.json, every profiles-*.json, prospects.json; delete
    candidates.prev.jsonl; commit and push.
 
 ## Every Friday and Sunday: prospect fights

@@ -6,6 +6,9 @@ Statistics miss the feel of a fight: rhythm, habits, how a fighter builds offenc
 - **Reads**: a bounded judgement per bout that feeds the prediction.
 - **The Fight Track Record**: a pundit ledger that learns which analysts are worth listening to (Insights tab).
 
+
+**Publishing the page (every routine):** whenever you republish `app/index.html` with `data.json`, also include every `app/profiles-*.json` (fight histories and bios split out of data.json so each file stays under the page host's 16 MB limit; `meta.profile_shards` in data.json says how many), even if the routine's own file list doesn't name them, and commit them with `app/data.json`. A data.json published without its profile files leaves profiles stale or missing.
+
 ## Where things live
 
 | What | File | Page database (`scouting` collection) |

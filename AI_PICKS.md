@@ -11,6 +11,8 @@ Two separate games, judged separately:
 - Database collection: `ai_picks`. For AI Bets it holds one `summary` document and one document per week (`w1`, `w2`, ...); for AI Picks, `card-summary` and one `card-<date>-<event>` per card. All are written with the ArtifactData tool.
 - Branch: `claude/mma-fight-predictor-9sxxhl`
 
+**Publishing the page (every routine):** whenever you republish `app/index.html` with `data.json`, also include every `app/profiles-*.json` (fight histories and bios split out of data.json so each file stays under the page host's 16 MB limit; `meta.profile_shards` in data.json says how many), even if the routine's own file list doesn't name them, and commit them with `app/data.json`. A data.json published without its profile files leaves profiles stale or missing.
+
 Time zone: the site runs on US Eastern time (ET). Routines are scheduled in America/New_York, times on the page show in ET, and a card's betting locks at 5:00 PM ET for US events and 8:00 AM ET elsewhere (stored in UTC in the sheet's `event_starts`).
 
 ## The goal
@@ -289,7 +291,7 @@ python -m mma_predictor refresh          # about 20 minutes
 - It fetches the Sherdog pages of everyone on UFC events since our last bout, plus a rotating batch of 150 exported fighters whose pages were checked longest ago (catches non-UFC bouts and corrected results), and merges them into `data/sherdog` by date and both names.
 - It re-downloads the UFCStats (Kaggle) dump and imports it only when it is newer, adds new StatsFight bouts, replaces the recent fighters' Fight Matrix and BestFightOdds pages, then runs enrich, upcoming, the official UFC rankings (Wikipedia's UFC rankings page, into `data/ranked_fighters.json`), verify, export, and after a new card the model review, the play-by-play sweep (`fight-recaps`) and a snapshot of our division rankings for the monthly movement on UFC Rankings (`rank-moves`; baseline 2026-10-13, snapshots in `data/rankings/snapshots/`, page file `app/rank_moves.json`).
 - One line per run goes to `data/refresh_log.jsonl`: bouts added, results that changed (an overturned win shows here), data through which date, and the backtest. A failed step is recorded and the later steps still run; exit code 1 means something failed.
-- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json`, every `profiles-*.json` (fight histories and bios, split out of data.json so each file stays under the page host's 16 MB limit), `prospects.json`, `review.json` and `rank_moves.json`, and commit `data/`, `app/data.json`, `app/review.json` and `app/rank_moves.json`.
+- Then read the Fight Lab artifact, republish `app/index.html` with `engine.js`, `data.json`, every `profiles-*.json` (fight histories and bios, split out of data.json so each file stays under the page host's 16 MB limit), `prospects.json`, `review.json` and `rank_moves.json`, and commit `data/`, `app/data.json`, `app/profiles-*.json`, `app/review.json` and `app/rank_moves.json`.
 
 ## Betting lines: the odds sweep
 
