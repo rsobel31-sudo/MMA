@@ -672,6 +672,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_fight_recaps(sub)
     from .rank_moves import register as register_rank_moves
     register_rank_moves(sub)
+    from .watchdog import register as register_watchdog
+    register_watchdog(sub)
     return ap
 
 

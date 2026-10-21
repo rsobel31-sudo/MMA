@@ -400,3 +400,13 @@ If `picks settle` or `picks status` exits 3:
 1. Sync and write the database anyway. The page shows the out-of-money alert from `summary.bust`.
 2. Send the user a push notification: "Fight Lab AI Picks: the bankroll is bust ($X left)."
 3. Place no more bets.
+
+## Watchdog: late, broken or unpublished
+
+`python -m mma_predictor watchdog --published <sizes.json>` checks, from the pushed branch, that every routine ran on
+time (daily sweep, Minor Leagues, odds sweep, Tuesday scouting and board, Friday picks and bets, Sunday grading,
+recaps, data through the card and the rankings snapshot, the monthly prospects report), that no source or refresh step
+failed, that page files stay under 16 MB with the right number of profile files, and that the live page carries exactly
+the pushed files (sizes from the artifact's file listing, saved as `{path: bytes}`). It runs from the owner's session at
+9:23 AM ET daily and 3:23 PM ET on Tuesdays, Fridays and Sundays. Any alert goes to the owner as a push notification
+and as a banner on the page that only the owner sees (database document `status/watchdog`).

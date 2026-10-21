@@ -545,8 +545,11 @@ button.namelink:hover { color: var(--red); }
   button.star:hover { color: #d4a017; }
   .mv { font-size: 11px; font-variant-numeric: tabular-nums; margin-left: 4px; white-space: nowrap; }
   .mv-up { color: var(--good, #2e7d32); } .mv-down { color: var(--bad, #c62828); } .mv-new { color: var(--accent, #8a6d1d); text-transform: uppercase; letter-spacing: .04em; }
+  .watchdog { margin: 10px auto; max-width: 1180px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--bad, #c62828); background: color-mix(in srgb, var(--bad, #c62828) 10%, transparent); font-size: 14px; }
+  .watchdog b { color: var(--bad, #c62828); } .watchdog ul { margin: 6px 0 0 18px; padding: 0; } .watchdog .wd-time { opacity: .7; font-size: 12px; }
 </style>
 
+<div class="watchdog" id="watchdog" role="alert" hidden></div>
 <div class="masthead"><div class="mast-in">
   <header class="top">
       <h1>Fight <span>Lab</span></h1>
@@ -837,6 +840,19 @@ button.namelink:hover { color: var(--red); }
   }
 
   // ----------------------------------------------------------------- render
+  // Owner only: the watchdog's latest check (status/watchdog), shown while anything is late, broken or unpublished.
+  function watchdogBanner(db) {
+    const el = document.getElementById("watchdog");
+    db.doc("status/watchdog").onSnapshot((d) => {
+      const v = d.exists ? d.data() : null;
+      const bad = v ? (v.items || []).filter((i) => i.level === "alert") : [];
+      el.hidden = !bad.length;
+      if (!bad.length) return;
+      const when = v.checked ? new Date(v.checked).toLocaleString("en-US", { timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET" : "";
+      el.innerHTML = `<b>Routine alert${bad.length > 1 ? "s" : ""}</b> <span class="wd-time">(watchdog, ${esc(when)})</span><ul>`
+        + bad.map((i) => `<li><b>${esc(i.check)}:</b> ${esc(i.detail)}</li>`).join("") + "</ul>";
+    }, () => {});
+  }
   function render() {
     if (!state.data) return;
     document.querySelectorAll("#tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)));
@@ -3469,6 +3485,7 @@ button.namelink:hover { color: var(--red); }
       state.store = dbStore(db); state.storeKind = "db";
       window.claude.use("user").then(async (u) => {
         state.recapCanEdit = !!(u && u.isOwner()); renderSoon();
+        if (u && u.isOwner()) watchdogBanner(db);
         const uid = u ? await u.id() : null;
         if (!uid) return;
         // Stars live in the viewer's private space; this browser's stars carry over the first time.
