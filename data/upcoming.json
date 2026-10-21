@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-20",
+ "fetched": "2026-10-21",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -166,7 +166,7 @@
     {
      "order": 11,
      "segment": "Early preliminary card",
-     "weight_class": "Lightweight",
+     "weight_class": "Featherweight",
      "a": "Bolaji Oki",
      "b": "Daniel Santos",
      "title": false,
@@ -438,9 +438,9 @@
     {
      "order": 3,
      "segment": "Fight card",
-     "weight_class": "Light Heavyweight",
-     "a": "Billy Elekana",
-     "b": "Lucas Fernando",
+     "weight_class": "Welterweight",
+     "a": "Ko Seok-hyeon",
+     "b": "Wellington Turman",
      "title": false,
      "result": "",
      "decided": false,
@@ -452,9 +452,9 @@
     {
      "order": 4,
      "segment": "Fight card",
-     "weight_class": "Welterweight",
-     "a": "Ko Seok-hyeon",
-     "b": "Wellington Turman",
+     "weight_class": "Light Heavyweight",
+     "a": "Billy Elekana",
+     "b": "Lucas Fernando",
      "title": false,
      "result": "",
      "decided": false,
@@ -910,19 +910,7 @@
    "venue": "Scotiabank Arena",
    "location": "Toronto, Ontario, Canada",
    "url": "https://en.wikipedia.org/wiki/UFC_336",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Announced",
-     "weight_class": "UFC Welterweight Championship",
-     "a": "Islam Makhachev",
-     "b": "Carlos Prates",
-     "title": true,
-     "result": "",
-     "rounds": 5,
-     "main_event": true
-    }
-   ]
+   "bouts": []
   },
   {
    "name": "UFC Fight Night 296",

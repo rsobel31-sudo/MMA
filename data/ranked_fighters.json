@@ -570,8 +570,8 @@
    "system": "meta",
    "division": "Welterweight",
    "rank": "8",
-   "name": "Joaquin Buckley",
-   "wiki": "https://en.wikipedia.org/wiki/Joaquin_Buckley"
+   "name": "Mike Malott",
+   "wiki": "https://en.wikipedia.org/wiki/Mike_Malott"
   },
   {
    "system": "meta",
@@ -591,15 +591,15 @@
    "system": "meta",
    "division": "Welterweight",
    "rank": "11",
-   "name": "Mike Malott",
-   "wiki": "https://en.wikipedia.org/wiki/Mike_Malott"
+   "name": "Kamaru Usman",
+   "wiki": "https://en.wikipedia.org/wiki/Kamaru_Usman"
   },
   {
    "system": "meta",
    "division": "Welterweight",
    "rank": "12",
-   "name": "Kamaru Usman",
-   "wiki": "https://en.wikipedia.org/wiki/Kamaru_Usman"
+   "name": "Joaquin Buckley",
+   "wiki": "https://en.wikipedia.org/wiki/Joaquin_Buckley"
   },
   {
    "system": "meta",
@@ -906,50 +906,50 @@
    "system": "meta",
    "division": "Bantamweight",
    "rank": "9",
-   "name": "Farid Basharat",
-   "wiki": "https://en.wikipedia.org/wiki/Farid_Basharat"
-  },
-  {
-   "system": "meta",
-   "division": "Bantamweight",
-   "rank": "10",
    "name": "Marcus McGhee",
    "wiki": "https://en.wikipedia.org/wiki/Marcus_McGhee"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
-   "rank": "11",
+   "rank": "10",
    "name": "Payton Talbott",
    "wiki": "https://en.wikipedia.org/wiki/Payton_Talbott"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
-   "rank": "12",
+   "rank": "11",
    "name": "Montel Jackson",
    "wiki": "https://en.wikipedia.org/wiki/Montel_Jackson"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
-   "rank": "13",
+   "rank": "12",
    "name": "Aiemann Zahabi",
    "wiki": "https://en.wikipedia.org/wiki/Aiemann_Zahabi"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Bryce Mitchell",
    "wiki": "https://en.wikipedia.org/wiki/Bryce_Mitchell"
   },
   {
    "system": "meta",
    "division": "Bantamweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Marlon Vera",
    "wiki": "https://en.wikipedia.org/wiki/Marlon_Vera"
+  },
+  {
+   "system": "meta",
+   "division": "Bantamweight",
+   "rank": "15",
+   "name": "Raoni Barcelos",
+   "wiki": "https://en.wikipedia.org/wiki/Raoni_Barcelos"
   },
   {
    "system": "meta",
@@ -1108,6 +1108,13 @@
   {
    "system": "meta",
    "division": "Women's Bantamweight",
+   "rank": "9",
+   "name": "Chelsea Chandler",
+   "wiki": "https://en.wikipedia.org/wiki/Chelsea_Chandler"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Bantamweight",
    "rank": "10",
    "name": "Karol Rosa",
    "wiki": "https://en.wikipedia.org/wiki/Karol_Rosa"
@@ -1135,13 +1142,6 @@
   },
   {
    "system": "meta",
-   "division": "Women's Bantamweight",
-   "rank": "15",
-   "name": "Chelsea Chandler",
-   "wiki": "https://en.wikipedia.org/wiki/Chelsea_Chandler"
-  },
-  {
-   "system": "meta",
    "division": "Women's Flyweight",
    "rank": "C",
    "name": "Natália Silva",
@@ -1165,8 +1165,8 @@
    "system": "meta",
    "division": "Women's Flyweight",
    "rank": "3",
-   "name": "Erin Blanchfield",
-   "wiki": "https://en.wikipedia.org/wiki/Erin_Blanchfield"
+   "name": "Jasmine Jasudavicius",
+   "wiki": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius"
   },
   {
    "system": "meta",
@@ -1179,15 +1179,15 @@
    "system": "meta",
    "division": "Women's Flyweight",
    "rank": "5",
-   "name": "Zhang Weili",
-   "wiki": "https://en.wikipedia.org/wiki/Zhang_Weili"
+   "name": "Erin Blanchfield",
+   "wiki": "https://en.wikipedia.org/wiki/Erin_Blanchfield"
   },
   {
    "system": "meta",
    "division": "Women's Flyweight",
    "rank": "6",
-   "name": "Jasmine Jasudavicius",
-   "wiki": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius"
+   "name": "Zhang Weili",
+   "wiki": "https://en.wikipedia.org/wiki/Zhang_Weili"
   },
   {
    "system": "meta",
@@ -1230,13 +1230,6 @@
    "rank": "12",
    "name": "Miranda Maverick",
    "wiki": "https://en.wikipedia.org/wiki/Miranda_Maverick"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Flyweight",
-   "rank": "13",
-   "name": "Regina Tarín",
-   "wiki": "https://en.wikipedia.org/wiki/Regina_Tarín?action=edit&redlink=1"
   },
   {
    "system": "meta",
@@ -1325,16 +1318,23 @@
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Talita Alencar",
    "wiki": "https://en.wikipedia.org/wiki/Talita_Alencar"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Amanda Lemos",
    "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "15",
+   "name": "Sam Hughes",
+   "wiki": "https://en.wikipedia.org/wiki/Sam_Hughes_(fighter)"
   },
   {
    "system": "media",
@@ -1739,8 +1739,8 @@
    "system": "media",
    "division": "Welterweight",
    "rank": "10",
-   "name": "Joaquin Buckley",
-   "wiki": "https://en.wikipedia.org/wiki/Joaquin_Buckley"
+   "name": "Mike Malott",
+   "wiki": "https://en.wikipedia.org/wiki/Mike_Malott"
   },
   {
    "system": "media",
@@ -1748,20 +1748,6 @@
    "rank": "11",
    "name": "Yaroslav Amosov",
    "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
-  },
-  {
-   "system": "media",
-   "division": "Welterweight",
-   "rank": "12",
-   "name": "Uroš Medić",
-   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
-  },
-  {
-   "system": "media",
-   "division": "Welterweight",
-   "rank": "13",
-   "name": "Mike Malott",
-   "wiki": "https://en.wikipedia.org/wiki/Mike_Malott"
   },
   {
    "system": "media",
@@ -2061,15 +2047,15 @@
    "system": "media",
    "division": "Bantamweight",
    "rank": "8",
-   "name": "Aiemann Zahabi",
-   "wiki": "https://en.wikipedia.org/wiki/Aiemann_Zahabi"
+   "name": "David Martínez",
+   "wiki": "https://en.wikipedia.org/wiki/David_Martínez_(fighter)"
   },
   {
    "system": "media",
    "division": "Bantamweight",
    "rank": "9",
-   "name": "David Martínez",
-   "wiki": "https://en.wikipedia.org/wiki/David_Martínez_(fighter)"
+   "name": "Aiemann Zahabi",
+   "wiki": "https://en.wikipedia.org/wiki/Aiemann_Zahabi"
   },
   {
    "system": "media",
@@ -2096,22 +2082,22 @@
    "system": "media",
    "division": "Bantamweight",
    "rank": "13",
-   "name": "Farid Basharat",
-   "wiki": "https://en.wikipedia.org/wiki/Farid_Basharat"
-  },
-  {
-   "system": "media",
-   "division": "Bantamweight",
-   "rank": "14",
    "name": "Marcus McGhee",
    "wiki": "https://en.wikipedia.org/wiki/Marcus_McGhee"
   },
   {
    "system": "media",
    "division": "Bantamweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Raoni Barcelos",
    "wiki": "https://en.wikipedia.org/wiki/Raoni_Barcelos"
+  },
+  {
+   "system": "media",
+   "division": "Bantamweight",
+   "rank": "15",
+   "name": "Bryce Mitchell",
+   "wiki": "https://en.wikipedia.org/wiki/Bryce_Mitchell"
   },
   {
    "system": "media",
@@ -2257,15 +2243,15 @@
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "4",
-   "name": "Raquel Pennington",
-   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
+   "name": "Norma Dumont",
+   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
   },
   {
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "5",
-   "name": "Norma Dumont",
-   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
+   "name": "Raquel Pennington",
+   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
   },
   {
    "system": "media",
@@ -2318,6 +2304,13 @@
   },
   {
    "system": "media",
+   "division": "Women's Bantamweight",
+   "rank": "14",
+   "name": "Chelsea Chandler",
+   "wiki": "https://en.wikipedia.org/wiki/Chelsea_Chandler"
+  },
+  {
+   "system": "media",
    "division": "Women's Flyweight",
    "rank": "C",
    "name": "Natália Silva",
@@ -2348,15 +2341,29 @@
    "system": "media",
    "division": "Women's Flyweight",
    "rank": "4",
+   "name": "Jasmine Jasudavicius",
+   "wiki": "https://en.wikipedia.org/wiki/Jasmine_Jasudavicius"
+  },
+  {
+   "system": "media",
+   "division": "Women's Flyweight",
+   "rank": "5",
    "name": "Erin Blanchfield",
    "wiki": "https://en.wikipedia.org/wiki/Erin_Blanchfield"
   },
   {
    "system": "media",
    "division": "Women's Flyweight",
-   "rank": "5",
+   "rank": "6",
    "name": "Rose Namajunas",
    "wiki": "https://en.wikipedia.org/wiki/Rose_Namajunas"
+  },
+  {
+   "system": "media",
+   "division": "Women's Flyweight",
+   "rank": "7",
+   "name": "Maycee Barber",
+   "wiki": "https://en.wikipedia.org/wiki/Maycee_Barber"
   },
   {
    "system": "media",
@@ -2392,13 +2399,6 @@
    "rank": "12",
    "name": "Casey O'Neill",
    "wiki": "https://en.wikipedia.org/wiki/Casey_O'Neill"
-  },
-  {
-   "system": "media",
-   "division": "Women's Flyweight",
-   "rank": "14",
-   "name": "Regina Tarín",
-   "wiki": "https://en.wikipedia.org/wiki/Regina_Tarín?action=edit&redlink=1"
   },
   {
    "system": "media",
@@ -2506,6 +2506,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-10-20",
+ "fetched": "2026-10-21",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }
