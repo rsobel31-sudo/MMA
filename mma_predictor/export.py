@@ -213,9 +213,42 @@ def export(
     }
 
 
+PROFILE_FIELDS = ("history", "bio")
+SHARD_BYTES = 6_000_000      # each profiles-<i>.json stays far below the page host's 16 MB per-file limit
+DATA_WARN_BYTES = 15_000_000
+
+
+def profile_shard(name: str, n: int) -> int:
+    """Which profiles-<i>.json holds a fighter: the sum of the name's code points mod n (index.html does the same)."""
+    return sum(ord(c) for c in name) % n
+
+
 def write(data: Dict[str, Any], path: Path) -> None:
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    Path(path).write_text(json.dumps(data, separators=(",", ":")))
+    """Write data.json. Each fighter's fight history and bio (only the profile view needs them, and they are most of
+    the bytes) go to profiles-<i>.json beside it, loaded on demand, so data.json stays under the page host's
+    per-file limit as the dataset grows."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    profiles = {}
+    for f in data.get("fighters", []):
+        p = {k: f.pop(k) for k in PROFILE_FIELDS if k in f}
+        if p:
+            profiles[f["name"]] = p
+    if profiles:
+        total = len(json.dumps(profiles, separators=(",", ":")))
+        n = max(1, -(-total // SHARD_BYTES))
+        shards: List[Dict[str, Any]] = [{} for _ in range(n)]
+        for name, p in profiles.items():
+            shards[profile_shard(name, n)][name] = p
+        for old in path.parent.glob("profiles-*.json"):
+            old.unlink()
+        for i, sh in enumerate(shards):
+            (path.parent / f"profiles-{i}.json").write_text(json.dumps(sh, separators=(",", ":")))
+        data.setdefault("meta", {})["profile_shards"] = n
+    text = json.dumps(data, separators=(",", ":"))
+    path.write_text(text)
+    if len(text) > DATA_WARN_BYTES:
+        print(f"WARNING: {path} is {len(text) / 1e6:.1f} MB; the page host refuses files over 16 MB", flush=True)
 
 
 def fightmatrix_metrics(path: Path, data_dir: Path, names) -> Dict[str, Dict[str, Any]]:

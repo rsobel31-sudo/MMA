@@ -930,7 +930,21 @@ button.namelink:hover { color: var(--red); }
       </tbody></table>
       <p class="muted" style="font-size:12px;margin:6px 0 0">Strength: the opponent's rating going into the fight, as a percentile of every opponent faced in the UFC, PFL, Bellator, ONE and other majors since 2008 (50th = a typical major-promotion opponent). From our own rating of every fight on record.</p>`;
   }
+  // Fight histories and bios live in profiles-<i>.json (export.write), loaded when a profile is opened.
+  const profileShards = {};
+  function ensureProfile(name) {
+    const n = (state.data.meta || {}).profile_shards, base = state.byName.get(name);
+    if (!n || !base || base._profileLoaded) return true;
+    const i = [...name].reduce((t, c) => t + c.codePointAt(0), 0) % n;
+    if (!profileShards[i]) {
+      profileShards[i] = fetch(`profiles-${i}.json`).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((sh) => {
+        for (const [nm, p] of Object.entries(sh)) { const b = state.byName.get(nm); if (b) { Object.assign(b, p); b._profileLoaded = true; } }
+      }).catch(() => { profileShards[i] = null; }).finally(() => { const b = state.byName.get(name); if (b) b._profileLoaded = true; render(); });
+    }
+    return false;
+  }
   function renderProfile(view) {
+    const pending = !ensureProfile(state.profile);
     const n = state.profile, f = fighter(n), peers = divisionPeers(f);
     const facts = [
       f.division ? `${esc(f.division)}${f.weight_class_source === "inferred" ? " (inferred)" : ""}` : null,
@@ -956,7 +970,7 @@ button.namelink:hover { color: var(--red); }
           ${scoutReport(n) ? `<section class="panel"><h3>Scouting report</h3>${reportBlock(scoutReport(n), { open: true })}</section>` : ""}
           <section class="panel prose">
             <h3>Bio</h3>
-            ${(f.bio || []).map((p) => `<p>${esc(p)}</p>`).join("") || '<p class="muted">No bio yet.</p>'}
+            ${(f.bio || []).map((p) => `<p>${esc(p)}</p>`).join("") || (pending ? '<p class="muted">Loading…</p>' : '<p class="muted">No bio yet.</p>')}
             <p class="muted" style="font-size:12px">Written by Claude from this fighter's record, ratings and researched background. Ratings in the text don't include your edits.</p>
             ${f.background && f.background.credentials.length ? `<h3 style="margin-top:10px">Credentials</h3>${backgroundBlock(f, { noSummary: true })}` : ""}
           </section>
@@ -978,7 +992,7 @@ button.namelink:hover { color: var(--red); }
         </div>
       </div>
       <section class="panel">
-        <h3>Fight history <span class="muted" style="font-size:13px;font-weight:400">(${(f.history || []).length} bouts in the data${(f.history || []).length === 40 ? ", most recent 40" : ""})</span></h3>
+        <h3>Fight history <span class="muted" style="font-size:13px;font-weight:400">(${pending ? "loading…" : `${(f.history || []).length} bouts in the data${(f.history || []).length === 40 ? ", most recent 40" : ""}`})</span></h3>
         <div class="table-wrap"><table class="list num"><thead><tr><th>Date</th><th>Result</th><th>Opponent</th><th>Opp. rating</th><th>Method</th><th>Rd</th><th>Event</th><th></th></tr></thead><tbody>
         ${(f.history || []).map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${nameLink(x.opponent)}</td><td>${x.opp_rating}</td>
           <td>${esc(x.method)}</td><td>${x.round} <span class="muted">${esc(x.time)}</span></td><td>${esc(x.event)}</td>
