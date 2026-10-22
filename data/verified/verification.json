@@ -1,13 +1,13 @@
 {
  "results": {
-  "no second source": 860,
+  "no second source": 859,
   "method": 21,
-  "agree": 10545,
+  "agree": 10546,
   "round": 12,
   "winner": 3
  },
  "stats": {
-  "official only": 9412,
+  "official only": 9413,
   "verified": 1130,
   "disputed": 36
  },
@@ -625,6 +625,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Rey Trujillo",
+   "sherdog": "1982-01-11",
+   "ufcstats": "1982-01-01",
+   "fightmatrix": null
+  },
+  {
    "name": "Amilcar Alves",
    "sherdog": "1979-12-13",
    "ufcstats": "1988-08-08",
@@ -793,9 +799,21 @@
    "fightmatrix": null
   },
   {
+   "name": "Ali AlQaisi",
+   "sherdog": "1990-08-23",
+   "ufcstats": "1990-09-23",
+   "fightmatrix": null
+  },
+  {
    "name": "Anthony Romero",
    "sherdog": "1996-10-22",
    "ufcstats": "1997-02-25",
+   "fightmatrix": null
+  },
+  {
+   "name": "Kyle Driscoll",
+   "sherdog": "1993-09-23",
+   "ufcstats": "1994-09-23",
    "fightmatrix": null
   },
   {
@@ -875,26 +893,32 @@
    "sherdog": "1991-02-26",
    "ufcstats": "1991-02-28",
    "fightmatrix": null
+  },
+  {
+   "name": "Yi Sak Lee",
+   "sherdog": "2000-01-11",
+   "ufcstats": "2000-01-01",
+   "fightmatrix": null
   }
  ],
  "dob": {
-  "agree": 2375,
-  "differ, unresolved (Sherdog kept)": 97,
+  "agree": 2378,
+  "differ, unresolved (Sherdog kept)": 101,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2388,
-  "differ": 174
+  "agree": 2393,
+  "differ": 176
  },
  "reach": {
-  "no second source": 1716,
+  "no second source": 1717,
   "agree": 705,
   "differ": 68
  },
  "odds": {
   "odds bouts": 16732,
-  "matched": 13198,
-  "unmatched": 2163,
+  "matched": 13208,
+  "unmatched": 2153,
   "bad lines": 0,
   "pages disagree": 4,
   "both pages": 8993,

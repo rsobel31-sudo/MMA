@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-21",
+ "fetched": "2026-10-22",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -807,6 +807,17 @@
      "weight_class": "Middleweight",
      "a": "Matthieu Letho Duclos",
      "b": "Modestino Rodrigues",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Flyweight",
+     "a": "Bruno Gustavo da Silva",
+     "b": "Jafel Filho",
      "title": false,
      "result": "",
      "rounds": 3,

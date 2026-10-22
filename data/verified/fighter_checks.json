@@ -720,6 +720,8 @@
 "stats_official": "1"
 },
 "Ali AlQaisi": {
+"dob": "disputed: Sherdog 1990-08-23, UFCStats 1990-09-23",
+"height": "disputed: Sherdog 173 cm, UFCStats 168 cm",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -10698,7 +10700,7 @@
 },
 "Kierandip Singh Sahota": {
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Kiichi Kunimoto": {
 "dob": "Sherdog + UFCStats agree",
@@ -10905,6 +10907,8 @@
 "stats_official": "2"
 },
 "Kyle Driscoll": {
+"dob": "disputed: Sherdog 1993-09-23, UFCStats 1994-09-23",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14662,6 +14666,8 @@
 "stats_official": "1"
 },
 "Peter Petties": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 175 cm, UFCStats 180 cm",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15274,6 +15280,8 @@
 "stats_official": "1"
 },
 "Rey Trujillo": {
+"dob": "disputed: Sherdog 1982-01-11, UFCStats 1982-01-01",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Reyes Cortez Jr.": {
@@ -16022,6 +16030,12 @@
 "stats_official": "1"
 },
 "Rudy Bears": {
+"stats_official": "1"
+},
+"Ruel Panales": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Rui Imura": {
@@ -18673,6 +18687,8 @@
 "stats_verified": "2"
 },
 "Wataru Yamauchi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -18942,6 +18958,8 @@
 "stats_official": "1"
 },
 "Yi Sak Lee": {
+"dob": "disputed: Sherdog 2000-01-11, UFCStats 2000-01-01",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
