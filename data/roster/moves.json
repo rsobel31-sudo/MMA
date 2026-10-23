@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-23T11:19:04+00:00",
+ "fetched": "2026-10-23T16:18:50+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -686,7 +686,10 @@
     "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/22/ufc-saudi-arabia-ivan-gnizditskiy-vs-uran-satybaldiev/92381487007/"
    ],
    "info": "UFC Fight Night 295 (Riyadh) – Uran Satybaldiev",
-   "confirmed_by": null,
+   "confirmed_by": {
+    "source": "Sherdog",
+    "url": "https://www.sherdog.com/news/news/70-finisher-Ivan-Gnizditskiy-joins-UFC-despite-missing-DWCS-203246"
+   },
    "first_seen": "2026-10-16"
   },
   {
