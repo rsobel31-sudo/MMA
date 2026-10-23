@@ -1,6 +1,6 @@
 {
  "name": "Nicolle Caliari",
- "updated": "2026-10-13T17:00:00+00:00",
+ "updated": "2026-10-23T18:00:00+00:00",
  "event": "UFC 333: Volkanovski vs. Evloev",
  "summary": "A Thai Brasil Floripa grappler (9-4) whose every win in our data came by stoppage: five early KOs on the regionals, then four submissions. After going 0-2 at flyweight in the UFC she dropped to strawweight and submitted Shauna Bannon with a round-three arm-triangle, but on the feet she is usually out-landed badly.",
  "how_they_fight": {
@@ -21,7 +21,8 @@
   "Low takedown accuracy against good defenders",
   "Striking volume and defense",
   "Body shots: stopped by a knee to the body",
-  "Only one fight at strawweight in the UFC"
+  "Only one fight at strawweight in the UFC",
+  "Badly missed weight for UFC 333 (120.5 lb, 4.5 over); also missed at Invicta FC 37 in 2019 (116.2 for a 116 limit)"
  ],
  "keys_to_beat": [
   "Keep her off the fence clinch and punish her entries",
@@ -30,6 +31,21 @@
   "Be ready for scrambles; Bannon reversed her and won a round from top"
  ],
  "news": [
+  {
+   "date": "2026-10-23",
+   "text": "Missed weight: 120.5 lb on her first attempt, 4.5 lb over the 116-lb non-title strawweight limit. Fined 30% of her purse (to Lucindo); the bout proceeds at catchweight. The only miss of the 28 fighters.",
+   "source": "https://www.ufc.com/news/official-weigh-results-ufc-333-volkanovski-vs-evloev"
+  },
+  {
+   "date": "2026-10-23",
+   "text": "Live weigh-in coverage (Uncrowned via Yahoo) logged the miss on her first trip to the scale; the bout was confirmed about half an hour later.",
+   "source": "https://sports.yahoo.com/mma/live/ufc-333-weigh-in-results-video-title-bouts-set-undercard-fighter-badly-misses-weight-071551485.html"
+  },
+  {
+   "date": "2026-10-21",
+   "text": "Sherdog preview: +300 underdog (Lucindo -380); expects her defensive grappling to survive but Lucindo to win on the cards.",
+   "source": "https://www.sherdog.com/news/articles/9/Preview-UFC-333-prelims-203277"
+  },
   {
    "date": "2026-10-01",
    "text": "Booked against Iasmin Lucindo at strawweight for UFC 333.",
@@ -95,6 +111,13 @@
    "title": "Iasmin Lucindo vs. Nicolle Caliari",
    "url": "https://agentmma.com/articles/5449-6779-iasmin-lucindo-vs-nicolle-caliari",
    "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Invicta FC 37 Official Weigh-In Photo and Video Highlights",
+   "url": "https://cagesidepress.com/2019/10/04/invicta-fc-37-official-weigh-photo-video-highlights",
+   "date": "2019-10-04"
   }
  ],
  "depth": "moderate"
