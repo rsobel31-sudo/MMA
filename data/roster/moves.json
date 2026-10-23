@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-22T11:20:37+00:00",
+ "fetched": "2026-10-23T11:19:04+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -211,9 +211,9 @@
    "date": "2026-08-25",
    "division": "Welterweight",
    "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/08/25/dana-whites-contender-series-89-live-updates-round-by-round-coverage--live/91464308007/"
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/22/ufc-335-ronald-humphrey-vs-nikolay-veretennikov/92380621007/"
    ],
-   "info": "",
+   "info": "UFC 335 (Las Vegas) – Nikolay Veretennikov",
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2026/08/25/dana-whites-contender-series-season-10-week-3-results/"
@@ -526,20 +526,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Asaf Chopurov",
-   "date": "2026-09-24",
-   "division": "Bantamweight",
-   "refs": [
-    "https://heavy.com/sports/ufc/colby-thicknesse-draws-undefeated-newcomer-at-ufc-333/"
-   ],
-   "info": "UFC 333 (Abu Dhabi) – Colby Thicknesse",
-   "confirmed_by": {
-    "source": "heavy.com",
-    "url": "https://heavy.com/sports/ufc/colby-thicknesse-draws-undefeated-newcomer-at-ufc-333/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Aieza Ramos Bertolso",
    "date": "2026-09-29",
    "division": "Women's Strawweight",
@@ -697,11 +683,26 @@
    "date": "2026-10-15",
    "division": "Light Heavyweight",
    "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/15/ufc-news-ivan-gnizditskiy-signs-one-championship/92264922007/"
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/22/ufc-saudi-arabia-ivan-gnizditskiy-vs-uran-satybaldiev/92381487007/"
    ],
-   "info": "",
+   "info": "UFC Fight Night 295 (Riyadh) – Uran Satybaldiev",
    "confirmed_by": null,
    "first_seen": "2026-10-16"
+  },
+  {
+   "name": "Asaf Chopurov",
+   "date": "2026-09-24",
+   "division": "Bantamweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/colby-thicknesse-draws-undefeated-newcomer-at-ufc-333/"
+   ],
+   "info": "UFC 333 (Abu Dhabi) – Colby Thicknesse",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/colby-thicknesse-draws-undefeated-newcomer-at-ufc-333/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-23"
   },
   {
    "name": "Cody Chovancek",

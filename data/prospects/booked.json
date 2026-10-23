@@ -71,6 +71,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_335"
  },
+ "https://www.sherdog.com/fighter/Ronald-Humphrey-400469": {
+  "date": "2026-12-12",
+  "event": "UFC 335 - Oliveira vs. Lopes",
+  "name": "Ronald Humphrey",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-335-Oliveira-vs-Lopes-114294",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_335"
+ },
  "https://www.sherdog.com/fighter/Samuel-Sanches-389956": {
   "date": "2026-11-14",
   "event": "UFC 334 - Gane vs. Hokit",

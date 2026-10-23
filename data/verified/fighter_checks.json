@@ -2802,6 +2802,8 @@
 "stats_verified": "2"
 },
 "Carlos Mota": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 168 cm, UFCStats 163 cm",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_verified": "1"
 },
@@ -4337,6 +4339,8 @@
 "stats_official": "3"
 },
 "Danilo Belluardo": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -5122,6 +5126,8 @@
 "stats_official": "1"
 },
 "Donavon Hedrick": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -5851,6 +5857,11 @@
 },
 "Eugene Jackson": {
 "stats_official": "4"
+},
+"Eun Soo Lee": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"stats_official": "1"
 },
 "Evan Dunham": {
 "dob": "Sherdog + UFCStats agree",
@@ -8517,6 +8528,8 @@
 "stats_official": "4"
 },
 "Jesus Pinedo": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "2"
 },
 "Jesus Santos Aguilar": {
@@ -14834,6 +14847,8 @@
 "stats_official": "3"
 },
 "Qinghe Zhang": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -19015,6 +19030,9 @@
 "Yoshihiro Akiyama": {
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
 "stats_official": "9"
+},
+"Yoshihiro Nakao": {
+"stats_official": "1"
 },
 "Yoshihiro Takayama": {
 "stats_official": "1"

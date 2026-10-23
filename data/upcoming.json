@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-22",
+ "fetched": "2026-10-23",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -775,7 +775,7 @@
   {
    "name": "UFC Fight Night 295",
    "date": "2026-12-05",
-   "venue": "TBA",
+   "venue": "anb Arena",
    "location": "Riyadh, Saudi Arabia",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295",
    "bouts": [
@@ -818,6 +818,17 @@
      "weight_class": "Flyweight",
      "a": "Bruno Gustavo da Silva",
      "b": "Jafel Filho",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 4,
+     "segment": "Announced",
+     "weight_class": "Light Heavyweight",
+     "a": "Ivan Gnizditskiy",
+     "b": "Uran Satybaldiev",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -908,6 +919,17 @@
      "weight_class": "Lightweight",
      "a": "Chase Hooper",
      "b": "Chris Padilla",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 6,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Ronald Humphrey",
+     "b": "Nikolay Veretennikov",
      "title": false,
      "result": "",
      "rounds": 3,
