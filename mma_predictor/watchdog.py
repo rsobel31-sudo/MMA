@@ -174,7 +174,7 @@ def check_scouting(r: Report, now: datetime):
 
 
 def check_friday(r: Report, now: datetime):
-    fri = _last_weekday(now, 4, time(15, 30))
+    fri = _last_weekday(now, 4, time(15, 0))
     if not fri:
         return
     sat = fri + timedelta(days=1)
@@ -199,7 +199,7 @@ def check_friday(r: Report, now: datetime):
 
 
 def check_sunday(r: Report, now: datetime):
-    sun = _last_weekday(now, 6, time(16, 0))
+    sun = _last_weekday(now, 6, time(15, 0))
     if not sun:
         return
     sat = sun - timedelta(days=1)
