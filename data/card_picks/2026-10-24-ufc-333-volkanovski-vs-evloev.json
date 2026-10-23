@@ -1,0 +1,902 @@
+{
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "date": "2026-10-24",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_333",
+ "locks_at": "2026-10-24T12:00:00+00:00",
+ "locked_at": "2026-10-23T16:11:04+00:00",
+ "note": "A card with two pick'em title fights. Four overrides of the model's winner: Volkanovski and Yan (the market, the pundits and the style read all disagree with the stats), Rowston (Magomedov fades under pressure) and Steele (Gugnon has never been past the first round in the UFC). Finishes are read from each fight's finishing and durability record, not a default round.",
+ "dec_cal": [
+  0.449064,
+  0.674786,
+  -0.376308
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Alexander Volkanovski vs Movsar Evloev",
+   "a": "Alexander Volkanovski",
+   "b": "Movsar Evloev",
+   "segment": "Main card",
+   "weight_class": "Featherweight",
+   "rounds": 5,
+   "title": true,
+   "pick": {
+    "winner": "Alexander Volkanovski",
+    "side": "a",
+    "method": "DEC",
+    "round": 5,
+    "confidence": 0.55,
+    "why": "Override: the stats lean on age and his two knockout losses, but Evloev has never finished a UFC opponent and says he will try to win over five rounds; Volkanovski's takedown defence and output win the long fight. Pundits 23-10 Volkanovski; the market is even. Neither finishes the other: decision."
+   },
+   "model": {
+    "p_a": 0.2597,
+    "winner": "Movsar Evloev",
+    "method": "DEC",
+    "p_win": 0.7403,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0566,
+      "SUB": 0.016,
+      "DEC": 0.186
+     },
+     "b": {
+      "KO/TKO": 0.1273,
+      "SUB": 0.0359,
+      "DEC": 0.5782
+     }
+    },
+    "round": 5,
+    "p_exact": 0.5782,
+    "round_chances": {
+     "KO/TKO": [
+      0.358,
+      0.302,
+      0.152,
+      0.086,
+      0.103
+     ],
+     "SUB": [
+      0.277,
+      0.28,
+      0.214,
+      0.13,
+      0.098
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      3,
+      1,
+      0,
+      1
+     ],
+     "losses": [
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5
+  },
+  {
+   "bout": "Petr Yan vs Merab Dvalishvili",
+   "a": "Petr Yan",
+   "b": "Merab Dvalishvili",
+   "segment": "Main card",
+   "weight_class": "Bantamweight",
+   "rounds": 5,
+   "title": true,
+   "pick": {
+    "winner": "Petr Yan",
+    "side": "a",
+    "method": "DEC",
+    "round": 5,
+    "confidence": 0.57,
+    "why": "Override: Yan's takedown defence beat Dvalishvili's chain wrestling in the rematch and Yan lands the heavier shots; the market (57%) and pundits (20-10) agree. Neither has ever been finished, and their two fights went 15 and 25 minutes: decision."
+   },
+   "model": {
+    "p_a": 0.4622,
+    "winner": "Merab Dvalishvili",
+    "method": "DEC",
+    "p_win": 0.5378,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0561,
+      "SUB": 0.0239,
+      "DEC": 0.3828
+     },
+     "b": {
+      "KO/TKO": 0.0393,
+      "SUB": 0.0478,
+      "DEC": 0.45
+     }
+    },
+    "round": 5,
+    "p_exact": 0.45,
+    "round_chances": {
+     "KO/TKO": [
+      0.353,
+      0.291,
+      0.169,
+      0.095,
+      0.092
+     ],
+     "SUB": [
+      0.264,
+      0.267,
+      0.238,
+      0.145,
+      0.087
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      1,
+      2,
+      2,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5715
+  },
+  {
+   "bout": "Lone'er Kavanagh vs Ramazan Temirov",
+   "a": "Lone'er Kavanagh",
+   "b": "Ramazan Temirov",
+   "segment": "Main card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Ramazan Temirov",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.62,
+    "why": "Eleven of Temirov's wins came in round one, the latest a round-one knockout of Erceg; Kavanagh has been knocked out by one counter right (Johnson) and is 3.5 months off a choke loss. Temirov's danger is early: R1."
+   },
+   "model": {
+    "p_a": 0.1947,
+    "winner": "Ramazan Temirov",
+    "method": "KO/TKO",
+    "p_win": 0.8053,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0401,
+      "SUB": 0.0136,
+      "DEC": 0.1608
+     },
+     "b": {
+      "KO/TKO": 0.5614,
+      "SUB": 0.06,
+      "DEC": 0.1642
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3335,
+    "round_chances": {
+     "KO/TKO": [
+      0.594,
+      0.278,
+      0.127
+     ],
+     "SUB": [
+      0.556,
+      0.298,
+      0.146
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      11,
+      2,
+      0
+     ],
+     "losses": [
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Alexander Volkov vs Rizvan Kuniev",
+   "a": "Alexander Volkov",
+   "b": "Rizvan Kuniev",
+   "segment": "Main card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Alexander Volkov",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.6,
+    "why": "Volkov's range against a slow starter; Kuniev has never been finished and Volkov's last four fights went the distance. Pundits 25-4 Volkov: decision."
+   },
+   "model": {
+    "p_a": 0.636,
+    "winner": "Alexander Volkov",
+    "method": "DEC",
+    "p_win": 0.636,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0978,
+      "SUB": 0.0451,
+      "DEC": 0.4982
+     },
+     "b": {
+      "KO/TKO": 0.0989,
+      "SUB": 0.0422,
+      "DEC": 0.2179
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4982,
+    "round_chances": {
+     "KO/TKO": [
+      0.577,
+      0.303,
+      0.119
+     ],
+     "SUB": [
+      0.546,
+      0.319,
+      0.135
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      17,
+      8,
+      2
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5428
+  },
+  {
+   "bout": "Aaron Pico vs Losene Keita",
+   "a": "Aaron Pico",
+   "b": "Losene Keita",
+   "segment": "Main card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Aaron Pico",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.54,
+    "why": "Pico's wrestling against a striker who has never faced it, on a short turnaround; Pico says he will now build fights instead of rushing, which keeps his chin out of Keita's power. Keita's knockout power is the danger, so the winner pick is close; if Pico wins it is on the mat over three rounds: decision."
+   },
+   "model": {
+    "p_a": 0.5042,
+    "winner": "Aaron Pico",
+    "method": "DEC",
+    "p_win": 0.5042,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1484,
+      "SUB": 0.0295,
+      "DEC": 0.379
+     },
+     "b": {
+      "KO/TKO": 0.3184,
+      "SUB": 0.0082,
+      "DEC": 0.1165
+     }
+    },
+    "round": 3,
+    "p_exact": 0.379,
+    "round_chances": {
+     "KO/TKO": [
+      0.571,
+      0.275,
+      0.154
+     ],
+     "SUB": [
+      0.53,
+      0.296,
+      0.174
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      2,
+      2
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5667
+  },
+  {
+   "bout": "Azamat Murzakanov vs Dominick Reyes",
+   "a": "Azamat Murzakanov",
+   "b": "Dominick Reyes",
+   "segment": "Preliminary card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Azamat Murzakanov",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.62,
+    "why": "Reyes has been stopped four times, twice in round one (most recently by Ulberg), and Murzakanov's one-shot power finished Rakic and Ribeiro in round one. Reyes is most dangerous early too, so the fight is likely decided early: R1."
+   },
+   "model": {
+    "p_a": 0.5613,
+    "winner": "Azamat Murzakanov",
+    "method": "KO/TKO",
+    "p_win": 0.5613,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.4244,
+      "SUB": 0.0087,
+      "DEC": 0.1064
+     },
+     "b": {
+      "KO/TKO": 0.2951,
+      "SUB": 0.012,
+      "DEC": 0.1534
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2508,
+    "round_chances": {
+     "KO/TKO": [
+      0.591,
+      0.269,
+      0.14
+     ],
+     "SUB": [
+      0.554,
+      0.287,
+      0.159
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      10,
+      1,
+      2
+     ],
+     "losses": [
+      2,
+      2,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.658
+  },
+  {
+   "bout": "Nikita Krylov vs Abdul-Rakhman Yakhyaev",
+   "a": "Nikita Krylov",
+   "b": "Abdul-Rakhman Yakhyaev",
+   "segment": "Preliminary card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Abdul-Rakhman Yakhyaev",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.76,
+    "why": "All of Yakhyaev's UFC and Contender Series wins came in round one; Krylov was knocked out in round one twice in 2025 and stopped by Whittaker in July. R1."
+   },
+   "model": {
+    "p_a": 0.211,
+    "winner": "Abdul-Rakhman Yakhyaev",
+    "method": "KO/TKO",
+    "p_win": 0.789,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0738,
+      "SUB": 0.0397,
+      "DEC": 0.1344
+     },
+     "b": {
+      "KO/TKO": 0.4234,
+      "SUB": 0.2471,
+      "DEC": 0.0815
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2634,
+    "round_chances": {
+     "KO/TKO": [
+      0.622,
+      0.243,
+      0.136
+     ],
+     "SUB": [
+      0.586,
+      0.261,
+      0.153
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      8,
+      1,
+      0
+     ],
+     "losses": [
+      7,
+      1,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.2069
+  },
+  {
+   "bout": "Abusupiyan Magomedov vs Cameron Rowston",
+   "a": "Abusupiyan Magomedov",
+   "b": "Cameron Rowston",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Cameron Rowston",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.52,
+    "why": "Override: Magomedov wins or competes early and then breaks under sustained pressure (Strickland and Pyfer both stopped him in round two); Rowston is younger, on a seven-fight streak and won his last fight with ten minutes of top control. Pundits 8-7 Rowston; the model knows little of Rowston. If Rowston survives the early submissions he wins the later rounds: decision."
+   },
+   "model": {
+    "p_a": 0.532,
+    "winner": "Abusupiyan Magomedov",
+    "method": "DEC",
+    "p_win": 0.532,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0691,
+      "SUB": 0.0979,
+      "DEC": 0.417
+     },
+     "b": {
+      "KO/TKO": 0.1594,
+      "SUB": 0.1326,
+      "DEC": 0.124
+     }
+    },
+    "round": 3,
+    "p_exact": 0.417,
+    "round_chances": {
+     "KO/TKO": [
+      0.614,
+      0.275,
+      0.111
+     ],
+     "SUB": [
+      0.58,
+      0.292,
+      0.128
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      16,
+      5,
+      1
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Grant Dawson vs Nurullo Aliev",
+   "a": "Grant Dawson",
+   "b": "Nurullo Aliev",
+   "segment": "Preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Grant Dawson",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "Aliev has never been stopped and finishes almost no one, so Dawson's chin is less exposed than usual; Dawson's back takes in scrambles should win the close rounds. Pundits 13-5 Dawson. Aliev has never been finished: decision."
+   },
+   "model": {
+    "p_a": 0.5342,
+    "winner": "Grant Dawson",
+    "method": "DEC",
+    "p_win": 0.5342,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0759,
+      "SUB": 0.156,
+      "DEC": 0.2855
+     },
+     "b": {
+      "KO/TKO": 0.1159,
+      "SUB": 0.0168,
+      "DEC": 0.3498
+     }
+    },
+    "round": 3,
+    "p_exact": 0.2855,
+    "round_chances": {
+     "KO/TKO": [
+      0.486,
+      0.344,
+      0.169
+     ],
+     "SUB": [
+      0.45,
+      0.362,
+      0.187
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      8,
+      4
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5108
+  },
+  {
+   "bout": "Colby Thicknesse vs Asaf Chopurov",
+   "a": "Colby Thicknesse",
+   "b": "Asaf Chopurov",
+   "segment": "Early preliminary card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Asaf Chopurov",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.78,
+    "why": "Chopurov has finished 10 of 11, mostly early, but Thicknesse has never been stopped and survives with a scrappy guard (all three UFC fights went the distance). Chopurov's pressure should break him once the early scrambles are over: R2."
+   },
+   "model": {
+    "p_a": 0.2144,
+    "winner": "Asaf Chopurov",
+    "method": "DEC",
+    "p_win": 0.7856,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0467,
+      "SUB": 0.0383,
+      "DEC": 0.1303
+     },
+     "b": {
+      "KO/TKO": 0.2735,
+      "SUB": 0.2315,
+      "DEC": 0.2799
+     }
+    },
+    "round": 3,
+    "p_exact": 0.2799,
+    "round_chances": {
+     "KO/TKO": [
+      0.574,
+      0.246,
+      0.18
+     ],
+     "SUB": [
+      0.531,
+      0.268,
+      0.201
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      0,
+      3
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.1865
+  },
+  {
+   "bout": "Abubakar Vagaev vs Jacob Malkoun",
+   "a": "Abubakar Vagaev",
+   "b": "Jacob Malkoun",
+   "segment": "Early preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Abubakar Vagaev",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.56,
+    "why": "The model, market and pundits (12-3) all have Vagaev; my read leans small the other way (his first middleweight fight, he faded late in his debut) but not enough to flip it. Both win on the mat over three rounds and Malkoun has been stopped once in his career: decision."
+   },
+   "model": {
+    "p_a": 0.6153,
+    "winner": "Abubakar Vagaev",
+    "method": "DEC",
+    "p_win": 0.6153,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0567,
+      "SUB": 0.0241,
+      "DEC": 0.5279
+     },
+     "b": {
+      "KO/TKO": 0.1295,
+      "SUB": 0.0264,
+      "DEC": 0.2355
+     }
+    },
+    "round": 3,
+    "p_exact": 0.5279,
+    "round_chances": {
+     "KO/TKO": [
+      0.58,
+      0.289,
+      0.13
+     ],
+     "SUB": [
+      0.534,
+      0.313,
+      0.153
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      0
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5924
+  },
+  {
+   "bout": "Bolaji Oki vs Daniel Santos",
+   "a": "Bolaji Oki",
+   "b": "Daniel Santos",
+   "segment": "Early preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Daniel Santos",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.58,
+    "why": "Santos's pressure, low kicks and clinch knees build through a fight (four finishes in round two); Oki is dangerous early and fades after big first rounds, and he was stopped in rounds one, two and three of his last three losses. Pundits 12-2 Santos: R2."
+   },
+   "model": {
+    "p_a": 0.4433,
+    "winner": "Daniel Santos",
+    "method": "KO/TKO",
+    "p_win": 0.5567,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2336,
+      "SUB": 0.0133,
+      "DEC": 0.2109
+     },
+     "b": {
+      "KO/TKO": 0.3037,
+      "SUB": 0.0342,
+      "DEC": 0.2041
+     }
+    },
+    "round": 1,
+    "p_exact": 0.15,
+    "round_chances": {
+     "KO/TKO": [
+      0.494,
+      0.333,
+      0.173
+     ],
+     "SUB": [
+      0.453,
+      0.353,
+      0.193
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      4,
+      2
+     ],
+     "losses": [
+      1,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.4764
+  },
+  {
+   "bout": "Kody Steele vs Noah Gugnon",
+   "a": "Kody Steele",
+   "b": "Noah Gugnon",
+   "segment": "Early preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Kody Steele",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "Override: Gugnon has one 81-second UFC fight and has seen a third round once, in a loss; Steele is a black belt who can grind if he doesn't get dragged into a brawl. The market (59%) and pundits (9-5) lean Steele. Neither has been finished in the UFC: decision."
+   },
+   "model": {
+    "p_a": 0.4681,
+    "winner": "Noah Gugnon",
+    "method": "DEC",
+    "p_win": 0.5319,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2165,
+      "SUB": 0.0491,
+      "DEC": 0.2115
+     },
+     "b": {
+      "KO/TKO": 0.1829,
+      "SUB": 0.1407,
+      "DEC": 0.1993
+     }
+    },
+    "round": 3,
+    "p_exact": 0.1993,
+    "round_chances": {
+     "KO/TKO": [
+      0.574,
+      0.306,
+      0.12
+     ],
+     "SUB": [
+      0.531,
+      0.328,
+      0.141
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      3,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5924
+  },
+  {
+   "bout": "Iasmin Lucindo vs Nicole Caliari",
+   "a": "Iasmin Lucindo",
+   "b": "Nicole Caliari",
+   "segment": "Early preliminary card",
+   "weight_class": "Catchweight (120.5 lb)",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Iasmin Lucindo",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.72,
+    "why": "Lucindo's clinch strength and takedowns against a grappler who is out-landed on the feet; Caliari missed weight by 4.5 lb. Lucindo's wins usually go three rounds and Caliari has been finished only by body strikes: decision."
+   },
+   "model": {
+    "p_a": 0.7326,
+    "winner": "Iasmin Lucindo",
+    "method": "DEC",
+    "p_win": 0.7326,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.18,
+      "SUB": 0.0678,
+      "DEC": 0.483
+     },
+     "b": {
+      "KO/TKO": 0.0343,
+      "SUB": 0.151,
+      "DEC": 0.0838
+     }
+    },
+    "round": 3,
+    "p_exact": 0.483,
+    "round_chances": {
+     "KO/TKO": [
+      0.466,
+      0.346,
+      0.189
+     ],
+     "SUB": [
+      0.426,
+      0.366,
+      0.209
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      6,
+      2
+     ],
+     "losses": [
+      0,
+      0,
+      2
+     ]
+    }
+   },
+   "market_p_a": null
+  }
+ ],
+ "graded": false
+}

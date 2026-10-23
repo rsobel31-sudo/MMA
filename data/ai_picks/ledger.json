@@ -345,6 +345,128 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w4",
+   "event": "UFC 333: Volkanovski vs. Evloev",
+   "event_date": "2026-10-24",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-333-4321",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_333",
+   "book": "FanDuel",
+   "placed_at": "2026-10-23T16:12:00+00:00",
+   "bankroll_before": 90.0,
+   "available_before": 90.0,
+   "note": "Two pick'em title fights and a lot of chalk. The moneylines are sharp: the model's biggest gap (Evloev, 57% vs an even line) runs against our own read on Volkanovski, so no side there. The edges with a reason are in the distance markets of the two title fights (two five-round fights between fighters who rarely finish each other or get finished) and Pico by decision after his fight-week change of approach. Small stakes: these are prop edges of a few points, sized below quarter-Kelly. Passed on the Yakhyaev-Krylov round props (they bet against Yakhyaev's round-one record) and on Volkov by decision (no reason beyond the number).",
+   "bets": [
+    {
+     "id": "4-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "44524:distance:True",
+       "bout": "Alexander Volkanovski vs Movsar Evloev",
+       "market": [
+        "distance",
+        true
+       ],
+       "selection": "Goes to decision",
+       "odds": -225,
+       "p": 0.7081,
+       "p_fanduel": 0.6531
+      }
+     ],
+     "odds": -225,
+     "decimal": 1.4444,
+     "stake": 1.5,
+     "to_win": 0.66,
+     "p": 0.7081,
+     "ev": 0.0228,
+     "reasoning": "Volkanovski-Evloev to go to decision at -225 (65% implied, 71% ours). Evloev has never finished a UFC opponent and said this month he will try to win over five rounds rather than chase a finish; Volkanovski's two knockout losses came against elite power punchers, which Evloev is not, and Volkanovski's own finishes against wrestlers are rare.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-23T16:12:00+00:00"
+    },
+    {
+     "id": "4-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "41066:distance:True",
+       "bout": "Merab Dvalishvili vs Petr Yan",
+       "market": [
+        "distance",
+        true
+       ],
+       "selection": "Goes to decision",
+       "odds": -320,
+       "p": 0.7785,
+       "p_fanduel": 0.7123
+      }
+     ],
+     "odds": -320,
+     "decimal": 1.3125,
+     "stake": 1.5,
+     "to_win": 0.46,
+     "p": 0.7785,
+     "ev": 0.0218,
+     "reasoning": "Yan-Dvalishvili to go to decision at -320 (71% implied, 78% ours). Neither man has ever been finished, their two fights went 15 and 25 minutes, and Dvalishvili's volume wrestling and Yan's patient boxing both suit a long fight.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-23T16:12:00+00:00"
+    },
+    {
+     "id": "4-3",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45324:method:a:DEC",
+       "bout": "Aaron Pico vs Losene Keita",
+       "market": [
+        "method",
+        "a",
+        "DEC"
+       ],
+       "selection": "Aaron Pico by decision",
+       "odds": 310,
+       "p": 0.3037,
+       "p_fanduel": 0.2117
+      }
+     ],
+     "odds": 310,
+     "decimal": 4.1,
+     "stake": 1.5,
+     "to_win": 4.65,
+     "p": 0.3037,
+     "ev": 0.2452,
+     "reasoning": "Pico by decision at +310 (21% implied, 30% ours). Pico's path is wrestling Keita, who has never faced an elite wrestler and took the fight on a short turnaround, and this week Pico said he will build fights instead of rushing them, which is how he beat Pitbull 30-27. If Pico wins, it is most likely on the scorecards.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-23T16:12:00+00:00"
+    }
+   ],
+   "staked": 4.5,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-10-23T16:12:00+00:00",
+     "note": "Two pick'em title fights and a lot of chalk. The moneylines are sharp: the model's biggest gap (Evloev, 57% vs an even line) runs against our own read on Volkanovski, so no side there. The edges with a reason are in the distance markets of the two title fights (two five-round fights between fighters who rarely finish each other or get finished) and Pico by decision after his fight-week change of approach. Small stakes: these are prop edges of a few points, sized below quarter-Kelly. Passed on the Yakhyaev-Krylov round props (they bet against Yakhyaev's round-one record) and on Volkov by decision (no reason beyond the number).",
+     "bets": [
+      "4-1",
+      "4-2",
+      "4-3"
+     ],
+     "staked": 4.5,
+     "sheet": "data/ai_picks/sheets/2026-10-24-ufc-333-volkanovski-vs-evloev.json",
+     "sheet_fetched_at": "2026-10-23T16:11:39+00:00"
+    }
+   ],
+   "last_placed_at": "2026-10-23T16:12:00+00:00",
+   "sheet": "data/ai_picks/sheets/2026-10-24-ufc-333-volkanovski-vs-evloev.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-333-4321"
+   ],
+   "sheet_fetched_at": "2026-10-23T16:11:39+00:00"
   }
  ]
 }

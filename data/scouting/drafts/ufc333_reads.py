@@ -2,8 +2,9 @@
 
 logit: how far (log-odds, 0..0.8) the read moves the model toward `favours`, for what the model can't see.
 The model's number at the time is recorded (p_model, toward a) so the read can be graded against it.
-Drafted Tuesday 2026-10-20 from the reports and the picks sheet; the Friday run finalizes them with fight-week
-news, weigh-ins and pundit picks.
+Drafted Tuesday 2026-10-20 from the reports and the picks sheet; finalized Friday 2026-10-23 after weigh-ins
+(everyone made weight except Caliari, 120.5 lb for a 116 lb limit; that bout is a catchweight). Pundit picks (284 from
+42 writers) are in ufc333_pundits.json.
 """
 
 import json
@@ -12,27 +13,27 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT.parents[1]))
-from mma_predictor.reads import check_read  # noqa: E402
+from mma_predictor.reads import Pundits, check_read  # noqa: E402
 
 EVENT, DATE = "UFC 333: Volkanovski vs. Evloev", "2026-10-24"
 RESULTS = "https://en.wikipedia.org/wiki/UFC_333"
 
-# Model and FanDuel no-vig numbers toward a, from the picks sheet of 2026-10-20 16:05 UTC.
+# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-10-23 17:30 UTC.
 # Magomedov-Rowston has no model number (too little data on Rowston); Kavanagh-Temirov and Lucindo-Caliari no line yet.
 P = {
     ("Alexander Volkanovski", "Movsar Evloev"): (0.26, 0.50),
-    ("Merab Dvalishvili", "Petr Yan"): (0.54, 0.389),
+    ("Merab Dvalishvili", "Petr Yan"): (0.54, 0.432),
     ("Lone'er Kavanagh", "Ramazonbek Temirov"): (None, None),
-    ("Alexander Volkov", "Rizvan Kuniev"): (0.63, 0.519),
-    ("Aaron Pico", "Losene Keita"): (0.51, 0.50),
-    ("Azamat Murzakanov", "Dominick Reyes"): (0.56, 0.648),
-    ("Abdul-Rakhman Yakhyaev", "Nikita Krylov"): (0.79, 0.786),
+    ("Alexander Volkov", "Rizvan Kuniev"): (0.64, 0.523),
+    ("Aaron Pico", "Losene Keita"): (0.50, 0.563),
+    ("Azamat Murzakanov", "Dominick Reyes"): (0.56, 0.645),
+    ("Abdul-Rakhman Yakhyaev", "Nikita Krylov"): (0.79, 0.793),
     ("Abus Magomedov", "Cameron Rowston"): (None, None),
-    ("Grant Dawson", "Nurullo Aliev"): (0.53, 0.537),
-    ("Asaf Chopurov", "Colby Thicknesse"): (0.78, 0.791),
-    ("Abubakar Vagaev", "Jacob Malkoun"): (0.60, 0.616),
-    ("Bolaji Oki", "Daniel Santos"): (0.36, 0.457),
-    ("Kody Steele", "Noah Gugnon"): (0.52, 0.597),
+    ("Grant Dawson", "Nurullo Aliev"): (0.53, 0.519),
+    ("Asaf Chopurov", "Colby Thicknesse"): (0.79, 0.819),
+    ("Abubakar Vagaev", "Jacob Malkoun"): (0.62, 0.589),
+    ("Bolaji Oki", "Daniel Santos"): (0.44, 0.476),
+    ("Kody Steele", "Noah Gugnon"): (0.47, 0.593),
     ("Iasmin Lucindo", "Nicolle Caliari"): (None, None),
 }
 
@@ -98,17 +99,41 @@ READS = [
          factors=["Gugnon unproven over three rounds", "Steele's withdrawal and brawling habit"]),
     dict(a="Iasmin Lucindo", b="Nicolle Caliari", favours="Iasmin Lucindo", logit=0.10, confidence="low",
          reasoning="Lucindo's clinch strength and takedowns against a grappler who is usually out-landed on the feet; Caliari's only "
-                   "strawweight fight is a third-round submission. Lucindo's 14 months out after a doping suspension keep it small. No "
-                   "line or model number yet.",
-         factors=["Lucindo's strength and top control", "Caliari out-landed on the feet", "Lucindo's layoff (against)"]),
+                   "strawweight fight is a third-round submission. Caliari missed weight by 4.5 lb (her second career miss), which says the cut to "
+                   "strawweight is a struggle; she keeps the size in a catchweight bout. Lucindo's 14 months out after a doping "
+                   "suspension keep it small. No line or model number.",
+         factors=["Lucindo's strength and top control", "Caliari out-landed on the feet", "Lucindo's layoff (against)", "Caliari's weight miss"]),
 ]
+
+# Picks published by Friday 2026-10-23 (outlet, author, pick, method, url).
+PUNDIT_PICKS = [(r["a"], r["b"], r["outlet"], r["author"], r["pick"], r["method"], r["url"])
+                for r in json.loads((Path(__file__).with_name("ufc333_pundits.json")).read_text())]
+
+
+def _p(a, b):
+    """The (model, market) pair toward a, whichever way round the bout is listed."""
+    if (a, b) in P:
+        return P[(a, b)]
+    pm, pf = P[(b, a)]
+    return (None if pm is None else 1 - pm, None if pf is None else 1 - pf)
+
 
 bouts = []
 for r in READS:
     pm, pf = P[(r["a"], r["b"])]
-    r.update(event=EVENT, date=DATE, p_model=pm, p_market=pf, created="2026-10-20T18:00:00+00:00", pundits=[])
+    r.update(event=EVENT, date=DATE, p_model=pm, p_market=pf, created="2026-10-23T18:00:00+00:00",
+             pundits=[{"outlet": o, "author": au, "pick": pk, "method": m, "url": u}
+                      for a, b, o, au, pk, m, u in PUNDIT_PICKS if {a, b} == {r["a"], r["b"]}])
     check_read(r)
     bouts.append(r)
 (ROOT / "reads" / "2026-10-24-ufc-333.json").write_text(
     json.dumps({"event": EVENT, "date": DATE, "results_url": RESULTS, "bouts": bouts}, indent=1, ensure_ascii=False) + "\n")
-print(len(bouts), "reads")
+if PUNDIT_PICKS:
+    pun = Pundits(ROOT / "pundits.jsonl")
+    for a, b, o, au, pk, m, u in PUNDIT_PICKS:
+        pm, pf = _p(a, b)
+        p_pick = None if pf is None else (pf if pk == a else 1 - pf)
+        pun.add({"event": EVENT, "date": DATE, "a": a, "b": b, "outlet": o, "author": au, "pick": pk, "method": m,
+                 "url": u, "p_market": None if p_pick is None else round(p_pick, 3)})
+    pun.save()
+print(len(bouts), "reads;", len(PUNDIT_PICKS), "pundit picks")

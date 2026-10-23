@@ -1,0 +1,11 @@
+{
+ "note": "Two pick'em title fights and a lot of chalk. The moneylines are sharp: the model's biggest gap (Evloev, 57% vs an even line) runs against our own read on Volkanovski, so no side there. The edges with a reason are in the distance markets of the two title fights (two five-round fights between fighters who rarely finish each other or get finished) and Pico by decision after his fight-week change of approach. Small stakes: these are prop edges of a few points, sized below quarter-Kelly. Passed on the Yakhyaev-Krylov round props (they bet against Yakhyaev's round-one record) and on Volkov by decision (no reason beyond the number).",
+ "picks": [
+  {"legs": ["44524:distance:True"], "stake": 1.5,
+   "reasoning": "Volkanovski-Evloev to go to decision at -225 (65% implied, 71% ours). Evloev has never finished a UFC opponent and said this month he will try to win over five rounds rather than chase a finish; Volkanovski's two knockout losses came against elite power punchers, which Evloev is not, and Volkanovski's own finishes against wrestlers are rare."},
+  {"legs": ["41066:distance:True"], "stake": 1.5,
+   "reasoning": "Yan-Dvalishvili to go to decision at -320 (71% implied, 78% ours). Neither man has ever been finished, their two fights went 15 and 25 minutes, and Dvalishvili's volume wrestling and Yan's patient boxing both suit a long fight."},
+  {"legs": ["45324:method:a:DEC"], "stake": 1.5,
+   "reasoning": "Pico by decision at +310 (21% implied, 30% ours). Pico's path is wrestling Keita, who has never faced an elite wrestler and took the fight on a short turnaround, and this week Pico said he will build fights instead of rushing them, which is how he beat Pitbull 30-27. If Pico wins, it is most likely on the scorecards."}
+ ]
+}

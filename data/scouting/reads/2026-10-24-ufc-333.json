@@ -20,8 +20,240 @@
    "date": "2026-10-24",
    "p_model": 0.26,
    "p_market": 0.5,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/alexander-volkanovski-vs-movsar-evloev-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://vsin.com/mma/ufc-333-volkanovski-vs-evloev-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Joe Osborne",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.covers.com/ufc/333-predictions-picks-best-bets"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Danny Howard",
+     "pick": "Movsar Evloev",
+     "method": "DEC",
+     "url": "https://www.covers.com/ufc/333-alexander-volkanovski-vs-movsar-evloev-predictions-picks-odds"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Suryakant Das",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/alexander-volkanovski-vs-movsar-evloev-fight-preview-and-prediction/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Rohit Ganguly",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/ufc-333-complete-fight-card-previews-and-predictions/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jake Letarski",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Chris Olson",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Joe \"SunTszu\"",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://www.pickswise.com/ufc/news/ufc-333-predictions-picks-betting-odds-ft-alexander-volkanovski-vs-movsar-evloev/"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-333-alexander-volkanovski-vs-013339574.html"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-333-Volkanovski-vs-Evloev-203278"
+    },
+    {
+     "outlet": "CBS Sports",
+     "author": "Brent Brookhouse",
+     "pick": "Alexander Volkanovski",
+     "method": "",
+     "url": "https://www.cbssports.com/ufc/news/ufc-333-predictions-odds-best-bets-alexander-volkanovski-movsar-evloev-merab-dvalishvili-petr-yan/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://rg.org/news/mma/ufc-333-odds-volkanovski-vs-evloev-yan-vs-dvalishvili-3-best-bets"
+    },
+    {
+     "outlet": "ESPN",
+     "author": "Sayif Saud",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://www.espn.com/mma/story/_/id/50238314/ufc-333-preview-picks"
+    },
+    {
+     "outlet": "ESPN",
+     "author": "John Wood",
+     "pick": "Alexander Volkanovski",
+     "method": "KO/TKO",
+     "url": "https://www.espn.com/mma/story/_/id/50238314/ufc-333-preview-picks"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Adam Kramer",
+     "pick": "Movsar Evloev",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Tom Taylor",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Lyle Fitzsimmons",
+     "pick": "Movsar Evloev",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Movsar Evloev",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "The Grueling Truth",
+     "author": "James Ernest",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://thegruelingtruth.com/mma/ufc-333-volkanovski-vs-evloev-2026/"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Alexander Volkanovski",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-volkanovski-evloev-fight-card-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Merab Dvalishvili",
@@ -38,9 +270,220 @@
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
    "p_model": 0.54,
-   "p_market": 0.389,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.432,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Petr Yan",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Merab Dvalishvili",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Merab Dvalishvili",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/petr-yan-vs-merab-dvalishvili-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Merab Dvalishvili",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Joe Osborne",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.covers.com/ufc/333-predictions-picks-best-bets"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Danny Howard",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://www.covers.com/ufc/333-petr-yan-vs-merab-dvalishvili-predictions-picks-odds"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Rohit Ganguly",
+     "pick": "Merab Dvalishvili",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/ufc-333-complete-fight-card-previews-and-predictions/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jake Letarski",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Chris Olson",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Joe \"SunTszu\"",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Merab Dvalishvili",
+     "method": "",
+     "url": "https://www.pickswise.com/ufc/news/ufc-333-predictions-picks-betting-odds-ft-alexander-volkanovski-vs-movsar-evloev/"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-333-alexander-volkanovski-vs-013339574.html"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-333-Volkanovski-vs-Evloev-203278"
+    },
+    {
+     "outlet": "CBS Sports",
+     "author": "Brent Brookhouse",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://www.cbssports.com/ufc/news/ufc-333-predictions-odds-best-bets-alexander-volkanovski-movsar-evloev-merab-dvalishvili-petr-yan/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://rg.org/news/mma/ufc-333-odds-volkanovski-vs-evloev-yan-vs-dvalishvili-3-best-bets"
+    },
+    {
+     "outlet": "ESPN",
+     "author": "Sayif Saud",
+     "pick": "Petr Yan",
+     "method": "",
+     "url": "https://www.espn.com/mma/story/_/id/50238314/ufc-333-preview-picks"
+    },
+    {
+     "outlet": "ESPN",
+     "author": "Eric Nicksick",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://www.espn.com/mma/story/_/id/50238314/ufc-333-preview-picks"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Adam Kramer",
+     "pick": "Merab Dvalishvili",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Tom Taylor",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Lyle Fitzsimmons",
+     "pick": "Merab Dvalishvili",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Merab Dvalishvili",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Petr Yan",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Merab Dvalishvili",
+     "method": "SUB",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Merab Dvalishvili",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-petr-yan-merab-dvalishvili-3-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Lone'er Kavanagh",
@@ -58,8 +501,198 @@
    "date": "2026-10-24",
    "p_model": null,
    "p_market": null,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Lone'er Kavanagh",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/loneer-kavanagh-vs-ramazan-temirov-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Lone'er Kavanagh",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Chris Faria",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO",
+     "url": "https://www.covers.com/ufc/333-loneer-kavanagh-vs-ramazan-temirov-predictions-picks-odds"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/ufc-333-main-card-betting-tips-and-picks/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Rohit Ganguly",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/ufc-333-complete-fight-card-previews-and-predictions/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jake Letarski",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Chris Olson",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Joe \"SunTszu\"",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Lone'er Kavanagh",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.pickswise.com/ufc/news/ufc-333-parlay-at-255-odds-featuring-alexander-volkanovski-vs-movsar-evloev/"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Lone'er Kavanagh",
+     "method": "KO/TKO R3",
+     "url": "https://sports.yahoo.com/articles/ufc-333-alexander-volkanovski-vs-013339574.html"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/3/Preview-UFC-333-Volkanovski-vs-Evloev-203278"
+    },
+    {
+     "outlet": "CBS Sports",
+     "author": "Brent Brookhouse",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://www.cbssports.com/ufc/news/ufc-333-predictions-odds-best-bets-alexander-volkanovski-movsar-evloev-merab-dvalishvili-petr-yan/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://rg.org/news/mma/ufc-333-odds-volkanovski-vs-evloev-yan-vs-dvalishvili-3-best-bets"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Adam Kramer",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO R2",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Tom Taylor",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Lyle Fitzsimmons",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO R2",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Ramazonbek Temirov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Ramazonbek Temirov",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Lone'er Kavanagh",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-lone-er-kavanagh-ramazan-temirov-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Alexander Volkov",
@@ -75,10 +708,214 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.63,
-   "p_market": 0.519,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.64,
+   "p_market": 0.523,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Rizvan Kuniev",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Rizvan Kuniev",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/alexander-volkov-vs-rizvan-kuniev-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Rizvan Kuniev",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Joe Osborne",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.covers.com/ufc/333-predictions-picks-best-bets"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Danny Howard",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://www.covers.com/ufc/333-alexander-volkov-vs-rizvan-kuniev-predictions-picks-odds"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Rohit Ganguly",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://mmasucka.com/predictions/ufc-333-complete-fight-card-previews-and-predictions/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jake Letarski",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Chris Olson",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Joe \"SunTszu\"",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-333-142631"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.pickswise.com/ufc/news/ufc-333-parlay-at-255-odds-featuring-alexander-volkanovski-vs-movsar-evloev/"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-333-alexander-volkanovski-vs-013339574.html"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-333-Volkanovski-vs-Evloev-203278"
+    },
+    {
+     "outlet": "CBS Sports",
+     "author": "Brent Brookhouse",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://www.cbssports.com/ufc/news/ufc-333-predictions-odds-best-bets-alexander-volkanovski-movsar-evloev-merab-dvalishvili-petr-yan/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://rg.org/news/mma/ufc-333-odds-volkanovski-vs-evloev-yan-vs-dvalishvili-3-best-bets"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Adam Kramer",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Tom Taylor",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Lyle Fitzsimmons",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Rizvan Kuniev",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Alexander Volkov",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "Deadspin",
+     "author": "Tom Albano",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://deadspin.com/ufc-333-predictions-best-bets-for-volkov-keita-and-murzakanov/"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Alexander Volkov",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-alexander-volkov-rizvan-kuniev-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Aaron Pico",
@@ -94,10 +931,200 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.51,
-   "p_market": 0.5,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.5,
+   "p_market": 0.563,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Losene Keita",
+     "method": "KO/TKO R2",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/aaron-pico-vs-losene-keita-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Chris Faria",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://www.covers.com/ufc/333-aaron-pico-vs-losene-keita-predictions-picks-odds"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://mmasucka.com/predictions/ufc-333-main-card-betting-tips-and-picks/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Rohit Ganguly",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://mmasucka.com/predictions/ufc-333-complete-fight-card-previews-and-predictions/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jake Letarski",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Chris Olson",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Joe \"SunTszu\"",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-expert-picks-predictions-for-the-main-card-143134"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Aaron Pico",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-333-alexander-volkanovski-vs-013339574.html"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Losene Keita",
+     "method": "KO/TKO R1",
+     "url": "https://www.sherdog.com/news/articles/5/Preview-UFC-333-Volkanovski-vs-Evloev-203278"
+    },
+    {
+     "outlet": "CBS Sports",
+     "author": "Brent Brookhouse",
+     "pick": "Aaron Pico",
+     "method": "",
+     "url": "https://www.cbssports.com/ufc/news/ufc-333-predictions-odds-best-bets-alexander-volkanovski-movsar-evloev-merab-dvalishvili-petr-yan/"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Adam Kramer",
+     "pick": "Aaron Pico",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Tom Taylor",
+     "pick": "Losene Keita",
+     "method": "KO/TKO R2",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "Bleacher Report",
+     "author": "Lyle Fitzsimmons",
+     "pick": "Aaron Pico",
+     "method": "DEC",
+     "url": "https://bleacherreport.com/articles/25518927-br-staff-predictions-ufc-333-main-card"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Losene Keita",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Losene Keita",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Aaron Pico",
+     "method": "DEC",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "Deadspin",
+     "author": "Tom Albano",
+     "pick": "Losene Keita",
+     "method": "KO/TKO",
+     "url": "https://deadspin.com/ufc-333-predictions-best-bets-for-volkov-keita-and-murzakanov/"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Aaron Pico",
+     "method": "SUB",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-aaron-pico-losene-keita-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Azamat Murzakanov",
@@ -114,9 +1141,129 @@
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
    "p_model": 0.56,
-   "p_market": 0.648,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.645,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Dominick Reyes",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/azamat-murzakanov-vs-dominick-reyes-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Dominick Reyes",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO",
+     "url": "https://mmasucka.com/predictions/ufc-333-prelims-betting-tips-and-picks/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO R1",
+     "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO R1",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Azamat Murzakanov",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "Deadspin",
+     "author": "Tom Albano",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO",
+     "url": "https://deadspin.com/ufc-333-predictions-best-bets-for-volkov-keita-and-murzakanov/"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Azamat Murzakanov",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-azamat-murzakanov-dominick-reyes-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Abdul-Rakhman Yakhyaev",
@@ -132,9 +1279,129 @@
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
    "p_model": 0.79,
-   "p_market": 0.786,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.793,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Nikita Krylov",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/nikita-krylov-vs-abdul-rakhman-yakhyaev-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Joe Osborne",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://www.covers.com/ufc/333-predictions-picks-best-bets"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "KO/TKO R1",
+     "url": "https://mmasucka.com/predictions/ufc-333-prelims-betting-tips-and-picks/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "KO/TKO R1",
+     "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "KO/TKO R1",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "KO/TKO R1",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Abdul-Rakhman Yakhyaev",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-nikita-krylov-abdul-rakhman-yakhyaev-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Abus Magomedov",
@@ -152,8 +1419,114 @@
    "date": "2026-10-24",
    "p_model": null,
    "p_market": null,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Abus Magomedov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Abus Magomedov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Abus Magomedov",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/abus-magomedov-vs-cam-rowston-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-333-142631"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Abus Magomedov",
+     "method": "SUB R1",
+     "url": "https://www.sherdog.com/news/articles/3/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Abus Magomedov",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Abus Magomedov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Cameron Rowston",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Cameron Rowston",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Abus Magomedov",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-abus-magomedov-cam-rowston-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Grant Dawson",
@@ -170,9 +1543,136 @@
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
    "p_model": 0.53,
-   "p_market": 0.537,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.519,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Nurullo Aliev",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/grant-dawson-vs-nurullo-aliev-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Nurullo Aliev",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://vsin.com/mma/ufc-333-volkanovski-vs-evloev-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://mmasucka.com/predictions/ufc-333-prelims-betting-tips-and-picks/"
+    },
+    {
+     "outlet": "SportsLine",
+     "author": "Kyle Marley",
+     "pick": "Grant Dawson",
+     "method": "DEC",
+     "url": "https://www.sportsline.com/insiders/ufc-333-odds-picks-seasoned-mma-analyst-reveals-selections-for-volkanovski-vs-evloev-and-other-matchups-on-oct-24/"
+    },
+    {
+     "outlet": "SportsLine",
+     "author": "Daniel Vithlani",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://www.sportsline.com/insiders/ufc-333-odds-picks-mma-analyst-releases-selections-for-volkanovski-vs-evloev-and-other-fights-for-october-24-event/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Nurullo Aliev",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Grant Dawson",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Nurullo Aliev",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Grant Dawson",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Grant Dawson",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Nurullo Aliev",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-grant-dawson-nurullo-aliev-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Asaf Chopurov",
@@ -188,10 +1688,102 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.78,
-   "p_market": 0.791,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.79,
+   "p_market": 0.819,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Colby Thicknesse",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Asaf Chopurov",
+     "method": "SUB R1",
+     "url": "https://www.sherdog.com/news/articles/5/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Asaf Chopurov",
+     "method": "KO/TKO",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Asaf Chopurov",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Asaf Chopurov",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Asaf Chopurov",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-colby-thicknesse-asaf-chopurov-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Abubakar Vagaev",
@@ -207,10 +1799,116 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.6,
-   "p_market": 0.616,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.62,
+   "p_market": 0.589,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Jacob Malkoun",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Jacob Malkoun",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Jacob Malkoun",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/abubakar-vagaev-vs-jacob-malkoun-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-333-142631"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Abubakar Vagaev",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Abubakar Vagaev",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-abubakar-vagaev-jacob-malkoun-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Bolaji Oki",
@@ -226,10 +1924,109 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.36,
-   "p_market": 0.457,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.44,
+   "p_market": 0.476,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Bolaji Oki",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/bolaji-oki-vs-daniel-santos-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Bolaji Oki",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://www.sherdog.com/news/articles/7/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Daniel Santos",
+     "method": "KO/TKO",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Daniel Santos",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Daniel Santos",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Daniel Santos",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-daniel-santos-bolaji-oki-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Kody Steele",
@@ -244,10 +2041,109 @@
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
-   "p_model": 0.52,
-   "p_market": 0.597,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.47,
+   "p_market": 0.593,
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Noah Gugnon",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Noah Gugnon",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/kody-steele-vs-noah-gugnon-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Noah Gugnon",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Kody Steele",
+     "method": "SUB R1",
+     "url": "https://www.sherdog.com/news/articles/8/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Noah Gugnon",
+     "method": "KO/TKO",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "MMA Mania",
+     "author": "Tim Edwards",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-333-best-betting-props-031100340.html"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Noah Gugnon",
+     "method": "KO/TKO R2",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Kody Steele",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Kody Steele",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-kody-steele-noah-gugnon-predictions-odds-bm05/"
+    }
+   ]
   },
   {
    "a": "Iasmin Lucindo",
@@ -255,18 +2151,125 @@
    "favours": "Iasmin Lucindo",
    "logit": 0.1,
    "confidence": "low",
-   "reasoning": "Lucindo's clinch strength and takedowns against a grappler who is usually out-landed on the feet; Caliari's only strawweight fight is a third-round submission. Lucindo's 14 months out after a doping suspension keep it small. No line or model number yet.",
+   "reasoning": "Lucindo's clinch strength and takedowns against a grappler who is usually out-landed on the feet; Caliari's only strawweight fight is a third-round submission. Caliari missed weight by 4.5 lb (her second career miss), which says the cut to strawweight is a struggle; she keeps the size in a catchweight bout. Lucindo's 14 months out after a doping suspension keep it small. No line or model number.",
    "factors": [
     "Lucindo's strength and top control",
     "Caliari out-landed on the feet",
-    "Lucindo's layoff (against)"
+    "Lucindo's layoff (against)",
+    "Caliari's weight miss"
    ],
    "event": "UFC 333: Volkanovski vs. Evloev",
    "date": "2026-10-24",
    "p_model": null,
    "p_market": null,
-   "created": "2026-10-20T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-23T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://combatpress.com/2026/10/ufc-333-volkanovski-vs-evloev-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-333-predictions"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/iasmin-lucindo-vs-nicolle-caliari-pick-10-24-2026-predictions-ufc-333-odds.html"
+    },
+    {
+     "outlet": "WagerTalk",
+     "author": "Andy Lang",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://www.wagertalk.com/news/mma/ufc-333-volkanovski-vs-evloev-predictions-picks-and-betting-odds-october-24/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Iasmin Lucindo",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-333-142631"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-333-volkanovski-vs-evloev-dfs-analysis-drakes-takes-142891"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-333-dfs-preview-142579"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://sports.yahoo.com/mma/article/ufc-333-full-card-predictions-can-movsar-evloev-dethrone-alexander-volkanovski-165815387.html"
+    },
+    {
+     "outlet": "Sherdog",
+     "author": "Tom Feely",
+     "pick": "Iasmin Lucindo",
+     "method": "DEC",
+     "url": "https://www.sherdog.com/news/articles/9/Preview-UFC-333-prelims-203277"
+    },
+    {
+     "outlet": "MightyTips",
+     "author": "Deniss Novickis",
+     "pick": "Iasmin Lucindo",
+     "method": "DEC",
+     "url": "https://www.mightytips.com/news/mma/ufc-333-predictions/"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Iasmin Lucindo",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-333-alexander-volkanovski-v-movsar"
+    },
+    {
+     "outlet": "SI MMA Knockout",
+     "author": "Drew Beaupré",
+     "pick": "Iasmin Lucindo",
+     "method": "",
+     "url": "https://www.si.com/fannation/mma/news/ufc-333-volkanovski-vs-evloev-full-prelim-fight-card-picks-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Iasmin Lucindo",
+     "method": "KO/TKO R2",
+     "url": "https://keeonsports.com/ufc-333-preview-and-prediction"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Iasmin Lucindo",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/333-iasmin-lucindo-nicolle-caliari-predictions-odds-bm05/"
+    }
+   ]
   }
  ]
 }
