@@ -256,6 +256,30 @@ def check_files(r: Report):
         r.alert("File sizes", "near or over the 16 MB page limit (publishes would silently keep the old copy): " + ", ".join(big))
     else:
         r.ok("File sizes", "all page files under 15 MB")
+    # Early warning: data.json's growth over the last week, projected to the limit (profile files re-shard themselves).
+    # The baseline is the week's oldest copy under the limit (copies before the Oct 21 split carried the histories).
+    try:
+        log = subprocess.run(["git", "log", "--since=7 days ago", "--reverse", "--format=%H %cI", "HEAD", "--", "app/data.json"],
+                             cwd=ROOT, capture_output=True, text=True).stdout.split("\n")
+        base = None
+        for line in filter(None, log):
+            sha, t0 = line.split()
+            size = int(subprocess.run(["git", "cat-file", "-s", f"{sha}:app/data.json"], cwd=ROOT,
+                                      capture_output=True, text=True).stdout.strip() or 0)
+            if 0 < size < LIMIT_MB * 1e6:
+                base = (size, t0)
+                break
+        if base:
+            then, t0 = base
+            days = (datetime.now(timezone.utc) - datetime.fromisoformat(t0)).total_seconds() / 86400
+            now_b = (APP / "data.json").stat().st_size
+            per_day = (now_b - then) / max(days, 1)
+            if per_day > 0:
+                left = (WARN_MB * 1e6 - now_b) / per_day
+                if left < 14:
+                    r.warn("data.json growth", f"{now_b / 1e6:.1f} MB, growing {per_day / 1e6:.2f} MB/day: reaches 15 MB in about {max(left, 0):.0f} days")
+    except Exception:  # noqa: BLE001 - only an early warning
+        pass
 
 
 def _sha(p: Path) -> str:
