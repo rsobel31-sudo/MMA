@@ -400,6 +400,13 @@
   },
   {
    "system": "meta",
+   "division": "Light Heavyweight",
+   "rank": "15",
+   "name": "Abdul-Rakhman Yakhyaev",
+   "wiki": "https://en.wikipedia.org/wiki/Abdul-Rakhman_Yakhyaev"
+  },
+  {
+   "system": "meta",
    "division": "Middleweight",
    "rank": "C",
    "name": "Sean Strickland",
@@ -2506,6 +2513,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-10-23",
+ "fetched": "2026-10-24",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }

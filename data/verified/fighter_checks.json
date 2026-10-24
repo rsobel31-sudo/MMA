@@ -99,7 +99,7 @@
 },
 "Abdul-Kareem Al-Selwady": {
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Abdul-Kerim Edilov": {
 "dob": "Sherdog + UFCStats agree",
@@ -5548,6 +5548,8 @@
 "stats_official": "1"
 },
 "Elias Garcia": {
+"dob": "disputed: Sherdog 1986-03-08, UFCStats 1992-09-13",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -6424,6 +6426,12 @@
 "stats_verified": "1"
 },
 "George Allen": {
+"stats_official": "1"
+},
+"George Hardwick": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "George Mangos": {
@@ -9305,6 +9313,8 @@
 "stats_official": "5"
 },
 "Jordan Vucenic": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "1"
@@ -9756,6 +9766,8 @@
 "stats_official": "1"
 },
 "Juancamilo Ronderos": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "1",
 "stats_verified": "1"
@@ -17625,6 +17637,8 @@
 "stats_verified": "7"
 },
 "Theo Haig": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
 "stats_official": "1"
 },

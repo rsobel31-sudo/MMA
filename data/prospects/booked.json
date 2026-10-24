@@ -23,6 +23,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
  },
+ "https://www.sherdog.com/fighter/Ivan-Gnizditskiy-291329": {
+  "date": "2026-12-05",
+  "event": "UFC Fight Night 296 - Riyadh",
+  "name": "Ivan Gnizditskiy",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-296-Riyadh-114777",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
+ },
  "https://www.sherdog.com/fighter/Joel-Faglier-325449": {
   "date": "2026-10-17",
   "event": "UFC Fight Night 291 - Buckley vs. Malott",
