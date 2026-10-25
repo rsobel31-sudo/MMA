@@ -1,0 +1,433 @@
+{
+ "id": "2026-10-24-ufc-333-volkanovski-vs-evloev",
+ "event": "UFC 333 - Volkanovski vs. Evloev",
+ "date": "2026-10-24",
+ "stories": {},
+ "coverage": {
+  "alexander-volkanovski-movsar-evloev": {
+   "a": "Alexander Volkanovski",
+   "b": "Movsar Evloev",
+   "winner": "Alexander Volkanovski",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/517228/ufc-333-results-volkanovski-vs-evloev"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/kevin-vallejos/kevin-vallejos-explains-why-he-wants-alexander-volkanovski-to-win-at-ufc-333/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=kevin-vallejos-explains-why-he-wants-alexander-volkanovski-to-win-at-ufc-333"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Evloev",
+     "10-9 Evloev",
+     "10-9 Evloev"
+    ]
+   ],
+   "closeness": "from behind"
+  },
+  "petr-yan-merab-dvalishvili": {
+   "a": "Petr Yan",
+   "b": "Merab Dvalishvili",
+   "winner": "Petr Yan",
+   "method": "DEC",
+   "round": 5,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/raf-wrestling/517241/arman-tsarukyan-steps-on-dillon-danis-after-shutout-victory-in-raf-14-main-event"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/raf-wrestling/516898/raf-14-results-tsarukyan-vs-danis"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/merab-dvalishvili/merab-dvalishvili-is-open-to-defending-against-song-yadong-if-he-wins-at-ufc-333/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=merab-dvalishvili-is-open-to-defending-against-song-yadong-if-he-wins-at-ufc-333"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Dvalishvili",
+     "10-9 Dvalishvili",
+     "10-9 Dvalishvili"
+    ],
+    [
+     2,
+     "10-9 Dvalishvili",
+     "10-9 Dvalishvili",
+     "10-9 Dvalishvili"
+    ],
+    [
+     3,
+     "10-9 Yan",
+     "10-9 Yan",
+     "10-9 Yan"
+    ],
+    [
+     4,
+     "10-9 Yan",
+     "10-9 Yan",
+     "10-9 Yan"
+    ],
+    [
+     5,
+     "10-9 Yan",
+     "10-9 Yan",
+     "10-9 Yan"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "lone-er-kavanagh-ramazonbek-temirov": {
+   "a": "Lone'er Kavanagh",
+   "b": "Ramazonbek Temirov",
+   "winner": "Lone'er Kavanagh",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "alexander-volkov-rizvan-kuniev": {
+   "a": "Alexander Volkov",
+   "b": "Rizvan Kuniev",
+   "winner": "Alexander Volkov",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-victory-never-doubt-alexander-volkov-tops-rizvan-kuniev/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Volkov",
+     "10-9 Vokov",
+     "10-9 Volkov"
+    ],
+    [
+     2,
+     "10-9 Volkov",
+     "10-9 Volkov",
+     "10-9 Volkov"
+    ],
+    [
+     3,
+     "10-9 Volkov",
+     "10-9 Volkov",
+     "10-9 Volkov"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "aaron-pico-losene-keita": {
+   "a": "Aaron Pico",
+   "b": "Losene Keita",
+   "winner": "Aaron Pico",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "dominick-reyes-azamat-murzakanov": {
+   "a": "Dominick Reyes",
+   "b": "Azamat Murzakanov",
+   "winner": "Dominick Reyes",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "abdul-rakhman-yakhyaev-nikita-krylov": {
+   "a": "Abdul-Rakhman Yakhyaev",
+   "b": "Nikita Krylov",
+   "winner": "Abdul-Rakhman Yakhyaev",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/24/abdul-rakhman-yakhyaev-stops-nikita-krylov-with-brutal-first-round-tko/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "abus-magomedov-cameron-rowston": {
+   "a": "Abus Magomedov",
+   "b": "Cameron Rowston",
+   "winner": "Abus Magomedov",
+   "method": "SUB",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "grant-dawson-nurullo-aliev": {
+   "a": "Grant Dawson",
+   "b": "Nurullo Aliev",
+   "winner": "Grant Dawson",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-grant-dawson-serves-up-nurullo-alievs-first-loss/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "9-9 Tyler",
+     "9-9 Mike"
+    ],
+    [
+     2,
+     "10-9 Dawson",
+     "10-9 Dawson",
+     "10-9 Dawson"
+    ],
+    [
+     3,
+     "10-9 Dawson",
+     "10-9 Dawson",
+     "10-9 Dawson"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "colby-thicknesse-asaf-chopurov": {
+   "a": "Colby Thicknesse",
+   "b": "Asaf Chopurov",
+   "winner": "Colby Thicknesse",
+   "method": "S-DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-colby-thicknesse-turns-back-debuting-asaf-chopurov/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Chopurov",
+     "10-9 Chopurov",
+     "10-9 Chopurov"
+    ],
+    [
+     2,
+     "10-9 Thicknesse",
+     "10-9 Thicknesse",
+     "10-9 Thicknesse"
+    ],
+    [
+     3,
+     "10-9 Chopurov",
+     "10-9 Chopurov",
+     "10-9 Chopurov"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "abubakar-vagaev-jacob-malkoun": {
+   "a": "Abubakar Vagaev",
+   "b": "Jacob Malkoun",
+   "winner": "Abubakar Vagaev",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Malkoun",
+     "10-9 Malkoun",
+     "10-9 Malkoun"
+    ],
+    [
+     2,
+     "10-9 Vagaev",
+     "10-9 Vagaev",
+     "10-9 Vagaev"
+    ],
+    [
+     3,
+     "10-9 Malkoun",
+     "10-9 Malkoun",
+     "10-9 Malkoun"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "daniel-santos-bolaji-oki": {
+   "a": "Daniel Santos",
+   "b": "Bolaji Oki",
+   "winner": "Daniel Santos",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Oki",
+     "10-9 Oki",
+     "10-9 Oki"
+    ],
+    [
+     2,
+     "10-9 Santos",
+     "10-9 Santos",
+     "10-9 Santos"
+    ],
+    [
+     3,
+     "10-9 Oki",
+     "10-9 Oki",
+     "10-9 Oki"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "kody-steele-noah-gugnon": {
+   "a": "Kody Steele",
+   "b": "Noah Gugnon",
+   "winner": "Kody Steele",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/24/kody-steele-brutally-knocks-out-noah-gugnon-calls-for-100k-bonus/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "iasmin-lucindo-nicolle-caliari": {
+   "a": "Iasmin Lucindo",
+   "b": "Nicolle Caliari",
+   "winner": "Iasmin Lucindo",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Lucindo",
+     "10-9 Lucindo",
+     "10-9 Lucindo"
+    ],
+    [
+     2,
+     "10-9 Lucindo",
+     "10-9 Lucindo",
+     "10-9 Lucindo"
+    ],
+    [
+     3,
+     "10-9 Lucindo",
+     "10-9 Lucindo",
+     "10-9 Lucindo"
+    ]
+   ],
+   "closeness": "clear"
+  }
+ }
+}

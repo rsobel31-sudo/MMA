@@ -13757,6 +13757,8 @@
 "stats_verified": "4"
 },
 "Nasrudin Nasrudinov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14371,6 +14373,8 @@
 "stats_official": "7"
 },
 "Paddy McCorry": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14687,8 +14691,10 @@
 "stats_official": "3"
 },
 "Peter Danesoe": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Peter Petties": {
 "dob": "Sherdog + UFCStats agree",
@@ -16932,6 +16938,8 @@
 "stats_official": "5"
 },
 "Shimon Smotritsky": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -17018,7 +17026,7 @@
 },
 "Sim Kai Xiong": {
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Simeon Thoresen": {
 "dob": "Sherdog + UFCStats agree",

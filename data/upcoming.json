@@ -1,216 +1,11 @@
 {
- "fetched": "2026-10-24",
+ "fetched": "2026-10-25",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
-   "name": "UFC 333: Volkanovski vs. Evloev",
-   "date": "2026-10-24",
-   "venue": "Etihad Arena",
-   "location": "Abu Dhabi, United Arab Emirates",
-   "url": "https://en.wikipedia.org/wiki/UFC_333",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Main card",
-     "weight_class": "Featherweight",
-     "a": "Alexander Volkanovski",
-     "b": "Movsar Evloev",
-     "title": true,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 5,
-     "main_event": true
-    },
-    {
-     "order": 1,
-     "segment": "Main card",
-     "weight_class": "Bantamweight",
-     "a": "Petr Yan",
-     "b": "Merab Dvalishvili",
-     "title": true,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 5,
-     "main_event": false
-    },
-    {
-     "order": 2,
-     "segment": "Main card",
-     "weight_class": "Flyweight",
-     "a": "Lone'er Kavanagh",
-     "b": "Ramazan Temirov",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Main card",
-     "weight_class": "Heavyweight",
-     "a": "Alexander Volkov",
-     "b": "Rizvan Kuniev",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 4,
-     "segment": "Main card",
-     "weight_class": "Featherweight",
-     "a": "Aaron Pico",
-     "b": "Losene Keita",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 5,
-     "segment": "Preliminary card",
-     "weight_class": "Light Heavyweight",
-     "a": "Azamat Murzakanov",
-     "b": "Dominick Reyes",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 6,
-     "segment": "Preliminary card",
-     "weight_class": "Light Heavyweight",
-     "a": "Nikita Krylov",
-     "b": "Abdul-Rakhman Yakhyaev",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 7,
-     "segment": "Preliminary card",
-     "weight_class": "Middleweight",
-     "a": "Abusupiyan Magomedov",
-     "b": "Cameron Rowston",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Grant Dawson",
-     "b": "Nurullo Aliev",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 9,
-     "segment": "Early preliminary card",
-     "weight_class": "Bantamweight",
-     "a": "Colby Thicknesse",
-     "b": "Asaf Chopurov",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Early preliminary card",
-     "weight_class": "Middleweight",
-     "a": "Abubakar Vagaev",
-     "b": "Jacob Malkoun",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 11,
-     "segment": "Early preliminary card",
-     "weight_class": "Featherweight",
-     "a": "Bolaji Oki",
-     "b": "Daniel Santos",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Early preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Kody Steele",
-     "b": "Noah Gugnon",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 13,
-     "segment": "Early preliminary card",
-     "weight_class": "Catchweight (120.5 lb)",
-     "a": "Iasmin Lucindo",
-     "b": "Nicolle Caliari",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    }
-   ]
-  },
-  {
    "name": "UFC Fight Night: Moicano vs. Nolan",
    "date": "2026-10-31",
-   "venue": "[ 19 ]",
+   "venue": "[ 20 ]",
    "location": "",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
    "bouts": [
@@ -231,6 +26,20 @@
     {
      "order": 1,
      "segment": "Fight card",
+     "weight_class": "Welterweight",
+     "a": "Randy Brown",
+     "b": "Jacobe Smith",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Fight card",
      "weight_class": "Women's Bantamweight",
      "a": "Yana Santos",
      "b": "Luana Santos",
@@ -243,7 +52,35 @@
      "main_event": false
     },
     {
-     "order": 2,
+     "order": 3,
+     "segment": "Fight card",
+     "weight_class": "Flyweight",
+     "a": "Ode' Osbourne",
+     "b": "Cody Durden",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 4,
+     "segment": "Fight card",
+     "weight_class": "Middleweight",
+     "a": "Zachary Reese",
+     "b": "Mickey Gall",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 5,
      "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Jean-Paul Lebosnoyani",
@@ -257,8 +94,22 @@
      "main_event": false
     },
     {
-     "order": 3,
-     "segment": "Preliminary card",
+     "order": 6,
+     "segment": "Fight card",
+     "weight_class": "Featherweight",
+     "a": "Francis Marshall",
+     "b": "Dakota Hope",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 7,
+     "segment": "Fight card",
      "weight_class": "Middleweight",
      "a": "Azamat Bekoev",
      "b": "Andre Petroski",
@@ -271,8 +122,8 @@
      "main_event": false
     },
     {
-     "order": 4,
-     "segment": "Preliminary card",
+     "order": 8,
+     "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Rodrigo Sezinando",
      "b": "Theodor Berggren",
@@ -285,8 +136,8 @@
      "main_event": false
     },
     {
-     "order": 5,
-     "segment": "Preliminary card",
+     "order": 9,
+     "segment": "Fight card",
      "weight_class": "Featherweight",
      "a": "Julian Erosa",
      "b": "Lee Jeong-yeong",
@@ -299,8 +150,8 @@
      "main_event": false
     },
     {
-     "order": 6,
-     "segment": "Preliminary card",
+     "order": 10,
+     "segment": "Fight card",
      "weight_class": "Middleweight",
      "a": "Nick Klein",
      "b": "Joseph Kropschot",
@@ -313,8 +164,8 @@
      "main_event": false
     },
     {
-     "order": 7,
-     "segment": "Preliminary card",
+     "order": 11,
+     "segment": "Fight card",
      "weight_class": "Women's Strawweight",
      "a": "Talita Alencar",
      "b": "Piera Rodriguez",
@@ -327,8 +178,8 @@
      "main_event": false
     },
     {
-     "order": 8,
-     "segment": "Preliminary card",
+     "order": 12,
+     "segment": "Fight card",
      "weight_class": "Women's Bantamweight",
      "a": "Lucia Szabov\u00e1",
      "b": "Tainara Lisboa",
@@ -337,50 +188,6 @@
      "decided": false,
      "round": "",
      "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 9,
-     "segment": "Announced",
-     "weight_class": "Featherweight",
-     "a": "Francis Marshall",
-     "b": "Dakota Hope",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Announced",
-     "weight_class": "Flyweight",
-     "a": "Ode' Osbourne",
-     "b": "Cody Durden",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 11,
-     "segment": "Announced",
-     "weight_class": "Welterweight",
-     "a": "Randy Brown",
-     "b": "Jacobe Smith",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Announced",
-     "weight_class": "Middleweight",
-     "a": "Mickey Gall",
-     "b": "Zachary Reese",
-     "title": false,
-     "result": "",
      "rounds": 3,
      "main_event": false
     }
@@ -452,9 +259,9 @@
     {
      "order": 4,
      "segment": "Fight card",
-     "weight_class": "Light Heavyweight",
-     "a": "Billy Elekana",
-     "b": "Lucas Fernando",
+     "weight_class": "Middleweight",
+     "a": "Mantas Kondratavi\u010dius",
+     "b": "Wesley Schultz",
      "title": false,
      "result": "",
      "decided": false,
@@ -466,9 +273,9 @@
     {
      "order": 5,
      "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Mantas Kondratavi\u010dius",
-     "b": "Wesley Schultz",
+     "weight_class": "Light Heavyweight",
+     "a": "Billy Elekana",
+     "b": "Lucas Fernando",
      "title": false,
      "result": "",
      "decided": false,
@@ -934,23 +741,93 @@
      "result": "",
      "rounds": 3,
      "main_event": false
+    },
+    {
+     "order": 7,
+     "segment": "Announced",
+     "weight_class": "Flyweight",
+     "a": "Roque Concei\u00e7\u00e3o Moreira Jr.",
+     "b": "Nilson Rojas",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 8,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Ian Machado Garry",
+     "b": "Yaroslav Amosov",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 9,
+     "segment": "Announced",
+     "weight_class": "Women's Strawweight",
+     "a": "Angela Hill",
+     "b": "Shanelle Dyer",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
   {
-   "name": "UFC 336",
+   "name": "UFC Fight Night 296",
+   "date": "2027-01-16",
+   "venue": "American Airlines Center",
+   "location": "Dallas, Texas, U.S.",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
+   "bouts": []
+  },
+  {
+   "name": "UFC 336: Van vs. Kape",
    "date": "2027-01-30",
    "venue": "Scotiabank Arena",
    "location": "Toronto, Ontario, Canada",
    "url": "https://en.wikipedia.org/wiki/UFC_336",
-   "bouts": []
+   "bouts": [
+    {
+     "order": 0,
+     "segment": "Fight card",
+     "weight_class": "Flyweight",
+     "a": "Joshua Van",
+     "b": "Manel Kape",
+     "title": true,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 5,
+     "main_event": true
+    },
+    {
+     "order": 1,
+     "segment": "Fight card",
+     "weight_class": "Welterweight",
+     "a": "Carlos Prates",
+     "b": "Michael Morales",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    }
+   ]
   },
   {
-   "name": "UFC Fight Night 296",
+   "name": "UFC Fight Night 297",
    "date": "2027-02-07",
    "venue": "Afterpay Arena",
    "location": "Sydney, Australia",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_297",
    "bouts": []
   }
  ]
