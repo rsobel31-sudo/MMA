@@ -2,7 +2,1309 @@
  "id": "2026-10-24-ufc-333-volkanovski-vs-evloev",
  "event": "UFC 333 - Volkanovski vs. Evloev",
  "date": "2026-10-24",
- "stories": {},
+ "stories": {
+  "alexander-volkanovski-movsar-evloev": {
+   "summary": "Evloev won the first round on all three Sherdog cards with three takedowns, though Volkanovski stood up from each almost at once and kept landing low kicks and right hands. In round 2 Volkanovski reversed a takedown into top position, then rocked Evloev with a left hook and a combination; Evloev turned away to his back and Volkanovski poured on right hands until Goddard stopped it at 4:54, Evloev's first loss in 21 fights. Volkanovski said afterwards he had fought sick.",
+   "turning_point": "Round 2: Volkanovski switched off Evloev's takedown and ended up on top; from then Evloev stopped wrestling and was hurt standing.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Evloev",
+       "10-9 Evloev",
+       "10-9 Evloev"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-333-fight-card-start-time-live-stream-volkanovski-vs-evloev/481925/dana-white-reacts-to-absolute-stud-alexander-volkanovskis-ufc-333-win-just-f-king-built-different"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-333-fight-card-start-time-live-stream-volkanovski-vs-evloev/481590/ufc-333-results-biggest-winners-losers-volkanovski-vs-evloev"
+    },
+    {
+     "outlet": "Uncrowned",
+     "url": "https://sports.yahoo.com/mma/article/alexander-volkanovski-pushes-for-justin-gaethje-retirement-fight-after-ufc-333-win-dana-white-reacts-002230138.html"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Evloev has never finished a UFC opponent; Volkanovski's takedown defence and output win the long fight: decision",
+     "tag": "style",
+     "favoured": "Alexander Volkanovski",
+     "verdict": "mixed",
+     "note": "Getting up and out-working Evloev held; the 'neither finishes' half failed, Volkanovski stopped him in round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Evloev's lack of finishing power",
+     "tag": "power",
+     "favoured": "Alexander Volkanovski",
+     "verdict": "held",
+     "note": "Evloev landed little of note in two rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Volkanovski's takedown defence and pace",
+     "tag": "td_def",
+     "favoured": "Alexander Volkanovski",
+     "verdict": "held",
+     "note": "Conceded three takedowns in round 1 but stood from every one and reversed the next in round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Age 38 (against)",
+     "tag": "age",
+     "favoured": "Movsar Evloev",
+     "verdict": "failed",
+     "note": "The 38-year-old was the stronger, sharper fighter by round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Evloev's chain wrestling (against)",
+     "tag": "wrestling",
+     "favoured": "Movsar Evloev",
+     "verdict": "mixed",
+     "note": "Won round 1 with it, but never held Volkanovski down."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Evloev",
+     "tag": "wear_and_tear",
+     "favoured": "Movsar Evloev",
+     "verdict": "failed",
+     "note": "The far more worn champion took Evloev's best and finished him."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Evloev",
+     "tag": "wrestling_rating",
+     "favoured": "Movsar Evloev",
+     "verdict": "mixed",
+     "note": "Evloev completed the takedowns but got no control from them."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Evloev",
+     "tag": "age_curve",
+     "favoured": "Movsar Evloev",
+     "verdict": "failed",
+     "note": "See the read: the older man won clearly."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Evloev",
+     "tag": "wrestling_edge",
+     "favoured": "Movsar Evloev",
+     "verdict": "mixed",
+     "note": "Took round 1 on takedowns, lost the exchange in round 2 when Volkanovski reversed."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Volkanovski",
+     "tag": "striking_rating",
+     "favoured": "Alexander Volkanovski",
+     "verdict": "held",
+     "note": "Won every striking exchange that mattered."
+    }
+   ]
+  },
+  "petr-yan-merab-dvalishvili": {
+   "summary": "Dvalishvili took the first two rounds on every Sherdog card, ducking into takedown after takedown and forcing Yan to spend energy getting up. From round 3 Yan stopped the shots almost entirely, hurt Dvalishvili with body kicks and combinations and swept the last three rounds as the challenger tired: 48-47 on all three official cards. Dvalishvili was credited with a UFC-record 58 takedown attempts, only five of them successful.",
+   "turning_point": "Round 3: Yan's crushing body kick and his takedown defence turned the fight; Dvalishvili was spent by round 5.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Dvalishvili",
+       "10-9 Dvalishvili",
+       "10-9 Dvalishvili"
+      ],
+      [
+       2,
+       "10-9 Dvalishvili",
+       "10-9 Dvalishvili",
+       "10-9 Dvalishvili"
+      ],
+      [
+       3,
+       "10-9 Yan",
+       "10-9 Yan",
+       "10-9 Yan"
+      ],
+      [
+       4,
+       "10-9 Yan",
+       "10-9 Yan",
+       "10-9 Yan"
+      ],
+      [
+       5,
+       "10-9 Yan",
+       "10-9 Yan",
+       "10-9 Yan"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/merab-dvalishvili-humble-ufc-333-011028216.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/517738/ufc-333-post-fight-show-reaction-to-alexander-volkanovski-petr-yans-impressive-title-defenses"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Yan's takedown defence beat Dvalishvili's chain wrestling in the rematch and Yan lands the heavier shots: decision",
+     "tag": "td_def",
+     "favoured": "Petr Yan",
+     "verdict": "held",
+     "note": "Five takedowns from 58 attempts, and none in the last three rounds; Yan's shots were the heavier ones. Decision, as picked."
+    },
+    {
+     "by": "read",
+     "claim": "Yan's takedown defence in the rematch",
+     "tag": "td_def",
+     "favoured": "Petr Yan",
+     "verdict": "held",
+     "note": "Gave up takedowns early but always stood, then stuffed everything from round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Yan's back surgery and layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Merab Dvalishvili",
+     "verdict": "failed",
+     "note": "Yan was the stronger fighter late in a five-round fight."
+    },
+    {
+     "by": "read",
+     "claim": "Dvalishvili's pace",
+     "tag": "cardio",
+     "favoured": "Merab Dvalishvili",
+     "verdict": "mixed",
+     "note": "Won rounds 1 and 2 on volume, but was spent by round 5."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Dvalishvili",
+     "tag": "wrestling_rating",
+     "favoured": "Merab Dvalishvili",
+     "verdict": "mixed",
+     "note": "His takedowns won the first two rounds and then stopped working."
+    }
+   ]
+  },
+  "lone-er-kavanagh-ramazonbek-temirov": {
+   "summary": "Temirov came out throwing a spinning back kick and big overhand rights, but swung and missed often while Kavanagh stuck to his jab, hit the body and slipped the return fire. By the late minutes Temirov's right eye was swelling shut; Kavanagh dazed him with a left uppercut, dropped him and finished with lefts on the floor at 4:28 of round 1.",
+   "turning_point": "Kavanagh's jab closing Temirov's right eye, which set up the left uppercut.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Eleven of Temirov's wins came in round one; Kavanagh has been knocked out by one counter right: KO R1",
+     "tag": "power",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "A round-one knockout, but Kavanagh's."
+    },
+    {
+     "by": "read",
+     "claim": "Kavanagh's chin",
+     "tag": "durability",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Kavanagh took several of Temirov's overhand rights without trouble."
+    },
+    {
+     "by": "read",
+     "claim": "Temirov's first-round power",
+     "tag": "power",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Swung big and mostly missed."
+    },
+    {
+     "by": "read",
+     "claim": "Temirov's suspension layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Lone'er Kavanagh",
+     "verdict": "mixed",
+     "note": "Temirov's timing looked off, but Kavanagh's movement made him miss too."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Temirov",
+     "tag": "outside_rating",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Stopped in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Temirov",
+     "tag": "striking_rating",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Out-jabbed, swollen and knocked down."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Temirov",
+     "tag": "overall",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Lost inside a round."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Temirov",
+     "tag": "power_vs_chin",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Kavanagh's was the power that showed."
+    },
+    {
+     "by": "model",
+     "claim": "Striking defence favours Temirov",
+     "tag": "striking_defense",
+     "favoured": "Ramazonbek Temirov",
+     "verdict": "failed",
+     "note": "Hit with the jab all round and finished."
+    }
+   ],
+   "single_source": true
+  },
+  "alexander-volkov-rizvan-kuniev": {
+   "summary": "Volkov started slowly, then took over with his jab, body kicks and calf kicks, and won the clinch exchanges as well; Kuniev's best moments were a Superman punch in round 2 and a burst at the start of round 3. Volkov's kicks had Kuniev hobbling and switching stances, and late in round 3 he sprawled on a takedown, took the back and hunted a choke to the bell: a unanimous decision (29-28, 30-27, 30-27), 30-27 on every Sherdog card.",
+   "turning_point": "The calf kicks in round 3, which took Kuniev's lead leg and his last push.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Volkov",
+       "10-9 Vokov",
+       "10-9 Volkov"
+      ],
+      [
+       2,
+       "10-9 Volkov",
+       "10-9 Volkov",
+       "10-9 Volkov"
+      ],
+      [
+       3,
+       "10-9 Volkov",
+       "10-9 Volkov",
+       "10-9 Volkov"
+      ]
+     ]
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-victory-never-doubt-alexander-volkov-tops-rizvan-kuniev/"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Volkov's range against a slow starter; Kuniev has never been finished: decision",
+     "tag": "style",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "Range won every round and it went the distance."
+    },
+    {
+     "by": "read",
+     "claim": "Kuniev's slow starts",
+     "tag": "pace",
+     "favoured": "Alexander Volkov",
+     "verdict": "mixed",
+     "note": "Kuniev lost round 1, but it was Volkov who started slowly; Kuniev's busiest spell was the start of round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Volkov's range",
+     "tag": "reach",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "The jab and kicks decided it."
+    },
+    {
+     "by": "read",
+     "claim": "Kuniev's clinch and knees (against)",
+     "tag": "clinch",
+     "favoured": "Rizvan Kuniev",
+     "verdict": "failed",
+     "note": "Volkov controlled the clinch."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Kuniev",
+     "tag": "wear_and_tear",
+     "favoured": "Rizvan Kuniev",
+     "verdict": "failed",
+     "note": "The 38-year-old veteran was the stronger man in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Volkov",
+     "tag": "overall",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "Won all three rounds on Sherdog's cards."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Volkov",
+     "tag": "striking_rating",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "Out-landed him at range."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Volkov",
+     "tag": "wrestling_rating",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "Stopped Kuniev's shots and took his back late."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Volkov",
+     "tag": "outside_rating",
+     "favoured": "Alexander Volkov",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "aaron-pico-losene-keita": {
+   "summary": "Pico shot a high-crotch single straight away and took Keita down in open space. Keita stood and landed a left, but Pico answered with a one-two and dropped him with a right cross, finishing with punches on the floor at 1:14 of round 1: the first real stoppage loss of Keita's career.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Pico's wrestling against a striker who has never faced it; he builds the fight and keeps his chin out of Keita's power: decision",
+     "tag": "wrestling",
+     "favoured": "Aaron Pico",
+     "verdict": "mixed",
+     "note": "The takedown came first, as expected, but the fight ended on Pico's right hand inside 75 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Pico's wrestling vs Keita's untested defence",
+     "tag": "wrestling",
+     "favoured": "Aaron Pico",
+     "verdict": "held",
+     "note": "Took him down at the first attempt."
+    },
+    {
+     "by": "read",
+     "claim": "Keita's short turnaround",
+     "tag": "short_notice",
+     "favoured": "Aaron Pico",
+     "verdict": "untested",
+     "note": "Over in 74 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Pico's durability (against)",
+     "tag": "durability",
+     "favoured": "Losene Keita",
+     "verdict": "untested",
+     "note": "Keita landed one left hand."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Pico",
+     "tag": "wrestling_edge",
+     "favoured": "Aaron Pico",
+     "verdict": "held",
+     "note": "An easy first takedown."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Keita",
+     "tag": "wear_and_tear",
+     "favoured": "Losene Keita",
+     "verdict": "failed",
+     "note": "Keita was the one who couldn't take the shot."
+    },
+    {
+     "by": "model",
+     "claim": "Striking defence favours Keita",
+     "tag": "striking_defense",
+     "favoured": "Losene Keita",
+     "verdict": "failed",
+     "note": "Dropped by a straight right."
+    }
+   ],
+   "single_source": true
+  },
+  "dominick-reyes-azamat-murzakanov": {
+   "summary": "Reyes used his height and reach from the start, kicking Murzakanov's legs as he stalked forward. Murzakanov landed one sharp one-two, but Reyes staggered him with a head kick, dropped him with a left hand and finished with punches at 2:40 of round 1.",
+   "turning_point": "The head kick at range, the weapon Murzakanov couldn't reach.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Reyes has been stopped four times, twice in round one; Murzakanov's one-shot power: KO R1",
+     "tag": "durability",
+     "favoured": "Azamat Murzakanov",
+     "verdict": "failed",
+     "note": "Decided early, as expected, but by Reyes."
+    },
+    {
+     "by": "read",
+     "claim": "Reyes's durability",
+     "tag": "durability",
+     "favoured": "Azamat Murzakanov",
+     "verdict": "untested",
+     "note": "Murzakanov landed only one clean combination."
+    },
+    {
+     "by": "read",
+     "claim": "Reach and kicks at range (against)",
+     "tag": "reach",
+     "favoured": "Dominick Reyes",
+     "verdict": "held",
+     "note": "Leg kicks, then the head kick that ended it."
+    },
+    {
+     "by": "read",
+     "claim": "Murzakanov's first loss",
+     "tag": "form",
+     "favoured": "Azamat Murzakanov",
+     "verdict": "failed",
+     "note": "Stopped in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Murzakanov",
+     "tag": "wear_and_tear",
+     "favoured": "Azamat Murzakanov",
+     "verdict": "failed",
+     "note": "The more worn Reyes won in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Murzakanov",
+     "tag": "power_vs_chin",
+     "favoured": "Azamat Murzakanov",
+     "verdict": "failed",
+     "note": "Murzakanov was the one knocked out."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Reyes",
+     "tag": "reach",
+     "favoured": "Dominick Reyes",
+     "verdict": "held",
+     "note": "See the read."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Reyes",
+     "tag": "height",
+     "favoured": "Dominick Reyes",
+     "verdict": "held",
+     "note": "The head kick came from the taller man."
+    }
+   ],
+   "single_source": true
+  },
+  "abdul-rakhman-yakhyaev-nikita-krylov": {
+   "summary": "Krylov came forward behind stomps and a right hand and pinned the unbeaten Yakhyaev on the fence, hunting takedowns and trips. Yakhyaev held his balance, turned it around and jumped on a deep guillotine; when Krylov survived it he took the back, landed a knee to the head and punched until Herzog stopped it at 2:38 of round 1.",
+   "turning_point": "Yakhyaev's guillotine: from there Krylov was defending, not attacking.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/24/abdul-rakhman-yakhyaev-stops-nikita-krylov-with-brutal-first-round-tko/"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "All of Yakhyaev's UFC and Contender Series wins came in round one; Krylov was knocked out in round one twice in 2025: R1",
+     "tag": "durability",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "TKO at 2:38 of round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Krylov's durability",
+     "tag": "durability",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "Stopped by a knee and punches."
+    },
+    {
+     "by": "read",
+     "claim": "Yakhyaev untested late",
+     "tag": "cardio",
+     "favoured": "Nikita Krylov",
+     "verdict": "untested",
+     "note": "Over in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Yakhyaev",
+     "tag": "wear_and_tear",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "Krylov couldn't take the knee."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Yakhyaev",
+     "tag": "submission_threat",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "The guillotine nearly ended it."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Yakhyaev",
+     "tag": "power_vs_chin",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "Finished with strikes."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Yakhyaev",
+     "tag": "wrestling_edge",
+     "favoured": "Abdul-Rakhman Yakhyaev",
+     "verdict": "held",
+     "note": "Stopped Krylov's takedowns on the fence and took the back."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Krylov",
+     "tag": "experience",
+     "favoured": "Nikita Krylov",
+     "verdict": "failed",
+     "note": "The veteran was out-grappled and finished."
+    }
+   ]
+  },
+  "abus-magomedov-cameron-rowston": {
+   "summary": "Magomedov walked Rowston down with wide hooks and chopped at his lead leg, and Rowston kept falling short with his punches. Rowston dived for a takedown, Magomedov caught the neck in a guillotine, held it through several scrambles and choked him unconscious at 1:44 of round 1.",
+   "turning_point": "Rowston's takedown attempt into the guillotine.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Magomedov wins early and then breaks under pressure; if Rowston survives the early submissions he wins later: decision",
+     "tag": "cardio",
+     "favoured": "Cameron Rowston",
+     "verdict": "failed",
+     "note": "Rowston didn't survive the early danger; the fade was never tested."
+    },
+    {
+     "by": "read",
+     "claim": "Magomedov's grappling",
+     "tag": "grappling",
+     "favoured": "Abus Magomedov",
+     "verdict": "held",
+     "note": "Choked him out from a guillotine."
+    },
+    {
+     "by": "read",
+     "claim": "Magomedov fades under pressure (against)",
+     "tag": "cardio",
+     "favoured": "Cameron Rowston",
+     "verdict": "untested",
+     "note": "Over in 104 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Rowston's streak",
+     "tag": "form",
+     "favoured": "Cameron Rowston",
+     "verdict": "failed",
+     "note": "The streak ended in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Rowston",
+     "tag": "wear_and_tear",
+     "favoured": "Cameron Rowston",
+     "verdict": "failed",
+     "note": "The fresher fighter was finished quickly."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Magomedov",
+     "tag": "wrestling_edge",
+     "favoured": "Abus Magomedov",
+     "verdict": "held",
+     "note": "Rowston's shot was punished."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Magomedov",
+     "tag": "wrestling_rating",
+     "favoured": "Abus Magomedov",
+     "verdict": "held",
+     "note": "See the wrestling edge."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Magomedov",
+     "tag": "outside_rating",
+     "favoured": "Abus Magomedov",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Rowston",
+     "tag": "age_curve",
+     "favoured": "Cameron Rowston",
+     "verdict": "failed",
+     "note": "The older man won in round 1."
+    }
+   ],
+   "single_source": true
+  },
+  "grant-dawson-nurullo-aliev": {
+   "summary": "Aliev started fast, pressing Dawson to the fence, dropping him with a straight left and landing on top, but he lost a point for hammerfists to the back of the head. Dawson took him down late in round 1 and nearly caught a guillotine, then out-wrestled a tiring Aliev for two rounds, five takedowns in all, finishing in full mount with elbows: 29-27 on every official and Sherdog card.",
+   "turning_point": "Dawson's takedown late in round 1 after the point deduction; Aliev was labouring from round 2 on.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "9-9 Tyler",
+       "9-9 Mike"
+      ],
+      [
+       2,
+       "10-9 Dawson",
+       "10-9 Dawson",
+       "10-9 Dawson"
+      ],
+      [
+       3,
+       "10-9 Dawson",
+       "10-9 Dawson",
+       "10-9 Dawson"
+      ]
+     ]
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-grant-dawson-serves-up-nurullo-alievs-first-loss/"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Aliev finishes almost no one, so Dawson's chin is less exposed; Dawson's back takes in scrambles win the close rounds: decision",
+     "tag": "style",
+     "favoured": "Grant Dawson",
+     "verdict": "mixed",
+     "note": "A decision as picked, but Aliev dropped Dawson in round 1, and the rounds were won by takedowns and top control, not back takes."
+    },
+    {
+     "by": "read",
+     "claim": "Aliev's low finishing threat",
+     "tag": "power",
+     "favoured": "Grant Dawson",
+     "verdict": "mixed",
+     "note": "Aliev knocked him down but couldn't follow up."
+    },
+    {
+     "by": "read",
+     "claim": "Wrestler vs wrestler",
+     "tag": "wrestling",
+     "favoured": "Grant Dawson",
+     "verdict": "held",
+     "note": "Dawson won the wrestling clearly from late round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Dawson's back takes",
+     "tag": "grappling",
+     "favoured": "Grant Dawson",
+     "verdict": "mixed",
+     "note": "Top control and mount did the work; no back take."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Aliev",
+     "tag": "wear_and_tear",
+     "favoured": "Nurullo Aliev",
+     "verdict": "failed",
+     "note": "Aliev faded badly from round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Dawson",
+     "tag": "overall",
+     "favoured": "Grant Dawson",
+     "verdict": "held",
+     "note": "Won two rounds clearly plus a point."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Dawson",
+     "tag": "outside_rating",
+     "favoured": "Grant Dawson",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Grappling rating favours Dawson",
+     "tag": "grappling_rating",
+     "favoured": "Grant Dawson",
+     "verdict": "held",
+     "note": "Guillotine threat, mount and ground strikes."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Aliev",
+     "tag": "striking_rating",
+     "favoured": "Nurullo Aliev",
+     "verdict": "mixed",
+     "note": "Aliev won the early exchanges and scored a knockdown, but was out-struck once tired."
+    }
+   ]
+  },
+  "colby-thicknesse-asaf-chopurov": {
+   "summary": "A stop-start fight in the clinch. The unbeaten debutant Chopurov pressed and took round 1 while escaping two Thicknesse guillotines, Thicknesse won round 2 with elbows, knees and combinations, and Chopurov took him down repeatedly in round 3 but kept letting him back up. Sherdog's three scorers all had Chopurov 29-28; two judges gave it to Thicknesse, a split decision.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Chopurov",
+       "10-9 Chopurov",
+       "10-9 Chopurov"
+      ],
+      [
+       2,
+       "10-9 Thicknesse",
+       "10-9 Thicknesse",
+       "10-9 Thicknesse"
+      ],
+      [
+       3,
+       "10-9 Chopurov",
+       "10-9 Chopurov",
+       "10-9 Chopurov"
+      ]
+     ]
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/24/ufc-333-colby-thicknesse-turns-back-debuting-asaf-chopurov/"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Chopurov's pressure should break Thicknesse once the early scrambles are over: KO R2",
+     "tag": "durability",
+     "favoured": "Asaf Chopurov",
+     "verdict": "failed",
+     "note": "Thicknesse was never hurt; it went to a split decision."
+    },
+    {
+     "by": "read",
+     "claim": "Chopurov's pressure and finishing",
+     "tag": "pressure",
+     "favoured": "Asaf Chopurov",
+     "verdict": "mixed",
+     "note": "Pressure and takedowns won rounds 1 and 3 on Sherdog's cards; no finish."
+    },
+    {
+     "by": "read",
+     "claim": "UFC debut (against)",
+     "tag": "debut",
+     "favoured": "Colby Thicknesse",
+     "verdict": "mixed",
+     "note": "Chopurov looked composed but kept letting Thicknesse up from takedowns."
+    },
+    {
+     "by": "read",
+     "claim": "Thicknesse's guard",
+     "tag": "grappling",
+     "favoured": "Colby Thicknesse",
+     "verdict": "held",
+     "note": "Guillotine threats and wrist control kept him safe underneath."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Chopurov",
+     "tag": "overall",
+     "favoured": "Asaf Chopurov",
+     "verdict": "mixed",
+     "note": "Won on Sherdog's cards, lost on the judges'."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Chopurov",
+     "tag": "outside_rating",
+     "favoured": "Asaf Chopurov",
+     "verdict": "mixed",
+     "note": "As above."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Chopurov",
+     "tag": "striking_rating",
+     "favoured": "Asaf Chopurov",
+     "verdict": "failed",
+     "note": "Thicknesse won the striking, clearly so in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Chopurov",
+     "tag": "wrestling_rating",
+     "favoured": "Asaf Chopurov",
+     "verdict": "held",
+     "note": "Took him down repeatedly in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Chopurov",
+     "tag": "wrestling_edge",
+     "favoured": "Asaf Chopurov",
+     "verdict": "held",
+     "note": "Thicknesse's own shots went nowhere."
+    }
+   ]
+  },
+  "abubakar-vagaev-jacob-malkoun": {
+   "summary": "Malkoun boxed behind a stiff jab all fight and won rounds 1 and 3 on every Sherdog card with it. Vagaev landed the harder shots, rattling Malkoun with a left hook and adding takedowns in round 2 and again in round 3, but Malkoun stood quickly each time. Sherdog had Malkoun 29-28; all three judges had Vagaev 29-28.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Malkoun",
+       "10-9 Malkoun",
+       "10-9 Malkoun"
+      ],
+      [
+       2,
+       "10-9 Vagaev",
+       "10-9 Vagaev",
+       "10-9 Vagaev"
+      ],
+      [
+       3,
+       "10-9 Malkoun",
+       "10-9 Malkoun",
+       "10-9 Malkoun"
+      ]
+     ]
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Model, market and pundits all have Vagaev; both win on the mat over three rounds: decision",
+     "tag": "consensus",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "mixed",
+     "note": "The decision and the winner held, but Sherdog's scorers had Malkoun."
+    },
+    {
+     "by": "read",
+     "claim": "Vagaev moving up a division",
+     "tag": "size",
+     "favoured": "Jacob Malkoun",
+     "verdict": "mixed",
+     "note": "Malkoun's jab controlled the range, but Vagaev's power and takedowns carried up."
+    },
+    {
+     "by": "read",
+     "claim": "Vagaev's late-round fade",
+     "tag": "cardio",
+     "favoured": "Jacob Malkoun",
+     "verdict": "failed",
+     "note": "Vagaev was landing the heavier shots in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Malkoun's size (against)",
+     "tag": "size",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "mixed",
+     "note": "Vagaev hit harder; Malkoun still stood up from every takedown."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Vagaev",
+     "tag": "outside_rating",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "mixed",
+     "note": "Won on the official cards, not on Sherdog's."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Malkoun",
+     "tag": "wear_and_tear",
+     "favoured": "Jacob Malkoun",
+     "verdict": "mixed",
+     "note": "Neither faded."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Vagaev",
+     "tag": "overall",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "mixed",
+     "note": "As the Fight Matrix rating."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Vagaev",
+     "tag": "wrestling_rating",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "held",
+     "note": "Reversed Malkoun's single leg and took him down in two rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Vagaev",
+     "tag": "experience",
+     "favoured": "Abubakar Vagaev",
+     "verdict": "mixed",
+     "note": "Nothing in the fight turned on it."
+    }
+   ],
+   "single_source": true
+  },
+  "daniel-santos-bolaji-oki": {
+   "summary": "Oki took round 1 with his jab, body work and a late takedown into side control after escaping a Santos guillotine. Santos won round 2 with a takedown and flurries, and kept chopping the legs in round 3, but Oki doubled him over with a body kick and took him down again. Sherdog had Oki 29-28; all three judges had Santos 29-28.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Oki",
+       "10-9 Oki",
+       "10-9 Oki"
+      ],
+      [
+       2,
+       "10-9 Santos",
+       "10-9 Santos",
+       "10-9 Santos"
+      ],
+      [
+       3,
+       "10-9 Oki",
+       "10-9 Oki",
+       "10-9 Oki"
+      ]
+     ]
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Santos's pressure, low kicks and clinch knees build through a fight; Oki fades after big first rounds: KO R2",
+     "tag": "cardio",
+     "favoured": "Daniel Santos",
+     "verdict": "failed",
+     "note": "Oki didn't fade; he won round 3 on Sherdog's cards and there was no finish."
+    },
+    {
+     "by": "read",
+     "claim": "Oki's first cut to 145",
+     "tag": "weight_cut",
+     "favoured": "Daniel Santos",
+     "verdict": "failed",
+     "note": "Oki looked strong for all three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Santos's weight-cut history",
+     "tag": "weight_cut",
+     "favoured": "Bolaji Oki",
+     "verdict": "untested",
+     "note": "Nothing in the fight showed it."
+    },
+    {
+     "by": "read",
+     "claim": "Both coming off stoppage losses",
+     "tag": "durability",
+     "favoured": "Daniel Santos",
+     "verdict": "untested",
+     "note": "Neither was badly hurt."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Santos",
+     "tag": "outside_rating",
+     "favoured": "Daniel Santos",
+     "verdict": "mixed",
+     "note": "Won on the official cards, not on Sherdog's."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Oki",
+     "tag": "reach",
+     "favoured": "Bolaji Oki",
+     "verdict": "held",
+     "note": "Oki's jab won him rounds 1 and 3 on Sherdog's cards."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Oki",
+     "tag": "wear_and_tear",
+     "favoured": "Bolaji Oki",
+     "verdict": "mixed",
+     "note": "Oki was the busier man late, but lost the decision."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Santos",
+     "tag": "wrestling_rating",
+     "favoured": "Daniel Santos",
+     "verdict": "failed",
+     "note": "Oki out-wrestled him, two takedowns to one."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Santos",
+     "tag": "wrestling_edge",
+     "favoured": "Daniel Santos",
+     "verdict": "failed",
+     "note": "As the wrestling rating."
+    }
+   ],
+   "single_source": true
+  },
+  "kody-steele-noah-gugnon": {
+   "summary": "Gugnon had the better of the opening minutes with a hard jab, leg kicks and a partly blocked head kick, and stopped Steele's early shots. Steele rocked him with a combination, finally got a takedown, and when Gugnon broke free Steele dropped him with a right hand and finished with punches at 3:54 of round 1.",
+   "turning_point": "Steele's combination midway through the round, which left Gugnon hurt for the rest of it.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/24/kody-steele-brutally-knocks-out-noah-gugnon-calls-for-100k-bonus/"
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Gugnon has seen a third round once; Steele, a black belt, can grind if he doesn't get dragged into a brawl: decision",
+     "tag": "style",
+     "favoured": "Kody Steele",
+     "verdict": "failed",
+     "note": "Steele won the brawl in round 1; there was no grind."
+    },
+    {
+     "by": "read",
+     "claim": "Gugnon unproven over three rounds",
+     "tag": "cardio",
+     "favoured": "Kody Steele",
+     "verdict": "untested",
+     "note": "Over in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Steele's withdrawal and brawling habit",
+     "tag": "style",
+     "favoured": "Noah Gugnon",
+     "verdict": "failed",
+     "note": "Steele brawled and won the brawl."
+    }
+   ]
+  },
+  "iasmin-lucindo-nicolle-caliari": {
+   "summary": "Caliari missed weight by 4.5 lb, and Lucindo still out-muscled her: she took Caliari down in every round, smothered her from half guard and side control and cut her open with elbows and a spinning backfist. Caliari's leglock and armbar attempts got her back up a few times but never threatened: 30-27 on every card.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314",
+     "round_scores": [
+      [
+       1,
+       "10-9 Lucindo",
+       "10-9 Lucindo",
+       "10-9 Lucindo"
+      ],
+      [
+       2,
+       "10-9 Lucindo",
+       "10-9 Lucindo",
+       "10-9 Lucindo"
+      ],
+      [
+       3,
+       "10-9 Lucindo",
+       "10-9 Lucindo",
+       "10-9 Lucindo"
+      ]
+     ]
+    }
+   ],
+   "written": "2026-10-25",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Lucindo's clinch strength and takedowns against a grappler who is out-landed on the feet: decision",
+     "tag": "wrestling",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "held",
+     "note": "Takedowns in every round and a clear decision."
+    },
+    {
+     "by": "read",
+     "claim": "Lucindo's strength and top control",
+     "tag": "control",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "held",
+     "note": "Held her down for most of three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Caliari out-landed on the feet",
+     "tag": "striking",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "mixed",
+     "note": "Little of the fight was standing; Caliari's best moments were there."
+    },
+    {
+     "by": "read",
+     "claim": "Lucindo's layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Nicolle Caliari",
+     "verdict": "failed",
+     "note": "No sign of rust."
+    },
+    {
+     "by": "read",
+     "claim": "Caliari's weight miss",
+     "tag": "weight_cut",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "mixed",
+     "note": "The heavier woman was still out-muscled."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Lucindo",
+     "tag": "wrestling_rating",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "held",
+     "note": "Won every wrestling exchange."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Lucindo",
+     "tag": "overall",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "held",
+     "note": "Swept the cards."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Lucindo",
+     "tag": "outside_rating",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Lucindo",
+     "tag": "reach",
+     "favoured": "Iasmin Lucindo",
+     "verdict": "untested",
+     "note": "Fought in the clinch and on the mat."
+    }
+   ],
+   "single_source": true
+  }
+ },
  "coverage": {
   "alexander-volkanovski-movsar-evloev": {
    "a": "Alexander Volkanovski",
@@ -17,14 +1319,19 @@
      "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "MMA Mania",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/517228/ufc-333-results-volkanovski-vs-evloev"
+     "url": "https://www.mmamania.com/ufc-333-fight-card-start-time-live-stream-volkanovski-vs-evloev/481925/dana-white-reacts-to-absolute-stud-alexander-volkanovskis-ufc-333-win-just-f-king-built-different"
     },
     {
-     "outlet": "BJPenn.com",
+     "outlet": "MMA Mania",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/kevin-vallejos/kevin-vallejos-explains-why-he-wants-alexander-volkanovski-to-win-at-ufc-333/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=kevin-vallejos-explains-why-he-wants-alexander-volkanovski-to-win-at-ufc-333"
+     "url": "https://www.mmamania.com/ufc-333-fight-card-start-time-live-stream-volkanovski-vs-evloev/481590/ufc-333-results-biggest-winners-losers-volkanovski-vs-evloev"
+    },
+    {
+     "outlet": "Uncrowned",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/mma/article/alexander-volkanovski-pushes-for-justin-gaethje-retirement-fight-after-ufc-333-win-dana-white-reacts-002230138.html"
     }
    ],
    "round_scores": [
@@ -50,19 +1357,14 @@
      "url": "https://www.sherdog.com/news/news/UFC-333-Volkanovski-vs-Evloev-playbyplay-results-round-scoring-203314"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "MMA Junkie",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/raf-wrestling/517241/arman-tsarukyan-steps-on-dillon-danis-after-shutout-victory-in-raf-14-main-event"
+     "url": "https://sports.yahoo.com/articles/merab-dvalishvili-humble-ufc-333-011028216.html"
     },
     {
      "outlet": "MMA Fighting",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/raf-wrestling/516898/raf-14-results-tsarukyan-vs-danis"
-    },
-    {
-     "outlet": "BJPenn.com",
-     "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/merab-dvalishvili/merab-dvalishvili-is-open-to-defending-against-song-yadong-if-he-wins-at-ufc-333/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=merab-dvalishvili-is-open-to-defending-against-song-yadong-if-he-wins-at-ufc-333"
+     "url": "https://www.mmafighting.com/ufc/517738/ufc-333-post-fight-show-reaction-to-alexander-volkanovski-petr-yans-impressive-title-defenses"
     }
    ],
    "round_scores": [

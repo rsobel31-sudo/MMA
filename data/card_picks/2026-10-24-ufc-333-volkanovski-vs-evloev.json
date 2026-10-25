@@ -1131,10 +1131,25 @@
    },
    "market_p_a": null,
    "result": {
-    "void": "did not take place"
+    "winner": "Iasmin Lucindo",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
    }
   }
  ],
  "graded": true,
- "graded_at": "2026-10-25T16:01:39+00:00"
+ "graded_at": "2026-10-25T16:35:37+00:00"
 }

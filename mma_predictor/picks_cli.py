@@ -332,9 +332,11 @@ def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dic
     decided = [r for r in card if r.get("round")]
     when = date.fromisoformat(week["event_date"])
     out: Dict[str, Optional[P.Result]] = {}
+    apath = Path("data/name_aliases.json")
+    aliases = {k: v for k, v in (json.loads(apath.read_text()) if apath.exists() else {}).items() if not k.startswith("_")}
     for bout in sorted({l["bout"] for b in week["bets"] for l in b["legs"] if not l.get("grade")}):
         a, b = bout.split(" vs ", 1)
-        ka, kb = match_key(a), match_key(b)
+        ka, kb = match_key(aliases.get(a, a)), match_key(aliases.get(b, b))  # "Nicole Caliari" is "Nicolle Caliari" on Wikipedia
         last = lambda k: k.split()[-1:]  # noqa: E731
         toks = lambda k: frozenset(k.split())  # noqa: E731  ("Wang Cong" == "Cong Wang")
         row = next((r for r in card if {match_key(r["a"]), match_key(r["b"])} == {ka, kb}), None) or \
