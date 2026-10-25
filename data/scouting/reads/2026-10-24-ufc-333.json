@@ -253,7 +253,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-volkanovski-evloev-fight-card-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Alexander Volkanovski",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 294
+   }
   },
   {
    "a": "Merab Dvalishvili",
@@ -483,7 +491,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-petr-yan-merab-dvalishvili-3-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Petr Yan",
+   "result": {
+    "method": "DEC",
+    "round": 5,
+    "seconds": 300
+   }
   },
   {
    "a": "Lone'er Kavanagh",
@@ -692,7 +708,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-lone-er-kavanagh-ramazan-temirov-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.1,
+   "winner": "Lone'er Kavanagh",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 268
+   }
   },
   {
    "a": "Alexander Volkov",
@@ -915,7 +939,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-alexander-volkov-rizvan-kuniev-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Alexander Volkov",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Aaron Pico",
@@ -1124,7 +1156,15 @@
      "method": "SUB",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-aaron-pico-losene-keita-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Aaron Pico",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 74
+   }
   },
   {
    "a": "Azamat Murzakanov",
@@ -1263,7 +1303,15 @@
      "method": "KO/TKO",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-azamat-murzakanov-dominick-reyes-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Dominick Reyes",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 160
+   }
   },
   {
    "a": "Abdul-Rakhman Yakhyaev",
@@ -1401,7 +1449,15 @@
      "method": "KO/TKO",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-nikita-krylov-abdul-rakhman-yakhyaev-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Abdul-Rakhman Yakhyaev",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 158
+   }
   },
   {
    "a": "Abus Magomedov",
@@ -1526,7 +1582,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-abus-magomedov-cam-rowston-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Abus Magomedov",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 104
+   }
   },
   {
    "a": "Grant Dawson",
@@ -1672,7 +1736,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-grant-dawson-nurullo-aliev-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Grant Dawson",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Asaf Chopurov",
@@ -1783,7 +1855,15 @@
      "method": "KO/TKO",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-colby-thicknesse-asaf-chopurov-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Colby Thicknesse",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Abubakar Vagaev",
@@ -1908,7 +1988,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-abubakar-vagaev-jacob-malkoun-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.15,
+   "winner": "Abubakar Vagaev",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Bolaji Oki",
@@ -2026,7 +2114,15 @@
      "method": "KO/TKO",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-daniel-santos-bolaji-oki-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Daniel Santos",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Kody Steele",
@@ -2143,7 +2239,15 @@
      "method": "DEC",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-kody-steele-noah-gugnon-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Kody Steele",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 234
+   }
   },
   {
    "a": "Iasmin Lucindo",
@@ -2269,7 +2373,15 @@
      "method": "KO/TKO",
      "url": "https://sports.betmgm.com/en/blog/ufc/333-iasmin-lucindo-nicolle-caliari-predictions-odds-bm05/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Iasmin Lucindo",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   }
  ]
 }

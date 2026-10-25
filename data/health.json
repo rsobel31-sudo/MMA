@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-25T10:54:22+00:00",
+ "checked": "2026-10-25T16:00:49+00:00",
  "ok": true,
  "failed": [],
  "sources": [
@@ -8,7 +8,7 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "17 bouts on a known fighter page",
-   "seconds": 0.9,
+   "seconds": 3.1,
    "last_ok": "2026-10-25"
   },
   {
@@ -32,7 +32,7 @@
    "used_by": "prospects crawl",
    "ok": true,
    "detail": "25 ranked lightweights",
-   "seconds": 1.1,
+   "seconds": 1.2,
    "last_ok": "2026-10-25"
   },
   {
@@ -47,8 +47,8 @@
    "source": "BestFightOdds events",
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
-   "detail": "5 events; UFC Vegas 123: 11 bouts, 9 with FanDuel moneylines",
-   "seconds": 2.4,
+   "detail": "5 events; UFC Vegas 123: 13 bouts, 9 with FanDuel moneylines",
+   "seconds": 2.2,
    "last_ok": "2026-10-25"
   },
   {
@@ -56,7 +56,7 @@
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "15 bouts with lines",
-   "seconds": 2.8,
+   "seconds": 3.1,
    "last_ok": "2026-10-25"
   },
   {
@@ -64,7 +64,7 @@
    "used_by": "upcoming cards, results",
    "ok": true,
    "detail": "9 scheduled UFC events",
-   "seconds": 1.1,
+   "seconds": 1.0,
    "last_ok": "2026-10-25"
   },
   {
@@ -72,7 +72,7 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "651 fighters on the UFC roster",
-   "seconds": 1.9,
+   "seconds": 1.6,
    "last_ok": "2026-10-25"
   },
   {
@@ -80,7 +80,7 @@
    "used_by": "rankings comparison",
    "ok": true,
    "detail": "332 ranked fighters",
-   "seconds": 1.1,
+   "seconds": 0.9,
    "last_ok": "2026-10-25"
   },
   {
@@ -88,7 +88,7 @@
    "used_by": "stat verification",
    "ok": true,
    "detail": "2371 UFC bouts in the sitemap",
-   "seconds": 4.5,
+   "seconds": 4.4,
    "last_ok": "2026-10-25"
   },
   {
@@ -96,7 +96,7 @@
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.4,
+   "seconds": 0.7,
    "last_ok": "2026-10-25"
   },
   {
@@ -120,7 +120,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.4,
+   "seconds": 0.5,
    "last_ok": "2026-10-25"
   },
   {
@@ -128,7 +128,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
+   "seconds": 1.3,
    "last_ok": "2026-10-25"
   },
   {
@@ -144,7 +144,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.6,
    "last_ok": "2026-10-25"
   },
   {
@@ -152,7 +152,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.4,
    "last_ok": "2026-10-25"
   },
   {
@@ -160,7 +160,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
+   "seconds": 1.5,
    "last_ok": "2026-10-25"
   },
   {
@@ -168,15 +168,15 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "19 items, 19 from the last 14 days",
-   "seconds": 0.3,
+   "seconds": 0.4,
    "last_ok": "2026-10-25"
   },
   {
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "19 items, 19 from the last 14 days",
-   "seconds": 0.6,
+   "detail": "22 items, 22 from the last 14 days",
+   "seconds": 0.7,
    "last_ok": "2026-10-25"
   },
   {
@@ -192,7 +192,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 3.1,
+   "seconds": 3.3,
    "last_ok": "2026-10-25"
   },
   {
@@ -200,7 +200,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.8,
+   "seconds": 3.3,
    "last_ok": "2026-10-25"
   }
  ]

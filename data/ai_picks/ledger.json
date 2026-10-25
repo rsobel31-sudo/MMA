@@ -372,7 +372,15 @@
        "selection": "Goes to decision",
        "odds": -225,
        "p": 0.7081,
-       "p_fanduel": 0.6531
+       "p_fanduel": 0.6531,
+       "close_odds": -250,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 2,
+        "seconds": 294
+       }
       }
      ],
      "odds": -225,
@@ -382,9 +390,10 @@
      "p": 0.7081,
      "ev": 0.0228,
      "reasoning": "Volkanovski-Evloev to go to decision at -225 (65% implied, 71% ours). Evloev has never finished a UFC opponent and said this month he will try to win over five rounds rather than chase a finish; Volkanovski's two knockout losses came against elite power punchers, which Evloev is not, and Volkanovski's own finishes against wrestlers are rare.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-23T16:12:00+00:00"
+     "status": "lost",
+     "profit": -1.5,
+     "placed_at": "2026-10-23T16:12:00+00:00",
+     "clv": 0.0317
     },
     {
      "id": "4-2",
@@ -400,7 +409,15 @@
        "selection": "Goes to decision",
        "odds": -320,
        "p": 0.7785,
-       "p_fanduel": 0.7123
+       "p_fanduel": 0.7123,
+       "close_odds": -300,
+       "grade": "won",
+       "result": {
+        "winner": "b",
+        "method": "DEC",
+        "round": 5,
+        "seconds": 300
+       }
       }
      ],
      "odds": -320,
@@ -410,9 +427,10 @@
      "p": 0.7785,
      "ev": 0.0218,
      "reasoning": "Yan-Dvalishvili to go to decision at -320 (71% implied, 78% ours). Neither man has ever been finished, their two fights went 15 and 25 minutes, and Dvalishvili's volume wrestling and Yan's patient boxing both suit a long fight.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-23T16:12:00+00:00"
+     "status": "won",
+     "profit": 0.46,
+     "placed_at": "2026-10-23T16:12:00+00:00",
+     "clv": -0.0156
     },
     {
      "id": "4-3",
@@ -429,7 +447,15 @@
        "selection": "Aaron Pico by decision",
        "odds": 310,
        "p": 0.3037,
-       "p_fanduel": 0.2117
+       "p_fanduel": 0.2117,
+       "close_odds": 310,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 1,
+        "seconds": 74
+       }
       }
      ],
      "odds": 310,
@@ -439,14 +465,15 @@
      "p": 0.3037,
      "ev": 0.2452,
      "reasoning": "Pico by decision at +310 (21% implied, 30% ours). Pico's path is wrestling Keita, who has never faced an elite wrestler and took the fight on a short turnaround, and this week Pico said he will build fights instead of rushing them, which is how he beat Pitbull 30-27. If Pico wins, it is most likely on the scorecards.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-23T16:12:00+00:00"
+     "status": "lost",
+     "profit": -1.5,
+     "placed_at": "2026-10-23T16:12:00+00:00",
+     "clv": 0.0
     }
    ],
    "staked": 4.5,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-10-25T16:00:57+00:00",
    "placements": [
     {
      "placed_at": "2026-10-23T16:12:00+00:00",
@@ -466,7 +493,12 @@
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-333-4321"
    ],
-   "sheet_fetched_at": "2026-10-23T16:11:39+00:00"
+   "sheet_fetched_at": "2026-10-23T16:11:39+00:00",
+   "bankroll_after": 87.46,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }

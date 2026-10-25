@@ -260,7 +260,15 @@
      "method": "",
      "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-122-139443"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Julius Walker",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 215
+   }
   },
   {
    "a": "Francisco Prado",

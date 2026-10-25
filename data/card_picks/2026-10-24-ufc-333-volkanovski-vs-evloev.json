@@ -81,7 +81,25 @@
      ]
     }
    },
-   "market_p_a": 0.5
+   "market_p_a": 0.5,
+   "result": {
+    "winner": "Alexander Volkanovski",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Petr Yan vs Merab Dvalishvili",
@@ -151,7 +169,25 @@
      ]
     }
    },
-   "market_p_a": 0.5715
+   "market_p_a": 0.5715,
+   "result": {
+    "winner": "Petr Yan",
+    "side": "a",
+    "method": "DEC",
+    "round": 5
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Lone'er Kavanagh vs Ramazan Temirov",
@@ -213,7 +249,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Lone'er Kavanagh",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Alexander Volkov vs Rizvan Kuniev",
@@ -275,7 +329,25 @@
      ]
     }
    },
-   "market_p_a": 0.5428
+   "market_p_a": 0.5428,
+   "result": {
+    "winner": "Alexander Volkov",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Aaron Pico vs Losene Keita",
@@ -337,7 +409,25 @@
      ]
     }
    },
-   "market_p_a": 0.5667
+   "market_p_a": 0.5667,
+   "result": {
+    "winner": "Aaron Pico",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Azamat Murzakanov vs Dominick Reyes",
@@ -399,7 +489,25 @@
      ]
     }
    },
-   "market_p_a": 0.658
+   "market_p_a": 0.658,
+   "result": {
+    "winner": "Dominick Reyes",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Nikita Krylov vs Abdul-Rakhman Yakhyaev",
@@ -461,7 +569,25 @@
      ]
     }
    },
-   "market_p_a": 0.2069
+   "market_p_a": 0.2069,
+   "result": {
+    "winner": "Abdul-Rakhman Yakhyaev",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Abusupiyan Magomedov vs Cameron Rowston",
@@ -523,7 +649,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Abusupiyan Magomedov",
+    "side": "a",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Grant Dawson vs Nurullo Aliev",
@@ -585,7 +729,25 @@
      ]
     }
    },
-   "market_p_a": 0.5108
+   "market_p_a": 0.5108,
+   "result": {
+    "winner": "Grant Dawson",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Colby Thicknesse vs Asaf Chopurov",
@@ -647,7 +809,25 @@
      ]
     }
    },
-   "market_p_a": 0.1865
+   "market_p_a": 0.1865,
+   "result": {
+    "winner": "Colby Thicknesse",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Abubakar Vagaev vs Jacob Malkoun",
@@ -709,7 +889,25 @@
      ]
     }
    },
-   "market_p_a": 0.5924
+   "market_p_a": 0.5924,
+   "result": {
+    "winner": "Abubakar Vagaev",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Bolaji Oki vs Daniel Santos",
@@ -771,7 +969,25 @@
      ]
     }
    },
-   "market_p_a": 0.4764
+   "market_p_a": 0.4764,
+   "result": {
+    "winner": "Daniel Santos",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Kody Steele vs Noah Gugnon",
@@ -833,7 +1049,25 @@
      ]
     }
    },
-   "market_p_a": 0.5924
+   "market_p_a": 0.5924,
+   "result": {
+    "winner": "Kody Steele",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Iasmin Lucindo vs Nicole Caliari",
@@ -895,8 +1129,12 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "void": "did not take place"
+   }
   }
  ],
- "graded": false
+ "graded": true,
+ "graded_at": "2026-10-25T16:01:39+00:00"
 }

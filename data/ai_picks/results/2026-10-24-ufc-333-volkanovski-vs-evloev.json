@@ -1,0 +1,102 @@
+{
+ "event": "UFC 333: Volkanovski vs. Evloev",
+ "date": "2026-10-24",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Aaron Pico vs Losene Keita": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 74,
+   "round_agreed": true
+  },
+  "Abdul Rakhman Yakhyaev vs Nikita Krylov": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 158,
+   "round_agreed": true
+  },
+  "Abubakar Vagaev vs Jacob Malkoun": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Abus Magomedov vs Cam Rowston": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 104,
+   "round_agreed": true
+  },
+  "Alexander Volkanovski vs Movsar Evloev": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 294,
+   "round_agreed": true
+  },
+  "Alexander Volkov vs Rizvan Kuniev": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Asaf Chopurov vs Colby Thicknesse": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Azamat Murzakanov vs Dominick Reyes": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 160,
+   "round_agreed": true
+  },
+  "Bolaji Oki vs Daniel Santos": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Grant Dawson vs Nurullo Aliev": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Iasmin Lucindo vs Nicole Caliari": null,
+  "Kody Steele vs Noah Gugnon": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 234,
+   "round_agreed": true
+  },
+  "Lone'er Kavanagh vs Ramazan Temirov": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 268,
+   "round_agreed": true
+  },
+  "Merab Dvalishvili vs Petr Yan": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 5,
+   "seconds": 300,
+   "round_agreed": true
+  }
+ }
+}
