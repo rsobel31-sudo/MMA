@@ -36,6 +36,8 @@
 "stats_official": "3"
 },
 "Aaron Jeffery": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -1334,6 +1336,8 @@
 "stats_official": "3"
 },
 "Antonio Carlos Jr.": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (201 cm), not used until a second source confirms it",
 "stats_official": "13"
 },
@@ -1474,6 +1478,10 @@
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (165 cm), not used until a second source confirms it",
 "stats_official": "7"
+},
+"Artem Vakhitov": {
+"reach": "UFCStats only (190 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Arthur Lopes": {
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
@@ -6799,6 +6807,8 @@
 "stats_official": "3"
 },
 "Gwan Woo Lim": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7382,6 +7392,12 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "14",
 "stats_verified": "4"
+},
+"Islem Masraf": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Ismael Bonfim": {
 "dob": "Sherdog + UFCStats agree",
@@ -15733,6 +15749,8 @@
 "stats_official": "1"
 },
 "Rodrigo Lidio": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -17029,6 +17047,8 @@
 "stats_verified": "1"
 },
 "Sim Kai Xiong": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
