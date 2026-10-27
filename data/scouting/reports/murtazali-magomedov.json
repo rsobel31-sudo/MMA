@@ -1,0 +1,87 @@
+{
+ "name": "Murtazali Magomedov",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "An unbeaten Kyrgyz featherweight (11-0, age 27; 1-0 UFC; about 180 cm) and former Octagon League champion who has finished every opponent: five KO/TKOs and six submissions. He won his contract with a 97-second TKO on the 2025 Contender Series and submitted Melsik Baghdasaryan with a twister in 77 seconds on his UFC debut, earning a bonus.",
+ "how_they_fight": {
+  "Striking": "Has knockout power (five KO/TKO wins). Dropped Brahyam Zurcher with a jab on the Contender Series and finished with punches at 1:37 of R1. Little UFC tape: 14 significant strikes landed across his two UFC-promoted fights.",
+  "Grappling": "Scrambler and back-taker. He took Baghdasaryan down when Baghdasaryan got too aggressive, hooked both legs, rolled to the back and locked up a modified twister he'd learned from Askar Askarov a month before (Cageside Press). Six submission wins, four in R1. Describes himself as rounded: 'I know wrestling, I know striking' (UFC.com).",
+  "Defense": "Never lost, never been to a decision, so almost nothing is known about how he handles being hurt or behind.",
+  "Pace & cardio": "A very fast starter, but not only that. Of 11 finishes, seven came in R1, two in R2 and two in R3 (a TKO and a submission). He has never gone 15 minutes, and the deepest he has gone is about 13 minutes. Three of his wins came on one night in a 2022 regional grand prix.",
+  "Fight IQ": "Confident and opportunistic; capitalises immediately on an opponent's mistake. Wants to fight every three to four months; his debut came about nine months after earning his contract."
+ },
+ "patterns": [
+  "Finished all 11 opponents: 5 KO/TKO, 6 submissions",
+  "Seven of 11 finishes in R1",
+  "Punishes aggression with a takedown and a back take",
+  "Has finished in R3 twice, so the threat doesn't disappear late"
+ ],
+ "concerns": [
+  "Never been past R3 or to the judges",
+  "Untested when hurt or behind",
+  "Only 2:54 of UFC-promoted cage time in total",
+  "Record differs by source: Esporte News Mundo said ten wins; our data and Cageside have 11-0"
+ ],
+ "keys_to_beat": [
+  "Don't overcommit to exchanges or shots early; he punishes mistakes",
+  "Drag him into R3 with volume and see how he holds up",
+  "Defend the back in scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-06-20",
+   "text": "Debuted with a twister submission of Melsik Baghdasaryan at 1:17 of R1 and a Performance of the Night bonus.",
+   "source": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-murtazali-magomedov-hits-rare-twister-on-melsik-baghdasaryan/"
+  },
+  {
+   "date": "2026-06-20",
+   "text": "Said Askar Askarov showed him the twister about a month before the fight.",
+   "source": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-murtazali-magomedov-learned-twister-month-ago/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 119: Murtazali Magomedov Hits Rare Twister on Melsik Baghdasaryan",
+   "url": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-murtazali-magomedov-hits-rare-twister-on-melsik-baghdasaryan/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Jay Anderson",
+   "title": "UFC Vegas 119: Murtazali Magomedov Learned Twister A Month Ago From Ex-UFC Star",
+   "url": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-murtazali-magomedov-learned-twister-month-ago/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "Simon Head",
+   "title": "Murtazali Magomedov's Wait Is Finally Over",
+   "url": "https://www.ufc.com/news/murtazali-magomedovs-wait-finally-over-ufc-vegas-119",
+   "date": "2026-06-19"
+  },
+  {
+   "outlet": "Tribuna do Sertao (Esporte News Mundo)",
+   "author": "",
+   "title": "Jose Delano projeta duelo contra quirguiz no UFC: 'ele nao se entrega'",
+   "url": "https://tribunadosertao.com.br/esportes/2026/10/15/998354-jose-delano-projeta-duelo-contra-quirguiz-no-ufc-ele-nao-se-entrega",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 124 Fight Card Set For November",
+   "url": "https://boxingnews.com/news/ufc-vegas-124-fight-card-bonfim-brady",
+   "date": "2026-09-29"
+  }
+ ],
+ "depth": "thin"
+}

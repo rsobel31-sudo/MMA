@@ -1,0 +1,79 @@
+{
+ "name": "Jose Mauro Delano",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A high-volume Brazilian featherweight (17-3; 1-0 UFC; Brazilian Top Team) from Pernambuco, on a five-fight win streak. He earned his contract with a 100-plus-strike decision on the 2025 Contender Series and beat Robert Ruchala on the cards in his April debut. A clean boxer who builds his lead and gets stronger as fights go on.",
+ "how_they_fight": {
+  "Striking": "The engine. Very high output and accuracy in his two UFC-promoted fights (146 of 222 against Exposito, 107 of 172 against Ruchala, per our data). One-two, a strong left hand, right-left into a leg kick, body-head combinations; he takes angles and slips well (Cageside Press). Four career KO/TKO wins (R1 x2, R2, R3).",
+  "Grappling": "Rarely shoots (0 for 5 against Ruchala). Shrugged off Ruchala's tie-ups and kneed him on the way in (Cageside). Five regional submissions (R1 x3, R2, R3) show a real back-up game, but he hasn't needed it lately.",
+  "Defense": "Solid: strikes defense about 64% in our numbers. Three career losses: a 2014 decision, a 2015 R1 submission, and an R3 TKO to Gabriel Santos in LFA in January 2023, his last loss. Takedown defense has held up in the UFC, but has not yet been tested by a strong chain wrestler.",
+  "Pace & cardio": "A late-round fighter. He finished the Ruchala fight with heavy body work and a clean one-two in the last minute (Cageside) and out-landed him 107-67 overall; won two five-round LFA decisions in 2022. Eight wins on the cards. His finishes are spread out (R1 x5, R2 x2, R3 x2) but his last two fights went 15 minutes. Admitted to nerves early in the rounds of his debut (Esporte News Mundo).",
+  "Fight IQ": "Composed and disciplined. Plans to fight a patient, planned game against Magomedov, arguing Magomedov's previous opponents all went all-or-nothing against him (Esporte News Mundo, Oct. 15). Calls Magomedov a fighter who never gives up."
+ },
+ "patterns": [
+  "Very high-volume, accurate boxing with body work",
+  "Gets stronger as the fight goes; proven over five rounds",
+  "Decision-heavy lately: last two fights went the distance",
+  "Rarely takes the fight to the mat himself"
+ ],
+ "concerns": [
+  "Hasn't faced a finisher of Magomedov's type in the UFC",
+  "Takedown defense untested against a strong wrestler",
+  "One stoppage loss in R3 (Santos, 2023)"
+ ],
+ "keys_to_beat": [
+  "Take him down and keep him there; he doesn't wrestle offensively",
+  "Hurt him early before his volume piles up",
+  "Make him defend the back in scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-10-15",
+   "text": "Said he'll fight a patient, planned game against Magomedov and feels calmer without debut pressure.",
+   "source": "https://tribunadosertao.com.br/esportes/2026/10/15/998354-jose-delano-projeta-duelo-contra-quirguiz-no-ufc-ele-nao-se-entrega"
+  },
+  {
+   "date": "2026-04-04",
+   "text": "Beat Robert Ruchala by unanimous decision (30-26, 29-27, 29-27) in his UFC debut; Ruchala lost a point for grabbing the fence.",
+   "source": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-jose-delano-makes-successful-debut-against-robert-ruchala/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 115: Jose Delano Makes Successful Debut Against Robert Ruchala",
+   "url": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-jose-delano-makes-successful-debut-against-robert-ruchala/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna, Jay Anderson",
+   "title": "DWCS Winner Jose Delano Wants on UFC Rio Card",
+   "url": "https://cagesidepress.com/2025/08/20/jose-delano-dwcs-ufc-rio/",
+   "date": "2025-08-20"
+  },
+  {
+   "outlet": "Tribuna do Sertao (Esporte News Mundo)",
+   "author": "",
+   "title": "Jose Delano projeta duelo contra quirguiz no UFC: 'ele nao se entrega'",
+   "url": "https://tribunadosertao.com.br/esportes/2026/10/15/998354-jose-delano-projeta-duelo-contra-quirguiz-no-ufc-ele-nao-se-entrega",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 124 Fight Card Set For November",
+   "url": "https://boxingnews.com/news/ufc-vegas-124-fight-card-bonfim-brady",
+   "date": "2026-09-29"
+  }
+ ],
+ "depth": "moderate"
+}

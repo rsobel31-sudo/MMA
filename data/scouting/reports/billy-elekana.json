@@ -1,0 +1,113 @@
+{
+ "name": "Billy Elekana",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A long American light heavyweight (10-2; 3-1 UFC; Uprising MMA, Las Vegas; about 6-foot-3) with a jiu-jitsu base and a patient counter-striking game. After a short-notice debut loss to Bogdan Guskov he has won three straight, the last two by rear-naked choke after hurting the opponent first. He has been dropped and nearly choked, and his cardio broke on one week's notice, so the profile is 'dangerous opportunist with questions in a hard pace'.",
+ "how_they_fight": {
+  "Striking": "Patient and economical (about 3 significant strikes landed per minute). He lets opponents lead, eats some calf kicks, and waits for a counter: he dropped Kevin Christian with a right hand when Christian overextended (Cageside Press), and hurt Junior Tafa with a combination in R2 (LowKick). Can be very low-output: the Ibo Aslan win was a cautious 15-minute kickboxing match Cageside called a 'low-action affair', with his best shot coming in the final 90 seconds. Three career KO/TKO wins, all in R1 and all on the regional scene (2021, 2022, 2024).",
+  "Grappling": "The finishing weapon. Six of his ten wins came inside the distance, three by submission (R2 regional, R1 Christian RNC, R2 Tafa RNC). His pattern in the UFC is strike-to-hurt, then follow to the mat and take the back immediately. Against Guskov he had back control and a body triangle for much of R1 (220 seconds of control in our data) but couldn't finish. Takedown entries are not a strength (1 for 5 against Tafa, 0 for 3 against Aslan).",
+  "Defense": "Durability has been tested. Tafa landed a big right in the opening minute and our data credits Tafa with a knockdown in R1; Elekana recovered and won R2. Guskov nearly choked him at the end of R1 (he tapped after the bell, per Cageside) and then broke him down with body shots in R2. He absorbs about as much as he lands (roughly 3.1 per minute each way).",
+  "Pace & cardio": "Finishes come in R1-R2: all six career stoppages were in the first two rounds (four in R1, two in R2). Four of his wins went the full 15 minutes, including two split decisions (one PFL, one regional loss to Daniel Compton by split). His only stoppage loss came in R2 when his gas tank emptied after a grappling-heavy R1 on about a week's notice (Cageside). In longer fights he slows down rather than speeds up; he has never finished anyone in R3.",
+  "Fight IQ": "Composed under fire: he survived Tafa's early onslaught and turned it, and stayed calm while losing the leg-kick battle to Christian. Willing to take short-notice fights. Withdrew from a June 2026 bout with Iwo Baraniewski for undisclosed reasons."
+ },
+ "patterns": [
+  "Patient counter-puncher who waits for an opponent to overcommit",
+  "Hurt-then-take-the-back sequence; two straight RNC finishes (R1, R2)",
+  "All six career stoppages in R1-R2; never finished anyone in R3",
+  "Slow, cautious decisions when nothing opens up (Aslan)"
+ ],
+ "concerns": [
+  "Was dropped by Tafa in R1 and broken down by Guskov's body work in R2",
+  "Cardio after a grappling-heavy first round",
+  "Low output can cost him rounds against a busy, rangy striker",
+  "Age differs by source: Wikipedia gives a 1995 birth date (31); MMA Sucka says 33"
+ ],
+ "keys_to_beat": [
+  "Out-work him at range with kicks to the legs and body; don't overextend into his right hand",
+  "Make him grapple and carry weight early, then push the pace in R2-R3",
+  "Defend the back in every scramble when hurt"
+ ],
+ "news": [
+  {
+   "date": "2026-09-15",
+   "text": "Booked against Lucas Fernando at UFC Vegas 124 on Nov. 7, his first fight since January.",
+   "source": "https://mmasucka.com/news/lucas-fernando-vs-billy-elekana-set-for-ufc-vegas-124/"
+  },
+  {
+   "date": "2026-06-08",
+   "text": "Withdrew from a June 6 bout with Iwo Baraniewski (undisclosed reasons per Wikipedia); Junior Tafa replaced him and was knocked out in R1.",
+   "source": "https://cagesidepress.com/2026/06/08/whats-next-ufc-vegas-118-losers/"
+  },
+  {
+   "date": "2026-01-31",
+   "text": "Submitted Junior Tafa with a rear-naked choke at 3:18 of R2 after surviving an early right hand.",
+   "source": "https://www.lowkickmma.com/junior-tafa-vs-billy-elekana-ufc-325/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Billy Elekana",
+   "url": "https://en.wikipedia.org/wiki/Billy_Elekana",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Lucas Fernando vs. Billy Elekana set for UFC Vegas 124",
+   "url": "https://mmasucka.com/news/lucas-fernando-vs-billy-elekana-set-for-ufc-vegas-124/",
+   "date": "2026-09-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC 311: Bogdan Guskov Pummels, Submits Newcomer Billy Elekana",
+   "url": "https://cagesidepress.com/2025/01/18/ufc-311-bogdan-guskov-pummels-submits-newcomer-billy-elekana",
+   "date": "2025-01-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Abu Dhabi: Billy Elekana Claims Win Over Ibo Aslan in Low-Action Affair",
+   "url": "https://cagesidepress.com/2025/07/26/ufc-abu-dhabi-billy-elekana-claims-win-over-ibo-aslan-in-low-action-affair",
+   "date": "2025-07-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 110: Billy Elekana Rocks, Chokes Out Kevin Christian",
+   "url": "https://cagesidepress.com/2025/11/01/ufc-vegas-110-billy-elekana-rocks-chokes-out-kevin-christian",
+   "date": "2025-11-01"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Billy Elekana Survives Early Scare, Chokes Out Junior Tafa - UFC 325 Highlights",
+   "url": "https://www.lowkickmma.com/junior-tafa-vs-billy-elekana-ufc-325/",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 118 Losers",
+   "url": "https://cagesidepress.com/2026/06/08/whats-next-ufc-vegas-118-losers/",
+   "date": "2026-06-08"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 124 Fight Card Set For November",
+   "url": "https://boxingnews.com/news/ufc-vegas-124-fight-card-bonfim-brady",
+   "date": "2026-09-29"
+  }
+ ],
+ "depth": "moderate"
+}

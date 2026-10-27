@@ -1,0 +1,86 @@
+{
+ "name": "Gabriella Fernandes",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Brazilian flyweight kickboxer (11-4; 3-3 UFC; MMA Masters, per our data) who had won three straight, including a big upset submission of Wang Cong, before being knocked out by Casey O'Neill in R1 in March. She does her best work in the middle and late rounds; her other UFC losses came against wrestlers.",
+ "how_they_fight": {
+  "Striking": "Volume kickboxing with head kicks and body work. Head kick then left hand to drop Wang in R2 (Cageside Press); body shots, a cut and a knee in the Stoliarenko decision. Throws a lot (119 significant strikes against Carli Judice), but absorbs about 5 per minute. Three KO/TKO wins, all regional: one in R1, two in R3.",
+  "Grappling": "Mostly defensive. Stuffed all six of Stoliarenko's takedown attempts. Will jump on the back of a hurt opponent (RNC on Wang after the knockdown). Two regional R2 submissions. Doesn't wrestle much herself (2 for 8 against Judice, 0 for 2 against Wang).",
+  "Defense": "Two clear holes. First, wrestlers: Jasudavicius beat her in her UFC debut and Tereza Bleda held her down for nearly 11 minutes in 2023. Second, chin and hands-down exchanges: O'Neill hurt her with a clean shot to the jaw and finished her at 3:11 of R1, the only stoppage loss of her career.",
+  "Pace & cardio": "A slow burner. Her finishes come later: of six stoppage wins, one was in R1, three in R2 and two in R3. In the Wang fight she lost R1 clearly (Wang landed body kicks and side kicks) and turned it in R2. Five of her six UFC fights went the distance. Late-round strength, early-round vulnerability.",
+  "Fight IQ": "Patient; adjusts after a slow first round. Pulled off a roughly 6-to-1 upset over Wang, so she can win as a big underdog. Coming off a knockout loss and seven months out."
+ },
+ "patterns": [
+  "Kickboxer who builds through rounds; finishes skew to R2-R3",
+  "Head kick / left hand, then jumps on the back of a hurt opponent",
+  "Good defensive wrestling against a non-wrestler (6 for 6 against Stoliarenko)",
+  "Tends to lose R1 against fast starters"
+ ],
+ "concerns": [
+  "Coming off an R1 knockout loss",
+  "Gets held down by real wrestlers (Bleda, Jasudavicius)",
+  "Absorbs a lot of strikes"
+ ],
+ "keys_to_beat": [
+  "Take her down and hold her there; she doesn't threaten much off her back",
+  "Win R1 early before she settles",
+  "Counter her head-kick attempts"
+ ],
+ "news": [
+  {
+   "date": "2026-03-28",
+   "text": "Knocked out by Casey O'Neill (punches) at 3:11 of R1 at UFC Seattle.",
+   "source": "https://cagesidepress.com/2026/03/28/ufc-seattle-casey-oneill-makes-emphatic-statement-in-return-stops-gabriella-fernandes"
+  },
+  {
+   "date": "2025-08-09",
+   "text": "Beat Julija Stoliarenko by unanimous decision (30-27, 29-28 x2).",
+   "source": "https://www.bjpenn.com/mma-news/ufc-vegas-109/ufc-vegas-109-dolidze-vs-hernandez-live-results-and-highlights/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Seattle: Casey O'Neill Makes Emphatic Statement in Return, Stops Gabriella Fernandes",
+   "url": "https://cagesidepress.com/2026/03/28/ufc-seattle-casey-oneill-makes-emphatic-statement-in-return-stops-gabriella-fernandes",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Seattle: 'Adesanya vs. Pyfer' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-seattle/ufc-seattle-adesanya-vs-pyfer-live-results-and-highlights/",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Bryson Hester",
+   "title": "UFC Macau: Gabriella Fernandes Shocks with Upset Submission of Wang Cong",
+   "url": "https://cagesidepress.com/2024/11/23/ufc-macau-gabriella-fernandes-shocks-with-upset-submission-of-wang-cong",
+   "date": "2024-11-23"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 109: 'Dolidze vs. Hernandez' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-109/ufc-vegas-109-dolidze-vs-hernandez-live-results-and-highlights/",
+   "date": "2025-08-09"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 124 Fight Card Set For November",
+   "url": "https://boxingnews.com/news/ufc-vegas-124-fight-card-bonfim-brady",
+   "date": "2026-09-29"
+  }
+ ],
+ "depth": "moderate"
+}

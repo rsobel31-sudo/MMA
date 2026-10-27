@@ -1,0 +1,92 @@
+{
+ "name": "Karine Silva",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Brazilian flyweight grappler (19-7; 5-3 UFC; Fighting Nerds) and BJJ black belt who opened her UFC run with three first-round submissions but has gone 1-3 in her last four, all decisions. She is always dangerous off her back and in scrambles, but ranked opponents have held her down or out-struck her for 15 minutes.",
+ "how_they_fight": {
+  "Striking": "A support tool for her grappling. Calf kicks, overhand rights and stance switches at range, plus a sharp elbow up the middle against Jasudavicius (Cageside Press). Low volume (about 2.4 significant strikes per minute) and was out-landed 55-21 by Maycee Barber. Started in sanda, per Wikipedia.",
+  "Grappling": "Her weapon. Three UFC submissions, all in R1: a brabo choke (Botelho), kneebar (Ketlen Souza) and guillotine (Moroz), plus an R2 submission on the Contender Series. Very active off her back: triangles from guard and a guillotine on Jasudavicius's single leg; back take and RNC attempt plus heel-hook and leg-lock attempts against Barber. She'll also wrestle offensively (5 for 6 on takedowns against Ariane Lipski).",
+  "Defense": "Not easy to stop: her only stoppage losses were long ago (TKO in 2013, two R1 submissions in 2014 and 2017). Takedown defense is the problem (about 41%): Jasudavicius held her down for over eight minutes, Barber had more than six minutes of control, and her submission attempts from the bottom have not been converting into finishes or reversals against good top players.",
+  "Pace & cardio": "Front-loaded. Every UFC finish came in R1 (three) and her DWCS submission came in R2; she hasn't finished anyone since August 2023. Her last five fights all went to decision, and in the losses the later rounds slipped away: Barber came on after Silva won R1 with back control, and Jasudavicius finished R3 on top with ground-and-pound. Still active late (Barber R3 leg locks), but not winning late rounds against ranked opposition.",
+  "Fight IQ": "Comfortable fighting off her back and will gamble on submissions, which costs rounds when they fail. Landed an illegal upkick on a downed Barber in R2; no point was taken (Cageside)."
+ },
+ "patterns": [
+  "Submission threat from every position, especially off the bottom",
+  "All UFC finishes in R1; five straight decisions since",
+  "Wins R1 with a takedown or back take, then loses ground in R2-R3 against strong opposition",
+  "Last three losses all unanimous decisions"
+ ],
+ "concerns": [
+  "1-3 in her last four",
+  "Takedown defense and getting held down",
+  "Low striking output",
+  "Age differs by source: Wikipedia gives a December 1993 birth date (32); our data says 33"
+ ],
+ "keys_to_beat": [
+  "Stay out of her guard and scramble zones; don't hand her the back or a neck on a lazy single leg",
+  "Out-strike her at range: she lands little",
+  "Bank R2-R3 with volume or top control once the early submission threat is past"
+ ],
+ "news": [
+  {
+   "date": "2026-04-18",
+   "text": "Lost a unanimous decision (29-28 x3) to Jasmine Jasudavicius; threatened triangles and a guillotine but spent long stretches on her back.",
+   "source": "https://cagesidepress.com/2026/04/18/jasmine-jasudavicius-overcomes-karine-silvas-submission-attempts-in-key-win/"
+  },
+  {
+   "date": "2026-04-20",
+   "text": "Cageside noted she has lost three of her last four and fell to 5-3 in the UFC.",
+   "source": "https://cagesidepress.com/2026/04/20/whats-next-ufc-winnipeg-losers/"
+  },
+  {
+   "date": "2025-12-06",
+   "text": "Lost a decision to Maycee Barber after winning R1 with back control; an illegal upkick drew a warning.",
+   "source": "https://cagesidepress.com/2025/12/06/ufc-323-maycee-barber-outlasts-karine-silva-after-foul"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Karine Silva",
+   "url": "https://en.wikipedia.org/wiki/Karine_Silva",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jasmine Jasudavicius Overcomes Karine Silva's Submission Attempts in Key Win",
+   "url": "https://cagesidepress.com/2026/04/18/jasmine-jasudavicius-overcomes-karine-silvas-submission-attempts-in-key-win/",
+   "date": "2026-04-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Gabriel Gonzalez",
+   "title": "UFC 323: Maycee Barber Outlasts Karine Silva After Foul",
+   "url": "https://cagesidepress.com/2025/12/06/ufc-323-maycee-barber-outlasts-karine-silva-after-foul",
+   "date": "2025-12-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Winnipeg Losers",
+   "url": "https://cagesidepress.com/2026/04/20/whats-next-ufc-winnipeg-losers/",
+   "date": "2026-04-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Boxing News",
+   "author": "",
+   "title": "UFC Vegas 124 Fight Card Set For November",
+   "url": "https://boxingnews.com/news/ufc-vegas-124-fight-card-bonfim-brady",
+   "date": "2026-09-29"
+  }
+ ],
+ "depth": "good"
+}
