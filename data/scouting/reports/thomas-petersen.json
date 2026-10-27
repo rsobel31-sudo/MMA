@@ -1,0 +1,99 @@
+{
+ "name": "Thomas Petersen",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 32-year-old heavyweight wrestler (11-5; 3-4 UFC; Spartan MMA) taking this fight on about two weeks' notice, three-and-a-half months after Valter Walker submitted him with a calf slicer in 92 seconds. He alternates wins and losses in the UFC: he beats the lower tier with wrestling and clinch control and gets stopped by stronger strikers.",
+ "how_they_fight": {
+  "Striking": "Utility striking to close distance; better on the regional scene (seven KO/TKOs, six in R1). Against Pat he dropped him twice in R3 (short right hook, uppercut) after two slow rounds (Cageside). Accurate (about 55%) but low-volume.",
+  "Grappling": "His main weapon: clinches against the fence, single legs, body locks, knees to the thighs. Went 9 for 9 with nearly 14 minutes of control against Don'Tale Mayes; 0 for 5 against Pat but still had 8:36 of control. Walker caught him in leg locks on the mat (heel hook, then calf slicer).",
+  "Defense": "The problem: four of his five losses were stoppages. Waldo Cortes-Acosta TKO R3 (4:53, LFA 2022), Shamil Gaziev TKO R1 (2025), Vitor Petrino KO R3 (0:26, after being dropped in R1, 2025), Walker sub R1 (2026). He ducks his head into uppercuts (Cageside, on Petrino).",
+  "Pace & cardio": "UFC wins are all decisions, built on control. Losses come either early to power (Gaziev R1, Walker R1) or late after he's been worn down or dropped (Cortes-Acosta and Petrino in R3). Against Pat he got stronger in R3. He's a lighter heavyweight (245 for Walker).",
+  "Fight IQ": "Knows his lane: clinch, wrestle, grind. LowKick's view after Walker: good enough to beat the bottom of the division, outmatched against ranked opposition."
+ },
+ "patterns": [
+  "Clinch and wrestling control; UFC wins all by decision",
+  "Stopped by heavier hitters (Gaziev, Petrino, Cortes-Acosta)",
+  "Two of four stoppage losses in R3, two in R1",
+  "Can raise his output late (Pat, R3)"
+ ],
+ "concerns": [
+  "Short notice, about 15 weeks after a submission loss",
+  "Chin and defense against power punchers",
+  "Leg-lock defense on the mat",
+  "Our data has the Pat fight as a split decision; Cageside and LowKick report a majority decision (28-28, 29-27, 29-27)"
+ ],
+ "keys_to_beat": [
+  "Stop the first takedowns and hit him on the way in",
+  "Uppercuts as he ducks into the clinch",
+  "Make him strike for 15 minutes"
+ ],
+ "news": [
+  {
+   "date": "2026-10-26",
+   "text": "Stepped in on short notice to face Gabriel Lourenco after Alvin Hines withdrew.",
+   "source": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html"
+  },
+  {
+   "date": "2026-07-28",
+   "text": "Submitted by Valter Walker with a calf slicer in 92 seconds (first calf slicer win by a UFC heavyweight, per LowKick).",
+   "source": "https://www.lowkickmma.com/not-cheated-on-her-in-6-months-valter-walker/"
+  },
+  {
+   "date": "2026-04-04",
+   "text": "Beat Guilherme Pat by majority decision (per Cageside; our data says split) after two R3 knockdowns.",
+   "source": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-thomas-petersen-guilherme-pat/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "UFC Vegas 115: Thomas Petersen Turns It Up Late, Snags Majority Decision Over Undefeated Guilherme Pat",
+   "url": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-thomas-petersen-guilherme-pat/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 115: Moicano vs. Duncan - Prelim Results and Highlights",
+   "url": "https://www.lowkickmma.com/ufc-vegas-115-prelim-results-highlights/",
+   "date": "2026-04-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Rio: Vitor Petrino Turns Lights Out on Thomas Petersen",
+   "url": "https://cagesidepress.com/2025/10/11/ufc-rio-vitor-petrino-turns-lights-out-on-thomas-petersen",
+   "date": "2025-10-11"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "\"I Have Not Cheated on Her in 6 Months.\" Valter Walker Makes Wild Claim About His Relationship",
+   "url": "https://www.lowkickmma.com/not-cheated-on-her-in-6-months-valter-walker/",
+   "date": "2026-07-28"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Danny Podolsky",
+   "title": "UFC Abu Dhabi: Matchmaking for All the Losers from Saturday",
+   "url": "https://www.lowkickmma.com/ufc-abu-dhabi-matchmaking-for-all-the-losers/",
+   "date": "2026-07-28"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Vertigo delays Alvin Hines' pursuit of first UFC victory",
+   "url": "https://www.sherdog.com/news/news/Vertigo-delays-Alvin-Hines-pursuit-of-first-UFC-victory-203121",
+   "date": "2026-10-08"
+  }
+ ],
+ "depth": "moderate"
+}

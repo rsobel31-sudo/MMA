@@ -1,0 +1,77 @@
+{
+ "name": "Gabriel Lourenco",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 27-year-old Brazilian heavyweight ('The Black Mamba', Chute Boxe; 8-1; 6-foot-2, 76-inch reach) who earned a contract in September with a first-round KO of Charlie Cleveland on the Contender Series as an underdog. Seven of his eight wins are first-round finishes. UFC debut, now against short-notice replacement Thomas Petersen after Alvin Hines withdrew.",
+ "how_they_fight": {
+  "Striking": "Aggressive starter who throws heavy combinations early (Rotowire). Cleveland timed him with counters early, then Lourenco caught him with a combination and finished with an elbow and punches at 2:02 of R1. Rotowire's analysts say he needs technical polish.",
+  "Grappling": "One submission win (R1, 2025). No wrestling information available.",
+  "Defense": "Got hit early by Cleveland's counters. His one loss was a R1 KO (1:20) in his 2021 pro debut.",
+  "Pace & cardio": "Everything happens in R1: all seven finishes came in the first round, most of them inside two minutes. His only fight that went past R1 was a 2024 decision. How he copes in R2-R3 against a heavyweight who wrestles and clinches is unknown. (Our data lists a 0:00 finish time for one 2025 regional win, which is probably a record-keeping error.)",
+  "Fight IQ": "Little to judge. Debuting on a changed opponent: he'd prepared for Hines, a different fighter."
+ },
+ "patterns": [
+  "Seven R1 finishes; all his stoppages come early",
+  "Heavy combinations and elbows when the opponent is hurt",
+  "Only one fight past R1",
+  "Was hit early by counters on DWCS"
+ ],
+ "concerns": [
+  "Untested past R1",
+  "Opponent change two weeks out",
+  "Takedown defense unknown"
+ ],
+ "keys_to_beat": [
+  "Clinch and wrestle him; make him carry weight",
+  "Survive R1 and see what's left in R2-R3",
+  "Counter his entries"
+ ],
+ "news": [
+  {
+   "date": "2026-10-08",
+   "text": "Original opponent Alvin Hines withdrew citing vertigo.",
+   "source": "https://www.sherdog.com/news/news/Vertigo-delays-Alvin-Hines-pursuit-of-first-UFC-victory-203121"
+  },
+  {
+   "date": "2026-10-26",
+   "text": "Thomas Petersen stepped in as the replacement opponent.",
+   "source": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html"
+  },
+  {
+   "date": "2026-09-01",
+   "text": "Beat Charlie Cleveland by KO (elbow and punches) at 2:02 of R1 on the Contender Series to earn a contract.",
+   "source": "https://aws-prod-web9.rotowire.com/mma/player/gabriel-lorenco-2834"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Gabriel Lorenco MMA Stats & News",
+   "url": "https://aws-prod-web9.rotowire.com/mma/player/gabriel-lorenco-2834",
+   "date": "2026-10-25"
+  },
+  {
+   "outlet": "DraftKings Network",
+   "author": "Ryan Wohl",
+   "title": "Prediction, pick for Gabriel Lourenco vs. Charlie Cleveland at DWCS Season 10 Week 4",
+   "url": "https://dknetwork.draftkings.com/2026/09/01/prediction-pick-for-gabriel-lourenco-vs-charlie-cleveland-at-dwcs-season-10-week-4/",
+   "date": "2026-09-01"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Vertigo delays Alvin Hines' pursuit of first UFC victory",
+   "url": "https://www.sherdog.com/news/news/Vertigo-delays-Alvin-Hines-pursuit-of-first-UFC-victory-203121",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  }
+ ],
+ "depth": "thin"
+}

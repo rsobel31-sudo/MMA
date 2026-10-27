@@ -1,0 +1,91 @@
+{
+ "name": "Nina Nikolija Milosevic",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Swedish-born Serbian bantamweight (9-1; 1-0 UFC; age 30 in our data, 29 per UFC.com in July) trained by Renato Subotic in Sydney. A two-time IMMAF amateur gold medallist, karate black belt and BJJ brown belt. She won her UFC debut in Belgrade with body shots on Hailey Cowan (R1, 3:41) and a Performance of the Night bonus. Her regional opposition was thin.",
+ "how_they_fight": {
+  "Striking": "Patient early, then sharp: Cageside says she was content to let Cowan lead in the opening minutes, didn't move her head much, then dropped Cowan with a straight right to the body and finished with a second one. Out-landed Cowan 21-13. She says her plan is to wait for an opening and pounce (UFC.com).",
+  "Grappling": "Real submission game: a Bernardino submission in R3 (2024) and a 52-second finish of Gina Gee (2025). Against Dina Osman at BRAVE CF 104 she chained submission attempts in R1 and nearly finished an RNC in R3 on the way to 30-26 x3 (BRAVE CF). Stuffed both of Cowan's takedown attempts.",
+  "Defense": "Untested at a high level. Hit a bit early against Cowan. Her only loss was a split decision in her 2023 pro debut to Cecilie Bolander. Never stopped.",
+  "Pace & cardio": "Mostly a first-round finisher: five of six stoppages came in R1 (four KO/TKO, one sub), plus the R3 submission. Her three decisions all went 15 minutes, and IMMAF and BRAVE describe her as composed over three rounds, increasing output in R2-R3 against Osman.",
+  "Fight IQ": "Calm, counter-minded starter who adjusts mid-fight. Her pre-UFC opposition came from small regional promotions; Cowan (0-4 in the UFC, retired afterwards) was arguably the best opponent of her career."
+ },
+ "patterns": [
+  "Patient first minutes, then a finishing burst",
+  "Body attack (two body shots finished Cowan)",
+  "Submission threats on the mat; finished in R1 five times",
+  "Can go 15 minutes and build pace (Osman)"
+ ],
+ "concerns": [
+  "Thin opposition; one UFC fight, against a fighter who then retired",
+  "Head movement early (Cageside)",
+  "Ages disagree (29 vs 30)"
+ ],
+ "keys_to_beat": [
+  "Out-work her in the first two minutes before she settles",
+  "Make her lead and counter her",
+  "Wrestle her and test her bottom game, which nobody has done"
+ ],
+ "news": [
+  {
+   "date": "2026-08-01",
+   "text": "Stopped Hailey Cowan with body shots at 3:41 of R1 in her UFC debut in Belgrade; earned Performance of the Night.",
+   "source": "https://cagesidepress.com/2026/08/01/ufc-belgrade-nina-nikolija-milosevic-uses-body-shots-to-end-hailey-cowans-night/"
+  },
+  {
+   "date": "2026-08-04",
+   "text": "Cowan retired after the loss, finishing 0-4 in the UFC.",
+   "source": "https://cagesidepress.com/2026/08/04/hailey-cowan-retires-following-0-4-ufc-run/"
+  },
+  {
+   "date": "2026-09-25",
+   "text": "Booked against Priscila Cachoeira for her second UFC fight.",
+   "source": "https://mmasucka.com/news/priscila-cachoeira-set-to-face-nina-milosevic-at-ufc-vegas-124/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Belgrade: Nina Nikolija Milosevic Uses Body Shots to End Hailey Cowan's Night",
+   "url": "https://cagesidepress.com/2026/08/01/ufc-belgrade-nina-nikolija-milosevic-uses-body-shots-to-end-hailey-cowans-night/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "McKenzie Pavacich",
+   "title": "Back Home, Ready For The Big Stage",
+   "url": "https://www.ufc.com/news/nina-milosevic-back-home-big-stage-ufc-belgrade",
+   "date": "2026-07-31"
+  },
+  {
+   "outlet": "IMMAF",
+   "author": "",
+   "title": "Nina Nikolija Milosevic: From IMMAF Gold to the UFC",
+   "url": "https://immaf.org/2026/08/01/nina-nikolija-milosevic-from-immaf-gold-to-the-ufc/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "BRAVE CF",
+   "author": "",
+   "title": "Luciano Palhano dominates Nikola Joksovic in BRAVE CF 104 main event: complete event results",
+   "url": "https://www.bravecf.com/news/luciano-palhano-dominates-nikola-joksovi-in-brave-cf-104-main-event-complete-event-results",
+   "date": "2026-02-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Hailey Cowan Retires Following 0-4 UFC Run",
+   "url": "https://cagesidepress.com/2026/08/04/hailey-cowan-retires-following-0-4-ufc-run/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Priscila Cachoeira set to face Nina Milosevic at UFC Vegas 124",
+   "url": "https://mmasucka.com/news/priscila-cachoeira-set-to-face-nina-milosevic-at-ufc-vegas-124/",
+   "date": "2026-09-25"
+  }
+ ],
+ "depth": "thin"
+}

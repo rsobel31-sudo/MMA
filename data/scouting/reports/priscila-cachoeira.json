@@ -1,0 +1,86 @@
+{
+ "name": "Priscila Cachoeira",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 38-year-old Brazilian brawler (13-9; 5-9 UFC) on a three-fight losing streak and 1-5 since 2023 (per MMA Sucka and our data). She comes forward swinging, has one-punch power in R1, and is very tough on the feet, but she has been submitted five times in the UFC, each time after being taken down or dropped.",
+ "how_they_fight": {
+  "Striking": "Forward-pressure slugger with wide hooks and overhands; she leads the exchanges and is willing to eat shots to land hers. Real early power: five of her eight KO/TKO wins came in R1, including the clinch uppercut on Josiane Nunes (LowKick's best knockouts of 2025) and Ariane Lipski at 1:05. She loses the volume battle against busier strikers: Sygula out-worked her over three rounds despite Cachoeira doing the visible damage (Cageside).",
+  "Grappling": "Almost none offensively (one or two takedowns a fight at most; dumped Sygula off a caught kick in R3). On her back she gives up position: Chandler took her back after dropping her and armbarred her at 3:42 of R1; Maverick and Jasudavicius controlled her for about 9 and 11 minutes before finishing in R3.",
+  "Defense": "Absorbs about 6.5 significant strikes a minute, the worst number in this group. Losses: five submissions (R1 x2, R2, R3 x2), one KO (Joselyne Edwards, R1, 2025) and three decisions. Takedown defense is decent on paper (77%) but everyone who wants to wrestle her eventually gets her down.",
+  "Pace & cardio": "An R1-R2 finisher: all eight KO/TKO wins came in R1 (five) or R2 (three). Her last finish win was R1 (Nunes, 2025). When she loses she is often finished: R1 against Robertson, Edwards and Chandler; late R3 against Maverick and Jasudavicius after long stretches on her back. She doesn't stop coming forward late, but she doesn't win late rounds either.",
+  "Fight IQ": "One gear: pressure and swing. Let Chandler back up after putting her down and was caught coming in (Cageside)."
+ },
+ "patterns": [
+  "Swings hard early; five R1 knockouts",
+  "Loses volume battles over 15 minutes",
+  "Five UFC submission losses after being taken down or dropped",
+  "Six UFC stoppage losses: three in R1, one in R2, two in R3"
+ ],
+ "concerns": [
+  "Age 38 and 1-5 since 2023",
+  "Defense: absorbs 6.5 significant strikes a minute",
+  "Bottom game against anyone who can take her back"
+ ],
+ "keys_to_beat": [
+  "Survive the first two minutes and don't trade in the pocket",
+  "Body shots and volume; she stays in front of you",
+  "Take her down or take her back off a scramble"
+ ],
+ "news": [
+  {
+   "date": "2026-06-06",
+   "text": "Submitted by Chelsea Chandler (armbar, 3:42 of R1) after being dropped by a short right.",
+   "source": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-returning-chelsea-chandler-taps-priscila-cachoeira/"
+  },
+  {
+   "date": "2026-09-25",
+   "text": "Booked against Nina Nikolija Milosevic; MMA Sucka notes she enters on a three-fight skid.",
+   "source": "https://mmasucka.com/news/priscila-cachoeira-set-to-face-nina-milosevic-at-ufc-vegas-124/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 118: Returning Chelsea Chandler Taps Priscila Cachoeira",
+   "url": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-returning-chelsea-chandler-taps-priscila-cachoeira/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 113: Klaudia Sygula Outworks Priscila Cachoeira",
+   "url": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-klaudia-sygula-outworks-priscila-cachoeira",
+   "date": "2026-02-07"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 109: 'Dolidze vs. Hernandez' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-109/ufc-vegas-109-dolidze-vs-hernandez-live-results-and-highlights/",
+   "date": "2025-08-09"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 104: 'Vettori vs. Dolidze 2' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc/ufc-vegas-104-vettori-vs-dolidze-2-live-results-and-highlights/",
+   "date": "2025-03-15"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Watch UFC's Greatest Knockouts of 2025 - Free Full Video",
+   "url": "https://www.lowkickmma.com/watch-ufcs-greatest-knockouts-of-2025-free-full-video/",
+   "date": "2025-12-30"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Priscila Cachoeira set to face Nina Milosevic at UFC Vegas 124",
+   "url": "https://mmasucka.com/news/priscila-cachoeira-set-to-face-nina-milosevic-at-ufc-vegas-124/",
+   "date": "2026-09-25"
+  }
+ ],
+ "depth": "moderate"
+}

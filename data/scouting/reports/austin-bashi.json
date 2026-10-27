@@ -1,0 +1,99 @@
+{
+ "name": "Austin Bashi",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 25-year-old featherweight wrestler-grappler (14-2; 1-2 UFC) out of the 2024 Contender Series who was 13-0 before the UFC. He has lost both UFC decisions against opponents who could stop his shots and out-strike him (Christian Rodriguez, Jose Delgado). His one UFC win was a first-round RNC of short-notice opponent John Yannis. He comes off a fractured nose and orbital from the Delgado fight in July.",
+ "how_they_fight": {
+  "Striking": "Functional, mostly there to set up the shot. Willing to stand and swing heavy hooks, sometimes recklessly: Cageside Press says he scored a knockdown on Delgado early, then got dropped twice in R1 (a punch, then a flying knee). Our verified data credits only Delgado with a knockdown, so the outlets and our table disagree. Low volume in the UFC (about 2.4 significant strikes a minute) and Rodriguez hurt him with a knee early.",
+  "Grappling": "The core of his game: chain wrestling, single legs, lifts and slams, then back takes and chokes. Six career submissions, including an RNC of Yannis off a takedown and back take, and he swept to mount from a guillotine against Delgado late in R3 (Cageside). The UFC problem is efficiency: 3 of 18 takedowns vs Rodriguez and 3 of 14 vs Delgado in our data, 7 of 33 across three UFC fights. He does control when he gets there (5:41 of control vs Rodriguez).",
+  "Defense": "Leaves his neck out on entries (Rodriguez had a guillotine opening, per Cageside). Hittable when he plants to trade. Never stopped: both losses were unanimous decisions. Takedown defense has held up reasonably (about 66%).",
+  "Pace & cardio": "Front-to-middle-round finisher who struggles late. Stoppage wins: four in R1, four in R2, one in R3 (a 2021 regional sub). Decisions: five, including a five-round win in 2022 on the regional scene. In both UFC losses he lost the later rounds: Cageside says his cardio faded and his shots got telegraphed in R3 against Rodriguez, and that his gas tank looked to fade in R3 against Delgado even as he swept to mount. Sherdog's Tom Feely flagged before his debut that he was on the small side for 145 after moving up from bantamweight, and that his gas tank was the question.",
+  "Fight IQ": "Persistent: keeps shooting after being stuffed and keeps coming forward after being hurt (recovered from two R1 knockdowns against Delgado and kept wrestling through R2-R3). Trains alongside Diego Lopes (Cageside's TTP podcast)."
+ },
+ "patterns": [
+  "Chain wrestling into back takes and chokes; nine of his 14 wins by finish",
+  "Finishes come in R1-R2 (eight of nine stoppages); no UFC finish past 3:39 of R1",
+  "Low takedown accuracy against UFC-level defense (7 of 33)",
+  "Fades and gets telegraphed in R3 (Rodriguez, Delgado)",
+  "Never stopped; both losses were decisions where he was out-struck"
+ ],
+ "concerns": [
+  "Coming off fractures to the nose and orbital bone (July)",
+  "Small for featherweight",
+  "Reckless exchanges on the feet"
+ ],
+ "keys_to_beat": [
+  "Stuff the first takedowns and make him wrestle tired by R3",
+  "Punish the level change with knees and front-headlock threats",
+  "Out-land him at range; he's lost on volume both times"
+ ],
+ "news": [
+  {
+   "date": "2026-07-20",
+   "text": "Said on Instagram he suffered a small fracture in the nose and in the orbital bone in the Delgado loss, and was taken to hospital after the fight.",
+   "source": "https://www.essentiallysports.com/ufc-mma-news-ufc-okc-fighter-reveals-injuries-after-being-rushed-to-hospital-following-loss/"
+  },
+  {
+   "date": "2026-07-18",
+   "text": "Lost a unanimous decision to Jose Delgado (30-27, 29-28, 29-28); Cageside counts knockdowns both ways.",
+   "source": "https://cagesidepress.com/2026/07/18/jose-delgado-earns-gritty-decision-victory-over-bashi/"
+  },
+  {
+   "date": "2026-10-26",
+   "text": "The Bashi vs. Lucas Brennan featherweight bout is on the UFC Vegas 124 prelims.",
+   "source": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jose Delgado Earns Gritty Decision Victory Over Bashi",
+   "url": "https://cagesidepress.com/2026/07/18/jose-delgado-earns-gritty-decision-victory-over-bashi/",
+   "date": "2026-07-18"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "Abhishek Kumar Das",
+   "title": "UFC OKC fighter reveals injuries after being rushed to hospital following loss",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-ufc-okc-fighter-reveals-injuries-after-being-rushed-to-hospital-following-loss/",
+   "date": "2026-07-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 101: Christian Rodriguez Derails Another Prospect, Gives Austin Bashi First Loss",
+   "url": "https://cagesidepress.com/2025/01/11/ufc-vegas-101-christian-rodriguez-derails-another-prospect-gives-austin-bashi-first-loss",
+   "date": "2025-01-11"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC Vegas 101 'Dern vs. Ribas 2'",
+   "url": "https://www.sherdog.com/news/articles/5/Preview-UFC-Vegas-101-Dern-vs-Ribas-2-195860",
+   "date": "2025-01-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Oklahoma City Losers",
+   "url": "https://cagesidepress.com/2026/07/20/whats-next-ufc-oklahoma-city-losers/",
+   "date": "2026-07-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "TTP Ep. 540: Tabatha Ricci, Alvin Hines, Austin Bashi, and UFC Oklahoma City",
+   "url": "https://cagesidepress.com/2026/07/15/ttp-ep-540-tabatha-ricci-alvin-hines-austin-bashi-and-ufc-oklahoma-city/",
+   "date": "2026-07-15"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  }
+ ],
+ "depth": "moderate"
+}

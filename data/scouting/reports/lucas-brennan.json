@@ -1,0 +1,81 @@
+{
+ "name": "Lucas Brennan",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 26-year-old Texas grappler (11-3; 0-1 UFC), a BJJ black belt and the son of former fighter Chris Brennan, who went 9-0 in Bellator as a teen prospect, then lost three of his next five fights, all by decision. He debuted in April at lightweight against Francis Marshall a few days after signing (per Wikipedia) and lost 30-27 x3 without landing a takedown. He returns to featherweight here.",
+ "how_they_fight": {
+  "Striking": "Long, kick-heavy and feint-heavy rather than a pocket boxer: side kicks, leg kicks, spinning back kicks (Sherdog PFL play-by-play) and a knee KO of Weber Almeida in 2023 (R3). Low output and little defense in the UFC debut: out-landed 33-9 by Marshall, who cracked him with inside leg kicks and straight rights (Cageside).",
+  "Grappling": "His real weapon. Eight of his 11 wins are submissions, every one of them in R1 (RNC, anaconda, assassin's choke, forearm choke, neck crank, per Wikipedia's record). Takes the back off scrambles and hunts chokes; threatens heel hooks and omoplatas off his back (deep heel hook vs Marshall in R1; omoplata vs Dimitre Ivy). His wrestling to get there is the weak link: 0 of 6 takedowns vs Marshall, and he gets put on his back.",
+  "Defense": "Never stopped. All three losses were decisions (Ivy UD as a -650 favourite in our odds data, Mauricio Gomez split, Marshall UD). Gets out-struck and out-clinched: Ivy won R1 and R3 with clinch knees and body work, Marshall held him down for 6:36.",
+  "Pace & cardio": "An R1 submission artist: eight of nine stoppages came in R1, the other two (TKO R2 2020, KO R3 2023) were strikes. When the early submission doesn't land he tends to lose the minutes: all three losses went the full 15. His only decision win came in 2020 (Salas). Sherdog scored the Ivy fight R1 Ivy, R2 Brennan (back control), R3 Ivy.",
+  "Fight IQ": "Comfortable on his back and willing to give position to attack legs; that cost him rounds against Marshall. The Bellator-era quality of opposition was modest; his two 2025 wins came on the Texas regional scene (XKO)."
+ },
+ "patterns": [
+  "Submission finisher: eight R1 submissions",
+  "Back takes from scrambles, leg attacks off his back",
+  "Never finished; all three losses were 15-minute decisions",
+  "Struggles to land takedowns against good wrestlers",
+  "Loses the striking minutes when he can't get the fight down"
+ ],
+ "concerns": [
+  "0 for 6 on takedowns in his UFC debut",
+  "Has lost three of his last five fights",
+  "Weight change: debuted at lightweight, back down to featherweight",
+  "Low striking output"
+ ],
+ "keys_to_beat": [
+  "Win the striking minutes with straight shots and leg kicks",
+  "Stay out of scrambles and don't give up the back",
+  "Take him down and stay heavy; avoid his leg attacks from bottom"
+ ],
+ "news": [
+  {
+   "date": "2026-04-25",
+   "text": "Lost his UFC debut to Francis Marshall by unanimous decision (30-27 x3) at lightweight.",
+   "source": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-francis-marshall-turns-back-bellator-standout-lucas-brennan/"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "Wikipedia says he signed with the UFC on April 20 and debuted five days later; he is booked back at featherweight against Austin Bashi.",
+   "source": "https://en.wikipedia.org/wiki/Lucas_Brennan"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 116: Francis Marshall Turns Back Bellator Standout Lucas Brennan",
+   "url": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-francis-marshall-turns-back-bellator-standout-lucas-brennan/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Lucas Brennan",
+   "url": "https://en.wikipedia.org/wiki/Lucas_Brennan",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tyler Treese",
+   "title": "2024 PFL 1 Regular Season Play-by-Play, Results & Round Scoring",
+   "url": "https://www.sherdog.com/news/news/2024-PFL-1-Regular-Season-PlaybyPlay-Results-Round-Scoring-193200",
+   "date": "2024-04-04"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Vegas 116: 'Sterling vs. Zalal' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-vegas-116/ufc-vegas-116-sterling-vs-zalal-live-results-and-highlights/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  }
+ ],
+ "depth": "moderate"
+}

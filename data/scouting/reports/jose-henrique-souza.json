@@ -1,0 +1,86 @@
+{
+ "name": "Jose Henrique Souza",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 24-year-old, 6-foot-3 Brazilian welterweight ('Canela', Nova Uniao, from Manaus; 9-1, 1-0 UFC). He signed with the UFC in 2023 after a Contender Series loss, then served a two-year USADA ban for nandrolone before winning his debut over Ding Meng in May on a split decision. A Muay Thai striker who likes knees and works behind a jab at range.",
+ "how_they_fight": {
+  "Striking": "Long jab and right hand, knees in the clinch (his favourite strike, per his UFC profile) and spinning attacks. His UFC profile lists 99% of his strikes thrown standing. Against Ding he kept range, landed a clean knee in R2 and cut Ding with a spinning strike early in R3 (Cageside). Our data has him out-landing Ding 72-63.",
+  "Grappling": "BJJ brown belt, but no takedowns attempted by either man against Ding, and nothing on the mat in the UFC. He has no submission wins; his fights are won and lost on the feet.",
+  "Defense": "Hittable: absorbs about 4.3-4.9 significant strikes a minute depending on the source. Stopped once: Yusaku Kinoshita knocked him down and finished him at 0:43 of R3 on the 2022 Contender Series, out-landing him 62-37. Ding caught a kick and took him down in R2 (Cageside).",
+  "Pace & cardio": "Not an early blitzer. KO/TKO wins: two in R1, three in R2, one in R3 (a knee with five seconds left, per Sherdog). Three split decisions. He finishes stronger than he starts against Ding, winning R3 clearly after looking a step slower late in R1, but his one loss came early in R3 after he was worn down.",
+  "Fight IQ": "Happy to coast on a lead: retreated and showboated in the final seconds against Ding and was booed (Cageside). Close fights tend to go to the cards."
+ },
+ "patterns": [
+  "Range striker: jab, right hand, knees",
+  "Wins the third round late (Ding)",
+  "Three of his last five wins were split decisions",
+  "Stoppages spread across R1-R3; not a pure fast starter"
+ ],
+ "concerns": [
+  "Two-year USADA sanction (nandrolone) in 2023-25",
+  "Stopped in R3 on the Contender Series",
+  "Coasts late; close rounds can slip away"
+ ],
+ "keys_to_beat": [
+  "Close the distance and fight him in the pocket",
+  "Wrestle him; he's had no takedown exchanges in the UFC",
+  "Win R1 and R2 clearly so his R3 surge isn't enough"
+ ],
+ "news": [
+  {
+   "date": "2026-05-30",
+   "text": "Won his UFC debut over Ding Meng by split decision; Cageside lists the cards as 30-27, 28-29, 29-28.",
+   "source": "https://cagesidepress.com/2026/05/30/ufc-macau-ding-meng-vs-jose-henrique-souza/"
+  },
+  {
+   "date": "2023-06-01",
+   "text": "Accepted a two-year USADA sanction for nandrolone, backdated to a March 8, 2023 test; he was eligible again from about March 2025.",
+   "source": "https://cagesidepress.com/2023/06/01/jose-de-souza-hit-two-year-ban-usada-following-failed-drug-test"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Macau: Jose Henrique Souza Takes Split Decision Over Ding Meng",
+   "url": "https://cagesidepress.com/2026/05/30/ufc-macau-ding-meng-vs-jose-henrique-souza/",
+   "date": "2026-05-30"
+  },
+  {
+   "outlet": "UFC Espanol",
+   "author": "",
+   "title": "Jose Henrique (athlete profile)",
+   "url": "https://www.ufcespanol.com/athlete/jose-henrique",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Joao Baptista",
+   "title": "UFC Signs 20-Year-Old DWCS Vet Jose Henrique Souza",
+   "url": "https://www.sherdog.com/news/news/UFC-Signs-20YearOld-DWCS-Vet-Jose-Henrique-Souza-189508",
+   "date": "2023-03-24"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC: Jose de Souza Hit With Two-Year Ban by USADA Following Failed Drug Test",
+   "url": "https://cagesidepress.com/2023/06/01/jose-de-souza-hit-two-year-ban-usada-following-failed-drug-test",
+   "date": "2023-06-01"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson, George Garcia, Brian Garcia",
+   "title": "'Sluggernaut' Jonny Parsons wonders: To slug, or not, in UFC return?",
+   "url": "https://sports.yahoo.com/articles/sluggernaut-jonny-parsons-wonders-slug-234031324.html",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  }
+ ],
+ "depth": "moderate"
+}

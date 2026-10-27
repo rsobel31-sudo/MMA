@@ -1,0 +1,103 @@
+{
+ "name": "Mitch Raposo",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 28-year-old American flyweight (11-3; 2-2 UFC; Regiment Training Center) who has won two straight decisions after starting 0-2 in the UFC on split losses. Fast-handed and mobile, with good takedown defense and the ability to get back up. All four of his UFC fights went the distance, and three were split decisions.",
+ "how_they_fight": {
+  "Striking": "Fast starter on the feet: jab, quick combinations and a left hook that cut Nascimento in R1. Moves a lot to avoid power, and can switch to standing in the pocket and timing exchanges (Cageside, on Nascimento R2). Says he wants to 'throw hands', not wrestle. Low volume overall (about 2.8 significant strikes a minute).",
+  "Grappling": "Defensive and scrambly. Stuffed takedowns with uppercuts against Nascimento (four stopped in our data). Maksum landed 7 of 19 and controlled him for over five minutes, but Raposo kept standing up and threatened an omoplata and a guillotine. Three career submissions, all regional.",
+  "Defense": "Never knocked out. Jake Hadley submitted him in R2 on the 2021 Contender Series. Both UFC losses were split decisions (Andre Lima, Su Mudaerji). He was dropped by Nascimento in R3 and survived under ground strikes by tying him up.",
+  "Pace & cardio": "Wins early rounds, gets tested late. Against Nascimento he won R1 and R2 and lost R3 after a knockdown; Maksum's wrestling took over in R3 too. Stoppage wins: four in R1, one in R2, one in R3, one in R4 of a five-rounder (2024 regional title fight). He hasn't finished anyone in the UFC.",
+  "Fight IQ": "Fight-to-fight improvement, and he has talked openly about pre-fight nerves ('demons') before his first UFC win. Tends to leave close fights with the judges."
+ },
+ "patterns": [
+  "Takes R1 with speed and movement",
+  "Strong takedown defense and gets back up",
+  "All four UFC fights went the distance; three split decisions",
+  "Has been hurt or out-grappled in R3 (Nascimento, Maksum)"
+ ],
+ "concerns": [
+  "Late-fight dips: dropped in R3 by Nascimento",
+  "Low output against a busy finisher",
+  "Pulled out of the April Nascimento date with a virus"
+ ],
+ "keys_to_beat": [
+  "Survive his R1 speed and come on late",
+  "Pressure him into the fence and go to the body",
+  "Mix in takedowns late to steal R3"
+ ],
+ "news": [
+  {
+   "date": "2026-06-20",
+   "text": "Beat Allan Nascimento by split decision (29-28, 29-28, 28-29) after being dropped in R3.",
+   "source": "https://cagesidepress.com/2026/06/20/mitch-raposo-holds-off-nascimento-rally-calls-out-brandon-moreno/"
+  },
+  {
+   "date": "2026-04-16",
+   "text": "Pulled out of the original April date at UFC Winnipeg with a virus; the fight moved to June.",
+   "source": "https://cagesidepress.com/2026/04/16/ufc-winnipeg-loses-fight-day-before-weigh-ins/"
+  },
+  {
+   "date": "2026-08-03",
+   "text": "Nascimento, his last opponent, died in August at age 34 after an apparent heart attack in his sleep.",
+   "source": "https://bleacherreport.com/articles/25461303-ufc-fighter-allan-nascimento-dies-age-34"
+  },
+  {
+   "date": "2026-10-06",
+   "text": "Booked against Contender Series signee Marcos Degli (first reported by Ag Fight, per MMA Sucka).",
+   "source": "https://mmasucka.com/news/marcos-degli-set-for-ufc-debut-against-mitch-raposo/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Mitch Raposo Holds Off Nascimento Rally, Calls Out Brandon Moreno",
+   "url": "https://cagesidepress.com/2026/06/20/mitch-raposo-holds-off-nascimento-rally-calls-out-brandon-moreno/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Jay Anderson",
+   "title": "UFC Vegas 119: Mitch Raposo Wants Edgar Chairez at Noche UFC",
+   "url": "https://cagesidepress.com/2026/06/23/ufc-vegas-119-raposo-chairez-noche/",
+   "date": "2026-06-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Mitch Raposo Outworks Azat Maksum, Secures Breakthrough Victory at UFC 321",
+   "url": "https://cagesidepress.com/2025/10/25/mitch-raposo-outworks-azat-maksum-secures-breakthrough-victory-at-ufc-321",
+   "date": "2025-10-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Dave Noseworthy, Eddie Law",
+   "title": "Mitch Raposo Wins at UFC 321, Says He 'Faced Demons' Before Breakthrough Victory",
+   "url": "https://cagesidepress.com/2025/10/27/mitch-raposo-wins-at-ufc-321-says-he-faced-demons-before-breakthrough-victory",
+   "date": "2025-10-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Winnipeg Loses Fight Day Before Weigh-Ins",
+   "url": "https://cagesidepress.com/2026/04/16/ufc-winnipeg-loses-fight-day-before-weigh-ins/",
+   "date": "2026-04-16"
+  },
+  {
+   "outlet": "Bleacher Report",
+   "author": "",
+   "title": "UFC fighter Allan Nascimento dies at age 34",
+   "url": "https://bleacherreport.com/articles/25461303-ufc-fighter-allan-nascimento-dies-age-34",
+   "date": "2026-08-03"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Felipe Castello Branco",
+   "title": "Marcos Degli set for UFC debut against Mitch Raposo",
+   "url": "https://mmasucka.com/news/marcos-degli-set-for-ufc-debut-against-mitch-raposo/",
+   "date": "2026-10-06"
+  }
+ ],
+ "depth": "moderate"
+}

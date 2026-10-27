@@ -1,0 +1,92 @@
+{
+ "name": "Jonny Parsons",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A 35-year-old Las Vegas welterweight (9-3; 1-0 UFC), a former Muay Thai fighter and 2021 Contender Series winner, returning from about 40 months out. His only UFC fight was a Fight of the Night TKO of Danny Roberts in July 2023. Since then, bookings against Uros Medic (Nov 2023) and Yusaku Kinoshita (Aug 2024) didn't happen, and he told MMA Junkie that hip flexor and groin problems kept him out.",
+ "how_they_fight": {
+  "Striking": "A pressure kickboxer who likes to trade. Seven of nine wins by KO/TKO. Against Roberts he lost R1 at range, then found a right hand in R2, pinned Roberts on the fence with knees and uppercuts, and dropped him with a combination for a TKO at 4:57 (Sherdog). He calls himself more technical than his brawler reputation and promises hard kicks (MMA Junkie).",
+  "Grappling": "Defensive only. Solomon Renfro took him down twice and controlled him for almost two minutes on the Contender Series, and Roberts shot on him late. Rarely looks for takedowns himself (0 of 3 on DWCS).",
+  "Defense": "Takes shots to give them. Knocked down once by Renfro, out-landed by Roberts in R1. Stopped twice by strikes, both in R2 and both long ago (2013 pro debut on a day's notice in Thailand, 2018). His one other loss was a five-round decision in 2019.",
+  "Pace & cardio": "A second-round finisher: KO/TKOs came in R1 three times and R2 four times; none in R3. His DWCS win went 15 minutes on a split. He tends to lose R1 and turn it up in R2 (Roberts). After more than three years out at 35, his conditioning over 15 minutes is an unknown.",
+  "Fight IQ": "Thinks the layoff may help and says he now trains with better habits. Says he'll be tricky and elusive, but his own pre-fight talk has a way of turning into a slugfest."
+ },
+ "patterns": [
+  "Kickboxer who wins exchanges in close: knees and uppercuts on the fence",
+  "Finishes in R1-R2; seven KO/TKOs, none in R3",
+  "Slow first round, better in R2 (Roberts)",
+  "Gets hit and has been knocked down"
+ ],
+ "concerns": [
+  "About 40 months without a fight; repeated hip flexor and groin problems",
+  "Age 35",
+  "Takedown defense if Souza changes levels",
+  "Two announced UFC bookings (Medic 2023, Kinoshita 2024) fell through"
+ ],
+ "keys_to_beat": [
+  "Take the first round at range with the jab and kicks",
+  "Wrestle him; he does nothing off his back",
+  "Push the pace in R3 to test the layoff"
+ ],
+ "news": [
+  {
+   "date": "2026-10-15",
+   "text": "Told MMA Junkie he has been out about 40 months, mainly with hip flexor and groin problems, and that rehab at the UFC Performance Institute fixed them. He says he feels as strong as he has in five years.",
+   "source": "https://sports.yahoo.com/articles/sluggernaut-jonny-parsons-wonders-slug-234031324.html"
+  },
+  {
+   "date": "2024-06-16",
+   "text": "A booking against Yusaku Kinoshita for August 2024 was announced but never took place.",
+   "source": "https://cagesidepress.com/2024/06/16/jonny-parsons-yusaku-kinoshita-ufc-vegas-95"
+  },
+  {
+   "date": "2023-11-06",
+   "text": "A November 2023 bout against Uros Medic was also announced but not fought.",
+   "source": "https://mmasucka.com/news/jonny-parsons-plans-to-put-uros-medics-lights-out-at-ufc-vegas-event/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson, George Garcia, Brian Garcia",
+   "title": "'Sluggernaut' Jonny Parsons wonders: To slug, or not, in UFC return?",
+   "url": "https://sports.yahoo.com/articles/sluggernaut-jonny-parsons-wonders-slug-234031324.html",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tristen Critchfield",
+   "title": "UFC Fight Night 224 Prelims: Jonny Parsons Wins Wild Brawl, Stops Danny Roberts",
+   "url": "https://www.sherdog.com/news/news/UFC-Fight-Night-224-Prelims-Jonny-Parsons-Wins-Wild-Brawl-Stops-Danny-Roberts-190563",
+   "date": "2023-07-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Daniel Vreeland",
+   "title": "A Pro Debut on 12 hrs Notice? DWCS' Jonny Parsons is Always Down to Scrap",
+   "url": "https://cagesidepress.com/2021/10/14/a-pro-debut-on-12-hrs-notice-dwcs-jonny-parsons-is-always-down-to-scrap",
+   "date": "2021-10-14"
+  },
+  {
+   "outlet": "MMA Sucka",
+   "author": "Michael DeSantis",
+   "title": "Jonny Parsons Plans to Put Uros Medic's 'Lights Out' at UFC Vegas Event",
+   "url": "https://mmasucka.com/news/jonny-parsons-plans-to-put-uros-medics-lights-out-at-ufc-vegas-event/",
+   "date": "2023-11-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Bryson Hester",
+   "title": "Jonny Parsons to Fight Against Yusaku Kinoshita at UFC Vegas 95",
+   "url": "https://cagesidepress.com/2024/06/16/jonny-parsons-yusaku-kinoshita-ufc-vegas-95",
+   "date": "2024-06-16"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "",
+   "title": "First UFC Fight Night Event of November Hit With Late Change",
+   "url": "https://sports.yahoo.com/articles/first-ufc-fight-night-event-151020968.html",
+   "date": "2026-10-26"
+  }
+ ],
+ "depth": "moderate"
+}
