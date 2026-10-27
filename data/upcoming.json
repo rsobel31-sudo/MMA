@@ -1,11 +1,11 @@
 {
- "fetched": "2026-10-26",
+ "fetched": "2026-10-27",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
    "name": "UFC Fight Night: Moicano vs. Nolan",
    "date": "2026-10-31",
-   "venue": "[ 20 ]",
+   "venue": "[ 21 ]",
    "location": "",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
    "bouts": [
@@ -40,20 +40,6 @@
     {
      "order": 2,
      "segment": "Fight card",
-     "weight_class": "Women's Bantamweight",
-     "a": "Yana Santos",
-     "b": "Luana Santos",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Fight card",
      "weight_class": "Flyweight",
      "a": "Ode' Osbourne",
      "b": "Cody Durden",
@@ -66,11 +52,11 @@
      "main_event": false
     },
     {
-     "order": 4,
+     "order": 3,
      "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Zachary Reese",
-     "b": "Mickey Gall",
+     "weight_class": "Women's Bantamweight",
+     "a": "Yana Santos",
+     "b": "Luana Santos",
      "title": false,
      "result": "",
      "decided": false,
@@ -80,7 +66,7 @@
      "main_event": false
     },
     {
-     "order": 5,
+     "order": 4,
      "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Jean-Paul Lebosnoyani",
@@ -94,8 +80,8 @@
      "main_event": false
     },
     {
-     "order": 6,
-     "segment": "Fight card",
+     "order": 5,
+     "segment": "Preliminary card",
      "weight_class": "Featherweight",
      "a": "Francis Marshall",
      "b": "Dakota Hope",
@@ -108,22 +94,8 @@
      "main_event": false
     },
     {
-     "order": 7,
-     "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Azamat Bekoev",
-     "b": "Andre Petroski",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Fight card",
+     "order": 6,
+     "segment": "Preliminary card",
      "weight_class": "Welterweight",
      "a": "Rodrigo Sezinando",
      "b": "Theodor Berggren",
@@ -136,8 +108,8 @@
      "main_event": false
     },
     {
-     "order": 9,
-     "segment": "Fight card",
+     "order": 7,
+     "segment": "Preliminary card",
      "weight_class": "Featherweight",
      "a": "Julian Erosa",
      "b": "Lee Jeong-yeong",
@@ -150,8 +122,22 @@
      "main_event": false
     },
     {
-     "order": 10,
-     "segment": "Fight card",
+     "order": 8,
+     "segment": "Preliminary card",
+     "weight_class": "Middleweight",
+     "a": "Zachary Reese",
+     "b": "Mickey Gall",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 9,
+     "segment": "Preliminary card",
      "weight_class": "Middleweight",
      "a": "Nick Klein",
      "b": "Joseph Kropschot",
@@ -164,8 +150,8 @@
      "main_event": false
     },
     {
-     "order": 11,
-     "segment": "Fight card",
+     "order": 10,
+     "segment": "Preliminary card",
      "weight_class": "Women's Strawweight",
      "a": "Talita Alencar",
      "b": "Piera Rodriguez",
@@ -178,8 +164,8 @@
      "main_event": false
     },
     {
-     "order": 12,
-     "segment": "Fight card",
+     "order": 11,
+     "segment": "Preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Lucia Szabov\u00e1",
      "b": "Tainara Lisboa",
@@ -384,7 +370,7 @@
      "segment": "Announced",
      "weight_class": "Heavyweight",
      "a": "Gabriel Loren\u00e7o",
-     "b": "TBD",
+     "b": "Thomas Petersen",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -774,6 +760,17 @@
      "result": "",
      "rounds": 3,
      "main_event": false
+    },
+    {
+     "order": 10,
+     "segment": "Announced",
+     "weight_class": "Middleweight",
+     "a": "Damian Pinas",
+     "b": "Baisangur Susurkaev",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
@@ -783,6 +780,14 @@
    "venue": "American Airlines Center",
    "location": "Dallas, Texas, U.S.",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
+   "bouts": []
+  },
+  {
+   "name": "UFC Fight Night 297",
+   "date": "2027-01-23",
+   "venue": "Meta Apex",
+   "location": "Las Vegas, Nevada, U.S.",
+   "url": "",
    "bouts": []
   },
   {
@@ -823,11 +828,11 @@
    ]
   },
   {
-   "name": "UFC Fight Night 297",
+   "name": "UFC Fight Night 298",
    "date": "2027-02-07",
    "venue": "Afterpay Arena",
    "location": "Sydney, Australia",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_297",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_298",
    "bouts": []
   }
  ]
