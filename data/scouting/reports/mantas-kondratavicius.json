@@ -1,0 +1,86 @@
+{
+ "name": "Mantas Kondratavicius",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Lithuanian middleweight (9-1, age 26-27; 1-0 UFC) from the 2025 Contender Series, where he knocked out Djani Barbir in 66 seconds. A powerful finisher (six KO/TKOs) who dropped Antonio Trocoli with an elbow in his UFC debut, then faded so badly in R3 that LowKick said he ran out of steam. Now faces Andre Petroski, a grinding wrestler who joined the card on short notice.",
+ "how_they_fight": {
+  "Striking": "Heavy hands and elbows: a jab-right finished Barbir; a short right elbow dropped Trocoli early in R2 and cut him badly (Cageside; LowKick). Knockdowns in both his DWCS and UFC fights (about 1.1 per 15 in our data). He out-landed Trocoli 75-17 in significant strikes (our data), with some wild overhands.",
+  "Grappling": "Says he has rebuilt his wrestling and grappling with the best wrestlers in Lithuania since his only loss (UFC.com). Reversed clinch positions on the fence against Trocoli, landed a takedown and ground strikes, and nearly finished an RNC at the end of R2. Regional subs in R1 and R2.",
+  "Defense": "Was clinched and kneed on the fence early by Trocoli and taken down once in R3, but got straight up (Cageside). Trocoli tried 12 takedowns and landed one (our data). His one loss was an R2 submission to Virgil Augen in 2023.",
+  "Pace & cardio": "Fast starter, clear late fade. Wins: KOs in R1 (four) and R2 (two), subs in R1 and R2; his only decision is the Trocoli fight, where both men were exhausted in R3 and he did little (Cageside; LowKick). His only loss came in R2. He has never shown he can keep the pace for 15 minutes.",
+  "Fight IQ": "Aggressive by nature; says he always goes in 'prepared for a war' and doesn't plan particular finishes (UFC.com). Had a groin strike in R2 against Trocoli."
+ },
+ "patterns": [
+  "R1-R2 power: elbows and right hands",
+  "Fast start; all eight stoppage wins in R1-R2",
+  "Faded hard in R3 of his only 15-minute fight",
+  "Takes the back when opponents are hurt"
+ ],
+ "concerns": [
+  "Cardio past 10 minutes",
+  "A grinding wrestler on short notice (Petroski) is the worst style for a fader",
+  "Only one UFC fight"
+ ],
+ "keys_to_beat": [
+  "Survive R1, clinch and wrestle, and drag him into R3",
+  "Keep him on the fence to drain him",
+  "Don't trade with him early"
+ ],
+ "news": [
+  {
+   "date": "2026-10-26",
+   "text": "His opponent is now Andre Petroski. EssentiallySports reports that Petroski's Oct. 31 bout with Azamat Bekoev was scrapped after Bekoev had an anaphylactic reaction and passed out in a CVS (MiddleEasy has the same account), and that Petroski was moved to this fight. Wikipedia instead says Kondratavicius's original opponent, Wesley Schultz, pulled out and was replaced by Petroski. Sources disagree on what happened to Schultz.",
+   "source": "https://www.essentiallysports.com/ufc-mma-news-medical-emergency-forces-ufc-vegas-123-fighter-to-withdraw-as-dana-white-faces-setback/"
+  },
+  {
+   "date": "2026-03-21",
+   "text": "Won his UFC debut over Antonio Trocoli by decision (30-27, 29-27, 29-27) after dropping him in R2.",
+   "source": "https://cagesidepress.com/2026/03/21/ufc-london-mantas-kondratavicius-out-points-antonio-trocoli/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC London: Mantas Kondratavičius Out-Points Antonio Trócoli",
+   "url": "https://cagesidepress.com/2026/03/21/ufc-london-mantas-kondratavicius-out-points-antonio-trocoli/",
+   "date": "2026-03-21"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Mantas Kondratavičius Drops Antonio Trócoli With Brutal Elbow, Secures Victory",
+   "url": "https://www.lowkickmma.com/trocoli-vs-mantas-kondratavicius-ufc-london/",
+   "date": "2026-03-21"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Mantas Kondratavicius Out To Prove He Belongs",
+   "url": "https://www.ufc.com/news/mantas-kondratavicius-out-to-prove-he-belongs-ufc-london",
+   "date": "2026-03-18"
+  },
+  {
+   "outlet": "EssentiallySports",
+   "author": "Biplob Chakraborty",
+   "title": "Medical Emergency Forces UFC Vegas 123 Fighter to Withdraw as Dana White Faces Setback",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-medical-emergency-forces-ufc-vegas-123-fighter-to-withdraw-as-dana-white-faces-setback/",
+   "date": "2026-10-26"
+  },
+  {
+   "outlet": "MiddleEasy",
+   "author": "Jake Blend",
+   "title": "Azamat Bekoev Withdraws From Andre Petroski Fight After Health Scare",
+   "url": "https://middleeasy.com/mma-news/azamat-bekoev-petroski-withdrawal-health/",
+   "date": "2026-10-25"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "moderate"
+}

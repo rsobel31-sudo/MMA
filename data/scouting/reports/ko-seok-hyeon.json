@@ -1,0 +1,98 @@
+{
+ "name": "Ko Seok-hyeon",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A South Korean welterweight from Busan (13-3, age 32; HAVAS MMA), nicknamed 'The Korean Tyson', a judo black belt and former amateur sambo world champion (UFC.com). Won his first two UFC fights by decision on takedowns and top control, then lost a close decision to Jean-Paul Lebosnoyani in July. Regional KO power (six KOs, four in R1) but no UFC finish yet. Listed in our data as Seok Hyeon Ko.",
+ "how_they_fight": {
+  "Striking": "Jab, leg kicks, right hand and uppercut at range; won R1 against Lebosnoyani on kicks and the jab and landed a sharp elbow in R3 (Cageside; Korea Herald). Slashing elbows cut Oban Elliott (Sherdog). UFC.com: 3.15 significant strikes landed and 1.93 absorbed a minute; no UFC knockdowns.",
+  "Grappling": "Judo and sambo base. Took Elliott down in all three rounds and ended in full mount (Sherdog: 30-27 x3). His win over Phil Rowe was also a clear decision; we haven't read a recap of it, so its details aren't covered here. Takedown accuracy on UFC.com is only 26% (6 of 23); Lebosnoyani defended a judo throw.",
+  "Defense": "Lebosnoyani took him down in every round and threatened two tight guillotines, which Ko escaped (Cageside). Takedown defense 50% (UFC.com). Was stopped twice on the regional scene, R2 in 2018 and R1 in 2021.",
+  "Pace & cardio": "Decision fighter in the UFC (three of three). Regional finishes were all KOs in R1 (four) or R2 (two). The Korea Herald says he slowed in the middle of R2 against Lebosnoyani, who took over with combinations, knees and a takedown to mount. He came back in R3. Both stoppage losses came in R1-R2.",
+  "Fight IQ": "Has rebranded as 'Technical' Ko, aiming for his first UFC finish (StarNews)."
+ },
+ "patterns": [
+  "Judo/sambo takedowns and top control in the UFC",
+  "Jab and leg kicks at range",
+  "All three UFC fights went to decision",
+  "Slowed in R2 of his loss"
+ ],
+ "concerns": [
+  "Gets taken down by a committed wrestler and has been caught in guillotines",
+  "Low takedown accuracy against good defense",
+  "No UFC knockdowns despite regional KO record"
+ ],
+ "keys_to_beat": [
+  "Make him wrestle you back and threaten guillotines on his entries",
+  "Push the pace in R2",
+  "Win the clinch exchanges along the fence"
+ ],
+ "news": [
+  {
+   "date": "2026-09-15",
+   "text": "Booked against Wellington Turman for Nov. 7.",
+   "source": "https://cagesidepress.com/2026/09/15/redemption-second-chances-dana-whites-contender-series-igor-cavalcanti/"
+  },
+  {
+   "date": "2026-10-08",
+   "text": "Korean coverage says he has changed his nickname to 'Technical' and is chasing his first UFC finish.",
+   "source": "https://www.starnewskorea.com/en/sports/2026/10/08/2026100809530534759"
+  },
+  {
+   "date": "2026-07-18",
+   "text": "Lost a unanimous decision (29-28 x3) to Jean-Paul Lebosnoyani, his first UFC loss.",
+   "source": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-jean-paul-lebosnoyani-claims-decision-over-seok-hyeon-ko/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Seokhyeon Ko (athlete profile)",
+   "url": "https://www.ufc.com/athlete/seokhyeon-ko",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Oklahoma City: Jean-Paul Lebosnoyani Claims Decision Over Seok Hyeon Ko",
+   "url": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-jean-paul-lebosnoyani-claims-decision-over-seok-hyeon-ko/",
+   "date": "2026-07-18"
+  },
+  {
+   "outlet": "The Korea Herald",
+   "author": "",
+   "title": "Ko Seok-hyun suffers first UFC loss",
+   "url": "https://www.koreaherald.com/article/10812773",
+   "date": "2026-07-19"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Brian Knapp",
+   "title": "UFC Baku Prelims: Seok Hyeon Ko Outshines Oban Elliott in Azerbaijan",
+   "url": "https://www.sherdog.com/news/news/UFC-Baku-Prelims-Seok-Hyeon-Ko-Outshines-Oban-Elliott-in-Azerbaijan-197404",
+   "date": "2025-06-21"
+  },
+  {
+   "outlet": "StarNews Korea",
+   "author": "Park Geon-do",
+   "title": "'Korean Fighters Duo' Set to Restore UFC Honor... Ko Suk-hyun and Lee Jung-young Step Into the Octagon",
+   "url": "https://www.starnewskorea.com/en/sports/2026/10/08/2026100809530534759",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Redemption: Second Chances on Dana White's Contender Series - Igor Cavalcanti",
+   "url": "https://cagesidepress.com/2026/09/15/redemption-second-chances-dana-whites-contender-series-igor-cavalcanti/",
+   "date": "2026-09-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "moderate"
+}

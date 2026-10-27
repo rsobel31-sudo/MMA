@@ -1,0 +1,79 @@
+{
+ "name": "Elijah Smith",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "An American bantamweight prospect (10-1, age 23-24; 3-0 UFC), son of former UFC fighter Gilbert Smith, from the 2024 Contender Series. Quick hands, kicks and wrestling, with real finishing instincts: a slam knockout of Toshiomi Kazama (R1) and a knockdown into a rear-naked choke against SuYoung You (R2). He tends to lose the first round to grapplers and then turn the fight.",
+ "how_they_fight": {
+  "Striking": "Fast hands, kicks and an uppercut he uses against level changes: he stopped You's takedown with an uppercut and hook, then dropped him (Cageside). Bloodied Vince Morales with an uppercut in R3 of his debut. About 0.4 knockdowns per 15 minutes.",
+  "Grappling": "Strong in the scramble and on top: punched Kazama from top while defending a toe hold, then lifted him out of a triangle attempt and slammed him for a KO at 4:10 of R1 (Cageside). Chose the choke over ground strikes to finish You (MMA Junkie). Gets taken down by chain wrestlers: You controlled most of R1 with chain takedowns, and Morales took him down in R2.",
+  "Defense": "Composed under trouble: survived a deep D'Arce from Morales in R2 and a low blow in R1, and still won the decision (Cageside). Only loss was a R3 TKO to Reyes Cortez Jr. on the regional scene in 2023. Absorbs about 3.3 strikes a minute.",
+  "Pace & cardio": "Has finished in R1 (four, including the Kazama slam), R2 (two) and R3 (one sub). Three decisions (Aaron Tau on the Contender Series, Morales, Robert Trujillo). In both of his last two hard fights he lost R1 and came back: Morales (won R3 decisively) and You (called his own R1 'garbage', then finished in R2). His single loss was a late stoppage.",
+  "Fight IQ": "Adjusts mid-fight and credits his corner for the changes (MMA Junkie). Young and still improving."
+ },
+ "patterns": [
+  "Fast hands, uppercuts against level changes",
+  "Big-moment finishes: slam KO, knockdown-to-choke",
+  "Often down after R1, strong R2-R3",
+  "Chokes over ground-and-pound when the back is there"
+ ],
+ "concerns": [
+  "Gives up R1 to chain wrestlers",
+  "Hittable at 23-24, with one regional R3 TKO loss",
+  "First fight against a high-volume veteran striker"
+ ],
+ "keys_to_beat": [
+  "Chain takedowns early to win R1",
+  "Out-volume him on the feet over 15 minutes",
+  "Don't dip into his uppercut"
+ ],
+ "news": [
+  {
+   "date": "2026-03-17",
+   "text": "After submitting You, he asked for a quick turnaround at UFC 328 in Newark; it didn't happen, and he next fights Grant on Nov. 7.",
+   "source": "https://sports.yahoo.com/articles/elijah-smith-wants-ufc-328-193018763.html"
+  },
+  {
+   "date": "2026-03-14",
+   "text": "Submitted SuYoung You (RNC, 1:04 of R2) after a knockdown; first submission loss of You's career.",
+   "source": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-elijah-smith-claims-another-finish-subs-su-young-you/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Vegas 114: Elijah Smith Claims Another Finish, Subs Su Young You",
+   "url": "https://cagesidepress.com/2026/03/14/ufc-vegas-114-elijah-smith-claims-another-finish-subs-su-young-you/",
+   "date": "2026-03-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 109 Results: Elijah Smith Lands Rampage-Style Slam on Toshiomi Kazama",
+   "url": "https://cagesidepress.com/2025/08/09/ufc-vegas-109-results-elijah-smith-lands-rampage-style-slam-on-toshiomi-kazama/",
+   "date": "2025-08-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 102: Second-Gen Star Elijah Smith Busts Open Vince Morales in Debut",
+   "url": "https://cagesidepress.com/2025/02/15/ufc-vegas-102-second-gen-star-elijah-smith-busts-open-vince-morales-in-debut/",
+   "date": "2025-02-15"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson, Ken Hathaway",
+   "title": "Elijah Smith wants UFC 328 slot after rally from 'garbage' first round",
+   "url": "https://sports.yahoo.com/articles/elijah-smith-wants-ufc-328-193018763.html",
+   "date": "2026-03-17"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,93 @@
+{
+ "name": "Wellington Turman",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Brazilian welterweight (18-8, age 30; Teixeira MMA in Connecticut) who returns from nearly three years out: his last fight was a R2 submission loss to Jared Gooden in December 2023, his third straight loss (3-6 UFC). LowKick reports four shoulder surgeries in the layoff. A July return against Islam Dulatov was cancelled on fight day when Dulatov was hospitalized; Turman had made weight.",
+ "how_they_fight": {
+  "Striking": "Muay Thai base. Calf kicks and a straight right; his best work comes in the clinch with short elbows, which bloodied Randy Brown's nose and swelled his eye in R3 (Cageside). Was knocked out in R1 twice in 2020-21 (Andrew Sanchez, Bruno Silva).",
+  "Grappling": "A submission threat: eight career submissions (six in R1), including an R2 armbar of Misha Cirkunov in the UFC (Wikipedia). Offensive wrestling is poor (30% takedowns, 0-for-10 against Silva and 0-for-5 against Brown in our data). Defensively, Andre Petroski took him down 8 times in 11 attempts.",
+  "Defense": "The weak spot: 51% striking defense, absorbs 4.2 strikes a minute, 49% takedown defense. Gooden hurt him with a right hook in R2, dropped him to his knees, then mounted him and finished with an RNC (MMA Junkie).",
+  "Pace & cardio": "Starts better than he finishes in recent fights: won or split R1 against Gooden and Brown, then lost R2 both times (MMA Junkie; Cageside). Rallied late in R3 against Brown. Stoppage losses came in R1 (two KOs) and R2 (one sub). His regional finishes were mostly R1-R2.",
+  "Fight IQ": "Gets drawn into wrestling exchanges he loses. Unknown after a near-three-year layoff and four shoulder surgeries."
+ },
+ "patterns": [
+  "Clinch elbows and calf kicks",
+  "Opportunistic submissions off scrambles",
+  "Recent pattern: competitive R1, loses R2",
+  "Can be taken down and held"
+ ],
+ "concerns": [
+  "Ring rust: no fight since Dec. 2023",
+  "Shoulder after four surgeries, against a judo/sambo grappler",
+  "Durability: two R1 KO losses and a hurt-then-submitted R2 loss"
+ ],
+ "keys_to_beat": [
+  "Take him down and keep him there",
+  "Pressure him in R2 when his output has dropped in recent fights",
+  "Avoid his clinch elbows; take the clinch to the mat"
+ ],
+ "news": [
+  {
+   "date": "2026-09-09",
+   "text": "Booked against Ko Seok-hyeon at welterweight for Nov. 7.",
+   "source": "https://www.rotowire.com/mma/player/wellington-turman-1918"
+  },
+  {
+   "date": "2026-07-25",
+   "text": "His return against Islam Dulatov was cancelled on fight day when Dulatov was hospitalized with an infection; Turman had weighed in at 170. Reported to have had four shoulder surgeries during the layoff.",
+   "source": "https://www.lowkickmma.com/ufc-abu-dhabi-islam-dulatov-hospitalized/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Wellington Turman",
+   "url": "https://en.wikipedia.org/wiki/Wellington_Turman",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Pranav Pandey",
+   "title": "UFC Abu Dhabi Suffers Last-Minute Blow After Fighter Is Rushed To Hospital Due To Illness",
+   "url": "https://www.lowkickmma.com/ufc-abu-dhabi-islam-dulatov-hospitalized/",
+   "date": "2026-07-25"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Wellington Turman MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/wellington-turman-1918",
+   "date": "2026-09-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Val Dewar",
+   "title": "UFC Jacksonville: Randy Brown Takes Decision in Close Fight with Wellington Turman",
+   "url": "https://cagesidepress.com/2023/06/24/ufc-jacksonville-randy-brown-defeats-wellington-turman/",
+   "date": "2023-06-24"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Nolan King",
+   "title": "UFC on ESPN 52 video: Jared Gooden batters Wellington Turman, tops off wild comeback with choke",
+   "url": "https://sports.yahoo.com/ufc-espn-52-video-jared-210013257.html",
+   "date": "2023-12-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Redemption: Second Chances on Dana White's Contender Series - Igor Cavalcanti",
+   "url": "https://cagesidepress.com/2026/09/15/redemption-second-chances-dana-whites-contender-series-igor-cavalcanti/",
+   "date": "2026-09-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "moderate"
+}

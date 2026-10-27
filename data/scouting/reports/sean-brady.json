@@ -1,0 +1,112 @@
+{
+ "name": "Sean Brady",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A Philadelphia welterweight (19-2, age 34; Renzo Gracie Philly) and one of the division's best top-position grapplers. He builds fights over time: took Gilbert Burns the distance in five rounds, submitted Leon Edwards in R4 and held Joaquin Buckley down for about 12 of 15 minutes in May. Both losses were stoppages by strikers who kept the fight standing: Belal Muhammad (R2 TKO, 2022) and Michael Morales (R1 TKO, Nov. 2025).",
+ "how_they_fight": {
+  "Striking": "Better than it was, but mostly a means to an end (Sherdog). He lands 53% of significant strikes but rarely knocks anyone down (0.08 knockdowns per 15 minutes in our data). Against Morales he backed away, then lunged in with a double jab and was countered by a right over the top and an uppercut (Cageside). Showed a high kick and spinning back fist against Buckley without landing them cleanly.",
+  "Grappling": "Elite chain wrestling into mount and back control, with heavy ground-and-pound. Against Buckley: takedown off a kick, mount, kimura attempt in R1; re-takedowns and mount with hammerfists and elbows in R2; double-leg and mount again in R3 (Cageside). Against Edwards: back and body lock in R2, mount in R3, mounted one-arm guillotine at 1:39 of R4 (theScore). Control time in our data: 10:34 vs Burns, 11:10 vs Edwards, 12:09 vs Buckley. Takedowns land at 46%, about 3.3 per 15 minutes.",
+  "Defense": "Never submitted. On the feet he can be frozen out by a longer, faster striker: Morales hurt him early and stopped him at 3:27 of R1, and Brady landed 8 significant strikes and attempted one takedown. Muhammad stuffed all five of his takedowns (our data) and stopped him late in R2 (4:47).",
+  "Pace & cardio": "A slow burner and late finisher. His UFC finishes came in R2 (Aguilera), R3 (Matthews, Gastelum) and R4 (Edwards); his last R1 finish was in 2017. Ten of his 19 wins are decisions, including a 25-minute win over Burns. Sherdog says he gets stronger as fights go on and suits five rounds more than three. The risk is early: both losses came before the end of R2, and Sherdog says he needs early success in the feel-out to get going.",
+  "Fight IQ": "Patient and methodical; picks his entries off the opponent's kicks. Said in June that Bonfim is 'a tough matchup' because of his size, submissions and striking, and that he wants top-five opponents (MMA Junkie)."
+ },
+ "patterns": [
+  "Takedown, mount, back, repeat; dominant control time",
+  "Gets better as the fight goes on; finishes in R2-R4",
+  "Has never been submitted",
+  "Both losses: stopped on the feet in R1-R2 by strikers who kept it standing"
+ ],
+ "concerns": [
+  "Rough early stretches on the feet against long, powerful strikers (Morales)",
+  "Taking down a bigger welterweight with 78% takedown defense and dangerous front-headlock chokes",
+  "Low knockdown power if the fight stays standing"
+ ],
+ "keys_to_beat": [
+  "Keep it standing in R1-R2 with the jab and counters as he enters",
+  "Stuff the first shots and make him strike: his confidence drops when the wrestling doesn't land (Sherdog)",
+  "Threaten chokes when he changes levels"
+ ],
+ "news": [
+  {
+   "date": "2026-08-15",
+   "text": "Booked to headline against Gabriel Bonfim on Nov. 7. Cageside noted his absence from the hometown UFC 330 card raised eyebrows; no reason was given.",
+   "source": "https://cagesidepress.com/2026/08/15/sean-brady-vs-gabriel-bonfim-headline-nov-7-ufc-card/"
+  },
+  {
+   "date": "2026-10-16",
+   "text": "Picked Joaquin Buckley over Mike Malott and praised Buckley's late power, a sign he is following the division; no camp or injury news in the piece.",
+   "source": "https://sports.yahoo.com/articles/sean-brady-joaquin-buckley-always-003024297.html"
+  },
+  {
+   "date": "2026-05-09",
+   "text": "Beat Buckley by decision (30-25, 30-25, 30-27) after the Morales loss.",
+   "source": "https://cagesidepress.com/2026/05/09/ufc-328-sean-brady-cruises-in-dominant-showing-against-joaquin-buckley/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC 328 'Chimaev vs. Strickland' - Brady vs. Buckley",
+   "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-328-Chimaev-vs-Strickland-201092",
+   "date": "2026-05-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 328: Sean Brady Cruises in Dominant Showing Against Joaquin Buckley",
+   "url": "https://cagesidepress.com/2026/05/09/ufc-328-sean-brady-cruises-in-dominant-showing-against-joaquin-buckley/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC 322: Michael Morales Stays Perfect, Stops Sean Brady",
+   "url": "https://cagesidepress.com/2025/11/15/ufc-322-michael-morales-stays-perfect-stops-sean-brady/",
+   "date": "2025-11-15"
+  },
+  {
+   "outlet": "theScore",
+   "author": "Nick Baldwin",
+   "title": "Brady submits Edwards in 1-sided UFC London main event",
+   "url": "https://www.thescore.com/mma/news/3248381/brady-submits-edwards-in-1-sided-ufc-london-main-event",
+   "date": "2025-03-22"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson",
+   "title": "Sean Brady gladly will take Gabriel Bonfim in lieu of Muhammad rematch",
+   "url": "https://sports.yahoo.com/articles/sean-brady-gladly-gabriel-bonfim-220033618.html",
+   "date": "2026-06-07"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Farah Hannoun",
+   "title": "Sean Brady: Joaquin Buckley 'always carries his power,' beats Mike Malott",
+   "url": "https://sports.yahoo.com/articles/sean-brady-joaquin-buckley-always-003024297.html",
+   "date": "2026-10-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Sean Brady vs. Gabriel Bonfim to Headline Nov. 7 UFC Card",
+   "url": "https://cagesidepress.com/2026/08/15/sean-brady-vs-gabriel-bonfim-headline-nov-7-ufc-card/",
+   "date": "2026-08-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 330 Losers",
+   "url": "https://cagesidepress.com/2026/08/17/whats-next-ufc-330-losers/",
+   "date": "2026-08-17"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "good"
+}

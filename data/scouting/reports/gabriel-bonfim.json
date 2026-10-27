@@ -1,0 +1,120 @@
+{
+ "name": "Gabriel Bonfim",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "A big, athletic Brazilian welterweight (20-1, age 29) and former LFA champion, on a five-fight win streak capped by a 50-45 x3 shutout of former champion Belal Muhammad in June, his first 25-minute fight. He came up as a finishing grappler (13 submissions, most of them chokes) but beat Muhammad entirely on the feet with a jab and calf kicks. His only loss is a R2 TKO to Nicolas Dalby in 2023, after he had won R1.",
+ "how_they_fight": {
+  "Striking": "Straight, fast, heavy shots and kicks to the legs (Sherdog's Ben Duffy), though Duffy notes he doesn't always put his hands together in combination. Against Muhammad he ran the fight behind the jab and calf kicks, made Muhammad switch stances, countered him cleanly and knocked his mouthpiece out with a jab-right in R3 (MiddleEasy; Uncrowned). Out-landed him 128-86 in our data. Knocked out Randy Brown with a knee in R2 after a patient, range-finding first round (LowKick MMA).",
+  "Grappling": "Duffy rates his ground game elite: good shots from range, trips and throws from the clinch, a heavy and tiring top game that hunts the back. Duffy says guillotines and D'Arces account for most of his UFC finishes; his first two UFC wins were R1 submissions at 0:49 and 1:13; he also submitted Kalinn Williams at 4:58 of R2. Against Stephen Thompson he scored takedowns in every round, briefly took the back and attacked a neck crank (Cageside). Our data: 2.3 takedowns per 15 at 51%.",
+  "Defense": "Hard to take down (78% takedown defense; Muhammad got nothing, 0-for-2 in our data). Hittable at times: Thompson rocked him with a head kick in R2 (Cageside), and Dalby broke him down along the fence in R2, where Bonfim covered up and threw blind uppercuts before a knee dropped him (Cageside). That is his only stoppage loss.",
+  "Pace & cardio": "Used to be a front-loaded finisher; that has changed. Of his 17 finishes, 8 came in R1, 7 in R2 and 2 in R3. His only loss came after he won R1 against Dalby and then faded and was overwhelmed in R2 (Duffy). Duffy says the pace problems look solved: he was the stronger man late in each of his last four wins before Muhammad, and he then won all five rounds against Muhammad with his clearest work in R3 (MiddleEasy). Wins since the loss: decision, R2 sub, split decision, R2 KO, five-round decision.",
+  "Fight IQ": "Shows tactical flexibility: a grappler who chose not to wrestle Muhammad and instead neutralised him at range, which he said was the plan (Uncrowned). Cageside thought he looked shaky in wins over Ange Loosa and Thompson after the Dalby loss, with confidence restored by the Brown knockout."
+ },
+ "patterns": [
+  "Jab and calf kicks at range; counters off opponents' entries",
+  "Chokes (guillotine, D'Arce, RNC) whenever an opponent shoots or gives the back",
+  "Finishes now come in R2 more than R1; recent wins are decisions or R2 stoppages",
+  "Has gone 25 minutes once and won every round",
+  "Only loss: won R1, wilted under clinch pressure on the fence in R2"
+ ],
+ "concerns": [
+  "How he handles a heavy wrestler who stays on him: Muhammad barely got hold of him, so the takedown defense hasn't been tested by a top-five grappler",
+  "Pressure along the fence (the Dalby pattern)",
+  "Head kicks and clean shots: Thompson rocked him in R2"
+ ],
+ "keys_to_beat": [
+  "Close distance, pin him on the fence and make him carry weight in the clinch",
+  "Win R1 with grappling exchanges and test his gas from R2 on",
+  "Don't shoot carelessly from the outside: he punishes level changes with knees and front-headlock chokes"
+ ],
+ "news": [
+  {
+   "date": "2026-08-15",
+   "text": "Booked to headline against Sean Brady on Nov. 7; announced during the UFC 330 broadcast. Ranked No. 5 and No. 6 depending on the ranking used.",
+   "source": "https://cagesidepress.com/2026/08/15/sean-brady-vs-gabriel-bonfim-headline-nov-7-ufc-card/"
+  },
+  {
+   "date": "2026-10-13",
+   "text": "His brother Ismael Bonfim was cut by the UFC after a 7.5-lb weight miss and a R1 TKO loss to Francisco Prado. Off-cage family news; nothing reported about Gabriel's own camp.",
+   "source": "https://www.sherdog.com/news/news/Ismael-Bonfim-removed-from-UFC-roster-after-gigantic-weight-miss-203180"
+  },
+  {
+   "date": "2026-06-06",
+   "text": "Beat Belal Muhammad 50-45 x3, his first five-round fight and his biggest win.",
+   "source": "https://middleeasy.com/mma-news/gabriel-bonfim-belal-muhammad-ufc-vegas-118-decision/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Vegas 118 'Muhammad vs. Bonfim'",
+   "url": "https://www.sherdog.com/news/articles/1/Preview-UFC-Vegas-118-Muhammad-vs-Bonfim-201430",
+   "date": "2026-06-04"
+  },
+  {
+   "outlet": "MiddleEasy",
+   "author": "Jake Blend",
+   "title": "Gabriel Bonfim Picks Apart Belal Muhammad With Jabs And Calf Kicks At UFC Vegas 118",
+   "url": "https://middleeasy.com/mma-news/gabriel-bonfim-belal-muhammad-ufc-vegas-118-decision/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Yahoo Sports (Uncrowned)",
+   "author": "Chuck Mindenhall",
+   "title": "UFC Vegas 118 results: Gabriel Bonfim gives Belal Muhammad third straight loss; Brendan Allen makes a statement",
+   "url": "https://sports.yahoo.com/mma/article/ufc-vegas-118-results-gabriel-bonfim-gives-belal-muhammad-third-straight-loss-brendan-allen-makes-a-statement-142151891.html",
+   "date": "2026-06-07"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 111 Power Rankings: Rating The Main Card Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-vegas-111-power-rankings-rating-the-main-card-winners-in-las-vegas/",
+   "date": "2025-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 111 Winners",
+   "url": "https://cagesidepress.com/2025/11/10/whats-next-ufc-vegas-111-winners/",
+   "date": "2025-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Sao Paulo: Nicolas Dalby Stops Gabriel Bonfim, Silences Brazilian Crowd",
+   "url": "https://cagesidepress.com/2023/11/04/ufc-sao-paulo-nicolas-dalby-stops-gabriel-bonfim-silences-brazilian-crowd/",
+   "date": "2023-11-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Gabriel Bonfim Battles With Thompson, Grinds Out Split Win",
+   "url": "https://cagesidepress.com/2025/07/12/gabriel-bonfim-battles-with-thompson-grinds-out-split-win/",
+   "date": "2025-07-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Sean Brady vs. Gabriel Bonfim to Headline Nov. 7 UFC Card",
+   "url": "https://cagesidepress.com/2026/08/15/sean-brady-vs-gabriel-bonfim-headline-nov-7-ufc-card/",
+   "date": "2026-08-15"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Ismael Bonfim removed from UFC roster after gigantic weight miss",
+   "url": "https://www.sherdog.com/news/news/Ismael-Bonfim-removed-from-UFC-roster-after-gigantic-weight-miss-203180",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "good"
+}

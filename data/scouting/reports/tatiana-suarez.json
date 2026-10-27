@@ -1,0 +1,86 @@
+{
+ "name": "Tatiana Suarez",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "An elite American wrestler (12-1, age 36) and one of the best takedown artists in women's MMA. Her only loss is the five-round title fight with Weili Zhang in February 2025, where Zhang stopped 14 of her 15 takedowns. She's 2-0 since, most recently becoming the first fighter to stop Loopy Godinez (RNC, R2) in April. A long history of injuries has kept her out for years at a time.",
+ "how_they_fight": {
+  "Striking": "Functional, used to get into range: kicks and pressure to push opponents to the fence (Cageside on Lemos). Low output (about 2.1 significant strikes a minute) and not much power (one knockdown in her UFC run). Opponents have hurt her on the feet: Godinez landed a hard right in R1, and Lemos wobbled her with elbows and rights in R3 (Cageside).",
+  "Grappling": "Her entire game. A junior and senior world bronze medallist in freestyle wrestling (Wikipedia). Chains attempts until one lands, then takes the back or sets up chokes: RNC on Godinez after a quick R2 takedown, and guillotines on Jessica Andrade and Montana De La Rosa, all in R2. Control time in our data: 9:34 of 15 minutes against Lemos, 5:12 against Godinez.",
+  "Defense": "Never stopped. But Godinez took her down twice in R1 (thrown and slammed, per Cageside), and Zhang reversed her to top in R2 and tripped her in R4, then nearly finished an arm-triangle (Cageside). On her back she has been the less comfortable fighter.",
+  "Pace & cardio": "Starts hard and can fade. Finishes: 3 subs in R1 and 3 in R2, 2 TKOs (R2 and R3); her last three submissions all came in R2. Against Zhang she won R1, then her shots got weaker from range and she lost R2-R5, and Cageside tied that to her early energy output. Lemos rallied in R3 and wobbled her (Cageside). She is most dangerous in R1-R2, less effective late.",
+  "Fight IQ": "Disciplined about her game and keeps shooting even after stuffed attempts; that persistence wins rounds but costs energy when the shots aren't landing (Zhang)."
+ },
+ "patterns": [
+  "Chain-wrestling pressure from the first exchange",
+  "Back-takes and chokes; recent finishes all in R2",
+  "Heavy top control in decisions",
+  "Fades when her takedowns are stopped repeatedly"
+ ],
+ "concerns": [
+  "Injury history: neck injury in 2012, a 3.5-year layoff from 2019 to 2023, and withdrawals in 2016, 2021, 2024 and from UFC 310 against this same opponent (Wikipedia)",
+  "Gets hit when she's on her way in; Lemos and Godinez both hurt her",
+  "Late-round fade when the takedowns stop landing (Zhang)"
+ ],
+ "keys_to_beat": [
+  "Stop the first wave of takedowns and make her work in R1-R2",
+  "Counter-strike on her entries",
+  "Threaten from bottom or reverse when she does get you down"
+ ],
+ "news": [
+  {
+   "date": "2026-09-11",
+   "text": "Booked against Virna Jandiroba for the third time, after the 2023 (Jandiroba knee injury) and Dec. 2024 (Suarez health issue) bookings fell through.",
+   "source": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
+  },
+  {
+   "date": "2026-04-11",
+   "text": "Submitted Loopy Godinez with a rear-naked choke at 2:29 of R2 after a rough first round.",
+   "source": "https://cagesidepress.com/2026/04/11/ufc-327-tatiana-suarez-first-to-submit-stop-loopy-godinez/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Tatiana Suarez",
+   "url": "https://en.wikipedia.org/wiki/Tatiana_Suarez",
+   "date": "2026-10-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 327: Tatiana Suarez First to Submit, Stop Loopy Godinez",
+   "url": "https://cagesidepress.com/2026/04/11/ufc-327-tatiana-suarez-first-to-submit-stop-loopy-godinez/",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Mathis Desjardins",
+   "title": "Tatiana Suarez Shuts Down Lemos' Attacks, Earns Decision Win",
+   "url": "https://cagesidepress.com/2025/09/13/tatiana-suarez-shuts-down-lemos-attacks-earns-decision-win/",
+   "date": "2025-09-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 312: Weili Zhang Retains, Dominates Tatiana Suarez",
+   "url": "https://cagesidepress.com/2025/02/09/ufc-312-weili-zhang-retains-dominates-tatiana-suarez/",
+   "date": "2025-02-09"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Marcelo Alonso, Sourav Chakraborty",
+   "title": "Virna Jandiroba eyes third Mackenzie Dern fight after Tatiana Suarez",
+   "url": "https://www.sherdog.com/news/news/Virna-Jandiroba-eyes-third-Mackenzie-Dern-fight-after-Tatiana-Suarez-203302",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "good"
+}

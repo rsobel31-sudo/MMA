@@ -1,0 +1,86 @@
+{
+ "name": "Davey Grant",
+ "updated": "2026-10-27T18:00:00+00:00",
+ "event": "UFC Fight Night: Bonfim vs. Brady",
+ "summary": "An English bantamweight veteran (18-8, age 40, turns 41 in December; Syndicate MMA, where he is now head striking coach). A volume boxer with sneaky power and underrated clinch wrestling, he won three of his last four, the latest a Fight of the Night decision over Adrian Luna Martinetti in April. He has never been knocked out, but five of his eight losses are submissions, the latest a flying-knee-then-guillotine finish by Charles Jourdain in R1.",
+ "how_they_fight": {
+  "Striking": "Clean boxing combinations, steady volume and sneaky power (Sherdog). Very high output: about 5.9 significant strikes a minute; he out-landed Luna Martinetti 162-99 and Ramon Taveras 147-69. Against Luna Martinetti he chopped the lead calf until his opponent had to keep switching stance, then added looping rights, knees and body shots (Cageside). Walks opponents down and goes to the body (Blackshear).",
+  "Grappling": "Underrated, per Sherdog: trips and throws from the clinch and quick level changes. Submitted Raphael Assuncao late in R3. Rarely wrestles now (about 0.5 takedowns per 15). Gets taken down but gets up fast: Blackshear took him down twice and took his back in R1, and Luna Martinetti's late takedown didn't keep him down (Cageside).",
+  "Defense": "Never stopped by strikes in 26 fights in our data. Hittable (absorbs about 3.6 a minute). The weakness is the neck and limbs: submission losses in R1 (three), R2 and R3. Jourdain floored him with a flying knee and finished him with a guillotine while he was stunned (Cageside).",
+  "Pace & cardio": "Slow starter, strong finisher. Lost R1 to Blackshear on the mat, then won R2 and R3 (Cageside). His UFC stoppages came late: TKOs in R3 (Martin Day, Louis Smolka) and R2 (Jonathan Martinez), and a sub in R3 (Assuncao). Most UFC wins are decisions. His recent losses came early (Jourdain R1) or on close cards (Marcos split).",
+  "Fight IQ": "Veteran who adjusts after a bad first round. Sherdog says the only way these fights look close is if he starts to show his age."
+ },
+ "patterns": [
+  "High-volume boxing and calf kicks; pulls ahead in R2-R3",
+  "Late finisher: three of his four UFC stoppages came in R3",
+  "Very durable to strikes",
+  "Submission losses, including early ones"
+ ],
+ "concerns": [
+  "Age 40, against a 23-24-year-old",
+  "Slow starts; can drop R1 to a wrestler",
+  "Chokes in scrambles (five career submission losses)"
+ ],
+ "keys_to_beat": [
+  "Win R1 with takedowns and back control",
+  "Front headlock and guillotine threats when he ducks in or shoots",
+  "Avoid a volume brawl over 15 minutes"
+ ],
+ "news": [
+  {
+   "date": "2026-10-21",
+   "text": "Has moved his family from Bishop Auckland to Las Vegas and is head striking coach at Syndicate MMA; this is his 17th UFC fight.",
+   "source": "https://britbrief.co.uk/sports/boxing/davey-grant-ufc-stars-vegas-move-pays-off-for-family.html"
+  },
+  {
+   "date": "2026-04-25",
+   "text": "Beat Adrian Luna Martinetti by decision (29-28 x3) in a Fight of the Night bout.",
+   "source": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-davey-grant-fends-off-newcomer-adrian-luna-martinetti/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Ben Duffy",
+   "title": "Preview: UFC Vegas 116 'Sterling vs. Zalal' - Luna Martinetti vs. Grant",
+   "url": "https://www.sherdog.com/news/articles/4/Preview-UFC-Vegas-116-Sterling-vs-Zalal-200934",
+   "date": "2026-04-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 116: Davey Grant Fends Off Newcomer Adrian Luna Martinetti",
+   "url": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-davey-grant-fends-off-newcomer-adrian-luna-martinetti/",
+   "date": "2026-04-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Abu Dhabi: Davey Grant Overcomes Slow Start, Beats Da'Mon Blackshear",
+   "url": "https://cagesidepress.com/2025/07/26/ufc-abu-dhabi-davey-grant-overcomes-slow-start-beats-damon-blackshear/",
+   "date": "2025-07-26"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vancouver Winners",
+   "url": "https://cagesidepress.com/2025/10/20/whats-next-ufc-vancouver-winners/",
+   "date": "2025-10-20"
+  },
+  {
+   "outlet": "Brit Brief",
+   "author": "",
+   "title": "Davey Grant: UFC star's Vegas move pays off for family",
+   "url": "https://britbrief.co.uk/sports/boxing/davey-grant-ufc-stars-vegas-move-pays-off-for-family.html",
+   "date": "2026-10-21"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Bonfim vs. Brady",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
+   "date": "2026-10-27"
+  }
+ ],
+ "depth": "good"
+}
