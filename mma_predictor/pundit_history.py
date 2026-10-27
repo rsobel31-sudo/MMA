@@ -26,6 +26,7 @@ import csv
 import html as htmllib
 import json
 import re
+import unicodedata
 from collections import defaultdict
 from difflib import SequenceMatcher
 from urllib.parse import unquote
@@ -458,6 +459,14 @@ def _parse_staff(page: str, B: Bouts, cands: List[Dict[str, str]], default_write
 
 
 # ------------------------------------------------------------------ assembling rows
+def _squashed_side(text: str, bout: Dict[str, str]) -> Optional[str]:
+    """A pick whose name lost its spaces ("LoseneKeita" from a table cell): match it with spaces and punctuation removed."""
+    sq = lambda s: re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower())  # noqa: E731
+    t = sq(text)
+    hits = [f for f in (bout["fighter_a"], bout["fighter_b"]) if t and sq(f) and sq(f) in t]
+    return hits[0] if len(hits) == 1 else None
+
+
 def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url: str, published: str,
             cands: Optional[List[Dict[str, str]]] = None, pending: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
     """Parsed picks -> ledger rows; picks we can't tie to one real bout and one fighter are reported, not guessed.
@@ -472,7 +481,7 @@ def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url
                 pending.append({"author": author, "a": fa, "b": fb, "pick": pick_text, "outlet": outlet, "url": url, "published": published[:10]})
             continue
         who, how = split_pick(pick_text)
-        side = B.side(who, bout) or B.side(pick_text, bout)
+        side = B.side(who, bout) or B.side(pick_text, bout) or _squashed_side(pick_text, bout)
         if not side:
             skipped.append(f"{author}: can't tell who '{pick_text}' means in {bout['fighter_a']} vs {bout['fighter_b']}")
             continue

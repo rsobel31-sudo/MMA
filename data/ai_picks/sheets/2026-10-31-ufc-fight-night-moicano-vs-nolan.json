@@ -1,0 +1,1198 @@
+{
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "date": "2026-10-31",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-123-4427",
+ "book": "FanDuel",
+ "fetched_at": "2026-10-27T16:06:17+00:00",
+ "event_starts": "2026-10-31T12:00:00+00:00",
+ "odds_urls": [
+  "https://www.bestfightodds.com/events/ufc-vegas-123-4427"
+ ],
+ "unpriced": [
+  "Julian Erosa vs Lee Jeong-yeong",
+  "Zachary Reese vs Mickey Gall"
+ ],
+ "blend_weights": {
+  "model": 0.24610030270514432,
+  "market": 0.9711554050686323
+ },
+ "dec_cal": [
+  0.439346,
+  0.671843,
+  -0.364704
+ ],
+ "prop_shrink": 0.5,
+ "bouts": [
+  {
+   "bout": "Renato Moicano vs Tom Nolan",
+   "a": "Renato Moicano",
+   "b": "Tom Nolan",
+   "dataset": [
+    "Renato Carneiro",
+    "Tom Nolan"
+   ],
+   "rounds": 5,
+   "title": false,
+   "p_model_a": 0.3969,
+   "p_stats_a": 0.3969,
+   "read_a": 0.0,
+   "ml": {
+    "a": -122,
+    "b": -104
+   },
+   "markets": 33
+  },
+  {
+   "bout": "Jacobe Smith vs Randy Brown",
+   "a": "Jacobe Smith",
+   "b": "Randy Brown",
+   "dataset": [
+    "Jacobe Smith",
+    "Randy Brown"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.7378,
+   "p_stats_a": 0.7378,
+   "read_a": 0.0,
+   "ml": {
+    "a": -265,
+    "b": 200
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Cody Durden vs Ode Osbourne",
+   "a": "Cody Durden",
+   "b": "Ode Osbourne",
+   "dataset": [
+    "Cody Durden",
+    "Ode Osbourne"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.55,
+   "p_stats_a": 0.55,
+   "read_a": 0.0,
+   "ml": {
+    "a": -113,
+    "b": -113
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Luana Santos vs Yana Santos",
+   "a": "Luana Santos",
+   "b": "Yana Santos",
+   "dataset": [
+    "Luana Santos",
+    "Yana Santos"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.697,
+   "p_stats_a": 0.697,
+   "read_a": 0.0,
+   "ml": {
+    "a": -280,
+    "b": 210
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "a": "Farman Hasanov",
+   "b": "Jean Paul Lebosnoyani",
+   "dataset": [
+    "Farman Hasanov",
+    "Jean-Paul Lebosnoyani"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.5759,
+   "p_stats_a": 0.5759,
+   "read_a": 0.0,
+   "ml": {
+    "a": 215,
+    "b": -290
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Dakota Hope vs Francis Marshall",
+   "a": "Dakota Hope",
+   "b": "Francis Marshall",
+   "dataset": [
+    "Dakota Hope",
+    "Francis Marshall"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.4733,
+   "p_stats_a": 0.4733,
+   "read_a": 0.0,
+   "ml": {
+    "a": 196,
+    "b": -260
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "a": "Rodrigo Sezinando",
+   "b": "Theodor Berggren",
+   "dataset": [
+    "Rodrigo Sezinando",
+    "Theodor Berggren"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6834,
+   "p_stats_a": 0.6834,
+   "read_a": 0.0,
+   "ml": {
+    "a": -178,
+    "b": 138
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Joseph Kropschot vs Nick Klein",
+   "a": "Joseph Kropschot",
+   "b": "Nick Klein",
+   "dataset": [
+    "Joseph Kropschot",
+    "Nick Klein"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6057,
+   "p_stats_a": 0.6057,
+   "read_a": 0.0,
+   "ml": {
+    "a": -330,
+    "b": 240
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Piera Rodriguez vs Talita Alencar",
+   "a": "Piera Rodriguez",
+   "b": "Talita Alencar",
+   "dataset": [
+    "Piera Rodriguez",
+    "Talita Alencar"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.638,
+   "p_stats_a": 0.638,
+   "read_a": 0.0,
+   "ml": {
+    "a": -290,
+    "b": 215
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Lucia Szabova vs Tainara Lisboa",
+   "a": "Lucia Szabova",
+   "b": "Tainara Lisboa",
+   "dataset": [
+    "Lucia Szabova",
+    "Tainara Lisboa"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.886,
+   "p_stats_a": 0.886,
+   "read_a": 0.0,
+   "ml": {
+    "a": -620,
+    "b": 400
+   },
+   "markets": 2
+  }
+ ],
+ "skipped": [],
+ "card": [
+  {
+   "bout": "Renato Moicano vs Tom Nolan",
+   "a": "Renato Moicano",
+   "b": "Tom Nolan",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Jacobe Smith vs Randy Brown",
+   "a": "Jacobe Smith",
+   "b": "Randy Brown",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cody Durden vs Ode Osbourne",
+   "a": "Cody Durden",
+   "b": "Ode Osbourne",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Luana Santos vs Yana Santos",
+   "a": "Luana Santos",
+   "b": "Yana Santos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "a": "Farman Hasanov",
+   "b": "Jean Paul Lebosnoyani",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Dakota Hope vs Francis Marshall",
+   "a": "Dakota Hope",
+   "b": "Francis Marshall",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "a": "Rodrigo Sezinando",
+   "b": "Theodor Berggren",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Julian Erosa vs Lee Jeong-yeong",
+   "a": "Julian Erosa",
+   "b": "Lee Jeong-yeong",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Zachary Reese vs Mickey Gall",
+   "a": "Zachary Reese",
+   "b": "Mickey Gall",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Joseph Kropschot vs Nick Klein",
+   "a": "Joseph Kropschot",
+   "b": "Nick Klein",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Piera Rodriguez vs Talita Alencar",
+   "a": "Piera Rodriguez",
+   "b": "Talita Alencar",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Lucia Szabova vs Tainara Lisboa",
+   "a": "Lucia Szabova",
+   "b": "Tainara Lisboa",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45457:method:b:DEC",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Tom Nolan by decision",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.3218,
+   "p_fanduel": 0.1324,
+   "p": 0.2121,
+   "edge": 0.0796,
+   "ev": 0.3785,
+   "kelly": 0.0688
+  },
+  {
+   "id": "45457:distance:True",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 255,
+   "decimal": 3.55,
+   "p_model": 0.5243,
+   "p_fanduel": 0.2659,
+   "p": 0.3872,
+   "edge": 0.1213,
+   "ev": 0.3744,
+   "kelly": 0.1468
+  },
+  {
+   "id": "45457:starts_round:5:True",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 188,
+   "decimal": 2.88,
+   "p_model": 0.5721,
+   "p_fanduel": 0.3271,
+   "p": 0.4463,
+   "edge": 0.1192,
+   "ev": 0.2854,
+   "kelly": 0.1518
+  },
+  {
+   "id": "45457:starts_round:4:True",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": 126,
+   "decimal": 2.26,
+   "p_model": 0.6355,
+   "p_fanduel": 0.4183,
+   "p": 0.5282,
+   "edge": 0.11,
+   "ev": 0.1938,
+   "kelly": 0.1538
+  },
+  {
+   "id": "45457:starts_round:3:True",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -136,
+   "decimal": 1.7353,
+   "p_model": 0.7194,
+   "p_fanduel": 0.5452,
+   "p": 0.6368,
+   "edge": 0.0916,
+   "ev": 0.105,
+   "kelly": 0.1428
+  },
+  {
+   "id": "45457:method:a:KO/TKO",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Renato Moicano by KO/TKO",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.1646,
+   "p_fanduel": 0.1013,
+   "p": 0.1297,
+   "edge": 0.0284,
+   "ev": 0.1024,
+   "kelly": 0.0137
+  },
+  {
+   "id": "45457:method:a:DEC",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Renato Moicano by decision",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.2024,
+   "p_fanduel": 0.1324,
+   "p": 0.1645,
+   "edge": 0.032,
+   "ev": 0.069,
+   "kelly": 0.0125
+  },
+  {
+   "id": "45457:method:b:SUB",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Tom Nolan by submission",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.1226,
+   "p_fanduel": 0.0861,
+   "p": 0.1029,
+   "edge": 0.0169,
+   "ev": 0.0293,
+   "kelly": 0.0033
+  },
+  {
+   "id": "45457:starts_round:2:True",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -350,
+   "decimal": 1.2857,
+   "p_model": 0.8459,
+   "p_fanduel": 0.7285,
+   "p": 0.7933,
+   "edge": 0.0648,
+   "ev": 0.0199,
+   "kelly": 0.0698
+  },
+  {
+   "id": "45466:ml:a",
+   "bout": "Lucia Szabova vs Tainara Lisboa",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Lucia Szabova to win",
+   "odds": -620,
+   "decimal": 1.1613,
+   "p_model": 0.8724,
+   "p_fanduel": 0.8115,
+   "p": 0.8724,
+   "edge": 0.0609,
+   "ev": 0.0131,
+   "kelly": 0.0814
+  },
+  {
+   "id": "45484:ml:a",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jacobe Smith to win",
+   "odds": -265,
+   "decimal": 1.3774,
+   "p_model": 0.7331,
+   "p_fanduel": 0.6853,
+   "p": 0.7331,
+   "edge": 0.0478,
+   "ev": 0.0098,
+   "kelly": 0.026
+  },
+  {
+   "id": "45460:ml:a",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Farman Hasanov to win",
+   "odds": 215,
+   "decimal": 3.15,
+   "p_model": 0.3205,
+   "p_fanduel": 0.2992,
+   "p": 0.3205,
+   "edge": 0.0213,
+   "ev": 0.0097,
+   "kelly": 0.0045
+  },
+  {
+   "id": "45465:ml:a",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Rodrigo Sezinando to win",
+   "odds": -178,
+   "decimal": 1.5618,
+   "p_model": 0.6453,
+   "p_fanduel": 0.6038,
+   "p": 0.6453,
+   "edge": 0.0415,
+   "ev": 0.0078,
+   "kelly": 0.0139
+  },
+  {
+   "id": "45457:ml:b",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tom Nolan to win",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.5075,
+   "p_fanduel": 0.4812,
+   "p": 0.5075,
+   "edge": 0.0263,
+   "ev": -0.0045,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:ml:a",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Luana Santos to win",
+   "odds": -280,
+   "decimal": 1.3571,
+   "p_model": 0.7325,
+   "p_fanduel": 0.6955,
+   "p": 0.7325,
+   "edge": 0.037,
+   "ev": -0.0059,
+   "kelly": 0.0
+  },
+  {
+   "id": "45464:ml:a",
+   "bout": "Piera Rodriguez vs Talita Alencar",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Piera Rodriguez to win",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.7243,
+   "p_fanduel": 0.7008,
+   "p": 0.7243,
+   "edge": 0.0235,
+   "ev": -0.0259,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ml:a",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Cody Durden to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.5124,
+   "p_fanduel": 0.5,
+   "p": 0.5124,
+   "edge": 0.0124,
+   "ev": -0.0342,
+   "kelly": 0.0
+  },
+  {
+   "id": "45467:ml:a",
+   "bout": "Joseph Kropschot vs Nick Klein",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Joseph Kropschot to win",
+   "odds": -330,
+   "decimal": 1.303,
+   "p_model": 0.7383,
+   "p_fanduel": 0.7229,
+   "p": 0.7383,
+   "edge": 0.0153,
+   "ev": -0.038,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ml:b",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Francis Marshall to win",
+   "odds": -260,
+   "decimal": 1.3846,
+   "p_model": 0.6822,
+   "p_fanduel": 0.6813,
+   "p": 0.6822,
+   "edge": 0.0009,
+   "ev": -0.0554,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ml:a",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Dakota Hope to win",
+   "odds": 196,
+   "decimal": 2.96,
+   "p_model": 0.3178,
+   "p_fanduel": 0.3187,
+   "p": 0.3178,
+   "edge": -0.0009,
+   "ev": -0.0594,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ml:b",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Ode Osbourne to win",
+   "odds": -113,
+   "decimal": 1.885,
+   "p_model": 0.4876,
+   "p_fanduel": 0.5,
+   "p": 0.4876,
+   "edge": -0.0124,
+   "ev": -0.0808,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:ml:b",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jean Paul Lebosnoyani to win",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.6795,
+   "p_fanduel": 0.7008,
+   "p": 0.6795,
+   "edge": -0.0213,
+   "ev": -0.0862,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ml:a",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Renato Moicano to win",
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.4925,
+   "p_fanduel": 0.5188,
+   "p": 0.4925,
+   "edge": -0.0263,
+   "ev": -0.1038,
+   "kelly": 0.0
+  },
+  {
+   "id": "45467:ml:b",
+   "bout": "Joseph Kropschot vs Nick Klein",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nick Klein to win",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.2617,
+   "p_fanduel": 0.2771,
+   "p": 0.2617,
+   "edge": -0.0153,
+   "ev": -0.1102,
+   "kelly": 0.0
+  },
+  {
+   "id": "45464:ml:b",
+   "bout": "Piera Rodriguez vs Talita Alencar",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Talita Alencar to win",
+   "odds": 215,
+   "decimal": 3.15,
+   "p_model": 0.2757,
+   "p_fanduel": 0.2992,
+   "p": 0.2757,
+   "edge": -0.0235,
+   "ev": -0.1317,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:ml:b",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Theodor Berggren to win",
+   "odds": 138,
+   "decimal": 2.38,
+   "p_model": 0.3547,
+   "p_fanduel": 0.3962,
+   "p": 0.3547,
+   "edge": -0.0415,
+   "ev": -0.1558,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:ml:b",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Yana Santos to win",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.2675,
+   "p_fanduel": 0.3045,
+   "p": 0.2675,
+   "edge": -0.037,
+   "ev": -0.1707,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:ml:b",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Randy Brown to win",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.2669,
+   "p_fanduel": 0.3147,
+   "p": 0.2669,
+   "edge": -0.0478,
+   "ev": -0.1994,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:distance:False",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -350,
+   "decimal": 1.2857,
+   "p_model": 0.4757,
+   "p_fanduel": 0.7341,
+   "p": 0.6128,
+   "edge": -0.1213,
+   "ev": -0.2121,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:starts_round:5:False",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -250,
+   "decimal": 1.4,
+   "p_model": 0.4279,
+   "p_fanduel": 0.6729,
+   "p": 0.5537,
+   "edge": -0.1192,
+   "ev": -0.2249,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:starts_round:4:False",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.3645,
+   "p_fanduel": 0.5817,
+   "p": 0.4718,
+   "edge": -0.11,
+   "ev": -0.2334,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:starts_round:3:False",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 108,
+   "decimal": 2.08,
+   "p_model": 0.2806,
+   "p_fanduel": 0.4548,
+   "p": 0.3632,
+   "edge": -0.0916,
+   "ev": -0.2445,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ends_round:5",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0478,
+   "p_fanduel": 0.0687,
+   "p": 0.0574,
+   "edge": -0.0113,
+   "ev": -0.2543,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:5",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Renato Moicano in round 5",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0269,
+   "p_fanduel": 0.0388,
+   "p": 0.0323,
+   "edge": -0.0065,
+   "ev": -0.257,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:2",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Renato Moicano in round 2",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0714,
+   "p_fanduel": 0.105,
+   "p": 0.0868,
+   "edge": -0.0183,
+   "ev": -0.2625,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ends_round:2",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 370,
+   "decimal": 4.7,
+   "p_model": 0.1264,
+   "p_fanduel": 0.19,
+   "p": 0.1556,
+   "edge": -0.0344,
+   "ev": -0.2688,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ends_round:4",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0635,
+   "p_fanduel": 0.0992,
+   "p": 0.0795,
+   "edge": -0.0197,
+   "ev": -0.2844,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:starts_round:2:False",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 245,
+   "decimal": 3.45,
+   "p_model": 0.1541,
+   "p_fanduel": 0.2715,
+   "p": 0.2067,
+   "edge": -0.0648,
+   "ev": -0.2869,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ends_round:3",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0839,
+   "p_fanduel": 0.1374,
+   "p": 0.1078,
+   "edge": -0.0296,
+   "ev": -0.2996,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:4",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Renato Moicano in round 4",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0341,
+   "p_fanduel": 0.0558,
+   "p": 0.0437,
+   "edge": -0.0121,
+   "ev": -0.3007,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:b:5",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Tom Nolan in round 5",
+   "odds": 2500,
+   "decimal": 26.0,
+   "p_model": 0.021,
+   "p_fanduel": 0.0343,
+   "p": 0.0269,
+   "edge": -0.0075,
+   "ev": -0.3018,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:3",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Renato Moicano in round 3",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0451,
+   "p_fanduel": 0.0744,
+   "p": 0.058,
+   "edge": -0.0164,
+   "ev": -0.3038,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:1",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Renato Moicano in round 1",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0885,
+   "p_fanduel": 0.1488,
+   "p": 0.1153,
+   "edge": -0.0335,
+   "ev": -0.3083,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:b:4",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Tom Nolan in round 4",
+   "odds": 1700,
+   "decimal": 18.0,
+   "p_model": 0.0293,
+   "p_fanduel": 0.0496,
+   "p": 0.0382,
+   "edge": -0.0114,
+   "ev": -0.3126,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:b:2",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Tom Nolan in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.055,
+   "p_fanduel": 0.094,
+   "p": 0.0721,
+   "edge": -0.0219,
+   "ev": -0.3148,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:ends_round:1",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.1541,
+   "p_fanduel": 0.2706,
+   "p": 0.2063,
+   "edge": -0.0642,
+   "ev": -0.3191,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:b:3",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Tom Nolan in round 3",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0389,
+   "p_fanduel": 0.0687,
+   "p": 0.0518,
+   "edge": -0.0169,
+   "ev": -0.327,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:b:1",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Tom Nolan in round 1",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0656,
+   "p_fanduel": 0.1276,
+   "p": 0.092,
+   "edge": -0.0356,
+   "ev": -0.3561,
+   "kelly": 0.0
+  },
+  {
+   "id": "45466:ml:b",
+   "bout": "Lucia Szabova vs Tainara Lisboa",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tainara Lisboa to win",
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.1276,
+   "p_fanduel": 0.1885,
+   "p": 0.1276,
+   "edge": -0.0609,
+   "ev": -0.3621,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:method:a:SUB",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Renato Moicano by submission",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.1013,
+   "p_fanduel": 0.2869,
+   "p": 0.1756,
+   "edge": -0.1113,
+   "ev": -0.4732,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:method:b:KO/TKO",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Tom Nolan by KO/TKO",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.0871,
+   "p_fanduel": 0.2609,
+   "p": 0.1551,
+   "edge": -0.1058,
+   "ev": -0.4883,
+   "kelly": 0.0
+  }
+ ]
+}

@@ -159,3 +159,10 @@ def test_over_lines_and_pending_picks(tmp_path):
     assert [(r["pick"], r["grade"]) for r in rows] == [("Ann Ace", "lost")]
     assert pending == [{"author": "MMA Intel", "a": "Gus Gray", "b": "Hal Hope", "pick": "Gus Gray", "outlet": "MMA Intel",
                         "url": "u", "published": "2099-04-30"}]
+
+
+def test_squashed_name_pick_is_read():
+    from mma_predictor.pundit_history import _squashed_side
+    bout = {"fighter_a": "Aaron Pico", "fighter_b": "Losene Keita"}
+    assert _squashed_side("LoseneKeita  ", bout) == "Losene Keita"
+    assert _squashed_side("Draw", bout) is None

@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-27T10:56:09+00:00",
+ "checked": "2026-10-27T16:00:07+00:00",
  "ok": false,
  "failed": [
   "Fight Matrix rankings",
@@ -11,15 +11,15 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "17 bouts on a known fighter page",
-   "seconds": 1.0,
+   "seconds": 0.6,
    "last_ok": "2026-10-27"
   },
   {
    "source": "Sherdog event listings",
    "used_by": "prospect fights this week",
    "ok": true,
-   "detail": "255 upcoming events listed",
-   "seconds": 2.1,
+   "detail": "256 upcoming events listed",
+   "seconds": 1.6,
    "last_ok": "2026-10-27"
   },
   {
@@ -43,7 +43,7 @@
    "used_by": "ratings, prospects",
    "ok": false,
    "detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
-   "seconds": 8.3,
+   "seconds": 7.5,
    "last_ok": "2026-10-26"
   },
   {
@@ -51,7 +51,7 @@
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
    "detail": "8 events; UFC Vegas 123: 13 bouts, 11 with FanDuel moneylines",
-   "seconds": 2.8,
+   "seconds": 2.7,
    "last_ok": "2026-10-27"
   },
   {
@@ -59,7 +59,7 @@
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "15 bouts with lines",
-   "seconds": 2.7,
+   "seconds": 2.8,
    "last_ok": "2026-10-27"
   },
   {
@@ -67,7 +67,7 @@
    "used_by": "upcoming cards, results",
    "ok": true,
    "detail": "10 scheduled UFC events",
-   "seconds": 1.1,
+   "seconds": 1.2,
    "last_ok": "2026-10-27"
   },
   {
@@ -75,7 +75,7 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "651 fighters on the UFC roster",
-   "seconds": 2.1,
+   "seconds": 1.9,
    "last_ok": "2026-10-27"
   },
   {
@@ -91,7 +91,7 @@
    "used_by": "stat verification",
    "ok": true,
    "detail": "2405 UFC bouts in the sitemap",
-   "seconds": 6.8,
+   "seconds": 5.8,
    "last_ok": "2026-10-27"
   },
   {
@@ -99,7 +99,7 @@
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.5,
+   "seconds": 0.4,
    "last_ok": "2026-10-27"
   },
   {
@@ -107,7 +107,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.6,
+   "seconds": 0.5,
    "last_ok": "2026-10-27"
   },
   {
@@ -115,7 +115,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 0.2,
+   "seconds": 0.4,
    "last_ok": "2026-10-27"
   },
   {
@@ -123,7 +123,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.4,
+   "seconds": 0.5,
    "last_ok": "2026-10-27"
   },
   {
@@ -131,7 +131,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.2,
    "last_ok": "2026-10-27"
   },
   {
@@ -139,7 +139,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.0,
+   "seconds": 0.6,
    "last_ok": "2026-10-27"
   },
   {
@@ -155,7 +155,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 1.5,
+   "seconds": 1.4,
    "last_ok": "2026-10-27"
   },
   {
@@ -163,7 +163,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.1,
+   "seconds": 1.8,
    "last_ok": "2026-10-27"
   },
   {
@@ -178,8 +178,8 @@
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "31 items, 31 from the last 14 days",
-   "seconds": 0.9,
+   "detail": "36 items, 36 from the last 14 days",
+   "seconds": 0.5,
    "last_ok": "2026-10-27"
   },
   {
@@ -187,7 +187,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.9,
+   "seconds": 2.0,
    "last_ok": "2026-10-27"
   },
   {
@@ -195,7 +195,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 3.1,
+   "seconds": 3.4,
    "last_ok": "2026-10-27"
   },
   {
@@ -203,7 +203,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.9,
+   "seconds": 3.9,
    "last_ok": "2026-10-27"
   }
  ]
