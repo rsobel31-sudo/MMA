@@ -101,7 +101,7 @@
 },
 "Abdul-Kareem Al-Selwady": {
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
-"stats_official": "2"
+"stats_official": "3"
 },
 "Abdul-Kerim Edilov": {
 "dob": "Sherdog + UFCStats agree",
@@ -11919,6 +11919,8 @@
 "stats_official": "2"
 },
 "Mando Gutierrez": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -15286,6 +15288,8 @@
 "stats_verified": "2"
 },
 "Ren Ozaki": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -16890,7 +16894,10 @@
 "stats_verified": "1"
 },
 "Shaqueme Rock": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
+"stats_official": "1",
 "stats_verified": "1"
 },
 "Sharabutdin Magomedov": {

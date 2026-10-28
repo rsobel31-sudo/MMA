@@ -206,8 +206,8 @@
    "system": "meta",
    "division": "Heavyweight",
    "rank": "2",
-   "name": "Sergei Pavlovich",
-   "wiki": "https://en.wikipedia.org/wiki/Sergei_Pavlovich"
+   "name": "Alexander Volkov",
+   "wiki": "https://en.wikipedia.org/wiki/Alexander_Volkov_(fighter)"
   },
   {
    "system": "meta",
@@ -220,29 +220,29 @@
    "system": "meta",
    "division": "Heavyweight",
    "rank": "4",
-   "name": "Alexander Volkov",
-   "wiki": "https://en.wikipedia.org/wiki/Alexander_Volkov_(fighter)"
+   "name": "Sergei Pavlovich",
+   "wiki": "https://en.wikipedia.org/wiki/Sergei_Pavlovich"
   },
   {
    "system": "meta",
    "division": "Heavyweight",
    "rank": "5",
-   "name": "Rizvan Kuniev",
-   "wiki": "https://en.wikipedia.org/wiki/Rizvan_Kuniev"
-  },
-  {
-   "system": "meta",
-   "division": "Heavyweight",
-   "rank": "6",
    "name": "Josh Hokit",
    "wiki": "https://en.wikipedia.org/wiki/Josh_Hokit"
   },
   {
    "system": "meta",
    "division": "Heavyweight",
-   "rank": "7",
+   "rank": "6",
    "name": "Curtis Blaydes",
    "wiki": "https://en.wikipedia.org/wiki/Curtis_Blaydes"
+  },
+  {
+   "system": "meta",
+   "division": "Heavyweight",
+   "rank": "7",
+   "name": "Rizvan Kuniev",
+   "wiki": "https://en.wikipedia.org/wiki/Rizvan_Kuniev"
   },
   {
    "system": "meta",
@@ -332,29 +332,29 @@
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "4",
+   "name": "Dominick Reyes",
+   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
+  },
+  {
+   "system": "meta",
+   "division": "Light Heavyweight",
+   "rank": "5",
    "name": "Paulo Costa",
    "wiki": "https://en.wikipedia.org/wiki/Paulo_Costa"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
-   "rank": "5",
+   "rank": "6",
    "name": "Khalil Rountree Jr.",
    "wiki": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
-   "rank": "6",
+   "rank": "7",
    "name": "Navajo Stirling",
    "wiki": "https://en.wikipedia.org/wiki/Navajo_Stirling"
-  },
-  {
-   "system": "meta",
-   "division": "Light Heavyweight",
-   "rank": "7",
-   "name": "Dominick Reyes",
-   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
   },
   {
    "system": "meta",
@@ -367,43 +367,43 @@
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "9",
-   "name": "Azamat Murzakanov",
-   "wiki": "https://en.wikipedia.org/wiki/Azamat_Murzakanov"
-  },
-  {
-   "system": "meta",
-   "division": "Light Heavyweight",
-   "rank": "10",
    "name": "Alonzo Menifield",
    "wiki": "https://en.wikipedia.org/wiki/Alonzo_Menifield"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
-   "rank": "11",
+   "rank": "10",
    "name": "Bogdan Guskov",
    "wiki": "https://en.wikipedia.org/wiki/Bogdan_Guskov"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
-   "rank": "12",
+   "rank": "11",
    "name": "Robert Whittaker",
    "wiki": "https://en.wikipedia.org/wiki/Robert_Whittaker_(fighter)"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
+   "rank": "13",
+   "name": "Abdul-Rakhman Yakhyaev",
+   "wiki": "https://en.wikipedia.org/wiki/Abdul-Rakhman_Yakhyaev"
+  },
+  {
+   "system": "meta",
+   "division": "Light Heavyweight",
    "rank": "14",
-   "name": "Modestas Bukauskas",
-   "wiki": "https://en.wikipedia.org/wiki/Modestas_Bukauskas"
+   "name": "Azamat Murzakanov",
+   "wiki": "https://en.wikipedia.org/wiki/Azamat_Murzakanov"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "15",
-   "name": "Abdul-Rakhman Yakhyaev",
-   "wiki": "https://en.wikipedia.org/wiki/Abdul-Rakhman_Yakhyaev"
+   "name": "Modestas Bukauskas",
+   "wiki": "https://en.wikipedia.org/wiki/Modestas_Bukauskas"
   },
   {
    "system": "meta",
@@ -472,36 +472,36 @@
    "system": "meta",
    "division": "Middleweight",
    "rank": "9",
+   "name": "Abusupiyan Magomedov",
+   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
+  },
+  {
+   "system": "meta",
+   "division": "Middleweight",
+   "rank": "10",
    "name": "Israel Adesanya",
    "wiki": "https://en.wikipedia.org/wiki/Israel_Adesanya"
   },
   {
    "system": "meta",
    "division": "Middleweight",
-   "rank": "10",
+   "rank": "11",
    "name": "Ikram Aliskerov",
    "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
   },
   {
    "system": "meta",
    "division": "Middleweight",
-   "rank": "11",
+   "rank": "12",
    "name": "Christian Leroy Duncan",
    "wiki": "https://en.wikipedia.org/wiki/Christian_Leroy_Duncan"
   },
   {
    "system": "meta",
    "division": "Middleweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Bo Nickal",
    "wiki": "https://en.wikipedia.org/wiki/Bo_Nickal"
-  },
-  {
-   "system": "meta",
-   "division": "Middleweight",
-   "rank": "13",
-   "name": "Abusupiyan Magomedov",
-   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
   },
   {
    "system": "meta",
@@ -710,15 +710,15 @@
    "system": "meta",
    "division": "Lightweight",
    "rank": "11",
-   "name": "Tom Nolan",
-   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
+   "name": "Grant Dawson",
+   "wiki": "https://en.wikipedia.org/wiki/Grant_Dawson"
   },
   {
    "system": "meta",
    "division": "Lightweight",
    "rank": "12",
-   "name": "Rafael Fiziev",
-   "wiki": "https://en.wikipedia.org/wiki/Rafael_Fiziev"
+   "name": "Tom Nolan",
+   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
   },
   {
    "system": "meta",
@@ -731,8 +731,8 @@
    "system": "meta",
    "division": "Lightweight",
    "rank": "14",
-   "name": "Grant Dawson",
-   "wiki": "https://en.wikipedia.org/wiki/Grant_Dawson"
+   "name": "Rafael Fiziev",
+   "wiki": "https://en.wikipedia.org/wiki/Rafael_Fiziev"
   },
   {
    "system": "meta",
@@ -808,36 +808,36 @@
    "system": "meta",
    "division": "Featherweight",
    "rank": "10",
+   "name": "Aaron Pico",
+   "wiki": "https://en.wikipedia.org/wiki/Aaron_Pico"
+  },
+  {
+   "system": "meta",
+   "division": "Featherweight",
+   "rank": "11",
    "name": "Kevin Vallejos",
    "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "11",
+   "rank": "12",
    "name": "Joanderson Brito",
    "wiki": "https://en.wikipedia.org/wiki/Joanderson_Brito"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Melquizael Costa",
    "wiki": "https://en.wikipedia.org/wiki/Melquizael_Costa"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "13",
+   "rank": "14",
    "name": "Steve Garcia",
    "wiki": "https://en.wikipedia.org/wiki/Steve_Garcia"
-  },
-  {
-   "system": "meta",
-   "division": "Featherweight",
-   "rank": "14",
-   "name": "Aaron Pico",
-   "wiki": "https://en.wikipedia.org/wiki/Aaron_Pico"
   },
   {
    "system": "meta",
@@ -997,43 +997,43 @@
    "system": "meta",
    "division": "Flyweight",
    "rank": "5",
-   "name": "Asu Almabayev",
-   "wiki": "https://en.wikipedia.org/wiki/Asu_Almabayev"
-  },
-  {
-   "system": "meta",
-   "division": "Flyweight",
-   "rank": "6",
    "name": "Lone'er Kavanagh",
    "wiki": "https://en.wikipedia.org/wiki/Lone'er_Kavanagh"
   },
   {
    "system": "meta",
    "division": "Flyweight",
-   "rank": "7",
-   "name": "Ramazan Temirov",
-   "wiki": "https://en.wikipedia.org/wiki/Ramazan_Temirov"
+   "rank": "6",
+   "name": "Asu Almabayev",
+   "wiki": "https://en.wikipedia.org/wiki/Asu_Almabayev"
   },
   {
    "system": "meta",
    "division": "Flyweight",
-   "rank": "8",
+   "rank": "7",
    "name": "Kyoji Horiguchi",
    "wiki": "https://en.wikipedia.org/wiki/Kyoji_Horiguchi"
   },
   {
    "system": "meta",
    "division": "Flyweight",
-   "rank": "9",
+   "rank": "8",
    "name": "Amir Albazi",
    "wiki": "https://en.wikipedia.org/wiki/Amir_Albazi"
   },
   {
    "system": "meta",
    "division": "Flyweight",
-   "rank": "10",
+   "rank": "9",
    "name": "Brandon Moreno",
    "wiki": "https://en.wikipedia.org/wiki/Brandon_Moreno"
+  },
+  {
+   "system": "meta",
+   "division": "Flyweight",
+   "rank": "10",
+   "name": "Ramazan Temirov",
+   "wiki": "https://en.wikipedia.org/wiki/Ramazan_Temirov"
   },
   {
    "system": "meta",
@@ -1297,51 +1297,51 @@
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "8",
+   "rank": "7",
+   "name": "Iasmin Lucindo",
+   "wiki": "https://en.wikipedia.org/wiki/Iasmin_Lucindo"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "9",
    "name": "Loopy Godínez",
    "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "10",
+   "rank": "11",
    "name": "Yan Xiaonan",
    "wiki": "https://en.wikipedia.org/wiki/Yan_Xiaonan"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "11",
+   "rank": "12",
    "name": "Mizuki Inoue",
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Tabatha Ricci",
    "wiki": "https://en.wikipedia.org/wiki/Tabatha_Ricci"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "13",
+   "rank": "14",
    "name": "Talita Alencar",
    "wiki": "https://en.wikipedia.org/wiki/Talita_Alencar"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "14",
+   "rank": "15",
    "name": "Amanda Lemos",
    "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Strawweight",
-   "rank": "15",
-   "name": "Sam Hughes",
-   "wiki": "https://en.wikipedia.org/wiki/Sam_Hughes_(fighter)"
   },
   {
    "system": "media",
@@ -2513,6 +2513,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-10-27",
+ "fetched": "2026-10-28",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }
