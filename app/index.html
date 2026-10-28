@@ -1021,6 +1021,8 @@ button.namelink:hover { color: var(--red); }
 
   function renderMatchup(view) {
     const { a, b, rounds } = state.m;
+    if (a) ensureProfile(a);
+    if (b) ensureProfile(b);  // recent fights live in the profile files
     const fa = a && fighter(a), fb = b && fighter(b);
     let html = `
       <div class="stack">
@@ -1174,7 +1176,8 @@ button.namelink:hover { color: var(--red); }
             <textarea id="note-${c}" data-note="${esc(n)}" placeholder="Your scouting note on ${esc(n)} (camp, injuries, how they've looked)">${esc((state.adj.fighters[n] || {}).note || "")}</textarea>
             <div class="label">Recent fights · judge how they performed</div>
             <table class="recent num"><tbody>
-              ${f.recent.map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${nameLink(x.opponent)}</td><td>${esc(x.method)} R${x.round}</td>
+              ${f.recent ? "" : `<tr><td class="muted">${(state.byName.get(n) || {})._profileLoaded ? "No recent fights" : "Loading…"}</td></tr>`}
+              ${(f.recent || []).map((x) => `<tr><td>${esc(x.date)}</td><td class="res-${x.result}">${x.result}</td><td>${nameLink(x.opponent)}</td><td>${esc(x.method)} R${x.round}</td>
                 <td><button class="btn small" type="button" data-judge="${esc(n)}" data-date="${esc(x.date)}" data-opp="${esc(x.opponent)}">Judge</button></td></tr>
                 ${state.judging && state.judging.fighter === n && state.judging.date === x.date ? `<tr><td colspan="5">${judgeForm(c)}</td></tr>` : ""}`).join("")}
             </tbody></table>

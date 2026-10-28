@@ -213,7 +213,7 @@ def export(
     }
 
 
-PROFILE_FIELDS = ("history", "bio")
+PROFILE_FIELDS = ("history", "bio", "recent")
 SHARD_BYTES = 6_000_000      # each profiles-<i>.json stays far below the page host's 16 MB per-file limit
 DATA_WARN_BYTES = 15_000_000
 
@@ -224,8 +224,8 @@ def profile_shard(name: str, n: int) -> int:
 
 
 def write(data: Dict[str, Any], path: Path) -> None:
-    """Write data.json. Each fighter's fight history and bio (only the profile view needs them, and they are most of
-    the bytes) go to profiles-<i>.json beside it, loaded on demand, so data.json stays under the page host's
+    """Write data.json. Each fighter's fight history, bio and recent fights (only the profile and matchup views need
+    them, and they are most of the bytes) go to profiles-<i>.json beside it, loaded on demand, so data.json stays under the page host's
     per-file limit as the dataset grows."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
