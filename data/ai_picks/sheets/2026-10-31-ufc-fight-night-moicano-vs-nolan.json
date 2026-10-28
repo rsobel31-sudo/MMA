@@ -4,7 +4,7 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
  "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-123-4427",
  "book": "FanDuel",
- "fetched_at": "2026-10-27T16:06:17+00:00",
+ "fetched_at": "2026-10-28T17:17:51+00:00",
  "event_starts": "2026-10-31T12:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-vegas-123-4427"
@@ -14,8 +14,8 @@
   "Zachary Reese vs Mickey Gall"
  ],
  "blend_weights": {
-  "model": 0.24610030270514432,
-  "market": 0.9711554050686323
+  "model": 0.2595833671141876,
+  "market": 0.9668856564576772
  },
  "dec_cal": [
   0.439346,
@@ -34,8 +34,8 @@
    ],
    "rounds": 5,
    "title": false,
-   "p_model_a": 0.3969,
-   "p_stats_a": 0.3969,
+   "p_model_a": 0.3976,
+   "p_stats_a": 0.3976,
    "read_a": 0.0,
    "ml": {
     "a": -122,
@@ -53,14 +53,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.7378,
-   "p_stats_a": 0.7378,
+   "p_model_a": 0.7371,
+   "p_stats_a": 0.7371,
    "read_a": 0.0,
    "ml": {
-    "a": -265,
-    "b": 200
+    "a": -310,
+    "b": 230
    },
-   "markets": 2
+   "markets": 23
   },
   {
    "bout": "Cody Durden vs Ode Osbourne",
@@ -72,14 +72,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.55,
-   "p_stats_a": 0.55,
-   "read_a": 0.0,
+   "p_model_a": 0.5751,
+   "p_stats_a": 0.5505,
+   "read_a": 0.1,
    "ml": {
-    "a": -113,
-    "b": -113
+    "a": -120,
+    "b": -106
    },
-   "markets": 2
+   "markets": 23
   },
   {
    "bout": "Luana Santos vs Yana Santos",
@@ -91,14 +91,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.697,
-   "p_stats_a": 0.697,
+   "p_model_a": 0.6967,
+   "p_stats_a": 0.6967,
    "read_a": 0.0,
    "ml": {
-    "a": -280,
-    "b": 210
+    "a": -295,
+    "b": 220
    },
-   "markets": 2
+   "markets": 11
   },
   {
    "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
@@ -110,14 +110,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.5759,
-   "p_stats_a": 0.5759,
+   "p_model_a": 0.5791,
+   "p_stats_a": 0.5791,
    "read_a": 0.0,
    "ml": {
-    "a": 215,
-    "b": -290
+    "a": 235,
+    "b": -320
    },
-   "markets": 2
+   "markets": 23
   },
   {
    "bout": "Dakota Hope vs Francis Marshall",
@@ -129,14 +129,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4733,
-   "p_stats_a": 0.4733,
-   "read_a": 0.0,
+   "p_model_a": 0.4224,
+   "p_stats_a": 0.4718,
+   "read_a": -0.2,
    "ml": {
-    "a": 196,
-    "b": -260
+    "a": 186,
+    "b": -245
    },
-   "markets": 2
+   "markets": 23
   },
   {
    "bout": "Rodrigo Sezinando vs Theodor Berggren",
@@ -148,14 +148,14 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6834,
-   "p_stats_a": 0.6834,
+   "p_model_a": 0.6878,
+   "p_stats_a": 0.6878,
    "read_a": 0.0,
    "ml": {
-    "a": -178,
-    "b": 138
+    "a": -184,
+    "b": 142
    },
-   "markets": 2
+   "markets": 23
   },
   {
    "bout": "Joseph Kropschot vs Nick Klein",
@@ -167,8 +167,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6057,
-   "p_stats_a": 0.6057,
+   "p_model_a": 0.6132,
+   "p_stats_a": 0.6132,
    "read_a": 0.0,
    "ml": {
     "a": -330,
@@ -186,8 +186,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.638,
-   "p_stats_a": 0.638,
+   "p_model_a": 0.6386,
+   "p_stats_a": 0.6386,
    "read_a": 0.0,
    "ml": {
     "a": -290,
@@ -205,12 +205,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.886,
-   "p_stats_a": 0.886,
+   "p_model_a": 0.8865,
+   "p_stats_a": 0.8865,
    "read_a": 0.0,
    "ml": {
-    "a": -620,
-    "b": 400
+    "a": -670,
+    "b": 430
    },
    "markets": 2
   }
@@ -314,12 +314,12 @@
    "selection": "Tom Nolan by decision",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.3218,
+   "p_model": 0.3226,
    "p_fanduel": 0.1324,
-   "p": 0.2121,
-   "edge": 0.0796,
-   "ev": 0.3785,
-   "kelly": 0.0688
+   "p": 0.2124,
+   "edge": 0.0799,
+   "ev": 0.3803,
+   "kelly": 0.0691
   },
   {
    "id": "45457:distance:True",
@@ -331,12 +331,12 @@
    "selection": "Goes to decision",
    "odds": 255,
    "decimal": 3.55,
-   "p_model": 0.5243,
+   "p_model": 0.5244,
    "p_fanduel": 0.2659,
    "p": 0.3872,
-   "edge": 0.1213,
-   "ev": 0.3744,
-   "kelly": 0.1468
+   "edge": 0.1214,
+   "ev": 0.3747,
+   "kelly": 0.1469
   },
   {
    "id": "45457:starts_round:5:True",
@@ -349,12 +349,47 @@
    "selection": "Fight starts round 5",
    "odds": 188,
    "decimal": 2.88,
-   "p_model": 0.5721,
+   "p_model": 0.5722,
    "p_fanduel": 0.3271,
-   "p": 0.4463,
-   "edge": 0.1192,
-   "ev": 0.2854,
-   "kelly": 0.1518
+   "p": 0.4464,
+   "edge": 0.1193,
+   "ev": 0.2856,
+   "kelly": 0.1519
+  },
+  {
+   "id": "45484:method:b:DEC",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Randy Brown by decision",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.1871,
+   "p_fanduel": 0.097,
+   "p": 0.1359,
+   "edge": 0.0389,
+   "ev": 0.2229,
+   "kelly": 0.0279
+  },
+  {
+   "id": "45484:distance:True",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.3632,
+   "p_fanduel": 0.2304,
+   "p": 0.2924,
+   "edge": 0.062,
+   "ev": 0.1987,
+   "kelly": 0.0641
   },
   {
    "id": "45457:starts_round:4:True",
@@ -367,12 +402,48 @@
    "selection": "Fight starts round 4",
    "odds": 126,
    "decimal": 2.26,
-   "p_model": 0.6355,
+   "p_model": 0.6357,
    "p_fanduel": 0.4183,
-   "p": 0.5282,
+   "p": 0.5283,
    "edge": 0.11,
-   "ev": 0.1938,
-   "kelly": 0.1538
+   "ev": 0.194,
+   "kelly": 0.1539
+  },
+  {
+   "id": "45483:method:b:SUB",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Ode Osbourne by submission",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.1348,
+   "p_fanduel": 0.078,
+   "p": 0.103,
+   "edge": 0.025,
+   "ev": 0.1328,
+   "kelly": 0.0133
+  },
+  {
+   "id": "45460:method:b:DEC",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Jean Paul Lebosnoyani by decision",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.3405,
+   "p_fanduel": 0.2087,
+   "p": 0.2696,
+   "edge": 0.0608,
+   "ev": 0.1321,
+   "kelly": 0.0413
   },
   {
    "id": "45457:starts_round:3:True",
@@ -385,12 +456,29 @@
    "selection": "Fight starts round 3",
    "odds": -136,
    "decimal": 1.7353,
-   "p_model": 0.7194,
+   "p_model": 0.7196,
    "p_fanduel": 0.5452,
    "p": 0.6368,
-   "edge": 0.0916,
-   "ev": 0.105,
-   "kelly": 0.1428
+   "edge": 0.0917,
+   "ev": 0.1051,
+   "kelly": 0.143
+  },
+  {
+   "id": "45460:distance:True",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 164,
+   "decimal": 2.64,
+   "p_model": 0.4809,
+   "p_fanduel": 0.3569,
+   "p": 0.4176,
+   "edge": 0.0607,
+   "ev": 0.1025,
+   "kelly": 0.0625
   },
   {
    "id": "45457:method:a:KO/TKO",
@@ -403,12 +491,118 @@
    "selection": "Renato Moicano by KO/TKO",
    "odds": 750,
    "decimal": 8.5,
-   "p_model": 0.1646,
+   "p_model": 0.1642,
    "p_fanduel": 0.1013,
-   "p": 0.1297,
-   "edge": 0.0284,
-   "ev": 0.1024,
-   "kelly": 0.0137
+   "p": 0.1295,
+   "edge": 0.0282,
+   "ev": 0.1009,
+   "kelly": 0.0135
+  },
+  {
+   "id": "45484:starts_round:3:True",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 174,
+   "decimal": 2.74,
+   "p_model": 0.4606,
+   "p_fanduel": 0.3452,
+   "p": 0.4015,
+   "edge": 0.0563,
+   "ev": 0.1002,
+   "kelly": 0.0576
+  },
+  {
+   "id": "45458:starts_round:2:False",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 580,
+   "decimal": 6.8,
+   "p_model": 0.1852,
+   "p_fanduel": 0.1392,
+   "p": 0.1609,
+   "edge": 0.0216,
+   "ev": 0.094,
+   "kelly": 0.0162
+  },
+  {
+   "id": "45465:method:a:DEC",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Rodrigo Sezinando by decision",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.2513,
+   "p_fanduel": 0.1611,
+   "p": 0.2025,
+   "edge": 0.0413,
+   "ev": 0.0933,
+   "kelly": 0.0212
+  },
+  {
+   "id": "45483:distance:True",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 150,
+   "decimal": 2.5,
+   "p_model": 0.4968,
+   "p_fanduel": 0.3774,
+   "p": 0.4362,
+   "edge": 0.0588,
+   "ev": 0.0904,
+   "kelly": 0.0603
+  },
+  {
+   "id": "45458:starts_round:3:False",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.3037,
+   "p_fanduel": 0.2296,
+   "p": 0.265,
+   "edge": 0.0354,
+   "ev": 0.0866,
+   "kelly": 0.0279
+  },
+  {
+   "id": "45458:distance:False",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.3647,
+   "p_fanduel": 0.2861,
+   "p": 0.3242,
+   "edge": 0.0381,
+   "ev": 0.0698,
+   "kelly": 0.0304
   },
   {
    "id": "45457:method:a:DEC",
@@ -421,12 +615,82 @@
    "selection": "Renato Moicano by decision",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.2024,
+   "p_model": 0.2018,
    "p_fanduel": 0.1324,
-   "p": 0.1645,
-   "edge": 0.032,
-   "ev": 0.069,
-   "kelly": 0.0125
+   "p": 0.1642,
+   "edge": 0.0318,
+   "ev": 0.0674,
+   "kelly": 0.0122
+  },
+  {
+   "id": "45461:distance:True",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -142,
+   "decimal": 1.7042,
+   "p_model": 0.6677,
+   "p_fanduel": 0.5544,
+   "p": 0.6126,
+   "edge": 0.0582,
+   "ev": 0.0439,
+   "kelly": 0.0624
+  },
+  {
+   "id": "45483:method:a:DEC",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Cody Durden by decision",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.3473,
+   "p_fanduel": 0.2383,
+   "p": 0.2898,
+   "edge": 0.0515,
+   "ev": 0.0432,
+   "kelly": 0.0166
+  },
+  {
+   "id": "45484:starts_round:2:True",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -138,
+   "decimal": 1.7246,
+   "p_model": 0.6583,
+   "p_fanduel": 0.5467,
+   "p": 0.6038,
+   "edge": 0.0571,
+   "ev": 0.0414,
+   "kelly": 0.0571
+  },
+  {
+   "id": "45458:ends_round:1",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1852,
+   "p_fanduel": 0.1374,
+   "p": 0.1598,
+   "edge": 0.0225,
+   "ev": 0.0389,
+   "kelly": 0.0071
   },
   {
    "id": "45457:method:b:SUB",
@@ -439,12 +703,64 @@
    "selection": "Tom Nolan by submission",
    "odds": 900,
    "decimal": 10.0,
-   "p_model": 0.1226,
+   "p_model": 0.123,
    "p_fanduel": 0.0861,
-   "p": 0.1029,
-   "edge": 0.0169,
+   "p": 0.1031,
+   "edge": 0.017,
+   "ev": 0.0307,
+   "kelly": 0.0034
+  },
+  {
+   "id": "45484:method:a:KO/TKO",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jacobe Smith by KO/TKO",
+   "odds": 145,
+   "decimal": 2.45,
+   "p_model": 0.4867,
+   "p_fanduel": 0.3563,
+   "p": 0.4201,
+   "edge": 0.0638,
    "ev": 0.0293,
-   "kelly": 0.0033
+   "kelly": 0.0202
+  },
+  {
+   "id": "45460:ml:a",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Farman Hasanov to win",
+   "odds": 235,
+   "decimal": 3.35,
+   "p_model": 0.3051,
+   "p_fanduel": 0.2815,
+   "p": 0.3051,
+   "edge": 0.0236,
+   "ev": 0.022,
+   "kelly": 0.0094
+  },
+  {
+   "id": "45465:distance:True",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 235,
+   "decimal": 3.35,
+   "p_model": 0.3292,
+   "p_fanduel": 0.2815,
+   "p": 0.3048,
+   "edge": 0.0233,
+   "ev": 0.0211,
+   "kelly": 0.009
   },
   {
    "id": "45457:starts_round:2:True",
@@ -457,12 +773,48 @@
    "selection": "Fight starts round 2",
    "odds": -350,
    "decimal": 1.2857,
-   "p_model": 0.8459,
+   "p_model": 0.846,
    "p_fanduel": 0.7285,
    "p": 0.7933,
    "edge": 0.0648,
-   "ev": 0.0199,
-   "kelly": 0.0698
+   "ev": 0.02,
+   "kelly": 0.07
+  },
+  {
+   "id": "45461:method:b:DEC",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Francis Marshall by decision",
+   "odds": 140,
+   "decimal": 2.4,
+   "p_model": 0.4856,
+   "p_fanduel": 0.3636,
+   "p": 0.4235,
+   "edge": 0.0598,
+   "ev": 0.0163,
+   "kelly": 0.0116
+  },
+  {
+   "id": "45460:starts_round:3:True",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -108,
+   "decimal": 1.9259,
+   "p_model": 0.564,
+   "p_fanduel": 0.4896,
+   "p": 0.527,
+   "edge": 0.0374,
+   "ev": 0.0149,
+   "kelly": 0.0161
   },
   {
    "id": "45466:ml:a",
@@ -472,48 +824,32 @@
     "a"
    ],
    "selection": "Lucia Szabova to win",
-   "odds": -620,
-   "decimal": 1.1613,
-   "p_model": 0.8724,
-   "p_fanduel": 0.8115,
-   "p": 0.8724,
-   "edge": 0.0609,
-   "ev": 0.0131,
-   "kelly": 0.0814
+   "odds": -670,
+   "decimal": 1.1493,
+   "p_model": 0.882,
+   "p_fanduel": 0.8218,
+   "p": 0.882,
+   "edge": 0.0602,
+   "ev": 0.0136,
+   "kelly": 0.0914
   },
   {
-   "id": "45484:ml:a",
-   "bout": "Jacobe Smith vs Randy Brown",
+   "id": "45483:starts_round:3:True",
+   "bout": "Cody Durden vs Ode Osbourne",
    "market": [
-    "ml",
-    "a"
+    "starts_round",
+    3,
+    true
    ],
-   "selection": "Jacobe Smith to win",
-   "odds": -265,
-   "decimal": 1.3774,
-   "p_model": 0.7331,
-   "p_fanduel": 0.6853,
-   "p": 0.7331,
-   "edge": 0.0478,
-   "ev": 0.0098,
-   "kelly": 0.026
-  },
-  {
-   "id": "45460:ml:a",
-   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Farman Hasanov to win",
-   "odds": 215,
-   "decimal": 3.15,
-   "p_model": 0.3205,
-   "p_fanduel": 0.2992,
-   "p": 0.3205,
-   "edge": 0.0213,
-   "ev": 0.0097,
-   "kelly": 0.0045
+   "selection": "Fight starts round 3",
+   "odds": -116,
+   "decimal": 1.8621,
+   "p_model": 0.5803,
+   "p_fanduel": 0.5062,
+   "p": 0.5435,
+   "edge": 0.0373,
+   "ev": 0.0121,
+   "kelly": 0.014
   },
   {
    "id": "45465:ml:a",
@@ -523,14 +859,67 @@
     "a"
    ],
    "selection": "Rodrigo Sezinando to win",
-   "odds": -178,
-   "decimal": 1.5618,
-   "p_model": 0.6453,
-   "p_fanduel": 0.6038,
-   "p": 0.6453,
-   "edge": 0.0415,
-   "ev": 0.0078,
-   "kelly": 0.0139
+   "odds": -184,
+   "decimal": 1.5435,
+   "p_model": 0.6547,
+   "p_fanduel": 0.6106,
+   "p": 0.6547,
+   "edge": 0.0442,
+   "ev": 0.0106,
+   "kelly": 0.0195
+  },
+  {
+   "id": "45484:ml:a",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jacobe Smith to win",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.7598,
+   "p_fanduel": 0.7139,
+   "p": 0.7598,
+   "edge": 0.0459,
+   "ev": 0.0049,
+   "kelly": 0.0152
+  },
+  {
+   "id": "45484:method:a:DEC",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Jacobe Smith by decision",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1761,
+   "p_fanduel": 0.1343,
+   "p": 0.154,
+   "edge": 0.0197,
+   "ev": 0.0011,
+   "kelly": 0.0002
+  },
+  {
+   "id": "45461:starts_round:3:True",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -215,
+   "decimal": 1.4651,
+   "p_model": 0.7211,
+   "p_fanduel": 0.6414,
+   "p": 0.6825,
+   "edge": 0.0412,
+   "ev": 0.0,
+   "kelly": 0.0
   },
   {
    "id": "45457:ml:b",
@@ -542,11 +931,11 @@
    "selection": "Tom Nolan to win",
    "odds": -104,
    "decimal": 1.9615,
-   "p_model": 0.5075,
+   "p_model": 0.5088,
    "p_fanduel": 0.4812,
-   "p": 0.5075,
-   "edge": 0.0263,
-   "ev": -0.0045,
+   "p": 0.5088,
+   "edge": 0.0276,
+   "ev": -0.0019,
    "kelly": 0.0
   },
   {
@@ -557,13 +946,65 @@
     "a"
    ],
    "selection": "Luana Santos to win",
-   "odds": -280,
-   "decimal": 1.3571,
-   "p_model": 0.7325,
-   "p_fanduel": 0.6955,
-   "p": 0.7325,
-   "edge": 0.037,
-   "ev": -0.0059,
+   "odds": -295,
+   "decimal": 1.339,
+   "p_model": 0.7424,
+   "p_fanduel": 0.705,
+   "p": 0.7424,
+   "edge": 0.0374,
+   "ev": -0.006,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:method:a:KO/TKO",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Farman Hasanov by KO/TKO",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.1485,
+   "p_fanduel": 0.1169,
+   "p": 0.1319,
+   "edge": 0.015,
+   "ev": -0.0107,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ml:a",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Cody Durden to win",
+   "odds": -120,
+   "decimal": 1.8333,
+   "p_model": 0.5337,
+   "p_fanduel": 0.5146,
+   "p": 0.5337,
+   "edge": 0.0191,
+   "ev": -0.0216,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:ends_round:2",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.1185,
+   "p_fanduel": 0.0992,
+   "p": 0.1085,
+   "edge": 0.0093,
+   "ev": -0.0236,
    "kelly": 0.0
   },
   {
@@ -576,28 +1017,83 @@
    "selection": "Piera Rodriguez to win",
    "odds": -290,
    "decimal": 1.3448,
-   "p_model": 0.7243,
+   "p_model": 0.7253,
    "p_fanduel": 0.7008,
-   "p": 0.7243,
-   "edge": 0.0235,
-   "ev": -0.0259,
+   "p": 0.7253,
+   "edge": 0.0245,
+   "ev": -0.0246,
    "kelly": 0.0
   },
   {
-   "id": "45483:ml:a",
+   "id": "45461:starts_round:2:True",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -480,
+   "decimal": 1.2083,
+   "p_model": 0.8268,
+   "p_fanduel": 0.7806,
+   "p": 0.8047,
+   "edge": 0.0241,
+   "ev": -0.0276,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:starts_round:2:False",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 178,
+   "decimal": 2.78,
+   "p_model": 0.3556,
+   "p_fanduel": 0.3404,
+   "p": 0.348,
+   "edge": 0.0076,
+   "ev": -0.0326,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:starts_round:2:True",
    "bout": "Cody Durden vs Ode Osbourne",
    "market": [
-    "ml",
-    "a"
+    "starts_round",
+    2,
+    true
    ],
-   "selection": "Cody Durden to win",
-   "odds": -113,
-   "decimal": 1.885,
-   "p_model": 0.5124,
-   "p_fanduel": 0.5,
-   "p": 0.5124,
-   "edge": 0.0124,
-   "ev": -0.0342,
+   "selection": "Fight starts round 2",
+   "odds": -300,
+   "decimal": 1.3333,
+   "p_model": 0.7432,
+   "p_fanduel": 0.7059,
+   "p": 0.7249,
+   "edge": 0.019,
+   "ev": -0.0334,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:starts_round:2:True",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -280,
+   "decimal": 1.3571,
+   "p_model": 0.7289,
+   "p_fanduel": 0.6921,
+   "p": 0.7108,
+   "edge": 0.0188,
+   "ev": -0.0353,
    "kelly": 0.0
   },
   {
@@ -610,11 +1106,11 @@
    "selection": "Joseph Kropschot to win",
    "odds": -330,
    "decimal": 1.303,
-   "p_model": 0.7383,
+   "p_model": 0.7402,
    "p_fanduel": 0.7229,
-   "p": 0.7383,
-   "edge": 0.0153,
-   "ev": -0.038,
+   "p": 0.7402,
+   "edge": 0.0173,
+   "ev": -0.0355,
    "kelly": 0.0
   },
   {
@@ -625,47 +1121,209 @@
     "b"
    ],
    "selection": "Francis Marshall to win",
-   "odds": -260,
-   "decimal": 1.3846,
-   "p_model": 0.6822,
-   "p_fanduel": 0.6813,
-   "p": 0.6822,
-   "edge": 0.0009,
-   "ev": -0.0554,
+   "odds": -245,
+   "decimal": 1.4082,
+   "p_model": 0.6827,
+   "p_fanduel": 0.6701,
+   "p": 0.6827,
+   "edge": 0.0126,
+   "ev": -0.0386,
    "kelly": 0.0
   },
   {
-   "id": "45461:ml:a",
+   "id": "45484:win_round:a:2",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Jacobe Smith in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.17,
+   "p_fanduel": 0.1488,
+   "p": 0.1591,
+   "edge": 0.0103,
+   "ev": -0.0452,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:starts_round:3:True",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 120,
+   "decimal": 2.2,
+   "p_model": 0.4339,
+   "p_fanduel": 0.4285,
+   "p": 0.4312,
+   "edge": 0.0027,
+   "ev": -0.0513,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:starts_round:3:False",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -154,
+   "decimal": 1.6494,
+   "p_model": 0.5661,
+   "p_fanduel": 0.5715,
+   "p": 0.5688,
+   "edge": -0.0027,
+   "ev": -0.0619,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:starts_round:2:True",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -230,
+   "decimal": 1.4348,
+   "p_model": 0.6444,
+   "p_fanduel": 0.6596,
+   "p": 0.652,
+   "edge": -0.0076,
+   "ev": -0.0645,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:a:1",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Farman Hasanov in round 1",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0881,
+   "p_fanduel": 0.0812,
+   "p": 0.0846,
+   "edge": 0.0034,
+   "ev": -0.0695,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:a:1",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Rodrigo Sezinando in round 1",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.2222,
+   "p_fanduel": 0.2076,
+   "p": 0.2148,
+   "edge": 0.0072,
+   "ev": -0.0763,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:starts_round:2:True",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1000,
+   "decimal": 1.1,
+   "p_model": 0.8148,
+   "p_fanduel": 0.8608,
+   "p": 0.8391,
+   "edge": -0.0216,
+   "ev": -0.077,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:method:a:DEC",
    "bout": "Dakota Hope vs Francis Marshall",
    "market": [
-    "ml",
-    "a"
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Dakota Hope to win",
-   "odds": 196,
-   "decimal": 2.96,
-   "p_model": 0.3178,
-   "p_fanduel": 0.3187,
-   "p": 0.3178,
-   "edge": -0.0009,
-   "ev": -0.0594,
+   "selection": "Dakota Hope by decision",
+   "odds": 430,
+   "decimal": 5.3,
+   "p_model": 0.1821,
+   "p_fanduel": 0.1647,
+   "p": 0.1732,
+   "edge": 0.0085,
+   "ev": -0.082,
    "kelly": 0.0
   },
   {
-   "id": "45483:ml:b",
+   "id": "45465:ends_round:1",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 165,
+   "decimal": 2.65,
+   "p_model": 0.3556,
+   "p_fanduel": 0.3369,
+   "p": 0.3462,
+   "edge": 0.0093,
+   "ev": -0.0826,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:method:b:DEC",
    "bout": "Cody Durden vs Ode Osbourne",
    "market": [
-    "ml",
-    "b"
+    "method",
+    "b",
+    "DEC"
    ],
-   "selection": "Ode Osbourne to win",
-   "odds": -113,
-   "decimal": 1.885,
-   "p_model": 0.4876,
-   "p_fanduel": 0.5,
-   "p": 0.4876,
-   "edge": -0.0124,
-   "ev": -0.0808,
+   "selection": "Ode Osbourne by decision",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1494,
+   "p_fanduel": 0.132,
+   "p": 0.1405,
+   "edge": 0.0085,
+   "ev": -0.087,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:distance:False",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -320,
+   "decimal": 1.3125,
+   "p_model": 0.6708,
+   "p_fanduel": 0.7185,
+   "p": 0.6952,
+   "edge": -0.0233,
+   "ev": -0.0876,
    "kelly": 0.0
   },
   {
@@ -676,13 +1334,155 @@
     "b"
    ],
    "selection": "Jean Paul Lebosnoyani to win",
-   "odds": -290,
-   "decimal": 1.3448,
-   "p_model": 0.6795,
-   "p_fanduel": 0.7008,
-   "p": 0.6795,
-   "edge": -0.0213,
-   "ev": -0.0862,
+   "odds": -320,
+   "decimal": 1.3125,
+   "p_model": 0.6949,
+   "p_fanduel": 0.7185,
+   "p": 0.6949,
+   "edge": -0.0236,
+   "ev": -0.0879,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ml:a",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Dakota Hope to win",
+   "odds": 186,
+   "decimal": 2.86,
+   "p_model": 0.3173,
+   "p_fanduel": 0.3299,
+   "p": 0.3173,
+   "edge": -0.0126,
+   "ev": -0.0926,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ml:b",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Ode Osbourne to win",
+   "odds": -106,
+   "decimal": 1.9434,
+   "p_model": 0.4663,
+   "p_fanduel": 0.4854,
+   "p": 0.4663,
+   "edge": -0.0191,
+   "ev": -0.0938,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:win_round:a:3",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jacobe Smith in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0836,
+   "p_fanduel": 0.0812,
+   "p": 0.0824,
+   "edge": 0.0012,
+   "ev": -0.0939,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:method:b:KO/TKO",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Theodor Berggren by KO/TKO",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.2177,
+   "p_fanduel": 0.2023,
+   "p": 0.2099,
+   "edge": 0.0076,
+   "ev": -0.0973,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:starts_round:3:True",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -450,
+   "decimal": 1.2222,
+   "p_model": 0.6963,
+   "p_fanduel": 0.7704,
+   "p": 0.735,
+   "edge": -0.0354,
+   "ev": -0.1017,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:method:a:KO/TKO",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Rodrigo Sezinando by KO/TKO",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.2808,
+   "p_fanduel": 0.2637,
+   "p": 0.2722,
+   "edge": 0.0085,
+   "ev": -0.1019,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:method:a:SUB",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Cody Durden by submission",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.1805,
+   "p_fanduel": 0.165,
+   "p": 0.1726,
+   "edge": 0.0076,
+   "ev": -0.1025,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:method:a:DEC",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Farman Hasanov by decision",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1405,
+   "p_fanduel": 0.1349,
+   "p": 0.1376,
+   "edge": 0.0028,
+   "ev": -0.1053,
    "kelly": 0.0
   },
   {
@@ -695,11 +1495,28 @@
    "selection": "Renato Moicano to win",
    "odds": -122,
    "decimal": 1.8197,
-   "p_model": 0.4925,
+   "p_model": 0.4912,
    "p_fanduel": 0.5188,
-   "p": 0.4925,
-   "edge": -0.0263,
-   "ev": -0.1038,
+   "p": 0.4912,
+   "edge": -0.0276,
+   "ev": -0.1062,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:distance:True",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.6353,
+   "p_fanduel": 0.7139,
+   "p": 0.6758,
+   "edge": -0.0381,
+   "ev": -0.1062,
    "kelly": 0.0
   },
   {
@@ -712,11 +1529,136 @@
    "selection": "Nick Klein to win",
    "odds": 240,
    "decimal": 3.4,
-   "p_model": 0.2617,
+   "p_model": 0.2598,
    "p_fanduel": 0.2771,
-   "p": 0.2617,
-   "edge": -0.0153,
-   "ev": -0.1102,
+   "p": 0.2598,
+   "edge": -0.0173,
+   "ev": -0.1167,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:starts_round:2:False",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 205,
+   "decimal": 3.05,
+   "p_model": 0.2711,
+   "p_fanduel": 0.3079,
+   "p": 0.2892,
+   "edge": -0.0188,
+   "ev": -0.118,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:starts_round:2:False",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 220,
+   "decimal": 3.2,
+   "p_model": 0.2568,
+   "p_fanduel": 0.2941,
+   "p": 0.2751,
+   "edge": -0.019,
+   "ev": -0.1197,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:b:1",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Theodor Berggren in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1334,
+   "p_fanduel": 0.1374,
+   "p": 0.1354,
+   "edge": -0.002,
+   "ev": -0.12,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:a:2",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Farman Hasanov in round 2",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0506,
+   "p_fanduel": 0.0525,
+   "p": 0.0515,
+   "edge": -0.001,
+   "ev": -0.1237,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:starts_round:3:False",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -118,
+   "decimal": 1.8475,
+   "p_model": 0.436,
+   "p_fanduel": 0.5104,
+   "p": 0.473,
+   "edge": -0.0374,
+   "ev": -0.1261,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:starts_round:3:False",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -110,
+   "decimal": 1.9091,
+   "p_model": 0.4197,
+   "p_fanduel": 0.4938,
+   "p": 0.4565,
+   "edge": -0.0373,
+   "ev": -0.1285,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:distance:False",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -440,
+   "decimal": 1.2273,
+   "p_model": 0.6368,
+   "p_fanduel": 0.7696,
+   "p": 0.7076,
+   "edge": -0.062,
+   "ev": -0.1316,
    "kelly": 0.0
   },
   {
@@ -729,11 +1671,239 @@
    "selection": "Talita Alencar to win",
    "odds": 215,
    "decimal": 3.15,
-   "p_model": 0.2757,
+   "p_model": 0.2747,
    "p_fanduel": 0.2992,
-   "p": 0.2757,
-   "edge": -0.0235,
-   "ev": -0.1317,
+   "p": 0.2747,
+   "edge": -0.0245,
+   "ev": -0.1346,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:starts_round:3:False",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -225,
+   "decimal": 1.4444,
+   "p_model": 0.5394,
+   "p_fanduel": 0.6548,
+   "p": 0.5985,
+   "edge": -0.0563,
+   "ev": -0.1355,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:ends_round:2",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.1977,
+   "p_fanduel": 0.2126,
+   "p": 0.205,
+   "edge": -0.0075,
+   "ev": -0.1388,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:method:b:KO/TKO",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Jean Paul Lebosnoyani by KO/TKO",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.161,
+   "p_fanduel": 0.1686,
+   "p": 0.1648,
+   "edge": -0.0038,
+   "ev": -0.1431,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:distance:False",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -194,
+   "decimal": 1.5155,
+   "p_model": 0.5032,
+   "p_fanduel": 0.6226,
+   "p": 0.5638,
+   "edge": -0.0588,
+   "ev": -0.1455,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:distance:False",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -215,
+   "decimal": 1.4651,
+   "p_model": 0.5191,
+   "p_fanduel": 0.6431,
+   "p": 0.5824,
+   "edge": -0.0607,
+   "ev": -0.1467,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:a:1",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Dakota Hope in round 1",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.074,
+   "p_fanduel": 0.0812,
+   "p": 0.0775,
+   "edge": -0.0037,
+   "ev": -0.1475,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:a:2",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Rodrigo Sezinando in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1334,
+   "p_fanduel": 0.1488,
+   "p": 0.1409,
+   "edge": -0.0079,
+   "ev": -0.1544,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:ends_round:1",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 195,
+   "decimal": 2.95,
+   "p_model": 0.2711,
+   "p_fanduel": 0.3027,
+   "p": 0.2866,
+   "edge": -0.016,
+   "ev": -0.1545,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ends_round:1",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.2568,
+   "p_fanduel": 0.288,
+   "p": 0.2721,
+   "edge": -0.0159,
+   "ev": -0.1563,
+   "kelly": 0.0
+  },
+  {
+   "id": "45458:ends_round:3",
+   "bout": "Luana Santos vs Yana Santos",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.061,
+   "p_fanduel": 0.0687,
+   "p": 0.0648,
+   "edge": -0.0039,
+   "ev": -0.1582,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:starts_round:2:False",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.1732,
+   "p_fanduel": 0.2194,
+   "p": 0.1953,
+   "edge": -0.0241,
+   "ev": -0.1603,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:a:1",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Cody Durden in round 1",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.1126,
+   "p_fanduel": 0.1276,
+   "p": 0.1199,
+   "edge": -0.0077,
+   "ev": -0.161,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:method:a:KO/TKO",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Dakota Hope by KO/TKO",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1237,
+   "p_fanduel": 0.1343,
+   "p": 0.1289,
+   "edge": -0.0054,
+   "ev": -0.1621,
    "kelly": 0.0
   },
   {
@@ -744,13 +1914,66 @@
     "b"
    ],
    "selection": "Theodor Berggren to win",
-   "odds": 138,
-   "decimal": 2.38,
-   "p_model": 0.3547,
-   "p_fanduel": 0.3962,
-   "p": 0.3547,
-   "edge": -0.0415,
-   "ev": -0.1558,
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.3453,
+   "p_fanduel": 0.3894,
+   "p": 0.3453,
+   "edge": -0.0442,
+   "ev": -0.1645,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:b:1",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Ode Osbourne in round 1",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.1443,
+   "p_fanduel": 0.1653,
+   "p": 0.1545,
+   "edge": -0.0108,
+   "ev": -0.1656,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:ends_round:2",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 270,
+   "decimal": 3.7,
+   "p_model": 0.2104,
+   "p_fanduel": 0.2413,
+   "p": 0.2255,
+   "edge": -0.0158,
+   "ev": -0.1656,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:starts_round:3:False",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 162,
+   "decimal": 2.62,
+   "p_model": 0.2789,
+   "p_fanduel": 0.3586,
+   "p": 0.3175,
+   "edge": -0.0412,
+   "ev": -0.1683,
    "kelly": 0.0
   },
   {
@@ -761,13 +1984,118 @@
     "b"
    ],
    "selection": "Yana Santos to win",
-   "odds": 210,
-   "decimal": 3.1,
-   "p_model": 0.2675,
-   "p_fanduel": 0.3045,
-   "p": 0.2675,
-   "edge": -0.037,
-   "ev": -0.1707,
+   "odds": 220,
+   "decimal": 3.2,
+   "p_model": 0.2576,
+   "p_fanduel": 0.295,
+   "p": 0.2576,
+   "edge": -0.0374,
+   "ev": -0.1755,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:starts_round:2:False",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 108,
+   "decimal": 2.08,
+   "p_model": 0.3417,
+   "p_fanduel": 0.4533,
+   "p": 0.3962,
+   "edge": -0.0571,
+   "ev": -0.176,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:distance:False",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 112,
+   "decimal": 2.12,
+   "p_model": 0.3323,
+   "p_fanduel": 0.4456,
+   "p": 0.3874,
+   "edge": -0.0582,
+   "ev": -0.1786,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:win_round:a:1",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Jacobe Smith in round 1",
+   "odds": 150,
+   "decimal": 2.5,
+   "p_model": 0.2951,
+   "p_fanduel": 0.3571,
+   "p": 0.3253,
+   "edge": -0.0318,
+   "ev": -0.1866,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:b:2",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Theodor Berggren in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.077,
+   "p_fanduel": 0.094,
+   "p": 0.0851,
+   "edge": -0.0089,
+   "ev": -0.1913,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:ends_round:3",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0974,
+   "p_fanduel": 0.119,
+   "p": 0.1077,
+   "edge": -0.0113,
+   "ev": -0.1919,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ends_round:1",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.1732,
+   "p_fanduel": 0.2126,
+   "p": 0.1922,
+   "edge": -0.0204,
+   "ev": -0.193,
    "kelly": 0.0
   },
   {
@@ -778,13 +2106,49 @@
     "b"
    ],
    "selection": "Randy Brown to win",
-   "odds": 200,
-   "decimal": 3.0,
-   "p_model": 0.2669,
-   "p_fanduel": 0.3147,
-   "p": 0.2669,
-   "edge": -0.0478,
-   "ev": -0.1994,
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.2402,
+   "p_fanduel": 0.2861,
+   "p": 0.2402,
+   "edge": -0.0459,
+   "ev": -0.2074,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:a:2",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Cody Durden in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0738,
+   "p_fanduel": 0.094,
+   "p": 0.0833,
+   "edge": -0.0107,
+   "ev": -0.2084,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:b:1",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Jean Paul Lebosnoyani in round 1",
+   "odds": 280,
+   "decimal": 3.8,
+   "p_model": 0.183,
+   "p_fanduel": 0.235,
+   "p": 0.2078,
+   "edge": -0.0272,
+   "ev": -0.2105,
    "kelly": 0.0
   },
   {
@@ -797,11 +2161,98 @@
    "selection": "Doesn't go to decision",
    "odds": -350,
    "decimal": 1.2857,
-   "p_model": 0.4757,
+   "p_model": 0.4756,
    "p_fanduel": 0.7341,
    "p": 0.6128,
-   "edge": -0.1213,
-   "ev": -0.2121,
+   "edge": -0.1214,
+   "ev": -0.2122,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:ends_round:2",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.1649,
+   "p_fanduel": 0.2126,
+   "p": 0.1876,
+   "edge": -0.025,
+   "ev": -0.2122,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:method:a:SUB",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Rodrigo Sezinando by submission",
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.1416,
+   "p_fanduel": 0.174,
+   "p": 0.1571,
+   "edge": -0.0169,
+   "ev": -0.2143,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ends_round:2",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.1629,
+   "p_fanduel": 0.2126,
+   "p": 0.1864,
+   "edge": -0.0261,
+   "ev": -0.2169,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:a:2",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Dakota Hope in round 2",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0425,
+   "p_fanduel": 0.0558,
+   "p": 0.0487,
+   "edge": -0.0071,
+   "ev": -0.2203,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:ends_round:1",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -105,
+   "decimal": 1.9524,
+   "p_model": 0.3417,
+   "p_fanduel": 0.4573,
+   "p": 0.3981,
+   "edge": -0.0592,
+   "ev": -0.2228,
    "kelly": 0.0
   },
   {
@@ -815,11 +2266,29 @@
    "selection": "Fight does not start round 5",
    "odds": -250,
    "decimal": 1.4,
-   "p_model": 0.4279,
+   "p_model": 0.4278,
    "p_fanduel": 0.6729,
-   "p": 0.5537,
-   "edge": -0.1192,
-   "ev": -0.2249,
+   "p": 0.5536,
+   "edge": -0.1193,
+   "ev": -0.225,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:method:b:SUB",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Francis Marshall by submission",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.1259,
+   "p_fanduel": 0.1616,
+   "p": 0.1428,
+   "edge": -0.0188,
+   "ev": -0.2287,
    "kelly": 0.0
   },
   {
@@ -833,11 +2302,47 @@
    "selection": "Fight does not start round 4",
    "odds": -160,
    "decimal": 1.625,
-   "p_model": 0.3645,
+   "p_model": 0.3643,
    "p_fanduel": 0.5817,
-   "p": 0.4718,
+   "p": 0.4717,
    "edge": -0.11,
-   "ev": -0.2334,
+   "ev": -0.2335,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:b:1",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Francis Marshall in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0993,
+   "p_fanduel": 0.1374,
+   "p": 0.117,
+   "edge": -0.0204,
+   "ev": -0.2397,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:a:3",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Farman Hasanov in round 3",
+   "odds": 2500,
+   "decimal": 26.0,
+   "p_model": 0.0248,
+   "p_fanduel": 0.0343,
+   "p": 0.0292,
+   "edge": -0.0051,
+   "ev": -0.2405,
    "kelly": 0.0
   },
   {
@@ -851,11 +2356,99 @@
    "selection": "Fight does not start round 3",
    "odds": 108,
    "decimal": 2.08,
-   "p_model": 0.2806,
+   "p_model": 0.2804,
    "p_fanduel": 0.4548,
    "p": 0.3632,
-   "edge": -0.0916,
-   "ev": -0.2445,
+   "edge": -0.0917,
+   "ev": -0.2446,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ends_round:2",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1057,
+   "p_fanduel": 0.1488,
+   "p": 0.1257,
+   "edge": -0.0231,
+   "ev": -0.2459,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:a:3",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Rodrigo Sezinando in round 3",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0669,
+   "p_fanduel": 0.094,
+   "p": 0.0794,
+   "edge": -0.0146,
+   "ev": -0.246,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:b:2",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Jean Paul Lebosnoyani in round 2",
+   "odds": 450,
+   "decimal": 5.5,
+   "p_model": 0.1143,
+   "p_fanduel": 0.1623,
+   "p": 0.1365,
+   "edge": -0.0258,
+   "ev": -0.249,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:ends_round:3",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1048,
+   "p_fanduel": 0.1488,
+   "p": 0.1251,
+   "edge": -0.0237,
+   "ev": -0.2492,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:b:2",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Ode Osbourne in round 2",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0891,
+   "p_fanduel": 0.1276,
+   "p": 0.1068,
+   "edge": -0.0208,
+   "ev": -0.2524,
    "kelly": 0.0
   },
   {
@@ -872,7 +2465,7 @@
    "p_fanduel": 0.0687,
    "p": 0.0574,
    "edge": -0.0113,
-   "ev": -0.2543,
+   "ev": -0.2544,
    "kelly": 0.0
   },
   {
@@ -886,11 +2479,29 @@
    "selection": "Renato Moicano in round 5",
    "odds": 2200,
    "decimal": 23.0,
-   "p_model": 0.0269,
+   "p_model": 0.0268,
    "p_fanduel": 0.0388,
    "p": 0.0323,
-   "edge": -0.0065,
-   "ev": -0.257,
+   "edge": -0.0066,
+   "ev": -0.258,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:a:3",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Cody Durden in round 3",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.0384,
+   "p_fanduel": 0.0558,
+   "p": 0.0463,
+   "edge": -0.0095,
+   "ev": -0.2591,
    "kelly": 0.0
   },
   {
@@ -904,11 +2515,11 @@
    "selection": "Renato Moicano in round 2",
    "odds": 750,
    "decimal": 8.5,
-   "p_model": 0.0714,
+   "p_model": 0.0712,
    "p_fanduel": 0.105,
-   "p": 0.0868,
-   "edge": -0.0183,
-   "ev": -0.2625,
+   "p": 0.0866,
+   "edge": -0.0184,
+   "ev": -0.2635,
    "kelly": 0.0
   },
   {
@@ -925,7 +2536,24 @@
    "p_fanduel": 0.19,
    "p": 0.1556,
    "edge": -0.0344,
-   "ev": -0.2688,
+   "ev": -0.2689,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:ends_round:3",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0835,
+   "p_fanduel": 0.1276,
+   "p": 0.1035,
+   "edge": -0.0241,
+   "ev": -0.2755,
    "kelly": 0.0
   },
   {
@@ -938,11 +2566,65 @@
    "selection": "Fight ends in round 4",
    "odds": 800,
    "decimal": 9.0,
-   "p_model": 0.0635,
+   "p_model": 0.0634,
    "p_fanduel": 0.0992,
    "p": 0.0795,
    "edge": -0.0197,
    "ev": -0.2844,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:method:b:DEC",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Theodor Berggren by decision",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0779,
+   "p_fanduel": 0.116,
+   "p": 0.0953,
+   "edge": -0.0207,
+   "ev": -0.2854,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:b:2",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Francis Marshall in round 2",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0632,
+   "p_fanduel": 0.0992,
+   "p": 0.0793,
+   "edge": -0.0199,
+   "ev": -0.2859,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:win_round:b:3",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Theodor Berggren in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0379,
+   "p_fanduel": 0.0595,
+   "p": 0.0476,
+   "edge": -0.012,
+   "ev": -0.2866,
    "kelly": 0.0
   },
   {
@@ -956,11 +2638,11 @@
    "selection": "Fight does not start round 2",
    "odds": 245,
    "decimal": 3.45,
-   "p_model": 0.1541,
+   "p_model": 0.154,
    "p_fanduel": 0.2715,
    "p": 0.2067,
    "edge": -0.0648,
-   "ev": -0.2869,
+   "ev": -0.287,
    "kelly": 0.0
   },
   {
@@ -975,27 +2657,9 @@
    "decimal": 6.5,
    "p_model": 0.0839,
    "p_fanduel": 0.1374,
-   "p": 0.1078,
+   "p": 0.1077,
    "edge": -0.0296,
    "ev": -0.2996,
-   "kelly": 0.0
-  },
-  {
-   "id": "45457:win_round:a:4",
-   "bout": "Renato Moicano vs Tom Nolan",
-   "market": [
-    "win_round",
-    "a",
-    4
-   ],
-   "selection": "Renato Moicano in round 4",
-   "odds": 1500,
-   "decimal": 16.0,
-   "p_model": 0.0341,
-   "p_fanduel": 0.0558,
-   "p": 0.0437,
-   "edge": -0.0121,
-   "ev": -0.3007,
    "kelly": 0.0
   },
   {
@@ -1013,7 +2677,42 @@
    "p_fanduel": 0.0343,
    "p": 0.0269,
    "edge": -0.0075,
-   "ev": -0.3018,
+   "ev": -0.3009,
+   "kelly": 0.0
+  },
+  {
+   "id": "45457:win_round:a:4",
+   "bout": "Renato Moicano vs Tom Nolan",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Renato Moicano in round 4",
+   "odds": 1500,
+   "decimal": 16.0,
+   "p_model": 0.034,
+   "p_fanduel": 0.0558,
+   "p": 0.0436,
+   "edge": -0.0122,
+   "ev": -0.3016,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:ends_round:3",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0831,
+   "p_fanduel": 0.1374,
+   "p": 0.1072,
+   "edge": -0.0301,
+   "ev": -0.3029,
    "kelly": 0.0
   },
   {
@@ -1027,11 +2726,11 @@
    "selection": "Renato Moicano in round 3",
    "odds": 1100,
    "decimal": 12.0,
-   "p_model": 0.0451,
+   "p_model": 0.0449,
    "p_fanduel": 0.0744,
-   "p": 0.058,
-   "edge": -0.0164,
-   "ev": -0.3038,
+   "p": 0.0579,
+   "edge": -0.0165,
+   "ev": -0.3047,
    "kelly": 0.0
   },
   {
@@ -1045,11 +2744,11 @@
    "selection": "Renato Moicano in round 1",
    "odds": 500,
    "decimal": 6.0,
-   "p_model": 0.0885,
+   "p_model": 0.0883,
    "p_fanduel": 0.1488,
-   "p": 0.1153,
-   "edge": -0.0335,
-   "ev": -0.3083,
+   "p": 0.1151,
+   "edge": -0.0337,
+   "ev": -0.3092,
    "kelly": 0.0
   },
   {
@@ -1063,11 +2762,29 @@
    "selection": "Tom Nolan in round 4",
    "odds": 1700,
    "decimal": 18.0,
-   "p_model": 0.0293,
+   "p_model": 0.0294,
    "p_fanduel": 0.0496,
    "p": 0.0382,
    "edge": -0.0114,
-   "ev": -0.3126,
+   "ev": -0.3117,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:method:b:SUB",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Jean Paul Lebosnoyani by submission",
+   "odds": 170,
+   "decimal": 2.7,
+   "p_model": 0.1945,
+   "p_fanduel": 0.3247,
+   "p": 0.2541,
+   "edge": -0.0706,
+   "ev": -0.3138,
    "kelly": 0.0
   },
   {
@@ -1081,11 +2798,11 @@
    "selection": "Tom Nolan in round 2",
    "odds": 850,
    "decimal": 9.5,
-   "p_model": 0.055,
+   "p_model": 0.0552,
    "p_fanduel": 0.094,
-   "p": 0.0721,
-   "edge": -0.0219,
-   "ev": -0.3148,
+   "p": 0.0722,
+   "edge": -0.0218,
+   "ev": -0.3139,
    "kelly": 0.0
   },
   {
@@ -1098,11 +2815,11 @@
    "selection": "Fight ends in round 1",
    "odds": 230,
    "decimal": 3.3,
-   "p_model": 0.1541,
+   "p_model": 0.154,
    "p_fanduel": 0.2706,
    "p": 0.2063,
-   "edge": -0.0642,
-   "ev": -0.3191,
+   "edge": -0.0643,
+   "ev": -0.3193,
    "kelly": 0.0
   },
   {
@@ -1116,11 +2833,100 @@
    "selection": "Tom Nolan in round 3",
    "odds": 1200,
    "decimal": 13.0,
-   "p_model": 0.0389,
+   "p_model": 0.039,
    "p_fanduel": 0.0687,
    "p": 0.0518,
-   "edge": -0.0169,
-   "ev": -0.327,
+   "edge": -0.0168,
+   "ev": -0.3261,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:win_round:b:3",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Ode Osbourne in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0452,
+   "p_fanduel": 0.0812,
+   "p": 0.0607,
+   "edge": -0.0204,
+   "ev": -0.332,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:method:b:SUB",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Randy Brown by submission",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0238,
+   "p_fanduel": 0.0416,
+   "p": 0.0315,
+   "edge": -0.0101,
+   "ev": -0.339,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:b:3",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Francis Marshall in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0325,
+   "p_fanduel": 0.0595,
+   "p": 0.044,
+   "edge": -0.0155,
+   "ev": -0.3393,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:ends_round:3",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0533,
+   "p_fanduel": 0.0992,
+   "p": 0.073,
+   "edge": -0.0262,
+   "ev": -0.3428,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:win_round:b:3",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Jean Paul Lebosnoyani in round 3",
+   "odds": 700,
+   "decimal": 8.0,
+   "p_model": 0.0583,
+   "p_fanduel": 0.1116,
+   "p": 0.081,
+   "edge": -0.0306,
+   "ev": -0.3518,
    "kelly": 0.0
   },
   {
@@ -1134,11 +2940,47 @@
    "selection": "Tom Nolan in round 1",
    "odds": 600,
    "decimal": 7.0,
-   "p_model": 0.0656,
+   "p_model": 0.0658,
    "p_fanduel": 0.1276,
-   "p": 0.092,
-   "edge": -0.0356,
-   "ev": -0.3561,
+   "p": 0.0921,
+   "edge": -0.0354,
+   "ev": -0.3553,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:method:b:KO/TKO",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Francis Marshall by KO/TKO",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.069,
+   "p_fanduel": 0.1343,
+   "p": 0.0968,
+   "edge": -0.0374,
+   "ev": -0.3706,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:win_round:a:3",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Dakota Hope in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0209,
+   "p_fanduel": 0.0425,
+   "p": 0.0299,
+   "edge": -0.0127,
+   "ev": -0.3731,
    "kelly": 0.0
   },
   {
@@ -1149,13 +2991,121 @@
     "b"
    ],
    "selection": "Tainara Lisboa to win",
-   "odds": 400,
-   "decimal": 5.0,
-   "p_model": 0.1276,
-   "p_fanduel": 0.1885,
-   "p": 0.1276,
-   "edge": -0.0609,
-   "ev": -0.3621,
+   "odds": 430,
+   "decimal": 5.3,
+   "p_model": 0.118,
+   "p_fanduel": 0.1782,
+   "p": 0.118,
+   "edge": -0.0602,
+   "ev": -0.3746,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:method:b:KO/TKO",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Ode Osbourne by KO/TKO",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.1437,
+   "p_fanduel": 0.2859,
+   "p": 0.2059,
+   "edge": -0.0801,
+   "ev": -0.3824,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:win_round:b:1",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Randy Brown in round 1",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0466,
+   "p_fanduel": 0.0992,
+   "p": 0.0684,
+   "edge": -0.0308,
+   "ev": -0.3846,
+   "kelly": 0.0
+  },
+  {
+   "id": "45483:method:a:KO/TKO",
+   "bout": "Cody Durden vs Ode Osbourne",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Cody Durden by KO/TKO",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0442,
+   "p_fanduel": 0.1009,
+   "p": 0.0672,
+   "edge": -0.0337,
+   "ev": -0.4288,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:win_round:b:2",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Randy Brown in round 2",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0277,
+   "p_fanduel": 0.0687,
+   "p": 0.0438,
+   "edge": -0.0249,
+   "ev": -0.4306,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:method:b:KO/TKO",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Randy Brown by KO/TKO",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.0643,
+   "p_fanduel": 0.1679,
+   "p": 0.1054,
+   "edge": -0.0625,
+   "ev": -0.4522,
+   "kelly": 0.0
+  },
+  {
+   "id": "45465:method:b:SUB",
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Theodor Berggren by submission",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0306,
+   "p_fanduel": 0.0829,
+   "p": 0.0507,
+   "edge": -0.0321,
+   "ev": -0.4673,
    "kelly": 0.0
   },
   {
@@ -1169,11 +3119,11 @@
    "selection": "Renato Moicano by submission",
    "odds": 200,
    "decimal": 3.0,
-   "p_model": 0.1013,
+   "p_model": 0.1011,
    "p_fanduel": 0.2869,
-   "p": 0.1756,
-   "edge": -0.1113,
-   "ev": -0.4732,
+   "p": 0.1754,
+   "edge": -0.1115,
+   "ev": -0.4738,
    "kelly": 0.0
   },
   {
@@ -1187,11 +3137,83 @@
    "selection": "Tom Nolan by KO/TKO",
    "odds": 230,
    "decimal": 3.3,
-   "p_model": 0.0871,
+   "p_model": 0.0874,
    "p_fanduel": 0.2609,
-   "p": 0.1551,
-   "edge": -0.1058,
-   "ev": -0.4883,
+   "p": 0.1553,
+   "edge": -0.1056,
+   "ev": -0.4877,
+   "kelly": 0.0
+  },
+  {
+   "id": "45460:method:a:SUB",
+   "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Farman Hasanov by submission",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0151,
+   "p_fanduel": 0.0461,
+   "p": 0.0265,
+   "edge": -0.0197,
+   "ev": -0.497,
+   "kelly": 0.0
+  },
+  {
+   "id": "45461:method:a:SUB",
+   "bout": "Dakota Hope vs Francis Marshall",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Dakota Hope by submission",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0136,
+   "p_fanduel": 0.0416,
+   "p": 0.0239,
+   "edge": -0.0177,
+   "ev": -0.4982,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:win_round:b:3",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Randy Brown in round 3",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0138,
+   "p_fanduel": 0.0446,
+   "p": 0.0249,
+   "edge": -0.0197,
+   "ev": -0.5015,
+   "kelly": 0.0
+  },
+  {
+   "id": "45484:method:a:SUB",
+   "bout": "Jacobe Smith vs Randy Brown",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jacobe Smith by submission",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.062,
+   "p_fanduel": 0.203,
+   "p": 0.1148,
+   "edge": -0.0882,
+   "ev": -0.5062,
    "kelly": 0.0
   }
  ]

@@ -499,6 +499,70 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w5",
+   "event": "UFC Fight Night: Moicano vs. Nolan",
+   "event_date": "2026-10-31",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-123-4427",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
+   "book": "FanDuel",
+   "placed_at": "2026-10-28T17:18:24+00:00",
+   "bankroll_before": 87.46,
+   "available_before": 87.46,
+   "note": "Early check, Wednesday. The sheet's biggest numbers (Moicano-Nolan to the distance, Nolan by decision, rounds 4-5) run against the scouting: both men finish early (Moicano 12 of 13 stoppage wins in R1-R2, Nolan six of six), so no bet there; the same goes for Smith-Brown. One prop has a reason behind it, sized at the $1 minimum because method props are thinly modelled.",
+   "bets": [
+    {
+     "id": "5-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45460:method:b:DEC",
+       "bout": "Farman Hasanov vs Jean Paul Lebosnoyani",
+       "market": [
+        "method",
+        "b",
+        "DEC"
+       ],
+       "selection": "Jean Paul Lebosnoyani by decision",
+       "odds": 320,
+       "p": 0.2696,
+       "p_fanduel": 0.2087
+      }
+     ],
+     "odds": 320,
+     "decimal": 4.2,
+     "stake": 1.0,
+     "to_win": 3.2,
+     "p": 0.2696,
+     "ev": 0.1323,
+     "reasoning": "Lebosnoyani by decision at +320 (24% implied, 27% ours). The market makes him a 76% favourite but prices a decision at only 21%, i.e. it expects him to finish about three of every four wins. Both of his UFC wins went the full 15 minutes, and Hasanov has never been stopped: a chain wrestler who kept shooting while tired and took Eric Nolan the distance. If Lebosnoyani wins, the scorecards are the likeliest way.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-28T17:18:24+00:00"
+    }
+   ],
+   "staked": 1.0,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-10-28T17:18:24+00:00",
+     "note": "Early check, Wednesday. The sheet's biggest numbers (Moicano-Nolan to the distance, Nolan by decision, rounds 4-5) run against the scouting: both men finish early (Moicano 12 of 13 stoppage wins in R1-R2, Nolan six of six), so no bet there; the same goes for Smith-Brown. One prop has a reason behind it, sized at the $1 minimum because method props are thinly modelled.",
+     "bets": [
+      "5-1"
+     ],
+     "staked": 1.0,
+     "sheet": "data/ai_picks/sheets/2026-10-31-ufc-fight-night-moicano-vs-nolan.json",
+     "sheet_fetched_at": "2026-10-28T17:17:51+00:00"
+    }
+   ],
+   "last_placed_at": "2026-10-28T17:18:24+00:00",
+   "sheet": "data/ai_picks/sheets/2026-10-31-ufc-fight-night-moicano-vs-nolan.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-vegas-123-4427"
+   ],
+   "sheet_fetched_at": "2026-10-28T17:17:51+00:00"
   }
  ]
 }
