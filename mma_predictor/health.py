@@ -62,11 +62,16 @@ def checks() -> List[Tuple[str, str, Callable]]:
 
     def bfo_events(f):
         links = picks.event_links(get(f, bestfightodds.BASE))
-        ufc = [l for l in links if l[0].upper().startswith("UFC")]
+        # UFC-branded grappling events (UFC BJJ, Fight Pass Invitational) carry no MMA lines: skip them.
+        ufc = [l for l in links if l[0].upper().startswith("UFC") and not any(w in l[0].upper() for w in ("BJJ", "GRAPPLING", "INVITATIONAL"))]
         if not ufc:
             return False, f"no UFC event among {len(links)} on the front page"
-        ev = picks.parse_event(get(f, ufc[0][1]), ufc[0][1])
-        priced = sum(1 for b in ev["bouts"] if any(v is not None for v in b["ml"].values()))
+        ev = priced = None
+        for name, url in ufc[:3]:  # the next MMA card, skipping any listed before its bouts are posted
+            ev = picks.parse_event(get(f, url), url)
+            priced = sum(1 for b in ev["bouts"] if any(v is not None for v in b["ml"].values()))
+            if priced:
+                break
         return priced >= 1, f"{len(links)} events; {ev['name']}: {len(ev['bouts'])} bouts, {priced} with FanDuel moneylines"
 
     def bfo_fighter(f):
