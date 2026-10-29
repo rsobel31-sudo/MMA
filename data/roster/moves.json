@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T11:27:35+00:00",
+ "fetched": "2026-10-29T11:25:58+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -691,6 +691,97 @@
     "url": "https://www.sherdog.com/news/news/70-finisher-Ivan-Gnizditskiy-joins-UFC-despite-missing-DWCS-203246"
    },
    "first_seen": "2026-10-16"
+  },
+  {
+   "name": "George Mangos",
+   "date": "2026-10-27",
+   "division": "Featherweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Dagiisuren Chagnaadorj",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Dagiisuren Chagnaadorj",
+   "date": "2026-10-27",
+   "division": "Featherweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – George Mangos",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Rabindra Dhant",
+   "date": "2026-10-27",
+   "division": "Bantamweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Ryo Tajima",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Ryo Tajima",
+   "date": "2026-10-27",
+   "division": "Bantamweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Rabindra Dhant",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Ji Niushiyue",
+   "date": "2026-10-27",
+   "division": "Flyweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Takaya Suzuki",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Takaya Suzuki",
+   "date": "2026-10-27",
+   "division": "Flyweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Ji Niushiyue",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Park Bo-hyun",
+   "date": "2026-10-27",
+   "division": "Women's Strawweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Meng Bo",
+   "confirmed_by": null,
+   "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Meng Bo",
+   "date": "2026-10-27",
+   "division": "Women's Strawweight",
+   "refs": [
+    "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
+   ],
+   "info": "UFC Fight Night 298 (Sydney) – Park Bo-hyun",
+   "confirmed_by": {
+    "source": "MMA Mania",
+    "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
+   },
+   "first_seen": "2026-10-29"
   },
   {
    "name": "Asaf Chopurov",

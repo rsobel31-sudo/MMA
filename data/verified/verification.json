@@ -908,12 +908,12 @@
   }
  ],
  "dob": {
-  "agree": 2409,
+  "agree": 2415,
   "differ, unresolved (Sherdog kept)": 102,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2423,
+  "agree": 2429,
   "differ": 178
  },
  "reach": {
@@ -922,9 +922,9 @@
   "differ": 68
  },
  "odds": {
-  "odds bouts": 16756,
-  "matched": 13280,
-  "unmatched": 2098,
+  "odds bouts": 16766,
+  "matched": 13284,
+  "unmatched": 2104,
   "bad lines": 0,
   "pages disagree": 4,
   "both pages": 9002,
