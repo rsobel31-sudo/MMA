@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-30T11:22:15+00:00",
+ "fetched": "2026-10-30T16:51:29+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -95,20 +95,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Joseph Kropschot",
-   "date": "2026-08-11",
-   "division": "Middleweight",
-   "refs": [
-    "https://www.sherdog.com/news/news/DWCS-winner-Joseph-Kropschot-lands-UFC-debut-just-weeks-after-earning-contract-202532"
-   ],
-   "info": "UFC Fight Night 292 (Las Vegas) – Nick Klein",
-   "confirmed_by": {
-    "source": "sherdog.com",
-    "url": "https://www.sherdog.com/news/news/DWCS-winner-Joseph-Kropschot-lands-UFC-debut-just-weeks-after-earning-contract-202532"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Tom Pagliarulo",
    "date": "2026-08-11",
    "division": "Featherweight",
@@ -189,20 +175,6 @@
    "confirmed_by": {
     "source": "mmafighting.com",
     "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Lucia Szabová",
-   "date": "2026-08-21",
-   "division": "Women's Bantamweight",
-   "refs": [
-    "https://sport.aktuality.sk/mma-fanatik/na-ufc-debut-velmi-hratelna-superka-lucia-szabova-nastupi-proti-tejto-bojovnicke/"
-   ],
-   "info": "UFC Fight Night 292 (Las Vegas) – Tainara Lisboa",
-   "confirmed_by": {
-    "source": "sport.aktuality.sk",
-    "url": "https://sport.aktuality.sk/mma-fanatik/na-ufc-debut-velmi-hratelna-superka-lucia-szabova-nastupi-proti-tejto-bojovnicke/"
    },
    "first_seen": "2026-10-10"
   },
@@ -782,6 +754,36 @@
     "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
    },
    "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Joseph Kropschot",
+   "date": "2026-08-11",
+   "division": "Middleweight",
+   "refs": [
+    "https://www.sherdog.com/news/news/DWCS-winner-Joseph-Kropschot-lands-UFC-debut-just-weeks-after-earning-contract-202532"
+   ],
+   "info": "UFC Fight Night 292 (Las Vegas) – Nick Klein",
+   "confirmed_by": {
+    "source": "sherdog.com",
+    "url": "https://www.sherdog.com/news/news/DWCS-winner-Joseph-Kropschot-lands-UFC-debut-just-weeks-after-earning-contract-202532"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-30"
+  },
+  {
+   "name": "Lucia Szabová",
+   "date": "2026-08-21",
+   "division": "Women's Bantamweight",
+   "refs": [
+    "https://sport.aktuality.sk/mma-fanatik/na-ufc-debut-velmi-hratelna-superka-lucia-szabova-nastupi-proti-tejto-bojovnicke/"
+   ],
+   "info": "UFC Fight Night 292 (Las Vegas) – Tainara Lisboa",
+   "confirmed_by": {
+    "source": "sport.aktuality.sk",
+    "url": "https://sport.aktuality.sk/mma-fanatik/na-ufc-debut-velmi-hratelna-superka-lucia-szabova-nastupi-proti-tejto-bojovnicke/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-10-30"
   },
   {
    "name": "Asaf Chopurov",
