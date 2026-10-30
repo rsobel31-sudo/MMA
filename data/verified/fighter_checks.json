@@ -599,6 +599,8 @@
 "stats_official": "1"
 },
 "Alex da Silva Coelho": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 178 cm, UFCStats 173 cm",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "3"
 },
@@ -5846,6 +5848,10 @@
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
+"Eros Baluyot": {
+"reach": "UFCStats only (165 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Eryk Anders": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -10426,6 +10432,8 @@
 "stats_official": "3"
 },
 "Keisuke Sasu": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 170 cm, UFCStats 165 cm",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -16919,6 +16927,10 @@
 "stats_official": "1",
 "stats_verified": "6"
 },
+"Shaun Etchell": {
+"reach": "UFCStats only (173 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Shauna Bannon": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -17475,6 +17487,12 @@
 "stats_official": "1"
 },
 "Takenori Sato": {
+"stats_official": "2"
+},
+"Takeru Uchida": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (173 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
 "Takeshi Inoue": {
