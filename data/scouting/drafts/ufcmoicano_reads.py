@@ -2,8 +2,9 @@
 
 logit: how far (log-odds, 0..0.8) the read moves the model toward `favours`, for what the model can't see.
 The model's number at the time is recorded (p_model, toward a) so the read can be graded against it.
-Drafted Tuesday 2026-10-27 from the reports and the picks sheet; the Friday run finalizes them after weigh-ins and
-adds the published pundit picks (none with named per-fight picks were out on Tuesday).
+Drafted Tuesday 2026-10-27 from the reports and the picks sheet; finalized Friday 2026-10-30 after weigh-ins (all made
+weight except Francis Marshall, 148 lb for the 146 lb featherweight limit) with the published pundit picks (101 picks
+from 20 writers) in ufcmoicano_pundits.json and the fight-week news in ufcmoicano_fightweek.json.
 """
 
 import json
@@ -16,7 +17,7 @@ from mma_predictor.reads import Pundits, check_read  # noqa: E402
 
 EVENT, DATE = "UFC Fight Night: Moicano vs. Nolan", "2026-10-31"
 RESULTS = "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan"
-CREATED = "2026-10-27T18:00:00+00:00"
+CREATED = "2026-10-30T18:00:00+00:00"
 
 # Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-10-27 16:06 UTC.
 # Erosa-Lee and Reese-Gall had no FanDuel line yet (and so no sheet row).
@@ -36,11 +37,12 @@ P = {
 }
 
 READS = [
-    dict(a="Renato Moicano", b="Tom Nolan", favours="Renato Moicano", logit=0.10, confidence="low",
+    dict(a="Renato Moicano", b="Tom Nolan", favours="Renato Moicano", logit=0.05, confidence="low",
          reasoning="The model has Moicano at 40% against an even market, which looks like age and his losses to big, strong "
                    "opponents. Nolan has never been past three rounds and is hittable early, and Moicano jumps on the back the "
-                   "moment an opponent is hurt or scrambles. Against that, Nolan's size in the clinch and Moicano's fade when he "
-                   "spends time on his back keep it small.",
+                   "moment an opponent is hurt or scrambles. Against that, Nolan's size in the clinch, his August move to City "
+                   "Kickboxing, his plan to ground-and-pound from the body triangle, and Moicano's fade when he spends time on "
+                   "his back keep it very small; the pundits lean Nolan 9-7.",
          factors=["Moicano's back takes in scrambles", "Nolan untested past R3", "Nolan's size and clinch (against)", "Age 37 (against)"]),
     dict(a="Jacobe Smith", b="Randy Brown", favours="Jacobe Smith", logit=0.0, confidence="low",
          reasoning="Smith's wrestling and ground strikes are exactly what has beaten Brown (Battle, Belal), and Brown, 36, was "
@@ -61,10 +63,11 @@ READS = [
                    "with a guillotine in scrambles who won the late rounds of both UFC fights with takedowns. Hasanov's chain "
                    "wrestling can still steal round one.",
          factors=["Hasanov's cardio after R1", "Lebosnoyani's guillotine in scrambles", "Hasanov's chain wrestling (against)"]),
-    dict(a="Dakota Hope", b="Francis Marshall", favours="Francis Marshall", logit=0.20, confidence="low",
+    dict(a="Dakota Hope", b="Francis Marshall", favours="Francis Marshall", logit=0.15, confidence="low",
          reasoning="Hope is a front-loaded power striker who faded in his UFC debut and now takes a second short-notice fight and "
                    "a cut back to featherweight; Marshall's takedowns and top control get better as opponents tire. Hope has never "
-                   "been finished and Marshall's striking is inaccurate, so he has to get it down.",
+                   "been finished and Marshall's striking is inaccurate, so he has to get it down. Marshall missed weight by "
+                   "2 lb, a small worry about his cut; Hope made 145.5.",
          factors=["Hope's R2-R3 cardio", "Marshall's top control", "Hope's short notice and weight cut", "Hope's early power (against)"]),
     dict(a="Rodrigo Sezinando", b="Theodor Berggren", favours="Rodrigo Sezinando", logit=0.0, confidence="low",
          reasoning="Two front-runners: Berggren has never won a decision and was dropped by body work in his debut, Sezinando "
@@ -74,7 +77,8 @@ READS = [
     dict(a="Julian Erosa", b="Lee Jeong-yeong", favours="Lee Jeong-yeong", logit=0.10, confidence="low",
          reasoning="Erosa, 37, has five R1 knockout losses to fast punchers and was stopped with three knockdowns in March; Lee "
                    "looks for the right hand early. Lee's 17-month layoff and the weight miss that scrapped his UFC 326 bout keep "
-                   "it small, and Erosa's late scrambles and volume are real if it goes long. No line or model number yet.",
+                   "it small, and Erosa's late scrambles and volume are real if it goes long. Erosa calls this his retirement "
+                   "fight. Both made 145.5.",
          factors=["Erosa's chin against early power", "Lee's layoff and weight cut (against)", "Erosa's late scrambles (against)"]),
     dict(a="Zachary Reese", b="Mickey Gall", favours="Zachary Reese", logit=0.15, confidence="low",
          reasoning="Gall is nearly two years out, failed a medical in September, moves up to middleweight, and has been knocked out "
@@ -98,8 +102,17 @@ READS = [
          factors=["Lisboa's late durability", "Szabova's competition level (against)"]),
 ]
 
-# Picks published by Tuesday 2026-10-27 (outlet, author, pick, method, url): none with named per-fight picks yet.
-PUNDIT_PICKS = []
+# Picks published by Friday 2026-10-30 (outlet, author, pick, method, url).
+PUNDIT_PICKS = [(r["a"], r["b"], r["outlet"], r["author"], r["pick"], r["method"], r["url"])
+                for r in json.loads((Path(__file__).with_name("ufcmoicano_pundits.json")).read_text())]
+
+
+def _p(a, b):
+    """The (model, market) pair toward a, whichever way round the bout is listed."""
+    if (a, b) in P:
+        return P[(a, b)]
+    pm, pf = P[(b, a)]
+    return (None if pm is None else 1 - pm, None if pf is None else 1 - pf)
 
 bouts = []
 for r in READS:
@@ -114,6 +127,9 @@ for r in READS:
 if PUNDIT_PICKS:
     pun = Pundits(ROOT / "pundits.jsonl")
     for a, b, o, au, pk, m, u in PUNDIT_PICKS:
-        pun.add({"event": EVENT, "date": DATE, "a": a, "b": b, "outlet": o, "author": au, "pick": pk, "method": m, "url": u})
+        pm, pf = _p(a, b)
+        p_pick = None if pf is None else (pf if pk == a else 1 - pf)
+        pun.add({"event": EVENT, "date": DATE, "a": a, "b": b, "outlet": o, "author": au, "pick": pk, "method": m,
+                 "url": u, "p_market": None if p_pick is None else round(p_pick, 3)})
     pun.save()
 print(len(bouts), "reads;", len(PUNDIT_PICKS), "pundit picks")

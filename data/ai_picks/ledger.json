@@ -510,7 +510,7 @@
    "placed_at": "2026-10-28T17:18:24+00:00",
    "bankroll_before": 87.46,
    "available_before": 87.46,
-   "note": "Early check, Wednesday. The sheet's biggest numbers (Moicano-Nolan to the distance, Nolan by decision, rounds 4-5) run against the scouting: both men finish early (Moicano 12 of 13 stoppage wins in R1-R2, Nolan six of six), so no bet there; the same goes for Smith-Brown. One prop has a reason behind it, sized at the $1 minimum because method props are thinly modelled.",
+   "note": "Early check, Wednesday. The sheet's biggest numbers (Moicano-Nolan to the distance, Nolan by decision, rounds 4-5) run against the scouting: both men finish early (Moicano 12 of 13 stoppage wins in R1-R2, Nolan six of six), so no bet there; the same goes for Smith-Brown. One prop has a reason behind it, sized at the $1 minimum because method props are thinly modelled.\n\nFriday. The moneylines are close to the market everywhere, and the sheet's biggest numbers (Moicano-Nolan to go the distance, rounds 4-5, Nolan by decision) run against what we know: both men finish early and Nolan has never been past round three. Wednesday's Lebosnoyani-by-decision bet stands. One more prop has a reason behind it, sized below quarter-Kelly because round and method props are thinly modelled.",
    "bets": [
     {
      "id": "5-1",
@@ -540,9 +540,38 @@
      "status": "open",
      "profit": 0.0,
      "placed_at": "2026-10-28T17:18:24+00:00"
+    },
+    {
+     "id": "5-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45467:method:a:KO/TKO",
+       "bout": "Joseph Kropschot vs Nick Klein",
+       "market": [
+        "method",
+        "a",
+        "KO/TKO"
+       ],
+       "selection": "Joseph Kropschot by KO/TKO",
+       "odds": 360,
+       "p": 0.2789,
+       "p_fanduel": 0.1884
+      }
+     ],
+     "odds": 360,
+     "decimal": 4.6,
+     "stake": 1.25,
+     "to_win": 4.5,
+     "p": 0.2789,
+     "ev": 0.2829,
+     "reasoning": "Kropschot by KO/TKO at +360 (22% implied, 28% ours). Klein was stopped by strikes in round two of both his UFC fights, each time after spending himself in a big first round, and Kropschot survives early danger and finishes in R1-R2. The market prices Kropschot's wins as mostly submissions from his record, but Klein's own losses say a fading Klein gets stopped by strikes.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-10-30T16:54:47+00:00"
     }
    ],
-   "staked": 1.0,
+   "staked": 2.25,
    "settled": false,
    "settled_at": null,
    "placements": [
@@ -555,14 +584,24 @@
      "staked": 1.0,
      "sheet": "data/ai_picks/sheets/2026-10-31-ufc-fight-night-moicano-vs-nolan.json",
      "sheet_fetched_at": "2026-10-28T17:17:51+00:00"
+    },
+    {
+     "placed_at": "2026-10-30T16:54:47+00:00",
+     "note": "Friday. The moneylines are close to the market everywhere, and the sheet's biggest numbers (Moicano-Nolan to go the distance, rounds 4-5, Nolan by decision) run against what we know: both men finish early and Nolan has never been past round three. Wednesday's Lebosnoyani-by-decision bet stands. One more prop has a reason behind it, sized below quarter-Kelly because round and method props are thinly modelled.",
+     "bets": [
+      "5-2"
+     ],
+     "staked": 1.25,
+     "sheet": "data/ai_picks/sheets/2026-10-31-ufc-fight-night-moicano-vs-nolan.json",
+     "sheet_fetched_at": "2026-10-30T16:54:33+00:00"
     }
    ],
-   "last_placed_at": "2026-10-28T17:18:24+00:00",
+   "last_placed_at": "2026-10-30T16:54:47+00:00",
    "sheet": "data/ai_picks/sheets/2026-10-31-ufc-fight-night-moicano-vs-nolan.json",
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-vegas-123-4427"
    ],
-   "sheet_fetched_at": "2026-10-28T17:17:51+00:00"
+   "sheet_fetched_at": "2026-10-30T16:54:33+00:00"
   }
  ]
 }

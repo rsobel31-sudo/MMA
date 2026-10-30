@@ -7,9 +7,9 @@
    "a": "Renato Moicano",
    "b": "Tom Nolan",
    "favours": "Renato Moicano",
-   "logit": 0.1,
+   "logit": 0.05,
    "confidence": "low",
-   "reasoning": "The model has Moicano at 40% against an even market, which looks like age and his losses to big, strong opponents. Nolan has never been past three rounds and is hittable early, and Moicano jumps on the back the moment an opponent is hurt or scrambles. Against that, Nolan's size in the clinch and Moicano's fade when he spends time on his back keep it small.",
+   "reasoning": "The model has Moicano at 40% against an even market, which looks like age and his losses to big, strong opponents. Nolan has never been past three rounds and is hittable early, and Moicano jumps on the back the moment an opponent is hurt or scrambles. Against that, Nolan's size in the clinch, his August move to City Kickboxing, his plan to ground-and-pound from the body triangle, and Moicano's fade when he spends time on his back keep it very small; the pundits lean Nolan 9-7.",
    "factors": [
     "Moicano's back takes in scrambles",
     "Nolan untested past R3",
@@ -20,8 +20,121 @@
    "date": "2026-10-31",
    "p_model": 0.4,
    "p_market": 0.519,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Tom Nolan",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Renato Moicano",
+     "method": "SUB",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-renato-moicano-001638454.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Jesse Holland",
+     "pick": "Renato Moicano",
+     "method": "SUB",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-preview-moicano-132500491.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Renato Moicano",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-123-moicano-nolan-fight-card-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Renato Moicano",
+     "method": "SUB",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://rg.org/news/mma/moicano-vs-nolan-odds-picks-and-best-bets-for-ufc-vegas-123"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Tom Nolan",
+     "method": "KO/TKO",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-123-144423"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Renato Moicano",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://mmasucka.com/previews/ufc-fight-night-moicano-vs-nolan-betting-tips/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Renato Moicano",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/renato-moicano-vs-tom-nolan-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://vsin.com/mma/ufc-vegas-123-moicano-vs-nolan-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Danny Howard",
+     "pick": "Renato Moicano",
+     "method": "DEC",
+     "url": "https://www.covers.com/ufc/fight-night-renato-moicano-vs-tom-nolan-prediction-picks-odds"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://www.pickswise.com/ufc/news/ufc-fight-night-292-best-bets-renato-moicano-vs-tom-nolan/"
+    },
+    {
+     "outlet": "DraftKings Network",
+     "author": "Ryan Wohl",
+     "pick": "Tom Nolan",
+     "method": null,
+     "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
+    }
+   ]
   },
   {
    "a": "Jacobe Smith",
@@ -39,8 +152,100 @@
    "date": "2026-10-31",
    "p_model": 0.74,
    "p_market": 0.685,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-renato-moicano-001638454.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Jesse Holland",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-preview-moicano-132500491.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-125500052.html"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://rg.org/news/mma/moicano-vs-nolan-odds-picks-and-best-bets-for-ufc-vegas-123"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-123-144423"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Jacobe Smith",
+     "method": "KO/TKO",
+     "url": "https://mmasucka.com/previews/ufc-fight-night-moicano-vs-nolan-betting-tips/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/randy-brown-vs-jacobe-smith-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    },
+    {
+     "outlet": "DraftKings Network",
+     "author": "Ryan Wohl",
+     "pick": "Jacobe Smith",
+     "method": null,
+     "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
+    }
+   ]
   },
   {
    "a": "Cody Durden",
@@ -59,8 +264,65 @@
    "date": "2026-10-31",
    "p_model": 0.55,
    "p_market": 0.5,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Cody Durden",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Ode Osbourne",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-renato-moicano-001638454.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Cody Durden",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-125500052.html"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Cody Durden",
+     "method": "DEC",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Cody Durden",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Ode Osbourne",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Ode Osbourne",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/ode-osbourne-vs-cody-durden-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    },
+    {
+     "outlet": "Pickswise",
+     "author": "Matthew Lowrimore",
+     "pick": "Cody Durden",
+     "method": null,
+     "url": "https://www.pickswise.com/ufc/news/ufc-fight-night-292-best-bets-renato-moicano-vs-tom-nolan/"
+    }
+   ]
   },
   {
    "a": "Luana Santos",
@@ -78,8 +340,65 @@
    "date": "2026-10-31",
    "p_model": 0.7,
    "p_market": 0.696,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Luana Santos",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Luana Santos",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-renato-moicano-001638454.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Yana Santos",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-125500052.html"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Luana Santos",
+     "method": "DEC",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Yana Santos",
+     "method": null,
+     "url": "https://rg.org/news/mma/moicano-vs-nolan-odds-picks-and-best-bets-for-ufc-vegas-123"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Luana Santos",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Luana Santos",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Yana Santos",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/yana-santos-vs-luana-santos-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Farman Hasanov",
@@ -97,16 +416,66 @@
    "date": "2026-10-31",
    "p_model": 0.58,
    "p_market": 0.299,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "The Big Lead (via Yahoo)",
+     "author": "Preston Palm",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": "SUB",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-123-renato-moicano-001638454.html"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": "SUB",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Jean Paul Lebosnoyani",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Farman Hasanov",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/jean-paul-lebosnoyani-vs-farman-hasanov-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Dakota Hope",
    "b": "Francis Marshall",
    "favours": "Francis Marshall",
-   "logit": 0.2,
+   "logit": 0.15,
    "confidence": "low",
-   "reasoning": "Hope is a front-loaded power striker who faded in his UFC debut and now takes a second short-notice fight and a cut back to featherweight; Marshall's takedowns and top control get better as opponents tire. Hope has never been finished and Marshall's striking is inaccurate, so he has to get it down.",
+   "reasoning": "Hope is a front-loaded power striker who faded in his UFC debut and now takes a second short-notice fight and a cut back to featherweight; Marshall's takedowns and top control get better as opponents tire. Hope has never been finished and Marshall's striking is inaccurate, so he has to get it down. Marshall missed weight by 2 lb, a small worry about his cut; Hope made 145.5.",
    "factors": [
     "Hope's R2-R3 cardio",
     "Marshall's top control",
@@ -117,8 +486,51 @@
    "date": "2026-10-31",
    "p_model": 0.47,
    "p_market": 0.319,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Francis Marshall",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Francis Marshall",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "GoBet",
+     "author": "Ross Cole",
+     "pick": "Francis Marshall",
+     "method": null,
+     "url": "https://www.gobet.com.au/mma-tips/moicano-vs-nolan/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Francis Marshall",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Francis Marshall",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Francis Marshall",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/francis-marshall-vs-dakota-hope-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Rodrigo Sezinando",
@@ -136,8 +548,51 @@
    "date": "2026-10-31",
    "p_model": 0.68,
    "p_market": 0.604,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Rodrigo Sezinando",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "GoBet",
+     "author": "Ross Cole",
+     "pick": "Rodrigo Sezinando",
+     "method": null,
+     "url": "https://www.gobet.com.au/mma-tips/moicano-vs-nolan/"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Rodrigo Sezinando",
+     "method": "KO/TKO",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-123-144423"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Rodrigo Sezinando",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Theodor Berggren",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Theodor Berggren",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/rodrigo-sezinando-vs-theodor-berggren-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Julian Erosa",
@@ -145,7 +600,7 @@
    "favours": "Lee Jeong-yeong",
    "logit": 0.1,
    "confidence": "low",
-   "reasoning": "Erosa, 37, has five R1 knockout losses to fast punchers and was stopped with three knockdowns in March; Lee looks for the right hand early. Lee's 17-month layoff and the weight miss that scrapped his UFC 326 bout keep it small, and Erosa's late scrambles and volume are real if it goes long. No line or model number yet.",
+   "reasoning": "Erosa, 37, has five R1 knockout losses to fast punchers and was stopped with three knockdowns in March; Lee looks for the right hand early. Lee's 17-month layoff and the weight miss that scrapped his UFC 326 bout keep it small, and Erosa's late scrambles and volume are real if it goes long. Erosa calls this his retirement fight. Both made 145.5.",
    "factors": [
     "Erosa's chin against early power",
     "Lee's layoff and weight cut (against)",
@@ -155,8 +610,65 @@
    "date": "2026-10-31",
    "p_model": null,
    "p_market": null,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Lee Jeong-yeong",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Lee Jeong-yeong",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Lee Jeong-yeong",
+     "method": null,
+     "url": "https://rg.org/news/mma/moicano-vs-nolan-odds-picks-and-best-bets-for-ufc-vegas-123"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Julian Erosa",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-123-144423"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Lee Jeong-yeong",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Lee Jeong-yeong",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Julian Erosa",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/julian-erosa-vs-jeongyeong-lee-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Julian Erosa",
+     "method": "SUB",
+     "url": "https://vsin.com/mma/ufc-vegas-123-moicano-vs-nolan-odds-picks-predictions-and-best-bets/"
+    }
+   ]
   },
   {
    "a": "Zachary Reese",
@@ -174,8 +686,72 @@
    "date": "2026-10-31",
    "p_model": null,
    "p_market": null,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Zachary Reese",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Zachary Reese",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-125500052.html"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://rg.org/news/mma/moicano-vs-nolan-odds-picks-and-best-bets-for-ufc-vegas-123"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-123-144423"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Zachary Reese",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Mickey Gall",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/zach-reese-vs-mickey-gall-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Joseph Kropschot",
@@ -192,8 +768,58 @@
    "date": "2026-10-31",
    "p_model": 0.61,
    "p_market": 0.723,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Joseph Kropschot",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Joseph Kropschot",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Joseph Kropschot",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Joseph Kropschot",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Joseph Kropschot",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Nick Klein",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/nick-klein-vs-joe-kropschot-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    },
+    {
+     "outlet": "DraftKings Network",
+     "author": "Ryan Wohl",
+     "pick": "Joseph Kropschot",
+     "method": null,
+     "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
+    }
+   ]
   },
   {
    "a": "Piera Rodriguez",
@@ -210,8 +836,51 @@
    "date": "2026-10-31",
    "p_model": 0.64,
    "p_market": 0.701,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Piera Rodriguez",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Piera Rodriguez",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Piera Rodriguez",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Piera Rodriguez",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Piera Rodriguez",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Piera Rodriguez",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/talita-alencar-vs-piera-rodriguez-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
+    }
+   ]
   },
   {
    "a": "Lucia Szabova",
@@ -228,8 +897,58 @@
    "date": "2026-10-31",
    "p_model": 0.89,
    "p_market": 0.812,
-   "created": "2026-10-27T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-10-30T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Lucia Szabova",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-123-renato-moicano-v-tom"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://keeonsports.com/ufc-fight-night-moicano-vs-nolan-preview-predictions"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-292-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-123-moicano-vs-nolan-dfs-analysis-drakes-takes-144480"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-123-dfs-preview-144263"
+    },
+    {
+     "outlet": "MMASucka",
+     "author": "Frazer Krohn",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://mmasucka.com/previews/ufc-fight-night-moicano-vs-nolan-betting-tips/"
+    },
+    {
+     "outlet": "SportsLine",
+     "author": "Kyle Marley",
+     "pick": "Lucia Szabova",
+     "method": null,
+     "url": "https://www.sportsline.com/insiders/ufc-fight-night-odds-picks-seasoned-mma-analyst-reveals-selections-for-moicano-vs-nolan-and-other-matchups-on-oct-31/"
+    }
+   ]
   }
  ]
 }

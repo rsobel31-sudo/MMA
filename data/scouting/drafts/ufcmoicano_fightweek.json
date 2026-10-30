@@ -1,0 +1,342 @@
+{
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "date": "2026-10-31",
+ "written": "2026-10-30",
+ "summary": "No bout among the 12 on the card was cancelled or changed during fight week; all 12 remain as listed. Weigh-ins (Fri Oct 30): Francis Marshall missed featherweight by 2 lb (148 vs 146 limit); the Hope bout is expected to proceed, likely at a catchweight with a purse forfeit, but that was unconfirmed when read. Everyone else posted made weight within the 1 lb non-title allowance. Ode Osbourne, Cody Durden, Nick Klein and Talita Alencar had no weight posted yet on UFC.com when read (pending, not reported misses). Earlier changes, all before fight week: Tom Nolan replaced the injured Brian Ortega in the main event (September); Dakota Hope replaced Gaston Bolanos (cut) vs Francis Marshall (Oct 8); Jacobe Smith replaced the injured Carlos Leal vs Randy Brown (about Oct 19). Azamat Bekoev vs Andre Petroski was scrapped on Oct 25-26 after Bekoev's anaphylactic reaction; Petroski declined a replacement and moved to UFC Vegas 124 (that bout is not in the 12-bout card list).",
+ "card_changes": [
+  {
+   "bout": "Dakota Hope vs Francis Marshall",
+   "change": "Marshall missed weight by 2 lb (148); catchweight/fine expected but unconfirmed",
+   "date": "2026-10-30",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "bout": "Azamat Bekoev vs Andre Petroski",
+   "change": "Cancelled: Bekoev withdrew after anaphylactic reaction; Petroski moved to UFC Vegas 124",
+   "date": "2026-10-26",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-medical-emergency-forces-ufc-vegas-123-fighter-to-withdraw-as-dana-white-faces-setback/"
+  },
+  {
+   "bout": "Jacobe Smith vs Randy Brown",
+   "change": "Smith replaced injured Carlos Leal on short notice (pre-fight-week)",
+   "date": "2026-10-19",
+   "url": "https://heavy.com/sports/ufc/jacobe-smith-accepts-ufc-vegas-123/"
+  },
+  {
+   "bout": "Dakota Hope vs Francis Marshall",
+   "change": "Hope replaced Gaston Bolanos (training cut) (pre-fight-week)",
+   "date": "2026-10-08",
+   "url": "https://sports.yahoo.com/articles/francis-marshall-draws-opponent-ufc-222845134.html"
+  }
+ ],
+ "items": [
+  {
+   "fighter": "Renato Moicano",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 156 lb, lightweight (156 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Tom Nolan",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 155.5 lb, lightweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Jacobe Smith",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 170.5 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Randy Brown",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 170.5 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Luana Santos",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 136 lb, women's bantamweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Yana Santos",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 135.5 lb, women's bantamweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Farman Hasanov",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 171 lb, welterweight (171 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Jean Paul Lebosnoyani",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 170.5 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Dakota Hope",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Rodrigo Sezinando",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 170.5 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Theodor Berggren",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 171 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Julian Erosa",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Lee Jeong-yeong",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Zachary Reese",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 185 lb, middleweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Mickey Gall",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 185.5 lb, middleweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Joseph Kropschot",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 186 lb, middleweight (186 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Piera Rodriguez",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 115.5 lb, women's strawweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Lucia Szabova",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 125.5 lb, women's flyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Tainara Lisboa",
+   "date": "2026-10-30",
+   "text": "Made weight at the official weigh-ins: 125 lb, women's flyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Francis Marshall",
+   "date": "2026-10-30",
+   "text": "Missed weight: 148 lb for a featherweight bout, 2 lb over the 146 lb non-title limit (UFC.com marks him with an asterisk; Cageside Press: '2lbs over'). Opponent Dakota Hope made 145.5.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Francis Marshall",
+   "date": "2026-10-30",
+   "text": "Report says the Hope bout is still expected to go ahead, likely at a catchweight with Marshall forfeiting part of his purse, but neither the catchweight nor the fine was confirmed at publication; cites reporter Adam Martin saying he looked bad on the scale.",
+   "outlet": "HotTakes",
+   "url": "https://hottakes.com/articles/francis-marshall-misses-weight-by-a-mile-ahead-of-ufc-vegas-123-b82345d8-5234-4f50-b4a6-bcc6aa90e93e"
+  },
+  {
+   "fighter": "Ode Osbourne",
+   "date": "2026-10-30",
+   "text": "No weight posted yet on the official UFC.com results (blank entry) or on the Cageside Press / MMA Junkie (Yahoo) results pages at time of reading; status pending, not a reported miss.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Cody Durden",
+   "date": "2026-10-30",
+   "text": "No weight posted yet on the official UFC.com results (blank entry) or on the Cageside Press / MMA Junkie (Yahoo) results pages at time of reading; status pending, not a reported miss.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Nick Klein",
+   "date": "2026-10-30",
+   "text": "No weight posted yet on the official UFC.com results (blank entry) or on the Cageside Press / MMA Junkie (Yahoo) results pages at time of reading; status pending, not a reported miss.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Talita Alencar",
+   "date": "2026-10-30",
+   "text": "No weight posted yet on the official UFC.com results (blank entry) or on the Cageside Press / MMA Junkie (Yahoo) results pages at time of reading; status pending, not a reported miss.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-results-ufc-fight-night-moicano-vs-nolan"
+  },
+  {
+   "fighter": "Jacobe Smith",
+   "date": "2026-10-19",
+   "text": "Short-notice replacement: unbeaten welterweight booked against Randy Brown after original opponent Carlos Leal withdrew injured; comes 28 days after his win over Bruce Whitehead.",
+   "outlet": "HEAVY",
+   "url": "https://heavy.com/sports/ufc/jacobe-smith-accepts-ufc-vegas-123/"
+  },
+  {
+   "fighter": "Jacobe Smith",
+   "date": "2026-10-30",
+   "text": "Says he will 'be doing the dictating': plans to either wrestle Brown or finish him early depending on how the start goes; has not had a full camp for any of his four UFC fights. Targets a ranked opponent next and a title shot by early 2028.",
+   "outlet": "MMA Mania (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-123-jacobe-smith-003000918.html"
+  },
+  {
+   "fighter": "Randy Brown",
+   "date": "2026-10-28",
+   "text": "Media day: calls the opponent switch a curveball, frames it as a must-win after losses to Kevin Holland and Gabriel Bonfim, says he has something Smith hasn't seen and wants to hurt and finish him ('The prediction is pain').",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/randy-brown-prediction-pain-jacobe-225015818.html"
+  },
+  {
+   "fighter": "Francis Marshall",
+   "date": "2026-10-08",
+   "text": "Opponent change: Gaston Bolanos withdrew after an eyebrow cut in training; Dakota Hope steps in.",
+   "outlet": "HEAVY (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/francis-marshall-draws-opponent-ufc-222845134.html"
+  },
+  {
+   "fighter": "Dakota Hope",
+   "date": "2026-10-08",
+   "text": "Short-notice replacement for Gaston Bolanos (training cut) against Francis Marshall.",
+   "outlet": "HEAVY (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/francis-marshall-draws-opponent-ufc-222845134.html"
+  },
+  {
+   "fighter": "Renato Moicano",
+   "date": "2026-10-29",
+   "text": "Says Nolan is more dangerous than Brian Ortega (the original opponent) and a win would do more for his resume; rejects Nolan's praise ('I don't want compliments, I want money'); stresses he only gets half his pay if he loses.",
+   "outlet": "SB Nation (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/renato-moicano-doesn-t-want-120000166.html"
+  },
+  {
+   "fighter": "Renato Moicano",
+   "date": "2026-10-29",
+   "text": "Has three fights left on his UFC deal, wants to fight it out and then test free agency; undecided on continuing beyond that. Wife expecting twins in December; runs his own promotion with an event on Dec 5.",
+   "outlet": "EssentiallySports",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-renato-moicano-hints-at-ufc-exit-after-tom-nolan-clash-at-ufc-vegas-123/"
+  },
+  {
+   "fighter": "Tom Nolan",
+   "date": "2026-10-30",
+   "text": "First UFC main event and first five-rounder (stepped in after Ortega withdrew; Moicano pushed for five rounds). Studied Moicano's Saint Denis win and his body-triangle transitions; says he wants to win with ground and pound and elbows. Striking-first style.",
+   "outlet": "CBS Sports",
+   "url": "https://www.cbssports.com/ufc/news/who-is-tom-nolan-meet-australian-ufc-fight-night-renato-moicano/"
+  },
+  {
+   "fighter": "Tom Nolan",
+   "date": "2026-10-28",
+   "text": "Calls the fight a manifestation; questions Moicano's motivation and says if it becomes a battle of grit he will win it. No specific game plan given.",
+   "outlet": "Cageside Press",
+   "url": "https://cagesidepress.com/2026/10/28/ufc-vegas-123-tom-nolan-moicano-fight-manifestation/"
+  },
+  {
+   "fighter": "Tom Nolan",
+   "date": "2026-08-27",
+   "text": "Camp change (pre-fight-week context): left Team Compton MMA in Australia to relocate to City Kickboxing (Eugene Bareman) in Auckland, bringing two teammates. This is his first fight out of that camp as far as reported.",
+   "outlet": "AgentMMA (citing Bloody Elbow)",
+   "url": "https://agentmma.com/news/89238-adesanya-leaves-city-kickboxing-after-four-straight-losses-prospect-tom-nolan-jo"
+  },
+  {
+   "fighter": "Julian Erosa",
+   "date": "2026-10-29",
+   "text": "Announces this is his retirement fight win or lose (health, young child). Would like to finish Lee by submission off his wrestling/grappling but will trade if it goes that way; expects Lee to stand and bang.",
+   "outlet": "BJPenn.com",
+   "url": "https://www.bjpenn.com/mma-news/julian-erosa/julian-erosa-explains-why-ufc-vegas-123-is-his-retirement-fight-im-ready-to-move-on/"
+  },
+  {
+   "fighter": "Lee Jeong-yeong",
+   "date": "2026-10-29",
+   "text": "Enters on a two-fight losing streak and is described as possibly fighting for his UFC spot.",
+   "outlet": "BJPenn.com",
+   "url": "https://www.bjpenn.com/mma-news/julian-erosa/julian-erosa-explains-why-ufc-vegas-123-is-his-retirement-fight-im-ready-to-move-on/"
+  },
+  {
+   "fighter": "Farman Hasanov",
+   "date": "2026-10-29",
+   "text": "Says he had a hard camp and feels great; respects Lebosnoyani's jiu-jitsu and striking; promises a better show after his 17-takedown decision debut. No injuries mentioned.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/farman-hasanov-promises-good-show-152034404.html"
+  },
+  {
+   "fighter": "Jean Paul Lebosnoyani",
+   "date": "2026-10-29",
+   "text": "Studied Hasanov's tape, impressed by his wrestling and explosiveness; game plan built to neutralise those strengths. Wants to go 3-0 in the UFC and is not chasing big jumps.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-123s-jean-paul-134030159.html"
+  },
+  {
+   "fighter": "Mickey Gall",
+   "date": "2026-10-27",
+   "text": "On a four-fight losing skid (no win since July 2021) and moving up from welterweight to middleweight for this bout.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-pre-170043844.html"
+  },
+  {
+   "fighter": "Cody Durden",
+   "date": "2026-10-27",
+   "text": "Is 2-7 in his past nine fights since December 2023.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-pre-170043844.html"
+  },
+  {
+   "fighter": "Ode Osbourne",
+   "date": "2026-10-27",
+   "text": "Is 4-6 since dropping to flyweight in August 2021.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-pre-170043844.html"
+  },
+  {
+   "fighter": "Luana Santos",
+   "date": "2026-10-27",
+   "text": "On a four-fight UFC win streak.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-pre-170043844.html"
+  },
+  {
+   "fighter": "Piera Rodriguez",
+   "date": "2026-10-27",
+   "text": "All five UFC wins by decision; 59.1% takedown accuracy, best in strawweight history.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-pre-170043844.html"
+  }
+ ]
+}

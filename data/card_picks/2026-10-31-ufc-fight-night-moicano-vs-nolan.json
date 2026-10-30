@@ -1,0 +1,770 @@
+{
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "date": "2026-10-31",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Moicano_vs._Nolan",
+ "locks_at": "2026-10-31T12:00:00+00:00",
+ "locked_at": "2026-10-30T16:53:50+00:00",
+ "note": "A card of front-runners and grinders. Three overrides of the model's winner: Moicano (the market and the read on Nolan's untested five-round game), Lebosnoyani (Hasanov fades after one round and has done little damage at UFC level) and Lee (Erosa's chin against early power). Rounds come from each loser's own record of when he gets finished: Brown and Klein in R2, Berggren late, Lisboa late; and from when each winner finishes.",
+ "dec_cal": [
+  0.439346,
+  0.671843,
+  -0.364704
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Renato Moicano vs Tom Nolan",
+   "a": "Renato Moicano",
+   "b": "Tom Nolan",
+   "segment": "Fight card",
+   "weight_class": "Lightweight",
+   "rounds": 5,
+   "title": false,
+   "pick": {
+    "winner": "Renato Moicano",
+    "side": "a",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.51,
+    "why": "Override: the model leans Nolan on age, but the market has Moicano narrowly and Nolan has never been past three rounds or headlined. Moicano jumps on the back the moment an opponent is hurt or scrambles, and 12 of his 13 stoppage wins came in R1-R2, the last a R2 choke of Duncan. Nolan is fresh and dangerous early, so the back take comes once the pace drops: R2."
+   },
+   "model": {
+    "p_a": 0.399,
+    "winner": "Tom Nolan",
+    "method": "DEC",
+    "p_win": 0.601,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1337,
+      "SUB": 0.0823,
+      "DEC": 0.1609
+     },
+     "b": {
+      "KO/TKO": 0.1034,
+      "SUB": 0.1456,
+      "DEC": 0.3741
+     }
+    },
+    "round": 5,
+    "p_exact": 0.3741,
+    "round_chances": {
+     "KO/TKO": [
+      0.447,
+      0.259,
+      0.129,
+      0.084,
+      0.081
+     ],
+     "SUB": [
+      0.37,
+      0.235,
+      0.19,
+      0.128,
+      0.077
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      1,
+      0,
+      0,
+      0
+     ],
+     "losses": [
+      3,
+      1,
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5188
+  },
+  {
+   "bout": "Randy Brown vs Jacobe Smith",
+   "a": "Randy Brown",
+   "b": "Jacobe Smith",
+   "segment": "Fight card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Jacobe Smith",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.72,
+    "why": "Smith's wrestling and ground strikes are the style that has beaten Brown, and Smith says he'll wrestle or finish him early. Brown's long guard and range usually survive R1, but four of his five stoppage losses came in R2, the latest to Bonfim: R2."
+   },
+   "model": {
+    "p_a": 0.2659,
+    "winner": "Jacobe Smith",
+    "method": "KO/TKO",
+    "p_win": 0.7341,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0713,
+      "SUB": 0.0264,
+      "DEC": 0.2039
+     },
+     "b": {
+      "KO/TKO": 0.471,
+      "SUB": 0.06,
+      "DEC": 0.1675
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2671,
+    "round_chances": {
+     "KO/TKO": [
+      0.567,
+      0.326,
+      0.107
+     ],
+     "SUB": [
+      0.529,
+      0.345,
+      0.125
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      9,
+      2,
+      0
+     ],
+     "losses": [
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.2861
+  },
+  {
+   "bout": "Ode' Osbourne vs Cody Durden",
+   "a": "Ode' Osbourne",
+   "b": "Cody Durden",
+   "segment": "Fight card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Cody Durden",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "Osbourne loses when he is taken down and held (Rodriguez, Erceg, Idiris), and Durden wins on takedowns and control; five of Durden's seven UFC wins were decisions. Osbourne's counter left is the danger early, so Durden grinds rather than finishes: decision."
+   },
+   "model": {
+    "p_a": 0.4504,
+    "winner": "Cody Durden",
+    "method": "DEC",
+    "p_win": 0.5496,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1388,
+      "SUB": 0.1302,
+      "DEC": 0.1436
+     },
+     "b": {
+      "KO/TKO": 0.0455,
+      "SUB": 0.186,
+      "DEC": 0.3559
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3559,
+    "round_chances": {
+     "KO/TKO": [
+      0.616,
+      0.263,
+      0.12
+     ],
+     "SUB": [
+      0.58,
+      0.281,
+      0.138
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      9,
+      2,
+      1
+     ],
+     "losses": [
+      5,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.4854
+  },
+  {
+   "bout": "Yana Santos vs Luana Santos",
+   "a": "Yana Santos",
+   "b": "Luana Santos",
+   "segment": "Fight card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Luana Santos",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.68,
+    "why": "Luana's takedowns and top control over 15 minutes against a striker who has been taken down late in her fights and is a year out at 37. Neither is easy to finish: Luana has never been stopped and Yana not since 2021: decision."
+   },
+   "model": {
+    "p_a": 0.3079,
+    "winner": "Luana Santos",
+    "method": "DEC",
+    "p_win": 0.6921,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0317,
+      "SUB": 0.0131,
+      "DEC": 0.2564
+     },
+     "b": {
+      "KO/TKO": 0.0868,
+      "SUB": 0.2234,
+      "DEC": 0.3887
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3887,
+    "round_chances": {
+     "KO/TKO": [
+      0.564,
+      0.28,
+      0.156
+     ],
+     "SUB": [
+      0.523,
+      0.3,
+      0.177
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      1
+     ],
+     "losses": [
+      3,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.295
+  },
+  {
+   "bout": "Jean-Paul Lebosnoyani vs Farman Hasanov",
+   "a": "Jean-Paul Lebosnoyani",
+   "b": "Farman Hasanov",
+   "segment": "Fight card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Jean-Paul Lebosnoyani",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.68,
+    "why": "Override: the model likes Hasanov's unbeaten record, but in his UFC debut he faded from R2 and did little damage, while Lebosnoyani won the late rounds of both UFC fights with takedowns. Hasanov has never been stopped and keeps shooting even tired, and both of Lebosnoyani's UFC wins went 15 minutes: decision."
+   },
+   "model": {
+    "p_a": 0.4129,
+    "winner": "Farman Hasanov",
+    "method": "KO/TKO",
+    "p_win": 0.5871,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0955,
+      "SUB": 0.1153,
+      "DEC": 0.2033
+     },
+     "b": {
+      "KO/TKO": 0.2852,
+      "SUB": 0.0289,
+      "DEC": 0.2717
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1569,
+    "round_chances": {
+     "KO/TKO": [
+      0.55,
+      0.317,
+      0.133
+     ],
+     "SUB": [
+      0.503,
+      0.341,
+      0.156
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      1,
+      0
+     ],
+     "losses": [
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.72
+  },
+  {
+   "bout": "Francis Marshall vs Dakota Hope",
+   "a": "Francis Marshall",
+   "b": "Dakota Hope",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Francis Marshall",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.64,
+    "why": "Hope is a front-loaded power striker on his second short-notice booking who faded in his debut; Marshall's takedowns and top control get stronger as opponents tire. Hope has never been finished and Marshall missed weight by 2 lb, so Marshall grinds out rounds: decision."
+   },
+   "model": {
+    "p_a": 0.5275,
+    "winner": "Francis Marshall",
+    "method": "DEC",
+    "p_win": 0.5275,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0521,
+      "SUB": 0.0951,
+      "DEC": 0.3789
+     },
+     "b": {
+      "KO/TKO": 0.1802,
+      "SUB": 0.0199,
+      "DEC": 0.2739
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3789,
+    "round_chances": {
+     "KO/TKO": [
+      0.538,
+      0.289,
+      0.173
+     ],
+     "SUB": [
+      0.492,
+      0.311,
+      0.196
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      1,
+      2
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6701
+  },
+  {
+   "bout": "Rodrigo Sezinando vs Theodor Berggren",
+   "a": "Rodrigo Sezinando",
+   "b": "Theodor Berggren",
+   "segment": "Preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Rodrigo Sezinando",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.62,
+    "why": "Sezinando turns fights into clinch work and takedowns, and Berggren was dropped twice by body work and stopped in R2 of his UFC debut. Berggren has never been finished in R1 and his losses come later, so the finish comes once he slows: R2."
+   },
+   "model": {
+    "p_a": 0.7006,
+    "winner": "Rodrigo Sezinando",
+    "method": "KO/TKO",
+    "p_win": 0.7006,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3002,
+      "SUB": 0.1514,
+      "DEC": 0.2662
+     },
+     "b": {
+      "KO/TKO": 0.1887,
+      "SUB": 0.0266,
+      "DEC": 0.0669
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1639,
+    "round_chances": {
+     "KO/TKO": [
+      0.546,
+      0.312,
+      0.142
+     ],
+     "SUB": [
+      0.503,
+      0.333,
+      0.164
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      2,
+      0
+     ],
+     "losses": [
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.6106
+  },
+  {
+   "bout": "Julian Erosa vs Lee Jeong-yeong",
+   "a": "Julian Erosa",
+   "b": "Lee Jeong-yeong",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Lee Jeong-yeong",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.55,
+    "why": "Override: Erosa, 37, has five R1 knockout losses to fast punchers, the last a three-knockdown stoppage in March, and calls this his retirement fight. Lee hunts the right hand early; if it doesn't land in R1, Erosa's volume and scrambles take over, so Lee's win comes early: R1."
+   },
+   "model": {
+    "p_a": 0.571,
+    "winner": "Julian Erosa",
+    "method": "DEC",
+    "p_win": 0.571,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1599,
+      "SUB": 0.1045,
+      "DEC": 0.3161
+     },
+     "b": {
+      "KO/TKO": 0.2084,
+      "SUB": 0.0172,
+      "DEC": 0.1939
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3161,
+    "round_chances": {
+     "KO/TKO": [
+      0.481,
+      0.337,
+      0.181
+     ],
+     "SUB": [
+      0.449,
+      0.353,
+      0.197
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      9,
+      10,
+      6
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Zachary Reese vs Mickey Gall",
+   "a": "Zachary Reese",
+   "b": "Mickey Gall",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Zachary Reese",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.76,
+    "why": "Gall is nearly two years out, failed a medical in September, moves up to middleweight, and was knocked out in R1 in two of his last three. Reese has seven R1 stoppage wins: R1."
+   },
+   "model": {
+    "p_a": 0.8331,
+    "winner": "Zachary Reese",
+    "method": "KO/TKO",
+    "p_win": 0.8331,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.44,
+      "SUB": 0.1134,
+      "DEC": 0.2787
+     },
+     "b": {
+      "KO/TKO": 0.0745,
+      "SUB": 0.02,
+      "DEC": 0.0735
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2653,
+    "round_chances": {
+     "KO/TKO": [
+      0.603,
+      0.28,
+      0.117
+     ],
+     "SUB": [
+      0.562,
+      0.3,
+      0.138
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      1,
+      0
+     ],
+     "losses": [
+      2,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Nick Klein vs Joseph Kropschot",
+   "a": "Nick Klein",
+   "b": "Joseph Kropschot",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Joseph Kropschot",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.66,
+    "why": "Klein starts like a house on fire and has been stopped by strikes in R2 of both UFC fights once his first-round burst was spent. Kropschot finishes in R1-R2 and survives early danger: the finish comes after Klein fades, R2."
+   },
+   "model": {
+    "p_a": 0.3941,
+    "winner": "Joseph Kropschot",
+    "method": "KO/TKO",
+    "p_win": 0.6059,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0679,
+      "SUB": 0.201,
+      "DEC": 0.1299
+     },
+     "b": {
+      "KO/TKO": 0.3202,
+      "SUB": 0.1103,
+      "DEC": 0.1708
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1617,
+    "round_chances": {
+     "KO/TKO": [
+      0.505,
+      0.358,
+      0.137
+     ],
+     "SUB": [
+      0.464,
+      0.379,
+      0.157
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      4,
+      0
+     ],
+     "losses": [
+      0,
+      2,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.2659
+  },
+  {
+   "bout": "Talita Alencar vs Piera Rodriguez",
+   "a": "Talita Alencar",
+   "b": "Piera Rodriguez",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Strawweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Piera Rodriguez",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.68,
+    "why": "Rodriguez's pressure, body knees and late-round takedowns win three-round fights, and every one of her UFC wins went the distance. Alencar has never been finished and usually loses the striking count: decision."
+   },
+   "model": {
+    "p_a": 0.3614,
+    "winner": "Piera Rodriguez",
+    "method": "DEC",
+    "p_win": 0.6386,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0222,
+      "SUB": 0.1789,
+      "DEC": 0.1778
+     },
+     "b": {
+      "KO/TKO": 0.0837,
+      "SUB": 0.03,
+      "DEC": 0.5074
+     }
+    },
+    "round": 3,
+    "p_exact": 0.5074,
+    "round_chances": {
+     "KO/TKO": [
+      0.494,
+      0.347,
+      0.159
+     ],
+     "SUB": [
+      0.447,
+      0.371,
+      0.182
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      0,
+      3,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.2861
+  },
+  {
+   "bout": "Lucia Szabová vs Tainara Lisboa",
+   "a": "Lucia Szabová",
+   "b": "Tainara Lisboa",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Lucia Szabová",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.82,
+    "why": "Szabová finishes from the clinch and from mount with strikes and got stronger as her last title opponent tired. Lisboa starts well but was broken late in her last two fights (4:59 of R2 and R3), and is a year out at 36. Lisboa survives the first round, then Szabová takes over: R2."
+   },
+   "model": {
+    "p_a": 0.885,
+    "winner": "Lucia Szabová",
+    "method": "SUB",
+    "p_win": 0.885,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2843,
+      "SUB": 0.39,
+      "DEC": 0.2021
+     },
+     "b": {
+      "KO/TKO": 0.0285,
+      "SUB": 0.0284,
+      "DEC": 0.0668
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1923,
+    "round_chances": {
+     "KO/TKO": [
+      0.535,
+      0.285,
+      0.18
+     ],
+     "SUB": [
+      0.493,
+      0.306,
+      0.2
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      1,
+      2
+     ],
+     "losses": [
+      1,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.8317
+  }
+ ],
+ "graded": false
+}
