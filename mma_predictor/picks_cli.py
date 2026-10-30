@@ -82,6 +82,23 @@ def _pair(a: str, b: str) -> frozenset:
     return frozenset(match_key(x).split()[-1] for x in (a, b) if match_key(x))
 
 
+def _words(name: str) -> set:
+    from .sources.wikipedia import match_key
+
+    return {w for w in match_key(name).split() if len(w) >= 3}
+
+
+def _card_bout(b: dict, card: list):
+    """The card's bout for a BestFightOdds bout. The exact key first; else each fighter shares a name word with one on
+    the other side, so a short first name ("Zach" for "Zachary") or a reordered name still matches."""
+    key = _pair(b["a"], b["b"])
+    exact = next((w for w in card if _pair(w["a"], w["b"]) == key), None)
+    if exact:
+        return exact
+    same = lambda x, y: bool(_words(x) & _words(y))
+    return next((w for w in card if (same(b["a"], w["a"]) and same(b["b"], w["b"])) or (same(b["a"], w["b"]) and same(b["b"], w["a"]))), None)
+
+
 def _model(data_json: Path):
     from .model import PRIOR_WEIGHTS, WinModel
 
@@ -111,23 +128,22 @@ def cmd_sheet(args) -> int:
     # 2. FanDuel's prices from BestFightOdds, matched to the card by the fighters.
     # BestFightOdds may split one card over several pages ("UFC 332" and "UFC" for the prelims):
     # take every UFC page and keep the bouts Wikipedia also lists (two sources for each bout).
-    wiki_pairs = {_pair(w["a"], w["b"]) for w in card}
-    found, pages = {}, []
+    found, pages = {}, []  # the card's _pair -> BestFightOdds bout
     links = [("UFC", u) for u in args.odds_url] if getattr(args, "odds_url", None) else P.event_links(_fresh(fetcher, BFO_HOME))
     for name, url in links:
         if not name.upper().startswith("UFC"):
             continue
         parsed = P.parse_event(_fresh(fetcher, url), url)
-        hits = [b for b in parsed["bouts"] if _pair(b["a"], b["b"]) in wiki_pairs]
+        hits = [(w, b) for b in parsed["bouts"] for w in [_card_bout(b, card)] if w]
         if hits:
             pages.append(url)
-        for b in hits:
-            found.setdefault(_pair(b["a"], b["b"]), b)
+        for w, b in hits:
+            found.setdefault(_pair(w["a"], w["b"]), b)
     if not found:
         print(f"No FanDuel lines found for {ev['name']} on BestFightOdds yet.")
         return 1
     order = {_pair(w["a"], w["b"]): i for i, w in enumerate(card)}
-    best = {"url": pages[0], "urls": pages, "bouts": sorted(found.values(), key=lambda b: order[_pair(b["a"], b["b"])])}
+    best = {"url": pages[0], "urls": pages, "bouts": [found[k] for k in sorted(found, key=lambda k: order[k])]}
     unpriced = [f"{w['a']} vs {w['b']}" for w in card if _pair(w["a"], w["b"]) not in found]
 
     # 3. Price it with the model the site shows, blended with FanDuel's own moneyline.
@@ -135,7 +151,7 @@ def cmd_sheet(args) -> int:
     model, blend_w = _model(Path(args.app_data))
     predictor = FightPredictor(h, model)
     aliases = json.loads(Path(args.aliases).read_text()) if Path(args.aliases).exists() else {}
-    names = {n for b in best["bouts"] for n in (b["a"], b["b"])}
+    names = {n for b in best["bouts"] for n in (b["a"], b["b"])} | {n for w in card for n in (w["a"], w["b"])}
     linked = link_names(names, set(h.names()), aliases)
     timing = P.Timing.from_fights(h.fights)
     from .reads import Reads
@@ -147,9 +163,12 @@ def cmd_sheet(args) -> int:
     when = date.fromisoformat(ev["date"])
     bouts, markets, skipped = [], [], []
     for b in best["bouts"]:
-        wiki = next((w for w in card if _pair(w["a"], w["b"]) == _pair(b["a"], b["b"])), None)
+        wiki = _card_bout(b, card)
         rounds = int(wiki["rounds"]) if wiki else 3
-        a, bb = linked.get(b["a"]), linked.get(b["b"])
+        # Our dataset's fighter: by FanDuel's spelling, else by the card's ("Zach Reese" is "Zachary Reese").
+        side = lambda n: next((x for x in ((wiki["a"], wiki["b"]) if wiki else ()) if _words(x) & _words(n)), None)  # noqa: E731
+        a = linked.get(b["a"]) or linked.get(side(b["a"]))
+        bb = linked.get(b["b"]) or linked.get(side(b["b"]))
         if not a or not bb:
             skipped.append(f"{b['a']} vs {b['b']} (not enough data on {'/'.join(x for x, y in ((b['a'], a), (b['b'], bb)) if not y)})")
             continue
@@ -341,7 +360,9 @@ def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dic
         toks = lambda k: frozenset(k.split())  # noqa: E731  ("Wang Cong" == "Cong Wang")
         row = next((r for r in card if {match_key(r["a"]), match_key(r["b"])} == {ka, kb}), None) or \
             next((r for r in card if {toks(match_key(r["a"])), toks(match_key(r["b"]))} == {toks(ka), toks(kb)}), None) or \
-            next((r for r in card if {tuple(last(match_key(r["a"]))), tuple(last(match_key(r["b"])))} == {tuple(last(ka)), tuple(last(kb))}), None)
+            next((r for r in card if {tuple(last(match_key(r["a"]))), tuple(last(match_key(r["b"])))} == {tuple(last(ka)), tuple(last(kb))}), None) or \
+            next((r for r in card if (_words(r["a"]) & _words(a) and _words(r["b"]) & _words(b))
+                  or (_words(r["a"]) & _words(b) and _words(r["b"]) & _words(a))), None)  # "Zach" for "Zachary"
         if row is None:
             if decided and date.today() > when:
                 log(f"  {bout}: not on the results card -> void (bout did not take place)")
@@ -351,7 +372,8 @@ def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dic
         if wr is None:
             log(f"  {bout}: no result on Wikipedia yet")
             continue
-        if match_key(row["a"]) != ka and toks(match_key(row["a"])) != toks(ka) and last(match_key(row["a"])) != last(ka):
+        if match_key(row["a"]) != ka and toks(match_key(row["a"])) != toks(ka) and last(match_key(row["a"])) != last(ka) \
+                and not (_words(row["a"]) & _words(a) and not _words(row["a"]) & _words(b)):
             wr = P.flip(wr)  # Wikipedia's left fighter is our b
         # Second source: the fighter's Sherdog record.
         sr = None
@@ -371,7 +393,8 @@ def _results_for(fetcher, week, log=print, agree=None, round_agrees=None) -> Dic
             if r is None:
                 opp_last = last(match_key(opp))
                 r = next((P.sherdog_result([cb], match_key(cb.opponent), when, match_key) for cb in page.bouts
-                          if last(match_key(cb.opponent)) == opp_last and abs((cb.date - when).days) <= 2), None)
+                          if (last(match_key(cb.opponent)) == opp_last or _words(cb.opponent) & _words(opp))
+                          and abs((cb.date - when).days) <= 2), None)
             if r is not None:
                 sr = r if name == a else P.flip(r)
                 break
