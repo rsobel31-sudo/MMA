@@ -4818,7 +4818,7 @@
 },
 "Dennis Hallman": {
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
-"stats_official": "9"
+"stats_official": "10"
 },
 "Dennis Reed": {
 "stats_official": "1"
@@ -5849,6 +5849,8 @@
 "stats_official": "1"
 },
 "Eros Baluyot": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (165 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -7633,6 +7635,8 @@
 "stats_verified": "3"
 },
 "Jacob Rosales": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -9432,6 +9436,8 @@
 "stats_verified": "1"
 },
 "Jose Flores": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "2"
 },
@@ -9968,6 +9974,11 @@
 },
 "Justin Burlinson": {
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
+"Justin Davis": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Justin Edwards": {

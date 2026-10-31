@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-30",
+ "fetched": "2026-10-31",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -82,7 +82,7 @@
     {
      "order": 5,
      "segment": "Preliminary card",
-     "weight_class": "Featherweight",
+     "weight_class": "Catchweight (148 lb)",
      "a": "Francis Marshall",
      "b": "Dakota Hope",
      "title": false,
@@ -154,7 +154,7 @@
      "segment": "Preliminary card",
      "weight_class": "Women's Strawweight",
      "a": "Talita Alencar",
-     "b": "Piera Rodriguez",
+     "b": "Piera Rodr\u00edguez",
      "title": false,
      "result": "",
      "decided": false,
@@ -166,7 +166,7 @@
     {
      "order": 11,
      "segment": "Preliminary card",
-     "weight_class": "Women's Bantamweight",
+     "weight_class": "Women's Flyweight",
      "a": "Lucia Szabov\u00e1",
      "b": "Tainara Lisboa",
      "title": false,
@@ -180,18 +180,18 @@
    ]
   },
   {
-   "name": "UFC Fight Night 293",
+   "name": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "venue": "Meta Apex",
    "location": "Las Vegas, Nevada, U.S.",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_293",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
    "bouts": [
     {
      "order": 0,
      "segment": "Fight card",
-     "weight_class": "Women's Strawweight",
-     "a": "Tatiana Suarez",
-     "b": "Virna Jandiroba",
+     "weight_class": "Heavyweight",
+     "a": "Waldo Cortes-Acosta",
+     "b": "Johnny Walker",
      "title": false,
      "result": "",
      "decided": false,
@@ -202,6 +202,20 @@
     },
     {
      "order": 1,
+     "segment": "Fight card",
+     "weight_class": "Women's Strawweight",
+     "a": "Tatiana Suarez",
+     "b": "Virna Jandiroba",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
      "segment": "Fight card",
      "weight_class": "Bantamweight",
      "a": "Davey Grant",
@@ -215,7 +229,7 @@
      "main_event": false
     },
     {
-     "order": 2,
+     "order": 3,
      "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Ko Seok-hyeon",
@@ -229,7 +243,7 @@
      "main_event": false
     },
     {
-     "order": 3,
+     "order": 4,
      "segment": "Fight card",
      "weight_class": "Light Heavyweight",
      "a": "Billy Elekana",
@@ -243,7 +257,7 @@
      "main_event": false
     },
     {
-     "order": 4,
+     "order": 5,
      "segment": "Fight card",
      "weight_class": "Middleweight",
      "a": "Mantas Kondratavi\u010dius",
@@ -257,7 +271,21 @@
      "main_event": false
     },
     {
-     "order": 5,
+     "order": 6,
+     "segment": "Preliminary card",
+     "weight_class": "Heavyweight",
+     "a": "Gabriel Loren\u00e7o",
+     "b": "Thomas Petersen",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 7,
      "segment": "Preliminary card",
      "weight_class": "Women's Flyweight",
      "a": "Karine Silva",
@@ -271,7 +299,7 @@
      "main_event": false
     },
     {
-     "order": 6,
+     "order": 8,
      "segment": "Preliminary card",
      "weight_class": "Flyweight",
      "a": "Mitch Raposo",
@@ -285,7 +313,7 @@
      "main_event": false
     },
     {
-     "order": 7,
+     "order": 9,
      "segment": "Preliminary card",
      "weight_class": "Featherweight",
      "a": "Jos\u00e9 Mauro Delano",
@@ -299,7 +327,7 @@
      "main_event": false
     },
     {
-     "order": 8,
+     "order": 10,
      "segment": "Preliminary card",
      "weight_class": "Featherweight",
      "a": "Keiichiro Nakamura",
@@ -313,7 +341,7 @@
      "main_event": false
     },
     {
-     "order": 9,
+     "order": 11,
      "segment": "Preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Priscila Cachoeira",
@@ -327,7 +355,7 @@
      "main_event": false
     },
     {
-     "order": 10,
+     "order": 12,
      "segment": "Preliminary card",
      "weight_class": "Welterweight",
      "a": "Jonny Parsons",
@@ -341,40 +369,7 @@
      "main_event": false
     },
     {
-     "order": 11,
-     "segment": "Announced",
-     "weight_class": "Heavyweight",
-     "a": "Waldo Cortes-Acosta",
-     "b": "Johnny Walker",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Announced",
-     "weight_class": "Welterweight",
-     "a": "Gabriel Bonfim",
-     "b": "TBA",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
      "order": 13,
-     "segment": "Announced",
-     "weight_class": "Heavyweight",
-     "a": "Gabriel Loren\u00e7o",
-     "b": "Thomas Petersen",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 14,
      "segment": "Announced",
      "weight_class": "Featherweight",
      "a": "Austin Bashi",

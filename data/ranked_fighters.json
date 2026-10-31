@@ -1311,6 +1311,13 @@
   {
    "system": "meta",
    "division": "Women's Strawweight",
+   "rank": "10",
+   "name": "Piera Rodríguez",
+   "wiki": "https://en.wikipedia.org/wiki/Piera_Rodríguez"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
    "rank": "11",
    "name": "Yan Xiaonan",
    "wiki": "https://en.wikipedia.org/wiki/Yan_Xiaonan"
@@ -2513,6 +2520,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-10-30",
+ "fetched": "2026-10-31",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }
