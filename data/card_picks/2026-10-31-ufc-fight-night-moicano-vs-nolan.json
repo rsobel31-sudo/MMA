@@ -81,7 +81,25 @@
      ]
     }
    },
-   "market_p_a": 0.5188
+   "market_p_a": 0.5188,
+   "result": {
+    "winner": "Tom Nolan",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Randy Brown vs Jacobe Smith",
@@ -143,7 +161,25 @@
      ]
     }
    },
-   "market_p_a": 0.2861
+   "market_p_a": 0.2861,
+   "result": {
+    "winner": "Jacobe Smith",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Ode' Osbourne vs Cody Durden",
@@ -205,7 +241,25 @@
      ]
     }
    },
-   "market_p_a": 0.4854
+   "market_p_a": 0.4854,
+   "result": {
+    "winner": "Cody Durden",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Yana Santos vs Luana Santos",
@@ -267,7 +321,25 @@
      ]
     }
    },
-   "market_p_a": 0.295
+   "market_p_a": 0.295,
+   "result": {
+    "winner": "Luana Santos",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Jean-Paul Lebosnoyani vs Farman Hasanov",
@@ -329,7 +401,25 @@
      ]
     }
    },
-   "market_p_a": 0.72
+   "market_p_a": 0.72,
+   "result": {
+    "winner": "Jean-Paul Lebosnoyani",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Francis Marshall vs Dakota Hope",
@@ -391,7 +481,25 @@
      ]
     }
    },
-   "market_p_a": 0.6701
+   "market_p_a": 0.6701,
+   "result": {
+    "winner": "Dakota Hope",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Rodrigo Sezinando vs Theodor Berggren",
@@ -453,7 +561,25 @@
      ]
     }
    },
-   "market_p_a": 0.6106
+   "market_p_a": 0.6106,
+   "result": {
+    "winner": "Rodrigo Sezinando",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Julian Erosa vs Lee Jeong-yeong",
@@ -515,7 +641,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Julian Erosa",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Zachary Reese vs Mickey Gall",
@@ -577,7 +721,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Zachary Reese",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Nick Klein vs Joseph Kropschot",
@@ -639,7 +801,25 @@
      ]
     }
    },
-   "market_p_a": 0.2659
+   "market_p_a": 0.2659,
+   "result": {
+    "winner": "Joseph Kropschot",
+    "side": "b",
+    "method": "SUB",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Talita Alencar vs Piera Rodriguez",
@@ -701,7 +881,25 @@
      ]
     }
    },
-   "market_p_a": 0.2861
+   "market_p_a": 0.2861,
+   "result": {
+    "winner": "Piera Rodriguez",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Lucia Szabová vs Tainara Lisboa",
@@ -763,8 +961,27 @@
      ]
     }
    },
-   "market_p_a": 0.8317
+   "market_p_a": 0.8317,
+   "result": {
+    "winner": "Lucia Szabová",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   }
  ],
- "graded": false
+ "graded": true,
+ "graded_at": "2026-11-01T17:01:29+00:00"
 }

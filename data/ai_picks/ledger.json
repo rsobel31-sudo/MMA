@@ -527,7 +527,15 @@
        "selection": "Jean Paul Lebosnoyani by decision",
        "odds": 320,
        "p": 0.2696,
-       "p_fanduel": 0.2087
+       "p_fanduel": 0.2087,
+       "close_odds": 320,
+       "grade": "lost",
+       "result": {
+        "winner": "b",
+        "method": "KO/TKO",
+        "round": 3,
+        "seconds": 131
+       }
       }
      ],
      "odds": 320,
@@ -537,9 +545,10 @@
      "p": 0.2696,
      "ev": 0.1323,
      "reasoning": "Lebosnoyani by decision at +320 (24% implied, 27% ours). The market makes him a 76% favourite but prices a decision at only 21%, i.e. it expects him to finish about three of every four wins. Both of his UFC wins went the full 15 minutes, and Hasanov has never been stopped: a chain wrestler who kept shooting while tired and took Eric Nolan the distance. If Lebosnoyani wins, the scorecards are the likeliest way.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-28T17:18:24+00:00"
+     "status": "lost",
+     "profit": -1.0,
+     "placed_at": "2026-10-28T17:18:24+00:00",
+     "clv": 0.0
     },
     {
      "id": "5-2",
@@ -556,7 +565,15 @@
        "selection": "Joseph Kropschot by KO/TKO",
        "odds": 360,
        "p": 0.2789,
-       "p_fanduel": 0.1884
+       "p_fanduel": 0.1884,
+       "close_odds": 330,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "SUB",
+        "round": 2,
+        "seconds": 85
+       }
       }
      ],
      "odds": 360,
@@ -566,14 +583,15 @@
      "p": 0.2789,
      "ev": 0.2829,
      "reasoning": "Kropschot by KO/TKO at +360 (22% implied, 28% ours). Klein was stopped by strikes in round two of both his UFC fights, each time after spending himself in a big first round, and Kropschot survives early danger and finishes in R1-R2. The market prices Kropschot's wins as mostly submissions from his record, but Klein's own losses say a fading Klein gets stopped by strikes.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-10-30T16:54:47+00:00"
+     "status": "lost",
+     "profit": -1.25,
+     "placed_at": "2026-10-30T16:54:47+00:00",
+     "clv": 0.0698
     }
    ],
    "staked": 2.25,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-11-01T17:01:03+00:00",
    "placements": [
     {
      "placed_at": "2026-10-28T17:18:24+00:00",
@@ -601,7 +619,12 @@
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-vegas-123-4427"
    ],
-   "sheet_fetched_at": "2026-10-30T16:54:33+00:00"
+   "sheet_fetched_at": "2026-10-30T16:54:33+00:00",
+   "bankroll_after": 85.21,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }

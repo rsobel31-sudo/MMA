@@ -1,0 +1,94 @@
+{
+ "event": "UFC Fight Night: Moicano vs. Nolan",
+ "date": "2026-10-31",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Cody Durden vs Ode Osbourne": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Dakota Hope vs Francis Marshall": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Farman Hasanov vs Jean Paul Lebosnoyani": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 131,
+   "round_agreed": true
+  },
+  "Jacobe Smith vs Randy Brown": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Jeongyeong Lee vs Julian Erosa": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 91,
+   "round_agreed": true
+  },
+  "Joseph Kropschot vs Nick Klein": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 2,
+   "seconds": 85,
+   "round_agreed": true
+  },
+  "Luana Santos vs Yana Santos": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Lucia Szabova vs Tainara Lisboa": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 200,
+   "round_agreed": true
+  },
+  "Mickey Gall vs Zach Reese": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Piera Rodriguez vs Talita Alencar": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Renato Moicano vs Tom Nolan": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 88,
+   "round_agreed": true
+  },
+  "Rodrigo Sezinando vs Theodor Berggren": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 300,
+   "round_agreed": true
+  }
+ }
+}

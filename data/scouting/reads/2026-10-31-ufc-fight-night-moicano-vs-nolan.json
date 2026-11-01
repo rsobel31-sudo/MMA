@@ -134,7 +134,15 @@
      "method": null,
      "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.05,
+   "winner": "Tom Nolan",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 88
+   }
   },
   {
    "a": "Jacobe Smith",
@@ -245,7 +253,15 @@
      "method": null,
      "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Jacobe Smith",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Cody Durden",
@@ -322,7 +338,15 @@
      "method": null,
      "url": "https://www.pickswise.com/ufc/news/ufc-fight-night-292-best-bets-renato-moicano-vs-tom-nolan/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Cody Durden",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Luana Santos",
@@ -398,7 +422,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/yana-santos-vs-luana-santos-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Luana Santos",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Farman Hasanov",
@@ -467,7 +499,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/jean-paul-lebosnoyani-vs-farman-hasanov-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.3,
+   "winner": "Jean Paul Lebosnoyani",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 131
+   }
   },
   {
    "a": "Dakota Hope",
@@ -530,7 +570,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/francis-marshall-vs-dakota-hope-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.15,
+   "winner": "Dakota Hope",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Rodrigo Sezinando",
@@ -592,7 +640,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/rodrigo-sezinando-vs-theodor-berggren-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Rodrigo Sezinando",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 300
+   }
   },
   {
    "a": "Julian Erosa",
@@ -668,7 +724,15 @@
      "method": "SUB",
      "url": "https://vsin.com/mma/ufc-vegas-123-moicano-vs-nolan-odds-picks-predictions-and-best-bets/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.1,
+   "winner": "Julian Erosa",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 91
+   }
   },
   {
    "a": "Zachary Reese",
@@ -751,7 +815,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/zach-reese-vs-mickey-gall-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Zachary Reese",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Joseph Kropschot",
@@ -819,7 +891,15 @@
      "method": null,
      "url": "https://dknetwork.draftkings.com/2026/10/30/picks-best-bets-for-ufc-fight-night-moicano-vs-nolan/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Joseph Kropschot",
+   "result": {
+    "method": "SUB",
+    "round": 2,
+    "seconds": 85
+   }
   },
   {
    "a": "Piera Rodriguez",
@@ -880,7 +960,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/talita-alencar-vs-piera-rodriguez-pick-10-31-2026-predictions-ufc-vegas-123-odds.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Piera Rodriguez",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Lucia Szabova",
@@ -948,7 +1036,15 @@
      "method": null,
      "url": "https://www.sportsline.com/insiders/ufc-fight-night-odds-picks-seasoned-mma-analyst-reveals-selections-for-moicano-vs-nolan-and-other-matchups-on-oct-31/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Lucia Szabova",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 200
+   }
   }
  ]
 }
