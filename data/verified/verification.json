@@ -1,13 +1,13 @@
 {
  "results": {
-  "no second source": 851,
+  "no second source": 849,
   "method": 21,
-  "agree": 10554,
+  "agree": 10556,
   "round": 12,
   "winner": 3
  },
  "stats": {
-  "official only": 9421,
+  "official only": 9423,
   "verified": 1130,
   "disputed": 36
  },
@@ -883,6 +883,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Paulo da Silva",
+   "sherdog": "1984-10-11",
+   "ufcstats": "2002-07-03",
+   "fightmatrix": null
+  },
+  {
    "name": "Ethyn Ewing",
    "sherdog": "1998-02-16",
    "ufcstats": "1996-02-19",
@@ -908,23 +914,23 @@
   }
  ],
  "dob": {
-  "agree": 2425,
-  "differ, unresolved (Sherdog kept)": 102,
+  "agree": 2429,
+  "differ, unresolved (Sherdog kept)": 103,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2437,
-  "differ": 180
+  "agree": 2441,
+  "differ": 181
  },
  "reach": {
-  "no second source": 1723,
+  "no second source": 1726,
   "agree": 705,
   "differ": 68
  },
  "odds": {
   "odds bouts": 16771,
-  "matched": 13309,
-  "unmatched": 2082,
+  "matched": 13313,
+  "unmatched": 2078,
   "bad lines": 0,
   "pages disagree": 5,
   "both pages": 9008,

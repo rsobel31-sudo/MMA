@@ -5695,6 +5695,8 @@
 "stats_official": "1"
 },
 "Emrah Sonmez": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -11599,6 +11601,7 @@
 },
 "Luis Pajuelo": {
 "reach": "UFCStats + StatsFight agree",
+"stats_official": "1",
 "stats_verified": "1"
 },
 "Luis Pena": {
@@ -14663,6 +14666,12 @@
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "13"
 },
+"Paulo da Silva": {
+"dob": "disputed: Sherdog 1984-10-11, UFCStats 2002-07-03",
+"height": "disputed: Sherdog 175 cm, UFCStats 170 cm",
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Pawan Maan Singh": {
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
@@ -15243,6 +15252,12 @@
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "6"
 },
+"Rashid Vagabov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (160 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Raul Castillo": {
 "stats_official": "2"
 },
@@ -15675,6 +15690,12 @@
 "Robbie Peralta": {
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "8"
+},
+"Robbie Ring": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (173 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Robelis Despaigne": {
 "dob": "Sherdog + Fight Matrix agree (UFCStats differs)",
@@ -16825,6 +16846,8 @@
 "stats_official": "11"
 },
 "Shamil Gamzatov": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "2"
 },

@@ -2,7 +2,1246 @@
  "id": "2026-10-31-ufc-fight-night-292-moicano-vs-nolan",
  "event": "UFC Fight Night 292 - Moicano vs. Nolan",
  "date": "2026-10-31",
- "stories": {},
+ "stories": {
+  "tom-nolan-renato-carneiro": {
+   "summary": "Moicano took Nolan down inside the first two minutes, took his back with a body triangle and rode him for the rest of round 1, hunting the choke. In round 2 he did it again after Nolan stung him with a head kick, until Miragliotta stood them up from back control, a reset the commentary team, the outlets and other fighters called wrong. Back on the feet Nolan dropped him with a knee and battered him to the horn; in round 3 he hurt him again with knees and punches, reversed Moicano's takedown and finished him with punches and elbows at 1:28.",
+   "turning_point": "Round 2: Miragliotta's stand-up out of Moicano's back control, followed at once by Nolan's knee that dropped him.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Moicano",
+       "10-9 Moicano",
+       "10-9 Moicano"
+      ],
+      [
+       2,
+       "10-9 Nolan",
+       "10-9 Nolan",
+       "10-9 Nolan"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/tom-nolan-stuns-renato-moicano-with-third-round-tko/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Moicano takes the back once the pace drops and finishes it: submission, R2",
+     "tag": "back_take",
+     "favoured": "Renato Carneiro",
+     "verdict": "mixed",
+     "note": "He took the back with a body triangle in rounds 1 and 2, as expected, but never came close to the finish, and lost the position to the referee's stand-up."
+    },
+    {
+     "by": "read",
+     "claim": "Moicano's back takes in scrambles",
+     "tag": "back_take",
+     "favoured": "Renato Carneiro",
+     "verdict": "held",
+     "note": "Took the back straight off each of his first two takedowns and held it for long stretches of both rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Nolan untested past R3",
+     "tag": "five_rounds",
+     "favoured": "Renato Carneiro",
+     "verdict": "untested",
+     "note": "Over early in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Nolan's size and clinch (against)",
+     "tag": "clinch",
+     "favoured": "Tom Nolan",
+     "verdict": "held",
+     "note": "His knees dropped Moicano in round 2 and hurt him again in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Age 37 (against)",
+     "tag": "age",
+     "favoured": "Tom Nolan",
+     "verdict": "held",
+     "note": "Moicano broke once he was hurt and was finished early in round 3, though the turn came straight after the reset."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Nolan",
+     "tag": "wear_and_tear",
+     "favoured": "Tom Nolan",
+     "verdict": "held",
+     "note": "Nolan was the stronger man from late in round 2; Moicano had nothing left to stop the round-3 reversal."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Moicano",
+     "tag": "overall",
+     "favoured": "Renato Carneiro",
+     "verdict": "failed",
+     "note": "Stopped in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Nolan",
+     "tag": "submission_threat",
+     "favoured": "Tom Nolan",
+     "verdict": "failed",
+     "note": "Moicano was the one hunting chokes; Nolan never attempted one."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Nolan",
+     "tag": "age_curve",
+     "favoured": "Tom Nolan",
+     "verdict": "held",
+     "note": "As the read: the older man faded and was finished."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Moicano",
+     "tag": "outside_rating",
+     "favoured": "Renato Carneiro",
+     "verdict": "failed",
+     "note": "Lost by stoppage."
+    }
+   ]
+  },
+  "jacobe-smith-randy-brown": {
+   "summary": "Brown kept Smith at the end of his jab for most of round 1 until Smith blasted through for a takedown late in the round. Smith took him down again in rounds 2 and 3, got through Brown's armbar attempts and opened a deep cut with elbows in round 2; Brown spent round 3 surviving on his back. Smith won 30-26 on all three cards, the first decision of his unbeaten career.",
+   "turning_point": "Smith's elbows in round 2, which opened Brown up and took the fight out of him.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Smith",
+       "10-9 Smith",
+       "10-9 Smith"
+      ],
+      [
+       2,
+       "10-9 Smith",
+       "10-9 Smith",
+       "10-9 Smith"
+      ],
+      [
+       3,
+       "10-9 Smith",
+       "10-9 Smith",
+       "10-9 Smith"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "url": "https://www.lowkickmma.com/jacobe-smith-remains-undefeated-after-one-sided-win-over-randy-brown-at-ufc-vegas-123/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/jacobe-smith/ufc-vegas-123-results-jacobe-smith-defeats-randy-brown-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-123-results-jacobe-smith-defeats-randy-brown-highlights"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/jacobe-smith-wins-lopsided-ufc-vegas-123-co-main-bests-randy-brown/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Smith's wrestling and ground strikes are what beat Brown: KO/TKO, R2",
+     "tag": "wrestling",
+     "favoured": "Jacobe Smith",
+     "verdict": "mixed",
+     "note": "Takedowns in every round and the cut came in round 2, as picked, but Brown's guard saw him to the final bell."
+    },
+    {
+     "by": "read",
+     "claim": "Smith's wrestling vs Brown's takedown defence",
+     "tag": "wrestling",
+     "favoured": "Jacobe Smith",
+     "verdict": "held",
+     "note": "A takedown in each round; Brown never kept him off."
+    },
+    {
+     "by": "read",
+     "claim": "Brown's guard and range (against)",
+     "tag": "guard",
+     "favoured": "Randy Brown",
+     "verdict": "mixed",
+     "note": "The jab won him the first three minutes and his guard stopped a finish, but neither won a round."
+    },
+    {
+     "by": "read",
+     "claim": "Short notice for Smith",
+     "tag": "short_notice",
+     "favoured": "Randy Brown",
+     "verdict": "failed",
+     "note": "Strong for all 15 minutes."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Smith",
+     "tag": "wear_and_tear",
+     "favoured": "Jacobe Smith",
+     "verdict": "held",
+     "note": "Brown was gun-shy and surviving by round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Smith",
+     "tag": "wrestling_edge",
+     "favoured": "Jacobe Smith",
+     "verdict": "held",
+     "note": "Won the fight with it."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Brown",
+     "tag": "reach",
+     "favoured": "Randy Brown",
+     "verdict": "failed",
+     "note": "Kept Smith out for a round at most."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Brown",
+     "tag": "height",
+     "favoured": "Randy Brown",
+     "verdict": "failed",
+     "note": "As with the reach."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Smith",
+     "tag": "age_curve",
+     "favoured": "Jacobe Smith",
+     "verdict": "held",
+     "note": "The 36-year-old faded; the younger man did not."
+    }
+   ]
+  },
+  "cody-durden-ode-osbourne": {
+   "summary": "Durden ate an early shot, took Osbourne down, escaped a guillotine and spent round 1 on his back with a body triangle, then in mount with heavy punches. He took him down three more times in round 2. A tired Durden lost round 3 when Osbourne reversed him and rode his back without threatening: 29-28 on all three cards and on all three of Sherdog's.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Durden",
+       "10-9 Durden",
+       "10-9 Durden"
+      ],
+      [
+       2,
+       "10-9 Durden",
+       "10-9 Durden",
+       "10-9 Durden"
+      ],
+      [
+       3,
+       "10-9 Osbourne",
+       "10-9 Osbourne",
+       "10-9 Osbourne"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/cody-durden-wrestles-past-ode-osbourne-for-unanimous-decision-win/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Durden's takedowns and control against a fighter who loses when held down: decision",
+     "tag": "wrestling",
+     "favoured": "Cody Durden",
+     "verdict": "held",
+     "note": "Took the first two rounds on takedowns and control and won 29-28, as picked."
+    },
+    {
+     "by": "read",
+     "claim": "Osbourne's takedown defence",
+     "tag": "td_def",
+     "favoured": "Cody Durden",
+     "verdict": "held",
+     "note": "Taken down five times."
+    },
+    {
+     "by": "read",
+     "claim": "Durden's control",
+     "tag": "control",
+     "favoured": "Cody Durden",
+     "verdict": "held",
+     "note": "Rounds 1 and 2 almost all on top or on the back; lost position only in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Osbourne's counter power (against)",
+     "tag": "power",
+     "favoured": "Ode Osbourne",
+     "verdict": "failed",
+     "note": "Landed one clean shot early and nothing that hurt Durden."
+    },
+    {
+     "by": "read",
+     "claim": "Durden's submission defence (against)",
+     "tag": "sub_def",
+     "favoured": "Ode Osbourne",
+     "verdict": "failed",
+     "note": "Got out of Osbourne's tight round-1 guillotine calmly."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Durden",
+     "tag": "wrestling_edge",
+     "favoured": "Cody Durden",
+     "verdict": "held",
+     "note": "Five takedowns."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Osbourne",
+     "tag": "wear_and_tear",
+     "favoured": "Ode Osbourne",
+     "verdict": "mixed",
+     "note": "Durden tired visibly and lost round 3, but by then the fight was his."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Osbourne",
+     "tag": "reach",
+     "favoured": "Ode Osbourne",
+     "verdict": "untested",
+     "note": "Most of the fight was on the mat."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Durden",
+     "tag": "wrestling_rating",
+     "favoured": "Cody Durden",
+     "verdict": "held",
+     "note": "As the wrestling edge."
+    }
+   ]
+  },
+  "luana-santos-yana-santos": {
+   "summary": "Yana stuffed Luana's trips and throws and held her on the fence for most of round 1, adding knees and a right hand, and won it on every Sherdog card. From round 2 Luana got her takedowns: a double leg, the back, mount, and in round 3 a takedown straight to the back with both hooks, riding out most of the round. Luana won 29-28 on all three cards, a fight the outlets agreed was more control than damage.",
+   "turning_point": "Round 2: Luana's first clean takedown and back take; Yana could not keep her off after that.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Yana",
+       "10-9 Yana",
+       "10-9 Yana"
+      ],
+      [
+       2,
+       "10-9 Luana",
+       "10-9 Luana",
+       "10-9 Luana"
+      ],
+      [
+       3,
+       "10-9 Luana",
+       "10-9 Luana",
+       "10-9 Luana"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/luana-santos-outgrapples-yana-santos-for-fourth-straight-win/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Luana's takedowns and top control over 15 minutes against a striker taken down late: decision",
+     "tag": "wrestling",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "Lost round 1, then won rounds 2 and 3 on takedowns and back control: 29-28."
+    },
+    {
+     "by": "read",
+     "claim": "Luana's top control",
+     "tag": "control",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "Rounds 2 and 3 were mostly on Yana's back."
+    },
+    {
+     "by": "read",
+     "claim": "Yana's late takedown defence",
+     "tag": "td_def",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "Stopped the trips in round 1, gave up takedowns in rounds 2 and 3."
+    },
+    {
+     "by": "read",
+     "claim": "Yana's layoff",
+     "tag": "inactivity",
+     "favoured": "Luana Santos",
+     "verdict": "mixed",
+     "note": "Sharp enough to win round 1; no sign of it after."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Luana",
+     "tag": "wear_and_tear",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "The stronger fighter late."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Luana",
+     "tag": "wrestling_edge",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "Took rounds 2 and 3 with it."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Luana",
+     "tag": "age_curve",
+     "favoured": "Luana Santos",
+     "verdict": "held",
+     "note": "The 37-year-old faded after round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Yana",
+     "tag": "striking_rating",
+     "favoured": "Yana Santos",
+     "verdict": "mixed",
+     "note": "Yana did the better work standing and in the clinch, but there was little of it."
+    },
+    {
+     "by": "model",
+     "claim": "Striking defence favours Luana",
+     "tag": "striking_defense",
+     "favoured": "Luana Santos",
+     "verdict": "untested",
+     "note": "Neither did much damage."
+    }
+   ]
+  },
+  "jean-paul-lebosnoyani-farman-hasanov": {
+   "summary": "Hasanov took Lebosnoyani down early in each of the first two rounds, but he stood up at once every time and out-landed him at range with low kicks, body kicks and the jab. Hasanov was wilting by the end of round 2, badly hurt and opened up over the left eye (one Sherdog scorer had it 10-8); early in round 3 the cut ran the length of his eyebrow and the doctor stopped it at 2:11.",
+   "turning_point": "The body kick midway through round 2 that doubled Hasanov over; from then he was backing up.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Lebosnoyani",
+       "10-9 Lebosnoyani",
+       "10-9 Lebosnoyani"
+      ],
+      [
+       2,
+       "10-9 Lebosnoyani",
+       "10-9 Lebosnoyani",
+       "10-8 Lebosnoyani"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "url": "https://www.lowkickmma.com/jean-paul-lebosnoyani-scores-first-ufc-finish-as-doctors-stop-farman-hasanov-at-ufc-vegas-123-after-brutal-slugfest/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/jean-paul-lebosnoyani/ufc-vegas-123-results-jean-paul-lebosnoyani-tkos-farman-hasanov-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-123-results-jean-paul-lebosnoyani-tkos-farman-hasanov-video"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Override: Hasanov fades from R2 and does little damage; Lebosnoyani wins the late rounds: decision",
+     "tag": "cardio",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "held",
+     "note": "Hasanov was spent from midway through round 2; the stoppage came on a cut, not on the cards."
+    },
+    {
+     "by": "read",
+     "claim": "Hasanov's cardio after R1",
+     "tag": "cardio",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "held",
+     "note": "Wilting late in round 2, backing up in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Lebosnoyani's guillotine in scrambles",
+     "tag": "guillotine",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "mixed",
+     "note": "Jumped one off Hasanov's first takedown; it was defended."
+    },
+    {
+     "by": "read",
+     "claim": "Hasanov's chain wrestling (against)",
+     "tag": "wrestling",
+     "favoured": "Farman Hasanov",
+     "verdict": "failed",
+     "note": "Completed takedowns but Lebosnoyani was up within seconds each time."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Hasanov",
+     "tag": "wrestling_edge",
+     "favoured": "Farman Hasanov",
+     "verdict": "failed",
+     "note": "His takedowns got him nothing."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Lebosnoyani",
+     "tag": "overall",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "held",
+     "note": "Won every round."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Lebosnoyani",
+     "tag": "wrestling_rating",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "held",
+     "note": "Stood from every takedown."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Lebosnoyani",
+     "tag": "experience",
+     "favoured": "Jean-Paul Lebosnoyani",
+     "verdict": "held",
+     "note": "Paced it and broke the unbeaten man late."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Hasanov",
+     "tag": "wear_and_tear",
+     "favoured": "Farman Hasanov",
+     "verdict": "failed",
+     "note": "Hasanov was the one who tired."
+    }
+   ]
+  },
+  "dakota-hope-francis-marshall": {
+   "summary": "Marshall, two pounds over the featherweight limit, chopped Hope's lead leg with calf kicks in round 1, swept him once and added a takedown. Hope came back in round 2 behind pressure, and in round 3 he staggered Marshall with an overhand right, sprawled on his desperation shot, took the back and kept hitting him to the bell. Hope won a split decision (29-28, 28-29, 29-28), as Sherdog's three scorers had it; MMA Junkie had Marshall.",
+   "turning_point": "Round 3: Hope's overhand right, and his sprawl and back take on Marshall's takedown attempt.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Marshall",
+       "10-9 Marshall",
+       "10-9 Marshall"
+      ],
+      [
+       2,
+       "10-9 Hope",
+       "10-9 Hope",
+       "10-9 Hope"
+      ],
+      [
+       3,
+       "10-9 Hope",
+       "10-9 Hope",
+       "10-9 Hope"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/ufc-vegas-123-dakota-hope-survives-nasty-leg-kicks-wins-split-decision-over-francis-marshall/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Hope is a front-loaded striker who faded in his debut; Marshall's top control grows as he tires: decision",
+     "tag": "cardio",
+     "favoured": "Francis Marshall",
+     "verdict": "failed",
+     "note": "Hope was the stronger man in rounds 2 and 3 and won the last one clearly."
+    },
+    {
+     "by": "read",
+     "claim": "Hope's R2-R3 cardio",
+     "tag": "cardio",
+     "favoured": "Francis Marshall",
+     "verdict": "failed",
+     "note": "His best round was the third."
+    },
+    {
+     "by": "read",
+     "claim": "Marshall's top control",
+     "tag": "control",
+     "favoured": "Francis Marshall",
+     "verdict": "mixed",
+     "note": "One takedown off a caught kick in round 1, then nothing; Hope took his back in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Hope's short notice and weight cut",
+     "tag": "short_notice",
+     "favoured": "Francis Marshall",
+     "verdict": "failed",
+     "note": "No sign of it; Marshall was the one who missed weight."
+    },
+    {
+     "by": "read",
+     "claim": "Hope's early power (against)",
+     "tag": "power",
+     "favoured": "Dakota Hope",
+     "verdict": "mixed",
+     "note": "Stung Marshall late in round 1, but the power that decided it came in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Hope",
+     "tag": "striking_rating",
+     "favoured": "Dakota Hope",
+     "verdict": "held",
+     "note": "Won rounds 2 and 3 standing."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Marshall",
+     "tag": "wrestling_edge",
+     "favoured": "Francis Marshall",
+     "verdict": "failed",
+     "note": "Hope stopped his shots in rounds 2-3 and took his back off one."
+    }
+   ]
+  },
+  "rodrigo-sezinando-theodor-berggren": {
+   "summary": "A grappling-heavy first round was close until Sezinando, whose takedowns kept being reversed or stuffed, dropped Berggren at the horn with a spinning backfist and a left hook. In round 2 he got his takedowns, took the back, then mount, and landed punches and elbows to the bell; the cageside doctor stopped it before round 3 because of a severe cut on Berggren's lip (TKO, 5:00 of round 2).",
+   "turning_point": "The spinning backfist at the end of round 1.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Sezinando",
+       "10-9 Sezinando",
+       "10-9 Sezinando"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/rodrigo-sezinando-slices-open-theodor-berggren-in-first-ufc-win/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Sezinando's clinch and takedowns; Berggren is stopped later in fights: KO/TKO, R2",
+     "tag": "wrestling",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "held",
+     "note": "Takedowns and ground strikes in round 2, stopped at the end of it: method and round right."
+    },
+    {
+     "by": "read",
+     "claim": "Sezinando's clinch and takedowns",
+     "tag": "wrestling",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "held",
+     "note": "Took round 2 entirely on them."
+    },
+    {
+     "by": "read",
+     "claim": "Berggren's defence vs kicks and body work",
+     "tag": "strike_def",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "mixed",
+     "note": "Hurt by a spinning backfist and ground strikes, not by body work."
+    },
+    {
+     "by": "read",
+     "claim": "Sezinando's layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Theodor Berggren",
+     "verdict": "failed",
+     "note": "No rust after 13 months."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Sezinando",
+     "tag": "wrestling_rating",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "mixed",
+     "note": "Berggren reversed or stuffed him in round 1; Sezinando dominated round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Sezinando",
+     "tag": "overall",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "held",
+     "note": "Won both rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Sezinando",
+     "tag": "outside_rating",
+     "favoured": "Rodrigo Sezinando",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "julian-erosa-jeong-yeong-lee": {
+   "summary": "Lee hit Erosa straight off the glove touch and floored him with a left hook, then jumped on a guillotine that nearly ended it in the opening seconds. Erosa got free, clinched, and as Lee kept swinging wildly, dropped him with an overhand right and finished him with punches at 1:31 of round 1, in what he had said would be his last fight. It earned him a $100,000 bonus.",
+   "turning_point": "Erosa's overhand right in the middle of a wild exchange, a minute after he had been dropped.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/518794/video-julian-erosa-gets-first-round-knockout-win-in-retirement-fight-at-ufc-vegas-123"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/10/31/julian-erosa-knocks-out-jeongyeong-lee-in-wild-retirement-fight/"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Override: Erosa has five R1 knockout losses to fast punchers; Lee lands the right hand early: KO/TKO, R1",
+     "tag": "durability",
+     "favoured": "Jeong Yeong Lee",
+     "verdict": "mixed",
+     "note": "Lee did drop Erosa in the opening seconds, as the pick said; Erosa survived and knocked Lee out instead."
+    },
+    {
+     "by": "read",
+     "claim": "Erosa's chin against early power",
+     "tag": "durability",
+     "favoured": "Jeong Yeong Lee",
+     "verdict": "mixed",
+     "note": "Dropped early, but got up and recovered."
+    },
+    {
+     "by": "read",
+     "claim": "Lee's layoff and weight cut (against)",
+     "tag": "inactivity",
+     "favoured": "Julian Erosa",
+     "verdict": "untested",
+     "note": "Lee was sharp; over in 91 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Erosa's late scrambles (against)",
+     "tag": "cardio",
+     "favoured": "Julian Erosa",
+     "verdict": "untested",
+     "note": "Over in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Lee",
+     "tag": "wear_and_tear",
+     "favoured": "Jeong Yeong Lee",
+     "verdict": "failed",
+     "note": "The worn veteran took Lee's best and won."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Erosa",
+     "tag": "overall",
+     "favoured": "Julian Erosa",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Erosa",
+     "tag": "striking_exchange",
+     "favoured": "Julian Erosa",
+     "verdict": "mixed",
+     "note": "Lost the first exchange and won the last."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Lee",
+     "tag": "age_curve",
+     "favoured": "Jeong Yeong Lee",
+     "verdict": "failed",
+     "note": "The 37-year-old won."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Erosa",
+     "tag": "experience",
+     "favoured": "Julian Erosa",
+     "verdict": "held",
+     "note": "Survived the knockdown and guillotine calmly before turning it."
+    }
+   ]
+  },
+  "zachary-reese-mickey-gall": {
+   "summary": "Reese out-struck Gall in all three rounds with body kicks, knees and combinations, but was docked a point for an eye poke in round 1, which left that round 9-9 on Sherdog's cards. Gall, back after almost two years, was more competitive than expected with overhand rights and left hooks against Reese's open chin, though the body kicks hurt him in round 3. Reese won 29-27 on all three cards.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "9-9",
+       "9-9",
+       "9-9"
+      ],
+      [
+       2,
+       "10-9 Reese",
+       "10-9 Reese",
+       "10-9 Reese"
+      ],
+      [
+       3,
+       "10-9 Reese",
+       "10-9 Reese",
+       "10-9 Reese"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Gall is rusty and was knocked out in R1 in two of his last three; Reese finishes early: KO/TKO, R1",
+     "tag": "durability",
+     "favoured": "Zachary Reese",
+     "verdict": "failed",
+     "note": "Gall lasted 15 minutes and landed his own shots; Reese won on volume."
+    },
+    {
+     "by": "read",
+     "claim": "Gall's layoff and medical flag",
+     "tag": "inactivity",
+     "favoured": "Zachary Reese",
+     "verdict": "failed",
+     "note": "Competitive for three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Reese's R1 finishing",
+     "tag": "power",
+     "favoured": "Zachary Reese",
+     "verdict": "failed",
+     "note": "Never had Gall in serious trouble early."
+    },
+    {
+     "by": "read",
+     "claim": "Reese's early defensive lapses (against)",
+     "tag": "strike_def",
+     "favoured": "Mickey Gall",
+     "verdict": "mixed",
+     "note": "His chin was there to hit and Gall landed overhands, but nothing hurt him."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Reese",
+     "tag": "striking_rating",
+     "favoured": "Zachary Reese",
+     "verdict": "held",
+     "note": "Won every round standing."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Reese",
+     "tag": "overall",
+     "favoured": "Zachary Reese",
+     "verdict": "held",
+     "note": "Clear decision despite the point deduction."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Reese",
+     "tag": "outside_rating",
+     "favoured": "Zachary Reese",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Reese",
+     "tag": "wear_and_tear",
+     "favoured": "Zachary Reese",
+     "verdict": "mixed",
+     "note": "Gall slowed under the body kicks in round 3, but was still swinging at the end."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Reese",
+     "tag": "wrestling_rating",
+     "favoured": "Zachary Reese",
+     "verdict": "untested",
+     "note": "Fought entirely standing."
+    }
+   ]
+  },
+  "joseph-kropschot-nick-klein": {
+   "summary": "Klein was the busier striker early and took Kropschot down in round 1, but Kropschot, in his UFC debut, stood, attacked a choke from the front headlock, and ended the round on Klein's back with a body triangle and a rear-naked choke attempt. Klein took him down again early in round 2 and even reached the back; Kropschot turned into him and finished with an inverted triangle and armbar at 1:25.",
+   "turning_point": "Kropschot's reversal off Klein's round-2 takedown, straight into the inverted triangle.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Kropschot",
+       "10-9 Kropschot",
+       "10-9 Kropschot"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Klein fades after his first-round burst and is stopped in R2: KO/TKO, R2",
+     "tag": "cardio",
+     "favoured": "Joseph Kropschot",
+     "verdict": "mixed",
+     "note": "Round 2 was right but it came from Kropschot's grappling off Klein's own takedown, not from a fade."
+    },
+    {
+     "by": "read",
+     "claim": "Klein's R2 fade",
+     "tag": "cardio",
+     "favoured": "Joseph Kropschot",
+     "verdict": "mixed",
+     "note": "Klein was still taking him down when he was caught."
+    },
+    {
+     "by": "read",
+     "claim": "Kropschot's debut (against)",
+     "tag": "debut",
+     "favoured": "Nick Klein",
+     "verdict": "failed",
+     "note": "Composed off his back and finished in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Kropschot",
+     "tag": "overall",
+     "favoured": "Joseph Kropschot",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Klein",
+     "tag": "wrestling_edge",
+     "favoured": "Nick Klein",
+     "verdict": "mixed",
+     "note": "Klein got both of his takedowns, and lost the position after each."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Kropschot",
+     "tag": "wrestling_rating",
+     "favoured": "Joseph Kropschot",
+     "verdict": "mixed",
+     "note": "Taken down twice, reversed twice."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Klein",
+     "tag": "outside_rating",
+     "favoured": "Nick Klein",
+     "verdict": "failed",
+     "note": "Submitted."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Kropschot",
+     "tag": "power_vs_chin",
+     "favoured": "Joseph Kropschot",
+     "verdict": "untested",
+     "note": "Swept Klein's leg with a calf kick, but no shot to the head decided anything."
+    }
+   ]
+  },
+  "piera-rodriguez-talita-alencar": {
+   "summary": "Alencar won rounds 1 and 2 on Sherdog's cards with her grappling: a trip and a long spell on Rodriguez's back in round 1 (fought through a partial power cut in the arena), and a takedown, elbows from half guard and an armbar attempt late in round 2. Rodriguez out-struck her on the feet throughout, most clearly in round 3, and all three judges gave her every round, 30-27; Sherdog's three scorers all had Alencar 29-28.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Alencar",
+       "10-9 Alencar",
+       "10-9 Alencar"
+      ],
+      [
+       2,
+       "10-9 Alencar",
+       "10-9 Alencar",
+       "10-9 Alencar"
+      ],
+      [
+       3,
+       "10-9 Rodriguez",
+       "10-9 Rodriguez",
+       "10-9 Rodriguez"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Rodriguez's pressure, body knees and late takedowns win three-round fights: decision",
+     "tag": "pressure",
+     "favoured": "Piera Rodriguez",
+     "verdict": "mixed",
+     "note": "Won the striking and the official cards, but no takedowns of her own and lost two rounds on Sherdog's."
+    },
+    {
+     "by": "read",
+     "claim": "Rodriguez's pressure and volume",
+     "tag": "pressure",
+     "favoured": "Piera Rodriguez",
+     "verdict": "held",
+     "note": "Out-landed Alencar standing in every round."
+    },
+    {
+     "by": "read",
+     "claim": "Alencar's submissions (against)",
+     "tag": "submission",
+     "favoured": "Talita Alencar",
+     "verdict": "mixed",
+     "note": "Took the back in round 1 and attacked an armbar in round 2, without a real finish threat."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Rodriguez",
+     "tag": "striking_rating",
+     "favoured": "Piera Rodriguez",
+     "verdict": "held",
+     "note": "Clearly the better striker."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Rodriguez",
+     "tag": "wrestling_edge",
+     "favoured": "Piera Rodriguez",
+     "verdict": "failed",
+     "note": "Alencar got the takedowns."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Rodriguez",
+     "tag": "striking_exchange",
+     "favoured": "Piera Rodriguez",
+     "verdict": "held",
+     "note": "As the striking rating."
+    }
+   ]
+  },
+  "lucia-szabova-tainara-lisboa": {
+   "summary": "In her UFC debut Szabova clinched, kneed the body and tripped Lisboa down repeatedly in round 1, though Lisboa twice scrambled to her back and attacked a rear-naked choke at the end of it. Szabova took round 2 from top and back with ground strikes, and in round 3 she passed to mount, took the back and punched until Tognoni stopped it at 3:20.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430",
+     "round_scores": [
+      [
+       1,
+       "10-9 Szabova",
+       "10-9 Szabova",
+       "10-9 Szabova"
+      ],
+      [
+       2,
+       "10-9 Szabova",
+       "10-9 Szabova",
+       "10-9 Szabova"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    }
+   ],
+   "written": "2026-11-01",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Szabova finishes from the clinch and mount; Lisboa breaks late: KO/TKO, R2",
+     "tag": "durability",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Broken by ground strikes as picked, a round later."
+    },
+    {
+     "by": "read",
+     "claim": "Lisboa's late durability",
+     "tag": "durability",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Stopped in round 3, as in her last two fights."
+    },
+    {
+     "by": "read",
+     "claim": "Szabova's competition level (against)",
+     "tag": "competition",
+     "favoured": "Tainara Lisboa",
+     "verdict": "failed",
+     "note": "Lisboa's back takes in round 1 were the only trouble she had."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Szabova",
+     "tag": "overall",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Won every round and stopped her."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Szabova",
+     "tag": "wrestling_rating",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Took her down at will."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Szabova",
+     "tag": "outside_rating",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Szabova",
+     "tag": "wear_and_tear",
+     "favoured": "Lucia Szabova",
+     "verdict": "held",
+     "note": "Lisboa had nothing left by round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Szabova",
+     "tag": "striking_rating",
+     "favoured": "Lucia Szabova",
+     "verdict": "mixed",
+     "note": "Won with ground strikes; little was decided standing."
+    }
+   ]
+  }
+ },
  "coverage": {
   "tom-nolan-renato-carneiro": {
    "a": "Tom Nolan",
@@ -10,8 +1249,42 @@
    "winner": "Tom Nolan",
    "method": "KO/TKO",
    "round": 3,
-   "outlets": [],
-   "round_scores": null,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/tom-nolan-stuns-renato-moicano-with-third-round-tko/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Moicano",
+     "10-9 Moicano",
+     "10-9 Moicano"
+    ],
+    [
+     2,
+     "10-9 Nolan",
+     "10-9 Nolan",
+     "10-9 Nolan"
+    ]
+   ],
    "closeness": null
   },
   "jacobe-smith-randy-brown": {
@@ -35,6 +1308,21 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/jacobe-smith-remains-undefeated-after-one-sided-win-over-randy-brown-at-ufc-vegas-123/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/jacobe-smith/ufc-vegas-123-results-jacobe-smith-defeats-randy-brown-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-123-results-jacobe-smith-defeats-randy-brown-highlights"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/jacobe-smith-wins-lopsided-ufc-vegas-123-co-main-bests-randy-brown/"
     }
    ],
    "round_scores": [
@@ -80,6 +1368,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/cody-durden-wrestles-past-ode-osbourne-for-unanimous-decision-win/"
     }
    ],
    "round_scores": [
@@ -127,9 +1420,9 @@
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "Cageside Press",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/518290/luana-santos-ufc-title-shot-definitely-possible-with-win-over-yana-santos"
+     "url": "https://cagesidepress.com/2026/10/31/luana-santos-outgrapples-yana-santos-for-fourth-straight-win/"
     }
    ],
    "round_scores": [
@@ -152,7 +1445,7 @@
      "10-9 Luana"
     ]
    ],
-   "closeness": "disputed"
+   "closeness": "close"
   },
   "jean-paul-lebosnoyani-farman-hasanov": {
    "a": "Jean-Paul Lebosnoyani",
@@ -175,6 +1468,16 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/jean-paul-lebosnoyani-scores-first-ufc-finish-as-doctors-stop-farman-hasanov-at-ufc-vegas-123-after-brutal-slugfest/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/jean-paul-lebosnoyani/ufc-vegas-123-results-jean-paul-lebosnoyani-tkos-farman-hasanov-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-123-results-jean-paul-lebosnoyani-tkos-farman-hasanov-video"
     }
    ],
    "round_scores": [
@@ -201,6 +1504,11 @@
    "round": 3,
    "outlets": [
     {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
      "outlet": "MMA Mania",
      "kind": "play-by-play",
      "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
@@ -209,10 +1517,34 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/ufc-vegas-123-dakota-hope-survives-nasty-leg-kicks-wins-split-decision-over-francis-marshall/"
     }
    ],
-   "round_scores": null,
-   "closeness": null
+   "round_scores": [
+    [
+     1,
+     "10-9 Marshall",
+     "10-9 Marshall",
+     "10-9 Marshall"
+    ],
+    [
+     2,
+     "10-9 Hope",
+     "10-9 Hope",
+     "10-9 Hope"
+    ],
+    [
+     3,
+     "10-9 Hope",
+     "10-9 Hope",
+     "10-9 Hope"
+    ]
+   ],
+   "closeness": "close"
   },
   "rodrigo-sezinando-theodor-berggren": {
    "a": "Rodrigo Sezinando",
@@ -235,6 +1567,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/rodrigo-sezinando-slices-open-theodor-berggren-in-first-ufc-win/"
     }
    ],
    "round_scores": [
@@ -243,27 +1580,9 @@
      "10-9 Sezinando",
      "10-9 Sezinando",
      "10-9 Sezinando"
-    ],
-    [
-     1,
-     "10-9 Marshall",
-     "10-9 Marshall",
-     "10-9 Marshall"
-    ],
-    [
-     2,
-     "10-9 Hope",
-     "10-9 Hope",
-     "10-9 Hope"
-    ],
-    [
-     3,
-     "10-9 Hope",
-     "10-9 Hope",
-     "10-9 Hope"
     ]
    ],
-   "closeness": "from behind"
+   "closeness": null
   },
   "julian-erosa-jeong-yeong-lee": {
    "a": "Julian Erosa",
@@ -288,9 +1607,14 @@
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
     },
     {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/518794/video-julian-erosa-gets-first-round-knockout-win-in-retirement-fight-at-ufc-vegas-123"
+    },
+    {
      "outlet": "Cageside Press",
      "kind": "recap",
-     "url": "https://cagesidepress.com/2026/10/31/ufc-vegas-123s-julian-erosa-explains-retirement-timing-decision/"
+     "url": "https://cagesidepress.com/2026/10/31/julian-erosa-knocks-out-jeongyeong-lee-in-wild-retirement-fight/"
     }
    ],
    "round_scores": null,
@@ -322,8 +1646,9 @@
    "round_scores": [
     [
      1,
-     "9-9 Tudor",
-     "9-9 Mike"
+     "9-9",
+     "9-9",
+     "9-9"
     ],
     [
      2,
@@ -338,7 +1663,7 @@
      "10-9 Reese"
     ]
    ],
-   "closeness": "close"
+   "closeness": "clear"
   },
   "joseph-kropschot-nick-klein": {
    "a": "Joseph Kropschot",
