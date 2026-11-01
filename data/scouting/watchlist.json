@@ -19,7 +19,7 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-177",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
-   "pending": "Hype-trains thread read through page 186 (2026-10-27; page 186 still open, newer posts go there). Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
+   "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
   },
   {
    "name": "HuskySamoan",
@@ -39,7 +39,7 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-177",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
-   "pending": "Hype-trains thread read through page 186 (2026-10-27; page 186 still open, newer posts go there). Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
+   "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
   },
   {
    "name": "Koala",
@@ -59,37 +59,37 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-177",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
-   "pending": "Hype-trains thread read through page 186 (2026-10-27; page 186 still open, newer posts go there). Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
+   "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
   }
  ],
  "x_accounts": [
   {
    "handle": "@mma_sushi",
    "why": "Owner's pick: prospect analysis",
-   "found": "nothing indexed (site:x.com and open web searches, 2026-10-27)",
-   "last_checked": "2026-10-27",
+   "found": "nothing indexed (site:x.com and open web searches, 2026-11-01)",
+   "last_checked": "2026-11-01",
    "seen": []
   },
   {
    "handle": "@hellowhosthat",
    "why": "Same person as the Sherdog member Hellowhosthat",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-01",
    "seen": [],
-   "found": "nothing indexed (site:x.com and open web searches, 2026-10-27)"
+   "found": "nothing indexed (site:x.com and open web searches, 2026-11-01)"
   },
   {
    "handle": "@FdrNphw",
    "why": "Prospect calls (Russia)",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-01",
    "seen": [],
-   "found": "nothing indexed (site:x.com and open web searches, 2026-10-27)"
+   "found": "nothing indexed (site:x.com and open web searches, 2026-11-01)"
   },
   {
    "handle": "@FlightOFfists",
    "why": "Prospect calls",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-01",
    "seen": [],
-   "found": "nothing indexed (site:x.com and open web searches, 2026-10-27)"
+   "found": "nothing indexed (site:x.com and open web searches, 2026-11-01)"
   }
  ]
 }
