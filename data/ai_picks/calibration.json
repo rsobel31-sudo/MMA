@@ -1,21 +1,21 @@
 {
  "dec_cal": [
-  0.439346,
-  0.671843,
-  -0.364704
+  0.433879,
+  0.672519,
+  -0.365348
  ],
- "fitted_on": 5215,
+ "fitted_on": 4894,
  "dec_cal_kind": "mismatch_line",
  "method": "refit + matchup mismatch (line, else model)",
- "reviewed": "2026-10-25",
- "through": "2026-10-24",
+ "reviewed": "2026-11-01",
+ "through": "2026-10-31",
  "evidence": {
-  "raw (no correction)": 0.6742,
-  "refit, all years equal": 0.66188,
-  "refit, recent years weighted": 0.66245,
-  "refit + matchup mismatch (model)": 0.66149,
-  "refit + matchup mismatch (line, else model)": 0.65966,
-  "current": 0.65841
+  "raw (no correction)": 0.67406,
+  "refit, all years equal": 0.66155,
+  "refit, recent years weighted": 0.66226,
+  "refit + matchup mismatch (model)": 0.66118,
+  "refit + matchup mismatch (line, else model)": 0.65948,
+  "current": 0.65815
  },
  "previous": {
   "dec_cal": [

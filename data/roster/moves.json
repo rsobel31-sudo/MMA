@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-31T11:29:39+00:00",
+ "fetched": "2026-11-01T12:22:13+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -1038,6 +1038,20 @@
     "url": "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
    },
    "first_seen": "2026-10-15"
+  },
+  {
+   "name": "Julian Erosa",
+   "date": "2026-10-31",
+   "division": "Featherweight",
+   "refs": [
+    "https://cagesidepress.com/2026/10/31/julian-erosa-knocks-out-jeongyeong-lee-in-wild-retirement-fight/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "cagesidepress.com",
+    "url": "https://cagesidepress.com/2026/10/31/julian-erosa-knocks-out-jeongyeong-lee-in-wild-retirement-fight/"
+   },
+   "first_seen": "2026-11-01"
   },
   {
    "name": "Lyman Good",

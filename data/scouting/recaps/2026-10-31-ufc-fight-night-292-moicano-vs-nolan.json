@@ -1,0 +1,461 @@
+{
+ "id": "2026-10-31-ufc-fight-night-292-moicano-vs-nolan",
+ "event": "UFC Fight Night 292 - Moicano vs. Nolan",
+ "date": "2026-10-31",
+ "stories": {},
+ "coverage": {
+  "tom-nolan-renato-carneiro": {
+   "a": "Tom Nolan",
+   "b": "Renato Carneiro",
+   "winner": "Tom Nolan",
+   "method": "KO/TKO",
+   "round": 3,
+   "outlets": [],
+   "round_scores": null,
+   "closeness": null
+  },
+  "jacobe-smith-randy-brown": {
+   "a": "Jacobe Smith",
+   "b": "Randy Brown",
+   "winner": "Jacobe Smith",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Smith",
+     "10-9 Smith",
+     "10-9 Smith"
+    ],
+    [
+     2,
+     "10-9 Smith",
+     "10-9 Smith",
+     "10-9 Smith"
+    ],
+    [
+     3,
+     "10-9 Smith",
+     "10-9 Smith",
+     "10-9 Smith"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "cody-durden-ode-osbourne": {
+   "a": "Cody Durden",
+   "b": "Ode Osbourne",
+   "winner": "Cody Durden",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Durden",
+     "10-9 Durden",
+     "10-9 Durden"
+    ],
+    [
+     2,
+     "10-9 Durden",
+     "10-9 Durden",
+     "10-9 Durden"
+    ],
+    [
+     3,
+     "10-9 Osbourne",
+     "10-9 Osbourne",
+     "10-9 Osbourne"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "luana-santos-yana-santos": {
+   "a": "Luana Santos",
+   "b": "Yana Santos",
+   "winner": "Luana Santos",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/518290/luana-santos-ufc-title-shot-definitely-possible-with-win-over-yana-santos"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Yana",
+     "10-9 Yana",
+     "10-9 Yana"
+    ],
+    [
+     2,
+     "10-9 Luana",
+     "10-9 Luana",
+     "10-9 Luana"
+    ],
+    [
+     3,
+     "10-9 Luana",
+     "10-9 Luana",
+     "10-9 Luana"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "jean-paul-lebosnoyani-farman-hasanov": {
+   "a": "Jean-Paul Lebosnoyani",
+   "b": "Farman Hasanov",
+   "winner": "Jean-Paul Lebosnoyani",
+   "method": "KO/TKO",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Lebosnoyani",
+     "10-9 Lebosnoyani",
+     "10-9 Lebosnoyani"
+    ],
+    [
+     2,
+     "10-9 Lebosnoyani",
+     "10-9 Lebosnoyani",
+     "10-8 Lebosnoyani"
+    ]
+   ],
+   "closeness": null
+  },
+  "dakota-hope-francis-marshall": {
+   "a": "Dakota Hope",
+   "b": "Francis Marshall",
+   "winner": "Dakota Hope",
+   "method": "S-DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "rodrigo-sezinando-theodor-berggren": {
+   "a": "Rodrigo Sezinando",
+   "b": "Theodor Berggren",
+   "winner": "Rodrigo Sezinando",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Sezinando",
+     "10-9 Sezinando",
+     "10-9 Sezinando"
+    ],
+    [
+     1,
+     "10-9 Marshall",
+     "10-9 Marshall",
+     "10-9 Marshall"
+    ],
+    [
+     2,
+     "10-9 Hope",
+     "10-9 Hope",
+     "10-9 Hope"
+    ],
+    [
+     3,
+     "10-9 Hope",
+     "10-9 Hope",
+     "10-9 Hope"
+    ]
+   ],
+   "closeness": "from behind"
+  },
+  "julian-erosa-jeong-yeong-lee": {
+   "a": "Julian Erosa",
+   "b": "Jeong Yeong Lee",
+   "winner": "Julian Erosa",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/10/31/ufc-vegas-123s-julian-erosa-explains-retirement-timing-decision/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "zachary-reese-mickey-gall": {
+   "a": "Zachary Reese",
+   "b": "Mickey Gall",
+   "winner": "Zachary Reese",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "9-9 Tudor",
+     "9-9 Mike"
+    ],
+    [
+     2,
+     "10-9 Reese",
+     "10-9 Reese",
+     "10-9 Reese"
+    ],
+    [
+     3,
+     "10-9 Reese",
+     "10-9 Reese",
+     "10-9 Reese"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "joseph-kropschot-nick-klein": {
+   "a": "Joseph Kropschot",
+   "b": "Nick Klein",
+   "winner": "Joseph Kropschot",
+   "method": "SUB",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Kropschot",
+     "10-9 Kropschot",
+     "10-9 Kropschot"
+    ]
+   ],
+   "closeness": null
+  },
+  "piera-rodriguez-talita-alencar": {
+   "a": "Piera Rodriguez",
+   "b": "Talita Alencar",
+   "winner": "Piera Rodriguez",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Alencar",
+     "10-9 Alencar",
+     "10-9 Alencar"
+    ],
+    [
+     2,
+     "10-9 Alencar",
+     "10-9 Alencar",
+     "10-9 Alencar"
+    ],
+    [
+     3,
+     "10-9 Rodriguez",
+     "10-9 Rodriguez",
+     "10-9 Rodriguez"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "lucia-szabova-tainara-lisboa": {
+   "a": "Lucia Szabova",
+   "b": "Tainara Lisboa",
+   "winner": "Lucia Szabova",
+   "method": "KO/TKO",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-123-Moicano-vs-Nolan-playbyplay-results-round-scoring-203430"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/481538/ufc-vegas-123-live-results-highlights-play-by-play-moicano-vs-nolan"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-292-live-200107511.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Szabova",
+     "10-9 Szabova",
+     "10-9 Szabova"
+    ],
+    [
+     2,
+     "10-9 Szabova",
+     "10-9 Szabova",
+     "10-9 Szabova"
+    ]
+   ],
+   "closeness": null
+  }
+ }
+}
