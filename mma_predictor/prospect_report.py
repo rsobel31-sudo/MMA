@@ -68,8 +68,8 @@ def attach(out: Dict, today: date) -> None:
         out["report"] = json.loads(reports[-1].read_text())
 
 
-def _fights_between(p: Dict, since: str) -> List[Dict]:
-    return [b for b in p.get("recent", []) if b["date"] > since]
+def _fights_between(p: Dict, since: str, until: str = "9999") -> List[Dict]:
+    return [b for b in p.get("recent", []) if since < b["date"] <= until]
 
 
 def report(prev: Dict, cur: Dict, current: Dict, candidates: List[Dict], n: int = 12) -> Dict:
@@ -80,7 +80,7 @@ def report(prev: Dict, cur: Dict, current: Dict, candidates: List[Dict], n: int 
 
     def row(k: str) -> Dict:
         a, b = then.get(k), now[k]
-        fights = _fights_between(full.get(k, {}), prev["taken"])
+        fights = _fights_between(full.get(k, {}), prev["taken"], cur["taken"])
         return {"name": b["name"], "division": b["division"], "promotion": b.get("promotion"), "rank": b["p4p_rank"],
                 "from": a["p4p_rank"] if a else None, "places": (a["p4p_rank"] - b["p4p_rank"]) if a else None,
                 "score": b["score"], "score_change": round(b["score"] - a["score"], 1) if a else None,
@@ -125,7 +125,7 @@ def cmd_snapshot(args) -> int:
         path = save_snapshot(data, month, taken=when, source=f"git {args.from_git}:app/prospects.json")
     else:
         data = json.loads((ROOT / "app" / "prospects.json").read_text())
-        path = save_snapshot(data, month)
+        path = save_snapshot(data, month, taken=args.taken or None)
     print(f"{len(data['prospects'])} prospects -> {path}")
     return 0
 
@@ -159,6 +159,7 @@ def register(sub) -> None:
     p = sub.add_parser("prospect-snapshot", help="save this month's prospect ranking (for risers/fallers)")
     p.add_argument("--month", default="", help="YYYY-MM (default: this month)")
     p.add_argument("--from-git", default="", help="take it from app/prospects.json at this commit (a past build)")
+    p.add_argument("--taken", default="", help="YYYY-MM-DD the snapshot stands for (default: today), e.g. the month's last day")
     p.set_defaults(func=cmd_snapshot)
     p = sub.add_parser("prospect-report", help="the monthly prospect report: risers, fallers, new and departed")
     p.set_defaults(func=cmd_report)

@@ -34,3 +34,11 @@ def test_attach_marks_moves_against_snapshot_before_today(tmp_path, monkeypatch)
     assert out["prospects"][1]["move"]["places"] == 0
     assert out["prospects"][2]["move"] == {"new": True, "since": "2026-10-01"}
     assert "report" not in out
+
+
+def test_report_window_ends_at_the_snapshot_date():
+    prev = {"month": "2026-10", "taken": "2026-10-01", "prospects": [_p("A", 50, 70)]}
+    cur = {"month": "2026-11", "taken": "2026-10-31", "prospects": [_p("A", 20, 80)]}
+    recent = [{"date": "2026-10-12", "result": "win", "opponent": "X"}, {"date": "2026-11-01", "result": "win", "opponent": "Y"}]
+    rep = pr.report(prev, cur, {"prospects": [_p("A", 20, 80, recent=recent)]}, [])
+    assert [f["opponent"] for f in rep["risers"][0]["fights"]] == ["X"]
