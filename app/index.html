@@ -2667,13 +2667,17 @@ button.namelink:hover { color: var(--red); }
       (!P.gender || (P.gender === "women") === isWomen(x.division)) && (!P.wc || x.division === P.wc) && (!P.unbeaten || x.losses === 0) &&
       (!q || x.name.toLowerCase().includes(q) || (x.promotion || "").toLowerCase().includes(q) || (x.nationality || "").toLowerCase().includes(q)));
   }
-  // Move since the last monthly snapshot: ▲ places up, ▼ places down, NEW if not listed then.
-  const moveBadge = (x) => {
+  // Move since the last monthly snapshot: ▲ places up, ▼ places down, NEW if not listed then. Overall (Top Prospects)
+  // by default; scope "div" is the move within the fighter's own division list (the weight-class rankings).
+  const moveBadge = (x, scope) => {
     const m = x.move;
     if (!m) return "";
-    if (m.new) return `<span class="mv mv-new" title="Not on the list on ${esc(m.since)}">NEW</span>`;
-    if (!m.places) return `<span class="mv mv-flat" title="Same place as on ${esc(m.since)}">–</span>`;
-    return `<span class="mv ${m.places > 0 ? "mv-up" : "mv-down"}" title="#${m.from} on ${esc(m.since)} → #${x.p4p_rank} now (score ${m.score > 0 ? "+" : ""}${m.score})">${m.places > 0 ? "▲" : "▼"}${Math.abs(m.places)}</span>`;
+    const div = scope === "div";
+    if (m.new || (div && m.div_new)) return `<span class="mv mv-new" title="Not on the ${div ? esc(x.division) + " " : ""}list on ${esc(m.since)}">NEW</span>`;
+    const places = div ? m.div_places : m.places, from = div ? m.div_from : m.from, now = div ? x.div_rank : x.p4p_rank;
+    if (places == null) return "";
+    if (!places) return `<span class="mv mv-flat" title="Same place${div ? " in " + esc(x.division) : ""} as on ${esc(m.since)}">–</span>`;
+    return `<span class="mv ${places > 0 ? "mv-up" : "mv-down"}" title="#${from} on ${esc(m.since)} → #${now} now${div ? " in " + esc(x.division) : " overall"} (score ${m.score > 0 ? "+" : ""}${m.score})">${places > 0 ? "▲" : "▼"}${Math.abs(places)}</span>`;
   };
   const prRecord = (x) => `${x.wins}-${x.losses}${x.draws ? `-${x.draws}` : ""}`;
   function prospectDetail(x) {
@@ -2700,7 +2704,7 @@ button.namelink:hover { color: var(--red); }
   }
   function prospectRow(x, rank) {
     const open = state.pros.open === x.name;
-    return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td><td class="num">${moveBadge(x)}</td>
+    return `<tr class="clickable pr-row" data-prospect="${esc(x.name)}" aria-expanded="${open}"><td class="num">${rank}</td><td class="num">${moveBadge(x, state.pros.wc ? "div" : "")}</td>
       <td>${starBtn(x)} <strong>${esc(x.name)}</strong>${x.owner_pick ? ` <span class="pill ftr-up" title="Owner's pick: listed by the owner${(x.overrides || []).length ? " despite the rules (" + esc(x.overrides.join("; ")) + ")" : ""}">Owner's pick</span>` : ""}${x.losses === 0 ? ' <span class="pill">unbeaten</span>' : ""}${x.booked ? (x.booked.kind === "signed" ? ` <span class="pill ftr-up" title="Signed with the UFC ${esc(x.booked.date)} (Wikipedia and a second source agree); debut not booked yet. Ranked until the debut.">UFC signed</span>` : ` <span class="pill ftr-up" title="Signed: booked on ${esc(x.booked.event)} (Sherdog and Wikipedia agree). Ranked until the debut.">${esc(x.booked.promotion)} debut ${esc(new Date(x.booked.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }))}</span>`) : ""}${(x.former || []).length ? ` <span class="pill" title="Fought in ${esc(x.former.join(", "))}, now back on the regional scene">ex-${esc(x.former.join("/"))}</span>` : ""}${x.noted_by.length ? ` <span class="pill" title="${esc(x.noted_by.map((n) => n.outlet).join(", "))}">★ ${x.noted_by.length}</span>` : ""}<div class="muted" style="font-size:12px">${esc(x.division)}</div></td>
       <td class="num">${x.age != null ? Math.floor(x.age) : "—"}</td><td class="num">${prRecord(x)}</td><td class="num">${Math.round(x.finish_rate * 100)}%</td>
       <td>${esc(x.promotion || "—")}<div class="muted num" style="font-size:12px">${esc(x.last_fight || "")}</div></td><td>${esc(x.nationality || x.country || "")}</td>
@@ -2823,7 +2827,7 @@ button.namelink:hover { color: var(--red); }
         const g = groups[wc], top = g[0].score;
         return `<div class="wc"><div class="wc-hd"><h3>${esc(wc)}</h3><span class="muted num">${g.length} prospects</span></div>
           <ol>${g.slice(0, 10).map((x, i) => `<li class="clickable" data-prospect-open="${esc(x.name)}"><span class="rk num">${i + 1}</span><span class="nm" title="${esc(x.name)} · ${prRecord(x)}${x.age != null ? " · age " + Math.floor(x.age) : ""}${x.owner_pick ? " · Owner's pick" : ""}">${esc(x.name)}${x.owner_pick ? " ✦" : ""}</span>
-            <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}<span class="wmv">${moveBadge(x)}</span></span></li>`).join("")}</ol>
+            <span class="bar"><span style="width:${Math.max(4, 100 - (top - x.score) * 2).toFixed(1)}%"></span></span><span class="v num">${Math.round(x.score)}<span class="wmv">${moveBadge(x, "div")}</span></span></li>`).join("")}</ol>
           ${g.length > 10 ? `<button class="btn link" type="button" data-pros-class="${esc(wc)}">All ${g.length} in the list</button>` : ""}</div>`;
       }).join("")}</div><p class="muted" style="font-size:12px;margin:0">Top 10 per division by prospect score. Click a name for the full card.</p>` : `<div class="empty">No prospects match these filters.</div>`;
     } else {

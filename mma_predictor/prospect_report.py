@@ -62,6 +62,12 @@ def attach(out: Dict, today: date) -> None:
             b = then.get(_key(p))
             p["move"] = ({"new": True, "since": base["taken"]} if b is None else
                          {"from": b["p4p_rank"], "places": b["p4p_rank"] - p["p4p_rank"], "score": round(p["score"] - b["score"], 1), "since": base["taken"]})
+            # The move within the fighter's own division list (Top Prospects shows the overall move, the weight classes this
+            # one); new to the division if they weren't in it then (unlisted, or listed in another division).
+            if b is not None and b.get("division") == p.get("division") and b.get("div_rank") and p.get("div_rank"):
+                p["move"].update(div_from=b["div_rank"], div_places=b["div_rank"] - p["div_rank"])
+            elif b is not None:
+                p["move"]["div_new"] = True
         out["moves_since"] = base["taken"]
     reports = sorted(REPORTS.glob("*.json")) if REPORTS.exists() else []
     if reports:
