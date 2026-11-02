@@ -30,7 +30,7 @@ def test_attach_marks_moves_against_snapshot_before_today(tmp_path, monkeypatch)
     out = {"prospects": [_p("A", 2, 88), _p("B", 3, 85), _p("N", 9, 70)]}
     pr.attach(out, date(2026, 11, 1))
     assert out["moves_since"] == "2026-10-01"
-    assert out["prospects"][0]["move"] == {"from": 5, "places": 3, "score": 8.0, "since": "2026-10-01"}
+    assert out["prospects"][0]["move"] == {"from": 5, "places": 3, "score": 8.0, "since": "2026-10-01", "div_from": 1, "div_places": 0}
     assert out["prospects"][1]["move"]["places"] == 0
     assert out["prospects"][2]["move"] == {"new": True, "since": "2026-10-01"}
     assert "report" not in out

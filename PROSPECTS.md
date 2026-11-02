@@ -53,6 +53,11 @@ outlet list + Sherdog).
    snapshot: right after the rebuild every arrow is level (the list is locked at the
    month's close), and from then on each rise or fall is against that baseline. The
    report holds the month just ended (the previous snapshot's date to this one's).
+   Each prospect carries two moves against that snapshot: overall places (shown on
+   Top Prospects) and places within their own division list (`div_from`,
+   `div_places`; shown on the weight-class lists, or NEW there for someone who
+   wasn't in that division then). A fighter can climb 20 overall and 5 in their
+   division, or 30 overall while staying #1 in it.
 6. `python -m pytest -q`, then publish `app/index.html` to the Fight Lab
    artifact with files engine.js, data.json, every profiles-*.json, prospects.json; delete
    candidates.prev.jsonl; commit and push.
