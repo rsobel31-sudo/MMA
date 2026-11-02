@@ -1,0 +1,986 @@
+{
+ "month": "2026-11",
+ "compared_with": "2026-10",
+ "from": "2026-10-01",
+ "to": "2026-10-31",
+ "counts": {
+  "then": 965,
+  "now": 739,
+  "new": 112,
+  "left": 338
+ },
+ "risers": [
+  {
+   "name": "Kristians Boguzs",
+   "division": "Lightweight",
+   "promotion": "KSW",
+   "rank": 185,
+   "from": 611,
+   "places": 426,
+   "score": 71.4,
+   "score_change": 25.2,
+   "record": "5-0",
+   "fights": [
+    {
+     "date": "2026-10-10",
+     "result": "win",
+     "opponent": "Kacper Cholewa",
+     "method": "KO/TKO",
+     "event": "KSW 122 - Yakymenko vs. Morelli"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Kristians-Boguzs-395537"
+  },
+  {
+   "name": "Murad Ibragimov",
+   "division": "Bantamweight",
+   "promotion": "UAE Warriors",
+   "rank": 138,
+   "from": 542,
+   "places": 404,
+   "score": 75.3,
+   "score_change": 26.0,
+   "record": "6-1",
+   "fights": [
+    {
+     "date": "2026-10-22",
+     "result": "win",
+     "opponent": "Juscelino Pantoja",
+     "method": "SUB",
+     "event": "UAE Warriors 74 - Oliveira vs. Abdueva"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Murad-Ibragimov-353285"
+  },
+  {
+   "name": "Elene Loladze",
+   "division": "Women's Flyweight",
+   "promotion": "Rkena Fighting Championship",
+   "rank": 147,
+   "from": 527,
+   "places": 380,
+   "score": 74.6,
+   "score_change": 24.0,
+   "record": "5-0",
+   "fights": [
+    {
+     "date": "2026-10-17",
+     "result": "win",
+     "opponent": "Ekaterina Yar",
+     "method": "SUB",
+     "event": "Rkena FC - RKENA X PFL"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Elene-Loladze-483200"
+  },
+  {
+   "name": "Tulio Macena",
+   "division": "Flyweight",
+   "promotion": "Jungle Fight",
+   "rank": 227,
+   "from": 514,
+   "places": 287,
+   "score": 68.9,
+   "score_change": 17.5,
+   "record": "7-2",
+   "fights": [
+    {
+     "date": "2026-10-24",
+     "result": "win",
+     "opponent": "Rafael Sanson",
+     "method": "DEC",
+     "event": "Jungle Fight 156 - Fight of the Million: Men's Welterweight and Women's Strawweight Grand Prix Final"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Tulio-Macena-402599"
+  },
+  {
+   "name": "Giannis Kazantzidis",
+   "division": "Heavyweight",
+   "promotion": "MMA Challenge Pro",
+   "rank": 79,
+   "from": 307,
+   "places": 228,
+   "score": 80.2,
+   "score_change": 17.3,
+   "record": "5-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Giannis-Kazantzidis-406976"
+  },
+  {
+   "name": "Ivan Lisogorov",
+   "division": "Welterweight",
+   "promotion": "Yuzhniy Rubezh",
+   "rank": 299,
+   "from": 525,
+   "places": 226,
+   "score": 65.2,
+   "score_change": 14.6,
+   "record": "5-0",
+   "fights": [
+    {
+     "date": "2026-10-24",
+     "result": "win",
+     "opponent": "Rayane Moulay",
+     "method": "DEC",
+     "event": "Yuzhniy Rubezh - Yuzhniy Rubezh 10"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Ivan-Lisogorov-468259"
+  },
+  {
+   "name": "Zafar Rashidov",
+   "division": "Bantamweight",
+   "promotion": "Desert Force",
+   "rank": 257,
+   "from": 472,
+   "places": 215,
+   "score": 67.1,
+   "score_change": 13.1,
+   "record": "5-0",
+   "fights": [
+    {
+     "date": "2026-10-30",
+     "result": "win",
+     "opponent": "Dawei Zhou",
+     "method": "KO/TKO",
+     "event": "Desert Force - Uncaged"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Zafar-Rashidov-408984"
+  },
+  {
+   "name": "Ikuya Akabane",
+   "division": "Flyweight",
+   "promotion": "Fighting Nexus",
+   "rank": 260,
+   "from": 474,
+   "places": 214,
+   "score": 66.9,
+   "score_change": 13.0,
+   "record": "4-1",
+   "fights": [
+    {
+     "date": "2026-10-18",
+     "result": "win",
+     "opponent": "Yoshitaka Kakinuma",
+     "method": "SUB",
+     "event": "Fighting Nexus - Bayside Battle in Yokosuka 2026"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Ikuya-Akabane-229059"
+  },
+  {
+   "name": "Tsuyoshi Yoshida",
+   "division": "Featherweight",
+   "promotion": "Grachan",
+   "rank": 272,
+   "from": 468,
+   "places": 196,
+   "score": 66.4,
+   "score_change": 12.2,
+   "record": "4-0",
+   "fights": [
+    {
+     "date": "2026-10-25",
+     "result": "win",
+     "opponent": "Takumi Yagi",
+     "method": "KO/TKO",
+     "event": "Grachan - Grachan 86"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Tsuyoshi-Yoshida-488411"
+  },
+  {
+   "name": "Tumelo Manyamala",
+   "division": "Flyweight",
+   "promotion": "UAE Warriors",
+   "rank": 224,
+   "from": 396,
+   "places": 172,
+   "score": 69.1,
+   "score_change": 11.1,
+   "record": "8-2",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Tumelo-Manyamala-405570"
+  },
+  {
+   "name": "Melany Gomez",
+   "division": "Women's Strawweight",
+   "promotion": "Lux Fight League",
+   "rank": 148,
+   "from": 315,
+   "places": 167,
+   "score": 74.5,
+   "score_change": 12.2,
+   "record": "5-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Melany-Gomez-409390"
+  },
+  {
+   "name": "Magomed Kurbanov",
+   "division": "Middleweight",
+   "promotion": "UAE Warriors",
+   "rank": 140,
+   "from": 302,
+   "places": 162,
+   "score": 75.1,
+   "score_change": 11.6,
+   "record": "4-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Magomed-Kurbanov-478682"
+  }
+ ],
+ "fallers": [
+  {
+   "name": "Mucahit Aydin",
+   "division": "Middleweight",
+   "promotion": "Rkena Fighting Championship",
+   "rank": 673,
+   "from": 286,
+   "places": -387,
+   "score": 38.6,
+   "score_change": -25.3,
+   "record": "5-1",
+   "fights": [
+    {
+     "date": "2026-10-17",
+     "result": "loss",
+     "opponent": "Zurab Ivaniadze",
+     "method": "DEC",
+     "event": "Rkena FC - RKENA X PFL"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Mucahit-Aydin-445142"
+  },
+  {
+   "name": "Jason Asher",
+   "division": "Lightweight",
+   "promotion": "Dana Whites Contender Series",
+   "rank": 535,
+   "from": 180,
+   "places": -355,
+   "score": 51.0,
+   "score_change": -19.6,
+   "record": "5-1",
+   "fights": [
+    {
+     "date": "2026-10-13",
+     "result": "loss",
+     "opponent": "Gregory Foster",
+     "method": "DEC",
+     "event": "Dana White's Contender Series - Contender Series 2026: Week 10"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Jason-Asher-400301"
+  },
+  {
+   "name": "Khalil Pirmagomedov",
+   "division": "Lightweight",
+   "promotion": "Eagle FC 58 - Gadzhiagaev vs. Salmurzaev",
+   "rank": 572,
+   "from": 256,
+   "places": -316,
+   "score": 47.8,
+   "score_change": -17.6,
+   "record": "2-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Khalil-Pirmagomedov-494723"
+  },
+  {
+   "name": "Davi Cabral",
+   "division": "Middleweight",
+   "promotion": "Dana Whites Contender Series",
+   "rank": 503,
+   "from": 217,
+   "places": -286,
+   "score": 53.8,
+   "score_change": -14.4,
+   "record": "7-1",
+   "fights": [
+    {
+     "date": "2026-10-13",
+     "result": "loss",
+     "opponent": "Douglas Lapa",
+     "method": "KO/TKO",
+     "event": "Dana White's Contender Series - Contender Series 2026: Week 10"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Davi-Cabral-440030"
+  },
+  {
+   "name": "Jakob Dyrup",
+   "division": "Heavyweight",
+   "promotion": "Fight Club Rush",
+   "rank": 366,
+   "from": 134,
+   "places": -232,
+   "score": 61.1,
+   "score_change": -11.9,
+   "record": "6-1",
+   "fights": [
+    {
+     "date": "2026-10-03",
+     "result": "loss",
+     "opponent": "Junior Karanta",
+     "method": "KO/TKO",
+     "event": "FCR 31 - Fight Club Rush 31"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Jakob-Dyrup-435669"
+  },
+  {
+   "name": "Nikolay Atanasov",
+   "division": "Flyweight",
+   "promotion": "Brave Combat Federation",
+   "rank": 376,
+   "from": 175,
+   "places": -201,
+   "score": 60.4,
+   "score_change": -10.3,
+   "record": "5-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Nikolay-Atanasov-353283"
+  },
+  {
+   "name": "Emil Musaev",
+   "division": "Bantamweight",
+   "promotion": "Yuzhniy Rubezh",
+   "rank": 395,
+   "from": 231,
+   "places": -164,
+   "score": 59.5,
+   "score_change": -7.7,
+   "record": "7-2",
+   "fights": [
+    {
+     "date": "2026-10-24",
+     "result": "loss",
+     "opponent": "Gerard Podarevsky",
+     "method": "DEC",
+     "event": "Yuzhniy Rubezh - Yuzhniy Rubezh 10"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Emil-Musaev-379765"
+  },
+  {
+   "name": "Zayne Havener",
+   "division": "Middleweight",
+   "promotion": "LFA",
+   "rank": 318,
+   "from": 157,
+   "places": -161,
+   "score": 64.1,
+   "score_change": -7.8,
+   "record": "6-3",
+   "fights": [
+    {
+     "date": "2026-10-23",
+     "result": "loss",
+     "opponent": "Jake Woodley",
+     "method": "KO/TKO",
+     "event": "LFA 244 - Woodley vs. Havener"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Zayne-Havener-388083"
+  },
+  {
+   "name": "Baissangour Chamsoudinov",
+   "division": "Welterweight",
+   "promotion": "Ares Fighting Championship",
+   "rank": 226,
+   "from": 94,
+   "places": -132,
+   "score": 69.1,
+   "score_change": -7.3,
+   "record": "9-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Baissangour-Chamsoudinov-340851"
+  },
+  {
+   "name": "Gabriel Urbino",
+   "division": "Flyweight",
+   "promotion": "Lux Fight League",
+   "rank": 239,
+   "from": 129,
+   "places": -110,
+   "score": 68.3,
+   "score_change": -5.2,
+   "record": "7-1",
+   "fights": [
+    {
+     "date": "2026-10-02",
+     "result": "loss",
+     "opponent": "Paulino Siller",
+     "method": "DEC",
+     "event": "LUX 063 - Queretaro"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Gabriel-Urbino-412325"
+  },
+  {
+   "name": "Luca Borando",
+   "division": "Featherweight",
+   "promotion": "Dana Whites Contender Series",
+   "rank": 255,
+   "from": 152,
+   "places": -103,
+   "score": 67.4,
+   "score_change": -4.7,
+   "record": "9-2",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Luca-Borando-304627"
+  },
+  {
+   "name": "Michael Pagani",
+   "division": "Lightweight",
+   "promotion": "Cage Warriors",
+   "rank": 268,
+   "from": 167,
+   "places": -101,
+   "score": 66.8,
+   "score_change": -4.4,
+   "record": "8-3",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Michael-Pagani-315451"
+  }
+ ],
+ "new_top100": [
+  {
+   "name": "Khotam Boynazarov",
+   "division": "Welterweight",
+   "promotion": "Mangu Professional League - Mangu MMA 4",
+   "rank": 30,
+   "from": null,
+   "places": null,
+   "score": 88.2,
+   "score_change": null,
+   "record": "14-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Khotam-Boynazarov-396508"
+  },
+  {
+   "name": "Si Won Park",
+   "division": "Lightweight",
+   "promotion": "Road FC",
+   "rank": 42,
+   "from": null,
+   "places": null,
+   "score": 86.5,
+   "score_change": null,
+   "record": "9-2",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Si-Won-Park-361213"
+  },
+  {
+   "name": "Stav Koren",
+   "division": "Bantamweight",
+   "promotion": "Tuff-N-Uff",
+   "rank": 44,
+   "from": 106,
+   "places": 62,
+   "score": 86.0,
+   "score_change": 10.4,
+   "record": "8-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Stav-Koren-405961"
+  },
+  {
+   "name": "Emilio Quissua",
+   "division": "Light Heavyweight",
+   "promotion": "Dana Whites Contender Series",
+   "rank": 48,
+   "from": null,
+   "places": null,
+   "score": 85.2,
+   "score_change": null,
+   "record": "8-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Emilio-Quissua-250971"
+  },
+  {
+   "name": "Kasib Murdoch",
+   "division": "Bantamweight",
+   "promotion": "UFC - Road to UFC Season 5: Shanghai Semifinals",
+   "rank": 54,
+   "from": null,
+   "places": null,
+   "score": 84.2,
+   "score_change": null,
+   "record": "8-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Kasib-Murdoch-396268"
+  },
+  {
+   "name": "Tony Cortez",
+   "division": "Featherweight",
+   "promotion": "559 Fights",
+   "rank": 56,
+   "from": 165,
+   "places": 109,
+   "score": 83.8,
+   "score_change": 12.5,
+   "record": "8-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Tony-Cortez-421764"
+  },
+  {
+   "name": "Alexandros Moumtzis",
+   "division": "Bantamweight",
+   "promotion": "Cage Warriors",
+   "rank": 58,
+   "from": 138,
+   "places": 80,
+   "score": 83.5,
+   "score_change": 10.7,
+   "record": "10-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Alexandros-Moumtzis-212227"
+  },
+  {
+   "name": "Bektur Zhenishbek Uulu",
+   "division": "Flyweight",
+   "promotion": "ACA 209 - Frolov vs. Odilov",
+   "rank": 60,
+   "from": null,
+   "places": null,
+   "score": 82.9,
+   "score_change": null,
+   "record": "6-0",
+   "fights": [
+    {
+     "date": "2026-10-30",
+     "result": "win",
+     "opponent": "Oyatullo Muminov",
+     "method": "DEC",
+     "event": "ACA 209 - Frolov vs. Odilov"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Bektur-Zhenishbek-Uulu-339657"
+  },
+  {
+   "name": "Marko Ancic",
+   "division": "Featherweight",
+   "promotion": "Fight Nation Championship",
+   "rank": 61,
+   "from": 149,
+   "places": 88,
+   "score": 82.7,
+   "score_change": 10.4,
+   "record": "5-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Marko-Ancic-439956"
+  },
+  {
+   "name": "Ibragim Ibragimov",
+   "division": "Featherweight",
+   "promotion": "Rkena Fighting Championship",
+   "rank": 65,
+   "from": null,
+   "places": null,
+   "score": 82.2,
+   "score_change": null,
+   "record": "11-0",
+   "fights": [
+    {
+     "date": "2026-10-17",
+     "result": "win",
+     "opponent": "Nika Kupravishvili",
+     "method": "SUB",
+     "event": "Rkena FC - RKENA X PFL"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Ibragim-Ibragimov-355287"
+  },
+  {
+   "name": "Jaden Ortega",
+   "division": "Welterweight",
+   "promotion": "Dana Whites Contender Series",
+   "rank": 66,
+   "from": 169,
+   "places": 103,
+   "score": 82.2,
+   "score_change": 11.1,
+   "record": "6-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Jaden-Ortega-410570"
+  },
+  {
+   "name": "Ivan Gnizditskiy",
+   "division": "Light Heavyweight",
+   "promotion": "Chingi-Tura",
+   "rank": 74,
+   "from": null,
+   "places": null,
+   "score": 80.7,
+   "score_change": null,
+   "record": "7-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Ivan-Gnizditskiy-291329"
+  },
+  {
+   "name": "Sergiusz Zajac",
+   "division": "Light Heavyweight",
+   "promotion": "KSW",
+   "rank": 76,
+   "from": 101,
+   "places": 25,
+   "score": 80.4,
+   "score_change": 4.4,
+   "record": "10-2",
+   "fights": [
+    {
+     "date": "2026-10-10",
+     "result": "win",
+     "opponent": "Salim El Ouassaidi",
+     "method": "KO/TKO",
+     "event": "KSW 122 - Yakymenko vs. Morelli"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Sergiusz-Zajac-304817"
+  },
+  {
+   "name": "Giannis Kazantzidis",
+   "division": "Heavyweight",
+   "promotion": "MMA Challenge Pro",
+   "rank": 79,
+   "from": 307,
+   "places": 228,
+   "score": 80.2,
+   "score_change": 17.3,
+   "record": "5-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Giannis-Kazantzidis-406976"
+  },
+  {
+   "name": "Wushamo Hailai",
+   "division": "Women's Strawweight",
+   "promotion": "Dragon Fighting Championship (China)",
+   "rank": 81,
+   "from": 135,
+   "places": 54,
+   "score": 79.9,
+   "score_change": 6.9,
+   "record": "10-1",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Wushamo-Hailai-389750"
+  },
+  {
+   "name": "Gabriel Vinicius",
+   "division": "Welterweight",
+   "promotion": "LFA",
+   "rank": 82,
+   "from": 115,
+   "places": 33,
+   "score": 79.8,
+   "score_change": 4.6,
+   "record": "8-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Gabriel-Vinicius-454929"
+  },
+  {
+   "name": "Matty Iann",
+   "division": "Bantamweight",
+   "promotion": "Eternal MMA",
+   "rank": 85,
+   "from": 204,
+   "places": 119,
+   "score": 79.3,
+   "score_change": 10.4,
+   "record": "4-0",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Matty-Iann-301253"
+  },
+  {
+   "name": "Mariana Poltronieri Piccolo",
+   "division": "Women's Flyweight",
+   "promotion": "LFA",
+   "rank": 89,
+   "from": 214,
+   "places": 125,
+   "score": 78.8,
+   "score_change": 10.4,
+   "record": "6-3",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/Mariana-Poltronieri-Piccolo-381190"
+  },
+  {
+   "name": "An Tuan Ho",
+   "division": "Flyweight",
+   "promotion": "Urijah Fabers A1 Combat",
+   "rank": 91,
+   "from": 104,
+   "places": 13,
+   "score": 78.7,
+   "score_change": 3.0,
+   "record": "8-2",
+   "fights": [],
+   "sherdog_url": "https://www.sherdog.com/fighter/An-Tuan-Ho-307731"
+  },
+  {
+   "name": "Jarrod St. Jean",
+   "division": "Lightweight",
+   "promotion": "Combat FC",
+   "rank": 99,
+   "from": 205,
+   "places": 106,
+   "score": 78.3,
+   "score_change": 9.5,
+   "record": "6-0",
+   "fights": [
+    {
+     "date": "2026-10-23",
+     "result": "win",
+     "opponent": "Andrew Cruz",
+     "method": "KO/TKO",
+     "event": "Combat FC 14 - Combat Fighting Championship 14"
+    }
+   ],
+   "sherdog_url": "https://www.sherdog.com/fighter/Jarrod-St-Jean-411524"
+  }
+ ],
+ "left": [
+  {
+   "name": "Asaf Chopurov",
+   "division": "Bantamweight",
+   "was": 1,
+   "why": "signed: UFC debut 2026-10-24"
+  },
+  {
+   "name": "George Staines",
+   "division": "Lightweight",
+   "was": 11,
+   "why": "records disagree (Fight Matrix 11-0-0, Sherdog 9 wins in 9)"
+  },
+  {
+   "name": "Khalim Nazruloev",
+   "division": "Bantamweight",
+   "was": 17,
+   "why": "age 28.1"
+  },
+  {
+   "name": "Joel Faglier",
+   "division": "Heavyweight",
+   "was": 69,
+   "why": "signed: UFC debut 2026-10-17"
+  },
+  {
+   "name": "Pedro Doreto",
+   "division": "Featherweight",
+   "was": 114,
+   "why": "age 28.1; records disagree (Fight Matrix 0-0-0, Sherdog 8 wins in 8)"
+  },
+  {
+   "name": "Bakhtovar Yunusov",
+   "division": "Bantamweight",
+   "was": 166,
+   "why": "most recent fight in a major promotion (Fight Matrix); most recent fight in a major promotion (Sherdog); age 28.0; 14 fights on Sherdog"
+  },
+  {
+   "name": "Shirzad Qadrian",
+   "division": "Bantamweight",
+   "was": 195,
+   "why": "records disagree (Fight Matrix 0-0-0, Sherdog 8 wins in 9)"
+  },
+  {
+   "name": "Ronildo Silva",
+   "division": "Welterweight",
+   "was": 199,
+   "why": "age 28.1; records disagree (Fight Matrix 0-0-0, Sherdog 9 wins in 13)"
+  },
+  {
+   "name": "Oualy Tandia",
+   "division": "Welterweight",
+   "was": 215,
+   "why": "most recent fight in a major promotion (Sherdog)"
+  },
+  {
+   "name": "Hunter Smith",
+   "division": "Lightweight",
+   "was": 248,
+   "why": "age 28.0"
+  },
+  {
+   "name": "Takeru Suzuki",
+   "division": "Flyweight",
+   "was": 299,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Tamirlan Saralapov",
+   "division": "Welterweight",
+   "was": 314,
+   "why": "age 28.0; records disagree (Fight Matrix 0-0-0, Sherdog 9 wins in 10)"
+  },
+  {
+   "name": "Luis Perez",
+   "division": "Flyweight",
+   "was": 320,
+   "why": "records disagree (Fight Matrix 0-0-0, Sherdog 4 wins in 6)"
+  },
+  {
+   "name": "Austin Clayton",
+   "division": "Middleweight",
+   "was": 335,
+   "why": "age 28.0"
+  },
+  {
+   "name": "Matheus Lima",
+   "division": "Welterweight",
+   "was": 345,
+   "why": "age 28.0"
+  },
+  {
+   "name": "Ermuun Bayasgalan",
+   "division": "Featherweight",
+   "was": 347,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Babar Ali",
+   "division": "Bantamweight",
+   "was": 349,
+   "why": "most recent fight in a major promotion (Sherdog); 14 fights on Sherdog; records disagree (Fight Matrix 0-0-0, Sherdog 10 wins in 14)"
+  },
+  {
+   "name": "Khurshed Nazarov",
+   "division": "Bantamweight",
+   "was": 350,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Francisco Flavio",
+   "division": "Flyweight",
+   "was": 360,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Kacper Cholewa",
+   "division": "Lightweight",
+   "was": 363,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Hiroto Shimizu",
+   "division": "Featherweight",
+   "was": 385,
+   "why": "records disagree (Fight Matrix 0-0-0, Sherdog 8 wins in 9)"
+  },
+  {
+   "name": "Jorge Lopez",
+   "division": "Flyweight",
+   "was": 410,
+   "why": "records disagree (Fight Matrix 0-0-0, Sherdog 4 wins in 4)"
+  },
+  {
+   "name": "Munenori Fujita",
+   "division": "Bantamweight",
+   "was": 425,
+   "why": "age 28.0"
+  },
+  {
+   "name": "Omar Diaz",
+   "division": "Bantamweight",
+   "was": 441,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Masataka Tensaka",
+   "division": "Flyweight",
+   "was": 442,
+   "why": "age 28.1; records disagree (Fight Matrix 0-0-0, Sherdog 4 wins in 5)"
+  },
+  {
+   "name": "William Rentz",
+   "division": "Welterweight",
+   "was": 450,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Kousei Sugino",
+   "division": "Bantamweight",
+   "was": 453,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Cristian Soares",
+   "division": "Lightweight",
+   "was": 458,
+   "why": "records disagree (Fight Matrix 0-0-0, Sherdog 7 wins in 9)"
+  },
+  {
+   "name": "Reo Hitomi",
+   "division": "Bantamweight",
+   "was": 460,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Leslie Jesus",
+   "division": "Bantamweight",
+   "was": 465,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Joaquin Vargas",
+   "division": "Bantamweight",
+   "was": 466,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Magomedali Nurmagomedov",
+   "division": "Bantamweight",
+   "was": 475,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Jayson Miralpez",
+   "division": "Bantamweight",
+   "was": 477,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Hardy Rodriguez",
+   "division": "Flyweight",
+   "was": 480,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Hugo Torres",
+   "division": "Bantamweight",
+   "was": 481,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Riran Zenidim",
+   "division": "Bantamweight",
+   "was": 483,
+   "why": "14 fights on Sherdog; records disagree (Fight Matrix 0-0-0, Sherdog 7 wins in 14)"
+  },
+  {
+   "name": "Hansraj Samota",
+   "division": "Bantamweight",
+   "was": 484,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Mauro Gabriel Gomez",
+   "division": "Flyweight",
+   "was": 487,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Lalnunsanga Chhakchhuak",
+   "division": "Bantamweight",
+   "was": 490,
+   "why": "below its division's top 100"
+  },
+  {
+   "name": "Abdelaziz Abouelleil",
+   "division": "Flyweight",
+   "was": 491,
+   "why": "below its division's top 100"
+  }
+ ],
+ "summary": "October's biggest change came from the list itself, not the cage: on Oct 6 the list moved to the top 100 per division, which cut it from 963 names to 676 in one rebuild, and the sweeps of 14 regional promotions then refilled it (112 new names since Oct 1, 96 of them newly eligible from this month's sweep, 15 from LFA alone). Because the list shrank, almost every rank number moved up without a fight, so read the moves by score change. Most of the 338 departures were squeezed out by the division cap; the rest aged past 28, had records the sources disagree on, or signed (Asaf Chopurov and Joel Faglier both debuted in the UFC).\n\nThe month's real jumps came with wins. Kristians Boguzs (+25, a win at KSW 122) and Murad Ibragimov (+26, over Juscelino Pantoja at UAE Warriors 74) made the biggest gains, followed by Elene Loladze at Rkena x PFL, Tulio Macena at Jungle Fight 156, and Ivan Lisogorov, Zafar Rashidov, Ikuya Akabane and Tsuyoshi Yoshida, each with a win. Two owner's picks reached the top 100: Khotam Boynazarov (#30) and Bektur Zhenishbek Uulu (#60, a decision win at ACA 209).\n\nThe falls came with losses: Mucahit Aydin (-25, beaten by Zurab Ivaniadze at Rkena x PFL), Jason Asher and Davi Cabral (both lost on the Contender Series), Jakob Dyrup at FCR 31, Zayne Havener to Jake Woodley at LFA 244, and Emil Musaev and Gabriel Urbino. Some moves had no fight behind them and came from the field (re-rated opponents and Fight Matrix's ranks): Giannis Kazantzidis rose from #307 to #79 and Magomed Kurbanov and Melany Gomez climbed, while Khalil Pirmagomedov, Nikolay Atanasov and Baissangour Chamsoudinov slid.",
+ "made": "2026-11-02T05:23:36+00:00"
+}

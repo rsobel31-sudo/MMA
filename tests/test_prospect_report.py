@@ -42,3 +42,11 @@ def test_report_window_ends_at_the_snapshot_date():
     recent = [{"date": "2026-10-12", "result": "win", "opponent": "X"}, {"date": "2026-11-01", "result": "win", "opponent": "Y"}]
     rep = pr.report(prev, cur, {"prospects": [_p("A", 20, 80, recent=recent)]}, [])
     assert [f["opponent"] for f in rep["risers"][0]["fights"]] == ["X"]
+
+
+def test_left_but_still_eligible_is_below_the_division_cap():
+    prev = {"month": "2026-10", "taken": "2026-10-01", "prospects": [_p("A", 50, 70), _p("F", 400, 40)]}
+    cur = {"month": "2026-11", "taken": "2026-10-31", "prospects": [_p("A", 20, 80)]}
+    cands = [{"name": "F", "sherdog": {"url": "https://www.sherdog.com/fighter/F"}, "check": {"issues": []}}]
+    rep = pr.report(prev, cur, {"prospects": [_p("A", 20, 80)]}, cands)
+    assert rep["left"][0]["why"] == "below its division's top 100"

@@ -108,6 +108,8 @@ def report(prev: Dict, cur: Dict, current: Dict, candidates: List[Dict], n: int 
             why = f"signed: {s['promotion']} debut {s['debut']}"
         elif k in by_url and (by_url[k].get("check") or {}).get("issues"):
             why = "; ".join(by_url[k]["check"]["issues"])
+        elif k in by_url:  # still eligible: squeezed out of the per-division cap
+            why = "below its division's top 100"
         gone.append({"name": a["name"], "division": a["division"], "was": a["p4p_rank"], "why": why})
     gone.sort(key=lambda g: g["was"])
     return {"month": cur["month"], "compared_with": prev["month"], "from": prev["taken"], "to": cur["taken"],
