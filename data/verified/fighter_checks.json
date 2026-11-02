@@ -1848,6 +1848,8 @@
 "stats_verified": "1"
 },
 "Benjamin Bennett": {
+"dob": "disputed: Sherdog 1995-05-08, UFCStats 1994-05-08",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -3775,6 +3777,8 @@
 "stats_official": "1"
 },
 "Collin Anglin": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (180 cm), not used until a second source confirms it",
 "stats_official": "3"
 },
@@ -4758,6 +4762,8 @@
 "stats_official": "1"
 },
 "Demba Seck": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (188 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -5517,6 +5523,8 @@
 "stats_official": "2"
 },
 "Eduardo Torres": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1"
 },

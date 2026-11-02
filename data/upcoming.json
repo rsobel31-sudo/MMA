@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-01",
+ "fetched": "2026-11-02",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -656,6 +656,17 @@
      "time": "",
      "rounds": 3,
      "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Daniel Rodriguez",
+     "b": "Roberto Soldi\u0107",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
@@ -676,6 +687,28 @@
      "result": "",
      "rounds": 5,
      "main_event": true
+    },
+    {
+     "order": 1,
+     "segment": "Announced",
+     "weight_class": "Light Heavyweight",
+     "a": "Bogdan Guskov",
+     "b": "Robert Whittaker",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Announced",
+     "weight_class": "Featherweight",
+     "a": "Yoo Joo-sang",
+     "b": "Marwan Rahiki",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   }

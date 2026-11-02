@@ -877,6 +877,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Benjamin Bennett",
+   "sherdog": "1995-05-08",
+   "ufcstats": "1994-05-08",
+   "fightmatrix": null
+  },
+  {
    "name": "Javier Reyes",
    "sherdog": "1993-10-10",
    "ufcstats": "1993-10-13",
@@ -914,12 +920,12 @@
   }
  ],
  "dob": {
-  "agree": 2429,
-  "differ, unresolved (Sherdog kept)": 103,
+  "agree": 2432,
+  "differ, unresolved (Sherdog kept)": 104,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2441,
+  "agree": 2445,
   "differ": 181
  },
  "reach": {
@@ -928,12 +934,12 @@
   "differ": 68
  },
  "odds": {
-  "odds bouts": 16771,
-  "matched": 13313,
-  "unmatched": 2078,
+  "odds bouts": 16778,
+  "matched": 13315,
+  "unmatched": 2080,
   "bad lines": 0,
   "pages disagree": 5,
   "both pages": 9008,
-  "no lines": 1375
+  "no lines": 1378
  }
 }
