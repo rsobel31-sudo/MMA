@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-02",
+ "fetched": "2026-11-03",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -607,6 +607,17 @@
      "weight_class": "Middleweight",
      "a": "Damian Pinas",
      "b": "Baisangur Susurkaev",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 11,
+     "segment": "Announced",
+     "weight_class": "Women's Bantamweight",
+     "a": "Jacqueline Cavalcanti",
+     "b": "Michelle Montague",
      "title": false,
      "result": "",
      "rounds": 3,
