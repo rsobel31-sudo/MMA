@@ -53,6 +53,8 @@ def max_age(division: Optional[str]) -> int:
     """A prospect must be younger than this: 28, 31 at light heavyweight (30 and under), 32 at heavyweight (31 and under)."""
     return DIVISION_MAX_AGE.get(division or "", MAX_AGE)
 PER_DIVISION = 100  # the list keeps each division's top 100 by score
+# Not ranked (the owner's call): no UFC division to grow into, or no division found at all.
+DROPPED_DIVISIONS = {"Women's Atomweight", "Unknown"}
 UNRATED_LADDER = ((3, 0.15), (4, 0.25), (5, 0.40))  # pro fights -> rating percentile for prospects Fight Matrix
 UNRATED_TOP = 0.50                                   # doesn't rank; 6 or more fights get the division's middle
 
@@ -565,6 +567,8 @@ def build(candidates: Iterable[Dict[str, object]], noted: Dict[str, object], tod
     by_div: Dict[str, int] = {}
     kept = []
     for p in out:
+        if p["division"] in DROPPED_DIVISIONS:
+            continue
         by_div[p["division"]] = by_div.get(p["division"], 0) + 1
         p["div_rank"] = by_div[p["division"]]
         if p["div_rank"] <= PER_DIVISION or p.get("owner_pick"):
