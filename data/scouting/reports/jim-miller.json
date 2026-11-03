@@ -1,0 +1,101 @@
+{
+ "name": "Jim Miller",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A veteran lightweight (39-19, 1 NC), who holds the records for UFC fights (47) and UFC wins (28) (New York Post). He returned in May after more than a year away and choked out Jared Gordon in R1 for a Performance of the Night bonus. He faces Terrance McKinney, a fast-starting finisher. Miller has said his target is 50 UFC fights.",
+ "how_they_fight": {
+  "Striking": "Southpaw who presses forward (Cageside). Lower output (about 3.6 significant strikes a minute at 48%) and he absorbs more than he lands (4.3). King Green out-landed him 186-57 at UFC 300 in our data.",
+  "Grappling": "Elite and still sharp: 22 submission wins, 15 of them in R1. He caught Gordon in a guillotine when Gordon shot off a caught body kick, at 3:29 of R1 (Cageside); the New York Post counted it as his sixth guillotine finish. About 1.25 submission attempts per 15 minutes. Takedown defense is weaker (about 47%): Chase Hooper landed 8 of 14 takedowns and held him for about ten minutes in their 2025 fight.",
+  "Defense": "Rarely stopped: two KO/TKO losses (Donald Cerrone, R2, 2014; Dan Hooker, R1, 2018) and three submission losses (Nate Diaz, Michael Chiesa, Charles Oliveira; the last in 2018). Fourteen of his 19 losses are three-round decisions.",
+  "Pace & cardio": "Most of his finishes come early: of 22 submissions, 15 in R1, four in R2 and three in R3; of seven KO/TKOs, two in R1, four in R2, one in R3. Ten wins are decisions. When fights go long against younger opponents he tends to lose on the cards (Alexander Hernandez 2023, Green 2024, Hooper 2025).",
+  "Fight IQ": "Very experienced and opportunistic, especially against opponents who shoot or scramble carelessly."
+ },
+ "patterns": [
+  "Snatches the neck on opponents' takedown attempts",
+  "Most finishes in R1",
+  "Loses decisions to busier strikers and to wrestlers who hold him down",
+  "Rarely finished"
+ ],
+ "concerns": [
+  "Age: he is 43 in our data",
+  "McKinney's speed: all 18 of McKinney's wins are stoppages, 17 in R1, in our data",
+  "Takedown defense and output over 15 minutes"
+ ],
+ "keys_to_beat": [
+  "Out-work him on the feet for three rounds",
+  "Don't shoot carelessly or give up the neck in scrambles",
+  "Wrestle and hold him down only if your grappling defense is sound"
+ ],
+ "news": [
+  {
+   "date": "2026-05-09",
+   "text": "Submitted Jared Gordon with a guillotine at 3:29 of R1 at UFC 328.",
+   "source": "https://cagesidepress.com/2026/05/09/jim-miller-does-it-again-submits-jared-gordon-with-guillotine/"
+  },
+  {
+   "date": "2026-05-10",
+   "text": "Won a Performance of the Night bonus for the Gordon finish.",
+   "source": "https://cagesidepress.com/2026/05/10/van-vs-taira-earns-fotn-miller-cashes-in-at-ufc-328/"
+  },
+  {
+   "date": "2026-05-10",
+   "text": "Said his son Wyatt, diagnosed with rhabdomyosarcoma, is cancer free. The Post notes his long-stated target of 50 UFC fights.",
+   "source": "https://sports.yahoo.com/articles/jersey-jim-miller-wins-ufc-003638970.html"
+  },
+  {
+   "date": "2026-09-20",
+   "text": "Booked against Terrance McKinney on the UFC 334 prelims.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html"
+  },
+  {
+   "date": "2026-03-31",
+   "text": "LowKick on McKinney: 'when he's on, he's almost unstoppable', but he can also get caught.",
+   "source": "https://www.lowkickmma.com/ufc-seattle-power-rankings-rating-the-nights-big-winners-at-climate-pledge-arena/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jim Miller Does It Again, Submits Jared Gordon With Guillotine",
+   "url": "https://cagesidepress.com/2026/05/09/jim-miller-does-it-again-submits-jared-gordon-with-guillotine/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "New Jersey's Jim Miller wins UFC 328 Hudson River battle following son's 'really difficult' cancer battle",
+   "url": "https://sports.yahoo.com/articles/jersey-jim-miller-wins-ufc-003638970.html",
+   "date": "2026-05-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Van vs. Taira Earns FOTN, Miller Cashes In at UFC 328",
+   "url": "https://cagesidepress.com/2026/05/10/van-vs-taira-earns-fotn-miller-cashes-in-at-ufc-328/",
+   "date": "2026-05-10"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Seattle Power Rankings: Rating The Night's Big Winners At Climate Pledge Arena",
+   "url": "https://www.lowkickmma.com/ufc-seattle-power-rankings-rating-the-nights-big-winners-at-climate-pledge-arena/",
+   "date": "2026-03-31"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "UFC 334 brings Ciryl Gane vs. Josh Hokit, Kayla Harrison vs. Amanda Nunes title fights to MSG",
+   "url": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

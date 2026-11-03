@@ -1,0 +1,103 @@
+{
+ "name": "Macy Chiasson",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A tall veteran bantamweight (10-6; 8-6 UFC; age 35) and TUF 28 winner, listed at 180 cm. She is on a three-fight losing streak, all decisions: Ketlen Vieira, Yana Santos (after missing weight by 2.5 pounds) and Ailin Perez (29-28 x3). UFC.com lists her at No. 9, against No. 11 Beatriz Mesquita.",
+ "how_they_fight": {
+  "Striking": "Long-range jab and kicks with a big size edge over most of the division. Modest output (about 3.1 significant strikes a minute at 46%). Against Perez she opened R2 with a body kick and a jab and walked through an overhand right (Cageside Press).",
+  "Grappling": "Dangerous in scrambles. Against Perez she threatened a leg lock, took the back and landed elbows in R1 (Cageside). Three career submissions (R1, R2, R3) and about 1.6 takedowns per 15.",
+  "Defense": "Takedowns are the recurring problem lately. Perez got inside her reach and took her down repeatedly (6 of 10 in our data); Vieira held her down for about ten minutes. Takedown defense is about 65%. She has been stopped twice: Raquel Pennington submission (R2) and Irene Aldana TKO (R3).",
+  "Pace & cardio": "Her six finishes are spread out: R1 one KO and one submission; R2 two KOs and one submission; R3 one submission (regional, 2017). Four of her six losses went to decision, and her two stoppage losses came in R2 and R3. Her last three fights all went 15 minutes and she lost all three.",
+  "Fight IQ": "Experienced and willing to grapple off her back, but she has been losing the positional battle to shorter, faster wrestlers who get inside her range."
+ },
+ "patterns": [
+  "Uses length at range: jab, body kick",
+  "Scramble threats: leg locks, back takes",
+  "Three straight decision losses",
+  "Taken down repeatedly by shorter opponents (Perez, Vieira)"
+ ],
+ "concerns": [
+  "Weight: missed by 2.5 pounds for Yana Santos (137.5) and was fined 25% of her purse; BJPenn.com notes question marks over her history with the scale. She did make weight for Perez with a pound to spare (Rotowire)",
+  "Three-fight skid",
+  "Mesquita is an elite grappler, and Chiasson has lost the mat battle in recent fights"
+ ],
+ "keys_to_beat": [
+  "Get inside her reach and take her down",
+  "Stay heavy on top; don't give her room to scramble for the back or a leg",
+  "Win the grappling rounds rather than trading at range"
+ ],
+ "news": [
+  {
+   "date": "2026-02-28",
+   "text": "Lost to Ailin Perez by unanimous decision (29-28 x3) in Mexico City; Perez repeatedly took her down.",
+   "source": "https://cagesidepress.com/2026/02/28/ufc-mexico-city-ailin-perez-beats-macy-chiasson-for-sixth-straight-win"
+  },
+  {
+   "date": "2026-02-28",
+   "text": "Made weight for Perez with a pound to spare (Rotowire).",
+   "source": "https://www.rotowire.com/mma/player/macy-chiasson-1807"
+  },
+  {
+   "date": "2025-10-03",
+   "text": "Missed weight at 137.5 pounds for Yana Santos at UFC 320 and was fined 25% of her purse.",
+   "source": "https://www.bjpenn.com/mma-news/ufc/ufc-320-weigh-in-results-one-fighter-misses-target-magomed-ankalaev-and-alex-pereira-make-title-fight-official/"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Rankings shown on the UFC.com event page: Chiasson No. 9, Mesquita No. 11.",
+   "source": "https://www.ufc.com/event/ufc-334"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Mexico City: Ailin Perez Beats Macy Chiasson for Sixth Straight Win",
+   "url": "https://cagesidepress.com/2026/02/28/ufc-mexico-city-ailin-perez-beats-macy-chiasson-for-sixth-straight-win",
+   "date": "2026-02-28"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Macy Chiasson MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/macy-chiasson-1807",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Ailin Perez vs. Macy Chiasson bolsters UFC Mexico with clash of ranked bantamweights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-mexico/ailin-perez-vs-macy-chiasson-bolsters-ufc-mexico-with-clash-of-ranked-bantamweights/",
+   "date": "2025-12-15"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 320 weigh-in results: One fighter misses target",
+   "url": "https://www.bjpenn.com/mma-news/ufc/ufc-320-weigh-in-results-one-fighter-misses-target-magomed-ankalaev-and-alex-pereira-make-title-fight-official/",
+   "date": "2025-10-03"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC's Ailín Pérez Eyes \"Battle of the Butts\" Fight After Macy Chiasson Showdown",
+   "url": "https://www.lowkickmma.com/ufc-ailin-perez-battle-of-the-butts-after-macy-chiasson/",
+   "date": "2026-01-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -467,6 +467,26 @@ def _squashed_side(text: str, bout: Dict[str, str]) -> Optional[str]:
     return hits[0] if len(hits) == 1 else None
 
 
+# Former ring names writers still use (a fighter who changed surname on marriage).
+FORMER_SURNAMES = {"chookagian": "Katlyn Cerminara"}
+
+
+def _initial_side(text: str, bout: Dict[str, str]) -> Optional[str]:
+    """'L. Santos' when both fighters are called Santos: the initial picks the one; also a former surname ('Chookagian')."""
+    plain = lambda s: unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()  # noqa: E731
+    t = plain(text).strip()
+    for old, now in FORMER_SURNAMES.items():
+        if re.search(rf"\b{old}\b", t) and now in (bout["fighter_a"], bout["fighter_b"]):
+            return now
+    m = re.match(r"([a-z])\.?\s+([a-z' -]+)", t)
+    if not m:
+        return None
+    ini, last = m.group(1), m.group(2).split()[-1]
+    hits = [f for f in (bout["fighter_a"], bout["fighter_b"])
+            if plain(f).split()[0].startswith(ini) and plain(f).split()[-1] == last]
+    return hits[0] if len(hits) == 1 else None
+
+
 def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url: str, published: str,
             cands: Optional[List[Dict[str, str]]] = None, pending: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
     """Parsed picks -> ledger rows; picks we can't tie to one real bout and one fighter are reported, not guessed.
@@ -481,7 +501,7 @@ def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url
                 pending.append({"author": author, "a": fa, "b": fb, "pick": pick_text, "outlet": outlet, "url": url, "published": published[:10]})
             continue
         who, how = split_pick(pick_text)
-        side = B.side(who, bout) or B.side(pick_text, bout) or _squashed_side(pick_text, bout)
+        side = B.side(who, bout) or B.side(pick_text, bout) or _squashed_side(pick_text, bout) or _initial_side(who or pick_text, bout)
         if not side:
             skipped.append(f"{author}: can't tell who '{pick_text}' means in {bout['fighter_a']} vs {bout['fighter_b']}")
             continue

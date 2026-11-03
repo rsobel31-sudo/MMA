@@ -1,0 +1,77 @@
+{
+ "name": "Evan Elder",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 30-year-old lightweight (10-2; 3-2 UFC) on a three-fight win streak (Genaro Valdez, Darrius Flowers, Gauge Young). He hasn't fought since April 2025: a leg injury pulled him from a September 2025 bout with Tom Nolan (Rotowire). This is his first fight in about 19 months.",
+ "how_they_fight": {
+  "Striking": "Volume striker with leg kicks, body kicks, right hands and the odd spinning back kick (Cageside Press, on Young). About 4.8 significant strikes a minute. Sherdog's Tom Feely called him an underrated, unflashy prospect who 'needs to continue developing some defensive comfort' and tends to get hit hard at least once a fight.",
+  "Grappling": "Low takedown volume (about 0.7 per 15, 24% accuracy). Two submission wins, including Darrius Flowers in R2. Preston Parsons took him down four times and controlled him in his UFC debut.",
+  "Defense": "Takedown defense is the weak point (about 51%). Two losses: a decision to Parsons and a doctor stoppage for a cut against Nazim Sadykhov in R3. Not finished by strikes in our data.",
+  "Pace & cardio": "Goes the distance and wins late. Four of his ten wins are decisions; his six finishes: R1 four (three KO, one sub), R2 one (sub), R3 one (KO). Both losses went into R3 or the full 15. Against Young, body shots slowed him in R2 but he won R3 with heavier shots (Cageside).",
+  "Fight IQ": "Steady and willing to brawl; Cageside noted he got drawn into more of a brawl in R2 against Young."
+ },
+ "patterns": [
+  "High-volume kickboxing with leg and body kicks",
+  "Wins decisions: three straight",
+  "Gets hit at least once a fight (Sherdog)",
+  "Takedowns are a problem against wrestlers"
+ ],
+ "concerns": [
+  "About 19 months out of action",
+  "Leg injury in 2025 (Rotowire)",
+  "Takedown defense against a powerful young opponent"
+ ],
+ "keys_to_beat": [
+  "Take him down; wrestlers have had success",
+  "Body work: it slowed him in R2 against Young",
+  "Land the big shot early before his volume builds"
+ ],
+ "news": [
+  {
+   "date": "2025-09-02",
+   "text": "Withdrew from a UFC Perth bout with Tom Nolan because of a leg injury.",
+   "source": "https://www.rotowire.com/mma/player/evan-elder-2288"
+  },
+  {
+   "date": "2026-10-02",
+   "text": "Booked against Samuel Sanches at UFC 334.",
+   "source": "https://www.rotowire.com/mma/player/evan-elder-2288"
+  },
+  {
+   "date": "2025-04-26",
+   "text": "Beat late-notice replacement Gauge Young by unanimous decision (30-27 x3).",
+   "source": "https://cagesidepress.com/2025/04/26/elder-beats-young-in-ufc-kansas-city-prelim"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Evan Elder MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/evan-elder-2288",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Elder Beats Young in UFC Kansas City Prelim",
+   "url": "https://cagesidepress.com/2025/04/26/elder-beats-young-in-ufc-kansas-city-prelim",
+   "date": "2025-04-26"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC Kansas City Prelims",
+   "url": "https://www.sherdog.com/news/articles/2/Preview-UFC-Kansas-City-Prelims-196751",
+   "date": "2025-04-23"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "thin"
+}

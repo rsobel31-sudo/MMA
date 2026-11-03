@@ -1,0 +1,228 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
+ "bouts": [
+  {
+   "a": "Johnny Walker",
+   "b": "Waldo Cortes-Acosta",
+   "favours": "Waldo Cortes-Acosta",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Walker has been knocked out when opponents force the issue and now faces heavyweight power; Cortes-Acosta is the bigger, more active man. The model (19%) is already well below the market (37%) on Walker; no lean until fight week.",
+   "factors": [
+    "Walker's chin against heavyweight power",
+    "Walker freezes under pressure",
+    "Walker's reach and explosiveness (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.19,
+   "p_market": 0.371,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Tatiana Suarez",
+   "b": "Virna Jandiroba",
+   "favours": "Tatiana Suarez",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Jandiroba has mostly been the one shooting in her fights, and Suarez is one of the best takedown artists in the division; only Zhang has stopped her wrestling. Jandiroba has never been stopped and is dangerous off her back, and Suarez's injury history and late fade keep it small.",
+   "factors": [
+    "Suarez's wrestling vs Jandiroba's takedown defence",
+    "Jandiroba's submissions (against)",
+    "Suarez's injury history (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.57,
+   "p_market": 0.64,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Davey Grant",
+   "b": "Elijah Smith",
+   "favours": "Elijah Smith",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Grant is 40 against a 23-year-old finisher, but he has never been knocked out and his volume wins late rounds; Smith tends to give up round one. Model and market agree near 75% for Smith; no lean.",
+   "factors": [
+    "Age gap",
+    "Grant's durability and volume (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.25,
+   "p_market": 0.277,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Billy Elekana",
+   "b": "Lucas Fernando",
+   "favours": "Lucas Fernando",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "The model has Elekana at 45% against a market at 28%. Fernando's busy, rangy kicking is the style that out-works Elekana's low-output counter game, and Elekana was dropped by Tafa and broken down by Guskov's body work. Fernando's short turnaround (third fight since late May) and Elekana's chokes after he hurts someone keep it small.",
+   "factors": [
+    "Fernando's volume vs Elekana's output",
+    "Elekana's body-work problem",
+    "Fernando's turnaround (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.45,
+   "p_market": 0.277,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Andre Petroski",
+   "b": "Mantas Kondratavicius",
+   "favours": "Andre Petroski",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Kondratavicius ran out of steam in R3 of his only UFC fight, and a grinding wrestler is the worst style for a fader. But Petroski has been knocked out in his last two and Kondratavicius hits hard early, so the lean is small.",
+   "factors": [
+    "Kondratavicius's cardio past 10 minutes",
+    "Petroski's takedowns and control",
+    "Petroski's chin (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.22,
+   "p_market": 0.286,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Gabriel Lorenco",
+   "b": "Thomas Petersen",
+   "favours": "Gabriel Lorenco",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Petersen took this on about two weeks' notice, three and a half months after a 92-second leg-lock loss, and gets stopped by stronger strikers. The model (60%) is already well above the market (41%) on Lourenco; no further lean.",
+   "factors": [
+    "Petersen's short notice",
+    "Petersen's wrestling (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.6,
+   "p_market": 0.411,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Gabriella Fernandes",
+   "b": "Karine Silva",
+   "favours": "Karine Silva",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Fernandes is coming off an R1 knockout loss and gets held down by grapplers; Silva is 1-3 in her last four and struggles to get fights down against good takedown defence. Model and market agree; no lean.",
+   "factors": [
+    "Fernandes's bottom game",
+    "Silva's recent form (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.36,
+   "p_market": 0.347,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Marcos Degli",
+   "b": "Mitch Raposo",
+   "favours": "Marcos Degli",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Degli is a finisher on a 13-fight streak making his UFC debut; Raposo is durable and mobile and has gone the distance in all four UFC fights. Model and market agree; no lean.",
+   "factors": [
+    "Degli's debut",
+    "Raposo's durability (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.71,
+   "p_market": 0.67,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Jose Delano",
+   "b": "Murtazali Magomedov",
+   "favours": "Murtazali Magomedov",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Magomedov has finished all eleven opponents but has less than three minutes of UFC cage time and has never been past R3 or behind. A near coin flip in both model and market; no lean.",
+   "factors": [
+    "Magomedov untested late",
+    "Magomedov's finishing (both ways)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.46,
+   "p_market": 0.496,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Keiichiro Nakamura",
+   "b": "Ollie Schmid",
+   "favours": "Keiichiro Nakamura",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Nakamura is a knockout puncher who came from behind to win Road to UFC; he gives away early rounds and is nine months out. The model is already above the market; no lean.",
+   "factors": [
+    "Nakamura's power",
+    "Nakamura's layoff and slow starts (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.83,
+   "p_market": 0.752,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Nina Milosevic",
+   "b": "Priscila Cachoeira",
+   "favours": "Nina Milosevic",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Cachoeira is 38, 1-5 since 2023 and has been submitted five times in the UFC; her R1 power is the only path. The model is already above the market; no lean.",
+   "factors": [
+    "Cachoeira's form and bottom game",
+    "Cachoeira's R1 power (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.88,
+   "p_market": 0.791,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Jonny Parsons",
+   "b": "Jose Souza",
+   "favours": "Jose Souza",
+   "logit": 0.15,
+   "confidence": "low",
+   "reasoning": "Parsons is 35 and has not fought in about 40 months, with repeated hip flexor and groin problems and two bookings that never happened. The model can't see a layoff that long; the market agrees with it at 33%, but ring rust and his body after that time out lean further toward Souza.",
+   "factors": [
+    "Parsons's 40-month layoff and injuries",
+    "Age 35",
+    "Parsons's Muay Thai (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.33,
+   "p_market": 0.33,
+   "created": "2026-11-03T18:00:00+00:00",
+   "pundits": []
+  }
+ ]
+}

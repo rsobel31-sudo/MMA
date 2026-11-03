@@ -1,0 +1,99 @@
+{
+ "name": "Luis Gurule",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 33-year-old flyweight (11-4; 1-4 UFC) who came through the 2024 Contender Series with a split decision over Nick Piccininni. A high-volume, forward-moving pressure fighter. His one UFC win was a clear decision over Daniel Barez in May; two weeks later he was submitted in R1 by Rei Tsuruya in a bout moved up to bantamweight. He has lost three of his last four.",
+ "how_they_fight": {
+  "Striking": "Throws a lot and takes a lot: about 5.3 significant strikes a minute at 41%, absorbing 5.6. He landed 149 of 299 against Barez in our data. He holds the centre, crashes forward with two-punch combinations and covers up on the way in (Cageside, on Coria). Very little knockdown power at UFC level (0.05 per 15); his five KO/TKO wins were all regional.",
+  "Grappling": "Opportunistic: he locked a D'Arce from half guard and hit a suplex against Barez (Cageside). But takedown accuracy is only about 22%. Alden Coria reversed his clinches, stuffed his late takedown and took him down 'with ease' in R3. Piccininni landed 10 of 20 takedowns on him on the Contender Series in our data.",
+  "Defense": "Hittable and vulnerable on the mat. Ode Osbourne knocked him out in R2 (2025), and Tsuruya took him down, landed ground-and-pound, took his back against the cage and choked him out at 3:19 of R1 (Cageside). The other two UFC losses were decisions (Jesús Aguilar, Coria).",
+  "Pace & cardio": "Built for 15 minutes. Five of his 11 wins are decisions, and he has five finishes: KO/TKO three times in R1, once in R2 and once in R3, plus an R4 submission in a five-round Fury FC fight (2024). Losses: two decisions, an R2 KO and an R1 submission. He took over late against Barez and controlled R3 (Cageside).",
+  "Fight IQ": "Comes forward no matter the odds (Cageside called him a guy who isn't 'afraid to come forward'). Took the Tsuruya fight soon after beating Barez when Aguilar withdrew."
+ },
+ "patterns": [
+  "Relentless forward pressure and volume",
+  "Grinds out late rounds",
+  "Gets reversed and taken down by better grapplers",
+  "Little one-shot power"
+ ],
+ "concerns": [
+  "Defensive responsibility while pressing: he covers up and walks onto shots",
+  "Takedown defense against a fighter who can mix grappling in",
+  "Facing a big puncher after an R1 submission loss",
+  "1-4 in the UFC"
+ ],
+ "keys_to_beat": [
+  "Counter him as he crashes in",
+  "Reverse him on the fence and take him down",
+  "Hurt him early; he wins long fights on volume"
+ ],
+ "news": [
+  {
+   "date": "2026-05-30",
+   "text": "Submitted by Rei Tsuruya at 3:19 of R1 at UFC Macau, in a bout moved up to bantamweight after Jesús Aguilar withdrew.",
+   "source": "https://cagesidepress.com/2026/05/30/ufc-macau-rei-tsuruya-returns-subs-luis-gurule/"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Beat Daniel Barez by unanimous decision (30-27 x3), his first UFC win.",
+   "source": "https://cagesidepress.com/2026/05/16/luis-gurule-overwhelms-barez-with-pressure-earns-clear-decision-win/"
+  },
+  {
+   "date": "2026-09-20",
+   "text": "Booked against Bilal Hasan at flyweight on the UFC 334 main card.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Alden Coria Improves to 2-0 in UFC With Win Over Luis Gurule",
+   "url": "https://cagesidepress.com/2026/02/21/alden-coria-improves-to-2-0-in-ufc-with-win-over-luis-gurule/",
+   "date": "2026-02-21"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Luis Gurule Overwhelms Barez with Pressure, Earns Clear Decision Win",
+   "url": "https://cagesidepress.com/2026/05/16/luis-gurule-overwhelms-barez-with-pressure-earns-clear-decision-win/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Macau: Rei Tsuruya Returns, Subs Luis Gurule",
+   "url": "https://cagesidepress.com/2026/05/30/ufc-macau-rei-tsuruya-returns-subs-luis-gurule/",
+   "date": "2026-05-30"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Noche UFC 3: 'Lopes vs. Silva' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/noche-ufc/noche-ufc-3-lopes-vs-silva-live-results-and-highlights/",
+   "date": "2025-09-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Shanghai Losers",
+   "url": "https://cagesidepress.com/2026/08/31/whats-next-ufc-shanghai-losers-2/",
+   "date": "2026-08-31"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "UFC 334 brings Ciryl Gane vs. Josh Hokit, Kayla Harrison vs. Amanda Nunes title fights to MSG",
+   "url": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,69 @@
+{
+ "name": "Samuel Sanches",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 23-year-old Brazilian lightweight (11-1) making his UFC debut. He earned his contract with a 2:01 R1 knockout of Chasen Blair on the Contender Series in September 2025, his eighth straight win. His planned debut against Tofiq Musayev in March 2026 fell through when he withdrew for undisclosed reasons. He hasn't fought in about 14 months.",
+ "how_they_fight": {
+  "Striking": "Finisher: eight of his 11 wins are KO/TKOs. He finished Blair with a cross and a right hook after Blair was hurt (Cageside Press). Our numbers on him (about 1.2 knockdowns per 15) rest mostly on one Contender Series fight.",
+  "Grappling": "One submission win (R1). Little UFC-level information on his wrestling.",
+  "Defense": "His only loss was an R1 submission in 2022 (Hugo Vargas). Little film against high-level opposition.",
+  "Pace & cardio": "Early finisher: KO/TKOs six in R1, two in R2; one R1 submission; two decisions. Has gone 15 minutes twice on the regional scene.",
+  "Fight IQ": "Not enough evidence yet. He said after the Contender Series that he still has 'a lot of fire to burn' (Cageside)."
+ },
+ "patterns": [
+  "R1 knockouts: six of eight KO/TKOs",
+  "Combinations to finish a hurt opponent",
+  "Eight-fight win streak entering the UFC"
+ ],
+ "concerns": [
+  "UFC debut on a big card",
+  "14 months out; withdrew from his first booking (reason undisclosed; Rotowire's later note calls it an injury)",
+  "Only loss was a submission"
+ ],
+ "keys_to_beat": [
+  "Take him into deep water: he has gone 15 minutes only twice",
+  "Grapple and test his submission defense",
+  "Don't stand in front of him early"
+ ],
+ "news": [
+  {
+   "date": "2026-03-05",
+   "text": "Withdrew from his March 28 UFC Seattle debut against Tofiq Musayev for undisclosed reasons; Ignacio Bahamondes replaced him.",
+   "source": "https://www.rotowire.com/mma/player/samuel-sanches-2704"
+  },
+  {
+   "date": "2026-10-02",
+   "text": "Booked against Evan Elder at UFC 334 (Rotowire, citing Heavy).",
+   "source": "https://www.rotowire.com/mma/player/samuel-sanches-2704"
+  },
+  {
+   "date": "2025-09-09",
+   "text": "Knocked out Chasen Blair at 2:01 of R1 on the Contender Series to earn a UFC contract.",
+   "source": "https://cagesidepress.com/2025/09/10/samuel-sanches-dwcs-qatar-abu-dhabi"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Samuel Sanches MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/samuel-sanches-2704",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "DWCS Winner Samuel Sanches Eyeing UFC's Qatar, Abu Dhabi Cards for Debut",
+   "url": "https://cagesidepress.com/2025/09/10/samuel-sanches-dwcs-qatar-abu-dhabi",
+   "date": "2025-09-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "thin"
+}

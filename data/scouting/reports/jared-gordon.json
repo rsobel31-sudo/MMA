@@ -1,0 +1,80 @@
+{
+ "name": "Jared Gordon",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 38-year-old lightweight veteran from Queens, New York (21-9, 1 NC; 9-8 UFC), a former CFFC champion and BJJ black belt who now fights out of Florida. He has lost three of his last four: a split to Nasrat Haqparast, an R3 TKO to Rafa Garcia and a first-round guillotine to Jim Miller in May. He faces Melquizael Costa, who moves up from featherweight.",
+ "how_they_fight": {
+  "Striking": "Busy boxer and kicker: about 5.3 significant strikes a minute at 52%, but he absorbs about 4.8. Against Miller he pushed him to the fence, went to the body with right hands and rocked him with a right over the top (Cageside Press). Eight KO/TKO wins, most recently Thiago Moises in R1 (May 2025).",
+  "Grappling": "Wrestles to control (about 1.6 takedowns per 15), but rarely submits anyone (two submissions, both regional). He caught a Miller body kick for a takedown and was immediately caught in a guillotine (Cageside).",
+  "Defense": "Durability has slipped. Five KO/TKO losses (two in R1, three in R3) and two submission losses (Miller R1, Grant Dawson R3). Takedown defense is about 61%.",
+  "Pace & cardio": "A grinder who goes the distance: 11 of his 21 wins are decisions, including two five-round regional fights. His stoppage wins: eight KO/TKOs (four in R1, three in R2, one in R3) and two submissions (both R2). Three of his five KO/TKO losses came in R3, most recently Rafa Garcia in 2025, so he can be worn down late.",
+  "Fight IQ": "Experienced and tough. Wikipedia notes many observers thought he beat Paddy Pimblett at UFC 282 despite losing the decision. Has missed weight three times in his UFC career (Wikipedia), though not recently in our sources."
+ },
+ "patterns": [
+  "Pressure boxing with body work",
+  "Takedowns for control rather than finishes",
+  "Goes the distance often: 11 decision wins",
+  "Three of five KO/TKO losses came in R3"
+ ],
+ "concerns": [
+  "Age 38 and three losses in his last four",
+  "Stopped in two straight fights (Garcia TKO, Miller submission)",
+  "Neck exposure when he shoots",
+  "Faces an opponent eight years younger who just went five rounds"
+ ],
+ "keys_to_beat": [
+  "Make it a striking fight and press him in R3",
+  "Punish his takedown entries with front headlocks or counters",
+  "Use speed and variety; he absorbs a lot of strikes"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Booked against Melquizael Costa at UFC 334 (Heavy, after an AG Fight report).",
+   "source": "https://heavy.com/sports/ufc/ufc-lightweight-ufc-334-new-york/"
+  },
+  {
+   "date": "2026-05-09",
+   "text": "Submitted by Jim Miller (guillotine) at 3:29 of R1 at UFC 328; Cageside notes it put him at 9-8 in the UFC and three losses in four.",
+   "source": "https://cagesidepress.com/2026/05/11/whats-next-ufc-328-losers/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "UFC Adds Lightweight Scrap for UFC 334 in New York",
+   "url": "https://heavy.com/sports/ufc/ufc-lightweight-ufc-334-new-york/",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jim Miller Does It Again, Submits Jared Gordon With Guillotine",
+   "url": "https://cagesidepress.com/2026/05/09/jim-miller-does-it-again-submits-jared-gordon-with-guillotine/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 328 Losers",
+   "url": "https://cagesidepress.com/2026/05/11/whats-next-ufc-328-losers/",
+   "date": "2026-05-11"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Jared Gordon",
+   "url": "https://en.wikipedia.org/wiki/Jared_Gordon",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

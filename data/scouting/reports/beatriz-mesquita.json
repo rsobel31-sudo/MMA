@@ -1,0 +1,72 @@
+{
+ "name": "Beatriz Mesquita",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "One of the most decorated jiu-jitsu competitors ever (record ten IBJJF black belt world titles, IBJJF Hall of Fame, 2017 ADCC gold per Wikipedia), now 8-0 in MMA and 3-0 in the UFC with three submissions. Age 35, fighting out of American Top Team, former LFA bantamweight champion. She is giving up a lot of height to Macy Chiasson (157.5 cm to 180 cm in our data).",
+ "how_they_fight": {
+  "Striking": "Functional, mostly used to close distance: about 3.6 significant strikes a minute. Against Melissa Mullins she kicked and worked to close range, then got hurt in a scrappy exchange and had to clinch (Cageside Press). Her one KO/TKO win was the LFA title fight with Sierra Dinwoodie (R2).",
+  "Grappling": "Elite. Six of her eight wins are submissions: rear-naked chokes of Irina Alekseeva (R2) and Montserrat Rendon (R1) and an armbar of Mullins from her guard (R1, 3:16) (Wikipedia, Cageside). She finishes from top and bottom, and about 2 takedowns per 15.",
+  "Defense": "Never beaten, but hittable on the feet: Mullins landed several clean shots and had her hurt before she found the armbar (Cageside). Takedown defense is listed at about 53% in our data on a small sample.",
+  "Pace & cardio": "She has never needed more than two rounds. Our data has her wins as R1: four submissions; R2: two submissions, one TKO and one DQ win. She has never seen R3 in MMA, so her late-round cardio is untested.",
+  "Fight IQ": "Calm under fire: she recovered from being hurt and finished Mullins off her back. Short MMA career (pro debut June 2024) means limited film against a long, experienced opponent."
+ },
+ "patterns": [
+  "Gets the fight to the mat, then hunts the back or an arm",
+  "Six submissions in eight wins; three straight in the UFC",
+  "Comfortable attacking from her guard",
+  "Never past R2"
+ ],
+ "concerns": [
+  "Big height and reach gap against Chiasson",
+  "Striking defense: was hurt by Mullins",
+  "Untested in R3"
+ ],
+ "keys_to_beat": [
+  "Use length and keep her at range with the jab and kicks",
+  "Stay off the mat and out of her guard; don't throw lazy strikes from top",
+  "Make it a three-round fight and test her conditioning"
+ ],
+ "news": [
+  {
+   "date": "2026-06-20",
+   "text": "Submitted Melissa Mullins with an armbar at 3:16 of R1 after being hurt early.",
+   "source": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-bia-mesquita-overcomes-early-adversity-subs-melissa-mullins/"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Wikipedia lists her at No. 11; the UFC.com event page shows the Chiasson bout as No. 9 vs No. 11.",
+   "source": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 119: Bia Mesquita Overcomes Early Adversity, Subs Melissa Mullins",
+   "url": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-bia-mesquita-overcomes-early-adversity-subs-melissa-mullins/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Beatriz Mesquita",
+   "url": "https://en.wikipedia.org/wiki/Beatriz_Mesquita",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

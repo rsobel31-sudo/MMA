@@ -1,0 +1,106 @@
+{
+ "name": "Stephen Thompson",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "'Wonderboy' (17-9-1 in our data), the karate-based welterweight and two-time title challenger against Tyron Woodley, fights for the last time. He picked the unranked Charles Radtke himself, to give a younger fighter a chance to climb (Sherdog). He is on a three-fight losing streak, his last win came in December 2022, and he has not fought since July 2025, when his shin was split to the bone in a split-decision loss to Gabriel Bonfim.",
+ "how_they_fight": {
+  "Striking": "Long-range karate: side kicks, spinning kicks and straight punches from a side-on stance. About 4.3 significant strikes a minute at 53%, absorbing 3.0. Against Bonfim he rocked him with a head kick in R2 (Cageside). He out-landed Geoff Neal 171-85 over five rounds and Kevin Holland 163-119 in our data.",
+  "Grappling": "Almost none on offense (about 0.3 takedowns per 15). One submission win, back in 2010.",
+  "Defense": "Hard to hit cleanly at range, but wrestlers beat him. Belal Muhammad (7 of 9 takedowns, about 12 minutes of control), Gilbert Burns and Shavkat Rakhmonov (R2 submission) all held him down, and Bonfim took him down in all three rounds (Cageside). Joaquin Buckley stopped him in R3 in October 2024 after four takedowns. His other stoppage loss was an R2 knockout by Anthony Pettis (2019).",
+  "Pace & cardio": "Comfortable over 25 minutes: five of his five-round fights went the distance (two wins, two losses, a draw). His finishes: five KO/TKOs in R1, two in R2, one stoppage after R4 (Holland) and the 2010 submission in R2. Eight wins are decisions. His three stoppage losses came in R2 (two) and R3 (one).",
+  "Fight IQ": "Patient and distance-aware. Thompson said veterans gave him early chances and he wants to do the same, adding that Radtke has 'tremendous potential' (Sherdog)."
+ },
+ "patterns": [
+  "Kicks and counters from long range in a karate stance",
+  "Outworks strikers who stay at distance",
+  "Loses to opponents who take him down and hold him",
+  "Three straight losses, two by stoppage"
+ ],
+ "concerns": [
+  "Age: Cageside noted he was 42 at the time of the Bonfim fight",
+  "About 16 months out of action after a shin injury",
+  "Radtke's recent wins came from long top control",
+  "Lost the grappling exchanges in all three of his recent losses"
+ ],
+ "keys_to_beat": [
+  "Close the distance and take him down early",
+  "Hold top position for long stretches",
+  "Don't stay at kicking range"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Said he chose Radtke for his retirement fight so a younger fighter could get a chance to climb the rankings.",
+   "source": "https://www.sherdog.com/news/news/Stephen-Thompson-explains-why-he-chose-Charles-Radtke-for-final-UFC-fight-203029"
+  },
+  {
+   "date": "2026-09-20",
+   "text": "UFC 334 announced with Thompson vs. Radtke billed as his final fight.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-card-announced-2-023127330.html"
+  },
+  {
+   "date": "2025-07-14",
+   "text": "Said his shin was 'split to the bone' after the Bonfim loss and that he would focus on healing.",
+   "source": "https://www.lowkickmma.com/stephen-thompson-nasty-leg-injury/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Stephen Thompson explains why he chose Charles Radtke for final UFC fight",
+   "url": "https://www.sherdog.com/news/news/Stephen-Thompson-explains-why-he-chose-Charles-Radtke-for-final-UFC-fight-203029",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Yahoo Sports (Forbes)",
+   "author": "Brian Mazique",
+   "title": "UFC 334 Card Announced With 2 Title Fights And A Retirement Bout",
+   "url": "https://sports.yahoo.com/articles/ufc-334-card-announced-2-023127330.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Gabriel Bonfim Battles With Thompson, Grinds Out Split Win",
+   "url": "https://cagesidepress.com/2025/07/12/gabriel-bonfim-battles-with-thompson-grinds-out-split-win/",
+   "date": "2025-07-12"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "William Goodson",
+   "title": "Stephen Thompson Provides Update On Nasty Leg Injury From UFC Nashville",
+   "url": "https://www.lowkickmma.com/stephen-thompson-nasty-leg-injury/",
+   "date": "2025-07-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Nashville Losers",
+   "url": "https://cagesidepress.com/2025/07/14/whats-next-ufc-nashville-losers-2/",
+   "date": "2025-07-14"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Edmonton: 'Buckley vs. Malott' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-edmonton/ufc-edmonton-buckley-vs-malott-live-results-and-highlights/",
+   "date": "2026-10-17"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "UFC 334 brings Ciryl Gane vs. Josh Hokit, Kayla Harrison vs. Amanda Nunes title fights to MSG",
+   "url": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,91 @@
+{
+ "name": "Juan Diaz",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 28-year-old Peruvian bantamweight (16-1-1; 1-0 UFC), former LUX Fighting League champion, on a nine-fight win streak. He won his contract with a second-round spinning back elbow KO of Won Il Kwon and submitted Malcolm Wellmaker in R2 of his debut for a Performance of the Night bonus. His scheduled opponent Adrian Yanez withdrew in mid-October after being hospitalized; no replacement has been named as of November 3.",
+ "how_they_fight": {
+  "Striking": "Kick-heavy, though he struggled to land clean against Wellmaker and seemed wary of his power (Cageside Press). He dropped Wellmaker with a right hand after catching a kick in R1. Five KO/TKO wins, including the spinning elbow on the Contender Series (Heavy).",
+  "Grappling": "His main weapon. About 3.7 takedowns per 15. Against Wellmaker he took him down repeatedly, took the back as Wellmaker stood up and finished with a rear-naked choke at 4:08 of R2 (Cageside, LowKick MMA). Three career submissions.",
+  "Defense": "Lost only once, a decision to Rodrigo Vera in 2021, plus a 2018 draw. Never stopped in our data. Wellmaker's body kicks were the better strikes early in their fight (Cageside).",
+  "Pace & cardio": "Proven over long fights: 8 of his 16 wins are decisions, and in LUX he won two five-round decisions and a R4 stoppage in a five-round fight. Finishes: R1 three (one KO, two subs), R2 three (two KOs, one sub), R3 one, R4 one.",
+  "Fight IQ": "Patient; builds takedowns into back control. He landed a knee that appeared illegal on a downed Wellmaker in R1 and was warned, with no point taken (LowKick MMA)."
+ },
+ "patterns": [
+  "Chain takedowns into back takes",
+  "Rear-naked choke finishes",
+  "Comfortable in long fights, including five-rounders",
+  "Never stopped"
+ ],
+ "concerns": [
+  "No confirmed opponent 11 days out",
+  "Striking was tentative against a powerful opponent",
+  "Only one UFC fight"
+ ],
+ "keys_to_beat": [
+  "Stop the first takedowns and keep it standing",
+  "Body kicks worked early for Wellmaker",
+  "Don't give up the back when getting up"
+ ],
+ "news": [
+  {
+   "date": "2026-10-19",
+   "text": "Adrian Yanez withdrew from their UFC 334 bout, saying on Instagram he had been hospitalized. No replacement was announced, and SI said it was unclear whether the UFC could find one on short notice.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-loses-fight-night-172339565.html"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Wikipedia lists the bout as Juan Diaz vs. TBA and says it isn't known if a replacement will be sought. The UFC.com event page still showed Yanez vs. Diaz when checked. No named replacement found.",
+   "source": "https://en.wikipedia.org/wiki/UFC_334"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Submitted Malcolm Wellmaker (rear-naked choke, 4:08 of R2) in his UFC debut; Cageside called it a huge upset.",
+   "source": "https://cagesidepress.com/2026/05/16/ufc-vegas-117-malcolm-wellmaker-suffers-shock-defeat-subbed-by-juan-diaz/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Knockout / SI)",
+   "author": "Drew Beaupre",
+   "title": "UFC 334 Loses \"Fight of the Night\" Contender Just Weeks Out From MSG Event",
+   "url": "https://sports.yahoo.com/articles/ufc-334-loses-fight-night-172339565.html",
+   "date": "2026-10-19"
+  },
+  {
+   "outlet": "Yahoo Sports (Heavy)",
+   "author": "Marcel Dorff",
+   "title": "Bantamweight Barnburner Added to UFC 334 in New York",
+   "url": "https://sports.yahoo.com/articles/bantamweight-barnburner-added-ufc-334-171948504.html",
+   "date": "2026-09-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 117: Malcolm Wellmaker Suffers Shock Defeat, Subbed by Juan Díaz",
+   "url": "https://cagesidepress.com/2026/05/16/ufc-vegas-117-malcolm-wellmaker-suffers-shock-defeat-subbed-by-juan-diaz/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Juan Díaz Delivers Stunning Debut, Submits Malcolm Wellmaker – UFC Vegas 117 Highlights",
+   "url": "https://www.lowkickmma.com/malcolm-wellmaker-vs-juan-diaz-ufc-vegas-117/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "thin"
+}

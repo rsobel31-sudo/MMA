@@ -1,0 +1,92 @@
+{
+ "name": "Charles Radtke",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 36-year-old welterweight (12-5; 5-2 UFC), unranked, who has won two straight by grappling: an R3 rear-naked choke of Daniel Frunza in November 2025 and a 30-26 x3 decision over Francisco Prado at UFC 327. Both UFC losses were knockouts against strikers (Carlos Prates, Mike Malott). Stephen Thompson picked him for his retirement fight.",
+ "how_they_fight": {
+  "Striking": "Low output (about 2.2 significant strikes a minute) but real power: R1 TKOs of Gilbert Urbina (two knockdowns) and Matthew Semelsberger (0:51). Prado stunned him with a left hook early in R1 (Cageside).",
+  "Grappling": "His main weapon in recent fights. Against Frunza he took him down, took the back, nearly finished in R1, then choked him out at the end of R3 (LowKick); our data has nearly 12 minutes of control. Against Prado he landed 4 of 5 takedowns, held him down for about four minutes in R1, took the back in R2 and opened a cut with elbows (Cageside).",
+  "Defense": "Takes damage against good strikers: Carlos Prates stopped him at 4:47 of R1 (2024) and Mike Malott 26 seconds into R2 (2025). Prado also caught him in a very deep guillotine on a takedown attempt in R3 before he escaped (Cageside).",
+  "Pace & cardio": "Goes the distance well. Of his 12 wins, four are decisions; his eight finishes came in R1 (three KO/TKOs, two submissions), R2 (two KO/TKOs) and R3 (one submission, Frunza). Losses: two decisions and KO/TKOs in R1 (one) and R2 (two). He kept wrestling through R3 against Prado after an eye poke that drew a point deduction; the cards read 30-26 x3 (Cageside).",
+  "Fight IQ": "Has shifted toward a wrestling-first plan. Tough: 'I can actually say I'm about that life,' he said after Prado (Cageside)."
+ },
+ "patterns": [
+  "Takedowns, long top control and back takes in his last two fights",
+  "Real power in the hands when he stands",
+  "Knocked out by both strikers who beat him in the UFC"
+ ],
+ "concerns": [
+  "A rangy striker who keeps him at distance",
+  "Gets hit when he stands and trades",
+  "Being caught on his shots (deep Prado guillotine)"
+ ],
+ "keys_to_beat": [
+  "Stay at range and strike; don't get pinned on the fence",
+  "Punish his level changes with knees or front headlocks",
+  "Make him strike for 15 minutes"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Chosen by Stephen Thompson for his retirement fight; Thompson said Radtke has 'tremendous potential'.",
+   "source": "https://www.sherdog.com/news/news/Stephen-Thompson-explains-why-he-chose-Charles-Radtke-for-final-UFC-fight-203029"
+  },
+  {
+   "date": "2026-04-11",
+   "text": "Beat Francisco Prado by unanimous decision (30-26 x3) after surviving an eye poke and a deep guillotine.",
+   "source": "https://cagesidepress.com/2026/04/11/charles-radtke-survives-eye-poke-choke-claims-victory-over-francisco-prado-at-ufc-327/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Stephen Thompson explains why he chose Charles Radtke for final UFC fight",
+   "url": "https://www.sherdog.com/news/news/Stephen-Thompson-explains-why-he-chose-Charles-Radtke-for-final-UFC-fight-203029",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "Charles Radtke Survives Eye Poke, Choke, Claims Victory Over Francisco Prado at UFC 327",
+   "url": "https://cagesidepress.com/2026/04/11/charles-radtke-survives-eye-poke-choke-claims-victory-over-francisco-prado-at-ufc-327/",
+   "date": "2026-04-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna, Eddie Law",
+   "title": "Charles Radtke Outlasts Francisco Prado, Says \"I'm About That Life\" After Gritty Win",
+   "url": "https://cagesidepress.com/2026/04/13/charles-radtke-outlasts-francisco-prado-says-im-about-that-life-after-gritty-win/",
+   "date": "2026-04-13"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Charles Radtke Dominates Daniel Frunza, Locks In Third-Round RNC - UFC Vegas 110 Highlights",
+   "url": "https://www.lowkickmma.com/charles-radtke-vs-daniel-frunza-highlights/",
+   "date": "2025-11-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vancouver Winners",
+   "url": "https://cagesidepress.com/2025/10/20/whats-next-ufc-vancouver-winners/",
+   "date": "2025-10-20"
+  },
+  {
+   "outlet": "Yahoo Sports (Forbes)",
+   "author": "Brian Mazique",
+   "title": "UFC 334 Card Announced With 2 Title Fights And A Retirement Bout",
+   "url": "https://sports.yahoo.com/articles/ufc-334-card-announced-2-023127330.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

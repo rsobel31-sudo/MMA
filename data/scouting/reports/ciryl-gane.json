@@ -1,0 +1,110 @@
+{
+ "name": "Ciryl Gane",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "The French heavyweight champion (14-2, 1 NC, age 36): a long, light-footed kickboxer who controls distance and wins most of his fights standing. He won the interim belt by stopping Alex Pereira in R2 at UFC Freedom 250 in June, and was promoted when Tom Aspinall vacated in September; Aspinall's eyes had been damaged by Gane's pokes at UFC 321. He opens as a solid favourite over unbeaten wrestler Josh Hokit. Both of his losses came on the mat.",
+ "how_they_fight": {
+  "Striking": "High-volume and accurate (about 61% significant accuracy in our numbers). Against Pereira he jabbed, kicked the inside of the leg, dropped him with a jab early in R2 and swarmed for the finish at 1:27 (Cageside). He out-landed Pereira 54 to 12. His coach Fernand Lopez says his game is creating space between himself and the opponent (MMA Junkie).",
+  "Grappling": "Three submission wins, all from his first five fights (2018-2019). He rarely wrestles offensively: 0 for 2 on takedowns against Pereira.",
+  "Defense": "Hard to hit standing (absorbs about 2.2 significant strikes a minute). The ground is the problem. Francis Ngannou took him down 4 of 5 times and held him for over eight minutes in their five-rounder; Jon Jones took him down twice and submitted him in R1 (2:04). In the 2024 Volkov rematch Volkov landed 3 of 4 takedowns and out-controlled him (272 to 220 seconds) in a split decision. Jorge Masvidal pointed to both losses coming on the ground (MMA Junkie).",
+  "Pace & cardio": "Goes deep comfortably. Ten stoppage wins: three in R1, four in R2, three in R3. He is 4-2, 1 NC in five-round fights, with five-round decision wins over Rozenstruik and Volkov, R3 stoppages of Lewis and Tuivasa, the decision loss to Ngannou and the R1 loss to Jones.",
+  "Fight IQ": "Patient and disciplined at range. Fouls are a running theme: the Aspinall eye pokes ended UFC 321 as a no contest and led Aspinall to vacate, and Pereira says Gane hit him on the back of the head in the finishing sequence. Dominick Cruz and T.J. Dillashaw argued the pokes weren't deliberate (MMA Junkie)."
+ },
+ "patterns": [
+  "Jab, inside leg kicks, footwork; wins at range",
+  "Finishes hurt opponents quickly (Pereira) or wears them down late (Lewis, Tuivasa in R3)",
+  "Both losses came from being taken down and controlled (Ngannou, Jones)",
+  "Extended fingers and eye pokes have cost opponents and drawn scrutiny"
+ ],
+ "concerns": [
+  "Takedown defense against a wrestler who lands about three takedowns per 15 minutes",
+  "Age 36",
+  "Referee attention on eye pokes after the Aspinall no contest"
+ ],
+ "keys_to_beat": [
+  "Close distance and get to the body lock; don't trade at range",
+  "Wrestle early and often; make him carry weight",
+  "Keep hands up to defend extended fingers"
+ ],
+ "news": [
+  {
+   "date": "2026-06-14",
+   "text": "Stopped Alex Pereira by R2 TKO (1:27) at UFC Freedom 250 to win the interim heavyweight title.",
+   "source": "https://cagesidepress.com/2026/06/15/ufc-freedom-250-ciryl-gane-lights-up-devastates-alex-pereira-spoiling-heavyweight-debut/"
+  },
+  {
+   "date": "2026-09-14",
+   "text": "Promoted to undisputed champion after Tom Aspinall vacated due to eye complications from Gane's illegal pokes at UFC 321.",
+   "source": "https://en.wikipedia.org/wiki/UFC_334"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Opening line at BetOnline: Gane -243, Hokit +203.",
+   "source": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Dominick Cruz and T.J. Dillashaw defended him against cheating claims over eye pokes and Pereira's back-of-the-head complaint.",
+   "source": "https://sports.yahoo.com/articles/dominick-cruz-says-ufc-champion-175027536.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Ciryl Gane vs. Josh Hokit Headlines UFC 334, Kayla Harrison vs. Amanda Nunes Co-Main at MSG",
+   "url": "https://cagesidepress.com/2026/09/19/ciryl-gane-vs-josh-hokit-headlines-ufc-334-kayla-harrison-vs-amanda-nunes-co-main-at-msg/",
+   "date": "2026-09-19"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC 334 odds: Amanda Nunes returns as underdog at MSG",
+   "url": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Freedom 250: Ciryl Gane Lights Up, Devastates Alex Pereira, Spoiling Heavyweight Debut",
+   "url": "https://cagesidepress.com/2026/06/15/ufc-freedom-250-ciryl-gane-lights-up-devastates-alex-pereira-spoiling-heavyweight-debut/",
+   "date": "2026-06-15"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "",
+   "title": "Dominick Cruz says UFC champion Ciryl Gane not to blame for fouls",
+   "url": "https://sports.yahoo.com/articles/dominick-cruz-says-ufc-champion-175027536.html",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Farah Hannoun",
+   "title": "Ciryl Gane's coach compares 'huge challenge' Josh Hokit to UFC legend",
+   "url": "https://sports.yahoo.com/articles/ciryl-ganes-coach-compares-huge-193023554.html",
+   "date": "2026-10-19"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Farah Hannoun",
+   "title": "Jorge Masvidal: Josh Hokit 'could break' Ciryl Gane at UFC 334",
+   "url": "https://sports.yahoo.com/articles/jorge-masvidal-josh-hokit-could-212027942.html",
+   "date": "2026-11-02"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jon Jones says Josh Hokit can beat Ciryl Gane, but there's a catch",
+   "url": "https://www.sherdog.com/news/news/Jon-Jones-says-Josh-Hokit-can-beat-Ciryl-Gane-but-theres-a-catch-203194",
+   "date": "2026-10-13"
+  }
+ ],
+ "depth": "deep"
+}

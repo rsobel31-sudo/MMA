@@ -1,0 +1,112 @@
+{
+ "name": "Caio Borralho",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A Brazilian middleweight (18-2, 1 NC, age 34) from Fighting Nerds, 8-1 in the UFC. He bounced back from his first UFC loss (a five-round decision to Nassourdine Imavov) with a clean decision over Reinier de Ridder in March. Then a rib injury that needed surgery cancelled his August fight with Joe Pyfer. He takes on unranked Yousri Belgaroui to stay active, and has said the fight has more downside than upside for him.",
+ "how_they_fight": {
+  "Striking": "Measured and accurate (about 55% significant accuracy, 66% defence). Against de Ridder his straights and hooks dropped him to a knee in R1 and wobbled him again in R3; he also worked the lead leg (Cageside). Against Imavov he was out-landed 81 to 66 and outpaced in the exchanges.",
+  "Grappling": "Black belt in BJJ and Muay Thai, brown in judo (Wikipedia). Strong top game early in his UFC run: about ten minutes of control against both Omargadzhiev and Petrosyan. Against de Ridder he took him down in R3 and threatened a triangle. But his shots lacked explosiveness against Imavov, who stuffed all five (Cageside; our data).",
+  "Defense": "Never stopped in 21 pro fights. De Ridder cut him with a straight in R1 and landed 2 of 8 takedowns. Imavov clipped him and left him reeling in R3 in Paris.",
+  "Pace & cardio": "A decision fighter in the UFC: only two finishes in eight UFC wins (Oleksiejczuk sub R2, Craig KO R2). Nine stoppages overall: six in R1, two in R2, one in R3. He beat Jared Cannonier over five rounds, but tired in R4 against Imavov (Cageside).",
+  "Fight IQ": "Patient, mixes striking and grappling, wins rounds. Has said he wants to stay active and prove he is one of the best in the world against whoever he's given (Sherdog, via Boxing News)."
+ },
+ "patterns": [
+  "Measured striking with straight punches and hooks",
+  "Mixes in takedowns and top control when the opening is there",
+  "Wins on the cards: six of eight UFC wins went to decision",
+  "Lost when he couldn't get the takedown and was out-struck (Imavov)"
+ ],
+ "concerns": [
+  "Rib surgery; about eight months out since March",
+  "Gives up height and reach to a 196-cm kickboxer",
+  "Takedowns didn't work against a strong defensive opponent (Imavov 0 for 5)"
+ ],
+ "keys_to_beat": [
+  "Keep him on the end of long strikes; don't let him set his feet",
+  "Stuff the first takedowns and he struggles to change plans",
+  "Out-work him on the feet like Imavov did"
+ ],
+ "news": [
+  {
+   "date": "2026-06-06",
+   "text": "Said the rib didn't heal and was displaced, and that it could have punctured his lung; surgery cancelled his UFC 330 fight with Joe Pyfer.",
+   "source": "https://www.lowkickmma.com/caio-borralho-details-scary-injury-that-ended-planned-ufc-330-joe-pyfer-clash/"
+  },
+  {
+   "date": "2026-09-23",
+   "text": "Told Sherdog he took the Belgaroui fight to stay active after almost six months out (via Boxing News).",
+   "source": "https://boxingnews.com/news/borralho-explains-belgaroui-matchup/"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Closest line on the main card: Borralho -120, Belgaroui +103 (BetOnline).",
+   "source": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Ciryl Gane vs. Josh Hokit Headlines UFC 334, Kayla Harrison vs. Amanda Nunes Co-Main at MSG",
+   "url": "https://cagesidepress.com/2026/09/19/ciryl-gane-vs-josh-hokit-headlines-ufc-334-kayla-harrison-vs-amanda-nunes-co-main-at-msg/",
+   "date": "2026-09-19"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC 334 odds: Amanda Nunes returns as underdog at MSG",
+   "url": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC 326: Caio Borralho Bounces Back, Beats Reinier de Ridder",
+   "url": "https://cagesidepress.com/2026/03/07/ufc-326-caio-borralho-bounces-back-beats-reinier-de-ridder/",
+   "date": "2026-03-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Paris: Nassourdine Imavov Looks Strong in Decision Win Over Caio Borralho",
+   "url": "https://cagesidepress.com/2025/09/06/ufc-paris-nassourdine-imavov-looks-strong-in-decision-win-over-caio-borralho",
+   "date": "2025-09-06"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Subham",
+   "title": "Caio Borralho Details Scary Injury That Ended Planned UFC 330 Joe Pyfer Clash",
+   "url": "https://www.lowkickmma.com/caio-borralho-details-scary-injury-that-ended-planned-ufc-330-joe-pyfer-clash/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Boxing News (citing Sherdog)",
+   "author": "",
+   "title": "Borralho Explains Accepting Risky Belgaroui Matchup",
+   "url": "https://boxingnews.com/news/borralho-explains-belgaroui-matchup/",
+   "date": "2026-09-23"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Caio Borralho",
+   "url": "https://en.wikipedia.org/wiki/Caio_Borralho",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Marcelo Alonso",
+   "title": "Glover Teixeira: 3-0 UFC finisher Yousri Belgaroui is evolving on ground",
+   "url": "https://www.sherdog.com/news/news/Glover-Teixeira-30-UFC-finisher-Yousri-Belgaroui-is-evolving-on-ground-203276",
+   "date": "2026-10-20"
+  }
+ ],
+ "depth": "deep"
+}

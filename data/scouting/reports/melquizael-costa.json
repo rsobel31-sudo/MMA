@@ -1,0 +1,84 @@
+{
+ "name": "Melquizael Costa",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A 30-year-old Brazilian (26-8; 7-3 UFC; Chute Boxe) moving up from featherweight to lightweight for this fight (Heavy). His six-fight win streak ended in May when Arnold Allen beat him 50-45, 50-45, 49-46 in his first main event. Before that he stopped Dan Ige by TKO in R1 (Heavy).",
+ "how_they_fight": {
+  "Striking": "Varied, creative kickboxer: calf kicks, spinning attacks, high kicks and knees. His calf kicks began to land on Allen in R2 and his kicks won exchanges in R3 (Cageside Press). Back-to-back R1 KO/TKO wins before Allen (Morgan Charriere, Dan Ige). About 4.4 significant strikes a minute at 47%.",
+  "Grappling": "Active off his back and opportunistic in scrambles. He reversed Allen to take his back in R1 (Cageside), and has eight career submissions, including Andre Fili (R1) and Nuerdanbieke Shayilan (R3) in the UFC.",
+  "Defense": "Takedown defense is the hole (about 58%). Allen took him down repeatedly, including 'repeatedly' in R5 (Cageside); our data has Allen at 7-for-7 with over nine minutes of control. Thiago Moises (sub, R2) and Steve Garcia (TKO, R2) are his two UFC stoppage losses, both in 2023.",
+  "Pace & cardio": "Finishes come early but he can go long. 17 stoppage wins: R1 eleven (six KO, five sub), R2 two, R3 four. His four stoppage losses: R1 one (2017), R2 two, R3 one (2018). He went 25 minutes with Allen but Cageside said he looked tired in R5 and spent a lot of energy getting up after each takedown.",
+  "Fight IQ": "Takes risks with spinning strikes, which has paid off (Ige). Kept pressing forward while bleeding against Allen. Less clear how he handles a wrestler who can hold him down."
+ },
+ "patterns": [
+  "Calf kicks and spinning attacks",
+  "Eleven R1 stoppages",
+  "Back takes and submissions in scrambles",
+  "Gets taken down by stronger grapplers"
+ ],
+ "concerns": [
+  "First fight at lightweight in the UFC; size and strength against a natural 155er",
+  "Takedown defense",
+  "Coming off a five-round decision loss where he tired late"
+ ],
+ "keys_to_beat": [
+  "Wrestle him and keep him on the mat",
+  "Avoid open-range kicking exchanges",
+  "Watch for spinning attacks; he threw them throughout the Allen fight"
+ ],
+ "news": [
+  {
+   "date": "2026-10-01",
+   "text": "Booked against Jared Gordon at UFC 334, moving up to lightweight (Heavy).",
+   "source": "https://heavy.com/sports/ufc/ufc-lightweight-ufc-334-new-york/"
+  },
+  {
+   "date": "2026-05-16",
+   "text": "Lost a unanimous decision (50-45, 50-45, 49-46) to Arnold Allen in the UFC Vegas 117 main event, ending a six-fight win streak.",
+   "source": "https://cagesidepress.com/2026/05/16/ufc-vegas-117-arnold-allen-returns-to-win-column-with-decision-over-melquizael-costa/"
+  },
+  {
+   "date": "2026-02-21",
+   "text": "Beat Dan Ige by first-round TKO at UFC Houston (per Heavy's recap of his recent run).",
+   "source": "https://heavy.com/sports/ufc/ufc-lightweight-ufc-334-new-york/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Heavy",
+   "author": "Marcel Dorff",
+   "title": "UFC Adds Lightweight Scrap for UFC 334 in New York",
+   "url": "https://heavy.com/sports/ufc/ufc-lightweight-ufc-334-new-york/",
+   "date": "2026-10-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 117: Arnold Allen Returns to Win Column with Decision Over Melquizael Costa",
+   "url": "https://cagesidepress.com/2026/05/16/ufc-vegas-117-arnold-allen-returns-to-win-column-with-decision-over-melquizael-costa/",
+   "date": "2026-05-16"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Vegas 117 Losers",
+   "url": "https://cagesidepress.com/2026/05/18/whats-next-ufc-vegas-117-losers/",
+   "date": "2026-05-18"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Vegas 117 Power Rankings: Rating The Night's Big Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-vegas-117-power-rankings-rating-the-nights-big-winners-in-las-vegas/",
+   "date": "2026-05-18"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

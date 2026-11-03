@@ -1,0 +1,98 @@
+{
+ "name": "Cesar Almeida",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A Brazilian middleweight (7-3; 3-3 UFC; age 38 per Wikipedia) who came to MMA after a long kickboxing career, including a 2013 tournament final win over Alex Pereira. He has lost two straight: out-wrestled by Cezary Oleksiejczuk in December 2025 and knocked out by Damian Pinas at 4:44 of R1 in July. He replaces Baisangur Susurkaev against unbeaten Donte Johnson.",
+ "how_they_fight": {
+  "Striking": "Technical, efficient kickboxer: about 3.6 significant strikes a minute at 59%, absorbs only about 2.2. Works the legs and body with kicks and a straight right. Against Pinas he stayed disciplined, avoided a long-range battle and kept kicking the body (Cageside Press). BJPenn.com credits him with crisp striking in wins over Abdul Razak Alhassan (R1 KO, left hook) and Ihor Potieria (decision).",
+  "Grappling": "Little offense (about 0.5 takedowns per 15). He did reverse a caught-kick takedown attempt by Pinas and pinned him on the fence (Cageside).",
+  "Defense": "Takedown defense is the problem (about 50%). Oleksiejczuk took him down in every round and held top control for most of the fight; Almeida showed 'strong get-up ability along the cage' but kept being taken back down (Cageside). Roman Kopylov also took him down five times in our data and edged a split decision. Pinas knocked him out with one right hand.",
+  "Pace & cardio": "Five of his seven wins are KO/TKOs: four in R1, one in R2 (Dylan Budka, UFC debut). His two decision wins and two decision losses all went the full 15 minutes. His only stoppage loss came in R1 (Pinas). Our data has no sign of a late fade; his losses come from being wrestled or caught.",
+  "Fight IQ": "Patient and composed on the feet; Cageside says he was reading Pinas and controlling the pace before the knockout. He tends to lose fights where the opponent changes levels or brings more reach and power."
+ },
+ "patterns": [
+  "Kicks to the legs and body, straight right behind them",
+  "Four R1 KOs; two UFC Performance of the Night bonuses (Budka, Alhassan)",
+  "Taken down repeatedly by wrestlers (Kopylov, Oleksiejczuk)",
+  "Both UFC decision losses came against opponents who controlled him on the mat"
+ ],
+ "concerns": [
+  "Age 38 and two straight losses, the last by knockout",
+  "Takedown defense",
+  "Took the fight after Susurkaev withdrew in late September, about six weeks out"
+ ],
+ "keys_to_beat": [
+  "Change levels and take him down; he has been held down for long stretches",
+  "Close distance through his kicks instead of fighting at his range",
+  "Look for the big right hand when he commits to body kicks"
+ ],
+ "news": [
+  {
+   "date": "2026-09-30",
+   "text": "Reportedly agreed to replace Baisangur Susurkaev against Donte Johnson at UFC 334 (Sherdog, citing AG Fight).",
+   "source": "https://www.sherdog.com/news/news/UFC-334-gets-new-middleweight-matchup-after-Baisangur-Susurkaev-withdraws-203024"
+  },
+  {
+   "date": "2026-07-11",
+   "text": "Knocked out by Damian Pinas (punch) at 4:44 of R1 at UFC 329.",
+   "source": "https://cagesidepress.com/2026/07/11/damian-pinas-flattens-almeida-with-devastating-ko-at-ufc-329/"
+  },
+  {
+   "date": "2025-12-13",
+   "text": "Lost a unanimous decision (30-27 x3) to Cezary Oleksiejczuk, who out-grappled him.",
+   "source": "https://cagesidepress.com/2025/12/14/cezary-oleksiejczuk-outgrapples-cesar-almeida-in-dominant-ufc-debut"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "UFC 334 gets new middleweight matchup after Baisangur Susurkaev withdraws",
+   "url": "https://www.sherdog.com/news/news/UFC-334-gets-new-middleweight-matchup-after-Baisangur-Susurkaev-withdraws-203024",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Damian Pinas Flattens Almeida With Devastating KO At UFC 329",
+   "url": "https://cagesidepress.com/2026/07/11/damian-pinas-flattens-almeida-with-devastating-ko-at-ufc-329/",
+   "date": "2026-07-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Cezary Oleksiejczuk Outgrapples Cesar Almeida in Dominant UFC Debut",
+   "url": "https://cagesidepress.com/2025/12/14/cezary-oleksiejczuk-outgrapples-cesar-almeida-in-dominant-ufc-debut",
+   "date": "2025-12-14"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "César Almeida (fighter)",
+   "url": "https://en.wikipedia.org/wiki/C%C3%A9sar_Almeida_(fighter)",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 329 Best Bets: Paddy Pimblett bounceback, quick finishes lead cash-ins",
+   "url": "https://www.bjpenn.com/mma-news/paddy-pimblett/ufc-329-best-bets-paddy-pimblett/",
+   "date": "2026-07-08"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,125 @@
+{
+ "name": "Uroš Medić",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A Serbian welterweight finisher (14-3; 8-3 UFC) on a four-fight run of first-round stoppages. He headlined the UFC's first card in Belgrade in August and stopped Daniel Rodriguez in 30 seconds. Every one of his 14 wins is a stoppage, and he has never been to the judges. Cageside lists him at No. 9 and Holland at No. 14.",
+ "how_they_fight": {
+  "Striking": "Heavy, accurate power punching: about 4.6 significant strikes a minute at 58%, and 2.7 knockdowns per 15 minutes in our data. He flattened Geoff Neal with a left hook in 79 seconds (Cageside) and finished Rodriguez with a soccer kick to the body and punches at 0:30 of R1 (BJPenn.com). Twelve of his 14 wins are KO/TKO.",
+  "Grappling": "Rarely used on offense: about 0.8 takedowns per 15 minutes and a 9% control share. His two submission wins both came on the Alaska regional scene in 2018, in R1.",
+  "Defense": "The open question. Two of his three losses are submissions: Jalin Turner (R1, 2021) and Myktybek Orolbai (neck crank, R2, 2023; Cageside). Orolbai landed 7 of 10 takedowns and held him down for about 7.5 minutes in our data. His third loss was a 31-second knockout by Punahele Soriano in January 2025. Takedown defense is about 59%. He has also been knocked down in three of his last eight UFC fights (Semelsberger, Soriano, Urbina).",
+  "Pace & cardio": "Almost entirely a first-round fighter. Of his 14 wins, 11 came in R1, two in R2 and one in R3 (Matthew Semelsberger, 2:36 of R3, 2023). His losses came in R1 (two) and R2 (one). He has never gone to a decision and has never fought 15 minutes. Cageside noted in February that he had only got out of the first round four times in his career. His last four fights all ended inside 90 seconds (LowKick), so his late-round conditioning at UFC level is unknown.",
+  "Fight IQ": "Aggressive from the opening bell. Has repeatedly called for Leon Edwards (LowKick). Outspoken: this week he said he is tired of watching Islam Makhachev win and that the champion should retire if he is considering it (Sherdog)."
+ },
+ "patterns": [
+  "Fast starter: 11 of 14 wins in R1, the last four all inside 90 seconds",
+  "Power punches; 12 KO/TKO wins",
+  "Never been to a decision",
+  "Losses: submitted by Turner and Orolbai (who held him down), and a fast KO by Soriano"
+ ],
+ "concerns": [
+  "Holland is much longer: our data lists Holland's reach at about 206 cm against Medić's 180 cm",
+  "Submission defense against a fighter with nine career submission wins",
+  "No evidence of how he fights in rounds two and three against a durable opponent"
+ ],
+ "keys_to_beat": [
+  "Survive the first round: don't trade with him early",
+  "Use length and kicks to keep him at range",
+  "Take him down or clinch and attack the neck; two of his three losses are submissions",
+  "Drag him into the second half of the fight"
+ ],
+ "news": [
+  {
+   "date": "2026-11-03",
+   "text": "Said on a podcast that he is tired of watching Islam Makhachev win and that Makhachev should retire if he is thinking about it.",
+   "source": "https://sports.yahoo.com/articles/uros-medic-tired-watching-islam-024346455.html"
+  },
+  {
+   "date": "2026-10-19",
+   "text": "Cageside lists the bout as (#9) Medić vs. (#14) Holland.",
+   "source": "https://cagesidepress.com/2026/10/19/whats-next-ufc-edmonton-losers-2/"
+  },
+  {
+   "date": "2026-08-01",
+   "text": "Headlined UFC Belgrade and stopped Daniel Rodriguez by TKO (soccer kick to the body and punches) at 0:30 of R1.",
+   "source": "https://www.bjpenn.com/mma-news/ufc-belgrade/ufc-belgrade-medic-vs-rodriguez-live-results-and-highlights/"
+  },
+  {
+   "date": "2026-09-20",
+   "text": "Booked against Kevin Holland on the UFC 334 main card at Madison Square Garden.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (Sherdog)",
+   "author": "Sayan Nag",
+   "title": "Uros Medic is 'tired' of watching Islam Makhachev win",
+   "url": "https://sports.yahoo.com/articles/uros-medic-tired-watching-islam-024346455.html",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Edmonton Losers",
+   "url": "https://cagesidepress.com/2026/10/19/whats-next-ufc-edmonton-losers-2/",
+   "date": "2026-10-19"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Serbia: Matchmaking for All of Saturday's Winners",
+   "url": "https://www.lowkickmma.com/matchmaking-for-all-of-saturdays-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Belgrade Winners",
+   "url": "https://cagesidepress.com/2026/08/04/whats-next-ufc-belgrade-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC Belgrade: 'Medić vs. Rodriguez' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-belgrade/ufc-belgrade-medic-vs-rodriguez-live-results-and-highlights/",
+   "date": "2026-08-01"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Houston Winners",
+   "url": "https://cagesidepress.com/2026/02/23/whats-next-ufc-houston-winners/",
+   "date": "2026-02-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC Houston Losers",
+   "url": "https://cagesidepress.com/2026/02/23/whats-next-ufc-houston-losers/",
+   "date": "2026-02-23"
+  },
+  {
+   "outlet": "Yahoo Sports (Forbes)",
+   "author": "Brian Mazique",
+   "title": "UFC 334 Card Announced With 2 Title Fights And A Retirement Bout",
+   "url": "https://sports.yahoo.com/articles/ufc-334-card-announced-2-023127330.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "UFC 334 brings Ciryl Gane vs. Josh Hokit, Kayla Harrison vs. Amanda Nunes title fights to MSG",
+   "url": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

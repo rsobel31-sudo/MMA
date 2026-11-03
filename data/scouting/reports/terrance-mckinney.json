@@ -1,0 +1,113 @@
+{
+ "name": "Terrance McKinney",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "An explosive American lightweight (18-9; 8-6 UFC; age 32) and one of the fastest starters in the sport. Every one of his 27 pro fights in our data ended inside the distance. He has gone loss, win, loss in his last three: submitted by Chris Duncan, a 24-second TKO of Kyle Nelson, then stopped by King Green with one second left in R1 after dominating the early minutes. He meets 43-year-old Jim Miller on the UFC 334 prelims.",
+ "how_they_fight": {
+  "Striking": "Heavy, all-out pressure from the opening bell: about 6.9 significant strikes a minute at 57%, with real power (0.59 knockdowns per 15). Against Nelson a partly blocked head kick put him down and McKinney finished with right hammerfists at 0:24 (Cageside Press). He landed several big shots on Green early (LowKick MMA).",
+  "Grappling": "A real finisher on the mat too: nine of his 18 wins are submissions, eight of them in R1. He mixes in takedowns (about 2.3 per 15) and ground strikes; he took Green down and 'started to punish him on the mat' before tiring (LowKick MMA).",
+  "Defense": "The weak point. He absorbs about 4.3 a minute and has 47% striking defense. All nine losses were stoppages: six by strikes (four in R1, two in R2) and three by submission (two in R1, one in R2). Duncan submitted him with an anaconda choke at 2:30 of R1 in December 2025 (Rotowire).",
+  "Pace & cardio": "Built for the first five minutes. 17 of his 18 wins came in R1; the only exception was an R3 submission in 2018. Cageside notes he has never won a UFC fight after the first round. Every loss came in R1 or R2. Against Green he wore himself out on top and was stopped at 4:59 of R1 (LowKick MMA). He has never been to a decision in our data.",
+  "Fight IQ": "Goes for the finish immediately and keeps going. LowKick MMA calls him known for 'explosive starts and relentless aggression'. The downside is that he can empty the tank chasing a stoppage and has little in reserve if the opponent survives."
+ },
+ "patterns": [
+  "Sprint start: 17 of 18 wins in R1",
+  "Head kicks and punches into ground-and-pound finishes",
+  "R1 submissions when he gets on top or catches a scramble",
+  "All nine losses were stoppages, all in R1-R2",
+  "Fades fast if the opponent weathers the first few minutes (Green)"
+ ],
+ "concerns": [
+  "Cardio once the opening burst is spent",
+  "Striking defense and durability: six KO/TKO losses",
+  "Jim Miller is a veteran submission threat; in May he caught Jared Gordon in a guillotine as Gordon finished a takedown (Cageside Press), which matters for a fighter who shoots and scrambles as McKinney does",
+  "Two losses in his last three fights"
+ ],
+ "keys_to_beat": [
+  "Survive the first three minutes; don't trade with him early",
+  "Make him carry weight and work on the mat late in R1, then take over in R2",
+  "Counter as he rushes in; he has been stopped six times by strikes",
+  "Threaten the neck when he dives for takedowns"
+ ],
+ "news": [
+  {
+   "date": "2026-07-11",
+   "text": "Stopped by King Green (TKO, punches) at 4:59 of R1 at UFC 329 after leading early. Cageside notes the loss drops him to 8-6 in the UFC.",
+   "source": "https://cagesidepress.com/2026/07/13/whats-next-ufc-329-losers/"
+  },
+  {
+   "date": "2026-03-28",
+   "text": "Beat Kyle Nelson by TKO (hammerfists) at 0:24 of R1 at UFC Seattle.",
+   "source": "https://cagesidepress.com/2026/03/28/ufc-seattle-terrance-mckinney-refuses-to-leave-first-round-stops-kyle-nelson"
+  },
+  {
+   "date": "2025-12-06",
+   "text": "Submitted by Chris Duncan (anaconda choke) at 2:30 of R1 at UFC 323.",
+   "source": "https://www.rotowire.com/mma/player/terrance-mckinney-2188"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Booked against Jim Miller on the UFC 334 prelims at Madison Square Garden. We have not found a detailed booking report from our outlets yet.",
+   "source": "https://en.wikipedia.org/wiki/UFC_334"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Seattle: Terrance McKinney Refuses to Leave First Round, Stops Kyle Nelson",
+   "url": "https://cagesidepress.com/2026/03/28/ufc-seattle-terrance-mckinney-refuses-to-leave-first-round-stops-kyle-nelson",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC 329 Power Rankings: Rating The Night's Big Winners In Las Vegas",
+   "url": "https://www.lowkickmma.com/ufc-329-power-rankings-rating-the-nights-big-winners-in-las-vegas/",
+   "date": "2026-07-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 329 Losers",
+   "url": "https://cagesidepress.com/2026/07/13/whats-next-ufc-329-losers/",
+   "date": "2026-07-13"
+  },
+  {
+   "outlet": "Rotowire",
+   "author": "",
+   "title": "Terrance McKinney MMA Stats & News",
+   "url": "https://www.rotowire.com/mma/player/terrance-mckinney-2188",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Serbia: Matchmaking for All of Saturday's Winners",
+   "url": "https://www.lowkickmma.com/matchmaking-for-all-of-saturdays-winners/",
+   "date": "2026-08-04"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jim Miller Does It Again, Submits Jared Gordon With Guillotine",
+   "url": "https://cagesidepress.com/2026/05/09/jim-miller-does-it-again-submits-jared-gordon-with-guillotine/",
+   "date": "2026-05-09"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

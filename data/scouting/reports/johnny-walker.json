@@ -1,26 +1,61 @@
 {
  "name": "Johnny Walker",
- "updated": "2026-09-30T23:00:00+00:00",
- "event": "UFC 332",
- "summary": "A huge, awkward, explosive Brazilian moving up to heavyweight after a confused few years at light heavyweight: the wild aggression that made him was coached out, leaving a fighter who freezes at range and gets knocked out when opponents force the issue.",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "summary": "A tall, awkward Brazilian (23-10, 1 NC, age 34) who moved up to heavyweight this year after cutting hard to 205. His heavyweight debut went well: he knocked out Mick Parkin with clinch knees at 3:35 of R1 at UFC 332 and earned a bonus. Now he headlines against Waldo Cortes-Acosta on short notice, in a five-round fight, only his second at heavyweight. He is dangerous early and has been stopped six times.",
  "how_they_fight": {
-  "Striking": "Long (208-cm reach) and dangerous when he lets go; recent fights have been tentative (the Dominick Reyes split decision saw neither man lead).",
-  "Grappling": "Was outwrestled by Nikita Krylov years ago; wrestling defense about 56%.",
-  "Defense & durability": "Stopped by Volkan Oezdemir and Magomed Ankalaev (2024): chin is a concern, now against heavier punchers.",
-  "Pace & cardio": "Should be better without the cut to 205.",
-  "Fight IQ": "Indecisive lately; the hope is heavyweight frees him up."
+  "Striking": "Long (6-foot-5, 82-inch reach per LowKick) with real power: 18 of his 23 wins are KO/TKO. Against Parkin he chopped the lead leg with inside and outside kicks, went to the body, then landed an elbow, a jumping knee and a second knee in the clinch to end it (Cageside). He said afterward that he doesn't train that knee. Sherdog's Tom Feely wrote before UFC 332 that the wild aggression of his early UFC run has been coached out of him and that he now tries to strike from range, which has left him looking frozen.",
+  "Grappling": "BJJ brown belt (LowKick); three submission wins, all in R1 (most recently Ion Cutelaba, 2022). Submitted only once, in 2015. His wrestling defense is the issue: Nikita Krylov took him down 3 of 8 times and held him for over 11 minutes in 2020 (our data).",
+  "Defense": "Chin and defense are the big question. Six KO/TKO losses: four in R1 (Henrique Silva Lopes 2016, Corey Anderson, Jamahal Hill, Volkan Oezdemir) and two in R2 (Wagner Prado 2014, Magomed Ankalaev). Feely says he gets knocked out when opponents press forward. He did take a clean right hand from Parkin well (Cageside), but that is one heavyweight fight.",
+  "Pace & cardio": "Front-loaded. Of his 21 stoppage wins, 18 came in R1, two in R2, one in R3 (2015). Only two wins went the distance. He is 1-3 in scheduled five-rounders: a decision loss to Thiago Santos, R1 and R2 KO losses to Hill and Ankalaev, and the R2 TKO of Zhang Mingyang in 2025. UFC.com framed the move up as a way to compete without the big cut; he weighed 242 for Parkin, who came in at 265 (BJPenn.com).",
+  "Fight IQ": "Inconsistent. The April split-decision loss to Dominick Reyes was a slow fight where neither man led (Sherdog). After UFC 332 he asked for 40-year-old Marcin Tybura, saying he wanted more experience before facing higher-ranked heavyweights (Sherdog). This booking skips that step."
  },
  "patterns": [
-  "Waits at range; flashes of explosive offense"
+  "Leg kicks and body work at range, then explodes in the clinch (knees, elbows)",
+  "Early finisher: 18 of 21 stoppage wins in R1",
+  "Stopped six times, four of them in R1",
+  "Can be wrestled and held down (Krylov)",
+  "Goes passive when he can't find the opening (Reyes)"
  ],
  "concerns": [
-  "Chin against heavyweight power",
-  "Freezes under pressure"
+  "Durability against heavyweight punchers; Cortes-Acosta has dropped five UFC opponents",
+  "Gives up about 20 lbs (he weighed 242 for UFC 332; Cortes-Acosta weighed 264 for UFC 328)",
+  "Second heavyweight fight, first heavyweight five-rounder, on short notice",
+  "1-3 in scheduled five-round fights"
  ],
  "keys_to_beat": [
-  "Apply consistent pressure and make him fight going backward"
+  "Press him and make him fight going backward (Feely's key for Parkin)",
+  "Stay out of the clinch along the fence, where he finished Parkin",
+  "Take him down; he has struggled with wrestlers",
+  "Survive the first round; his finishes almost all come early"
  ],
- "news": [],
+ "news": [
+  {
+   "date": "2026-10-03",
+   "text": "Knocked out Mick Parkin with clinch knees at 3:35 of R1 at UFC 332 in his heavyweight debut and earned a Performance of the Night bonus.",
+   "source": "https://cagesidepress.com/2026/10/03/ufc-332-johnny-walker-impressive-in-heavyweight-debut-stops-mick-parkin-with-knees/"
+  },
+  {
+   "date": "2026-10-08",
+   "text": "Asked the UFC for Marcin Tybura in December, saying he didn't want to get ahead of himself.",
+   "source": "https://www.sherdog.com/news/news/Johnny-Walker-calls-out-UFC-veteran-following-explosive-heavyweight-debut-203125"
+  },
+  {
+   "date": "2026-10-30",
+   "text": "Reportedly booked to face Waldo Cortes-Acosta in a short-notice heavyweight main event on Nov. 7 after Sean Brady withdrew injured nine days before the event.",
+   "source": "https://www.sherdog.com/news/news/Report-Johnny-Walker-lands-UFC-Vegas-124-main-event-after-late-shakeup-203417"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "SB Nation lists him at No. 12 at heavyweight and describes the bout as a five-round main event.",
+   "source": "https://sports.yahoo.com/articles/report-waldo-cortes-acosta-vs-211254449.html"
+  },
+  {
+   "date": "2026-11-02",
+   "text": "Said he will not fight his half-brother Valter Walker in the UFC.",
+   "source": "https://www.sherdog.com/news/news/Johnny-Walker-refuses-to-fight-brother-Valter-My-own-blood-203462"
+  }
+ ],
  "sources": [
   {
    "outlet": "Sherdog",
@@ -35,7 +70,70 @@
    "title": "Fight By Fight Preview | UFC 332: Silva vs Wang",
    "url": "https://www.ufc.com/news/fight-fight-preview-ufc-332-silva-vs-wang-salt-lake-city",
    "date": "2026-09-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 332: Johnny Walker Impressive in Heavyweight Debut, Stops Mick Parkin With Knees",
+   "url": "https://cagesidepress.com/2026/10/03/ufc-332-johnny-walker-impressive-in-heavyweight-debut-stops-mick-parkin-with-knees/",
+   "date": "2026-10-03"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 332: 'Silva vs. Wang' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc/ufc-332-silva-vs-wang-live-results-and-highlights/",
+   "date": "2026-10-03"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Timothy Wheaton",
+   "title": "Johnny Walker vs Mick Parkin – Heavyweight debut brings risk at UFC 332",
+   "url": "https://www.lowkickmma.com/johnny-walker-vs-mick-parkin-heavyweight-debut-brings-risk-at-ufc-332/",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Johnny Walker calls out UFC veteran following explosive heavyweight debut",
+   "url": "https://www.sherdog.com/news/news/Johnny-Walker-calls-out-UFC-veteran-following-explosive-heavyweight-debut-203125",
+   "date": "2026-10-08"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Report: Johnny Walker lands UFC Vegas 124 main event after late shake-up",
+   "url": "https://www.sherdog.com/news/news/Report-Johnny-Walker-lands-UFC-Vegas-124-main-event-after-late-shakeup-203417",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Alexander Behunin",
+   "title": "Report: Waldo Cortes-Acosta vs Johnny Walker now headlines UFC Vegas 124",
+   "url": "https://sports.yahoo.com/articles/report-waldo-cortes-acosta-vs-211254449.html",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 124 Loses Bonfim vs. Brady, Heavyweight Scrap In As Headliner",
+   "url": "https://cagesidepress.com/2026/10/29/ufc-vegas-124-loses-bonfim-vs-brady-heavyweight-headliner/",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Matt Erickson",
+   "title": "UFC Fight Night 293: Make predictions for Waldo Cortes-Acosta vs. Johnny Walker",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-predictions-203054010.html",
+   "date": "2026-11-02"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Johnny Walker refuses to fight brother Valter: 'My own blood'",
+   "url": "https://www.sherdog.com/news/news/Johnny-Walker-refuses-to-fight-brother-Valter-My-own-blood-203462",
+   "date": "2026-11-02"
   }
  ],
- "depth": "good"
+ "depth": "deep"
 }

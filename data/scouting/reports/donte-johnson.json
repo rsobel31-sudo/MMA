@@ -1,0 +1,98 @@
+{
+ "name": "Donte Johnson",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "An undefeated middleweight finisher from Wisconsin (9-0; 3-0 UFC; age 27 per UFC.com) who earned his contract on the Contender Series at heavyweight before dropping two divisions. He submitted Sedriques Dumas, edged Cody Brundage on a split decision, then knocked out Eric McConico at 1:38 of R1 at UFC 330. He was set to face fellow unbeaten prospect Baisangur Susurkaev, who withdrew; he now meets Cesar Almeida.",
+ "how_they_fight": {
+  "Striking": "Power puncher. Seven of his nine wins are R1 KO/TKOs. Against McConico a straight left dropped him and follow-up strikes ended it (BJPenn.com). His plan for the southpaw McConico was to stay in close and take away the rear kick (UFC.com). He lands about 3.8 significant strikes a minute and has 62% striking defense.",
+  "Grappling": "Solid when it gets there. He went 3-for-3 on takedowns and submitted Dumas in R2. Against Brundage he was taken down in R1 and held for about two minutes, but stuffed Brundage's later shots, reversed to top position in R2 and landed heavy ground strikes (Cageside Press). About 73% takedown defense.",
+  "Defense": "Never beaten. Brundage got the only takedown of their fight and landed a straight right and an inside left hook (Cageside).",
+  "Pace & cardio": "Mostly a quick finisher: seven R1 KOs, one R2 submission. His one decision (Brundage, split 29-28, 28-29, 29-28) is his only trip past R2. Cageside noted his activity and volume 'dropped sharply' in R3 of that fight, though he still stopped Brundage's late takedown.",
+  "Fight IQ": "Called the Brundage fight the toughest of his career and said it gave him 'the adjustments and the clarity' he needed; he then moved full-time to Las Vegas to train at Xtreme Couture (UFC.com). Confident outside the cage: after UFC 330 he said he wants belts at middleweight, welterweight and light heavyweight and thinks a cut to 170 is possible (Cageside)."
+ },
+ "patterns": [
+  "Fast KO power: seven R1 KOs in nine wins",
+  "Hits hard on top once he reverses or takes position",
+  "Undefeated; only one fight past R2",
+  "Output dipped in the only R3 he has fought"
+ ],
+ "concerns": [
+  "Limited film past the first round; one 15-minute fight, and it was close",
+  "Was taken down and held early by Brundage",
+  "Opponent change: prepared for Susurkaev, now faces a former elite kickboxer with a very different style"
+ ],
+ "keys_to_beat": [
+  "Take him down early and make him work off his back, as Brundage did in R1",
+  "Drag him into R3, where his output dropped against Brundage",
+  "Avoid open exchanges in the first round"
+ ],
+ "news": [
+  {
+   "date": "2026-09-30",
+   "text": "Baisangur Susurkaev withdrew from their UFC 334 bout for undisclosed reasons; Cesar Almeida reportedly agreed to step in (Sherdog, citing AG Fight).",
+   "source": "https://www.sherdog.com/news/news/UFC-334-gets-new-middleweight-matchup-after-Baisangur-Susurkaev-withdraws-203024"
+  },
+  {
+   "date": "2026-08-15",
+   "text": "Knocked out Eric McConico at 1:38 of R1 at UFC 330. After the stoppage his back elbow accidentally hit the referee; he apologized afterwards.",
+   "source": "https://cagesidepress.com/2026/08/17/ufc-330-donte-johnson-ref-cut/"
+  },
+  {
+   "date": "2026-08-17",
+   "text": "Said he got down to 181 pounds the day before weigh-ins and believes a cut to welterweight is possible.",
+   "source": "https://cagesidepress.com/2026/08/17/ufc-330-donte-johnson-ref-cut/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "UFC 334 gets new middleweight matchup after Baisangur Susurkaev withdraws",
+   "url": "https://www.sherdog.com/news/news/UFC-334-gets-new-middleweight-matchup-after-Baisangur-Susurkaev-withdraws-203024",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC 326: Donte Johnson Gets Nod Over Cody Brundage",
+   "url": "https://cagesidepress.com/2026/03/07/ufc-326-donte-johnson-gets-nod-over-cody-brundage",
+   "date": "2026-03-07"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Donte Johnson Fixing Things That Weren't Quite Broken (UFC 330)",
+   "url": "https://www.ufc.com/news/donte-johnson-fixing-things-werent-quite-broken-ufc-330",
+   "date": "2026-08-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law, Jay Anderson",
+   "title": "UFC 330: Donte Johnson Believes Cut to 170 Possible, Apologizes to Ref",
+   "url": "https://cagesidepress.com/2026/08/17/ufc-330-donte-johnson-ref-cut/",
+   "date": "2026-08-17"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 330: 'Makhachev vs. Garry' Live Results and Highlights",
+   "url": "https://www.bjpenn.com/mma-news/ufc-330/ufc-330-makhachev-vs-garry-live-results-and-highlights/",
+   "date": "2026-08-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC 334: Gane vs. Hokit (event page)",
+   "url": "https://www.ufc.com/event/ufc-334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

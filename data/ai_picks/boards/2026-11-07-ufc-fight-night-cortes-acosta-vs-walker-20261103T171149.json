@@ -1,0 +1,375 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "locks_at": "2026-11-07T22:00:00+00:00",
+ "fetched_at": "2026-11-03T17:11:49+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
+ "bouts": [
+  {
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "a": "Johnny Walker",
+   "b": "Waldo Cortes-Acosta",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "a": "Tatiana Suarez",
+   "b": "Virna Jandiroba",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Davey Grant vs Elijah Smith",
+   "a": "Davey Grant",
+   "b": "Elijah Smith",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ko Seok-hyeon vs Wellington Turman",
+   "a": "Ko Seok-hyeon",
+   "b": "Wellington Turman",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "a": "Billy Elekana",
+   "b": "Lucas Fernando",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "a": "Andre Petroski",
+   "b": "Mantas Kondratavicius",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "a": "Gabriel Lorenco",
+   "b": "Thomas Petersen",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "a": "Gabriella Fernandes",
+   "b": "Karine Silva",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "a": "Marcos Degli",
+   "b": "Mitch Raposo",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "a": "Jose Delano",
+   "b": "Murtazali Magomedov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "a": "Keiichiro Nakamura",
+   "b": "Ollie Schmid",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "a": "Nina Milosevic",
+   "b": "Priscila Cachoeira",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jonny Parsons vs Jose Souza",
+   "a": "Jonny Parsons",
+   "b": "Jose Souza",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Austin Bashi vs TBD",
+   "a": "Austin Bashi",
+   "b": "TBD",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45564:ml:a",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Johnny Walker to win",
+   "odds": 154,
+   "p_fanduel": 0.3713
+  },
+  {
+   "id": "45564:ml:b",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Waldo Cortes-Acosta to win",
+   "odds": -200,
+   "p_fanduel": 0.6287
+  },
+  {
+   "id": "45543:ml:a",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Tatiana Suarez to win",
+   "odds": -210,
+   "p_fanduel": 0.6396
+  },
+  {
+   "id": "45543:ml:b",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Virna Jandiroba to win",
+   "odds": 162,
+   "p_fanduel": 0.3604
+  },
+  {
+   "id": "45566:ml:a",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Davey Grant to win",
+   "odds": 240,
+   "p_fanduel": 0.2771
+  },
+  {
+   "id": "45566:ml:b",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Elijah Smith to win",
+   "odds": -330,
+   "p_fanduel": 0.7229
+  },
+  {
+   "id": "45545:ml:a",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Billy Elekana to win",
+   "odds": 240,
+   "p_fanduel": 0.2771
+  },
+  {
+   "id": "45545:ml:b",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Lucas Fernando to win",
+   "odds": -330,
+   "p_fanduel": 0.7229
+  },
+  {
+   "id": "45563:ml:a",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Andre Petroski to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45563:ml:b",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mantas Kondratavicius to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45558:ml:a",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gabriel Lorenco to win",
+   "odds": 130,
+   "p_fanduel": 0.4106
+  },
+  {
+   "id": "45558:ml:b",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Thomas Petersen to win",
+   "odds": -166,
+   "p_fanduel": 0.5894
+  },
+  {
+   "id": "45546:ml:a",
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gabriella Fernandes to win",
+   "odds": 172,
+   "p_fanduel": 0.3469
+  },
+  {
+   "id": "45546:ml:b",
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Karine Silva to win",
+   "odds": -225,
+   "p_fanduel": 0.6531
+  },
+  {
+   "id": "45557:ml:a",
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Marcos Degli to win",
+   "odds": -245,
+   "p_fanduel": 0.6701
+  },
+  {
+   "id": "45557:ml:b",
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mitch Raposo to win",
+   "odds": 186,
+   "p_fanduel": 0.3299
+  },
+  {
+   "id": "45550:ml:a",
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jose Delano to win",
+   "odds": -111,
+   "p_fanduel": 0.4958
+  },
+  {
+   "id": "45550:ml:b",
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Murtazali Magomedov to win",
+   "odds": -115,
+   "p_fanduel": 0.5042
+  },
+  {
+   "id": "45551:ml:a",
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Keiichiro Nakamura to win",
+   "odds": -390,
+   "p_fanduel": 0.7515
+  },
+  {
+   "id": "45551:ml:b",
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Ollie Schmid to win",
+   "odds": 280,
+   "p_fanduel": 0.2485
+  },
+  {
+   "id": "45555:ml:a",
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Nina Milosevic to win",
+   "odds": -520,
+   "p_fanduel": 0.7905
+  },
+  {
+   "id": "45555:ml:b",
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Priscila Cachoeira to win",
+   "odds": 350,
+   "p_fanduel": 0.2095
+  },
+  {
+   "id": "45556:ml:a",
+   "bout": "Jonny Parsons vs Jose Souza",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jonny Parsons to win",
+   "odds": 186,
+   "p_fanduel": 0.3299
+  },
+  {
+   "id": "45556:ml:b",
+   "bout": "Jonny Parsons vs Jose Souza",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jose Souza to win",
+   "odds": -245,
+   "p_fanduel": 0.6701
+  }
+ ]
+}

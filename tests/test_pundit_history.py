@@ -166,3 +166,12 @@ def test_squashed_name_pick_is_read():
     bout = {"fighter_a": "Aaron Pico", "fighter_b": "Losene Keita"}
     assert _squashed_side("LoseneKeita  ", bout) == "Losene Keita"
     assert _squashed_side("Draw", bout) is None
+
+
+def test_initial_and_former_surname_picks_are_read():
+    from mma_predictor.pundit_history import _initial_side
+    bout = {"fighter_a": "Luana Santos", "fighter_b": "Yana Santos"}
+    assert _initial_side("L. Santos", bout) == "Luana Santos"
+    assert _initial_side("Y. Santos", bout) == "Yana Santos"
+    assert _initial_side("Santos", bout) is None
+    assert _initial_side("Chookagian", {"fighter_a": "Katlyn Cerminara", "fighter_b": "Manon Fiorot"}) == "Katlyn Cerminara"

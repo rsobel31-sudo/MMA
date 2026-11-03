@@ -1,0 +1,86 @@
+{
+ "name": "Drew Dober",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A veteran southpaw lightweight (29-15, 1 NC) and the division's knockout leader with 11 (Cageside). He has won two straight by stoppage: Kyle Prepolec in R3 (October 2025) and Michael Johnson with a left hand in R2 (March 2026). Before that he lost three of four, two by knockout. Our data lists him at 38.",
+ "how_they_fight": {
+  "Striking": "Southpaw power puncher: about 4.5 significant strikes a minute at 44%, absorbing 4.3, with 0.65 knockdowns per 15. Seventeen KO/TKO wins. He works the body: he finished Rafael Alves with a liver shot in R3 at UFC 277 after Terence Crawford told him from ringside to go to the body (Sherdog).",
+  "Grappling": "Rarely shoots (about 0.5 takedowns per 15 at 23%). Five submission wins, the last in 2014.",
+  "Defense": "Hittable: Matt Frevola (R1, 2023), Jean Silva (R3, 2024) and Manuel Torres (R1, 2025) all stopped him. Grapplers beat him on the mat: Islam Makhachev (R3) and Beneil Dariush (R2) submitted him, and Renato Moicano held him down for over ten minutes in our data. Takedown defense is about 63%.",
+  "Pace & cardio": "Dangerous in every round: of his 17 KO/TKO wins, six came in R1, seven in R2 and four in R3; his five submissions came in R1 (four) and R2 (one). Seven wins are decisions. Losses: seven decisions, four KO/TKOs (three in R1, one in R3) and four submissions (R1, R2 twice, R3).",
+  "Fight IQ": "Experienced and adaptable mid-fight (the Alves body attack). Said he was nervous about Johnson's power and had his 'hands full' (Cageside)."
+ },
+ "patterns": [
+  "Southpaw left hand and body shots",
+  "Knockouts come in any round",
+  "Out-wrestled and submitted by high-level grapplers",
+  "Stopped three times since 2023"
+ ],
+ "concerns": [
+  "Duncan's front-headlock chokes and takedowns",
+  "Durability: three KO/TKO losses since 2023",
+  "Age and long career"
+ ],
+ "keys_to_beat": [
+  "Take him down and attack the neck; grapplers have beaten him",
+  "Don't trade with his left hand at range",
+  "Push the pace in close"
+ ],
+ "news": [
+  {
+   "date": "2026-10-30",
+   "text": "Explained how Terence Crawford's advice to go to the body helped him finish Rafael Alves; booked against Chris Duncan.",
+   "source": "https://www.sherdog.com/news/news/Terence-Crawfords-advice-helped-Drew-Dober-find-the-finish-at-UFC-277-203420"
+  },
+  {
+   "date": "2026-03-08",
+   "text": "Betting on his UFC 326 fight with Michael Johnson was halted over unusual odds movement; Dober said he doesn't follow betting and the UFC had not contacted him. He knocked Johnson out in R2.",
+   "source": "https://cagesidepress.com/2026/03/08/drew-dober-ufc-326-betting/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Terence Crawford's advice helped Drew Dober find the finish at UFC 277",
+   "url": "https://www.sherdog.com/news/news/Terence-Crawfords-advice-helped-Drew-Dober-find-the-finish-at-UFC-277-203420",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Gabriel Gonzalez",
+   "title": "Drew Dober Reacts to Betting Concerns with UFC 326 Fight",
+   "url": "https://cagesidepress.com/2026/03/08/drew-dober-ufc-326-betting/",
+   "date": "2026-03-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "What's Next: UFC 326 Losers",
+   "url": "https://cagesidepress.com/2026/03/09/whats-next-ufc-326-losers/",
+   "date": "2026-03-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Fiziev vs. Torres Headlines UFC Baku",
+   "url": "https://cagesidepress.com/2026/05/05/fiziev-vs-torres-headlines-ufc-baku/",
+   "date": "2026-05-05"
+  },
+  {
+   "outlet": "Yahoo Sports (New York Post)",
+   "author": "Scott Fontana",
+   "title": "UFC 334 brings Ciryl Gane vs. Josh Hokit, Kayla Harrison vs. Amanda Nunes title fights to MSG",
+   "url": "https://sports.yahoo.com/articles/ufc-334-brings-ciryl-gane-025322315.html",
+   "date": "2026-09-20"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  }
+ ],
+ "depth": "moderate"
+}

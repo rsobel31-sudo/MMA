@@ -1,0 +1,110 @@
+{
+ "name": "Yousri Belgaroui",
+ "updated": "2026-11-03T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A tall Dutch-Tunisian middleweight kickboxer (11-3, 3-0 UFC, age 34) and former Glory title challenger, now training with Glover Teixeira and his former rival Alex Pereira. He has stopped all three UFC opponents, two of them as an underdog. This is a big step up: Borralho is his first ranked opponent. He went to the Contender Series twice: he lost in 2023, and won in 2024 but was not offered a contract.",
+ "how_they_fight": {
+  "Striking": "Long and composed (196 cm, 201-cm reach in our data). Jab, heavy leg and calf kicks, body work and knees. Against Djorden Santos he rocked him with a head kick and jab, then dropped him with two overhand rights on the fence (R1, 4:25). Against Abdul-Malik he picked him apart from range, hurt him late in R2, and finished him with a clinch knee in R3 (Cageside). Nine of his 11 wins are KO/TKO.",
+  "Grappling": "Mostly defensive. Teixeira says he loves training on the ground and is getting more confident in his grappling (Sherdog). He hasn't shown much offensive wrestling.",
+  "Defense": "Never stopped. His three losses were all decisions; on the 2023 Contender Series Marco Tulio held him for over six minutes. UFC opponents can take him down: Bekoev 4 of 8, Abdul-Malik 3 of 8, including back control. But he got back up each time and made them pay with elbows and knees (Cageside).",
+  "Pace & cardio": "Gets better as fights go on. Nine stoppages: four in R1, two in R2, three in R3, and his first two UFC wins were both R3 finishes after he wore opponents down. He won a five-round decision on the regional scene (2024).",
+  "Fight IQ": "Calm under pressure, a good sense of distance (Teixeira). Has said ranked opponents turned him down."
+ },
+ "patterns": [
+  "Range kickboxing with leg kicks and a jab",
+  "Breaks opponents down and finishes late (two straight R3 stoppages before the R1 win over Santos)",
+  "Gets taken down, gets back up",
+  "Knees in the clinch"
+ ],
+ "concerns": [
+  "First ranked opponent, and a much better grappler than he has faced",
+  "Gives up control time to wrestlers",
+  "Limited offensive grappling"
+ ],
+ "keys_to_beat": [
+  "Take him down early and keep him there; don't just get him down for a few seconds",
+  "Close the distance behind feints; don't stand at the end of his kicks",
+  "Avoid the clinch knee on the way out"
+ ],
+ "news": [
+  {
+   "date": "2026-09-12",
+   "text": "Stopped Djorden Santos (a replacement for Kelvin Gastelum) by TKO at 4:25 of R1 at Noche UFC.",
+   "source": "https://cagesidepress.com/2026/09/12/noche-ufc-yousri-belgaroui-shuts-down-djorden-santos/"
+  },
+  {
+   "date": "2026-09-09",
+   "text": "Told UFC.com he wanted to fight at Madison Square Garden in November against a ranked opponent.",
+   "source": "https://www.ufc.com/news/yousri-belgaroui-middleweights-new-boogeyman-noche-ufc"
+  },
+  {
+   "date": "2026-10-20",
+   "text": "Glover Teixeira said he often stays after sessions for extra wrestling and jiu-jitsu.",
+   "source": "https://www.sherdog.com/news/news/Glover-Teixeira-30-UFC-finisher-Yousri-Belgaroui-is-evolving-on-ground-203276"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Opens as a slight underdog: Borralho -120, Belgaroui +103.",
+   "source": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Ciryl Gane vs. Josh Hokit Headlines UFC 334, Kayla Harrison vs. Amanda Nunes Co-Main at MSG",
+   "url": "https://cagesidepress.com/2026/09/19/ciryl-gane-vs-josh-hokit-headlines-ufc-334-kayla-harrison-vs-amanda-nunes-co-main-at-msg/",
+   "date": "2026-09-19"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC 334 odds: Amanda Nunes returns as underdog at MSG",
+   "url": "https://www.sherdog.com/news/news/UFC-334-odds-Amanda-Nunes-returns-as-underdog-at-MSG-203400",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Marcelo Alonso",
+   "title": "Glover Teixeira: 3-0 UFC finisher Yousri Belgaroui is evolving on ground",
+   "url": "https://www.sherdog.com/news/news/Glover-Teixeira-30-UFC-finisher-Yousri-Belgaroui-is-evolving-on-ground-203276",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "E. Spencer Kyte",
+   "title": "Yousri Belgaroui | Middleweight's New Boogeyman",
+   "url": "https://www.ufc.com/news/yousri-belgaroui-middleweights-new-boogeyman-noche-ufc",
+   "date": "2026-09-09"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "Noche UFC: Yousri Belgaroui Shuts Down Djorden Santos",
+   "url": "https://cagesidepress.com/2026/09/12/noche-ufc-yousri-belgaroui-shuts-down-djorden-santos/",
+   "date": "2026-09-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Seattle: Yousri Belgaroui Pieces Up, Puts Away Mansur Abdul-Malik",
+   "url": "https://cagesidepress.com/2026/03/28/ufc-seattle-yousri-belgaroui-pieces-up-puts-away-mansur-abdul-malik",
+   "date": "2026-03-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Yousri Belgaroui Breaks Down Bekoev for Late Finish in Violent UFC Debut",
+   "url": "https://cagesidepress.com/2025/10/18/yousri-belgaroui-breaks-down-bekoev-for-late-finish-in-violent-ufc-debut/",
+   "date": "2025-10-18"
+  }
+ ],
+ "depth": "deep"
+}
