@@ -1,0 +1,7 @@
+{
+ "note": "Wednesday early check of the Nov 7 card. One prop with a reason: FanDuel prices Elijah Smith's finish as a knockout first (KO +210, about 32% no-vig; submission +470, about 17.5%), but Davey Grant has never been knocked out in 26 pro fights while being submitted five times, most recently in R1 by Charles Jourdain in October 2025. Smith's last win was a rear-naked choke after a knockdown. The decision and round props on the main event and Petroski-Kondratavicius show positive EV on the sheet, but the finish rates of a Walker five-rounder and a fast-starting puncher against a chin-first wrestler explain the market's numbers; passing those. Small stake: method props rest on the finish model, shrunk halfway to the market.",
+ "picks": [
+  {"legs": ["45566:method:b:SUB"], "stake": 1.5,
+   "reasoning": "Grant's stoppage losses are all submissions (5) and none by KO in 26 fights; the market leans Smith's finish toward KO. If Smith stops a 40-year-old who gives up his neck in scrambles, the submission is the likelier way. Ours 23.8% vs FanDuel 15.4% at +470."}
+ ]
+}

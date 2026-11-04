@@ -1,0 +1,1975 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "locks_at": "2026-11-07T22:00:00+00:00",
+ "fetched_at": "2026-11-04T18:14:37+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
+ "bouts": [
+  {
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "a": "Johnny Walker",
+   "b": "Waldo Cortes-Acosta",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "a": "Tatiana Suarez",
+   "b": "Virna Jandiroba",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Davey Grant vs Elijah Smith",
+   "a": "Davey Grant",
+   "b": "Elijah Smith",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ko Seok-hyeon vs Wellington Turman",
+   "a": "Ko Seok-hyeon",
+   "b": "Wellington Turman",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "a": "Billy Elekana",
+   "b": "Lucas Fernando",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "a": "Andre Petroski",
+   "b": "Mantas Kondratavicius",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "a": "Gabriel Lorenco",
+   "b": "Thomas Petersen",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "a": "Gabriella Fernandes",
+   "b": "Karine Silva",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "a": "Marcos Degli",
+   "b": "Mitch Raposo",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "a": "Jose Delano",
+   "b": "Murtazali Magomedov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "a": "Keiichiro Nakamura",
+   "b": "Ollie Schmid",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "a": "Nina Milosevic",
+   "b": "Priscila Cachoeira",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jonny Parsons vs Jose Souza",
+   "a": "Jonny Parsons",
+   "b": "Jose Souza",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Austin Bashi vs TBD",
+   "a": "Austin Bashi",
+   "b": "TBD",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45564:ml:a",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Johnny Walker to win",
+   "odds": 190,
+   "p_fanduel": 0.3256
+  },
+  {
+   "id": "45564:ml:b",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Waldo Cortes-Acosta to win",
+   "odds": -250,
+   "p_fanduel": 0.6744
+  },
+  {
+   "id": "45564:distance:False",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -430,
+   "p_fanduel": 0.7644
+  },
+  {
+   "id": "45564:distance:True",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 300,
+   "p_fanduel": 0.2356
+  },
+  {
+   "id": "45564:ends_round:1",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 220,
+   "p_fanduel": 0.279
+  },
+  {
+   "id": "45564:ends_round:2",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 320,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "45564:ends_round:3",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45564:ends_round:4",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45564:ends_round:5",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45564:method:a:DEC",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Johnny Walker by decision",
+   "odds": 1000,
+   "p_fanduel": 0.0789
+  },
+  {
+   "id": "45564:method:a:KO/TKO",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Johnny Walker by KO/TKO",
+   "odds": 330,
+   "p_fanduel": 0.2018
+  },
+  {
+   "id": "45564:method:a:SUB",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Johnny Walker by submission",
+   "odds": 1200,
+   "p_fanduel": 0.0668
+  },
+  {
+   "id": "45564:method:b:DEC",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Waldo Cortes-Acosta by decision",
+   "odds": 480,
+   "p_fanduel": 0.1496
+  },
+  {
+   "id": "45564:method:b:KO/TKO",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Waldo Cortes-Acosta by KO/TKO",
+   "odds": -110,
+   "p_fanduel": 0.4546
+  },
+  {
+   "id": "45564:method:b:SUB",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Waldo Cortes-Acosta by submission",
+   "odds": 1700,
+   "p_fanduel": 0.0482
+  },
+  {
+   "id": "45564:starts_round:2:False",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 235,
+   "p_fanduel": 0.28
+  },
+  {
+   "id": "45564:starts_round:2:True",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -330,
+   "p_fanduel": 0.72
+  },
+  {
+   "id": "45564:starts_round:3:False",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -108,
+   "p_fanduel": 0.4896
+  },
+  {
+   "id": "45564:starts_round:3:True",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -118,
+   "p_fanduel": 0.5104
+  },
+  {
+   "id": "45564:starts_round:4:False",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -190,
+   "p_fanduel": 0.619
+  },
+  {
+   "id": "45564:starts_round:4:True",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": 148,
+   "p_fanduel": 0.381
+  },
+  {
+   "id": "45564:starts_round:5:False",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -310,
+   "p_fanduel": 0.7076
+  },
+  {
+   "id": "45564:starts_round:5:True",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 220,
+   "p_fanduel": 0.2924
+  },
+  {
+   "id": "45564:win_round:a:1",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Johnny Walker in round 1",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "45564:win_round:a:2",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Johnny Walker in round 2",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45564:win_round:a:3",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Johnny Walker in round 3",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45564:win_round:a:4",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Johnny Walker in round 4",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45564:win_round:a:5",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Johnny Walker in round 5",
+   "odds": 3300,
+   "p_fanduel": 0.0263
+  },
+  {
+   "id": "45564:win_round:b:1",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Waldo Cortes-Acosta in round 1",
+   "odds": 380,
+   "p_fanduel": 0.186
+  },
+  {
+   "id": "45564:win_round:b:2",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Waldo Cortes-Acosta in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45564:win_round:b:3",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Waldo Cortes-Acosta in round 3",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45564:win_round:b:4",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Waldo Cortes-Acosta in round 4",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45564:win_round:b:5",
+   "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Waldo Cortes-Acosta in round 5",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45543:ml:a",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Tatiana Suarez to win",
+   "odds": -215,
+   "p_fanduel": 0.6431
+  },
+  {
+   "id": "45543:ml:b",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Virna Jandiroba to win",
+   "odds": 164,
+   "p_fanduel": 0.3569
+  },
+  {
+   "id": "45543:distance:False",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45543:distance:True",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45543:ends_round:1",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45543:ends_round:2",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "45543:ends_round:3",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45543:method:a:DEC",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Tatiana Suarez by decision",
+   "odds": -110,
+   "p_fanduel": 0.4552
+  },
+  {
+   "id": "45543:method:a:KO/TKO",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Tatiana Suarez by KO/TKO",
+   "odds": 1100,
+   "p_fanduel": 0.0724
+  },
+  {
+   "id": "45543:method:a:SUB",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Tatiana Suarez by submission",
+   "odds": 700,
+   "p_fanduel": 0.1086
+  },
+  {
+   "id": "45543:method:b:DEC",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Virna Jandiroba by decision",
+   "odds": 300,
+   "p_fanduel": 0.2173
+  },
+  {
+   "id": "45543:method:b:KO/TKO",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Virna Jandiroba by KO/TKO",
+   "odds": 2200,
+   "p_fanduel": 0.0378
+  },
+  {
+   "id": "45543:method:b:SUB",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Virna Jandiroba by submission",
+   "odds": 700,
+   "p_fanduel": 0.1086
+  },
+  {
+   "id": "45543:starts_round:2:False",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 570,
+   "p_fanduel": 0.141
+  },
+  {
+   "id": "45543:starts_round:2:True",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -1000,
+   "p_fanduel": 0.859
+  },
+  {
+   "id": "45543:starts_round:3:False",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 300,
+   "p_fanduel": 0.234
+  },
+  {
+   "id": "45543:starts_round:3:True",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -450,
+   "p_fanduel": 0.766
+  },
+  {
+   "id": "45543:win_round:a:1",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Tatiana Suarez in round 1",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45543:win_round:a:2",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Tatiana Suarez in round 2",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45543:win_round:a:3",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Tatiana Suarez in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45543:win_round:b:1",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Virna Jandiroba in round 1",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45543:win_round:b:2",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Virna Jandiroba in round 2",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45543:win_round:b:3",
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Virna Jandiroba in round 3",
+   "odds": 2500,
+   "p_fanduel": 0.0343
+  },
+  {
+   "id": "45566:ml:a",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Davey Grant to win",
+   "odds": 250,
+   "p_fanduel": 0.2699
+  },
+  {
+   "id": "45566:ml:b",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Elijah Smith to win",
+   "odds": -340,
+   "p_fanduel": 0.7301
+  },
+  {
+   "id": "45566:distance:False",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -150,
+   "p_fanduel": 0.5667
+  },
+  {
+   "id": "45566:distance:True",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 118,
+   "p_fanduel": 0.4333
+  },
+  {
+   "id": "45566:ends_round:1",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 250,
+   "p_fanduel": 0.2551
+  },
+  {
+   "id": "45566:ends_round:2",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 380,
+   "p_fanduel": 0.186
+  },
+  {
+   "id": "45566:ends_round:3",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45566:method:a:DEC",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Davey Grant by decision",
+   "odds": 500,
+   "p_fanduel": 0.1465
+  },
+  {
+   "id": "45566:method:a:KO/TKO",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Davey Grant by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.0925
+  },
+  {
+   "id": "45566:method:a:SUB",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Davey Grant by submission",
+   "odds": 1700,
+   "p_fanduel": 0.0488
+  },
+  {
+   "id": "45566:method:b:DEC",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Elijah Smith by decision",
+   "odds": 220,
+   "p_fanduel": 0.2746
+  },
+  {
+   "id": "45566:method:b:KO/TKO",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Elijah Smith by KO/TKO",
+   "odds": 210,
+   "p_fanduel": 0.2835
+  },
+  {
+   "id": "45566:method:b:SUB",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Elijah Smith by submission",
+   "odds": 470,
+   "p_fanduel": 0.1542
+  },
+  {
+   "id": "45566:starts_round:2:False",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 260,
+   "p_fanduel": 0.2608
+  },
+  {
+   "id": "45566:starts_round:2:True",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -370,
+   "p_fanduel": 0.7392
+  },
+  {
+   "id": "45566:starts_round:3:False",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 116,
+   "p_fanduel": 0.4382
+  },
+  {
+   "id": "45566:starts_round:3:True",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -146,
+   "p_fanduel": 0.5618
+  },
+  {
+   "id": "45566:win_round:a:1",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Davey Grant in round 1",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45566:win_round:a:2",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Davey Grant in round 2",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45566:win_round:a:3",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Davey Grant in round 3",
+   "odds": 2500,
+   "p_fanduel": 0.0343
+  },
+  {
+   "id": "45566:win_round:b:1",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Elijah Smith in round 1",
+   "odds": 340,
+   "p_fanduel": 0.2029
+  },
+  {
+   "id": "45566:win_round:b:2",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Elijah Smith in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45566:win_round:b:3",
+   "bout": "Davey Grant vs Elijah Smith",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Elijah Smith in round 3",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45545:ml:a",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Billy Elekana to win",
+   "odds": 255,
+   "p_fanduel": 0.2659
+  },
+  {
+   "id": "45545:ml:b",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Lucas Fernando to win",
+   "odds": -350,
+   "p_fanduel": 0.7341
+  },
+  {
+   "id": "45545:distance:False",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -178,
+   "p_fanduel": 0.6038
+  },
+  {
+   "id": "45545:distance:True",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 138,
+   "p_fanduel": 0.3962
+  },
+  {
+   "id": "45545:ends_round:1",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 210,
+   "p_fanduel": 0.288
+  },
+  {
+   "id": "45545:ends_round:2",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 360,
+   "p_fanduel": 0.1941
+  },
+  {
+   "id": "45545:ends_round:3",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45545:method:a:DEC",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Billy Elekana by decision",
+   "odds": 650,
+   "p_fanduel": 0.1151
+  },
+  {
+   "id": "45545:method:a:KO/TKO",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Billy Elekana by KO/TKO",
+   "odds": 1000,
+   "p_fanduel": 0.0785
+  },
+  {
+   "id": "45545:method:a:SUB",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Billy Elekana by submission",
+   "odds": 800,
+   "p_fanduel": 0.0959
+  },
+  {
+   "id": "45545:method:b:DEC",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Lucas Fernando by decision",
+   "odds": 220,
+   "p_fanduel": 0.2697
+  },
+  {
+   "id": "45545:method:b:KO/TKO",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Lucas Fernando by KO/TKO",
+   "odds": 165,
+   "p_fanduel": 0.3257
+  },
+  {
+   "id": "45545:method:b:SUB",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Lucas Fernando by submission",
+   "odds": 650,
+   "p_fanduel": 0.1151
+  },
+  {
+   "id": "45545:starts_round:2:False",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 220,
+   "p_fanduel": 0.2924
+  },
+  {
+   "id": "45545:starts_round:2:True",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -310,
+   "p_fanduel": 0.7076
+  },
+  {
+   "id": "45545:starts_round:3:False",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "45545:starts_round:3:True",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "45545:win_round:a:1",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Billy Elekana in round 1",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45545:win_round:a:2",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Billy Elekana in round 2",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45545:win_round:a:3",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Billy Elekana in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45545:win_round:b:1",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Lucas Fernando in round 1",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45545:win_round:b:2",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Lucas Fernando in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45545:win_round:b:3",
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Lucas Fernando in round 3",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45563:ml:a",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Andre Petroski to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45563:ml:b",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mantas Kondratavicius to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45563:distance:False",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -670,
+   "p_fanduel": 0.8218
+  },
+  {
+   "id": "45563:distance:True",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 430,
+   "p_fanduel": 0.1782
+  },
+  {
+   "id": "45563:ends_round:1",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -165,
+   "p_fanduel": 0.5559
+  },
+  {
+   "id": "45563:ends_round:2",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 350,
+   "p_fanduel": 0.1984
+  },
+  {
+   "id": "45563:ends_round:3",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45563:method:a:DEC",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Andre Petroski by decision",
+   "odds": 900,
+   "p_fanduel": 0.0865
+  },
+  {
+   "id": "45563:method:a:KO/TKO",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Andre Petroski by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.091
+  },
+  {
+   "id": "45563:method:a:SUB",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Andre Petroski by submission",
+   "odds": 550,
+   "p_fanduel": 0.1331
+  },
+  {
+   "id": "45563:method:b:DEC",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Mantas Kondratavicius by decision",
+   "odds": 850,
+   "p_fanduel": 0.091
+  },
+  {
+   "id": "45563:method:b:KO/TKO",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Mantas Kondratavicius by KO/TKO",
+   "odds": -175,
+   "p_fanduel": 0.5503
+  },
+  {
+   "id": "45563:method:b:SUB",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Mantas Kondratavicius by submission",
+   "odds": 1700,
+   "p_fanduel": 0.048
+  },
+  {
+   "id": "45563:starts_round:2:False",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -148,
+   "p_fanduel": 0.5631
+  },
+  {
+   "id": "45563:starts_round:2:True",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": 116,
+   "p_fanduel": 0.4369
+  },
+  {
+   "id": "45563:starts_round:3:False",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -410,
+   "p_fanduel": 0.7534
+  },
+  {
+   "id": "45563:starts_round:3:True",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 280,
+   "p_fanduel": 0.2466
+  },
+  {
+   "id": "45563:win_round:a:1",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Andre Petroski in round 1",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45563:win_round:a:2",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Andre Petroski in round 2",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45563:win_round:a:3",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Andre Petroski in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45563:win_round:b:1",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Mantas Kondratavicius in round 1",
+   "odds": -110,
+   "p_fanduel": 0.4677
+  },
+  {
+   "id": "45563:win_round:b:2",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Mantas Kondratavicius in round 2",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45563:win_round:b:3",
+   "bout": "Andre Petroski vs Mantas Kondratavicius",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Mantas Kondratavicius in round 3",
+   "odds": 2500,
+   "p_fanduel": 0.0343
+  },
+  {
+   "id": "45558:ml:a",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gabriel Lorenco to win",
+   "odds": 138,
+   "p_fanduel": 0.3962
+  },
+  {
+   "id": "45558:ml:b",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Thomas Petersen to win",
+   "odds": -178,
+   "p_fanduel": 0.6038
+  },
+  {
+   "id": "45558:distance:False",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -186,
+   "p_fanduel": 0.6134
+  },
+  {
+   "id": "45558:distance:True",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 144,
+   "p_fanduel": 0.3866
+  },
+  {
+   "id": "45558:ends_round:1",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 210,
+   "p_fanduel": 0.288
+  },
+  {
+   "id": "45558:ends_round:2",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 320,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "45558:ends_round:3",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45558:method:a:DEC",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Gabriel Lorenco by decision",
+   "odds": 550,
+   "p_fanduel": 0.1328
+  },
+  {
+   "id": "45558:method:a:KO/TKO",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Gabriel Lorenco by KO/TKO",
+   "odds": 280,
+   "p_fanduel": 0.2272
+  },
+  {
+   "id": "45558:method:a:SUB",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Gabriel Lorenco by submission",
+   "odds": 1800,
+   "p_fanduel": 0.0454
+  },
+  {
+   "id": "45558:method:b:DEC",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Thomas Petersen by decision",
+   "odds": 250,
+   "p_fanduel": 0.2467
+  },
+  {
+   "id": "45558:method:b:KO/TKO",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Thomas Petersen by KO/TKO",
+   "odds": 260,
+   "p_fanduel": 0.2399
+  },
+  {
+   "id": "45558:method:b:SUB",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Thomas Petersen by submission",
+   "odds": 700,
+   "p_fanduel": 0.1079
+  },
+  {
+   "id": "45558:starts_round:2:False",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 225,
+   "p_fanduel": 0.2892
+  },
+  {
+   "id": "45558:starts_round:2:True",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -310,
+   "p_fanduel": 0.7108
+  },
+  {
+   "id": "45558:starts_round:3:False",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -110,
+   "p_fanduel": 0.4938
+  },
+  {
+   "id": "45558:starts_round:3:True",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -116,
+   "p_fanduel": 0.5062
+  },
+  {
+   "id": "45558:win_round:a:1",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Gabriel Lorenco in round 1",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45558:win_round:a:2",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Gabriel Lorenco in round 2",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45558:win_round:a:3",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Gabriel Lorenco in round 3",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45558:win_round:b:1",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Thomas Petersen in round 1",
+   "odds": 460,
+   "p_fanduel": 0.1594
+  },
+  {
+   "id": "45558:win_round:b:2",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Thomas Petersen in round 2",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45558:win_round:b:3",
+   "bout": "Gabriel Lorenco vs Thomas Petersen",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Thomas Petersen in round 3",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45546:ml:a",
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gabriella Fernandes to win",
+   "odds": 172,
+   "p_fanduel": 0.3469
+  },
+  {
+   "id": "45546:ml:b",
+   "bout": "Gabriella Fernandes vs Karine Silva",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Karine Silva to win",
+   "odds": -225,
+   "p_fanduel": 0.6531
+  },
+  {
+   "id": "45557:ml:a",
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Marcos Degli to win",
+   "odds": -245,
+   "p_fanduel": 0.6701
+  },
+  {
+   "id": "45557:ml:b",
+   "bout": "Marcos Degli vs Mitch Raposo",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mitch Raposo to win",
+   "odds": 186,
+   "p_fanduel": 0.3299
+  },
+  {
+   "id": "45550:ml:a",
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jose Delano to win",
+   "odds": -111,
+   "p_fanduel": 0.4958
+  },
+  {
+   "id": "45550:ml:b",
+   "bout": "Jose Delano vs Murtazali Magomedov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Murtazali Magomedov to win",
+   "odds": -115,
+   "p_fanduel": 0.5042
+  },
+  {
+   "id": "45551:ml:a",
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Keiichiro Nakamura to win",
+   "odds": -390,
+   "p_fanduel": 0.7515
+  },
+  {
+   "id": "45551:ml:b",
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Ollie Schmid to win",
+   "odds": 280,
+   "p_fanduel": 0.2485
+  },
+  {
+   "id": "45555:ml:a",
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Nina Milosevic to win",
+   "odds": -520,
+   "p_fanduel": 0.7905
+  },
+  {
+   "id": "45555:ml:b",
+   "bout": "Nina Milosevic vs Priscila Cachoeira",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Priscila Cachoeira to win",
+   "odds": 350,
+   "p_fanduel": 0.2095
+  },
+  {
+   "id": "45556:ml:a",
+   "bout": "Jonny Parsons vs Jose Souza",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jonny Parsons to win",
+   "odds": 186,
+   "p_fanduel": 0.3299
+  },
+  {
+   "id": "45556:ml:b",
+   "bout": "Jonny Parsons vs Jose Souza",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jose Souza to win",
+   "odds": -245,
+   "p_fanduel": 0.6701
+  }
+ ]
+}

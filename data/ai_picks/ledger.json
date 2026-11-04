@@ -625,6 +625,71 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w6",
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "event_date": "2026-11-07",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
+   "book": "FanDuel",
+   "placed_at": "2026-11-04T18:15:09+00:00",
+   "bankroll_before": 85.21,
+   "available_before": 85.21,
+   "note": "Wednesday early check of the Nov 7 card. One prop with a reason: FanDuel prices Elijah Smith's finish as a knockout first (KO +210, about 32% no-vig; submission +470, about 17.5%), but Davey Grant has never been knocked out in 26 pro fights while being submitted five times, most recently in R1 by Charles Jourdain in October 2025. Smith's last win was a rear-naked choke after a knockdown. The decision and round props on the main event and Petroski-Kondratavicius show positive EV on the sheet, but the finish rates of a Walker five-rounder and a fast-starting puncher against a chin-first wrestler explain the market's numbers; passing those. Small stake: method props rest on the finish model, shrunk halfway to the market.",
+   "bets": [
+    {
+     "id": "6-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45566:method:b:SUB",
+       "bout": "Davey Grant vs Elijah Smith",
+       "market": [
+        "method",
+        "b",
+        "SUB"
+       ],
+       "selection": "Elijah Smith by submission",
+       "odds": 470,
+       "p": 0.2383,
+       "p_fanduel": 0.1542
+      }
+     ],
+     "odds": 470,
+     "decimal": 5.7,
+     "stake": 1.5,
+     "to_win": 7.05,
+     "p": 0.2383,
+     "ev": 0.3583,
+     "reasoning": "Grant's stoppage losses are all submissions (5) and none by KO in 26 fights; the market leans Smith's finish toward KO. If Smith stops a 40-year-old who gives up his neck in scrambles, the submission is the likelier way. Ours 23.8% vs FanDuel 15.4% at +470.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-04T18:15:09+00:00"
+    }
+   ],
+   "staked": 1.5,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-11-04T18:15:09+00:00",
+     "note": "Wednesday early check of the Nov 7 card. One prop with a reason: FanDuel prices Elijah Smith's finish as a knockout first (KO +210, about 32% no-vig; submission +470, about 17.5%), but Davey Grant has never been knocked out in 26 pro fights while being submitted five times, most recently in R1 by Charles Jourdain in October 2025. Smith's last win was a rear-naked choke after a knockdown. The decision and round props on the main event and Petroski-Kondratavicius show positive EV on the sheet, but the finish rates of a Walker five-rounder and a fast-starting puncher against a chin-first wrestler explain the market's numbers; passing those. Small stake: method props rest on the finish model, shrunk halfway to the market.",
+     "bets": [
+      "6-1"
+     ],
+     "staked": 1.5,
+     "sheet": "data/ai_picks/sheets/2026-11-07-ufc-fight-night-cortes-acosta-vs-walker.json",
+     "sheet_fetched_at": "2026-11-04T18:14:37+00:00"
+    }
+   ],
+   "last_placed_at": "2026-11-04T18:15:09+00:00",
+   "sheet": "data/ai_picks/sheets/2026-11-07-ufc-fight-night-cortes-acosta-vs-walker.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
+    "https://www.bestfightodds.com/events/ufc-vegas-124-4437"
+   ],
+   "sheet_fetched_at": "2026-11-04T18:14:37+00:00"
   }
  ]
 }
