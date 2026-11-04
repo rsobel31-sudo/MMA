@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03",
+ "fetched": "2026-11-04",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -400,74 +400,7 @@
    "venue": "anb Arena",
    "location": "Riyadh, Saudi Arabia",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Announced",
-     "weight_class": "Middleweight",
-     "a": "Israel Adesanya",
-     "b": "Sharabutdin Magomedov",
-     "title": false,
-     "result": "",
-     "rounds": 5,
-     "main_event": true
-    },
-    {
-     "order": 1,
-     "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Abdul Hussein",
-     "b": "Hecher Sosa",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 2,
-     "segment": "Announced",
-     "weight_class": "Middleweight",
-     "a": "Matthieu Letho Duclos",
-     "b": "Modestino Rodrigues",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Announced",
-     "weight_class": "Flyweight",
-     "a": "Bruno Gustavo da Silva",
-     "b": "Jafel Filho",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 4,
-     "segment": "Announced",
-     "weight_class": "Light Heavyweight",
-     "a": "Ivan Gnizditskiy",
-     "b": "Uran Satybaldiev",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 5,
-     "segment": "Announced",
-     "weight_class": "Light Heavyweight",
-     "a": "Ion Cu\u021belaba",
-     "b": "Magomed Tuchalov",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    }
-   ]
+   "bouts": []
   },
   {
    "name": "UFC 335: Oliveira vs. Lopes",
@@ -682,31 +615,37 @@
    ]
   },
   {
-   "name": "UFC Fight Night 297",
+   "name": "UFC Fight Night: Salkilld vs. Saint Denis",
    "date": "2027-02-07",
    "venue": "Afterpay Arena",
    "location": "Sydney, Australia",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_297",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Salkilld_vs._Saint_Denis",
    "bouts": [
     {
      "order": 0,
-     "segment": "Announced",
+     "segment": "Main card",
      "weight_class": "Lightweight",
      "a": "Quillan Salkilld",
      "b": "Beno\u00eet Saint Denis",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 5,
      "main_event": true
     },
     {
      "order": 1,
-     "segment": "Announced",
+     "segment": "Main card",
      "weight_class": "Light Heavyweight",
      "a": "Bogdan Guskov",
      "b": "Robert Whittaker",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
@@ -716,6 +655,17 @@
      "weight_class": "Featherweight",
      "a": "Yoo Joo-sang",
      "b": "Marwan Rahiki",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Featherweight",
+     "a": "Joanderson Brito",
+     "b": "Kaan Ofli",
      "title": false,
      "result": "",
      "rounds": 3,

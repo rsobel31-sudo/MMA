@@ -618,16 +618,9 @@
   {
    "system": "meta",
    "division": "Welterweight",
-   "rank": "14",
+   "rank": "15",
    "name": "Kevin Holland",
    "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
-  },
-  {
-   "system": "meta",
-   "division": "Welterweight",
-   "rank": "15",
-   "name": "Daniel Rodriguez",
-   "wiki": "https://en.wikipedia.org/wiki/Daniel_Rodriguez_(fighter)"
   },
   {
    "system": "meta",
@@ -682,15 +675,15 @@
    "system": "meta",
    "division": "Lightweight",
    "rank": "7",
-   "name": "Benoît Saint Denis",
-   "wiki": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis"
+   "name": "Tom Nolan",
+   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
   },
   {
    "system": "meta",
    "division": "Lightweight",
    "rank": "8",
-   "name": "Renato Moicano",
-   "wiki": "https://en.wikipedia.org/wiki/Renato_Moicano"
+   "name": "Benoît Saint Denis",
+   "wiki": "https://en.wikipedia.org/wiki/Benoît_Saint_Denis"
   },
   {
    "system": "meta",
@@ -717,22 +710,22 @@
    "system": "meta",
    "division": "Lightweight",
    "rank": "12",
-   "name": "Tom Nolan",
-   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
-  },
-  {
-   "system": "meta",
-   "division": "Lightweight",
-   "rank": "13",
    "name": "Tofiq Musayev",
    "wiki": "https://en.wikipedia.org/wiki/Tofiq_Musayev"
   },
   {
    "system": "meta",
    "division": "Lightweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Rafael Fiziev",
    "wiki": "https://en.wikipedia.org/wiki/Rafael_Fiziev"
+  },
+  {
+   "system": "meta",
+   "division": "Lightweight",
+   "rank": "14",
+   "name": "Renato Moicano",
+   "wiki": "https://en.wikipedia.org/wiki/Renato_Moicano"
   },
   {
    "system": "meta",
@@ -1081,15 +1074,15 @@
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "3",
-   "name": "Norma Dumont",
-   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
+   "name": "Luana Santos",
+   "wiki": "https://en.wikipedia.org/wiki/Luana_Santos"
   },
   {
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "4",
-   "name": "Luana Santos",
-   "wiki": "https://en.wikipedia.org/wiki/Luana_Santos"
+   "name": "Norma Dumont",
+   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
   },
   {
    "system": "meta",
@@ -1102,15 +1095,15 @@
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "6",
-   "name": "Yana Santos",
-   "wiki": "https://en.wikipedia.org/wiki/Yana_Santos"
+   "name": "Jacqueline Cavalcanti",
+   "wiki": "https://en.wikipedia.org/wiki/Jacqueline_Cavalcanti"
   },
   {
    "system": "meta",
    "division": "Women's Bantamweight",
-   "rank": "7",
-   "name": "Jacqueline Cavalcanti",
-   "wiki": "https://en.wikipedia.org/wiki/Jacqueline_Cavalcanti"
+   "rank": "8",
+   "name": "Yana Santos",
+   "wiki": "https://en.wikipedia.org/wiki/Yana_Santos"
   },
   {
    "system": "meta",
@@ -1298,22 +1291,22 @@
    "system": "meta",
    "division": "Women's Strawweight",
    "rank": "7",
+   "name": "Piera Rodríguez",
+   "wiki": "https://en.wikipedia.org/wiki/Piera_Rodríguez"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "8",
    "name": "Iasmin Lucindo",
    "wiki": "https://en.wikipedia.org/wiki/Iasmin_Lucindo"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "9",
+   "rank": "10",
    "name": "Loopy Godínez",
    "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Strawweight",
-   "rank": "10",
-   "name": "Piera Rodríguez",
-   "wiki": "https://en.wikipedia.org/wiki/Piera_Rodríguez"
   },
   {
    "system": "meta",
@@ -1340,15 +1333,15 @@
    "system": "meta",
    "division": "Women's Strawweight",
    "rank": "14",
-   "name": "Talita Alencar",
-   "wiki": "https://en.wikipedia.org/wiki/Talita_Alencar"
+   "name": "Amanda Lemos",
+   "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
    "rank": "15",
-   "name": "Amanda Lemos",
-   "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
+   "name": "Sam Hughes",
+   "wiki": "https://en.wikipedia.org/wiki/Sam_Hughes_(fighter)"
   },
   {
    "system": "media",
@@ -1515,15 +1508,15 @@
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "7",
-   "name": "Azamat Murzakanov",
-   "wiki": "https://en.wikipedia.org/wiki/Azamat_Murzakanov"
+   "name": "Dominick Reyes",
+   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
   },
   {
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "8",
-   "name": "Dominick Reyes",
-   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
+   "name": "Bogdan Guskov",
+   "wiki": "https://en.wikipedia.org/wiki/Bogdan_Guskov"
   },
   {
    "system": "media",
@@ -1536,8 +1529,8 @@
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "10",
-   "name": "Bogdan Guskov",
-   "wiki": "https://en.wikipedia.org/wiki/Bogdan_Guskov"
+   "name": "Azamat Murzakanov",
+   "wiki": "https://en.wikipedia.org/wiki/Azamat_Murzakanov"
   },
   {
    "system": "media",
@@ -1550,6 +1543,13 @@
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "12",
+   "name": "Abdul-Rakhman Yakhyaev",
+   "wiki": "https://en.wikipedia.org/wiki/Abdul-Rakhman_Yakhyaev"
+  },
+  {
+   "system": "media",
+   "division": "Light Heavyweight",
+   "rank": "13",
    "name": "Alonzo Menifield",
    "wiki": "https://en.wikipedia.org/wiki/Alonzo_Menifield"
   },
@@ -1648,15 +1648,15 @@
    "system": "media",
    "division": "Middleweight",
    "rank": "11",
-   "name": "Jared Cannonier",
-   "wiki": "https://en.wikipedia.org/wiki/Jared_Cannonier"
+   "name": "Abusupiyan Magomedov",
+   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
   },
   {
    "system": "media",
    "division": "Middleweight",
    "rank": "12",
-   "name": "Abusupiyan Magomedov",
-   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
+   "name": "Jared Cannonier",
+   "wiki": "https://en.wikipedia.org/wiki/Jared_Cannonier"
   },
   {
    "system": "media",
@@ -1745,23 +1745,23 @@
   {
    "system": "media",
    "division": "Welterweight",
-   "rank": "9",
-   "name": "Kamaru Usman",
-   "wiki": "https://en.wikipedia.org/wiki/Kamaru_Usman"
-  },
-  {
-   "system": "media",
-   "division": "Welterweight",
-   "rank": "10",
-   "name": "Mike Malott",
-   "wiki": "https://en.wikipedia.org/wiki/Mike_Malott"
-  },
-  {
-   "system": "media",
-   "division": "Welterweight",
    "rank": "11",
    "name": "Yaroslav Amosov",
    "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
+  },
+  {
+   "system": "media",
+   "division": "Welterweight",
+   "rank": "12",
+   "name": "Uroš Medić",
+   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
+  },
+  {
+   "system": "media",
+   "division": "Welterweight",
+   "rank": "13",
+   "name": "Joaquin Buckley",
+   "wiki": "https://en.wikipedia.org/wiki/Joaquin_Buckley"
   },
   {
    "system": "media",
@@ -1774,8 +1774,8 @@
    "system": "media",
    "division": "Welterweight",
    "rank": "15",
-   "name": "Neil Magny",
-   "wiki": "https://en.wikipedia.org/wiki/Neil_Magny"
+   "name": "Kevin Holland",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
   },
   {
    "system": "media",
@@ -1872,15 +1872,15 @@
    "system": "media",
    "division": "Lightweight",
    "rank": "13",
-   "name": "Dan Hooker",
-   "wiki": "https://en.wikipedia.org/wiki/Dan_Hooker"
+   "name": "Tom Nolan",
+   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
   },
   {
    "system": "media",
    "division": "Lightweight",
    "rank": "14",
-   "name": "Tom Nolan",
-   "wiki": "https://en.wikipedia.org/wiki/Tom_Nolan_(fighter)"
+   "name": "Dan Hooker",
+   "wiki": "https://en.wikipedia.org/wiki/Dan_Hooker"
   },
   {
    "system": "media",
@@ -2263,23 +2263,9 @@
   {
    "system": "media",
    "division": "Women's Bantamweight",
-   "rank": "5",
-   "name": "Raquel Pennington",
-   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
-  },
-  {
-   "system": "media",
-   "division": "Women's Bantamweight",
-   "rank": "6",
+   "rank": "7",
    "name": "Yana Santos",
    "wiki": "https://en.wikipedia.org/wiki/Yana_Santos"
-  },
-  {
-   "system": "media",
-   "division": "Women's Bantamweight",
-   "rank": "7",
-   "name": "Luana Santos",
-   "wiki": "https://en.wikipedia.org/wiki/Luana_Santos"
   },
   {
    "system": "media",
@@ -2481,15 +2467,15 @@
    "system": "media",
    "division": "Women's Strawweight",
    "rank": "10",
-   "name": "Jéssica Andrade",
-   "wiki": "https://en.wikipedia.org/wiki/Jéssica_Andrade"
+   "name": "Tabatha Ricci",
+   "wiki": "https://en.wikipedia.org/wiki/Tabatha_Ricci"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
    "rank": "11",
-   "name": "Tabatha Ricci",
-   "wiki": "https://en.wikipedia.org/wiki/Tabatha_Ricci"
+   "name": "Jéssica Andrade",
+   "wiki": "https://en.wikipedia.org/wiki/Jéssica_Andrade"
   },
   {
    "system": "media",
@@ -2520,6 +2506,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-11-03",
+ "fetched": "2026-11-04",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }

@@ -9930,6 +9930,8 @@
 "stats_official": "2"
 },
 "Jung Hyun Lee": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (165 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -11057,6 +11059,10 @@
 },
 "Kyron Bowen": {
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
+"Kyu Sung Kim": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
 "Kyung Ho Kang": {
@@ -15098,6 +15104,10 @@
 "Ralph Gracie": {
 "stats_official": "1"
 },
+"Rama Supandhi": {
+"reach": "UFCStats only (168 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Ramazan Emeev": {
 "dob": "Sherdog + Fight Matrix agree (UFCStats differs)",
 "height": "Sherdog + UFCStats agree",
@@ -16830,6 +16840,12 @@
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "3"
 },
+"Seung Guk Choi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (163 cm), not used until a second source confirms it",
+"stats_official": "2"
+},
 "Seung Woo Choi": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -17395,6 +17411,10 @@
 "Suman Mokhtarian": {
 "reach": "UFCStats only (183 cm), not used until a second source confirms it",
 "stats_official": "2"
+},
+"Sumit Kumar": {
+"reach": "UFCStats only (168 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Sung Bin Jo": {
 "dob": "Sherdog + UFCStats agree",
@@ -18011,8 +18031,10 @@
 "stats_official": "3"
 },
 "Tokitaka Nakanishi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Tom Aaron": {
 "stats_official": "1"
