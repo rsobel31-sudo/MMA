@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T12:19:18+00:00",
+ "fetched": "2026-11-04T12:19:08+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -376,9 +376,9 @@
    "date": "2026-09-15",
    "division": "Lightweight",
    "refs": [
-    "https://www.si.com/fannation/mma/news/ufc-announces-stacked-ufc-qatar-card-featuring-jiri-prochazka-return"
+    "https://www.sherdog.com/news/news/Dana-Whites-Contender-Series-greatest-talent-gets-UFC-debut-opponent-203484/"
    ],
-   "info": "(September 29, 2026) – UFC made a mistake with the matchup – Not competing at UFC Fight Night 294 (Al Rayyan) – Jake Matthews",
+   "info": "UFC Fight Night 295 (Riyadh) – Mairon Santos",
    "confirmed_by": {
     "source": "si.com",
     "url": "https://www.si.com/fannation/mma/news/ufc-announces-stacked-ufc-qatar-card-featuring-jiri-prochazka-return"
@@ -671,7 +671,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Dagiisuren Chagnaadorj",
+   "info": "UFC Fight Night 297 (Sydney) – Dagiisuren Chagnaadorj",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -682,7 +682,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – George Mangos",
+   "info": "UFC Fight Night 297 (Sydney) – George Mangos",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -693,7 +693,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Ryo Tajima",
+   "info": "UFC Fight Night 297 (Sydney) – Ryo Tajima",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -704,7 +704,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Rabindra Dhant",
+   "info": "UFC Fight Night 297 (Sydney) – Rabindra Dhant",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -715,7 +715,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Takaya Suzuki",
+   "info": "UFC Fight Night 297 (Sydney) – Takaya Suzuki",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -726,7 +726,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Ji Niushiyue",
+   "info": "UFC Fight Night 297 (Sydney) – Ji Niushiyue",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -737,7 +737,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Meng Bo",
+   "info": "UFC Fight Night 297 (Sydney) – Meng Bo",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -748,7 +748,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 298 (Sydney) – Park Bo-hyun",
+   "info": "UFC Fight Night 297 (Sydney) – Park Bo-hyun",
    "confirmed_by": {
     "source": "MMA Mania",
     "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
@@ -948,20 +948,6 @@
  ],
  "releases": [
   {
-   "name": "Court McGee",
-   "date": "2026-10-03",
-   "division": "Welterweight",
-   "refs": [
-    "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
-   ],
-   "reason": "Retired",
-   "confirmed_by": {
-    "source": "cagesidepress.com",
-    "url": "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Muhammad Naimov",
    "date": "2026-10-09",
    "division": "Featherweight",
@@ -1052,6 +1038,21 @@
     "url": "https://cagesidepress.com/2026/10/31/julian-erosa-knocks-out-jeongyeong-lee-in-wild-retirement-fight/"
    },
    "first_seen": "2026-11-01"
+  },
+  {
+   "name": "Court McGee",
+   "date": "2026-10-03",
+   "division": "Welterweight",
+   "refs": [
+    "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "cagesidepress.com",
+    "url": "https://cagesidepress.com/2026/10/03/ufc-332-eric-nolan-sends-court-mcgee-into-retirement/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-11-04"
   },
   {
    "name": "Lyman Good",
