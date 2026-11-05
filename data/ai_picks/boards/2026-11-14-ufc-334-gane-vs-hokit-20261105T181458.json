@@ -1,0 +1,966 @@
+{
+ "event": "UFC 334: Gane vs. Hokit",
+ "date": "2026-11-14",
+ "locks_at": "2026-11-14T22:00:00+00:00",
+ "fetched_at": "2026-11-05T18:14:58+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-334-4433",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_334",
+ "bouts": [
+  {
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "a": "Ciryl Gane",
+   "b": "Josh Hokit",
+   "rounds": 5,
+   "title": true
+  },
+  {
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "a": "Amanda Nunes",
+   "b": "Kayla Harrison",
+   "rounds": 5,
+   "title": true
+  },
+  {
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "a": "Caio Borralho",
+   "b": "Yousri Belgaroui",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Kevin Holland vs Uros Medic",
+   "a": "Kevin Holland",
+   "b": "Uros Medic",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "a": "Bilal Hasan",
+   "b": "Luis Gurule",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "a": "Charles Radtke",
+   "b": "Stephen Thompson",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Chris Duncan vs Drew Dober",
+   "a": "Chris Duncan",
+   "b": "Drew Dober",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jim Miller vs Terrance McKinney",
+   "a": "Jim Miller",
+   "b": "Terrance McKinney",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "a": "Cesar Almeida",
+   "b": "Donte Johnson",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "a": "Bia Mesquita",
+   "b": "Macy Chiasson",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jared Gordon vs Melquizael Costa",
+   "a": "Jared Gordon",
+   "b": "Melquizael Costa",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Evan Elder vs Samuel Sanches",
+   "a": "Evan Elder",
+   "b": "Samuel Sanches",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Juan Díaz vs TBA",
+   "a": "Juan Díaz",
+   "b": "TBA",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "43676:ml:a",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ciryl Gane to win",
+   "odds": -265,
+   "p_fanduel": 0.6853
+  },
+  {
+   "id": "43676:ml:b",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Josh Hokit to win",
+   "odds": 200,
+   "p_fanduel": 0.3147
+  },
+  {
+   "id": "43676:distance:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -215,
+   "p_fanduel": 0.6431
+  },
+  {
+   "id": "43676:distance:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 164,
+   "p_fanduel": 0.3569
+  },
+  {
+   "id": "43676:ends_round:1",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 350,
+   "p_fanduel": 0.1984
+  },
+  {
+   "id": "43676:ends_round:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 450,
+   "p_fanduel": 0.1623
+  },
+  {
+   "id": "43676:ends_round:3",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "43676:ends_round:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "43676:ends_round:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "43676:method:a:DEC",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Ciryl Gane by decision",
+   "odds": 280,
+   "p_fanduel": 0.2264
+  },
+  {
+   "id": "43676:method:a:KO/TKO",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Ciryl Gane by KO/TKO",
+   "odds": 145,
+   "p_fanduel": 0.3512
+  },
+  {
+   "id": "43676:method:a:SUB",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Ciryl Gane by submission",
+   "odds": 900,
+   "p_fanduel": 0.086
+  },
+  {
+   "id": "43676:method:b:DEC",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Josh Hokit by decision",
+   "odds": 650,
+   "p_fanduel": 0.1147
+  },
+  {
+   "id": "43676:method:b:KO/TKO",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Josh Hokit by KO/TKO",
+   "odds": 500,
+   "p_fanduel": 0.1434
+  },
+  {
+   "id": "43676:method:b:SUB",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Josh Hokit by submission",
+   "odds": 1000,
+   "p_fanduel": 0.0782
+  },
+  {
+   "id": "43676:starts_round:2:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 360,
+   "p_fanduel": 0.2023
+  },
+  {
+   "id": "43676:starts_round:2:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -600,
+   "p_fanduel": 0.7977
+  },
+  {
+   "id": "43676:starts_round:3:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 162,
+   "p_fanduel": 0.3586
+  },
+  {
+   "id": "43676:starts_round:3:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -215,
+   "p_fanduel": 0.6414
+  },
+  {
+   "id": "43676:starts_round:4:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "43676:starts_round:4:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "43676:starts_round:5:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -154,
+   "p_fanduel": 0.5715
+  },
+  {
+   "id": "43676:starts_round:5:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 120,
+   "p_fanduel": 0.4285
+  },
+  {
+   "id": "43676:win_round:a:1",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Ciryl Gane in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "43676:win_round:a:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Ciryl Gane in round 2",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "43676:win_round:a:3",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Ciryl Gane in round 3",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "43676:win_round:a:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Ciryl Gane in round 4",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "43676:win_round:a:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Ciryl Gane in round 5",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "43676:win_round:b:1",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Josh Hokit in round 1",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "43676:win_round:b:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Josh Hokit in round 2",
+   "odds": 1500,
+   "p_fanduel": 0.0558
+  },
+  {
+   "id": "43676:win_round:b:3",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Josh Hokit in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "43676:win_round:b:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Josh Hokit in round 4",
+   "odds": 2500,
+   "p_fanduel": 0.0343
+  },
+  {
+   "id": "43676:win_round:b:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Josh Hokit in round 5",
+   "odds": 3000,
+   "p_fanduel": 0.0288
+  },
+  {
+   "id": "44985:ml:a",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Amanda Nunes to win",
+   "odds": 146,
+   "p_fanduel": 0.3838
+  },
+  {
+   "id": "44985:ml:b",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kayla Harrison to win",
+   "odds": -188,
+   "p_fanduel": 0.6162
+  },
+  {
+   "id": "44985:distance:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -205,
+   "p_fanduel": 0.6342
+  },
+  {
+   "id": "44985:distance:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 158,
+   "p_fanduel": 0.3658
+  },
+  {
+   "id": "44985:ends_round:1",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 320,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "44985:ends_round:2",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 440,
+   "p_fanduel": 0.1653
+  },
+  {
+   "id": "44985:ends_round:3",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "44985:ends_round:4",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "44985:ends_round:5",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "44985:method:a:DEC",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Amanda Nunes by decision",
+   "odds": 500,
+   "p_fanduel": 0.1443
+  },
+  {
+   "id": "44985:method:a:KO/TKO",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Amanda Nunes by KO/TKO",
+   "odds": 300,
+   "p_fanduel": 0.2164
+  },
+  {
+   "id": "44985:method:a:SUB",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Amanda Nunes by submission",
+   "odds": 2500,
+   "p_fanduel": 0.0333
+  },
+  {
+   "id": "44985:method:b:DEC",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kayla Harrison by decision",
+   "odds": 300,
+   "p_fanduel": 0.2164
+  },
+  {
+   "id": "44985:method:b:KO/TKO",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kayla Harrison by KO/TKO",
+   "odds": 800,
+   "p_fanduel": 0.0962
+  },
+  {
+   "id": "44985:method:b:SUB",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Kayla Harrison by submission",
+   "odds": 195,
+   "p_fanduel": 0.2934
+  },
+  {
+   "id": "44985:starts_round:2:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 340,
+   "p_fanduel": 0.2117
+  },
+  {
+   "id": "44985:starts_round:2:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -550,
+   "p_fanduel": 0.7883
+  },
+  {
+   "id": "44985:starts_round:3:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 150,
+   "p_fanduel": 0.3782
+  },
+  {
+   "id": "44985:starts_round:3:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -192,
+   "p_fanduel": 0.6218
+  },
+  {
+   "id": "44985:starts_round:4:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -110,
+   "p_fanduel": 0.4938
+  },
+  {
+   "id": "44985:starts_round:4:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -116,
+   "p_fanduel": 0.5062
+  },
+  {
+   "id": "44985:starts_round:5:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -156,
+   "p_fanduel": 0.5772
+  },
+  {
+   "id": "44985:starts_round:5:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 124,
+   "p_fanduel": 0.4228
+  },
+  {
+   "id": "44985:win_round:a:1",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Amanda Nunes in round 1",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "44985:win_round:a:2",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Amanda Nunes in round 2",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "44985:win_round:a:3",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Amanda Nunes in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "44985:win_round:a:4",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Amanda Nunes in round 4",
+   "odds": 2700,
+   "p_fanduel": 0.0319
+  },
+  {
+   "id": "44985:win_round:a:5",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Amanda Nunes in round 5",
+   "odds": 4000,
+   "p_fanduel": 0.0218
+  },
+  {
+   "id": "44985:win_round:b:1",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Kayla Harrison in round 1",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "44985:win_round:b:2",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Kayla Harrison in round 2",
+   "odds": 800,
+   "p_fanduel": 0.0992
+  },
+  {
+   "id": "44985:win_round:b:3",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Kayla Harrison in round 3",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "44985:win_round:b:4",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Kayla Harrison in round 4",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "44985:win_round:b:5",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Kayla Harrison in round 5",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45508:ml:a",
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Caio Borralho to win",
+   "odds": -164,
+   "p_fanduel": 0.5862
+  },
+  {
+   "id": "45508:ml:b",
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Yousri Belgaroui to win",
+   "odds": 128,
+   "p_fanduel": 0.4138
+  },
+  {
+   "id": "45509:ml:a",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Kevin Holland to win",
+   "odds": 136,
+   "p_fanduel": 0.4002
+  },
+  {
+   "id": "45509:ml:b",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Uros Medic to win",
+   "odds": -174,
+   "p_fanduel": 0.5998
+  },
+  {
+   "id": "45510:ml:a",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Bilal Hasan to win",
+   "odds": -900,
+   "p_fanduel": 0.848
+  },
+  {
+   "id": "45510:ml:b",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Luis Gurule to win",
+   "odds": 520,
+   "p_fanduel": 0.152
+  },
+  {
+   "id": "45567:ml:a",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Charles Radtke to win",
+   "odds": 102,
+   "p_fanduel": 0.4669
+  },
+  {
+   "id": "45567:ml:b",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Stephen Thompson to win",
+   "odds": -130,
+   "p_fanduel": 0.5331
+  }
+ ]
+}
