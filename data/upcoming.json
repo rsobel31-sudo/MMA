@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04",
+ "fetched": "2026-11-05",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -54,20 +54,6 @@
     {
      "order": 3,
      "segment": "Fight card",
-     "weight_class": "Welterweight",
-     "a": "Ko Seok-hyeon",
-     "b": "Wellington Turman",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 4,
-     "segment": "Fight card",
      "weight_class": "Light Heavyweight",
      "a": "Billy Elekana",
      "b": "Lucas Fernando",
@@ -80,11 +66,25 @@
      "main_event": false
     },
     {
+     "order": 4,
+     "segment": "Fight card",
+     "weight_class": "Women's Bantamweight",
+     "a": "Priscila Cachoeira",
+     "b": "Nina Nikolija Milo\u0161evi\u0107",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
      "order": 5,
      "segment": "Fight card",
-     "weight_class": "Middleweight",
-     "a": "Mantas Kondratavi\u010dius",
-     "b": "Andre Petroski",
+     "weight_class": "Flyweight",
+     "a": "Mitch Raposo",
+     "b": "Marcos Degli",
      "title": false,
      "result": "",
      "decided": false,
@@ -95,6 +95,20 @@
     },
     {
      "order": 6,
+     "segment": "Preliminary card",
+     "weight_class": "Featherweight",
+     "a": "Keiichiro Nakamura",
+     "b": "Ollie Schmid",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 7,
      "segment": "Preliminary card",
      "weight_class": "Heavyweight",
      "a": "Gabriel Loren\u00e7o",
@@ -108,25 +122,11 @@
      "main_event": false
     },
     {
-     "order": 7,
+     "order": 8,
      "segment": "Preliminary card",
      "weight_class": "Women's Flyweight",
      "a": "Karine Silva",
      "b": "Gabriella Fernandes",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Preliminary card",
-     "weight_class": "Flyweight",
-     "a": "Mitch Raposo",
-     "b": "Marcos Degli",
      "title": false,
      "result": "",
      "decided": false,
@@ -153,8 +153,8 @@
      "order": 10,
      "segment": "Preliminary card",
      "weight_class": "Featherweight",
-     "a": "Keiichiro Nakamura",
-     "b": "Ollie Schmid",
+     "a": "Austin Bashi",
+     "b": "Carlos Calderon",
      "title": false,
      "result": "",
      "decided": false,
@@ -166,9 +166,9 @@
     {
      "order": 11,
      "segment": "Preliminary card",
-     "weight_class": "Women's Bantamweight",
-     "a": "Priscila Cachoeira",
-     "b": "Nina Nikolija Milo\u0161evi\u0107",
+     "weight_class": "Middleweight",
+     "a": "Mantas Kondratavi\u010dius",
+     "b": "Andre Petroski",
      "title": false,
      "result": "",
      "decided": false,
@@ -181,8 +181,8 @@
      "order": 12,
      "segment": "Preliminary card",
      "weight_class": "Welterweight",
-     "a": "Jonny Parsons",
-     "b": "Jos\u00e9 Henrique Souza",
+     "a": "Ko Seok-hyeon",
+     "b": "Wellington Turman",
      "title": false,
      "result": "",
      "decided": false,
@@ -193,12 +193,15 @@
     },
     {
      "order": 13,
-     "segment": "Announced",
-     "weight_class": "Featherweight",
-     "a": "Austin Bashi",
-     "b": "TBD",
+     "segment": "Preliminary card",
+     "weight_class": "Welterweight",
+     "a": "Jonny Parsons",
+     "b": "Jos\u00e9 Henrique Souza",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     }
@@ -400,7 +403,96 @@
    "venue": "anb Arena",
    "location": "Riyadh, Saudi Arabia",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295",
-   "bouts": []
+   "bouts": [
+    {
+     "order": 0,
+     "segment": "Announced",
+     "weight_class": "Middleweight",
+     "a": "Israel Adesanya",
+     "b": "Sharabutdin Magomedov",
+     "title": false,
+     "result": "",
+     "rounds": 5,
+     "main_event": true
+    },
+    {
+     "order": 1,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Abdul Hussein",
+     "b": "Hecher Sosa",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Announced",
+     "weight_class": "Middleweight",
+     "a": "Matthieu Letho Duclos",
+     "b": "Modestino Rodrigues",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Flyweight",
+     "a": "Bruno Gustavo da Silva",
+     "b": "Jafel Filho",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 4,
+     "segment": "Announced",
+     "weight_class": "Light Heavyweight",
+     "a": "Ivan Gnizditskiy",
+     "b": "Uran Satybaldiev",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 5,
+     "segment": "Announced",
+     "weight_class": "Light Heavyweight",
+     "a": "Ion Cu\u021belaba",
+     "b": "Magomed Tuchalov",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 6,
+     "segment": "Announced",
+     "weight_class": "Middleweight",
+     "a": "Park Jun-yong",
+     "b": "Marco Tulio",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 7,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Akbar Abdullaev",
+     "b": "Mairon Santos",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    }
+   ]
   },
   {
    "name": "UFC 335: Oliveira vs. Lopes",
@@ -564,6 +656,14 @@
    "venue": "American Airlines Center",
    "location": "Dallas, Texas, U.S.",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
+   "bouts": []
+  },
+  {
+   "name": "UFC Fight Night 297",
+   "date": "2027-01-23",
+   "venue": "TBA",
+   "location": "TBA",
+   "url": "",
    "bouts": []
   },
   {

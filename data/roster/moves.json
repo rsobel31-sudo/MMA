@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04T12:19:08+00:00",
+ "fetched": "2026-11-05T12:23:09+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -671,7 +671,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Dagiisuren Chagnaadorj",
+   "info": "UFC Fight Night 298 (Sydney) – Dagiisuren Chagnaadorj",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -682,7 +682,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – George Mangos",
+   "info": "UFC Fight Night 298 (Sydney) – George Mangos",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -693,7 +693,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Ryo Tajima",
+   "info": "UFC Fight Night 298 (Sydney) – Ryo Tajima",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -704,7 +704,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Rabindra Dhant",
+   "info": "UFC Fight Night 298 (Sydney) – Rabindra Dhant",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -715,7 +715,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Takaya Suzuki",
+   "info": "UFC Fight Night 298 (Sydney) – Takaya Suzuki",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -726,7 +726,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Ji Niushiyue",
+   "info": "UFC Fight Night 298 (Sydney) – Ji Niushiyue",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -737,7 +737,7 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Meng Bo",
+   "info": "UFC Fight Night 298 (Sydney) – Meng Bo",
    "confirmed_by": null,
    "first_seen": "2026-10-29"
   },
@@ -748,12 +748,26 @@
    "refs": [
     "https://www.mmacrossfire.com/2026/10/28/ufc-sydney-quillan-salkilld-to-take-on-benoit-saint-denis-in-main-event-down-under/"
    ],
-   "info": "UFC Fight Night 297 (Sydney) – Park Bo-hyun",
+   "info": "UFC Fight Night 298 (Sydney) – Park Bo-hyun",
    "confirmed_by": {
     "source": "MMA Mania",
     "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
    },
    "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Carlos Calderon",
+   "date": "2026-11-04",
+   "division": "Featherweight",
+   "refs": [
+    "https://www.mmamania.com/ufc-fight-announcements/484031/ufc-newcomer-steps-up-on-four-days-notice-for-ufc-vegas-124"
+   ],
+   "info": "UFC Fight Night 293 (Las Vegas) – Austin Bashi",
+   "confirmed_by": {
+    "source": "mmamania.com",
+    "url": "https://www.mmamania.com/ufc-fight-announcements/484031/ufc-newcomer-steps-up-on-four-days-notice-for-ufc-vegas-124"
+   },
+   "first_seen": "2026-11-05"
   },
   {
    "name": "Joseph Kropschot",

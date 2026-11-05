@@ -23,6 +23,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker"
  },
+ "https://www.sherdog.com/fighter/Ivan-Gnizditskiy-291329": {
+  "date": "2026-12-05",
+  "event": "UFC Fight Night 295 - Riyadh",
+  "name": "Ivan Gnizditskiy",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-295-Riyadh-114777",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
+ },
  "https://www.sherdog.com/fighter/Joel-Faglier-325449": {
   "date": "2026-10-17",
   "event": "UFC Fight Night 291 - Buckley vs. Malott",
@@ -46,6 +58,18 @@
    "Wikipedia"
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott"
+ },
+ "https://www.sherdog.com/fighter/Modestino-Rodrigues-397486": {
+  "date": "2026-12-05",
+  "event": "UFC Fight Night 295 - Riyadh",
+  "name": "Modestino Rodrigues",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-295-Riyadh-114777",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night_295"
  },
  "https://www.sherdog.com/fighter/Quentin-Pasley-400375": {
   "date": "2026-12-12",
