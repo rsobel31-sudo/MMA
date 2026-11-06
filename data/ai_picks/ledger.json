@@ -636,7 +636,7 @@
    "placed_at": "2026-11-04T18:15:09+00:00",
    "bankroll_before": 85.21,
    "available_before": 85.21,
-   "note": "Wednesday early check of the Nov 7 card. One prop with a reason: FanDuel prices Elijah Smith's finish as a knockout first (KO +210, about 32% no-vig; submission +470, about 17.5%), but Davey Grant has never been knocked out in 26 pro fights while being submitted five times, most recently in R1 by Charles Jourdain in October 2025. Smith's last win was a rear-naked choke after a knockdown. The decision and round props on the main event and Petroski-Kondratavicius show positive EV on the sheet, but the finish rates of a Walker five-rounder and a fast-starting puncher against a chin-first wrestler explain the market's numbers; passing those. Small stake: method props rest on the finish model, shrunk halfway to the market.",
+   "note": "Wednesday early check of the Nov 7 card. One prop with a reason: FanDuel prices Elijah Smith's finish as a knockout first (KO +210, about 32% no-vig; submission +470, about 17.5%), but Davey Grant has never been knocked out in 26 pro fights while being submitted five times, most recently in R1 by Charles Jourdain in October 2025. Smith's last win was a rear-naked choke after a knockdown. The decision and round props on the main event and Petroski-Kondratavicius show positive EV on the sheet, but the finish rates of a Walker five-rounder and a fast-starting puncher against a chin-first wrestler explain the market's numbers; passing those. Small stake: method props rest on the finish model, shrunk halfway to the market.\n\nFriday read on the Nov 7 card, after weigh-ins (no misses reported) and 162 pundit picks. Wednesday's Elijah Smith by submission stands. One addition: Cortes-Acosta on the moneyline. Walker has been stopped six times, gets knocked out when opponents press, and moves into a heavyweight division where Cortes-Acosta (262) has never been stopped; heavyweight underdogs have lost money over the line in all three eras since 2016. The five-round format, the one spot where dogs have beaten the line, keeps the stake moderate. Passing on the long list of decision and 'starts round N' props: they rest on the finish model, and the main-event ones bet on Walker surviving 15+ minutes, which his record argues against. Petersen and Bashi lean my way in the reads but the prices (-170, -550) leave no edge.",
    "bets": [
     {
      "id": "6-1",
@@ -666,9 +666,37 @@
      "status": "open",
      "profit": 0.0,
      "placed_at": "2026-11-04T18:15:09+00:00"
+    },
+    {
+     "id": "6-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45564:ml:b",
+       "bout": "Johnny Walker vs Waldo Cortes-Acosta",
+       "market": [
+        "ml",
+        "b"
+       ],
+       "selection": "Waldo Cortes-Acosta to win",
+       "odds": -250,
+       "p": 0.7484,
+       "p_fanduel": 0.6804
+      }
+     ],
+     "odds": -250,
+     "decimal": 1.4,
+     "stake": 2.0,
+     "to_win": 0.8,
+     "p": 0.7484,
+     "ev": 0.0478,
+     "reasoning": "Walker's chin against heavyweight power (six KO/TKO losses, four in R1) and a heavyweight underdog at 32%; ours 74.8% vs FanDuel 68.0%.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-06T17:57:21+00:00"
     }
    ],
-   "staked": 1.5,
+   "staked": 3.5,
    "settled": false,
    "settled_at": null,
    "placements": [
@@ -681,15 +709,25 @@
      "staked": 1.5,
      "sheet": "data/ai_picks/sheets/2026-11-07-ufc-fight-night-cortes-acosta-vs-walker.json",
      "sheet_fetched_at": "2026-11-04T18:14:37+00:00"
+    },
+    {
+     "placed_at": "2026-11-06T17:57:21+00:00",
+     "note": "Friday read on the Nov 7 card, after weigh-ins (no misses reported) and 162 pundit picks. Wednesday's Elijah Smith by submission stands. One addition: Cortes-Acosta on the moneyline. Walker has been stopped six times, gets knocked out when opponents press, and moves into a heavyweight division where Cortes-Acosta (262) has never been stopped; heavyweight underdogs have lost money over the line in all three eras since 2016. The five-round format, the one spot where dogs have beaten the line, keeps the stake moderate. Passing on the long list of decision and 'starts round N' props: they rest on the finish model, and the main-event ones bet on Walker surviving 15+ minutes, which his record argues against. Petersen and Bashi lean my way in the reads but the prices (-170, -550) leave no edge.",
+     "bets": [
+      "6-2"
+     ],
+     "staked": 2.0,
+     "sheet": "data/ai_picks/sheets/2026-11-07-ufc-fight-night-cortes-acosta-vs-walker.json",
+     "sheet_fetched_at": "2026-11-06T17:57:03+00:00"
     }
    ],
-   "last_placed_at": "2026-11-04T18:15:09+00:00",
+   "last_placed_at": "2026-11-06T17:57:21+00:00",
    "sheet": "data/ai_picks/sheets/2026-11-07-ufc-fight-night-cortes-acosta-vs-walker.json",
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
     "https://www.bestfightodds.com/events/ufc-vegas-124-4437"
    ],
-   "sheet_fetched_at": "2026-11-04T18:14:37+00:00"
+   "sheet_fetched_at": "2026-11-06T17:57:03+00:00"
   },
   {
    "id": "w7",
