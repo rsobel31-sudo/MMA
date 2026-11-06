@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T12:21:48+00:00",
+ "fetched": "2026-11-06T18:03:39+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -249,20 +249,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Gabriel Lorenço",
-   "date": "2026-09-01",
-   "division": "Heavyweight",
-   "refs": [
-    "https://www.si.com/fannation/mma/news/first-ufc-fight-night-event-of-november-hit-with-late-change"
-   ],
-   "info": "UFC Fight Night 293 (Las Vegas) – Thomas Petersen",
-   "confirmed_by": {
-    "source": "Cageside Press",
-    "url": "https://cagesidepress.com/2026/09/01/dana-whites-contender-series-season-10-week-4-results/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Silvestre Sanchez",
    "date": "2026-09-01",
    "division": "Lightweight",
@@ -361,17 +347,6 @@
    "first_seen": "2026-10-10"
   },
   {
-   "name": "Jonny Parsons",
-   "date": "2026-09-12",
-   "division": "Welterweight",
-   "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/11/virna-jandiroba-vs-tatiana-suarez-booked-again-for-ufc-vegas-124/91713281007/"
-   ],
-   "info": "UFC Fight Night 293 – José Henrique Souza",
-   "confirmed_by": null,
-   "first_seen": "2026-10-10"
-  },
-  {
    "name": "Akbar Abdullaev",
    "date": "2026-09-15",
    "division": "Lightweight",
@@ -452,20 +427,6 @@
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2026/09/23/callum-connor-reacts-ufc-deal-off-fight-of-the-year-contender-dwcs/"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Marcos Degli",
-   "date": "2026-09-22",
-   "division": "Flyweight",
-   "refs": [
-    "https://agfight.com/ufc/ufc-encaminha-estreia-de-marcos-tailandes-para-novembro-em-las-vegas/"
-   ],
-   "info": "UFC Fight Night 293 (Las Vegas) – Mitch Raposo",
-   "confirmed_by": {
-    "source": "Cageside Press",
-    "url": "https://cagesidepress.com/2026/09/23/marcos-degli-dwcs-rahiki/"
    },
    "first_seen": "2026-10-10"
   },
@@ -756,6 +717,48 @@
    "first_seen": "2026-10-29"
   },
   {
+   "name": "Gabriel Lorenço",
+   "date": "2026-09-01",
+   "division": "Heavyweight",
+   "refs": [
+    "https://www.si.com/fannation/mma/news/first-ufc-fight-night-event-of-november-hit-with-late-change"
+   ],
+   "info": "UFC Fight Night 293 (Las Vegas) – Thomas Petersen",
+   "confirmed_by": {
+    "source": "Cageside Press",
+    "url": "https://cagesidepress.com/2026/09/01/dana-whites-contender-series-season-10-week-4-results/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-11-06"
+  },
+  {
+   "name": "Jonny Parsons",
+   "date": "2026-09-12",
+   "division": "Welterweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/11/virna-jandiroba-vs-tatiana-suarez-booked-again-for-ufc-vegas-124/91713281007/"
+   ],
+   "info": "UFC Fight Night 293 – José Henrique Souza",
+   "confirmed_by": null,
+   "first_seen": "2026-10-10",
+   "left_table": "2026-11-06"
+  },
+  {
+   "name": "Marcos Degli",
+   "date": "2026-09-22",
+   "division": "Flyweight",
+   "refs": [
+    "https://agfight.com/ufc/ufc-encaminha-estreia-de-marcos-tailandes-para-novembro-em-las-vegas/"
+   ],
+   "info": "UFC Fight Night 293 (Las Vegas) – Mitch Raposo",
+   "confirmed_by": {
+    "source": "Cageside Press",
+    "url": "https://cagesidepress.com/2026/09/23/marcos-degli-dwcs-rahiki/"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-11-06"
+  },
+  {
    "name": "Carlos Calderon",
    "date": "2026-11-04",
    "division": "Featherweight",
@@ -767,7 +770,8 @@
     "source": "mmamania.com",
     "url": "https://www.mmamania.com/ufc-fight-announcements/484031/ufc-newcomer-steps-up-on-four-days-notice-for-ufc-vegas-124"
    },
-   "first_seen": "2026-11-05"
+   "first_seen": "2026-11-05",
+   "left_table": "2026-11-06"
   },
   {
    "name": "Joseph Kropschot",
