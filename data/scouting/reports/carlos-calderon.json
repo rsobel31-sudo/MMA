@@ -1,0 +1,121 @@
+{
+ "name": "Carlos Calderon",
+ "updated": "2026-11-06T18:00:00+00:00",
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "summary": "Carlos 'The Chief' Calderon (11-4, 1 NC, age 31) is the reigning Fury FC featherweight champion. He makes his UFC debut against Austin Bashi on four days' notice after Lucas Brennan tore his ACL. He is a submission-first finisher: six of his 11 wins are submissions, two more are R1 KOs, and he is on a three-fight win streak (5-1 in his last six). He won the Fury belt by R4 rear-naked choke over UFC veteran Damon Jackson in May and defended it over five rounds against Lorram Esteves on Oct 2. His one step up to UFC-level opposition was a 2024 Contender Series loss, a R2 anaconda choke by Alberto Montes, also taken on short notice.",
+ "how_they_fight": {
+  "Striking": "A volume striker who starts fast (Cageside Press, 2024), but that breakdown was harsh on the craft: low hands, 'leads in with his chin', sloppy and reckless entries. On the Contender Series he threw a lot (37 of 88 significant, 42%) while Montes landed 38 of 57; UFC.com said Calderon 'showed a varied offense' in a fast first round. His two KO wins were both in R1 and very fast (0:17 and 0:25, 2022), against regional opposition.",
+  "Grappling": "This is the main weapon. Six submission wins: R1 x3 (Ellis 2024, Alvarez 2025, Torres 2026), R2 x1 (Gavidia 2023), R3 x1 (Broadwater 2021, at 4:59) and R4 x1 (Jackson, RNC, 2:07). ClutchPoints says he threatens to take the back and finish. Cageside (2024) said he 'can snatch up the neck if his opponent is lazy', but rated his position and takedown defense poorly. He landed 2 of 6 takedowns and had about 2:39 of control against Montes.",
+  "Defense": "The 2024 Cageside breakdown called his defense 'terrible all around', and that was before the Fury FC title run. His four losses: two submissions (Motaz Askar R1, 2022; Montes R2, 2024 anaconda choke after a takedown) and two decisions (Elijah Leggett 2023, Mauricio Gomez split 2025). Never stopped by strikes in our data. Both submission losses came against grapplers who got on top of him.",
+  "Pace & cardio": "Went deep twice in 2026: a R4 finish of Jackson and a full 25-minute decision over Esteves. He has three decision wins (two of them split or five-round) and finishes spread across R1-R4. Cardio over 15 minutes shouldn't be a problem. He fought five weeks ago, so ClutchPoints argues the weight cut on short notice is not a concern; that is their opinion, not a reported weight.",
+  "Fight IQ": "Took both of his biggest opportunities (Contender Series and now the UFC) on short notice. Has beaten one UFC veteran (Damon Jackson) and nobody else of note; Cageside said in 2024 the best record he had beaten was 4-3."
+ },
+ "patterns": [
+  "Submission finisher: 6 of 11 wins by submission, back-taking and chokes",
+  "Fast starter: 5 of 8 finishes in R1",
+  "Two five-round fights in 2026, both wins",
+  "Short-notice UFC debut; a big betting underdog (+400 per DraftKings, via ClutchPoints)"
+ ],
+ "concerns": [
+  "Defense and hand position (Cageside, 2024); untested against UFC strikers",
+  "Taken down and submitted by the one UFC-calibre prospect he has faced (Montes)",
+  "Thin evidence: no tracked stats beyond one 2024 bout, and nothing recent describes his style in detail",
+  "Short notice: four days, after a fight five weeks earlier"
+ ],
+ "keys_to_beat": [
+  "Wrestle him: Montes took him down in R2 and finished from top",
+  "Avoid giving him the back in scrambles",
+  "Make him strike defensively; Cageside rated his defense poorly"
+ ],
+ "news": [
+  {
+   "date": "2026-11-04",
+   "text": "Signed to replace Lucas Brennan (torn ACL) against Austin Bashi at featherweight, on four days' notice; UFC debut. Heavy.com first reported it; MMA Fighting's Mike Heck confirmed.",
+   "source": "https://sports.yahoo.com/articles/ufc-vegas-124-adds-replacement-190000727.html"
+  },
+  {
+   "date": "2026-11-04",
+   "text": "Was originally scheduled to defend his Fury FC title in the Fury FC 127 main event on Jan 15.",
+   "source": "https://sports.yahoo.com/articles/fighter-steps-four-days-notice-163653174.html"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "DraftKings odds via ClutchPoints: Bashi -535, Calderon +400; ClutchPoints picks Bashi inside 2.5 rounds.",
+   "source": "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html"
+  },
+  {
+   "date": "2026-10-02",
+   "text": "Defended the Fury FC featherweight title with a five-round unanimous decision over Lorram Esteves.",
+   "source": "https://sports.yahoo.com/articles/ufc-vegas-124-adds-replacement-190000727.html"
+  },
+  {
+   "date": "2026-05-17",
+   "text": "Won the Fury FC featherweight title by R4 rear-naked choke over Damon Jackson.",
+   "source": "https://sports.yahoo.com/articles/ufc-newcomer-steps-four-days-221116340.html"
+  },
+  {
+   "date": "2024-10-01",
+   "text": "Submitted by Alberto Montes (anaconda choke, 2:38 R2) on the Contender Series after Montes took him down; Montes got the contract.",
+   "source": "https://www.ufc.com/news/week-8-results-scorecards-dana-whites-contender-series-season-8"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Alexander K. Lee",
+   "title": "UFC Vegas 124 adds replacement fighter on 4 days' notice",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-adds-replacement-190000727.html",
+   "date": "2026-11-04"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Mania)",
+   "author": "Alexander Behunin",
+   "title": "UFC newcomer steps up on four days' notice for UFC Vegas 124",
+   "url": "https://sports.yahoo.com/articles/ufc-newcomer-steps-four-days-221116340.html",
+   "date": "2026-11-04"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "author": "Drew Beaupre",
+   "title": "Fighter Steps in on Four Days' Notice to Debut on Saturday's UFC Fight Night Card",
+   "url": "https://sports.yahoo.com/articles/fighter-steps-four-days-notice-163653174.html",
+   "date": "2026-11-04"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Fury FC champ steps in on 4 days' notice for UFC debut",
+   "url": "https://www.sherdog.com/news/news/Fury-FC-champ-steps-in-on-4-days-notice-for-UFC-debut-203501",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "Yahoo Sports (ClutchPoints)",
+   "author": "Garrett Kerman",
+   "title": "Austin Bashi vs. Carlos Calderon prediction, odds, pick for UFC Vegas 124",
+   "url": "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "DWCS 2024: Episode 8 Breakdown and Predictions",
+   "url": "https://cagesidepress.com/2024/09/30/dwcs-2024-episode-8-breakdown-and-predictions/2",
+   "date": "2024-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Week 8 Results & Scorecards | Dana White's Contender Series Season 8",
+   "url": "https://www.ufc.com/news/week-8-results-scorecards-dana-whites-contender-series-season-8",
+   "date": "2024-10-02"
+  },
+  {
+   "outlet": "Yahoo Sports (SB Nation)",
+   "author": "Jesse Holland",
+   "title": "UFC Vegas 124 early weigh ins video results, LIVE stream updates",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-weigh-163000711.html",
+   "date": "2026-11-06"
+  }
+ ],
+ "depth": "thin"
+}
