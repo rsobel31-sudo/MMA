@@ -9,7 +9,7 @@
    "favours": "Waldo Cortes-Acosta",
    "logit": 0.0,
    "confidence": "low",
-   "reasoning": "Walker has been knocked out when opponents force the issue and now faces heavyweight power; Cortes-Acosta is the bigger, more active man. The model (19%) is already well below the market (37%) on Walker; no lean until fight week.",
+   "reasoning": "Walker has been knocked out when opponents force the issue and now faces heavyweight power; Cortes-Acosta is the bigger, more active man. The model (18%) is already below the market (32%) on Walker; no lean.",
    "factors": [
     "Walker's chin against heavyweight power",
     "Walker freezes under pressure",
@@ -17,10 +17,137 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.19,
-   "p_market": 0.371,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.18,
+   "p_market": 0.32,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Jesse Holland",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-preview-cortes-143000515.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/waldo-cortes-acosta-vs-johnny-161751147.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Johnny Walker",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-cortes-acosta-walker-fight-card-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/waldo-cortes-acosta-vs-johnny-walker-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Johnny Walker",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Johnny Walker",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    },
+    {
+     "outlet": "Action Network (via Yahoo)",
+     "author": "Billy Ward",
+     "pick": "Johnny Walker",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-picks-172517643.html"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "",
+     "url": "https://vsin.com/mma/ufc-vegas-124-cortes-acosta-vs-walker-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Covers",
+     "author": "Danny Howard",
+     "pick": "Johnny Walker",
+     "method": "KO/TKO",
+     "url": "https://www.covers.com/ufc/fight-night-waldo-cortes-acosta-vs-johnny-walker-prediction-picks-odds"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Johnny Walker",
+     "method": "",
+     "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
+    },
+    {
+     "outlet": "World Sports Betting",
+     "author": "Brent",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "KO/TKO",
+     "url": "https://sportsnews.worldsportsbetting.co.za/ufc/ufc-fight-night-cortes-acosta-vs-walker-betting-preview/"
+    },
+    {
+     "outlet": "FightDesk (Substack)",
+     "author": "Anthony Lopez",
+     "pick": "Waldo Cortes-Acosta",
+     "method": "KO/TKO",
+     "url": "https://fightdesk.substack.com/p/ufc-fight-night-waldo-cortez-acosta"
+    }
+   ]
   },
   {
    "a": "Tatiana Suarez",
@@ -37,9 +164,122 @@
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "p_model": 0.57,
-   "p_market": 0.64,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.645,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Tatiana Suarez",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-124-145325"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Jesse Holland",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-preview-cortes-143000515.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-135500955.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Tatiana Suarez",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/virna-jandiroba-vs-tatiana-suarez-161644586.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Virna Jandiroba",
+     "method": "SUB",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-tatiana-suarez-virna-jandiroba-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Tatiana Suarez",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/tatiana-suarez-vs-virna-jandiroba-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://vsin.com/mma/ufc-vegas-124-cortes-acosta-vs-walker-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Tatiana Suarez",
+     "method": "",
+     "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
+    },
+    {
+     "outlet": "World Sports Betting",
+     "author": "Brent",
+     "pick": "Tatiana Suarez",
+     "method": "DEC",
+     "url": "https://sportsnews.worldsportsbetting.co.za/ufc/ufc-fight-night-cortes-acosta-vs-walker-betting-preview/"
+    }
+   ]
   },
   {
    "a": "Davey Grant",
@@ -55,9 +295,115 @@
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "p_model": 0.25,
-   "p_market": 0.277,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.28,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Elijah Smith",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Davey Grant",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-135500955.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/davey-grant-vs-elijah-smith-161539538.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Elijah Smith",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-davey-grant-elijah-smith-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/davey-grant-vs-elijah-smith-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Davey Grant",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Elijah Smith",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Elijah Smith",
+     "method": "",
+     "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
+    },
+    {
+     "outlet": "SportsLine",
+     "author": "Daniel Vithlani",
+     "pick": "Davey Grant",
+     "method": "",
+     "url": "https://www.sportsline.com/insiders/ufc-fight-night-odds-picks-mma-analyst-releases-selections-for-cortes-acosta-vs-walker-and-other-fights-for-november-7-event/"
+    },
+    {
+     "outlet": "World Sports Betting",
+     "author": "Brent",
+     "pick": "Elijah Smith",
+     "method": "SUB",
+     "url": "https://sportsnews.worldsportsbetting.co.za/ufc/ufc-fight-night-cortes-acosta-vs-walker-betting-preview/"
+    }
+   ]
   },
   {
    "a": "Billy Elekana",
@@ -73,10 +419,102 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.45,
-   "p_market": 0.277,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.44,
+   "p_market": 0.272,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Lucas Fernando",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Lucas Fernando",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Billy Elekana",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Lucas Fernando",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-124-145325"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Lucas Fernando",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-135500955.html"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Lucas Fernando",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Lucas Fernando",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/billy-elekana-vs-lucas-fernando-161448499.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Lucas Fernando",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-billy-elekana-lucas-fernando-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Lucas Fernando",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/billy-elekana-vs-lucas-fernando-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Billy Elekana",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Billy Elekana",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Lucas Fernando",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Billy Elekana",
+     "method": "",
+     "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
+    }
+   ]
   },
   {
    "a": "Andre Petroski",
@@ -93,9 +531,94 @@
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "p_model": 0.22,
-   "p_market": 0.286,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.285,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-124-145325"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-135500955.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://sports.yahoo.com/articles/andre-petroski-vs-mantas-kondratavicius-160436972.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-mantas-kondratavicius-andre-petroski-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/mantas-kondratavicius-vs-andre-petroski-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Mantas Kondratavicius",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Mantas Kondratavicius",
+     "method": "",
+     "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
+    }
+   ]
   },
   {
    "a": "Gabriel Lorenco",
@@ -111,9 +634,73 @@
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "p_model": 0.6,
-   "p_market": 0.411,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.4,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Gabriel Lorenco",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Gabriel Lorenco",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Gabriel Lorenco",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Thomas Petersen",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Gabriel Lorenco",
+     "method": "KO/TKO",
+     "url": "https://clutchpoints.com/betting/thomas-petersen-vs-gabriel-lorenco-prediction-odds-pick-for-ufc-vegas-124"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Thomas Petersen",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Thomas Petersen",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Thomas Petersen",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Action Network (via Yahoo)",
+     "author": "Billy Ward",
+     "pick": "Gabriel Lorenco",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-picks-172517643.html"
+    }
+   ]
   },
   {
    "a": "Gabriella Fernandes",
@@ -128,10 +715,88 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.36,
-   "p_market": 0.347,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.35,
+   "p_market": 0.34,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Karine Silva",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Karine Silva",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Karine Silva",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Karine Silva",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-124-145325"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Gabriella Fernandes",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Karine Silva",
+     "method": "DEC",
+     "url": "https://clutchpoints.com/betting/karine-silva-vs-gabriella-fernandes-prediction-odds-pick-for-ufc-vegas-124"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Karine Silva",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-karine-silva-gabriella-fernandes-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Gabriella Fernandes",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/karine-silva-vs-gabriella-fernandes-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Karine Silva",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Karine Silva",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Karine Silva",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    }
+   ]
   },
   {
    "a": "Marcos Degli",
@@ -146,10 +811,88 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.71,
-   "p_market": 0.67,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.72,
+   "p_market": 0.664,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Marcos Degli",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Mitch Raposo",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Cole Shelton",
+     "pick": "Mitch Raposo",
+     "method": "DEC",
+     "url": "https://www.rotowire.com/mma/article/ufc-best-bets-today-picks-odds-predictions-for-ufc-vegas-124-145325"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/mitch-raposo-vs-marcos-degli-161215121.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Marcos Degli",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-mitch-raposo-marcos-degli-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/mitch-raposo-vs-marcos-degli-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Mitch Raposo",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Marcos Degli",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    }
+   ]
   },
   {
    "a": "Jose Delano",
@@ -164,10 +907,88 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.46,
-   "p_market": 0.496,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.45,
+   "p_market": 0.519,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Murtazali Magomedov",
+     "method": "SUB",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Murtazali Magomedov",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Jose Delano",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Murtazali Magomedov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Murtazali Magomedov",
+     "method": "SUB",
+     "url": "https://sports.yahoo.com/articles/jose-delano-vs-murtazali-magomedov-160748667.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Murtazali Magomedov",
+     "method": "SUB",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-jose-delano-murtazali-magomedov-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Jose Delano",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/jose-delano-vs-murtazali-magomedov-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Murtazali Magomedov",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Murtazali Magomedov",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Murtazali Magomedov",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Action Network (via Yahoo)",
+     "author": "Billy Ward",
+     "pick": "Murtazali Magomedov",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-picks-172517643.html"
+    }
+   ]
   },
   {
    "a": "Keiichiro Nakamura",
@@ -182,10 +1003,88 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.83,
+   "p_model": 0.85,
    "p_market": 0.752,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Keiichiro Nakamura",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ollie-schmid-vs-keiichiro-nakamura-161115906.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Keiichiro Nakamura",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-keiichiro-nakamura-ollie-schmid-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Ollie Schmid",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/keiichiro-nakamura-vs-ollie-schmid-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Keiichiro Nakamura",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    }
+   ]
   },
   {
    "a": "Nina Milosevic",
@@ -201,9 +1100,80 @@
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
    "p_model": 0.88,
-   "p_market": 0.791,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_market": 0.793,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Nina Milosevic",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Nina Milosevic",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Nina Milosevic",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Nina Milosevic",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/priscila-cachoeira-vs-nina-milosevic-161318514.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Nina Milosevic",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-priscila-cachoeira-nina-milosevic-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Priscila Cachoeira",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/priscila-cachoeira-vs-nina-milosevic-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Nina Milosevic",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Priscila Cachoeira",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Nina Milosevic",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Nina Milosevic",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    }
+   ]
   },
   {
    "a": "Jonny Parsons",
@@ -219,10 +1189,227 @@
    ],
    "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
    "date": "2026-11-07",
-   "p_model": 0.33,
-   "p_market": 0.33,
-   "created": "2026-11-03T18:00:00+00:00",
-   "pundits": []
+   "p_model": 0.32,
+   "p_market": 0.336,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Jose Souza",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Jonny Parsons",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Jose Souza",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Tim Edwards",
+     "pick": "Jose Souza",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-best-betting-041100182.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Jose Souza",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/jose-souza-vs-jonny-parsons-155938304.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Jose Souza",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-jonny-parsons-jose-souza-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Jonny Parsons",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/jonny-parsons-vs-jose-souza-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Jose Souza",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Jose Souza",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Jose Souza",
+     "method": "",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "SportsLine",
+     "author": "Kyle Marley",
+     "pick": "Jonny Parsons",
+     "method": "KO/TKO",
+     "url": "https://www.sportsline.com/insiders/ufc-fight-night-odds-picks-seasoned-mma-analyst-reveals-selections-for-cortes-acosta-vs-walker-and-other-matchups-on-nov-7/"
+    }
+   ]
+  },
+  {
+   "a": "Austin Bashi",
+   "b": "Carlos Calderon",
+   "favours": "Austin Bashi",
+   "logit": 0.3,
+   "confidence": "low",
+   "reasoning": "The model has Bashi at 57% against a market at 81%. Calderon, the Fury FC featherweight champion, took this on four days' notice and the model knows little of his regional opposition; a short-notice debut against a wrestler who made weight on a full camp is the kind of gap the stats can't see. Calderon's submissions in scrambles and Bashi's late-round fade in both UFC losses keep it from being larger.",
+   "factors": [
+    "Calderon on four days' notice",
+    "Calderon's thin data",
+    "Bashi's late fade (against)",
+    "Calderon's submissions (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.57,
+   "p_market": 0.806,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Austin Bashi",
+     "method": "SUB",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Austin Bashi",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Austin Bashi",
+     "method": "",
+     "url": "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html"
+    }
+   ]
+  },
+  {
+   "a": "Ko Seok-hyeon",
+   "b": "Wellington Turman",
+   "favours": "Ko Seok-hyeon",
+   "logit": 0.15,
+   "confidence": "low",
+   "reasoning": "Turman has not fought since December 2023, had four shoulder surgeries in the layoff, and lost his last three; Ko's judo takedowns and top control won his first two UFC fights. Turman's grappling and early rounds keep it small. No FanDuel line.",
+   "factors": [
+    "Turman's three-year layoff and shoulder surgeries",
+    "Ko's takedowns and control",
+    "Turman's jiu-jitsu (against)"
+   ],
+   "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+   "date": "2026-11-07",
+   "p_model": 0.76,
+   "p_market": null,
+   "created": "2026-11-06T18:30:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Ko Seok-hyeon",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-vegas-124-waldo-cortes-acosta"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Ko Seok-hyeon",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Ko Seok-hyeon",
+     "method": "",
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-vegas-124-dfs-preview-145253"
+    },
+    {
+     "outlet": "MMA Mania (via Yahoo)",
+     "author": "Andrew Richardson",
+     "pick": "Ko Seok-hyeon",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/predictions-odds-analysis-ufc-vegas-135500955.html"
+    },
+    {
+     "outlet": "ClutchPoints",
+     "author": "Garrett Kerman",
+     "pick": "Ko Seok-hyeon",
+     "method": "DEC",
+     "url": "https://sports.yahoo.com/articles/seokhyeon-ko-vs-wellington-turman-160301586.html"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Ko Seok-hyeon",
+     "method": "DEC",
+     "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-seokhyeon-ko-wellington-turman-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Ko Seok-hyeon",
+     "method": "",
+     "url": "https://www.docsports.com/free-picks/ufc/2026/seokhyeon-ko-vs-wellington-turman-pick-11-07-2026-predictions-ufc-vegas-124-odds.html"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Ko Seok-hyeon",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Matthew Petela",
+     "pick": "Wellington Turman",
+     "method": "",
+     "url": "https://combatpress.com/2026/11/ufc-vegas-124-cortes-acosta-vs-walker-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Ko Seok-hyeon",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Ko Seok-hyeon",
+     "method": "",
+     "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
+    }
+   ]
   }
  ]
 }

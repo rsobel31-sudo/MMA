@@ -1,0 +1,894 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker",
+ "locks_at": "2026-11-07T22:00:00+00:00",
+ "locked_at": "2026-11-06T17:56:17+00:00",
+ "note": "A card of finishers against fighters who are rarely finished, so the method calls matter. One override of the model's winner: Petersen over the debuting Lourenço (the market, a 20 lb weight edge and Lourenço's untested gas tank). Method overrides lean on records: Grant has never been knocked out but submitted five times, Fernando breaks long fighters with kicks and body work, and Parsons returns from 40 months out against a knee-heavy striker. Rounds come from when each winner finishes and when the loser gets broken: Walker's early danger pushes Cortes-Acosta's finish to R2, Nakamura and Fernando grow into fights, Kondratavičius and Milošević finish early.",
+ "dec_cal": [
+  0.433879,
+  0.672519,
+  -0.365348
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Waldo Cortes-Acosta vs Johnny Walker",
+   "a": "Waldo Cortes-Acosta",
+   "b": "Johnny Walker",
+   "segment": "Fight card",
+   "weight_class": "Heavyweight",
+   "rounds": 5,
+   "title": false,
+   "pick": {
+    "winner": "Waldo Cortes-Acosta",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.68,
+    "why": "Walker has been stopped six times, four in R1 and two in R2, and gets knocked out when opponents press; Cortes-Acosta is the bigger man (262 for this fight) and has never been stopped. But 18 of Walker's 21 wins came in R1, so Cortes-Acosta has to weather that first-round explosion before he walks him down: R2, as in his R2 knockout of Lewis."
+   },
+   "model": {
+    "p_a": 0.8183,
+    "winner": "Waldo Cortes-Acosta",
+    "method": "KO/TKO",
+    "p_win": 0.8183,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.5078,
+      "SUB": 0.0114,
+      "DEC": 0.2766
+     },
+     "b": {
+      "KO/TKO": 0.0456,
+      "SUB": 0.0108,
+      "DEC": 0.1477
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2123,
+    "round_chances": {
+     "KO/TKO": [
+      0.418,
+      0.319,
+      0.116,
+      0.075,
+      0.072
+     ],
+     "SUB": [
+      0.349,
+      0.298,
+      0.17,
+      0.114,
+      0.069
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      4,
+      1,
+      0,
+      0
+     ],
+     "losses": [
+      4,
+      3,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6804
+  },
+  {
+   "bout": "Tatiana Suarez vs Virna Jandiroba",
+   "a": "Tatiana Suarez",
+   "b": "Virna Jandiroba",
+   "segment": "Fight card",
+   "weight_class": "Women's Strawweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Tatiana Suarez",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.63,
+    "why": "Suarez's wrestling against a grappler who has mostly been the one shooting; Jandiroba has never been stopped and all four of her losses went the distance, and her guard makes ground-and-pound finishes unlikely: decision."
+   },
+   "model": {
+    "p_a": 0.5736,
+    "winner": "Tatiana Suarez",
+    "method": "DEC",
+    "p_win": 0.5736,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0547,
+      "SUB": 0.1373,
+      "DEC": 0.3822
+     },
+     "b": {
+      "KO/TKO": 0.0326,
+      "SUB": 0.0924,
+      "DEC": 0.3009
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3822,
+    "round_chances": {
+     "KO/TKO": [
+      0.515,
+      0.339,
+      0.146
+     ],
+     "SUB": [
+      0.471,
+      0.362,
+      0.167
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      4,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6448
+  },
+  {
+   "bout": "Davey Grant vs Elijah Smith",
+   "a": "Davey Grant",
+   "b": "Elijah Smith",
+   "segment": "Fight card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Elijah Smith",
+    "side": "b",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.72,
+    "why": "Grant has never been knocked out in 26 fights but has been submitted five times, so if Smith finishes him it is a choke. Grant's volume and Smith's habit of giving up R1 make the first round Grant's best; Smith's last finish was a knockdown into a choke in R2: R2."
+   },
+   "model": {
+    "p_a": 0.2517,
+    "winner": "Elijah Smith",
+    "method": "SUB",
+    "p_win": 0.7483,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0598,
+      "SUB": 0.0253,
+      "DEC": 0.1766
+     },
+     "b": {
+      "KO/TKO": 0.108,
+      "SUB": 0.3359,
+      "DEC": 0.2944
+     }
+    },
+    "round": 1,
+    "p_exact": 0.172,
+    "round_chances": {
+     "KO/TKO": [
+      0.553,
+      0.293,
+      0.154
+     ],
+     "SUB": [
+      0.512,
+      0.315,
+      0.173
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      2,
+      1
+     ],
+     "losses": [
+      3,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.2801
+  },
+  {
+   "bout": "Billy Elekana vs Lucas Fernando",
+   "a": "Billy Elekana",
+   "b": "Lucas Fernando",
+   "segment": "Fight card",
+   "weight_class": "Light Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Lucas Fernando",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.66,
+    "why": "Method override: the model says decision, but Fernando out-landed Tobias heavily with kicks to every level and finished him, and Elekana was dropped by Tafa and broken down by Guskov's body work in R2. Elekana's only stoppage loss came in R2 when his tank emptied: R2."
+   },
+   "model": {
+    "p_a": 0.4423,
+    "winner": "Lucas Fernando",
+    "method": "DEC",
+    "p_win": 0.5577,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0651,
+      "SUB": 0.0785,
+      "DEC": 0.3023
+     },
+     "b": {
+      "KO/TKO": 0.1847,
+      "SUB": 0.1435,
+      "DEC": 0.2258
+     }
+    },
+    "round": 3,
+    "p_exact": 0.2258,
+    "round_chances": {
+     "KO/TKO": [
+      0.595,
+      0.265,
+      0.14
+     ],
+     "SUB": [
+      0.552,
+      0.287,
+      0.16
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      8,
+      0,
+      1
+     ],
+     "losses": [
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.272
+  },
+  {
+   "bout": "Priscila Cachoeira vs Nina Nikolija Milošević",
+   "a": "Priscila Cachoeira",
+   "b": "Nina Nikolija Milošević",
+   "segment": "Fight card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Nina Nikolija Milošević",
+    "side": "b",
+    "method": "SUB",
+    "round": 1,
+    "confidence": 0.79,
+    "why": "Cachoeira, 38 and 1-5 since 2023, has been submitted five times in the UFC, each after being dropped or taken down, most recently in R1. Milošević finishes early (five of six stoppages in R1) and holds a BJJ brown belt: R1."
+   },
+   "model": {
+    "p_a": 0.1166,
+    "winner": "Nina Nikolija Milošević",
+    "method": "SUB",
+    "p_win": 0.8834,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0421,
+      "SUB": 0.0081,
+      "DEC": 0.0785
+     },
+     "b": {
+      "KO/TKO": 0.2934,
+      "SUB": 0.3553,
+      "DEC": 0.2227
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1887,
+    "round_chances": {
+     "KO/TKO": [
+      0.572,
+      0.255,
+      0.173
+     ],
+     "SUB": [
+      0.531,
+      0.276,
+      0.193
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      0,
+      1
+     ],
+     "losses": [
+      3,
+      1,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.2069
+  },
+  {
+   "bout": "Mitch Raposo vs Marcos Degli",
+   "a": "Mitch Raposo",
+   "b": "Marcos Degli",
+   "segment": "Fight card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Marcos Degli",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.65,
+    "why": "Degli's 13-fight streak is mostly finishes, but Raposo has gone the distance in all four UFC fights, gets back up from takedowns and has been stopped only once: decision."
+   },
+   "model": {
+    "p_a": 0.2825,
+    "winner": "Marcos Degli",
+    "method": "DEC",
+    "p_win": 0.7175,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0561,
+      "SUB": 0.0386,
+      "DEC": 0.204
+     },
+     "b": {
+      "KO/TKO": 0.2204,
+      "SUB": 0.1918,
+      "DEC": 0.2891
+     }
+    },
+    "round": 3,
+    "p_exact": 0.2891,
+    "round_chances": {
+     "KO/TKO": [
+      0.541,
+      0.332,
+      0.127
+     ],
+     "SUB": [
+      0.502,
+      0.352,
+      0.146
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      8,
+      5,
+      1
+     ],
+     "losses": [
+      0,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.3356
+  },
+  {
+   "bout": "Keiichiro Nakamura vs Ollie Schmid",
+   "a": "Keiichiro Nakamura",
+   "b": "Ollie Schmid",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Keiichiro Nakamura",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.77,
+    "why": "Seven of Nakamura's eight wins are knockouts and he came from two rounds down to stop Szalay; Schmid is a fast starter who was knocked out in R1 on three days' notice and whose other losses came late. Nakamura gives away early exchanges and grows into fights: R2."
+   },
+   "model": {
+    "p_a": 0.8492,
+    "winner": "Keiichiro Nakamura",
+    "method": "KO/TKO",
+    "p_win": 0.8492,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.6656,
+      "SUB": 0.0215,
+      "DEC": 0.1301
+     },
+     "b": {
+      "KO/TKO": 0.0609,
+      "SUB": 0.0168,
+      "DEC": 0.105
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3694,
+    "round_chances": {
+     "KO/TKO": [
+      0.555,
+      0.265,
+      0.18
+     ],
+     "SUB": [
+      0.512,
+      0.287,
+      0.2
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      1,
+      1
+     ],
+     "losses": [
+      1,
+      0,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.7524
+  },
+  {
+   "bout": "Gabriel Lorenço vs Thomas Petersen",
+   "a": "Gabriel Lorenço",
+   "b": "Thomas Petersen",
+   "segment": "Preliminary card",
+   "weight_class": "Heavyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Thomas Petersen",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "Override: the model likes Lourenço's seven R1 finishes, but the market has Petersen at 60%, Lourenço weighed 234 to Petersen's 253.5, and Lourenço has never been tested past R1. Petersen's wrestling and clinch beat lower-tier heavyweights; if he survives the first round he grinds it out: decision."
+   },
+   "model": {
+    "p_a": 0.5969,
+    "winner": "Gabriel Lorenço",
+    "method": "KO/TKO",
+    "p_win": 0.5969,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3572,
+      "SUB": 0.0744,
+      "DEC": 0.0976
+     },
+     "b": {
+      "KO/TKO": 0.1132,
+      "SUB": 0.0341,
+      "DEC": 0.3235
+     }
+    },
+    "round": 1,
+    "p_exact": 0.2154,
+    "round_chances": {
+     "KO/TKO": [
+      0.603,
+      0.24,
+      0.157
+     ],
+     "SUB": [
+      0.561,
+      0.262,
+      0.177
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      0,
+      0
+     ],
+     "losses": [
+      2,
+      0,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.4002
+  },
+  {
+   "bout": "Karine Silva vs Gabriella Fernandes",
+   "a": "Karine Silva",
+   "b": "Gabriella Fernandes",
+   "segment": "Preliminary card",
+   "weight_class": "Women's Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Karine Silva",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.63,
+    "why": "Silva's last five fights all went the distance and Fernandes's other UFC losses came to grapplers who held her down; Silva wins the grappling exchanges over 15 minutes: decision."
+   },
+   "model": {
+    "p_a": 0.6459,
+    "winner": "Karine Silva",
+    "method": "DEC",
+    "p_win": 0.6459,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1331,
+      "SUB": 0.1643,
+      "DEC": 0.3475
+     },
+     "b": {
+      "KO/TKO": 0.0273,
+      "SUB": 0.0407,
+      "DEC": 0.2871
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3475,
+    "round_chances": {
+     "KO/TKO": [
+      0.616,
+      0.28,
+      0.104
+     ],
+     "SUB": [
+      0.58,
+      0.299,
+      0.121
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      13,
+      4,
+      0
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6597
+  },
+  {
+   "bout": "José Mauro Delano vs Murtazali Magomedov",
+   "a": "José Mauro Delano",
+   "b": "Murtazali Magomedov",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Murtazali Magomedov",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.53,
+    "why": "Magomedov has finished all eleven opponents and has under three minutes of UFC cage time; Delano is the late-round volume boxer who gets stronger. If Magomedov wins, it is before Delano's pace builds: R1. Pundits lean Magomedov 9-2."
+   },
+   "model": {
+    "p_a": 0.4489,
+    "winner": "Murtazali Magomedov",
+    "method": "KO/TKO",
+    "p_win": 0.5511,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0783,
+      "SUB": 0.052,
+      "DEC": 0.3987
+     },
+     "b": {
+      "KO/TKO": 0.2481,
+      "SUB": 0.142,
+      "DEC": 0.0809
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1392,
+    "round_chances": {
+     "KO/TKO": [
+      0.561,
+      0.269,
+      0.17
+     ],
+     "SUB": [
+      0.521,
+      0.29,
+      0.189
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      2,
+      2
+     ],
+     "losses": [
+      1,
+      0,
+      1
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Austin Bashi vs Carlos Calderon",
+   "a": "Austin Bashi",
+   "b": "Carlos Calderon",
+   "segment": "Preliminary card",
+   "weight_class": "Featherweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Austin Bashi",
+    "side": "a",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.75,
+    "why": "Calderon took this on four days' notice; Bashi's wrestling and back takes on a full camp should tell once the short-notice man tires. Bashi's stoppages split evenly between R1 and R2, and Calderon is a submission threat in early scrambles: R2."
+   },
+   "model": {
+    "p_a": 0.5688,
+    "winner": "Austin Bashi",
+    "method": "SUB",
+    "p_win": 0.5688,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0347,
+      "SUB": 0.3967,
+      "DEC": 0.1332
+     },
+     "b": {
+      "KO/TKO": 0.0384,
+      "SUB": 0.1163,
+      "DEC": 0.2807
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1916,
+    "round_chances": {
+     "KO/TKO": [
+      0.524,
+      0.338,
+      0.137
+     ],
+     "SUB": [
+      0.483,
+      0.36,
+      0.157
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      4,
+      1
+     ],
+     "losses": [
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.8057
+  },
+  {
+   "bout": "Mantas Kondratavičius vs Andre Petroski",
+   "a": "Mantas Kondratavičius",
+   "b": "Andre Petroski",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Mantas Kondratavičius",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.7,
+    "why": "Petroski's losses come from single clean shots as he closes distance, three of the last four in R1-R2, and Kondratavičius is a front-loaded puncher with four R1 knockouts who fades after ten minutes: if he finishes it, early: R1."
+   },
+   "model": {
+    "p_a": 0.7803,
+    "winner": "Mantas Kondratavičius",
+    "method": "KO/TKO",
+    "p_win": 0.7803,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.574,
+      "SUB": 0.021,
+      "DEC": 0.1449
+     },
+     "b": {
+      "KO/TKO": 0.0232,
+      "SUB": 0.0706,
+      "DEC": 0.1661
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3111,
+    "round_chances": {
+     "KO/TKO": [
+      0.542,
+      0.344,
+      0.113
+     ],
+     "SUB": [
+      0.502,
+      0.365,
+      0.132
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      3,
+      0
+     ],
+     "losses": [
+      2,
+      3,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.7153
+  },
+  {
+   "bout": "Ko Seok-hyeon vs Wellington Turman",
+   "a": "Ko Seok-hyeon",
+   "b": "Wellington Turman",
+   "segment": "Preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Ko Seok-hyeon",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.72,
+    "why": "Ko won both UFC wins on takedowns and top control and all three UFC fights went the distance; Turman returns from nearly three years and four shoulder surgeries but has a dangerous guard: decision."
+   },
+   "model": {
+    "p_a": 0.7566,
+    "winner": "Ko Seok-hyeon",
+    "method": "DEC",
+    "p_win": 0.7566,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2229,
+      "SUB": 0.083,
+      "DEC": 0.4511
+     },
+     "b": {
+      "KO/TKO": 0.0522,
+      "SUB": 0.0425,
+      "DEC": 0.1482
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4511,
+    "round_chances": {
+     "KO/TKO": [
+      0.566,
+      0.311,
+      0.123
+     ],
+     "SUB": [
+      0.523,
+      0.334,
+      0.143
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      2,
+      0
+     ],
+     "losses": [
+      2,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Jonny Parsons vs José Henrique Souza",
+   "a": "Jonny Parsons",
+   "b": "José Henrique Souza",
+   "segment": "Preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "José Henrique Souza",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.67,
+    "why": "Method override: Parsons, 35, returns from about 40 months out with hip and groin problems, and Souza's knees and jab build pressure; three of his six knockouts came in R2. Parsons's rust shows once the pace rises: R2."
+   },
+   "model": {
+    "p_a": 0.3196,
+    "winner": "José Henrique Souza",
+    "method": "DEC",
+    "p_win": 0.6804,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.19,
+      "SUB": 0.0168,
+      "DEC": 0.0992
+     },
+     "b": {
+      "KO/TKO": 0.2278,
+      "SUB": 0.0368,
+      "DEC": 0.4294
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4294,
+    "round_chances": {
+     "KO/TKO": [
+      0.494,
+      0.359,
+      0.146
+     ],
+     "SUB": [
+      0.45,
+      0.383,
+      0.167
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      2,
+      3,
+      1
+     ],
+     "losses": [
+      0,
+      2,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.3356
+  }
+ ],
+ "graded": false
+}

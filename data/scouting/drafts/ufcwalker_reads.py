@@ -2,10 +2,10 @@
 
 logit: how far (log-odds, 0..0.8) the read moves the model toward `favours`, for what the model can't see.
 The model's number at the time is recorded (p_model, toward a) so the read can be graded against it.
-Drafted Tuesday 2026-11-03 from the reports and the picks sheet (FanDuel, 2026-11-03 17:11 UTC). The card was
-Bonfim vs. Brady until Sean Brady withdrew injured on Oct 29. Friday's run finalizes these after weigh-ins and adds
-the published pundit picks (none were out by Tuesday).
-Ko Seok-hyeon vs Wellington Turman and Austin Bashi vs TBD have no line yet, so no read.
+Drafted Tuesday 2026-11-03 from the reports and the picks sheet. The card was Bonfim vs. Brady until Sean Brady withdrew
+injured on Oct 29. Finalized Friday 2026-11-06 after weigh-ins (no misses reported; Lourenco 234, Petersen 253.5) with
+162 published pundit picks (ufcwalker_pundits.json). Carlos Calderon replaced Lucas Brennan (torn ACL) against Austin
+Bashi on four days' notice.
 """
 
 import json
@@ -18,29 +18,31 @@ from mma_predictor.reads import Pundits, check_read  # noqa: E402
 
 EVENT, DATE = "UFC Fight Night: Cortes-Acosta vs. Walker", "2026-11-07"
 RESULTS = "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Cortes-Acosta_vs._Walker"
-CREATED = "2026-11-03T18:00:00+00:00"
+CREATED = "2026-11-06T18:30:00+00:00"
 
-# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-03 17:11 UTC.
+# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-06 17:54 UTC (finalized Friday).
+# Ko-Turman has no FanDuel line; the model number is from the card-picks draft.
 P = {
-    ("Johnny Walker", "Waldo Cortes-Acosta"): (0.19, 0.371),
-    ("Tatiana Suarez", "Virna Jandiroba"): (0.57, 0.640),
-    ("Davey Grant", "Elijah Smith"): (0.25, 0.277),
-    ("Billy Elekana", "Lucas Fernando"): (0.45, 0.277),
-    ("Andre Petroski", "Mantas Kondratavicius"): (0.22, 0.286),
-    ("Gabriel Lorenco", "Thomas Petersen"): (0.60, 0.411),
-    ("Gabriella Fernandes", "Karine Silva"): (0.36, 0.347),
-    ("Marcos Degli", "Mitch Raposo"): (0.71, 0.670),
-    ("Jose Delano", "Murtazali Magomedov"): (0.46, 0.496),
-    ("Keiichiro Nakamura", "Ollie Schmid"): (0.83, 0.752),
-    ("Nina Milosevic", "Priscila Cachoeira"): (0.88, 0.791),
-    ("Jonny Parsons", "Jose Souza"): (0.33, 0.330),
+    ("Johnny Walker", "Waldo Cortes-Acosta"): (0.18, 0.320),
+    ("Tatiana Suarez", "Virna Jandiroba"): (0.57, 0.645),
+    ("Davey Grant", "Elijah Smith"): (0.25, 0.280),
+    ("Billy Elekana", "Lucas Fernando"): (0.44, 0.272),
+    ("Nina Milosevic", "Priscila Cachoeira"): (0.88, 0.793),
+    ("Marcos Degli", "Mitch Raposo"): (0.72, 0.664),
+    ("Keiichiro Nakamura", "Ollie Schmid"): (0.85, 0.752),
+    ("Gabriel Lorenco", "Thomas Petersen"): (0.60, 0.400),
+    ("Gabriella Fernandes", "Karine Silva"): (0.35, 0.340),
+    ("Jose Delano", "Murtazali Magomedov"): (0.45, 0.519),
+    ("Austin Bashi", "Carlos Calderon"): (0.57, 0.806),
+    ("Andre Petroski", "Mantas Kondratavicius"): (0.22, 0.285),
+    ("Jonny Parsons", "Jose Souza"): (0.32, 0.336),
+    ("Ko Seok-hyeon", "Wellington Turman"): (0.76, None),
 }
 
 READS = [
     dict(a="Johnny Walker", b="Waldo Cortes-Acosta", favours="Waldo Cortes-Acosta", logit=0.0, confidence="low",
          reasoning="Walker has been knocked out when opponents force the issue and now faces heavyweight power; Cortes-Acosta "
-                   "is the bigger, more active man. The model (19%) is already well below the market (37%) on Walker; no lean "
-                   "until fight week.",
+                   "is the bigger, more active man. The model (18%) is already below the market (32%) on Walker; no lean.",
          factors=["Walker's chin against heavyweight power", "Walker freezes under pressure", "Walker's reach and explosiveness (against)"]),
     dict(a="Tatiana Suarez", b="Virna Jandiroba", favours="Tatiana Suarez", logit=0.10, confidence="low",
          reasoning="Jandiroba has mostly been the one shooting in her fights, and Suarez is one of the best takedown artists in "
@@ -93,10 +95,22 @@ READS = [
                    "bookings that never happened. The model can't see a layoff that long; the market agrees with it at 33%, but "
                    "ring rust and his body after that time out lean further toward Souza.",
          factors=["Parsons's 40-month layoff and injuries", "Age 35", "Parsons's Muay Thai (against)"]),
+    dict(a="Austin Bashi", b="Carlos Calderon", favours="Austin Bashi", logit=0.30, confidence="low",
+         reasoning="The model has Bashi at 57% against a market at 81%. Calderon, the Fury FC featherweight champion, took this "
+                   "on four days' notice and the model knows little of his regional opposition; a short-notice debut against a "
+                   "wrestler who made weight on a full camp is the kind of gap the stats can't see. Calderon's submissions in "
+                   "scrambles and Bashi's late-round fade in both UFC losses keep it from being larger.",
+         factors=["Calderon on four days' notice", "Calderon's thin data", "Bashi's late fade (against)", "Calderon's submissions (against)"]),
+    dict(a="Ko Seok-hyeon", b="Wellington Turman", favours="Ko Seok-hyeon", logit=0.15, confidence="low",
+         reasoning="Turman has not fought since December 2023, had four shoulder surgeries in the layoff, and lost his last three; "
+                   "Ko's judo takedowns and top control won his first two UFC fights. Turman's grappling and early rounds keep "
+                   "it small. No FanDuel line.",
+         factors=["Turman's three-year layoff and shoulder surgeries", "Ko's takedowns and control", "Turman's jiu-jitsu (against)"]),
 ]
 
-# Picks published by Friday (outlet, author, pick, method, url); filled on the Friday run.
-PUNDIT_PICKS = []
+# Picks published by Friday 2026-11-06 (outlet, author, pick, method, url): 162 picks from 16 outlets.
+PUNDIT_PICKS = [(r["a"], r["b"], r["outlet"], r["author"], r["pick"], r["method"], r["url"])
+                for r in json.loads((Path(__file__).with_name("ufcwalker_pundits.json")).read_text())]
 
 
 def _p(a, b):
