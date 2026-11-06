@@ -489,7 +489,9 @@
 "stats_official": "15"
 },
 "Alex Andrade": {
-"stats_official": "1"
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"stats_official": "2"
 },
 "Alex Caceres": {
 "dob": "Sherdog + UFCStats agree",
@@ -894,6 +896,9 @@
 },
 "Amar Suloev": {
 "stats_official": "3"
+},
+"Amaury Bitetti": {
+"stats_official": "1"
 },
 "Amilcar Alves": {
 "dob": "disputed: Sherdog 1979-12-13, UFCStats 1988-08-08",

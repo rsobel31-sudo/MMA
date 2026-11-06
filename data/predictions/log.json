@@ -2159,14 +2159,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6463,
+    "p_a": 0.6459,
     "pick": "Karine Silva",
     "method": "Karine Silva by DEC",
-    "method_p": 0.3456,
-    "made": "2026-11-05",
+    "method_p": 0.3454,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2188,14 +2188,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2508,
+    "p_a": 0.2517,
     "pick": "Elijah Smith",
     "method": "Elijah Smith by SUB",
-    "method_p": 0.3658,
-    "made": "2026-11-05",
+    "method_p": 0.3654,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2217,14 +2217,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4487,
+    "p_a": 0.4489,
     "pick": "Murtazali Magomedov",
     "method": "Murtazali Magomedov by KO/TKO",
-    "method_p": 0.3141,
-    "made": "2026-11-05",
+    "method_p": 0.3139,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2246,14 +2246,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7585,
+    "p_a": 0.7566,
     "pick": "Seok Hyeon Ko",
     "method": "Seok Hyeon Ko by DEC",
-    "method_p": 0.4819,
-    "made": "2026-11-05",
+    "method_p": 0.4807,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2275,14 +2275,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5731,
+    "p_a": 0.5736,
     "pick": "Tatiana Suarez",
     "method": "Tatiana Suarez by DEC",
-    "method_p": 0.3881,
-    "made": "2026-11-05",
+    "method_p": 0.3885,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2304,14 +2304,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3212,
+    "p_a": 0.3198,
     "pick": "Jose Henrique Souza",
     "method": "Jose Henrique Souza by DEC",
-    "method_p": 0.3841,
-    "made": "2026-11-05",
+    "method_p": 0.385,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2333,14 +2333,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4502,
+    "p_a": 0.4423,
     "pick": "Lucas Fernando",
     "method": "Billy Elekana by DEC",
-    "method_p": 0.2998,
-    "made": "2026-11-05",
+    "method_p": 0.2945,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2391,14 +2391,14 @@
     }
    },
    "latest": {
-    "p_a": 0.1153,
+    "p_a": 0.1166,
     "pick": "Nina Nikolija Milosevic",
     "method": "Nina Nikolija Milosevic by SUB",
-    "method_p": 0.3887,
-    "made": "2026-11-05",
+    "method_p": 0.3879,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2420,14 +2420,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6832,
+    "p_a": 0.6845,
     "pick": "Ciryl Gane",
     "method": "Ciryl Gane by DEC",
-    "method_p": 0.3278,
-    "made": "2026-11-05",
+    "method_p": 0.3284,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2449,14 +2449,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6138,
+    "p_a": 0.613,
     "pick": "Kayla Harrison",
     "method": "Kayla Harrison by SUB",
-    "method_p": 0.3678,
-    "made": "2026-11-05",
+    "method_p": 0.3672,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2478,14 +2478,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6857,
+    "p_a": 0.6879,
     "pick": "Caio Borralho",
     "method": "Caio Borralho by DEC",
-    "method_p": 0.5533,
-    "made": "2026-11-05",
+    "method_p": 0.555,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2507,14 +2507,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6294,
+    "p_a": 0.6279,
     "pick": "Uros Medic",
     "method": "Uros Medic by KO/TKO",
-    "method_p": 0.4806,
-    "made": "2026-11-05",
+    "method_p": 0.4794,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2536,14 +2536,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7327,
+    "p_a": 0.7329,
     "pick": "Bilal Hasan",
     "method": "Bilal Hasan by KO/TKO",
     "method_p": 0.4384,
-    "made": "2026-11-05",
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2565,14 +2565,14 @@
     }
    },
    "latest": {
-    "p_a": 0.1666,
+    "p_a": 0.1672,
     "pick": "Chris Duncan",
     "method": "Chris Duncan by KO/TKO",
-    "method_p": 0.3687,
-    "made": "2026-11-05",
+    "method_p": 0.3684,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2594,14 +2594,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2975,
+    "p_a": 0.2994,
     "pick": "Charles Radtke",
     "method": "Charles Radtke by KO/TKO",
-    "method_p": 0.2555,
-    "made": "2026-11-05",
+    "method_p": 0.2547,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2652,14 +2652,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3258,
+    "p_a": 0.3273,
     "pick": "Terrance McKinney",
     "method": "Terrance McKinney by SUB",
-    "method_p": 0.236,
-    "made": "2026-11-05",
+    "method_p": 0.2355,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -2681,14 +2681,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3265,
+    "p_a": 0.3287,
     "pick": "Beatriz Mesquita",
     "method": "Beatriz Mesquita by SUB",
-    "method_p": 0.3896,
-    "made": "2026-11-05",
+    "method_p": 0.3883,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3210,14 +3210,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7865,
+    "p_a": 0.7846,
     "pick": "Donte Johnson",
     "method": "Donte Johnson by KO/TKO",
-    "method_p": 0.6087,
-    "made": "2026-11-05",
+    "method_p": 0.6073,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3391,14 +3391,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6675,
+    "p_a": 0.6656,
     "pick": "Brandon Moreno",
     "method": "Brandon Moreno by DEC",
-    "method_p": 0.4894,
-    "made": "2026-11-05",
+    "method_p": 0.4879,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3496,14 +3496,14 @@
     }
    },
    "latest": {
-    "p_a": 0.1667,
+    "p_a": 0.1681,
     "pick": "Melquizael Costa",
     "method": "Melquizael Costa by SUB",
-    "method_p": 0.3464,
-    "made": "2026-11-05",
+    "method_p": 0.3457,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3563,14 +3563,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2797,
+    "p_a": 0.2825,
     "pick": "Marcos Degli",
     "method": "Marcos Degli by KO/TKO",
-    "method_p": 0.2523,
-    "made": "2026-11-05",
+    "method_p": 0.2514,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3621,14 +3621,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3001,
+    "p_a": 0.3008,
     "pick": "Diego Lopes",
     "method": "Diego Lopes by KO/TKO",
-    "method_p": 0.5676,
-    "made": "2026-11-05",
+    "method_p": 0.567,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3650,14 +3650,14 @@
     }
    },
    "latest": {
-    "p_a": 0.6646,
+    "p_a": 0.6633,
     "pick": "Sergei Pavlovich",
     "method": "Sergei Pavlovich by KO/TKO",
-    "method_p": 0.4716,
-    "made": "2026-11-05",
+    "method_p": 0.4707,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3746,14 +3746,14 @@
     }
    },
    "latest": {
-    "p_a": 0.8487,
+    "p_a": 0.8492,
     "pick": "Keiichiro Nakamura",
     "method": "Keiichiro Nakamura by KO/TKO",
-    "method_p": 0.746,
-    "made": "2026-11-05",
+    "method_p": 0.7464,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -3851,14 +3851,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4277,
+    "p_a": 0.4293,
     "pick": "Samuel Sanches",
     "method": "Samuel Sanches by KO/TKO",
-    "method_p": 0.4248,
-    "made": "2026-11-05",
+    "method_p": 0.4235,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4023,14 +4023,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3635,
+    "p_a": 0.3639,
     "pick": "Sharabutdin Magomedov",
     "method": "Sharabutdin Magomedov by KO/TKO",
-    "method_p": 0.4472,
-    "made": "2026-11-05",
+    "method_p": 0.4469,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4052,14 +4052,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5306,
+    "p_a": 0.5317,
     "pick": "Abdul Hussein",
     "method": "Hecher Sosa by DEC",
-    "method_p": 0.2658,
-    "made": "2026-11-05",
+    "method_p": 0.2651,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4081,14 +4081,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5974,
+    "p_a": 0.5997,
     "pick": "Matthieu Letho Duclos",
     "method": "Matthieu Letho Duclos by KO/TKO",
-    "method_p": 0.4481,
-    "made": "2026-11-05",
+    "method_p": 0.4498,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4139,14 +4139,14 @@
     }
    },
    "latest": {
-    "p_a": 0.346,
+    "p_a": 0.3449,
     "pick": "Chris Padilla",
     "method": "Chris Padilla by KO/TKO",
-    "method_p": 0.4496,
-    "made": "2026-11-05",
+    "method_p": 0.4505,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4235,14 +4235,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2035,
+    "p_a": 0.2033,
     "pick": "Uran Satybaldiev",
     "method": "Uran Satybaldiev by SUB",
     "method_p": 0.3065,
-    "made": "2026-11-05",
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4264,14 +4264,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7358,
+    "p_a": 0.732,
     "pick": "Ronald Humphrey",
     "method": "Ronald Humphrey by KO/TKO",
-    "method_p": 0.5684,
-    "made": "2026-11-05",
+    "method_p": 0.5654,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4293,14 +4293,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5175,
+    "p_a": 0.5192,
     "pick": "Roque Conceicao Moreira Junior",
     "method": "Roque Conceicao Moreira Junior by KO/TKO",
-    "method_p": 0.3849,
-    "made": "2026-11-05",
+    "method_p": 0.3861,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4322,14 +4322,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4847,
+    "p_a": 0.4865,
     "pick": "Yaroslav Amosov",
     "method": "Ian Garry by DEC",
-    "method_p": 0.3004,
-    "made": "2026-11-05",
+    "method_p": 0.3016,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4351,14 +4351,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2677,
+    "p_a": 0.2683,
     "pick": "Shanelle Dyer",
     "method": "Shanelle Dyer by DEC",
-    "method_p": 0.5477,
-    "made": "2026-11-05",
+    "method_p": 0.5473,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4380,14 +4380,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5742,
+    "p_a": 0.5736,
     "pick": "Joshua Van",
     "method": "Joshua Van by DEC",
-    "method_p": 0.4116,
-    "made": "2026-11-05",
+    "method_p": 0.4111,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4409,14 +4409,14 @@
     }
    },
    "latest": {
-    "p_a": 0.3786,
+    "p_a": 0.3788,
     "pick": "Michael Morales",
     "method": "Carlos Prates by KO/TKO",
-    "method_p": 0.3221,
-    "made": "2026-11-05",
+    "method_p": 0.3224,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4438,14 +4438,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7808,
+    "p_a": 0.7803,
     "pick": "Mantas Kondratavicius",
     "method": "Mantas Kondratavicius by KO/TKO",
-    "method_p": 0.6591,
-    "made": "2026-11-05",
+    "method_p": 0.6585,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4467,14 +4467,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5974,
+    "p_a": 0.5968,
     "pick": "Gabriel Lourenco",
     "method": "Gabriel Lourenco by KO/TKO",
-    "method_p": 0.439,
-    "made": "2026-11-05",
+    "method_p": 0.4385,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4496,14 +4496,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4776,
+    "p_a": 0.4777,
     "pick": "Baisangur Susurkaev",
     "method": "Damian Pinas by KO/TKO",
-    "method_p": 0.4052,
-    "made": "2026-11-05",
+    "method_p": 0.4054,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4525,14 +4525,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7041,
+    "p_a": 0.7015,
     "pick": "Quillan Salkilld",
     "method": "Quillan Salkilld by KO/TKO",
-    "method_p": 0.3296,
-    "made": "2026-11-05",
+    "method_p": 0.3283,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4557,11 +4557,11 @@
     "p_a": 0.8183,
     "pick": "Waldo Cortes-Acosta",
     "method": "Waldo Cortes-Acosta by KO/TKO",
-    "method_p": 0.5873,
-    "made": "2026-11-05",
+    "method_p": 0.5872,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4583,14 +4583,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4064,
+    "p_a": 0.4058,
     "pick": "Magomed Tuchalov",
     "method": "Magomed Tuchalov by KO/TKO",
-    "method_p": 0.2818,
-    "made": "2026-11-05",
+    "method_p": 0.2821,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4612,14 +4612,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2313,
+    "p_a": 0.2305,
     "pick": "Roberto Soldic",
     "method": "Roberto Soldic by KO/TKO",
-    "method_p": 0.5097,
-    "made": "2026-11-05",
+    "method_p": 0.5102,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4641,14 +4641,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4437,
+    "p_a": 0.4418,
     "pick": "Robert Whittaker",
     "method": "Robert Whittaker by KO/TKO",
-    "method_p": 0.3557,
-    "made": "2026-11-05",
+    "method_p": 0.3569,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4670,14 +4670,14 @@
     }
    },
    "latest": {
-    "p_a": 0.2964,
+    "p_a": 0.2945,
     "pick": "Marwan Rahiki",
     "method": "Marwan Rahiki by KO/TKO",
-    "method_p": 0.6103,
-    "made": "2026-11-05",
+    "method_p": 0.6119,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4699,14 +4699,14 @@
     }
    },
    "latest": {
-    "p_a": 0.4793,
+    "p_a": 0.4792,
     "pick": "Michelle Montague",
     "method": "Jacqueline Cavalcanti by DEC",
-    "method_p": 0.377,
-    "made": "2026-11-05",
+    "method_p": 0.3769,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4728,14 +4728,14 @@
     }
    },
    "latest": {
-    "p_a": 0.7806,
+    "p_a": 0.7794,
     "pick": "Joanderson Brito",
     "method": "Joanderson Brito by KO/TKO",
-    "method_p": 0.3096,
-    "made": "2026-11-05",
+    "method_p": 0.309,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4757,14 +4757,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5728,
+    "p_a": 0.5688,
     "pick": "Austin Bashi",
     "method": "Austin Bashi by SUB",
-    "method_p": 0.4066,
-    "made": "2026-11-05",
+    "method_p": 0.4037,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4786,14 +4786,14 @@
     }
    },
    "latest": {
-    "p_a": 0.5374,
+    "p_a": 0.5386,
     "pick": "Jun Yong Park",
     "method": "Jun Yong Park by DEC",
-    "method_p": 0.3523,
-    "made": "2026-11-05",
+    "method_p": 0.353,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   },
@@ -4815,14 +4815,72 @@
     }
    },
    "latest": {
-    "p_a": 0.6198,
+    "p_a": 0.617,
     "pick": "Akbar Abdullaev",
     "method": "Akbar Abdullaev by KO/TKO",
-    "method_p": 0.4799,
-    "made": "2026-11-05",
+    "method_p": 0.4777,
+    "made": "2026-11-06",
     "model": {
-     "scale": 0.863,
-     "trained_on": 60381
+     "scale": 0.858,
+     "trained_on": 61169
+    }
+   }
+  },
+  "2026-12-12|steve garcia|yair rodriguez": {
+   "event": "UFC 335: Oliveira vs. Lopes",
+   "date": "2026-12-12",
+   "a": "Yair Rodriguez",
+   "b": "Steve Garcia",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.5171,
+    "pick": "Yair Rodriguez",
+    "method": "Steve Garcia by KO/TKO",
+    "method_p": 0.3626,
+    "made": "2026-11-06",
+    "model": {
+     "scale": 0.858,
+     "trained_on": 61169
+    }
+   },
+   "latest": {
+    "p_a": 0.5171,
+    "pick": "Yair Rodriguez",
+    "method": "Steve Garcia by KO/TKO",
+    "method_p": 0.3626,
+    "made": "2026-11-06",
+    "model": {
+     "scale": 0.858,
+     "trained_on": 61169
+    }
+   }
+  },
+  "2027-01-23|pat sabatini|vinicius oliveira": {
+   "event": "UFC Fight Night 297",
+   "date": "2027-01-23",
+   "a": "Pat Sabatini",
+   "b": "Vinicius Oliveira",
+   "weight_class": "Featherweight",
+   "first": {
+    "p_a": 0.4503,
+    "pick": "Vinicius Oliveira",
+    "method": "Vinicius Oliveira by KO/TKO",
+    "method_p": 0.3889,
+    "made": "2026-11-06",
+    "model": {
+     "scale": 0.858,
+     "trained_on": 61169
+    }
+   },
+   "latest": {
+    "p_a": 0.4503,
+    "pick": "Vinicius Oliveira",
+    "method": "Vinicius Oliveira by KO/TKO",
+    "method_p": 0.3889,
+    "made": "2026-11-06",
+    "model": {
+     "scale": 0.858,
+     "trained_on": 61169
     }
    }
   }
@@ -4832,6 +4890,6 @@
   "correct": 37,
   "accuracy": 0.5441176470588235,
   "log_loss": 0.7208717264087404,
-  "pending": 76
+  "pending": 78
  }
 }
