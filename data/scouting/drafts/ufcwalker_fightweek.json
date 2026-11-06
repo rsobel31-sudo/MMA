@@ -1,0 +1,329 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "written": "2026-11-06",
+ "summary": "All 14 bouts (28 fighters) stand, and everyone made weight at Friday's official weigh-ins (Nov 6): UFC.com's live results (cross-checked against Cageside Press and MMA Weekly via Yahoo) list every fighter at or under the 1 lb non-title allowance, with no misses, catchweights or fines. Several were right on the allowance: Jandiroba 116, Elekana 206, Cachoeira and Milosevic 136, Degli and Fernandes 126, Magomedov 146, Kondratavicius 186, Ko, Turman and Souza 171. Main event: Cortes-Acosta 262, Walker 239. Kondratavicius and Turman were the last two weights posted. The only fight-week change: Lucas Brennan (torn ACL) is out, and Fury FC featherweight champion Carlos Calderon replaced him against Austin Bashi on four days' notice (Nov 4), making his UFC debut; he weighed 145.5. Before fight week, Sean Brady (staph infection in his left knee) withdrew from the Bonfim vs. Brady main event, Bonfim was removed from the card, and Cortes-Acosta vs. Walker was elevated to a five-round headliner on about a week's notice (Oct 29). Walker wrote that he 'started the camp today' on about Oct 30-31. Cortes-Acosta has a new coach and new training partners. Andre Petroski arrived from the Oct 31 card after his Bekoev bout was scrapped. Jonny Parsons (three-year layoff) and Wellington Turman (off since Dec 2023) return from long layoffs.",
+ "card_changes": [
+  {
+   "bout": "Lucas Brennan vs Austin Bashi",
+   "change": "Brennan out with a torn ACL; Carlos Calderon (Fury FC featherweight champion) replaced him on four days' notice for his UFC debut",
+   "date": "2026-11-04",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-adds-replacement-190000727.html"
+  },
+  {
+   "bout": "Gabriel Bonfim vs Sean Brady",
+   "change": "Cancelled: Brady withdrew with a staph infection in his left knee; Bonfim removed from the card, expected to be rebooked (pre-fight-week)",
+   "date": "2026-10-30",
+   "url": "https://sports.yahoo.com/articles/sean-brady-reveals-injury-forced-200000107.html"
+  },
+  {
+   "bout": "Waldo Cortes-Acosta vs Johnny Walker",
+   "change": "Elevated to a five-round main event on about a week's notice after Bonfim vs Brady fell through (pre-fight-week)",
+   "date": "2026-10-29",
+   "url": "https://cagesidepress.com/2026/10/29/ufc-vegas-124-loses-bonfim-vs-brady-heavyweight-headliner/"
+  }
+ ],
+ "items": [
+  {
+   "fighter": "Waldo Cortes-Acosta",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 262 lb, heavyweight (266 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Johnny Walker",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 239 lb, heavyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Tatiana Suarez",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 115.5 lb, strawweight (116 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Virna Jandiroba",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 116 lb, strawweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Davey Grant",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 135.5 lb, bantamweight (136 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Elijah Smith",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 135.5 lb, bantamweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Billy Elekana",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 206 lb, light heavyweight (206 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Lucas Fernando",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 205 lb, light heavyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Priscila Cachoeira",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 136 lb, women's bantamweight (136 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Nina Nikolija Milosevic",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 136 lb, women's bantamweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Mitch Raposo",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 125.5 lb, flyweight (126 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Marcos Degli",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 126 lb, flyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Keiichiro Nakamura",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145 lb, featherweight (146 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Oliver Schmid",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Gabriel Lourenco",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 234 lb, heavyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Thomas Petersen",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 253.5 lb, heavyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Karine Silva",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 125 lb, women's flyweight (126 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Gabriella Fernandes",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 126 lb, women's flyweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Jose Mauro Delano",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Murtazali Magomedov",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 146 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Austin Bashi",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Carlos Calderon",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145.5 lb, featherweight, on four days' notice.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Mantas Kondratavicius",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 186 lb, middleweight (186 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Andre Petroski",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 185.5 lb, middleweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Ko Seok-hyeon",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 171 lb, welterweight (171 lb non-title limit).",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Wellington Turman",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 171 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Jonny Parsons",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 169.5 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Jose Henrique Souza",
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 171 lb, welterweight.",
+   "outlet": "UFC.com",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
+  {
+   "fighter": "Carlos Calderon",
+   "date": "2026-11-04",
+   "text": "Signed on four days' notice to replace Lucas Brennan (torn ACL) against Austin Bashi; UFC debut. He is 11-4 (1 NC) on a three-fight win streak and defended his Fury FC featherweight title over five rounds against Lorram Esteves in October.",
+   "outlet": "Yahoo Sports (SB Nation)",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-adds-replacement-190000727.html"
+  },
+  {
+   "fighter": "Carlos Calderon",
+   "date": "2026-11-04",
+   "text": "Was originally scheduled to defend his Fury FC title in the Fury FC 127 main event on Jan 15; submitted by Alberto Montes on the 2024 Contender Series.",
+   "outlet": "Yahoo Sports (MMA Knockout, SI)",
+   "url": "https://sports.yahoo.com/articles/fighter-steps-four-days-notice-163653174.html"
+  },
+  {
+   "fighter": "Austin Bashi",
+   "date": "2026-11-04",
+   "text": "Opponent changed from Lucas Brennan (torn ACL) to Carlos Calderon. This is the last fight on Bashi's current UFC contract.",
+   "outlet": "Yahoo Sports (MMA Mania)",
+   "url": "https://sports.yahoo.com/articles/ufc-newcomer-steps-four-days-221116340.html"
+  },
+  {
+   "fighter": "Austin Bashi",
+   "date": "2026-11-06",
+   "text": "DraftKings odds via ClutchPoints: Bashi -535, Calderon +400.",
+   "outlet": "Yahoo Sports (ClutchPoints)",
+   "url": "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html"
+  },
+  {
+   "fighter": "Johnny Walker",
+   "date": "2026-10-31",
+   "text": "Wrote on Instagram after the main-event booking that he 'started the camp today'; the bout is five rounds, about a week out.",
+   "outlet": "Heavy.com",
+   "url": "https://heavy.com/sports/ufc/johnny-walker-reacts-ufc-vegas-124/"
+  },
+  {
+   "fighter": "Johnny Walker",
+   "date": "2026-11-04",
+   "text": "At media day called it 'a really quick turnaround' after getting the offer about a week out: 'I wanted to work my way up slowly, but my plans are not God's plans.'",
+   "outlet": "Yahoo Sports (SB Nation)",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-media-day-195800612.html"
+  },
+  {
+   "fighter": "Waldo Cortes-Acosta",
+   "date": "2026-11-05",
+   "text": "Has a new coach and new training partners, alongside longtime partner Tyrell Fortune; says he is '100% confident'. Took the fight on a little more than a week's notice after back-to-back decision losses (Volkov, Blaydes). No injuries mentioned.",
+   "outlet": "Cageside Press",
+   "url": "https://cagesidepress.com/2026/11/05/ufc-vegas-124-waldo-cortes-acosta-wants-back-what-judges-have-taken/"
+  },
+  {
+   "fighter": "Waldo Cortes-Acosta",
+   "date": "2026-11-04",
+   "text": "At media day said Walker 'doesn't have a chin' and that he will go after him.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-waldo-cortes-230015694.html"
+  },
+  {
+   "fighter": "Tatiana Suarez",
+   "date": "2026-11-05",
+   "text": "Wants the next strawweight title shot against Mackenzie Dern with a win; says she always looks to finish. No injury, camp or weight-cut issues mentioned.",
+   "outlet": "Yahoo Sports (Heavy)",
+   "url": "https://sports.yahoo.com/articles/tatiana-suarez-wants-mackenzie-dern-070140535.html"
+  },
+  {
+   "fighter": "Virna Jandiroba",
+   "date": "2026-11-04",
+   "text": "Wants a title rematch with Mackenzie Dern and believes she needs a finish to send 'a message'; wants to be 'more forceful' in a rematch. No injury, camp or weight-cut issues mentioned.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/virna-jandiroba-eyes-title-rematch-235023626.html"
+  },
+  {
+   "fighter": "Jonny Parsons",
+   "date": "2026-10-30",
+   "text": "Attributes his three-year layoff (last fought July 2023) to bad training habits and lingering injuries he thinks smarter strength and conditioning would have prevented; now prioritises strength before volume.",
+   "outlet": "MMA Sucka",
+   "url": "https://mmasucka.com/interviews/jonny-parsons-opens-up-on-bad-habits-behind-three-year-ufc-hiatus/"
+  },
+  {
+   "fighter": "Wellington Turman",
+   "date": "2026-11-03",
+   "text": "Returns from a layoff dating to Dec 2, 2023, his longest; on a three-fight losing streak, no win since February 2022.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-pre-230121111.html"
+  },
+  {
+   "fighter": "Andre Petroski",
+   "date": "2026-11-03",
+   "text": "On a three-fight losing streak, no win since February 2025.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-pre-230121111.html"
+  },
+  {
+   "fighter": "Andre Petroski",
+   "date": "2026-10-26",
+   "text": "His Oct 31 bout with Azamat Bekoev was scrapped after Bekoev's anaphylactic reaction; Petroski declined a replacement and moved to UFC Vegas 124.",
+   "outlet": "EssentiallySports",
+   "url": "https://www.essentiallysports.com/ufc-mma-news-medical-emergency-forces-ufc-vegas-123-fighter-to-withdraw-as-dana-white-faces-setback/"
+  },
+  {
+   "fighter": "Priscila Cachoeira",
+   "date": "2026-11-03",
+   "text": "On a three-fight losing streak; 1-5 in her last six since July 2023.",
+   "outlet": "MMA Junkie (via Yahoo)",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-pre-230121111.html"
+  }
+ ]
+}

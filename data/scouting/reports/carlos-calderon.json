@@ -7,7 +7,7 @@
   "Striking": "A volume striker who starts fast (Cageside Press, 2024), but that breakdown was harsh on the craft: low hands, 'leads in with his chin', sloppy and reckless entries. On the Contender Series he threw a lot (37 of 88 significant, 42%) while Montes landed 38 of 57; UFC.com said Calderon 'showed a varied offense' in a fast first round. His two KO wins were both in R1 and very fast (0:17 and 0:25, 2022), against regional opposition.",
   "Grappling": "This is the main weapon. Six submission wins: R1 x3 (Ellis 2024, Alvarez 2025, Torres 2026), R2 x1 (Gavidia 2023), R3 x1 (Broadwater 2021, at 4:59) and R4 x1 (Jackson, RNC, 2:07). ClutchPoints says he threatens to take the back and finish. Cageside (2024) said he 'can snatch up the neck if his opponent is lazy', but rated his position and takedown defense poorly. He landed 2 of 6 takedowns and had about 2:39 of control against Montes.",
   "Defense": "The 2024 Cageside breakdown called his defense 'terrible all around', and that was before the Fury FC title run. His four losses: two submissions (Motaz Askar R1, 2022; Montes R2, 2024 anaconda choke after a takedown) and two decisions (Elijah Leggett 2023, Mauricio Gomez split 2025). Never stopped by strikes in our data. Both submission losses came against grapplers who got on top of him.",
-  "Pace & cardio": "Went deep twice in 2026: a R4 finish of Jackson and a full 25-minute decision over Esteves. He has three decision wins (two of them split or five-round) and finishes spread across R1-R4. Cardio over 15 minutes shouldn't be a problem. He fought five weeks ago, so ClutchPoints argues the weight cut on short notice is not a concern; that is their opinion, not a reported weight.",
+  "Pace & cardio": "Went deep twice in 2026: a R4 finish of Jackson and a full 25-minute decision over Esteves. He has three decision wins (two of them split or five-round) and finishes spread across R1-R4. Cardio over 15 minutes shouldn't be a problem. He fought five weeks ago, so ClutchPoints argued the short-notice weight cut was not a concern; he made 145.5 at the weigh-ins.",
   "Fight IQ": "Took both of his biggest opportunities (Contender Series and now the UFC) on short notice. Has beaten one UFC veteran (Damon Jackson) and nobody else of note; Cageside said in 2024 the best record he had beaten was 4-3."
  },
  "patterns": [
@@ -28,6 +28,11 @@
   "Make him strike defensively; Cageside rated his defense poorly"
  ],
  "news": [
+  {
+   "date": "2026-11-06",
+   "text": "Made weight at the official weigh-ins: 145.5 lb (Bashi also 145.5).",
+   "source": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker"
+  },
   {
    "date": "2026-11-04",
    "text": "Signed to replace Lucas Brennan (torn ACL) against Austin Bashi at featherweight, on four days' notice; UFC debut. Heavy.com first reported it; MMA Fighting's Mike Heck confirmed.",
@@ -110,10 +115,10 @@
    "date": "2024-10-02"
   },
   {
-   "outlet": "Yahoo Sports (SB Nation)",
-   "author": "Jesse Holland",
-   "title": "UFC Vegas 124 early weigh ins video results, LIVE stream updates",
-   "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-weigh-163000711.html",
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "Official Weigh-In Results | UFC Fight Night: Cortes Acosta vs Walker",
+   "url": "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker",
    "date": "2026-11-06"
   }
  ],

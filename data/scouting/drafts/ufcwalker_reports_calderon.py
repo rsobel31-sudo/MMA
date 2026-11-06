@@ -40,9 +40,9 @@ SRC = {
                        "Austin Bashi vs. Carlos Calderon prediction, odds, pick for UFC Vegas 124",
                        "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html", "2026-11-06",
                        "Garrett Kerman"),
-    "sbn_weighin": src("Yahoo Sports (SB Nation)", "UFC Vegas 124 early weigh ins video results, LIVE stream updates",
-                       "https://sports.yahoo.com/articles/ufc-vegas-124-early-weigh-163000711.html", "2026-11-06",
-                       "Jesse Holland"),
+    "ufc_weighin": src("UFC.com", "Official Weigh-In Results | UFC Fight Night: Cortes Acosta vs Walker",
+                       "https://www.ufc.com/news/official-weigh-in-results-ufc-fight-night-cortes-acosta-vs-walker",
+                       "2026-11-06"),
     # Contender Series 2024
     "cage_dwcs_prev": src("Cageside Press", "DWCS 2024: Episode 8 Breakdown and Predictions",
                           "https://cagesidepress.com/2024/09/30/dwcs-2024-episode-8-breakdown-and-predictions/2",
@@ -96,8 +96,8 @@ report("Carlos Calderon",
                    "strikes in our data. Both submission losses came against grapplers who got on top of him.",
         "Pace & cardio": "Went deep twice in 2026: a R4 finish of Jackson and a full 25-minute decision over Esteves. "
                          "He has three decision wins (two of them split or five-round) and finishes spread across R1-R4. "
-                         "Cardio over 15 minutes shouldn't be a problem. He fought five weeks ago, so ClutchPoints argues "
-                         "the weight cut on short notice is not a concern; that is their opinion, not a reported weight.",
+                         "Cardio over 15 minutes shouldn't be a problem. He fought five weeks ago, so ClutchPoints argued "
+                         "the short-notice weight cut was not a concern; he made 145.5 at the weigh-ins.",
         "Fight IQ": "Took both of his biggest opportunities (Contender Series and now the UFC) on short notice. Has beaten one "
                     "UFC veteran (Damon Jackson) and nobody else of note; Cageside said in 2024 the best record he had beaten "
                     "was 4-3."},
@@ -112,7 +112,8 @@ report("Carlos Calderon",
        ["Wrestle him: Montes took him down in R2 and finished from top",
         "Avoid giving him the back in scrambles",
         "Make him strike defensively; Cageside rated his defense poorly"],
-       [n("2026-11-04", "Signed to replace Lucas Brennan (torn ACL) against Austin Bashi at featherweight, on four days' notice; "
+       [n("2026-11-06", "Made weight at the official weigh-ins: 145.5 lb (Bashi also 145.5).", "ufc_weighin"),
+        n("2026-11-04", "Signed to replace Lucas Brennan (torn ACL) against Austin Bashi at featherweight, on four days' notice; "
                         "UFC debut. Heavy.com first reported it; MMA Fighting's Mike Heck confirmed.", "sbn_booking"),
         n("2026-11-04", "Was originally scheduled to defend his Fury FC title in the Fury FC 127 main event on Jan 15.",
           "si_booking"),
@@ -124,7 +125,7 @@ report("Carlos Calderon",
         n("2024-10-01", "Submitted by Alberto Montes (anaconda choke, 2:38 R2) on the Contender Series after Montes took him "
                         "down; Montes got the contract.", "ufc_dwcs")],
        ["sbn_booking", "mania_booking", "si_booking", "sherdog_booking", "clutch_pick", "cage_dwcs_prev", "ufc_dwcs",
-        "sbn_weighin"],
+        "ufc_weighin"],
        "thin")
 
 
