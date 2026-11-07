@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06",
+ "fetched": "2026-11-07",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -343,6 +343,20 @@
     {
      "order": 9,
      "segment": "Early preliminary card",
+     "weight_class": "Lightweight",
+     "a": "Jared Gordon",
+     "b": "Melquizael Costa",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 10,
+     "segment": "Early preliminary card",
      "weight_class": "Women's Bantamweight",
      "a": "Macy Chiasson",
      "b": "Beatriz Mesquita",
@@ -355,24 +369,16 @@
      "main_event": false
     },
     {
-     "order": 10,
-     "segment": "Announced",
-     "weight_class": "Lightweight",
-     "a": "Jared Gordon",
-     "b": "Melquizael Costa",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
      "order": 11,
-     "segment": "Announced",
+     "segment": "Early preliminary card",
      "weight_class": "Lightweight",
      "a": "Evan Elder",
      "b": "Samuel Sanches",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
@@ -381,7 +387,7 @@
      "segment": "Announced",
      "weight_class": "Bantamweight",
      "a": "Juan D\u00edaz",
-     "b": "TBA",
+     "b": "Alateng Heili",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -782,23 +788,29 @@
     },
     {
      "order": 2,
-     "segment": "Announced",
+     "segment": "Main card",
      "weight_class": "Featherweight",
-     "a": "Yoo Joo-sang",
-     "b": "Marwan Rahiki",
+     "a": "Marwan Rahiki",
+     "b": "Yoo Joo-sang",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 3,
-     "segment": "Announced",
+     "segment": "Main card",
      "weight_class": "Featherweight",
-     "a": "Joanderson Brito",
-     "b": "Kaan Ofli",
+     "a": "Kaan Ofli",
+     "b": "Joanderson Brito",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     }
