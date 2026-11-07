@@ -292,7 +292,12 @@ def refresh_kaggle(log=print) -> Dict[str, object]:
     out = ROOT / ".cache" / "kaggle"
     out.mkdir(parents=True, exist_ok=True)
     zpath = out / "ufc.zip"
-    subprocess.run(["curl", "-sSL", "-o", str(zpath), kaggle_ufc.DOWNLOAD_URL], check=True, timeout=600)
+    # -f: an HTTP error (Kaggle rate-limits with 429) fails here instead of saving the error page as the zip;
+    # --retry backs off on 429 and other transient errors before giving up.
+    r = subprocess.run(["curl", "-sSLf", "--retry", "3", "--retry-delay", "90", "-o", str(zpath), kaggle_ufc.DOWNLOAD_URL],
+                       capture_output=True, text=True, timeout=900)
+    if r.returncode != 0:
+        raise RuntimeError(f"Kaggle download failed, dump not refreshed: {r.stderr.strip()[-200:] or f'curl exit {r.returncode}'}")
     with zipfile.ZipFile(zpath) as z:
         info = max(z.infolist(), key=lambda i: i.date_time)
         stamp = datetime(*info.date_time).isoformat()
