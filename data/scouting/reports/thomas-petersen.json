@@ -1,6 +1,6 @@
 {
  "name": "Thomas Petersen",
- "updated": "2026-10-27T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Bonfim vs. Brady",
  "summary": "A 32-year-old heavyweight wrestler (11-5; 3-4 UFC; Spartan MMA) taking this fight on about two weeks' notice, three-and-a-half months after Valter Walker submitted him with a calf slicer in 92 seconds. He alternates wins and losses in the UFC: he beats the lower tier with wrestling and clinch control and gets stopped by stronger strikers.",
  "how_they_fight": {
@@ -11,10 +11,11 @@
   "Fight IQ": "Knows his lane: clinch, wrestle, grind. LowKick's view after Walker: good enough to beat the bottom of the division, outmatched against ranked opposition."
  },
  "patterns": [
-  "Clinch and wrestling control; UFC wins all by decision",
+  "Clinch and wrestling control; first UFC finish was ground-and-pound from half guard (Lourenco, R3)",
   "Stopped by heavier hitters (Gaziev, Petrino, Cortes-Acosta)",
   "Two of four stoppage losses in R3, two in R1",
-  "Can raise his output late (Pat, R3)"
+  "Can raise his output late (Pat, R3)",
+  "Survived a bad first round and won late on pressure and takedowns (Lourenco)"
  ],
  "concerns": [
   "Short notice, about 15 weeks after a submission loss",
@@ -42,6 +43,11 @@
    "date": "2026-04-04",
    "text": "Beat Guilherme Pat by majority decision (per Cageside; our data says split) after two R3 knockdowns.",
    "source": "https://cagesidepress.com/2026/04/04/ufc-vegas-115-thomas-petersen-guilherme-pat/"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Stopped Gabriel Lourenco with ground strikes at 4:47 of R3, from behind: dropped twice and hit with an illegal knee in R1 (two judges scored it 10-8), then dropped an exhausted Lourenco early in R2 and took him down and finished him from half guard in R3.",
+   "source": "https://cagesidepress.com/2026/11/07/ufc-vegas-124-thomas-petersen-survives-foul-filled-first-frame-stops-gabriel-lorenco-late/"
   }
  ],
  "sources": [

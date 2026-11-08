@@ -1,6 +1,6 @@
 {
  "name": "Davey Grant",
- "updated": "2026-10-27T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Bonfim vs. Brady",
  "summary": "An English bantamweight veteran (18-8, age 40, turns 41 in December; Syndicate MMA, where he is now head striking coach). A volume boxer with sneaky power and underrated clinch wrestling, he won three of his last four, the latest a Fight of the Night decision over Adrian Luna Martinetti in April. He has never been knocked out, but five of his eight losses are submissions, the latest a flying-knee-then-guillotine finish by Charles Jourdain in R1.",
  "how_they_fight": {
@@ -13,7 +13,7 @@
  "patterns": [
   "High-volume boxing and calf kicks; pulls ahead in R2-R3",
   "Late finisher: three of his four UFC stoppages came in R3",
-  "Very durable to strikes",
+  "Very durable to strikes until Smith knocked him out in 60 seconds at age 40 (Nov. 2026)",
   "Submission losses, including early ones"
  ],
  "concerns": [
@@ -36,6 +36,11 @@
    "date": "2026-04-25",
    "text": "Beat Adrian Luna Martinetti by decision (29-28 x3) in a Fight of the Night bout.",
    "source": "https://cagesidepress.com/2026/04/25/ufc-vegas-116-davey-grant-fends-off-newcomer-adrian-luna-martinetti/"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Knocked out by Elijah Smith at 1:00 of R1, the first knockout loss of his career, after opening with low kicks.",
+   "source": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
   }
  ],
  "sources": [

@@ -1,6 +1,6 @@
 {
  "name": "Johnny Walker",
- "updated": "2026-11-03T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
  "summary": "A tall, awkward Brazilian (23-10, 1 NC, age 34) who moved up to heavyweight this year after cutting hard to 205. His heavyweight debut went well: he knocked out Mick Parkin with clinch knees at 3:35 of R1 at UFC 332 and earned a bonus. Now he headlines against Waldo Cortes-Acosta on short notice, in a five-round fight, only his second at heavyweight. He is dangerous early and has been stopped six times.",
  "how_they_fight": {
@@ -15,13 +15,15 @@
   "Early finisher: 18 of 21 stoppage wins in R1",
   "Stopped six times, four of them in R1",
   "Can be wrestled and held down (Krylov)",
-  "Goes passive when he can't find the opening (Reyes)"
+  "Goes passive when he can't find the opening (Reyes)",
+  "Took heavyweight power and finished a bigger, never-stopped man in R3 (Cortes-Acosta)"
  ],
  "concerns": [
   "Durability against heavyweight punchers; Cortes-Acosta has dropped five UFC opponents",
   "Gives up about 20 lbs (he weighed 242 for UFC 332; Cortes-Acosta weighed 264 for UFC 328)",
   "Second heavyweight fight, first heavyweight five-rounder, on short notice",
-  "1-3 in scheduled five-round fights"
+  "1-3 in scheduled five-round fights",
+  "Slowed in R2 at heavyweight and ended the round under Cortes-Acosta"
  ],
  "keys_to_beat": [
   "Press him and make him fight going backward (Feely's key for Parkin)",
@@ -54,6 +56,11 @@
    "date": "2026-11-02",
    "text": "Said he will not fight his half-brother Valter Walker in the UFC.",
    "source": "https://www.sherdog.com/news/news/Johnny-Walker-refuses-to-fight-brother-Valter-My-own-blood-203462"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Knocked out Waldo Cortes-Acosta at 2:27 of R3 (question-mark kick, backfist, right hand) on nine days' notice, after winning R1 on leg kicks, losing R2, and being wobbled early in R3; Fight of the Night. Cortes-Acosta's first stoppage loss.",
+   "source": "https://www.mmamania.com/ufc-results/484919/ufc-vegas-124-results-biggest-winners-losers-from-cortes-acosta-vs-walker-last-night"
   }
  ],
  "sources": [

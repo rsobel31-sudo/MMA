@@ -1,6 +1,6 @@
 {
  "name": "Waldo Cortes-Acosta",
- "updated": "2026-11-03T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
  "summary": "A Dominican heavyweight (17-4, age 35) and former pro baseball pitcher who started boxing and MMA at 24. He went on a run of three straight knockouts (Delija, Gaziev, Lewis) between November 2025 and January 2026, then lost decisions to Alexander Volkov and Curtis Blaydes. He now headlines a five-round main event against Johnny Walker on about nine days' notice after Sean Brady pulled out of the original headliner. He has never been stopped.",
  "how_they_fight": {
@@ -12,7 +12,7 @@
  },
  "patterns": [
   "Jab and fast combinations; looks for the knockout in R1-R2 (nine of ten stoppages came in R1-R2)",
-  "Never finished; all four losses on the cards",
+  "Stopped for the first time by Walker (R3, Nov. 2026); his other four losses went the distance",
   "Loses to wrestlers who hold him down (de Lima, Blaydes) and to a longer striker who kept him at range (Volkov)",
   "Will catch kicks and take the fight down if it's offered"
  ],
@@ -20,7 +20,8 @@
   "First five-round fight",
   "Two straight losses; he was the favourite against Blaydes",
   "Facing a longer opponent: Walker has a listed 82-inch reach to his 78 (LowKick, Wikipedia)",
-  "Short-notice camp for a main event"
+  "Short-notice camp for a main event",
+  "Loading up and missing big; Walker said he waited for the miss to counter"
  ],
  "keys_to_beat": [
   "Use range and kicks like Volkov did; make him reach",
@@ -47,6 +48,11 @@
    "date": "2026-05-09",
    "text": "Lost a unanimous decision to Alexander Volkov at UFC 328 (30-27, 29-28, 29-28). He weighed 264 lbs.",
    "source": "https://cagesidepress.com/2026/05/09/alexander-volkov-beats-waldo-cortes-acosta-calls-for-title-shot-saying-pereira-not-a-heavyweight/"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Knocked out by Johnny Walker at 2:27 of R3, his first stoppage loss: lost R1 to leg kicks, won R2 with right hands and top position, wobbled Walker early in R3, then was caught by a question-mark kick, backfist and right hand off a clinch break.",
+   "source": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
   }
  ],
  "sources": [

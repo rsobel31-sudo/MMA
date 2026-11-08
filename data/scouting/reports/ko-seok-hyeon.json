@@ -1,6 +1,6 @@
 {
  "name": "Ko Seok-hyeon",
- "updated": "2026-10-27T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Bonfim vs. Brady",
  "summary": "A South Korean welterweight from Busan (13-3, age 32; HAVAS MMA), nicknamed 'The Korean Tyson', a judo black belt and former amateur sambo world champion (UFC.com). Won his first two UFC fights by decision on takedowns and top control, then lost a close decision to Jean-Paul Lebosnoyani in July. Regional KO power (six KOs, four in R1) but no UFC finish yet. Listed in our data as Seok Hyeon Ko.",
  "how_they_fight": {
@@ -13,7 +13,7 @@
  "patterns": [
   "Judo/sambo takedowns and top control in the UFC",
   "Jab and leg kicks at range",
-  "All three UFC fights went to decision",
+  "All four UFC fights went to decision",
   "Slowed in R2 of his loss"
  ],
  "concerns": [
@@ -41,6 +41,11 @@
    "date": "2026-07-18",
    "text": "Lost a unanimous decision (29-28 x3) to Jean-Paul Lebosnoyani, his first UFC loss.",
    "source": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-jean-paul-lebosnoyani-claims-decision-over-seok-hyeon-ko/"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Beat Wellington Turman by unanimous decision (30-27 x3): a judo throw and a slam in R1, a takedown late in R2 after Turman's best spell, and mount, choke attempts and ground strikes in R3.",
+   "source": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
   }
  ],
  "sources": [

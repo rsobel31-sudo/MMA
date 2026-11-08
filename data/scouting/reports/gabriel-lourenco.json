@@ -1,6 +1,6 @@
 {
  "name": "Gabriel Lourenco",
- "updated": "2026-10-27T18:00:00+00:00",
+ "updated": "2026-11-08T20:00:00+00:00",
  "event": "UFC Fight Night: Bonfim vs. Brady",
  "summary": "A 27-year-old Brazilian heavyweight ('The Black Mamba', Chute Boxe; 8-1; 6-foot-2, 76-inch reach) who earned a contract in September with a first-round KO of Charlie Cleveland on the Contender Series as an underdog. Seven of his eight wins are first-round finishes. UFC debut, now against short-notice replacement Thomas Petersen after Alvin Hines withdrew.",
  "how_they_fight": {
@@ -17,9 +17,9 @@
   "Was hit early by counters on DWCS"
  ],
  "concerns": [
-  "Untested past R1",
+  "Cardio: emptied his tank in R1 and was finished in R3 in his UFC debut (Petersen)",
   "Opponent change two weeks out",
-  "Takedown defense unknown"
+  "Taken down in R1 and R3 by Petersen"
  ],
  "keys_to_beat": [
   "Clinch and wrestle him; make him carry weight",
@@ -41,6 +41,11 @@
    "date": "2026-09-01",
    "text": "Beat Charlie Cleveland by KO (elbow and punches) at 2:02 of R1 on the Contender Series to earn a contract.",
    "source": "https://aws-prod-web9.rotowire.com/mma/player/gabriel-lorenco-2834"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Lost his UFC debut to Thomas Petersen by TKO at 4:47 of R3: dropped Petersen twice in R1 (with an illegal knee and elbows to the back of the head the referee missed), but gassed, was dropped early in R2 and was taken down and finished in R3.",
+   "source": "https://cagesidepress.com/2026/11/07/ufc-vegas-124-thomas-petersen-survives-foul-filled-first-frame-stops-gabriel-lorenco-late/"
   }
  ],
  "sources": [

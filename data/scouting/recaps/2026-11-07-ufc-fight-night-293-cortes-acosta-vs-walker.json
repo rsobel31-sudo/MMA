@@ -2,7 +2,1265 @@
  "id": "2026-11-07-ufc-fight-night-293-cortes-acosta-vs-walker",
  "event": "UFC Fight Night 293 - Cortes-Acosta vs. Walker",
  "date": "2026-11-07",
- "stories": {},
+ "stories": {
+  "johnny-walker-waldo-cortes-acosta": {
+   "summary": "On nine days' notice, Walker circled and chopped Cortes-Acosta's lead leg with low kicks from the opening bell, while the much heavier man pinned him on the fence, put him down briefly and kneed him in the clinch; Sherdog's three scorers gave Walker round 1 on the kicks. Both were tired in round 2, and Cortes-Acosta took it with right hands and by finishing the round on top after Walker went down. Early in round 3 an overhand right wobbled Walker, but off a separation he landed a question-mark kick and a backfist, then dropped Cortes-Acosta with a right hand and finished him at 2:27, the first stoppage loss of Cortes-Acosta's career.",
+   "turning_point": "Round 3: Walker's question-mark kick and backfist off Herzog's break, a minute after he had been wobbled himself.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Walker",
+       "10-9 Walker",
+       "10-9 Walker"
+      ],
+      [
+       2,
+       "10-9 Cortes-Acosta",
+       "10-9 Cortes-Acosta",
+       "10-9 Cortes-Acosta"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/484919/ufc-vegas-124-results-biggest-winners-losers-from-cortes-acosta-vs-walker-last-night"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/520041/ufc-vegas-124-post-fight-show-reaction-to-johnny-walkers-knockout-in-wild-main-event"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc/johnny-walker-roasts-critics-of-his-chin-after-ko-finish-over-waldo-cortes-acosta-this-was-just-to-prove-to-everyone/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=johnny-walker-roasts-critics-of-his-chin-after-ko-finish-over-waldo-cortes-acosta-this-was-just-to-prove-to-everyone"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Walker gets knocked out when opponents press; the bigger, never-stopped Cortes-Acosta weathers R1 and walks him down: KO/TKO, R2",
+     "tag": "durability",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "failed",
+     "note": "Cortes-Acosta pressed, won round 2 and wobbled Walker in round 3, but Walker stayed up and stopped him."
+    },
+    {
+     "by": "read",
+     "claim": "Walker's chin against heavyweight power",
+     "tag": "durability",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "failed",
+     "note": "Took clean right hands in rounds 2 and 3, was wobbled once, and was never in real danger of going."
+    },
+    {
+     "by": "read",
+     "claim": "Walker freezes under pressure",
+     "tag": "style",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "failed",
+     "note": "Kept kicking with his back to the fence and landed the finishing sequence straight off a clinch break."
+    },
+    {
+     "by": "read",
+     "claim": "Walker's reach and explosiveness (against)",
+     "tag": "explosiveness",
+     "favoured": "Johnny Walker",
+     "verdict": "held",
+     "note": "Won round 1 on low kicks at range and ended it with a spinning kick, backfist and right hand."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Cortes-Acosta",
+     "tag": "wear_and_tear",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "mixed",
+     "note": "Walker slowed in round 2 and Cortes-Acosta looked the fresher man early in round 3, but Walker had the finish left in him."
+    },
+    {
+     "by": "model",
+     "claim": "Size gap favours Cortes-Acosta",
+     "tag": "size_gap",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "mixed",
+     "note": "The 23-pound edge told in the clinch and from top in round 2; it did not stop Walker."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Cortes-Acosta",
+     "tag": "power_vs_chin",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "failed",
+     "note": "His power wobbled Walker without dropping him; Walker's power stopped a man who had never been stopped."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Cortes-Acosta",
+     "tag": "wrestling_rating",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "untested",
+     "note": "No takedown attempts; his top time in round 2 came when Walker went down in an exchange."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Cortes-Acosta",
+     "tag": "overall",
+     "favoured": "Waldo Cortes-Acosta",
+     "verdict": "failed",
+     "note": "Knocked out in round 3."
+    }
+   ]
+  },
+  "tatiana-suarez-virna-jandiroba": {
+   "summary": "Suarez went for single legs from the first exchange, but Jandiroba stayed upright on the fence, landing knees and elbows while hopping on one leg, and caught her with the cleaner right hands early in round 2. Suarez's top time came late in round 2, when she sprawled on a Jandiroba shot, and in round 3 off a takedown against the fence; she controlled from half guard with short elbows and got out of kneebars at the end of both rounds. Suarez won 30-27, 30-27, 29-28; all three Sherdog scorers had it 30-27.",
+   "turning_point": "Late in round 2: Suarez's sprawl on Jandiroba's takedown attempt put her on top for the first time.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Suarez",
+       "10-9 Suarez",
+       "10-9 Suarez"
+      ],
+      [
+       2,
+       "10-9 Suarez",
+       "10-9 Suarez",
+       "10-9 Suarez"
+      ],
+      [
+       3,
+       "10-9 Suarez",
+       "10-9 Suarez",
+       "10-9 Suarez"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/tatiana-suarez/ufc-vegas-124-results-tatiana-suarez-defeats-virna-jandiroba-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-124-results-tatiana-suarez-defeats-virna-jandiroba-highlights"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-results-tatiana-034324102.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/519960/ufc-vegas-124-results-tatiana-suarez-grinds-her-way-to-decision-win-over-virna-jandiroba"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Suarez's wrestling against a grappler who has mostly been the one shooting; Jandiroba's guard keeps it on the cards: decision",
+     "tag": "wrestling",
+     "favoured": "Tatiana Suarez",
+     "verdict": "held",
+     "note": "Won the fight from top position in rounds 2 and 3; Jandiroba's guard stopped any finish."
+    },
+    {
+     "by": "read",
+     "claim": "Suarez's wrestling vs Jandiroba's takedown defence",
+     "tag": "wrestling",
+     "favoured": "Tatiana Suarez",
+     "verdict": "mixed",
+     "note": "Jandiroba stuffed nearly every single leg for seven minutes; Suarez got top position off a sprawl and one late takedown, and that won the rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Jandiroba's submissions (against)",
+     "tag": "submission",
+     "favoured": "Virna Jandiroba",
+     "verdict": "mixed",
+     "note": "Kneebars at the end of round 2 and in round 3 and a near back take, but Suarez escaped each."
+    },
+    {
+     "by": "read",
+     "claim": "Suarez's injury history (against)",
+     "tag": "injury",
+     "favoured": "Virna Jandiroba",
+     "verdict": "failed",
+     "note": "No sign of it; she was the stronger fighter in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Suarez",
+     "tag": "wear_and_tear",
+     "favoured": "Tatiana Suarez",
+     "verdict": "held",
+     "note": "Controlled the last round; Jandiroba could not sweep her."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Jandiroba",
+     "tag": "wrestling_edge",
+     "favoured": "Virna Jandiroba",
+     "verdict": "mixed",
+     "note": "Jandiroba won the clinch battles early; Suarez won the positions that decided the rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Suarez",
+     "tag": "age_curve",
+     "favoured": "Tatiana Suarez",
+     "verdict": "held",
+     "note": "The 38-year-old could not keep her off late."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Jandiroba",
+     "tag": "experience",
+     "favoured": "Virna Jandiroba",
+     "verdict": "failed",
+     "note": "Lost every round on Sherdog's cards."
+    }
+   ]
+  },
+  "elijah-smith-davey-grant": {
+   "summary": "Grant came forward with low kicks and they traded right hands, until Smith answered a left hand with a power shot that staggered Grant backward. Smith followed him and knocked him unconscious with a final right hand on the way down at 1:00 of round 1, the first knockout loss of Grant's 27-fight career. It earned Smith a $100,000 bonus.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-bonuses-and-awards/484643/official-ufc-vegas-124-post-fight-bonus-winners-results-paramount-waldo-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Grant has never been knocked out but has been submitted five times, so a Smith finish is a choke, after Grant's volume takes R1: submission, R2",
+     "tag": "durability",
+     "favoured": "Elijah Smith",
+     "verdict": "failed",
+     "note": "Smith knocked Grant out in 60 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Age gap",
+     "tag": "age",
+     "favoured": "Elijah Smith",
+     "verdict": "held",
+     "note": "The 40-year-old was out cold from the first real exchange."
+    },
+    {
+     "by": "read",
+     "claim": "Grant's durability and volume (against)",
+     "tag": "durability",
+     "favoured": "Davey Grant",
+     "verdict": "failed",
+     "note": "Knocked out for the first time, before his volume could start."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Smith",
+     "tag": "wear_and_tear",
+     "favoured": "Elijah Smith",
+     "verdict": "held",
+     "note": "The chin that had lasted 26 fights went at once."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Smith",
+     "tag": "age_curve",
+     "favoured": "Elijah Smith",
+     "verdict": "held",
+     "note": "As the read's age gap."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Smith",
+     "tag": "submission_threat",
+     "favoured": "Elijah Smith",
+     "verdict": "untested",
+     "note": "Over by punches in a minute."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Grant",
+     "tag": "striking_exchange",
+     "favoured": "Davey Grant",
+     "verdict": "failed",
+     "note": "Grant pressed with leg kicks and lost the first exchange that mattered."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Smith",
+     "tag": "wrestling_edge",
+     "favoured": "Elijah Smith",
+     "verdict": "untested",
+     "note": "Never went to the mat."
+    }
+   ]
+  },
+  "lucas-fernando-billy-elekana": {
+   "summary": "Fernando out-worked Elekana for two rounds with the jab, kicks to every level and knees and hooks to the body in the clinch, hurting him with a right hand and a knee in round 1 and turning him onto the fence every time Elekana went for the body lock. A tiring Fernando gave up a trip takedown in round 3 and spent most of it in closed guard, where Elekana won the round with elbows but did little damage. Fernando won 29-28 on all three cards and all three of Sherdog's.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Fernando",
+       "10-9 Fernando",
+       "10-9 Fernando"
+      ],
+      [
+       2,
+       "10-9 Fernando",
+       "10-9 Fernando",
+       "10-9 Fernando"
+      ],
+      [
+       3,
+       "10-9 Elekana",
+       "10-9 Elekana",
+       "10-9 Elekana"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/07/lucas-fernando-shuts-down-billy-elekanas-wrestling-in-impressive-victory/"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Override: Fernando's kicks to every level break down Elekana, who was hurt by body work before: KO/TKO, R2",
+     "tag": "body_work",
+     "favoured": "Lucas Fernando",
+     "verdict": "mixed",
+     "note": "The body work hurt and slowed Elekana and won the first two rounds, but there was no stoppage and Fernando faded in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Fernando's volume vs Elekana's output",
+     "tag": "volume",
+     "favoured": "Lucas Fernando",
+     "verdict": "held",
+     "note": "Out-landed him clearly in rounds 1 and 2."
+    },
+    {
+     "by": "read",
+     "claim": "Elekana's body-work problem",
+     "tag": "body_work",
+     "favoured": "Lucas Fernando",
+     "verdict": "held",
+     "note": "Knees and hooks to the midsection had Elekana covering up late in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Fernando's turnaround (against)",
+     "tag": "activity",
+     "favoured": "Billy Elekana",
+     "verdict": "mixed",
+     "note": "Fernando tired and lost round 3 to a takedown, but the fight was won by then."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Elekana",
+     "tag": "outside_rating",
+     "favoured": "Billy Elekana",
+     "verdict": "failed",
+     "note": "Lost the first two rounds clearly."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Fernando",
+     "tag": "striking_rating",
+     "favoured": "Lucas Fernando",
+     "verdict": "held",
+     "note": "Won the striking in every round he stood."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Fernando",
+     "tag": "overall",
+     "favoured": "Lucas Fernando",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "nina-nikolija-milosevic-priscila-cachoeira": {
+   "summary": "Milosevic crashed in behind a jumping kick, took Cachoeira down in the first seconds and jumped to her back, then punched her from the back and mount for the rest of round 1, with a look at an arm-triangle; two of Sherdog's scorers had it 10-8. Cachoeira swung back early in round 2 and landed a combination, but Milosevic took her down again, went to mount and the back and finished her with elbows and punches at 3:40.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-8 Milosevic",
+       "10-9 Milosevic",
+       "10-8 Milosevic"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Cachoeira has been submitted five times after being dropped or taken down; Milosevic finishes early: submission, R1",
+     "tag": "grappling",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "mixed",
+     "note": "Taken down and on her back at once, as expected, but finished by ground strikes in round 2, not a choke."
+    },
+    {
+     "by": "read",
+     "claim": "Cachoeira's form and bottom game",
+     "tag": "bottom_game",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "Offered almost no defence from underneath in either round."
+    },
+    {
+     "by": "read",
+     "claim": "Cachoeira's R1 power (against)",
+     "tag": "power",
+     "favoured": "Priscila Cachoeira",
+     "verdict": "failed",
+     "note": "Taken down before she could throw in round 1; her round-2 flurry landed but did not trouble Milosevic."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Milosevic",
+     "tag": "wear_and_tear",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "Cachoeira had nothing left in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Milosevic",
+     "tag": "overall",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "Won every minute."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Milosevic",
+     "tag": "outside_rating",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Milosevic",
+     "tag": "wrestling_rating",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "A takedown in each round."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Milosevic",
+     "tag": "power_vs_chin",
+     "favoured": "Nina Nikolija Milosevic",
+     "verdict": "held",
+     "note": "Stung Cachoeira with counters standing and stopped her with ground strikes."
+    }
+   ]
+  },
+  "mitch-raposo-marcos-degli": {
+   "summary": "The debuting Degli won round 1 on the counter, staggering Raposo with a left hook and landing an elbow, and all three Sherdog scorers gave it to him. From round 2 Raposo took the center and out-threw him with one-twos, leg kicks and body shots while Degli waited; in round 3 an elbow opened a cut on Raposo's head, but he kept up the volume, hurt Degli to the body and reversed his late takedown attempt. Raposo won 29-28 on all three cards, ending Degli's 13-fight streak.",
+   "turning_point": "Round 2: Degli stopped throwing and Raposo took the center for good.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Degli",
+       "10-9 Degli",
+       "10-9 Degli"
+      ],
+      [
+       2,
+       "10-9 Raposo",
+       "10-9 Raposo",
+       "10-9 Raposo"
+      ],
+      [
+       3,
+       "10-9 Raposo",
+       "10-9 Raposo",
+       "10-9 Raposo"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/07/mitch-raposo-stuns-marcos-degli-snaps-impressive-win-streak/"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Degli's finishing streak beats Raposo, who goes the distance and gets back up: decision",
+     "tag": "overall",
+     "favoured": "Marcos Degli",
+     "verdict": "failed",
+     "note": "It went to the cards as picked, but Raposo won the last two rounds on every card."
+    },
+    {
+     "by": "read",
+     "claim": "Degli's debut",
+     "tag": "debut",
+     "favoured": "Marcos Degli",
+     "verdict": "failed",
+     "note": "Sharp in round 1, then quiet: out-thrown in rounds 2 and 3 by a UFC veteran."
+    },
+    {
+     "by": "read",
+     "claim": "Raposo's durability (against)",
+     "tag": "durability",
+     "favoured": "Mitch Raposo",
+     "verdict": "held",
+     "note": "Took Degli's left hooks and a cutting elbow and kept coming for 15 minutes."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Degli",
+     "tag": "overall",
+     "favoured": "Marcos Degli",
+     "verdict": "failed",
+     "note": "Lost the decision."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Degli",
+     "tag": "outside_rating",
+     "favoured": "Marcos Degli",
+     "verdict": "failed",
+     "note": "The regional streak did not carry over."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Degli",
+     "tag": "striking_rating",
+     "favoured": "Marcos Degli",
+     "verdict": "mixed",
+     "note": "Degli landed the harder single shots, but Raposo out-landed him in rounds 2 and 3."
+    }
+   ]
+  },
+  "oliver-schmid-keiichiro-nakamura": {
+   "summary": "Schmid out-boxed Nakamura for two rounds, answering his inside leg kicks with cleaner combinations, left hooks and spinning kicks to the body, and won both on every Sherdog card; a low blow paused round 2. Nakamura came on in round 3 and floored Schmid with a left hook, nearly finishing him with punches, but Schmid got up, caught a kick for a takedown and saw out the round. Schmid won 29-28 on all three cards.",
+   "turning_point": "Round 3: Nakamura's knockdown, and Schmid's takedown off a caught kick that bought him time.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Schmid",
+       "10-9 Schmid",
+       "10-9 Schmid"
+      ],
+      [
+       2,
+       "10-9 Schmid",
+       "10-9 Schmid",
+       "10-9 Schmid"
+      ],
+      [
+       3,
+       "10-9 Nakamura",
+       "10-9 Nakamura",
+       "10-9 Nakamura"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Nakamura gives away early exchanges and grows into fights; Schmid's losses came late: KO/TKO, R2",
+     "tag": "slow_start",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "mixed",
+     "note": "The pattern was right: he lost rounds 1 and 2 and nearly finished Schmid late, but a round too late."
+    },
+    {
+     "by": "read",
+     "claim": "Nakamura's power",
+     "tag": "power",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "mixed",
+     "note": "One knockdown in round 3; Schmid survived it."
+    },
+    {
+     "by": "read",
+     "claim": "Nakamura's layoff and slow starts (against)",
+     "tag": "inactivity",
+     "favoured": "Oliver Schmid",
+     "verdict": "held",
+     "note": "Lost the first two rounds on every card."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Nakamura",
+     "tag": "overall",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "failed",
+     "note": "Lost the decision."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Nakamura",
+     "tag": "striking_rating",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "failed",
+     "note": "Schmid's boxing was the cleaner for two rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Nakamura",
+     "tag": "wrestling_rating",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "untested",
+     "note": "One stuffed shot and one takedown off a caught kick; a kickboxing fight."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Nakamura",
+     "tag": "power_vs_chin",
+     "favoured": "Keiichiro Nakamura",
+     "verdict": "mixed",
+     "note": "Dropped Schmid and nearly finished him; Schmid's chin held up enough."
+    }
+   ]
+  },
+  "thomas-petersen-gabriel-lourenco": {
+   "summary": "Petersen took the debuting Lourenco down early and reached his back, but Lourenco escaped and turned the round: an illegal knee to the grounded Petersen that the referee missed, then a left hook and a right hand that floored him twice and knees and elbows against the fence; Petersen survived, and two judges scored it 10-8. Lourenco had emptied his tank, and Petersen dropped him with a left hook in the first minute of round 2 and nearly finished him; in round 3 he took him down, worked from half guard with elbows and punches, and the referee stopped it at 4:47, 13 seconds from what would likely have been a majority draw.",
+   "turning_point": "The opening of round 2: Petersen's left hook that dropped an exhausted Lourenco.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Lourenco",
+       "10-9 Lourenco",
+       "10-9 Lourenco"
+      ],
+      [
+       2,
+       "10-9 Petersen",
+       "10-9 Petersen",
+       "10-9 Petersen"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/07/ufc-vegas-124-thomas-petersen-survives-foul-filled-first-frame-stops-gabriel-lorenco-late/"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-video-thomas-004820248.html"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "model",
+     "claim": "Fresher body favours Lourenco",
+     "tag": "wear_and_tear",
+     "favoured": "Gabriel Lourenco",
+     "verdict": "failed",
+     "note": "Lourenco was the one who tired: gassed by the end of round 1 and spent in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Petersen",
+     "tag": "wrestling_edge",
+     "favoured": "Thomas Petersen",
+     "verdict": "held",
+     "note": "Takedowns in rounds 1 and 3; the finish came from top position."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Lourenco",
+     "tag": "overall",
+     "favoured": "Gabriel Lourenco",
+     "verdict": "failed",
+     "note": "Nearly stopped Petersen in round 1, then lost the next two rounds and was finished."
+    }
+   ]
+  },
+  "karine-silva-gabriella-fernandes": {
+   "summary": "Most of the fight was clinch work on the fence, where the bigger Fernandes kept reversing position and kneeing the body; Silva took round 1 on Sherdog's cards by countering a takedown into top position at the horn. Fernandes swept Silva off her feet with a low kick in round 2 and won it, and Silva took round 3 with the busier boxing. Silva won 29-28 on all three cards and all three of Sherdog's; the outlets called it flat.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Silva",
+       "10-9 Silva",
+       "10-9 Silva"
+      ],
+      [
+       2,
+       "10-9 Fernandes",
+       "10-9 Fernandes",
+       "10-9 Fernandes"
+      ],
+      [
+       3,
+       "10-9 Silva",
+       "10-9 Silva",
+       "10-9 Silva"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Silva wins the grappling exchanges over 15 minutes against a fighter held down by grapplers: decision",
+     "tag": "grappling",
+     "favoured": "Karine Silva",
+     "verdict": "mixed",
+     "note": "Decision right, but Fernandes was the stronger in the clinch; Silva's one takedown came at the end of round 1 and she won round 3 standing."
+    },
+    {
+     "by": "read",
+     "claim": "Fernandes's bottom game",
+     "tag": "bottom_game",
+     "favoured": "Karine Silva",
+     "verdict": "untested",
+     "note": "Fernandes was on her back only in the last seconds of round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Silva's recent form (against)",
+     "tag": "form",
+     "favoured": "Gabriella Fernandes",
+     "verdict": "failed",
+     "note": "Won, if narrowly."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Silva",
+     "tag": "overall",
+     "favoured": "Karine Silva",
+     "verdict": "held",
+     "note": "Won two rounds of three."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Silva",
+     "tag": "outside_rating",
+     "favoured": "Karine Silva",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Silva",
+     "tag": "striking_rating",
+     "favoured": "Karine Silva",
+     "verdict": "mixed",
+     "note": "The busier striker, which won her round 3, though Fernandes's low kick dropped her in round 2."
+    }
+   ]
+  },
+  "murtazali-magomedov-jose-mauro-delano": {
+   "summary": "Delano won round 1 with leg kicks and volume until he slipped on a kick and Magomedov landed on top. Magomedov took him down twice in round 2 and landed a head kick, but Delano got up each time and finished the round strongly to the body, and he was the fresher man in round 3, buckling Magomedov with a leg kick. Magomedov's late takedown and an overhand left that dropped Delano in the closing seconds won him 29-28 on all three official cards; all three Sherdog scorers had Delano 29-28.",
+   "turning_point": "The knockdown in the last seconds of round 3, which by MMA Mania's account swung the round.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Delano",
+       "10-9 Delano",
+       "10-9 Delano"
+      ],
+      [
+       2,
+       "10-9 Delano",
+       "10-9 Delano",
+       "10-9 Delano"
+      ],
+      [
+       3,
+       "10-9 Magomedov",
+       "10-9 Magomedov",
+       "10-9 Magomedov"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Magomedov finishes before Delano's volume builds: KO/TKO, R1",
+     "tag": "finishing",
+     "favoured": "Murtazali Magomedov",
+     "verdict": "failed",
+     "note": "His first decision: Delano out-landed him in rounds 1 and 3."
+    },
+    {
+     "by": "read",
+     "claim": "Magomedov untested late",
+     "tag": "cardio",
+     "favoured": "Jose Mauro Delano",
+     "verdict": "held",
+     "note": "Slowed in round 3, where Delano was the fresher man, though he found a late knockdown."
+    },
+    {
+     "by": "read",
+     "claim": "Magomedov's finishing (both ways)",
+     "tag": "finishing",
+     "favoured": "Murtazali Magomedov",
+     "verdict": "failed",
+     "note": "No finish either way; the knockdown came too late."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Magomedov",
+     "tag": "wrestling_edge",
+     "favoured": "Murtazali Magomedov",
+     "verdict": "held",
+     "note": "Takedowns in rounds 2 and 3 are what won him the official cards."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Delano",
+     "tag": "striking_exchange",
+     "favoured": "Jose Mauro Delano",
+     "verdict": "held",
+     "note": "Out-struck him in rounds 1 and 3, and late in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Magomedov",
+     "tag": "wear_and_tear",
+     "favoured": "Murtazali Magomedov",
+     "verdict": "failed",
+     "note": "Delano was the fresher in round 3."
+    }
+   ]
+  },
+  "austin-bashi-carlos-calderon": {
+   "summary": "Calderon, on four days' notice, came out aggressive and they traded wildly before Bashi drove through for a takedown. Bashi shed a guillotine, scrambled to the back and finished with a rear-naked choke at 1:07 of round 1.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Bashi's wrestling and back takes on a full camp tell once the short-notice man tires: submission, R2",
+     "tag": "wrestling",
+     "favoured": "Austin Bashi",
+     "verdict": "held",
+     "note": "Takedown, back, choke, as picked; it came in round 1, before tiring could matter."
+    },
+    {
+     "by": "read",
+     "claim": "Calderon on four days' notice",
+     "tag": "short_notice",
+     "favoured": "Austin Bashi",
+     "verdict": "untested",
+     "note": "Over in 67 seconds."
+    },
+    {
+     "by": "read",
+     "claim": "Calderon's thin data",
+     "tag": "competition",
+     "favoured": "Austin Bashi",
+     "verdict": "held",
+     "note": "Taken down and back-taken at once by his first UFC opponent; the market's 81% was the better number."
+    },
+    {
+     "by": "read",
+     "claim": "Bashi's late fade (against)",
+     "tag": "cardio",
+     "favoured": "Carlos Calderon",
+     "verdict": "untested",
+     "note": "Over in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Calderon's submissions (against)",
+     "tag": "submission",
+     "favoured": "Carlos Calderon",
+     "verdict": "failed",
+     "note": "His guillotine was shed at once."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Bashi",
+     "tag": "wrestling_edge",
+     "favoured": "Austin Bashi",
+     "verdict": "held",
+     "note": "Got the takedown he needed."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Bashi",
+     "tag": "submission_threat",
+     "favoured": "Austin Bashi",
+     "verdict": "held",
+     "note": "Finished with the choke."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Calderon",
+     "tag": "height",
+     "favoured": "Carlos Calderon",
+     "verdict": "untested",
+     "note": "Over before range mattered."
+    }
+   ]
+  },
+  "andre-petroski-mantas-kondratavicius": {
+   "summary": "Kondratavicius hit Petroski hard every time he came in during round 1, stuffing his early shots, and won it on all three Sherdog cards despite Petroski's late takedown to side control. In round 2 Petroski took him down again, smothered him in half guard, moved to the back and mount and broke him with punches and elbows until the stoppage at 4:39, ending a three-fight skid.",
+   "turning_point": "Petroski's single-leg takedown early in round 2; Kondratavicius never got up.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Kondratavicius",
+       "10-9 Kondratavicius",
+       "10-9 Kondratavicius"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Petroski is caught by a clean shot as he closes distance; Kondratavicius, a front-loaded puncher, finishes early: KO/TKO, R1",
+     "tag": "durability",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "Kondratavicius landed hard in round 1 and won it, but Petroski took the shots and got his takedowns."
+    },
+    {
+     "by": "read",
+     "claim": "Kondratavicius's cardio past 10 minutes",
+     "tag": "cardio",
+     "favoured": "Andre Petroski",
+     "verdict": "held",
+     "note": "Wilting under top pressure in the second half of round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Petroski's takedowns and control",
+     "tag": "wrestling",
+     "favoured": "Andre Petroski",
+     "verdict": "held",
+     "note": "A takedown late in round 1 and the fight-winning one in round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Petroski's chin (against)",
+     "tag": "durability",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "Ate several big shots in round 1 and was never dropped."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Kondratavicius",
+     "tag": "wear_and_tear",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "The worn veteran was the stronger man in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Kondratavicius",
+     "tag": "striking_rating",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "mixed",
+     "note": "Won round 1 standing; it counted for nothing once Petroski had him down."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Kondratavicius",
+     "tag": "power_vs_chin",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "Landed his power shots without dropping Petroski."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Kondratavicius",
+     "tag": "overall",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "Stopped in round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Kondratavicius",
+     "tag": "outside_rating",
+     "favoured": "Mantas Kondratavicius",
+     "verdict": "failed",
+     "note": "Lost."
+    }
+   ]
+  },
+  "seok-hyeon-ko-wellington-turman": {
+   "summary": "Ko threw Turman with a judo throw midway through round 1 and slammed him down again late. Turman had his best spell in round 2 with the jab, right hands and a spinning backfist (one Sherdog scorer gave him the round) until Ko took him down again. In round 3 Ko took him down in the first 30 seconds, passed to mount, attacked a von Flue choke and an arm-triangle and punched him to the bell: 30-27 on all three cards.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525",
+     "round_scores": [
+      [
+       1,
+       "10-9 Ko",
+       "10-9 Ko",
+       "10-9 Ko"
+      ],
+      [
+       2,
+       "10-9 Turman",
+       "10-9 Ko",
+       "10-9 Ko"
+      ],
+      [
+       3,
+       "10-9 Ko",
+       "10-9 Ko",
+       "10-9 Ko"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Ko",
+     "tag": "wrestling_rating",
+     "favoured": "Seok Hyeon Ko",
+     "verdict": "held",
+     "note": "A throw or takedown in every round and long spells on top."
+    },
+    {
+     "by": "model",
+     "claim": "Layoff favours Ko",
+     "tag": "layoff",
+     "favoured": "Seok Hyeon Ko",
+     "verdict": "mixed",
+     "note": "Turman, out since 2023, slowed early in round 2 but then had his best spell of the fight."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Ko",
+     "tag": "overall",
+     "favoured": "Seok Hyeon Ko",
+     "verdict": "held",
+     "note": "Won every round on the official cards."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Ko",
+     "tag": "striking_rating",
+     "favoured": "Seok Hyeon Ko",
+     "verdict": "held",
+     "note": "Landed the better single shots; Turman's striking won him only part of round 2."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Ko",
+     "tag": "outside_rating",
+     "favoured": "Seok Hyeon Ko",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "jose-henrique-souza-jonny-parsons": {
+   "summary": "Parsons, back after more than three years out, threw low kicks and head kicks but could not get past the 6-foot-3 Souza's jab, and landed little. Souza built on the jab with straight lefts and hooks and flattened him with a right uppercut and left hook at 4:16 of round 1.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    }
+   ],
+   "written": "2026-11-08",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Override: Parsons's rust shows once the pace rises against Souza's jab and knees: KO/TKO, R2",
+     "tag": "inactivity",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "Parsons was out-ranged and barely landed; the knockout came a round early and off the jab, not the knees."
+    },
+    {
+     "by": "read",
+     "claim": "Parsons's 40-month layoff and injuries",
+     "tag": "inactivity",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "Low output and no answer to the range."
+    },
+    {
+     "by": "read",
+     "claim": "Age 35",
+     "tag": "age",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "Slow to close distance, though hard to separate from the layoff."
+    },
+    {
+     "by": "read",
+     "claim": "Parsons's Muay Thai (against)",
+     "tag": "style",
+     "favoured": "Jonny Parsons",
+     "verdict": "failed",
+     "note": "A few hard low kicks, and never got the clinch where he does his work."
+    },
+    {
+     "by": "model",
+     "claim": "Layoff favours Souza",
+     "tag": "layoff",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "As the read."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Souza",
+     "tag": "wear_and_tear",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "untested",
+     "note": "Barely touched; over in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Souza",
+     "tag": "height",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "His length and jab decided the fight."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Souza",
+     "tag": "overall",
+     "favoured": "Jose Henrique Souza",
+     "verdict": "held",
+     "note": "Won inside a round."
+    }
+   ]
+  }
+ },
  "coverage": {
   "johnny-walker-waldo-cortes-acosta": {
    "a": "Johnny Walker",
@@ -338,6 +1596,26 @@
      "outlet": "Sherdog",
      "kind": "play-by-play",
      "url": "https://www.sherdog.com/news/news/UFC-Vegas-124-CortesAcosta-vs-Walker-playbyplay-results-round-scoring-203525"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "play-by-play",
+     "url": "https://www.mmamania.com/ufc-results/483615/ufc-vegas-124-live-results-highlights-play-by-play-cortes-acosta-vs-walker"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/07/ufc-vegas-124-thomas-petersen-survives-foul-filled-first-frame-stops-gabriel-lorenco-late/"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-video-thomas-004820248.html"
     }
    ],
    "round_scores": [
@@ -354,7 +1632,7 @@
      "10-9 Petersen"
     ]
    ],
-   "closeness": null
+   "closeness": "from behind"
   },
   "karine-silva-gabriella-fernandes": {
    "a": "Karine Silva",
