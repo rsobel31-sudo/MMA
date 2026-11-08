@@ -653,7 +653,15 @@
        "selection": "Elijah Smith by submission",
        "odds": 470,
        "p": 0.2383,
-       "p_fanduel": 0.1542
+       "p_fanduel": 0.1542,
+       "close_odds": 430,
+       "grade": "lost",
+       "result": {
+        "winner": "b",
+        "method": "KO/TKO",
+        "round": 1,
+        "seconds": 60
+       }
       }
      ],
      "odds": 470,
@@ -663,9 +671,10 @@
      "p": 0.2383,
      "ev": 0.3583,
      "reasoning": "Grant's stoppage losses are all submissions (5) and none by KO in 26 fights; the market leans Smith's finish toward KO. If Smith stops a 40-year-old who gives up his neck in scrambles, the submission is the likelier way. Ours 23.8% vs FanDuel 15.4% at +470.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-04T18:15:09+00:00"
+     "status": "lost",
+     "profit": -1.5,
+     "placed_at": "2026-11-04T18:15:09+00:00",
+     "clv": 0.0755
     },
     {
      "id": "6-2",
@@ -681,7 +690,15 @@
        "selection": "Waldo Cortes-Acosta to win",
        "odds": -250,
        "p": 0.7484,
-       "p_fanduel": 0.6804
+       "p_fanduel": 0.6804,
+       "close_odds": -225,
+       "grade": "lost",
+       "result": {
+        "winner": "a",
+        "method": "KO/TKO",
+        "round": 3,
+        "seconds": 147
+       }
       }
      ],
      "odds": -250,
@@ -691,14 +708,15 @@
      "p": 0.7484,
      "ev": 0.0478,
      "reasoning": "Walker's chin against heavyweight power (six KO/TKO losses, four in R1) and a heavyweight underdog at 32%; ours 74.8% vs FanDuel 68.0%.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-06T17:57:21+00:00"
+     "status": "lost",
+     "profit": -2.0,
+     "placed_at": "2026-11-06T17:57:21+00:00",
+     "clv": -0.0308
     }
    ],
    "staked": 3.5,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-11-08T17:00:59+00:00",
    "placements": [
     {
      "placed_at": "2026-11-04T18:15:09+00:00",
@@ -727,7 +745,12 @@
     "https://www.bestfightodds.com/events/ufc-vegas-124-4439",
     "https://www.bestfightodds.com/events/ufc-vegas-124-4437"
    ],
-   "sheet_fetched_at": "2026-11-06T17:57:03+00:00"
+   "sheet_fetched_at": "2026-11-06T17:57:03+00:00",
+   "bankroll_after": 81.71,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   },
   {
    "id": "w7",

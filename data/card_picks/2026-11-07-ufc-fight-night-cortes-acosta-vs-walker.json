@@ -81,7 +81,25 @@
      ]
     }
    },
-   "market_p_a": 0.6804
+   "market_p_a": 0.6804,
+   "result": {
+    "winner": "Johnny Walker",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Tatiana Suarez vs Virna Jandiroba",
@@ -143,7 +161,25 @@
      ]
     }
    },
-   "market_p_a": 0.6448
+   "market_p_a": 0.6448,
+   "result": {
+    "winner": "Tatiana Suarez",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Davey Grant vs Elijah Smith",
@@ -205,7 +241,25 @@
      ]
     }
    },
-   "market_p_a": 0.2801
+   "market_p_a": 0.2801,
+   "result": {
+    "winner": "Elijah Smith",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Billy Elekana vs Lucas Fernando",
@@ -267,7 +321,25 @@
      ]
     }
    },
-   "market_p_a": 0.272
+   "market_p_a": 0.272,
+   "result": {
+    "winner": "Lucas Fernando",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Priscila Cachoeira vs Nina Nikolija Milošević",
@@ -329,7 +401,25 @@
      ]
     }
    },
-   "market_p_a": 0.2069
+   "market_p_a": 0.2069,
+   "result": {
+    "winner": "Nina Nikolija Milošević",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Mitch Raposo vs Marcos Degli",
@@ -391,7 +481,25 @@
      ]
     }
    },
-   "market_p_a": 0.3356
+   "market_p_a": 0.3356,
+   "result": {
+    "winner": "Mitch Raposo",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Keiichiro Nakamura vs Ollie Schmid",
@@ -453,7 +561,25 @@
      ]
     }
    },
-   "market_p_a": 0.7524
+   "market_p_a": 0.7524,
+   "result": {
+    "winner": "Ollie Schmid",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Gabriel Lorenço vs Thomas Petersen",
@@ -515,7 +641,25 @@
      ]
     }
    },
-   "market_p_a": 0.4002
+   "market_p_a": 0.4002,
+   "result": {
+    "winner": "Thomas Petersen",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Karine Silva vs Gabriella Fernandes",
@@ -577,7 +721,25 @@
      ]
     }
    },
-   "market_p_a": 0.6597
+   "market_p_a": 0.6597,
+   "result": {
+    "winner": "Karine Silva",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "José Mauro Delano vs Murtazali Magomedov",
@@ -639,7 +801,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Murtazali Magomedov",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Austin Bashi vs Carlos Calderon",
@@ -701,7 +881,25 @@
      ]
     }
    },
-   "market_p_a": 0.8057
+   "market_p_a": 0.8057,
+   "result": {
+    "winner": "Austin Bashi",
+    "side": "a",
+    "method": "SUB",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Mantas Kondratavičius vs Andre Petroski",
@@ -763,7 +961,25 @@
      ]
     }
    },
-   "market_p_a": 0.7153
+   "market_p_a": 0.7153,
+   "result": {
+    "winner": "Andre Petroski",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Ko Seok-hyeon vs Wellington Turman",
@@ -825,7 +1041,25 @@
      ]
     }
    },
-   "market_p_a": null
+   "market_p_a": null,
+   "result": {
+    "winner": "Ko Seok-hyeon",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Jonny Parsons vs José Henrique Souza",
@@ -887,8 +1121,27 @@
      ]
     }
    },
-   "market_p_a": 0.3356
+   "market_p_a": 0.3356,
+   "result": {
+    "winner": "José Henrique Souza",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   }
  ],
- "graded": false
+ "graded": true,
+ "graded_at": "2026-11-08T17:01:48+00:00"
 }

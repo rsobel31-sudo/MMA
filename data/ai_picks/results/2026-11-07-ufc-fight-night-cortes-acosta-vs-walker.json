@@ -1,0 +1,108 @@
+{
+ "event": "UFC Fight Night: Cortes-Acosta vs. Walker",
+ "date": "2026-11-07",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Andre Petroski vs Mantas Kondratavicius": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 279,
+   "round_agreed": true
+  },
+  "Austin Bashi vs Carlos Calderon": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 67,
+   "round_agreed": true
+  },
+  "Billy Elekana vs Lucas Fernando": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Davey Grant vs Elijah Smith": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 60,
+   "round_agreed": true
+  },
+  "Gabriel Lorenco vs Thomas Petersen": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 287,
+   "round_agreed": true
+  },
+  "Gabriella Fernandes vs Karine Silva": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Johnny Walker vs Waldo Cortes-Acosta": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 147,
+   "round_agreed": true
+  },
+  "Jonny Parsons vs Jose Souza": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 256,
+   "round_agreed": true
+  },
+  "Jose Delano vs Murtazali Magomedov": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Keiichiro Nakamura vs Ollie Schmid": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Ko Seok-hyeon vs Wellington Turman": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Marcos Degli vs Mitch Raposo": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Nina Milosevic vs Priscila Cachoeira": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 220,
+   "round_agreed": true
+  },
+  "Tatiana Suarez vs Virna Jandiroba": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  }
+ }
+}

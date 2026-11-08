@@ -147,7 +147,15 @@
      "method": "KO/TKO",
      "url": "https://fightdesk.substack.com/p/ufc-fight-night-waldo-cortez-acosta"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.0,
+   "winner": "Johnny Walker",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 147
+   }
   },
   {
    "a": "Tatiana Suarez",
@@ -279,7 +287,15 @@
      "method": "DEC",
      "url": "https://sportsnews.worldsportsbetting.co.za/ufc/ufc-fight-night-cortes-acosta-vs-walker-betting-preview/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Tatiana Suarez",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Davey Grant",
@@ -403,7 +419,15 @@
      "method": "SUB",
      "url": "https://sportsnews.worldsportsbetting.co.za/ufc/ufc-fight-night-cortes-acosta-vs-walker-betting-preview/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Elijah Smith",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 60
+   }
   },
   {
    "a": "Billy Elekana",
@@ -514,7 +538,15 @@
      "method": "",
      "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.1,
+   "winner": "Lucas Fernando",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Andre Petroski",
@@ -618,7 +650,15 @@
      "method": "",
      "url": "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Andre Petroski",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 279
+   }
   },
   {
    "a": "Gabriel Lorenco",
@@ -700,7 +740,15 @@
      "method": "",
      "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-picks-172517643.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Thomas Petersen",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 287
+   }
   },
   {
    "a": "Gabriella Fernandes",
@@ -796,7 +844,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Karine Silva",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Marcos Degli",
@@ -892,7 +948,15 @@
      "method": "",
      "url": "https://mmainsight.com/news/ufc-fight-night-293-predictions"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Mitch Raposo",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Jose Delano",
@@ -988,7 +1052,15 @@
      "method": "",
      "url": "https://sports.yahoo.com/articles/ufc-vegas-124-early-picks-172517643.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Murtazali Magomedov",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Keiichiro Nakamura",
@@ -1084,7 +1156,15 @@
      "method": "",
      "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Ollie Schmid",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Nina Milosevic",
@@ -1173,7 +1253,15 @@
      "method": "",
      "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Nina Milosevic",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 220
+   }
   },
   {
    "a": "Jonny Parsons",
@@ -1270,7 +1358,15 @@
      "method": "KO/TKO",
      "url": "https://www.sportsline.com/insiders/ufc-fight-night-odds-picks-seasoned-mma-analyst-reveals-selections-for-cortes-acosta-vs-walker-and-other-matchups-on-nov-7/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.15,
+   "winner": "Jose Souza",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 256
+   }
   },
   {
    "a": "Austin Bashi",
@@ -1312,7 +1408,15 @@
      "method": "",
      "url": "https://sports.yahoo.com/articles/austin-bashi-vs-carlos-calderon-160627480.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.3,
+   "winner": "Austin Bashi",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 67
+   }
   },
   {
    "a": "Ko Seok-hyeon",
@@ -1409,7 +1513,15 @@
      "method": "",
      "url": "https://keeonsports.com/ufc-fight-night-bonfim-vs-brady-preview-7-prediction/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.15,
+   "winner": "Ko Seok-hyeon",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   }
  ]
 }
