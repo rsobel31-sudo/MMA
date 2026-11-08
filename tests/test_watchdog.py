@@ -63,3 +63,17 @@ def test_shard_count_and_size_limit(tmp_path, monkeypatch):
     r = watchdog.Report()
     watchdog.check_files(r)
     assert _levels(r)["File sizes"] == "alert"
+
+
+def test_ufc_stats_lag(tmp_path, monkeypatch):
+    from datetime import datetime
+    root = tmp_path
+    (root / "data" / "ufcstats").mkdir(parents=True)
+    (root / "data" / "card_picks").mkdir(parents=True)
+    (root / "data" / "ufcstats" / "fights.csv").write_text("date,event\n2026-08-08,A\n")
+    for d in ("2026-08-01", "2026-10-31", "2026-11-07"):
+        (root / "data" / "card_picks" / f"{d}-card.json").write_text("{}")
+    monkeypatch.setattr(watchdog, "ROOT", root)
+    r = watchdog.Report()
+    watchdog.check_ufc_stats(r, datetime(2026, 11, 8, 9, tzinfo=watchdog.ET))
+    assert r.items[0]["level"] == "warn" and "at least 2 UFC card" in r.items[0]["detail"]

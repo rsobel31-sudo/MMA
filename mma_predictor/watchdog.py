@@ -122,6 +122,9 @@ def check_daily(r: Report, now: datetime):
             r.alert("Data refresh", f"last refresh finished {_ago(now, fin)}")
         else:
             r.ok("Data refresh", f"finished {_ago(now, fin)}, data through {(last.get('export_meta') or {}).get('last_fight')}")
+        skipped = [f"{k}: {v['skipped']}" for k, v in last.items() if k == "ufcstats" and isinstance(v, dict) and v.get("skipped")]
+        if skipped:
+            r.warn("Data refresh (skipped steps)", "; ".join(skipped))
     hits = [c for c in _commits(now - timedelta(hours=36)) if "minor leagues" in c[1].lower()]
     if hits:
         r.ok("Minor Leagues refresh", f"pushed {_ago(now, hits[0][0])}")
@@ -241,6 +244,25 @@ def check_monthly(r: Report, now: datetime):
         r.alert("Monthly prospects", f"no prospects report for {first:%B %Y} (due the 1st, 11:57 ET)")
 
 
+def check_ufc_stats(r: Report, now: datetime):
+    """How far the UFC per-fight stats (data/ufcstats, from the Kaggle scrape) lag behind the last graded UFC card."""
+    import csv
+
+    f = ROOT / "data" / "ufcstats" / "fights.csv"
+    cards = sorted(p.name[:10] for p in (ROOT / "data" / "card_picks").glob("20*-*.json"))
+    past = [c for c in cards if c < now.date().isoformat()]
+    if not f.exists() or not past:
+        return
+    with f.open(newline="") as fh:
+        last = max((row["date"] for row in csv.DictReader(fh) if row.get("date")), default="")
+    behind = [c for c in past if c > last]
+    if behind:
+        r.warn("UFC per-fight stats", f"stats run through {last}; at least {len(behind)} UFC card(s) since have results but no "
+               f"strike/takedown stats (the Kaggle scrape stopped updating; ufcstats.com is behind a bot check)")
+    else:
+        r.ok("UFC per-fight stats", f"through {last}")
+
+
 def check_files(r: Report):
     meta = json.loads((APP / "data.json").read_text())["meta"]
     shards = sorted(APP.glob("profiles-*.json"))
@@ -331,7 +353,7 @@ def check_published(r: Report, pub: Path):
 def run(now: Optional[datetime] = None, published: Optional[Path] = None) -> Report:
     now = (now or datetime.now(timezone.utc)).astimezone(ET)
     r = Report()
-    for fn in (check_daily, check_health, check_odds, check_scouting, check_friday, check_sunday, check_monthly):
+    for fn in (check_daily, check_health, check_odds, check_scouting, check_friday, check_sunday, check_monthly, check_ufc_stats):
         try:
             fn(r, now)
         except Exception as exc:  # noqa: BLE001 - a broken check is itself an alert

@@ -25,6 +25,7 @@ import dataclasses
 import json
 import subprocess
 import sys
+import urllib.request
 import zipfile
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -285,25 +286,49 @@ def refresh_review(log=print) -> Dict[str, object]:
     return res
 
 
+def _kaggle_remote(url: str) -> Dict[str, str]:
+    """The dump's size and ETag from a 1 KB ranged request, without downloading it."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Fight Lab refresh)", "Range": "bytes=0-1023"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        if r.read(2) != b"PK":
+            raise ValueError("not a zip archive")
+        total = (r.headers.get("Content-Range") or "").rpartition("/")[2] or r.headers.get("Content-Length", "")
+        return {"size": total, "etag": r.headers.get("ETag", "")}
+
+
 def refresh_kaggle(log=print) -> Dict[str, object]:
-    """Re-download the UFCStats scrape; import it only if the dump is newer than ours."""
+    """Import the UFCStats scrape (Kaggle) when the dump has changed.
+
+    The dump has not changed since 2026-08-11, and downloading it whole every day got the refresh rate-limited
+    (HTTP 429, saved as a "zip"). So a 1 KB ranged request compares its size and ETag with the last download, and
+    only a changed dump is downloaded. If Kaggle can't be reached the step is skipped (not failed): the watchdog
+    reports separately how far the UFC per-fight stats lag behind the last card."""
     from .sources import kaggle_ufc
+
+    marker = ROOT / "data" / "ufcstats" / "kaggle_version.txt"
+    remote_file = ROOT / "data" / "ufcstats" / "kaggle_remote.json"
+    have = marker.read_text().strip() if marker.exists() else ""
+    try:
+        remote = _kaggle_remote(kaggle_ufc.DOWNLOAD_URL)
+    except (OSError, ValueError) as exc:
+        return {"skipped": f"Kaggle not reachable ({str(exc)[:120]})", "dump": have}
+    seen = json.loads(remote_file.read_text()) if remote_file.exists() else {}
+    if have and remote == seen:
+        return {"dump": have, "imported": False, "unchanged": True}
 
     out = ROOT / ".cache" / "kaggle"
     out.mkdir(parents=True, exist_ok=True)
     zpath = out / "ufc.zip"
-    # -f: an HTTP error (Kaggle rate-limits with 429) fails here instead of saving the error page as the zip;
-    # --retry backs off on 429 and other transient errors before giving up.
+    # -f: an HTTP error (Kaggle rate-limits with 429) fails here instead of saving the error page as the zip.
     r = subprocess.run(["curl", "-sSLf", "--retry", "3", "--retry-delay", "90", "-o", str(zpath), kaggle_ufc.DOWNLOAD_URL],
                        capture_output=True, text=True, timeout=900)
     if r.returncode != 0:
-        raise RuntimeError(f"Kaggle download failed, dump not refreshed: {r.stderr.strip()[-200:] or f'curl exit {r.returncode}'}")
+        return {"skipped": f"Kaggle download failed ({r.stderr.strip()[-160:] or f'curl exit {r.returncode}'})", "dump": have}
     with zipfile.ZipFile(zpath) as z:
         info = max(z.infolist(), key=lambda i: i.date_time)
         stamp = datetime(*info.date_time).isoformat()
         z.extractall(out)
-    marker = ROOT / "data" / "ufcstats" / "kaggle_version.txt"
-    have = marker.read_text().strip() if marker.exists() else ""
+    remote_file.write_text(json.dumps(remote) + "\n")
     if stamp <= have:
         return {"dump": stamp, "imported": False}
     _run(["import", "kaggle", "--dir", str(out), "--out", "data/ufcstats"], log)
