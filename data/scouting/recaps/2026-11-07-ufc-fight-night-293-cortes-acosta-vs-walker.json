@@ -27,9 +27,19 @@
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
     },
     {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-results/484919/ufc-vegas-124-results-biggest-winners-losers-from-cortes-acosta-vs-walker-last-night"
+    },
+    {
      "outlet": "MMA Fighting",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/519628/ufc-vegas-124-results-cortes-acosta-vs-walker"
+     "url": "https://www.mmafighting.com/ufc/520041/ufc-vegas-124-post-fight-show-reaction-to-johnny-walkers-knockout-in-wild-main-event"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc/johnny-walker-roasts-critics-of-his-chin-after-ko-finish-over-waldo-cortes-acosta-this-was-just-to-prove-to-everyone/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=johnny-walker-roasts-critics-of-his-chin-after-ko-finish-over-waldo-cortes-acosta-this-was-just-to-prove-to-everyone"
     }
    ],
    "round_scores": [
@@ -71,9 +81,19 @@
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
     },
     {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/tatiana-suarez/ufc-vegas-124-results-tatiana-suarez-defeats-virna-jandiroba-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-vegas-124-results-tatiana-suarez-defeats-virna-jandiroba-highlights"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-vegas-124-results-tatiana-034324102.html"
+    },
+    {
      "outlet": "MMA Fighting",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124"
+     "url": "https://www.mmafighting.com/ufc/519960/ufc-vegas-124-results-tatiana-suarez-grinds-her-way-to-decision-win-over-virna-jandiroba"
     }
    ],
    "round_scores": [
@@ -119,6 +139,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-bonuses-and-awards/484643/official-ufc-vegas-124-post-fight-bonus-winners-results-paramount-waldo-walker"
     }
    ],
    "round_scores": null,
@@ -145,6 +170,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/07/lucas-fernando-shuts-down-billy-elekanas-wrestling-in-impressive-victory/"
     }
    ],
    "round_scores": [
@@ -223,6 +253,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-fight-night-293-live-210057052.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/07/mitch-raposo-stuns-marcos-degli-snaps-impressive-win-streak/"
     }
    ],
    "round_scores": [
