@@ -205,6 +205,30 @@ def refresh_records(fetcher, bouts: List[dict], pages: Dict[str, object], today:
     return done
 
 
+def bout_key(b: dict) -> Tuple[str, str, str]:
+    """One bout is one event, prospect and opponent; the date is not part of it, because events get rescheduled."""
+    return (b.get("event_url") or b["date"], b["prospect_url"], b["opponent_url"])
+
+
+def merge_bouts(known: List[dict], found: List[dict]) -> Tuple[List[dict], List[dict]]:
+    """Add newly found bouts; a bout already known under another date (the event moved) takes the new date unless it
+    has a result. Duplicates left by earlier runs collapse to one entry, keeping the graded one."""
+    merged: Dict[Tuple[str, str, str], dict] = {}
+    for b in known:
+        k = bout_key(b)
+        if k not in merged or (b.get("result") and not merged[k].get("result")):
+            merged[k] = b
+    new = []
+    for b in found:
+        k = bout_key(b)
+        if k not in merged:
+            merged[k] = b
+            new.append(b)
+        elif not merged[k].get("result") and merged[k]["date"] != b["date"]:
+            merged[k]["date"] = b["date"]
+    return list(merged.values()), new
+
+
 def cmd_prospect_week(args) -> int:
     from .sources.common import Fetcher
 
@@ -213,11 +237,8 @@ def cmd_prospect_week(args) -> int:
     prospects = {p["sherdog_url"]: p for p in data["prospects"] if p.get("sherdog_url")}
     f = Fetcher(ROOT / ".cache" / "pages", delay=args.delay, user_agent=UA)
     known = [json.loads(l) for l in FIGHTS.read_text().splitlines() if l.strip()] if FIGHTS.exists() else []
-    key = lambda b: (b["date"], b["prospect_url"], b["opponent_url"])  # noqa: E731
-    have = {key(b) for b in known}
     found = find_bouts(f, prospects, today - timedelta(days=1), today + timedelta(days=args.days))
-    new = [b for b in found if key(b) not in have]
-    known += new
+    known, new = merge_bouts(known, found)
     pages: Dict[str, object] = {}
     graded = grade(f, known, today, pages=pages)
     refreshed = refresh_records(f, known, pages, today)
