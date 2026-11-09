@@ -959,8 +959,11 @@ button.namelink:hover { color: var(--red); }
     }
     return false;
   }
+  // A fighter outside the UFC carries only a summary in data.json until their profile file has loaded.
+  const summaryOnly = (name) => { const b = state.byName.get(name); return !!(b && b.summary && !b._profileLoaded); };
   function renderProfile(view) {
     const pending = !ensureProfile(state.profile);
+    if (summaryOnly(state.profile)) { view.innerHTML = `<div class="empty">Loading ${esc(state.profile)}…</div>`; return; }
     const n = state.profile, f = fighter(n), peers = divisionPeers(f);
     const facts = [
       f.division ? `${esc(f.division)}${f.weight_class_source === "inferred" ? " (inferred)" : ""}` : null,
@@ -1050,6 +1053,10 @@ button.namelink:hover { color: var(--red); }
         </section>`;
     if (!fa || !fb || a === b) {
       html += `<div class="empty">${a && !fa || b && !fb ? "That name isn't in the dataset. Pick from the suggestions as you type." : "Pick two different fighters to see the prediction."}</div></div>`;
+      view.innerHTML = html; return;
+    }
+    if (summaryOnly(a) || summaryOnly(b)) {  // a fighter outside the UFC: full record still loading
+      html += `<div class="empty">Loading fighter data…</div></div>`;
       view.innerHTML = html; return;
     }
     const r = predict(a, b, rounds);
@@ -1912,6 +1919,8 @@ button.namelink:hover { color: var(--red); }
     if (!state.card.length) return "";
     const rows = state.card.map((c) => {
       if (!state.byName.has(c.a) || !state.byName.has(c.b)) return `<tr><td colspan="6">${esc(c.a)} vs ${esc(c.b)} <span class="muted">(fighter not in dataset)</span></td></tr>`;
+      ensureProfile(c.a); ensureProfile(c.b);
+      if (summaryOnly(c.a) || summaryOnly(c.b)) return `<tr><td colspan="6">${esc(c.a)} vs ${esc(c.b)} <span class="muted">(loading…)</span></td></tr>`;
       const r = predict(c.a, c.b, c.rounds || 3);
       const pick = r.p >= 0.5 ? c.a : c.b, pp = Math.max(r.p, 1 - r.p);
       const best = [["a", c.a], ["b", c.b]].flatMap(([s, n]) => Object.entries(r.methods[s]).map(([m, v]) => [n, m, v])).sort((u, v) => v[2] - u[2])[0];

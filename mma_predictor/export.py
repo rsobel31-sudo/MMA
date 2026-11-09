@@ -214,7 +214,19 @@ def export(
 
 
 PROFILE_FIELDS = ("history", "bio", "recent")
-SHARD_BYTES = 6_000_000      # each profiles-<i>.json stays far below the page host's 16 MB per-file limit
+# Fighters outside the UFC (not on the roster or an upcoming card) keep only these in data.json: what the lists,
+# filters, division medians and search use. The rest of their record goes to their profile file with the history
+# and is merged in when their profile or a matchup opens. Halves data.json, most of whose fighters are regional.
+SUMMARY_FIELDS = {
+    "name", "aka", "division", "weight_class", "weight_class_source", "weight_class_inferred", "gender", "age",
+    "nationality", "team", "stance", "height_cm", "reach_cm", "background", "complete", "pedigree",
+    "wins", "losses", "draws", "prior_wins", "prior_losses", "fights", "streak", "stat_minutes", "minutes",
+    "elo", "proven", "rd", "striking", "grappling", "wrestling", "intangibles",
+    "td_per15", "ctrl_share", "sub_per15", "slpm", "kd_per15", "str_def", "sapm", "td_def",  # style tags
+    "ko_losses", "kd_absorbed", "sig_absorbed",  # wear index
+    "layoff_days",  # the refresh's rotation order
+}
+SHARD_BYTES = 7_000_000      # each profiles-<i>.json stays far below the page host's 16 MB per-file limit
 DATA_WARN_BYTES = 15_000_000
 
 
@@ -225,13 +237,19 @@ def profile_shard(name: str, n: int) -> int:
 
 def write(data: Dict[str, Any], path: Path) -> None:
     """Write data.json. Each fighter's fight history, bio and recent fights (only the profile and matchup views need
-    them, and they are most of the bytes) go to profiles-<i>.json beside it, loaded on demand, so data.json stays under the page host's
-    per-file limit as the dataset grows."""
+    them, and they are most of the bytes), and everything but a summary of fighters outside the UFC, go to
+    profiles-<i>.json beside it, loaded on demand, so data.json stays under the page host's per-file limit as the
+    dataset grows."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     profiles = {}
+    on_card = {n for e in (data.get("upcoming") or {}).get("events", []) for b in e.get("bouts", [])
+               for n in (b.get("a"), b.get("b"), b.get("a_id"), b.get("b_id")) if n}
     for f in data.get("fighters", []):
         p = {k: f.pop(k) for k in PROFILE_FIELDS if k in f}
+        if f.get("weight_class_source") != "ufc-roster" and f["name"] not in on_card:
+            p.update({k: f.pop(k) for k in list(f) if k not in SUMMARY_FIELDS and not k.startswith("r_")})
+            f["summary"] = True
         if p:
             profiles[f["name"]] = p
     if profiles:
