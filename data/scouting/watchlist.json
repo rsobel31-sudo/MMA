@@ -20,7 +20,8 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
    "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked.",
-   "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday"
+   "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday",
+   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday"
   },
   {
    "name": "HuskySamoan",
@@ -41,7 +42,8 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
    "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked.",
-   "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday"
+   "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday",
+   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday"
   },
   {
    "name": "Koala",
@@ -68,30 +70,30 @@
   {
    "handle": "@mma_sushi",
    "why": "Owner's pick: prospect analysis",
-   "found": "nothing indexed (site:x.com search, 2026-11-03)",
-   "last_checked": "2026-11-03",
+   "found": "nothing indexed (site:x.com search, 2026-11-10)",
+   "last_checked": "2026-11-10",
    "seen": []
   },
   {
    "handle": "@hellowhosthat",
    "why": "Same person as the Sherdog member Hellowhosthat",
-   "last_checked": "2026-11-03",
+   "last_checked": "2026-11-10",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-03)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)"
   },
   {
    "handle": "@FdrNphw",
    "why": "Prospect calls (Russia)",
-   "last_checked": "2026-11-03",
+   "last_checked": "2026-11-10",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-03)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)"
   },
   {
    "handle": "@FlightOFfists",
    "why": "Prospect calls",
-   "last_checked": "2026-11-03",
+   "last_checked": "2026-11-10",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-03)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)"
   }
  ]
 }

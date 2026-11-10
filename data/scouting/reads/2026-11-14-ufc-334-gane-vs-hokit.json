@@ -1,0 +1,245 @@
+{
+ "event": "UFC 334: Gane vs. Hokit",
+ "date": "2026-11-14",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_334",
+ "bouts": [
+  {
+   "a": "Ciryl Gane",
+   "b": "Josh Hokit",
+   "favours": "Ciryl Gane",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Gane's footwork and long kicking game against an unbeaten wrestler who gives up about 21 cm of reach and has never gone five rounds. Model and market agree near two to one; no lean until fight week.",
+   "factors": [
+    "Gane's range and movement",
+    "Hokit's wrestling and power (against)",
+    "Hokit's first five-rounder"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.69,
+   "p_market": 0.658,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Amanda Nunes",
+   "b": "Kayla Harrison",
+   "favours": "Kayla Harrison",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Both come back from long absences: Nunes after more than three years retired, Harrison about 17 months after neck surgery. Harrison's judo and top control against Nunes's power. Model and market agree; no lean.",
+   "factors": [
+    "Nunes's layoff",
+    "Harrison's neck surgery and layoff",
+    "Harrison's grappling"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.39,
+   "p_market": 0.375,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Caio Borralho",
+   "b": "Yousri Belgaroui",
+   "favours": "Caio Borralho",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Borralho returns from rib surgery against a kickboxer whose three UFC wins were all TKOs; his wrestling and control are the path. The model is already above the market; no lean.",
+   "factors": [
+    "Borralho's wrestling",
+    "Belgaroui's striking (against)",
+    "Borralho's rib surgery (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.69,
+   "p_market": 0.583,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Kevin Holland",
+   "b": "Uros Medic",
+   "favours": "Uros Medic",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Holland withdrew injured from two bookings this year and hasn't fought since April; Medic has four straight first-round finishes and every win by stoppage. Holland's chin and experience keep it small.",
+   "factors": [
+    "Holland's injuries and inactivity",
+    "Medic's early finishing",
+    "Holland's experience (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.37,
+   "p_market": 0.425,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Bilal Hasan",
+   "b": "Luis Gurule",
+   "favours": "Bilal Hasan",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Hasan is unbeaten and fresh off a knockout; Gurule is 1-4 in the UFC. Hasan's third fight in about three months is the only question. Market is above the model already; no lean.",
+   "factors": [
+    "Hasan's form",
+    "Hasan's quick turnaround (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.76,
+   "p_market": 0.879,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Charles Radtke",
+   "b": "Stephen Thompson",
+   "favours": "Charles Radtke",
+   "logit": 0.05,
+   "confidence": "low",
+   "reasoning": "Thompson, 43, returns from 16 months out after his shin was split to the bone, on a three-fight skid in which he lost the grappling each time; Radtke's last two wins came from takedowns and control. The model (70%) already sees the age and layoff and is far above the market (42%); the matchup adds only a little. Radtke was knocked out by both strikers he faced in the UFC.",
+   "factors": [
+    "Thompson's age and layoff",
+    "Radtke's takedowns",
+    "Radtke's chin against strikers (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.7,
+   "p_market": 0.422,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Chris Duncan",
+   "b": "Drew Dober",
+   "favours": "Chris Duncan",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Duncan is coming off a round-two submission loss; Dober has two straight stoppages and real power. The model is far above the market on Duncan; no read until fight week.",
+   "factors": [
+    "Dober's power",
+    "Duncan's form"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.84,
+   "p_market": 0.586,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Jim Miller",
+   "b": "Terrance McKinney",
+   "favours": "Terrance McKinney",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "McKinney starts like a sprinter and has been stopped when he fades; Miller, 43, submitted Gordon in round one in May. Either man can finish it early. Model and market agree; no lean.",
+   "factors": [
+    "McKinney's first-round power",
+    "Miller's submissions in scrambles"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.33,
+   "p_market": 0.36,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Cesar Almeida",
+   "b": "Donte Johnson",
+   "favours": "Donte Johnson",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Almeida is 38 and was knocked out in round one last time; Johnson took him as a replacement opponent. The model is already below the market on Almeida; no lean.",
+   "factors": [
+    "Almeida's age and recent KO loss"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.22,
+   "p_market": 0.4,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Jared Gordon",
+   "b": "Melquizael Costa",
+   "favours": "Melquizael Costa",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Gordon is 38 with three losses in four; Costa moves up from featherweight. Model and market agree; no lean.",
+   "factors": [
+    "Gordon's form",
+    "Costa's move up in weight"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.17,
+   "p_market": 0.245,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Bia Mesquita",
+   "b": "Macy Chiasson",
+   "favours": "Bia Mesquita",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Mesquita's grappling against a much taller fighter on a three-fight skid who has missed weight before. Model and market agree; no lean.",
+   "factors": [
+    "Mesquita's grappling",
+    "Chiasson's size (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.67,
+   "p_market": 0.685,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Evan Elder",
+   "b": "Samuel Sanches",
+   "favours": "Samuel Sanches",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Elder returns from about 19 months out after a leg injury; Sanches debuts after his own 14-month absence. Too little to lean either way.",
+   "factors": [
+    "Elder's layoff",
+    "Sanches's debut"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": 0.44,
+   "p_market": 0.485,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Juan Diaz",
+   "b": "Alateng Heili",
+   "favours": "Juan Diaz",
+   "logit": 0.15,
+   "confidence": "low",
+   "reasoning": "Heili took the fight on about eight days' notice, seven weeks after his last; Diaz has had a full camp. Heili is durable (not stopped since 2017) and experienced, so the lean is small. No line yet.",
+   "factors": [
+    "Heili's short notice",
+    "Heili's durability (against)"
+   ],
+   "event": "UFC 334: Gane vs. Hokit",
+   "date": "2026-11-14",
+   "p_model": null,
+   "p_market": null,
+   "created": "2026-11-10T18:30:00+00:00",
+   "pundits": []
+  }
+ ]
+}
