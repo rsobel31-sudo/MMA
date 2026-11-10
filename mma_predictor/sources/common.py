@@ -53,6 +53,13 @@ class FighterPage:
     bouts: List[CareerBout] = field(default_factory=list)
 
 
+def iri_to_uri(url: str) -> str:
+    """Percent-encode non-ASCII characters (e.g. Wikipedia's 'Procházka') so urllib can send the request;
+    already-encoded and ASCII URLs pass through unchanged."""
+    from urllib.parse import quote
+    return quote(url, safe=":/?#[]@!$&'()*+,;=%~")
+
+
 class Fetcher:
     """Polite HTTP GET: robots.txt, per-host delay, on-disk cache."""
 
@@ -105,7 +112,7 @@ class Fetcher:
         wait = self.delay - (time.monotonic() - self._last.get(host, 0.0))
         if wait > 0:
             time.sleep(wait)
-        req = urllib.request.Request(url, headers={"User-Agent": self.user_agent, "Accept-Language": "en"})
+        req = urllib.request.Request(iri_to_uri(url), headers={"User-Agent": self.user_agent, "Accept-Language": "en"})
         with urllib.request.urlopen(req, timeout=30) as resp:
             html = resp.read().decode(resp.headers.get_content_charset() or "utf-8", errors="replace")
         self._last[host] = time.monotonic()
