@@ -1,0 +1,98 @@
+{
+ "name": "Shamil Gaziev",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A Dagestan-born Bahraini heavyweight (15-3; KHK MMA; born 1990 per Wikipedia) who won the Contender Series in 2023. A big puncher who has been knocked out twice in his last three fights (Cortes-Acosta R1, Pericic R2), then put Kennedy Nzechukwu away with one right hand in August. All 13 of his stoppage wins came inside two rounds.",
+ "how_they_fight": {
+  "Striking": "Power over volume: ten KO/TKO wins and about 0.46 knockdowns per 15, but only 3.3 significant strikes a minute at 44%. Finished Nzechukwu with a lunging right at 1:20 of R1 (Cageside). Traded heavily with Pericic and kept throwing back when hurt in R1.",
+  "Grappling": "Top-control wrestler when he gets there: three submission wins, and our data has 718 of 900 seconds of control against Don'Tale Mayes. He took Pericic down in R1 (216 seconds of control in our data). Takedown accuracy is only about 40%; against Rozenstruik he landed 1 of 7, and CBS called his takedowns a weak point.",
+  "Defense": "The concern. He absorbs about 4.7 significant strikes a minute with 52% striking defense. Stopped three times: Rozenstruik after R4 (2024; he told his corner he couldn't see out of one eye), Cortes-Acosta in R1 (1:22; a flush right, 'out before he hit the floor', Cageside) and Pericic in R2 (3:44, right hand).",
+  "Pace & cardio": "A front-loaded finisher. Stoppage wins: ten in R1, three in R2, none later. His two decision wins went three rounds. In the five-round Rozenstruik fight his output collapsed: our data has him out-landed 127-22, and the fight was stopped after R4. Stoppage losses: one in R1, one in R2, one after R4. He wins early or tends to lose.",
+  "Fight IQ": "Straightforward: walk forward, land the big right, or clinch and wrestle. Said after Sacramento he wanted to return later in the year after a break (Cageside)."
+ },
+ "patterns": [
+  "R1-R2 finisher: ten R1 and three R2 stoppages, none later",
+  "One-punch right-hand power",
+  "Clinch and top control when he can get the takedown",
+  "Knocked out twice in his last three fights"
+ ],
+ "concerns": [
+  "Chin: KO'd in R1 and R2 in his last three",
+  "Gas tank past R2",
+  "Low takedown accuracy against bigger or rangier opponents"
+ ],
+ "keys_to_beat": [
+  "Survive R1 and push the pace into R3",
+  "Jab and move; Rozenstruik broke him down with the jab",
+  "Fast combinations; Pericic's speed beat him in exchanges"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Tallison Teixeira on the Qatar prelims.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-08-22",
+   "text": "Knocked out Kennedy Nzechukwu at 1:20 of R1, snapping a two-fight losing streak; his tenth career knockout.",
+   "source": "https://cagesidepress.com/2026/08/22/ufc-sacramento-shamil-gaziev-floors-kennedy-nzechukwu-with-single-punch/"
+  },
+  {
+   "date": "2026-05-02",
+   "text": "Knocked out by Brando Pericic at 3:44 of R2 at UFC Perth; both men earned Fight of the Night (Wikipedia).",
+   "source": "https://cagesidepress.com/2026/05/02/brando-pericic-stuns-gaziev-earns-third-straight-ufc-knockout/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Shamil Gaziev",
+   "url": "https://en.wikipedia.org/wiki/Shamil_Gaziev",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Sacramento: Shamil Gaziev Floors Kennedy Nzechukwu with Single Punch",
+   "url": "https://cagesidepress.com/2026/08/22/ufc-sacramento-shamil-gaziev-floors-kennedy-nzechukwu-with-single-punch/",
+   "date": "2026-08-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "Brando Pericic Stuns Gaziev, Earns Third Straight UFC Knockout",
+   "url": "https://cagesidepress.com/2026/05/02/brando-pericic-stuns-gaziev-earns-third-straight-ufc-knockout/",
+   "date": "2026-05-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Qatar: Short-Notice Waldo Cortes-Acosta Smokes Shamil Gaziev",
+   "url": "https://cagesidepress.com/2025/11/22/ufc-qatar-short-notice-waldo-cortes-acosta-smokes-shamil-gaziev",
+   "date": "2025-11-22"
+  },
+  {
+   "outlet": "CBS Sports",
+   "author": "Shakiel Mahjouri",
+   "title": "UFC Fight Night results, highlights: Jairzinho Rozenstruik batters Shamil Gaziev for big bounce back win",
+   "url": "https://www.cbssports.com/mma/news/ufc-fight-night-results-highlights-jairzinho-rozenstruik-batters-shamil-gaziev-for-big-bounce-back-win/",
+   "date": "2024-03-02"
+  }
+ ],
+ "depth": "moderate"
+}

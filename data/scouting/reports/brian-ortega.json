@@ -1,0 +1,113 @@
+{
+ "name": "Brian Ortega",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "Two-time featherweight title challenger (16-5, 1 NC, age 36) making his UFC lightweight debut. He has lost four of his last five and has not fought since a lopsided decision loss to Aljamain Sterling in August 2025, about 15 months before this fight. He pulled out of two bouts with Renato Moicano this year (injuries in January, a cut over the eye in September).",
+ "how_they_fight": {
+  "Striking": "Low output and hittable: about 3.9 significant strikes landed a minute at 37% accuracy, and about 5.0 absorbed. Against Sterling he landed single digits in R1 and took heavy leg kicks before finally landing in R5 (Cageside Press). Has knocked out good fighters late (Frankie Edgar R1, Clay Guida and Thiago Tavares R3).",
+  "Grappling": "Elite jiu-jitsu, especially the guillotine. Eight submission wins, including Renato Moicano (2017, R3 guillotine) and Cub Swanson. Takedown offense is poor (29%).",
+  "Defense": "Takedown defense is weak (51%). Stopped twice: Max Holloway (TKO at the end of R4, 2018) and Yair Rodriguez (R1, 2022). Three decision losses (Volkanovski, Diego Lopes, Sterling). Has taken a lot of damage in long fights.",
+  "Pace & cardio": "A late finisher: of 11 stoppage wins, six came in R3 (four subs, two KOs), one in R2 and four in R1. He often loses early rounds and finds something late (R5 against Sterling, per Cageside). His wins have all come against tiring opponents, and he hasn't won since February 2024.",
+  "Fight IQ": "Patient to a fault; low early output costs him rounds. Weight and health are real concerns: he missed featherweight for Sterling (153-pound catchweight; Cageside noted rumours he had been hospitalised) and now moves up to 155."
+ },
+ "patterns": [
+  "Slow starter, dangerous late: six of 11 stoppage wins in R3",
+  "Guillotine off opponents' takedown attempts",
+  "Low striking output; loses rounds on volume",
+  "Weak takedown defense"
+ ],
+ "concerns": [
+  "Ring rust: about 15 months out by fight night",
+  "Withdrew from two bouts in 2026",
+  "First fight at 155 after a weight-cut problem at 145",
+  "Four losses in last five"
+ ],
+ "keys_to_beat": [
+  "Out-work him early with volume and leg kicks",
+  "Don't shoot carelessly into his guillotine",
+  "Keep pace high to bank rounds before his late push"
+ ],
+ "news": [
+  {
+   "date": "2026-10-28",
+   "text": "Will make his UFC lightweight debut against Hooker (Sherdog).",
+   "source": "https://www.sherdog.com/news/news/Renato-Moicano-calls-Ortega-vs-Hooker-worst-fight-in-the-UFC-203390"
+  },
+  {
+   "date": "2026-09-14",
+   "text": "Withdrew from the UFC 331 lightweight rematch with Moicano after a cut; his second withdrawal from that fight.",
+   "source": "https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/"
+  },
+  {
+   "date": "2026-01-30",
+   "text": "Pulled out of UFC 326 with accumulated injuries; said no surgery was needed.",
+   "source": "https://cagesidepress.com/2026/01/30/brian-ortega-announces-out-ufc-326"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Renato Moicano calls Ortega vs. Hooker 'worst fight in the UFC'",
+   "url": "https://www.sherdog.com/news/news/Renato-Moicano-calls-Ortega-vs-Hooker-worst-fight-in-the-UFC-203390",
+   "date": "2026-10-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "Brian Ortega Announces He's Out of UFC 326",
+   "url": "https://cagesidepress.com/2026/01/30/brian-ortega-announces-out-ufc-326",
+   "date": "2026-01-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "With Brian Ortega Out, Renato Moicano Gets Tom Nolan in UFC Vegas 123 Headliner",
+   "url": "https://cagesidepress.com/2026/09/14/brian-ortega-out-renato-moicano-gets-tom-nolan-in-ufc-vegas-123/",
+   "date": "2026-09-14"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Shanghai: Aljamain Sterling Outworks Low-Output Brian Ortega",
+   "url": "https://cagesidepress.com/2025/08/23/ufc-shanghai-aljamain-sterling-outworks-low-output-brian-ortega",
+   "date": "2025-08-23"
+  },
+  {
+   "outlet": "Yahoo Sports (Uncrowned)",
+   "author": "Drake Riggs",
+   "title": "Dan Hooker on rushing into UFC Qatar fight after third straight loss: 'Surely I can beat Brian Ortega'",
+   "url": "https://sports.yahoo.com/mma/article/dan-hooker-on-rushing-into-ufc-qatar-fight-after-third-straight-loss-surely-i-can-beat-brian-ortega-002848187.html",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Dan Hooker calls Brian Ortega 'old' while explaining quick UFC return",
+   "url": "https://www.sherdog.com/news/news/Dan-Hooker-calls-Brian-Ortega-old-while-explaining-quick-UFC-return-203495",
+   "date": "2026-11-05"
+  }
+ ],
+ "depth": "moderate"
+}

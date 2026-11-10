@@ -1,0 +1,107 @@
+{
+ "name": "Jiri Prochazka",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "Former UFC light heavyweight champion from the Czech Republic (32-6-1, 6-3 UFC, age 34). A wild, high-output striker with huge finishing power: 31 of his 32 wins are stoppages. He headlines against unbeaten Navajo Stirling seven months after a first-round knockout loss to Carlos Ulberg for the vacant title. He opened as a slight underdog (+110 to -138, per MMA Junkie).",
+ "how_they_fight": {
+  "Striking": "Throws a lot (about 5.3 significant strikes a minute) with unusual angles, kicks and knees, and hits very hard: 28 KO/TKO wins and about 0.75 knockdowns per 15 minutes. Against Ulberg he went after the lead leg early and hurt it badly (LowKick MMA). Against Rountree he threw body kicks and a jump knee early, then won a firefight in round three with knees, elbows and punches against the fence (Cageside Press). Dropped Jamahal Hill with a left in round one and again in round three before the finish (MMA Junkie).",
+  "Grappling": "Rarely wrestles (about 0.6 takedowns per 15 minutes). Has three submission wins, the most famous a submission of Glover Teixeira with 28 seconds left in their five-round title fight (R5, 4:32). Off his back he is vulnerable: Teixeira landed 5 of 17 takedowns and had nearly ten minutes of control in that fight.",
+  "Defense": "The big hole. He absorbs about 4.6 significant strikes a minute and leaves openings when he attacks. All three UFC losses were knockouts by counter-strikers: Alex Pereira R2 (2023), Pereira R2 at 0:13 (2024) and Ulberg R1 (2026). Against Ulberg he had the champion compromised on one leg, chose to trade instead of staying patient, and was dropped by a counter right and finished with ground strikes (LowKick MMA). Career stoppage losses: five KO/TKO (three in R1, two in R2) and one R1 submission (2013). He has never been stopped past round two.",
+  "Pace & cardio": "A first-round finisher early in his career (21 R1 KO/TKO wins, mostly outside the UFC), but in the UFC he has become a slow burner. All six UFC wins were stoppages: three in R2 (Oezdemir, Reyes, Rakic), two in R3 (Hill, Rountree) and one in R5 (Teixeira). His last two wins were R3 comebacks: against Rountree he lost R1-R2 and looked tired in R2 before stopping him at 3:04 of R3 (Cageside). He keeps his power late. The danger for him is early: his losses come in R1-R2.",
+  "Fight IQ": "Instinctive and unorthodox, comfortable taking risks to land. That cuts both ways: LowKick's reaction piece blamed showboating and a choice to brawl for the Ulberg loss."
+ },
+ "patterns": [
+  "Volume striker with knockout power in all four limbs",
+  "Slow burner in the UFC: all six UFC wins came in R2 or later, the last two in R3",
+  "Wins firefights late against tired opponents (Hill, Rountree)",
+  "Loses to sharp counter-punchers early: three UFC KO losses, all in R1-R2",
+  "Wrestles little and can be held down by a strong grappler (Teixeira)"
+ ],
+ "concerns": [
+  "Defensive gaps against a fast, accurate striker",
+  "Coming off a first-round KO loss, his third KO loss in four fights against top opposition",
+  "Age 34 with a lot of wear from wars",
+  "Opponent is younger, unbeaten and favoured"
+ ],
+ "keys_to_beat": [
+  "Counter him as he comes in; make him pay for wide shots",
+  "Bank the first two rounds, then survive his R3 surge",
+  "Mix in takedowns and top control; he does little wrestling himself"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked to headline UFC Qatar in a five-round light heavyweight bout against Navajo Stirling.",
+   "source": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016"
+  },
+  {
+   "date": "2026-11-05",
+   "text": "Opened as a +110 underdog to Stirling (-138), per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-fight-night-294-jiri-185026074.html"
+  },
+  {
+   "date": "2026-04-11",
+   "text": "Knocked out by Carlos Ulberg at 3:45 of R1 at UFC 327 in a fight for the vacant title, after badly hurting Ulberg's lead leg.",
+   "source": "https://www.lowkickmma.com/jiri-prochazka-vs-carlos-ulberg-highlights/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Farah Hannoun",
+   "title": "UFC Fight Night 294: Jiri Prochazka vs. Navajo Stirling odds, what to know",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-294-jiri-185026074.html",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Subham",
+   "title": "Jiri Prochazka Pays the Price for Showboating at UFC 327: Jon Jones, Aiemann Zahabi and others react",
+   "url": "https://www.lowkickmma.com/jiri-prochazka-pays-the-price-for-showboating-at-ufc-327-jon-jones-aiemann-zahabi-and-others-react/",
+   "date": "2026-04-12"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Craig Pekios",
+   "title": "Carlos Ulberg KOs Jiří Procházka on One Leg to Claim Light Heavyweight Gold – UFC 327 Highlights",
+   "url": "https://www.lowkickmma.com/jiri-prochazka-vs-carlos-ulberg-highlights/",
+   "date": "2026-04-12"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC 320: Jiri Prochazka Storms Back, Stops Khalil Rountree Jr in Third",
+   "url": "https://cagesidepress.com/2025/10/04/ufc-320-jiri-prochazka-storms-back-stops-khalil-rountree-jr-in-third",
+   "date": "2025-10-04"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Simon Samano",
+   "title": "UFC 311 results: Jiri Prochazka ends entertaining scrap with TKO of Jamahal Hill",
+   "url": "https://sports.yahoo.com/ufc-311-results-jiri-prochazka-050124091.html",
+   "date": "2025-01-19"
+  }
+ ],
+ "depth": "deep"
+}

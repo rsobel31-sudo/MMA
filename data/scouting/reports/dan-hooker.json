@@ -1,0 +1,105 @@
+{
+ "name": "Dan Hooker",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "New Zealand lightweight veteran (24-15, age 37) from City Kickboxing, on a three-fight losing streak, all three by stoppage inside two rounds. He returns 77 days after a first-round body-kick TKO loss to Salahdine Parnasse, having asked for Brian Ortega himself.",
+ "how_they_fight": {
+  "Striking": "Tall, rangy kickboxer with a varied kicking game and a good front kick (snapped Benoit Saint-Denis's head back, per Cageside Press). Eleven KO/TKO wins, but only two since 2019 (James Vick 2019, Claudio Puelles 2022). Throws about 4.8 significant strikes a minute and absorbs about the same. Parnasse checked most of his kicks.",
+  "Grappling": "Dangerous guillotine and opportunistic submissions (seven sub wins, six in R1). Does not wrestle much (about 0.6 takedowns per 15 minutes).",
+  "Defense": "Durability is now the worry. Nine stoppage losses: five KO/TKO (R1 x3, R2, R3) and four submissions (R1, R2 x3). The last three: Arman Tsarukyan sub R2 (2025), Saint-Denis TKO R2 after being mounted and taking 25 unanswered strikes (2026), and Parnasse TKO R1 from a body kick then a left hook (2026; Cageside). Good wrestlers hold him down: Saint-Denis and Tsarukyan each controlled him for about six minutes.",
+  "Pace & cardio": "Historically a fast starter as a finisher: 16 of 18 stoppage wins came in R1 or R2 (six R1 KOs, six R1 subs, four R2 KOs). His wins in recent years have been close decisions (split wins over Jalin Turner 2023 and Mateusz Gamrot 2024). His last win was in August 2024. Lately he has been stopped early rather than fading late.",
+  "Fight IQ": "Experienced and outspoken. Says he had a strong camp for Parnasse he never got to show and took the quick turnaround because he believes Ortega is beatable (Uncrowned, Sherdog)."
+ },
+ "patterns": [
+  "Kicks from range, front kicks up the middle",
+  "Guillotine threat when opponents shoot",
+  "Close decision winner in recent years",
+  "Recently stopped early: three straight losses inside two rounds"
+ ],
+ "concerns": [
+  "Durability after back-to-back stoppage losses in 2026",
+  "Quick 77-day turnaround after a body-shot TKO",
+  "Age 37, three straight losses"
+ ],
+ "keys_to_beat": [
+  "Attack the body; Parnasse finished him with a body kick",
+  "Take him down and work from top; he has been mounted and finished there",
+  "Avoid shooting lazy takedowns into his guillotine"
+ ],
+ "news": [
+  {
+   "date": "2026-11-05",
+   "text": "Returns 77 days after the Parnasse loss; said he took no serious injury from the body kick and asked for Ortega himself.",
+   "source": "https://www.sherdog.com/news/news/Dan-Hooker-calls-Brian-Ortega-old-while-explaining-quick-UFC-return-203495"
+  },
+  {
+   "date": "2026-11-05",
+   "text": "Said he expects Ortega, who has pulled out of two fights this year, to show up.",
+   "source": "https://sports.yahoo.com/mma/article/dan-hooker-on-rushing-into-ufc-qatar-fight-after-third-straight-loss-surely-i-can-beat-brian-ortega-002848187.html"
+  },
+  {
+   "date": "2026-09-05",
+   "text": "Lost to UFC debutant Salahdine Parnasse by TKO at 2:35 of R1 in the UFC Paris main event.",
+   "source": "https://cagesidepress.com/2026/09/05/ufc-paris-salahdine-parnasse-arrives-with-electrifying-finish-of-dan-hooker/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Yahoo Sports (Uncrowned)",
+   "author": "Drake Riggs",
+   "title": "Dan Hooker on rushing into UFC Qatar fight after third straight loss: 'Surely I can beat Brian Ortega'",
+   "url": "https://sports.yahoo.com/mma/article/dan-hooker-on-rushing-into-ufc-qatar-fight-after-third-straight-loss-surely-i-can-beat-brian-ortega-002848187.html",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Dan Hooker calls Brian Ortega 'old' while explaining quick UFC return",
+   "url": "https://www.sherdog.com/news/news/Dan-Hooker-calls-Brian-Ortega-old-while-explaining-quick-UFC-return-203495",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Paris: Salahdine Parnasse Arrives with Electrifying Finish of Dan Hooker",
+   "url": "https://cagesidepress.com/2026/09/05/ufc-paris-salahdine-parnasse-arrives-with-electrifying-finish-of-dan-hooker/",
+   "date": "2026-09-05"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC 325: Benoit Saint-Denis Puts Away Dan Hooker",
+   "url": "https://cagesidepress.com/2026/01/31/ufc-325-benoit-saint-denis-puts-away-dan-hooker",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Renato Moicano calls Ortega vs. Hooker 'worst fight in the UFC'",
+   "url": "https://www.sherdog.com/news/news/Renato-Moicano-calls-Ortega-vs-Hooker-worst-fight-in-the-UFC-203390",
+   "date": "2026-10-28"
+  }
+ ],
+ "depth": "deep"
+}

@@ -1,0 +1,86 @@
+{
+ "name": "Santiago Luna",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A 22-year-old bantamweight from Tijuana ('Border Boy', Entram Gym; 8-1, 2-1 UFC), born in San Diego and a three-time national Greco-Roman champion (Wikipedia). Took two of his three UFC fights as a late replacement: an R1 KO of Quang Le on under two weeks' notice, and a fight with Bryce Mitchell that he lost by arm-triangle eight seconds from the end. In between he beat Angel Pacheco 30-27 x3.",
+ "how_they_fight": {
+  "Striking": "Fast, with knees and body hooks as his main weapons; Cageside notes an 'obvious speed advantage' in the pocket against Pacheco and his 'patented knee' (he ended that fight with a flying knee). Floored Quang Le with a left hook; our data has two knockdowns in that fight. About 3.4 significant strikes a minute and he absorbs only 2.4. Our data has him out-landing Pacheco 131-56.",
+  "Grappling": "Wrestler with submissions: four submission wins (R1, R1, R2, R3) on the regional scene. 5 of 5 takedowns against Pacheco in our data, and a jumping guillotine in R3 (Cageside). Threatened a d'arce against Mitchell. Gets back up quickly from bottom (Pacheco).",
+  "Defense": "Takedown defense is about 59%. Mitchell took him down twice, reversed him repeatedly and held him for 700 seconds in our data, taking the back and mount before the R3 arm-triangle (4:52). Le buckled him early with a punch and a head kick (Cageside). Never stopped by strikes.",
+  "Pace & cardio": "Seven stoppage wins: four in R1, one in R2, two in R3 (both regional). His decision over Pacheco was strongest in R3 against a tired opponent (Cageside). His one loss came at the very end of R3 after being controlled for most of the fight, and he started R3 aggressively with a takedown, so no clear fade, but he gives up position late in scrambles.",
+  "Fight IQ": "Aggressive and willing to scramble; young and still learning. Gave up his back in R3 against Mitchell while hunting a finish (Cageside)."
+ },
+ "patterns": [
+  "Knees and body hooks in the pocket, with speed",
+  "Greco-Roman takedowns and guillotine/d'arce threats",
+  "Two of three UFC fights on short notice",
+  "Finishes come at any point: four R1, one R2, two R3"
+ ],
+ "concerns": [
+  "Bottom position and scrambles against a strong top grappler (Mitchell)",
+  "Young, with nine pro fights",
+  "Low takedown defense number for a wrestler"
+ ],
+ "keys_to_beat": [
+  "Win the clinch and get on top; ride him rather than scramble",
+  "Make him strike at range, away from his knees",
+  "Watch the neck when shooting on him"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Aleksandre Topuria on the Qatar card; his first UFC fight with a full camp since February.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-06-06",
+   "text": "Lost to Bryce Mitchell by arm-triangle at 4:52 of R3, on short notice replacing Victor Henry. First pro loss.",
+   "source": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-bryce-mitchell-locks-up-late-sub-on-santiago-luna/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Santiago Luna (fighter)",
+   "url": "https://en.wikipedia.org/wiki/Santiago_Luna_(fighter)",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Vegas 118: Bryce Mitchell Locks Up Late Sub On Santiago Luna",
+   "url": "https://cagesidepress.com/2026/06/06/ufc-vegas-118-bryce-mitchell-locks-up-late-sub-on-santiago-luna/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "UFC Mexico City: Promising Santiago Luna Shines Against Angel Pacheco",
+   "url": "https://cagesidepress.com/2026/02/28/ufc-mexico-city-promising-santiago-luna-shines-against-angel-pacheco",
+   "date": "2026-02-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Santiago Luna Turns Short Notice Call Into Highlight Reel KO",
+   "url": "https://cagesidepress.com/2025/09/13/santiago-luna-turns-short-notice-call-into-highlight-reel-ko",
+   "date": "2025-09-13"
+  }
+ ],
+ "depth": "moderate"
+}

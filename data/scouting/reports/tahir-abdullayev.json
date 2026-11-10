@@ -1,0 +1,73 @@
+{
+ "name": "Tahir Abdullayev",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "An Azerbaijani welterweight nicknamed 'Tank' (20-3 in our data; LowKick lists 22-3; age 30) who debuted in the UFC in June in Baku with a R3 TKO of the previously unbeaten Jefferson Nascimento. A stoppage-heavy regional record: 18 of his 20 wins are finishes. He replaced Akbar Abdullaev as Jake Matthews's opponent after a reported matchmaking mix-up.",
+ "how_they_fight": {
+  "Striking": "Forward-walking pressure fighter. Against Nascimento he struggled to cut off the cage and kept biting on feints, and was outlanded in R2 as he came forward (Cageside, LowKick). Eleven KO/TKO wins, seven of them in R1, but UFC sample is one fight: 37 of 87 significant strikes landed against 35.",
+  "Grappling": "The UFC finish came from wrestling: an early R3 takedown, then well-timed takedowns whenever Nascimento opened up, and heavy punches and hammerfists from top (Cageside). Seven submission wins on the regional scene. About 1.7 takedowns per 15 at 35%.",
+  "Defense": "Takes some counters on the way in (Nascimento's right hands and leg kicks, per LowKick). Never stopped by strikes. His three losses: a 2018 R2 submission to Roman Bogatov (M-1) and two five-round decisions at UAE Warriors (Josh Togo 2022, Khotam Boynazarov 2024). Takedown defense about 67%.",
+  "Pace & cardio": "Mostly an early finisher: of 18 stoppage wins, 10 came in R1, 6 in R2 and 2 in R3. The UFC debut was a slow build, though, with a quiet R1 and a finish at 4:28 of R3, so he can keep pressing for 15 minutes. Both five-round fights went to the judges and he lost both, which hints he is less effective over long fights.",
+  "Fight IQ": "Patient enough to switch to wrestling once striking wasn't working (Cageside). Footwork and range control were the weak points in his debut. The stoppage was criticised as early: Cageside said only a few hammerfists were landing, and Nascimento protested right away (LowKick)."
+ },
+ "patterns": [
+  "Pressure forward, then shoots when the opponent opens up",
+  "Heavy ground-and-pound from top",
+  "18 of 20 wins by stoppage; 10 in R1",
+  "Lost both of his five-round fights on points"
+ ],
+ "concerns": [
+  "Only one UFC fight, and its stoppage was disputed",
+  "Struggled to cut off a mobile opponent and bit on feints",
+  "Record differs by source (20-3 in our data, 22-3 per LowKick)",
+  "Short build-up: booked in place of Akbar Abdullaev"
+ ],
+ "keys_to_beat": [
+  "Move and counter as he walks in; he has trouble cutting off the cage",
+  "Defend the takedown when throwing combinations; he times shots off opponents' offense",
+  "Threaten from bottom; his ground-and-pound leaves openings for submissions"
+ ],
+ "news": [
+  {
+   "date": "2026-11-10",
+   "text": "Replaces Akbar Abdullaev against Jake Matthews; Wikipedia says the first pairing was the promotion's mistake. Listed on the UFC.com prelims.",
+   "source": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling"
+  },
+  {
+   "date": "2026-06-27",
+   "text": "UFC debut in Baku: TKO of Jefferson Nascimento at 4:28 of R3 after takedowns and hammerfists; Cageside called the stoppage early.",
+   "source": "https://cagesidepress.com/2026/06/27/tahir-abdullayev-stops-jefferson-nascimento-in-controversial-ufc-baku-debut/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Tahir Abdullayev Stops Jefferson Nascimento in Controversial UFC Baku Debut",
+   "url": "https://cagesidepress.com/2026/06/27/tahir-abdullayev-stops-jefferson-nascimento-in-controversial-ufc-baku-debut/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Pranav Pandey",
+   "title": "UFC Baku: Tahir Abdullayev Spoils Jefferson Nascimento's Perfect Record In Debated Stoppage",
+   "url": "https://www.lowkickmma.com/tahir-abdullayev-controversial-tko-ufc-baku/",
+   "date": "2026-06-27"
+  }
+ ],
+ "depth": "moderate"
+}

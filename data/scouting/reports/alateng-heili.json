@@ -1,0 +1,92 @@
+{
+ "name": "Alateng Heili",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC 334: Gane vs. Hokit",
+ "summary": "A Chinese bantamweight from Inner Mongolia ('The Mongolian Knight', also listed as Heili Alateng or Alatengheili; 18-10-2; 6-3-1 UFC; age 34) with a freestyle wrestling base. He replaced the injured Adrian Yanez against unbeaten prospect Juan Diaz at UFC 334. The booking was first reported on November 6, eight days before the fight; he will be fighting seven weeks after his split-decision win over John Castaneda.",
+ "how_they_fight": {
+  "Striking": "Pressure striker who marches forward with a jab and heavy right hands and goes to the body (Cageside, on Castaneda). About 3.8 significant strikes landed and absorbed per minute. Five KO/TKO wins, the most recent a 47-second TKO of Kevin Croom in 2022.",
+  "Grappling": "Wrestling is his base (Wikipedia). He mixes body shots with level changes. Against Castaneda he took him down in R3, kneed his thighs from top and stayed on him through escape attempts (Cageside). About 1.4 takedowns per 15 at 36%. Three submission wins, none since 2015.",
+  "Defense": "Durable: he hasn't been stopped since Kai Asakura knocked him out in 29 seconds in 2017. All three UFC losses were decisions (Casey Kenney, Chris Gutierrez, Da'Mon Blackshear). Takedown defense around 62%. He lost a point for repeatedly grabbing the fence against Gustavo Lopez (Wikipedia).",
+  "Pace & cardio": "A decision fighter: ten of his 18 wins and six of his ten losses went to the judges, and nine of his ten UFC fights went the distance. Stoppage wins: four in R1, four in R2; none in R3. Stoppage losses: two in R1, two in R2, all before 2018. He was still pressing at the end of R2 and wrestling hard in R3 against Castaneda, so his late-round output holds up.",
+  "Fight IQ": "Experienced and steady. Has alternated wins and losses over his last four fights (2-2), and his last two wins came on split decisions."
+ },
+ "patterns": [
+  "Forward pressure with jab, right hand and body work",
+  "Level changes and late takedowns to steal close rounds",
+  "Goes the distance: 9 of 10 UFC fights",
+  "Not stopped since 2017"
+ ],
+ "concerns": [
+  "Eight days' notice against a younger, unbeaten opponent",
+  "Close fights: two of his last three results were split decisions or losses",
+  "Juan Diaz is a strong wrestler (about 3.7 takedowns per 15, per our data) who could take Heili's takedown game away",
+  "Sources disagree on his recent form: MiddleEasy says three straight wins, but our data and MMA Junkie have him losing to Blackshear in 2025"
+ ],
+ "keys_to_beat": [
+  "Win the wrestling exchanges and keep him off top position",
+  "Use range and kicks rather than standing in his pocket",
+  "Push the pace early; he is on short notice"
+ ],
+ "news": [
+  {
+   "date": "2026-11-06",
+   "text": "Reported as Juan Diaz's new opponent at UFC 334, replacing Adrian Yanez (injured, withdrew in mid-October). Heavy reported it first and both fighters confirmed on social media, per MMA Junkie. That is eight days before the Nov. 14 card.",
+   "source": "https://sports.yahoo.com/articles/hot-prospect-gets-ufc-334-004029780.html"
+  },
+  {
+   "date": "2026-11-07",
+   "text": "Heavy called him a late-notice opponent with plenty of UFC experience and expects Diaz to be the favourite.",
+   "source": "https://sports.yahoo.com/articles/ufc-334-card-gets-booking-053805923.html"
+  },
+  {
+   "date": "2026-09-26",
+   "text": "Beat John Castaneda by split decision (29-28, 28-29, 29-28) after a R3 takedown and top control.",
+   "source": "https://cagesidepress.com/2026/09/26/ufc-vegas-121-alateng-heili-claims-split-decision-in-close-fight-with-john-castaneda/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Nolan King",
+   "title": "Hot prospect gets new UFC 334 opponent",
+   "url": "https://sports.yahoo.com/articles/hot-prospect-gets-ufc-334-004029780.html",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Yahoo Sports (Heavy)",
+   "author": "Adam Martin",
+   "title": "UFC 334 Card Gets Late Booking",
+   "url": "https://sports.yahoo.com/articles/ufc-334-card-gets-booking-053805923.html",
+   "date": "2026-11-07"
+  },
+  {
+   "outlet": "MiddleEasy",
+   "author": "Jake Blend",
+   "title": "Juan Diaz vs. Alatengheili Reported For UFC 334 In New York",
+   "url": "https://middleeasy.com/mma-news/juan-diaz-alatengheili-reported-ufc334-new-york/",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC 334",
+   "url": "https://en.wikipedia.org/wiki/UFC_334",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Alateng Heili",
+   "url": "https://en.wikipedia.org/wiki/Alateng_Heili",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 121: Alateng Heili Claims Split Decision In Close Fight with John Castaneda",
+   "url": "https://cagesidepress.com/2026/09/26/ufc-vegas-121-alateng-heili-claims-split-decision-in-close-fight-with-john-castaneda/",
+   "date": "2026-09-26"
+  }
+ ],
+ "depth": "moderate"
+}

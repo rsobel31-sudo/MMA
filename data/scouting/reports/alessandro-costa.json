@@ -1,0 +1,98 @@
+{
+ "name": "Alessandro Costa",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A flyweight who built his record on the Mexican regional scene (17-5; 5-3 UFC; age 31 in our data) and is on a three-fight finishing streak in 2026: R2 TKO of Stewart Nicoll, R1 TKO of Matt Schnell on nine days' notice, and an R2 rear-naked choke of Cody Durden at UFC 329. He now gets a rematch with Amir Albazi, who knocked him out in R3 in his 2022 UFC debut.",
+ "how_they_fight": {
+  "Striking": "Counter-puncher with power: overhand rights against Schnell and hooks against Durden (Cageside). About 0.8 knockdowns per 15; seven KO/TKO wins. Our data has him landing 19 of 23 against Schnell. Throws spinning kicks. Output is moderate (about 3.5 a minute).",
+  "Grappling": "Seven submission wins, six of them in R1 on the regional scene. Finishes from the back: body triangle to RNC against Durden. Swept Alden Coria with a kimura and took his back (Cageside). Takedown defense is strong (about 81%); Cageside noted it held up early against Albazi.",
+  "Defense": "Stopped three times: Uriel Cossio R2 (2016), Albazi R3 (2022: dropped in R2 and R3, controlled for 354 seconds in our data) and Coria R3 (2025, hampered by a foot injury per Cageside). Also lost a decision to Steve Erceg, who held him for 389 seconds in our data.",
+  "Pace & cardio": "Starts fast, struggles late. Fourteen stoppage wins: nine in R1, four in R2, one in R3 (2021). Both UFC stoppage losses came in R3 after he'd lost the earlier rounds. His one five-round fight (2020) was a decision win. His recent wins all ended inside two rounds.",
+  "Fight IQ": "Opportunistic; says he knew the Durden finish was 'just a matter of time' once he got position. Wants a ranked opponent next (Cageside). Willing to take short-notice fights."
+ },
+ "patterns": [
+  "R1-R2 finisher: 13 of 14 stoppage wins inside two rounds",
+  "Counter right hand and hooks",
+  "Back takes and rear-naked chokes",
+  "Both UFC stoppage losses in R3"
+ ],
+ "concerns": [
+  "Previous knockout loss to this opponent",
+  "Late rounds against a patient grappler",
+  "Bottom position when out-wrestled (Albazi, Erceg)"
+ ],
+ "keys_to_beat": [
+  "Survive his first two rounds, then wrestle him in R3",
+  "Stay patient and don't walk onto his counter right",
+  "Clinch and control him against the fence"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked in a rematch with Amir Albazi on the Qatar prelims.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-07-11",
+   "text": "Submitted Cody Durden with a rear-naked choke at 2:19 of R2 at UFC 329.",
+   "source": "https://cagesidepress.com/2026/07/11/alessandro-costa-submits-durden-in-second-round-at-ufc-329/"
+  },
+  {
+   "date": "2026-06-06",
+   "text": "Stopped Matt Schnell at 2:32 of R1 at a catchweight after taking the fight on nine days' notice.",
+   "source": "https://cagesidepress.com/2026/06/06/short-notice-opportunity-pays-off-for-alessandro-costa-who-finishes-matt-schnell-at-ufc-vegas-118/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Nick Holt",
+   "title": "Alessandro Costa Submits Durden in Second Round at UFC 329",
+   "url": "https://cagesidepress.com/2026/07/11/alessandro-costa-submits-durden-in-second-round-at-ufc-329/",
+   "date": "2026-07-11"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "Short-notice Opportunity Pays Off for Alessandro Costa, Who Finishes Matt Schnell at UFC Vegas 118",
+   "url": "https://cagesidepress.com/2026/06/06/short-notice-opportunity-pays-off-for-alessandro-costa-who-finishes-matt-schnell-at-ufc-vegas-118/",
+   "date": "2026-06-06"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Destiny McCubbin, Eddie Law",
+   "title": "Alessandro Costa Finishes Matt Schnell, Sets Sights On Ranked Opponent",
+   "url": "https://cagesidepress.com/2026/06/08/alessandro-costa-finishes-matt-schnell-sets-sights-on-ranked-opponent/",
+   "date": "2026-06-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "Alden Coria Stuns Alessandro Costa with Breakout Win at Noche UFC",
+   "url": "https://cagesidepress.com/2025/09/13/alden-coria-stuns-alessandro-costa-with-breakout-win-at-noche-ufc",
+   "date": "2025-09-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 66: Amir Albazi Halts Newcomer Alessandro Costa In His Tracks",
+   "url": "https://cagesidepress.com/2022/12/17/ufc-vegas-66-amir-albazi-vs-alessandro-costa",
+   "date": "2022-12-17"
+  }
+ ],
+ "depth": "moderate"
+}

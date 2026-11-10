@@ -1,0 +1,86 @@
+{
+ "name": "Asu Almabayev",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "Kazakh flyweight (24-3, 7-1 UFC, age 33) and one of the heaviest grapplers in the division. He has won three straight since his only UFC loss, a short-notice main-event TKO by Manel Kape in 2025, and submitted Charles Johnson with a rare Suloev stretch in June.",
+ "how_they_fight": {
+  "Striking": "Functional, not a weapon: about 2.7 significant strikes a minute. Uses inside leg kicks and overhand rights to close distance (Cageside Press).",
+  "Grappling": "Elite chain wrestler: about 4.2 takedowns per 15 minutes and control for more than 40% of fight time. Had about nine and a half minutes of control against CJ Vergara, over 11 against Jose Johnson and almost 9 against Charles Johnson. Takes the back and finishes there: 11 submission wins. Against Johnson he took him down in R2 and R3, took the back and finished with a Suloev stretch at 3:33 of R3 (Cageside).",
+  "Defense": "Takedown defense is only average (55%); Alex Perez took him down three times. Both career stoppage losses were R3 TKOs: Tagir Ulanbekov (2017) and Kape (2025). Against Kape his takedowns were stuffed (0 for 6 in our data), he took knees and elbows on entries, and he was stopped after turning away with an eye problem (Cageside).",
+  "Pace & cardio": "A grinder who gets stronger. Of 14 stoppage wins, 4 came in R1, 7 in R2 and 3 in R3; his last two UFC finishes were both R3 submissions (Perez, Johnson). Ten wins went the distance. His only losses came in R3 or on the cards, so he tends to fade only when he can't get the fight down.",
+  "Fight IQ": "Patient and methodical. When the takedown isn't there (Kape), he has no strong plan B on the feet."
+ },
+ "patterns": [
+  "Chain wrestling into back control",
+  "Late finisher: last two UFC finishes in R3",
+  "Huge control time",
+  "Struggles when takedowns are stuffed"
+ ],
+ "concerns": [
+  "Facing a fighter with strong takedown defense",
+  "Striking is limited",
+  "Both stoppage losses came in R3"
+ ],
+ "keys_to_beat": [
+  "Stuff the first takedowns and punish entries with knees",
+  "Make him strike for long spells",
+  "Get up fast if taken down"
+ ],
+ "news": [
+  {
+   "date": "2026-09-24",
+   "text": "Booked against Kyoji Horiguchi at UFC Qatar; Heavy.com lists him No. 7 in the media rankings and on a three-fight win streak.",
+   "source": "https://heavy.com/sports/ufc/high-level-flyweight-added-ufc-qatar/"
+  },
+  {
+   "date": "2026-06-27",
+   "text": "Submitted Charles Johnson with a Suloev stretch at 3:33 of R3 at UFC Baku.",
+   "source": "https://cagesidepress.com/2026/06/27/ufc-baku-asu-almabayev-caps-off-stellar-showing-against-charles-johnson-with-rare-submission/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Heavy.com",
+   "author": "Marcel Dorff",
+   "title": "High-Level Flyweight Bout Added to UFC Qatar",
+   "url": "https://heavy.com/sports/ufc/high-level-flyweight-added-ufc-qatar/",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Baku: Asu Almabayev Caps Off Stellar Showing Against Charles Johnson with Rare Submission",
+   "url": "https://cagesidepress.com/2026/06/27/ufc-baku-asu-almabayev-caps-off-stellar-showing-against-charles-johnson-with-rare-submission/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 103: Eye Poke Undetected by Ref, Manel Kape Gets Stoppage Over Asu Almabayev",
+   "url": "https://cagesidepress.com/2025/03/01/ufc-vegas-103-eye-poke-undetected-by-ref-manel-kape-gets-stoppage-over-asu-almabayev",
+   "date": "2025-03-01"
+  }
+ ],
+ "depth": "moderate"
+}

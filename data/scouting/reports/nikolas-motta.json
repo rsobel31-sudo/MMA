@@ -1,0 +1,91 @@
+{
+ "name": "Nikolas Motta",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A Brazilian lightweight brawler (15-6, 1 NC; 3-3, 1 NC UFC; age 34) with real power and a habit of exchanging. He hasn't fought since June 2025, when Nazim Sadykhov stopped him in R2 of a Fight of the Night war that left him with a jaw broken badly enough to need titanium plates. Faces Road to UFC winner Dom Mar Fan in his return.",
+ "how_they_fight": {
+  "Striking": "Aggressive, all-in puncher: ten KO/TKO wins, eight in R1, and about 0.9 knockdowns per 15. He dropped Tom Nolan with a right hand and finished him at 1:03 of R1 as an underdog (Cageside), and floored Maheshate twice with left hooks (Cageside). Low accuracy (36%).",
+  "Grappling": "Little: no submission wins in our data and almost no takedown offense. Went for a rear-naked choke against Maheshate but couldn't finish (Cageside).",
+  "Defense": "The big issue. He absorbs about 5.6 significant strikes a minute with 45% defense. Five of his six losses are knockouts (three in R1, two in R2), including three in the UFC (Jim Miller R2, Manuel Torres R1, Sadykhov R2). Maheshate dropped him with a knee in R1. Takedown defense is decent (about 68%), though Trey Ogden held him down for about 4:28 before their no contest.",
+  "Pace & cardio": "Front-loaded. Of ten stoppage wins, eight came in R1, one in R2, one in R3. He rushed Sadykhov in R1 and may have punched himself out (Cageside); he looked tired late against Maheshate but still won R3. Five decision wins, one a four-round fight. Stoppage losses: three in R1, three in R2 (two KOs, one 2013 sub).",
+  "Fight IQ": "Willing to brawl, which brings wins and losses. Opponents who weather the first burst tend to catch him."
+ },
+ "patterns": [
+  "Fast starter: eight of ten stoppage wins in R1",
+  "Throws heavy hooks and right hands in exchanges",
+  "Hittable; five KO losses",
+  "Fades after an all-out first round"
+ ],
+ "concerns": [
+  "17 months out of action after a broken jaw that needed titanium plates",
+  "Age 34 and chin wear",
+  "Faces a grappler; Motta has little ground game"
+ ],
+ "keys_to_beat": [
+  "Survive his opening burst, then make him work in R2-R3",
+  "Wrestle and control; he offers little off his back",
+  "Body work: Sadykhov broke him down with body shots"
+ ],
+ "news": [
+  {
+   "date": "2026-10-30",
+   "text": "Booked against Dom Mar Fan at UFC Qatar; both are coming off losses. Not yet on the UFC.com event page.",
+   "source": "https://cagesidepress.com/2026/10/30/two-fights-officially-announced-for-ufc-qatar/"
+  },
+  {
+   "date": "2025-07-02",
+   "text": "Said his jaw was fractured in the Sadykhov fight and fixed with titanium plates.",
+   "source": "https://www.si.com/fannation/mma/news/ufc-jaw-injury-fight-nikolas-motta"
+  },
+  {
+   "date": "2025-06-21",
+   "text": "Lost to Nazim Sadykhov by R2 TKO (4:17) after a heavy right hand.",
+   "source": "https://cagesidepress.com/2025/06/21/nazim-sadykhov-goes-to-war-with-motta-takes-r2-tko-win/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Two Fights Officially Announced for UFC Qatar",
+   "url": "https://cagesidepress.com/2026/10/30/two-fights-officially-announced-for-ufc-qatar/",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Nazim Sadykhov Goes To War With Motta, Takes R2 TKO Win",
+   "url": "https://cagesidepress.com/2025/06/21/nazim-sadykhov-goes-to-war-with-motta-takes-r2-tko-win/",
+   "date": "2025-06-21"
+  },
+  {
+   "outlet": "Sports Illustrated (FanNation)",
+   "author": "Drew Beaupre",
+   "title": "UFC Baku fighter details grisly injury sustained in epic 'Fight of the Night'",
+   "url": "https://www.si.com/fannation/mma/news/ufc-jaw-injury-fight-nikolas-motta",
+   "date": "2025-07-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 84: Nikolas Motta Floors Tom Nolan Early",
+   "url": "https://cagesidepress.com/2024/01/13/ufc-vegas-84-nikolas-motta-floors-tom-nolan-early/",
+   "date": "2024-01-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Nikolas Motta Kicks Off UFC Macau with Decision Over Maheshate",
+   "url": "https://cagesidepress.com/2024/11/23/nikolas-motta-kicks-off-ufc-macau-with-decision-over-maheshate/",
+   "date": "2024-11-23"
+  }
+ ],
+ "depth": "moderate"
+}

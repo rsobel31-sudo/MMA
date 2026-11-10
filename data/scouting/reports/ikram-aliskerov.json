@@ -1,0 +1,86 @@
+{
+ "name": "Ikram Aliskerov",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A Dagestani middleweight (18-2; 5-1 UFC; age 34 in our data) and combat sambo world champion (Cageside) out of KHK MMA. His only losses are first-round knockouts to Khamzat Chimaev (Brave, 2019) and Robert Whittaker (2024, a short-notice main event in only his third UFC fight). He has won three straight since, the last two by wrestling-heavy 30-27 decisions over Jun Yong Park and Brunno Ferreira.",
+ "how_they_fight": {
+  "Striking": "Accurate and powerful: about 5.2 significant strikes a minute at 57%, 0.65 knockdowns per 15, and seven KO/TKO wins (three in the UFC, all in R1: Hawes, Alves, Muniz). Uses a jab, leg kicks, teeps and straight punches; landed a knee before his R1 takedown of Ferreira and met Ferreira's R3 rush with straight shots (Cageside).",
+  "Grappling": "His base. About 3.3 takedowns per 15 at 59%. Our data has him at 5 of 7 takedowns and 367 seconds of control against Park, and 5 of 6 with 533 seconds against Ferreira. He took Ferreira down in every round and threatened several submissions (Cageside, LowKick), and ended the Park fight on the back with a body triangle. Five career submission wins. Cageside noted he couldn't hold Park down after early takedowns and 'didn't do much on top' in R2.",
+  "Defense": "Solid takedown defense (about 72%). His defensive hole is on the feet against elite strikers: both losses were R1 knockouts by strikes (Chimaev 2:26, Whittaker 1:49). Our data has Whittaker out-landing him 14-5 before the finish. Absorbs about 3.7 a minute.",
+  "Pace & cardio": "A fast starter who can also grind. Twelve stoppage wins: eight in R1, one in R2, three in R3 (all pre-UFC). His last two fights went the full 15 minutes with takedowns late, including a key R3 takedown under Park's pressure (Cageside), so he hasn't faded. Both losses came early in R1. Said after the Park fight that he never gets tired in three-round sparring and that his plan was to feel Park out rather than pressure him; his corner wasn't happy with how cautious it was (Cageside).",
+  "Fight IQ": "Disciplined and game-plan driven; takes the low-risk route once ahead. Called for a top opponent after Baku (Cageside)."
+ },
+ "patterns": [
+  "Takedowns in every round, long top control and back takes",
+  "R1 finisher before the UFC and early in his UFC run; grinding decisions lately",
+  "Both losses were R1 knockouts against elite strikers",
+  "Wins late rounds with a timely takedown"
+ ],
+ "concerns": [
+  "Chin against a big puncher early in R1",
+  "Can get cautious; his corner wanted more urgency against Park",
+  "Park got back up repeatedly early in their fight"
+ ],
+ "keys_to_beat": [
+  "Hurt him early: both losses came inside the first 2:30",
+  "Defend the first takedown and get up fast; make him work for every reset",
+  "Pressure him and make him uncomfortable, as Park did"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Jared Cannonier for the Qatar card; Wikipedia lists it on the main card.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-06-27",
+   "text": "Beat Brunno Ferreira by unanimous decision (30-27 x3) for his third straight win; called for a top opponent afterwards.",
+   "source": "https://cagesidepress.com/2026/06/27/ufc-baku-ikram-aliskerov-notches-third-straight-win-beats-brunno-ferreira/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Baku: Ikram Aliskerov Notches Third Straight Win, Beats Brunno Ferreira",
+   "url": "https://cagesidepress.com/2026/06/27/ufc-baku-ikram-aliskerov-notches-third-straight-win-beats-brunno-ferreira/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "Pranav Pandey",
+   "title": "Ikram Aliskerov Puts On Grappling Clinic Against Brunno Ferreira At UFC Baku",
+   "url": "https://www.lowkickmma.com/ikram-aliskerov-beats-brunno-ferreira-ufc-baku/",
+   "date": "2026-06-27"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Patrick Danna",
+   "title": "UFC 321: Ikram Aliskerov Outlasts Jun Yong Park In Grueling Test",
+   "url": "https://cagesidepress.com/2025/10/25/ufc-321-ikram-aliskerov-outlasts-jun-yong-park-in-grueling-test",
+   "date": "2025-10-25"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Dave Noseworthy, Jay Anderson",
+   "title": "Ikram Aliskerov's Corner Wasn't Happy with UFC 321 Performance",
+   "url": "https://cagesidepress.com/2025/10/27/ikram-aliskerovs-corner-wasnt-happy-with-ufc-321-performance",
+   "date": "2025-10-27"
+  }
+ ],
+ "depth": "moderate"
+}

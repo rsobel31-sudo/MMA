@@ -1,0 +1,92 @@
+{
+ "name": "Amir Albazi",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "An Iraqi-born flyweight raised in Sweden and based in London (17-3; age 33 per Wikipedia), listed at No. 8 by Wikipedia, who has lost two straight decisions, to Brandon Moreno (2024) and Kyoji Horiguchi (February 2026). He had heart surgery in 2023 and spine surgery in 2024 and has fought once a year or less since. Now with Great Britain Top Team (Wikipedia). This is a rematch: he knocked Alessandro Costa out in R3 in 2022.",
+ "how_they_fight": {
+  "Striking": "Patient, counter-minded and low-volume (about 2.9 significant strikes a minute at 37%). Out-landed in all three of his recent big fights in our data: 43-99 by Kara-France, 63-132 by Moreno, 16-73 by Horiguchi. Speed was the issue against Horiguchi (Cageside). He does have finishing power: dropped Costa twice, the second time with an uppercut.",
+  "Grappling": "His best route: nine submission wins (six in R1) and long control when he gets on top, such as 354 seconds against Costa and 370 against Kara-France. But recent takedown success is poor: 1 of 9 against Kara-France, 1 of 4 against Moreno, 0 of 7 against Horiguchi in our data. Cageside says Horiguchi kept escaping his clinches and body locks.",
+  "Defense": "Never stopped; all three losses were decisions (Jose Torres 2019, Moreno, Horiguchi). Absorbs about 4.1 a minute and took visible damage from both Moreno (right eye compromised) and Horiguchi (bloodied).",
+  "Pace & cardio": "Early finisher who now goes to decisions. Fourteen stoppage wins: nine in R1, four in R2, one in R3 (Costa, 2022). His last finish was that Costa fight. Since then: a disputed split over Kara-France (Wikipedia says 19 of 21 media outlets scored it for Kara-France) and two clear decision losses. Cageside notes he looked rusty early against Moreno and warmed up as it went on, and looked 'overwhelmed' by R3 against Horiguchi.",
+  "Fight IQ": "Smart, tactical, waits for openings. Layoffs (heart surgery complications, then a 15-month gap before Horiguchi) have cost him sharpness."
+ },
+ "patterns": [
+  "Patient counter-striker; low volume",
+  "Submissions and top control when he gets the takedown",
+  "Never stopped; all losses on the cards",
+  "Has been out-landed heavily in his last three big fights"
+ ],
+ "concerns": [
+  "Two straight losses and long layoffs",
+  "Recent takedown accuracy (2 of 20 across his last three fights in our data)",
+  "Health history: heart surgery (2023) and spine surgery (2024)",
+  "Several gym changes; now at Great Britain Top Team"
+ ],
+ "keys_to_beat": [
+  "Out-work him at range; volume has beaten him every time recently",
+  "Keep moving and don't let him settle into the clinch",
+  "Defend the first takedown; his chain wrestling hasn't worked lately"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked in a rematch with Alessandro Costa on the Qatar prelims.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-02-07",
+   "text": "Lost a unanimous decision to Kyoji Horiguchi (30-27, 30-27, 29-28) after more than a year out.",
+   "source": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-kyoji-horiguchi-far-too-quick-for-amir-albazi"
+  },
+  {
+   "date": "2026-11-10",
+   "text": "Wikipedia notes a withdrawal from a planned fight with Tatsuro Taira in August 2025 with an injury.",
+   "source": "https://en.wikipedia.org/wiki/Amir_Albazi"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Amir Albazi",
+   "url": "https://en.wikipedia.org/wiki/Amir_Albazi",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 113: Kyoji Horiguchi Far Too Quick for Amir Albazi",
+   "url": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-kyoji-horiguchi-far-too-quick-for-amir-albazi",
+   "date": "2026-02-07"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Brandon Moreno Puts On Clinic Against Albazi, Wants His Title Back",
+   "url": "https://cagesidepress.com/2024/11/02/brandon-moreno-puts-on-clinic-against-albazi-wants-his-title-back",
+   "date": "2024-11-02"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC Vegas 66: Amir Albazi Halts Newcomer Alessandro Costa In His Tracks",
+   "url": "https://cagesidepress.com/2022/12/17/ufc-vegas-66-amir-albazi-vs-alessandro-costa",
+   "date": "2022-12-17"
+  }
+ ],
+ "depth": "moderate"
+}

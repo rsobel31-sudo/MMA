@@ -1,0 +1,72 @@
+{
+ "name": "Jared Cannonier",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A veteran American middleweight (18-10; MMA Lab; our data lists him at 43) and former title challenger who once fought at heavyweight and light heavyweight. He has lost four of his last five: Imavov (R4 TKO), Borralho, Michael Page and, in July, Christian Leroy Duncan by decision. His only win in that run was an R4 TKO of Gregory Rodrigues in February 2025. He faces the younger, ranked grappler Ikram Aliskerov on the main card.",
+ "how_they_fight": {
+  "Striking": "Heavy hands and leg kicks; he has 11 KO/TKO wins and about 0.3 knockdowns per 15 minutes, with 50% significant accuracy. His output has dropped in recent three-rounders: our data has him out-landed 29-20 by Page and 68-15 by Duncan. Cageside describes him being out-struck for most of the Duncan fight and staggered by a spinning elbow in R2.",
+  "Grappling": "Mostly a defensive wrestler; offense is a change-up. He walked Duncan to the fence, won underhooks and held him in the clinch for the whole of R3 (Cageside). Our data credits him with 5 of 8 takedowns and over six minutes of control in that fight, and 494 seconds of control against Page, but Cageside reports only one early single-leg attempt against Duncan, so treat those control numbers with care. Two career submission wins, both before 2014.",
+  "Defense": "Takedown defense is good (about 70%), and he is hard to hold down. Stopped three times, all by strikes: Shawn Jordan R1 (2015, at heavyweight), Dominick Reyes R1 (2018, at light heavyweight) and Nassourdine Imavov R4 (2024). He has never been stopped at middleweight inside three rounds. Absorbs about 4.5 significant strikes a minute, and Duncan left visible damage on his face (LowKick).",
+  "Pace & cardio": "Early finisher in his prime, now a decision fighter. Of his 13 stoppage wins, 7 came in R1, 4 in R2, 1 in R3 (Roehrick, 2017) and 1 in R4 (Rodrigues, 2025). His last stoppage inside two rounds was Brunson in 2022. Seven of his ten losses went to the judges. He is 5-3 in five-round fights in our data (not counting the R2 Hermansson finish), so his gas tank has held up historically, but against Duncan Cageside wrote that he 'had slowed, and was covering up as much as he was fighting back', and LowKick said his output faded as the fight went on.",
+  "Fight IQ": "Experienced and patient; slows the pace and uses the clinch and fence when hurt. He survived Duncan's R1 pressure by slowing things down (Cageside). Tends to start slowly and has lost recent rounds on volume."
+ },
+ "patterns": [
+  "Power puncher whose finishes now come late, if at all (R4 TKO of Rodrigues his last stoppage)",
+  "Loses decisions to faster, higher-volume strikers (Page, Duncan, Borralho)",
+  "Good takedown defense; hard to hold down",
+  "Uses the clinch and fence to slow a fight when he's behind"
+ ],
+ "concerns": [
+  "Age and four losses in his last five",
+  "Low striking output in his last two fights (20 and 15 significant strikes landed in our data)",
+  "Facing a younger grappler who has held his last two opponents down for six and nine minutes"
+ ],
+ "keys_to_beat": [
+  "Out-work him: volume and movement beat him in both 2025-26 losses",
+  "Wrestle him late, when his output drops",
+  "Avoid standing still in front of his right hand early"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Ikram Aliskerov on the Qatar card; Wikipedia lists the bout on the main card.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-07-18",
+   "text": "Lost a unanimous decision (30-27, 30-27, 29-28) to Christian Leroy Duncan at UFC Oklahoma City. LowKick reports that he knocked Duncan down in R1; Cageside and our data do not record a knockdown.",
+   "source": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-christian-leroy-duncan-claims-biggest-win-yet-gets-past-jared-cannonier/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Oklahoma City: Christian Leroy Duncan Claims Biggest Win Yet, Gets Past Jared Cannonier",
+   "url": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-christian-leroy-duncan-claims-biggest-win-yet-gets-past-jared-cannonier/",
+   "date": "2026-07-18"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "Christian Leroy Duncan Hands Jared Cannonier Decision Loss in Back-and-Forth UFC Oklahoma City Fight",
+   "url": "https://www.lowkickmma.com/christian-leroy-duncan-hands-jared-cannonier-decision-loss-in-back-and-forth-ufc-oklahoma-city-fight/",
+   "date": "2026-07-18"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,97 @@
+{
+ "name": "Jake Matthews",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "An Australian welterweight veteran (23-8; 16-8 UFC; age 32), a jiu-jitsu black belt who has been in the UFC since 2014. He comes off a one-sided decision over Carlston Harris in May (30-25, 30-27, 30-27). His opponent changed from Akbar Abdullaev to Tahir Abdullayev after what Wikipedia describes as a matchmaking mistake by the promotion.",
+ "how_they_fight": {
+  "Striking": "Pressure boxer who walks opponents to the fence and lands in bursts, then exits (Cageside, on Harris). Modest output (about 3.6 significant strikes a minute at 42%) but enough pop to drop people: he dropped Harris in R3, and our data has knockdowns in his wins over Li, Meek, Sanchez and Fialho. Five KO/TKO wins, the last a R2 stoppage of Andre Fialho in 2022.",
+  "Grappling": "His best area. Nine submission wins, the most recent a R1 rear-naked choke of Chidi Njokuani (2025). Against Harris he stuffed takedowns, took mount, chained a mounted triangle, arm triangle and kimura, then took the back after the knockdown (Cageside). He had Neil Magny in a guillotine at the end of R1 at UFC Perth. About 0.7 takedowns per 15; he prefers to win positions in scrambles over shooting from range.",
+  "Defense": "Solid on the feet (60% striking defense, 2.9 absorbed a minute) and only stopped by strikes once (Kevin Lee, R1, 2016). His weak point is the late submission: three of his four submission losses came in R3 (Anthony Rocco Martin 2018, Sean Brady 2021, Magny 2025). Matthew Semelsberger dropped him three times in their 2022 decision, per our data. Takedown defense around 66%.",
+  "Pace & cardio": "A front-half finisher who otherwise goes the distance. Of 14 stoppage wins, 5 came in R1, 7 in R2 and 2 in R3 (the last R3 finish was 2016). Nine of his 23 wins are decisions, including five of his last eight. His late fades show up as R3 submission losses: he won the first two rounds against Magny before being choked at 3:08 of R3. Six of his eight losses went to R3 (three submissions, three decisions).",
+  "Fight IQ": "Experienced and composed; against Harris he picked his power shots once openings came (Cageside). He has had to deal with bad luck: the referee briefly stopped the Magny fight on his guillotine at the end of R1, then let it continue, and the commission denied his appeal (Sherdog)."
+ },
+ "patterns": [
+  "Pressure to the fence, boxing in bursts",
+  "Top control and submission chains from mount and the back",
+  "Twelve of 14 stoppage wins came in R1-R2",
+  "Three R3 submission losses, including Magny after winning R1-R2",
+  "Rarely knocked out: one KO loss, in 2016"
+ ],
+ "concerns": [
+  "Fading or getting caught in R3 scrambles",
+  "Opponent changed from Akbar Abdullaev to Tahir Abdullayev; a different body type to prepare for",
+  "Facing a heavy-handed, finishing-minded opponent"
+ ],
+ "keys_to_beat": [
+  "Survive his R1-R2 pressure and grappling, then push the pace in R3",
+  "Attack the neck in late scrambles; he has been submitted three times in R3",
+  "Take the centre and keep him off the fence"
+ ],
+ "news": [
+  {
+   "date": "2026-11-10",
+   "text": "First announced against Akbar Abdullaev; Wikipedia says that pairing was a matchmaking mistake by the promotion, and he now meets Tahir Abdullayev. UFC.com lists Matthews vs. Abdullayev on the prelims.",
+   "source": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling"
+  },
+  {
+   "date": "2026-11-01",
+   "text": "Jean-Paul Lebosnoyani called him out after his UFC Vegas 123 win, telling him to finish his Doha fight first.",
+   "source": "https://www.sherdog.com/news/news/JeanPaul-Lebosnoyani-calls-out-Jake-Matthews-after-UFC-Vegas-123-TKO-203445"
+  },
+  {
+   "date": "2026-05-30",
+   "text": "Beat Carlston Harris by unanimous decision (30-25, 30-27, 30-27), with a R3 knockdown; Harris had taken the fight on short notice.",
+   "source": "https://cagesidepress.com/2026/05/30/jake-matthews-dominates-harris-takes-decision-victory-in-macau/"
+  },
+  {
+   "date": "2025-10-29",
+   "text": "Australia's Combat Sports Commission upheld his R3 submission loss to Neil Magny despite the referee's brief stoppage in R1; a UFC executive had called it a mistake.",
+   "source": "https://www.sherdog.com/news/news/Australian-Commission-Denies-Jake-Matthews-Appeal-of-Loss-to-Neil-Magny-198884"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Jake Matthews (fighter)",
+   "url": "https://en.wikipedia.org/wiki/Jake_Matthews_(fighter)",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Jake Matthews Dominates Harris, Takes Decision Victory In Macau",
+   "url": "https://cagesidepress.com/2026/05/30/jake-matthews-dominates-harris-takes-decision-victory-in-macau/",
+   "date": "2026-05-30"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tristen Critchfield",
+   "title": "Australian Commission Denies Jake Matthews' Appeal of Loss to Neil Magny",
+   "url": "https://www.sherdog.com/news/news/Australian-Commission-Denies-Jake-Matthews-Appeal-of-Loss-to-Neil-Magny-198884",
+   "date": "2025-10-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jean-Paul Lebosnoyani calls out Jake Matthews after UFC Vegas 123 TKO",
+   "url": "https://www.sherdog.com/news/news/JeanPaul-Lebosnoyani-calls-out-Jake-Matthews-after-UFC-Vegas-123-TKO-203445",
+   "date": "2026-11-01"
+  }
+ ],
+ "depth": "moderate"
+}

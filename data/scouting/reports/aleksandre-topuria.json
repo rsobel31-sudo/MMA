@@ -1,0 +1,92 @@
+{
+ "name": "Aleksandre Topuria",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A Georgian bantamweight born in Germany and based in Spain (7-1; 2-0 UFC; age 30 per Wikipedia), the older brother of former two-division champion Ilia Topuria. A Greco-Roman wrestling background and BJJ black belt (Wikipedia). He has won both UFC fights by decision (Colby Thicknesse, Bekzat Almakhan) and hasn't fought since November 2025. Faces 22-year-old Santiago Luna on the prelims.",
+ "how_they_fight": {
+  "Striking": "Forward pressure behind a well-timed jab, body shots, leg kicks and an overhand right that hurt Thicknesse (Cageside). Against Almakhan he found his range in R2 and bloodied him over the last two rounds. Modest volume: about 3.2 significant strikes a minute at 47%; our data has him out-landing both UFC opponents narrowly (41-38 and 47-39).",
+  "Grappling": "Clinch throws and top control: a suplex on Thicknesse, and a throw straight to mount and a brief back take on Almakhan in R1 (Cageside). Our data has 302 and 140 seconds of control in his UFC fights. His takedown accuracy is low (about 21%; 1 of 2 and 2 of 7). Two submission wins in 2015.",
+  "Defense": "Takedown defense is a strength: he stopped all eight of Thicknesse's attempts in our data. Leg kicks are the clear problem: Almakhan hobbled him in R1-R2 and nearly dropped him with one (Cageside). His only loss was an R3 TKO in 2015 (Ivo Ivanov), before a six-year break.",
+  "Pace & cardio": "His five regional stoppages all came in R1 (two subs in 2015, three KOs in 2021-23). Both UFC wins went 15 minutes, and he got better as the fights went on: he lost early exchanges to Almakhan and won R2-R3 with pressure, and finished on top of Thicknesse in R3. His only stoppage loss came in R3.",
+  "Fight IQ": "Patient pressure fighter who adjusts mid-fight. Has been criticised for single-shot striking at range (Cageside on Thicknesse, R2)."
+ },
+ "patterns": [
+  "Pressure behind the jab; improves as the fight goes on",
+  "Clinch throws into top position and back takes",
+  "Strong takedown defense",
+  "Both UFC wins by decision"
+ ],
+ "concerns": [
+  "Leg kicks: Almakhan hobbled him",
+  "Almost a year out of action",
+  "Low output and takedown accuracy for a pressure fighter",
+  "Luna's wrestling and submissions are a different test from his two UFC opponents"
+ ],
+ "keys_to_beat": [
+  "Kick his lead leg early and often",
+  "Win R1 at range before his pressure builds",
+  "Scramble hard when he throws; don't give up the back"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Santiago Luna on the Qatar card (bantamweight, prelims per Wikipedia).",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-11-08",
+   "text": "His brother Ilia said Aleksandre's decision to stop his June title fight with Justin Gaethje may have saved his career.",
+   "source": "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540"
+  },
+  {
+   "date": "2025-11-22",
+   "text": "Beat Bekzat Almakhan by unanimous decision (30-27, 30-27, 29-28) at UFC Qatar, the same venue as this card.",
+   "source": "https://cagesidepress.com/2025/11/22/ufc-qatar-aleksandre-topuria-bloodies-bekzat-almakhan-en-route-to-decision-victory"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Aleksandre Topuria",
+   "url": "https://en.wikipedia.org/wiki/Aleksandre_Topuria",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Qatar: Aleksandre Topuria Bloodies Bekzat Almakhan En Route to Decision Victory",
+   "url": "https://cagesidepress.com/2025/11/22/ufc-qatar-aleksandre-topuria-bloodies-bekzat-almakhan-en-route-to-decision-victory",
+   "date": "2025-11-22"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC 312: Aleksandre Topuria Scores Victory In Much-Hyped Debut Against Colby Thicknesse",
+   "url": "https://cagesidepress.com/2025/02/08/ufc-312-aleksandre-topuria-scores-victory-in-much-hyped-debut-against-colby-thicknesse",
+   "date": "2025-02-08"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Ilia Topuria says brother may have saved his career in Justin Gaethje loss",
+   "url": "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540",
+   "date": "2026-11-08"
+  }
+ ],
+ "depth": "moderate"
+}

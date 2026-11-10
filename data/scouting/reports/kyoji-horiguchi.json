@@ -1,0 +1,86 @@
+{
+ "name": "Kyoji Horiguchi",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "Japanese flyweight veteran (36-6, 1 NC, age 36) and former Bellator and Rizin champion, 2-1 since his UFC return. Fast, explosive karate-based striker. Lost his last fight to Manel Kape by R3 TKO in June after leading for most of it. UFC.com lists the pair at No. 5 and No. 7; Heavy.com has Horiguchi No. 5 in the media rankings.",
+ "how_they_fight": {
+  "Striking": "Very fast in-and-out blitzer with stance switches, an overhand right and a sharp left, and leg and body kicks. Out-landed Amir Albazi 73-16 with jumping knees in R3 (Cageside Press). 15 KO/TKO wins.",
+  "Grappling": "Takes down opponents late in rounds and grinds from top: put Kape on his back in R1 and R2 and landed elbows (Cageside). Six submission wins, most recently Tagir Ulanbekov (R3, 2025).",
+  "Defense": "Hard to hit (about 67% striking defense) and tough to take down (76%): stopped all seven Albazi takedown attempts. But he has been knocked out three times since 2019: Kai Asakura R1 (2019), Sergio Pettis R4 (2021) and Kape R3 (2026), where a right hand hurt him and an uppercut finished him (Cageside).",
+  "Pace & cardio": "Keeps a high pace for 15 minutes. Of 21 stoppage wins, 10 came in R1, 4 KOs and 3 subs in R2, 3 subs in R3 and one R5 KO. Fifteen wins were decisions. Five-round record is mixed: 2-4 counting the Kape fight. His three recent KO losses came in R1, R3 and R4, so the danger stays live late.",
+  "Fight IQ": "Experienced at the top level. Fights in bursts and resets well. Against Kape he was clearly winning and got caught in an exchange."
+ },
+ "patterns": [
+  "Explosive blitzes with stance switches",
+  "Late-round takedowns to steal rounds",
+  "Excellent takedown defense",
+  "Recent KO losses to counter-punchers when trading"
+ ],
+ "concerns": [
+  "Three KO losses since 2019",
+  "Age 36 at flyweight",
+  "Coming off a stoppage loss"
+ ],
+ "keys_to_beat": [
+  "Counter his blitz entries",
+  "Chain wrestle; he defends single attempts well",
+  "Keep it close into R3"
+ ],
+ "news": [
+  {
+   "date": "2026-09-24",
+   "text": "Booked against Asu Almabayev in a three-round flyweight fight at UFC Qatar.",
+   "source": "https://heavy.com/sports/ufc/high-level-flyweight-added-ufc-qatar/"
+  },
+  {
+   "date": "2026-06-20",
+   "text": "Lost to Manel Kape by TKO at 2:42 of R3 after controlling R1-R2.",
+   "source": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-manel-kape-gets-revenge-in-come-from-behind-tko-of-kyoji-horiguchi/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Heavy.com",
+   "author": "Marcel Dorff",
+   "title": "High-Level Flyweight Bout Added to UFC Qatar",
+   "url": "https://heavy.com/sports/ufc/high-level-flyweight-added-ufc-qatar/",
+   "date": "2026-09-24"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 119: Manel Kape Gets Revenge in Come-From-Behind TKO of Kyoji Horiguchi",
+   "url": "https://cagesidepress.com/2026/06/20/ufc-vegas-119-manel-kape-gets-revenge-in-come-from-behind-tko-of-kyoji-horiguchi/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Vegas 113: Kyoji Horiguchi Far Too Quick for Amir Albazi",
+   "url": "https://cagesidepress.com/2026/02/07/ufc-vegas-113-kyoji-horiguchi-far-too-quick-for-amir-albazi",
+   "date": "2026-02-07"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,98 @@
+{
+ "name": "Diyar Nurgozhay",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A Kazakh light heavyweight (12-2; 2-2 UFC; age 30) from the 2024 Contender Series. He entered the UFC 10-0, was submitted in his first two UFC fights (after missing weight in his debut), then rebounded with a decision over Rafael Tobias in March and a R1 TKO of Bruno Lopes at the buzzer in August.",
+ "how_they_fight": {
+  "Striking": "The strength. About 4.7 significant strikes a minute at 57%, and 0.9 knockdowns per 15. Against Tobias, teeps and leg kicks kept him at range and his left hand landed repeatedly; Cageside called his counter timing sharp. Knocked Lopes down several times before stopping him at 4:59 of R1 (Yahoo/MMA Junkie).",
+  "Grappling": "Two submission wins, both early in his regional career. Wrestles a little (1.3 takedowns per 15) and has reversed bottom position, as he did against Tobias in R2 (Cageside).",
+  "Defense": "Both losses came after he was dropped and then submitted: Brendson Ribeiro hit him with a straight right in R1 and kimura'd him in R2, and Uran Satybaldiev dropped him and finished an Ezekiel choke in R1 (Cageside). Tobias took him down, mounted him, and had a Suloev stretch at the horn. Takedown defense around 72%, but the bottom game is a clear weak spot.",
+  "Pace & cardio": "Fast finisher. Of nine stoppage wins, eight came in R1 and one in R2. Three decision wins, one over five rounds (Eagle FC 2022). Against Tobias both men tired in R2 and he had to survive a late submission. Both losses were early (R1 and R2).",
+  "Fight IQ": "Has calmed down since his early UFC losses; said 'we figured out a way to move forward' (Sherdog). Grabbed the fence against Tobias without a warning (Cageside)."
+ },
+ "patterns": [
+  "Range kickboxing: teeps, leg kicks, left hand",
+  "R1 finisher: eight of nine stoppages in R1",
+  "Gets dropped, then submitted (both losses)",
+  "Weak once on his back"
+ ],
+ "concerns": [
+  "Submission defense off his back",
+  "Missed weight by 4.5 lb in his debut (Cageside)",
+  "Faces a debutant whose fights almost all end in R1"
+ ],
+ "keys_to_beat": [
+  "Take him down and attack submissions",
+  "Crowd him so he can't use teeps and range",
+  "Look for a knockdown to start a scramble"
+ ],
+ "news": [
+  {
+   "date": "2026-10-15",
+   "text": "Booked against Contender Series winner Alik Lorenz for UFC Qatar, per MMA Junkie's sources.",
+   "source": "https://sports.yahoo.com/articles/diyar-nurgozhay-vs-alik-lorenz-184019443.html"
+  },
+  {
+   "date": "2026-08-08",
+   "text": "TKO of Bruno Lopes at 4:59 of R1 after several knockdowns.",
+   "source": "https://sports.yahoo.com/articles/ufc-vegas-120-video-diyar-232050516.html"
+  },
+  {
+   "date": "2026-03-08",
+   "text": "Said many Kazakh fans gave up on him after his first two UFC losses.",
+   "source": "https://www.sherdog.com/news/news/Diyar-Nurgozhay-reveals-some-fans-deserted-him-after-early-UFC-losses-200374"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Danny Segura, Nolan King",
+   "title": "Diyar Nurgozhay vs. Alik Lorenz booked for UFC Qatar",
+   "url": "https://sports.yahoo.com/articles/diyar-nurgozhay-vs-alik-lorenz-184019443.html",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Mike Bohn",
+   "title": "UFC Vegas 120 video: Diyar Nurgozhay's TKO of Bruno Lopes beats Round 1 buzzer",
+   "url": "https://sports.yahoo.com/articles/ufc-vegas-120-video-diyar-232050516.html",
+   "date": "2026-08-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Shawn Bitter",
+   "title": "UFC 326: Diyar Nurgozhay Finally Picks Up First UFC Win, Over Rafael Tobias",
+   "url": "https://cagesidepress.com/2026/03/07/ufc-326-diyar-nurgozhay-finally-picks-up-first-ufc-win-over-rafael-tobias/",
+   "date": "2026-03-07"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Diyar Nurgozhay reveals some fans deserted him after early UFC losses",
+   "url": "https://www.sherdog.com/news/news/Diyar-Nurgozhay-reveals-some-fans-deserted-him-after-early-UFC-losses-200374",
+   "date": "2026-03-08"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Shanghai: Uran Satybaldiev Hits Rarely Seen Ezekiel Choke on Diyar Nurgozhay",
+   "url": "https://cagesidepress.com/2025/08/23/ufc-shanghai-uran-satybaldiev-hits-rarely-seen-ezekiel-choke-on-diyar-nurgozhay/",
+   "date": "2025-08-23"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "UFC Vegas 104: Brendson Ribeiro Submits Overweight Diyar Nurgozhay",
+   "url": "https://cagesidepress.com/2025/03/15/ufc-vegas-104-brendson-ribeiro-submits-overweight-diyar-nurgozhay-takes-0/",
+   "date": "2025-03-15"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,78 @@
+{
+ "name": "Alik Lorenz",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A light heavyweight prospect (8-2; UFC debut; about 6-foot-2 with a 77.5-inch reach) who won a contract on his second try on the Contender Series, knocking out Mahamed Aly at 2:23 of R1 in August. Nearly every fight he has had ended in R1, in either direction. Thin footage-based scouting available.",
+ "how_they_fight": {
+  "Striking": "Power puncher: seven of eight wins are R1 KO/TKOs. A big right hand dropped Aly before hammerfists ended it, and he stopped Gabriel Thimoteo in LFA in under 30 seconds with a right hook and ground-and-pound (Cageside).",
+  "Grappling": "One submission win (Ryan Parker, R3, LFA 2024). Little detail available on his wrestling.",
+  "Defense": "Both losses are fast knockouts: Darion Abbey at 0:33 of R1 (2021) and Abdul-Rakhman Yakhyaev at 0:30 of R1 on the 2025 Contender Series, where he landed 1 significant strike to 16 (our data). Cageside's write-up suggests he is vulnerable to fast, high-volume attackers.",
+  "Pace & cardio": "Largely unknown. Nine of his ten fights ended in R1; the exception was the R3 submission of Parker at 4:46. He has never gone to a decision.",
+  "Fight IQ": "Finish-minded: said before the Aly fight it would 'definitely' end in a finish and he wouldn't let it go to the judges (Cageside)."
+ },
+ "patterns": [
+  "R1 knockout puncher: seven R1 KO/TKOs",
+  "Never been to a decision",
+  "Both losses were R1 knockouts inside 35 seconds"
+ ],
+ "concerns": [
+  "Untested past R1; cardio unknown",
+  "Defense against a fast, accurate starter",
+  "UFC debut"
+ ],
+ "keys_to_beat": [
+  "Be careful early, test his chin and pace, and take him into R2-R3",
+  "Wrestle him; little is known about his ground defense",
+  "Lead with volume rather than trading single power shots"
+ ],
+ "news": [
+  {
+   "date": "2026-10-15",
+   "text": "Booked to debut against Diyar Nurgozhay at UFC Qatar.",
+   "source": "https://sports.yahoo.com/articles/diyar-nurgozhay-vs-alik-lorenz-184019443.html"
+  },
+  {
+   "date": "2026-08-18",
+   "text": "Won a UFC contract with a R1 KO of Mahamed Aly on the Contender Series.",
+   "source": "https://cagesidepress.com/2026/08/18/dana-whites-contender-series-season-10-week-2-results/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Danny Segura, Nolan King",
+   "title": "Diyar Nurgozhay vs. Alik Lorenz booked for UFC Qatar",
+   "url": "https://sports.yahoo.com/articles/diyar-nurgozhay-vs-alik-lorenz-184019443.html",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Redemption: Second Chances on Dana White's Contender Series — Alik Lorenz",
+   "url": "https://cagesidepress.com/2026/08/18/redemption-second-chances-on-dana-whites-contender-series-alik-lorenz/",
+   "date": "2026-08-18"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Daniel Vreeland",
+   "title": "Alik Lorenz Finds Strength in Prior DWCS Experience",
+   "url": "https://cagesidepress.com/2026/08/17/alik-lorenz-finds-strength-in-prior-dwcs-experience/",
+   "date": "2026-08-17"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Dana White's Contender Series Season 10, Week 2 Results",
+   "url": "https://cagesidepress.com/2026/08/18/dana-whites-contender-series-season-10-week-2-results/",
+   "date": "2026-08-18"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  }
+ ],
+ "depth": "thin"
+}

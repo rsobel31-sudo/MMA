@@ -1,0 +1,84 @@
+{
+ "name": "Dom Mar Fan",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "An Australian lightweight (9-3; 1-1 UFC; age 27; about 183 cm) who won the Road to UFC season 4 lightweight tournament, beating Sang Wook Kim 30-27 x3 at UFC 325. He was then heel-hooked by Kody Steele in R1 in May. Sherdog calls his grappling-based style 'funky and aggressive'.",
+ "how_they_fight": {
+  "Striking": "Secondary but usable: his jab was his best weapon in R2 against Kim, he used elbows in R1, and he fought on the outside in R3 (Cageside). One KO/TKO win. Low knockdown rate (0.07 per 15). Lands about 4.0 a minute at 50% and absorbs 2.7.",
+  "Grappling": "His base: wrestling and scrambles. He reversed Kim's takedowns and back take twice, and his best round came from a reversal into a top position against the cage (Cageside). In the Road to UFC rounds he controlled Yuji Ephoevi-Ga for about 8 minutes and Jae Hyun Park for about 10, per our data. Three submission wins.",
+  "Defense": "All three losses are submissions: twice to Quillan Salkilld on the regionals (both R2) and a R1 leg lock to Kody Steele (LowKick lists a heel hook; a UFC post called it a kneebar). He let Kim back him onto the fence in R3 (Cageside). Never knocked out. Sherdog's Tom Feely said he 'reads as somewhat unathletic'.",
+  "Pace & cardio": "A grinder who goes the distance: five of his nine wins are decisions, including his last three wins. His four finishes came in R1 (two subs) and R2 (one sub, one TKO). Kim tired in R2 while Mar Fan kept going (Cageside). Submission losses: one in R1, two in R2.",
+  "Fight IQ": "Patient and positional; wins by staying busy in scrambles. Can be drawn into leg-lock exchanges."
+ },
+ "patterns": [
+  "Wrestling, reversals and top control",
+  "Goes to decision: his last three wins all went 15 minutes",
+  "All three losses by submission",
+  "Uses the jab on the outside when the wrestling stalls"
+ ],
+ "concerns": [
+  "Leg locks and submission defense",
+  "Athleticism against quicker opponents (Sherdog)",
+  "Coming off a R1 submission loss"
+ ],
+ "keys_to_beat": [
+  "Attack submissions in scrambles, especially legs",
+  "Out-athlete him early and keep him off the fence",
+  "Strike in open space; he has little power"
+ ],
+ "news": [
+  {
+   "date": "2026-10-30",
+   "text": "Booked against Nikolas Motta at UFC Qatar; not yet on the UFC.com event page.",
+   "source": "https://cagesidepress.com/2026/10/30/two-fights-officially-announced-for-ufc-qatar/"
+  },
+  {
+   "date": "2026-05-02",
+   "text": "Submitted by Kody Steele at 3:56 of R1 at UFC Perth.",
+   "source": "https://www.lowkickmma.com/ufc-perth-results-highlights/"
+  },
+  {
+   "date": "2026-01-31",
+   "text": "Won the Road to UFC lightweight final over Sang Wook Kim, 30-27 x3.",
+   "source": "https://cagesidepress.com/2026/01/31/ufc-325-dom-mar-fan-tops-sangwook-kim-in-road-to-ufc-4-lightweight-final/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Two Fights Officially Announced for UFC Qatar",
+   "url": "https://cagesidepress.com/2026/10/30/two-fights-officially-announced-for-ufc-qatar/",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Tom Feely",
+   "title": "Preview: UFC 325 Prelims - Mar Fan vs. Kim",
+   "url": "https://www.sherdog.com/news/articles/6/Preview-UFC-325-Prelims-199909",
+   "date": "2026-01-28"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 325: Dom Mar Fan Tops Sangwook Kim in Road to UFC 4 Lightweight Final",
+   "url": "https://cagesidepress.com/2026/01/31/ufc-325-dom-mar-fan-tops-sangwook-kim-in-road-to-ufc-4-lightweight-final/",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "LowKick MMA",
+   "author": "",
+   "title": "UFC Perth: Della Maddalena vs. Prates – Full Results and Highlights",
+   "url": "https://www.lowkickmma.com/ufc-perth-results-highlights/",
+   "date": "2026-05-02"
+  }
+ ],
+ "depth": "moderate"
+}

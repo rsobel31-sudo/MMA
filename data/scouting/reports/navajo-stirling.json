@@ -1,0 +1,96 @@
+{
+ "name": "Navajo Stirling",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "Unbeaten New Zealand light heavyweight (11-0, 6-0 UFC, age 29) from City Kickboxing and the Contender Series. He has stopped his last three opponents, including former champion Jan Blachowicz in round one in August. This is his first UFC main event and first scheduled five-rounder in the UFC; he opened as a -138 favourite.",
+ "how_they_fight": {
+  "Striking": "Clean, efficient kickboxer: about 5.9 significant strikes landed a minute against 2.7 absorbed, at 53% accuracy. Works a sharp jab and one-twos, knees and spinning elbows (Cageside Press on the Cutelaba fight). Dropped Blachowicz with a straight right and finished with elbows and punches at 2:56 of R1 after being bloodied and hurt early (Cageside).",
+  "Grappling": "Mainly a striker, but he can wrestle when needed: he out-controlled Ivan Erslan and Rodolfo Bellato in decision wins (3 and 1 takedowns). Against Cutelaba he was taken down 5 of 7 times and caught in a guillotine and a kimura, but reversed to top position and finished with ground strikes (R2, 3:23).",
+  "Defense": "Hard to hit cleanly (about 62% striking defense) and solid takedown defense (74%), though Cutelaba showed a strong wrestler can get him down repeatedly. He has never lost or been stopped, but he has been hurt: Blachowicz bloodied his nose and stunned him in R1.",
+  "Pace & cardio": "Gets better as fights go on. Seven stoppage wins: three R1, three R2, one R3. In the UFC: R2 TKOs of Bruno Lopes and Cutelaba, an R1 TKO of Blachowicz, and three clear three-round decisions earlier (Tokkos, Erslan, Bellato). He lost R1 to Cutelaba and came back to finish him in R2. His only five-round fight was a regional decision win in 2022; he has never gone past 15 minutes in the UFC.",
+  "Fight IQ": "Patient; stays at range when in trouble instead of rushing (Cageside on Cutelaba). Took the Blachowicz fight as a late replacement and won."
+ },
+ "patterns": [
+  "Patient jab-and-cross kickboxer who builds into finishes",
+  "Three straight stoppages, two in R2 and one in R1",
+  "Recovers well after a bad first round (Cutelaba, Blachowicz)",
+  "Can be taken down by a strong wrestler but reverses and gets up"
+ ],
+ "concerns": [
+  "Never been past three rounds in the UFC",
+  "First main event and big step up in opponent power",
+  "Has been hurt and taken down in his last two fights"
+ ],
+ "keys_to_beat": [
+  "Take him down and make him work off his back early",
+  "Pressure and land big in the first round, before he settles",
+  "Drag him into rounds four and five, where he is unproven"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked to headline UFC Qatar against former champion Jiri Prochazka.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-11-05",
+   "text": "Opened as a -138 favourite over Prochazka (+110), per MMA Junkie.",
+   "source": "https://sports.yahoo.com/articles/ufc-fight-night-294-jiri-185026074.html"
+  },
+  {
+   "date": "2026-08-01",
+   "text": "Stopped Jan Blachowicz at 2:56 of R1 at UFC Belgrade as a replacement for Bogdan Guskov.",
+   "source": "https://cagesidepress.com/2026/08/01/ufc-belgrade-navajo-stirling-capitalizes-on-short-notice-opportunity-against-jan-blachowicz/"
+  },
+  {
+   "date": "2026-11-10",
+   "text": "UFC.com lists the main-event pair at No. 2 and No. 5 at light heavyweight.",
+   "source": "https://www.ufc.com/event/ufc-fight-night-november-21-2026"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "Jiri Prochazka vs. unbeaten Navajo Stirling headlines UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Jiri-Prochazka-vs-unbeaten-Navajo-Stirling-headlines-UFC-Qatar-203016",
+   "date": "2026-09-30"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Farah Hannoun",
+   "title": "UFC Fight Night 294: Jiri Prochazka vs. Navajo Stirling odds, what to know",
+   "url": "https://sports.yahoo.com/articles/ufc-fight-night-294-jiri-185026074.html",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "UFC.com",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling (event page)",
+   "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "Navajo Stirling Survives Scare, Finishes Cutelaba at UFC Vegas 119",
+   "url": "https://cagesidepress.com/2026/06/20/navajo-stirling-survives-scare-finishes-cutelaba-at-ufc-vegas-119/",
+   "date": "2026-06-20"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Brett Cagle",
+   "title": "UFC Belgrade: Navajo Stirling Capitalizes on Short-Notice Opportunity Against Jan Blachowicz",
+   "url": "https://cagesidepress.com/2026/08/01/ufc-belgrade-navajo-stirling-capitalizes-on-short-notice-opportunity-against-jan-blachowicz/",
+   "date": "2026-08-01"
+  }
+ ],
+ "depth": "deep"
+}

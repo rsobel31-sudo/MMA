@@ -1,0 +1,91 @@
+{
+ "name": "Tallison Teixeira",
+ "updated": "2026-11-10T18:00:00+00:00",
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "summary": "A 6-foot-8 Brazilian heavyweight (9-2; 2-2 UFC; age 26, Team Lucas Mineiro per Wikipedia) and a pure first-round finisher: eight of his nine wins came in R1. He has been knocked out inside 40 seconds twice, by Derrick Lewis (0:35) and Sergei Pavlovich (0:39). His one decision was a messy win over Tai Tuivasa in which he faded badly.",
+ "how_they_fight": {
+  "Striking": "Long, heavy shots and a jab with real power: he wobbled Lewis with an early jab (POST Wrestling), and finished Justin Tafa with a knee to the body and elbow in 35 seconds. About 0.9 knockdowns per 15. Seven KO/TKO wins, all in R1.",
+  "Grappling": "Will wrestle: our data has 3 of 9 takedowns and 420 seconds of control against Tuivasa. He took Tuivasa to mount and the back in R1-R2 and looked for a rear-naked choke (Cageside). One submission win (2021, R1).",
+  "Defense": "Poor so far against UFC-level punchers: 46% striking defense. Lewis dropped him with a left hook; Pavlovich hurt him with the first right hand and dropped him with the third (Cageside). He protested both stoppages but was badly hurt in each. Tuivasa had him stumbling backwards and on his knees in R3.",
+  "Pace & cardio": "All eight stoppage wins in R1. Both losses in R1 (0:35, 0:39). His only fight past R1 was Tuivasa, where Cageside says he may have 'expended too much energy in round one', slowed in R2 and was nearly finished in R3 (29-28 x3). He is a fast starter who fades.",
+  "Fight IQ": "Aggressive starter. Mixed in wrestling against Tuivasa rather than trading, which won him the fight. Had not faced an opponent with more than seven wins before Lewis (POST Wrestling)."
+ },
+ "patterns": [
+  "R1 finisher: eight of nine wins in R1",
+  "Both losses: R1 knockouts inside 40 seconds",
+  "Wrestles when the knockout isn't there",
+  "Fades sharply after a big R1"
+ ],
+ "concerns": [
+  "Chin against heavy hitters",
+  "Cardio beyond R1",
+  "Has spent less than 17 minutes in the cage across four UFC fights"
+ ],
+ "keys_to_beat": [
+  "Make him miss early and drag him past R1",
+  "Counter hard on his entries; he gets hit coming in",
+  "Push the pace in R2-R3 when he slows"
+ ],
+ "news": [
+  {
+   "date": "2026-09-29",
+   "text": "Booked against Shamil Gaziev on the Qatar prelims.",
+   "source": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/"
+  },
+  {
+   "date": "2026-05-30",
+   "text": "Knocked out by Sergei Pavlovich at 0:39 of R1 at UFC Macau; he entered ranked No. 15 (Cageside).",
+   "source": "https://cagesidepress.com/2026/05/30/ufc-macau-sergei-pavlovich-scores-quick-ko-of-tallison-teixeira/"
+  },
+  {
+   "date": "2026-01-31",
+   "text": "Beat Tai Tuivasa by unanimous decision (29-28 x3), his first fight past R1.",
+   "source": "https://cagesidepress.com/2026/01/31/ufc-325-tallison-teixeira-goes-distance-for-first-time-beats-returning-tai-tuivasa"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "Eddie Law",
+   "title": "9 Fights Revealed For UFC Qatar Event On November 21",
+   "url": "https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/",
+   "date": "2026-09-29"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "UFC Fight Night: Procházka vs. Stirling",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Wikipedia",
+   "author": "",
+   "title": "Tallison Teixeira",
+   "url": "https://en.wikipedia.org/wiki/Tallison_Teixeira",
+   "date": "2026-11-10"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC 325: Tallison Teixeira Goes Distance for First Time, Beats Returning Tai Tuivasa",
+   "url": "https://cagesidepress.com/2026/01/31/ufc-325-tallison-teixeira-goes-distance-for-first-time-beats-returning-tai-tuivasa",
+   "date": "2026-01-31"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "Jay Anderson",
+   "title": "UFC Macau: Sergei Pavlovich Scores Quick KO of Tallison Teixeira",
+   "url": "https://cagesidepress.com/2026/05/30/ufc-macau-sergei-pavlovich-scores-quick-ko-of-tallison-teixeira/",
+   "date": "2026-05-30"
+  },
+  {
+   "outlet": "POST Wrestling",
+   "author": "Jack Wannan",
+   "title": "UFC Nashville results: Derrick Lewis hands Tallison Teixeira first loss in just 35 seconds",
+   "url": "https://www.postwrestling.com/2025/07/13/ufc-nashville-results-derrick-lewis-hands-tallison-teixeira-first-loss-in-just-35-seconds/",
+   "date": "2025-07-13"
+  }
+ ],
+ "depth": "moderate"
+}
