@@ -7425,6 +7425,10 @@
 "Isaiah Hill": {
 "stats_official": "2"
 },
+"Isis Verbeek": {
+"reach": "UFCStats only (163 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Islam Dulatov": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -9541,8 +9545,10 @@
 "stats_official": "2"
 },
 "Josefine Lindgren Knutsson": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "1",
+"stats_official": "2",
 "stats_verified": "2"
 },
 "Joselyne Edwards": {
@@ -15120,6 +15126,8 @@
 "stats_official": "1"
 },
 "Rama Supandhi": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (168 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
