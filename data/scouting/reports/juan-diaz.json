@@ -1,6 +1,6 @@
 {
  "name": "Juan Diaz",
- "updated": "2026-11-03T18:00:00+00:00",
+ "updated": "2026-11-10T18:00:00+00:00",
  "event": "UFC 334: Gane vs. Hokit",
  "summary": "A 28-year-old Peruvian bantamweight (16-1-1; 1-0 UFC), former LUX Fighting League champion, on a nine-fight win streak. He won his contract with a second-round spinning back elbow KO of Won Il Kwon and submitted Malcolm Wellmaker in R2 of his debut for a Performance of the Night bonus. His scheduled opponent Adrian Yanez withdrew in mid-October after being hospitalized; no replacement has been named as of November 3.",
  "how_they_fight": {
@@ -27,6 +27,11 @@
   "Don't give up the back when getting up"
  ],
  "news": [
+  {
+   "date": "2026-11-06",
+   "text": "Alateng Heili (18-10-2) replaced the injured Adrian Yanez on about eight days' notice.",
+   "source": "https://sports.yahoo.com/articles/hot-prospect-gets-ufc-334-004029780.html"
+  },
   {
    "date": "2026-10-19",
    "text": "Adrian Yanez withdrew from their UFC 334 bout, saying on Instagram he had been hospitalized. No replacement was announced, and SI said it was unclear whether the UFC could find one on short notice.",
@@ -85,6 +90,13 @@
    "title": "UFC 334: Gane vs. Hokit (event page)",
    "url": "https://www.ufc.com/event/ufc-334",
    "date": "2026-11-03"
+  },
+  {
+   "outlet": "Yahoo Sports (MMA Junkie)",
+   "author": "Nolan King",
+   "title": "Hot prospect gets new UFC 334 opponent",
+   "url": "https://sports.yahoo.com/articles/hot-prospect-gets-ufc-334-004029780.html",
+   "date": "2026-11-06"
   }
  ],
  "depth": "thin"

@@ -487,6 +487,19 @@ def _initial_side(text: str, bout: Dict[str, str]) -> Optional[str]:
     return hits[0] if len(hits) == 1 else None
 
 
+def _surname_side(text: str, bout: Dict[str, str]) -> Optional[str]:
+    """A pick written as just the surname, when that surname is also a method word ('Ko' for Ko Seok-hyeon)."""
+    plain = lambda s: unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().strip()  # noqa: E731
+    t = plain(text)
+    hits = [f for f in (bout["fighter_a"], bout["fighter_b"]) if t and t in plain(f).split()]
+    return hits[0] if len(hits) == 1 else None
+
+
+def clean_author(author: str) -> str:
+    """'Sumian’s Pick' (a column header read as the byline) -> 'Sumian'."""
+    return re.sub(r"[’']s\s+(?:pick|prediction)s?$", "", author.strip(), flags=re.I).strip()
+
+
 def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url: str, published: str,
             cands: Optional[List[Dict[str, str]]] = None, pending: Optional[List[Dict[str, str]]] = None) -> Tuple[List[Row], List[str]]:
     """Parsed picks -> ledger rows; picks we can't tie to one real bout and one fighter are reported, not guessed.
@@ -501,12 +514,12 @@ def resolve(B: Bouts, raw: Iterable[Tuple[str, str, str, str]], outlet: str, url
                 pending.append({"author": author, "a": fa, "b": fb, "pick": pick_text, "outlet": outlet, "url": url, "published": published[:10]})
             continue
         who, how = split_pick(pick_text)
-        side = B.side(who, bout) or B.side(pick_text, bout) or _squashed_side(pick_text, bout) or _initial_side(who or pick_text, bout)
+        side = B.side(who, bout) or B.side(pick_text, bout) or _squashed_side(pick_text, bout) or _initial_side(who or pick_text, bout) or _surname_side(who or pick_text, bout)
         if not side:
             skipped.append(f"{author}: can't tell who '{pick_text}' means in {bout['fighter_a']} vs {bout['fighter_b']}")
             continue
         method, rnd = parse_method(how or pick_text)
-        rows.append(to_row(B, bout, outlet, author.strip(), side, method, rnd, url, published))
+        rows.append(to_row(B, bout, outlet, clean_author(author), side, method, rnd, url, published))
     return rows, skipped
 
 

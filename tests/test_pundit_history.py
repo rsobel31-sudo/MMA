@@ -175,3 +175,9 @@ def test_initial_and_former_surname_picks_are_read():
     assert _initial_side("Y. Santos", bout) == "Yana Santos"
     assert _initial_side("Santos", bout) is None
     assert _initial_side("Chookagian", {"fighter_a": "Katlyn Cerminara", "fighter_b": "Manon Fiorot"}) == "Katlyn Cerminara"
+
+
+def test_surname_that_is_a_method_word_and_column_header_author():
+    from mma_predictor.pundit_history import _surname_side, clean_author
+    assert _surname_side("Ko", {"fighter_a": "Seok Hyeon Ko", "fighter_b": "Wellington Turman"}) == "Seok Hyeon Ko"
+    assert clean_author("Sumian’s Pick") == "Sumian"
