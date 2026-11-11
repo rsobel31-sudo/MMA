@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10",
+ "fetched": "2026-11-11",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -166,9 +166,9 @@
     {
      "order": 11,
      "segment": "Early preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Evan Elder",
-     "b": "Samuel Sanches",
+     "weight_class": "Bantamweight",
+     "a": "Alateng Heili",
+     "b": "Juan D\u00edaz",
      "title": false,
      "result": "",
      "decided": false,
@@ -179,12 +179,15 @@
     },
     {
      "order": 12,
-     "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Juan D\u00edaz",
-     "b": "Alateng Heili",
+     "segment": "Early preliminary card",
+     "weight_class": "Lightweight",
+     "a": "Evan Elder",
+     "b": "Samuel Sanches",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     }
@@ -361,7 +364,7 @@
   {
    "name": "UFC Fight Night: Adesanya vs. Magomedov",
    "date": "2026-12-05",
-   "venue": "ANB Arena",
+   "venue": "anb Arena",
    "location": "Riyadh, Saudi Arabia",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Adesanya_vs._Magomedov",
    "bouts": [
@@ -694,7 +697,19 @@
    "venue": "American Airlines Center",
    "location": "Dallas, Texas, U.S.",
    "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
-   "bouts": []
+   "bouts": [
+    {
+     "order": 0,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Chidi Njokuani",
+     "b": "Ignacio Bahamondes",
+     "title": false,
+     "result": "",
+     "rounds": 5,
+     "main_event": true
+    }
+   ]
   },
   {
    "name": "UFC Fight Night 297",
@@ -757,6 +772,17 @@
      "weight_class": "Welterweight",
      "a": "Daniel Rodriguez",
      "b": "Roberto Soldi\u0107",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Serhiy Sidey",
+     "b": "Louis Lee Scott",
      "title": false,
      "result": "",
      "rounds": 3,

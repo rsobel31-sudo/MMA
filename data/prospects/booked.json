@@ -1,4 +1,16 @@
 {
+ "https://www.sherdog.com/fighter/Alik-Lorenz-347505": {
+  "date": "2026-11-21",
+  "event": "UFC Fight Night 294 - Prochazka vs. Stirling",
+  "name": "Alik Lorenz",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-294-Prochazka-vs-Stirling-114295",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Procházka_vs._Stirling"
+ },
  "https://www.sherdog.com/fighter/Asaf-Chopurov-399679": {
   "date": "2026-10-24",
   "event": "UFC 333 - Volkanovski vs. Evloev",
@@ -46,6 +58,18 @@
    "Wikipedia"
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott"
+ },
+ "https://www.sherdog.com/fighter/Louis-Lee-Scott-314939": {
+  "date": "2027-01-30",
+  "event": "UFC 336 - Prates vs. Morales",
+  "name": "Louis Lee Scott",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-336-Prates-vs-Morales-115075",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_336"
  },
  "https://www.sherdog.com/fighter/Mackenzie-Stiller-402395": {
   "date": "2026-10-17",

@@ -234,22 +234,22 @@
    "system": "meta",
    "division": "Heavyweight",
    "rank": "6",
-   "name": "Curtis Blaydes",
-   "wiki": "https://en.wikipedia.org/wiki/Curtis_Blaydes"
-  },
-  {
-   "system": "meta",
-   "division": "Heavyweight",
-   "rank": "7",
    "name": "Rizvan Kuniev",
    "wiki": "https://en.wikipedia.org/wiki/Rizvan_Kuniev"
   },
   {
    "system": "meta",
    "division": "Heavyweight",
+   "rank": "7",
+   "name": "Curtis Blaydes",
+   "wiki": "https://en.wikipedia.org/wiki/Curtis_Blaydes"
+  },
+  {
+   "system": "meta",
+   "division": "Heavyweight",
    "rank": "8",
-   "name": "Waldo Cortes-Acosta",
-   "wiki": "https://en.wikipedia.org/wiki/Waldo_Cortes-Acosta"
+   "name": "Johnny Walker",
+   "wiki": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)"
   },
   {
    "system": "meta",
@@ -276,8 +276,8 @@
    "system": "meta",
    "division": "Heavyweight",
    "rank": "12",
-   "name": "Johnny Walker",
-   "wiki": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)"
+   "name": "Waldo Cortes-Acosta",
+   "wiki": "https://en.wikipedia.org/wiki/Waldo_Cortes-Acosta"
   },
   {
    "system": "meta",
@@ -793,51 +793,58 @@
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "9",
+   "rank": "8",
    "name": "Youssef Zalal",
    "wiki": "https://en.wikipedia.org/wiki/Youssef_Zalal"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "10",
+   "rank": "9",
    "name": "Aaron Pico",
    "wiki": "https://en.wikipedia.org/wiki/Aaron_Pico"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "11",
+   "rank": "10",
    "name": "Kevin Vallejos",
    "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "12",
+   "rank": "11",
    "name": "Joanderson Brito",
    "wiki": "https://en.wikipedia.org/wiki/Joanderson_Brito"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "13",
+   "rank": "12",
    "name": "Melquizael Costa",
    "wiki": "https://en.wikipedia.org/wiki/Melquizael_Costa"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Steve Garcia",
    "wiki": "https://en.wikipedia.org/wiki/Steve_Garcia"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Jamall Emmers",
    "wiki": "https://en.wikipedia.org/wiki/Jamall_Emmers"
+  },
+  {
+   "system": "meta",
+   "division": "Featherweight",
+   "rank": "15",
+   "name": "Patrício Pitbull",
+   "wiki": "https://en.wikipedia.org/wiki/Patrício_Pitbull"
   },
   {
    "system": "meta",
@@ -1228,15 +1235,15 @@
    "system": "meta",
    "division": "Women's Flyweight",
    "rank": "12",
-   "name": "Miranda Maverick",
-   "wiki": "https://en.wikipedia.org/wiki/Miranda_Maverick"
+   "name": "Karine Silva",
+   "wiki": "https://en.wikipedia.org/wiki/Karine_Silva"
   },
   {
    "system": "meta",
    "division": "Women's Flyweight",
-   "rank": "14",
-   "name": "Karine Silva",
-   "wiki": "https://en.wikipedia.org/wiki/Karine_Silva"
+   "rank": "13",
+   "name": "Miranda Maverick",
+   "wiki": "https://en.wikipedia.org/wiki/Miranda_Maverick"
   },
   {
    "system": "meta",
@@ -1249,22 +1256,22 @@
    "system": "meta",
    "division": "Women's Strawweight",
    "rank": "1",
+   "name": "Tatiana Suarez",
+   "wiki": "https://en.wikipedia.org/wiki/Tatiana_Suarez"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "2",
    "name": "Zhang Weili",
    "wiki": "https://en.wikipedia.org/wiki/Zhang_Weili"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "2",
+   "rank": "3",
    "name": "Virna Jandiroba",
    "wiki": "https://en.wikipedia.org/wiki/Virna_Jandiroba"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Strawweight",
-   "rank": "3",
-   "name": "Tatiana Suarez",
-   "wiki": "https://en.wikipedia.org/wiki/Tatiana_Suarez"
   },
   {
    "system": "meta",
@@ -2506,6 +2513,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-11-10",
+ "fetched": "2026-11-11",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }
