@@ -1,0 +1,162 @@
+{
+ "event": "UFC Fight Night: Proch\u00e1zka vs. Stirling",
+ "date": "2026-11-21",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch\u00e1zka_vs._Stirling",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
+ "book": "FanDuel",
+ "fetched_at": "2026-11-11T18:14:57+00:00",
+ "event_starts": "2026-11-21T13:00:00+00:00",
+ "odds_urls": [
+  "https://www.bestfightodds.com/events/ufc-doha-4440"
+ ],
+ "unpriced": [
+  "Dan Hooker vs Brian Ortega",
+  "Kyoji Horiguchi vs Asu Almabayev",
+  "Jared Cannonier vs Ikram Aliskerov",
+  "Aleksandre Topuria vs Santiago Luna",
+  "Shamil Gaziev vs Tallison Teixeira",
+  "Amir Albazi vs Alessandro Costa",
+  "Jake Matthews vs Tahir Abdullayev",
+  "Manoel Sousa vs TBD",
+  "Nikolas Motta vs Dom Mar Fan",
+  "Diyar Nurgozhay vs Alik Lorenz"
+ ],
+ "blend_weights": {
+  "model": 0.23885403573592462,
+  "market": 0.9965374138143301
+ },
+ "dec_cal": [
+  0.432659,
+  0.679986,
+  -0.35853
+ ],
+ "prop_shrink": 0.5,
+ "bouts": [
+  {
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "dataset": [
+    "Jiri Prochazka",
+    "Navajo Stirling"
+   ],
+   "rounds": 5,
+   "title": false,
+   "p_model_a": 0.331,
+   "p_stats_a": 0.331,
+   "read_a": 0.0,
+   "ml": {
+    "a": null,
+    "b": null
+   },
+   "markets": 0
+  },
+  {
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "dataset": [
+    "Aljamain Sterling",
+    "Kevin Vallejos"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.4389,
+   "p_stats_a": 0.4389,
+   "read_a": 0.0,
+   "ml": {
+    "a": null,
+    "b": null
+   },
+   "markets": 0
+  }
+ ],
+ "skipped": [],
+ "card": [
+  {
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Dan Hooker vs Brian Ortega",
+   "a": "Dan Hooker",
+   "b": "Brian Ortega",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Kyoji Horiguchi vs Asu Almabayev",
+   "a": "Kyoji Horiguchi",
+   "b": "Asu Almabayev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jared Cannonier vs Ikram Aliskerov",
+   "a": "Jared Cannonier",
+   "b": "Ikram Aliskerov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "a": "Aleksandre Topuria",
+   "b": "Santiago Luna",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Amir Albazi vs Alessandro Costa",
+   "a": "Amir Albazi",
+   "b": "Alessandro Costa",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "a": "Jake Matthews",
+   "b": "Tahir Abdullayev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Manoel Sousa vs TBD",
+   "a": "Manoel Sousa",
+   "b": "TBD",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Nikolas Motta vs Dom Mar Fan",
+   "a": "Nikolas Motta",
+   "b": "Dom Mar Fan",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Diyar Nurgozhay vs Alik Lorenz",
+   "a": "Diyar Nurgozhay",
+   "b": "Alik Lorenz",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": []
+}
