@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-11",
+ "fetched": "2026-11-12",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -708,6 +708,17 @@
      "result": "",
      "rounds": 5,
      "main_event": true
+    },
+    {
+     "order": 1,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Daniel Rodriguez",
+     "b": "Roberto Soldi\u0107",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
@@ -768,17 +779,6 @@
     },
     {
      "order": 2,
-     "segment": "Announced",
-     "weight_class": "Welterweight",
-     "a": "Daniel Rodriguez",
-     "b": "Roberto Soldi\u0107",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
      "segment": "Announced",
      "weight_class": "Bantamweight",
      "a": "Serhiy Sidey",
