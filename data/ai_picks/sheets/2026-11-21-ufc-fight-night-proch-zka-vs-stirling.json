@@ -4,7 +4,7 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch\u00e1zka_vs._Stirling",
  "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
  "book": "FanDuel",
- "fetched_at": "2026-11-11T18:14:57+00:00",
+ "fetched_at": "2026-11-12T18:15:07+00:00",
  "event_starts": "2026-11-21T13:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-doha-4440"
@@ -22,8 +22,8 @@
   "Diyar Nurgozhay vs Alik Lorenz"
  ],
  "blend_weights": {
-  "model": 0.23885403573592462,
-  "market": 0.9965374138143301
+  "model": 0.2311055622151546,
+  "market": 0.9999669760580274
  },
  "dec_cal": [
   0.432659,
@@ -42,8 +42,8 @@
    ],
    "rounds": 5,
    "title": false,
-   "p_model_a": 0.331,
-   "p_stats_a": 0.331,
+   "p_model_a": 0.3316,
+   "p_stats_a": 0.3316,
    "read_a": 0.0,
    "ml": {
     "a": null,
@@ -61,8 +61,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4389,
-   "p_stats_a": 0.4389,
+   "p_model_a": 0.4398,
+   "p_stats_a": 0.4398,
    "read_a": 0.0,
    "ml": {
     "a": null,
