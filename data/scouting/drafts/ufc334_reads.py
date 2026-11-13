@@ -2,8 +2,9 @@
 
 logit: how far (log-odds, 0..0.8) the read moves the model toward `favours`, for what the model can't see.
 The model's number at the time is recorded (p_model, toward a) so the read can be graded against it.
-Drafted Tuesday 2026-11-10 from the reports and the picks sheet; Friday's run finalizes these after weigh-ins and adds
-the published pundit picks.
+Drafted Tuesday 2026-11-10 from the reports and the picks sheet. Finalized Friday 2026-11-13 after weigh-ins (Terrance
+McKinney 160.2 for a lightweight bout, his first miss; Juan Diaz 0.4 lb over; everyone else on weight, Gane 242.6 and
+Hokit 231.4) with 131 published pundit picks from 12 outlets (ufc334_pundits.json).
 """
 
 import json
@@ -16,22 +17,22 @@ from mma_predictor.reads import Pundits, check_read  # noqa: E402
 
 EVENT, DATE = "UFC 334: Gane vs. Hokit", "2026-11-14"
 RESULTS = "https://en.wikipedia.org/wiki/UFC_334"
-CREATED = "2026-11-10T18:30:00+00:00"
+CREATED = "2026-11-13T17:45:00+00:00"
 
-# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-10 17:15 UTC.
+# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-13 17:05 UTC.
 # Diaz-Heili has no FanDuel line yet.
 P = {
-    ("Ciryl Gane", "Josh Hokit"): (0.69, 0.658),
-    ("Amanda Nunes", "Kayla Harrison"): (0.39, 0.375),
+    ("Ciryl Gane", "Josh Hokit"): (0.68, 0.645),
+    ("Amanda Nunes", "Kayla Harrison"): (0.38, 0.387),
     ("Caio Borralho", "Yousri Belgaroui"): (0.69, 0.583),
-    ("Kevin Holland", "Uros Medic"): (0.37, 0.425),
-    ("Bilal Hasan", "Luis Gurule"): (0.76, 0.879),
-    ("Charles Radtke", "Stephen Thompson"): (0.70, 0.422),
-    ("Chris Duncan", "Drew Dober"): (0.84, 0.586),
-    ("Jim Miller", "Terrance McKinney"): (0.33, 0.36),
-    ("Cesar Almeida", "Donte Johnson"): (0.22, 0.40),
-    ("Jared Gordon", "Melquizael Costa"): (0.17, 0.245),
-    ("Bia Mesquita", "Macy Chiasson"): (0.67, 0.685),
+    ("Kevin Holland", "Uros Medic"): (0.37, 0.414),
+    ("Bilal Hasan", "Luis Gurule"): (0.78, 0.882),
+    ("Charles Radtke", "Stephen Thompson"): (0.70, 0.417),
+    ("Chris Duncan", "Drew Dober"): (0.84, 0.607),
+    ("Jim Miller", "Terrance McKinney"): (0.33, 0.340),
+    ("Cesar Almeida", "Donte Johnson"): (0.21, 0.378),
+    ("Jared Gordon", "Melquizael Costa"): (0.17, 0.244),
+    ("Bia Mesquita", "Macy Chiasson"): (0.67, 0.676),
     ("Evan Elder", "Samuel Sanches"): (0.44, 0.485),
     ("Juan Diaz", "Alateng Heili"): (None, None),
 }
@@ -39,7 +40,8 @@ P = {
 READS = [
     dict(a="Ciryl Gane", b="Josh Hokit", favours="Ciryl Gane", logit=0.0, confidence="low",
          reasoning="Gane's footwork and long kicking game against an unbeaten wrestler who gives up about 21 cm of reach and has "
-                   "never gone five rounds. Model and market agree near two to one; no lean until fight week.",
+                   "never gone five rounds; Gane weighed in 11 lb heavier. The line has drifted toward Hokit on public money, "
+                   "but most pundits still take Gane, and model and market are within four points; no lean.",
          factors=["Gane's range and movement", "Hokit's wrestling and power (against)", "Hokit's first five-rounder"]),
     dict(a="Amanda Nunes", b="Kayla Harrison", favours="Kayla Harrison", logit=0.0, confidence="low",
          reasoning="Both come back from long absences: Nunes after more than three years retired, Harrison about 17 months "
@@ -67,10 +69,14 @@ READS = [
          reasoning="Duncan is coming off a round-two submission loss; Dober has two straight stoppages and real power. The model "
                    "is far above the market on Duncan; no read until fight week.",
          factors=["Dober's power", "Duncan's form"]),
-    dict(a="Jim Miller", b="Terrance McKinney", favours="Terrance McKinney", logit=0.0, confidence="low",
-         reasoning="McKinney starts like a sprinter and has been stopped when he fades; Miller, 43, submitted Gordon in round one "
-                   "in May. Either man can finish it early. Model and market agree; no lean.",
-         factors=["McKinney's first-round power", "Miller's submissions in scrambles"]),
+    dict(a="Jim Miller", b="Terrance McKinney", favours="Jim Miller", logit=0.10, confidence="low",
+         reasoning="McKinney missed weight by 4.2 lb (160.2), the first miss of his career, and says it is his last fight at "
+                   "lightweight: a cut that went that badly usually means a drained fighter, and McKinney already fades after a "
+                   "sprinter's first round and has been stopped when he does. Miller, 43, submitted Gordon in round one in May "
+                   "and is dangerous in exactly the scrambles McKinney creates. Several pundits with a decent record (Litterine, "
+                   "Burden, Riggs) took Miller. McKinney's early power is real, so the lean is small.",
+         factors=["McKinney's 4.2 lb miss and bad cut", "McKinney's fade after round one", "Miller's submissions in scrambles",
+                  "McKinney's first-round power (against)", "Miller's age (against)"]),
     dict(a="Cesar Almeida", b="Donte Johnson", favours="Donte Johnson", logit=0.0, confidence="low",
          reasoning="Almeida is 38 and was knocked out in round one last time; Johnson took him as a replacement opponent. The "
                    "model is already below the market on Almeida; no lean.",
@@ -86,14 +92,16 @@ READS = [
          reasoning="Elder returns from about 19 months out after a leg injury; Sanches debuts after his own 14-month absence. "
                    "Too little to lean either way.",
          factors=["Elder's layoff", "Sanches's debut"]),
-    dict(a="Juan Diaz", b="Alateng Heili", favours="Juan Diaz", logit=0.15, confidence="low",
-         reasoning="Heili took the fight on about eight days' notice, seven weeks after his last; Diaz has had a full camp. Heili "
-                   "is durable (not stopped since 2017) and experienced, so the lean is small. No line yet.",
+    dict(a="Juan Diaz", b="Alateng Heili", favours="Juan Diaz", logit=0.10, confidence="low",
+         reasoning="Heili took the fight on about eight days' notice, seven weeks after his last; Diaz has had a full camp, though "
+                   "he came in 0.4 lb over, so his cut wasn't perfect either. Heili is durable (not stopped since 2017) and "
+                   "experienced, so the lean is small. Still no FanDuel line.",
          factors=["Heili's short notice", "Heili's durability (against)"]),
 ]
 
-# Picks published by Friday (outlet, author, pick, method, url); filled on the Friday run.
-PUNDIT_PICKS = []
+# Picks published by Friday 2026-11-13 (outlet, author, pick, method, url): 131 picks from 12 outlets.
+PUNDIT_PICKS = [(r["a"], r["b"], r["outlet"], r["author"], r["pick"], r["method"], r["url"])
+                for r in json.loads((Path(__file__).with_name("ufc334_pundits.json")).read_text())]
 
 
 def _p(a, b):
