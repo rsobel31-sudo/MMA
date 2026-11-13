@@ -4,7 +4,7 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_334",
  "odds_url": "https://www.bestfightodds.com/events/ufc-334-4433",
  "book": "FanDuel",
- "fetched_at": "2026-11-12T18:14:29+00:00",
+ "fetched_at": "2026-11-13T17:05:46+00:00",
  "event_starts": "2026-11-14T22:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-334-4433",
@@ -14,8 +14,8 @@
   "Alateng Heili vs Juan D\u00edaz"
  ],
  "blend_weights": {
-  "model": 0.2311055622151546,
-  "market": 0.9999669760580274
+  "model": 0.22229691936333432,
+  "market": 1.0115566951332495
  },
  "dec_cal": [
   0.432659,
@@ -34,12 +34,12 @@
    ],
    "rounds": 5,
    "title": true,
-   "p_model_a": 0.6817,
-   "p_stats_a": 0.6817,
+   "p_model_a": 0.6809,
+   "p_stats_a": 0.6809,
    "read_a": 0.0,
    "ml": {
-    "a": -188,
-    "b": 144
+    "a": -210,
+    "b": 168
    },
    "markets": 33
   },
@@ -53,12 +53,12 @@
    ],
    "rounds": 5,
    "title": true,
-   "p_model_a": 0.3842,
-   "p_stats_a": 0.3842,
+   "p_model_a": 0.3847,
+   "p_stats_a": 0.3847,
    "read_a": -0.0,
    "ml": {
-    "a": 150,
-    "b": -194
+    "a": 146,
+    "b": -180
    },
    "markets": 33
   },
@@ -72,12 +72,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6906,
-   "p_stats_a": 0.6906,
+   "p_model_a": 0.6947,
+   "p_stats_a": 0.6947,
    "read_a": 0.0,
    "ml": {
-    "a": -162,
-    "b": 126
+    "a": -158,
+    "b": 128
    },
    "markets": 23
   },
@@ -91,12 +91,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3482,
-   "p_stats_a": 0.3712,
+   "p_model_a": 0.3478,
+   "p_stats_a": 0.3708,
    "read_a": -0.1,
    "ml": {
-    "a": 122,
-    "b": -156
+    "a": 130,
+    "b": -160
    },
    "markets": 23
   },
@@ -110,12 +110,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.7634,
-   "p_stats_a": 0.7634,
+   "p_model_a": 0.7829,
+   "p_stats_a": 0.7829,
    "read_a": 0.0,
    "ml": {
-    "a": -1200,
-    "b": 630
+    "a": -1250,
+    "b": 710
    },
    "markets": 23
   },
@@ -129,12 +129,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.7144,
-   "p_stats_a": 0.7041,
+   "p_model_a": 0.714,
+   "p_stats_a": 0.7037,
    "read_a": 0.05,
    "ml": {
-    "a": 122,
-    "b": -156
+    "a": 128,
+    "b": -158
    },
    "markets": 23
   },
@@ -148,12 +148,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.8348,
-   "p_stats_a": 0.8348,
+   "p_model_a": 0.836,
+   "p_stats_a": 0.836,
    "read_a": 0.0,
    "ml": {
-    "a": -188,
-    "b": 146
+    "a": -176,
+    "b": 142
    },
    "markets": 23
   },
@@ -167,12 +167,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3315,
-   "p_stats_a": 0.3315,
+   "p_model_a": 0.3331,
+   "p_stats_a": 0.3331,
    "read_a": -0.0,
    "ml": {
-    "a": 158,
-    "b": -205
+    "a": 180,
+    "b": -225
    },
    "markets": 23
   },
@@ -186,12 +186,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.2165,
-   "p_stats_a": 0.2165,
+   "p_model_a": 0.2148,
+   "p_stats_a": 0.2148,
    "read_a": -0.0,
    "ml": {
-    "a": 136,
-    "b": -174
+    "a": 152,
+    "b": -188
    },
    "markets": 23
   },
@@ -205,12 +205,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.1698,
-   "p_stats_a": 0.1698,
+   "p_model_a": 0.1703,
+   "p_stats_a": 0.1703,
    "read_a": -0.0,
    "ml": {
-    "a": 285,
-    "b": -400
+    "a": 290,
+    "b": -385
    },
    "markets": 23
   },
@@ -224,12 +224,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6704,
-   "p_stats_a": 0.6704,
+   "p_model_a": 0.6699,
+   "p_stats_a": 0.6699,
    "read_a": 0.0,
    "ml": {
-    "a": -295,
-    "b": 220
+    "a": -245,
+    "b": 194
    },
    "markets": 23
   },
@@ -243,12 +243,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4369,
-   "p_stats_a": 0.4369,
+   "p_model_a": 0.4359,
+   "p_stats_a": 0.4359,
    "read_a": -0.0,
    "ml": {
-    "a": 102,
-    "b": -130
+    "a": -104,
+    "b": -118
    },
    "markets": 23
   }
@@ -359,12 +359,30 @@
    "selection": "Terrance McKinney by decision",
    "odds": 2000,
    "decimal": 21.0,
-   "p_model": 0.3402,
-   "p_fanduel": 0.0416,
-   "p": 0.1302,
-   "edge": 0.0886,
-   "ev": 1.7341,
-   "kelly": 0.0867
+   "p_model": 0.3394,
+   "p_fanduel": 0.0418,
+   "p": 0.1303,
+   "edge": 0.0884,
+   "ev": 1.7358,
+   "kelly": 0.0868
+  },
+  {
+   "id": "45569:starts_round:3:True",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 660,
+   "decimal": 7.6,
+   "p_model": 0.4655,
+   "p_fanduel": 0.1248,
+   "p": 0.2605,
+   "edge": 0.1358,
+   "ev": 0.98,
+   "kelly": 0.1485
   },
   {
    "id": "45569:distance:True",
@@ -376,30 +394,12 @@
    "selection": "Goes to decision",
    "odds": 900,
    "decimal": 10.0,
-   "p_model": 0.3634,
+   "p_model": 0.3601,
    "p_fanduel": 0.0942,
-   "p": 0.1959,
-   "edge": 0.1017,
-   "ev": 0.9593,
-   "kelly": 0.1066
-  },
-  {
-   "id": "45569:starts_round:3:True",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": 640,
-   "decimal": 7.4,
-   "p_model": 0.4683,
-   "p_fanduel": 0.1277,
-   "p": 0.2642,
-   "edge": 0.1365,
-   "ev": 0.9552,
-   "kelly": 0.1493
+   "p": 0.1948,
+   "edge": 0.1006,
+   "ev": 0.948,
+   "kelly": 0.1053
   },
   {
    "id": "45569:win_round:b:3",
@@ -410,14 +410,14 @@
     3
    ],
    "selection": "Terrance McKinney in round 3",
-   "odds": 4000,
-   "decimal": 41.0,
-   "p_model": 0.0612,
-   "p_fanduel": 0.0218,
-   "p": 0.0367,
-   "edge": 0.0149,
-   "ev": 0.5049,
-   "kelly": 0.0126
+   "odds": 4500,
+   "decimal": 46.0,
+   "p_model": 0.0643,
+   "p_fanduel": 0.0194,
+   "p": 0.0356,
+   "edge": 0.0162,
+   "ev": 0.6365,
+   "kelly": 0.0141
   },
   {
    "id": "45569:starts_round:2:True",
@@ -428,14 +428,31 @@
     true
    ],
    "selection": "Fight starts round 2",
-   "odds": 196,
-   "decimal": 2.96,
-   "p_model": 0.6735,
-   "p_fanduel": 0.3187,
-   "p": 0.4956,
-   "edge": 0.1769,
-   "ev": 0.4668,
-   "kelly": 0.2382
+   "odds": 220,
+   "decimal": 3.2,
+   "p_model": 0.6716,
+   "p_fanduel": 0.2941,
+   "p": 0.48,
+   "edge": 0.1859,
+   "ev": 0.5361,
+   "kelly": 0.2437
+  },
+  {
+   "id": "45569:ends_round:3",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.1054,
+   "p_fanduel": 0.0425,
+   "p": 0.0674,
+   "edge": 0.0249,
+   "ev": 0.4162,
+   "kelly": 0.0208
   },
   {
    "id": "45570:method:a:DEC",
@@ -446,31 +463,14 @@
     "DEC"
    ],
    "selection": "Cesar Almeida by decision",
-   "odds": 750,
-   "decimal": 8.5,
-   "p_model": 0.2463,
-   "p_fanduel": 0.1028,
-   "p": 0.1622,
-   "edge": 0.0593,
-   "ev": 0.3785,
-   "kelly": 0.0505
-  },
-  {
-   "id": "45569:ends_round:3",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 1900,
-   "decimal": 20.0,
-   "p_model": 0.1049,
-   "p_fanduel": 0.0446,
-   "p": 0.0689,
-   "edge": 0.0243,
-   "ev": 0.378,
-   "kelly": 0.0199
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.2295,
+   "p_fanduel": 0.0972,
+   "p": 0.1519,
+   "edge": 0.0547,
+   "ev": 0.3671,
+   "kelly": 0.0459
   },
   {
    "id": "43676:method:a:DEC",
@@ -481,32 +481,14 @@
     "DEC"
    ],
    "selection": "Ciryl Gane by decision",
-   "odds": 380,
-   "decimal": 4.8,
-   "p_model": 0.3976,
-   "p_fanduel": 0.1809,
-   "p": 0.2763,
-   "edge": 0.0954,
-   "ev": 0.3264,
-   "kelly": 0.0859
-  },
-  {
-   "id": "45510:method:a:SUB",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "method",
-    "a",
-    "SUB"
-   ],
-   "selection": "Bilal Hasan by submission",
-   "odds": 1100,
-   "decimal": 12.0,
-   "p_model": 0.162,
-   "p_fanduel": 0.0731,
-   "p": 0.1099,
-   "edge": 0.0368,
-   "ev": 0.319,
-   "kelly": 0.029
+   "odds": 390,
+   "decimal": 4.9,
+   "p_model": 0.4017,
+   "p_fanduel": 0.1767,
+   "p": 0.2752,
+   "edge": 0.0984,
+   "ev": 0.3483,
+   "kelly": 0.0893
   },
   {
    "id": "44985:method:a:DEC",
@@ -519,30 +501,48 @@
    "selection": "Amanda Nunes by decision",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.2931,
-   "p_fanduel": 0.1332,
-   "p": 0.2016,
-   "edge": 0.0683,
-   "ev": 0.3103,
-   "kelly": 0.0564
+   "p_model": 0.3021,
+   "p_fanduel": 0.1343,
+   "p": 0.2058,
+   "edge": 0.0715,
+   "ev": 0.3376,
+   "kelly": 0.0614
   },
   {
-   "id": "45510:method:b:DEC",
+   "id": "45510:method:a:SUB",
    "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
     "method",
-    "b",
-    "DEC"
+    "a",
+    "SUB"
    ],
-   "selection": "Luis Gurule by decision",
-   "odds": 2500,
-   "decimal": 26.0,
-   "p_model": 0.0671,
-   "p_fanduel": 0.0337,
-   "p": 0.0477,
-   "edge": 0.014,
-   "ev": 0.2405,
-   "kelly": 0.0096
+   "selection": "Bilal Hasan by submission",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.1657,
+   "p_fanduel": 0.0731,
+   "p": 0.1112,
+   "edge": 0.0381,
+   "ev": 0.3347,
+   "kelly": 0.0304
+  },
+  {
+   "id": "45567:win_round:b:1",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Stephen Thompson in round 1",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.154,
+   "p_fanduel": 0.0744,
+   "p": 0.1079,
+   "edge": 0.0335,
+   "ev": 0.2948,
+   "kelly": 0.0268
   },
   {
    "id": "45509:distance:True",
@@ -554,29 +554,12 @@
    "selection": "Goes to decision",
    "odds": 390,
    "decimal": 4.9,
-   "p_model": 0.3247,
+   "p_model": 0.3212,
    "p_fanduel": 0.1927,
-   "p": 0.253,
-   "edge": 0.0604,
-   "ev": 0.2399,
-   "kelly": 0.0615
-  },
-  {
-   "id": "45510:distance:True",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "distance",
-    true
-   ],
-   "selection": "Goes to decision",
-   "odds": 470,
-   "decimal": 5.7,
-   "p_model": 0.2761,
-   "p_fanduel": 0.1654,
-   "p": 0.2157,
-   "edge": 0.0502,
-   "ev": 0.2292,
-   "kelly": 0.0488
+   "p": 0.2515,
+   "edge": 0.0588,
+   "ev": 0.2324,
+   "kelly": 0.0596
   },
   {
    "id": "45509:method:b:DEC",
@@ -589,29 +572,30 @@
    "selection": "Uros Medic by decision",
    "odds": 750,
    "decimal": 8.5,
-   "p_model": 0.1986,
-   "p_fanduel": 0.1028,
-   "p": 0.1442,
-   "edge": 0.0414,
-   "ev": 0.2257,
-   "kelly": 0.0301
+   "p_model": 0.1998,
+   "p_fanduel": 0.1019,
+   "p": 0.1441,
+   "edge": 0.0422,
+   "ev": 0.2245,
+   "kelly": 0.0299
   },
   {
-   "id": "43676:distance:True",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45571:method:a:DEC",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
-    "distance",
-    true
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Goes to decision",
-   "odds": 210,
-   "decimal": 3.1,
-   "p_model": 0.4863,
-   "p_fanduel": 0.3045,
-   "p": 0.3916,
-   "edge": 0.0872,
-   "ev": 0.2141,
-   "kelly": 0.1019
+   "selection": "Bia Mesquita by decision",
+   "odds": 480,
+   "decimal": 5.8,
+   "p_model": 0.2879,
+   "p_fanduel": 0.1502,
+   "p": 0.211,
+   "edge": 0.0607,
+   "ev": 0.2236,
+   "kelly": 0.0466
   },
   {
    "id": "45572:method:b:SUB",
@@ -624,30 +608,64 @@
    "selection": "Melquizael Costa by submission",
    "odds": 430,
    "decimal": 5.3,
-   "p_model": 0.3068,
+   "p_model": 0.3072,
    "p_fanduel": 0.1648,
-   "p": 0.2281,
-   "edge": 0.0633,
-   "ev": 0.2088,
-   "kelly": 0.0486
+   "p": 0.2282,
+   "edge": 0.0635,
+   "ev": 0.2097,
+   "kelly": 0.0488
   },
   {
-   "id": "45571:method:a:DEC",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "43676:distance:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
-    "method",
-    "a",
-    "DEC"
+    "distance",
+    true
    ],
-   "selection": "Bia Mesquita by decision",
-   "odds": 460,
-   "decimal": 5.6,
-   "p_model": 0.2921,
-   "p_fanduel": 0.155,
-   "p": 0.2157,
-   "edge": 0.0608,
-   "ev": 0.2082,
-   "kelly": 0.0453
+   "selection": "Goes to decision",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.4803,
+   "p_fanduel": 0.3045,
+   "p": 0.3888,
+   "edge": 0.0843,
+   "ev": 0.2052,
+   "kelly": 0.0977
+  },
+  {
+   "id": "45567:starts_round:2:False",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.28,
+   "p_fanduel": 0.1747,
+   "p": 0.2229,
+   "edge": 0.0483,
+   "ev": 0.2039,
+   "kelly": 0.0463
+  },
+  {
+   "id": "45510:distance:True",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 470,
+   "decimal": 5.7,
+   "p_model": 0.265,
+   "p_fanduel": 0.1654,
+   "p": 0.2109,
+   "edge": 0.0455,
+   "ev": 0.2024,
+   "kelly": 0.0431
   },
   {
    "id": "45568:distance:True",
@@ -659,47 +677,12 @@
    "selection": "Goes to decision",
    "odds": 285,
    "decimal": 3.85,
-   "p_model": 0.3799,
+   "p_model": 0.3825,
    "p_fanduel": 0.2451,
-   "p": 0.3084,
-   "edge": 0.0633,
-   "ev": 0.1875,
-   "kelly": 0.0658
-  },
-  {
-   "id": "45570:distance:True",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "distance",
-    true
-   ],
-   "selection": "Goes to decision",
-   "odds": 230,
-   "decimal": 3.3,
-   "p_model": 0.4261,
-   "p_fanduel": 0.2861,
-   "p": 0.3529,
-   "edge": 0.0668,
-   "ev": 0.1647,
-   "kelly": 0.0716
-  },
-  {
-   "id": "45567:win_round:b:1",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "win_round",
-    "b",
-    1
-   ],
-   "selection": "Stephen Thompson in round 1",
-   "odds": 900,
-   "decimal": 10.0,
-   "p_model": 0.1499,
-   "p_fanduel": 0.0893,
-   "p": 0.1162,
-   "edge": 0.0269,
-   "ev": 0.1622,
-   "kelly": 0.018
+   "p": 0.3096,
+   "edge": 0.0645,
+   "ev": 0.1919,
+   "kelly": 0.0673
   },
   {
    "id": "45568:method:a:DEC",
@@ -710,85 +693,31 @@
     "DEC"
    ],
    "selection": "Chris Duncan by decision",
-   "odds": 410,
-   "decimal": 5.1,
-   "p_model": 0.2959,
-   "p_fanduel": 0.1715,
-   "p": 0.2278,
-   "edge": 0.0563,
-   "ev": 0.1615,
-   "kelly": 0.0394
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.2948,
+   "p_fanduel": 0.1682,
+   "p": 0.2253,
+   "edge": 0.057,
+   "ev": 0.1713,
+   "kelly": 0.0408
   },
   {
-   "id": "45509:starts_round:3:True",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": 220,
-   "decimal": 3.2,
-   "p_model": 0.431,
-   "p_fanduel": 0.2941,
-   "p": 0.3597,
-   "edge": 0.0656,
-   "ev": 0.1511,
-   "kelly": 0.0687
-  },
-  {
-   "id": "43676:starts_round:5:True",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "starts_round",
-    5,
-    true
-   ],
-   "selection": "Fight starts round 5",
-   "odds": 150,
-   "decimal": 2.5,
-   "p_model": 0.5382,
-   "p_fanduel": 0.3782,
-   "p": 0.4571,
-   "edge": 0.0789,
-   "ev": 0.1428,
-   "kelly": 0.0952
-  },
-  {
-   "id": "45510:method:a:DEC",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "method",
-    "a",
-    "DEC"
-   ],
-   "selection": "Bilal Hasan by decision",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.209,
-   "p_fanduel": 0.1253,
-   "p": 0.1629,
-   "edge": 0.0376,
-   "ev": 0.1403,
-   "kelly": 0.0234
-  },
-  {
-   "id": "44985:distance:True",
-   "bout": "Amanda Nunes vs Kayla Harrison",
+   "id": "45570:distance:True",
+   "bout": "Cesar Almeida vs Donte Johnson",
    "market": [
     "distance",
     true
    ],
    "selection": "Goes to decision",
-   "odds": 162,
-   "decimal": 2.62,
-   "p_model": 0.5077,
-   "p_fanduel": 0.3604,
-   "p": 0.4326,
-   "edge": 0.0722,
-   "ev": 0.1333,
-   "kelly": 0.0823
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.4127,
+   "p_fanduel": 0.2771,
+   "p": 0.3417,
+   "edge": 0.0646,
+   "ev": 0.1617,
+   "kelly": 0.0674
   },
   {
    "id": "45571:distance:True",
@@ -800,48 +729,47 @@
    "selection": "Goes to decision",
    "odds": 200,
    "decimal": 3.0,
-   "p_model": 0.4447,
+   "p_model": 0.4597,
    "p_fanduel": 0.3147,
-   "p": 0.3775,
-   "edge": 0.0628,
-   "ev": 0.1324,
-   "kelly": 0.0662
+   "p": 0.3846,
+   "edge": 0.0699,
+   "ev": 0.1538,
+   "kelly": 0.0769
   },
   {
-   "id": "45510:starts_round:3:True",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": 240,
-   "decimal": 3.4,
-   "p_model": 0.3893,
-   "p_fanduel": 0.2771,
-   "p": 0.3308,
-   "edge": 0.0537,
-   "ev": 0.1246,
-   "kelly": 0.0519
-  },
-  {
-   "id": "45567:starts_round:2:False",
+   "id": "45567:starts_round:3:False",
    "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
     "starts_round",
-    2,
+    3,
     false
    ],
-   "selection": "Fight does not start round 2",
-   "odds": 370,
-   "decimal": 4.7,
-   "p_model": 0.2782,
-   "p_fanduel": 0.1989,
-   "p": 0.2363,
-   "edge": 0.0374,
-   "ev": 0.1104,
-   "kelly": 0.0298
+   "selection": "Fight does not start round 3",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.4454,
+   "p_fanduel": 0.3026,
+   "p": 0.3712,
+   "edge": 0.0686,
+   "ev": 0.1506,
+   "kelly": 0.0717
+  },
+  {
+   "id": "45567:ends_round:1",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.28,
+   "p_fanduel": 0.1717,
+   "p": 0.2211,
+   "edge": 0.0494,
+   "ev": 0.15,
+   "kelly": 0.0357
   },
   {
    "id": "45571:method:b:SUB",
@@ -854,83 +782,101 @@
    "selection": "Macy Chiasson by submission",
    "odds": 2700,
    "decimal": 28.0,
-   "p_model": 0.05,
-   "p_fanduel": 0.031,
-   "p": 0.0394,
-   "edge": 0.0084,
-   "ev": 0.1035,
-   "kelly": 0.0038
+   "p_model": 0.0539,
+   "p_fanduel": 0.0311,
+   "p": 0.041,
+   "edge": 0.0099,
+   "ev": 0.1491,
+   "kelly": 0.0055
   },
   {
-   "id": "44985:starts_round:5:True",
+   "id": "45510:method:b:DEC",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Luis Gurule by decision",
+   "odds": 2500,
+   "decimal": 26.0,
+   "p_model": 0.0576,
+   "p_fanduel": 0.0337,
+   "p": 0.0442,
+   "edge": 0.0104,
+   "ev": 0.1479,
+   "kelly": 0.0059
+  },
+  {
+   "id": "44985:distance:True",
    "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 164,
+   "decimal": 2.64,
+   "p_model": 0.5143,
+   "p_fanduel": 0.3569,
+   "p": 0.4339,
+   "edge": 0.077,
+   "ev": 0.1456,
+   "kelly": 0.0888
+  },
+  {
+   "id": "43676:starts_round:5:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
     "starts_round",
     5,
     true
    ],
    "selection": "Fight starts round 5",
-   "odds": 124,
-   "decimal": 2.24,
-   "p_model": 0.5565,
-   "p_fanduel": 0.4216,
-   "p": 0.4889,
-   "edge": 0.0672,
-   "ev": 0.095,
-   "kelly": 0.0766
+   "odds": 152,
+   "decimal": 2.52,
+   "p_model": 0.5328,
+   "p_fanduel": 0.3747,
+   "p": 0.4526,
+   "edge": 0.0778,
+   "ev": 0.1405,
+   "kelly": 0.0924
   },
   {
-   "id": "43676:starts_round:4:True",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45510:method:a:DEC",
+   "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
-    "starts_round",
-    4,
-    true
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Fight starts round 4",
-   "odds": 102,
-   "decimal": 2.02,
-   "p_model": 0.6019,
-   "p_fanduel": 0.4686,
-   "p": 0.5359,
-   "edge": 0.0673,
-   "ev": 0.0825,
-   "kelly": 0.0809
+   "selection": "Bilal Hasan by decision",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.2074,
+   "p_fanduel": 0.1253,
+   "p": 0.1622,
+   "edge": 0.0369,
+   "ev": 0.1356,
+   "kelly": 0.0226
   },
   {
-   "id": "45567:starts_round:3:False",
-   "bout": "Charles Radtke vs Stephen Thompson",
+   "id": "45509:starts_round:3:True",
+   "bout": "Kevin Holland vs Uros Medic",
    "market": [
     "starts_round",
     3,
-    false
+    true
    ],
-   "selection": "Fight does not start round 3",
-   "odds": 174,
-   "decimal": 2.74,
-   "p_model": 0.4428,
-   "p_fanduel": 0.3437,
-   "p": 0.3921,
-   "edge": 0.0485,
-   "ev": 0.0744,
-   "kelly": 0.0428
-  },
-  {
-   "id": "45568:ml:a",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Chris Duncan to win",
-   "odds": -188,
-   "decimal": 1.5319,
-   "p_model": 0.7002,
-   "p_fanduel": 0.6162,
-   "p": 0.7002,
-   "edge": 0.0839,
-   "ev": 0.0726,
-   "kelly": 0.1364
+   "selection": "Fight starts round 3",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.4279,
+   "p_fanduel": 0.3026,
+   "p": 0.3629,
+   "edge": 0.0604,
+   "ev": 0.125,
+   "kelly": 0.0595
   },
   {
    "id": "45567:method:b:KO/TKO",
@@ -941,31 +887,173 @@
     "KO/TKO"
    ],
    "selection": "Stephen Thompson by KO/TKO",
-   "odds": 410,
-   "decimal": 5.1,
-   "p_model": 0.2532,
-   "p_fanduel": 0.1711,
-   "p": 0.2092,
-   "edge": 0.0381,
-   "ev": 0.067,
-   "kelly": 0.0163
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.2599,
+   "p_fanduel": 0.1625,
+   "p": 0.207,
+   "edge": 0.0445,
+   "ev": 0.1177,
+   "kelly": 0.0267
   },
   {
-   "id": "45567:ends_round:1",
+   "id": "45510:starts_round:3:True",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 240,
+   "decimal": 3.4,
+   "p_model": 0.3799,
+   "p_fanduel": 0.2771,
+   "p": 0.3264,
+   "edge": 0.0493,
+   "ev": 0.1097,
+   "kelly": 0.0457
+  },
+  {
+   "id": "44985:starts_round:5:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 126,
+   "decimal": 2.26,
+   "p_model": 0.5624,
+   "p_fanduel": 0.4183,
+   "p": 0.4901,
+   "edge": 0.0719,
+   "ev": 0.1077,
+   "kelly": 0.0855
+  },
+  {
+   "id": "43676:starts_round:4:True",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": 104,
+   "decimal": 2.04,
+   "p_model": 0.5971,
+   "p_fanduel": 0.4645,
+   "p": 0.5313,
+   "edge": 0.0669,
+   "ev": 0.0839,
+   "kelly": 0.0806
+  },
+  {
+   "id": "45568:ml:a",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Chris Duncan to win",
+   "odds": -176,
+   "decimal": 1.5682,
+   "p_model": 0.6902,
+   "p_fanduel": 0.6068,
+   "p": 0.6902,
+   "edge": 0.0834,
+   "ev": 0.0823,
+   "kelly": 0.1449
+  },
+  {
+   "id": "44985:starts_round:4:True",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": -112,
+   "decimal": 1.8929,
+   "p_model": 0.6344,
+   "p_fanduel": 0.5,
+   "p": 0.5684,
+   "edge": 0.0684,
+   "ev": 0.076,
+   "kelly": 0.0851
+  },
+  {
+   "id": "45567:distance:False",
    "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "ends_round",
-    1
+    "distance",
+    false
    ],
-   "selection": "Fight ends in round 1",
-   "odds": 350,
-   "decimal": 4.5,
-   "p_model": 0.2782,
-   "p_fanduel": 0.1984,
-   "p": 0.236,
-   "edge": 0.0376,
-   "ev": 0.062,
-   "kelly": 0.0177
+   "selection": "Doesn't go to decision",
+   "odds": 128,
+   "decimal": 2.28,
+   "p_model": 0.5281,
+   "p_fanduel": 0.4138,
+   "p": 0.4706,
+   "edge": 0.0567,
+   "ev": 0.0729,
+   "kelly": 0.057
+  },
+  {
+   "id": "45569:win_round:a:3",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jim Miller in round 3",
+   "odds": 3000,
+   "decimal": 31.0,
+   "p_model": 0.041,
+   "p_fanduel": 0.0288,
+   "p": 0.0344,
+   "edge": 0.0056,
+   "ev": 0.0663,
+   "kelly": 0.0022
+  },
+  {
+   "id": "45567:ml:a",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Charles Radtke to win",
+   "odds": 128,
+   "decimal": 2.28,
+   "p_model": 0.4665,
+   "p_fanduel": 0.4173,
+   "p": 0.4665,
+   "edge": 0.0492,
+   "ev": 0.0636,
+   "kelly": 0.0497
+  },
+  {
+   "id": "45571:starts_round:3:True",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 114,
+   "decimal": 2.14,
+   "p_model": 0.5511,
+   "p_fanduel": 0.4419,
+   "p": 0.4965,
+   "edge": 0.0546,
+   "ev": 0.0625,
+   "kelly": 0.0548
   },
   {
    "id": "45508:method:a:DEC",
@@ -978,65 +1066,12 @@
    "selection": "Caio Borralho by decision",
    "odds": 140,
    "decimal": 2.4,
-   "p_model": 0.522,
+   "p_model": 0.5221,
    "p_fanduel": 0.3658,
    "p": 0.4425,
    "edge": 0.0767,
-   "ev": 0.0619,
-   "kelly": 0.0442
-  },
-  {
-   "id": "45567:ml:a",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Charles Radtke to win",
-   "odds": 122,
-   "decimal": 2.22,
-   "p_model": 0.4775,
-   "p_fanduel": 0.425,
-   "p": 0.4775,
-   "edge": 0.0524,
-   "ev": 0.06,
-   "kelly": 0.0491
-  },
-  {
-   "id": "44985:starts_round:4:True",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "starts_round",
-    4,
-    true
-   ],
-   "selection": "Fight starts round 4",
-   "odds": -116,
-   "decimal": 1.8621,
-   "p_model": 0.6295,
-   "p_fanduel": 0.5062,
-   "p": 0.569,
-   "edge": 0.0627,
-   "ev": 0.0594,
-   "kelly": 0.0689
-  },
-  {
-   "id": "45571:starts_round:3:True",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": 116,
-   "decimal": 2.16,
-   "p_model": 0.5388,
-   "p_fanduel": 0.4369,
-   "p": 0.4877,
-   "edge": 0.0509,
-   "ev": 0.0535,
-   "kelly": 0.0461
+   "ev": 0.0621,
+   "kelly": 0.0443
   },
   {
    "id": "45570:ml:b",
@@ -1046,32 +1081,32 @@
     "b"
    ],
    "selection": "Donte Johnson to win",
-   "odds": -174,
-   "decimal": 1.5747,
-   "p_model": 0.6686,
-   "p_fanduel": 0.5998,
-   "p": 0.6686,
-   "edge": 0.0688,
-   "ev": 0.0528,
-   "kelly": 0.092
+   "odds": -188,
+   "decimal": 1.5319,
+   "p_model": 0.6882,
+   "p_fanduel": 0.6219,
+   "p": 0.6882,
+   "edge": 0.0663,
+   "ev": 0.0543,
+   "kelly": 0.102
   },
   {
-   "id": "45509:method:a:DEC",
-   "bout": "Kevin Holland vs Uros Medic",
+   "id": "45567:win_round:b:2",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "method",
-    "a",
-    "DEC"
+    "win_round",
+    "b",
+    2
    ],
-   "selection": "Kevin Holland by decision",
-   "odds": 900,
-   "decimal": 10.0,
-   "p_model": 0.1261,
-   "p_fanduel": 0.0874,
-   "p": 0.1052,
-   "edge": 0.0178,
+   "selection": "Stephen Thompson in round 2",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0883,
+   "p_fanduel": 0.0638,
+   "p": 0.0751,
+   "edge": 0.0114,
    "ev": 0.0518,
-   "kelly": 0.0058
+   "kelly": 0.004
   },
   {
    "id": "45570:starts_round:3:True",
@@ -1082,50 +1117,14 @@
     true
    ],
    "selection": "Fight starts round 3",
-   "odds": 124,
-   "decimal": 2.24,
-   "p_model": 0.5134,
-   "p_fanduel": 0.4228,
-   "p": 0.4679,
-   "edge": 0.045,
-   "ev": 0.048,
-   "kelly": 0.0387
-  },
-  {
-   "id": "45509:starts_round:2:True",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "starts_round",
-    2,
-    true
-   ],
-   "selection": "Fight starts round 2",
-   "odds": -128,
-   "decimal": 1.7812,
-   "p_model": 0.6433,
-   "p_fanduel": 0.5289,
-   "p": 0.5873,
-   "edge": 0.0583,
-   "ev": 0.0461,
-   "kelly": 0.059
-  },
-  {
-   "id": "45569:win_round:a:3",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "win_round",
-    "a",
-    3
-   ],
-   "selection": "Jim Miller in round 3",
-   "odds": 2700,
-   "decimal": 28.0,
-   "p_model": 0.0437,
-   "p_fanduel": 0.0319,
-   "p": 0.0373,
-   "edge": 0.0054,
-   "ev": 0.0452,
-   "kelly": 0.0017
+   "odds": 126,
+   "decimal": 2.26,
+   "p_model": 0.5021,
+   "p_fanduel": 0.4183,
+   "p": 0.4599,
+   "edge": 0.0416,
+   "ev": 0.0393,
+   "kelly": 0.0312
   },
   {
    "id": "45508:win_round:b:1",
@@ -1146,39 +1145,40 @@
    "kelly": 0.0037
   },
   {
-   "id": "45510:starts_round:2:True",
-   "bout": "Bilal Hasan vs Luis Gurule",
+   "id": "45569:win_round:b:2",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Terrance McKinney in round 2",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.1263,
+   "p_fanduel": 0.094,
+   "p": 0.1091,
+   "edge": 0.0151,
+   "ev": 0.0364,
+   "kelly": 0.0043
+  },
+  {
+   "id": "45509:starts_round:2:True",
+   "bout": "Kevin Holland vs Uros Medic",
    "market": [
     "starts_round",
     2,
     true
    ],
    "selection": "Fight starts round 2",
-   "odds": -122,
-   "decimal": 1.8197,
-   "p_model": 0.6159,
-   "p_fanduel": 0.5188,
-   "p": 0.568,
-   "edge": 0.0492,
-   "ev": 0.0336,
-   "kelly": 0.0409
-  },
-  {
-   "id": "45567:distance:False",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": 114,
-   "decimal": 2.14,
-   "p_model": 0.5251,
-   "p_fanduel": 0.4405,
-   "p": 0.4827,
-   "edge": 0.0422,
-   "ev": 0.0329,
-   "kelly": 0.0289
+   "odds": -134,
+   "decimal": 1.7463,
+   "p_model": 0.6411,
+   "p_fanduel": 0.5412,
+   "p": 0.5921,
+   "edge": 0.0509,
+   "ev": 0.034,
+   "kelly": 0.0455
   },
   {
    "id": "44985:starts_round:3:True",
@@ -1191,12 +1191,12 @@
    "selection": "Fight starts round 3",
    "odds": -190,
    "decimal": 1.5263,
-   "p_model": 0.7271,
+   "p_model": 0.7305,
    "p_fanduel": 0.619,
-   "p": 0.6754,
-   "edge": 0.0564,
-   "ev": 0.0309,
-   "kelly": 0.0586
+   "p": 0.6773,
+   "edge": 0.0583,
+   "ev": 0.0338,
+   "kelly": 0.0642
   },
   {
    "id": "45568:starts_round:3:True",
@@ -1209,12 +1209,12 @@
    "selection": "Fight starts round 3",
    "odds": 134,
    "decimal": 2.34,
-   "p_model": 0.4784,
+   "p_model": 0.4805,
    "p_fanduel": 0.4033,
-   "p": 0.4405,
-   "edge": 0.0372,
-   "ev": 0.0307,
-   "kelly": 0.0229
+   "p": 0.4415,
+   "edge": 0.0382,
+   "ev": 0.0331,
+   "kelly": 0.0247
   },
   {
    "id": "43676:starts_round:3:True",
@@ -1225,31 +1225,14 @@
     true
    ],
    "selection": "Fight starts round 3",
-   "odds": -164,
-   "decimal": 1.6098,
-   "p_model": 0.6874,
-   "p_fanduel": 0.5862,
-   "p": 0.6383,
-   "edge": 0.0521,
-   "ev": 0.0275,
-   "kelly": 0.0451
-  },
-  {
-   "id": "45572:ml:b",
-   "bout": "Jared Gordon vs Melquizael Costa",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Melquizael Costa to win",
-   "odds": -400,
-   "decimal": 1.25,
-   "p_model": 0.8163,
-   "p_fanduel": 0.7549,
-   "p": 0.8163,
-   "edge": 0.0614,
-   "ev": 0.0204,
-   "kelly": 0.0816
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.6832,
+   "p_fanduel": 0.5817,
+   "p": 0.634,
+   "edge": 0.0522,
+   "ev": 0.0302,
+   "kelly": 0.0483
   },
   {
    "id": "45573:distance:True",
@@ -1261,65 +1244,65 @@
    "selection": "Goes to decision",
    "odds": 126,
    "decimal": 2.26,
-   "p_model": 0.4844,
+   "p_model": 0.4949,
    "p_fanduel": 0.4171,
-   "p": 0.4505,
-   "edge": 0.0334,
-   "ev": 0.0182,
-   "kelly": 0.0145
+   "p": 0.4557,
+   "edge": 0.0386,
+   "ev": 0.0299,
+   "kelly": 0.0237
   },
   {
-   "id": "45508:ml:a",
-   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "id": "45572:ml:b",
+   "bout": "Jared Gordon vs Melquizael Costa",
    "market": [
     "ml",
-    "a"
+    "b"
    ],
-   "selection": "Caio Borralho to win",
-   "odds": -162,
-   "decimal": 1.6173,
-   "p_model": 0.6272,
-   "p_fanduel": 0.5829,
-   "p": 0.6272,
-   "edge": 0.0443,
-   "ev": 0.0143,
-   "kelly": 0.0232
+   "selection": "Melquizael Costa to win",
+   "odds": -385,
+   "decimal": 1.2597,
+   "p_model": 0.8169,
+   "p_fanduel": 0.7559,
+   "p": 0.8169,
+   "edge": 0.061,
+   "ev": 0.029,
+   "kelly": 0.1118
   },
   {
-   "id": "45567:method:a:DEC",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "method",
-    "a",
-    "DEC"
-   ],
-   "selection": "Charles Radtke by decision",
-   "odds": 400,
-   "decimal": 5.0,
-   "p_model": 0.2338,
-   "p_fanduel": 0.1746,
-   "p": 0.2026,
-   "edge": 0.028,
-   "ev": 0.0128,
-   "kelly": 0.0032
-  },
-  {
-   "id": "45571:starts_round:2:True",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "45510:starts_round:2:True",
+   "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
     "starts_round",
     2,
     true
    ],
    "selection": "Fight starts round 2",
-   "odds": -210,
-   "decimal": 1.4762,
-   "p_model": 0.7208,
-   "p_fanduel": 0.6396,
-   "p": 0.6816,
-   "edge": 0.042,
-   "ev": 0.0062,
-   "kelly": 0.013
+   "odds": -122,
+   "decimal": 1.8197,
+   "p_model": 0.6099,
+   "p_fanduel": 0.5188,
+   "p": 0.5649,
+   "edge": 0.0461,
+   "ev": 0.0279,
+   "kelly": 0.034
+  },
+  {
+   "id": "45509:method:a:DEC",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Kevin Holland by decision",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.1214,
+   "p_fanduel": 0.0866,
+   "p": 0.1027,
+   "edge": 0.0161,
+   "ev": 0.0271,
+   "kelly": 0.003
   },
   {
    "id": "45573:method:a:DEC",
@@ -1332,12 +1315,47 @@
    "selection": "Evan Elder by decision",
    "odds": 260,
    "decimal": 3.6,
-   "p_model": 0.32,
-   "p_fanduel": 0.2415,
-   "p": 0.279,
-   "edge": 0.0376,
-   "ev": 0.0045,
-   "kelly": 0.0017
+   "p_model": 0.3349,
+   "p_fanduel": 0.2403,
+   "p": 0.2853,
+   "edge": 0.0449,
+   "ev": 0.0269,
+   "kelly": 0.0103
+  },
+  {
+   "id": "45508:ml:a",
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Caio Borralho to win",
+   "odds": -158,
+   "decimal": 1.6329,
+   "p_model": 0.6273,
+   "p_fanduel": 0.5827,
+   "p": 0.6273,
+   "edge": 0.0446,
+   "ev": 0.0243,
+   "kelly": 0.0383
+  },
+  {
+   "id": "45571:starts_round:2:True",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -210,
+   "decimal": 1.4762,
+   "p_model": 0.728,
+   "p_fanduel": 0.6396,
+   "p": 0.6855,
+   "edge": 0.0459,
+   "ev": 0.0119,
+   "kelly": 0.0251
   },
   {
    "id": "43676:ml:a",
@@ -1347,14 +1365,65 @@
     "a"
    ],
    "selection": "Ciryl Gane to win",
-   "odds": -188,
-   "decimal": 1.5319,
-   "p_model": 0.6551,
-   "p_fanduel": 0.6143,
-   "p": 0.6551,
-   "edge": 0.0408,
-   "ev": 0.0035,
-   "kelly": 0.0067
+   "odds": -210,
+   "decimal": 1.4762,
+   "p_model": 0.6839,
+   "p_fanduel": 0.6448,
+   "p": 0.6839,
+   "edge": 0.0391,
+   "ev": 0.0096,
+   "kelly": 0.0201
+  },
+  {
+   "id": "45509:ml:b",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Uros Medic to win",
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.6204,
+   "p_fanduel": 0.586,
+   "p": 0.6204,
+   "edge": 0.0344,
+   "ev": 0.0081,
+   "kelly": 0.013
+  },
+  {
+   "id": "45569:ml:b",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Terrance McKinney to win",
+   "odds": -225,
+   "decimal": 1.4444,
+   "p_model": 0.6951,
+   "p_fanduel": 0.6597,
+   "p": 0.6951,
+   "edge": 0.0354,
+   "ev": 0.004,
+   "kelly": 0.009
+  },
+  {
+   "id": "45571:ml:a",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Bia Mesquita to win",
+   "odds": -245,
+   "decimal": 1.4082,
+   "p_model": 0.7114,
+   "p_fanduel": 0.6761,
+   "p": 0.7114,
+   "edge": 0.0352,
+   "ev": 0.0017,
+   "kelly": 0.0042
   },
   {
    "id": "43676:starts_round:2:True",
@@ -1367,63 +1436,28 @@
    "selection": "Fight starts round 2",
    "odds": -360,
    "decimal": 1.2778,
-   "p_model": 0.826,
-   "p_fanduel": 0.738,
-   "p": 0.7853,
-   "edge": 0.0472,
-   "ev": 0.0034,
-   "kelly": 0.0122
-  },
-  {
-   "id": "45509:ml:b",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Uros Medic to win",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.61,
-   "p_fanduel": 0.575,
-   "p": 0.61,
-   "edge": 0.035,
-   "ev": 0.0009,
-   "kelly": 0.0015
-  },
-  {
-   "id": "45567:win_round:b:2",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Stephen Thompson in round 2",
-   "odds": 1200,
-   "decimal": 13.0,
-   "p_model": 0.0861,
-   "p_fanduel": 0.0687,
-   "p": 0.0769,
-   "edge": 0.0082,
-   "ev": 0.0,
+   "p_model": 0.8236,
+   "p_fanduel": 0.7326,
+   "p": 0.7815,
+   "edge": 0.0489,
+   "ev": -0.0015,
    "kelly": 0.0
   },
   {
-   "id": "45569:ml:b",
-   "bout": "Jim Miller vs Terrance McKinney",
+   "id": "44985:ml:b",
+   "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
     "ml",
     "b"
    ],
-   "selection": "Terrance McKinney to win",
-   "odds": -205,
-   "decimal": 1.4878,
-   "p_model": 0.671,
-   "p_fanduel": 0.6342,
-   "p": 0.671,
-   "edge": 0.0367,
-   "ev": -0.0017,
+   "selection": "Kayla Harrison to win",
+   "odds": -180,
+   "decimal": 1.5556,
+   "p_model": 0.6383,
+   "p_fanduel": 0.6126,
+   "p": 0.6383,
+   "edge": 0.0257,
+   "ev": -0.0071,
    "kelly": 0.0
   },
   {
@@ -1437,28 +1471,29 @@
    "selection": "Fight starts round 2",
    "odds": -480,
    "decimal": 1.2083,
-   "p_model": 0.8538,
+   "p_model": 0.8556,
    "p_fanduel": 0.7806,
-   "p": 0.8201,
-   "edge": 0.0395,
-   "ev": -0.009,
+   "p": 0.8212,
+   "edge": 0.0406,
+   "ev": -0.0077,
    "kelly": 0.0
   },
   {
-   "id": "45571:ml:a",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "45567:method:a:DEC",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "ml",
-    "a"
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Bia Mesquita to win",
-   "odds": -295,
-   "decimal": 1.339,
-   "p_model": 0.7379,
-   "p_fanduel": 0.705,
-   "p": 0.7379,
-   "edge": 0.0329,
-   "ev": -0.0119,
+   "selection": "Charles Radtke by decision",
+   "odds": 390,
+   "decimal": 4.9,
+   "p_model": 0.2271,
+   "p_fanduel": 0.179,
+   "p": 0.202,
+   "edge": 0.023,
+   "ev": -0.0101,
    "kelly": 0.0
   },
   {
@@ -1471,82 +1506,11 @@
    "selection": "Goes to decision",
    "odds": -200,
    "decimal": 1.5,
-   "p_model": 0.6836,
+   "p_model": 0.6837,
    "p_fanduel": 0.6287,
    "p": 0.6567,
    "edge": 0.028,
-   "ev": -0.015,
-   "kelly": 0.0
-  },
-  {
-   "id": "45570:win_round:b:1",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "win_round",
-    "b",
-    1
-   ],
-   "selection": "Donte Johnson in round 1",
-   "odds": 350,
-   "decimal": 4.5,
-   "p_model": 0.2398,
-   "p_fanduel": 0.1984,
-   "p": 0.2184,
-   "edge": 0.02,
-   "ev": -0.0172,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ml:b",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Kayla Harrison to win",
-   "odds": -194,
-   "decimal": 1.5155,
-   "p_model": 0.6478,
-   "p_fanduel": 0.6226,
-   "p": 0.6478,
-   "edge": 0.0252,
-   "ev": -0.0182,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:starts_round:2:False",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "starts_round",
-    2,
-    false
-   ],
-   "selection": "Fight does not start round 2",
-   "odds": 270,
-   "decimal": 3.7,
-   "p_model": 0.2731,
-   "p_fanduel": 0.2545,
-   "p": 0.2637,
-   "edge": 0.0092,
-   "ev": -0.0243,
-   "kelly": 0.0
-  },
-  {
-   "id": "45570:method:b:KO/TKO",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "method",
-    "b",
-    "KO/TKO"
-   ],
-   "selection": "Donte Johnson by KO/TKO",
-   "odds": 155,
-   "decimal": 2.55,
-   "p_model": 0.4224,
-   "p_fanduel": 0.3428,
-   "p": 0.3818,
-   "edge": 0.039,
-   "ev": -0.0264,
+   "ev": -0.0149,
    "kelly": 0.0
   },
   {
@@ -1557,13 +1521,83 @@
     "a"
    ],
    "selection": "Bilal Hasan to win",
-   "odds": -1200,
-   "decimal": 1.0833,
-   "p_model": 0.8983,
-   "p_fanduel": 0.8708,
-   "p": 0.8983,
-   "edge": 0.0275,
-   "ev": -0.0268,
+   "odds": -1250,
+   "decimal": 1.08,
+   "p_model": 0.9108,
+   "p_fanduel": 0.8824,
+   "p": 0.9108,
+   "edge": 0.0284,
+   "ev": -0.0164,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:method:b:SUB",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Drew Dober by submission",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0479,
+   "p_fanduel": 0.038,
+   "p": 0.0427,
+   "edge": 0.0047,
+   "ev": -0.0177,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:ends_round:2",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.1654,
+   "p_fanduel": 0.1374,
+   "p": 0.1508,
+   "edge": 0.0135,
+   "ev": -0.0195,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:win_round:a:1",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Charles Radtke in round 1",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.126,
+   "p_fanduel": 0.105,
+   "p": 0.1151,
+   "edge": 0.0101,
+   "ev": -0.0214,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:ml:b",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Samuel Sanches to win",
+   "odds": -118,
+   "decimal": 1.8475,
+   "p_model": 0.5294,
+   "p_fanduel": 0.515,
+   "p": 0.5294,
+   "edge": 0.0145,
+   "ev": -0.0219,
    "kelly": 0.0
   },
   {
@@ -1577,11 +1611,11 @@
    "selection": "Fight does not start round 3",
    "odds": -112,
    "decimal": 1.8929,
-   "p_model": 0.5256,
+   "p_model": 0.5261,
    "p_fanduel": 0.5,
-   "p": 0.5128,
-   "edge": 0.0128,
-   "ev": -0.0293,
+   "p": 0.5131,
+   "edge": 0.0131,
+   "ev": -0.0289,
    "kelly": 0.0
   },
   {
@@ -1595,28 +1629,29 @@
    "selection": "Yousri Belgaroui by KO/TKO",
    "odds": 470,
    "decimal": 5.7,
-   "p_model": 0.1878,
+   "p_model": 0.1877,
    "p_fanduel": 0.154,
    "p": 0.1702,
    "edge": 0.0162,
-   "ev": -0.0297,
+   "ev": -0.0299,
    "kelly": 0.0
   },
   {
-   "id": "45573:ml:b",
-   "bout": "Evan Elder vs Samuel Sanches",
+   "id": "45570:win_round:b:1",
+   "bout": "Cesar Almeida vs Donte Johnson",
    "market": [
-    "ml",
-    "b"
+    "win_round",
+    "b",
+    1
    ],
-   "selection": "Samuel Sanches to win",
-   "odds": -130,
-   "decimal": 1.7692,
-   "p_model": 0.5476,
-   "p_fanduel": 0.5331,
-   "p": 0.5476,
-   "edge": 0.0146,
-   "ev": -0.0311,
+   "selection": "Donte Johnson in round 1",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.2503,
+   "p_fanduel": 0.2126,
+   "p": 0.2309,
+   "edge": 0.0183,
+   "ev": -0.0301,
    "kelly": 0.0
   },
   {
@@ -1630,29 +1665,11 @@
    "selection": "Fight starts round 2",
    "odds": -215,
    "decimal": 1.4651,
-   "p_model": 0.6742,
+   "p_model": 0.6754,
    "p_fanduel": 0.6448,
-   "p": 0.6596,
-   "edge": 0.0148,
-   "ev": -0.0335,
-   "kelly": 0.0
-  },
-  {
-   "id": "45570:starts_round:2:True",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "starts_round",
-    2,
-    true
-   ],
-   "selection": "Fight starts round 2",
-   "odds": -235,
-   "decimal": 1.4255,
-   "p_model": 0.6905,
-   "p_fanduel": 0.6626,
-   "p": 0.6767,
-   "edge": 0.0141,
-   "ev": -0.0353,
+   "p": 0.6603,
+   "edge": 0.0154,
+   "ev": -0.0326,
    "kelly": 0.0
   },
   {
@@ -1664,13 +1681,31 @@
     1
    ],
    "selection": "Samuel Sanches in round 1",
-   "odds": 470,
-   "decimal": 5.7,
-   "p_model": 0.1825,
-   "p_fanduel": 0.1566,
-   "p": 0.1692,
-   "edge": 0.0125,
-   "ev": -0.0357,
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1743,
+   "p_fanduel": 0.1488,
+   "p": 0.1611,
+   "edge": 0.0123,
+   "ev": -0.0331,
+   "kelly": 0.0
+  },
+  {
+   "id": "45570:method:b:KO/TKO",
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Donte Johnson by KO/TKO",
+   "odds": 140,
+   "decimal": 2.4,
+   "p_model": 0.4408,
+   "p_fanduel": 0.3645,
+   "p": 0.4021,
+   "edge": 0.0375,
+   "ev": -0.035,
    "kelly": 0.0
   },
   {
@@ -1684,29 +1719,82 @@
    "selection": "Fight does not start round 2",
    "odds": 205,
    "decimal": 3.05,
-   "p_model": 0.3243,
+   "p_model": 0.3247,
    "p_fanduel": 0.3079,
-   "p": 0.3161,
-   "edge": 0.0081,
-   "ev": -0.036,
+   "p": 0.3163,
+   "edge": 0.0083,
+   "ev": -0.0354,
    "kelly": 0.0
   },
   {
-   "id": "45568:method:a:KO/TKO",
-   "bout": "Chris Duncan vs Drew Dober",
+   "id": "45573:starts_round:3:True",
+   "bout": "Evan Elder vs Samuel Sanches",
    "market": [
-    "method",
-    "a",
-    "KO/TKO"
+    "starts_round",
+    3,
+    true
    ],
-   "selection": "Chris Duncan by KO/TKO",
-   "odds": 310,
-   "decimal": 4.1,
-   "p_model": 0.2551,
-   "p_fanduel": 0.2133,
-   "p": 0.2336,
-   "edge": 0.0203,
-   "ev": -0.0424,
+   "selection": "Fight starts round 3",
+   "odds": -142,
+   "decimal": 1.7042,
+   "p_model": 0.5741,
+   "p_fanduel": 0.5544,
+   "p": 0.5643,
+   "edge": 0.0099,
+   "ev": -0.0383,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:starts_round:2:False",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 270,
+   "decimal": 3.7,
+   "p_model": 0.2674,
+   "p_fanduel": 0.2525,
+   "p": 0.2599,
+   "edge": 0.0074,
+   "ev": -0.0384,
+   "kelly": 0.0
+  },
+  {
+   "id": "45570:starts_round:2:True",
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -230,
+   "decimal": 1.4348,
+   "p_model": 0.6831,
+   "p_fanduel": 0.6563,
+   "p": 0.6699,
+   "edge": 0.0135,
+   "ev": -0.0389,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:ends_round:2",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.2062,
+   "p_fanduel": 0.1786,
+   "p": 0.192,
+   "edge": 0.0134,
+   "ev": -0.04,
    "kelly": 0.0
   },
   {
@@ -1722,7 +1810,7 @@
    "decimal": 1.3226,
    "p_model": 0.7327,
    "p_fanduel": 0.7108,
-   "p": 0.7218,
+   "p": 0.7219,
    "edge": 0.0111,
    "ev": -0.0453,
    "kelly": 0.0
@@ -1737,29 +1825,11 @@
    "selection": "Doesn't go to decision",
    "odds": -188,
    "decimal": 1.5319,
-   "p_model": 0.628,
+   "p_model": 0.6286,
    "p_fanduel": 0.6162,
-   "p": 0.6222,
-   "edge": 0.0059,
-   "ev": -0.0469,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:starts_round:3:True",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": -144,
-   "decimal": 1.6944,
-   "p_model": 0.5652,
-   "p_fanduel": 0.5558,
-   "p": 0.5605,
-   "edge": 0.0047,
-   "ev": -0.0502,
+   "p": 0.6224,
+   "edge": 0.0062,
+   "ev": -0.0465,
    "kelly": 0.0
   },
   {
@@ -1773,11 +1843,29 @@
    "selection": "Melquizael Costa in round 1",
    "odds": 250,
    "decimal": 3.5,
-   "p_model": 0.287,
+   "p_model": 0.2875,
    "p_fanduel": 0.2551,
-   "p": 0.2708,
-   "edge": 0.0157,
-   "ev": -0.0523,
+   "p": 0.271,
+   "edge": 0.0159,
+   "ev": -0.0516,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:method:a:KO/TKO",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Chris Duncan by KO/TKO",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.2502,
+   "p_fanduel": 0.2134,
+   "p": 0.2312,
+   "edge": 0.0179,
+   "ev": -0.0519,
    "kelly": 0.0
   },
   {
@@ -1795,77 +1883,7 @@
    "p_fanduel": 0.8253,
    "p": 0.8283,
    "edge": 0.003,
-   "ev": -0.0533,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:ends_round:2",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 500,
-   "decimal": 6.0,
-   "p_model": 0.1646,
-   "p_fanduel": 0.1488,
-   "p": 0.1565,
-   "edge": 0.0077,
-   "ev": -0.0608,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:method:b:DEC",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Drew Dober by decision",
-   "odds": 1100,
-   "decimal": 12.0,
-   "p_model": 0.084,
-   "p_fanduel": 0.0729,
-   "p": 0.0782,
-   "edge": 0.0054,
-   "ev": -0.061,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:ends_round:1",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "ends_round",
-    1
-   ],
-   "selection": "Fight ends in round 1",
-   "odds": 260,
-   "decimal": 3.6,
-   "p_model": 0.2731,
-   "p_fanduel": 0.248,
-   "p": 0.2604,
-   "edge": 0.0123,
-   "ev": -0.0627,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:starts_round:3:False",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "starts_round",
-    3,
-    false
-   ],
-   "selection": "Fight does not start round 3",
-   "odds": 112,
-   "decimal": 2.12,
-   "p_model": 0.4348,
-   "p_fanduel": 0.4442,
-   "p": 0.4395,
-   "edge": -0.0047,
-   "ev": -0.0683,
+   "ev": -0.0534,
    "kelly": 0.0
   },
   {
@@ -1879,29 +1897,11 @@
    "selection": "Melquizael Costa in round 2",
    "odds": 440,
    "decimal": 5.4,
-   "p_model": 0.1794,
+   "p_model": 0.1796,
    "p_fanduel": 0.1653,
-   "p": 0.1723,
-   "edge": 0.0069,
-   "ev": -0.0697,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:starts_round:2:True",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "starts_round",
-    2,
-    true
-   ],
-   "selection": "Fight starts round 2",
-   "odds": -380,
-   "decimal": 1.2632,
-   "p_model": 0.7269,
-   "p_fanduel": 0.7455,
-   "p": 0.7363,
-   "edge": -0.0092,
-   "ev": -0.0699,
+   "p": 0.1724,
+   "edge": 0.007,
+   "ev": -0.0692,
    "kelly": 0.0
   },
   {
@@ -1914,11 +1914,11 @@
    "selection": "Goes to decision",
    "odds": 146,
    "decimal": 2.46,
-   "p_model": 0.372,
+   "p_model": 0.3714,
    "p_fanduel": 0.3838,
-   "p": 0.3778,
-   "edge": -0.0059,
-   "ev": -0.0705,
+   "p": 0.3776,
+   "edge": -0.0062,
+   "ev": -0.0712,
    "kelly": 0.0
   },
   {
@@ -1932,11 +1932,28 @@
    "selection": "Fight starts round 2",
    "odds": -280,
    "decimal": 1.3571,
-   "p_model": 0.6757,
+   "p_model": 0.6753,
    "p_fanduel": 0.6921,
-   "p": 0.6839,
-   "edge": -0.0081,
-   "ev": -0.0718,
+   "p": 0.6837,
+   "edge": -0.0083,
+   "ev": -0.0721,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:ends_round:1",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.2674,
+   "p_fanduel": 0.248,
+   "p": 0.2576,
+   "edge": 0.0096,
+   "ev": -0.0727,
    "kelly": 0.0
   },
   {
@@ -1958,75 +1975,21 @@
    "kelly": 0.0
   },
   {
-   "id": "45567:win_round:a:1",
-   "bout": "Charles Radtke vs Stephen Thompson",
+   "id": "45573:starts_round:2:True",
+   "bout": "Evan Elder vs Samuel Sanches",
    "market": [
-    "win_round",
-    "a",
-    1
+    "starts_round",
+    2,
+    true
    ],
-   "selection": "Charles Radtke in round 1",
-   "odds": 650,
-   "decimal": 7.5,
-   "p_model": 0.1283,
-   "p_fanduel": 0.119,
-   "p": 0.1236,
-   "edge": 0.0045,
-   "ev": -0.073,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:win_round:b:2",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Terrance McKinney in round 2",
-   "odds": 700,
-   "decimal": 8.0,
-   "p_model": 0.1202,
-   "p_fanduel": 0.1116,
-   "p": 0.1158,
-   "edge": 0.0042,
-   "ev": -0.0732,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:method:b:SUB",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Drew Dober by submission",
-   "odds": 2000,
-   "decimal": 21.0,
-   "p_model": 0.0466,
-   "p_fanduel": 0.0416,
-   "p": 0.0441,
-   "edge": 0.0024,
-   "ev": -0.0745,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:method:b:SUB",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Kayla Harrison by submission",
-   "odds": 200,
-   "decimal": 3.0,
-   "p_model": 0.3285,
-   "p_fanduel": 0.2887,
-   "p": 0.3082,
-   "edge": 0.0196,
-   "ev": -0.0753,
+   "selection": "Fight starts round 2",
+   "odds": -400,
+   "decimal": 1.25,
+   "p_model": 0.7326,
+   "p_fanduel": 0.7475,
+   "p": 0.7401,
+   "edge": -0.0074,
+   "ev": -0.0749,
    "kelly": 0.0
   },
   {
@@ -2039,11 +2002,46 @@
    "selection": "Fight ends in round 1",
    "odds": 195,
    "decimal": 2.95,
-   "p_model": 0.3243,
+   "p_model": 0.3247,
    "p_fanduel": 0.3027,
-   "p": 0.3134,
-   "edge": 0.0107,
-   "ev": -0.0755,
+   "p": 0.3136,
+   "edge": 0.0109,
+   "ev": -0.075,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:starts_round:3:False",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 112,
+   "decimal": 2.12,
+   "p_model": 0.4259,
+   "p_fanduel": 0.4456,
+   "p": 0.4357,
+   "edge": -0.0099,
+   "ev": -0.0763,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:ml:a",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Evan Elder to win",
+   "odds": -104,
+   "decimal": 1.9615,
+   "p_model": 0.4706,
+   "p_fanduel": 0.485,
+   "p": 0.4706,
+   "edge": -0.0145,
+   "ev": -0.077,
    "kelly": 0.0
   },
   {
@@ -2057,47 +2055,47 @@
    "selection": "Fight starts round 3",
    "odds": -112,
    "decimal": 1.8929,
-   "p_model": 0.4744,
+   "p_model": 0.4739,
    "p_fanduel": 0.5,
-   "p": 0.4872,
-   "edge": -0.0128,
-   "ev": -0.0778,
+   "p": 0.4869,
+   "edge": -0.0131,
+   "ev": -0.0783,
    "kelly": 0.0
   },
   {
-   "id": "45509:method:a:SUB",
-   "bout": "Kevin Holland vs Uros Medic",
+   "id": "45568:method:b:DEC",
+   "bout": "Chris Duncan vs Drew Dober",
    "market": [
     "method",
-    "a",
-    "SUB"
+    "b",
+    "DEC"
    ],
-   "selection": "Kevin Holland by submission",
-   "odds": 500,
-   "decimal": 6.0,
-   "p_model": 0.1606,
-   "p_fanduel": 0.1456,
-   "p": 0.153,
-   "edge": 0.0073,
-   "ev": -0.0822,
+   "selection": "Drew Dober by decision",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0877,
+   "p_fanduel": 0.0795,
+   "p": 0.0835,
+   "edge": 0.004,
+   "ev": -0.0813,
    "kelly": 0.0
   },
   {
-   "id": "45509:win_round:b:3",
-   "bout": "Kevin Holland vs Uros Medic",
+   "id": "44985:method:b:SUB",
+   "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
-    "win_round",
+    "method",
     "b",
-    3
+    "SUB"
    ],
-   "selection": "Uros Medic in round 3",
-   "odds": 1400,
-   "decimal": 15.0,
-   "p_model": 0.0627,
-   "p_fanduel": 0.0595,
-   "p": 0.0611,
-   "edge": 0.0016,
-   "ev": -0.0837,
+   "selection": "Kayla Harrison by submission",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.3216,
+   "p_fanduel": 0.2909,
+   "p": 0.306,
+   "edge": 0.0151,
+   "ev": -0.082,
    "kelly": 0.0
   },
   {
@@ -2111,99 +2109,65 @@
    "selection": "Yousri Belgaroui in round 2",
    "odds": 1400,
    "decimal": 15.0,
-   "p_model": 0.0625,
+   "p_model": 0.0624,
    "p_fanduel": 0.0595,
    "p": 0.061,
-   "edge": 0.0015,
-   "ev": -0.0851,
+   "edge": 0.0014,
+   "ev": -0.0855,
    "kelly": 0.0
   },
   {
-   "id": "45573:ml:a",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Evan Elder to win",
-   "odds": 102,
-   "decimal": 2.02,
-   "p_model": 0.4524,
-   "p_fanduel": 0.4669,
-   "p": 0.4524,
-   "edge": -0.0146,
-   "ev": -0.0862,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:method:b:SUB",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45567:method:a:SUB",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
     "method",
-    "b",
+    "a",
     "SUB"
    ],
-   "selection": "Josh Hokit by submission",
-   "odds": 850,
-   "decimal": 9.5,
-   "p_model": 0.1002,
-   "p_fanduel": 0.0914,
-   "p": 0.0957,
-   "edge": 0.0043,
-   "ev": -0.0907,
+   "selection": "Charles Radtke by submission",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.1054,
+   "p_fanduel": 0.0975,
+   "p": 0.1014,
+   "edge": 0.0039,
+   "ev": -0.0878,
    "kelly": 0.0
   },
   {
-   "id": "45569:ends_round:2",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 350,
-   "decimal": 4.5,
-   "p_model": 0.2052,
-   "p_fanduel": 0.1984,
-   "p": 0.2018,
-   "edge": 0.0034,
-   "ev": -0.092,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:starts_round:2:False",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "starts_round",
-    2,
-    false
-   ],
-   "selection": "Fight does not start round 2",
-   "odds": 166,
-   "decimal": 2.66,
-   "p_model": 0.3258,
-   "p_fanduel": 0.3552,
-   "p": 0.3404,
-   "edge": -0.0148,
-   "ev": -0.0947,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:win_round:a:1",
-   "bout": "Chris Duncan vs Drew Dober",
+   "id": "45510:win_round:a:3",
+   "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
     "win_round",
     "a",
-    1
+    3
    ],
-   "selection": "Chris Duncan in round 1",
-   "odds": 320,
-   "decimal": 4.2,
-   "p_model": 0.2185,
-   "p_fanduel": 0.2126,
-   "p": 0.2155,
-   "edge": 0.003,
-   "ev": -0.0947,
+   "selection": "Bilal Hasan in round 3",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.1096,
+   "p_fanduel": 0.105,
+   "p": 0.1073,
+   "edge": 0.0023,
+   "ev": -0.088,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:method:b:DEC",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Macy Chiasson by decision",
+   "odds": 450,
+   "decimal": 5.5,
+   "p_model": 0.1718,
+   "p_fanduel": 0.1584,
+   "p": 0.165,
+   "edge": 0.0065,
+   "ev": -0.0925,
    "kelly": 0.0
   },
   {
@@ -2215,49 +2179,13 @@
     false
    ],
    "selection": "Fight does not start round 2",
-   "odds": 180,
-   "decimal": 2.8,
-   "p_model": 0.3095,
-   "p_fanduel": 0.3374,
-   "p": 0.3233,
-   "edge": -0.0141,
-   "ev": -0.0948,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:b:2",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Josh Hokit in round 2",
-   "odds": 1400,
-   "decimal": 15.0,
-   "p_model": 0.061,
-   "p_fanduel": 0.0595,
-   "p": 0.0603,
-   "edge": 0.0007,
-   "ev": -0.0959,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:win_round:b:2",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Kayla Harrison in round 2",
-   "odds": 800,
-   "decimal": 9.0,
-   "p_model": 0.1017,
-   "p_fanduel": 0.0992,
-   "p": 0.1005,
-   "edge": 0.0013,
-   "ev": -0.0959,
+   "odds": 174,
+   "decimal": 2.74,
+   "p_model": 0.3169,
+   "p_fanduel": 0.3437,
+   "p": 0.3301,
+   "edge": -0.0135,
+   "ev": -0.0954,
    "kelly": 0.0
   },
   {
@@ -2273,45 +2201,81 @@
    "decimal": 3.25,
    "p_model": 0.2673,
    "p_fanduel": 0.2892,
-   "p": 0.2782,
+   "p": 0.2781,
    "edge": -0.0111,
-   "ev": -0.096,
+   "ev": -0.0961,
    "kelly": 0.0
   },
   {
-   "id": "45510:win_round:a:3",
-   "bout": "Bilal Hasan vs Luis Gurule",
+   "id": "45509:method:a:SUB",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Kevin Holland by submission",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.1571,
+   "p_fanduel": 0.1444,
+   "p": 0.1506,
+   "edge": 0.0063,
+   "ev": -0.0961,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:starts_round:2:False",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 166,
+   "decimal": 2.66,
+   "p_model": 0.3246,
+   "p_fanduel": 0.3552,
+   "p": 0.3397,
+   "edge": -0.0154,
+   "ev": -0.0963,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:win_round:a:1",
+   "bout": "Chris Duncan vs Drew Dober",
    "market": [
     "win_round",
     "a",
-    3
+    1
    ],
-   "selection": "Bilal Hasan in round 3",
-   "odds": 750,
-   "decimal": 8.5,
-   "p_model": 0.1072,
-   "p_fanduel": 0.105,
-   "p": 0.1061,
-   "edge": 0.0011,
-   "ev": -0.0979,
+   "selection": "Chris Duncan in round 1",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.2143,
+   "p_fanduel": 0.2126,
+   "p": 0.2134,
+   "edge": 0.0009,
+   "ev": -0.1035,
    "kelly": 0.0
   },
   {
-   "id": "44985:win_round:b:3",
+   "id": "44985:win_round:b:2",
    "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
     "win_round",
     "b",
-    3
+    2
    ],
-   "selection": "Kayla Harrison in round 3",
-   "odds": 1000,
-   "decimal": 11.0,
-   "p_model": 0.0815,
-   "p_fanduel": 0.0812,
-   "p": 0.0813,
+   "selection": "Kayla Harrison in round 2",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0996,
+   "p_fanduel": 0.0992,
+   "p": 0.0994,
    "edge": 0.0002,
-   "ev": -0.1053,
+   "ev": -0.1055,
    "kelly": 0.0
   },
   {
@@ -2328,130 +2292,7 @@
    "p_fanduel": 0.1685,
    "p": 0.1686,
    "edge": 0.0001,
-   "ev": -0.1065,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:starts_round:2:True",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "starts_round",
-    2,
-    true
-   ],
-   "selection": "Fight starts round 2",
-   "odds": -600,
-   "decimal": 1.1667,
-   "p_model": 0.7218,
-   "p_fanduel": 0.8011,
-   "p": 0.7637,
-   "edge": -0.0374,
-   "ev": -0.109,
-   "kelly": 0.0
-  },
-  {
-   "id": "45572:ends_round:2",
-   "bout": "Jared Gordon vs Melquizael Costa",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 340,
-   "decimal": 4.4,
-   "p_model": 0.2013,
-   "p_fanduel": 0.2029,
-   "p": 0.2021,
-   "edge": -0.0008,
-   "ev": -0.1108,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:distance:False",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -162,
-   "decimal": 1.6173,
-   "p_model": 0.5156,
-   "p_fanduel": 0.5829,
-   "p": 0.5495,
-   "edge": -0.0334,
-   "ev": -0.1114,
-   "kelly": 0.0
-  },
-  {
-   "id": "45572:method:b:DEC",
-   "bout": "Jared Gordon vs Melquizael Costa",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Melquizael Costa by decision",
-   "odds": 270,
-   "decimal": 3.7,
-   "p_model": 0.2431,
-   "p_fanduel": 0.236,
-   "p": 0.2395,
-   "edge": 0.0035,
-   "ev": -0.1137,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:distance:False",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -770,
-   "decimal": 1.1299,
-   "p_model": 0.7239,
-   "p_fanduel": 0.8346,
-   "p": 0.7843,
-   "edge": -0.0502,
-   "ev": -0.1138,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:starts_round:3:False",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "starts_round",
-    3,
-    false
-   ],
-   "selection": "Fight does not start round 3",
-   "odds": -172,
-   "decimal": 1.5814,
-   "p_model": 0.5216,
-   "p_fanduel": 0.5967,
-   "p": 0.5595,
-   "edge": -0.0372,
-   "ev": -0.1152,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:method:b:DEC",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Macy Chiasson by decision",
-   "odds": 490,
-   "decimal": 5.9,
-   "p_model": 0.1525,
-   "p_fanduel": 0.1471,
-   "p": 0.1498,
-   "edge": 0.0027,
-   "ev": -0.1162,
+   "ev": -0.1064,
    "kelly": 0.0
   },
   {
@@ -2465,11 +2306,28 @@
    "selection": "Evan Elder by submission",
    "odds": 700,
    "decimal": 8.0,
-   "p_model": 0.1122,
-   "p_fanduel": 0.1087,
-   "p": 0.1104,
-   "edge": 0.0017,
-   "ev": -0.1167,
+   "p_model": 0.1152,
+   "p_fanduel": 0.1081,
+   "p": 0.1116,
+   "edge": 0.0035,
+   "ev": -0.1069,
+   "kelly": 0.0
+  },
+  {
+   "id": "45510:distance:False",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -770,
+   "decimal": 1.1299,
+   "p_model": 0.735,
+   "p_fanduel": 0.8346,
+   "p": 0.7891,
+   "edge": -0.0455,
+   "ev": -0.1085,
    "kelly": 0.0
   },
   {
@@ -2480,31 +2338,48 @@
     "a"
    ],
    "selection": "Amanda Nunes to win",
-   "odds": 150,
-   "decimal": 2.5,
-   "p_model": 0.3522,
-   "p_fanduel": 0.3774,
-   "p": 0.3522,
-   "edge": -0.0252,
-   "ev": -0.1196,
+   "odds": 146,
+   "decimal": 2.46,
+   "p_model": 0.3617,
+   "p_fanduel": 0.3874,
+   "p": 0.3617,
+   "edge": -0.0257,
+   "ev": -0.1102,
    "kelly": 0.0
   },
   {
-   "id": "45573:method:b:KO/TKO",
-   "bout": "Evan Elder vs Samuel Sanches",
+   "id": "45572:ends_round:2",
+   "bout": "Jared Gordon vs Melquizael Costa",
    "market": [
-    "method",
-    "b",
-    "KO/TKO"
+    "ends_round",
+    2
    ],
-   "selection": "Samuel Sanches by KO/TKO",
-   "odds": 180,
-   "decimal": 2.8,
-   "p_model": 0.3179,
-   "p_fanduel": 0.3105,
-   "p": 0.3142,
-   "edge": 0.0037,
-   "ev": -0.1204,
+   "selection": "Fight ends in round 2",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.2014,
+   "p_fanduel": 0.2029,
+   "p": 0.2022,
+   "edge": -0.0008,
+   "ev": -0.1105,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:starts_round:2:True",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -700,
+   "decimal": 1.1429,
+   "p_model": 0.72,
+   "p_fanduel": 0.8253,
+   "p": 0.7771,
+   "edge": -0.0483,
+   "ev": -0.1119,
    "kelly": 0.0
   },
   {
@@ -2518,11 +2393,29 @@
    "selection": "Donte Johnson by decision",
    "odds": 390,
    "decimal": 4.9,
-   "p_model": 0.1797,
-   "p_fanduel": 0.1784,
-   "p": 0.1791,
-   "edge": 0.0007,
-   "ev": -0.1226,
+   "p_model": 0.1832,
+   "p_fanduel": 0.1786,
+   "p": 0.1809,
+   "edge": 0.0023,
+   "ev": -0.1137,
+   "kelly": 0.0
+  },
+  {
+   "id": "45572:method:b:DEC",
+   "bout": "Jared Gordon vs Melquizael Costa",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Melquizael Costa by decision",
+   "odds": 270,
+   "decimal": 3.7,
+   "p_model": 0.243,
+   "p_fanduel": 0.236,
+   "p": 0.2395,
+   "edge": 0.0035,
+   "ev": -0.1138,
    "kelly": 0.0
   },
   {
@@ -2536,99 +2429,100 @@
    "selection": "Bilal Hasan in round 2",
    "odds": 300,
    "decimal": 4.0,
-   "p_model": 0.2147,
+   "p_model": 0.2195,
    "p_fanduel": 0.2232,
-   "p": 0.219,
-   "edge": -0.0043,
-   "ev": -0.1242,
+   "p": 0.2214,
+   "edge": -0.0019,
+   "ev": -0.1146,
    "kelly": 0.0
   },
   {
-   "id": "44985:win_round:b:4",
+   "id": "44985:win_round:b:3",
    "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
     "win_round",
     "b",
-    4
+    3
    ],
-   "selection": "Kayla Harrison in round 4",
-   "odds": 1300,
-   "decimal": 14.0,
-   "p_model": 0.0611,
-   "p_fanduel": 0.0638,
-   "p": 0.0624,
-   "edge": -0.0014,
-   "ev": -0.1264,
+   "selection": "Kayla Harrison in round 3",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0798,
+   "p_fanduel": 0.0812,
+   "p": 0.0805,
+   "edge": -0.0007,
+   "ev": -0.1148,
    "kelly": 0.0
   },
   {
-   "id": "45509:distance:False",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -590,
-   "decimal": 1.1695,
-   "p_model": 0.6753,
-   "p_fanduel": 0.8073,
-   "p": 0.747,
-   "edge": -0.0604,
-   "ev": -0.1264,
-   "kelly": 0.0
-  },
-  {
-   "id": "45570:starts_round:3:False",
-   "bout": "Cesar Almeida vs Donte Johnson",
+   "id": "45568:starts_round:3:False",
+   "bout": "Chris Duncan vs Drew Dober",
    "market": [
     "starts_round",
     3,
     false
    ],
    "selection": "Fight does not start round 3",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.4866,
-   "p_fanduel": 0.5772,
-   "p": 0.5321,
-   "edge": -0.045,
-   "ev": -0.1267,
+   "odds": -172,
+   "decimal": 1.5814,
+   "p_model": 0.5195,
+   "p_fanduel": 0.5967,
+   "p": 0.5585,
+   "edge": -0.0382,
+   "ev": -0.1168,
    "kelly": 0.0
   },
   {
-   "id": "45567:starts_round:3:True",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "starts_round",
-    3,
-    true
-   ],
-   "selection": "Fight starts round 3",
-   "odds": -230,
-   "decimal": 1.4348,
-   "p_model": 0.5572,
-   "p_fanduel": 0.6563,
-   "p": 0.6079,
-   "edge": -0.0485,
-   "ev": -0.1278,
-   "kelly": 0.0
-  },
-  {
-   "id": "45508:distance:False",
-   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "id": "45573:distance:False",
+   "bout": "Evan Elder vs Samuel Sanches",
    "market": [
     "distance",
     false
    ],
    "selection": "Doesn't go to decision",
-   "odds": 154,
-   "decimal": 2.54,
-   "p_model": 0.3164,
-   "p_fanduel": 0.3713,
-   "p": 0.3433,
-   "edge": -0.028,
-   "ev": -0.128,
+   "odds": -162,
+   "decimal": 1.6173,
+   "p_model": 0.5051,
+   "p_fanduel": 0.5829,
+   "p": 0.5443,
+   "edge": -0.0386,
+   "ev": -0.1197,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:method:b:KO/TKO",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Samuel Sanches by KO/TKO",
+   "odds": 195,
+   "decimal": 2.95,
+   "p_model": 0.3035,
+   "p_fanduel": 0.2933,
+   "p": 0.2983,
+   "edge": 0.0051,
+   "ev": -0.1199,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:method:b:SUB",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Josh Hokit by submission",
+   "odds": 850,
+   "decimal": 9.5,
+   "p_model": 0.0941,
+   "p_fanduel": 0.0912,
+   "p": 0.0926,
+   "edge": 0.0015,
+   "ev": -0.12,
    "kelly": 0.0
   },
   {
@@ -2642,63 +2536,64 @@
    "selection": "Fight does not start round 3",
    "odds": -330,
    "decimal": 1.303,
-   "p_model": 0.6107,
+   "p_model": 0.6201,
    "p_fanduel": 0.7229,
-   "p": 0.6692,
-   "edge": -0.0537,
-   "ev": -0.128,
+   "p": 0.6736,
+   "edge": -0.0493,
+   "ev": -0.1223,
    "kelly": 0.0
   },
   {
-   "id": "45567:distance:True",
-   "bout": "Charles Radtke vs Stephen Thompson",
+   "id": "45570:starts_round:3:False",
+   "bout": "Cesar Almeida vs Donte Johnson",
    "market": [
-    "distance",
-    true
+    "starts_round",
+    3,
+    false
    ],
-   "selection": "Goes to decision",
-   "odds": -146,
-   "decimal": 1.6849,
-   "p_model": 0.4749,
-   "p_fanduel": 0.5595,
-   "p": 0.5173,
-   "edge": -0.0422,
-   "ev": -0.1283,
+   "selection": "Fight does not start round 3",
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.4979,
+   "p_fanduel": 0.5817,
+   "p": 0.5401,
+   "edge": -0.0416,
+   "ev": -0.1223,
    "kelly": 0.0
   },
   {
-   "id": "45509:ends_round:3",
+   "id": "43676:win_round:b:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Josh Hokit in round 2",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0573,
+   "p_fanduel": 0.0595,
+   "p": 0.0584,
+   "edge": -0.0011,
+   "ev": -0.1237,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:distance:False",
    "bout": "Kevin Holland vs Uros Medic",
    "market": [
-    "ends_round",
-    3
+    "distance",
+    false
    ],
-   "selection": "Fight ends in round 3",
-   "odds": 700,
-   "decimal": 8.0,
-   "p_model": 0.1063,
-   "p_fanduel": 0.1116,
-   "p": 0.1089,
-   "edge": -0.0027,
-   "ev": -0.1285,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:method:b:DEC",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Samuel Sanches by decision",
-   "odds": 430,
-   "decimal": 5.3,
-   "p_model": 0.1644,
-   "p_fanduel": 0.164,
-   "p": 0.1642,
-   "edge": 0.0002,
-   "ev": -0.1295,
+   "selection": "Doesn't go to decision",
+   "odds": -590,
+   "decimal": 1.1695,
+   "p_model": 0.6788,
+   "p_fanduel": 0.8073,
+   "p": 0.7485,
+   "edge": -0.0588,
+   "ev": -0.1247,
    "kelly": 0.0
   },
   {
@@ -2709,47 +2604,83 @@
     "a"
    ],
    "selection": "Kevin Holland to win",
-   "odds": 122,
-   "decimal": 2.22,
-   "p_model": 0.39,
-   "p_fanduel": 0.425,
-   "p": 0.39,
-   "edge": -0.035,
-   "ev": -0.1341,
+   "odds": 130,
+   "decimal": 2.3,
+   "p_model": 0.3796,
+   "p_fanduel": 0.414,
+   "p": 0.3796,
+   "edge": -0.0344,
+   "ev": -0.1269,
    "kelly": 0.0
   },
   {
-   "id": "45568:distance:False",
-   "bout": "Chris Duncan vs Drew Dober",
+   "id": "45508:distance:False",
+   "bout": "Caio Borralho vs Yousri Belgaroui",
    "market": [
     "distance",
     false
    ],
    "selection": "Doesn't go to decision",
-   "odds": -400,
-   "decimal": 1.25,
-   "p_model": 0.6201,
-   "p_fanduel": 0.7549,
-   "p": 0.6916,
-   "edge": -0.0633,
-   "ev": -0.1355,
+   "odds": 154,
+   "decimal": 2.54,
+   "p_model": 0.3163,
+   "p_fanduel": 0.3713,
+   "p": 0.3433,
+   "edge": -0.028,
+   "ev": -0.1281,
    "kelly": 0.0
   },
   {
-   "id": "45568:ends_round:1",
-   "bout": "Chris Duncan vs Drew Dober",
+   "id": "45567:ml:b",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "ends_round",
+    "ml",
+    "b"
+   ],
+   "selection": "Stephen Thompson to win",
+   "odds": -158,
+   "decimal": 1.6329,
+   "p_model": 0.5335,
+   "p_fanduel": 0.5827,
+   "p": 0.5335,
+   "edge": -0.0492,
+   "ev": -0.1288,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:win_round:a:2",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Charles Radtke in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0771,
+   "p_fanduel": 0.0812,
+   "p": 0.0791,
+   "edge": -0.0021,
+   "ev": -0.1299,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:win_round:b:1",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
     1
    ],
-   "selection": "Fight ends in round 1",
-   "odds": 155,
-   "decimal": 2.55,
-   "p_model": 0.3258,
-   "p_fanduel": 0.3501,
-   "p": 0.3379,
-   "edge": -0.0123,
-   "ev": -0.1384,
+   "selection": "Kayla Harrison in round 1",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.1128,
+   "p_fanduel": 0.119,
+   "p": 0.1159,
+   "edge": -0.0032,
+   "ev": -0.131,
    "kelly": 0.0
   },
   {
@@ -2763,29 +2694,117 @@
    "selection": "Uros Medic in round 2",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.127,
+   "p_model": 0.1298,
    "p_fanduel": 0.1374,
-   "p": 0.1321,
-   "edge": -0.0053,
-   "ev": -0.1413,
+   "p": 0.1335,
+   "edge": -0.0038,
+   "ev": -0.1319,
    "kelly": 0.0
   },
   {
-   "id": "45571:starts_round:3:False",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "45570:win_round:b:2",
+   "bout": "Cesar Almeida vs Donte Johnson",
    "market": [
-    "starts_round",
-    3,
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Donte Johnson in round 2",
+   "odds": 490,
+   "decimal": 5.9,
+   "p_model": 0.1424,
+   "p_fanduel": 0.1513,
+   "p": 0.1468,
+   "edge": -0.0045,
+   "ev": -0.1337,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:win_round:b:4",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Kayla Harrison in round 4",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0598,
+   "p_fanduel": 0.0638,
+   "p": 0.0617,
+   "edge": -0.002,
+   "ev": -0.1357,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:distance:False",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "distance",
     false
    ],
-   "selection": "Fight does not start round 3",
-   "odds": -148,
-   "decimal": 1.6757,
-   "p_model": 0.4612,
-   "p_fanduel": 0.5631,
-   "p": 0.5123,
-   "edge": -0.0509,
-   "ev": -0.1416,
+   "selection": "Doesn't go to decision",
+   "odds": -400,
+   "decimal": 1.25,
+   "p_model": 0.6175,
+   "p_fanduel": 0.7549,
+   "p": 0.6904,
+   "edge": -0.0645,
+   "ev": -0.137,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:win_round:b:3",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Uros Medic in round 3",
+   "odds": 1200,
+   "decimal": 13.0,
+   "p_model": 0.0641,
+   "p_fanduel": 0.0687,
+   "p": 0.0663,
+   "edge": -0.0023,
+   "ev": -0.1377,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:method:b:DEC",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kayla Harrison by decision",
+   "odds": 300,
+   "decimal": 4.0,
+   "p_model": 0.2122,
+   "p_fanduel": 0.2182,
+   "p": 0.2152,
+   "edge": -0.003,
+   "ev": -0.1394,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:ends_round:1",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 155,
+   "decimal": 2.55,
+   "p_model": 0.3246,
+   "p_fanduel": 0.3501,
+   "p": 0.3373,
+   "edge": -0.0129,
+   "ev": -0.14,
    "kelly": 0.0
   },
   {
@@ -2799,45 +2818,11 @@
    "selection": "Melquizael Costa in round 3",
    "odds": 800,
    "decimal": 9.0,
-   "p_model": 0.0915,
+   "p_model": 0.0916,
    "p_fanduel": 0.0992,
-   "p": 0.0953,
+   "p": 0.0954,
    "edge": -0.0039,
-   "ev": -0.1423,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:ml:b",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Stephen Thompson to win",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.5225,
-   "p_fanduel": 0.575,
-   "p": 0.5225,
-   "edge": -0.0524,
-   "ev": -0.1425,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:distance:False",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -265,
-   "decimal": 1.3774,
-   "p_model": 0.5553,
-   "p_fanduel": 0.6853,
-   "p": 0.6225,
-   "edge": -0.0628,
-   "ev": -0.1425,
+   "ev": -0.1418,
    "kelly": 0.0
   },
   {
@@ -2848,13 +2833,13 @@
     1
    ],
    "selection": "Fight ends in round 1",
-   "odds": 165,
-   "decimal": 2.65,
-   "p_model": 0.3095,
-   "p_fanduel": 0.3369,
-   "p": 0.3231,
-   "edge": -0.0138,
-   "ev": -0.1438,
+   "odds": 160,
+   "decimal": 2.6,
+   "p_model": 0.3169,
+   "p_fanduel": 0.3434,
+   "p": 0.33,
+   "edge": -0.0134,
+   "ev": -0.142,
    "kelly": 0.0
   },
   {
@@ -2865,31 +2850,84 @@
     false
    ],
    "selection": "Doesn't go to decision",
-   "odds": -310,
-   "decimal": 1.3226,
-   "p_model": 0.5739,
-   "p_fanduel": 0.7139,
-   "p": 0.6471,
-   "edge": -0.0668,
-   "ev": -0.1442,
+   "odds": -330,
+   "decimal": 1.303,
+   "p_model": 0.5873,
+   "p_fanduel": 0.7229,
+   "p": 0.6583,
+   "edge": -0.0646,
+   "ev": -0.1422,
    "kelly": 0.0
   },
   {
-   "id": "45570:win_round:b:2",
-   "bout": "Cesar Almeida vs Donte Johnson",
+   "id": "45509:starts_round:3:False",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.5721,
+   "p_fanduel": 0.6974,
+   "p": 0.6371,
+   "edge": -0.0604,
+   "ev": -0.1432,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:method:b:DEC",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Samuel Sanches by decision",
+   "odds": 430,
+   "decimal": 5.3,
+   "p_model": 0.16,
+   "p_fanduel": 0.1632,
+   "p": 0.1616,
+   "edge": -0.0016,
+   "ev": -0.1436,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:win_round:a:2",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
     "win_round",
-    "b",
+    "a",
     2
    ],
-   "selection": "Donte Johnson in round 2",
+   "selection": "Bia Mesquita in round 2",
    "odds": 500,
    "decimal": 6.0,
-   "p_model": 0.1366,
+   "p_model": 0.1363,
    "p_fanduel": 0.1488,
-   "p": 0.1426,
-   "edge": -0.0062,
-   "ev": -0.1446,
+   "p": 0.1424,
+   "edge": -0.0064,
+   "ev": -0.1454,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:ml:a",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jim Miller to win",
+   "odds": 180,
+   "decimal": 2.8,
+   "p_model": 0.3049,
+   "p_fanduel": 0.3403,
+   "p": 0.3049,
+   "edge": -0.0354,
+   "ev": -0.1462,
    "kelly": 0.0
   },
   {
@@ -2903,118 +2941,11 @@
    "selection": "Jared Gordon by decision",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.1289,
+   "p_model": 0.1284,
    "p_fanduel": 0.1344,
-   "p": 0.1316,
-   "edge": -0.0028,
-   "ev": -0.1446,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:starts_round:3:False",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "starts_round",
-    3,
-    false
-   ],
-   "selection": "Fight does not start round 3",
-   "odds": -300,
-   "decimal": 1.3333,
-   "p_model": 0.569,
-   "p_fanduel": 0.7059,
-   "p": 0.6403,
-   "edge": -0.0656,
-   "ev": -0.1463,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:win_round:a:1",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "win_round",
-    "a",
-    1
-   ],
-   "selection": "Evan Elder in round 1",
-   "odds": 800,
-   "decimal": 9.0,
-   "p_model": 0.0906,
-   "p_fanduel": 0.0992,
-   "p": 0.0948,
-   "edge": -0.0044,
-   "ev": -0.1466,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:method:b:DEC",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Kayla Harrison by decision",
-   "odds": 290,
-   "decimal": 3.9,
-   "p_model": 0.2146,
-   "p_fanduel": 0.2221,
-   "p": 0.2183,
-   "edge": -0.0037,
-   "ev": -0.1486,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:win_round:a:2",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Jim Miller in round 2",
-   "odds": 850,
-   "decimal": 9.5,
-   "p_model": 0.085,
-   "p_fanduel": 0.094,
-   "p": 0.0894,
-   "edge": -0.0046,
-   "ev": -0.1509,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:ml:a",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Jim Miller to win",
-   "odds": 158,
-   "decimal": 2.58,
-   "p_model": 0.329,
-   "p_fanduel": 0.3658,
-   "p": 0.329,
-   "edge": -0.0367,
-   "ev": -0.1511,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:win_round:b:1",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "win_round",
-    "b",
-    1
-   ],
-   "selection": "Kayla Harrison in round 1",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.1152,
-   "p_fanduel": 0.1276,
-   "p": 0.1212,
-   "edge": -0.0063,
-   "ev": -0.1513,
+   "p": 0.1314,
+   "edge": -0.003,
+   "ev": -0.1462,
    "kelly": 0.0
   },
   {
@@ -3028,65 +2959,46 @@
    "selection": "Fight does not start round 2",
    "odds": -104,
    "decimal": 1.9615,
-   "p_model": 0.3841,
+   "p_model": 0.3901,
    "p_fanduel": 0.4812,
-   "p": 0.432,
-   "edge": -0.0492,
-   "ev": -0.1526,
+   "p": 0.4351,
+   "edge": -0.0461,
+   "ev": -0.1465,
    "kelly": 0.0
   },
   {
-   "id": "45509:method:b:KO/TKO",
-   "bout": "Kevin Holland vs Uros Medic",
+   "id": "45571:starts_round:3:False",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
-    "method",
-    "b",
-    "KO/TKO"
+    "starts_round",
+    3,
+    false
    ],
-   "selection": "Uros Medic by KO/TKO",
-   "odds": 115,
-   "decimal": 2.15,
-   "p_model": 0.3807,
-   "p_fanduel": 0.4064,
-   "p": 0.3935,
-   "edge": -0.0129,
-   "ev": -0.154,
+   "selection": "Fight does not start round 3",
+   "odds": -144,
+   "decimal": 1.6944,
+   "p_model": 0.4489,
+   "p_fanduel": 0.5581,
+   "p": 0.5035,
+   "edge": -0.0546,
+   "ev": -0.1468,
    "kelly": 0.0
   },
   {
-   "id": "44985:method:a:SUB",
-   "bout": "Amanda Nunes vs Kayla Harrison",
+   "id": "45567:distance:True",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "method",
-    "a",
-    "SUB"
+    "distance",
+    true
    ],
-   "selection": "Amanda Nunes by submission",
-   "odds": 2200,
-   "decimal": 23.0,
-   "p_model": 0.0359,
-   "p_fanduel": 0.0377,
-   "p": 0.0368,
-   "edge": -0.0009,
-   "ev": -0.1544,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:win_round:a:2",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Chris Duncan in round 2",
-   "odds": 500,
-   "decimal": 6.0,
-   "p_model": 0.1326,
-   "p_fanduel": 0.1488,
-   "p": 0.1405,
-   "edge": -0.0083,
-   "ev": -0.157,
+   "selection": "Goes to decision",
+   "odds": -164,
+   "decimal": 1.6098,
+   "p_model": 0.4719,
+   "p_fanduel": 0.5862,
+   "p": 0.5294,
+   "edge": -0.0567,
+   "ev": -0.1477,
    "kelly": 0.0
   },
   {
@@ -3097,31 +3009,30 @@
     "b"
    ],
    "selection": "Yousri Belgaroui to win",
-   "odds": 126,
-   "decimal": 2.26,
-   "p_model": 0.3728,
-   "p_fanduel": 0.4171,
-   "p": 0.3728,
-   "edge": -0.0443,
-   "ev": -0.1574,
+   "odds": 128,
+   "decimal": 2.28,
+   "p_model": 0.3727,
+   "p_fanduel": 0.4173,
+   "p": 0.3727,
+   "edge": -0.0446,
+   "ev": -0.1501,
    "kelly": 0.0
   },
   {
-   "id": "45571:win_round:a:2",
+   "id": "45571:ml:b",
    "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
-    "win_round",
-    "a",
-    2
+    "ml",
+    "b"
    ],
-   "selection": "Bia Mesquita in round 2",
-   "odds": 450,
-   "decimal": 5.5,
-   "p_model": 0.1443,
-   "p_fanduel": 0.1623,
-   "p": 0.1531,
-   "edge": -0.0092,
-   "ev": -0.1578,
+   "selection": "Macy Chiasson to win",
+   "odds": 194,
+   "decimal": 2.94,
+   "p_model": 0.2886,
+   "p_fanduel": 0.3239,
+   "p": 0.2886,
+   "edge": -0.0352,
+   "ev": -0.1514,
    "kelly": 0.0
   },
   {
@@ -3134,28 +3045,28 @@
    "selection": "Fight ends in round 2",
    "odds": 250,
    "decimal": 3.5,
-   "p_model": 0.2266,
+   "p_model": 0.23,
    "p_fanduel": 0.2551,
-   "p": 0.2406,
-   "edge": -0.0145,
-   "ev": -0.1579,
+   "p": 0.2423,
+   "edge": -0.0128,
+   "ev": -0.1518,
    "kelly": 0.0
   },
   {
-   "id": "43676:ml:b",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45571:distance:False",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
-    "ml",
-    "b"
+    "distance",
+    false
    ],
-   "selection": "Josh Hokit to win",
-   "odds": 144,
-   "decimal": 2.44,
-   "p_model": 0.3449,
-   "p_fanduel": 0.3857,
-   "p": 0.3449,
-   "edge": -0.0408,
-   "ev": -0.1584,
+   "selection": "Doesn't go to decision",
+   "odds": -265,
+   "decimal": 1.3774,
+   "p_model": 0.5403,
+   "p_fanduel": 0.6853,
+   "p": 0.6154,
+   "edge": -0.0699,
+   "ev": -0.1524,
    "kelly": 0.0
   },
   {
@@ -3168,209 +3079,51 @@
    "selection": "Fight ends in round 3",
    "odds": 600,
    "decimal": 7.0,
-   "p_model": 0.1132,
+   "p_model": 0.1149,
    "p_fanduel": 0.1276,
-   "p": 0.1202,
-   "edge": -0.0074,
-   "ev": -0.1587,
+   "p": 0.1211,
+   "edge": -0.0065,
+   "ev": -0.1525,
    "kelly": 0.0
   },
   {
-   "id": "43676:ends_round:2",
+   "id": "43676:ml:b",
    "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 470,
-   "decimal": 5.7,
-   "p_model": 0.1386,
-   "p_fanduel": 0.1566,
-   "p": 0.1474,
-   "edge": -0.0093,
-   "ev": -0.1599,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:method:a:KO/TKO",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Charles Radtke by KO/TKO",
-   "odds": 480,
-   "decimal": 5.8,
-   "p_model": 0.1393,
-   "p_fanduel": 0.1505,
-   "p": 0.1448,
-   "edge": -0.0057,
-   "ev": -0.1603,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:ml:b",
-   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
     "ml",
     "b"
    ],
-   "selection": "Macy Chiasson to win",
-   "odds": 220,
-   "decimal": 3.2,
-   "p_model": 0.2621,
-   "p_fanduel": 0.295,
-   "p": 0.2621,
-   "edge": -0.0329,
-   "ev": -0.1614,
+   "selection": "Josh Hokit to win",
+   "odds": 168,
+   "decimal": 2.68,
+   "p_model": 0.3161,
+   "p_fanduel": 0.3552,
+   "p": 0.3161,
+   "edge": -0.0391,
+   "ev": -0.1528,
    "kelly": 0.0
   },
   {
-   "id": "44985:win_round:b:5",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "win_round",
-    "b",
-    5
-   ],
-   "selection": "Kayla Harrison in round 5",
-   "odds": 1900,
-   "decimal": 20.0,
-   "p_model": 0.0393,
-   "p_fanduel": 0.0446,
-   "p": 0.0419,
-   "edge": -0.0027,
-   "ev": -0.1617,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:method:a:SUB",
+   "id": "45567:starts_round:3:True",
    "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "method",
-    "a",
-    "SUB"
+    "starts_round",
+    3,
+    true
    ],
-   "selection": "Charles Radtke by submission",
-   "odds": 650,
-   "decimal": 7.5,
-   "p_model": 0.1073,
-   "p_fanduel": 0.1164,
-   "p": 0.1117,
-   "edge": -0.0046,
-   "ev": -0.1619,
+   "selection": "Fight starts round 3",
+   "odds": -290,
+   "decimal": 1.3448,
+   "p_model": 0.5546,
+   "p_fanduel": 0.6974,
+   "p": 0.6288,
+   "edge": -0.0686,
+   "ev": -0.1543,
    "kelly": 0.0
   },
   {
-   "id": "45509:ends_round:2",
+   "id": "45509:ends_round:3",
    "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 270,
-   "decimal": 3.7,
-   "p_model": 0.2122,
-   "p_fanduel": 0.2413,
-   "p": 0.2264,
-   "edge": -0.0149,
-   "ev": -0.1622,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:distance:False",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -210,
-   "decimal": 1.4762,
-   "p_model": 0.4923,
-   "p_fanduel": 0.6396,
-   "p": 0.5674,
-   "edge": -0.0722,
-   "ev": -0.1624,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:win_round:a:2",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Charles Radtke in round 2",
-   "odds": 900,
-   "decimal": 10.0,
-   "p_model": 0.0785,
-   "p_fanduel": 0.0893,
-   "p": 0.0837,
-   "edge": -0.0055,
-   "ev": -0.1626,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:distance:False",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -2500,
-   "decimal": 1.04,
-   "p_model": 0.6366,
-   "p_fanduel": 0.9058,
-   "p": 0.8041,
-   "edge": -0.1017,
-   "ev": -0.1638,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:starts_round:5:False",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "starts_round",
-    5,
-    false
-   ],
-   "selection": "Fight does not start round 5",
-   "odds": -158,
-   "decimal": 1.6329,
-   "p_model": 0.4435,
-   "p_fanduel": 0.5784,
-   "p": 0.5111,
-   "edge": -0.0672,
-   "ev": -0.1653,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:starts_round:2:False",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "starts_round",
-    2,
-    false
-   ],
-   "selection": "Fight does not start round 2",
-   "odds": 162,
-   "decimal": 2.62,
-   "p_model": 0.2792,
-   "p_fanduel": 0.3604,
-   "p": 0.3184,
-   "edge": -0.042,
-   "ev": -0.1658,
-   "kelly": 0.0
-  },
-  {
-   "id": "45572:ends_round:3",
-   "bout": "Jared Gordon vs Melquizael Costa",
    "market": [
     "ends_round",
     3
@@ -3378,153 +3131,83 @@
    "selection": "Fight ends in round 3",
    "odds": 650,
    "decimal": 7.5,
-   "p_model": 0.1024,
+   "p_model": 0.1067,
    "p_fanduel": 0.119,
-   "p": 0.1105,
-   "edge": -0.0086,
-   "ev": -0.1716,
+   "p": 0.1128,
+   "edge": -0.0063,
+   "ev": -0.1544,
    "kelly": 0.0
   },
   {
-   "id": "43676:starts_round:4:False",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45569:win_round:a:2",
+   "bout": "Jim Miller vs Terrance McKinney",
    "market": [
-    "starts_round",
-    4,
-    false
-   ],
-   "selection": "Fight does not start round 4",
-   "odds": -128,
-   "decimal": 1.7812,
-   "p_model": 0.3981,
-   "p_fanduel": 0.5314,
-   "p": 0.4641,
-   "edge": -0.0673,
-   "ev": -0.1733,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:ends_round:2",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "ends_round",
+    "win_round",
+    "a",
     2
    ],
-   "selection": "Fight ends in round 2",
-   "odds": 320,
-   "decimal": 4.2,
-   "p_model": 0.182,
-   "p_fanduel": 0.2126,
-   "p": 0.1968,
-   "edge": -0.0157,
-   "ev": -0.1733,
+   "selection": "Jim Miller in round 2",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0799,
+   "p_fanduel": 0.0893,
+   "p": 0.0845,
+   "edge": -0.0048,
+   "ev": -0.1554,
    "kelly": 0.0
   },
   {
-   "id": "43676:distance:False",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "distance",
-    false
-   ],
-   "selection": "Doesn't go to decision",
-   "odds": -280,
-   "decimal": 1.3571,
-   "p_model": 0.5137,
-   "p_fanduel": 0.6955,
-   "p": 0.6084,
-   "edge": -0.0872,
-   "ev": -0.1744,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:starts_round:5:False",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "starts_round",
-    5,
-    false
-   ],
-   "selection": "Fight does not start round 5",
-   "odds": -192,
-   "decimal": 1.5208,
-   "p_model": 0.4618,
-   "p_fanduel": 0.6218,
-   "p": 0.5429,
-   "edge": -0.0789,
-   "ev": -0.1744,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:starts_round:2:False",
+   "id": "45509:method:b:KO/TKO",
    "bout": "Kevin Holland vs Uros Medic",
    "market": [
-    "starts_round",
-    2,
-    false
+    "method",
+    "b",
+    "KO/TKO"
    ],
-   "selection": "Fight does not start round 2",
-   "odds": 100,
-   "decimal": 2.0,
-   "p_model": 0.3567,
-   "p_fanduel": 0.4711,
-   "p": 0.4127,
-   "edge": -0.0583,
-   "ev": -0.1745,
+   "selection": "Uros Medic by KO/TKO",
+   "odds": 110,
+   "decimal": 2.1,
+   "p_model": 0.3893,
+   "p_fanduel": 0.4125,
+   "p": 0.4008,
+   "edge": -0.0117,
+   "ev": -0.1583,
    "kelly": 0.0
   },
   {
-   "id": "43676:starts_round:3:False",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45567:method:b:SUB",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "starts_round",
-    3,
-    false
+    "method",
+    "b",
+    "SUB"
    ],
-   "selection": "Fight does not start round 3",
-   "odds": 128,
-   "decimal": 2.28,
-   "p_model": 0.3126,
-   "p_fanduel": 0.4138,
-   "p": 0.3617,
-   "edge": -0.0521,
-   "ev": -0.1753,
+   "selection": "Stephen Thompson by submission",
+   "odds": 3000,
+   "decimal": 31.0,
+   "p_model": 0.026,
+   "p_fanduel": 0.0283,
+   "p": 0.0271,
+   "edge": -0.0012,
+   "ev": -0.1587,
    "kelly": 0.0
   },
   {
-   "id": "44985:starts_round:4:False",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "starts_round",
-    4,
-    false
-   ],
-   "selection": "Fight does not start round 4",
-   "odds": -110,
-   "decimal": 1.9091,
-   "p_model": 0.3705,
-   "p_fanduel": 0.4938,
-   "p": 0.431,
-   "edge": -0.0627,
-   "ev": -0.1771,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:win_round:a:1",
-   "bout": "Bilal Hasan vs Luis Gurule",
+   "id": "45573:win_round:a:1",
+   "bout": "Evan Elder vs Samuel Sanches",
    "market": [
     "win_round",
     "a",
     1
    ],
-   "selection": "Bilal Hasan in round 1",
-   "odds": 105,
-   "decimal": 2.05,
-   "p_model": 0.3642,
-   "p_fanduel": 0.4355,
-   "p": 0.3993,
-   "edge": -0.0362,
-   "ev": -0.1814,
+   "selection": "Evan Elder in round 1",
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0931,
+   "p_fanduel": 0.105,
+   "p": 0.0989,
+   "edge": -0.0061,
+   "ev": -0.1592,
    "kelly": 0.0
   },
   {
@@ -3538,11 +3221,382 @@
    "selection": "Terrance McKinney by submission",
    "odds": 290,
    "decimal": 3.9,
-   "p_model": 0.1961,
-   "p_fanduel": 0.2242,
-   "p": 0.2098,
-   "edge": -0.0144,
-   "ev": -0.1818,
+   "p_model": 0.206,
+   "p_fanduel": 0.2253,
+   "p": 0.2155,
+   "edge": -0.0098,
+   "ev": -0.1595,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:starts_round:2:False",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 106,
+   "decimal": 2.06,
+   "p_model": 0.3589,
+   "p_fanduel": 0.4588,
+   "p": 0.4079,
+   "edge": -0.0509,
+   "ev": -0.1597,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:ends_round:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 460,
+   "decimal": 5.6,
+   "p_model": 0.1403,
+   "p_fanduel": 0.1594,
+   "p": 0.1496,
+   "edge": -0.0098,
+   "ev": -0.1621,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:distance:False",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -2500,
+   "decimal": 1.04,
+   "p_model": 0.6399,
+   "p_fanduel": 0.9058,
+   "p": 0.8052,
+   "edge": -0.1006,
+   "ev": -0.1626,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:win_round:a:2",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Chris Duncan in round 2",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.13,
+   "p_fanduel": 0.1488,
+   "p": 0.1391,
+   "edge": -0.0097,
+   "ev": -0.1653,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:method:a:KO/TKO",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Charles Radtke by KO/TKO",
+   "odds": 480,
+   "decimal": 5.8,
+   "p_model": 0.1368,
+   "p_fanduel": 0.1513,
+   "p": 0.1439,
+   "edge": -0.0074,
+   "ev": -0.1655,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:distance:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -280,
+   "decimal": 1.3571,
+   "p_model": 0.5197,
+   "p_fanduel": 0.6955,
+   "p": 0.6112,
+   "edge": -0.0843,
+   "ev": -0.1705,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:distance:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -215,
+   "decimal": 1.4651,
+   "p_model": 0.4857,
+   "p_fanduel": 0.6431,
+   "p": 0.5661,
+   "edge": -0.077,
+   "ev": -0.1706,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:win_round:b:5",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Kayla Harrison in round 5",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0385,
+   "p_fanduel": 0.0446,
+   "p": 0.0415,
+   "edge": -0.0032,
+   "ev": -0.1706,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:starts_round:4:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -130,
+   "decimal": 1.7692,
+   "p_model": 0.4029,
+   "p_fanduel": 0.5355,
+   "p": 0.4687,
+   "edge": -0.0669,
+   "ev": -0.1708,
+   "kelly": 0.0
+  },
+  {
+   "id": "45572:ends_round:3",
+   "bout": "Jared Gordon vs Melquizael Costa",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.1025,
+   "p_fanduel": 0.119,
+   "p": 0.1105,
+   "edge": -0.0086,
+   "ev": -0.1713,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:starts_round:5:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.4376,
+   "p_fanduel": 0.5817,
+   "p": 0.5099,
+   "edge": -0.0719,
+   "ev": -0.1715,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:ends_round:2",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.2132,
+   "p_fanduel": 0.248,
+   "p": 0.2301,
+   "edge": -0.0179,
+   "ev": -0.1715,
+   "kelly": 0.0
+  },
+  {
+   "id": "45510:win_round:a:1",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Bilal Hasan in round 1",
+   "odds": 105,
+   "decimal": 2.05,
+   "p_model": 0.3725,
+   "p_fanduel": 0.4355,
+   "p": 0.4036,
+   "edge": -0.0319,
+   "ev": -0.1726,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:starts_round:3:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 126,
+   "decimal": 2.26,
+   "p_model": 0.3168,
+   "p_fanduel": 0.4183,
+   "p": 0.366,
+   "edge": -0.0522,
+   "ev": -0.1728,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:starts_round:5:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -196,
+   "decimal": 1.5102,
+   "p_model": 0.4672,
+   "p_fanduel": 0.6253,
+   "p": 0.5474,
+   "edge": -0.0778,
+   "ev": -0.1733,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:ends_round:2",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.1769,
+   "p_fanduel": 0.2076,
+   "p": 0.1918,
+   "edge": -0.0158,
+   "ev": -0.1753,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:starts_round:2:False",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 162,
+   "decimal": 2.62,
+   "p_model": 0.272,
+   "p_fanduel": 0.3604,
+   "p": 0.3145,
+   "edge": -0.0459,
+   "ev": -0.176,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:win_round:b:3",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Josh Hokit in round 3",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0379,
+   "p_fanduel": 0.0446,
+   "p": 0.0411,
+   "edge": -0.0035,
+   "ev": -0.1776,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:method:a:SUB",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Amanda Nunes by submission",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0366,
+   "p_fanduel": 0.0416,
+   "p": 0.039,
+   "edge": -0.0025,
+   "ev": -0.1806,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:starts_round:4:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -112,
+   "decimal": 1.8929,
+   "p_model": 0.3656,
+   "p_fanduel": 0.5,
+   "p": 0.4316,
+   "edge": -0.0684,
+   "ev": -0.1831,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:method:a:KO/TKO",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jim Miller by KO/TKO",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0839,
+   "p_fanduel": 0.0976,
+   "p": 0.0905,
+   "edge": -0.0071,
+   "ev": -0.1853,
    "kelly": 0.0
   },
   {
@@ -3555,205 +3609,11 @@
    "selection": "Fight ends in round 2",
    "odds": 650,
    "decimal": 7.5,
-   "p_model": 0.0986,
+   "p_model": 0.0985,
    "p_fanduel": 0.119,
    "p": 0.1084,
-   "edge": -0.0106,
-   "ev": -0.187,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ends_round:3",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 650,
-   "decimal": 7.5,
-   "p_model": 0.0976,
-   "p_fanduel": 0.119,
-   "p": 0.1078,
-   "edge": -0.0112,
-   "ev": -0.1913,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ends_round:4",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ends_round",
-    4
-   ],
-   "selection": "Fight ends in round 4",
-   "odds": 900,
-   "decimal": 10.0,
-   "p_model": 0.073,
-   "p_fanduel": 0.0893,
-   "p": 0.0808,
-   "edge": -0.0085,
-   "ev": -0.1921,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:win_round:b:2",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Samuel Sanches in round 2",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.1041,
-   "p_fanduel": 0.1276,
-   "p": 0.1153,
-   "edge": -0.0122,
-   "ev": -0.1927,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:ends_round:2",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 350,
-   "decimal": 4.5,
-   "p_model": 0.1617,
-   "p_fanduel": 0.1984,
-   "p": 0.1793,
-   "edge": -0.0191,
-   "ev": -0.1932,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:b:3",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "b",
-    3
-   ],
-   "selection": "Josh Hokit in round 3",
-   "odds": 1700,
-   "decimal": 18.0,
-   "p_model": 0.0403,
-   "p_fanduel": 0.0496,
-   "p": 0.0447,
-   "edge": -0.0049,
-   "ev": -0.195,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:starts_round:3:False",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "starts_round",
-    3,
-    false
-   ],
-   "selection": "Fight does not start round 3",
-   "odds": 148,
-   "decimal": 2.48,
-   "p_model": 0.2729,
-   "p_fanduel": 0.381,
-   "p": 0.3246,
-   "edge": -0.0564,
-   "ev": -0.195,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:ends_round:1",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "ends_round",
-    1
-   ],
-   "selection": "Fight ends in round 1",
-   "odds": -115,
-   "decimal": 1.8696,
-   "p_model": 0.3841,
-   "p_fanduel": 0.4776,
-   "p": 0.4302,
-   "edge": -0.0474,
-   "ev": -0.1957,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:win_round:b:3",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "win_round",
-    "b",
-    3
-   ],
-   "selection": "Stephen Thompson in round 3",
-   "odds": 1600,
-   "decimal": 17.0,
-   "p_model": 0.0425,
-   "p_fanduel": 0.0525,
-   "p": 0.0473,
-   "edge": -0.0053,
-   "ev": -0.1964,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:b:1",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "b",
-    1
-   ],
-   "selection": "Josh Hokit in round 1",
-   "odds": 850,
-   "decimal": 9.5,
-   "p_model": 0.0749,
-   "p_fanduel": 0.094,
-   "p": 0.0839,
-   "edge": -0.0101,
-   "ev": -0.2027,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:starts_round:3:False",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "starts_round",
-    3,
-    false
-   ],
-   "selection": "Fight does not start round 3",
-   "odds": -1200,
-   "decimal": 1.0833,
-   "p_model": 0.5317,
-   "p_fanduel": 0.8723,
-   "p": 0.7358,
-   "edge": -0.1365,
-   "ev": -0.2029,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:method:a:SUB",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "method",
-    "a",
-    "SUB"
-   ],
-   "selection": "Bia Mesquita by submission",
-   "odds": -110,
-   "decimal": 1.9091,
-   "p_model": 0.3798,
-   "p_fanduel": 0.4546,
-   "p": 0.4167,
-   "edge": -0.0378,
-   "ev": -0.2044,
+   "edge": -0.0107,
+   "ev": -0.1872,
    "kelly": 0.0
   },
   {
@@ -3767,238 +3627,28 @@
    "selection": "Donte Johnson in round 3",
    "odds": 950,
    "decimal": 10.5,
-   "p_model": 0.0672,
+   "p_model": 0.0701,
    "p_fanduel": 0.085,
-   "p": 0.0757,
-   "edge": -0.0094,
-   "ev": -0.2056,
+   "p": 0.0773,
+   "edge": -0.0078,
+   "ev": -0.1888,
    "kelly": 0.0
   },
   {
-   "id": "45571:ends_round:1",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "ends_round",
-    1
-   ],
-   "selection": "Fight ends in round 1",
-   "odds": 150,
-   "decimal": 2.5,
-   "p_model": 0.2792,
-   "p_fanduel": 0.3571,
-   "p": 0.3169,
-   "edge": -0.0403,
-   "ev": -0.2078,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:ends_round:3",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 750,
-   "decimal": 8.5,
-   "p_model": 0.0823,
-   "p_fanduel": 0.105,
-   "p": 0.093,
-   "edge": -0.012,
-   "ev": -0.2093,
-   "kelly": 0.0
-  },
-  {
-   "id": "45569:method:a:KO/TKO",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Jim Miller by KO/TKO",
-   "odds": 700,
-   "decimal": 8.0,
-   "p_model": 0.0892,
-   "p_fanduel": 0.1093,
-   "p": 0.0988,
-   "edge": -0.0105,
-   "ev": -0.2095,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:win_round:a:3",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "win_round",
-    "a",
-    3
-   ],
-   "selection": "Kevin Holland in round 3",
-   "odds": 1500,
-   "decimal": 16.0,
-   "p_model": 0.0436,
-   "p_fanduel": 0.0558,
-   "p": 0.0494,
-   "edge": -0.0064,
-   "ev": -0.2102,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:method:a:KO/TKO",
+   "id": "45510:ends_round:1",
    "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Bilal Hasan by KO/TKO",
-   "odds": -310,
-   "decimal": 1.3226,
-   "p_model": 0.5241,
-   "p_fanduel": 0.6634,
-   "p": 0.5957,
-   "edge": -0.0677,
-   "ev": -0.2122,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:method:b:SUB",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Stephen Thompson by submission",
-   "odds": 2700,
-   "decimal": 28.0,
-   "p_model": 0.0254,
-   "p_fanduel": 0.0312,
-   "p": 0.0281,
-   "edge": -0.0031,
-   "ev": -0.2127,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:win_round:b:1",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "win_round",
-    "b",
-    1
-   ],
-   "selection": "Uros Medic in round 1",
-   "odds": 210,
-   "decimal": 3.1,
-   "p_model": 0.222,
-   "p_fanduel": 0.288,
-   "p": 0.2536,
-   "edge": -0.0345,
-   "ev": -0.2139,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:ends_round:1",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
     "ends_round",
     1
    ],
    "selection": "Fight ends in round 1",
-   "odds": -110,
-   "decimal": 1.9091,
-   "p_model": 0.3567,
-   "p_fanduel": 0.4677,
-   "p": 0.4111,
-   "edge": -0.0566,
-   "ev": -0.2152,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:ends_round:2",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 250,
-   "decimal": 3.5,
-   "p_model": 0.1958,
-   "p_fanduel": 0.2551,
-   "p": 0.2241,
-   "edge": -0.031,
-   "ev": -0.2158,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ends_round:2",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ends_round",
-    2
-   ],
-   "selection": "Fight ends in round 2",
-   "odds": 440,
-   "decimal": 5.4,
-   "p_model": 0.1267,
-   "p_fanduel": 0.1653,
-   "p": 0.145,
-   "edge": -0.0204,
-   "ev": -0.2171,
-   "kelly": 0.0
-  },
-  {
-   "id": "45570:ml:a",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Cesar Almeida to win",
-   "odds": 136,
-   "decimal": 2.36,
-   "p_model": 0.3314,
-   "p_fanduel": 0.4002,
-   "p": 0.3314,
-   "edge": -0.0688,
-   "ev": -0.2179,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ends_round:5",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ends_round",
-    5
-   ],
-   "selection": "Fight ends in round 5",
-   "odds": 1300,
-   "decimal": 14.0,
-   "p_model": 0.0487,
-   "p_fanduel": 0.0638,
-   "p": 0.0558,
-   "edge": -0.008,
-   "ev": -0.219,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:win_round:a:2",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Kevin Holland in round 2",
-   "odds": 700,
-   "decimal": 8.0,
-   "p_model": 0.0852,
-   "p_fanduel": 0.1116,
-   "p": 0.0976,
-   "edge": -0.014,
-   "ev": -0.2191,
+   "odds": -115,
+   "decimal": 1.8696,
+   "p_model": 0.3901,
+   "p_fanduel": 0.4776,
+   "p": 0.4333,
+   "edge": -0.0443,
+   "ev": -0.1899,
    "kelly": 0.0
   },
   {
@@ -4012,29 +3662,81 @@
    "selection": "Macy Chiasson in round 1",
    "odds": 1000,
    "decimal": 11.0,
-   "p_model": 0.0617,
+   "p_model": 0.0666,
    "p_fanduel": 0.0812,
-   "p": 0.0708,
-   "edge": -0.0104,
-   "ev": -0.2211,
+   "p": 0.0735,
+   "edge": -0.0076,
+   "ev": -0.1912,
    "kelly": 0.0
   },
   {
-   "id": "45571:win_round:a:1",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "44985:ends_round:3",
+   "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
-    "win_round",
-    "a",
-    1
+    "ends_round",
+    3
    ],
-   "selection": "Bia Mesquita in round 1",
-   "odds": 210,
-   "decimal": 3.1,
-   "p_model": 0.2175,
-   "p_fanduel": 0.288,
-   "p": 0.2511,
-   "edge": -0.0369,
-   "ev": -0.2215,
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0962,
+   "p_fanduel": 0.119,
+   "p": 0.1071,
+   "edge": -0.012,
+   "ev": -0.197,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:ends_round:4",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.072,
+   "p_fanduel": 0.0893,
+   "p": 0.0802,
+   "edge": -0.0091,
+   "ev": -0.1979,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:starts_round:3:False",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -1200,
+   "decimal": 1.0833,
+   "p_model": 0.5345,
+   "p_fanduel": 0.8752,
+   "p": 0.7395,
+   "edge": -0.1358,
+   "ev": -0.1989,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:starts_round:3:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 148,
+   "decimal": 2.48,
+   "p_model": 0.2695,
+   "p_fanduel": 0.381,
+   "p": 0.3227,
+   "edge": -0.0583,
+   "ev": -0.1997,
    "kelly": 0.0
   },
   {
@@ -4046,102 +3748,154 @@
     3
    ],
    "selection": "Bia Mesquita in round 3",
-   "odds": 800,
-   "decimal": 9.0,
-   "p_model": 0.0751,
-   "p_fanduel": 0.0992,
-   "p": 0.0864,
-   "edge": -0.0128,
-   "ev": -0.2222,
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.071,
+   "p_fanduel": 0.0893,
+   "p": 0.0796,
+   "edge": -0.0096,
+   "ev": -0.2036,
    "kelly": 0.0
   },
   {
-   "id": "44985:starts_round:2:False",
-   "bout": "Amanda Nunes vs Kayla Harrison",
+   "id": "45510:method:a:KO/TKO",
+   "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
-    "starts_round",
-    2,
-    false
+    "method",
+    "a",
+    "KO/TKO"
    ],
-   "selection": "Fight does not start round 2",
-   "odds": 330,
-   "decimal": 4.3,
-   "p_model": 0.1462,
-   "p_fanduel": 0.2194,
-   "p": 0.1799,
-   "edge": -0.0395,
-   "ev": -0.2265,
+   "selection": "Bilal Hasan by KO/TKO",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.5359,
+   "p_fanduel": 0.6634,
+   "p": 0.6014,
+   "edge": -0.062,
+   "ev": -0.2047,
    "kelly": 0.0
   },
   {
-   "id": "43676:starts_round:2:False",
-   "bout": "Ciryl Gane vs Josh Hokit",
+   "id": "45509:ends_round:1",
+   "bout": "Kevin Holland vs Uros Medic",
    "market": [
-    "starts_round",
-    2,
-    false
+    "ends_round",
+    1
    ],
-   "selection": "Fight does not start round 2",
-   "odds": 260,
-   "decimal": 3.6,
-   "p_model": 0.174,
-   "p_fanduel": 0.262,
-   "p": 0.2147,
-   "edge": -0.0472,
-   "ev": -0.2269,
+   "selection": "Fight ends in round 1",
+   "odds": -105,
+   "decimal": 1.9524,
+   "p_model": 0.3589,
+   "p_fanduel": 0.4573,
+   "p": 0.4072,
+   "edge": -0.0501,
+   "ev": -0.205,
    "kelly": 0.0
   },
   {
-   "id": "45569:method:a:SUB",
-   "bout": "Jim Miller vs Terrance McKinney",
+   "id": "45509:win_round:b:1",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Uros Medic in round 1",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.227,
+   "p_fanduel": 0.288,
+   "p": 0.2563,
+   "edge": -0.0317,
+   "ev": -0.2054,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:method:a:SUB",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
     "method",
     "a",
     "SUB"
    ],
-   "selection": "Jim Miller by submission",
-   "odds": 290,
-   "decimal": 3.9,
-   "p_model": 0.1726,
-   "p_fanduel": 0.2242,
-   "p": 0.1971,
-   "edge": -0.0271,
-   "ev": -0.2312,
+   "selection": "Bia Mesquita by submission",
+   "odds": 100,
+   "decimal": 2.0,
+   "p_model": 0.3587,
+   "p_fanduel": 0.4357,
+   "p": 0.3966,
+   "edge": -0.0392,
+   "ev": -0.2069,
    "kelly": 0.0
   },
   {
-   "id": "45571:ends_round:3",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.0942,
-   "p_fanduel": 0.1276,
-   "p": 0.1098,
-   "edge": -0.0178,
-   "ev": -0.2317,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:a:2",
+   "id": "43676:win_round:b:1",
    "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
     "win_round",
-    "a",
+    "b",
+    1
+   ],
+   "selection": "Josh Hokit in round 1",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.0703,
+   "p_fanduel": 0.0893,
+   "p": 0.0793,
+   "edge": -0.01,
+   "ev": -0.2072,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:ends_round:2",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "ends_round",
     2
    ],
-   "selection": "Ciryl Gane in round 2",
-   "odds": 750,
-   "decimal": 8.5,
-   "p_model": 0.0776,
-   "p_fanduel": 0.105,
-   "p": 0.0904,
-   "edge": -0.0147,
-   "ev": -0.2319,
+   "selection": "Fight ends in round 2",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.1585,
+   "p_fanduel": 0.2029,
+   "p": 0.1796,
+   "edge": -0.0233,
+   "ev": -0.2097,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:win_round:b:2",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Samuel Sanches in round 2",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0994,
+   "p_fanduel": 0.1276,
+   "p": 0.1127,
+   "edge": -0.0149,
+   "ev": -0.2111,
+   "kelly": 0.0
+  },
+  {
+   "id": "45570:ml:a",
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Cesar Almeida to win",
+   "odds": 152,
+   "decimal": 2.52,
+   "p_model": 0.3118,
+   "p_fanduel": 0.3781,
+   "p": 0.3118,
+   "edge": -0.0663,
+   "ev": -0.2143,
    "kelly": 0.0
   },
   {
@@ -4153,13 +3907,117 @@
     1
    ],
    "selection": "Kevin Holland in round 1",
-   "odds": 380,
-   "decimal": 4.8,
-   "p_model": 0.1348,
-   "p_fanduel": 0.186,
-   "p": 0.1587,
-   "edge": -0.0273,
-   "ev": -0.2381,
+   "odds": 420,
+   "decimal": 5.2,
+   "p_model": 0.1319,
+   "p_fanduel": 0.1717,
+   "p": 0.1507,
+   "edge": -0.021,
+   "ev": -0.2162,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:ends_round:2",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.1949,
+   "p_fanduel": 0.2551,
+   "p": 0.2236,
+   "edge": -0.0315,
+   "ev": -0.2175,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:ends_round:1",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 150,
+   "decimal": 2.5,
+   "p_model": 0.272,
+   "p_fanduel": 0.3571,
+   "p": 0.313,
+   "edge": -0.0442,
+   "ev": -0.2176,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:ends_round:2",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 440,
+   "decimal": 5.4,
+   "p_model": 0.1251,
+   "p_fanduel": 0.1653,
+   "p": 0.1441,
+   "edge": -0.0213,
+   "ev": -0.2221,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:ends_round:5",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.0481,
+   "p_fanduel": 0.0638,
+   "p": 0.0554,
+   "edge": -0.0084,
+   "ev": -0.2241,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:method:a:SUB",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jim Miller by submission",
+   "odds": 320,
+   "decimal": 4.2,
+   "p_model": 0.1623,
+   "p_fanduel": 0.2092,
+   "p": 0.1846,
+   "edge": -0.0246,
+   "ev": -0.2248,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:win_round:a:2",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Ciryl Gane in round 2",
+   "odds": 700,
+   "decimal": 8.0,
+   "p_model": 0.083,
+   "p_fanduel": 0.1116,
+   "p": 0.0964,
+   "edge": -0.0152,
+   "ev": -0.2291,
    "kelly": 0.0
   },
   {
@@ -4173,11 +4031,118 @@
    "selection": "Drew Dober in round 1",
    "odds": 500,
    "decimal": 6.0,
-   "p_model": 0.1073,
+   "p_model": 0.1103,
    "p_fanduel": 0.1488,
-   "p": 0.1266,
-   "edge": -0.0222,
-   "ev": -0.2403,
+   "p": 0.1283,
+   "edge": -0.0205,
+   "ev": -0.23,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:starts_round:2:False",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 330,
+   "decimal": 4.3,
+   "p_model": 0.1444,
+   "p_fanduel": 0.2194,
+   "p": 0.1788,
+   "edge": -0.0406,
+   "ev": -0.2311,
+   "kelly": 0.0
+  },
+  {
+   "id": "45570:ends_round:2",
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.1811,
+   "p_fanduel": 0.248,
+   "p": 0.2126,
+   "edge": -0.0354,
+   "ev": -0.2346,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:starts_round:2:False",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 250,
+   "decimal": 3.5,
+   "p_model": 0.1764,
+   "p_fanduel": 0.2674,
+   "p": 0.2185,
+   "edge": -0.0489,
+   "ev": -0.2351,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:win_round:b:3",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Stephen Thompson in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0436,
+   "p_fanduel": 0.0595,
+   "p": 0.051,
+   "edge": -0.0085,
+   "ev": -0.2351,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:win_round:b:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Josh Hokit in round 4",
+   "odds": 2200,
+   "decimal": 23.0,
+   "p_model": 0.0283,
+   "p_fanduel": 0.0388,
+   "p": 0.0331,
+   "edge": -0.0057,
+   "ev": -0.2377,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:method:b:KO/TKO",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Josh Hokit by KO/TKO",
+   "odds": 450,
+   "decimal": 5.5,
+   "p_model": 0.1213,
+   "p_fanduel": 0.1574,
+   "p": 0.1384,
+   "edge": -0.0191,
+   "ev": -0.2389,
    "kelly": 0.0
   },
   {
@@ -4191,46 +4156,116 @@
    "selection": "Melquizael Costa by KO/TKO",
    "odds": 160,
    "decimal": 2.6,
-   "p_model": 0.2512,
+   "p_model": 0.2516,
    "p_fanduel": 0.3359,
-   "p": 0.2918,
-   "edge": -0.0441,
-   "ev": -0.2414,
+   "p": 0.2919,
+   "edge": -0.044,
+   "ev": -0.2409,
    "kelly": 0.0
   },
   {
-   "id": "43676:method:b:KO/TKO",
+   "id": "43676:method:a:SUB",
    "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
     "method",
-    "b",
-    "KO/TKO"
+    "a",
+    "SUB"
    ],
-   "selection": "Josh Hokit by KO/TKO",
-   "odds": 410,
-   "decimal": 5.1,
-   "p_model": 0.1291,
-   "p_fanduel": 0.1703,
-   "p": 0.1485,
-   "edge": -0.0218,
-   "ev": -0.2426,
+   "selection": "Ciryl Gane by submission",
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0631,
+   "p_fanduel": 0.0825,
+   "p": 0.0722,
+   "edge": -0.0103,
+   "ev": -0.2421,
    "kelly": 0.0
   },
   {
-   "id": "45570:ends_round:2",
-   "bout": "Cesar Almeida vs Donte Johnson",
+   "id": "45571:win_round:a:1",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Bia Mesquita in round 1",
+   "odds": 210,
+   "decimal": 3.1,
+   "p_model": 0.2054,
+   "p_fanduel": 0.288,
+   "p": 0.2444,
+   "edge": -0.0437,
+   "ev": -0.2425,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:ends_round:3",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
     "ends_round",
-    2
+    3
    ],
-   "selection": "Fight ends in round 2",
-   "odds": 260,
-   "decimal": 3.6,
-   "p_model": 0.1771,
-   "p_fanduel": 0.248,
-   "p": 0.2103,
-   "edge": -0.0377,
-   "ev": -0.2427,
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0915,
+   "p_fanduel": 0.1276,
+   "p": 0.1082,
+   "edge": -0.0193,
+   "ev": -0.2425,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:win_round:a:3",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Kevin Holland in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0427,
+   "p_fanduel": 0.0595,
+   "p": 0.0504,
+   "edge": -0.0091,
+   "ev": -0.2434,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:ends_round:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0525,
+   "p_fanduel": 0.0744,
+   "p": 0.0626,
+   "edge": -0.0118,
+   "ev": -0.2491,
+   "kelly": 0.0
+  },
+  {
+   "id": "45568:ml:b",
+   "bout": "Chris Duncan vs Drew Dober",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Drew Dober to win",
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.3098,
+   "p_fanduel": 0.3932,
+   "p": 0.3098,
+   "edge": -0.0834,
+   "ev": -0.2502,
    "kelly": 0.0
   },
   {
@@ -4244,29 +4279,29 @@
    "selection": "Chris Duncan by submission",
    "odds": 300,
    "decimal": 4.0,
-   "p_model": 0.1629,
-   "p_fanduel": 0.2186,
-   "p": 0.1892,
-   "edge": -0.0294,
-   "ev": -0.2432,
+   "p_model": 0.1597,
+   "p_fanduel": 0.2187,
+   "p": 0.1874,
+   "edge": -0.0313,
+   "ev": -0.2503,
    "kelly": 0.0
   },
   {
-   "id": "45571:win_round:b:2",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "45509:win_round:a:2",
+   "bout": "Kevin Holland vs Uros Medic",
    "market": [
     "win_round",
-    "b",
+    "a",
     2
    ],
-   "selection": "Macy Chiasson in round 2",
-   "odds": 1600,
-   "decimal": 17.0,
-   "p_model": 0.0377,
-   "p_fanduel": 0.0525,
-   "p": 0.0445,
-   "edge": -0.008,
-   "ev": -0.2435,
+   "selection": "Kevin Holland in round 2",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0833,
+   "p_fanduel": 0.119,
+   "p": 0.0998,
+   "edge": -0.0193,
+   "ev": -0.2516,
    "kelly": 0.0
   },
   {
@@ -4280,11 +4315,28 @@
    "selection": "Chris Duncan in round 3",
    "odds": 850,
    "decimal": 9.5,
-   "p_model": 0.0669,
+   "p_model": 0.0656,
    "p_fanduel": 0.094,
-   "p": 0.0794,
-   "edge": -0.0146,
-   "ev": -0.2457,
+   "p": 0.0786,
+   "edge": -0.0154,
+   "ev": -0.2531,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:ends_round:3",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 650,
+   "decimal": 7.5,
+   "p_model": 0.0827,
+   "p_fanduel": 0.119,
+   "p": 0.0994,
+   "edge": -0.0197,
+   "ev": -0.2547,
    "kelly": 0.0
   },
   {
@@ -4296,66 +4348,13 @@
     2
    ],
    "selection": "Evan Elder in round 2",
-   "odds": 1000,
-   "decimal": 11.0,
-   "p_model": 0.0575,
-   "p_fanduel": 0.0812,
-   "p": 0.0684,
-   "edge": -0.0128,
-   "ev": -0.2476,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:b:4",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "b",
-    4
-   ],
-   "selection": "Josh Hokit in round 4",
-   "odds": 2000,
-   "decimal": 21.0,
-   "p_model": 0.0301,
-   "p_fanduel": 0.0425,
-   "p": 0.0358,
-   "edge": -0.0067,
-   "ev": -0.2484,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:method:a:SUB",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "method",
-    "a",
-    "SUB"
-   ],
-   "selection": "Ciryl Gane by submission",
-   "odds": 1000,
-   "decimal": 11.0,
-   "p_model": 0.059,
-   "p_fanduel": 0.0789,
-   "p": 0.0683,
-   "edge": -0.0107,
-   "ev": -0.249,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:ends_round:5",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "ends_round",
-    5
-   ],
-   "selection": "Fight ends in round 5",
-   "odds": 1100,
-   "decimal": 12.0,
-   "p_model": 0.0519,
-   "p_fanduel": 0.0744,
-   "p": 0.0622,
-   "edge": -0.0122,
-   "ev": -0.2535,
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0591,
+   "p_fanduel": 0.085,
+   "p": 0.071,
+   "edge": -0.0141,
+   "ev": -0.2548,
    "kelly": 0.0
   },
   {
@@ -4373,24 +4372,7 @@
    "p_fanduel": 0.0446,
    "p": 0.0371,
    "edge": -0.0075,
-   "ev": -0.2575,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:ml:b",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Luis Gurule to win",
-   "odds": 630,
-   "decimal": 7.3,
-   "p_model": 0.1017,
-   "p_fanduel": 0.1292,
-   "p": 0.1017,
-   "edge": -0.0275,
-   "ev": -0.2576,
+   "ev": -0.2578,
    "kelly": 0.0
   },
   {
@@ -4412,125 +4394,39 @@
    "kelly": 0.0
   },
   {
-   "id": "45571:method:a:KO/TKO",
+   "id": "45571:win_round:b:2",
    "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Bia Mesquita by KO/TKO",
-   "odds": 1000,
-   "decimal": 11.0,
-   "p_model": 0.0571,
-   "p_fanduel": 0.0789,
-   "p": 0.0672,
-   "edge": -0.0117,
-   "ev": -0.2608,
-   "kelly": 0.0
-  },
-  {
-   "id": "45568:ml:b",
-   "bout": "Chris Duncan vs Drew Dober",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Drew Dober to win",
-   "odds": 146,
-   "decimal": 2.46,
-   "p_model": 0.2998,
-   "p_fanduel": 0.3838,
-   "p": 0.2998,
-   "edge": -0.0839,
-   "ev": -0.2624,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:ends_round:4",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "ends_round",
-    4
-   ],
-   "selection": "Fight ends in round 4",
-   "odds": 850,
-   "decimal": 9.5,
-   "p_model": 0.0637,
-   "p_fanduel": 0.094,
-   "p": 0.0775,
-   "edge": -0.0165,
-   "ev": -0.2636,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:method:b:DEC",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "method",
-    "b",
-    "DEC"
-   ],
-   "selection": "Josh Hokit by decision",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.0886,
-   "p_fanduel": 0.1241,
-   "p": 0.105,
-   "edge": -0.019,
-   "ev": -0.2647,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:ends_round:1",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "ends_round",
-    1
-   ],
-   "selection": "Fight ends in round 1",
-   "odds": 310,
-   "decimal": 4.1,
-   "p_model": 0.1462,
-   "p_fanduel": 0.2178,
-   "p": 0.1792,
-   "edge": -0.0386,
-   "ev": -0.2653,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:ends_round:3",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.0855,
-   "p_fanduel": 0.1276,
-   "p": 0.1046,
-   "edge": -0.0229,
-   "ev": -0.2675,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:b:5",
-   "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
     "win_round",
     "b",
-    5
+    2
    ],
-   "selection": "Josh Hokit in round 5",
-   "odds": 2500,
-   "decimal": 26.0,
-   "p_model": 0.023,
-   "p_fanduel": 0.0343,
-   "p": 0.0281,
-   "edge": -0.0062,
-   "ev": -0.2684,
+   "selection": "Macy Chiasson in round 2",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0406,
+   "p_fanduel": 0.0595,
+   "p": 0.0492,
+   "edge": -0.0103,
+   "ev": -0.2618,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:method:b:KO/TKO",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kayla Harrison by KO/TKO",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0688,
+   "p_fanduel": 0.097,
+   "p": 0.0818,
+   "edge": -0.0152,
+   "ev": -0.2637,
    "kelly": 0.0
   },
   {
@@ -4543,11 +4439,63 @@
    "selection": "Fight ends in round 1",
    "odds": 240,
    "decimal": 3.4,
-   "p_model": 0.174,
+   "p_model": 0.1764,
    "p_fanduel": 0.2626,
-   "p": 0.215,
-   "edge": -0.0476,
-   "ev": -0.2689,
+   "p": 0.2164,
+   "edge": -0.0462,
+   "ev": -0.2641,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:win_round:b:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Josh Hokit in round 5",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0216,
+   "p_fanduel": 0.0319,
+   "p": 0.0263,
+   "edge": -0.0056,
+   "ev": -0.2642,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:ends_round:3",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0862,
+   "p_fanduel": 0.1276,
+   "p": 0.1051,
+   "edge": -0.0225,
+   "ev": -0.2644,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:ends_round:1",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 310,
+   "decimal": 4.1,
+   "p_model": 0.1444,
+   "p_fanduel": 0.2178,
+   "p": 0.1781,
+   "edge": -0.0396,
+   "ev": -0.2697,
    "kelly": 0.0
   },
   {
@@ -4569,39 +4517,56 @@
    "kelly": 0.0
   },
   {
-   "id": "45567:method:b:DEC",
-   "bout": "Charles Radtke vs Stephen Thompson",
+   "id": "45569:win_round:a:1",
+   "bout": "Jim Miller vs Terrance McKinney",
    "market": [
-    "method",
-    "b",
-    "DEC"
+    "win_round",
+    "a",
+    1
    ],
-   "selection": "Stephen Thompson by decision",
-   "odds": 145,
-   "decimal": 2.45,
-   "p_model": 0.2411,
-   "p_fanduel": 0.3563,
-   "p": 0.2955,
-   "edge": -0.0608,
-   "ev": -0.2761,
+   "selection": "Jim Miller in round 1",
+   "odds": 370,
+   "decimal": 4.7,
+   "p_model": 0.1252,
+   "p_fanduel": 0.19,
+   "p": 0.1548,
+   "edge": -0.0351,
+   "ev": -0.2722,
    "kelly": 0.0
   },
   {
-   "id": "44985:method:b:KO/TKO",
-   "bout": "Amanda Nunes vs Kayla Harrison",
+   "id": "43676:win_round:a:5",
+   "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
-    "method",
-    "b",
-    "KO/TKO"
+    "win_round",
+    "a",
+    5
    ],
-   "selection": "Kayla Harrison by KO/TKO",
-   "odds": 750,
-   "decimal": 8.5,
-   "p_model": 0.0703,
-   "p_fanduel": 0.1019,
-   "p": 0.0848,
-   "edge": -0.0171,
-   "ev": -0.2793,
+   "selection": "Ciryl Gane in round 5",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0309,
+   "p_fanduel": 0.047,
+   "p": 0.0381,
+   "edge": -0.0089,
+   "ev": -0.2755,
+   "kelly": 0.0
+  },
+  {
+   "id": "45510:ml:b",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Luis Gurule to win",
+   "odds": 710,
+   "decimal": 8.1,
+   "p_model": 0.0892,
+   "p_fanduel": 0.1176,
+   "p": 0.0892,
+   "edge": -0.0284,
+   "ev": -0.2774,
    "kelly": 0.0
   },
   {
@@ -4614,10 +4579,62 @@
    "selection": "Fight ends in round 3",
    "odds": 550,
    "decimal": 6.5,
-   "p_model": 0.0873,
+   "p_model": 0.0893,
    "p_fanduel": 0.1374,
-   "p": 0.1099,
-   "edge": -0.0275,
+   "p": 0.1111,
+   "edge": -0.0263,
+   "ev": -0.278,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:ends_round:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0643,
+   "p_fanduel": 0.0992,
+   "p": 0.08,
+   "edge": -0.0192,
+   "ev": -0.2799,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:method:a:KO/TKO",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Bia Mesquita by KO/TKO",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.054,
+   "p_fanduel": 0.0792,
+   "p": 0.0655,
+   "edge": -0.0138,
+   "ev": -0.2799,
+   "kelly": 0.0
+  },
+  {
+   "id": "45572:ml:a",
+   "bout": "Jared Gordon vs Melquizael Costa",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jared Gordon to win",
+   "odds": 290,
+   "decimal": 3.9,
+   "p_model": 0.1831,
+   "p_fanduel": 0.2441,
+   "p": 0.1831,
+   "edge": -0.061,
    "ev": -0.2857,
    "kelly": 0.0
   },
@@ -4635,26 +4652,44 @@
    "p_model": 0.0595,
    "p_fanduel": 0.094,
    "p": 0.0749,
-   "edge": -0.0191,
-   "ev": -0.2882,
+   "edge": -0.019,
+   "ev": -0.2881,
    "kelly": 0.0
   },
   {
-   "id": "45569:win_round:a:1",
-   "bout": "Jim Miller vs Terrance McKinney",
+   "id": "45567:method:b:DEC",
+   "bout": "Charles Radtke vs Stephen Thompson",
    "market": [
-    "win_round",
-    "a",
-    1
+    "method",
+    "b",
+    "DEC"
    ],
-   "selection": "Jim Miller in round 1",
-   "odds": 320,
-   "decimal": 4.2,
-   "p_model": 0.1332,
-   "p_fanduel": 0.2126,
-   "p": 0.1692,
-   "edge": -0.0434,
-   "ev": -0.2893,
+   "selection": "Stephen Thompson by decision",
+   "odds": 130,
+   "decimal": 2.3,
+   "p_model": 0.2448,
+   "p_fanduel": 0.3814,
+   "p": 0.309,
+   "edge": -0.0725,
+   "ev": -0.2894,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:method:a:KO/TKO",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Ciryl Gane by KO/TKO",
+   "odds": 135,
+   "decimal": 2.35,
+   "p_model": 0.2412,
+   "p_fanduel": 0.3685,
+   "p": 0.301,
+   "edge": -0.0674,
+   "ev": -0.2925,
    "kelly": 0.0
   },
   {
@@ -4668,46 +4703,11 @@
    "selection": "Jared Gordon in round 1",
    "odds": 1400,
    "decimal": 15.0,
-   "p_model": 0.0373,
+   "p_model": 0.0372,
    "p_fanduel": 0.0595,
-   "p": 0.0472,
-   "edge": -0.0123,
-   "ev": -0.2924,
-   "kelly": 0.0
-  },
-  {
-   "id": "45572:ml:a",
-   "bout": "Jared Gordon vs Melquizael Costa",
-   "market": [
-    "ml",
-    "a"
-   ],
-   "selection": "Jared Gordon to win",
-   "odds": 285,
-   "decimal": 3.85,
-   "p_model": 0.1837,
-   "p_fanduel": 0.2451,
-   "p": 0.1837,
-   "edge": -0.0614,
-   "ev": -0.2928,
-   "kelly": 0.0
-  },
-  {
-   "id": "45567:win_round:a:3",
-   "bout": "Charles Radtke vs Stephen Thompson",
-   "market": [
-    "win_round",
-    "a",
-    3
-   ],
-   "selection": "Charles Radtke in round 3",
-   "odds": 1300,
-   "decimal": 14.0,
-   "p_model": 0.0397,
-   "p_fanduel": 0.0638,
-   "p": 0.0504,
-   "edge": -0.0134,
-   "ev": -0.2941,
+   "p": 0.0471,
+   "edge": -0.0124,
+   "ev": -0.293,
    "kelly": 0.0
   },
   {
@@ -4720,29 +4720,11 @@
    "selection": "Fight ends in round 3",
    "odds": 460,
    "decimal": 5.6,
-   "p_model": 0.0985,
+   "p_model": 0.098,
    "p_fanduel": 0.1594,
-   "p": 0.1258,
-   "edge": -0.0336,
-   "ev": -0.2954,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:a:5",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "a",
-    5
-   ],
-   "selection": "Ciryl Gane in round 5",
-   "odds": 1800,
-   "decimal": 19.0,
-   "p_model": 0.0289,
-   "p_fanduel": 0.047,
-   "p": 0.0369,
-   "edge": -0.0101,
-   "ev": -0.2994,
+   "p": 0.1255,
+   "edge": -0.0339,
+   "ev": -0.297,
    "kelly": 0.0
   },
   {
@@ -4756,29 +4738,11 @@
    "selection": "Jared Gordon by KO/TKO",
    "odds": 900,
    "decimal": 10.0,
-   "p_model": 0.056,
+   "p_model": 0.0558,
    "p_fanduel": 0.0873,
    "p": 0.07,
-   "edge": -0.0173,
-   "ev": -0.2996,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:method:a:KO/TKO",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Ciryl Gane by KO/TKO",
-   "odds": 145,
-   "decimal": 2.45,
-   "p_model": 0.2254,
-   "p_fanduel": 0.3544,
-   "p": 0.2856,
-   "edge": -0.0689,
-   "ev": -0.3003,
+   "edge": -0.0174,
+   "ev": -0.3004,
    "kelly": 0.0
   },
   {
@@ -4790,13 +4754,31 @@
     false
    ],
    "selection": "Fight does not start round 2",
-   "odds": -260,
-   "decimal": 1.3846,
-   "p_model": 0.3265,
-   "p_fanduel": 0.6813,
-   "p": 0.5044,
-   "edge": -0.1769,
-   "ev": -0.3015,
+   "odds": -300,
+   "decimal": 1.3333,
+   "p_model": 0.3284,
+   "p_fanduel": 0.7059,
+   "p": 0.52,
+   "edge": -0.1859,
+   "ev": -0.3067,
+   "kelly": 0.0
+  },
+  {
+   "id": "43676:method:b:DEC",
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Josh Hokit by decision",
+   "odds": 600,
+   "decimal": 7.0,
+   "p_model": 0.0786,
+   "p_fanduel": 0.1237,
+   "p": 0.0989,
+   "edge": -0.0248,
+   "ev": -0.3077,
    "kelly": 0.0
   },
   {
@@ -4808,13 +4790,13 @@
     1
    ],
    "selection": "Ciryl Gane in round 1",
-   "odds": 430,
-   "decimal": 5.3,
-   "p_model": 0.0992,
-   "p_fanduel": 0.1685,
-   "p": 0.1299,
-   "edge": -0.0385,
-   "ev": -0.3113,
+   "odds": 400,
+   "decimal": 5.0,
+   "p_model": 0.1061,
+   "p_fanduel": 0.1786,
+   "p": 0.1384,
+   "edge": -0.0402,
+   "ev": -0.3079,
    "kelly": 0.0
   },
   {
@@ -4828,29 +4810,11 @@
    "selection": "Drew Dober in round 2",
    "odds": 700,
    "decimal": 8.0,
-   "p_model": 0.0632,
+   "p_model": 0.0649,
    "p_fanduel": 0.1116,
-   "p": 0.0843,
-   "edge": -0.0273,
-   "ev": -0.3255,
-   "kelly": 0.0
-  },
-  {
-   "id": "43676:win_round:a:4",
-   "bout": "Ciryl Gane vs Josh Hokit",
-   "market": [
-    "win_round",
-    "a",
-    4
-   ],
-   "selection": "Ciryl Gane in round 4",
-   "odds": 1400,
-   "decimal": 15.0,
-   "p_model": 0.0336,
-   "p_fanduel": 0.0595,
-   "p": 0.0448,
-   "edge": -0.0147,
-   "ev": -0.3275,
+   "p": 0.0854,
+   "edge": -0.0262,
+   "ev": -0.3165,
    "kelly": 0.0
   },
   {
@@ -4862,118 +4826,31 @@
     3
    ],
    "selection": "Ciryl Gane in round 3",
-   "odds": 1000,
-   "decimal": 11.0,
-   "p_model": 0.0452,
-   "p_fanduel": 0.0812,
-   "p": 0.0607,
-   "edge": -0.0205,
-   "ev": -0.3322,
+   "odds": 950,
+   "decimal": 10.5,
+   "p_model": 0.0483,
+   "p_fanduel": 0.085,
+   "p": 0.0643,
+   "edge": -0.0208,
+   "ev": -0.3251,
    "kelly": 0.0
   },
   {
-   "id": "45569:ends_round:1",
-   "bout": "Jim Miller vs Terrance McKinney",
-   "market": [
-    "ends_round",
-    1
-   ],
-   "selection": "Fight ends in round 1",
-   "odds": -280,
-   "decimal": 1.3571,
-   "p_model": 0.3265,
-   "p_fanduel": 0.6579,
-   "p": 0.4912,
-   "edge": -0.1667,
-   "ev": -0.3334,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:win_round:b:3",
-   "bout": "Bia Mesquita vs Macy Chiasson",
+   "id": "43676:win_round:a:4",
+   "bout": "Ciryl Gane vs Josh Hokit",
    "market": [
     "win_round",
-    "b",
-    3
+    "a",
+    4
    ],
-   "selection": "Macy Chiasson in round 3",
-   "odds": 2500,
-   "decimal": 26.0,
-   "p_model": 0.019,
-   "p_fanduel": 0.0343,
-   "p": 0.0256,
-   "edge": -0.0087,
-   "ev": -0.3343,
-   "kelly": 0.0
-  },
-  {
-   "id": "45508:ends_round:3",
-   "bout": "Caio Borralho vs Yousri Belgaroui",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 900,
-   "decimal": 10.0,
-   "p_model": 0.0491,
-   "p_fanduel": 0.0893,
-   "p": 0.0664,
-   "edge": -0.0229,
-   "ev": -0.3361,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:win_round:b:3",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "win_round",
-    "b",
-    3
-   ],
-   "selection": "Samuel Sanches in round 3",
-   "odds": 850,
-   "decimal": 9.5,
-   "p_model": 0.0513,
-   "p_fanduel": 0.094,
-   "p": 0.0697,
-   "edge": -0.0243,
-   "ev": -0.3379,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:ends_round:3",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "ends_round",
-    3
-   ],
-   "selection": "Fight ends in round 3",
-   "odds": 500,
-   "decimal": 6.0,
-   "p_model": 0.0808,
-   "p_fanduel": 0.1488,
-   "p": 0.1103,
-   "edge": -0.0385,
-   "ev": -0.3381,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:method:b:SUB",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Uros Medic by submission",
-   "odds": 1500,
-   "decimal": 16.0,
-   "p_model": 0.0309,
-   "p_fanduel": 0.0546,
-   "p": 0.0412,
-   "edge": -0.0134,
-   "ev": -0.3412,
+   "selection": "Ciryl Gane in round 4",
+   "odds": 1300,
+   "decimal": 14.0,
+   "p_model": 0.036,
+   "p_fanduel": 0.0638,
+   "p": 0.048,
+   "edge": -0.0158,
+   "ev": -0.3279,
    "kelly": 0.0
   },
   {
@@ -4987,11 +4864,80 @@
    "selection": "Drew Dober by KO/TKO",
    "odds": 210,
    "decimal": 3.1,
-   "p_model": 0.1554,
-   "p_fanduel": 0.2821,
-   "p": 0.2119,
-   "edge": -0.0702,
-   "ev": -0.343,
+   "p_model": 0.1598,
+   "p_fanduel": 0.2822,
+   "p": 0.2147,
+   "edge": -0.0675,
+   "ev": -0.3345,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:ends_round:1",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.3284,
+   "p_fanduel": 0.6751,
+   "p": 0.502,
+   "edge": -0.1731,
+   "ev": -0.3361,
+   "kelly": 0.0
+  },
+  {
+   "id": "45508:ends_round:3",
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.049,
+   "p_fanduel": 0.0893,
+   "p": 0.0664,
+   "edge": -0.0229,
+   "ev": -0.3363,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:win_round:b:3",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Samuel Sanches in round 3",
+   "odds": 900,
+   "decimal": 10.0,
+   "p_model": 0.049,
+   "p_fanduel": 0.0893,
+   "p": 0.0663,
+   "edge": -0.0229,
+   "ev": -0.3366,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:ends_round:3",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0793,
+   "p_fanduel": 0.1488,
+   "p": 0.1093,
+   "edge": -0.0395,
+   "ev": -0.3443,
    "kelly": 0.0
   },
   {
@@ -5008,8 +4954,44 @@
    "p_model": 0.0361,
    "p_fanduel": 0.0687,
    "p": 0.0499,
-   "edge": -0.0187,
-   "ev": -0.3509,
+   "edge": -0.0188,
+   "ev": -0.351,
+   "kelly": 0.0
+  },
+  {
+   "id": "45567:win_round:a:3",
+   "bout": "Charles Radtke vs Stephen Thompson",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Charles Radtke in round 3",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.039,
+   "p_fanduel": 0.0744,
+   "p": 0.054,
+   "edge": -0.0204,
+   "ev": -0.3514,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:method:b:SUB",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Uros Medic by submission",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0316,
+   "p_fanduel": 0.0577,
+   "p": 0.0428,
+   "edge": -0.0149,
+   "ev": -0.3576,
    "kelly": 0.0
   },
   {
@@ -5027,25 +5009,25 @@
    "p_fanduel": 0.0425,
    "p": 0.0305,
    "edge": -0.012,
-   "ev": -0.3589,
+   "ev": -0.3597,
    "kelly": 0.0
   },
   {
-   "id": "45569:method:a:DEC",
-   "bout": "Jim Miller vs Terrance McKinney",
+   "id": "45573:win_round:a:3",
+   "bout": "Evan Elder vs Samuel Sanches",
    "market": [
-    "method",
+    "win_round",
     "a",
-    "DEC"
+    3
    ],
-   "selection": "Jim Miller by decision",
-   "odds": 1900,
-   "decimal": 20.0,
-   "p_model": 0.0232,
-   "p_fanduel": 0.0437,
-   "p": 0.0319,
-   "edge": -0.0118,
-   "ev": -0.3617,
+   "selection": "Evan Elder in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0303,
+   "p_fanduel": 0.0595,
+   "p": 0.0426,
+   "edge": -0.0169,
+   "ev": -0.3613,
    "kelly": 0.0
   },
   {
@@ -5063,25 +5045,7 @@
    "p_fanduel": 0.0283,
    "p": 0.0205,
    "edge": -0.0078,
-   "ev": -0.3647,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:method:a:KO/TKO",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Evan Elder by KO/TKO",
-   "odds": 600,
-   "decimal": 7.0,
-   "p_model": 0.0655,
-   "p_fanduel": 0.1242,
-   "p": 0.0906,
-   "edge": -0.0336,
-   "ev": -0.3656,
+   "ev": -0.3648,
    "kelly": 0.0
   },
   {
@@ -5093,67 +5057,13 @@
     "KO/TKO"
    ],
    "selection": "Terrance McKinney by KO/TKO",
-   "odds": 145,
-   "decimal": 2.45,
-   "p_model": 0.1787,
-   "p_fanduel": 0.3569,
-   "p": 0.2579,
-   "edge": -0.0991,
-   "ev": -0.3683,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:win_round:a:3",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "win_round",
-    "a",
-    3
-   ],
-   "selection": "Evan Elder in round 3",
-   "odds": 1400,
-   "decimal": 15.0,
-   "p_model": 0.0295,
-   "p_fanduel": 0.0595,
-   "p": 0.042,
-   "edge": -0.0175,
-   "ev": -0.3697,
-   "kelly": 0.0
-  },
-  {
-   "id": "45509:method:a:KO/TKO",
-   "bout": "Kevin Holland vs Uros Medic",
-   "market": [
-    "method",
-    "a",
-    "KO/TKO"
-   ],
-   "selection": "Kevin Holland by KO/TKO",
-   "odds": 330,
-   "decimal": 4.3,
-   "p_model": 0.103,
-   "p_fanduel": 0.2032,
-   "p": 0.1461,
-   "edge": -0.0571,
-   "ev": -0.3716,
-   "kelly": 0.0
-  },
-  {
-   "id": "45571:method:b:KO/TKO",
-   "bout": "Bia Mesquita vs Macy Chiasson",
-   "market": [
-    "method",
-    "b",
-    "KO/TKO"
-   ],
-   "selection": "Macy Chiasson by KO/TKO",
-   "odds": 550,
-   "decimal": 6.5,
-   "p_model": 0.0684,
-   "p_fanduel": 0.1335,
-   "p": 0.0961,
-   "edge": -0.0374,
-   "ev": -0.3752,
+   "odds": 130,
+   "decimal": 2.3,
+   "p_model": 0.1877,
+   "p_fanduel": 0.3821,
+   "p": 0.2743,
+   "edge": -0.1077,
+   "ev": -0.3691,
    "kelly": 0.0
   },
   {
@@ -5165,49 +5075,103 @@
     1
    ],
    "selection": "Cesar Almeida in round 1",
+   "odds": 550,
+   "decimal": 6.5,
+   "p_model": 0.0665,
+   "p_fanduel": 0.1374,
+   "p": 0.0963,
+   "edge": -0.0411,
+   "ev": -0.3741,
+   "kelly": 0.0
+  },
+  {
+   "id": "45509:method:a:KO/TKO",
+   "bout": "Kevin Holland vs Uros Medic",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Kevin Holland by KO/TKO",
+   "odds": 340,
+   "decimal": 4.4,
+   "p_model": 0.1008,
+   "p_fanduel": 0.1969,
+   "p": 0.1422,
+   "edge": -0.0547,
+   "ev": -0.3744,
+   "kelly": 0.0
+  },
+  {
+   "id": "45571:method:b:KO/TKO",
+   "bout": "Bia Mesquita vs Macy Chiasson",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Macy Chiasson by KO/TKO",
    "odds": 500,
    "decimal": 6.0,
-   "p_model": 0.0697,
-   "p_fanduel": 0.1488,
-   "p": 0.1027,
-   "edge": -0.0461,
-   "ev": -0.3837,
+   "p_model": 0.0738,
+   "p_fanduel": 0.1452,
+   "p": 0.1042,
+   "edge": -0.041,
+   "ev": -0.3748,
    "kelly": 0.0
   },
   {
-   "id": "45510:win_round:b:1",
-   "bout": "Bilal Hasan vs Luis Gurule",
+   "id": "45571:win_round:b:3",
+   "bout": "Bia Mesquita vs Macy Chiasson",
    "market": [
     "win_round",
     "b",
-    1
+    3
    ],
-   "selection": "Luis Gurule in round 1",
-   "odds": 1900,
-   "decimal": 20.0,
-   "p_model": 0.0199,
-   "p_fanduel": 0.0446,
-   "p": 0.0299,
-   "edge": -0.0148,
-   "ev": -0.4022,
+   "selection": "Macy Chiasson in round 3",
+   "odds": 2000,
+   "decimal": 21.0,
+   "p_model": 0.0205,
+   "p_fanduel": 0.0425,
+   "p": 0.0296,
+   "edge": -0.0129,
+   "ev": -0.3781,
    "kelly": 0.0
   },
   {
-   "id": "45569:win_round:b:1",
+   "id": "45569:method:a:DEC",
    "bout": "Jim Miller vs Terrance McKinney",
    "market": [
-    "win_round",
-    "b",
-    1
+    "method",
+    "a",
+    "DEC"
    ],
-   "selection": "Terrance McKinney in round 1",
-   "odds": -115,
-   "decimal": 1.8696,
-   "p_model": 0.1933,
-   "p_fanduel": 0.4776,
-   "p": 0.3188,
-   "edge": -0.1588,
-   "ev": -0.404,
+   "selection": "Jim Miller by decision",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0207,
+   "p_fanduel": 0.0439,
+   "p": 0.0302,
+   "edge": -0.0137,
+   "ev": -0.3951,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:method:a:KO/TKO",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Evan Elder by KO/TKO",
+   "odds": 500,
+   "decimal": 6.0,
+   "p_model": 0.0673,
+   "p_fanduel": 0.1442,
+   "p": 0.0993,
+   "edge": -0.0449,
+   "ev": -0.4044,
    "kelly": 0.0
   },
   {
@@ -5221,11 +5185,29 @@
    "selection": "Drew Dober in round 3",
    "odds": 1100,
    "decimal": 12.0,
-   "p_model": 0.0316,
+   "p_model": 0.0324,
    "p_fanduel": 0.0744,
-   "p": 0.0487,
-   "edge": -0.0257,
-   "ev": -0.4158,
+   "p": 0.0493,
+   "edge": -0.0251,
+   "ev": -0.408,
+   "kelly": 0.0
+  },
+  {
+   "id": "45569:win_round:b:1",
+   "bout": "Jim Miller vs Terrance McKinney",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Terrance McKinney in round 1",
+   "odds": -140,
+   "decimal": 1.7143,
+   "p_model": 0.2031,
+   "p_fanduel": 0.5208,
+   "p": 0.3449,
+   "edge": -0.176,
+   "ev": -0.4088,
    "kelly": 0.0
   },
   {
@@ -5237,13 +5219,13 @@
     "KO/TKO"
    ],
    "selection": "Cesar Almeida by KO/TKO",
-   "odds": 240,
-   "decimal": 3.4,
-   "p_model": 0.1103,
-   "p_fanduel": 0.2571,
-   "p": 0.1716,
-   "edge": -0.0855,
-   "ev": -0.4166,
+   "odds": 260,
+   "decimal": 3.6,
+   "p_model": 0.1052,
+   "p_fanduel": 0.243,
+   "p": 0.1627,
+   "edge": -0.0803,
+   "ev": -0.4143,
    "kelly": 0.0
   },
   {
@@ -5255,13 +5237,13 @@
     "SUB"
    ],
    "selection": "Cesar Almeida by submission",
-   "odds": 1800,
-   "decimal": 19.0,
-   "p_model": 0.02,
-   "p_fanduel": 0.046,
-   "p": 0.0304,
-   "edge": -0.0156,
-   "ev": -0.4215,
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0191,
+   "p_fanduel": 0.0437,
+   "p": 0.029,
+   "edge": -0.0148,
+   "ev": -0.4202,
    "kelly": 0.0
   },
   {
@@ -5275,11 +5257,47 @@
    "selection": "Jared Gordon in round 3",
    "odds": 3300,
    "decimal": 34.0,
-   "p_model": 0.0109,
+   "p_model": 0.0108,
    "p_fanduel": 0.0263,
    "p": 0.0169,
-   "edge": -0.0093,
-   "ev": -0.4244,
+   "edge": -0.0094,
+   "ev": -0.4251,
+   "kelly": 0.0
+  },
+  {
+   "id": "45510:win_round:b:1",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Luis Gurule in round 1",
+   "odds": 1900,
+   "decimal": 20.0,
+   "p_model": 0.0176,
+   "p_fanduel": 0.0446,
+   "p": 0.0281,
+   "edge": -0.0165,
+   "ev": -0.4373,
+   "kelly": 0.0
+  },
+  {
+   "id": "45570:win_round:a:2",
+   "bout": "Cesar Almeida vs Donte Johnson",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Cesar Almeida in round 2",
+   "odds": 800,
+   "decimal": 9.0,
+   "p_model": 0.0386,
+   "p_fanduel": 0.0992,
+   "p": 0.0624,
+   "edge": -0.0368,
+   "ev": -0.4387,
    "kelly": 0.0
   },
   {
@@ -5293,47 +5311,11 @@
    "selection": "Amanda Nunes in round 5",
    "odds": 3500,
    "decimal": 36.0,
-   "p_model": 0.0094,
+   "p_model": 0.0096,
    "p_fanduel": 0.0248,
-   "p": 0.0153,
-   "edge": -0.0095,
-   "ev": -0.4492,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:win_round:b:2",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "win_round",
-    "b",
-    2
-   ],
-   "selection": "Luis Gurule in round 2",
-   "odds": 2700,
-   "decimal": 28.0,
-   "p_model": 0.0119,
-   "p_fanduel": 0.0319,
-   "p": 0.0195,
-   "edge": -0.0124,
-   "ev": -0.4532,
-   "kelly": 0.0
-  },
-  {
-   "id": "45573:method:b:SUB",
-   "bout": "Evan Elder vs Samuel Sanches",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Samuel Sanches by submission",
-   "odds": 1600,
-   "decimal": 17.0,
-   "p_model": 0.0201,
-   "p_fanduel": 0.0511,
-   "p": 0.0322,
-   "edge": -0.019,
-   "ev": -0.4532,
+   "p": 0.0155,
+   "edge": -0.0093,
+   "ev": -0.4436,
    "kelly": 0.0
   },
   {
@@ -5355,42 +5337,6 @@
    "kelly": 0.0
   },
   {
-   "id": "45570:win_round:a:2",
-   "bout": "Cesar Almeida vs Donte Johnson",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Cesar Almeida in round 2",
-   "odds": 700,
-   "decimal": 8.0,
-   "p_model": 0.0405,
-   "p_fanduel": 0.1116,
-   "p": 0.0679,
-   "edge": -0.0437,
-   "ev": -0.457,
-   "kelly": 0.0
-  },
-  {
-   "id": "45510:method:b:SUB",
-   "bout": "Bilal Hasan vs Luis Gurule",
-   "market": [
-    "method",
-    "b",
-    "SUB"
-   ],
-   "selection": "Luis Gurule by submission",
-   "odds": 2700,
-   "decimal": 28.0,
-   "p_model": 0.0117,
-   "p_fanduel": 0.0313,
-   "p": 0.0192,
-   "edge": -0.0122,
-   "ev": -0.4629,
-   "kelly": 0.0
-  },
-  {
    "id": "44985:win_round:a:4",
    "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
@@ -5401,11 +5347,47 @@
    "selection": "Amanda Nunes in round 4",
    "odds": 2500,
    "decimal": 26.0,
-   "p_model": 0.012,
+   "p_model": 0.0122,
    "p_fanduel": 0.0343,
-   "p": 0.0203,
-   "edge": -0.014,
-   "ev": -0.471,
+   "p": 0.0205,
+   "edge": -0.0138,
+   "ev": -0.4657,
+   "kelly": 0.0
+  },
+  {
+   "id": "45573:method:b:SUB",
+   "bout": "Evan Elder vs Samuel Sanches",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Samuel Sanches by submission",
+   "odds": 1600,
+   "decimal": 17.0,
+   "p_model": 0.0192,
+   "p_fanduel": 0.0509,
+   "p": 0.0314,
+   "edge": -0.0195,
+   "ev": -0.4669,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:win_round:a:3",
+   "bout": "Amanda Nunes vs Kayla Harrison",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Amanda Nunes in round 3",
+   "odds": 1800,
+   "decimal": 19.0,
+   "p_model": 0.0164,
+   "p_fanduel": 0.047,
+   "p": 0.0279,
+   "edge": -0.0191,
+   "ev": -0.4707,
    "kelly": 0.0
   },
   {
@@ -5427,57 +5409,39 @@
    "kelly": 0.0
   },
   {
-   "id": "45510:method:b:KO/TKO",
+   "id": "45510:win_round:b:2",
    "bout": "Bilal Hasan vs Luis Gurule",
    "market": [
-    "method",
+    "win_round",
     "b",
-    "KO/TKO"
+    2
    ],
-   "selection": "Luis Gurule by KO/TKO",
-   "odds": 1100,
-   "decimal": 12.0,
-   "p_model": 0.0261,
-   "p_fanduel": 0.0731,
-   "p": 0.044,
-   "edge": -0.0292,
-   "ev": -0.4726,
+   "selection": "Luis Gurule in round 2",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0105,
+   "p_fanduel": 0.0319,
+   "p": 0.0184,
+   "edge": -0.0135,
+   "ev": -0.4855,
    "kelly": 0.0
   },
   {
-   "id": "44985:win_round:a:3",
-   "bout": "Amanda Nunes vs Kayla Harrison",
+   "id": "45570:win_round:a:3",
+   "bout": "Cesar Almeida vs Donte Johnson",
    "market": [
     "win_round",
     "a",
     3
    ],
-   "selection": "Amanda Nunes in round 3",
-   "odds": 1800,
-   "decimal": 19.0,
-   "p_model": 0.0161,
-   "p_fanduel": 0.047,
-   "p": 0.0276,
-   "edge": -0.0194,
-   "ev": -0.4759,
-   "kelly": 0.0
-  },
-  {
-   "id": "44985:win_round:a:2",
-   "bout": "Amanda Nunes vs Kayla Harrison",
-   "market": [
-    "win_round",
-    "a",
-    2
-   ],
-   "selection": "Amanda Nunes in round 2",
-   "odds": 1100,
-   "decimal": 12.0,
-   "p_model": 0.025,
-   "p_fanduel": 0.0744,
-   "p": 0.0434,
-   "edge": -0.031,
-   "ev": -0.4788,
+   "selection": "Cesar Almeida in round 3",
+   "odds": 1400,
+   "decimal": 15.0,
+   "p_model": 0.0192,
+   "p_fanduel": 0.0595,
+   "p": 0.034,
+   "edge": -0.0256,
+   "ev": -0.4904,
    "kelly": 0.0
   },
   {
@@ -5491,29 +5455,65 @@
    "selection": "Jared Gordon by submission",
    "odds": 2000,
    "decimal": 21.0,
-   "p_model": 0.0141,
+   "p_model": 0.014,
    "p_fanduel": 0.0416,
-   "p": 0.0243,
+   "p": 0.0242,
    "edge": -0.0173,
-   "ev": -0.4904,
+   "ev": -0.491,
    "kelly": 0.0
   },
   {
-   "id": "45570:win_round:a:3",
-   "bout": "Cesar Almeida vs Donte Johnson",
+   "id": "45510:method:b:SUB",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Luis Gurule by submission",
+   "odds": 2700,
+   "decimal": 28.0,
+   "p_model": 0.0103,
+   "p_fanduel": 0.0313,
+   "p": 0.018,
+   "edge": -0.0133,
+   "ev": -0.4946,
+   "kelly": 0.0
+  },
+  {
+   "id": "44985:win_round:a:2",
+   "bout": "Amanda Nunes vs Kayla Harrison",
    "market": [
     "win_round",
     "a",
-    3
+    2
    ],
-   "selection": "Cesar Almeida in round 3",
-   "odds": 1300,
-   "decimal": 14.0,
-   "p_model": 0.0201,
-   "p_fanduel": 0.0638,
-   "p": 0.036,
-   "edge": -0.0277,
-   "ev": -0.4955,
+   "selection": "Amanda Nunes in round 2",
+   "odds": 1000,
+   "decimal": 11.0,
+   "p_model": 0.0255,
+   "p_fanduel": 0.0812,
+   "p": 0.0459,
+   "edge": -0.0353,
+   "ev": -0.4953,
+   "kelly": 0.0
+  },
+  {
+   "id": "45510:method:b:KO/TKO",
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Luis Gurule by KO/TKO",
+   "odds": 1100,
+   "decimal": 12.0,
+   "p_model": 0.0231,
+   "p_fanduel": 0.0731,
+   "p": 0.0414,
+   "edge": -0.0317,
+   "ev": -0.5033,
    "kelly": 0.0
   },
   {
@@ -5525,13 +5525,13 @@
     1
    ],
    "selection": "Amanda Nunes in round 1",
-   "odds": 800,
-   "decimal": 9.0,
-   "p_model": 0.031,
-   "p_fanduel": 0.0992,
-   "p": 0.056,
-   "edge": -0.0432,
-   "ev": -0.496,
+   "odds": 750,
+   "decimal": 8.5,
+   "p_model": 0.0316,
+   "p_fanduel": 0.105,
+   "p": 0.0583,
+   "edge": -0.0468,
+   "ev": -0.5046,
    "kelly": 0.0
   },
   {
@@ -5545,11 +5545,11 @@
    "selection": "Donte Johnson by submission",
    "odds": 1100,
    "decimal": 12.0,
-   "p_model": 0.0212,
-   "p_fanduel": 0.0728,
-   "p": 0.0396,
-   "edge": -0.0332,
-   "ev": -0.5245,
+   "p_model": 0.0221,
+   "p_fanduel": 0.0729,
+   "p": 0.0405,
+   "edge": -0.0324,
+   "ev": -0.5143,
    "kelly": 0.0
   },
   {
@@ -5563,11 +5563,11 @@
    "selection": "Amanda Nunes by KO/TKO",
    "odds": 300,
    "decimal": 4.0,
-   "p_model": 0.0575,
-   "p_fanduel": 0.2165,
-   "p": 0.1149,
+   "p_model": 0.0587,
+   "p_fanduel": 0.2182,
+   "p": 0.1165,
    "edge": -0.1016,
-   "ev": -0.5403,
+   "ev": -0.5339,
    "kelly": 0.0
   },
   {
@@ -5581,11 +5581,11 @@
    "selection": "Luis Gurule in round 3",
    "odds": 3500,
    "decimal": 36.0,
-   "p_model": 0.006,
+   "p_model": 0.0053,
    "p_fanduel": 0.0248,
-   "p": 0.0122,
-   "edge": -0.0126,
-   "ev": -0.5604,
+   "p": 0.0115,
+   "edge": -0.0133,
+   "ev": -0.5865,
    "kelly": 0.0
   }
  ]

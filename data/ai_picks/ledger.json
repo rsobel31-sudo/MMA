@@ -762,7 +762,7 @@
    "placed_at": "2026-11-05T18:16:06+00:00",
    "bankroll_before": 85.21,
    "available_before": 83.71,
-   "note": "Thursday early check. Nov 7: the props showing EV (Walker main event to decision or to round 4/5, Souza or Delano by decision) rest on the finish model, and the reads give no reason the market's finish rates are wrong; the Wednesday Smith-by-submission bet stands as placed. UFC 334: one moneyline. Stephen Thompson is 43, 16 months out after his shin was split to the bone, on a three-fight skid, and lost the grappling in all three losses; Charles Radtke's last two wins came from takedowns, back takes and long control. The market still makes the retiring legend a slight favourite. The edge is modest (51% vs 47%) and partly in the model already, so the stake is small. Radtke was knocked out by strikers twice (Prates, Malott), which is why this isn't bigger.",
+   "note": "Thursday early check. Nov 7: the props showing EV (Walker main event to decision or to round 4/5, Souza or Delano by decision) rest on the finish model, and the reads give no reason the market's finish rates are wrong; the Wednesday Smith-by-submission bet stands as placed. UFC 334: one moneyline. Stephen Thompson is 43, 16 months out after his shin was split to the bone, on a three-fight skid, and lost the grappling in all three losses; Charles Radtke's last two wins came from takedowns, back takes and long control. The market still makes the retiring legend a slight favourite. The edge is modest (51% vs 47%) and partly in the model already, so the stake is small. Radtke was knocked out by strikers twice (Prates, Malott), which is why this isn't bigger.\n\nThe two title fights are priced about right. The model, the market and the pundits all side with Gane and Harrison, so there's no edge on either winner. The edges I trust are small: (1) Duncan, where the model is far above the line (84% stats-only against 61%) and the matchup backs it: his front-headlock chokes against a 38-year-old who has been stopped three times since 2023, with eight of nine pundits on Duncan. (2) Gane by decision: Hokit has never been stopped and Gane wins by range, not violence, over five rounds. (3) A little more on Radtke at a better price than Thursday's +102. I'm passing on the McKinney-fight round props: the sheet's timing is league-average and ignores that 17 of McKinney's 18 finishes came in R1. Hasan at -1250 is too short, and there's no line yet on Diaz. Total $4 on an $81.71 bankroll, sized well under quarter-Kelly because these edges are thin.",
    "bets": [
     {
      "id": "7-1",
@@ -791,9 +791,94 @@
      "status": "open",
      "profit": 0.0,
      "placed_at": "2026-11-05T18:16:06+00:00"
+    },
+    {
+     "id": "7-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45568:ml:a",
+       "bout": "Chris Duncan vs Drew Dober",
+       "market": [
+        "ml",
+        "a"
+       ],
+       "selection": "Chris Duncan to win",
+       "odds": -176,
+       "p": 0.6902,
+       "p_fanduel": 0.6068
+      }
+     ],
+     "odds": -176,
+     "decimal": 1.5682,
+     "stake": 2.0,
+     "to_win": 1.13,
+     "p": 0.6902,
+     "ev": 0.0824,
+     "reasoning": "Duncan -176. The blended number is 69% against FanDuel's 61%. His choke series (three guillotine or anaconda wins in his four-fight streak) suits Dober's habit of ducking into exchanges. Dober, 38, has three KO/TKO losses since 2023 and is 2-3 in his last five. Dober's left hand is the risk, so half the guide stake.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-13T17:09:23+00:00"
+    },
+    {
+     "id": "7-3",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "43676:method:a:DEC",
+       "bout": "Ciryl Gane vs Josh Hokit",
+       "market": [
+        "method",
+        "a",
+        "DEC"
+       ],
+       "selection": "Ciryl Gane by decision",
+       "odds": 390,
+       "p": 0.2752,
+       "p_fanduel": 0.1767
+      }
+     ],
+     "odds": 390,
+     "decimal": 4.9,
+     "stake": 1.0,
+     "to_win": 3.9,
+     "p": 0.2752,
+     "ev": 0.3485,
+     "reasoning": "Gane by decision +390. Our number is 27.5% against FanDuel's 17.7%. Hokit is unbeaten and has never been stopped. Gane wins by distance and footwork, not knockouts of durable men, and the 21 cm reach gap keeps it at range. It's a prop, and my AI Picks pick too, so a small stake.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-13T17:09:23+00:00"
+    },
+    {
+     "id": "7-4",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45567:ml:a",
+       "bout": "Charles Radtke vs Stephen Thompson",
+       "market": [
+        "ml",
+        "a"
+       ],
+       "selection": "Charles Radtke to win",
+       "odds": 128,
+       "p": 0.4665,
+       "p_fanduel": 0.4173
+      }
+     ],
+     "odds": 128,
+     "decimal": 2.28,
+     "stake": 1.0,
+     "to_win": 1.28,
+     "p": 0.4665,
+     "ev": 0.0636,
+     "reasoning": "Radtke +128, adding to Thursday's $1.25 at +102 now the price is better. Thompson is 43, 16 months out after his shin was split to the bone, and lost the grappling in all three recent losses; Radtke's last two wins came from takedowns and control. The favourite is the older man off the long layoff, which fits the underdog check. Small, because the pundits are 8 to 2 on Thompson.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-13T17:09:23+00:00"
     }
    ],
-   "staked": 1.25,
+   "staked": 5.25,
    "settled": false,
    "settled_at": null,
    "placements": [
@@ -806,15 +891,27 @@
      "staked": 1.25,
      "sheet": "data/ai_picks/sheets/2026-11-14-ufc-334-gane-vs-hokit.json",
      "sheet_fetched_at": "2026-11-05T18:15:39+00:00"
+    },
+    {
+     "placed_at": "2026-11-13T17:09:23+00:00",
+     "note": "The two title fights are priced about right. The model, the market and the pundits all side with Gane and Harrison, so there's no edge on either winner. The edges I trust are small: (1) Duncan, where the model is far above the line (84% stats-only against 61%) and the matchup backs it: his front-headlock chokes against a 38-year-old who has been stopped three times since 2023, with eight of nine pundits on Duncan. (2) Gane by decision: Hokit has never been stopped and Gane wins by range, not violence, over five rounds. (3) A little more on Radtke at a better price than Thursday's +102. I'm passing on the McKinney-fight round props: the sheet's timing is league-average and ignores that 17 of McKinney's 18 finishes came in R1. Hasan at -1250 is too short, and there's no line yet on Diaz. Total $4 on an $81.71 bankroll, sized well under quarter-Kelly because these edges are thin.",
+     "bets": [
+      "7-2",
+      "7-3",
+      "7-4"
+     ],
+     "staked": 4.0,
+     "sheet": "data/ai_picks/sheets/2026-11-14-ufc-334-gane-vs-hokit.json",
+     "sheet_fetched_at": "2026-11-13T17:05:46+00:00"
     }
    ],
-   "last_placed_at": "2026-11-05T18:16:06+00:00",
+   "last_placed_at": "2026-11-13T17:09:23+00:00",
    "sheet": "data/ai_picks/sheets/2026-11-14-ufc-334-gane-vs-hokit.json",
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-334-4433",
     "https://www.bestfightodds.com/events/ufc-334-4370"
    ],
-   "sheet_fetched_at": "2026-11-05T18:15:39+00:00"
+   "sheet_fetched_at": "2026-11-13T17:05:46+00:00"
   }
  ]
 }

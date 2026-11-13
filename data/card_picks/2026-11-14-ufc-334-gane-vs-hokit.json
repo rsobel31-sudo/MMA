@@ -1,0 +1,840 @@
+{
+ "event": "UFC 334: Gane vs. Hokit",
+ "date": "2026-11-14",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_334",
+ "locks_at": "2026-11-14T22:00:00+00:00",
+ "locked_at": "2026-11-13T17:08:57+00:00",
+ "note": "Two title fights headline UFC 334. Both are favourites I agree with, but both carry real layoff questions: Harrison's neck and Nunes's three years away. I follow the model's winner in all 13 bouts. Where I depart, it is on method or round, because the fighters' own finishing records argue against the averaged method model. McKinney finishes in round one or not at all. Duncan wins with front-headlock chokes. Costa's body kicks break people late. Elder doesn't get stopped. McKinney missed weight by 4.2 lb, which nudges me toward Miller, but not far enough to switch.",
+ "dec_cal": [
+  0.432659,
+  0.679986,
+  -0.35853
+ ],
+ "method_adjust": {},
+ "rounds_picked": true,
+ "bouts": [
+  {
+   "bout": "Ciryl Gane vs Josh Hokit",
+   "a": "Ciryl Gane",
+   "b": "Josh Hokit",
+   "segment": "Main card",
+   "weight_class": "Heavyweight",
+   "rounds": 5,
+   "title": true,
+   "pick": {
+    "winner": "Ciryl Gane",
+    "side": "a",
+    "method": "DEC",
+    "round": 5,
+    "confidence": 0.66,
+    "why": "Gane's footwork and roughly 21 cm reach edge keep an undersized wrestler on the end of kicks and jabs, and he weighed in 11 lb heavier. Hokit has never been stopped and has never gone past 15 minutes. Gane rarely finishes durable men late, so the likeliest single outcome is Gane over five rounds, as the model has it."
+   },
+   "model": {
+    "p_a": 0.6809,
+    "winner": "Ciryl Gane",
+    "method": "DEC",
+    "p_win": 0.6809,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.2401,
+      "SUB": 0.0628,
+      "DEC": 0.4003
+     },
+     "b": {
+      "KO/TKO": 0.1224,
+      "SUB": 0.095,
+      "DEC": 0.0794
+     }
+    },
+    "round": 5,
+    "p_exact": 0.4003,
+    "round_chances": {
+     "KO/TKO": [
+      0.355,
+      0.303,
+      0.175,
+      0.085,
+      0.082
+     ],
+     "SUB": [
+      0.277,
+      0.28,
+      0.234,
+      0.13,
+      0.078
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      4,
+      3,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6448
+  },
+  {
+   "bout": "Kayla Harrison vs Amanda Nunes",
+   "a": "Kayla Harrison",
+   "b": "Amanda Nunes",
+   "segment": "Main card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 5,
+   "title": true,
+   "pick": {
+    "winner": "Kayla Harrison",
+    "side": "a",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.62,
+    "why": "Harrison's body lock and top pressure against a 38-year-old three years out. Nunes is at her most dangerous in the first five minutes, with her power and a fresh black-belt guard, so Harrison has to survive that round. Then she drags her down and finds the kimura or arm-triangle in R2, once the rust and the weight on top tell. Nine of Harrison's finishes came in R1 and four in R2; Nunes's three stoppage losses came in R1 to R3."
+   },
+   "model": {
+    "p_a": 0.6153,
+    "winner": "Kayla Harrison",
+    "method": "SUB",
+    "p_win": 0.6153,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0666,
+      "SUB": 0.3109,
+      "DEC": 0.2026
+     },
+     "b": {
+      "KO/TKO": 0.0626,
+      "SUB": 0.0391,
+      "DEC": 0.3183
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1119,
+    "round_chances": {
+     "KO/TKO": [
+      0.427,
+      0.296,
+      0.133,
+      0.074,
+      0.071
+     ],
+     "SUB": [
+      0.36,
+      0.276,
+      0.184,
+      0.112,
+      0.067
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      9,
+      4,
+      1,
+      0,
+      0
+     ],
+     "losses": [
+      1,
+      2,
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6126
+  },
+  {
+   "bout": "Caio Borralho vs Yousri Belgaroui",
+   "a": "Caio Borralho",
+   "b": "Yousri Belgaroui",
+   "segment": "Main card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Caio Borralho",
+    "side": "a",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.58,
+    "why": "Most pundits like the kickboxer, but Belgaroui has never faced a grappler like this. Borralho has never been stopped and wins by control: wrestling him to the fence and the mat for three rounds, as against de Ridder. The rib surgery and the reach gap make a finish unlikely either way."
+   },
+   "model": {
+    "p_a": 0.6947,
+    "winner": "Caio Borralho",
+    "method": "DEC",
+    "p_win": 0.6947,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0786,
+      "SUB": 0.0505,
+      "DEC": 0.5704
+     },
+     "b": {
+      "KO/TKO": 0.1575,
+      "SUB": 0.0124,
+      "DEC": 0.1305
+     }
+    },
+    "round": 3,
+    "p_exact": 0.5704,
+    "round_chances": {
+     "KO/TKO": [
+      0.566,
+      0.291,
+      0.143
+     ],
+     "SUB": [
+      0.523,
+      0.313,
+      0.163
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      6,
+      2,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.5827
+  },
+  {
+   "bout": "Uroš Medić vs Kevin Holland",
+   "a": "Uroš Medić",
+   "b": "Kevin Holland",
+   "segment": "Main card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Uroš Medić",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.6,
+    "why": "Medić has four straight first-round stoppages, and every one of his 14 wins is a finish. Holland has been seven months out with two injury withdrawals and gets hit while hunting his own shots. Four of his stoppage losses came in R1. If Medić lands, it's early; past R1, Holland's length takes over."
+   },
+   "model": {
+    "p_a": 0.6292,
+    "winner": "Uroš Medić",
+    "method": "KO/TKO",
+    "p_win": 0.6292,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.3948,
+      "SUB": 0.0321,
+      "DEC": 0.2026
+     },
+     "b": {
+      "KO/TKO": 0.0985,
+      "SUB": 0.1535,
+      "DEC": 0.1186
+     }
+    },
+    "round": 1,
+    "p_exact": 0.246,
+    "round_chances": {
+     "KO/TKO": [
+      0.623,
+      0.259,
+      0.119
+     ],
+     "SUB": [
+      0.587,
+      0.277,
+      0.136
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      11,
+      2,
+      1
+     ],
+     "losses": [
+      4,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.586
+  },
+  {
+   "bout": "Bilal Hasan vs Luis Gurule",
+   "a": "Bilal Hasan",
+   "b": "Luis Gurule",
+   "segment": "Main card",
+   "weight_class": "Flyweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Bilal Hasan",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2,
+    "confidence": 0.85,
+    "why": "Hasan's speed and taekwondo kicks against a 1-4 UFC fighter. Gurule's wrestling should blunt the first few minutes, since wrestlers have slowed Hasan before. Once Gurule's shots dry up, Hasan's kicks and knees find him in R2. Four of Hasan's finishes came in R1 and four in R2."
+   },
+   "model": {
+    "p_a": 0.7829,
+    "winner": "Bilal Hasan",
+    "method": "KO/TKO",
+    "p_win": 0.7829,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.4711,
+      "SUB": 0.1456,
+      "DEC": 0.168
+     },
+     "b": {
+      "KO/TKO": 0.0575,
+      "SUB": 0.0257,
+      "DEC": 0.1321
+     }
+    },
+    "round": 1,
+    "p_exact": 0.252,
+    "round_chances": {
+     "KO/TKO": [
+      0.535,
+      0.345,
+      0.12
+     ],
+     "SUB": [
+      0.493,
+      0.367,
+      0.14
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      4,
+      0
+     ],
+     "losses": [
+      1,
+      1,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.8824
+  },
+  {
+   "bout": "Stephen Thompson vs Charles Radtke",
+   "a": "Stephen Thompson",
+   "b": "Charles Radtke",
+   "segment": "Preliminary card",
+   "weight_class": "Welterweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Charles Radtke",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.55,
+    "why": "The model's pick, and I agree with it against most pundits. Thompson is 43, 16 months out after his shin was split to the bone, and lost the grappling in all three recent losses. Radtke's last two wins came from takedowns and control. Thompson is hard to finish once he's down, so it goes three rounds."
+   },
+   "model": {
+    "p_a": 0.2963,
+    "winner": "Charles Radtke",
+    "method": "DEC",
+    "p_win": 0.7037,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.1444,
+      "SUB": 0.0145,
+      "DEC": 0.1351
+     },
+     "b": {
+      "KO/TKO": 0.2065,
+      "SUB": 0.159,
+      "DEC": 0.3405
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3405,
+    "round_chances": {
+     "KO/TKO": [
+      0.524,
+      0.319,
+      0.157
+     ],
+     "SUB": [
+      0.483,
+      0.34,
+      0.177
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      5,
+      2,
+      1
+     ],
+     "losses": [
+      0,
+      2,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.5827
+  },
+  {
+   "bout": "Drew Dober vs Chris Duncan",
+   "a": "Drew Dober",
+   "b": "Chris Duncan",
+   "segment": "Preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Chris Duncan",
+    "side": "b",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.65,
+    "why": "Duncan's weapon is the front headlock: three of the four wins in his streak were guillotines or anacondas. Dober, 38, ducks into exchanges and shoots when hurt, which is how those chokes appear. I expect a feeling-out R1 against Dober's left hand, then the choke in a R2 scramble."
+   },
+   "model": {
+    "p_a": 0.164,
+    "winner": "Chris Duncan",
+    "method": "DEC",
+    "p_win": 0.836,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0845,
+      "SUB": 0.0253,
+      "DEC": 0.0453
+     },
+     "b": {
+      "KO/TKO": 0.3028,
+      "SUB": 0.1933,
+      "DEC": 0.3487
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3487,
+    "round_chances": {
+     "KO/TKO": [
+      0.538,
+      0.309,
+      0.153
+     ],
+     "SUB": [
+      0.502,
+      0.328,
+      0.17
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      6,
+      4,
+      1
+     ],
+     "losses": [
+      4,
+      2,
+      2
+     ]
+    }
+   },
+   "market_p_a": 0.3932
+  },
+  {
+   "bout": "Jim Miller vs Terrance McKinney",
+   "a": "Jim Miller",
+   "b": "Terrance McKinney",
+   "segment": "Preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Terrance McKinney",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.6,
+    "why": "17 of McKinney's 18 finishes came in R1. He either wins early or fades, so the model's decision pick doesn't fit him. He missed weight by 4.2 lb, and a drained McKinney is even less likely to win late; that keeps me closer to Miller than the market. But Miller is 43, and the first two minutes are McKinney's. R1 or not at all."
+   },
+   "model": {
+    "p_a": 0.3331,
+    "winner": "Terrance McKinney",
+    "method": "DEC",
+    "p_win": 0.6669,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0916,
+      "SUB": 0.1772,
+      "DEC": 0.023
+     },
+     "b": {
+      "KO/TKO": 0.1801,
+      "SUB": 0.1977,
+      "DEC": 0.3303
+     }
+    },
+    "round": 3,
+    "p_exact": 0.3303,
+    "round_chances": {
+     "KO/TKO": [
+      0.647,
+      0.242,
+      0.111
+     ],
+     "SUB": [
+      0.613,
+      0.26,
+      0.127
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      17,
+      0,
+      1
+     ],
+     "losses": [
+      2,
+      3,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.3403
+  },
+  {
+   "bout": "Donte Johnson vs César Almeida",
+   "a": "Donte Johnson",
+   "b": "César Almeida",
+   "segment": "Preliminary card",
+   "weight_class": "Middleweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Donte Johnson",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 1,
+    "confidence": 0.66,
+    "why": "Almeida is 38 and was knocked out in R1 last time; seven of Johnson's finishes came in R1. The bigger, younger man walks him down early at the 190 lb catchweight."
+   },
+   "model": {
+    "p_a": 0.7852,
+    "winner": "Donte Johnson",
+    "method": "KO/TKO",
+    "p_win": 0.7852,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.5027,
+      "SUB": 0.0252,
+      "DEC": 0.22
+     },
+     "b": {
+      "KO/TKO": 0.0724,
+      "SUB": 0.0132,
+      "DEC": 0.1664
+     }
+    },
+    "round": 1,
+    "p_exact": 0.3051,
+    "round_chances": {
+     "KO/TKO": [
+      0.607,
+      0.271,
+      0.123
+     ],
+     "SUB": [
+      0.564,
+      0.293,
+      0.143
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      1,
+      0
+     ],
+     "losses": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "market_p_a": 0.6219
+  },
+  {
+   "bout": "Jared Gordon vs Melquizael Costa",
+   "a": "Jared Gordon",
+   "b": "Melquizael Costa",
+   "segment": "Early preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Melquizael Costa",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 3,
+    "confidence": 0.78,
+    "why": "Costa's volume (leg and body kicks) against a 38-year-old with three losses in four. Gordon is gritty and survives early, but four of his stoppage losses came in R3, and Costa has four R3 finishes of his own. The body work breaks him late, so KO/TKO in R3 rather than the model's early submission."
+   },
+   "model": {
+    "p_a": 0.1703,
+    "winner": "Melquizael Costa",
+    "method": "SUB",
+    "p_win": 0.8297,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0519,
+      "SUB": 0.013,
+      "DEC": 0.12
+     },
+     "b": {
+      "KO/TKO": 0.2553,
+      "SUB": 0.3117,
+      "DEC": 0.2482
+     }
+    },
+    "round": 1,
+    "p_exact": 0.164,
+    "round_chances": {
+     "KO/TKO": [
+      0.558,
+      0.223,
+      0.219
+     ],
+     "SUB": [
+      0.526,
+      0.24,
+      0.235
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      11,
+      2,
+      4
+     ],
+     "losses": [
+      3,
+      0,
+      4
+     ]
+    }
+   },
+   "market_p_a": 0.2441
+  },
+  {
+   "bout": "Macy Chiasson vs Beatriz Mesquita",
+   "a": "Macy Chiasson",
+   "b": "Beatriz Mesquita",
+   "segment": "Early preliminary card",
+   "weight_class": "Women's Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Beatriz Mesquita",
+    "side": "b",
+    "method": "SUB",
+    "round": 2,
+    "confidence": 0.68,
+    "why": "Mesquita is a BJJ world champion, unbeaten, and wins on the mat. Chiasson has never been stopped in R1, and her height keeps the first round on the feet and against the fence. Once Mesquita gets her down, the back take comes in R2; three of her finishes came in that round."
+   },
+   "model": {
+    "p_a": 0.3301,
+    "winner": "Beatriz Mesquita",
+    "method": "SUB",
+    "p_win": 0.6699,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0845,
+      "SUB": 0.0618,
+      "DEC": 0.1951
+     },
+     "b": {
+      "KO/TKO": 0.0509,
+      "SUB": 0.3384,
+      "DEC": 0.2693
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1631,
+    "round_chances": {
+     "KO/TKO": [
+      0.525,
+      0.332,
+      0.143
+     ],
+     "SUB": [
+      0.482,
+      0.354,
+      0.163
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      4,
+      3,
+      0
+     ],
+     "losses": [
+      0,
+      1,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.3239
+  },
+  {
+   "bout": "Alateng Heili vs Juan Díaz",
+   "a": "Alateng Heili",
+   "b": "Juan Díaz",
+   "segment": "Early preliminary card",
+   "weight_class": "Bantamweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Juan Díaz",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.72,
+    "why": "Heili took the fight on about eight days' notice. Díaz has had a full camp, though he missed by 0.4 lb. Heili hasn't been stopped since 2017 and fights at a steady pace, so Díaz wins it on the cards."
+   },
+   "model": {
+    "p_a": 0.1824,
+    "winner": "Juan Díaz",
+    "method": "DEC",
+    "p_win": 0.8176,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0396,
+      "SUB": 0.0167,
+      "DEC": 0.1216
+     },
+     "b": {
+      "KO/TKO": 0.216,
+      "SUB": 0.1175,
+      "DEC": 0.4886
+     }
+    },
+    "round": 3,
+    "p_exact": 0.4886,
+    "round_chances": {
+     "KO/TKO": [
+      0.524,
+      0.338,
+      0.137
+     ],
+     "SUB": [
+      0.483,
+      0.36,
+      0.157
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      3,
+      3,
+      1
+     ],
+     "losses": [
+      2,
+      2,
+      0
+     ]
+    }
+   },
+   "market_p_a": null
+  },
+  {
+   "bout": "Evan Elder vs Samuel Sanches",
+   "a": "Evan Elder",
+   "b": "Samuel Sanches",
+   "segment": "Early preliminary card",
+   "weight_class": "Lightweight",
+   "rounds": 3,
+   "title": false,
+   "pick": {
+    "winner": "Samuel Sanches",
+    "side": "b",
+    "method": "DEC",
+    "round": 3,
+    "confidence": 0.53,
+    "why": "Close to a coin flip. I go with the model's winner: Sanches is younger and hits harder, and Elder is 19 months out after a leg injury. But Elder has been stopped once in his career, in R3, so a Sanches knockout is less likely than the averaged model says. Decision."
+   },
+   "model": {
+    "p_a": 0.4359,
+    "winner": "Samuel Sanches",
+    "method": "KO/TKO",
+    "p_win": 0.5641,
+    "joint": {
+     "a": {
+      "KO/TKO": 0.0623,
+      "SUB": 0.1067,
+      "DEC": 0.3145
+     },
+     "b": {
+      "KO/TKO": 0.3232,
+      "SUB": 0.0204,
+      "DEC": 0.1728
+     }
+    },
+    "round": 1,
+    "p_exact": 0.1858,
+    "round_chances": {
+     "KO/TKO": [
+      0.575,
+      0.285,
+      0.14
+     ],
+     "SUB": [
+      0.533,
+      0.307,
+      0.16
+     ]
+    },
+    "finish_rounds": {
+     "wins": [
+      7,
+      2,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "market_p_a": 0.485
+  }
+ ],
+ "graded": false
+}
