@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12",
+ "fetched": "2026-11-13",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -715,6 +715,28 @@
      "weight_class": "Welterweight",
      "a": "Daniel Rodriguez",
      "b": "Roberto Soldi\u0107",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Magomed Zaynukov",
+     "b": "Piero Guaylupo",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Chris Curtis",
+     "b": "Geoff Neal",
      "title": false,
      "result": "",
      "rounds": 3,
