@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T17:15:36+00:00",
+ "fetched": "2026-11-14T12:20:34+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -687,6 +687,20 @@
     "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
    },
    "first_seen": "2026-10-29"
+  },
+  {
+   "name": "Mike Perry",
+   "date": "2026-11-14",
+   "division": "Welterweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/520949/mike-perry-re-signs-with-ufc"
+   ],
+   "info": "",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/520949/mike-perry-re-signs-with-ufc"
+   },
+   "first_seen": "2026-11-14"
   },
   {
    "name": "Samuel Sanches",

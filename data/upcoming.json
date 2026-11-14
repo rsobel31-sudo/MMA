@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13",
+ "fetched": "2026-11-14",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -110,7 +110,7 @@
     {
      "order": 7,
      "segment": "Preliminary card",
-     "weight_class": "Lightweight",
+     "weight_class": "Catchweight (160.2 lb)",
      "a": "Jim Miller",
      "b": "Terrance McKinney",
      "title": false,
@@ -124,7 +124,7 @@
     {
      "order": 8,
      "segment": "Preliminary card",
-     "weight_class": "Middleweight",
+     "weight_class": "Catchweight (190 lb)",
      "a": "Donte Johnson",
      "b": "C\u00e9sar Almeida",
      "title": false,
@@ -166,7 +166,7 @@
     {
      "order": 11,
      "segment": "Early preliminary card",
-     "weight_class": "Bantamweight",
+     "weight_class": "Catchweight (136.4 lb)",
      "a": "Alateng Heili",
      "b": "Juan D\u00edaz",
      "title": false,
@@ -805,6 +805,17 @@
      "weight_class": "Bantamweight",
      "a": "Serhiy Sidey",
      "b": "Louis Lee Scott",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
+     "segment": "Announced",
+     "weight_class": "Heavyweight",
+     "a": "Gable Steveson",
+     "b": "Terrance Chatman",
      "title": false,
      "result": "",
      "rounds": 3,
