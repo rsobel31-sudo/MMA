@@ -147,7 +147,15 @@
      "method": "KO/TKO",
      "url": "https://bloodyelbow.com/2026/11/12/ciryl-gane-vs-josh-hokit-bloody-elbow-staff-divided-by-the-ufc-334-main-event/"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Ciryl Gane",
+   "result": {
+    "method": "DEC",
+    "round": 5,
+    "seconds": 300
+   }
   },
   {
    "a": "Amanda Nunes",
@@ -272,7 +280,15 @@
      "method": "DEC",
      "url": "https://bloodyelbow.com/2026/11/12/kayla-harrison-vs-amanda-nunes-bloody-elbow-staff-predict-the-ufc-334-co-main-event/"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Kayla Harrison",
+   "result": {
+    "method": "SUB",
+    "round": 4,
+    "seconds": 89
+   }
   },
   {
    "a": "Caio Borralho",
@@ -355,7 +371,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Caio Borralho",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Kevin Holland",
@@ -438,7 +462,9 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": null,
+   "outcome": "DRAW"
   },
   {
    "a": "Bilal Hasan",
@@ -527,7 +553,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Luis Gurule",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Charles Radtke",
@@ -617,7 +651,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.05,
+   "winner": "Stephen Thompson",
+   "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "seconds": 174
+   }
   },
   {
    "a": "Chris Duncan",
@@ -699,7 +741,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Chris Duncan",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Jim Miller",
@@ -784,7 +834,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Terrance McKinney",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 113
+   }
   },
   {
    "a": "Cesar Almeida",
@@ -872,7 +930,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.0,
+   "winner": "Cesar Almeida",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 200
+   }
   },
   {
    "a": "Jared Gordon",
@@ -961,7 +1027,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Melquizael Costa",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Bia Mesquita",
@@ -1043,7 +1117,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Bia Mesquita",
+   "result": {
+    "method": "SUB",
+    "round": 1,
+    "seconds": 203
+   }
   },
   {
    "a": "Evan Elder",
@@ -1118,7 +1200,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": -0.0,
+   "winner": "Evan Elder",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Juan Diaz",
@@ -1172,7 +1262,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-334-full-card-predictions-is-josh-hokit-really-the-next-heavyweight-champ-ciryl-gane-kayla-harrison-vs-amanda-nunes-194819003.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Juan Diaz",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   }
  ]
 }

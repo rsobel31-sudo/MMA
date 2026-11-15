@@ -778,7 +778,15 @@
        "selection": "Charles Radtke to win",
        "odds": 102,
        "p": 0.5125,
-       "p_fanduel": 0.4669
+       "p_fanduel": 0.4669,
+       "close_odds": 108,
+       "grade": "lost",
+       "result": {
+        "winner": "b",
+        "method": "KO/TKO",
+        "round": 3,
+        "seconds": 174
+       }
       }
      ],
      "odds": 102,
@@ -788,9 +796,10 @@
      "p": 0.5125,
      "ev": 0.0353,
      "reasoning": "Thompson, 43, off a 16-month layoff and a serious shin injury, has lost the grappling in each of his last three losses; Radtke is a top-control grappler on a two-fight win streak. Even money undervalues him.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-05T18:16:06+00:00"
+     "status": "lost",
+     "profit": -1.25,
+     "placed_at": "2026-11-05T18:16:06+00:00",
+     "clv": -0.0288
     },
     {
      "id": "7-2",
@@ -806,7 +815,15 @@
        "selection": "Chris Duncan to win",
        "odds": -176,
        "p": 0.6902,
-       "p_fanduel": 0.6068
+       "p_fanduel": 0.6068,
+       "close_odds": -200,
+       "grade": "won",
+       "result": {
+        "winner": "a",
+        "method": "DEC",
+        "round": 3,
+        "seconds": 300
+       }
       }
      ],
      "odds": -176,
@@ -816,9 +833,10 @@
      "p": 0.6902,
      "ev": 0.0824,
      "reasoning": "Duncan -176. The blended number is 69% against FanDuel's 61%. His choke series (three guillotine or anaconda wins in his four-fight streak) suits Dober's habit of ducking into exchanges. Dober, 38, has three KO/TKO losses since 2023 and is 2-3 in his last five. Dober's left hand is the risk, so half the guide stake.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-13T17:09:23+00:00"
+     "status": "won",
+     "profit": 1.13,
+     "placed_at": "2026-11-13T17:09:23+00:00",
+     "clv": 0.0455
     },
     {
      "id": "7-3",
@@ -835,7 +853,15 @@
        "selection": "Ciryl Gane by decision",
        "odds": 390,
        "p": 0.2752,
-       "p_fanduel": 0.1767
+       "p_fanduel": 0.1767,
+       "close_odds": 390,
+       "grade": "won",
+       "result": {
+        "winner": "a",
+        "method": "DEC",
+        "round": 5,
+        "seconds": 300
+       }
       }
      ],
      "odds": 390,
@@ -845,9 +871,10 @@
      "p": 0.2752,
      "ev": 0.3485,
      "reasoning": "Gane by decision +390. Our number is 27.5% against FanDuel's 17.7%. Hokit is unbeaten and has never been stopped. Gane wins by distance and footwork, not knockouts of durable men, and the 21 cm reach gap keeps it at range. It's a prop, and my AI Picks pick too, so a small stake.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-13T17:09:23+00:00"
+     "status": "won",
+     "profit": 3.9,
+     "placed_at": "2026-11-13T17:09:23+00:00",
+     "clv": 0.0
     },
     {
      "id": "7-4",
@@ -863,7 +890,15 @@
        "selection": "Charles Radtke to win",
        "odds": 128,
        "p": 0.4665,
-       "p_fanduel": 0.4173
+       "p_fanduel": 0.4173,
+       "close_odds": 108,
+       "grade": "lost",
+       "result": {
+        "winner": "b",
+        "method": "KO/TKO",
+        "round": 3,
+        "seconds": 174
+       }
       }
      ],
      "odds": 128,
@@ -873,14 +908,15 @@
      "p": 0.4665,
      "ev": 0.0636,
      "reasoning": "Radtke +128, adding to Thursday's $1.25 at +102 now the price is better. Thompson is 43, 16 months out after his shin was split to the bone, and lost the grappling in all three recent losses; Radtke's last two wins came from takedowns and control. The favourite is the older man off the long layoff, which fits the underdog check. Small, because the pundits are 8 to 2 on Thompson.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-13T17:09:23+00:00"
+     "status": "lost",
+     "profit": -1.0,
+     "placed_at": "2026-11-13T17:09:23+00:00",
+     "clv": 0.0962
     }
    ],
    "staked": 5.25,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-11-15T17:00:43+00:00",
    "placements": [
     {
      "placed_at": "2026-11-05T18:16:06+00:00",
@@ -911,7 +947,12 @@
     "https://www.bestfightodds.com/events/ufc-334-4433",
     "https://www.bestfightodds.com/events/ufc-334-4370"
    ],
-   "sheet_fetched_at": "2026-11-13T17:05:46+00:00"
+   "sheet_fetched_at": "2026-11-13T17:05:46+00:00",
+   "bankroll_after": 84.49,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }
