@@ -1,0 +1,101 @@
+{
+ "event": "UFC 334: Gane vs. Hokit",
+ "date": "2026-11-14",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Alateng Heili vs Juan Díaz": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Amanda Nunes vs Kayla Harrison": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 4,
+   "seconds": 89,
+   "round_agreed": true
+  },
+  "Bia Mesquita vs Macy Chiasson": {
+   "winner": "a",
+   "method": "SUB",
+   "round": 1,
+   "seconds": 203,
+   "round_agreed": true
+  },
+  "Bilal Hasan vs Luis Gurule": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Caio Borralho vs Yousri Belgaroui": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Cesar Almeida vs Donte Johnson": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 200,
+   "round_agreed": true
+  },
+  "Charles Radtke vs Stephen Thompson": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 3,
+   "seconds": 174,
+   "round_agreed": true
+  },
+  "Chris Duncan vs Drew Dober": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Ciryl Gane vs Josh Hokit": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 5,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Evan Elder vs Samuel Sanches": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Jared Gordon vs Melquizael Costa": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Jim Miller vs Terrance McKinney": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 113,
+   "round_agreed": true
+  },
+  "Kevin Holland vs Uros Medic": {
+   "winner": null,
+   "method": "DRAW",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  }
+ }
+}

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T11:55:35+00:00",
+ "checked": "2026-11-15T17:00:34+00:00",
  "ok": false,
  "failed": [
   "Fight Matrix rankings",
@@ -11,7 +11,7 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "18 bouts on a known fighter page",
-   "seconds": 1.0,
+   "seconds": 0.6,
    "last_ok": "2026-11-15"
   },
   {
@@ -19,7 +19,7 @@
    "used_by": "prospect fights this week",
    "ok": true,
    "detail": "285 upcoming events listed",
-   "seconds": 1.6,
+   "seconds": 2.3,
    "last_ok": "2026-11-15"
   },
   {
@@ -27,7 +27,7 @@
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "7 UFC events in the last 45 days",
-   "seconds": 1.2,
+   "seconds": 1.4,
    "last_ok": "2026-11-15"
   },
   {
@@ -35,7 +35,7 @@
    "used_by": "prospects crawl",
    "ok": false,
    "detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
-   "seconds": 4.6,
+   "seconds": 4.7,
    "last_ok": "2026-11-14"
   },
   {
@@ -43,7 +43,7 @@
    "used_by": "ratings, prospects",
    "ok": false,
    "detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
-   "seconds": 2.4,
+   "seconds": 2.3,
    "last_ok": "2026-11-14"
   },
   {
@@ -51,15 +51,15 @@
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
    "detail": "8 events; UFC 334: 5 bouts, 5 with FanDuel moneylines",
-   "seconds": 2.3,
+   "seconds": 2.5,
    "last_ok": "2026-11-15"
   },
   {
    "source": "BestFightOdds fighters",
    "used_by": "closing lines, signings",
    "ok": true,
-   "detail": "15 bouts with lines",
-   "seconds": 2.6,
+   "detail": "17 bouts with lines",
+   "seconds": 2.7,
    "last_ok": "2026-11-15"
   },
   {
@@ -75,7 +75,7 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "657 fighters on the UFC roster",
-   "seconds": 1.3,
+   "seconds": 1.4,
    "last_ok": "2026-11-15"
   },
   {
@@ -90,8 +90,8 @@
    "source": "StatsFight",
    "used_by": "stat verification",
    "ok": true,
-   "detail": "2418 UFC bouts in the sitemap",
-   "seconds": 3.9,
+   "detail": "2417 UFC bouts in the sitemap",
+   "seconds": 4.2,
    "last_ok": "2026-11-15"
   },
   {
@@ -99,7 +99,7 @@
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.3,
+   "seconds": 0.4,
    "last_ok": "2026-11-15"
   },
   {
@@ -115,7 +115,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 0.1,
+   "seconds": 0.4,
    "last_ok": "2026-11-15"
   },
   {
@@ -123,7 +123,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
-   "seconds": 0.4,
+   "seconds": 0.6,
    "last_ok": "2026-11-15"
   },
   {
@@ -131,7 +131,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
+   "seconds": 5.1,
    "last_ok": "2026-11-15"
   },
   {
@@ -139,7 +139,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.7,
+   "seconds": 0.5,
    "last_ok": "2026-11-15"
   },
   {
@@ -147,7 +147,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.5,
+   "seconds": 1.4,
    "last_ok": "2026-11-15"
   },
   {
@@ -155,7 +155,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.0,
    "last_ok": "2026-11-15"
   },
   {
@@ -163,7 +163,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.3,
+   "seconds": 1.5,
    "last_ok": "2026-11-15"
   },
   {
@@ -171,15 +171,15 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "19 items, 19 from the last 14 days",
-   "seconds": 0.2,
+   "seconds": 0.3,
    "last_ok": "2026-11-15"
   },
   {
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "32 items, 32 from the last 14 days",
-   "seconds": 0.5,
+   "detail": "23 items, 23 from the last 14 days",
+   "seconds": 1.5,
    "last_ok": "2026-11-15"
   },
   {
@@ -187,7 +187,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.6,
+   "seconds": 2.1,
    "last_ok": "2026-11-15"
   },
   {
@@ -195,7 +195,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.6,
+   "seconds": 2.9,
    "last_ok": "2026-11-15"
   },
   {
@@ -203,7 +203,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 3.1,
+   "seconds": 3.5,
    "last_ok": "2026-11-15"
   }
  ]
