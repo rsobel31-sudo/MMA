@@ -1,0 +1,447 @@
+{
+ "id": "2026-11-14-ufc-334-gane-vs-hokit",
+ "event": "UFC 334 - Gane vs. Hokit",
+ "date": "2026-11-14",
+ "stories": {},
+ "coverage": {
+  "ciryl-gane-josh-hokit": {
+   "a": "Ciryl Gane",
+   "b": "Josh Hokit",
+   "winner": "Ciryl Gane",
+   "method": "DEC",
+   "round": 5,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/520939/ufc-334-results-gane-vs-hokit"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Gane",
+     "10-9 Gane",
+     "10-9 Gane"
+    ],
+    [
+     2,
+     "10-9 Hokit",
+     "10-9 Hokit",
+     "10-9 Hokit"
+    ],
+    [
+     3,
+     "10-9 Hokit",
+     "10-9 Hokit",
+     "10-9 Hokit"
+    ],
+    [
+     4,
+     "10-9 Gane",
+     "10-9 Gane",
+     "10-9 Gane"
+    ],
+    [
+     5,
+     "10-9 Gane",
+     "10-9 Gane",
+     "10-9 Gane"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "kayla-harrison-amanda-nunes": {
+   "a": "Kayla Harrison",
+   "b": "Amanda Nunes",
+   "winner": "Kayla Harrison",
+   "method": "SUB",
+   "round": 4,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/520744/ufc-334-paths-to-victory-kayla-harrison-vs-amanda-nunes"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Harrison",
+     "10-9 Harrison",
+     "10-9 Harrison"
+    ],
+    [
+     2,
+     "10-9 Harrison",
+     "10-9 Harrison",
+     "10-9 Harrison"
+    ],
+    [
+     3,
+     "10-9 Harrison",
+     "10-9 Harrison",
+     "10-9 Harrison"
+    ]
+   ],
+   "closeness": null
+  },
+  "caio-borralho-yousri-belgaroui": {
+   "a": "Caio Borralho",
+   "b": "Yousri Belgaroui",
+   "winner": "Caio Borralho",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/caio-borralho/ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Borralho",
+     "10-9 Borralho",
+     "10-9 Borralho"
+    ],
+    [
+     2,
+     "10-9 Borralho",
+     "10-9 Borralho",
+     "10-9 Borralho"
+    ],
+    [
+     3,
+     "10-9 Borralho",
+     "10-9 Borralho",
+     "10-9 Borralho"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "luis-gurule-bilal-hasan": {
+   "a": "Luis Gurule",
+   "b": "Bilal Hasan",
+   "winner": "Luis Gurule",
+   "method": "S-DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Hasan",
+     "10-9 Hasan",
+     "10-9 Hasan"
+    ],
+    [
+     2,
+     "10-9 Gurule",
+     "10-9 Gurule",
+     "10-9 Hasan"
+    ],
+    [
+     3,
+     "10-9 Gurule",
+     "10-9 Gurule",
+     "10-9 Gurule"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "stephen-thompson-charles-radtke": {
+   "a": "Stephen Thompson",
+   "b": "Charles Radtke",
+   "winner": "Stephen Thompson",
+   "method": "KO/TKO",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/stephen-thompson/ufc-334-results-stephen-thompson-tkos-charles-radtke-video/"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Radtke",
+     "10-9 Radtke",
+     "10-9 Radtke"
+    ],
+    [
+     2,
+     "10-9 Thompson",
+     "10-9 Thompson",
+     "10-9 Thompson"
+    ]
+   ],
+   "closeness": null
+  },
+  "chris-duncan-drew-dober": {
+   "a": "Chris Duncan",
+   "b": "Drew Dober",
+   "winner": "Chris Duncan",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Duncan",
+     "10-9 Duncan",
+     "10-9 Duncan"
+    ],
+    [
+     2,
+     "10-9 Duncan",
+     "10-9 Duncan",
+     "10-9 Duncan"
+    ],
+    [
+     3,
+     "10-9 Dober",
+     "10-9 Dober",
+     "10-9 Dober"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "terrance-mckinney-jim-miller": {
+   "a": "Terrance McKinney",
+   "b": "Jim Miller",
+   "winner": "Terrance McKinney",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/14/terrance-mckinney-turns-lights-out-in-msg-in-win-over-jim-miller/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "cesar-almeida-donte-johnson": {
+   "a": "Cesar Almeida",
+   "b": "Donte Johnson",
+   "winner": "Cesar Almeida",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/14/cesar-almeida-brutally-knocks-out-undefeated-donte-johnson/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "melquizael-costa-jared-gordon": {
+   "a": "Melquizael Costa",
+   "b": "Jared Gordon",
+   "winner": "Melquizael Costa",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Costa",
+     "10-9 Costa",
+     "10-9 Costa"
+    ],
+    [
+     2,
+     "10-9 Gordon",
+     "10-9 Gordon",
+     "10-9 Gordon"
+    ],
+    [
+     3,
+     "10-9 Costa",
+     "10-9 Costa",
+     "10-9 Costa"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "beatriz-mesquita-macy-chiasson": {
+   "a": "Beatriz Mesquita",
+   "b": "Macy Chiasson",
+   "winner": "Beatriz Mesquita",
+   "method": "SUB",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "juan-diaz-heili-alateng": {
+   "a": "Juan Diaz",
+   "b": "Heili Alateng",
+   "winner": "Juan Diaz",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Diaz",
+     "10-9 Diaz",
+     "10-9 Diaz"
+    ],
+    [
+     2,
+     "10-9 Diaz",
+     "10-9 Diaz",
+     "10-9 Diaz"
+    ],
+    [
+     3,
+     "10-9 Diaz",
+     "10-9 Diaz",
+     "10-9 Diaz"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "evan-elder-samuel-sanches": {
+   "a": "Evan Elder",
+   "b": "Samuel Sanches",
+   "winner": "Evan Elder",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Elder",
+     "10-9 Elder",
+     "10-9 Elder"
+    ],
+    [
+     2,
+     "10-9 Elder",
+     "10-9 Elder",
+     "10-9 Elder"
+    ],
+    [
+     3,
+     "10-8 Elder",
+     "10-8 Elder",
+     "10-8 Elder"
+    ]
+   ],
+   "closeness": "clear"
+  }
+ }
+}

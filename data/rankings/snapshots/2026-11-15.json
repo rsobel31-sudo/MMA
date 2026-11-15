@@ -1,0 +1,1643 @@
+{
+"date": "2026-11-15",
+"through": "2026-11-14",
+"divisions": {
+"Welterweight": [
+{
+"name": "Islam Makhachev",
+"rank": 1,
+"proven": 2374.3
+},
+{
+"name": "Shavkat Rakhmonov",
+"rank": 2,
+"proven": 2200.1
+},
+{
+"name": "Max Holloway",
+"rank": 3,
+"proven": 2194.7
+},
+{
+"name": "Michael Morales",
+"rank": 4,
+"proven": 2169.0
+},
+{
+"name": "Carlos Prates",
+"rank": 5,
+"proven": 2148.0
+},
+{
+"name": "Yaroslav Amosov",
+"rank": 6,
+"proven": 2123.4
+},
+{
+"name": "Sean Brady",
+"rank": 7,
+"proven": 2108.9
+},
+{
+"name": "Mike Malott",
+"rank": 8,
+"proven": 2108.6
+},
+{
+"name": "Gabriel Bonfim",
+"rank": 9,
+"proven": 2101.3
+},
+{
+"name": "Ian Garry",
+"rank": 10,
+"proven": 2100.3
+},
+{
+"name": "Jack Della Maddalena",
+"rank": 11,
+"proven": 2066.8
+},
+{
+"name": "Belal Muhammad",
+"rank": 12,
+"proven": 2054.2
+},
+{
+"name": "Leon Edwards",
+"rank": 13,
+"proven": 2028.5
+},
+{
+"name": "Roberto Soldic",
+"rank": 14,
+"proven": 2018.0
+},
+{
+"name": "Uros Medic",
+"rank": 15,
+"proven": 2010.9
+},
+{
+"name": "Jacobe Smith",
+"rank": 16,
+"proven": 2005.7
+},
+{
+"name": "Myktybek Orolbai",
+"rank": 17,
+"proven": 1983.9
+},
+{
+"name": "Joel Alvarez",
+"rank": 18,
+"proven": 1980.6
+},
+{
+"name": "Sam Patterson",
+"rank": 19,
+"proven": 1973.3
+},
+{
+"name": "Kevin Holland",
+"rank": 20,
+"proven": 1971.1
+},
+{
+"name": "Joaquin Buckley",
+"rank": 21,
+"proven": 1970.3
+},
+{
+"name": "Neil Magny",
+"rank": 22,
+"proven": 1969.1
+},
+{
+"name": "Conor McGregor",
+"rank": 23,
+"proven": 1954.5
+},
+{
+"name": "Jake Matthews",
+"rank": 24,
+"proven": 1951.9
+},
+{
+"name": "Stephen Thompson",
+"rank": 25,
+"proven": 1949.6
+},
+{
+"name": "Carlos Leal",
+"rank": 26,
+"proven": 1943.3
+},
+{
+"name": "Daniil Donchenko",
+"rank": 27,
+"proven": 1934.3
+},
+{
+"name": "Jeremiah Wells",
+"rank": 28,
+"proven": 1932.4
+},
+{
+"name": "Gunnar Nelson",
+"rank": 29,
+"proven": 1930.6
+},
+{
+"name": "Tahir Abdullayev",
+"rank": 30,
+"proven": 1929.1
+}
+],
+"Heavyweight": [
+{
+"name": "Ciryl Gane",
+"rank": 1,
+"proven": 2276.8
+},
+{
+"name": "Alex Pereira",
+"rank": 2,
+"proven": 2205.9
+},
+{
+"name": "Tom Aspinall",
+"rank": 3,
+"proven": 2191.5
+},
+{
+"name": "Alexander Volkov",
+"rank": 4,
+"proven": 2183.2
+},
+{
+"name": "Sergei Pavlovich",
+"rank": 5,
+"proven": 2136.6
+},
+{
+"name": "Curtis Blaydes",
+"rank": 6,
+"proven": 2069.3
+},
+{
+"name": "Johnny Walker",
+"rank": 7,
+"proven": 2038.2
+},
+{
+"name": "Josh Hokit",
+"rank": 8,
+"proven": 2031.4
+},
+{
+"name": "Waldo Cortes-Acosta",
+"rank": 9,
+"proven": 2017.2
+},
+{
+"name": "Mario Pinto",
+"rank": 10,
+"proven": 2002.1
+},
+{
+"name": "Valter Walker",
+"rank": 11,
+"proven": 1987.3
+},
+{
+"name": "Serghei Spivac",
+"rank": 12,
+"proven": 1946.4
+},
+{
+"name": "Vitor Petrino",
+"rank": 13,
+"proven": 1943.4
+},
+{
+"name": "Rizvan Kuniev",
+"rank": 14,
+"proven": 1939.3
+},
+{
+"name": "Derrick Lewis",
+"rank": 15,
+"proven": 1921.8
+},
+{
+"name": "Aleksandar Rakic",
+"rank": 16,
+"proven": 1909.7
+},
+{
+"name": "Jovan Leka",
+"rank": 17,
+"proven": 1902.3
+},
+{
+"name": "Tyrell Fortune",
+"rank": 18,
+"proven": 1886.9
+},
+{
+"name": "Marcin Tybura",
+"rank": 19,
+"proven": 1886.6
+},
+{
+"name": "Ante Delija",
+"rank": 20,
+"proven": 1880.3
+},
+{
+"name": "Ryan Spann",
+"rank": 21,
+"proven": 1878.4
+},
+{
+"name": "Gokhan Saricam",
+"rank": 22,
+"proven": 1875.1
+},
+{
+"name": "Shamil Gaziev",
+"rank": 23,
+"proven": 1862.9
+},
+{
+"name": "Anthony Wint",
+"rank": 24,
+"proven": 1856.8
+},
+{
+"name": "Robelis Despaigne",
+"rank": 25,
+"proven": 1823.8
+},
+{
+"name": "Alexander Poppeck",
+"rank": 26,
+"proven": 1817.8
+},
+{
+"name": "Brando Pericic",
+"rank": 27,
+"proven": 1807.0
+},
+{
+"name": "Tallison Teixeira",
+"rank": 28,
+"proven": 1804.7
+},
+{
+"name": "Tanner Boser",
+"rank": 29,
+"proven": 1801.3
+},
+{
+"name": "Steven Asplund",
+"rank": 30,
+"proven": 1798.3
+}
+],
+"Lightweight": [
+{
+"name": "Justin Gaethje",
+"rank": 1,
+"proven": 2232.3
+},
+{
+"name": "Ilia Topuria",
+"rank": 2,
+"proven": 2213.8
+},
+{
+"name": "Arman Tsarukyan",
+"rank": 3,
+"proven": 2203.4
+},
+{
+"name": "Paddy Pimblett",
+"rank": 4,
+"proven": 2116.0
+},
+{
+"name": "Salahdine Parnasse",
+"rank": 5,
+"proven": 2093.2
+},
+{
+"name": "Quillan Salkilld",
+"rank": 6,
+"proven": 2088.2
+},
+{
+"name": "Charles Oliveira",
+"rank": 7,
+"proven": 2057.0
+},
+{
+"name": "Grant Dawson",
+"rank": 8,
+"proven": 2027.8
+},
+{
+"name": "Mateusz Gamrot",
+"rank": 9,
+"proven": 2010.8
+},
+{
+"name": "Rafael Fiziev",
+"rank": 10,
+"proven": 2005.3
+},
+{
+"name": "Mauricio Ruffy",
+"rank": 11,
+"proven": 1996.6
+},
+{
+"name": "Tom Nolan",
+"rank": 12,
+"proven": 1992.1
+},
+{
+"name": "Esteban Ribovics",
+"rank": 13,
+"proven": 1990.8
+},
+{
+"name": "Manoel Sousa",
+"rank": 14,
+"proven": 1987.1
+},
+{
+"name": "Jalin Turner",
+"rank": 15,
+"proven": 1982.1
+},
+{
+"name": "Tofiq Musayev",
+"rank": 16,
+"proven": 1973.9
+},
+{
+"name": "Axel Sola",
+"rank": 17,
+"proven": 1966.6
+},
+{
+"name": "Alexander Hernandez",
+"rank": 18,
+"proven": 1961.4
+},
+{
+"name": "Chris Duncan",
+"rank": 19,
+"proven": 1957.6
+},
+{
+"name": "Diego Ferreira",
+"rank": 20,
+"proven": 1932.7
+},
+{
+"name": "King Green",
+"rank": 21,
+"proven": 1932.3
+},
+{
+"name": "Cristian Perez",
+"rank": 22,
+"proven": 1925.9
+},
+{
+"name": "MarQuel Mederos",
+"rank": 23,
+"proven": 1924.0
+},
+{
+"name": "Mateusz Rebecki",
+"rank": 24,
+"proven": 1921.3
+},
+{
+"name": "Michael Chandler",
+"rank": 25,
+"proven": 1918.5
+},
+{
+"name": "Beneil Dariush",
+"rank": 26,
+"proven": 1916.8
+},
+{
+"name": "Rafa Garcia",
+"rank": 27,
+"proven": 1914.1
+},
+{
+"name": "Chris Padilla",
+"rank": 28,
+"proven": 1913.2
+},
+{
+"name": "Kody Steele",
+"rank": 29,
+"proven": 1909.0
+},
+{
+"name": "Zhu Rong",
+"rank": 30,
+"proven": 1905.5
+}
+],
+"Light Heavyweight": [
+{
+"name": "Carlos Ulberg",
+"rank": 1,
+"proven": 2230.4
+},
+{
+"name": "Magomed Ankalaev",
+"rank": 2,
+"proven": 2161.0
+},
+{
+"name": "Dominick Reyes",
+"rank": 3,
+"proven": 2098.8
+},
+{
+"name": "Robert Whittaker",
+"rank": 4,
+"proven": 2095.9
+},
+{
+"name": "Paulo Costa",
+"rank": 5,
+"proven": 2080.2
+},
+{
+"name": "Jiri Prochazka",
+"rank": 6,
+"proven": 2066.0
+},
+{
+"name": "Reinier de Ridder",
+"rank": 7,
+"proven": 2048.2
+},
+{
+"name": "Abdul-Rakhman Yakhyaev",
+"rank": 8,
+"proven": 2035.0
+},
+{
+"name": "Volkan Oezdemir",
+"rank": 9,
+"proven": 2024.1
+},
+{
+"name": "Navajo Stirling",
+"rank": 10,
+"proven": 2021.2
+},
+{
+"name": "Azamat Murzakanov",
+"rank": 11,
+"proven": 1959.6
+},
+{
+"name": "Alonzo Menifield",
+"rank": 12,
+"proven": 1943.7
+},
+{
+"name": "Bogdan Guskov",
+"rank": 13,
+"proven": 1942.6
+},
+{
+"name": "Muhammad Saidov",
+"rank": 14,
+"proven": 1942.0
+},
+{
+"name": "Roman Dolidze",
+"rank": 15,
+"proven": 1941.9
+},
+{
+"name": "Khalil Rountree",
+"rank": 16,
+"proven": 1933.8
+},
+{
+"name": "Lucas Fernando",
+"rank": 17,
+"proven": 1930.2
+},
+{
+"name": "Jamahal Hill",
+"rank": 18,
+"proven": 1913.2
+},
+{
+"name": "Dustin Jacoby",
+"rank": 19,
+"proven": 1903.6
+},
+{
+"name": "Modestas Bukauskas",
+"rank": 20,
+"proven": 1901.8
+},
+{
+"name": "Iwo Baraniewski",
+"rank": 21,
+"proven": 1884.6
+},
+{
+"name": "Nikita Krylov",
+"rank": 22,
+"proven": 1869.3
+},
+{
+"name": "Jimmy Crute",
+"rank": 23,
+"proven": 1856.9
+},
+{
+"name": "Ion Cutelaba",
+"rank": 24,
+"proven": 1840.7
+},
+{
+"name": "Uran Satybaldiev",
+"rank": 25,
+"proven": 1826.9
+},
+{
+"name": "Mingyang Zhang",
+"rank": 26,
+"proven": 1806.1
+},
+{
+"name": "Julius Walker",
+"rank": 27,
+"proven": 1793.8
+},
+{
+"name": "Luis Hernandez",
+"rank": 28,
+"proven": 1790.6
+},
+{
+"name": "Billy Elekana",
+"rank": 29,
+"proven": 1789.7
+},
+{
+"name": "Magomed Tuchalov",
+"rank": 30,
+"proven": 1785.1
+}
+],
+"Middleweight": [
+{
+"name": "Khamzat Chimaev",
+"rank": 1,
+"proven": 2222.5
+},
+{
+"name": "Dricus Du Plessis",
+"rank": 2,
+"proven": 2220.7
+},
+{
+"name": "Kamaru Usman",
+"rank": 3,
+"proven": 2146.6
+},
+{
+"name": "Nassourdine Imavov",
+"rank": 4,
+"proven": 2145.7
+},
+{
+"name": "Sean Strickland",
+"rank": 5,
+"proven": 2137.6
+},
+{
+"name": "Brendan Allen",
+"rank": 6,
+"proven": 2135.1
+},
+{
+"name": "Caio Borralho",
+"rank": 7,
+"proven": 2087.0
+},
+{
+"name": "Joe Pyfer",
+"rank": 8,
+"proven": 2076.9
+},
+{
+"name": "Gregory Rodrigues",
+"rank": 9,
+"proven": 2068.8
+},
+{
+"name": "Ikram Aliskerov",
+"rank": 10,
+"proven": 2036.0
+},
+{
+"name": "Anthony Hernandez",
+"rank": 11,
+"proven": 2028.2
+},
+{
+"name": "Christian Leroy Duncan",
+"rank": 12,
+"proven": 2016.1
+},
+{
+"name": "Bo Nickal",
+"rank": 13,
+"proven": 2007.0
+},
+{
+"name": "Abubakar Vagaev",
+"rank": 14,
+"proven": 2001.6
+},
+{
+"name": "Israel Adesanya",
+"rank": 15,
+"proven": 1977.4
+},
+{
+"name": "Sharabutdin Magomedov",
+"rank": 16,
+"proven": 1970.9
+},
+{
+"name": "Jared Cannonier",
+"rank": 17,
+"proven": 1970.5
+},
+{
+"name": "Cezary Oleksiejczuk",
+"rank": 18,
+"proven": 1965.9
+},
+{
+"name": "Roman Kopylov",
+"rank": 19,
+"proven": 1963.7
+},
+{
+"name": "Damian Pinas",
+"rank": 20,
+"proven": 1942.6
+},
+{
+"name": "Vicente Luque",
+"rank": 21,
+"proven": 1941.9
+},
+{
+"name": "Baisangur Susurkaev",
+"rank": 22,
+"proven": 1926.9
+},
+{
+"name": "Ryan Gandra",
+"rank": 23,
+"proven": 1923.6
+},
+{
+"name": "Edmen Shahbazyan",
+"rank": 24,
+"proven": 1916.1
+},
+{
+"name": "Nursulton Ruziboev",
+"rank": 25,
+"proven": 1912.0
+},
+{
+"name": "Jun Yong Park",
+"rank": 26,
+"proven": 1893.4
+},
+{
+"name": "Yousri Belgaroui",
+"rank": 27,
+"proven": 1887.0
+},
+{
+"name": "Marvin Vettori",
+"rank": 28,
+"proven": 1882.1
+},
+{
+"name": "Kelvin Gastelum",
+"rank": 29,
+"proven": 1880.4
+},
+{
+"name": "Nick Galanti",
+"rank": 30,
+"proven": 1876.6
+}
+],
+"Featherweight": [
+{
+"name": "Alexander Volkanovski",
+"rank": 1,
+"proven": 2214.1
+},
+{
+"name": "Aljamain Sterling",
+"rank": 2,
+"proven": 2123.2
+},
+{
+"name": "Diego Lopes",
+"rank": 3,
+"proven": 2078.4
+},
+{
+"name": "Movsar Evloev",
+"rank": 4,
+"proven": 2068.4
+},
+{
+"name": "Yair Rodriguez",
+"rank": 5,
+"proven": 2059.9
+},
+{
+"name": "Lerone Murphy",
+"rank": 6,
+"proven": 2059.0
+},
+{
+"name": "Arnold Allen",
+"rank": 7,
+"proven": 2043.9
+},
+{
+"name": "Joanderson Brito",
+"rank": 8,
+"proven": 2023.4
+},
+{
+"name": "Kevin Vallejos",
+"rank": 9,
+"proven": 2016.1
+},
+{
+"name": "Youssef Zalal",
+"rank": 10,
+"proven": 1985.1
+},
+{
+"name": "Aaron Pico",
+"rank": 11,
+"proven": 1979.1
+},
+{
+"name": "Vinicius Oliveira",
+"rank": 12,
+"proven": 1971.7
+},
+{
+"name": "Luke Riley",
+"rank": 13,
+"proven": 1965.4
+},
+{
+"name": "Brian Ortega",
+"rank": 14,
+"proven": 1961.0
+},
+{
+"name": "Rodrigo Vera",
+"rank": 15,
+"proven": 1959.7
+},
+{
+"name": "Jean Silva",
+"rank": 16,
+"proven": 1954.3
+},
+{
+"name": "Melquizael Costa",
+"rank": 17,
+"proven": 1952.6
+},
+{
+"name": "Pat Sabatini",
+"rank": 18,
+"proven": 1951.0
+},
+{
+"name": "Steve Garcia",
+"rank": 19,
+"proven": 1950.7
+},
+{
+"name": "Marcio Barbosa",
+"rank": 20,
+"proven": 1948.2
+},
+{
+"name": "Murtazali Magomedov",
+"rank": 21,
+"proven": 1938.3
+},
+{
+"name": "Nathaniel Wood",
+"rank": 22,
+"proven": 1929.1
+},
+{
+"name": "Losene Keita",
+"rank": 23,
+"proven": 1919.7
+},
+{
+"name": "Pavel Andrusca",
+"rank": 24,
+"proven": 1916.5
+},
+{
+"name": "Mairon Santos",
+"rank": 25,
+"proven": 1906.2
+},
+{
+"name": "Tommy McMillen",
+"rank": 26,
+"proven": 1899.4
+},
+{
+"name": "Sean Woodson",
+"rank": 27,
+"proven": 1898.2
+},
+{
+"name": "Jose Mauro Delano",
+"rank": 28,
+"proven": 1890.3
+},
+{
+"name": "Dan Ige",
+"rank": 29,
+"proven": 1887.8
+},
+{
+"name": "Jamall Emmers",
+"rank": 30,
+"proven": 1886.0
+}
+],
+"Bantamweight": [
+{
+"name": "Petr Yan",
+"rank": 1,
+"proven": 2169.6
+},
+{
+"name": "Merab Dvalishvili",
+"rank": 2,
+"proven": 2130.7
+},
+{
+"name": "Mario Bautista",
+"rank": 3,
+"proven": 2105.2
+},
+{
+"name": "Yadong Song",
+"rank": 4,
+"proven": 2097.5
+},
+{
+"name": "Sean O'Malley",
+"rank": 5,
+"proven": 2085.2
+},
+{
+"name": "Cory Sandhagen",
+"rank": 6,
+"proven": 2057.4
+},
+{
+"name": "Umar Nurmagomedov",
+"rank": 7,
+"proven": 2049.1
+},
+{
+"name": "Montel Jackson",
+"rank": 8,
+"proven": 2028.1
+},
+{
+"name": "Payton Talbott",
+"rank": 9,
+"proven": 2027.9
+},
+{
+"name": "David Martinez",
+"rank": 10,
+"proven": 2022.9
+},
+{
+"name": "Marlon Vera",
+"rank": 11,
+"proven": 1994.8
+},
+{
+"name": "Asaf Chopurov",
+"rank": 12,
+"proven": 1988.1
+},
+{
+"name": "Farid Basharat",
+"rank": 13,
+"proven": 1985.2
+},
+{
+"name": "Raul Rosas Jr.",
+"rank": 14,
+"proven": 1979.4
+},
+{
+"name": "Bryce Mitchell",
+"rank": 15,
+"proven": 1952.5
+},
+{
+"name": "Raoni Barcelos",
+"rank": 16,
+"proven": 1945.5
+},
+{
+"name": "Elijah Smith",
+"rank": 17,
+"proven": 1940.3
+},
+{
+"name": "Juan Diaz",
+"rank": 18,
+"proven": 1938.6
+},
+{
+"name": "Aiemann Zahabi",
+"rank": 19,
+"proven": 1937.7
+},
+{
+"name": "Jean Matsumoto",
+"rank": 20,
+"proven": 1930.1
+},
+{
+"name": "Deiveson Figueiredo",
+"rank": 21,
+"proven": 1928.6
+},
+{
+"name": "Rob Font",
+"rank": 22,
+"proven": 1921.1
+},
+{
+"name": "Kai Asakura",
+"rank": 23,
+"proven": 1916.8
+},
+{
+"name": "Borislav Nikolic",
+"rank": 24,
+"proven": 1913.8
+},
+{
+"name": "Abdul Hussein",
+"rank": 25,
+"proven": 1911.6
+},
+{
+"name": "Said Nurmagomedov",
+"rank": 26,
+"proven": 1903.2
+},
+{
+"name": "Adrian Yanez",
+"rank": 27,
+"proven": 1898.7
+},
+{
+"name": "Charles Jourdain",
+"rank": 28,
+"proven": 1891.1
+},
+{
+"name": "Chris Gutierrez",
+"rank": 29,
+"proven": 1888.3
+},
+{
+"name": "Ethyn Ewing",
+"rank": 30,
+"proven": 1874.0
+}
+],
+"Women's Flyweight": [
+{
+"name": "Valentina Shevchenko",
+"rank": 1,
+"proven": 2075.1
+},
+{
+"name": "Weili Zhang",
+"rank": 2,
+"proven": 2027.9
+},
+{
+"name": "Natalia Silva",
+"rank": 3,
+"proven": 1981.8
+},
+{
+"name": "Alexa Grasso",
+"rank": 4,
+"proven": 1977.7
+},
+{
+"name": "Erin Blanchfield",
+"rank": 5,
+"proven": 1965.6
+},
+{
+"name": "Manon Fiorot",
+"rank": 6,
+"proven": 1945.7
+},
+{
+"name": "Jasmine Jasudavicius",
+"rank": 7,
+"proven": 1925.5
+},
+{
+"name": "Rose Namajunas",
+"rank": 8,
+"proven": 1916.4
+},
+{
+"name": "Maycee Barber",
+"rank": 9,
+"proven": 1865.6
+},
+{
+"name": "Casey O'Neill",
+"rank": 10,
+"proven": 1859.5
+},
+{
+"name": "Katlyn Cerminara",
+"rank": 11,
+"proven": 1846.8
+},
+{
+"name": "Lucia Szabova",
+"rank": 12,
+"proven": 1840.9
+},
+{
+"name": "Karine Silva",
+"rank": 13,
+"proven": 1828.9
+},
+{
+"name": "Cong Wang",
+"rank": 14,
+"proven": 1821.7
+},
+{
+"name": "Miranda Maverick",
+"rank": 15,
+"proven": 1799.3
+},
+{
+"name": "Regina Tarin",
+"rank": 16,
+"proven": 1780.4
+},
+{
+"name": "Carli Judice",
+"rank": 17,
+"proven": 1767.8
+},
+{
+"name": "Tracy Cortez",
+"rank": 18,
+"proven": 1759.4
+},
+{
+"name": "Jamey-Lyn Horth",
+"rank": 19,
+"proven": 1744.0
+},
+{
+"name": "J.J. Aldrich",
+"rank": 20,
+"proven": 1723.5
+},
+{
+"name": "Eduarda Moura",
+"rank": 21,
+"proven": 1716.7
+},
+{
+"name": "Dione Barbosa",
+"rank": 22,
+"proven": 1714.1
+},
+{
+"name": "Melissa Gatto",
+"rank": 23,
+"proven": 1679.3
+},
+{
+"name": "Veronica Hardy",
+"rank": 24,
+"proven": 1662.0
+},
+{
+"name": "Gabriella Fernandes",
+"rank": 25,
+"proven": 1657.6
+},
+{
+"name": "Tereza Bleda",
+"rank": 26,
+"proven": 1626.3
+},
+{
+"name": "Mackenzie Stiller",
+"rank": 27,
+"proven": 1613.8
+},
+{
+"name": "Jeisla Chaves",
+"rank": 28,
+"proven": 1610.5
+},
+{
+"name": "Ernesta Kareckaite",
+"rank": 29,
+"proven": 1599.7
+},
+{
+"name": "Juliana Miller",
+"rank": 30,
+"proven": 1594.7
+}
+],
+"Flyweight": [
+{
+"name": "Joshua Van",
+"rank": 1,
+"proven": 2081.8
+},
+{
+"name": "Manel Kape",
+"rank": 2,
+"proven": 2077.4
+},
+{
+"name": "Kyoji Horiguchi",
+"rank": 3,
+"proven": 2040.7
+},
+{
+"name": "Tatsuro Taira",
+"rank": 4,
+"proven": 2032.6
+},
+{
+"name": "Alexandre Pantoja",
+"rank": 5,
+"proven": 2021.2
+},
+{
+"name": "Asu Almabayev",
+"rank": 6,
+"proven": 1965.3
+},
+{
+"name": "Brandon Moreno",
+"rank": 7,
+"proven": 1965.2
+},
+{
+"name": "Rei Tsuruya",
+"rank": 8,
+"proven": 1933.4
+},
+{
+"name": "Tagir Ulanbekov",
+"rank": 9,
+"proven": 1921.5
+},
+{
+"name": "Lone'er Kavanagh",
+"rank": 10,
+"proven": 1908.3
+},
+{
+"name": "Brandon Royval",
+"rank": 11,
+"proven": 1901.5
+},
+{
+"name": "Andre Lima",
+"rank": 12,
+"proven": 1900.2
+},
+{
+"name": "Bilal Hasan",
+"rank": 13,
+"proven": 1896.9
+},
+{
+"name": "Amir Albazi",
+"rank": 14,
+"proven": 1891.2
+},
+{
+"name": "Kai Kara-France",
+"rank": 15,
+"proven": 1887.1
+},
+{
+"name": "Tim Elliott",
+"rank": 16,
+"proven": 1867.8
+},
+{
+"name": "Alessandro Costa",
+"rank": 17,
+"proven": 1864.4
+},
+{
+"name": "Imanol Rodriguez",
+"rank": 18,
+"proven": 1861.5
+},
+{
+"name": "Charles Johnson",
+"rank": 19,
+"proven": 1858.4
+},
+{
+"name": "Marcos Degli",
+"rank": 20,
+"proven": 1855.5
+},
+{
+"name": "Nyamjargal Tumendemberel",
+"rank": 21,
+"proven": 1853.5
+},
+{
+"name": "Alex Perez",
+"rank": 22,
+"proven": 1835.2
+},
+{
+"name": "Joseph Morales",
+"rank": 23,
+"proven": 1833.0
+},
+{
+"name": "Mitch Raposo",
+"rank": 24,
+"proven": 1822.6
+},
+{
+"name": "Steve Erceg",
+"rank": 25,
+"proven": 1818.6
+},
+{
+"name": "Eduardo Henrique",
+"rank": 26,
+"proven": 1815.6
+},
+{
+"name": "Namsrai Batbayar",
+"rank": 27,
+"proven": 1813.5
+},
+{
+"name": "Jose Ochoa",
+"rank": 28,
+"proven": 1809.1
+},
+{
+"name": "Edgar Chairez",
+"rank": 29,
+"proven": 1784.1
+},
+{
+"name": "Lucas Rocha",
+"rank": 30,
+"proven": 1780.9
+}
+],
+"Women's Bantamweight": [
+{
+"name": "Kayla Harrison",
+"rank": 1,
+"proven": 2070.3
+},
+{
+"name": "Beatriz Mesquita",
+"rank": 2,
+"proven": 1903.2
+},
+{
+"name": "Raquel Pennington",
+"rank": 3,
+"proven": 1855.9
+},
+{
+"name": "Ailin Perez",
+"rank": 4,
+"proven": 1854.3
+},
+{
+"name": "Joselyne Edwards",
+"rank": 5,
+"proven": 1843.1
+},
+{
+"name": "Luana Santos",
+"rank": 6,
+"proven": 1843.0
+},
+{
+"name": "Norma Dumont",
+"rank": 7,
+"proven": 1821.8
+},
+{
+"name": "Julianna Pena",
+"rank": 8,
+"proven": 1811.2
+},
+{
+"name": "Michelle Montague",
+"rank": 9,
+"proven": 1785.9
+},
+{
+"name": "Nina Nikolija Milosevic",
+"rank": 10,
+"proven": 1780.0
+},
+{
+"name": "Yana Santos",
+"rank": 11,
+"proven": 1764.1
+},
+{
+"name": "Chelsea Chandler",
+"rank": 12,
+"proven": 1748.0
+},
+{
+"name": "Jacqueline Cavalcanti",
+"rank": 13,
+"proven": 1735.4
+},
+{
+"name": "Alice Pereira",
+"rank": 14,
+"proven": 1730.1
+},
+{
+"name": "Miesha Tate",
+"rank": 15,
+"proven": 1721.0
+},
+{
+"name": "Karol Rosa",
+"rank": 16,
+"proven": 1714.4
+},
+{
+"name": "Nora Cornolle",
+"rank": 17,
+"proven": 1698.3
+},
+{
+"name": "Macy Chiasson",
+"rank": 18,
+"proven": 1697.2
+},
+{
+"name": "Melissa Mullins",
+"rank": 19,
+"proven": 1625.9
+},
+{
+"name": "Melissa Croden",
+"rank": 20,
+"proven": 1622.7
+},
+{
+"name": "Josiane Nunes",
+"rank": 21,
+"proven": 1579.8
+},
+{
+"name": "Darya Zheleznyakova",
+"rank": 22,
+"proven": 1556.3
+},
+{
+"name": "Priscila Cachoeira",
+"rank": 23,
+"proven": 1522.0
+}
+],
+"Women's Strawweight": [
+{
+"name": "Tatiana Suarez",
+"rank": 1,
+"proven": 2023.1
+},
+{
+"name": "Virna Jandiroba",
+"rank": 2,
+"proven": 1933.6
+},
+{
+"name": "Mackenzie Dern",
+"rank": 3,
+"proven": 1924.9
+},
+{
+"name": "Denise Gomes",
+"rank": 4,
+"proven": 1904.8
+},
+{
+"name": "Fatima Kline",
+"rank": 5,
+"proven": 1882.1
+},
+{
+"name": "Gillian Robertson",
+"rank": 6,
+"proven": 1868.4
+},
+{
+"name": "Alexia Thainara",
+"rank": 7,
+"proven": 1863.6
+},
+{
+"name": "Jaqueline Amorim",
+"rank": 8,
+"proven": 1845.1
+},
+{
+"name": "Amanda Lemos",
+"rank": 9,
+"proven": 1817.7
+},
+{
+"name": "Piera Rodriguez",
+"rank": 10,
+"proven": 1804.6
+},
+{
+"name": "Iasmin Lucindo",
+"rank": 11,
+"proven": 1800.9
+},
+{
+"name": "Xiaonan Yan",
+"rank": 12,
+"proven": 1800.4
+},
+{
+"name": "Tabatha Ricci",
+"rank": 13,
+"proven": 1794.7
+},
+{
+"name": "Jessica Andrade",
+"rank": 14,
+"proven": 1789.5
+},
+{
+"name": "Carol Foro",
+"rank": 15,
+"proven": 1788.7
+},
+{
+"name": "Shanelle Dyer",
+"rank": 16,
+"proven": 1784.2
+},
+{
+"name": "Valesca Machado",
+"rank": 17,
+"proven": 1779.3
+},
+{
+"name": "Angela Hill",
+"rank": 18,
+"proven": 1757.6
+},
+{
+"name": "Mizuki Inoue",
+"rank": 19,
+"proven": 1754.7
+},
+{
+"name": "Julia Polastri",
+"rank": 20,
+"proven": 1743.0
+},
+{
+"name": "Ketlen Souza",
+"rank": 21,
+"proven": 1742.7
+},
+{
+"name": "Stephanie Luciano",
+"rank": 22,
+"proven": 1741.5
+},
+{
+"name": "Talita Alencar",
+"rank": 23,
+"proven": 1733.6
+},
+{
+"name": "Ming Shi",
+"rank": 24,
+"proven": 1710.2
+},
+{
+"name": "Sam Hughes",
+"rank": 25,
+"proven": 1707.1
+},
+{
+"name": "Amanda Ribas",
+"rank": 26,
+"proven": 1697.8
+},
+{
+"name": "Delphine Benouaich",
+"rank": 27,
+"proven": 1697.4
+},
+{
+"name": "Giovanna Canuto",
+"rank": 28,
+"proven": 1687.2
+},
+{
+"name": "Jingnan Xiong",
+"rank": 29,
+"proven": 1685.9
+},
+{
+"name": "Yazmin Jauregui",
+"rank": 30,
+"proven": 1671.8
+}
+]
+}
+}
