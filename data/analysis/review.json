@@ -1,301 +1,287 @@
 {
- "run": "2026-11-08T12:12:25+00:00",
- "bouts": 4688,
- "through": "2026-11-07",
+ "run": "2026-11-15T12:17:17+00:00",
+ "bouts": 4509,
+ "through": "2026-11-14",
  "decision": {
   "candidates": {
    "raw (no correction)": {
-    "log_loss": 0.67366,
-    "n": 3145,
+    "log_loss": 0.6734,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
-      "log_loss": 0.7076,
-      "predicted": 0.4361,
+      "log_loss": 0.7079,
+      "predicted": 0.4358,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6663,
-      "predicted": 0.4417,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6659,
+      "predicted": 0.441,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6576,
-      "predicted": 0.4322,
+      "n": 529,
+      "log_loss": 0.6571,
+      "predicted": 0.432,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.6929,
-      "predicted": 0.4351,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6915,
+      "predicted": 0.4354,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6689,
-      "predicted": 0.4369,
+      "log_loss": 0.6686,
+      "predicted": 0.4366,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
-      "log_loss": 0.6498,
-      "predicted": 0.4196,
-      "actual": 0.4183
+      "n": 526,
+      "log_loss": 0.6511,
+      "predicted": 0.4186,
+      "actual": 0.4221
      }
     }
    },
    "refit, all years equal": {
-    "log_loss": 0.6616,
-    "n": 3145,
+    "log_loss": 0.66127,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
-      "log_loss": 0.6819,
-      "predicted": 0.5146,
+      "log_loss": 0.6816,
+      "predicted": 0.5156,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6654,
-      "predicted": 0.5168,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6647,
+      "predicted": 0.517,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6506,
-      "predicted": 0.4991,
+      "n": 529,
+      "log_loss": 0.6505,
+      "predicted": 0.4993,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.659,
-      "predicted": 0.4985,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6585,
+      "predicted": 0.4988,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6573,
-      "predicted": 0.5096,
+      "log_loss": 0.6571,
+      "predicted": 0.5097,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
+      "n": 526,
       "log_loss": 0.6567,
-      "predicted": 0.494,
-      "actual": 0.4183
+      "predicted": 0.4935,
+      "actual": 0.4221
      }
     }
    },
    "refit, recent years weighted": {
-    "log_loss": 0.66219,
-    "n": 3145,
+    "log_loss": 0.66178,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
-      "log_loss": 0.6819,
-      "predicted": 0.5166,
+      "log_loss": 0.6816,
+      "predicted": 0.5169,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6655,
-      "predicted": 0.5165,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6648,
+      "predicted": 0.5162,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6508,
-      "predicted": 0.4905,
+      "n": 529,
+      "log_loss": 0.6506,
+      "predicted": 0.4909,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.6613,
-      "predicted": 0.4905,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6606,
+      "predicted": 0.491,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6579,
-      "predicted": 0.516,
+      "log_loss": 0.6576,
+      "predicted": 0.5155,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
-      "log_loss": 0.657,
-      "predicted": 0.495,
-      "actual": 0.4183
+      "n": 526,
+      "log_loss": 0.6568,
+      "predicted": 0.4941,
+      "actual": 0.4221
      }
     }
    },
    "refit + matchup mismatch (model)": {
-    "log_loss": 0.66107,
-    "n": 3145,
+    "log_loss": 0.66089,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
-      "log_loss": 0.681,
-      "predicted": 0.5129,
+      "log_loss": 0.6814,
+      "predicted": 0.5135,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6657,
-      "predicted": 0.5164,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6655,
+      "predicted": 0.5165,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6484,
-      "predicted": 0.4979,
+      "n": 529,
+      "log_loss": 0.6483,
+      "predicted": 0.498,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.6606,
-      "predicted": 0.498,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6595,
+      "predicted": 0.4986,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6545,
-      "predicted": 0.5085,
+      "log_loss": 0.6539,
+      "predicted": 0.5081,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
-      "log_loss": 0.6576,
-      "predicted": 0.4909,
-      "actual": 0.4183
+      "n": 526,
+      "log_loss": 0.6582,
+      "predicted": 0.4897,
+      "actual": 0.4221
      }
     }
    },
    "refit + matchup mismatch (line, else model)": {
-    "log_loss": 0.65939,
-    "n": 3145,
+    "log_loss": 0.65913,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
       "log_loss": 0.6762,
-      "predicted": 0.519,
+      "predicted": 0.5194,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6681,
-      "predicted": 0.5117,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6675,
+      "predicted": 0.5115,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6443,
-      "predicted": 0.4939,
+      "n": 529,
+      "log_loss": 0.645,
+      "predicted": 0.4946,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.6644,
-      "predicted": 0.4892,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6616,
+      "predicted": 0.4911,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6519,
-      "predicted": 0.5025,
+      "log_loss": 0.6518,
+      "predicted": 0.5029,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
-      "log_loss": 0.6524,
-      "predicted": 0.4869,
-      "actual": 0.4183
+      "n": 526,
+      "log_loss": 0.6538,
+      "predicted": 0.487,
+      "actual": 0.4221
      }
     }
    },
    "current": {
-    "log_loss": 0.65782,
-    "n": 3145,
+    "log_loss": 0.65775,
+    "n": 3165,
     "by_year": {
      "2021": {
       "n": 495,
-      "log_loss": 0.6743,
-      "predicted": 0.5053,
+      "log_loss": 0.6747,
+      "predicted": 0.5052,
       "actual": 0.5071
      },
      "2022": {
-      "n": 526,
-      "log_loss": 0.6647,
-      "predicted": 0.5031,
-      "actual": 0.4639
+      "n": 530,
+      "log_loss": 0.6644,
+      "predicted": 0.5025,
+      "actual": 0.466
      },
      "2023": {
-      "n": 527,
-      "log_loss": 0.6444,
-      "predicted": 0.4945,
+      "n": 529,
+      "log_loss": 0.6446,
+      "predicted": 0.4947,
       "actual": 0.4858
      },
      "2024": {
-      "n": 541,
-      "log_loss": 0.6626,
-      "predicted": 0.492,
-      "actual": 0.5619
+      "n": 543,
+      "log_loss": 0.6607,
+      "predicted": 0.4933,
+      "actual": 0.5599
      },
      "2025": {
       "n": 542,
-      "log_loss": 0.6516,
-      "predicted": 0.4931,
+      "log_loss": 0.6514,
+      "predicted": 0.4932,
       "actual": 0.4926
      },
      "2026": {
-      "n": 514,
-      "log_loss": 0.6503,
-      "predicted": 0.4792,
-      "actual": 0.4183
+      "n": 526,
+      "log_loss": 0.6518,
+      "predicted": 0.4789,
+      "actual": 0.4221
      }
     }
    }
   },
   "best": "refit + matchup mismatch (line, else model)",
   "method": "refit + matchup mismatch (line, else model)",
-  "current_log_loss": 0.65939,
-  "best_log_loss": 0.65939,
+  "current_log_loss": 0.65913,
+  "best_log_loss": 0.65913,
   "years_won": "0/6",
   "improves": false,
   "chosen": "refit + matchup mismatch (line, else model)",
   "chosen_params": [
-   0.4326587631831527,
-   0.6799859444553277,
-   -0.35853046649629355
+   0.416695931955001,
+   0.6782923796323164,
+   -0.33409067114958757
   ],
   "by_year_mismatch": {
-   "2017": {
-    "bouts": 124,
-    "mismatch_share": 0.226,
-    "decision_rate": {
-     "mismatch (fav over 73%)": 0.357,
-     "close (fav under ~60%)": 0.55,
-     "clear fav (60-73%)": 0.518
-    },
-    "n": {
-     "mismatch (fav over 73%)": 28,
-     "close (fav under ~60%)": 40,
-     "clear fav (60-73%)": 56
-    }
-   },
    "2018": {
-    "bouts": 459,
-    "mismatch_share": 0.224,
+    "bouts": 390,
+    "mismatch_share": 0.236,
     "decision_rate": {
-     "clear fav (60-73%)": 0.497,
-     "close (fav under ~60%)": 0.556,
-     "mismatch (fav over 73%)": 0.379
+     "clear fav (60-73%)": 0.503,
+     "mismatch (fav over 73%)": 0.402,
+     "close (fav under ~60%)": 0.525
     },
     "n": {
-     "clear fav (60-73%)": 187,
-     "close (fav under ~60%)": 169,
-     "mismatch (fav over 73%)": 103
+     "clear fav (60-73%)": 159,
+     "mismatch (fav over 73%)": 92,
+     "close (fav under ~60%)": 139
     }
    },
    "2019": {
@@ -341,29 +327,29 @@
     }
    },
    "2022": {
-    "bouts": 506,
-    "mismatch_share": 0.213,
+    "bouts": 509,
+    "mismatch_share": 0.216,
     "decision_rate": {
      "clear fav (60-73%)": 0.518,
-     "close (fav under ~60%)": 0.435,
-     "mismatch (fav over 73%)": 0.407
+     "close (fav under ~60%)": 0.439,
+     "mismatch (fav over 73%)": 0.409
     },
     "n": {
      "clear fav (60-73%)": 251,
-     "close (fav under ~60%)": 147,
-     "mismatch (fav over 73%)": 108
+     "close (fav under ~60%)": 148,
+     "mismatch (fav over 73%)": 110
     }
    },
    "2023": {
-    "bouts": 505,
-    "mismatch_share": 0.253,
+    "bouts": 506,
+    "mismatch_share": 0.255,
     "decision_rate": {
-     "mismatch (fav over 73%)": 0.398,
+     "mismatch (fav over 73%)": 0.403,
      "close (fav under ~60%)": 0.557,
      "clear fav (60-73%)": 0.481
     },
     "n": {
-     "mismatch (fav over 73%)": 128,
+     "mismatch (fav over 73%)": 129,
      "close (fav under ~60%)": 167,
      "clear fav (60-73%)": 210
     }
@@ -397,131 +383,131 @@
     }
    },
    "2026": {
-    "bouts": 454,
-    "mismatch_share": 0.333,
+    "bouts": 465,
+    "mismatch_share": 0.329,
     "decision_rate": {
-     "clear fav (60-73%)": 0.459,
-     "mismatch (fav over 73%)": 0.338,
-     "close (fav under ~60%)": 0.426
+     "clear fav (60-73%)": 0.46,
+     "mismatch (fav over 73%)": 0.346,
+     "close (fav under ~60%)": 0.424
     },
     "n": {
-     "clear fav (60-73%)": 181,
-     "mismatch (fav over 73%)": 151,
-     "close (fav under ~60%)": 122
+     "clear fav (60-73%)": 187,
+     "mismatch (fav over 73%)": 153,
+     "close (fav under ~60%)": 125
     }
    }
   }
  },
  "veterans": {
   "age": 35.0,
-  "n": 1228,
-  "veteran_won": 0.362,
+  "n": 1190,
+  "veteran_won": 0.359,
   "model_gave": 0.382,
-  "market_gave": 0.393,
+  "market_gave": 0.391,
   "by_era": {
    "2016-2019": {
-    "n": 218,
-    "won": 0.385,
-    "model": 0.406
+    "n": 175,
+    "won": 0.371,
+    "model": 0.404
    },
    "2020-2022": {
     "n": 356,
     "won": 0.365,
-    "model": 0.377
+    "model": 0.378
    },
    "2023-2026": {
-    "n": 654,
+    "n": 659,
     "won": 0.352,
-    "model": 0.377
+    "model": 0.378
    }
   },
-  "shift": -0.0962,
-  "with_shift": 0.63286,
-  "without": 0.63318,
+  "shift": -0.1082,
+  "with_shift": 0.63359,
+  "without": 0.63398,
   "years_won": "5/6",
   "improves": false,
   "rolling": {
    "with": {
-    "log_loss": 0.63286,
-    "n": 3067,
+    "log_loss": 0.63359,
+    "n": 3090,
     "by_year": {
      "2021": {
       "n": 475,
-      "log_loss": 0.652,
-      "predicted": 0.4941,
+      "log_loss": 0.6511,
+      "predicted": 0.4933,
       "actual": 0.4779
      },
      "2022": {
-      "n": 505,
-      "log_loss": 0.6279,
-      "predicted": 0.5058,
-      "actual": 0.5149
+      "n": 506,
+      "log_loss": 0.6283,
+      "predicted": 0.5052,
+      "actual": 0.5158
      },
      "2023": {
-      "n": 509,
-      "log_loss": 0.6435,
-      "predicted": 0.5055,
-      "actual": 0.5481
+      "n": 513,
+      "log_loss": 0.645,
+      "predicted": 0.505,
+      "actual": 0.5497
      },
      "2024": {
-      "n": 528,
-      "log_loss": 0.615,
+      "n": 533,
+      "log_loss": 0.6166,
       "predicted": 0.5063,
-      "actual": 0.5038
+      "actual": 0.5028
      },
      "2025": {
       "n": 540,
-      "log_loss": 0.6153,
+      "log_loss": 0.6169,
       "predicted": 0.5044,
       "actual": 0.4981
      },
      "2026": {
-      "n": 510,
-      "log_loss": 0.6465,
-      "predicted": 0.5216,
-      "actual": 0.6529
+      "n": 523,
+      "log_loss": 0.6462,
+      "predicted": 0.5237,
+      "actual": 0.6616
      }
     }
    },
    "without": {
-    "log_loss": 0.63318,
-    "n": 3067,
+    "log_loss": 0.63398,
+    "n": 3090,
     "by_year": {
      "2021": {
       "n": 475,
-      "log_loss": 0.6521,
-      "predicted": 0.4943,
+      "log_loss": 0.6513,
+      "predicted": 0.4937,
       "actual": 0.4779
      },
      "2022": {
-      "n": 505,
-      "log_loss": 0.6283,
-      "predicted": 0.5067,
-      "actual": 0.5149
+      "n": 506,
+      "log_loss": 0.6287,
+      "predicted": 0.5065,
+      "actual": 0.5158
      },
      "2023": {
-      "n": 509,
-      "log_loss": 0.6444,
-      "predicted": 0.5059,
-      "actual": 0.5481
+      "n": 513,
+      "log_loss": 0.6462,
+      "predicted": 0.5055,
+      "actual": 0.5497
      },
      "2024": {
-      "n": 528,
-      "log_loss": 0.6148,
+      "n": 533,
+      "log_loss": 0.6164,
       "predicted": 0.5061,
-      "actual": 0.5038
+      "actual": 0.5028
      },
      "2025": {
       "n": 540,
-      "log_loss": 0.6154,
-      "predicted": 0.5044,
+      "log_loss": 0.617,
+      "predicted": 0.5045,
       "actual": 0.4981
      },
      "2026": {
-      "n": 510,
-      "log_loss": 0.647,
-      "predicted": 0.5213,
-      "actual": 0.6529
+      "n": 523,
+      "log_loss": 0.6467,
+      "predicted": 0.5233,
+      "actual": 0.6616
      }
     }
    }
@@ -529,26 +515,19 @@
  },
  "underdogs": {
   "all": {
-   "n": 4075,
-   "won": 0.314,
-   "line": 0.331,
-   "edge": -0.016,
-   "return": -0.115
+   "n": 3911,
+   "won": 0.313,
+   "line": 0.33,
+   "edge": -0.017,
+   "return": -0.117
   },
   "by_year": {
-   "2017": {
-    "n": 116,
-    "won": 0.319,
-    "line": 0.338,
-    "edge": -0.019,
-    "return": -0.067
-   },
    "2018": {
-    "n": 408,
-    "won": 0.333,
-    "line": 0.337,
-    "edge": -0.003,
-    "return": -0.114
+    "n": 345,
+    "won": 0.328,
+    "line": 0.333,
+    "edge": -0.006,
+    "return": -0.115
    },
    "2019": {
     "n": 441,
@@ -572,18 +551,18 @@
     "return": -0.102
    },
    "2022": {
-    "n": 466,
-    "won": 0.315,
+    "n": 469,
+    "won": 0.313,
     "line": 0.333,
-    "edge": -0.018,
-    "return": -0.122
+    "edge": -0.019,
+    "return": -0.127
    },
    "2023": {
-    "n": 463,
-    "won": 0.309,
+    "n": 464,
+    "won": 0.308,
     "line": 0.329,
-    "edge": -0.02,
-    "return": -0.123
+    "edge": -0.021,
+    "return": -0.125
    },
    "2024": {
     "n": 479,
@@ -600,28 +579,28 @@
     "return": -0.093
    },
    "2026": {
-    "n": 415,
+    "n": 426,
     "won": 0.277,
-    "line": 0.307,
-    "edge": -0.03,
-    "return": -0.142
+    "line": 0.308,
+    "edge": -0.031,
+    "return": -0.135
    }
   },
   "traits": {
    "younger": {
-    "n": 451,
-    "won": 0.328,
-    "line": 0.354,
-    "edge": -0.026,
-    "return": -0.132,
+    "n": 432,
+    "won": 0.326,
+    "line": 0.355,
+    "edge": -0.029,
+    "return": -0.142,
     "desc": "dog is 4+ years younger",
     "eras": {
      "2016-2019": {
-      "n": 119,
-      "won": 0.353,
-      "line": 0.356,
-      "edge": -0.003,
-      "return": -0.079
+      "n": 98,
+      "won": 0.357,
+      "line": 0.361,
+      "edge": -0.004,
+      "return": -0.094
      },
      "2020-2022": {
       "n": 154,
@@ -631,65 +610,65 @@
       "return": -0.093
      },
      "2023-2026": {
-      "n": 178,
-      "won": 0.292,
-      "line": 0.347,
-      "edge": -0.055,
-      "return": -0.201
+      "n": 180,
+      "won": 0.289,
+      "line": 0.348,
+      "edge": -0.059,
+      "return": -0.21
      }
     },
     "consistent": true,
-    "coef": -0.084,
-    "z": -0.76
+    "coef": -0.099,
+    "z": -0.88
    },
    "older": {
-    "n": 1358,
-    "won": 0.276,
-    "line": 0.311,
-    "edge": -0.035,
-    "return": -0.163,
+    "n": 1309,
+    "won": 0.272,
+    "line": 0.31,
+    "edge": -0.038,
+    "return": -0.167,
     "desc": "dog is 4+ years older",
     "eras": {
      "2016-2019": {
-      "n": 296,
-      "won": 0.287,
-      "line": 0.332,
-      "edge": -0.044,
-      "return": -0.174
+      "n": 240,
+      "won": 0.263,
+      "line": 0.327,
+      "edge": -0.064,
+      "return": -0.227
      },
      "2020-2022": {
-      "n": 395,
-      "won": 0.309,
+      "n": 396,
+      "won": 0.308,
       "line": 0.322,
-      "edge": -0.013,
-      "return": -0.092
+      "edge": -0.014,
+      "return": -0.095
      },
      "2023-2026": {
-      "n": 667,
-      "won": 0.252,
+      "n": 673,
+      "won": 0.254,
       "line": 0.296,
-      "edge": -0.044,
-      "return": -0.2
+      "edge": -0.042,
+      "return": -0.189
      }
     },
     "consistent": true,
-    "coef": -0.123,
-    "z": -1.61
+    "coef": -0.138,
+    "z": -1.76
    },
    "fav_35plus": {
-    "n": 410,
+    "n": 404,
     "won": 0.356,
-    "line": 0.36,
-    "edge": -0.004,
+    "line": 0.361,
+    "edge": -0.005,
     "return": -0.066,
     "desc": "favourite is 35+",
     "eras": {
      "2016-2019": {
-      "n": 77,
-      "won": 0.416,
-      "line": 0.361,
-      "edge": 0.055,
-      "return": 0.125
+      "n": 67,
+      "won": 0.448,
+      "line": 0.364,
+      "edge": 0.083,
+      "return": 0.205
      },
      "2020-2022": {
       "n": 129,
@@ -699,31 +678,31 @@
       "return": -0.044
      },
      "2023-2026": {
-      "n": 204,
-      "won": 0.324,
+      "n": 208,
+      "won": 0.317,
       "line": 0.354,
-      "edge": -0.03,
-      "return": -0.151
+      "edge": -0.037,
+      "return": -0.167
      }
     },
     "consistent": false,
-    "coef": 0.048,
-    "z": 0.43
+    "coef": 0.047,
+    "z": 0.41
    },
    "reach_edge": {
-    "n": 498,
-    "won": 0.321,
+    "n": 494,
+    "won": 0.316,
     "line": 0.332,
-    "edge": -0.011,
-    "return": -0.091,
+    "edge": -0.016,
+    "return": -0.104,
     "desc": "dog has 5+ cm more reach",
     "eras": {
      "2016-2019": {
-      "n": 40,
-      "won": 0.375,
-      "line": 0.35,
-      "edge": 0.025,
-      "return": -0.063
+      "n": 34,
+      "won": 0.324,
+      "line": 0.349,
+      "edge": -0.026,
+      "return": -0.192
      },
      "2020-2022": {
       "n": 127,
@@ -733,133 +712,133 @@
       "return": -0.028
      },
      "2023-2026": {
-      "n": 331,
-      "won": 0.305,
+      "n": 333,
+      "won": 0.303,
       "line": 0.325,
-      "edge": -0.019,
-      "return": -0.118
+      "edge": -0.021,
+      "return": -0.123
      }
     },
     "consistent": false,
-    "coef": 0.029,
-    "z": 0.25
+    "coef": 0.009,
+    "z": 0.08
    },
    "fav_long_layoff": {
-    "n": 300,
-    "won": 0.36,
-    "line": 0.349,
+    "n": 294,
+    "won": 0.361,
+    "line": 0.35,
     "edge": 0.011,
-    "return": -0.015,
+    "return": -0.014,
     "desc": "favourite out 400+ days",
     "eras": {
      "2016-2019": {
-      "n": 62,
-      "won": 0.371,
-      "line": 0.353,
-      "edge": 0.018,
-      "return": -0.031
+      "n": 52,
+      "won": 0.385,
+      "line": 0.354,
+      "edge": 0.031,
+      "return": 0.011
      },
      "2020-2022": {
-      "n": 121,
-      "won": 0.355,
-      "line": 0.343,
-      "edge": 0.012,
-      "return": -0.02
+      "n": 122,
+      "won": 0.352,
+      "line": 0.344,
+      "edge": 0.009,
+      "return": -0.028
      },
      "2023-2026": {
-      "n": 117,
-      "won": 0.359,
-      "line": 0.352,
-      "edge": 0.007,
-      "return": -0.002
+      "n": 120,
+      "won": 0.358,
+      "line": 0.355,
+      "edge": 0.004,
+      "return": -0.01
      }
     },
     "consistent": true,
-    "coef": 0.119,
-    "z": 0.93
+    "coef": 0.118,
+    "z": 0.91
    },
    "dog_long_layoff": {
-    "n": 466,
-    "won": 0.279,
-    "line": 0.315,
-    "edge": -0.036,
-    "return": -0.202,
+    "n": 452,
+    "won": 0.283,
+    "line": 0.316,
+    "edge": -0.033,
+    "return": -0.189,
     "desc": "dog out 400+ days",
     "eras": {
      "2016-2019": {
-      "n": 96,
-      "won": 0.302,
-      "line": 0.335,
-      "edge": -0.033,
-      "return": -0.159
+      "n": 79,
+      "won": 0.329,
+      "line": 0.344,
+      "edge": -0.015,
+      "return": -0.076
      },
      "2020-2022": {
-      "n": 171,
-      "won": 0.281,
-      "line": 0.323,
+      "n": 172,
+      "won": 0.279,
+      "line": 0.321,
       "edge": -0.042,
-      "return": -0.19
+      "return": -0.194
      },
      "2023-2026": {
-      "n": 199,
-      "won": 0.266,
-      "line": 0.299,
-      "edge": -0.033,
-      "return": -0.232
+      "n": 201,
+      "won": 0.269,
+      "line": 0.3,
+      "edge": -0.032,
+      "return": -0.23
      }
     },
     "consistent": true,
-    "coef": -0.096,
-    "z": -0.86
+    "coef": -0.075,
+    "z": -0.66
    },
    "fav_recent_ko_loss": {
-    "n": 858,
-    "won": 0.322,
-    "line": 0.347,
-    "edge": -0.025,
-    "return": -0.136,
+    "n": 827,
+    "won": 0.318,
+    "line": 0.346,
+    "edge": -0.028,
+    "return": -0.149,
     "desc": "favourite was KO'd in the last 2 fights",
     "eras": {
      "2016-2019": {
-      "n": 189,
-      "won": 0.376,
-      "line": 0.357,
-      "edge": 0.019,
-      "return": 0.009
+      "n": 155,
+      "won": 0.374,
+      "line": 0.358,
+      "edge": 0.016,
+      "return": -0.015
      },
      "2020-2022": {
-      "n": 285,
-      "won": 0.323,
+      "n": 286,
+      "won": 0.322,
       "line": 0.35,
-      "edge": -0.027,
-      "return": -0.159
+      "edge": -0.028,
+      "return": -0.162
      },
      "2023-2026": {
-      "n": 384,
-      "won": 0.294,
+      "n": 386,
+      "won": 0.293,
       "line": 0.339,
-      "edge": -0.045,
-      "return": -0.19
+      "edge": -0.047,
+      "return": -0.194
      }
     },
     "consistent": false,
-    "coef": -0.072,
-    "z": -0.85
+    "coef": -0.089,
+    "z": -1.03
    },
    "dog_wrestling_edge": {
-    "n": 505,
-    "won": 0.356,
-    "line": 0.355,
-    "edge": 0.001,
-    "return": -0.058,
+    "n": 483,
+    "won": 0.352,
+    "line": 0.356,
+    "edge": -0.004,
+    "return": -0.074,
     "desc": "dog takes down 1+ more per 15 min",
     "eras": {
      "2016-2019": {
-      "n": 119,
-      "won": 0.395,
-      "line": 0.359,
-      "edge": 0.036,
-      "return": -0.021
+      "n": 95,
+      "won": 0.389,
+      "line": 0.362,
+      "edge": 0.028,
+      "return": -0.073
      },
      "2020-2022": {
       "n": 159,
@@ -869,31 +848,31 @@
       "return": -0.045
      },
      "2023-2026": {
-      "n": 227,
-      "won": 0.326,
+      "n": 229,
+      "won": 0.323,
       "line": 0.347,
-      "edge": -0.021,
-      "return": -0.086
+      "edge": -0.024,
+      "return": -0.094
      }
     },
     "consistent": false,
-    "coef": 0.066,
-    "z": 0.65
+    "coef": 0.044,
+    "z": 0.42
    },
    "dog_power_edge": {
-    "n": 833,
+    "n": 808,
     "won": 0.319,
-    "line": 0.342,
+    "line": 0.343,
     "edge": -0.023,
     "return": -0.114,
     "desc": "dog lands more knockdowns per 15",
     "eras": {
      "2016-2019": {
-      "n": 195,
-      "won": 0.323,
-      "line": 0.354,
-      "edge": -0.031,
-      "return": -0.152
+      "n": 166,
+      "won": 0.331,
+      "line": 0.356,
+      "edge": -0.025,
+      "return": -0.137
      },
      "2020-2022": {
       "n": 245,
@@ -903,31 +882,31 @@
       "return": -0.134
      },
      "2023-2026": {
-      "n": 393,
-      "won": 0.318,
+      "n": 397,
+      "won": 0.315,
       "line": 0.334,
-      "edge": -0.016,
-      "return": -0.082
+      "edge": -0.019,
+      "return": -0.091
      }
     },
     "consistent": true,
-    "coef": -0.057,
-    "z": -0.66
+    "coef": -0.055,
+    "z": -0.63
    },
    "dog_on_streak": {
-    "n": 890,
-    "won": 0.335,
+    "n": 861,
+    "won": 0.336,
     "line": 0.335,
-    "edge": 0.0,
-    "return": -0.069,
+    "edge": 0.001,
+    "return": -0.064,
     "desc": "dog on a 3+ win streak",
     "eras": {
      "2016-2019": {
-      "n": 224,
-      "won": 0.348,
+      "n": 191,
+      "won": 0.356,
       "line": 0.334,
-      "edge": 0.014,
-      "return": -0.078
+      "edge": 0.022,
+      "return": -0.045
      },
      "2020-2022": {
       "n": 280,
@@ -937,31 +916,31 @@
       "return": -0.083
      },
      "2023-2026": {
-      "n": 386,
-      "won": 0.324,
-      "line": 0.332,
-      "edge": -0.009,
-      "return": -0.055
+      "n": 390,
+      "won": 0.323,
+      "line": 0.333,
+      "edge": -0.01,
+      "return": -0.059
      }
     },
     "consistent": false,
-    "coef": 0.095,
-    "z": 1.15
+    "coef": 0.104,
+    "z": 1.23
    },
    "fav_on_skid": {
-    "n": 1394,
-    "won": 0.334,
+    "n": 1335,
+    "won": 0.332,
     "line": 0.344,
-    "edge": -0.01,
-    "return": -0.106,
+    "edge": -0.012,
+    "return": -0.115,
     "desc": "favourite lost last fight",
     "eras": {
      "2016-2019": {
-      "n": 325,
-      "won": 0.372,
-      "line": 0.347,
-      "edge": 0.025,
-      "return": 0.01
+      "n": 261,
+      "won": 0.379,
+      "line": 0.35,
+      "edge": 0.029,
+      "return": 0.012
      },
      "2020-2022": {
       "n": 473,
@@ -971,269 +950,269 @@
       "return": -0.162
      },
      "2023-2026": {
-      "n": 596,
-      "won": 0.32,
+      "n": 601,
+      "won": 0.318,
       "line": 0.334,
-      "edge": -0.013,
-      "return": -0.125
+      "edge": -0.016,
+      "return": -0.132
      }
     },
     "consistent": false,
-    "coef": 0.026,
-    "z": 0.36
+    "coef": 0.015,
+    "z": 0.2
    },
    "dog_more_experienced": {
-    "n": 1638,
-    "won": 0.31,
+    "n": 1578,
+    "won": 0.307,
     "line": 0.322,
-    "edge": -0.013,
-    "return": -0.095,
+    "edge": -0.015,
+    "return": -0.099,
     "desc": "dog has 5+ more pro fights",
     "eras": {
      "2016-2019": {
-      "n": 370,
-      "won": 0.311,
-      "line": 0.332,
-      "edge": -0.021,
-      "return": -0.132
-     },
-     "2020-2022": {
-      "n": 497,
-      "won": 0.35,
-      "line": 0.334,
-      "edge": 0.016,
-      "return": 0.013
-     },
-     "2023-2026": {
-      "n": 771,
-      "won": 0.283,
-      "line": 0.31,
-      "edge": -0.027,
-      "return": -0.148
-     }
-    },
-    "consistent": false,
-    "coef": 0.046,
-    "z": 0.64
-   },
-   "fav_chin_flags": {
-    "n": 875,
-    "won": 0.337,
-    "line": 0.352,
-    "edge": -0.015,
-    "return": -0.098,
-    "desc": "favourite has 2+ career KO losses",
-    "eras": {
-     "2016-2019": {
-      "n": 179,
-      "won": 0.363,
-      "line": 0.362,
-      "edge": 0.001,
-      "return": -0.015
-     },
-     "2020-2022": {
-      "n": 279,
-      "won": 0.337,
-      "line": 0.357,
-      "edge": -0.02,
-      "return": -0.102
-     },
-     "2023-2026": {
-      "n": 417,
-      "won": 0.326,
-      "line": 0.344,
-      "edge": -0.018,
-      "return": -0.131
-     }
-    },
-    "consistent": false,
-    "coef": -0.018,
-    "z": -0.22
-   },
-   "dog_better_sos": {
-    "n": 1288,
-    "won": 0.315,
-    "line": 0.336,
-    "edge": -0.02,
-    "return": -0.12,
-    "desc": "dog has faced tougher opposition",
-    "eras": {
-     "2016-2019": {
-      "n": 320,
-      "won": 0.334,
-      "line": 0.349,
-      "edge": -0.015,
-      "return": -0.127
-     },
-     "2020-2022": {
-      "n": 360,
-      "won": 0.317,
-      "line": 0.35,
-      "edge": -0.034,
-      "return": -0.127
-     },
-     "2023-2026": {
-      "n": 608,
-      "won": 0.304,
-      "line": 0.32,
-      "edge": -0.016,
-      "return": -0.112
-     }
-    },
-    "consistent": true,
-    "coef": -0.036,
-    "z": -0.48
-   },
-   "model_likes_dog": {
-    "n": 2050,
-    "won": 0.314,
-    "line": 0.319,
-    "edge": -0.005,
-    "return": -0.084,
-    "desc": "our model gives the dog 5+ pts more than the line",
-    "eras": {
-     "2016-2019": {
-      "n": 483,
-      "won": 0.325,
-      "line": 0.329,
-      "edge": -0.004,
-      "return": -0.091
-     },
-     "2020-2022": {
-      "n": 618,
-      "won": 0.353,
+      "n": 307,
+      "won": 0.303,
       "line": 0.33,
-      "edge": 0.023,
+      "edge": -0.028,
+      "return": -0.15
+     },
+     "2020-2022": {
+      "n": 498,
+      "won": 0.349,
+      "line": 0.334,
+      "edge": 0.015,
       "return": 0.011
      },
      "2023-2026": {
-      "n": 949,
-      "won": 0.283,
-      "line": 0.307,
-      "edge": -0.023,
-      "return": -0.142
+      "n": 773,
+      "won": 0.282,
+      "line": 0.31,
+      "edge": -0.028,
+      "return": -0.15
      }
     },
     "consistent": false,
-    "coef": 0.139,
-    "z": 1.98
+    "coef": 0.035,
+    "z": 0.48
+   },
+   "fav_chin_flags": {
+    "n": 851,
+    "won": 0.335,
+    "line": 0.351,
+    "edge": -0.016,
+    "return": -0.109,
+    "desc": "favourite has 2+ career KO losses",
+    "eras": {
+     "2016-2019": {
+      "n": 146,
+      "won": 0.363,
+      "line": 0.361,
+      "edge": 0.002,
+      "return": -0.046
+     },
+     "2020-2022": {
+      "n": 284,
+      "won": 0.335,
+      "line": 0.357,
+      "edge": -0.022,
+      "return": -0.105
+     },
+     "2023-2026": {
+      "n": 421,
+      "won": 0.325,
+      "line": 0.345,
+      "edge": -0.019,
+      "return": -0.134
+     }
+    },
+    "consistent": false,
+    "coef": -0.02,
+    "z": -0.24
+   },
+   "dog_better_sos": {
+    "n": 1228,
+    "won": 0.314,
+    "line": 0.336,
+    "edge": -0.022,
+    "return": -0.128,
+    "desc": "dog has faced tougher opposition",
+    "eras": {
+     "2016-2019": {
+      "n": 260,
+      "won": 0.331,
+      "line": 0.347,
+      "edge": -0.017,
+      "return": -0.135
+     },
+     "2020-2022": {
+      "n": 368,
+      "won": 0.321,
+      "line": 0.351,
+      "edge": -0.03,
+      "return": -0.124
+     },
+     "2023-2026": {
+      "n": 600,
+      "won": 0.302,
+      "line": 0.322,
+      "edge": -0.02,
+      "return": -0.127
+     }
+    },
+    "consistent": true,
+    "coef": -0.045,
+    "z": -0.59
+   },
+   "model_likes_dog": {
+    "n": 1979,
+    "won": 0.311,
+    "line": 0.318,
+    "edge": -0.008,
+    "return": -0.089,
+    "desc": "our model gives the dog 5+ pts more than the line",
+    "eras": {
+     "2016-2019": {
+      "n": 404,
+      "won": 0.309,
+      "line": 0.329,
+      "edge": -0.019,
+      "return": -0.141
+     },
+     "2020-2022": {
+      "n": 628,
+      "won": 0.354,
+      "line": 0.33,
+      "edge": 0.024,
+      "return": 0.013
+     },
+     "2023-2026": {
+      "n": 947,
+      "won": 0.283,
+      "line": 0.307,
+      "edge": -0.024,
+      "return": -0.135
+     }
+    },
+    "consistent": false,
+    "coef": 0.117,
+    "z": 1.64
    },
    "model_hates_dog": {
-    "n": 669,
-    "won": 0.338,
-    "line": 0.369,
-    "edge": -0.031,
-    "return": -0.134,
+    "n": 643,
+    "won": 0.339,
+    "line": 0.368,
+    "edge": -0.029,
+    "return": -0.128,
     "desc": "our model gives the dog 5+ pts less than the line",
     "eras": {
      "2016-2019": {
-      "n": 160,
-      "won": 0.388,
-      "line": 0.381,
-      "edge": 0.006,
-      "return": -0.037
+      "n": 132,
+      "won": 0.417,
+      "line": 0.38,
+      "edge": 0.037,
+      "return": 0.025
      },
      "2020-2022": {
-      "n": 251,
+      "n": 245,
       "won": 0.327,
       "line": 0.366,
-      "edge": -0.039,
-      "return": -0.157
+      "edge": -0.04,
+      "return": -0.147
      },
      "2023-2026": {
-      "n": 258,
-      "won": 0.318,
-      "line": 0.365,
-      "edge": -0.047,
-      "return": -0.17
+      "n": 266,
+      "won": 0.312,
+      "line": 0.364,
+      "edge": -0.052,
+      "return": -0.186
      }
     },
     "consistent": false,
-    "coef": -0.131,
-    "z": -1.42
+    "coef": -0.111,
+    "z": -1.18
    },
    "grappler_dog_vs_striker": {
-    "n": 402,
-    "won": 0.341,
-    "line": 0.36,
-    "edge": -0.019,
-    "return": -0.115,
+    "n": 395,
+    "won": 0.332,
+    "line": 0.361,
+    "edge": -0.029,
+    "return": -0.141,
     "desc": "dog is the better wrestler, favourite the better striker",
     "eras": {
      "2016-2019": {
-      "n": 104,
-      "won": 0.356,
-      "line": 0.371,
-      "edge": -0.015,
-      "return": -0.116
+      "n": 85,
+      "won": 0.306,
+      "line": 0.375,
+      "edge": -0.069,
+      "return": -0.262
      },
      "2020-2022": {
-      "n": 133,
-      "won": 0.391,
+      "n": 138,
+      "won": 0.37,
       "line": 0.362,
-      "edge": 0.029,
-      "return": 0.045
+      "edge": 0.007,
+      "return": -0.002
      },
      "2023-2026": {
-      "n": 165,
-      "won": 0.291,
-      "line": 0.351,
-      "edge": -0.061,
-      "return": -0.245
+      "n": 172,
+      "won": 0.314,
+      "line": 0.353,
+      "edge": -0.039,
+      "return": -0.191
      }
     },
     "consistent": false,
-    "coef": -0.046,
-    "z": -0.4
+    "coef": -0.096,
+    "z": -0.83
    },
    "striker_dog_vs_grappler": {
-    "n": 623,
-    "won": 0.307,
-    "line": 0.333,
-    "edge": -0.027,
-    "return": -0.154,
+    "n": 591,
+    "won": 0.301,
+    "line": 0.334,
+    "edge": -0.033,
+    "return": -0.165,
     "desc": "dog is the better striker, favourite the better wrestler",
     "eras": {
      "2016-2019": {
-      "n": 141,
-      "won": 0.355,
-      "line": 0.344,
-      "edge": 0.011,
-      "return": -0.073
+      "n": 112,
+      "won": 0.366,
+      "line": 0.346,
+      "edge": 0.02,
+      "return": -0.034
      },
      "2020-2022": {
-      "n": 188,
-      "won": 0.314,
-      "line": 0.344,
-      "edge": -0.03,
-      "return": -0.127
+      "n": 179,
+      "won": 0.296,
+      "line": 0.343,
+      "edge": -0.047,
+      "return": -0.179
      },
      "2023-2026": {
-      "n": 294,
-      "won": 0.279,
-      "line": 0.322,
-      "edge": -0.043,
-      "return": -0.21
+      "n": 300,
+      "won": 0.28,
+      "line": 0.324,
+      "edge": -0.044,
+      "return": -0.205
      }
     },
     "consistent": false,
-    "coef": -0.061,
-    "z": -0.63
+    "coef": -0.093,
+    "z": -0.94
    },
    "dog_better_td_defense": {
-    "n": 450,
-    "won": 0.324,
+    "n": 431,
+    "won": 0.323,
     "line": 0.353,
-    "edge": -0.028,
-    "return": -0.14,
+    "edge": -0.031,
+    "return": -0.144,
     "desc": "dog stops 15+ pts more takedowns",
     "eras": {
      "2016-2019": {
-      "n": 101,
-      "won": 0.356,
-      "line": 0.366,
-      "edge": -0.01,
-      "return": -0.081
+      "n": 81,
+      "won": 0.358,
+      "line": 0.374,
+      "edge": -0.016,
+      "return": -0.077
      },
      "2020-2022": {
       "n": 156,
@@ -1243,31 +1222,31 @@
       "return": -0.121
      },
      "2023-2026": {
-      "n": 193,
-      "won": 0.301,
+      "n": 194,
+      "won": 0.299,
       "line": 0.346,
-      "edge": -0.045,
-      "return": -0.186
+      "edge": -0.047,
+      "return": -0.19
      }
     },
     "consistent": true,
-    "coef": -0.087,
-    "z": -0.8
+    "coef": -0.098,
+    "z": -0.88
    },
    "dog_more_volume": {
-    "n": 648,
+    "n": 631,
     "won": 0.33,
     "line": 0.346,
     "edge": -0.016,
-    "return": -0.105,
+    "return": -0.099,
     "desc": "dog lands 1+ more sig. strikes a minute",
     "eras": {
      "2016-2019": {
-      "n": 123,
-      "won": 0.39,
-      "line": 0.355,
-      "edge": 0.035,
-      "return": 0.054
+      "n": 102,
+      "won": 0.402,
+      "line": 0.356,
+      "edge": 0.046,
+      "return": 0.083
      },
      "2020-2022": {
       "n": 201,
@@ -1277,31 +1256,31 @@
       "return": -0.182
      },
      "2023-2026": {
-      "n": 324,
-      "won": 0.318,
+      "n": 328,
+      "won": 0.317,
       "line": 0.337,
       "edge": -0.02,
-      "return": -0.118
+      "return": -0.105
      }
     },
     "consistent": false,
-    "coef": -0.017,
-    "z": -0.19
+    "coef": -0.014,
+    "z": -0.14
    },
    "five_round_streak_dog": {
-    "n": 127,
-    "won": 0.402,
-    "line": 0.335,
-    "edge": 0.067,
-    "return": 0.126,
+    "n": 125,
+    "won": 0.392,
+    "line": 0.334,
+    "edge": 0.058,
+    "return": 0.106,
     "desc": "five-round bout and the dog is on a 3+ streak",
     "eras": {
      "2016-2019": {
-      "n": 28,
-      "won": 0.429,
-      "line": 0.335,
-      "edge": 0.093,
-      "return": 0.1
+      "n": 25,
+      "won": 0.4,
+      "line": 0.332,
+      "edge": 0.068,
+      "return": 0.043
      },
      "2020-2022": {
       "n": 41,
@@ -1311,31 +1290,31 @@
       "return": 0.433
      },
      "2023-2026": {
-      "n": 58,
-      "won": 0.328,
+      "n": 59,
+      "won": 0.322,
       "line": 0.349,
-      "edge": -0.021,
-      "return": -0.078
+      "edge": -0.027,
+      "return": -0.094
      }
     },
     "consistent": false,
-    "coef": 0.391,
-    "z": 2.06
+    "coef": 0.354,
+    "z": 1.85
    },
    "five_rounds": {
-    "n": 358,
-    "won": 0.358,
+    "n": 348,
+    "won": 0.353,
     "line": 0.335,
-    "edge": 0.023,
-    "return": 0.013,
+    "edge": 0.019,
+    "return": 0.006,
     "desc": "five-round bout",
     "eras": {
      "2016-2019": {
-      "n": 78,
-      "won": 0.385,
-      "line": 0.341,
-      "edge": 0.043,
-      "return": 0.06
+      "n": 66,
+      "won": 0.379,
+      "line": 0.339,
+      "edge": 0.04,
+      "return": 0.059
      },
      "2020-2022": {
       "n": 127,
@@ -1345,99 +1324,99 @@
       "return": -0.033
      },
      "2023-2026": {
-      "n": 153,
-      "won": 0.353,
+      "n": 155,
+      "won": 0.348,
       "line": 0.334,
-      "edge": 0.019,
-      "return": 0.027
+      "edge": 0.014,
+      "return": 0.014
      }
     },
     "consistent": true,
-    "coef": 0.198,
-    "z": 1.66
+    "coef": 0.184,
+    "z": 1.52
    },
    "small_dog": {
-    "n": 1623,
-    "won": 0.401,
+    "n": 1545,
+    "won": 0.398,
     "line": 0.399,
-    "edge": 0.002,
-    "return": -0.037,
+    "edge": -0.001,
+    "return": -0.044,
     "desc": "line has the dog at 35-45%",
     "eras": {
      "2016-2019": {
-      "n": 436,
+      "n": 353,
       "won": 0.433,
-      "line": 0.4,
+      "line": 0.401,
       "edge": 0.033,
-      "return": 0.036
+      "return": 0.034
      },
      "2020-2022": {
-      "n": 555,
-      "won": 0.391,
+      "n": 556,
+      "won": 0.39,
       "line": 0.398,
       "edge": -0.007,
-      "return": -0.058
+      "return": -0.06
      },
      "2023-2026": {
-      "n": 632,
-      "won": 0.388,
+      "n": 636,
+      "won": 0.385,
       "line": 0.399,
-      "edge": -0.011,
-      "return": -0.068
+      "edge": -0.013,
+      "return": -0.074
      }
     },
     "consistent": false,
-    "coef": 0.044,
-    "z": 0.52
+    "coef": 0.023,
+    "z": 0.26
    },
    "big_dog": {
-    "n": 838,
+    "n": 811,
     "won": 0.142,
-    "line": 0.194,
-    "edge": -0.052,
-    "return": -0.308,
+    "line": 0.193,
+    "edge": -0.051,
+    "return": -0.306,
     "desc": "line has the dog under 25%",
     "eras": {
      "2016-2019": {
-      "n": 175,
-      "won": 0.154,
-      "line": 0.2,
+      "n": 144,
+      "won": 0.153,
+      "line": 0.198,
       "edge": -0.046,
-      "return": -0.285
+      "return": -0.299
      },
      "2020-2022": {
-      "n": 202,
-      "won": 0.124,
+      "n": 204,
+      "won": 0.123,
       "line": 0.196,
-      "edge": -0.073,
-      "return": -0.397
+      "edge": -0.074,
+      "return": -0.403
      },
      "2023-2026": {
-      "n": 461,
-      "won": 0.145,
+      "n": 463,
+      "won": 0.147,
       "line": 0.19,
-      "edge": -0.045,
-      "return": -0.278
+      "edge": -0.043,
+      "return": -0.265
      }
     },
     "consistent": true,
-    "coef": -0.22,
-    "z": -1.41
+    "coef": -0.219,
+    "z": -1.37
    },
    "heavyweight": {
-    "n": 275,
+    "n": 261,
     "won": 0.291,
     "line": 0.334,
     "edge": -0.043,
-    "return": -0.207,
+    "return": -0.213,
     "desc": "heavyweight bout",
     "eras": {
      "2016-2019": {
-      "n": 67,
-      "won": 0.358,
-      "line": 0.346,
-      "edge": 0.012,
-      "return": -0.005
+      "n": 53,
+      "won": 0.377,
+      "line": 0.348,
+      "edge": 0.029,
+      "return": 0.02
      },
      "2020-2022": {
       "n": 98,
@@ -1455,22 +1434,22 @@
      }
     },
     "consistent": false,
-    "coef": -0.147,
-    "z": -1.04
+    "coef": -0.141,
+    "z": -0.98
    },
    "women": {
-    "n": 659,
-    "won": 0.31,
-    "line": 0.329,
+    "n": 631,
+    "won": 0.309,
+    "line": 0.328,
     "edge": -0.019,
-    "return": -0.119,
+    "return": -0.121,
     "desc": "women's bout",
     "eras": {
      "2016-2019": {
-      "n": 161,
-      "won": 0.335,
-      "line": 0.331,
-      "edge": 0.004,
+      "n": 133,
+      "won": 0.338,
+      "line": 0.33,
+      "edge": 0.008,
       "return": -0.088
      },
      "2020-2022": {
@@ -1489,140 +1468,153 @@
      }
     },
     "consistent": false,
-    "coef": -0.014,
-    "z": -0.15
+    "coef": -0.011,
+    "z": -0.11
    }
   }
  },
  "checks": {
-  "cards": 4,
-  "bouts": 50,
+  "cards": 5,
+  "bouts": 64,
   "verdicts": {
-   "wrong, close fight": 3,
-   "right, for our reasons": 16,
-   "right on the cards, wrong on the fight": 4,
-   "wrong, claim failed": 15,
-   "right, partly for our reasons": 8,
-   "right, other reasons": 4
+   "wrong, close fight": 5,
+   "right, for our reasons": 20,
+   "right on the cards, wrong on the fight": 5,
+   "wrong, claim failed": 18,
+   "right, partly for our reasons": 11,
+   "right, other reasons": 5
   },
-  "watch": [
-   "wear_and_tear"
-  ],
+  "watch": [],
   "by_source": {
    "pick": {
-    "failed": 19,
-    "held": 18,
-    "mixed": 17,
-    "tested": 54,
-    "held_rate": 0.491
+    "failed": 24,
+    "held": 21,
+    "mixed": 21,
+    "tested": 66,
+    "held_rate": 0.477
    },
    "model": {
-    "failed": 56,
-    "held": 90,
-    "untested": 12,
-    "mixed": 21,
-    "tested": 167,
-    "held_rate": 0.602
+    "failed": 72,
+    "held": 115,
+    "untested": 18,
+    "mixed": 29,
+    "tested": 216,
+    "held_rate": 0.6
    },
    "read": {
-    "mixed": 25,
-    "failed": 34,
-    "held": 42,
-    "untested": 19,
-    "tested": 101,
-    "held_rate": 0.54
+    "mixed": 29,
+    "failed": 45,
+    "held": 55,
+    "untested": 22,
+    "tested": 129,
+    "held_rate": 0.539
    }
   },
   "by_tag": {
    "wear_and_tear": {
-    "failed": 16,
-    "held": 9,
-    "untested": 1,
-    "mixed": 4,
-    "tested": 29,
-    "held_rate": 0.379
-   },
-   "wrestling_edge": {
-    "mixed": 6,
-    "held": 10,
-    "failed": 7,
-    "untested": 1,
-    "tested": 23,
-    "held_rate": 0.565
-   },
-   "durability": {
-    "failed": 8,
+    "failed": 19,
     "held": 12,
-    "untested": 4,
-    "mixed": 2,
-    "tested": 22,
-    "held_rate": 0.591
+    "untested": 2,
+    "mixed": 5,
+    "tested": 36,
+    "held_rate": 0.403
    },
    "overall": {
-    "held": 15,
-    "failed": 4,
+    "held": 20,
+    "failed": 10,
     "mixed": 2,
-    "tested": 21,
-    "held_rate": 0.762
+    "tested": 32,
+    "held_rate": 0.656
+   },
+   "durability": {
+    "failed": 14,
+    "held": 13,
+    "untested": 4,
+    "mixed": 2,
+    "tested": 29,
+    "held_rate": 0.483
+   },
+   "wrestling_edge": {
+    "mixed": 7,
+    "held": 13,
+    "failed": 7,
+    "untested": 2,
+    "tested": 27,
+    "held_rate": 0.611
    },
    "striking_rating": {
-    "held": 14,
-    "failed": 3,
+    "held": 16,
+    "failed": 4,
     "untested": 1,
+    "mixed": 6,
+    "tested": 26,
+    "held_rate": 0.731
+   },
+   "outside_rating": {
+    "failed": 9,
+    "held": 12,
     "mixed": 3,
-    "tested": 20,
-    "held_rate": 0.775
+    "tested": 24,
+    "held_rate": 0.562
    },
    "wrestling_rating": {
     "failed": 3,
-    "held": 11,
+    "held": 13,
     "mixed": 4,
-    "untested": 1,
-    "tested": 18,
-    "held_rate": 0.722
+    "untested": 3,
+    "tested": 20,
+    "held_rate": 0.75
    },
-   "outside_rating": {
-    "failed": 6,
-    "held": 9,
-    "mixed": 3,
-    "tested": 18,
-    "held_rate": 0.583
-   },
-   "age_curve": {
-    "failed": 6,
-    "held": 7,
-    "tested": 13,
-    "held_rate": 0.538
+   "wrestling": {
+    "held": 12,
+    "mixed": 4,
+    "failed": 1,
+    "tested": 17,
+    "held_rate": 0.824
    },
    "inactivity": {
     "failed": 7,
     "mixed": 3,
-    "held": 3,
+    "held": 6,
     "untested": 1,
-    "tested": 13,
-    "held_rate": 0.346
+    "tested": 16,
+    "held_rate": 0.469
    },
-   "wrestling": {
+   "age_curve": {
+    "failed": 6,
     "held": 9,
-    "mixed": 3,
-    "failed": 1,
-    "tested": 13,
-    "held_rate": 0.808
+    "tested": 15,
+    "held_rate": 0.6
    },
    "cardio": {
-    "held": 4,
-    "untested": 6,
+    "held": 6,
+    "untested": 7,
     "mixed": 3,
     "failed": 5,
-    "tested": 12,
-    "held_rate": 0.458
+    "tested": 14,
+    "held_rate": 0.536
    },
    "style": {
-    "failed": 6,
+    "failed": 8,
     "mixed": 4,
     "held": 2,
-    "tested": 12,
-    "held_rate": 0.333
+    "tested": 14,
+    "held_rate": 0.286
+   },
+   "power": {
+    "failed": 6,
+    "held": 1,
+    "mixed": 3,
+    "tested": 10,
+    "held_rate": 0.25
+   },
+   "grappling": {
+    "failed": 1,
+    "mixed": 5,
+    "untested": 2,
+    "held": 4,
+    "tested": 10,
+    "held_rate": 0.65
    },
    "reach": {
     "held": 7,
@@ -1631,46 +1623,53 @@
     "tested": 9,
     "held_rate": 0.778
    },
-   "power": {
-    "failed": 5,
-    "held": 1,
-    "mixed": 2,
-    "tested": 8,
-    "held_rate": 0.25
-   },
-   "grappling": {
-    "failed": 1,
-    "mixed": 3,
-    "untested": 2,
+   "power_vs_chin": {
     "held": 4,
+    "failed": 4,
+    "untested": 1,
+    "mixed": 1,
+    "tested": 9,
+    "held_rate": 0.5
+   },
+   "age": {
+    "held": 6,
+    "mixed": 1,
+    "failed": 1,
     "tested": 8,
-    "held_rate": 0.688
+    "held_rate": 0.812
+   },
+   "striking_exchange": {
+    "mixed": 2,
+    "held": 3,
+    "failed": 1,
+    "tested": 6,
+    "held_rate": 0.667
    },
    "short_notice": {
     "held": 2,
     "failed": 4,
-    "untested": 2,
+    "untested": 3,
     "tested": 6,
     "held_rate": 0.333
    },
-   "age": {
-    "held": 4,
+   "experience": {
+    "held": 3,
+    "failed": 2,
     "mixed": 1,
-    "failed": 1,
     "tested": 6,
-    "held_rate": 0.75
+    "held_rate": 0.583
    },
    "td_def": {
     "held": 6,
     "tested": 6,
     "held_rate": 1.0
    },
-   "power_vs_chin": {
-    "held": 3,
-    "failed": 2,
-    "untested": 1,
+   "submission_threat": {
+    "untested": 2,
+    "failed": 3,
+    "held": 2,
     "tested": 5,
-    "held_rate": 0.6
+    "held_rate": 0.4
    },
    "size": {
     "failed": 2,
@@ -1678,29 +1677,21 @@
     "tested": 5,
     "held_rate": 0.3
    },
-   "experience": {
-    "held": 3,
-    "failed": 1,
-    "mixed": 1,
-    "tested": 5,
-    "held_rate": 0.7
-   },
-   "striking_exchange": {
-    "mixed": 2,
-    "held": 2,
-    "tested": 4,
-    "held_rate": 0.75
-   },
-   "submission_threat": {
-    "untested": 1,
-    "failed": 3,
-    "held": 1,
-    "tested": 4,
-    "held_rate": 0.25
-   },
    "striking_defense": {
     "failed": 4,
     "untested": 2,
+    "tested": 4,
+    "held_rate": 0.0
+   },
+   "height": {
+    "held": 3,
+    "failed": 1,
+    "untested": 1,
+    "tested": 4,
+    "held_rate": 0.75
+   },
+   "form": {
+    "failed": 4,
     "tested": 4,
     "held_rate": 0.0
    },
@@ -1710,22 +1701,37 @@
     "tested": 4,
     "held_rate": 0.875
    },
-   "height": {
-    "held": 2,
+   "layoff": {
     "failed": 1,
+    "mixed": 1,
+    "held": 1,
     "tested": 3,
-    "held_rate": 0.667
-   },
-   "form": {
-    "failed": 3,
-    "tested": 3,
-    "held_rate": 0.0
+    "held_rate": 0.5
    },
    "pressure": {
     "mixed": 2,
     "held": 1,
     "tested": 3,
     "held_rate": 0.667
+   },
+   "debut": {
+    "mixed": 1,
+    "failed": 2,
+    "tested": 3,
+    "held_rate": 0.167
+   },
+   "submission": {
+    "mixed": 2,
+    "failed": 1,
+    "tested": 3,
+    "held_rate": 0.333
+   },
+   "size_gap": {
+    "untested": 1,
+    "failed": 1,
+    "mixed": 1,
+    "tested": 2,
+    "held_rate": 0.25
    },
    "grappling_rating": {
     "untested": 1,
@@ -1746,12 +1752,6 @@
     "tested": 2,
     "held_rate": 0.5
    },
-   "debut": {
-    "mixed": 1,
-    "failed": 1,
-    "tested": 2,
-    "held_rate": 0.25
-   },
    "back_take": {
     "mixed": 1,
     "held": 1,
@@ -1763,10 +1763,21 @@
     "tested": 2,
     "held_rate": 0.5
    },
-   "size_gap": {
-    "untested": 1,
+   "competition": {
     "failed": 1,
-    "tested": 1,
+    "held": 1,
+    "tested": 2,
+    "held_rate": 0.5
+   },
+   "body_work": {
+    "mixed": 1,
+    "held": 1,
+    "tested": 2,
+    "held_rate": 0.75
+   },
+   "finishing": {
+    "failed": 2,
+    "tested": 2,
     "held_rate": 0.0
    },
    "finishing_history": {
@@ -1784,7 +1795,8 @@
     "tested": 1,
     "held_rate": 1.0
    },
-   "layoff": {
+   "injury": {
+    "untested": 1,
     "failed": 1,
     "tested": 1,
     "held_rate": 0.0
@@ -1819,20 +1831,31 @@
     "tested": 1,
     "held_rate": 0.5
    },
-   "submission": {
+   "explosiveness": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "volume": {
+    "held": 1,
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "activity": {
     "mixed": 1,
     "tested": 1,
     "held_rate": 0.5
    },
-   "competition": {
-    "failed": 1,
-    "tested": 1,
-    "held_rate": 0.0
-   },
-   "injury": {
+   "bottom_game": {
+    "held": 1,
     "untested": 1,
-    "tested": 0,
-    "held_rate": null
+    "tested": 1,
+    "held_rate": 1.0
+   },
+   "slow_start": {
+    "mixed": 1,
+    "tested": 1,
+    "held_rate": 0.5
    },
    "five_rounds": {
     "untested": 1,

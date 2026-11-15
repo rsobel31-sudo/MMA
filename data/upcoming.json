@@ -1,198 +1,7 @@
 {
- "fetched": "2026-11-14",
+ "fetched": "2026-11-15",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
-  {
-   "name": "UFC 334: Gane vs. Hokit",
-   "date": "2026-11-14",
-   "venue": "Madison Square Garden",
-   "location": "New York City, New York, U.S.",
-   "url": "https://en.wikipedia.org/wiki/UFC_334",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Main card",
-     "weight_class": "Heavyweight",
-     "a": "Ciryl Gane",
-     "b": "Josh Hokit",
-     "title": true,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 5,
-     "main_event": true
-    },
-    {
-     "order": 1,
-     "segment": "Main card",
-     "weight_class": "Women's Bantamweight",
-     "a": "Kayla Harrison",
-     "b": "Amanda Nunes",
-     "title": true,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 5,
-     "main_event": false
-    },
-    {
-     "order": 2,
-     "segment": "Main card",
-     "weight_class": "Middleweight",
-     "a": "Caio Borralho",
-     "b": "Yousri Belgaroui",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 3,
-     "segment": "Main card",
-     "weight_class": "Welterweight",
-     "a": "Uro\u0161 Medi\u0107",
-     "b": "Kevin Holland",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 4,
-     "segment": "Main card",
-     "weight_class": "Flyweight",
-     "a": "Bilal Hasan",
-     "b": "Luis Gurule",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 5,
-     "segment": "Preliminary card",
-     "weight_class": "Welterweight",
-     "a": "Stephen Thompson",
-     "b": "Charles Radtke",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 6,
-     "segment": "Preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Drew Dober",
-     "b": "Chris Duncan",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 7,
-     "segment": "Preliminary card",
-     "weight_class": "Catchweight (160.2 lb)",
-     "a": "Jim Miller",
-     "b": "Terrance McKinney",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 8,
-     "segment": "Preliminary card",
-     "weight_class": "Catchweight (190 lb)",
-     "a": "Donte Johnson",
-     "b": "C\u00e9sar Almeida",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 9,
-     "segment": "Early preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Jared Gordon",
-     "b": "Melquizael Costa",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Early preliminary card",
-     "weight_class": "Women's Bantamweight",
-     "a": "Macy Chiasson",
-     "b": "Beatriz Mesquita",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 11,
-     "segment": "Early preliminary card",
-     "weight_class": "Catchweight (136.4 lb)",
-     "a": "Alateng Heili",
-     "b": "Juan D\u00edaz",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Early preliminary card",
-     "weight_class": "Lightweight",
-     "a": "Evan Elder",
-     "b": "Samuel Sanches",
-     "title": false,
-     "result": "",
-     "decided": false,
-     "round": "",
-     "time": "",
-     "rounds": 3,
-     "main_event": false
-    }
-   ]
-  },
   {
    "name": "UFC Fight Night: Proch\u00e1zka vs. Stirling",
    "date": "2026-11-21",
@@ -677,51 +486,60 @@
      "result": "",
      "rounds": 3,
      "main_event": false
-    },
+    }
+   ]
+  },
+  {
+   "name": "UFC Fight Night: Rodr\u00edguez vs. Garcia",
+   "date": "2027-01-16",
+   "venue": "American Airlines Center",
+   "location": "Dallas, Texas, U.S.",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Rodr\u00edguez_vs._Garcia",
+   "bouts": [
     {
-     "order": 11,
-     "segment": "Announced",
+     "order": 0,
+     "segment": "Fight card",
      "weight_class": "Featherweight",
      "a": "Yair Rodr\u00edguez",
      "b": "Steve Garcia",
      "title": false,
      "result": "",
-     "rounds": 3,
-     "main_event": false
-    }
-   ]
-  },
-  {
-   "name": "UFC Fight Night 296",
-   "date": "2027-01-16",
-   "venue": "American Airlines Center",
-   "location": "Dallas, Texas, U.S.",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_296",
-   "bouts": [
-    {
-     "order": 0,
-     "segment": "Announced",
-     "weight_class": "Welterweight",
-     "a": "Chidi Njokuani",
-     "b": "Ignacio Bahamondes",
-     "title": false,
-     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 5,
      "main_event": true
     },
     {
      "order": 1,
-     "segment": "Announced",
+     "segment": "Fight card",
      "weight_class": "Welterweight",
      "a": "Daniel Rodriguez",
      "b": "Roberto Soldi\u0107",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 2,
+     "segment": "Fight card",
+     "weight_class": "Welterweight",
+     "a": "Chidi Njokuani",
+     "b": "Ignacio Bahamondes",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 3,
      "segment": "Announced",
      "weight_class": "Lightweight",
      "a": "Magomed Zaynukov",
@@ -732,7 +550,7 @@
      "main_event": false
     },
     {
-     "order": 3,
+     "order": 4,
      "segment": "Announced",
      "weight_class": "Welterweight",
      "a": "Chris Curtis",
@@ -745,22 +563,47 @@
    ]
   },
   {
-   "name": "UFC Fight Night 297",
+   "name": "UFC Fight Night: Bonfim vs. Brady",
    "date": "2027-01-23",
-   "venue": "TBA",
-   "location": "TBA",
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night_297",
+   "venue": "Meta Apex",
+   "location": "Las Vegas, Nevada, U.S.",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady",
    "bouts": [
     {
      "order": 0,
+     "segment": "Fight card",
+     "weight_class": "Welterweight",
+     "a": "Gabriel Bonfim",
+     "b": "Sean Brady",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 5,
+     "main_event": true
+    },
+    {
+     "order": 1,
      "segment": "Announced",
      "weight_class": "Featherweight",
      "a": "Pat Sabatini",
      "b": "Vinicius Oliveira",
      "title": false,
      "result": "",
-     "rounds": 5,
-     "main_event": true
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 2,
+     "segment": "Announced",
+     "weight_class": "Featherweight",
+     "a": "Yadier del Valle",
+     "b": "Ezra Elliott",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
@@ -887,6 +730,37 @@
      "main_event": false
     }
    ]
+  },
+  {
+   "name": "UFC Fight Night: Pyfer vs. Nickal",
+   "date": "2027-02-13",
+   "venue": "Rocket Arena",
+   "location": "Cleveland, Ohio, U.S.",
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Pyfer_vs._Nickal",
+   "bouts": [
+    {
+     "order": 0,
+     "segment": "Fight card",
+     "weight_class": "Middleweight",
+     "a": "Joe Pyfer",
+     "b": "Bo Nickal",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 5,
+     "main_event": true
+    }
+   ]
+  },
+  {
+   "name": "UFC 337",
+   "date": "2027-02-20",
+   "venue": "Kia Center",
+   "location": "Orlando, Florida, U.S.",
+   "url": "https://en.wikipedia.org/wiki/UFC_337",
+   "bouts": []
   }
  ]
 }

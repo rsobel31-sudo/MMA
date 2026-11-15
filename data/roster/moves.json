@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T12:20:34+00:00",
+ "fetched": "2026-11-15T12:30:19+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -982,20 +982,6 @@
  ],
  "releases": [
   {
-   "name": "Farid Basharat",
-   "date": "2026-10-14",
-   "division": "Bantamweight",
-   "refs": [
-    "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
-   ],
-   "reason": "Contract not renewed",
-   "confirmed_by": {
-    "source": "mmafighting.com",
-    "url": "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
-   },
-   "first_seen": "2026-10-15"
-  },
-  {
    "name": "Julian Erosa",
    "date": "2026-10-31",
    "division": "Featherweight",
@@ -1022,6 +1008,35 @@
     "url": "https://cagesidepress.com/2026/11/10/norma-dumont-granted-release-from-ufc/"
    },
    "first_seen": "2026-11-11"
+  },
+  {
+   "name": "Stephen Thompson",
+   "date": "2026-11-14",
+   "division": "Welterweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/stephen-thompson-retires-after-ufc-334/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/stephen-thompson-retires-after-ufc-334/"
+   },
+   "first_seen": "2026-11-15"
+  },
+  {
+   "name": "Farid Basharat",
+   "date": "2026-10-14",
+   "division": "Bantamweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
+   ],
+   "reason": "Contract not renewed",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/515775/farid-basharat-removed-from-ufc-roster-despite-7-0-octagon-run"
+   },
+   "first_seen": "2026-10-15",
+   "left_table": "2026-11-15"
   },
   {
    "name": "Ismael Bonfim",
