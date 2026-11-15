@@ -1,6 +1,6 @@
 {
  "name": "Samuel Sanches",
- "updated": "2026-11-03T18:00:00+00:00",
+ "updated": "2026-11-15T19:00:00+00:00",
  "event": "UFC 334: Gane vs. Hokit",
  "summary": "A 23-year-old Brazilian lightweight (11-1) making his UFC debut. He earned his contract with a 2:01 R1 knockout of Chasen Blair on the Contender Series in September 2025, his eighth straight win. His planned debut against Tofiq Musayev in March 2026 fell through when he withdrew for undisclosed reasons. He hasn't fought in about 14 months.",
  "how_they_fight": {
@@ -18,7 +18,8 @@
  "concerns": [
   "UFC debut on a big card",
   "14 months out; withdrew from his first booking (reason undisclosed; Rotowire's later note calls it an injury)",
-  "Only loss was a submission"
+  "Only loss was a submission",
+  "Taken down repeatedly and grabbed the fence in his UFC debut (Elder)"
  ],
  "keys_to_beat": [
   "Take him into deep water: he has gone 15 minutes only twice",
@@ -40,6 +41,11 @@
    "date": "2025-09-09",
    "text": "Knocked out Chasen Blair at 2:01 of R1 on the Contender Series to earn a UFC contract.",
    "source": "https://cagesidepress.com/2025/09/10/samuel-sanches-dwcs-qatar-abu-dhabi"
+  },
+  {
+   "date": "2026-11-14",
+   "text": "Lost his UFC debut to Evan Elder by unanimous decision (30-26 x3): dropped Elder in R2 but was dropped in R1, taken down five times, and lost a point for grabbing the fence in R3.",
+   "source": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
   }
  ],
  "sources": [

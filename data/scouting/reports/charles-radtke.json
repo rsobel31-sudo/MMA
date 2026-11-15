@@ -1,6 +1,6 @@
 {
  "name": "Charles Radtke",
- "updated": "2026-11-03T18:00:00+00:00",
+ "updated": "2026-11-15T19:00:00+00:00",
  "event": "UFC 334: Gane vs. Hokit",
  "summary": "A 36-year-old welterweight (12-5; 5-2 UFC), unranked, who has won two straight by grappling: an R3 rear-naked choke of Daniel Frunza in November 2025 and a 30-26 x3 decision over Francisco Prado at UFC 327. Both UFC losses were knockouts against strikers (Carlos Prates, Mike Malott). Stephen Thompson picked him for his retirement fight.",
  "how_they_fight": {
@@ -18,7 +18,8 @@
  "concerns": [
   "A rangy striker who keeps him at distance",
   "Gets hit when he stands and trades",
-  "Being caught on his shots (deep Prado guillotine)"
+  "Being caught on his shots (deep Prado guillotine)",
+  "Output dropped sharply after R1 against a striker; knocked out by strikers in all three UFC losses"
  ],
  "keys_to_beat": [
   "Stay at range and strike; don't get pinned on the fence",
@@ -35,6 +36,11 @@
    "date": "2026-04-11",
    "text": "Beat Francisco Prado by unanimous decision (30-26 x3) after surviving an eye poke and a deep guillotine.",
    "source": "https://cagesidepress.com/2026/04/11/charles-radtke-survives-eye-poke-choke-claims-victory-over-francisco-prado-at-ufc-327/"
+  },
+  {
+   "date": "2026-11-14",
+   "text": "Knocked out by Stephen Thompson's spinning wheel kick at 2:54 of R3: won R1 with a takedown and clinch work, took him down again in R2, then faded.",
+   "source": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
   }
  ],
  "sources": [

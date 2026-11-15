@@ -1709,6 +1709,12 @@
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "31"
 },
+"Bailey Schoenfelder": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats only (193 cm), not used until a second source confirms it",
+"stats_official": "1"
+},
 "Baisangur Susurkaev": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -4122,6 +4128,10 @@
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "6"
 },
+"Damien Anderson": {
+"reach": "UFCStats only (175 cm), not used until a second source confirms it",
+"stats_verified": "1"
+},
 "Damien Brown": {
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
@@ -4471,6 +4481,10 @@
 "reach": "UFCStats only (178 cm), not used until a second source confirms it",
 "stats_official": "1",
 "stats_verified": "1"
+},
+"Danylo Voievodkin": {
+"reach": "UFCStats only (198 cm), not used until a second source confirms it",
+"stats_official": "1"
 },
 "Darian Weeks": {
 "dob": "Sherdog + UFCStats agree",
@@ -5951,6 +5965,12 @@
 "Everett Sims": {
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
 "stats_official": "1"
+},
+"Ezra Elliott": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
+"reach": "UFCStats + StatsFight agree",
+"stats_verified": "1"
 },
 "Fabiano Iha": {
 "stats_official": "5"
@@ -13947,6 +13967,8 @@
 "stats_official": "1"
 },
 "Nate Smith": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -17909,6 +17931,8 @@
 "stats_official": "2"
 },
 "Thomas Paull": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (170 cm), not used until a second source confirms it",
 "stats_official": "1"
 },

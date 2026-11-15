@@ -2,7 +2,1224 @@
  "id": "2026-11-14-ufc-334-gane-vs-hokit",
  "event": "UFC 334 - Gane vs. Hokit",
  "date": "2026-11-14",
- "stories": {},
+ "stories": {
+  "ciryl-gane-josh-hokit": {
+   "summary": "Hokit shot in the first seconds and then marched forward through Gane's jabs and uppercuts, slamming him late in round 1; Sherdog's scorers still gave Gane the round on the cleaner shots. Gane stopped kicking for fear of the takedown and spent his energy moving, and Hokit took rounds 2 and 3 with right hands, clinch elbows and foot stomps. Hokit had little left from round 4; Gane's knees, uppercuts and body work took the last two rounds, and he won 48-47 on all three cards, as all three Sherdog scorers had it.",
+   "turning_point": "Round 4: Hokit's shots lost their steam and Gane took over in the clinch with knees and short uppercuts.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Gane",
+       "10-9 Gane",
+       "10-9 Gane"
+      ],
+      [
+       2,
+       "10-9 Hokit",
+       "10-9 Hokit",
+       "10-9 Hokit"
+      ],
+      [
+       3,
+       "10-9 Hokit",
+       "10-9 Hokit",
+       "10-9 Hokit"
+      ],
+      [
+       4,
+       "10-9 Gane",
+       "10-9 Gane",
+       "10-9 Gane"
+      ],
+      [
+       5,
+       "10-9 Gane",
+       "10-9 Gane",
+       "10-9 Gane"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/486419/ufc-334-results-sooo-about-last-night-gane-vs-hokit"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/486810/run-it-back-josh-hokit-demands-immediate-rematch-after-very-close-ufc-334-title-loss"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Gane's footwork and reach keep an undersized wrestler at range; Hokit has never gone past 15 minutes; Gane over five rounds",
+     "tag": "cardio",
+     "favoured": "Ciryl Gane",
+     "verdict": "mixed",
+     "note": "Right result and method, but Gane did not keep him at range: Hokit won rounds 2 and 3 up close. What decided it was Hokit fading in his first five-rounder."
+    },
+    {
+     "by": "read",
+     "claim": "Gane's range and movement",
+     "tag": "range",
+     "favoured": "Ciryl Gane",
+     "verdict": "mixed",
+     "note": "His jab and uppercuts landed all night, but he gave up kicks and the movement tired him by round 2."
+    },
+    {
+     "by": "read",
+     "claim": "Hokit's wrestling and power (against)",
+     "tag": "wrestling",
+     "favoured": "Josh Hokit",
+     "verdict": "held",
+     "note": "A takedown in the first seconds, a slam in round 1, and pressure that won him two rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Hokit's first five-rounder",
+     "tag": "cardio",
+     "favoured": "Ciryl Gane",
+     "verdict": "held",
+     "note": "Out of steam from round 4; lost the last two rounds on every card."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Gane",
+     "tag": "overall",
+     "favoured": "Ciryl Gane",
+     "verdict": "held",
+     "note": "Won, narrowly."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Gane",
+     "tag": "outside_rating",
+     "favoured": "Ciryl Gane",
+     "verdict": "held",
+     "note": "Won, narrowly."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Hokit",
+     "tag": "wrestling_edge",
+     "favoured": "Josh Hokit",
+     "verdict": "held",
+     "note": "Two takedowns and a slam; Gane defended the late attempts once Hokit tired."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Gane",
+     "tag": "striking_rating",
+     "favoured": "Ciryl Gane",
+     "verdict": "mixed",
+     "note": "The cleaner striker, but out-landed in rounds 2 and 3."
+    },
+    {
+     "by": "model",
+     "claim": "Reach favours Gane",
+     "tag": "reach",
+     "favoured": "Ciryl Gane",
+     "verdict": "mixed",
+     "note": "The jab worked; the range game didn't hold."
+    }
+   ]
+  },
+  "kayla-harrison-amanda-nunes": {
+   "summary": "Nunes started fast, catching Harrison with both hands each time she reached for the clinch and sprawling on her first shot, before Harrison threw her and finished round 1 in a crucifix. Nunes chose to clinch and grapple in round 2 and was thrown into the same position again; in round 3 she took Harrison down and got her back before Harrison reversed and cut her with an elbow. Both were exhausted in round 4; Harrison caught a kick, tripped Nunes, took her back and choked her at 1:29.",
+   "turning_point": "Round 4: Harrison caught Nunes's kick, tripped her and took her back for the choke within seconds.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ],
+      [
+       2,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ],
+      [
+       3,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ]
+     ]
+    },
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/Ciryl-Gane-edges-Josh-Hokit-Kayla-Harrison-submits-Amanda-Nunes-at-UFC-334-203630",
+     "round_scores": [
+      [
+       1,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ],
+      [
+       2,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ],
+      [
+       3,
+       "10-9 Harrison",
+       "10-9 Harrison",
+       "10-9 Harrison"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/486822/after-ufc-334-win-over-amanda-nunes-kayla-harrison-has-no-one-left-in-the-ufc-to-fight"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "url": "https://www.lowkickmma.com/kayla-harrison-capitalizes-on-amanda-nunes-mistake-to-secure-ufc-334-victory/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Harrison's body lock and top pressure win once Nunes's dangerous first round has passed: submission, R2",
+     "tag": "grappling",
+     "favoured": "Kayla Harrison",
+     "verdict": "held",
+     "note": "Her throws and crucifix won rounds 1 to 3 and the choke came off a caught kick, but in round 4, not 2."
+    },
+    {
+     "by": "read",
+     "claim": "Nunes's layoff",
+     "tag": "inactivity",
+     "favoured": "Kayla Harrison",
+     "verdict": "failed",
+     "note": "No rust on the feet: she hurt Harrison repeatedly in round 1 and again in round 4."
+    },
+    {
+     "by": "read",
+     "claim": "Harrison's neck surgery and layoff",
+     "tag": "inactivity",
+     "favoured": "Amanda Nunes",
+     "verdict": "mixed",
+     "note": "No sign of the neck, but Harrison was badly tired from round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Harrison's grappling",
+     "tag": "grappling",
+     "favoured": "Kayla Harrison",
+     "verdict": "held",
+     "note": "Throws, crucifix and a back take; Nunes only got on top once."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Harrison",
+     "tag": "wear_and_tear",
+     "favoured": "Kayla Harrison",
+     "verdict": "mixed",
+     "note": "Both were spent by round 4; Harrison's grappling, not freshness, won it."
+    },
+    {
+     "by": "model",
+     "claim": "Layoff favours Harrison",
+     "tag": "layoff",
+     "favoured": "Kayla Harrison",
+     "verdict": "failed",
+     "note": "Nunes looked as sharp as ever standing."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Nunes",
+     "tag": "striking_rating",
+     "favoured": "Amanda Nunes",
+     "verdict": "held",
+     "note": "Won every standing exchange; lost the fight by choosing to grapple."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Harrison",
+     "tag": "submission_threat",
+     "favoured": "Kayla Harrison",
+     "verdict": "held",
+     "note": "Rear-naked choke in round 4."
+    }
+   ]
+  },
+  "caio-borralho-yousri-belgaroui": {
+   "summary": "Borralho closed behind one-twos and took the 6-foot-6 kickboxer down inside the first minute, took his back with a body triangle and hunted a neck crank and a guillotine. He did the same in rounds 2 and 3, taking a few hard body kicks and knees in between, and won 30-27 on every card and all three Sherdog scorers' cards.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Borralho",
+       "10-9 Borralho",
+       "10-9 Borralho"
+      ],
+      [
+       2,
+       "10-9 Borralho",
+       "10-9 Borralho",
+       "10-9 Borralho"
+      ],
+      [
+       3,
+       "10-9 Borralho",
+       "10-9 Borralho",
+       "10-9 Borralho"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/caio-borralho/ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-334-results-caio-borralho-043156273.html"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Belgaroui has never faced a grappler like this; Borralho wins by control for three rounds",
+     "tag": "wrestling",
+     "favoured": "Caio Borralho",
+     "verdict": "held",
+     "note": "A takedown in every round and long spells on the back and in side control."
+    },
+    {
+     "by": "read",
+     "claim": "Borralho's wrestling",
+     "tag": "wrestling",
+     "favoured": "Caio Borralho",
+     "verdict": "held",
+     "note": "Took him down in all three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Belgaroui's striking (against)",
+     "tag": "striking",
+     "favoured": "Yousri Belgaroui",
+     "verdict": "mixed",
+     "note": "His body kicks and knees landed in the open, but he spent most of the fight underneath."
+    },
+    {
+     "by": "read",
+     "claim": "Borralho's rib surgery (against)",
+     "tag": "injury",
+     "favoured": "Yousri Belgaroui",
+     "verdict": "failed",
+     "note": "Ate several hard body kicks and knees without slowing."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Borralho",
+     "tag": "outside_rating",
+     "favoured": "Caio Borralho",
+     "verdict": "held",
+     "note": "30-27 x3."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Borralho",
+     "tag": "wrestling_rating",
+     "favoured": "Caio Borralho",
+     "verdict": "held",
+     "note": "Takedowns at will."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Borralho",
+     "tag": "overall",
+     "favoured": "Caio Borralho",
+     "verdict": "held",
+     "note": "30-27 x3."
+    }
+   ]
+  },
+  "luis-gurule-bilal-hasan": {
+   "summary": "Hasan won round 1 with spinning back kicks, head kicks and knees, though Gurule knocked him off balance with an overhand right. Gurule's pressure and a late double-leg took round 2 on two Sherdog cards, and in round 3 he took Hasan down inside the first minute and held him there with short punches and elbows, bleeding from an elbow cut, for the rest of the fight. Gurule won a split decision (28-29, 29-28, 29-28) as the night's biggest underdog.",
+   "turning_point": "Round 3: Gurule's takedown inside the first minute, held for four minutes.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Hasan",
+       "10-9 Hasan",
+       "10-9 Hasan"
+      ],
+      [
+       2,
+       "10-9 Gurule",
+       "10-9 Gurule",
+       "10-9 Hasan"
+      ],
+      [
+       3,
+       "10-9 Gurule",
+       "10-9 Gurule",
+       "10-9 Gurule"
+      ]
+     ]
+    },
+    {
+     "outlet": "Uncrowned",
+     "url": "https://sports.yahoo.com/mma/article/ufc-334-luis-gurule-celebrates-upset-win-over-bilal-hasan-with-ai-callout-chatgpt-dont-know-s-032410806.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-334-results-luis-gurule-030852055.html"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "wrong, close fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Gurule's wrestling slows Hasan early; Hasan's kicks find him once the shots dry up: KO/TKO, R2",
+     "tag": "wrestling",
+     "favoured": "Bilal Hasan",
+     "verdict": "failed",
+     "note": "Gurule's shots never dried up: his takedowns won rounds 2 and 3."
+    },
+    {
+     "by": "read",
+     "claim": "Hasan's form",
+     "tag": "form",
+     "favoured": "Bilal Hasan",
+     "verdict": "mixed",
+     "note": "Dominant on the feet in round 1; no answer off his back."
+    },
+    {
+     "by": "read",
+     "claim": "Hasan's quick turnaround (against)",
+     "tag": "activity",
+     "favoured": "Luis Gurule",
+     "verdict": "untested",
+     "note": "Nothing showed it; he lost on the mat, not from fatigue."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Hasan",
+     "tag": "overall",
+     "favoured": "Bilal Hasan",
+     "verdict": "failed",
+     "note": "Lost a split decision."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Hasan",
+     "tag": "striking_rating",
+     "favoured": "Bilal Hasan",
+     "verdict": "held",
+     "note": "Out-struck Gurule on the feet in every exchange."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Hasan",
+     "tag": "wrestling_rating",
+     "favoured": "Bilal Hasan",
+     "verdict": "failed",
+     "note": "Taken down in rounds 2 and 3 and could not get up."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Hasan",
+     "tag": "wear_and_tear",
+     "favoured": "Bilal Hasan",
+     "verdict": "untested",
+     "note": "No sign either way."
+    },
+    {
+     "by": "model",
+     "claim": "Striking exchange favours Gurule",
+     "tag": "striking_exchange",
+     "favoured": "Luis Gurule",
+     "verdict": "failed",
+     "note": "Lost the standing exchanges; won on the mat."
+    }
+   ]
+  },
+  "stephen-thompson-charles-radtke": {
+   "summary": "Radtke took round 1 with a double-leg and long clinch work against the fence, and took Thompson down again early in round 2, but his output dropped and Thompson finished the round with kicks and three-punch combinations. In round 3 Thompson landed a hook kick, combinations and body kicks against a tiring Radtke, then dropped him with a spinning wheel kick and the referee stopped it at 2:54, ending his career with a $100,000 bonus.",
+   "turning_point": "Late in round 2: Radtke's output dropped after his second takedown and Thompson took over.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Radtke",
+       "10-9 Radtke",
+       "10-9 Radtke"
+      ],
+      [
+       2,
+       "10-9 Thompson",
+       "10-9 Thompson",
+       "10-9 Thompson"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/stephen-thompson/ufc-334-results-stephen-thompson-tkos-charles-radtke-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-334-results-stephen-thompson-tkos-charles-radtke-video"
+    },
+    {
+     "outlet": "Uncrowned",
+     "url": "https://sports.yahoo.com/mma/article/ufc-334-results-stephen-thompson-has-retirement-for-the-ages-ends-career-with-dazzling-spinning-ko-021722946.html"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Thompson is 43, 16 months out and lost the grappling in his three recent losses; Radtke's takedowns and control win: decision",
+     "tag": "wrestling",
+     "favoured": "Charles Radtke",
+     "verdict": "failed",
+     "note": "Radtke's takedowns won round 1, but he faded by the end of round 2 and was knocked out in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Thompson's age and layoff",
+     "tag": "inactivity",
+     "favoured": "Charles Radtke",
+     "verdict": "failed",
+     "note": "Thompson was the fresher man from round 2 on."
+    },
+    {
+     "by": "read",
+     "claim": "Radtke's takedowns",
+     "tag": "wrestling",
+     "favoured": "Charles Radtke",
+     "verdict": "mixed",
+     "note": "Two early takedowns, but Thompson got up quickly each time and stuffed the late ones."
+    },
+    {
+     "by": "read",
+     "claim": "Radtke's chin against strikers (against)",
+     "tag": "durability",
+     "favoured": "Stephen Thompson",
+     "verdict": "held",
+     "note": "Knocked out by a striker for the third time in the UFC."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Radtke",
+     "tag": "wear_and_tear",
+     "favoured": "Charles Radtke",
+     "verdict": "failed",
+     "note": "Radtke faded; the 43-year-old finished strong."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Radtke",
+     "tag": "age_curve",
+     "favoured": "Charles Radtke",
+     "verdict": "failed",
+     "note": "Knocked out by the older man."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Thompson",
+     "tag": "striking_rating",
+     "favoured": "Stephen Thompson",
+     "verdict": "held",
+     "note": "Spinning wheel kick KO."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Thompson",
+     "tag": "outside_rating",
+     "favoured": "Stephen Thompson",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Thompson",
+     "tag": "overall",
+     "favoured": "Stephen Thompson",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "chris-duncan-drew-dober": {
+   "summary": "Duncan kicked Dober at every level, buckled him with a right hook in round 1 and marked up his right eye, then won round 2 with straight rights and kicks. Dober pressed in round 3 behind his left hand and won it on Sherdog's cards, but Duncan took him down late to see it out. Duncan won 30-27, 30-27, 29-28.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Duncan",
+       "10-9 Duncan",
+       "10-9 Duncan"
+      ],
+      [
+       2,
+       "10-9 Duncan",
+       "10-9 Duncan",
+       "10-9 Duncan"
+      ],
+      [
+       3,
+       "10-9 Dober",
+       "10-9 Dober",
+       "10-9 Dober"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Duncan's front-headlock chokes catch Dober in a scramble: submission, R2",
+     "tag": "submission",
+     "favoured": "Chris Duncan",
+     "verdict": "failed",
+     "note": "Won on kicks and right hands; no choke attempts, one late takedown."
+    },
+    {
+     "by": "read",
+     "claim": "Dober's power",
+     "tag": "power",
+     "favoured": "Drew Dober",
+     "verdict": "mixed",
+     "note": "Landed his left hand in round 3, but never hurt Duncan."
+    },
+    {
+     "by": "read",
+     "claim": "Duncan's form",
+     "tag": "form",
+     "favoured": "Chris Duncan",
+     "verdict": "held",
+     "note": "Clear on two rounds and won the decision."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Duncan",
+     "tag": "wear_and_tear",
+     "favoured": "Chris Duncan",
+     "verdict": "mixed",
+     "note": "Duncan slowed in round 3 and Dober won it."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Duncan",
+     "tag": "wrestling_rating",
+     "favoured": "Chris Duncan",
+     "verdict": "mixed",
+     "note": "One late takedown; it was a striking fight."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Duncan",
+     "tag": "wrestling_edge",
+     "favoured": "Chris Duncan",
+     "verdict": "mixed",
+     "note": "Barely used."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Duncan",
+     "tag": "age_curve",
+     "favoured": "Chris Duncan",
+     "verdict": "held",
+     "note": "Faster and busier for two rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Experience favours Dober",
+     "tag": "experience",
+     "favoured": "Drew Dober",
+     "verdict": "failed",
+     "note": "Lost two rounds clearly."
+    }
+   ]
+  },
+  "terrance-mckinney-jim-miller": {
+   "summary": "After a short feeling-out spell, McKinney landed a one-two and an uppercut, Miller answered with hooks and a counter left, and then McKinney dropped him with a straight left and finished him with follow-up shots at 1:53 of round 1. McKinney had missed weight by 4.2 lb and said afterwards he is moving to welterweight.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/14/terrance-mckinney-turns-lights-out-in-msg-in-win-over-jim-miller/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "McKinney wins in R1 or not at all; the model's decision pick doesn't fit him: KO/TKO, R1",
+     "tag": "early_finish",
+     "favoured": "Terrance McKinney",
+     "verdict": "held",
+     "note": "TKO at 1:53 of round 1."
+    },
+    {
+     "by": "read",
+     "claim": "McKinney's 4.2 lb miss and bad cut",
+     "tag": "weight_cut",
+     "favoured": "Jim Miller",
+     "verdict": "untested",
+     "note": "Ended before any fade could show; the weight may have helped his power."
+    },
+    {
+     "by": "read",
+     "claim": "McKinney's fade after round one",
+     "tag": "cardio",
+     "favoured": "Jim Miller",
+     "verdict": "untested",
+     "note": "Never got past round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Miller's submissions in scrambles",
+     "tag": "submission",
+     "favoured": "Jim Miller",
+     "verdict": "untested",
+     "note": "No scramble happened."
+    },
+    {
+     "by": "read",
+     "claim": "McKinney's first-round power (against)",
+     "tag": "power",
+     "favoured": "Terrance McKinney",
+     "verdict": "held",
+     "note": "Dropped and finished him."
+    },
+    {
+     "by": "read",
+     "claim": "Miller's age (against)",
+     "tag": "age",
+     "favoured": "Terrance McKinney",
+     "verdict": "held",
+     "note": "Couldn't match McKinney's speed."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours McKinney",
+     "tag": "wear_and_tear",
+     "favoured": "Terrance McKinney",
+     "verdict": "untested",
+     "note": "Ended in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours McKinney",
+     "tag": "age_curve",
+     "favoured": "Terrance McKinney",
+     "verdict": "held",
+     "note": "Faster and sharper."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours McKinney",
+     "tag": "wrestling_edge",
+     "favoured": "Terrance McKinney",
+     "verdict": "untested",
+     "note": "No grappling."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Miller",
+     "tag": "overall",
+     "favoured": "Jim Miller",
+     "verdict": "failed",
+     "note": "Knocked out in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Miller",
+     "tag": "submission_threat",
+     "favoured": "Jim Miller",
+     "verdict": "untested",
+     "note": "Never on the mat."
+    }
+   ]
+  },
+  "cesar-almeida-donte-johnson": {
+   "summary": "The unbeaten Johnson charged forward with leg kicks, a Superman punch and big right hands, while Almeida circled and found his timing with hooks to the head and body. Almeida floored him with a straight right, let him back up, and dropped him again with a right hook to stop it at 3:20 of round 1: Johnson's first loss.",
+   "turning_point": "The first knockdown: Johnson ran onto Almeida's straight right.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/14/cesar-almeida-brutally-knocks-out-undefeated-donte-johnson/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Almeida is 38 and was knocked out in R1 last time; the bigger, younger man walks him down: KO/TKO, R1",
+     "tag": "durability",
+     "favoured": "Donte Johnson",
+     "verdict": "failed",
+     "note": "Johnson walked him down and ran onto the counter; Almeida knocked him out instead."
+    },
+    {
+     "by": "read",
+     "claim": "Almeida's age and recent KO loss",
+     "tag": "age",
+     "favoured": "Donte Johnson",
+     "verdict": "failed",
+     "note": "Almeida's kickboxing timing beat Johnson's aggression."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Johnson",
+     "tag": "wear_and_tear",
+     "favoured": "Donte Johnson",
+     "verdict": "untested",
+     "note": "Ended in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Johnson",
+     "tag": "age_curve",
+     "favoured": "Donte Johnson",
+     "verdict": "failed",
+     "note": "The 38-year-old won in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Johnson",
+     "tag": "overall",
+     "favoured": "Donte Johnson",
+     "verdict": "failed",
+     "note": "Knocked out."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Johnson",
+     "tag": "wrestling_edge",
+     "favoured": "Donte Johnson",
+     "verdict": "untested",
+     "note": "He never tried to wrestle."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Almeida",
+     "tag": "height",
+     "favoured": "Cesar Almeida",
+     "verdict": "held",
+     "note": "Countered from range as Johnson came in."
+    }
+   ]
+  },
+  "melquizael-costa-jared-gordon": {
+   "summary": "Costa kicked Gordon at every level in round 1 and stung him with a head kick and left hook. Gordon took round 2 with takedowns, surviving a triangle and an armbar from Costa's guard, and kept wrestling in round 3, but Costa won the stand-up between takedowns with uppercuts and body shots and countered with a kneebar at the bell. Costa won 29-28 on every card.",
+   "turning_point": "Round 3: Costa's uppercuts and body work between Gordon's takedowns.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Costa",
+       "10-9 Costa",
+       "10-9 Costa"
+      ],
+      [
+       2,
+       "10-9 Gordon",
+       "10-9 Gordon",
+       "10-9 Gordon"
+      ],
+      [
+       3,
+       "10-9 Costa",
+       "10-9 Costa",
+       "10-9 Costa"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Costa's body kicks break the 38-year-old Gordon late: KO/TKO, R3",
+     "tag": "body_work",
+     "favoured": "Melquizael Costa",
+     "verdict": "mixed",
+     "note": "The kicks won round 1 and his body shots helped win round 3, but Gordon was never close to being stopped."
+    },
+    {
+     "by": "read",
+     "claim": "Gordon's form",
+     "tag": "form",
+     "favoured": "Melquizael Costa",
+     "verdict": "mixed",
+     "note": "Gordon won round 2 and made round 3 close."
+    },
+    {
+     "by": "read",
+     "claim": "Costa's move up in weight",
+     "tag": "weight_class",
+     "favoured": "Jared Gordon",
+     "verdict": "mixed",
+     "note": "Taken down repeatedly by a lightweight, but never controlled for long."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Costa",
+     "tag": "wear_and_tear",
+     "favoured": "Melquizael Costa",
+     "verdict": "held",
+     "note": "Stronger in the last two minutes."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Costa",
+     "tag": "submission_threat",
+     "favoured": "Melquizael Costa",
+     "verdict": "mixed",
+     "note": "Triangle, armbar and kneebar attempts; none finished."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Costa",
+     "tag": "outside_rating",
+     "favoured": "Melquizael Costa",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Age favours Costa",
+     "tag": "age_curve",
+     "favoured": "Melquizael Costa",
+     "verdict": "held",
+     "note": "Won."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Costa",
+     "tag": "overall",
+     "favoured": "Melquizael Costa",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "beatriz-mesquita-macy-chiasson": {
+   "summary": "Mesquita walked down the much taller Chiasson, got behind her and took her down, then passed to mount, took the back, landed a heavy elbow and punches, and finished with a rear-naked choke inside a body triangle at 3:23 of round 1. Mesquita is now 9-0.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Chiasson's height keeps R1 on the feet; Mesquita gets the back in R2: submission, R2",
+     "tag": "grappling",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "mixed",
+     "note": "Right about the grappling; wrong about the round: done in round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Mesquita's grappling",
+     "tag": "grappling",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "held",
+     "note": "Takedown, mount, back, choke."
+    },
+    {
+     "by": "read",
+     "claim": "Chiasson's size (against)",
+     "tag": "size",
+     "favoured": "Macy Chiasson",
+     "verdict": "failed",
+     "note": "The reach made no difference."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Mesquita",
+     "tag": "wrestling_rating",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "held",
+     "note": "Took her down at will."
+    },
+    {
+     "by": "model",
+     "claim": "Height favours Chiasson",
+     "tag": "height",
+     "favoured": "Macy Chiasson",
+     "verdict": "failed",
+     "note": "No effect."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Mesquita",
+     "tag": "overall",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "held",
+     "note": "Won in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Mesquita",
+     "tag": "wear_and_tear",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "untested",
+     "note": "Ended in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat favours Mesquita",
+     "tag": "submission_threat",
+     "favoured": "Beatriz Mesquita",
+     "verdict": "held",
+     "note": "Rear-naked choke."
+    }
+   ]
+  },
+  "juan-diaz-heili-alateng": {
+   "summary": "Diaz controlled all 15 minutes with his jab, one-twos and body work, mixing in knees and elbows from the clinch and piling damage on Heili's face. Heili had his only moment in the last minute, a right uppercut that staggered Diaz. Diaz won 30-27 on every card and all three Sherdog scorers' cards.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Diaz",
+       "10-9 Diaz",
+       "10-9 Diaz"
+      ],
+      [
+       2,
+       "10-9 Diaz",
+       "10-9 Diaz",
+       "10-9 Diaz"
+      ],
+      [
+       3,
+       "10-9 Diaz",
+       "10-9 Diaz",
+       "10-9 Diaz"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Heili on eight days' notice; he is durable, so Diaz wins on the cards",
+     "tag": "short_notice",
+     "favoured": "Juan Diaz",
+     "verdict": "held",
+     "note": "Diaz won every round; Heili was never in danger of being stopped."
+    },
+    {
+     "by": "read",
+     "claim": "Heili's short notice",
+     "tag": "short_notice",
+     "favoured": "Juan Diaz",
+     "verdict": "held",
+     "note": "A step behind on the feet for three rounds."
+    },
+    {
+     "by": "read",
+     "claim": "Heili's durability (against)",
+     "tag": "durability",
+     "favoured": "Heili Alateng",
+     "verdict": "held",
+     "note": "Took a lot and went the distance."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body favours Diaz",
+     "tag": "wear_and_tear",
+     "favoured": "Juan Diaz",
+     "verdict": "held",
+     "note": "Busier in round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating favours Diaz",
+     "tag": "overall",
+     "favoured": "Juan Diaz",
+     "verdict": "held",
+     "note": "30-27 x3."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Diaz",
+     "tag": "wrestling_edge",
+     "favoured": "Juan Diaz",
+     "verdict": "untested",
+     "note": "A striking fight."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating favours Diaz",
+     "tag": "wrestling_rating",
+     "favoured": "Juan Diaz",
+     "verdict": "mixed",
+     "note": "Defended Heili's one takedown attempt; never shot himself."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating favours Diaz",
+     "tag": "outside_rating",
+     "favoured": "Juan Diaz",
+     "verdict": "held",
+     "note": "Won."
+    }
+   ]
+  },
+  "evan-elder-samuel-sanches": {
+   "summary": "Elder staggered Sanches with a left hook in the opening exchange, took him down, and dropped him with a right hand at the end of round 1. Sanches put Elder down with a straight right in round 2, but Elder answered and took him down again. In round 3 Elder took him down three more times, Sanches lost a point for grabbing the fence, and Elder won 30-26 on every card.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625",
+     "round_scores": [
+      [
+       1,
+       "10-9 Elder",
+       "10-9 Elder",
+       "10-9 Elder"
+      ],
+      [
+       2,
+       "10-9 Elder",
+       "10-9 Elder",
+       "10-9 Elder"
+      ],
+      [
+       3,
+       "10-8 Elder",
+       "10-8 Elder",
+       "10-8 Elder"
+      ]
+     ]
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+    }
+   ],
+   "written": "2026-11-15",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Close; the younger, harder-hitting Sanches against Elder after 19 months out; Elder isn't stopped, so a decision",
+     "tag": "inactivity",
+     "favoured": "Samuel Sanches",
+     "verdict": "failed",
+     "note": "Right that it went the distance; wrong winner. Elder's wrestling decided it."
+    },
+    {
+     "by": "read",
+     "claim": "Elder's layoff",
+     "tag": "inactivity",
+     "favoured": "Samuel Sanches",
+     "verdict": "failed",
+     "note": "No rust: Elder won every round."
+    },
+    {
+     "by": "read",
+     "claim": "Sanches's debut",
+     "tag": "debut",
+     "favoured": "Evan Elder",
+     "verdict": "held",
+     "note": "Looked unsure against the takedowns."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating favours Sanches",
+     "tag": "striking_rating",
+     "favoured": "Samuel Sanches",
+     "verdict": "mixed",
+     "note": "Dropped Elder once, but was dropped himself in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin favours Sanches",
+     "tag": "power_vs_chin",
+     "favoured": "Samuel Sanches",
+     "verdict": "mixed",
+     "note": "Put Elder down in round 2; Elder got up and won the round."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge favours Sanches",
+     "tag": "wrestling_edge",
+     "favoured": "Samuel Sanches",
+     "verdict": "failed",
+     "note": "Taken down five times."
+    }
+   ]
+  }
+ },
  "coverage": {
   "ciryl-gane-josh-hokit": {
    "a": "Ciryl Gane",
@@ -17,9 +1234,14 @@
      "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "MMA Mania",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/520939/ufc-334-results-gane-vs-hokit"
+     "url": "https://www.mmamania.com/ufc-results/486419/ufc-334-results-sooo-about-last-night-gane-vs-hokit"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/486810/run-it-back-josh-hokit-demands-immediate-rematch-after-very-close-ufc-334-title-loss"
     }
    ],
    "round_scores": [
@@ -69,9 +1291,19 @@
      "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "Sherdog",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/520744/ufc-334-paths-to-victory-kayla-harrison-vs-amanda-nunes"
+     "url": "https://www.sherdog.com/news/news/Ciryl-Gane-edges-Josh-Hokit-Kayla-Harrison-submits-Amanda-Nunes-at-UFC-334-203630"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/486822/after-ufc-334-win-over-amanda-nunes-kayla-harrison-has-no-one-left-in-the-ufc-to-fight"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/kayla-harrison-capitalizes-on-amanda-nunes-mistake-to-secure-ufc-334-victory/"
     }
    ],
    "round_scores": [
@@ -111,12 +1343,12 @@
     {
      "outlet": "BJPenn.com",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/caio-borralho/ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights/"
+     "url": "https://www.bjpenn.com/mma-news/caio-borralho/ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-334-results-caio-borralho-defeats-yousri-belgaroui-highlights"
     },
     {
-     "outlet": "BJPenn.com",
+     "outlet": "MMA Junkie",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+     "url": "https://sports.yahoo.com/articles/ufc-334-results-caio-borralho-043156273.html"
     }
    ],
    "round_scores": [
@@ -154,9 +1386,14 @@
      "url": "https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625"
     },
     {
-     "outlet": "BJPenn.com",
+     "outlet": "Uncrowned",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+     "url": "https://sports.yahoo.com/mma/article/ufc-334-luis-gurule-celebrates-upset-win-over-bilal-hasan-with-ai-callout-chatgpt-dont-know-s-032410806.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-334-results-luis-gurule-030852055.html"
     }
    ],
    "round_scores": [
@@ -196,12 +1433,12 @@
     {
      "outlet": "BJPenn.com",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/stephen-thompson/ufc-334-results-stephen-thompson-tkos-charles-radtke-video/"
+     "url": "https://www.bjpenn.com/mma-news/stephen-thompson/ufc-334-results-stephen-thompson-tkos-charles-radtke-video/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-334-results-stephen-thompson-tkos-charles-radtke-video"
     },
     {
-     "outlet": "BJPenn.com",
+     "outlet": "Uncrowned",
      "kind": "recap",
-     "url": "https://www.bjpenn.com/mma-news/ufc-334/ufc-334-gane-vs-hokit-live-results-and-highlights/"
+     "url": "https://sports.yahoo.com/mma/article/ufc-334-results-stephen-thompson-has-retirement-for-the-ages-ends-career-with-dazzling-spinning-ko-021722946.html"
     }
    ],
    "round_scores": [

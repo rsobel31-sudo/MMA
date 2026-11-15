@@ -486,6 +486,17 @@
      "result": "",
      "rounds": 3,
      "main_event": false
+    },
+    {
+     "order": 11,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Kyler Phillips",
+     "b": "Ethyn Ewing",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
