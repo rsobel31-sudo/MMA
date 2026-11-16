@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15",
+ "fetched": "2026-11-16",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -570,6 +570,28 @@
      "result": "",
      "rounds": 3,
      "main_event": false
+    },
+    {
+     "order": 5,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Toshiomi Kazama",
+     "b": "John Garza",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 6,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Carlos Diego Ferreira",
+     "b": "MarQuel Mederos",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
     }
    ]
   },
@@ -670,6 +692,28 @@
      "weight_class": "Heavyweight",
      "a": "Gable Steveson",
      "b": "Terrance Chatman",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 4,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Michael Johnson",
+     "b": "Lance Gibson Jr.",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 5,
+     "segment": "Announced",
+     "weight_class": "Welterweight",
+     "a": "Cameron Nelson",
+     "b": "Sean Clancy Jr.",
      "title": false,
      "result": "",
      "rounds": 3,
