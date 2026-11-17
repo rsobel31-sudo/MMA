@@ -142,5 +142,17 @@
    "Wikipedia"
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_334"
+ },
+ "https://www.sherdog.com/fighter/Sean-Clancy-Jr-322787": {
+  "date": "2027-01-30",
+  "event": "UFC 336 - Prates vs. Morales",
+  "name": "Sean Clancy",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-336-Prates-vs-Morales-115075",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_336"
  }
 }

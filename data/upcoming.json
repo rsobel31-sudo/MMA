@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16",
+ "fetched": "2026-11-17",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -399,6 +399,20 @@
     {
      "order": 3,
      "segment": "Fight card",
+     "weight_class": "Bantamweight",
+     "a": "Kyler Phillips",
+     "b": "Ethyn Ewing",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 4,
+     "segment": "Fight card",
      "weight_class": "Light Heavyweight",
      "a": "Quentin Pasley",
      "b": "Junior Tafa",
@@ -411,7 +425,21 @@
      "main_event": false
     },
     {
-     "order": 4,
+     "order": 5,
+     "segment": "Fight card",
+     "weight_class": "Middleweight",
+     "a": "Damian Pinas",
+     "b": "Baisangur Susurkaev",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 6,
      "segment": "Announced",
      "weight_class": "Lightweight",
      "a": "Chase Hooper",
@@ -422,7 +450,7 @@
      "main_event": false
     },
     {
-     "order": 5,
+     "order": 7,
      "segment": "Announced",
      "weight_class": "Welterweight",
      "a": "Ronald Humphrey",
@@ -433,7 +461,7 @@
      "main_event": false
     },
     {
-     "order": 6,
+     "order": 8,
      "segment": "Announced",
      "weight_class": "Flyweight",
      "a": "Roque Concei\u00e7\u00e3o Moreira Jr.",
@@ -444,7 +472,7 @@
      "main_event": false
     },
     {
-     "order": 7,
+     "order": 9,
      "segment": "Announced",
      "weight_class": "Women's Strawweight",
      "a": "Angela Hill",
@@ -455,18 +483,7 @@
      "main_event": false
     },
     {
-     "order": 8,
-     "segment": "Announced",
-     "weight_class": "Middleweight",
-     "a": "Damian Pinas",
-     "b": "Baisangur Susurkaev",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 9,
+     "order": 10,
      "segment": "Announced",
      "weight_class": "Women's Bantamweight",
      "a": "Jacqueline Cavalcanti",
@@ -477,22 +494,11 @@
      "main_event": false
     },
     {
-     "order": 10,
+     "order": 11,
      "segment": "Announced",
      "weight_class": "Women's Flyweight",
      "a": "Carli Judice",
      "b": "TBD",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 11,
-     "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Kyler Phillips",
-     "b": "Ethyn Ewing",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -677,43 +683,52 @@
     },
     {
      "order": 2,
-     "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Serhiy Sidey",
-     "b": "Louis Lee Scott",
+     "segment": "Fight card",
+     "weight_class": "Lightweight",
+     "a": "Lance Gibson Jr.",
+     "b": "Michael Johnson",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 3,
-     "segment": "Announced",
-     "weight_class": "Heavyweight",
-     "a": "Gable Steveson",
-     "b": "Terrance Chatman",
+     "segment": "Fight card",
+     "weight_class": "Bantamweight",
+     "a": "Serhiy Sidey",
+     "b": "Louis Lee Scott",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 4,
-     "segment": "Announced",
-     "weight_class": "Lightweight",
-     "a": "Michael Johnson",
-     "b": "Lance Gibson Jr.",
+     "segment": "Fight card",
+     "weight_class": "Welterweight",
+     "a": "Cameron Nelson",
+     "b": "Sean Clancy Jr.",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 5,
      "segment": "Announced",
-     "weight_class": "Welterweight",
-     "a": "Cameron Nelson",
-     "b": "Sean Clancy Jr.",
+     "weight_class": "Heavyweight",
+     "a": "Gable Steveson",
+     "b": "Terrance Chatman",
      "title": false,
      "result": "",
      "rounds": 3,
