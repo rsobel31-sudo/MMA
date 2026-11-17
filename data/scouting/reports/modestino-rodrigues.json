@@ -1,0 +1,41 @@
+{
+ "name": "Modestino Rodrigues",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian middleweight (8-1, age 23) who knocked out Brandon Holmes in 15 seconds on the Contender Series in September. This is his UFC debut.",
+ "how_they_fight": {
+  "Striking": "All eight wins by knockout, six in R1.",
+  "Grappling": "Unknown.",
+  "Defense": "Knocked out once in R1 (2024).",
+  "Pace & cardio": "Has never needed more than two rounds.",
+  "Fight IQ": "Very thin record."
+ },
+ "patterns": [
+  "Finishes in R1"
+ ],
+ "concerns": [
+  "Knocked out in R1 once himself",
+  "UFC debut"
+ ],
+ "keys_to_beat": [
+  "Survive his first minutes; take him to R2-R3"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "thin"
+}

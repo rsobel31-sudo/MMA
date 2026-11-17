@@ -1,0 +1,54 @@
+{
+ "name": "Akbar Abdullaev",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten Kyrgyz lightweight (14-0, age 29), formerly of ONE Championship, who knocked out Ednilson Barros Santos in 19 seconds on the Contender Series in September; Dana White called him one of the greatest talents in the show's history. This is his UFC debut.",
+ "how_they_fight": {
+  "Striking": "A knockout puncher: thirteen of 14 wins by knockout in our data, nine in R1.",
+  "Grappling": "One submission win.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Has finished in R3 twice and in R5 once (ONE), so he can go long.",
+  "Fight IQ": "Calm power puncher."
+ },
+ "patterns": [
+  "One-punch power; most finishes in R1"
+ ],
+ "concerns": [
+  "UFC debut",
+  "Has not faced a fighter of Santos's level"
+ ],
+ "keys_to_beat": [
+  "Wrestle him and take him late"
+ ],
+ "news": [
+  {
+   "date": "2026-11-03",
+   "text": "UFC debut booked against Mairon Santos (first reported by Ag.Fight).",
+   "source": "https://www.bjpenn.com/mma-news/akbar-abdullaev/report-akbar-abdullaev-ufc-debut-booked-greatest-talent-dwcs-history/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "REPORT: Akbar Abdullaev's UFC debut booked after Dana White called him 'greatest talent' in DWCS history",
+   "url": "https://www.bjpenn.com/mma-news/akbar-abdullaev/report-akbar-abdullaev-ufc-debut-booked-greatest-talent-dwcs-history/",
+   "date": "2026-11-03"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

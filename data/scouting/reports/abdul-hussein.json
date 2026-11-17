@@ -1,0 +1,40 @@
+{
+ "name": "Abdul Hussein",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Finnish bantamweight (16-2, age 29) who submitted Cody Gibson in R3 in his UFC debut in July after a long UAE Warriors run.",
+ "how_they_fight": {
+  "Striking": "Five knockouts in our data.",
+  "Grappling": "A submission specialist: ten submissions, eight in R1.",
+  "Defense": "Submitted once (R1); one decision loss.",
+  "Pace & cardio": "Found the finish in R3 in his debut.",
+  "Fight IQ": "Patient grappler."
+ },
+ "patterns": [
+  "Submissions, mostly in R1"
+ ],
+ "concerns": [
+  "Second UFC fight"
+ ],
+ "keys_to_beat": [
+  "Stay off the mat"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "UFC Reportedly Books Top Prospects for Massive Fight on Israel Adesanya Card",
+   "url": "https://sports.yahoo.com/articles/ufc-reportedly-books-top-prospects-112638474.html",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

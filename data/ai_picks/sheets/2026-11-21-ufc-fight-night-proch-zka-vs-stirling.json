@@ -4,31 +4,22 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch\u00e1zka_vs._Stirling",
  "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
  "book": "FanDuel",
- "fetched_at": "2026-11-12T18:15:07+00:00",
+ "fetched_at": "2026-11-17T17:07:42+00:00",
  "event_starts": "2026-11-21T13:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-doha-4440"
  ],
  "unpriced": [
-  "Dan Hooker vs Brian Ortega",
-  "Kyoji Horiguchi vs Asu Almabayev",
-  "Jared Cannonier vs Ikram Aliskerov",
-  "Aleksandre Topuria vs Santiago Luna",
-  "Shamil Gaziev vs Tallison Teixeira",
-  "Amir Albazi vs Alessandro Costa",
-  "Jake Matthews vs Tahir Abdullayev",
-  "Manoel Sousa vs TBD",
-  "Nikolas Motta vs Dom Mar Fan",
-  "Diyar Nurgozhay vs Alik Lorenz"
+  "Manoel Sousa vs TBD"
  ],
  "blend_weights": {
-  "model": 0.2311055622151546,
-  "market": 0.9999669760580274
+  "model": 0.22804090873217323,
+  "market": 1.0122423952886093
  },
  "dec_cal": [
-  0.432659,
-  0.679986,
-  -0.35853
+  0.416696,
+  0.678292,
+  -0.334091
  ],
  "prop_shrink": 0.5,
  "bouts": [
@@ -42,14 +33,14 @@
    ],
    "rounds": 5,
    "title": false,
-   "p_model_a": 0.3316,
-   "p_stats_a": 0.3316,
+   "p_model_a": 0.3319,
+   "p_stats_a": 0.3319,
    "read_a": 0.0,
    "ml": {
-    "a": null,
-    "b": null
+    "a": 130,
+    "b": -166
    },
-   "markets": 0
+   "markets": 2
   },
   {
    "bout": "Aljamain Sterling vs Kevin Vallejos",
@@ -61,14 +52,185 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4398,
-   "p_stats_a": 0.4398,
+   "p_model_a": 0.4434,
+   "p_stats_a": 0.4434,
    "read_a": 0.0,
    "ml": {
-    "a": null,
-    "b": null
+    "a": 108,
+    "b": -138
    },
-   "markets": 0
+   "markets": 2
+  },
+  {
+   "bout": "Brian Ortega vs Dan Hooker",
+   "a": "Brian Ortega",
+   "b": "Dan Hooker",
+   "dataset": [
+    "Brian Ortega",
+    "Dan Hooker"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6233,
+   "p_stats_a": 0.6233,
+   "read_a": 0.0,
+   "ml": {
+    "a": 146,
+    "b": -188
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "a": "Asu Almabayev",
+   "b": "Kyoji Horiguchi",
+   "dataset": [
+    "Asu Almabayev",
+    "Kyoji Horiguchi"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.49,
+   "p_stats_a": 0.49,
+   "read_a": 0.0,
+   "ml": {
+    "a": 154,
+    "b": -200
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
+   "dataset": [
+    "Ikram Aliskerov",
+    "Jared Cannonier"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.8378,
+   "p_stats_a": 0.8378,
+   "read_a": 0.0,
+   "ml": {
+    "a": -400,
+    "b": 285
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "a": "Aleksandre Topuria",
+   "b": "Santiago Luna",
+   "dataset": [
+    "Aleksandre Topuria",
+    "Santiago Luna"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.4096,
+   "p_stats_a": 0.4096,
+   "read_a": 0.0,
+   "ml": {
+    "a": -310,
+    "b": 230
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "dataset": [
+    "Shamil Gaziev",
+    "Tallison Teixeira"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.3856,
+   "p_stats_a": 0.3856,
+   "read_a": 0.0,
+   "ml": {
+    "a": -205,
+    "b": 158
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "a": "Alessandro Costa",
+   "b": "Amir Albazi",
+   "dataset": [
+    "Alessandro Costa",
+    "Amir Albazi"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.4351,
+   "p_stats_a": 0.4351,
+   "read_a": 0.0,
+   "ml": {
+    "a": -106,
+    "b": -120
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "a": "Jake Matthews",
+   "b": "Tahir Abdullayev",
+   "dataset": [
+    "Jake Matthews",
+    "Tahir Abdullayev"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.4873,
+   "p_stats_a": 0.4873,
+   "read_a": 0.0,
+   "ml": {
+    "a": -265,
+    "b": 200
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
+   "dataset": [
+    "Dom Mar Fan",
+    "Nikolas Motta"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.6717,
+   "p_stats_a": 0.6717,
+   "read_a": 0.0,
+   "ml": {
+    "a": -160,
+    "b": 124
+   },
+   "markets": 2
+  },
+  {
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "a": "Alik Lorenz",
+   "b": "Diyar Nurgozhay",
+   "dataset": [
+    "Alik Lorenz",
+    "Diyar Nurgozhay"
+   ],
+   "rounds": 3,
+   "title": false,
+   "p_model_a": 0.2626,
+   "p_stats_a": 0.2626,
+   "read_a": 0.0,
+   "ml": {
+    "a": 200,
+    "b": -265
+   },
+   "markets": 2
   }
  ],
  "skipped": [],
@@ -88,23 +250,23 @@
    "title": false
   },
   {
-   "bout": "Dan Hooker vs Brian Ortega",
-   "a": "Dan Hooker",
-   "b": "Brian Ortega",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "a": "Brian Ortega",
+   "b": "Dan Hooker",
    "rounds": 3,
    "title": false
   },
   {
-   "bout": "Kyoji Horiguchi vs Asu Almabayev",
-   "a": "Kyoji Horiguchi",
-   "b": "Asu Almabayev",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "a": "Asu Almabayev",
+   "b": "Kyoji Horiguchi",
    "rounds": 3,
    "title": false
   },
   {
-   "bout": "Jared Cannonier vs Ikram Aliskerov",
-   "a": "Jared Cannonier",
-   "b": "Ikram Aliskerov",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
    "rounds": 3,
    "title": false
   },
@@ -123,9 +285,9 @@
    "title": false
   },
   {
-   "bout": "Amir Albazi vs Alessandro Costa",
-   "a": "Amir Albazi",
-   "b": "Alessandro Costa",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "a": "Alessandro Costa",
+   "b": "Amir Albazi",
    "rounds": 3,
    "title": false
   },
@@ -144,19 +306,394 @@
    "title": false
   },
   {
-   "bout": "Nikolas Motta vs Dom Mar Fan",
-   "a": "Nikolas Motta",
-   "b": "Dom Mar Fan",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
    "rounds": 3,
    "title": false
   },
   {
-   "bout": "Diyar Nurgozhay vs Alik Lorenz",
-   "a": "Diyar Nurgozhay",
-   "b": "Alik Lorenz",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "a": "Alik Lorenz",
+   "b": "Diyar Nurgozhay",
    "rounds": 3,
    "title": false
   }
  ],
- "markets": []
+ "markets": [
+  {
+   "id": "45735:ml:a",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ikram Aliskerov to win",
+   "odds": -400,
+   "decimal": 1.25,
+   "p_model": 0.8195,
+   "p_fanduel": 0.7549,
+   "p": 0.8195,
+   "edge": 0.0646,
+   "ev": 0.0244,
+   "kelly": 0.0977
+  },
+  {
+   "id": "45760:ml:b",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Diyar Nurgozhay to win",
+   "odds": -265,
+   "decimal": 1.3774,
+   "p_model": 0.7356,
+   "p_fanduel": 0.6853,
+   "p": 0.7356,
+   "edge": 0.0503,
+   "ev": 0.0132,
+   "kelly": 0.0351
+  },
+  {
+   "id": "45733:ml:a",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Brian Ortega to win",
+   "odds": 146,
+   "decimal": 2.46,
+   "p_model": 0.4099,
+   "p_fanduel": 0.3838,
+   "p": 0.4099,
+   "edge": 0.0261,
+   "ev": 0.0082,
+   "kelly": 0.0056
+  },
+  {
+   "id": "45740:ml:a",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Dom Mar Fan to win",
+   "odds": -160,
+   "decimal": 1.625,
+   "p_model": 0.6197,
+   "p_fanduel": 0.5796,
+   "p": 0.6197,
+   "edge": 0.0401,
+   "ev": 0.007,
+   "kelly": 0.0111
+  },
+  {
+   "id": "45574:ml:b",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Navajo Stirling to win",
+   "odds": -166,
+   "decimal": 1.6024,
+   "p_model": 0.6284,
+   "p_fanduel": 0.5894,
+   "p": 0.6284,
+   "edge": 0.039,
+   "ev": 0.0069,
+   "kelly": 0.0115
+  },
+  {
+   "id": "45737:ml:b",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tallison Teixeira to win",
+   "odds": 158,
+   "decimal": 2.58,
+   "p_model": 0.3891,
+   "p_fanduel": 0.3658,
+   "p": 0.3891,
+   "edge": 0.0234,
+   "ev": 0.0039,
+   "kelly": 0.0025
+  },
+  {
+   "id": "45736:ml:b",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Santiago Luna to win",
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.3011,
+   "p_fanduel": 0.2861,
+   "p": 0.3011,
+   "edge": 0.015,
+   "ev": -0.0064,
+   "kelly": 0.0
+  },
+  {
+   "id": "45738:ml:b",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Amir Albazi to win",
+   "odds": -120,
+   "decimal": 1.8333,
+   "p_model": 0.5296,
+   "p_fanduel": 0.5146,
+   "p": 0.5296,
+   "edge": 0.015,
+   "ev": -0.0291,
+   "kelly": 0.0
+  },
+  {
+   "id": "45676:ml:b",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kevin Vallejos to win",
+   "odds": -138,
+   "decimal": 1.7246,
+   "p_model": 0.5601,
+   "p_fanduel": 0.5467,
+   "p": 0.5601,
+   "edge": 0.0134,
+   "ev": -0.0341,
+   "kelly": 0.0
+  },
+  {
+   "id": "45734:ml:b",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kyoji Horiguchi to win",
+   "odds": -200,
+   "decimal": 1.5,
+   "p_model": 0.6323,
+   "p_fanduel": 0.6287,
+   "p": 0.6323,
+   "edge": 0.0036,
+   "ev": -0.0515,
+   "kelly": 0.0
+  },
+  {
+   "id": "45739:ml:b",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tahir Abdullayev to win",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.3151,
+   "p_fanduel": 0.3147,
+   "p": 0.3151,
+   "edge": 0.0004,
+   "ev": -0.0547,
+   "kelly": 0.0
+  },
+  {
+   "id": "45739:ml:a",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jake Matthews to win",
+   "odds": -265,
+   "decimal": 1.3774,
+   "p_model": 0.6849,
+   "p_fanduel": 0.6853,
+   "p": 0.6849,
+   "edge": -0.0004,
+   "ev": -0.0566,
+   "kelly": 0.0
+  },
+  {
+   "id": "45734:ml:a",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Asu Almabayev to win",
+   "odds": 154,
+   "decimal": 2.54,
+   "p_model": 0.3677,
+   "p_fanduel": 0.3713,
+   "p": 0.3677,
+   "edge": -0.0036,
+   "ev": -0.0661,
+   "kelly": 0.0
+  },
+  {
+   "id": "45736:ml:a",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aleksandre Topuria to win",
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.6989,
+   "p_fanduel": 0.7139,
+   "p": 0.6989,
+   "edge": -0.015,
+   "ev": -0.0756,
+   "kelly": 0.0
+  },
+  {
+   "id": "45676:ml:a",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aljamain Sterling to win",
+   "odds": 108,
+   "decimal": 2.08,
+   "p_model": 0.4399,
+   "p_fanduel": 0.4533,
+   "p": 0.4399,
+   "edge": -0.0134,
+   "ev": -0.085,
+   "kelly": 0.0
+  },
+  {
+   "id": "45738:ml:a",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alessandro Costa to win",
+   "odds": -106,
+   "decimal": 1.9434,
+   "p_model": 0.4704,
+   "p_fanduel": 0.4854,
+   "p": 0.4704,
+   "edge": -0.015,
+   "ev": -0.0858,
+   "kelly": 0.0
+  },
+  {
+   "id": "45737:ml:a",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Shamil Gaziev to win",
+   "odds": -205,
+   "decimal": 1.4878,
+   "p_model": 0.6109,
+   "p_fanduel": 0.6342,
+   "p": 0.6109,
+   "edge": -0.0234,
+   "ev": -0.0911,
+   "kelly": 0.0
+  },
+  {
+   "id": "45733:ml:b",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Dan Hooker to win",
+   "odds": -188,
+   "decimal": 1.5319,
+   "p_model": 0.5901,
+   "p_fanduel": 0.6162,
+   "p": 0.5901,
+   "edge": -0.0261,
+   "ev": -0.0959,
+   "kelly": 0.0
+  },
+  {
+   "id": "45574:ml:a",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jiri Prochazka to win",
+   "odds": 130,
+   "decimal": 2.3,
+   "p_model": 0.3716,
+   "p_fanduel": 0.4106,
+   "p": 0.3716,
+   "edge": -0.039,
+   "ev": -0.1453,
+   "kelly": 0.0
+  },
+  {
+   "id": "45740:ml:b",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nikolas Motta to win",
+   "odds": 124,
+   "decimal": 2.24,
+   "p_model": 0.3803,
+   "p_fanduel": 0.4204,
+   "p": 0.3803,
+   "edge": -0.0401,
+   "ev": -0.1481,
+   "kelly": 0.0
+  },
+  {
+   "id": "45760:ml:a",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alik Lorenz to win",
+   "odds": 200,
+   "decimal": 3.0,
+   "p_model": 0.2644,
+   "p_fanduel": 0.3147,
+   "p": 0.2644,
+   "edge": -0.0503,
+   "ev": -0.2069,
+   "kelly": 0.0
+  },
+  {
+   "id": "45735:ml:b",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jared Cannonier to win",
+   "odds": 285,
+   "decimal": 3.85,
+   "p_model": 0.1805,
+   "p_fanduel": 0.2451,
+   "p": 0.1805,
+   "edge": -0.0646,
+   "ev": -0.3052,
+   "kelly": 0.0
+  }
+ ]
 }

@@ -1,0 +1,76 @@
+{
+ "name": "Sharabutdin Magomedov",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "'Shara Bullet' (17-1, age 32), a Dagestani middleweight from GOR MMA known for spinning attacks and flashy striking. He is 6-1 in the UFC; his only loss was a decision to Michael Page in February 2025. He has since won decisions over Marc-Andre Barriault and Michel Pereira. This is his first fight against a former champion.",
+ "how_they_fight": {
+  "Striking": "A kickboxer with spinning back kicks and fists, knees and a lot of feints. Twelve of his 17 wins are knockouts: seven in R1, three in R2 and two in R3 in our data.",
+  "Grappling": "Rarely wrestles (about 0.2 takedowns per 15 minutes in our data) and has never been submitted; he keeps fights standing.",
+  "Defense": "Never stopped. Page out-pointed him at range in his only loss.",
+  "Pace & cardio": "His last three wins all went the distance (Oleksiejczuk, Barriault, Pereira). He has never fought five rounds.",
+  "Fight IQ": "Patient when he can't find the finish; has struggled against a long, elusive counter-striker (Page)."
+ },
+ "patterns": [
+  "Spinning kicks and fists, knees; most knockouts come early",
+  "Goes the distance against durable opponents (three of his last four)"
+ ],
+ "concerns": [
+  "Struggled against Michael Page's length and movement, a style Adesanya shares",
+  "First five-round fight",
+  "Says he once put off an eye doctor visit before a rematch (Sherdog)"
+ ],
+ "keys_to_beat": [
+  "Stay long and make him reach; counter his entries",
+  "Take him into the later rounds"
+ ],
+ "news": [
+  {
+   "date": "2026-11-16",
+   "text": "Says he rejected 100 million rubles to throw his 2024 fight with Michal Oleksiejczuk.",
+   "source": "https://www.sherdog.com/news/news/Shara-Bullet-says-he-rejected-100-million-rubles-to-throw-UFC-fight-203652"
+  },
+  {
+   "date": "2026-11-09",
+   "text": "Money has come in on him: from about +170 to +130 (BetOnline).",
+   "source": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Israel Adesanya vs. Shara Bullet Headlines UFC Saudi Arabia, Ian Garry vs. Yaroslav Amosov Co-Main",
+   "url": "https://cagesidepress.com/2026/11/07/israel-adesanya-vs-shara-bullet-headlines-ufc-saudi-arabia-ian-garry-vs-yaroslav-amosov-co-main/",
+   "date": "2026-11-07"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC Saudi Arabia odds: Israel Adesanya's odds take a major hit",
+   "url": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550",
+   "date": "2026-11-09"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Shara Bullet says he rejected 100 million rubles to throw UFC fight",
+   "url": "https://www.sherdog.com/news/news/Shara-Bullet-says-he-rejected-100-million-rubles-to-throw-UFC-fight-203652",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Shara Bullet recalls putting off an eye doctor visit before a rematch",
+   "url": "https://www.sherdog.com/news/news/Shara-Bullet-recalls-putting-off-an-eye-doctor-visit-before-a-rematch-203646",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

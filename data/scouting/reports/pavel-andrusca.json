@@ -1,0 +1,46 @@
+{
+ "name": "Pavel Andrusca",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten Moldovan (9-0, age 24) who beat Nathaniel Wood by decision on short notice in his UFC debut in September, up at featherweight; he returns to bantamweight here.",
+ "how_they_fight": {
+  "Striking": "Six knockouts in our data (four in R1, two in R2).",
+  "Grappling": "One submission.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Went three rounds with Wood.",
+  "Fight IQ": "Took a short-notice debut against a veteran and won it."
+ },
+ "patterns": [
+  "Early finishes on the regional scene; can win on the cards"
+ ],
+ "concerns": [
+  "Second UFC fight"
+ ],
+ "keys_to_beat": [
+  "Drag him into scrambles"
+ ],
+ "news": [
+  {
+   "date": "2026-11-06",
+   "text": "Drops back to bantamweight against Mehemmedali Osmanli.",
+   "source": "https://www.sherdog.com/news/news/Mehemmedali-Osmanli-reportedly-books-UFC-debut-despite-TUF-34-loss-203515"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Mehemmedali Osmanli reportedly books UFC debut despite 'TUF 34' loss",
+   "url": "https://www.sherdog.com/news/news/Mehemmedali-Osmanli-reportedly-books-UFC-debut-despite-TUF-34-loss-203515",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

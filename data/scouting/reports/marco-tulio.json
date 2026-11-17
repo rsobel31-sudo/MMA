@@ -1,0 +1,40 @@
+{
+ "name": "Marco Tulio",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian middleweight from Chute Boxe Diego Lima (14-3, age 32), 2-2 in the UFC: TKOs of Ihor Potieria and Tresean Gore, then a R2 knockout loss to Christian Leroy Duncan and a decision loss to Roman Kopylov (May).",
+ "how_they_fight": {
+  "Striking": "Aggressive puncher; ten knockouts in our data (six in R1, four in R2).",
+  "Grappling": "Little used.",
+  "Defense": "Stopped twice in R2.",
+  "Pace & cardio": "Early finisher.",
+  "Fight IQ": "Front-foot."
+ },
+ "patterns": [
+  "Finishes in R1-R2"
+ ],
+ "concerns": [
+  "Two straight losses"
+ ],
+ "keys_to_beat": [
+  "Wrestle him and drag him into R3"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

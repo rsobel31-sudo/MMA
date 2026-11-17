@@ -1,0 +1,40 @@
+{
+ "name": "Magomed Tuchalov",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten Russian light heavyweight (6-0, age 26) from Dagestan Fighter, 1-0 in the UFC after a decision win over Brendson Ribeiro in July. He built his record in UAE Warriors.",
+ "how_they_fight": {
+  "Striking": "Four knockouts in our data (two in R1, two in R2).",
+  "Grappling": "One R1 submission.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Went three rounds in his UFC debut.",
+  "Fight IQ": "Thin record to judge."
+ },
+ "patterns": [
+  "Early finishes on the regional scene"
+ ],
+ "concerns": [
+  "Only one UFC fight"
+ ],
+ "keys_to_beat": [
+  "Test his cardio and chin"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "thin"
+}

@@ -1,0 +1,43 @@
+{
+ "name": "Serghei Spivac",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Moldovan heavyweight grappler (18-7, age 31) who has alternated wins and losses: a decision win over Ante Delija in February and a decision loss to Vitor Petrino in August.",
+ "how_they_fight": {
+  "Striking": "Serviceable boxing; seven knockouts in our data, five of them in R1.",
+  "Grappling": "His weapon: takes opponents down and finishes with arm-triangles and ground strikes. Eight submissions (six in R1).",
+  "Defense": "Stopped four times by strikes, three of them in R1 (Gane in R2).",
+  "Pace & cardio": "Fades in long exchanges; recent fights have gone the distance (Delija, Petrino, Cortes-Acosta).",
+  "Fight IQ": "Wins when he gets an early takedown; struggles against heavy strikers who stuff the first shot."
+ },
+ "patterns": [
+  "Early takedowns and R1 submissions",
+  "Recent fights going to decision"
+ ],
+ "concerns": [
+  "Stopped by strikes four times, mostly in R1",
+  "Against a long, unbeaten knockout puncher"
+ ],
+ "keys_to_beat": [
+  "Stuff the first takedown and make him strike",
+  "Punish his level changes"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -5,7 +5,7 @@
    "name": "Hellowhosthat",
    "profile": "https://forums.sherdog.com/members/hellowhosthat.564767/",
    "why": "Prospect breakdowns; 11/11 graded calls (2021-2026)",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-17",
    "seen": [
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-176",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-178",
@@ -21,13 +21,14 @@
    ],
    "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked.",
    "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday",
-   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday"
+   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday",
+   "note_2026-11-17": "Hype-trains thread page 187 now redirects to page 186 (pagination '186 of 186'; last posts Oct 21, already read): no new posts."
   },
   {
    "name": "HuskySamoan",
    "profile": "https://forums.sherdog.com/members/huskysamoan.520001/",
    "why": "Regional prospects (Central Asia, Brazil, UK); 8/8 graded calls",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-17",
    "seen": [
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-176",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-178",
@@ -43,13 +44,14 @@
    ],
    "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked.",
    "note_2026-11-03": "Hype-trains page 187 returned 429 again on 2026-11-03; retry next Tuesday",
-   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday"
+   "note_2026-11-10": "Hype-trains page 187 returned 429 again on 2026-11-10 (third week); retry next Tuesday",
+   "note_2026-11-17": "Hype-trains thread page 187 now redirects to page 186 (pagination '186 of 186'; last posts Oct 21, already read): no new posts."
   },
   {
    "name": "Koala",
    "profile": "https://forums.sherdog.com/members/koala.575391/",
    "why": "Owner's pick: worldwide MMA, PFL and regional promotions",
-   "last_checked": "2026-10-27",
+   "last_checked": "2026-11-17",
    "seen": [
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-176",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-178",
@@ -63,7 +65,8 @@
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-177",
     "https://forums.sherdog.com/threads/my-big-stupid-hype-trains-thread.4162927/page-186"
    ],
-   "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked."
+   "pending": "Hype-trains thread read through page 186 (2026-10-27); page 187 check on 2026-11-01 got HTTP 429, left for next week. Older threads (regional prospects 4348841, Alvi Dasuyev 4370417) not re-checked.",
+   "note_2026-11-17": "Hype-trains thread page 187 now redirects to page 186 (pagination '186 of 186'; last posts Oct 21, already read): no new posts."
   }
  ],
  "x_accounts": [
@@ -71,29 +74,33 @@
    "handle": "@mma_sushi",
    "why": "Owner's pick: prospect analysis",
    "found": "nothing indexed (site:x.com search, 2026-11-10)",
-   "last_checked": "2026-11-10",
-   "seen": []
+   "last_checked": "2026-11-17",
+   "seen": [],
+   "note_2026-11-17": "Web search (site:x.com handle, and handle + prospect) showed no indexed posts."
   },
   {
    "handle": "@hellowhosthat",
    "why": "Same person as the Sherdog member Hellowhosthat",
-   "last_checked": "2026-11-10",
+   "last_checked": "2026-11-17",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-10)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)",
+   "note_2026-11-17": "Web search (site:x.com handle, and handle + prospect) showed no indexed posts."
   },
   {
    "handle": "@FdrNphw",
    "why": "Prospect calls (Russia)",
-   "last_checked": "2026-11-10",
+   "last_checked": "2026-11-17",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-10)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)",
+   "note_2026-11-17": "Web search (site:x.com handle, and handle + prospect) showed no indexed posts."
   },
   {
    "handle": "@FlightOFfists",
    "why": "Prospect calls",
-   "last_checked": "2026-11-10",
+   "last_checked": "2026-11-17",
    "seen": [],
-   "found": "nothing indexed (site:x.com search, 2026-11-10)"
+   "found": "nothing indexed (site:x.com search, 2026-11-10)",
+   "note_2026-11-17": "Web search (site:x.com handle, and handle + prospect) showed no indexed posts."
   }
  ]
 }

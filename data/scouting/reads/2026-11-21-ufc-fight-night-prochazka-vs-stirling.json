@@ -1,0 +1,212 @@
+{
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "date": "2026-11-21",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling",
+ "bouts": [
+  {
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "favours": "Navajo Stirling",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Procházka has been knocked out in three of his last four against top opposition and is 34; Stirling is unbeaten but has never gone past three rounds in the UFC and was hurt in his last two. Model and market both favour Stirling; no lean until fight week.",
+   "factors": [
+    "Procházka's recent knockout losses",
+    "Stirling's first five-rounder (against)",
+    "Procházka's power (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.33,
+   "p_market": 0.411,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "favours": "Aljamain Sterling",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Sterling's back-taking against a puncher who has never faced an elite grappler, but Sterling is 37 and has been knocked out by explosive strikers. Model and market agree on a near coin flip; no lean.",
+   "factors": [
+    "Sterling's grappling",
+    "Vallejos's power (against)",
+    "Sterling's age (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.44,
+   "p_market": 0.453,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Brian Ortega",
+   "b": "Dan Hooker",
+   "favours": "Dan Hooker",
+   "logit": 0.15,
+   "confidence": "low",
+   "reasoning": "The model has Ortega at 62% against a market at 38%. It can't see that Ortega has been out about 15 months, pulled out of two bookings this year with injuries, and moves up to lightweight for the first time. Hooker's three straight stoppage losses and quick turnaround keep the lean small.",
+   "factors": [
+    "Ortega's 15-month layoff and two withdrawals",
+    "Ortega's first fight at 155",
+    "Hooker's durability (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.62,
+   "p_market": 0.384,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Asu Almabayev",
+   "b": "Kyoji Horiguchi",
+   "favours": "Kyoji Horiguchi",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Almabayev's grappling against Horiguchi's speed and takedown defence; Horiguchi is 36 and was stopped by Kape in R3. The model is above the market on Almabayev; no lean.",
+   "factors": [
+    "Horiguchi's takedown defence",
+    "Almabayev's grappling (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.49,
+   "p_market": 0.371,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
+   "favours": "Ikram Aliskerov",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Aliskerov's wrestling against a 42-year-old who has lost four of five with very low output lately. The model is already above the market; no lean.",
+   "factors": [
+    "Cannonier's age and form",
+    "Aliskerov's wrestling",
+    "Cannonier's power early (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.84,
+   "p_market": 0.755,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Aleksandre Topuria",
+   "b": "Santiago Luna",
+   "favours": "Aleksandre Topuria",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "A big gap: the model has Topuria at 41%, the market at 71%. Topuria is nearly a year out and was hobbled by leg kicks; Luna is 22 and was submitted from the bottom by Mitchell. Too little evidence to lean against either number; revisit with the previews.",
+   "factors": [
+    "Topuria's layoff (against)",
+    "Luna's bottom game"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.41,
+   "p_market": 0.714,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "favours": "Shamil Gaziev",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Two heavyweights who have been knocked out quickly; both finish inside two rounds. Model 39%, market 63% on Gaziev; no lean.",
+   "factors": [
+    "Both chins",
+    "Teixeira's cardio past R1"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.39,
+   "p_market": 0.634,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Alessandro Costa",
+   "b": "Amir Albazi",
+   "favours": "Alessandro Costa",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Albazi has lost two straight decisions, fights once a year or less after heart and spine surgery, and has landed 2 of 20 takedowns in his last three; Costa has finished three straight in 2026. Albazi's knockout of Costa in their first fight keeps it small.",
+   "factors": [
+    "Albazi's inactivity and health history",
+    "Costa's form",
+    "Albazi's previous knockout of Costa (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.44,
+   "p_market": 0.485,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Jake Matthews",
+   "b": "Tahir Abdullayev",
+   "favours": "Jake Matthews",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "The model has Matthews at 49% against a market at 69%. Abdullayev has one UFC fight and a regional record that differs by source, so his numbers rest on weak opposition; Matthews has 24 UFC fights and won his last clearly. Matthews fading in R3 scrambles keeps it small.",
+   "factors": [
+    "Abdullayev's thin UFC data",
+    "Matthews's experience",
+    "Matthews's late fades (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.49,
+   "p_market": 0.685,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
+   "favours": "Dom Mar Fan",
+   "logit": 0.1,
+   "confidence": "low",
+   "reasoning": "Motta returns from 17 months out after a broken jaw that needed titanium plates, and has little ground game against a grappler. Fan's leg-lock loss to Steele keeps it small.",
+   "factors": [
+    "Motta's layoff and jaw injury",
+    "Fan's grappling",
+    "Fan's submission defence (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.67,
+   "p_market": 0.58,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Alik Lorenz",
+   "b": "Diyar Nurgozhay",
+   "favours": "Diyar Nurgozhay",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Lorenz debuts with nearly every fight ending in R1 either way; Nurgozhay has won two straight. Model and market agree; no lean.",
+   "factors": [
+    "Lorenz's debut",
+    "Nurgozhay's submission defence (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.26,
+   "p_market": 0.315,
+   "created": "2026-11-17T21:30:00+00:00",
+   "pundits": []
+  }
+ ]
+}

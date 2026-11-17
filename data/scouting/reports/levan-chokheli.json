@@ -1,0 +1,49 @@
+{
+ "name": "Levan Chokheli",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Georgian welterweight (15-4, 1 NC, age 30) out of Kassel, Germany, a Bellator veteran. He knocked out Leon Shahbazyan in 23 seconds in his UFC debut in June.",
+ "how_they_fight": {
+  "Striking": "A power puncher: twelve of 15 wins by knockout, eleven of them in R1 in our data.",
+  "Grappling": "Decision wins in Bellator came from pressure and some wrestling.",
+  "Defense": "Stopped twice in R1: by Lorenz Larkin (KO) and Goiti Yamauchi (submission).",
+  "Pace & cardio": "Three decisions in Bellator; most fights are short.",
+  "Fight IQ": "Front-runner who looks for the early knockout."
+ },
+ "patterns": [
+  "Explosive starts; nearly all finishes in R1"
+ ],
+ "concerns": [
+  "Stopped twice in R1 himself",
+  "Against another R1 finisher"
+ ],
+ "keys_to_beat": [
+  "Survive his first two minutes",
+  "Counter as he rushes in"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

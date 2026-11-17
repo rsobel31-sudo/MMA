@@ -1,0 +1,63 @@
+{
+ "name": "Yaroslav Amosov",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "The former Bellator welterweight champion from Ukraine (30-1, age 33), training at American Top Team. He is 2-0 in the UFC with submissions of Neil Magny (R1, December 2025) and Joel Alvarez (R2, May 2026). His only loss was a R3 knockout by Jason Jackson in 2023.",
+ "how_they_fight": {
+  "Striking": "Functional and heavy-handed; nine knockouts in our data (six in R1).",
+  "Grappling": "A chain wrestler and sambo player who controls from top. Thirteen submissions in our data, nine of them in R1.",
+  "Defense": "Stopped once, by strikes (Jackson, R3).",
+  "Pace & cardio": "Has gone five rounds twice (Lima, Storley) and won both.",
+  "Fight IQ": "Patient; takes the fight where he wants it."
+ },
+ "patterns": [
+  "Takedowns and top control; submissions mostly in R1",
+  "Has won five-round fights"
+ ],
+ "concerns": [
+  "Only stopped by a striker who could keep it standing (Jackson)",
+  "First fight against a top-five welterweight"
+ ],
+ "keys_to_beat": [
+  "Keep it standing with footwork and takedown defence",
+  "Make him pay on entries"
+ ],
+ "news": [
+  {
+   "date": "2026-11-09",
+   "text": "About +125 after opening near +155 (BetOnline).",
+   "source": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Israel Adesanya vs. Shara Bullet Headlines UFC Saudi Arabia, Ian Garry vs. Yaroslav Amosov Co-Main",
+   "url": "https://cagesidepress.com/2026/11/07/israel-adesanya-vs-shara-bullet-headlines-ufc-saudi-arabia-ian-garry-vs-yaroslav-amosov-co-main/",
+   "date": "2026-11-07"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC Saudi Arabia odds: Israel Adesanya's odds take a major hit",
+   "url": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550",
+   "date": "2026-11-09"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Ian Machado Garry and Yaroslav Amosov react to UFC Saudi Arabia co-main event announcement",
+   "url": "https://bloodyelbow.com/2026/11/09/ian-machado-garry-and-yaroslav-amosov-react-to-ufc-saudi-arabia-co-main-event-announcement/",
+   "date": "2026-11-09"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,41 @@
+{
+ "name": "Ion Cutelaba",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Moldovan light heavyweight veteran (20-14 in our data, age 32) known for explosive starts. He was knocked out by Navajo Stirling in R2 in June after a R1 submission of Oumar Sy in March.",
+ "how_they_fight": {
+  "Striking": "Explosive and wild; thirteen knockouts in our data, twelve in R1.",
+  "Grappling": "Powerful takedowns; five submissions, four in R1.",
+  "Defense": "Stopped eight times in our data, mostly in R1-R2.",
+  "Pace & cardio": "Fades badly after R1.",
+  "Fight IQ": "All-in early."
+ },
+ "patterns": [
+  "Explosive R1; nearly all finishes in R1"
+ ],
+ "concerns": [
+  "Fades after R1",
+  "Stopped often"
+ ],
+ "keys_to_beat": [
+  "Survive his first round, then pressure him"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

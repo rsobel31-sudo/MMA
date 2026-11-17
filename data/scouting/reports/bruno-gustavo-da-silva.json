@@ -1,0 +1,42 @@
+{
+ "name": "Bruno Gustavo da Silva",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian flyweight from American Top Team (age 36) on a 1-4 run in the UFC: stopped by Manel Kape (R3, 2024) and Joshua Van (R3, 2025), a R3 submission of Hyun Sung Park (October 2025), a split-decision loss to Charles Johnson (March 2026) and a R1 submission loss to Edgar Chairez (June). Our records merge him with other Bruno Silvas, so only his UFC fights are used here.",
+ "how_they_fight": {
+  "Striking": "A power puncher by reputation, with most of his career finishes by knockout.",
+  "Grappling": "Can wrestle; has been submitted (Chairez, R1).",
+  "Defense": "Stopped in three of his last five fights.",
+  "Pace & cardio": "Two of his recent stoppage losses came late (R3).",
+  "Fight IQ": "Aggressive."
+ },
+ "patterns": [
+  "Power punching"
+ ],
+ "concerns": [
+  "1-4 in his last five UFC fights",
+  "Age 36 at flyweight",
+  "Submitted in R1 last time"
+ ],
+ "keys_to_beat": [
+  "Take his back in scrambles"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "thin"
+}

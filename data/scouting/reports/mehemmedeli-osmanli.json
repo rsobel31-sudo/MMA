@@ -1,0 +1,47 @@
+{
+ "name": "Mehemmedeli Osmanli",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An Azerbaijani bantamweight (11-2, age 22) and TUF 34 finalist who lost the final to Ilimbek Akylbek Uulu by disqualification for an illegal knee, a finish many saw as controversial. He had won nine straight before that.",
+ "how_they_fight": {
+  "Striking": "Three knockouts in our data.",
+  "Grappling": "A submission grappler: six submissions, finishes in R1, R2, R3 and R5.",
+  "Defense": "Submitted once (R1).",
+  "Pace & cardio": "Can finish late, including a R5 submission.",
+  "Fight IQ": "Young and aggressive (the illegal knee)."
+ },
+ "patterns": [
+  "Submissions in later rounds as well as early"
+ ],
+ "concerns": [
+  "Discipline (the TUF final DQ)",
+  "Age 22"
+ ],
+ "keys_to_beat": [
+  "Keep it standing"
+ ],
+ "news": [
+  {
+   "date": "2026-11-06",
+   "text": "Booked for his UFC debut against Pavel Andrusca despite the TUF 34 final loss.",
+   "source": "https://www.sherdog.com/news/news/Mehemmedali-Osmanli-reportedly-books-UFC-debut-despite-TUF-34-loss-203515"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "Mehemmedali Osmanli reportedly books UFC debut despite 'TUF 34' loss",
+   "url": "https://www.sherdog.com/news/news/Mehemmedali-Osmanli-reportedly-books-UFC-debut-despite-TUF-34-loss-203515",
+   "date": "2026-11-06"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,40 @@
+{
+ "name": "Jafel Filho",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian flyweight from Nova Uniao (17-5, age 33). He is 4-3 in the UFC: three R1 submissions (Barez, Osbourne, Carpenter) and decision losses to Allan Nascimento and Cody Durden (April).",
+ "how_they_fight": {
+  "Striking": "Secondary; five knockouts in our data.",
+  "Grappling": "A back-taker: eleven submissions, eight in R1.",
+  "Defense": "Never knocked out; submitted twice in R3.",
+  "Pace & cardio": "Loses on the cards when he can't finish early.",
+  "Fight IQ": "Scrambles for the back."
+ },
+ "patterns": [
+  "R1 submissions off scrambles"
+ ],
+ "concerns": [
+  "Two straight losses on the cards to grinders"
+ ],
+ "keys_to_beat": [
+  "Keep it standing or win the grappling exchanges"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

@@ -1,0 +1,81 @@
+{
+ "name": "Israel Adesanya",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "The former two-time UFC middleweight champion (24-6, age 37) is on a four-fight losing streak: Strickland (decision, 2023), Du Plessis (R4 submission, 2024), Imavov (R2 TKO, 2025) and Joe Pyfer (R2 TKO, March 2026). He left City Kickboxing after 16 years and says this camp, run by his long-time wrestling coach Andrei Paulet and Tristam Apikotoa out of Unity MMA in Auckland, is the best he has had. He opened about -205 against Magomedov and has drifted to around -150.",
+ "how_they_fight": {
+  "Striking": "A long, switch-stance kickboxer who fights from range with feints, calf and teep kicks and counters. Sixteen of his 24 wins are knockouts: seven in R1 and nine in R2 in our data.",
+  "Grappling": "Defensive. Strickland and Du Plessis beat him by pressuring and grappling; Du Plessis submitted him in R4.",
+  "Defense": "Never stopped before 2022; since then stopped three times (Pereira R5, Imavov R2, Pyfer R2). The last two came quickly once he was hurt, a sign his punch resistance has dropped.",
+  "Pace & cardio": "Built for five rounds: seven decision wins, five of them in title fights. Starts slowly and reads opponents early.",
+  "Fight IQ": "Elite at range and timing, but has struggled against forward pressure and with letting his hands go. He says the last three years 'have not been fun' and that he was 'lost'."
+ },
+ "patterns": [
+  "Feints, kicks and counters at range; finishes in R1-R2 when he finds the timing (16 KO/TKO wins)",
+  "Starts patiently and builds over five rounds"
+ ],
+ "concerns": [
+  "Four straight losses, the last two by R2 stoppage",
+  "Age 37; durability looks reduced",
+  "First camp without City Kickboxing"
+ ],
+ "keys_to_beat": [
+  "Pressure him onto the fence and make him exchange",
+  "Hurt him early: he has not recovered once hurt in his last two fights"
+ ],
+ "news": [
+  {
+   "date": "2026-11-12",
+   "text": "Revealed his new corner: Andrei Paulet and Tristam Apikotoa, training out of Unity MMA in Auckland.",
+   "source": "https://bloodyelbow.com/2026/11/12/israel-adesanya-reveals-who-will-corner-him-for-ufc-saudi-arabia-fight-after-leaving-city-kickboxing/"
+  },
+  {
+   "date": "2026-11-05",
+   "text": "Says he feels better than in a very long time after leaving City Kickboxing.",
+   "source": "https://www.mmafighting.com/ufc/519612/israel-adesanya-ready-to-end-slump-after-city-kickboxing-departure-best-ive-felt-in-a-very-long-time"
+  },
+  {
+   "date": "2026-11-09",
+   "text": "Opened -205; money on Magomedov moved it to about -150 (BetOnline).",
+   "source": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Israel Adesanya vs. Shara Bullet Headlines UFC Saudi Arabia, Ian Garry vs. Yaroslav Amosov Co-Main",
+   "url": "https://cagesidepress.com/2026/11/07/israel-adesanya-vs-shara-bullet-headlines-ufc-saudi-arabia-ian-garry-vs-yaroslav-amosov-co-main/",
+   "date": "2026-11-07"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sayan Nag",
+   "title": "UFC Saudi Arabia odds: Israel Adesanya's odds take a major hit",
+   "url": "https://www.sherdog.com/news/news/UFC-Saudi-Arabia-odds-Israel-Adesanyas-odds-take-a-major-hit-203550",
+   "date": "2026-11-09"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "Jamie Theodosi",
+   "title": "Israel Adesanya reveals who will corner him for UFC Saudi Arabia fight after leaving City Kickboxing",
+   "url": "https://bloodyelbow.com/2026/11/12/israel-adesanya-reveals-who-will-corner-him-for-ufc-saudi-arabia-fight-after-leaving-city-kickboxing/",
+   "date": "2026-11-12"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "",
+   "title": "Israel Adesanya ready to end slump after City Kickboxing departure: 'Best I've felt in a very long time'",
+   "url": "https://www.mmafighting.com/ufc/519612/israel-adesanya-ready-to-end-slump-after-city-kickboxing-departure-best-ive-felt-in-a-very-long-time",
+   "date": "2026-11-05"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

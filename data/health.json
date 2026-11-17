@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T11:54:30+00:00",
+ "checked": "2026-11-17T16:59:36+00:00",
  "ok": false,
  "failed": [
   "StatsFight"
@@ -10,15 +10,15 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "18 bouts on a known fighter page",
-   "seconds": 0.6,
+   "seconds": 0.9,
    "last_ok": "2026-11-17"
   },
   {
    "source": "Sherdog event listings",
    "used_by": "prospect fights this week",
    "ok": true,
-   "detail": "309 upcoming events listed",
-   "seconds": 2.0,
+   "detail": "311 upcoming events listed",
+   "seconds": 3.0,
    "last_ok": "2026-11-17"
   },
   {
@@ -26,7 +26,7 @@
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "7 UFC events in the last 45 days",
-   "seconds": 1.4,
+   "seconds": 1.2,
    "last_ok": "2026-11-17"
   },
   {
@@ -49,8 +49,8 @@
    "source": "BestFightOdds events",
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
-   "detail": "8 events; UFC Doha: 11 bouts, 11 with FanDuel moneylines",
-   "seconds": 2.5,
+   "detail": "9 events; UFC Doha: 11 bouts, 11 with FanDuel moneylines",
+   "seconds": 2.9,
    "last_ok": "2026-11-17"
   },
   {
@@ -58,7 +58,7 @@
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "17 bouts with lines",
-   "seconds": 2.7,
+   "seconds": 2.8,
    "last_ok": "2026-11-17"
   },
   {
@@ -66,7 +66,7 @@
    "used_by": "upcoming cards, results",
    "ok": true,
    "detail": "9 scheduled UFC events",
-   "seconds": 0.8,
+   "seconds": 0.7,
    "last_ok": "2026-11-17"
   },
   {
@@ -74,15 +74,15 @@
    "used_by": "divisions and gender",
    "ok": true,
    "detail": "651 fighters on the UFC roster",
-   "seconds": 1.4,
+   "seconds": 1.6,
    "last_ok": "2026-11-17"
   },
   {
    "source": "Wikipedia UFC rankings",
    "used_by": "rankings comparison",
    "ok": true,
-   "detail": "332 ranked fighters",
-   "seconds": 1.2,
+   "detail": "331 ranked fighters",
+   "seconds": 1.0,
    "last_ok": "2026-11-17"
   },
   {
@@ -90,7 +90,7 @@
    "used_by": "stat verification",
    "ok": false,
    "detail": "0 UFC bouts in the sitemap (expected at least 1000)",
-   "seconds": 2.7,
+   "seconds": 3.1,
    "last_ok": "2026-11-16"
   },
   {
@@ -106,7 +106,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.7,
+   "seconds": 0.6,
    "last_ok": "2026-11-17"
   },
   {
@@ -114,7 +114,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
-   "seconds": 0.3,
+   "seconds": 0.2,
    "last_ok": "2026-11-17"
   },
   {
@@ -130,7 +130,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 2.0,
+   "seconds": 2.3,
    "last_ok": "2026-11-17"
   },
   {
@@ -162,14 +162,14 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
+   "seconds": 1.8,
    "last_ok": "2026-11-17"
   },
   {
    "source": "News: ESPN",
    "used_by": "scouting",
    "ok": true,
-   "detail": "18 items, 18 from the last 14 days",
+   "detail": "20 items, 20 from the last 14 days",
    "seconds": 0.3,
    "last_ok": "2026-11-17"
   },
@@ -178,7 +178,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "34 items, 34 from the last 14 days",
-   "seconds": 0.5,
+   "seconds": 5.3,
    "last_ok": "2026-11-17"
   },
   {
@@ -186,7 +186,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.9,
+   "seconds": 3.2,
    "last_ok": "2026-11-17"
   },
   {
@@ -194,7 +194,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.9,
+   "seconds": 3.5,
    "last_ok": "2026-11-17"
   },
   {
@@ -202,7 +202,7 @@
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 2.9,
+   "seconds": 3.4,
    "last_ok": "2026-11-17"
   }
  ]

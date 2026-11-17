@@ -1,0 +1,54 @@
+{
+ "name": "Islam Dulatov",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A German welterweight (12-1, age 28) from Triple One Gym, signed off the 2024 Contender Series. He knocked out Adam Fugitt in R1 in his UFC debut in July 2025; a July 2026 bout with Wellington Turman was cancelled when he fell ill.",
+ "how_they_fight": {
+  "Striking": "A finisher: seven knockouts and five submissions in our data, eleven of the twelve in R1.",
+  "Grappling": "Five R1 submissions, most of them very fast (under a minute).",
+  "Defense": "Only loss a decision; never stopped.",
+  "Pace & cardio": "Barely tested past R1.",
+  "Fight IQ": "Patient enough to set up a left hook (Fugitt)."
+ },
+ "patterns": [
+  "Finishes in R1 by strikes or submission"
+ ],
+ "concerns": [
+  "Almost no evidence past R1",
+  "Sixteen months between UFC fights"
+ ],
+ "keys_to_beat": [
+  "Take him past R1"
+ ],
+ "news": [
+  {
+   "date": "2026-10-22",
+   "text": "Booked against Levan Chokheli after his July bout with Wellington Turman was cancelled because he fell ill.",
+   "source": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

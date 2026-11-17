@@ -1,0 +1,40 @@
+{
+ "name": "Uran Satybaldiev",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Kyrgyz light heavyweight (9-1, age 32), tall at 193 cm with a 201 cm reach. He lost a decision to Martin Buday in his UFC debut and then submitted Diyar Nurgozhay in R1 in August 2025.",
+ "how_they_fight": {
+  "Striking": "Long and powerful; five knockouts in our data, including one in R4.",
+  "Grappling": "Three submissions (R1 and R3).",
+  "Defense": "Only loss a decision.",
+  "Pace & cardio": "Has gone five rounds (split decision, 2022) and finished in R4.",
+  "Fight IQ": "Uses his length."
+ },
+ "patterns": [
+  "Can win late; has gone five rounds"
+ ],
+ "concerns": [
+  "Out of action since August 2025"
+ ],
+ "keys_to_beat": [
+  "Pressure him inside his reach"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

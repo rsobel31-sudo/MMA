@@ -1,0 +1,40 @@
+{
+ "name": "Mario Pinto",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten Portuguese heavyweight (13-0, age 28), tall and long (196 cm, 201 cm reach), from Urban Warriors. He is 4-0 in the UFC since the 2024 Contender Series: TKOs of Austen Lane, Jhonata Diniz and Ryan Spann (R2 in September), and a decision over Felipe Franco.",
+ "how_they_fight": {
+  "Striking": "A long, heavy puncher; eight knockouts in our data (four in R1, three in R2, one in R3).",
+  "Grappling": "Little evidence either way in our data.",
+  "Defense": "Never stopped.",
+  "Pace & cardio": "Has gone five rounds once on the regional scene (Aras) and three rounds once in the UFC.",
+  "Fight IQ": "Patient; picks his shots behind his length."
+ },
+ "patterns": [
+  "Length and power; finishes mostly in R1-R2"
+ ],
+ "concerns": [
+  "Untested against a heavyweight grappler of Spivac's level"
+ ],
+ "keys_to_beat": [
+  "Take him down early and keep him there"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

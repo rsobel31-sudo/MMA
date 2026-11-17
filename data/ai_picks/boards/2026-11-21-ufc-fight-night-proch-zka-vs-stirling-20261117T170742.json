@@ -1,0 +1,339 @@
+{
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "date": "2026-11-21",
+ "locks_at": "2026-11-21T13:00:00+00:00",
+ "fetched_at": "2026-11-17T17:07:42+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Procházka_vs._Stirling",
+ "bouts": [
+  {
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Brian Ortega vs Dan Hooker",
+   "a": "Brian Ortega",
+   "b": "Dan Hooker",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "a": "Asu Almabayev",
+   "b": "Kyoji Horiguchi",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "a": "Aleksandre Topuria",
+   "b": "Santiago Luna",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "a": "Alessandro Costa",
+   "b": "Amir Albazi",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "a": "Jake Matthews",
+   "b": "Tahir Abdullayev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Manoel Sousa vs TBD",
+   "a": "Manoel Sousa",
+   "b": "TBD",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "a": "Alik Lorenz",
+   "b": "Diyar Nurgozhay",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45574:ml:a",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jiri Prochazka to win",
+   "odds": 130,
+   "p_fanduel": 0.4106
+  },
+  {
+   "id": "45574:ml:b",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Navajo Stirling to win",
+   "odds": -166,
+   "p_fanduel": 0.5894
+  },
+  {
+   "id": "45676:ml:a",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aljamain Sterling to win",
+   "odds": 108,
+   "p_fanduel": 0.4533
+  },
+  {
+   "id": "45676:ml:b",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kevin Vallejos to win",
+   "odds": -138,
+   "p_fanduel": 0.5467
+  },
+  {
+   "id": "45733:ml:a",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Brian Ortega to win",
+   "odds": 146,
+   "p_fanduel": 0.3838
+  },
+  {
+   "id": "45733:ml:b",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Dan Hooker to win",
+   "odds": -188,
+   "p_fanduel": 0.6162
+  },
+  {
+   "id": "45734:ml:a",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Asu Almabayev to win",
+   "odds": 154,
+   "p_fanduel": 0.3713
+  },
+  {
+   "id": "45734:ml:b",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kyoji Horiguchi to win",
+   "odds": -200,
+   "p_fanduel": 0.6287
+  },
+  {
+   "id": "45735:ml:a",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ikram Aliskerov to win",
+   "odds": -400,
+   "p_fanduel": 0.7549
+  },
+  {
+   "id": "45735:ml:b",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jared Cannonier to win",
+   "odds": 285,
+   "p_fanduel": 0.2451
+  },
+  {
+   "id": "45736:ml:a",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aleksandre Topuria to win",
+   "odds": -310,
+   "p_fanduel": 0.7139
+  },
+  {
+   "id": "45736:ml:b",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Santiago Luna to win",
+   "odds": 230,
+   "p_fanduel": 0.2861
+  },
+  {
+   "id": "45737:ml:a",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Shamil Gaziev to win",
+   "odds": -205,
+   "p_fanduel": 0.6342
+  },
+  {
+   "id": "45737:ml:b",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tallison Teixeira to win",
+   "odds": 158,
+   "p_fanduel": 0.3658
+  },
+  {
+   "id": "45738:ml:a",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alessandro Costa to win",
+   "odds": -106,
+   "p_fanduel": 0.4854
+  },
+  {
+   "id": "45738:ml:b",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Amir Albazi to win",
+   "odds": -120,
+   "p_fanduel": 0.5146
+  },
+  {
+   "id": "45739:ml:a",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jake Matthews to win",
+   "odds": -265,
+   "p_fanduel": 0.6853
+  },
+  {
+   "id": "45739:ml:b",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tahir Abdullayev to win",
+   "odds": 200,
+   "p_fanduel": 0.3147
+  },
+  {
+   "id": "45740:ml:a",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Dom Mar Fan to win",
+   "odds": -160,
+   "p_fanduel": 0.5796
+  },
+  {
+   "id": "45740:ml:b",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nikolas Motta to win",
+   "odds": 124,
+   "p_fanduel": 0.4204
+  },
+  {
+   "id": "45760:ml:a",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alik Lorenz to win",
+   "odds": 200,
+   "p_fanduel": 0.3147
+  },
+  {
+   "id": "45760:ml:b",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Diyar Nurgozhay to win",
+   "odds": -265,
+   "p_fanduel": 0.6853
+  }
+ ]
+}

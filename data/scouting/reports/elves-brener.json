@@ -1,0 +1,40 @@
+{
+ "name": "Elves Brener",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian lightweight from Chute Boxe Diego Lima (17-6, age 29), 4-3 in the UFC. He knocked out Josiah Harrell in R1 in September after a three-fight skid (Orolbai, Joel Alvarez R3 KO, Ribovics).",
+ "how_they_fight": {
+  "Striking": "Four knockouts in our data, two of them in R3.",
+  "Grappling": "A submission threat: eleven submissions, eight in R1.",
+  "Defense": "Stopped once (Alvarez, R3); five decision losses.",
+  "Pace & cardio": "Has late finishes and has gone the distance often.",
+  "Fight IQ": "Scrambly; finds chokes."
+ },
+ "patterns": [
+  "R1 submissions; can finish late"
+ ],
+ "concerns": [
+  "Five decision losses: gets out-pointed by busier fighters"
+ ],
+ "keys_to_beat": [
+  "Out-work him over three rounds"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

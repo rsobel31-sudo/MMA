@@ -1,0 +1,42 @@
+{
+ "name": "Mateusz Rebecki",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Polish lightweight from American Top Team (21-5, age 34), 5-4 in the UFC. He knocked out Kyle Prepolec in R1 in August after three straight losses: decisions to Chris Duncan and Ludovit Klein (split) and a R3 submission by Grant Dawson in May.",
+ "how_they_fight": {
+  "Striking": "Short, powerful and aggressive; ten knockouts in our data (five in R1).",
+  "Grappling": "A strong wrestler with seven submissions (six in R1).",
+  "Defense": "Stopped twice late: Diego Ferreira (R3 KO) and Dawson (R3 submission).",
+  "Pace & cardio": "Fast starter; his stoppage losses both came in R3.",
+  "Fight IQ": "Pressure fighter."
+ },
+ "patterns": [
+  "Fast starts; R1 finishes by strikes or submission",
+  "Stopped late (both stoppage losses in R3)"
+ ],
+ "concerns": [
+  "Three losses in his last five",
+  "Fades late"
+ ],
+ "keys_to_beat": [
+  "Survive his early pressure and take over in R3"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

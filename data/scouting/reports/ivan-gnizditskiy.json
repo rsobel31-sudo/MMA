@@ -1,0 +1,46 @@
+{
+ "name": "Ivan Gnizditskiy",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten Russian light heavyweight (7-0, age 30) who signed directly with the UFC after visa problems kept him off his Contender Series bout. He has finished all seven wins, six by knockout, and fought twice in ONE in 2025. Our data has only one of his fights.",
+ "how_they_fight": {
+  "Striking": "A finisher: six knockouts in seven wins (Sherdog).",
+  "Grappling": "One submission win.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Untested late.",
+  "Fight IQ": "Thin record."
+ },
+ "patterns": [
+  "Finishes every win"
+ ],
+ "concerns": [
+  "UFC debut; very little film or data"
+ ],
+ "keys_to_beat": [
+  "Take him past R1"
+ ],
+ "news": [
+  {
+   "date": "2026-10-16",
+   "text": "Signed directly with the UFC after visa issues kept him off the Contender Series.",
+   "source": "https://www.sherdog.com/news/news/70-finisher-Ivan-Gnizditskiy-joins-UFC-despite-missing-DWCS-203246"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "7-0 finisher Ivan Gnizditskiy joins UFC despite missing DWCS",
+   "url": "https://www.sherdog.com/news/news/70-finisher-Ivan-Gnizditskiy-joins-UFC-despite-missing-DWCS-203246",
+   "date": "2026-10-16"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  }
+ ],
+ "depth": "thin"
+}

@@ -1,0 +1,41 @@
+{
+ "name": "Park Jun-yong",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A South Korean middleweight from World Top Team (19-7, age 35), a UFC veteran who lost a decision to Ikram Aliskerov in October 2025 after decision wins over Brad Tavares and Ismail Naurdiev.",
+ "how_they_fight": {
+  "Striking": "Volume boxing.",
+  "Grappling": "Wrestles and takes the back; six submissions in our data.",
+  "Defense": "Stopped once by strikes (Gregory Rodrigues, R2).",
+  "Pace & cardio": "Goes the distance often (eight decisions and splits).",
+  "Fight IQ": "Grinds out close fights; three split-decision wins."
+ },
+ "patterns": [
+  "Grinds decisions; strong late"
+ ],
+ "concerns": [
+  "Age 35",
+  "Over a year out"
+ ],
+ "keys_to_beat": [
+  "Hurt him early with power"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "Sourav Chakraborty",
+   "title": "23-second UFC finisher reportedly draws Islam Dulatov in Saudi Arabia",
+   "url": "https://www.sherdog.com/news/news/23second-UFC-finisher-reportedly-draws-Islam-Dulatov-in-Saudi-Arabia-203300",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}

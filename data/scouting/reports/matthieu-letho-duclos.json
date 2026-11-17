@@ -1,0 +1,40 @@
+{
+ "name": "Matthieu Letho Duclos",
+ "updated": "2026-11-17T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A French middleweight from Venum Training Camp Paris (11-3, age 31), long at 191 cm with a 196 cm reach. He knocked out Luis Felipe Dias in R1 in his UFC debut in September; he was stopped by Marco Tulio on the 2024 Contender Series.",
+ "how_they_fight": {
+  "Striking": "Nine knockouts in our data (five in R1, four in R2).",
+  "Grappling": "Has been submitted once (R1).",
+  "Defense": "Stopped three times, all in R1-R2.",
+  "Pace & cardio": "Went five rounds once (HXMMA, 2025).",
+  "Fight IQ": "Uses his length."
+ },
+ "patterns": [
+  "Finishes in R1-R2"
+ ],
+ "concerns": [
+  "Stopped three times early"
+ ],
+ "keys_to_beat": [
+  "Close the distance and land first"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "MMA Fighting",
+   "author": "Mike Heck",
+   "title": "UFC Saudi Arabia: Several new bouts added to Israel Adesanya vs. Shara Magomedov fight card",
+   "url": "https://www.mmafighting.com/ufc/520917/ufc-saudi-arabia-several-new-bouts-added-to-israel-adesanya-vs-shara-magomedov-fight-card",
+   "date": "2026-11-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-17"
+  }
+ ],
+ "depth": "moderate"
+}
