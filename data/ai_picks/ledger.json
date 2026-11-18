@@ -953,6 +953,70 @@
     "Wikipedia event page",
     "Sherdog fighter records"
    ]
+  },
+  {
+   "id": "w8",
+   "event": "UFC Fight Night: Proch\u00e1zka vs. Stirling",
+   "event_date": "2026-11-21",
+   "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
+   "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch\u00e1zka_vs._Stirling",
+   "book": "FanDuel",
+   "placed_at": "2026-11-18T18:15:28+00:00",
+   "bankroll_before": 84.49,
+   "available_before": 84.49,
+   "note": "Early check, Wednesday. The moneylines look sharp, and Ortega-Hooker already sits where the read puts it, so I'm not betting a winner. The one price wrong for a reason I can name is Aliskerov by decision. His last two wins were wrestling-control decisions: he held Park and his previous opponent down for six and nine minutes. Since 2019 Cannonier has been stopped once in his last eight fights against top opponents (Imavov, R4); his other losses all went to the cards. Small, because a 42-year-old's chin can go at any time and Aliskerov hits hard in the first round.",
+   "bets": [
+    {
+     "id": "8-1",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45735:method:a:DEC",
+       "bout": "Ikram Aliskerov vs Jared Cannonier",
+       "market": [
+        "method",
+        "a",
+        "DEC"
+       ],
+       "selection": "Ikram Aliskerov by decision",
+       "odds": 190,
+       "p": 0.3806,
+       "p_fanduel": 0.3006
+      }
+     ],
+     "odds": 190,
+     "decimal": 2.9,
+     "stake": 1.0,
+     "to_win": 1.9,
+     "p": 0.3806,
+     "ev": 0.1037,
+     "reasoning": "Aliskerov by decision at +190: ours 38% against FanDuel's 30%. He wins by control, not by finishing durable opponents. Cannonier almost always goes the distance in defeat: of his losses since 2019, only Imavov (R4) stopped him. Aliskerov's power early and Cannonier's age are the risks, hence $1, under the $1.15 quarter-Kelly guide.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-18T18:15:28+00:00"
+    }
+   ],
+   "staked": 1.0,
+   "settled": false,
+   "settled_at": null,
+   "placements": [
+    {
+     "placed_at": "2026-11-18T18:15:28+00:00",
+     "note": "Early check, Wednesday. The moneylines look sharp, and Ortega-Hooker already sits where the read puts it, so I'm not betting a winner. The one price wrong for a reason I can name is Aliskerov by decision. His last two wins were wrestling-control decisions: he held Park and his previous opponent down for six and nine minutes. Since 2019 Cannonier has been stopped once in his last eight fights against top opponents (Imavov, R4); his other losses all went to the cards. Small, because a 42-year-old's chin can go at any time and Aliskerov hits hard in the first round.",
+     "bets": [
+      "8-1"
+     ],
+     "staked": 1.0,
+     "sheet": "data/ai_picks/sheets/2026-11-21-ufc-fight-night-proch-zka-vs-stirling.json",
+     "sheet_fetched_at": "2026-11-18T18:15:06+00:00"
+    }
+   ],
+   "last_placed_at": "2026-11-18T18:15:28+00:00",
+   "sheet": "data/ai_picks/sheets/2026-11-21-ufc-fight-night-proch-zka-vs-stirling.json",
+   "odds_urls": [
+    "https://www.bestfightodds.com/events/ufc-doha-4440"
+   ],
+   "sheet_fetched_at": "2026-11-18T18:15:06+00:00"
   }
  ]
 }
