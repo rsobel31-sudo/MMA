@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-17T12:26:35+00:00",
+ "fetched": "2026-11-18T12:18:04+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -701,6 +701,34 @@
     "url": "https://www.mmafighting.com/ufc/520949/mike-perry-re-signs-with-ufc"
    },
    "first_seen": "2026-11-14"
+  },
+  {
+   "name": "John Mitchell",
+   "date": "2026-11-17",
+   "division": "Lightweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
+   ],
+   "info": "UFC Fight Night 294 (Al Rayyan) – Shoaib Yousaf",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
+   },
+   "first_seen": "2026-11-18"
+  },
+  {
+   "name": "Shoaib Yousaf",
+   "date": "2026-11-17",
+   "division": "Lightweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
+   ],
+   "info": "UFC Fight Night 294 (Al Rayyan) – John Mitchell",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
+   },
+   "first_seen": "2026-11-18"
   },
   {
    "name": "Samuel Sanches",

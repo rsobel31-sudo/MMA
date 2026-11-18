@@ -444,15 +444,15 @@
    "system": "meta",
    "division": "Middleweight",
    "rank": "5",
-   "name": "Joe Pyfer",
-   "wiki": "https://en.wikipedia.org/wiki/Joe_Pyfer"
+   "name": "Caio Borralho",
+   "wiki": "https://en.wikipedia.org/wiki/Caio_Borralho"
   },
   {
    "system": "meta",
    "division": "Middleweight",
    "rank": "6",
-   "name": "Caio Borralho",
-   "wiki": "https://en.wikipedia.org/wiki/Caio_Borralho"
+   "name": "Joe Pyfer",
+   "wiki": "https://en.wikipedia.org/wiki/Joe_Pyfer"
   },
   {
    "system": "meta",
@@ -584,43 +584,43 @@
    "system": "meta",
    "division": "Welterweight",
    "rank": "9",
+   "name": "Kevin Holland",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
+  },
+  {
+   "system": "meta",
+   "division": "Welterweight",
+   "rank": "10",
    "name": "Uroš Medić",
    "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
   },
   {
    "system": "meta",
    "division": "Welterweight",
-   "rank": "10",
+   "rank": "11",
    "name": "Leon Edwards",
    "wiki": "https://en.wikipedia.org/wiki/Leon_Edwards"
   },
   {
    "system": "meta",
    "division": "Welterweight",
-   "rank": "11",
+   "rank": "12",
    "name": "Kamaru Usman",
    "wiki": "https://en.wikipedia.org/wiki/Kamaru_Usman"
   },
   {
    "system": "meta",
    "division": "Welterweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Joaquin Buckley",
    "wiki": "https://en.wikipedia.org/wiki/Joaquin_Buckley"
   },
   {
    "system": "meta",
    "division": "Welterweight",
-   "rank": "13",
+   "rank": "14",
    "name": "Yaroslav Amosov",
    "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
-  },
-  {
-   "system": "meta",
-   "division": "Welterweight",
-   "rank": "15",
-   "name": "Kevin Holland",
-   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
   },
   {
    "system": "meta",
@@ -822,29 +822,29 @@
    "system": "meta",
    "division": "Featherweight",
    "rank": "12",
-   "name": "Melquizael Costa",
-   "wiki": "https://en.wikipedia.org/wiki/Melquizael_Costa"
-  },
-  {
-   "system": "meta",
-   "division": "Featherweight",
-   "rank": "13",
    "name": "Steve Garcia",
    "wiki": "https://en.wikipedia.org/wiki/Steve_Garcia"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Jamall Emmers",
    "wiki": "https://en.wikipedia.org/wiki/Jamall_Emmers"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Patrício Pitbull",
    "wiki": "https://en.wikipedia.org/wiki/Patrício_Pitbull"
+  },
+  {
+   "system": "meta",
+   "division": "Featherweight",
+   "rank": "15",
+   "name": "Nathaniel Wood",
+   "wiki": "https://en.wikipedia.org/wiki/Nathaniel_Wood_(fighter)"
   },
   {
    "system": "meta",
@@ -1088,15 +1088,15 @@
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "4",
-   "name": "Norma Dumont",
-   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
+   "name": "Julianna Peña",
+   "wiki": "https://en.wikipedia.org/wiki/Julianna_Peña"
   },
   {
    "system": "meta",
    "division": "Women's Bantamweight",
    "rank": "5",
-   "name": "Julianna Peña",
-   "wiki": "https://en.wikipedia.org/wiki/Julianna_Peña"
+   "name": "Beatriz Mesquita",
+   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
   },
   {
    "system": "meta",
@@ -1129,21 +1129,14 @@
   {
    "system": "meta",
    "division": "Women's Bantamweight",
-   "rank": "11",
-   "name": "Beatriz Mesquita",
-   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Bantamweight",
-   "rank": "13",
+   "rank": "12",
    "name": "Nora Cornolle",
    "wiki": "https://en.wikipedia.org/wiki/Nora_Cornolle"
   },
   {
    "system": "meta",
    "division": "Women's Bantamweight",
-   "rank": "14",
+   "rank": "15",
    "name": "Macy Chiasson",
    "wiki": "https://en.wikipedia.org/wiki/Macy_Chiasson"
   },
@@ -2513,6 +2506,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Angela_Hill"
   }
  ],
- "fetched": "2026-11-17",
+ "fetched": "2026-11-18",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }

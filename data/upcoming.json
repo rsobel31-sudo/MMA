@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-17",
+ "fetched": "2026-11-18",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -137,32 +137,38 @@
     },
     {
      "order": 9,
-     "segment": "Announced",
-     "weight_class": "Lightweight",
-     "a": "Manoel Sousa",
-     "b": "TBD",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 10,
-     "segment": "Announced",
+     "segment": "Preliminary card",
      "weight_class": "Lightweight",
      "a": "Nikolas Motta",
      "b": "Dom Mar Fan",
      "title": false,
      "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 10,
+     "segment": "Preliminary card",
+     "weight_class": "Light Heavyweight",
+     "a": "Diyar Nurgozhay",
+     "b": "Alik Lorenz",
+     "title": false,
+     "result": "",
+     "decided": false,
+     "round": "",
+     "time": "",
      "rounds": 3,
      "main_event": false
     },
     {
      "order": 11,
      "segment": "Announced",
-     "weight_class": "Light Heavyweight",
-     "a": "Diyar Nurgozhay",
-     "b": "Alik Lorenz",
+     "weight_class": "Lightweight",
+     "a": "John Mitchell",
+     "b": "Shoaib Yousaf",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -342,6 +348,17 @@
      "decided": false,
      "round": "",
      "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 12,
+     "segment": "Announced",
+     "weight_class": "Lightweight",
+     "a": "Mateusz R\u0119becki",
+     "b": "Elves Brener",
+     "title": false,
+     "result": "",
      "rounds": 3,
      "main_event": false
     }
