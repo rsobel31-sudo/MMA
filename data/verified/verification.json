@@ -823,6 +823,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Chelsea Hackett",
+   "sherdog": "1999-10-29",
+   "ufcstats": "1998-08-16",
+   "fightmatrix": null
+  },
+  {
    "name": "Qihui Yan",
    "sherdog": "1996-09-21",
    "ufcstats": "1996-10-21",
@@ -920,12 +926,12 @@
   }
  ],
  "dob": {
-  "agree": 2466,
-  "differ, unresolved (Sherdog kept)": 104,
+  "agree": 2467,
+  "differ, unresolved (Sherdog kept)": 105,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2477,
+  "agree": 2479,
   "differ": 183
  },
  "reach": {
@@ -934,12 +940,12 @@
   "differ": 68
  },
  "odds": {
-  "odds bouts": 16813,
-  "matched": 13376,
+  "odds bouts": 16822,
+  "matched": 13384,
   "unmatched": 2050,
   "bad lines": 0,
   "pages disagree": 7,
   "both pages": 9031,
-  "no lines": 1380
+  "no lines": 1381
  }
 }

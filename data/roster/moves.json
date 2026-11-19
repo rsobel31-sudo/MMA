@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-18T12:18:04+00:00",
+ "fetched": "2026-11-19T12:21:35+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -1050,6 +1050,48 @@
     "url": "https://heavy.com/sports/ufc/stephen-thompson-retires-after-ufc-334/"
    },
    "first_seen": "2026-11-15"
+  },
+  {
+   "name": "Virna Jandiroba",
+   "date": "2026-11-18",
+   "division": "Women's Strawweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision"
+   },
+   "first_seen": "2026-11-19"
+  },
+  {
+   "name": "Ryan Hall",
+   "date": "2026-11-18",
+   "division": "Featherweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/522274/ryan-hall-parts-ways-with-ufc-5-years-after-last-fight"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/522274/ryan-hall-parts-ways-with-ufc-5-years-after-last-fight"
+   },
+   "first_seen": "2026-11-19"
+  },
+  {
+   "name": "Wellington Turman",
+   "date": "2026-11-18",
+   "division": "Middleweight",
+   "refs": [
+    "https://www.mmafighting.com/ufc/522274/ryan-hall-parts-ways-with-ufc-5-years-after-last-fight"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/522274/ryan-hall-parts-ways-with-ufc-5-years-after-last-fight"
+   },
+   "first_seen": "2026-11-19"
   },
   {
    "name": "Farid Basharat",

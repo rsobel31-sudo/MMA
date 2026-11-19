@@ -1389,15 +1389,15 @@
    "system": "media",
    "division": "Heavyweight",
    "rank": "6",
-   "name": "Rizvan Kuniev",
-   "wiki": "https://en.wikipedia.org/wiki/Rizvan_Kuniev"
+   "name": "Johnny Walker",
+   "wiki": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)"
   },
   {
    "system": "media",
    "division": "Heavyweight",
    "rank": "7",
-   "name": "Johnny Walker",
-   "wiki": "https://en.wikipedia.org/wiki/Johnny_Walker_(fighter)"
+   "name": "Rizvan Kuniev",
+   "wiki": "https://en.wikipedia.org/wiki/Rizvan_Kuniev"
   },
   {
    "system": "media",
@@ -1760,15 +1760,15 @@
    "system": "media",
    "division": "Welterweight",
    "rank": "11",
-   "name": "Uroš Medić",
-   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
+   "name": "Yaroslav Amosov",
+   "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
   },
   {
    "system": "media",
    "division": "Welterweight",
    "rank": "12",
-   "name": "Yaroslav Amosov",
-   "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
+   "name": "Uroš Medić",
+   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
   },
   {
    "system": "media",
@@ -1781,15 +1781,15 @@
    "system": "media",
    "division": "Welterweight",
    "rank": "14",
-   "name": "Daniel Rodriguez",
-   "wiki": "https://en.wikipedia.org/wiki/Daniel_Rodriguez_(fighter)"
+   "name": "Kevin Holland",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
   },
   {
    "system": "media",
    "division": "Welterweight",
    "rank": "15",
-   "name": "Kevin Holland",
-   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
+   "name": "Daniel Rodriguez",
+   "wiki": "https://en.wikipedia.org/wiki/Daniel_Rodriguez_(fighter)"
   },
   {
    "system": "media",
@@ -1885,7 +1885,7 @@
   {
    "system": "media",
    "division": "Lightweight",
-   "rank": "12",
+   "rank": "13",
    "name": "Renato Moicano",
    "wiki": "https://en.wikipedia.org/wiki/Renato_Moicano"
   },
@@ -1991,8 +1991,8 @@
    "system": "media",
    "division": "Featherweight",
    "rank": "12",
-   "name": "Melquizael Costa",
-   "wiki": "https://en.wikipedia.org/wiki/Melquizael_Costa"
+   "name": "Patrício Pitbull",
+   "wiki": "https://en.wikipedia.org/wiki/Patrício_Pitbull"
   },
   {
    "system": "media",
@@ -2005,15 +2005,15 @@
    "system": "media",
    "division": "Featherweight",
    "rank": "14",
-   "name": "Patrício Pitbull",
-   "wiki": "https://en.wikipedia.org/wiki/Patrício_Pitbull"
+   "name": "David Onama",
+   "wiki": "https://en.wikipedia.org/wiki/David_Onama"
   },
   {
    "system": "media",
    "division": "Featherweight",
    "rank": "15",
-   "name": "David Onama",
-   "wiki": "https://en.wikipedia.org/wiki/David_Onama"
+   "name": "Pat Sabatini",
+   "wiki": "https://en.wikipedia.org/wiki/Pat_Sabatini"
   },
   {
    "system": "media",
@@ -2235,16 +2235,16 @@
   {
    "system": "media",
    "division": "Women's Bantamweight",
-   "rank": "3",
-   "name": "Ailín Pérez",
-   "wiki": "https://en.wikipedia.org/wiki/Ailín_Pérez"
+   "rank": "1",
+   "name": "Amanda Nunes",
+   "wiki": "https://en.wikipedia.org/wiki/Amanda_Nunes"
   },
   {
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "4",
-   "name": "Norma Dumont",
-   "wiki": "https://en.wikipedia.org/wiki/Norma_Dumont"
+   "name": "Ailín Pérez",
+   "wiki": "https://en.wikipedia.org/wiki/Ailín_Pérez"
   },
   {
    "system": "media",
@@ -2271,29 +2271,29 @@
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "8",
+   "name": "Beatriz Mesquita",
+   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
+  },
+  {
+   "system": "media",
+   "division": "Women's Bantamweight",
+   "rank": "9",
    "name": "Jacqueline Cavalcanti",
    "wiki": "https://en.wikipedia.org/wiki/Jacqueline_Cavalcanti"
   },
   {
    "system": "media",
    "division": "Women's Bantamweight",
-   "rank": "9",
+   "rank": "10",
    "name": "Karol Rosa",
    "wiki": "https://en.wikipedia.org/wiki/Karol_Rosa"
   },
   {
    "system": "media",
    "division": "Women's Bantamweight",
-   "rank": "10",
+   "rank": "12",
    "name": "Macy Chiasson",
    "wiki": "https://en.wikipedia.org/wiki/Macy_Chiasson"
-  },
-  {
-   "system": "media",
-   "division": "Women's Bantamweight",
-   "rank": "11",
-   "name": "Beatriz Mesquita",
-   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
   },
   {
    "system": "media",
@@ -2506,6 +2506,6 @@
    "wiki": "https://en.wikipedia.org/wiki/Angela_Hill"
   }
  ],
- "fetched": "2026-11-18",
+ "fetched": "2026-11-19",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }
