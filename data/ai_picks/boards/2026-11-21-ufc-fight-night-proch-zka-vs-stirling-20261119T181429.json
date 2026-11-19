@@ -1,0 +1,3196 @@
+{
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "date": "2026-11-21",
+ "locks_at": "2026-11-21T13:00:00+00:00",
+ "fetched_at": "2026-11-19T18:14:29+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-doha-4440",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Procházka_vs._Stirling",
+ "bouts": [
+  {
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "a": "Jiri Prochazka",
+   "b": "Navajo Stirling",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "a": "Aljamain Sterling",
+   "b": "Kevin Vallejos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Brian Ortega vs Dan Hooker",
+   "a": "Brian Ortega",
+   "b": "Dan Hooker",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "a": "Asu Almabayev",
+   "b": "Kyoji Horiguchi",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "a": "Aleksandre Topuria",
+   "b": "Santiago Luna",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "a": "Shamil Gaziev",
+   "b": "Tallison Teixeira",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "a": "Alessandro Costa",
+   "b": "Amir Albazi",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "a": "Jake Matthews",
+   "b": "Tahir Abdullayev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "a": "Alik Lorenz",
+   "b": "Diyar Nurgozhay",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "John Mitchell vs Shoaib Yousaf",
+   "a": "John Mitchell",
+   "b": "Shoaib Yousaf",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45574:ml:a",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jiri Prochazka to win",
+   "odds": 140,
+   "p_fanduel": 0.3933
+  },
+  {
+   "id": "45574:ml:b",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Navajo Stirling to win",
+   "odds": -180,
+   "p_fanduel": 0.6067
+  },
+  {
+   "id": "45574:distance:False",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -770,
+   "p_fanduel": 0.8346
+  },
+  {
+   "id": "45574:distance:True",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 470,
+   "p_fanduel": 0.1654
+  },
+  {
+   "id": "45574:ends_round:1",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 175,
+   "p_fanduel": 0.3247
+  },
+  {
+   "id": "45574:ends_round:2",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 330,
+   "p_fanduel": 0.2076
+  },
+  {
+   "id": "45574:ends_round:3",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45574:ends_round:4",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ends_round",
+    4
+   ],
+   "selection": "Fight ends in round 4",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45574:ends_round:5",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "ends_round",
+    5
+   ],
+   "selection": "Fight ends in round 5",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45574:method:a:DEC",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Jiri Prochazka by decision",
+   "odds": 1200,
+   "p_fanduel": 0.0675
+  },
+  {
+   "id": "45574:method:a:KO/TKO",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jiri Prochazka by KO/TKO",
+   "odds": 200,
+   "p_fanduel": 0.2923
+  },
+  {
+   "id": "45574:method:a:SUB",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jiri Prochazka by submission",
+   "odds": 2000,
+   "p_fanduel": 0.0418
+  },
+  {
+   "id": "45574:method:b:DEC",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Navajo Stirling by decision",
+   "odds": 800,
+   "p_fanduel": 0.0974
+  },
+  {
+   "id": "45574:method:b:KO/TKO",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Navajo Stirling by KO/TKO",
+   "odds": -110,
+   "p_fanduel": 0.4593
+  },
+  {
+   "id": "45574:method:b:SUB",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Navajo Stirling by submission",
+   "odds": 2000,
+   "p_fanduel": 0.0418
+  },
+  {
+   "id": "45574:starts_round:2:False",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 188,
+   "p_fanduel": 0.3271
+  },
+  {
+   "id": "45574:starts_round:2:True",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -250,
+   "p_fanduel": 0.6729
+  },
+  {
+   "id": "45574:starts_round:3:False",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -128,
+   "p_fanduel": 0.5289
+  },
+  {
+   "id": "45574:starts_round:3:True",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 100,
+   "p_fanduel": 0.4711
+  },
+  {
+   "id": "45574:starts_round:4:False",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    4,
+    false
+   ],
+   "selection": "Fight does not start round 4",
+   "odds": -240,
+   "p_fanduel": 0.6656
+  },
+  {
+   "id": "45574:starts_round:4:True",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    4,
+    true
+   ],
+   "selection": "Fight starts round 4",
+   "odds": 182,
+   "p_fanduel": 0.3344
+  },
+  {
+   "id": "45574:starts_round:5:False",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    5,
+    false
+   ],
+   "selection": "Fight does not start round 5",
+   "odds": -430,
+   "p_fanduel": 0.7644
+  },
+  {
+   "id": "45574:starts_round:5:True",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "starts_round",
+    5,
+    true
+   ],
+   "selection": "Fight starts round 5",
+   "odds": 300,
+   "p_fanduel": 0.2356
+  },
+  {
+   "id": "45574:win_round:a:1",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Jiri Prochazka in round 1",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45574:win_round:a:2",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Jiri Prochazka in round 2",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45574:win_round:a:3",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jiri Prochazka in round 3",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45574:win_round:a:4",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "a",
+    4
+   ],
+   "selection": "Jiri Prochazka in round 4",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45574:win_round:a:5",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "a",
+    5
+   ],
+   "selection": "Jiri Prochazka in round 5",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45574:win_round:b:1",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Navajo Stirling in round 1",
+   "odds": 330,
+   "p_fanduel": 0.2076
+  },
+  {
+   "id": "45574:win_round:b:2",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Navajo Stirling in round 2",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45574:win_round:b:3",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Navajo Stirling in round 3",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45574:win_round:b:4",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "b",
+    4
+   ],
+   "selection": "Navajo Stirling in round 4",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45574:win_round:b:5",
+   "bout": "Jiri Prochazka vs Navajo Stirling",
+   "market": [
+    "win_round",
+    "b",
+    5
+   ],
+   "selection": "Navajo Stirling in round 5",
+   "odds": 1700,
+   "p_fanduel": 0.0496
+  },
+  {
+   "id": "45676:ml:a",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aljamain Sterling to win",
+   "odds": 108,
+   "p_fanduel": 0.4533
+  },
+  {
+   "id": "45676:ml:b",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kevin Vallejos to win",
+   "odds": -138,
+   "p_fanduel": 0.5467
+  },
+  {
+   "id": "45676:distance:False",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 104,
+   "p_fanduel": 0.4628
+  },
+  {
+   "id": "45676:distance:True",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -132,
+   "p_fanduel": 0.5372
+  },
+  {
+   "id": "45676:ends_round:1",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 310,
+   "p_fanduel": 0.2178
+  },
+  {
+   "id": "45676:ends_round:2",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45676:ends_round:3",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45676:method:a:DEC",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Aljamain Sterling by decision",
+   "odds": 190,
+   "p_fanduel": 0.2997
+  },
+  {
+   "id": "45676:method:a:KO/TKO",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Aljamain Sterling by KO/TKO",
+   "odds": 2000,
+   "p_fanduel": 0.0414
+  },
+  {
+   "id": "45676:method:a:SUB",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Aljamain Sterling by submission",
+   "odds": 650,
+   "p_fanduel": 0.1159
+  },
+  {
+   "id": "45676:method:b:DEC",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kevin Vallejos by decision",
+   "odds": 310,
+   "p_fanduel": 0.212
+  },
+  {
+   "id": "45676:method:b:KO/TKO",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kevin Vallejos by KO/TKO",
+   "odds": 200,
+   "p_fanduel": 0.2897
+  },
+  {
+   "id": "45676:method:b:SUB",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Kevin Vallejos by submission",
+   "odds": 2000,
+   "p_fanduel": 0.0414
+  },
+  {
+   "id": "45676:starts_round:2:False",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 330,
+   "p_fanduel": 0.2194
+  },
+  {
+   "id": "45676:starts_round:2:True",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -480,
+   "p_fanduel": 0.7806
+  },
+  {
+   "id": "45676:starts_round:3:False",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 160,
+   "p_fanduel": 0.3621
+  },
+  {
+   "id": "45676:starts_round:3:True",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -210,
+   "p_fanduel": 0.6379
+  },
+  {
+   "id": "45676:win_round:a:1",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Aljamain Sterling in round 1",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45676:win_round:a:2",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Aljamain Sterling in round 2",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45676:win_round:a:3",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Aljamain Sterling in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45676:win_round:b:1",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Kevin Vallejos in round 1",
+   "odds": 470,
+   "p_fanduel": 0.1566
+  },
+  {
+   "id": "45676:win_round:b:2",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Kevin Vallejos in round 2",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45676:win_round:b:3",
+   "bout": "Aljamain Sterling vs Kevin Vallejos",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Kevin Vallejos in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45733:ml:a",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Brian Ortega to win",
+   "odds": 154,
+   "p_fanduel": 0.3713
+  },
+  {
+   "id": "45733:ml:b",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Dan Hooker to win",
+   "odds": -200,
+   "p_fanduel": 0.6287
+  },
+  {
+   "id": "45733:distance:False",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "45733:distance:True",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "45733:ends_round:1",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 240,
+   "p_fanduel": 0.2626
+  },
+  {
+   "id": "45733:ends_round:2",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 480,
+   "p_fanduel": 0.1539
+  },
+  {
+   "id": "45733:ends_round:3",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45733:method:a:DEC",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Brian Ortega by decision",
+   "odds": 430,
+   "p_fanduel": 0.1643
+  },
+  {
+   "id": "45733:method:a:KO/TKO",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Brian Ortega by KO/TKO",
+   "odds": 1200,
+   "p_fanduel": 0.067
+  },
+  {
+   "id": "45733:method:a:SUB",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Brian Ortega by submission",
+   "odds": 480,
+   "p_fanduel": 0.1501
+  },
+  {
+   "id": "45733:method:b:DEC",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Dan Hooker by decision",
+   "odds": 195,
+   "p_fanduel": 0.2952
+  },
+  {
+   "id": "45733:method:b:KO/TKO",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Dan Hooker by KO/TKO",
+   "odds": 220,
+   "p_fanduel": 0.2721
+  },
+  {
+   "id": "45733:method:b:SUB",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Dan Hooker by submission",
+   "odds": 1600,
+   "p_fanduel": 0.0512
+  },
+  {
+   "id": "45733:starts_round:2:False",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 250,
+   "p_fanduel": 0.2674
+  },
+  {
+   "id": "45733:starts_round:2:True",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -360,
+   "p_fanduel": 0.7326
+  },
+  {
+   "id": "45733:starts_round:3:False",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 128,
+   "p_fanduel": 0.4138
+  },
+  {
+   "id": "45733:starts_round:3:True",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -164,
+   "p_fanduel": 0.5862
+  },
+  {
+   "id": "45733:win_round:a:1",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Brian Ortega in round 1",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45733:win_round:a:2",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Brian Ortega in round 2",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45733:win_round:a:3",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Brian Ortega in round 3",
+   "odds": 1700,
+   "p_fanduel": 0.0496
+  },
+  {
+   "id": "45733:win_round:b:1",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Dan Hooker in round 1",
+   "odds": 440,
+   "p_fanduel": 0.1653
+  },
+  {
+   "id": "45733:win_round:b:2",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Dan Hooker in round 2",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45733:win_round:b:3",
+   "bout": "Brian Ortega vs Dan Hooker",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Dan Hooker in round 3",
+   "odds": 1200,
+   "p_fanduel": 0.0687
+  },
+  {
+   "id": "45734:ml:a",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Asu Almabayev to win",
+   "odds": 148,
+   "p_fanduel": 0.3801
+  },
+  {
+   "id": "45734:ml:b",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Kyoji Horiguchi to win",
+   "odds": -192,
+   "p_fanduel": 0.6199
+  },
+  {
+   "id": "45734:distance:False",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 172,
+   "p_fanduel": 0.3469
+  },
+  {
+   "id": "45734:distance:True",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -225,
+   "p_fanduel": 0.6531
+  },
+  {
+   "id": "45734:ends_round:1",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 450,
+   "p_fanduel": 0.1623
+  },
+  {
+   "id": "45734:ends_round:2",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45734:ends_round:3",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45734:method:a:DEC",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Asu Almabayev by decision",
+   "odds": 260,
+   "p_fanduel": 0.2402
+  },
+  {
+   "id": "45734:method:a:KO/TKO",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Asu Almabayev by KO/TKO",
+   "odds": 1100,
+   "p_fanduel": 0.0721
+  },
+  {
+   "id": "45734:method:a:SUB",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Asu Almabayev by submission",
+   "odds": 1000,
+   "p_fanduel": 0.0786
+  },
+  {
+   "id": "45734:method:b:DEC",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Kyoji Horiguchi by decision",
+   "odds": 130,
+   "p_fanduel": 0.376
+  },
+  {
+   "id": "45734:method:b:KO/TKO",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Kyoji Horiguchi by KO/TKO",
+   "odds": 490,
+   "p_fanduel": 0.1466
+  },
+  {
+   "id": "45734:method:b:SUB",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Kyoji Horiguchi by submission",
+   "odds": 900,
+   "p_fanduel": 0.0865
+  },
+  {
+   "id": "45734:starts_round:2:False",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 460,
+   "p_fanduel": 0.1683
+  },
+  {
+   "id": "45734:starts_round:2:True",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -750,
+   "p_fanduel": 0.8317
+  },
+  {
+   "id": "45734:starts_round:3:False",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 245,
+   "p_fanduel": 0.2728
+  },
+  {
+   "id": "45734:starts_round:3:True",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -340,
+   "p_fanduel": 0.7272
+  },
+  {
+   "id": "45734:win_round:a:1",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Asu Almabayev in round 1",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45734:win_round:a:2",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Asu Almabayev in round 2",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45734:win_round:a:3",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Asu Almabayev in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45734:win_round:b:1",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Kyoji Horiguchi in round 1",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45734:win_round:b:2",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Kyoji Horiguchi in round 2",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45734:win_round:b:3",
+   "bout": "Asu Almabayev vs Kyoji Horiguchi",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Kyoji Horiguchi in round 3",
+   "odds": 1600,
+   "p_fanduel": 0.0525
+  },
+  {
+   "id": "45735:ml:a",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ikram Aliskerov to win",
+   "odds": -320,
+   "p_fanduel": 0.7185
+  },
+  {
+   "id": "45735:ml:b",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jared Cannonier to win",
+   "odds": 235,
+   "p_fanduel": 0.2815
+  },
+  {
+   "id": "45735:distance:False",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -162,
+   "p_fanduel": 0.5829
+  },
+  {
+   "id": "45735:distance:True",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 126,
+   "p_fanduel": 0.4171
+  },
+  {
+   "id": "45735:ends_round:1",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 220,
+   "p_fanduel": 0.279
+  },
+  {
+   "id": "45735:ends_round:2",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 390,
+   "p_fanduel": 0.1822
+  },
+  {
+   "id": "45735:ends_round:3",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45735:method:a:DEC",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Ikram Aliskerov by decision",
+   "odds": 185,
+   "p_fanduel": 0.306
+  },
+  {
+   "id": "45735:method:a:KO/TKO",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Ikram Aliskerov by KO/TKO",
+   "odds": 210,
+   "p_fanduel": 0.2813
+  },
+  {
+   "id": "45735:method:a:SUB",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Ikram Aliskerov by submission",
+   "odds": 650,
+   "p_fanduel": 0.1163
+  },
+  {
+   "id": "45735:method:b:DEC",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Jared Cannonier by decision",
+   "odds": 800,
+   "p_fanduel": 0.0969
+  },
+  {
+   "id": "45735:method:b:KO/TKO",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Jared Cannonier by KO/TKO",
+   "odds": 440,
+   "p_fanduel": 0.1615
+  },
+  {
+   "id": "45735:method:b:SUB",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Jared Cannonier by submission",
+   "odds": 2200,
+   "p_fanduel": 0.0379
+  },
+  {
+   "id": "45735:starts_round:2:False",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 230,
+   "p_fanduel": 0.2846
+  },
+  {
+   "id": "45735:starts_round:2:True",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -320,
+   "p_fanduel": 0.7154
+  },
+  {
+   "id": "45735:starts_round:3:False",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 104,
+   "p_fanduel": 0.4628
+  },
+  {
+   "id": "45735:starts_round:3:True",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -132,
+   "p_fanduel": 0.5372
+  },
+  {
+   "id": "45735:win_round:a:1",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Ikram Aliskerov in round 1",
+   "odds": 370,
+   "p_fanduel": 0.19
+  },
+  {
+   "id": "45735:win_round:a:2",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Ikram Aliskerov in round 2",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45735:win_round:a:3",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Ikram Aliskerov in round 3",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45735:win_round:b:1",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Jared Cannonier in round 1",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45735:win_round:b:2",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Jared Cannonier in round 2",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45735:win_round:b:3",
+   "bout": "Ikram Aliskerov vs Jared Cannonier",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Jared Cannonier in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45736:ml:a",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Aleksandre Topuria to win",
+   "odds": -290,
+   "p_fanduel": 0.7073
+  },
+  {
+   "id": "45736:ml:b",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Santiago Luna to win",
+   "odds": 225,
+   "p_fanduel": 0.2927
+  },
+  {
+   "id": "45736:distance:False",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 114,
+   "p_fanduel": 0.4405
+  },
+  {
+   "id": "45736:distance:True",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -146,
+   "p_fanduel": 0.5595
+  },
+  {
+   "id": "45736:ends_round:1",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 370,
+   "p_fanduel": 0.19
+  },
+  {
+   "id": "45736:ends_round:2",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45736:ends_round:3",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45736:method:a:DEC",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Aleksandre Topuria by decision",
+   "odds": 130,
+   "p_fanduel": 0.3769
+  },
+  {
+   "id": "45736:method:a:KO/TKO",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Aleksandre Topuria by KO/TKO",
+   "odds": 410,
+   "p_fanduel": 0.17
+  },
+  {
+   "id": "45736:method:a:SUB",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Aleksandre Topuria by submission",
+   "odds": 500,
+   "p_fanduel": 0.1445
+  },
+  {
+   "id": "45736:method:b:DEC",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Santiago Luna by decision",
+   "odds": 450,
+   "p_fanduel": 0.1576
+  },
+  {
+   "id": "45736:method:b:KO/TKO",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Santiago Luna by KO/TKO",
+   "odds": 1100,
+   "p_fanduel": 0.0722
+  },
+  {
+   "id": "45736:method:b:SUB",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Santiago Luna by submission",
+   "odds": 1000,
+   "p_fanduel": 0.0788
+  },
+  {
+   "id": "45736:starts_round:2:False",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 380,
+   "p_fanduel": 0.1955
+  },
+  {
+   "id": "45736:starts_round:2:True",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -600,
+   "p_fanduel": 0.8045
+  },
+  {
+   "id": "45736:starts_round:3:False",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 180,
+   "p_fanduel": 0.3374
+  },
+  {
+   "id": "45736:starts_round:3:True",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -235,
+   "p_fanduel": 0.6626
+  },
+  {
+   "id": "45736:win_round:a:1",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Aleksandre Topuria in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45736:win_round:a:2",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Aleksandre Topuria in round 2",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45736:win_round:a:3",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Aleksandre Topuria in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45736:win_round:b:1",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Santiago Luna in round 1",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45736:win_round:b:2",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Santiago Luna in round 2",
+   "odds": 1700,
+   "p_fanduel": 0.0496
+  },
+  {
+   "id": "45736:win_round:b:3",
+   "bout": "Aleksandre Topuria vs Santiago Luna",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Santiago Luna in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45737:ml:a",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Shamil Gaziev to win",
+   "odds": -210,
+   "p_fanduel": 0.6448
+  },
+  {
+   "id": "45737:ml:b",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tallison Teixeira to win",
+   "odds": 168,
+   "p_fanduel": 0.3552
+  },
+  {
+   "id": "45737:distance:False",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -900,
+   "p_fanduel": 0.848
+  },
+  {
+   "id": "45737:distance:True",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 520,
+   "p_fanduel": 0.152
+  },
+  {
+   "id": "45737:ends_round:1",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -160,
+   "p_fanduel": 0.5495
+  },
+  {
+   "id": "45737:ends_round:2",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45737:ends_round:3",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 850,
+   "p_fanduel": 0.094
+  },
+  {
+   "id": "45737:method:a:DEC",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Shamil Gaziev by decision",
+   "odds": 1000,
+   "p_fanduel": 0.0791
+  },
+  {
+   "id": "45737:method:a:KO/TKO",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Shamil Gaziev by KO/TKO",
+   "odds": -135,
+   "p_fanduel": 0.5001
+  },
+  {
+   "id": "45737:method:a:SUB",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Shamil Gaziev by submission",
+   "odds": 1500,
+   "p_fanduel": 0.0544
+  },
+  {
+   "id": "45737:method:b:DEC",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Tallison Teixeira by decision",
+   "odds": 1100,
+   "p_fanduel": 0.0725
+  },
+  {
+   "id": "45737:method:b:KO/TKO",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Tallison Teixeira by KO/TKO",
+   "odds": 240,
+   "p_fanduel": 0.256
+  },
+  {
+   "id": "45737:method:b:SUB",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Tallison Teixeira by submission",
+   "odds": 2200,
+   "p_fanduel": 0.0378
+  },
+  {
+   "id": "45737:starts_round:2:False",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -140,
+   "p_fanduel": 0.5506
+  },
+  {
+   "id": "45737:starts_round:2:True",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": 110,
+   "p_fanduel": 0.4494
+  },
+  {
+   "id": "45737:starts_round:3:False",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -450,
+   "p_fanduel": 0.766
+  },
+  {
+   "id": "45737:starts_round:3:True",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 300,
+   "p_fanduel": 0.234
+  },
+  {
+   "id": "45737:win_round:a:1",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Shamil Gaziev in round 1",
+   "odds": 135,
+   "p_fanduel": 0.3799
+  },
+  {
+   "id": "45737:win_round:a:2",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Shamil Gaziev in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45737:win_round:a:3",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Shamil Gaziev in round 3",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45737:win_round:b:1",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Tallison Teixeira in round 1",
+   "odds": 400,
+   "p_fanduel": 0.1786
+  },
+  {
+   "id": "45737:win_round:b:2",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Tallison Teixeira in round 2",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45737:win_round:b:3",
+   "bout": "Shamil Gaziev vs Tallison Teixeira",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Tallison Teixeira in round 3",
+   "odds": 2200,
+   "p_fanduel": 0.0388
+  },
+  {
+   "id": "45738:ml:a",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alessandro Costa to win",
+   "odds": -114,
+   "p_fanduel": 0.5087
+  },
+  {
+   "id": "45738:ml:b",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Amir Albazi to win",
+   "odds": -106,
+   "p_fanduel": 0.4913
+  },
+  {
+   "id": "45738:distance:False",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": 114,
+   "p_fanduel": 0.4392
+  },
+  {
+   "id": "45738:distance:True",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -148,
+   "p_fanduel": 0.5608
+  },
+  {
+   "id": "45738:ends_round:1",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 340,
+   "p_fanduel": 0.2029
+  },
+  {
+   "id": "45738:ends_round:2",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45738:ends_round:3",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45738:method:a:DEC",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Alessandro Costa by decision",
+   "odds": 270,
+   "p_fanduel": 0.2355
+  },
+  {
+   "id": "45738:method:a:KO/TKO",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Alessandro Costa by KO/TKO",
+   "odds": 310,
+   "p_fanduel": 0.2126
+  },
+  {
+   "id": "45738:method:a:SUB",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Alessandro Costa by submission",
+   "odds": 1300,
+   "p_fanduel": 0.0622
+  },
+  {
+   "id": "45738:method:b:DEC",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Amir Albazi by decision",
+   "odds": 195,
+   "p_fanduel": 0.2954
+  },
+  {
+   "id": "45738:method:b:KO/TKO",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Amir Albazi by KO/TKO",
+   "odds": 850,
+   "p_fanduel": 0.0917
+  },
+  {
+   "id": "45738:method:b:SUB",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Amir Albazi by submission",
+   "odds": 750,
+   "p_fanduel": 0.1025
+  },
+  {
+   "id": "45738:starts_round:2:False",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 350,
+   "p_fanduel": 0.208
+  },
+  {
+   "id": "45738:starts_round:2:True",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -550,
+   "p_fanduel": 0.792
+  },
+  {
+   "id": "45738:starts_round:3:False",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 174,
+   "p_fanduel": 0.3437
+  },
+  {
+   "id": "45738:starts_round:3:True",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -230,
+   "p_fanduel": 0.6563
+  },
+  {
+   "id": "45738:win_round:a:1",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Alessandro Costa in round 1",
+   "odds": 600,
+   "p_fanduel": 0.1276
+  },
+  {
+   "id": "45738:win_round:a:2",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Alessandro Costa in round 2",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45738:win_round:a:3",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Alessandro Costa in round 3",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45738:win_round:b:1",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Amir Albazi in round 1",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45738:win_round:b:2",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Amir Albazi in round 2",
+   "odds": 1300,
+   "p_fanduel": 0.0638
+  },
+  {
+   "id": "45738:win_round:b:3",
+   "bout": "Alessandro Costa vs Amir Albazi",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Amir Albazi in round 3",
+   "odds": 1800,
+   "p_fanduel": 0.047
+  },
+  {
+   "id": "45739:ml:a",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Jake Matthews to win",
+   "odds": -260,
+   "p_fanduel": 0.6878
+  },
+  {
+   "id": "45739:ml:b",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Tahir Abdullayev to win",
+   "odds": 205,
+   "p_fanduel": 0.3122
+  },
+  {
+   "id": "45739:distance:False",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -102,
+   "p_fanduel": 0.4761
+  },
+  {
+   "id": "45739:distance:True",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": -125,
+   "p_fanduel": 0.5239
+  },
+  {
+   "id": "45739:ends_round:1",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 300,
+   "p_fanduel": 0.2232
+  },
+  {
+   "id": "45739:ends_round:2",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 490,
+   "p_fanduel": 0.1513
+  },
+  {
+   "id": "45739:ends_round:3",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45739:method:a:DEC",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Jake Matthews by decision",
+   "odds": 145,
+   "p_fanduel": 0.3545
+  },
+  {
+   "id": "45739:method:a:KO/TKO",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Jake Matthews by KO/TKO",
+   "odds": 450,
+   "p_fanduel": 0.1579
+  },
+  {
+   "id": "45739:method:a:SUB",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Jake Matthews by submission",
+   "odds": 450,
+   "p_fanduel": 0.1579
+  },
+  {
+   "id": "45739:method:b:DEC",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Tahir Abdullayev by decision",
+   "odds": 500,
+   "p_fanduel": 0.1448
+  },
+  {
+   "id": "45739:method:b:KO/TKO",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Tahir Abdullayev by KO/TKO",
+   "odds": 750,
+   "p_fanduel": 0.1022
+  },
+  {
+   "id": "45739:method:b:SUB",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Tahir Abdullayev by submission",
+   "odds": 950,
+   "p_fanduel": 0.0827
+  },
+  {
+   "id": "45739:starts_round:2:False",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 320,
+   "p_fanduel": 0.2247
+  },
+  {
+   "id": "45739:starts_round:2:True",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -460,
+   "p_fanduel": 0.7753
+  },
+  {
+   "id": "45739:starts_round:3:False",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": 154,
+   "p_fanduel": 0.3713
+  },
+  {
+   "id": "45739:starts_round:3:True",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -200,
+   "p_fanduel": 0.6287
+  },
+  {
+   "id": "45739:win_round:a:1",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Jake Matthews in round 1",
+   "odds": 500,
+   "p_fanduel": 0.1488
+  },
+  {
+   "id": "45739:win_round:a:2",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Jake Matthews in round 2",
+   "odds": 750,
+   "p_fanduel": 0.105
+  },
+  {
+   "id": "45739:win_round:a:3",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Jake Matthews in round 3",
+   "odds": 1100,
+   "p_fanduel": 0.0744
+  },
+  {
+   "id": "45739:win_round:b:1",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Tahir Abdullayev in round 1",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45739:win_round:b:2",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Tahir Abdullayev in round 2",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45739:win_round:b:3",
+   "bout": "Jake Matthews vs Tahir Abdullayev",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Tahir Abdullayev in round 3",
+   "odds": 1900,
+   "p_fanduel": 0.0446
+  },
+  {
+   "id": "45740:ml:a",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Dom Mar Fan to win",
+   "odds": -170,
+   "p_fanduel": 0.5998
+  },
+  {
+   "id": "45740:ml:b",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Nikolas Motta to win",
+   "odds": 138,
+   "p_fanduel": 0.4002
+  },
+  {
+   "id": "45740:distance:False",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -188,
+   "p_fanduel": 0.6162
+  },
+  {
+   "id": "45740:distance:True",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 146,
+   "p_fanduel": 0.3838
+  },
+  {
+   "id": "45740:ends_round:1",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": 210,
+   "p_fanduel": 0.288
+  },
+  {
+   "id": "45740:ends_round:2",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 350,
+   "p_fanduel": 0.1984
+  },
+  {
+   "id": "45740:ends_round:3",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45740:method:a:DEC",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Dom Mar Fan by decision",
+   "odds": 260,
+   "p_fanduel": 0.2425
+  },
+  {
+   "id": "45740:method:a:KO/TKO",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Dom Mar Fan by KO/TKO",
+   "odds": 390,
+   "p_fanduel": 0.1782
+  },
+  {
+   "id": "45740:method:a:SUB",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Dom Mar Fan by submission",
+   "odds": 410,
+   "p_fanduel": 0.1712
+  },
+  {
+   "id": "45740:method:b:DEC",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Nikolas Motta by decision",
+   "odds": 550,
+   "p_fanduel": 0.1343
+  },
+  {
+   "id": "45740:method:b:KO/TKO",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Nikolas Motta by KO/TKO",
+   "odds": 260,
+   "p_fanduel": 0.2425
+  },
+  {
+   "id": "45740:method:b:SUB",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Nikolas Motta by submission",
+   "odds": 2700,
+   "p_fanduel": 0.0312
+  },
+  {
+   "id": "45740:starts_round:2:False",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": 220,
+   "p_fanduel": 0.2924
+  },
+  {
+   "id": "45740:starts_round:2:True",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -310,
+   "p_fanduel": 0.7076
+  },
+  {
+   "id": "45740:starts_round:3:False",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -104,
+   "p_fanduel": 0.4812
+  },
+  {
+   "id": "45740:starts_round:3:True",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": -122,
+   "p_fanduel": 0.5188
+  },
+  {
+   "id": "45740:win_round:a:1",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Dom Mar Fan in round 1",
+   "odds": 470,
+   "p_fanduel": 0.1566
+  },
+  {
+   "id": "45740:win_round:a:2",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Dom Mar Fan in round 2",
+   "odds": 650,
+   "p_fanduel": 0.119
+  },
+  {
+   "id": "45740:win_round:a:3",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Dom Mar Fan in round 3",
+   "odds": 950,
+   "p_fanduel": 0.085
+  },
+  {
+   "id": "45740:win_round:b:1",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Nikolas Motta in round 1",
+   "odds": 550,
+   "p_fanduel": 0.1374
+  },
+  {
+   "id": "45740:win_round:b:2",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Nikolas Motta in round 2",
+   "odds": 900,
+   "p_fanduel": 0.0893
+  },
+  {
+   "id": "45740:win_round:b:3",
+   "bout": "Dom Mar Fan vs Nikolas Motta",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Nikolas Motta in round 3",
+   "odds": 1400,
+   "p_fanduel": 0.0595
+  },
+  {
+   "id": "45760:ml:a",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Alik Lorenz to win",
+   "odds": 198,
+   "p_fanduel": 0.3196
+  },
+  {
+   "id": "45760:ml:b",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Diyar Nurgozhay to win",
+   "odds": -250,
+   "p_fanduel": 0.6804
+  },
+  {
+   "id": "45760:distance:False",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "distance",
+    false
+   ],
+   "selection": "Doesn't go to decision",
+   "odds": -900,
+   "p_fanduel": 0.848
+  },
+  {
+   "id": "45760:distance:True",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "distance",
+    true
+   ],
+   "selection": "Goes to decision",
+   "odds": 520,
+   "p_fanduel": 0.152
+  },
+  {
+   "id": "45760:ends_round:1",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ends_round",
+    1
+   ],
+   "selection": "Fight ends in round 1",
+   "odds": -135,
+   "p_fanduel": 0.5129
+  },
+  {
+   "id": "45760:ends_round:2",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ends_round",
+    2
+   ],
+   "selection": "Fight ends in round 2",
+   "odds": 270,
+   "p_fanduel": 0.2413
+  },
+  {
+   "id": "45760:ends_round:3",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "ends_round",
+    3
+   ],
+   "selection": "Fight ends in round 3",
+   "odds": 700,
+   "p_fanduel": 0.1116
+  },
+  {
+   "id": "45760:method:a:DEC",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "a",
+    "DEC"
+   ],
+   "selection": "Alik Lorenz by decision",
+   "odds": 1500,
+   "p_fanduel": 0.0545
+  },
+  {
+   "id": "45760:method:a:KO/TKO",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "a",
+    "KO/TKO"
+   ],
+   "selection": "Alik Lorenz by KO/TKO",
+   "odds": 270,
+   "p_fanduel": 0.2357
+  },
+  {
+   "id": "45760:method:a:SUB",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "a",
+    "SUB"
+   ],
+   "selection": "Alik Lorenz by submission",
+   "odds": 2200,
+   "p_fanduel": 0.0379
+  },
+  {
+   "id": "45760:method:b:DEC",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "b",
+    "DEC"
+   ],
+   "selection": "Diyar Nurgozhay by decision",
+   "odds": 850,
+   "p_fanduel": 0.0918
+  },
+  {
+   "id": "45760:method:b:KO/TKO",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "b",
+    "KO/TKO"
+   ],
+   "selection": "Diyar Nurgozhay by KO/TKO",
+   "odds": -130,
+   "p_fanduel": 0.4929
+  },
+  {
+   "id": "45760:method:b:SUB",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "method",
+    "b",
+    "SUB"
+   ],
+   "selection": "Diyar Nurgozhay by submission",
+   "odds": 900,
+   "p_fanduel": 0.0872
+  },
+  {
+   "id": "45760:starts_round:2:False",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "starts_round",
+    2,
+    false
+   ],
+   "selection": "Fight does not start round 2",
+   "odds": -120,
+   "p_fanduel": 0.5146
+  },
+  {
+   "id": "45760:starts_round:2:True",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "starts_round",
+    2,
+    true
+   ],
+   "selection": "Fight starts round 2",
+   "odds": -106,
+   "p_fanduel": 0.4854
+  },
+  {
+   "id": "45760:starts_round:3:False",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "starts_round",
+    3,
+    false
+   ],
+   "selection": "Fight does not start round 3",
+   "odds": -380,
+   "p_fanduel": 0.7455
+  },
+  {
+   "id": "45760:starts_round:3:True",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "starts_round",
+    3,
+    true
+   ],
+   "selection": "Fight starts round 3",
+   "odds": 270,
+   "p_fanduel": 0.2545
+  },
+  {
+   "id": "45760:win_round:a:1",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "a",
+    1
+   ],
+   "selection": "Alik Lorenz in round 1",
+   "odds": 450,
+   "p_fanduel": 0.1623
+  },
+  {
+   "id": "45760:win_round:a:2",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "a",
+    2
+   ],
+   "selection": "Alik Lorenz in round 2",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45760:win_round:a:3",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "a",
+    3
+   ],
+   "selection": "Alik Lorenz in round 3",
+   "odds": 2000,
+   "p_fanduel": 0.0425
+  },
+  {
+   "id": "45760:win_round:b:1",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "b",
+    1
+   ],
+   "selection": "Diyar Nurgozhay in round 1",
+   "odds": 150,
+   "p_fanduel": 0.3571
+  },
+  {
+   "id": "45760:win_round:b:2",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "b",
+    2
+   ],
+   "selection": "Diyar Nurgozhay in round 2",
+   "odds": 430,
+   "p_fanduel": 0.1685
+  },
+  {
+   "id": "45760:win_round:b:3",
+   "bout": "Alik Lorenz vs Diyar Nurgozhay",
+   "market": [
+    "win_round",
+    "b",
+    3
+   ],
+   "selection": "Diyar Nurgozhay in round 3",
+   "odds": 1000,
+   "p_fanduel": 0.0812
+  },
+  {
+   "id": "45842:ml:a",
+   "bout": "John Mitchell vs Shoaib Yousaf",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "John Mitchell to win",
+   "odds": -144,
+   "p_fanduel": 0.5627
+  },
+  {
+   "id": "45842:ml:b",
+   "bout": "John Mitchell vs Shoaib Yousaf",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Shoaib Yousaf to win",
+   "odds": 118,
+   "p_fanduel": 0.4373
+  }
+ ]
+}
