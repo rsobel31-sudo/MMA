@@ -17,21 +17,22 @@ from mma_predictor.reads import Pundits, check_read  # noqa: E402
 
 EVENT, DATE = "UFC Fight Night: Procházka vs. Stirling", "2026-11-21"
 RESULTS = "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Proch%C3%A1zka_vs._Stirling"
-CREATED = "2026-11-17T21:30:00+00:00"
+CREATED = "2026-11-20T18:00:00+00:00"
 
-# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-17 17:07 UTC.
+# Model (stats only) and FanDuel no-vig numbers toward a, from the picks sheet of 2026-11-20 17:40 UTC.
 P = {
-    ("Jiri Prochazka", "Navajo Stirling"): (0.33, 0.411),
-    ("Aljamain Sterling", "Kevin Vallejos"): (0.44, 0.453),
-    ("Brian Ortega", "Dan Hooker"): (0.62, 0.384),
-    ("Asu Almabayev", "Kyoji Horiguchi"): (0.49, 0.371),
-    ("Ikram Aliskerov", "Jared Cannonier"): (0.84, 0.755),
-    ("Aleksandre Topuria", "Santiago Luna"): (0.41, 0.714),
-    ("Shamil Gaziev", "Tallison Teixeira"): (0.39, 0.634),
-    ("Alessandro Costa", "Amir Albazi"): (0.44, 0.485),
-    ("Jake Matthews", "Tahir Abdullayev"): (0.49, 0.685),
-    ("Dom Mar Fan", "Nikolas Motta"): (0.67, 0.580),
-    ("Alik Lorenz", "Diyar Nurgozhay"): (0.26, 0.315),
+    ('Jiri Prochazka', 'Navajo Stirling'): (0.33, 0.397),
+    ('Aljamain Sterling', 'Kevin Vallejos'): (0.45, 0.454),
+    ('Brian Ortega', 'Dan Hooker'): (0.62, 0.375),
+    ('Asu Almabayev', 'Kyoji Horiguchi'): (0.49, 0.378),
+    ('Ikram Aliskerov', 'Jared Cannonier'): (0.84, 0.715),
+    ('Aleksandre Topuria', 'Santiago Luna'): (0.4, 0.707),
+    ('Shamil Gaziev', 'Tallison Teixeira'): (0.39, 0.645),
+    ('Alessandro Costa', 'Amir Albazi'): (0.44, 0.509),
+    ('Jake Matthews', 'Tahir Abdullayev'): (0.49, 0.685),
+    ('Dom Mar Fan', 'Nikolas Motta'): (0.67, 0.6),
+    ('Alik Lorenz', 'Diyar Nurgozhay'): (0.26, 0.315),
+    ('John Mitchell', 'Shoaib Yousaf'): (0.43, 0.563),
 }
 
 READS = [
@@ -72,7 +73,7 @@ READS = [
                    "Costa in their first fight keeps it small.",
          factors=["Albazi's inactivity and health history", "Costa's form", "Albazi's previous knockout of Costa (against)"]),
     dict(a="Jake Matthews", b="Tahir Abdullayev", favours="Jake Matthews", logit=0.10, confidence="low",
-         reasoning="The model has Matthews at 49% against a market at 69%. Abdullayev has one UFC fight and a regional record that "
+         reasoning="The model has Matthews at 49% against a market at 69%. Abdullayev, a pound over at 172, has one UFC fight and a regional record that "
                    "differs by source, so his numbers rest on weak opposition; Matthews has 24 UFC fights and won his last "
                    "clearly. Matthews fading in R3 scrambles keeps it small.",
          factors=["Abdullayev's thin UFC data", "Matthews's experience", "Matthews's late fades (against)"]),
@@ -84,10 +85,14 @@ READS = [
          reasoning="Lorenz debuts with nearly every fight ending in R1 either way; Nurgozhay has won two straight. Model and market "
                    "agree; no lean.",
          factors=["Lorenz's debut", "Nurgozhay's submission defence (against)"]),
+    dict(a="John Mitchell", b="Shoaib Yousaf", favours="John Mitchell", logit=0.0, confidence="low",
+         reasoning="Two 31-year-old debutants signed four days out. Mitchell is the boxer with PFL experience; Yousaf has knocked "
+                   "out his last three in R1 and has never been stopped. Little film either way; no lean.",
+         factors=["Both on short notice", "Yousaf's early power (against)"]),
 ]
-
-# Picks published by Friday (outlet, author, pick, method, url); filled on the Friday run.
-PUNDIT_PICKS = []
+# Picks published by Friday 2026-11-20 (outlet, author, pick, method, url): 99 picks from 11 outlets.
+PUNDIT_PICKS = [(r["a"], r["b"], r["outlet"], r["author"], r["pick"], r["method"], r["url"])
+                for r in json.loads((Path(__file__).with_name("ufcprochazka_pundits.json")).read_text())]
 
 
 def _p(a, b):

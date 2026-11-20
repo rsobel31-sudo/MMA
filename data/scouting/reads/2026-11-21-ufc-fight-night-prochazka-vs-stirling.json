@@ -18,9 +18,122 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.33,
-   "p_market": 0.411,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.397,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Navajo Stirling",
+     "method": "DEC",
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Jiri Prochazka",
+     "method": "KO/TKO",
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Navajo Stirling",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Navajo Stirling",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Navajo Stirling",
+     "method": null,
+     "url": "https://keeonsports.com/ufcfight-night-prochazka-vs-stirling-preview-and-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Navajo Stirling",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Navajo Stirling",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "BetMGM",
+     "author": "Anatoly Pimentel",
+     "pick": "Jiri Prochazka",
+     "method": "KO/TKO",
+     "url": "https://sports.betmgm.com/en/blog/ufc/qatar-prochazka-stirling-fight-card-predictions-odds-bm05/"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Navajo Stirling",
+     "method": null,
+     "url": "https://rg.org/news/mma/prochazka-vs-stirling-odds-picks-ufc-fight-night-doha-best-bets-2026"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Jiri Prochazka",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    },
+    {
+     "outlet": "Bloody Elbow",
+     "author": "Jordan Ellis",
+     "pick": "Navajo Stirling",
+     "method": "KO/TKO",
+     "url": "https://bloodyelbow.com/2026/11/20/jiri-prochazka-vs-navajo-stirling-bloody-elbow-staff-predict-the-ufc-qatar-main-event/"
+    },
+    {
+     "outlet": "Bloody Elbow",
+     "author": "Donagh Corby",
+     "pick": "Jiri Prochazka",
+     "method": "DEC",
+     "url": "https://bloodyelbow.com/2026/11/20/jiri-prochazka-vs-navajo-stirling-bloody-elbow-staff-predict-the-ufc-qatar-main-event/"
+    },
+    {
+     "outlet": "Bloody Elbow",
+     "author": "Jamie Theodosi",
+     "pick": "Navajo Stirling",
+     "method": "KO/TKO",
+     "url": "https://bloodyelbow.com/2026/11/20/jiri-prochazka-vs-navajo-stirling-bloody-elbow-staff-predict-the-ufc-qatar-main-event/"
+    },
+    {
+     "outlet": "Bloody Elbow",
+     "author": "Kyle Dimond",
+     "pick": "Navajo Stirling",
+     "method": "KO/TKO",
+     "url": "https://bloodyelbow.com/2026/11/20/jiri-prochazka-vs-navajo-stirling-bloody-elbow-staff-predict-the-ufc-qatar-main-event/"
+    },
+    {
+     "outlet": "Bloody Elbow",
+     "author": "Harvey Leonard",
+     "pick": "Jiri Prochazka",
+     "method": "KO/TKO",
+     "url": "https://bloodyelbow.com/2026/11/20/jiri-prochazka-vs-navajo-stirling-bloody-elbow-staff-predict-the-ufc-qatar-main-event/"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Jiri Prochazka",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/jiri-prochazka-vs-navajo-stirling-pick-11-21-2026-predictions-ufc-qatar-odds.html"
+    }
+   ]
   },
   {
    "a": "Aljamain Sterling",
@@ -36,10 +149,81 @@
    ],
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
-   "p_model": 0.44,
-   "p_market": 0.453,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_model": 0.45,
+   "p_market": 0.454,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Kevin Vallejos",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Kevin Vallejos",
+     "method": "KO/TKO",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Kevin Vallejos",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://keeonsports.com/ufcfight-night-prochazka-vs-stirling-preview-and-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Kevin Vallejos",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://rg.org/news/mma/prochazka-vs-stirling-odds-picks-ufc-fight-night-doha-best-bets-2026"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://vsin.com/mma/ufc-qatar-stirling-vs-prochazka-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Aljamain Sterling",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Brian Ortega",
@@ -56,9 +240,80 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.62,
-   "p_market": 0.384,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.375,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Brian Ortega",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Brian Ortega",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Dan Hooker",
+     "method": "DEC",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Dan Hooker",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Brian Ortega",
+     "method": null,
+     "url": "https://keeonsports.com/ufcfight-night-prochazka-vs-stirling-preview-and-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Dan Hooker",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Brian Ortega",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "RG.org",
+     "author": "Sergey Demidov",
+     "pick": "Brian Ortega",
+     "method": null,
+     "url": "https://rg.org/news/mma/prochazka-vs-stirling-odds-picks-ufc-fight-night-doha-best-bets-2026"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Dan Hooker",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Dan Hooker",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/dan-hooker-vs-brian-ortega-pick-11-21-2026-predictions-ufc-qatar-odds.html"
+    }
+   ]
   },
   {
    "a": "Asu Almabayev",
@@ -74,9 +329,73 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.49,
-   "p_market": 0.371,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.378,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Kyoji Horiguchi",
+     "method": "DEC",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Kyoji Horiguchi",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://keeonsports.com/ufcfight-night-prochazka-vs-stirling-preview-and-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Kyoji Horiguchi",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Guy Bruhn",
+     "pick": "Asu Almabayev",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/kyoji-horiguchi-vs-asu-almabayev-pick-11-21-2026-predictions-ufc-qatar-odds.html"
+    }
+   ]
   },
   {
    "a": "Ikram Aliskerov",
@@ -93,9 +412,73 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.84,
-   "p_market": 0.755,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.715,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Ikram Aliskerov",
+     "method": "DEC",
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Ikram Aliskerov",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "Kee On Sports",
+     "author": "Vince McKee",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://keeonsports.com/ufcfight-night-prochazka-vs-stirling-preview-and-predictions"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "VSiN",
+     "author": "Lou Finocchiaro",
+     "pick": "Jared Cannonier",
+     "method": null,
+     "url": "https://vsin.com/mma/ufc-qatar-stirling-vs-prochazka-odds-picks-predictions-and-best-bets/"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Ikram Aliskerov",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Aleksandre Topuria",
@@ -110,10 +493,67 @@
    ],
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
-   "p_model": 0.41,
-   "p_market": 0.714,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_model": 0.4,
+   "p_market": 0.707,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Aleksandre Topuria",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Aleksandre Topuria",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Aleksandre Topuria",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Aleksandre Topuria",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Aleksandre Topuria",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Santiago Luna",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Aleksandre Topuria",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Josh Schonwald",
+     "pick": "Santiago Luna",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/aleksandre-topuria-vs-santiago-luna-pick-11-21-2026-predictions-ufc-qatar-odds.html"
+    }
+   ]
   },
   {
    "a": "Shamil Gaziev",
@@ -129,9 +569,59 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.39,
-   "p_market": 0.634,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.645,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Tallison Teixeira",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Tallison Teixeira",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Shamil Gaziev",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Shamil Gaziev",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Shamil Gaziev",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Shamil Gaziev",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Shamil Gaziev",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Alessandro Costa",
@@ -148,9 +638,59 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.44,
-   "p_market": 0.485,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.509,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Amir Albazi",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Amir Albazi",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Amir Albazi",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Alessandro Costa",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Amir Albazi",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Alessandro Costa",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Amir Albazi",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Jake Matthews",
@@ -158,7 +698,7 @@
    "favours": "Jake Matthews",
    "logit": 0.1,
    "confidence": "low",
-   "reasoning": "The model has Matthews at 49% against a market at 69%. Abdullayev has one UFC fight and a regional record that differs by source, so his numbers rest on weak opposition; Matthews has 24 UFC fights and won his last clearly. Matthews fading in R3 scrambles keeps it small.",
+   "reasoning": "The model has Matthews at 49% against a market at 69%. Abdullayev, a pound over at 172, has one UFC fight and a regional record that differs by source, so his numbers rest on weak opposition; Matthews has 24 UFC fights and won his last clearly. Matthews fading in R3 scrambles keeps it small.",
    "factors": [
     "Abdullayev's thin UFC data",
     "Matthews's experience",
@@ -168,8 +708,58 @@
    "date": "2026-11-21",
    "p_model": 0.49,
    "p_market": 0.685,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Tahir Abdullayev",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Jake Matthews",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Jake Matthews",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Jake Matthews",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Tahir Abdullayev",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Tahir Abdullayev",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Jake Matthews",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Dom Mar Fan",
@@ -186,9 +776,59 @@
    "event": "UFC Fight Night: Procházka vs. Stirling",
    "date": "2026-11-21",
    "p_model": 0.67,
-   "p_market": 0.58,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "p_market": 0.6,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Nikolas Motta",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Nikolas Motta",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Dom Mar Fan",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Nikolas Motta",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Dom Mar Fan",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Dom Mar Fan",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Dom Mar Fan",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    }
+   ]
   },
   {
    "a": "Alik Lorenz",
@@ -205,8 +845,91 @@
    "date": "2026-11-21",
    "p_model": 0.26,
    "p_market": 0.315,
-   "created": "2026-11-17T21:30:00+00:00",
-   "pundits": []
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "Combat Press",
+     "author": "Andrew Sumian",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "Combat Press",
+     "author": "Mathew Petela",
+     "pick": "Alik Lorenz",
+     "method": null,
+     "url": "https://combatpress.com/2026/11/ufc-qatar-prochazka-vs-stirling-preview-and-predictions/"
+    },
+    {
+     "outlet": "MMA Insight",
+     "author": "Ross Cole",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://mmainsight.com/ufc/ufc-fight-night-294-predictions"
+    },
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Diyar Nurgozhay",
+     "method": "KO/TKO",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Jon Litterine",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/draftkings-ufc-picks-ufc-qatar-dfs-preview-146881"
+    },
+    {
+     "outlet": "RotoWire",
+     "author": "Drake Burden",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://www.rotowire.com/mma/article/ufc-qatar-prochazka-vs-stirling-dfs-analysis-drakes-takes-147116"
+    },
+    {
+     "outlet": "Yahoo/Uncrowned",
+     "author": "Drake Riggs",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
+    },
+    {
+     "outlet": "Doc's Sports",
+     "author": "Tony Sink",
+     "pick": "Diyar Nurgozhay",
+     "method": null,
+     "url": "https://www.docsports.com/free-picks/ufc/2026/diyar-nurgozhay-vs-alik-lorenz-pick-11-21-2026-predictions-ufc-qatar-odds.html"
+    }
+   ]
+  },
+  {
+   "a": "John Mitchell",
+   "b": "Shoaib Yousaf",
+   "favours": "John Mitchell",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Two 31-year-old debutants signed four days out. Mitchell is the boxer with PFL experience; Yousaf has knocked out his last three in R1 and has never been stopped. Little film either way; no lean.",
+   "factors": [
+    "Both on short notice",
+    "Yousaf's early power (against)"
+   ],
+   "event": "UFC Fight Night: Procházka vs. Stirling",
+   "date": "2026-11-21",
+   "p_model": 0.43,
+   "p_market": 0.563,
+   "created": "2026-11-20T18:00:00+00:00",
+   "pundits": [
+    {
+     "outlet": "FightStudy (Substack)",
+     "author": "FightStudy",
+     "pick": "Shoaib Yousaf",
+     "method": "DEC",
+     "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
+    }
+   ]
   }
  ]
 }
