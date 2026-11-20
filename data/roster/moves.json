@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-20T12:26:43+00:00",
+ "fetched": "2026-11-20T17:11:32+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -102,20 +102,6 @@
     "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
    ],
    "info": "",
-   "confirmed_by": {
-    "source": "mmafighting.com",
-    "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
-   },
-   "first_seen": "2026-10-10"
-  },
-  {
-   "name": "Alik Lorenz",
-   "date": "2026-08-18",
-   "division": "Light Heavyweight",
-   "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/15/ufc-qatar-diyar-nurgozhay-vs-alik-lorenz-light-heavyweight-mma-fight-booking-announcement/92266930007/"
-   ],
-   "info": "UFC Fight Night 294 (Al Rayyan) – Diyar Nurgozhay",
    "confirmed_by": {
     "source": "mmafighting.com",
     "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
@@ -703,6 +689,21 @@
    "first_seen": "2026-11-14"
   },
   {
+   "name": "Alik Lorenz",
+   "date": "2026-08-18",
+   "division": "Light Heavyweight",
+   "refs": [
+    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/15/ufc-qatar-diyar-nurgozhay-vs-alik-lorenz-light-heavyweight-mma-fight-booking-announcement/92266930007/"
+   ],
+   "info": "UFC Fight Night 294 (Al Rayyan) – Diyar Nurgozhay",
+   "confirmed_by": {
+    "source": "mmafighting.com",
+    "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
+   },
+   "first_seen": "2026-10-10",
+   "left_table": "2026-11-20"
+  },
+  {
    "name": "John Mitchell",
    "date": "2026-11-17",
    "division": "Lightweight",
@@ -714,7 +715,8 @@
     "source": "heavy.com",
     "url": "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
    },
-   "first_seen": "2026-11-18"
+   "first_seen": "2026-11-18",
+   "left_table": "2026-11-20"
   },
   {
    "name": "Shoaib Yousaf",
@@ -728,7 +730,8 @@
     "source": "heavy.com",
     "url": "https://heavy.com/sports/ufc/ufc-qatar-card-gets-late-addition/"
    },
-   "first_seen": "2026-11-18"
+   "first_seen": "2026-11-18",
+   "left_table": "2026-11-20"
   },
   {
    "name": "Samuel Sanches",
@@ -1092,6 +1095,17 @@
     "url": "https://www.mmafighting.com/ufc/522274/ryan-hall-parts-ways-with-ufc-5-years-after-last-fight"
    },
    "first_seen": "2026-11-19"
+  },
+  {
+   "name": "Lee Jeong-yeong",
+   "date": "2026-11-20",
+   "division": "Featherweight",
+   "refs": [
+    "https://bloodyelbow.com/2026/11/20/ufc-star-announces-retirement-to-make-final-octagon-appearance-a-send-off-for-both-fighters/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": null,
+   "first_seen": "2026-11-20"
   },
   {
    "name": "Farid Basharat",
