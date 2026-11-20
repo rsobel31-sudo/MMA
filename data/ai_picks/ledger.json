@@ -964,7 +964,7 @@
    "placed_at": "2026-11-18T18:15:28+00:00",
    "bankroll_before": 84.49,
    "available_before": 84.49,
-   "note": "Early check, Wednesday. The moneylines look sharp, and Ortega-Hooker already sits where the read puts it, so I'm not betting a winner. The one price wrong for a reason I can name is Aliskerov by decision. His last two wins were wrestling-control decisions: he held Park and his previous opponent down for six and nine minutes. Since 2019 Cannonier has been stopped once in his last eight fights against top opponents (Imavov, R4); his other losses all went to the cards. Small, because a 42-year-old's chin can go at any time and Aliskerov hits hard in the first round.",
+   "note": "Early check, Wednesday. The moneylines look sharp, and Ortega-Hooker already sits where the read puts it, so I'm not betting a winner. The one price wrong for a reason I can name is Aliskerov by decision. His last two wins were wrestling-control decisions: he held Park and his previous opponent down for six and nine minutes. Since 2019 Cannonier has been stopped once in his last eight fights against top opponents (Imavov, R4); his other losses all went to the cards. Small, because a 42-year-old's chin can go at any time and Aliskerov hits hard in the first round.\n\nFriday. The moneylines are close to fair and the main event is a pass: the model, the market and the pundits all side with Stirling at about the price. Wednesday's Aliskerov-by-decision bet stands. Two more decision props follow the same reads as my AI Picks, where the price leaves room for the fight going the distance. Hooker by decision rests on the read the stats can't see: Ortega has been out 15 months, withdrew twice and is new at 155. Matthews by decision: his jiu-jitsu and top control over three rounds against a heavy-handed but thinly tested opponent who missed weight. Both are small: $1 each, under the quarter-Kelly guide, because method props carry the finish model's uncertainty.",
    "bets": [
     {
      "id": "8-1",
@@ -994,9 +994,67 @@
      "status": "open",
      "profit": 0.0,
      "placed_at": "2026-11-18T18:15:28+00:00"
+    },
+    {
+     "id": "8-2",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45733:method:b:DEC",
+       "bout": "Brian Ortega vs Dan Hooker",
+       "market": [
+        "method",
+        "b",
+        "DEC"
+       ],
+       "selection": "Dan Hooker by decision",
+       "odds": 195,
+       "p": 0.3848,
+       "p_fanduel": 0.2952
+      }
+     ],
+     "odds": 195,
+     "decimal": 2.95,
+     "stake": 1.0,
+     "to_win": 1.95,
+     "p": 0.3848,
+     "ev": 0.1352,
+     "reasoning": "Hooker by decision at +195: ours 38.5% against FanDuel's 29.5%. Hooker is the favourite, and he's the bigger, busier lightweight on a full camp against a rusty Ortega moving up a weight. Ortega's R3 submissions and Hooker's three straight stoppage losses are the risks.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-20T17:05:43+00:00"
+    },
+    {
+     "id": "8-3",
+     "kind": "single",
+     "legs": [
+      {
+       "id": "45739:method:a:DEC",
+       "bout": "Jake Matthews vs Tahir Abdullayev",
+       "market": [
+        "method",
+        "a",
+        "DEC"
+       ],
+       "selection": "Jake Matthews by decision",
+       "odds": 150,
+       "p": 0.4342,
+       "p_fanduel": 0.3477
+      }
+     ],
+     "odds": 150,
+     "decimal": 2.5,
+     "stake": 1.0,
+     "to_win": 1.5,
+     "p": 0.4342,
+     "ev": 0.0855,
+     "reasoning": "Matthews by decision at +150: ours 43% against 35%. Matthews has 24 UFC fights and wins by grinding with jiu-jitsu and top control. Abdullayev has one UFC fight, a disputed late stoppage, and missed weight. The risk is Abdullayev's finishing record: 18 of his 20 wins are finishes.",
+     "status": "open",
+     "profit": 0.0,
+     "placed_at": "2026-11-20T17:05:43+00:00"
     }
    ],
-   "staked": 1.0,
+   "staked": 3.0,
    "settled": false,
    "settled_at": null,
    "placements": [
@@ -1009,14 +1067,25 @@
      "staked": 1.0,
      "sheet": "data/ai_picks/sheets/2026-11-21-ufc-fight-night-proch-zka-vs-stirling.json",
      "sheet_fetched_at": "2026-11-18T18:15:06+00:00"
+    },
+    {
+     "placed_at": "2026-11-20T17:05:43+00:00",
+     "note": "Friday. The moneylines are close to fair and the main event is a pass: the model, the market and the pundits all side with Stirling at about the price. Wednesday's Aliskerov-by-decision bet stands. Two more decision props follow the same reads as my AI Picks, where the price leaves room for the fight going the distance. Hooker by decision rests on the read the stats can't see: Ortega has been out 15 months, withdrew twice and is new at 155. Matthews by decision: his jiu-jitsu and top control over three rounds against a heavy-handed but thinly tested opponent who missed weight. Both are small: $1 each, under the quarter-Kelly guide, because method props carry the finish model's uncertainty.",
+     "bets": [
+      "8-2",
+      "8-3"
+     ],
+     "staked": 2.0,
+     "sheet": "data/ai_picks/sheets/2026-11-21-ufc-fight-night-proch-zka-vs-stirling.json",
+     "sheet_fetched_at": "2026-11-20T17:05:29+00:00"
     }
    ],
-   "last_placed_at": "2026-11-18T18:15:28+00:00",
+   "last_placed_at": "2026-11-20T17:05:43+00:00",
    "sheet": "data/ai_picks/sheets/2026-11-21-ufc-fight-night-proch-zka-vs-stirling.json",
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-doha-4440"
    ],
-   "sheet_fetched_at": "2026-11-18T18:15:06+00:00"
+   "sheet_fetched_at": "2026-11-20T17:05:29+00:00"
   }
  ]
 }
