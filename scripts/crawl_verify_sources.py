@@ -97,6 +97,8 @@ if args.source == "bestfightodds":
             if len(seen) % 100 == 0:
                 print(f"  {len(seen)} pages, {len(queue)} queued", flush=True)
 elif args.source == "statsfight":
+    # Retired: the site went behind a bot check on 2026-11-17, and we never get around one.
+    sys.exit(f"StatsFight crawl is off ({statsfight.RETIRED}).")
     out = Path(args.out or "data/statsfight/bouts.jsonl")
     out.parent.mkdir(parents=True, exist_ok=True)
     seen = done_urls(out)

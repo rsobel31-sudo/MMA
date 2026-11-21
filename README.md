@@ -350,7 +350,7 @@ Nothing is used on one source's word alone.
 |---|---|---|
 | Sherdog | Every pro bout (the career records), DOB, height | UFC bouts against UFCStats and StatsFight |
 | UFCStats (the [Kaggle "UFC Datasets 1994-2025"](https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025) scrape) | Per-fight knockdowns, significant strikes, takedowns, submission attempts, control time, ground strikes; DOB, height, reach | Result against Sherdog; stats against StatsFight |
-| StatsFight | Its own live stats for recent UFC bouts, results, height, reach | Used as the second opinion |
+| StatsFight | Its own live stats for recent UFC bouts, results, height, reach | Used as the second opinion (retired 2026-11-17: the site is now behind a bot check; the bouts collected before then are still used) |
 | Fight Matrix | Point-in-time Elo/Glicko ratings, Combat Age, rankings, DOB | Its ratings are its own opinion and enter as one model feature; its DOB breaks ties |
 | Wikipedia | UFC roster (division, gender), rankings, scheduled cards | Gender checked against each fighter's opponents |
 
@@ -364,7 +364,7 @@ Nothing is used on one source's word alone.
 ```bash
 curl -L -o ufc.zip https://www.kaggle.com/api/v1/datasets/download/neelagiriaditya/ufc-datasets-1994-2025 && unzip ufc.zip -d kaggle
 python -m mma_predictor import kaggle --dir kaggle --out data/ufcstats
-python scripts/crawl_verify_sources.py statsfight            # -> data/statsfight/bouts.jsonl
+python scripts/crawl_verify_sources.py statsfight            # retired 2026-11-17 (bot check); exits without fetching
 python scripts/crawl_verify_sources.py fightmatrix           # -> data/fightmatrix/profiles.jsonl
 python -m mma_predictor verify                               # -> data/verified
 python -m mma_predictor export --data data/verified --events UFC

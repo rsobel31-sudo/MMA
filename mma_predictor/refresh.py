@@ -32,6 +32,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
 from .data import normalise_name
+from .sources import statsfight
 
 ROOT = Path(__file__).resolve().parent.parent
 SHERDOG = ROOT / "data" / "sherdog"
@@ -386,7 +387,7 @@ def cmd_refresh(args) -> int:
     names = [p.name for p in pages if p.url in set(recent)]
     steps = [
         ("ufcstats", lambda: refresh_kaggle()),
-        ("statsfight", lambda: {"tail": _run(["crawl_verify_sources.py", "statsfight", "--delay", str(args.delay)], script=True).strip()[-200:]}),
+        ("statsfight", lambda: {"retired": statsfight.RETIRED}),  # behind a bot check since 2026-11-17
         ("fightmatrix", lambda: refresh_fightmatrix(names, args.delay)),
         ("bestfightodds", lambda: refresh_bestfightodds(names, args.delay)),
         ("enrich", lambda: {"tail": _run(["enrich", "--data", "data/sherdog"]).strip()[-200:]}),

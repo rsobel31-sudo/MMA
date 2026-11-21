@@ -7,6 +7,9 @@ crash: it quietly returns nothing, and a crawl "succeeds" with no data. Each che
 one known page fresh and asks the real parser for a plausible amount of data. Results go
 to data/health.json, with the date each source last passed, so a failure says how long
 it has been broken. The routines run this first and report any failure.
+
+StatsFight is not checked: it went behind a bot check on 2026-11-17 and is retired
+(see sources/statsfight.RETIRED). We never get around bot protection.
 """
 
 from __future__ import annotations
@@ -34,7 +37,7 @@ def checks() -> List[Tuple[str, str, Callable]]:
     from . import news, picks
     from . import prospects as PR
     from .prospect_week import listing
-    from .sources import bestfightodds, events, fightmatrix, sherdog, statsfight, wikipedia
+    from .sources import bestfightodds, events, fightmatrix, sherdog, wikipedia
 
     def get(f, url):
         return f.get(url, cache=False, fresh=True)
@@ -89,9 +92,6 @@ def checks() -> List[Tuple[str, str, Callable]]:
     def wiki_rankings(f):
         return _at_least(50, len(wikipedia.parse_rankings(get(f, wikipedia.RANKINGS_URL))), "ranked fighters")
 
-    def statsfight_sitemap(f):
-        return _at_least(1000, len(statsfight.bout_urls(get(f, statsfight.SITEMAP))), "UFC bouts in the sitemap")
-
     def kaggle(f):
         from .sources import kaggle_ufc
 
@@ -125,7 +125,6 @@ def checks() -> List[Tuple[str, str, Callable]]:
         ("Wikipedia UFC events", "upcoming cards, results", wiki_events),
         ("Wikipedia UFC roster", "divisions and gender", wiki_roster),
         ("Wikipedia UFC rankings", "rankings comparison", wiki_rankings),
-        ("StatsFight", "stat verification", statsfight_sitemap),
         ("Kaggle UFCStats dump", "per-fight stats", kaggle),
     ]
     out += [(f"News: {o}", "scouting", feed(o, u)) for o, u in news.FEEDS.items()]

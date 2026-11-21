@@ -21,6 +21,17 @@ from typing import Dict, List, Optional
 
 SITEMAP = "https://statsfight.com/sitemaps/0.xml"
 
+# Retired 2026-11-17: statsfight.com now sends every request to a bot check (an Anubis
+# proof-of-work page at /.within.website/). Fight Lab never gets around bot protection, so
+# the crawl, the refresh step and the health check are off. The bouts already collected in
+# data/statsfight/bouts.jsonl (to 2026-11-16) are still used by verify.
+RETIRED = "retired 2026-11-17: statsfight.com is behind a bot check (Anubis); bouts collected before then are still used"
+
+
+def is_bot_check(page: str) -> bool:
+    """True for an Anubis (or similar) bot-check page instead of real content."""
+    return ".within.website" in page or "anubis" in page.lower()[:5000]
+
 
 def _text(page: str) -> str:
     t = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
