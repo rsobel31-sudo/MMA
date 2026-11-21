@@ -122,9 +122,21 @@ def check_daily(r: Report, now: datetime):
             r.alert("Data refresh", f"last refresh finished {_ago(now, fin)}")
         else:
             r.ok("Data refresh", f"finished {_ago(now, fin)}, data through {(last.get('export_meta') or {}).get('last_fight')}")
-        skipped = [f"{k}: {v['skipped']}" for k, v in last.items() if k == "ufcstats" and isinstance(v, dict) and v.get("skipped")]
+        # The GitHub scrape is the stats source now; the Kaggle dump (dormant since 2026-08-11) is only checked
+        # back on, so its skip matters only when the GitHub step isn't working either.
+        gh = last.get("ufcstats_github")
+        gh_ok = isinstance(gh, dict) and "commit" in gh
+        steps = ["ufcstats_github"] + ([] if gh_ok else ["ufcstats"])
+        skipped = [f"{k}: {last[k]['skipped']}" for k in steps if isinstance(last.get(k), dict) and last[k].get("skipped")]
         if skipped:
             r.warn("Data refresh (skipped steps)", "; ".join(skipped))
+        kg = last.get("ufcstats")
+        if gh_ok and isinstance(kg, dict) and kg.get("imported"):
+            r.warn("Kaggle UFCStats dump", "updated again and imported (the GitHub scrape stays the main source)")
+        sf = last.get("statsfight")
+        if isinstance(sf, dict) and sf.get("available_again"):
+            r.warn("StatsFight", f"reachable again without a bot check ({sf['available_again']} UFC bouts): "
+                   "re-enable the crawl and its health check")
     hits = [c for c in _commits(now - timedelta(hours=36)) if "minor leagues" in c[1].lower()]
     if hits:
         r.ok("Minor Leagues refresh", f"pushed {_ago(now, hits[0][0])}")
@@ -245,7 +257,7 @@ def check_monthly(r: Report, now: datetime):
 
 
 def check_ufc_stats(r: Report, now: datetime):
-    """How far the UFC per-fight stats (data/ufcstats, from the Kaggle scrape) lag behind the last graded UFC card."""
+    """How far the UFC per-fight stats (data/ufcstats, from the UFCStats scrapes) lag behind the last graded UFC card."""
     import csv
 
     f = ROOT / "data" / "ufcstats" / "fights.csv"
@@ -258,7 +270,7 @@ def check_ufc_stats(r: Report, now: datetime):
     behind = [c for c in past if c > last]
     if behind:
         r.warn("UFC per-fight stats", f"stats run through {last}; at least {len(behind)} UFC card(s) since have results but no "
-               f"strike/takedown stats (the Kaggle scrape stopped updating; ufcstats.com is behind a bot check)")
+               f"strike/takedown stats (the GitHub UFCStats scrape has not caught up yet)")
     else:
         r.ok("UFC per-fight stats", f"through {last}")
 

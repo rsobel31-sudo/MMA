@@ -1,15 +1,15 @@
 {
  "results": {
-  "no second source": 842,
+  "no second source": 852,
   "method": 21,
-  "agree": 10563,
-  "round": 12,
+  "agree": 10733,
+  "round": 13,
   "winner": 3
  },
  "stats": {
-  "official only": 9429,
-  "verified": 1131,
-  "disputed": 36
+  "official only": 9548,
+  "verified": 1179,
+  "disputed": 40
  },
  "conflicts": [
   {
@@ -286,11 +286,39 @@
    "why": [
     "strike share 59% (UFCStats) vs 38% (StatsFight)"
    ]
+  },
+  {
+   "date": "2026-08-15",
+   "bout": "Mackenzie Dern vs Gillian Robertson",
+   "why": [
+    "strike share 57% (UFCStats) vs 35% (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-09-05",
+   "bout": "Kurtis Campbell vs Trevor Peek",
+   "why": [
+    "takedowns A 13 (UFCStats) vs 3 (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-09-12",
+   "bout": "Tommy McMillen vs Marwan Rahiki",
+   "why": [
+    "takedowns A 5 (UFCStats) vs 2 (StatsFight)"
+   ]
+  },
+  {
+   "date": "2026-09-26",
+   "bout": "Rodolfo Vieira vs Robert Bryczek",
+   "why": [
+    "strike share 39% (UFCStats) vs 65% (StatsFight)"
+   ]
   }
  ],
  "statsfight_results": {
-  "agree": 1165,
-  "method": 1,
+  "agree": 1216,
+  "method": 2,
   "winner": 1
  },
  "dob_conflicts": [
@@ -811,12 +839,6 @@
    "fightmatrix": null
   },
   {
-   "name": "Anthony Romero",
-   "sherdog": "1996-10-22",
-   "ufcstats": "1997-02-25",
-   "fightmatrix": null
-  },
-  {
    "name": "Kyle Driscoll",
    "sherdog": "1993-09-23",
    "ufcstats": "1994-09-23",
@@ -923,20 +945,38 @@
    "sherdog": "2000-01-11",
    "ufcstats": "2000-01-01",
    "fightmatrix": null
+  },
+  {
+   "name": "Anthony Wint",
+   "sherdog": "1995-01-14",
+   "ufcstats": "1995-09-14",
+   "fightmatrix": null
+  },
+  {
+   "name": "Francesco Nuzzi",
+   "sherdog": "1996-04-28",
+   "ufcstats": "1996-08-28",
+   "fightmatrix": null
+  },
+  {
+   "name": "Javad Mahjoub",
+   "sherdog": "1991-05-26",
+   "ufcstats": "1992-05-26",
+   "fightmatrix": null
   }
  ],
  "dob": {
-  "agree": 2469,
-  "differ, unresolved (Sherdog kept)": 105,
+  "agree": 2490,
+  "differ, unresolved (Sherdog kept)": 107,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2480,
+  "agree": 2484,
   "differ": 184
  },
  "reach": {
-  "no second source": 1734,
-  "agree": 706,
+  "no second source": 1737,
+  "agree": 707,
   "differ": 68
  },
  "odds": {

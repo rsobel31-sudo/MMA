@@ -32,7 +32,6 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
 from .data import normalise_name
-from .sources import statsfight
 
 ROOT = Path(__file__).resolve().parent.parent
 SHERDOG = ROOT / "data" / "sherdog"
@@ -337,6 +336,64 @@ def refresh_kaggle(log=print) -> Dict[str, object]:
     return {"dump": stamp, "imported": True}
 
 
+def refresh_ufcstats_github(log=print) -> Dict[str, object]:
+    """Add UFCStats bouts newer than our dataset from the GitHub scrape (sources/greco_ufcstats).
+
+    A shallow clone in .cache, updated only when the repository's head commit changed; only its
+    CSVs are read. Bouts after our last one are appended to data/ufcstats (verify still checks
+    each result against Sherdog before its stats are used)."""
+    from .sources import common, greco_ufcstats as G
+
+    repo = ROOT / ".cache" / "greco_ufcstats"
+    marker = ROOT / "data" / "ufcstats" / "github_version.txt"
+    git = lambda *a: subprocess.run(["git", "-C", str(repo), *a], capture_output=True, text=True, timeout=600)  # noqa: E731
+    try:
+        if (repo / ".git").exists():
+            r = git("fetch", "-q", "--depth", "1", "origin", "HEAD")
+            if r.returncode == 0:
+                r = git("reset", "-q", "--hard", "FETCH_HEAD")
+        else:
+            repo.parent.mkdir(parents=True, exist_ok=True)
+            r = subprocess.run(["git", "clone", "-q", "--depth", "1", G.REPO, str(repo)], capture_output=True, text=True, timeout=600)
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        return {"skipped": f"GitHub not reachable ({str(exc)[:120]})"}
+    if r.returncode != 0:
+        return {"skipped": f"git failed ({r.stderr.strip()[-160:]})"}
+    head = git("log", "-1", "--format=%H %cI").stdout.strip()
+    if marker.exists() and marker.read_text().strip() == head:
+        return {"commit": head, "imported": False, "unchanged": True}
+    stats = ROOT / "data" / "ufcstats"
+    have_f = list(csv.DictReader(open(stats / "fighters.csv", newline="", encoding="utf-8")))
+    have_b = list(csv.DictReader(open(stats / "fights.csv", newline="", encoding="utf-8")))
+    new_f, new_b = G.convert(repo)
+    fighters, fights, added = G.merge(have_f, have_b, new_f, new_b)
+    if added:
+        common.write_dataset(ROOT / "data" / "ufcstats", fighters, fights)
+    marker.write_text(head + "\n")
+    log(f"  ufcstats (GitHub): +{len(added)} bouts" + (f", through {max(a['date'] for a in added)}" if added else ""))
+    return {"commit": head, "imported": bool(added), "bouts_added": len(added),
+            "last_bout": max((f["date"] for f in fights), default="")}
+
+
+def probe_statsfight() -> Dict[str, object]:
+    """One request a day: is StatsFight still behind its bot check? (We never get around one.)"""
+    from .sources import statsfight
+
+    req = urllib.request.Request(statsfight.SITEMAP, headers={"User-Agent": "Mozilla/5.0 (Fight Lab refresh)"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            page = r.read(2_000_000).decode("utf-8", "replace")
+            final = r.geturl()
+    except OSError as exc:
+        return {"retired": statsfight.RETIRED, "probe": f"unreachable ({str(exc)[:100]})"}
+    if statsfight.is_bot_check(page) or statsfight.is_bot_check(final):
+        return {"retired": statsfight.RETIRED, "probe": "bot check still on"}
+    n = len(statsfight.bout_urls(page))
+    if n >= 1000:
+        return {"available_again": n, "note": "StatsFight answers without a bot check again: re-enable the crawl"}
+    return {"retired": statsfight.RETIRED, "probe": f"no bot check, but only {n} UFC bouts in the sitemap"}
+
+
 def _run(args: List[str], log=print, script: bool = False) -> str:
     cmd = [sys.executable] + ([str(ROOT / "scripts" / args[0])] + args[1:] if script else ["-m", "mma_predictor"] + args)
     res = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
@@ -387,7 +444,8 @@ def cmd_refresh(args) -> int:
     names = [p.name for p in pages if p.url in set(recent)]
     steps = [
         ("ufcstats", lambda: refresh_kaggle()),
-        ("statsfight", lambda: {"retired": statsfight.RETIRED}),  # behind a bot check since 2026-11-17
+        ("ufcstats_github", lambda: refresh_ufcstats_github()),
+        ("statsfight", lambda: probe_statsfight()),  # retired (bot check since 2026-11-17); checked back daily
         ("fightmatrix", lambda: refresh_fightmatrix(names, args.delay)),
         ("bestfightodds", lambda: refresh_bestfightodds(names, args.delay)),
         ("enrich", lambda: {"tail": _run(["enrich", "--data", "data/sherdog"]).strip()[-200:]}),
@@ -461,6 +519,6 @@ def register(sub) -> None:
     p.add_argument("--overlap", type=int, default=3)
     p.add_argument("--rotate", type=int, default=150, help="stale exported fighters to re-check")
     p.add_argument("--delay", type=float, default=2.0)
-    p.add_argument("--skip", nargs="*", choices=["ufcstats", "statsfight", "fightmatrix", "bestfightodds", "enrich", "upcoming", "verify", "export"])
+    p.add_argument("--skip", nargs="*", choices=["ufcstats", "ufcstats_github", "statsfight", "fightmatrix", "bestfightodds", "enrich", "upcoming", "verify", "export"])
     p.add_argument("--dry-run", action="store_true")
     p.set_defaults(func=cmd_refresh)

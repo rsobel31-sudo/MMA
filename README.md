@@ -350,6 +350,7 @@ Nothing is used on one source's word alone.
 |---|---|---|
 | Sherdog | Every pro bout (the career records), DOB, height | UFC bouts against UFCStats and StatsFight |
 | UFCStats (the [Kaggle "UFC Datasets 1994-2025"](https://www.kaggle.com/datasets/neelagiriaditya/ufc-datasets-1994-2025) scrape) | Per-fight knockdowns, significant strikes, takedowns, submission attempts, control time, ground strikes; DOB, height, reach | Result against Sherdog; stats against StatsFight |
+| UFCStats via GitHub ([Greco1899/scrape_ufc_stats](https://github.com/Greco1899/scrape_ufc_stats), refreshed after each card) | The same official per-fight stats for bouts after the Kaggle dump stopped (2026-08-11) | Result against Sherdog, like the Kaggle rows |
 | StatsFight | Its own live stats for recent UFC bouts, results, height, reach | Used as the second opinion (retired 2026-11-17: the site is now behind a bot check; the bouts collected before then are still used) |
 | Fight Matrix | Point-in-time Elo/Glicko ratings, Combat Age, rankings, DOB | Its ratings are its own opinion and enter as one model feature; its DOB breaks ties |
 | Wikipedia | UFC roster (division, gender), rankings, scheduled cards | Gender checked against each fighter's opponents |
