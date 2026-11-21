@@ -258,7 +258,7 @@
 },
 "Ahmad Sohail Hassanzada": {
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Aiemann Zahabi": {
 "dob": "Sherdog + UFCStats agree",
@@ -5440,8 +5440,10 @@
 "stats_verified": "2"
 },
 "Dylan Mantello": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Dylan Potter": {
 "dob": "Sherdog + UFCStats agree",
@@ -7243,6 +7245,8 @@
 "stats_official": "3"
 },
 "Hugo Cunha": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (201 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -11019,6 +11023,8 @@
 "stats_official": "2"
 },
 "Kolton Englund": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -12365,6 +12371,8 @@
 "stats_verified": "3"
 },
 "Marcos Brigagao": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (193 cm), not used until a second source confirms it",
 "stats_official": "1"
 },
@@ -14723,6 +14731,7 @@
 "stats_official": "2"
 },
 "Patricia Alujas": {
+"height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (163 cm), not used until a second source confirms it",
 "stats_official": "1"
 },

@@ -1,13 +1,13 @@
 {
  "results": {
-  "no second source": 852,
+  "no second source": 851,
   "method": 21,
-  "agree": 10733,
+  "agree": 10734,
   "round": 13,
   "winner": 3
  },
  "stats": {
-  "official only": 9548,
+  "official only": 9549,
   "verified": 1179,
   "disputed": 40
  },
@@ -966,12 +966,12 @@
   }
  ],
  "dob": {
-  "agree": 2490,
+  "agree": 2494,
   "differ, unresolved (Sherdog kept)": 107,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2484,
+  "agree": 2489,
   "differ": 184
  },
  "reach": {
@@ -980,12 +980,12 @@
   "differ": 68
  },
  "odds": {
-  "odds bouts": 16822,
-  "matched": 13390,
-  "unmatched": 2044,
+  "odds bouts": 16829,
+  "matched": 13393,
+  "unmatched": 2047,
   "bad lines": 0,
   "pages disagree": 7,
   "both pages": 9032,
-  "no lines": 1381
+  "no lines": 1382
  }
 }

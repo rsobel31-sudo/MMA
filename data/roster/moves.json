@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-20T17:11:32+00:00",
+ "fetched": "2026-11-21T12:20:23+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -1106,6 +1106,48 @@
    "reason": "Retired",
    "confirmed_by": null,
    "first_seen": "2026-11-20"
+  },
+  {
+   "name": "Douglas Silva de Andrade",
+   "date": "2026-11-20",
+   "division": "Featherweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   },
+   "first_seen": "2026-11-21"
+  },
+  {
+   "name": "Giga Chikadze",
+   "date": "2026-11-20",
+   "division": "Featherweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   },
+   "first_seen": "2026-11-21"
+  },
+  {
+   "name": "William Gomis",
+   "date": "2026-11-20",
+   "division": "Featherweight",
+   "refs": [
+    "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   ],
+   "reason": "Released",
+   "confirmed_by": {
+    "source": "heavy.com",
+    "url": "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
+   },
+   "first_seen": "2026-11-21"
   },
   {
    "name": "Farid Basharat",
