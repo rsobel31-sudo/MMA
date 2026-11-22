@@ -1,0 +1,457 @@
+{
+ "id": "2026-11-21-ufc-fight-night-294-prochazka-vs-stirling",
+ "event": "UFC Fight Night 294 - Prochazka vs. Stirling",
+ "date": "2026-11-21",
+ "stories": {},
+ "coverage": {
+  "navajo-stirling-jiri-prochazka": {
+   "a": "Navajo Stirling",
+   "b": "Jiri Prochazka",
+   "winner": "Navajo Stirling",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/522605/ufc-qatar-results-prochazka-vs-stirling"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Stirling",
+     "10-9 Stirling",
+     "10-9 Stirling"
+    ]
+   ],
+   "closeness": null
+  },
+  "kevin-vallejos-aljamain-sterling": {
+   "a": "Kevin Vallejos",
+   "b": "Aljamain Sterling",
+   "winner": "Kevin Vallejos",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/521924/kevin-vallejos-expects-title-shot-with-ufc-qatar-win-over-aljamain-sterling-im-next"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Sterling",
+     "10-9 Sterling",
+     "10-9 Sterling"
+    ],
+    [
+     2,
+     "10-9 Sterling",
+     "10-9 Sterling",
+     "10-9 Sterling"
+    ],
+    [
+     3,
+     "10-9 Sterling",
+     "10-9 Vallejos",
+     "10-9 Sterling"
+    ]
+   ],
+   "closeness": "disputed"
+  },
+  "dan-hooker-brian-ortega": {
+   "a": "Dan Hooker",
+   "b": "Brian Ortega",
+   "winner": "Dan Hooker",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Hooker",
+     "10-9 Hooker",
+     "10-9 Hooker"
+    ],
+    [
+     2,
+     "10-9 Hooker",
+     "10-9 Hooker",
+     "10-9 Hooker"
+    ],
+    [
+     3,
+     "10-9 Hooker",
+     "10-9 Hooker",
+     "10-9 Hooker"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "kyoji-horiguchi-asu-almabayev": {
+   "a": "Kyoji Horiguchi",
+   "b": "Asu Almabayev",
+   "winner": "Kyoji Horiguchi",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Horiguchi",
+     "10-9 Horiguchi",
+     "10-9 Horiguchi"
+    ],
+    [
+     2,
+     "10-9 Horiguchi",
+     "10-9 Horiguchi",
+     "10-9 Horiguchi"
+    ],
+    [
+     3,
+     "10-9 Horiguchi",
+     "10-9 Horiguchi",
+     "10-9 Horiguchi"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "ikram-aliskerov-jared-cannonier": {
+   "a": "Ikram Aliskerov",
+   "b": "Jared Cannonier",
+   "winner": "Ikram Aliskerov",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/20/ikram-aliskerov-eyes-career-defining-win-over-jared-cannonier/"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Aliskerov",
+     "10-9 Aliskerov",
+     "10-9 Aliskerov"
+    ],
+    [
+     2,
+     "10-9 Aliskerov",
+     "10-9 Aliskerov",
+     "10-9 Aliskerov"
+    ],
+    [
+     3,
+     "10-9 Aliskerov",
+     "10-9 Aliskerov",
+     "10-9 Aliskerov"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "santiago-luna-aleksandre-topuria": {
+   "a": "Santiago Luna",
+   "b": "Aleksandre Topuria",
+   "winner": "Santiago Luna",
+   "method": "S-DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/ufc/ilia-topuria-sends-heartfelt-message-to-his-brother-aleksandre-ahead-of-ufc-qatar-return-victory-belongs-to-you/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ilia-topuria-sends-heartfelt-message-to-his-brother-aleksandre-ahead-of-ufc-qatar-return-victory-belongs-to-you"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Luna",
+     "10-9 Luna",
+     "10-9 Luna"
+    ],
+    [
+     2,
+     "10-9 Luna",
+     "10-9 Luna",
+     "10-9 Luna"
+    ],
+    [
+     3,
+     "10-9 Luna",
+     "10-9 Luna",
+     "10-9 Luna"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "tallison-teixeira-shamil-gaziev": {
+   "a": "Tallison Teixeira",
+   "b": "Shamil Gaziev",
+   "winner": "Tallison Teixeira",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Gaziev",
+     "10-9 Gaziev",
+     "10-9 Gaziev"
+    ],
+    [
+     2,
+     "10-9 Teixeira",
+     "10-9 Teixeira",
+     "10-9 Gaziev"
+    ],
+    [
+     3,
+     "10-9 Teixeira",
+     "10-9 Teixeira",
+     "10-9 Teixeira"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "amir-albazi-alessandro-costa": {
+   "a": "Amir Albazi",
+   "b": "Alessandro Costa",
+   "winner": "Amir Albazi",
+   "method": "SUB",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/21/amir-albazi-survives-knockdown-point-deduction-to-finish-alessandro-costa-at-ufc-qatar/"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  },
+  "tahir-abdullayev-jake-matthews": {
+   "a": "Tahir Abdullayev",
+   "b": "Jake Matthews",
+   "winner": "Tahir Abdullayev",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Abdullayev",
+     "10-9 Abdullayev",
+     "10-9 Abdullayev"
+    ],
+    [
+     1,
+     "10-9 Abdullayev",
+     "10-9 Abdullayev",
+     "10-9 Abdullayev"
+    ],
+    [
+     3,
+     "10-9 Abdullayev",
+     "10-9 Abdullayev",
+     "10-9 Abdullayev"
+    ],
+    [
+     1,
+     "10-9 Albazi",
+     "10-9 Albazi",
+     "10-9 Albazi"
+    ],
+    [
+     2,
+     "10-8 Tudor",
+     "10-8 Mike"
+    ]
+   ],
+   "closeness": "close"
+  },
+  "dom-mar-fan-nikolas-motta": {
+   "a": "Dom Mar Fan",
+   "b": "Nikolas Motta",
+   "winner": "Dom Mar Fan",
+   "method": "DEC",
+   "round": 3,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Fan",
+     "10-9 Fan",
+     "10-9 Fan"
+    ],
+    [
+     2,
+     "10-9 Fan",
+     "10-9 Fan",
+     "10-9 Fan"
+    ],
+    [
+     3,
+     "10-9 Fan",
+     "10-9 Fan",
+     "10-9 Fan"
+    ]
+   ],
+   "closeness": "clear"
+  },
+  "diyar-nurgozhay-alik-lorenz": {
+   "a": "Diyar Nurgozhay",
+   "b": "Alik Lorenz",
+   "winner": "Diyar Nurgozhay",
+   "method": "KO/TKO",
+   "round": 2,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": [
+    [
+     1,
+     "10-9 Nurgozhay",
+     "10-9 Nurgozhay",
+     "10-9 Nurgozhay"
+    ]
+   ],
+   "closeness": null
+  },
+  "john-mitchell-shoaib-yousaf": {
+   "a": "John Mitchell",
+   "b": "Shoaib Yousaf",
+   "winner": "John Mitchell",
+   "method": "KO/TKO",
+   "round": 1,
+   "outlets": [
+    {
+     "outlet": "Sherdog",
+     "kind": "play-by-play",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "play-by-play",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "round_scores": null,
+   "closeness": null
+  }
+ }
+}

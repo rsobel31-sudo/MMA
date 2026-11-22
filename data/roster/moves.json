@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T12:20:23+00:00",
+ "fetched": "2026-11-22T12:22:20+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -1148,6 +1148,20 @@
     "url": "https://heavy.com/sports/ufc/giga-chikadze-among-3-roster-cuts/"
    },
    "first_seen": "2026-11-21"
+  },
+  {
+   "name": "Brian Ortega",
+   "date": "2026-11-21",
+   "division": "Lightweight",
+   "refs": [
+    "https://cagesidepress.com/2026/11/21/dan-hooker-defeats-brian-ortega-who-announces-retirement-after-fight/"
+   ],
+   "reason": "Retired",
+   "confirmed_by": {
+    "source": "cagesidepress.com",
+    "url": "https://cagesidepress.com/2026/11/21/dan-hooker-defeats-brian-ortega-who-announces-retirement-after-fight/"
+   },
+   "first_seen": "2026-11-22"
   },
   {
    "name": "Farid Basharat",
