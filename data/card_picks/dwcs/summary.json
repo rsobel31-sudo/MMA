@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:01:38+00:00",
+ "updated": "2026-11-22T17:01:17+00:00",
  "cards": 2,
  "bouts": 9,
  "scoring": {
@@ -108,5 +108,10 @@
    "kind": "wait",
    "text": "Overrides: Claude has picked against the model 2 times; 30 needed before judging them."
   }
- ]
+ ],
+ "method_adjust": {
+  "KO/TKO": 1.177,
+  "SUB": 1.0,
+  "DEC": 1.0
+ }
 }

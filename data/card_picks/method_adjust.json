@@ -1,0 +1,10 @@
+{
+ "fitted": "2026-11-22T17:01:07+00:00",
+ "from_bouts": 102,
+ "factors": {
+  "KO/TKO": 1.177,
+  "SUB": 1.0,
+  "DEC": 1.0
+ },
+ "note": "Multiplies the method model's chances of each ending inside each fighter's wins (card-picks draft). Refitted after each graded card; only gaps beyond noise move a factor."
+}

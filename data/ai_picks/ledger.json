@@ -981,7 +981,15 @@
        "selection": "Ikram Aliskerov by decision",
        "odds": 190,
        "p": 0.3806,
-       "p_fanduel": 0.3006
+       "p_fanduel": 0.3006,
+       "close_odds": 160,
+       "grade": "won",
+       "result": {
+        "winner": "a",
+        "method": "DEC",
+        "round": 3,
+        "seconds": 300
+       }
       }
      ],
      "odds": 190,
@@ -991,9 +999,10 @@
      "p": 0.3806,
      "ev": 0.1037,
      "reasoning": "Aliskerov by decision at +190: ours 38% against FanDuel's 30%. He wins by control, not by finishing durable opponents. Cannonier almost always goes the distance in defeat: of his losses since 2019, only Imavov (R4) stopped him. Aliskerov's power early and Cannonier's age are the risks, hence $1, under the $1.15 quarter-Kelly guide.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-18T18:15:28+00:00"
+     "status": "won",
+     "profit": 1.9,
+     "placed_at": "2026-11-18T18:15:28+00:00",
+     "clv": 0.1154
     },
     {
      "id": "8-2",
@@ -1010,7 +1019,15 @@
        "selection": "Dan Hooker by decision",
        "odds": 195,
        "p": 0.3848,
-       "p_fanduel": 0.2952
+       "p_fanduel": 0.2952,
+       "close_odds": 195,
+       "grade": "won",
+       "result": {
+        "winner": "b",
+        "method": "DEC",
+        "round": 3,
+        "seconds": 300
+       }
       }
      ],
      "odds": 195,
@@ -1020,9 +1037,10 @@
      "p": 0.3848,
      "ev": 0.1352,
      "reasoning": "Hooker by decision at +195: ours 38.5% against FanDuel's 29.5%. Hooker is the favourite, and he's the bigger, busier lightweight on a full camp against a rusty Ortega moving up a weight. Ortega's R3 submissions and Hooker's three straight stoppage losses are the risks.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-20T17:05:43+00:00"
+     "status": "won",
+     "profit": 1.95,
+     "placed_at": "2026-11-20T17:05:43+00:00",
+     "clv": 0.0
     },
     {
      "id": "8-3",
@@ -1039,7 +1057,15 @@
        "selection": "Jake Matthews by decision",
        "odds": 150,
        "p": 0.4342,
-       "p_fanduel": 0.3477
+       "p_fanduel": 0.3477,
+       "close_odds": 150,
+       "grade": "lost",
+       "result": {
+        "winner": "b",
+        "method": "DEC",
+        "round": 3,
+        "seconds": 300
+       }
       }
      ],
      "odds": 150,
@@ -1049,14 +1075,15 @@
      "p": 0.4342,
      "ev": 0.0855,
      "reasoning": "Matthews by decision at +150: ours 43% against 35%. Matthews has 24 UFC fights and wins by grinding with jiu-jitsu and top control. Abdullayev has one UFC fight, a disputed late stoppage, and missed weight. The risk is Abdullayev's finishing record: 18 of his 20 wins are finishes.",
-     "status": "open",
-     "profit": 0.0,
-     "placed_at": "2026-11-20T17:05:43+00:00"
+     "status": "lost",
+     "profit": -1.0,
+     "placed_at": "2026-11-20T17:05:43+00:00",
+     "clv": 0.0
     }
    ],
    "staked": 3.0,
-   "settled": false,
-   "settled_at": null,
+   "settled": true,
+   "settled_at": "2026-11-22T17:00:38+00:00",
    "placements": [
     {
      "placed_at": "2026-11-18T18:15:28+00:00",
@@ -1085,7 +1112,12 @@
    "odds_urls": [
     "https://www.bestfightodds.com/events/ufc-doha-4440"
    ],
-   "sheet_fetched_at": "2026-11-20T17:05:29+00:00"
+   "sheet_fetched_at": "2026-11-20T17:05:29+00:00",
+   "bankroll_after": 87.34,
+   "result_sources": [
+    "Wikipedia event page",
+    "Sherdog fighter records"
+   ]
   }
  ]
 }

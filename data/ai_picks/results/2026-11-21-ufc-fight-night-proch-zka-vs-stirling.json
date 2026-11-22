@@ -1,0 +1,94 @@
+{
+ "event": "UFC Fight Night: Procházka vs. Stirling",
+ "date": "2026-11-21",
+ "sources": [
+  "Wikipedia event page",
+  "Sherdog fighter records"
+ ],
+ "bouts": {
+  "Aleksandre Topuria vs Santiago Luna": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Alessandro Costa vs Amir Albazi": {
+   "winner": "b",
+   "method": "SUB",
+   "round": 3,
+   "seconds": 274,
+   "round_agreed": true
+  },
+  "Alik Lorenz vs Diyar Nurgozhay": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 24,
+   "round_agreed": true
+  },
+  "Aljamain Sterling vs Kevin Vallejos": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Asu Almabayev vs Kyoji Horiguchi": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Brian Ortega vs Dan Hooker": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Dom Mar Fan vs Nikolas Motta": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Ikram Aliskerov vs Jared Cannonier": {
+   "winner": "a",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Jake Matthews vs Tahir Abdullayev": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  },
+  "Jiri Prochazka vs Navajo Stirling": {
+   "winner": "b",
+   "method": "KO/TKO",
+   "round": 2,
+   "seconds": 298,
+   "round_agreed": true
+  },
+  "John Mitchell vs Shoaib Yousaf": {
+   "winner": "a",
+   "method": "KO/TKO",
+   "round": 1,
+   "seconds": 230,
+   "round_agreed": true
+  },
+  "Shamil Gaziev vs Tallison Teixeira": {
+   "winner": "b",
+   "method": "DEC",
+   "round": 3,
+   "seconds": 300,
+   "round_agreed": true
+  }
+ }
+}

@@ -133,7 +133,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/jiri-prochazka-vs-navajo-stirling-pick-11-21-2026-predictions-ufc-qatar-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Navajo Stirling",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 298
+   }
   },
   {
    "a": "Aljamain Sterling",
@@ -223,7 +231,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Kevin Vallejos",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Brian Ortega",
@@ -313,7 +329,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/dan-hooker-vs-brian-ortega-pick-11-21-2026-predictions-ufc-qatar-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.15,
+   "winner": "Dan Hooker",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Asu Almabayev",
@@ -395,7 +419,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/kyoji-horiguchi-vs-asu-almabayev-pick-11-21-2026-predictions-ufc-qatar-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Kyoji Horiguchi",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Ikram Aliskerov",
@@ -478,7 +510,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "Ikram Aliskerov",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Aleksandre Topuria",
@@ -553,7 +593,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/aleksandre-topuria-vs-santiago-luna-pick-11-21-2026-predictions-ufc-qatar-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Santiago Luna",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Shamil Gaziev",
@@ -621,7 +669,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.0,
+   "winner": "Tallison Teixeira",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Alessandro Costa",
@@ -690,7 +746,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Amir Albazi",
+   "result": {
+    "method": "SUB",
+    "round": 3,
+    "seconds": 274
+   }
   },
   {
    "a": "Jake Matthews",
@@ -759,7 +823,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": 0.1,
+   "winner": "Tahir Abdullayev",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Dom Mar Fan",
@@ -828,7 +900,15 @@
      "method": null,
      "url": "https://sports.yahoo.com/mma/article/ufc-qatar-full-card-predictions-can-navajo-stirling-actually-beat-jiri-prochazka-221054685.html"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.1,
+   "winner": "Dom Mar Fan",
+   "result": {
+    "method": "DEC",
+    "round": 3,
+    "seconds": 300
+   }
   },
   {
    "a": "Alik Lorenz",
@@ -903,7 +983,15 @@
      "method": null,
      "url": "https://www.docsports.com/free-picks/ufc/2026/diyar-nurgozhay-vs-alik-lorenz-pick-11-21-2026-predictions-ufc-qatar-odds.html"
     }
-   ]
+   ],
+   "y": 0,
+   "signed_logit": -0.0,
+   "winner": "Diyar Nurgozhay",
+   "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "seconds": 24
+   }
   },
   {
    "a": "John Mitchell",
@@ -929,7 +1017,15 @@
      "method": "DEC",
      "url": "https://fightstudy.substack.com/p/ufc-qatar-jiri-prochazka-v-navajo"
     }
-   ]
+   ],
+   "y": 1,
+   "signed_logit": 0.0,
+   "winner": "John Mitchell",
+   "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "seconds": 230
+   }
   }
  ]
 }

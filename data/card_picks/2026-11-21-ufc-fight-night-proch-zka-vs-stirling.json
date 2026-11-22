@@ -81,7 +81,25 @@
      ]
     }
    },
-   "market_p_a": 0.3972
+   "market_p_a": 0.3972,
+   "result": {
+    "winner": "Navajo Stirling",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Aljamain Sterling vs Kevin Vallejos",
@@ -143,7 +161,25 @@
      ]
     }
    },
-   "market_p_a": 0.454
+   "market_p_a": 0.454,
+   "result": {
+    "winner": "Kevin Vallejos",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Dan Hooker vs Brian Ortega",
@@ -205,7 +241,25 @@
      ]
     }
    },
-   "market_p_a": 0.6255
+   "market_p_a": 0.6255,
+   "result": {
+    "winner": "Dan Hooker",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   },
   {
    "bout": "Kyoji Horiguchi vs Asu Almabayev",
@@ -267,7 +321,25 @@
      ]
     }
    },
-   "market_p_a": 0.6219
+   "market_p_a": 0.6219,
+   "result": {
+    "winner": "Kyoji Horiguchi",
+    "side": "a",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Jared Cannonier vs Ikram Aliskerov",
@@ -329,7 +401,25 @@
      ]
     }
    },
-   "market_p_a": 0.2847
+   "market_p_a": 0.2847,
+   "result": {
+    "winner": "Ikram Aliskerov",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Aleksandre Topuria vs Santiago Luna",
@@ -391,7 +481,25 @@
      ]
     }
    },
-   "market_p_a": 0.7073
+   "market_p_a": 0.7073,
+   "result": {
+    "winner": "Santiago Luna",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Shamil Gaziev vs Tallison Teixeira",
@@ -453,7 +561,25 @@
      ]
     }
    },
-   "market_p_a": 0.6448
+   "market_p_a": 0.6448,
+   "result": {
+    "winner": "Tallison Teixeira",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Amir Albazi vs Alessandro Costa",
@@ -515,7 +641,25 @@
      ]
     }
    },
-   "market_p_a": 0.4911
+   "market_p_a": 0.4911,
+   "result": {
+    "winner": "Amir Albazi",
+    "side": "a",
+    "method": "SUB",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Jake Matthews vs Tahir Abdullayev",
@@ -577,7 +721,25 @@
      ]
     }
    },
-   "market_p_a": 0.6854
+   "market_p_a": 0.6854,
+   "result": {
+    "winner": "Tahir Abdullayev",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": true,
+    "method": false,
+    "round": false,
+    "points": 2
+   }
   },
   {
    "bout": "Nikolas Motta vs Dom Mar Fan",
@@ -639,7 +801,25 @@
      ]
     }
    },
-   "market_p_a": 0.4004
+   "market_p_a": 0.4004,
+   "result": {
+    "winner": "Dom Mar Fan",
+    "side": "b",
+    "method": "DEC",
+    "round": 3
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": true,
+    "points": 4
+   }
   },
   {
    "bout": "Diyar Nurgozhay vs Alik Lorenz",
@@ -701,7 +881,25 @@
      ]
     }
    },
-   "market_p_a": 0.6854
+   "market_p_a": 0.6854,
+   "result": {
+    "winner": "Diyar Nurgozhay",
+    "side": "a",
+    "method": "KO/TKO",
+    "round": 2
+   },
+   "claude": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   },
+   "model_score": {
+    "winner": true,
+    "method": true,
+    "round": false,
+    "points": 3
+   }
   },
   {
    "bout": "Shoaib Yousaf vs John Mitchell",
@@ -763,8 +961,27 @@
      ]
     }
    },
-   "market_p_a": 0.4365
+   "market_p_a": 0.4365,
+   "result": {
+    "winner": "John Mitchell",
+    "side": "b",
+    "method": "KO/TKO",
+    "round": 1
+   },
+   "claude": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   },
+   "model_score": {
+    "winner": false,
+    "method": false,
+    "round": false,
+    "points": 0
+   }
   }
  ],
- "graded": false
+ "graded": true,
+ "graded_at": "2026-11-22T17:01:07+00:00"
 }
