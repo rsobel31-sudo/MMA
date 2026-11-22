@@ -1,6 +1,6 @@
 {
  "name": "Alessandro Costa",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "A flyweight who built his record on the Mexican regional scene (17-5; 5-3 UFC; age 31 in our data) and is on a three-fight finishing streak in 2026: R2 TKO of Stewart Nicoll, R1 TKO of Matt Schnell on nine days' notice, and an R2 rear-naked choke of Cody Durden at UFC 329. He now gets a rematch with Amir Albazi, who knocked him out in R3 in his 2022 UFC debut.",
  "how_they_fight": {
@@ -19,7 +19,8 @@
  "concerns": [
   "Previous knockout loss to this opponent",
   "Late rounds against a patient grappler",
-  "Bottom position when out-wrestled (Albazi, Erceg)"
+  "Bottom position when out-wrestled (Albazi, Erceg)",
+  "Gave up the back and a late choke while ahead on the cards (Albazi)"
  ],
  "keys_to_beat": [
   "Survive his first two rounds, then wrestle him in R3",
@@ -41,6 +42,11 @@
    "date": "2026-06-06",
    "text": "Stopped Matt Schnell at 2:32 of R1 at a catchweight after taking the fight on nine days' notice.",
    "source": "https://cagesidepress.com/2026/06/06/short-notice-opportunity-pays-off-for-alessandro-costa-who-finishes-matt-schnell-at-ufc-vegas-118/"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Submitted by Amir Albazi at 4:34 of R3 while ahead: dropped Albazi in R2, then was taken down off a slip and choked from the back.",
+   "source": "https://cagesidepress.com/2026/11/21/amir-albazi-survives-knockdown-point-deduction-to-finish-alessandro-costa-at-ufc-qatar/"
   }
  ],
  "sources": [

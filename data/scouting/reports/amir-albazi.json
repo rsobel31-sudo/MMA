@@ -1,6 +1,6 @@
 {
  "name": "Amir Albazi",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "An Iraqi-born flyweight raised in Sweden and based in London (17-3; age 33 per Wikipedia), listed at No. 8 by Wikipedia, who has lost two straight decisions, to Brandon Moreno (2024) and Kyoji Horiguchi (February 2026). He had heart surgery in 2023 and spine surgery in 2024 and has fought once a year or less since. Now with Great Britain Top Team (Wikipedia). This is a rematch: he knocked Alessandro Costa out in R3 in 2022.",
  "how_they_fight": {
@@ -14,13 +14,15 @@
   "Patient counter-striker; low volume",
   "Submissions and top control when he gets the takedown",
   "Never stopped; all losses on the cards",
-  "Has been out-landed heavily in his last three big fights"
+  "Has been out-landed heavily in his last three big fights",
+  "Back-take and one-armed choke from a takedown when behind late (Costa)"
  ],
  "concerns": [
   "Two straight losses and long layoffs",
   "Recent takedown accuracy (2 of 20 across his last three fights in our data)",
   "Health history: heart surgery (2023) and spine surgery (2024)",
-  "Several gym changes; now at Great Britain Top Team"
+  "Several gym changes; now at Great Britain Top Team",
+  "Hurt and out-struck for two rounds after a long layoff (Costa)"
  ],
  "keys_to_beat": [
   "Out-work him at range; volume has beaten him every time recently",
@@ -42,6 +44,11 @@
    "date": "2026-11-10",
    "text": "Wikipedia notes a withdrawal from a planned fight with Tatsuro Taira in August 2025 with an injury.",
    "source": "https://en.wikipedia.org/wiki/Amir_Albazi"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Submitted Alessandro Costa with a rear-naked choke at 4:34 of R3 after being dropped in R2 and docked a point for grabbing the fence; his first win in three years.",
+   "source": "https://cagesidepress.com/2026/11/21/amir-albazi-survives-knockdown-point-deduction-to-finish-alessandro-costa-at-ufc-qatar/"
   }
  ],
  "sources": [

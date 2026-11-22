@@ -1,6 +1,6 @@
 {
  "name": "Jiri Prochazka",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "Former UFC light heavyweight champion from the Czech Republic (32-6-1, 6-3 UFC, age 34). A wild, high-output striker with huge finishing power: 31 of his 32 wins are stoppages. He headlines against unbeaten Navajo Stirling seven months after a first-round knockout loss to Carlos Ulberg for the vacant title. He opened as a slight underdog (+110 to -138, per MMA Junkie).",
  "how_they_fight": {
@@ -21,7 +21,8 @@
   "Defensive gaps against a fast, accurate striker",
   "Coming off a first-round KO loss, his third KO loss in four fights against top opposition",
   "Age 34 with a lot of wear from wars",
-  "Opponent is younger, unbeaten and favoured"
+  "Opponent is younger, unbeaten and favoured",
+  "Knocked out in three of his last four (Pereira twice, Ulberg, Stirling)"
  ],
  "keys_to_beat": [
   "Counter him as he comes in; make him pay for wide shots",
@@ -43,6 +44,11 @@
    "date": "2026-04-11",
    "text": "Knocked out by Carlos Ulberg at 3:45 of R1 at UFC 327 in a fight for the vacant title, after badly hurting Ulberg's lead leg.",
    "source": "https://www.lowkickmma.com/jiri-prochazka-vs-carlos-ulberg-highlights/"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Knocked out by Navajo Stirling at 4:58 of R2, his second straight knockout loss; fought uncharacteristically patient, dropped Stirling in R1 but did not follow him down. Several pros suggested a move to 185.",
+   "source": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
   }
  ],
  "sources": [

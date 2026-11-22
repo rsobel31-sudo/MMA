@@ -1,6 +1,6 @@
 {
  "name": "Navajo Stirling",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "Unbeaten New Zealand light heavyweight (11-0, 6-0 UFC, age 29) from City Kickboxing and the Contender Series. He has stopped his last three opponents, including former champion Jan Blachowicz in round one in August. This is his first UFC main event and first scheduled five-rounder in the UFC; he opened as a -138 favourite.",
  "how_they_fight": {
@@ -14,12 +14,14 @@
   "Patient jab-and-cross kickboxer who builds into finishes",
   "Three straight stoppages, two in R2 and one in R1",
   "Recovers well after a bad first round (Cutelaba, Blachowicz)",
-  "Can be taken down by a strong wrestler but reverses and gets up"
+  "Can be taken down by a strong wrestler but reverses and gets up",
+  "Patient leg-kick work and a counter right hook that finishes when opponents commit"
  ],
  "concerns": [
   "Never been past three rounds in the UFC",
   "First main event and big step up in opponent power",
-  "Has been hurt and taken down in his last two fights"
+  "Has been hurt and taken down in his last two fights",
+  "Dropped in R1 by Prochazka's counter overhand; hurt in three straight fights"
  ],
  "keys_to_beat": [
   "Take him down and make him work off his back early",
@@ -46,6 +48,11 @@
    "date": "2026-11-10",
    "text": "UFC.com lists the main-event pair at No. 2 and No. 5 at light heavyweight.",
    "source": "https://www.ufc.com/event/ufc-fight-night-november-21-2026"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Knocked out Jiri Prochazka at 4:58 of R2 with a slipped counter right hook after two rounds of leg kicks; was dropped by an overhand right late in R1 and recovered when Prochazka let him up. Now 12-0, 7-0 UFC.",
+   "source": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
   }
  ],
  "sources": [

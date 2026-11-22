@@ -1,6 +1,6 @@
 {
  "name": "Shamil Gaziev",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "A Dagestan-born Bahraini heavyweight (15-3; KHK MMA; born 1990 per Wikipedia) who won the Contender Series in 2023. A big puncher who has been knocked out twice in his last three fights (Cortes-Acosta R1, Pericic R2), then put Kennedy Nzechukwu away with one right hand in August. All 13 of his stoppage wins came inside two rounds.",
  "how_they_fight": {
@@ -19,7 +19,8 @@
  "concerns": [
   "Chin: KO'd in R1 and R2 in his last three",
   "Gas tank past R2",
-  "Low takedown accuracy against bigger or rangier opponents"
+  "Low takedown accuracy against bigger or rangier opponents",
+  "Output collapses after R1 (Teixeira)"
  ],
  "keys_to_beat": [
   "Survive R1 and push the pace into R3",
@@ -41,6 +42,11 @@
    "date": "2026-05-02",
    "text": "Knocked out by Brando Pericic at 3:44 of R2 at UFC Perth; both men earned Fight of the Night (Wikipedia).",
    "source": "https://cagesidepress.com/2026/05/02/brando-pericic-stuns-gaziev-earns-third-straight-ufc-knockout/"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Lost to Tallison Teixeira by unanimous decision: won R1 with a knockdown and clinch pressure, then threw very little in R2 and R3 and was warned for grabbing the fence.",
+   "source": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
   }
  ],
  "sources": [

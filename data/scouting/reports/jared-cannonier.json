@@ -1,6 +1,6 @@
 {
  "name": "Jared Cannonier",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "A veteran American middleweight (18-10; MMA Lab; our data lists him at 43) and former title challenger who once fought at heavyweight and light heavyweight. He has lost four of his last five: Imavov (R4 TKO), Borralho, Michael Page and, in July, Christian Leroy Duncan by decision. His only win in that run was an R4 TKO of Gregory Rodrigues in February 2025. He faces the younger, ranked grappler Ikram Aliskerov on the main card.",
  "how_they_fight": {
@@ -19,7 +19,8 @@
  "concerns": [
   "Age and four losses in his last five",
   "Low striking output in his last two fights (20 and 15 significant strikes landed in our data)",
-  "Facing a younger grappler who has held his last two opponents down for six and nine minutes"
+  "Facing a younger grappler who has held his last two opponents down for six and nine minutes",
+  "No answer to takedowns at 42 (Aliskerov)"
  ],
  "keys_to_beat": [
   "Out-work him: volume and movement beat him in both 2025-26 losses",
@@ -36,6 +37,11 @@
    "date": "2026-07-18",
    "text": "Lost a unanimous decision (30-27, 30-27, 29-28) to Christian Leroy Duncan at UFC Oklahoma City. LowKick reports that he knocked Duncan down in R1; Cageside and our data do not record a knockdown.",
    "source": "https://cagesidepress.com/2026/07/18/ufc-oklahoma-city-christian-leroy-duncan-claims-biggest-win-yet-gets-past-jared-cannonier/"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Lost to Ikram Aliskerov 30-27 x3 at 42: dropped in R1 and then taken down and controlled in R2 and R3; now 1-5 in his last six.",
+   "source": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
   }
  ],
  "sources": [

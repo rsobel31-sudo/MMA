@@ -2,7 +2,1111 @@
  "id": "2026-11-21-ufc-fight-night-294-prochazka-vs-stirling",
  "event": "UFC Fight Night 294 - Prochazka vs. Stirling",
  "date": "2026-11-21",
- "stories": {},
+ "stories": {
+  "navajo-stirling-jiri-prochazka": {
+   "summary": "A patient first round in which Stirling chopped at Procházka's lead leg, though Procházka put him on his back with a counter overhand right late in the round and let him up; all three Sherdog scorers still gave Stirling the round. Round 2 was more of the same leg kicks until, with two seconds left, Stirling slipped a left hook and knocked Procházka out with a counter right hook against the fence.",
+   "turning_point": "Procházka's knockdown in round 1: he chose not to follow Stirling to the floor.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Stirling",
+       "10-9 Stirling",
+       "10-9 Stirling"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/488141/jiri-prochazka-reacts-to-second-straight-knockout-loss-at-ufc-qatar-no-more-like-this"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-results/488071/ufc-qatar-results-biggest-winners-and-losers-from-jiri-vs-stirling-yesterday"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/jiri-prochazka-reacts-knockout-loss-022118117.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Stirling the faster, cleaner striker; Procházka gets hit; finish in R2 once the exchanges open up",
+     "tag": "durability",
+     "favoured": "Navajo Stirling",
+     "verdict": "held",
+     "note": "Knocked out at 4:58 of round 2 on a counter, exactly as written."
+    },
+    {
+     "by": "read",
+     "claim": "Procházka's recent knockout losses",
+     "tag": "durability",
+     "favoured": "Navajo Stirling",
+     "verdict": "held",
+     "note": "His third knockout loss in four fights against top opposition."
+    },
+    {
+     "by": "read",
+     "claim": "Stirling's first five-rounder (against)",
+     "tag": "cardio",
+     "favoured": "Jiri Prochazka",
+     "verdict": "untested",
+     "note": "Over inside 10 minutes."
+    },
+    {
+     "by": "read",
+     "claim": "Procházka's power (against)",
+     "tag": "power",
+     "favoured": "Jiri Prochazka",
+     "verdict": "mixed",
+     "note": "He dropped Stirling in round 1 but did not follow up."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Navajo Stirling",
+     "verdict": "held",
+     "note": "The younger, less-worn fighter took the exchanges and the finish."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin",
+     "tag": "power_vs_chin",
+     "favoured": "Navajo Stirling",
+     "verdict": "held",
+     "note": "One clean counter ended it."
+    },
+    {
+     "by": "model",
+     "claim": "Experience",
+     "tag": "experience",
+     "favoured": "Jiri Prochazka",
+     "verdict": "failed",
+     "note": "Procházka's experience did not show; he was out-thought at range."
+    }
+   ]
+  },
+  "kevin-vallejos-aljamain-sterling": {
+   "summary": "Sterling jabbed, kicked the body and shot again and again; Vallejos stuffed 11 of 12 takedowns, landed the harder right hands on the counter and scrambled up at once from the one takedown Sterling got in round 2. The judges gave Vallejos all three rounds on two cards (30-27, 30-27, 29-28), while all three Sherdog scorers had Sterling ahead and MMA Fighting quoted pros calling it a robbery. UFC Stats had Vallejos ahead 37-32 in significant strikes.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Sterling",
+       "10-9 Sterling",
+       "10-9 Sterling"
+      ],
+      [
+       2,
+       "10-9 Sterling",
+       "10-9 Sterling",
+       "10-9 Sterling"
+      ],
+      [
+       3,
+       "10-9 Sterling",
+       "10-9 Vallejos",
+       "10-9 Sterling"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/522835/aljamain-sterling-reacts-to-controversial-loss-to-kevin-vallejos-at-ufc-qatar-what-can-you-do"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/522768/robbery-pros-react-to-kevin-vallejos-narrow-win-over-aljamain-sterling-at-ufc-qatar"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/522743/ufc-qatar-results-kevin-vallejos-calls-for-title-shot-after-winning-decision-over-aljamain-sterling"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right on the cards, wrong on the fight",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Sterling is 37, struggled on the cut and gets stopped by explosive strikers; Vallejos by KO in R1",
+     "tag": "durability",
+     "favoured": "Kevin Vallejos",
+     "verdict": "failed",
+     "note": "Sterling was never hurt badly and Vallejos fought a counter-striking decision."
+    },
+    {
+     "by": "read",
+     "claim": "Sterling's grappling",
+     "tag": "wrestling",
+     "favoured": "Aljamain Sterling",
+     "verdict": "failed",
+     "note": "One takedown from 12 attempts, and Vallejos was up straight away."
+    },
+    {
+     "by": "read",
+     "claim": "Vallejos's power (against)",
+     "tag": "power",
+     "favoured": "Kevin Vallejos",
+     "verdict": "mixed",
+     "note": "His right hands landed cleanest but never dropped Sterling."
+    },
+    {
+     "by": "read",
+     "claim": "Sterling's age (against)",
+     "tag": "age",
+     "favoured": "Kevin Vallejos",
+     "verdict": "untested",
+     "note": "Sterling kept his pace for three rounds; no sign of decline beyond the failed shots."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Kevin Vallejos",
+     "verdict": "mixed",
+     "note": "Won on the cards in a fight scorers split on."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Aljamain Sterling",
+     "verdict": "failed",
+     "note": "Sterling's wrestling advantage on paper produced one takedown in 12 tries."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating",
+     "tag": "outside_rating",
+     "favoured": "Aljamain Sterling",
+     "verdict": "mixed",
+     "note": "Close fight; the judges went the other way."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Aljamain Sterling",
+     "verdict": "mixed",
+     "note": "Close fight; the judges went the other way."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin",
+     "tag": "power_vs_chin",
+     "favoured": "Kevin Vallejos",
+     "verdict": "untested",
+     "note": "No knockdowns."
+    }
+   ]
+  },
+  "dan-hooker-brian-ortega": {
+   "summary": "Hooker kicked Ortega's legs and body from the opening seconds and doubled up his jab, and Ortega looked gun-shy; Hooker got straight back up from the one takedown and turned away the rest. By round 3 Ortega was marked up around the right eye and winging punches, and his last takedown and back take came too late. Hooker won 30-27 on all three cards, as all three Sherdog scorers had it, and Ortega announced his retirement.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Hooker",
+       "10-9 Hooker",
+       "10-9 Hooker"
+      ],
+      [
+       2,
+       "10-9 Hooker",
+       "10-9 Hooker",
+       "10-9 Hooker"
+      ],
+      [
+       3,
+       "10-9 Hooker",
+       "10-9 Hooker",
+       "10-9 Hooker"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "url": "https://www.mmamania.com/ufc-videos/488044/video-dan-hooker-wildly-celebrates-navajo-stirlings-ufc-qatar-win-hurls-chairs-backstage-its-a-bad-day-to-be-a-beverage"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "url": "https://www.mmafighting.com/ufc/522721/ufc-qatar-results-dan-hooker-calls-out-max-holloway-after-winning-brian-ortega-announces-his-retirement"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/dan-hooker/ufc-qatar-results-dan-hooker-defeats-brian-ortega-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-qatar-results-dan-hooker-defeats-brian-ortega-highlights"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Ortega out 15 months, two withdrawals, first walk at 155; Hooker's volume wins the rounds; a decision",
+     "tag": "inactivity",
+     "favoured": "Dan Hooker",
+     "verdict": "held",
+     "note": "Ortega was hesitant and outworked in every round; a clear 30-27."
+    },
+    {
+     "by": "read",
+     "claim": "Ortega's 15-month layoff and two withdrawals",
+     "tag": "inactivity",
+     "favoured": "Dan Hooker",
+     "verdict": "held",
+     "note": "Gun-shy early and never found a rhythm."
+    },
+    {
+     "by": "read",
+     "claim": "Ortega's first fight at 155",
+     "tag": "weight_cut",
+     "favoured": "Dan Hooker",
+     "verdict": "held",
+     "note": "Couldn't hold Hooker down or match his length."
+    },
+    {
+     "by": "read",
+     "claim": "Hooker's durability (against)",
+     "tag": "durability",
+     "favoured": "Brian Ortega",
+     "verdict": "held",
+     "note": "Hooker took Ortega's best right hands and kept moving forward."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Brian Ortega",
+     "verdict": "failed",
+     "note": "The fresher-body edge did not show against a busier fighter."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Brian Ortega",
+     "verdict": "failed",
+     "note": "Lost every round on every card."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Brian Ortega",
+     "verdict": "failed",
+     "note": "One brief takedown in round 1 and a late back take; Hooker stayed upright."
+    }
+   ]
+  },
+  "kyoji-horiguchi-asu-almabayev": {
+   "summary": "Horiguchi landed the cleaner strikes standing, but Almabayev took him down repeatedly and held him for more than nine minutes in all. Horiguchi nearly finished him twice with guillotines, swept, and scored with elbows and body punches from the bottom, and Almabayev offered little on top. All three Sherdog scorers gave Horiguchi every round; the judges had it 30-27, 30-27, 29-28, and Horiguchi apologised for a boring fight.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Horiguchi",
+       "10-9 Horiguchi",
+       "10-9 Horiguchi"
+      ],
+      [
+       2,
+       "10-9 Horiguchi",
+       "10-9 Horiguchi",
+       "10-9 Horiguchi"
+      ],
+      [
+       3,
+       "10-9 Horiguchi",
+       "10-9 Horiguchi",
+       "10-9 Horiguchi"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-results-kyoji-horiguchi-192028448.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Horiguchi's speed and takedown defence keep the grinder at bay; a decision",
+     "tag": "td_defence",
+     "favoured": "Kyoji Horiguchi",
+     "verdict": "mixed",
+     "note": "Right result and method, but his takedown defence did not hold: he won from his back."
+    },
+    {
+     "by": "read",
+     "claim": "Horiguchi's takedown defence",
+     "tag": "td_defence",
+     "favoured": "Kyoji Horiguchi",
+     "verdict": "failed",
+     "note": "Taken down again and again."
+    },
+    {
+     "by": "read",
+     "claim": "Almabayev's grappling (against)",
+     "tag": "grappling",
+     "favoured": "Asu Almabayev",
+     "verdict": "mixed",
+     "note": "Plenty of control time, almost no damage, and two near-guillotines against him."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Asu Almabayev",
+     "verdict": "failed",
+     "note": "Almabayev's pace did not tell over three rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating",
+     "tag": "striking_rating",
+     "favoured": "Kyoji Horiguchi",
+     "verdict": "held",
+     "note": "Cleaner shots on the feet in every round."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge",
+     "tag": "wrestling_edge",
+     "favoured": "Asu Almabayev",
+     "verdict": "mixed",
+     "note": "The takedowns came, but the judges did not reward the control."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Kyoji Horiguchi",
+     "verdict": "held",
+     "note": "Won every round on Sherdog's cards."
+    },
+    {
+     "by": "model",
+     "claim": "Age curve",
+     "tag": "age_curve",
+     "favoured": "Asu Almabayev",
+     "verdict": "failed",
+     "note": "The 36-year-old outworked the younger man."
+    }
+   ]
+  },
+  "ikram-aliskerov-jared-cannonier": {
+   "summary": "Cannonier pressed forward early, but Aliskerov dropped him in round 1 and was the busier striker. From round 2 Aliskerov took him down at will, mounted him several times, took his back and hunted face cranks, arm-triangles and a rear-naked choke without getting the finish. A 30-27 sweep on every card, Sherdog's included.",
+   "turning_point": "Aliskerov's first takedown in round 2; Cannonier had no answer on the ground from then on.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Aliskerov",
+       "10-9 Aliskerov",
+       "10-9 Aliskerov"
+      ],
+      [
+       2,
+       "10-9 Aliskerov",
+       "10-9 Aliskerov",
+       "10-9 Aliskerov"
+      ],
+      [
+       3,
+       "10-9 Aliskerov",
+       "10-9 Aliskerov",
+       "10-9 Aliskerov"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "url": "https://www.lowkickmma.com/ikram-aliskerov-takes-down-jared-cannonier-repeatedly-at-ufc-qatar-to-secure-fourth-straight-win/"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/21/ufc-qatar-ikram-aliskerov-looks-solid-in-win-over-jared-cannonier/"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/20/ikram-aliskerov-eyes-career-defining-win-over-jared-cannonier/"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Aliskerov wins by control; Cannonier rarely stopped; three rounds",
+     "tag": "wrestling",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Control in rounds 2 and 3 and a clear decision."
+    },
+    {
+     "by": "read",
+     "claim": "Cannonier's age and form",
+     "tag": "age",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "The 42-year-old had no answer to the takedowns."
+    },
+    {
+     "by": "read",
+     "claim": "Aliskerov's wrestling",
+     "tag": "wrestling",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Takedowns at will and repeated mounts."
+    },
+    {
+     "by": "read",
+     "claim": "Cannonier's power early (against)",
+     "tag": "power",
+     "favoured": "Jared Cannonier",
+     "verdict": "failed",
+     "note": "Cannonier was the one dropped in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Aliskerov kept his pace; Cannonier slowed."
+    },
+    {
+     "by": "model",
+     "claim": "Age curve",
+     "tag": "age_curve",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "The age gap showed in the scrambles."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Dominant on the mat."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling edge",
+     "tag": "wrestling_edge",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Dominant on the mat."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Ikram Aliskerov",
+     "verdict": "held",
+     "note": "Won every round."
+    }
+   ]
+  },
+  "santiago-luna-aleksandre-topuria": {
+   "summary": "Luna pressured from the start and out-landed Topuria with four- to six-punch combinations, collar-tie uppercuts and body shots; Topuria dropped him with a clean right hand in round 1 and swept his legs with a kick in round 3, but never wrestled. Sherdog's three scorers gave Luna every round; the judges split (30-27, 28-29, 29-28) for Luna.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Luna",
+       "10-9 Luna",
+       "10-9 Luna"
+      ],
+      [
+       2,
+       "10-9 Luna",
+       "10-9 Luna",
+       "10-9 Luna"
+      ],
+      [
+       3,
+       "10-9 Luna",
+       "10-9 Luna",
+       "10-9 Luna"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "url": "https://www.bjpenn.com/mma-news/ufc/ilia-topuria-sends-heartfelt-message-to-his-brother-aleksandre-ahead-of-ufc-qatar-return-victory-belongs-to-you/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ilia-topuria-sends-heartfelt-message-to-his-brother-aleksandre-ahead-of-ufc-qatar-return-victory-belongs-to-you"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Topuria's Greco-Roman wrestling and BJJ against a 22-year-old submitted from his back; on the cards",
+     "tag": "wrestling",
+     "favoured": "Aleksandre Topuria",
+     "verdict": "failed",
+     "note": "Topuria tried one clinch takedown all fight and lost the striking."
+    },
+    {
+     "by": "read",
+     "claim": "Topuria's layoff (against)",
+     "tag": "inactivity",
+     "favoured": "Santiago Luna",
+     "verdict": "held",
+     "note": "A year out, Topuria could not match Luna's pace."
+    },
+    {
+     "by": "read",
+     "claim": "Luna's bottom game",
+     "tag": "grappling",
+     "favoured": "Aleksandre Topuria",
+     "verdict": "untested",
+     "note": "The fight never went to the ground."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Santiago Luna",
+     "verdict": "held",
+     "note": "Luna won on Sherdog's cards in every round."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating",
+     "tag": "striking_rating",
+     "favoured": "Santiago Luna",
+     "verdict": "held",
+     "note": "Out-landed Topuria with combinations."
+    }
+   ]
+  },
+  "tallison-teixeira-shamil-gaziev": {
+   "summary": "A low-output heavyweight fight. Gaziev took round 1 with a one-two that sat Teixeira down and pressure into the clinch, then barely threw; Teixeira won the last two rounds from range with leg kicks, front kicks to the body and jabs while retreating. The judges gave Teixeira a unanimous decision (30-27, 29-28, 29-28), and two of three Sherdog scorers agreed; the crowd booed.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Gaziev",
+       "10-9 Gaziev",
+       "10-9 Gaziev"
+      ],
+      [
+       2,
+       "10-9 Teixeira",
+       "10-9 Teixeira",
+       "10-9 Gaziev"
+      ],
+      [
+       3,
+       "10-9 Teixeira",
+       "10-9 Teixeira",
+       "10-9 Teixeira"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Gaziev knocked out three straight times; all Teixeira's finishes in R1; an early KO",
+     "tag": "durability",
+     "favoured": "Tallison Teixeira",
+     "verdict": "failed",
+     "note": "Nobody was finished; Teixeira won on points over 15 minutes."
+    },
+    {
+     "by": "read",
+     "claim": "Both chins",
+     "tag": "durability",
+     "favoured": "Shamil Gaziev",
+     "verdict": "failed",
+     "note": "Gaziev dropped Teixeira once, and both lasted."
+    },
+    {
+     "by": "read",
+     "claim": "Teixeira's cardio past R1",
+     "tag": "cardio",
+     "favoured": "Shamil Gaziev",
+     "verdict": "failed",
+     "note": "Teixeira won rounds 2 and 3; it was Gaziev whose output vanished."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Tallison Teixeira",
+     "verdict": "held",
+     "note": "Teixeira kept working after round 1; Gaziev did not."
+    },
+    {
+     "by": "model",
+     "claim": "Age curve",
+     "tag": "age_curve",
+     "favoured": "Tallison Teixeira",
+     "verdict": "held",
+     "note": "The younger man won the late rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Height",
+     "tag": "height",
+     "favoured": "Tallison Teixeira",
+     "verdict": "held",
+     "note": "He won by keeping Gaziev at the end of his kicks."
+    }
+   ]
+  },
+  "amir-albazi-alessandro-costa": {
+   "summary": "Costa dropped Albazi and battered him in round 2, and Albazi was docked a point for grabbing the fence, leaving him needing a finish in round 3. Late in the round he took Costa down after a slip, moved to half guard, took the back with a body triangle and squeezed out a one-armed rear-naked choke at 4:34.",
+   "turning_point": "The takedown off Costa's slip in round 3, with Albazi behind on the cards.",
+   "sources": [
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-video-amir-albazi-171758962.html"
+    },
+    {
+     "outlet": "Cageside Press",
+     "url": "https://cagesidepress.com/2026/11/21/amir-albazi-survives-knockdown-point-deduction-to-finish-alessandro-costa-at-ufc-qatar/"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, other reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "A tight decision; Albazi's takedowns have dried up; Costa rarely finished",
+     "tag": "wrestling",
+     "favoured": "Amir Albazi",
+     "verdict": "mixed",
+     "note": "Right winner, but by a comeback submission from a takedown in round 3, not on the cards."
+    },
+    {
+     "by": "read",
+     "claim": "Albazi's inactivity and health history",
+     "tag": "inactivity",
+     "favoured": "Alessandro Costa",
+     "verdict": "mixed",
+     "note": "He looked rusty and was hurt in round 2, but rallied."
+    },
+    {
+     "by": "read",
+     "claim": "Costa's form",
+     "tag": "form",
+     "favoured": "Alessandro Costa",
+     "verdict": "held",
+     "note": "Costa won rounds 1 and 2 clearly."
+    },
+    {
+     "by": "read",
+     "claim": "Albazi's previous knockout of Costa (against)",
+     "tag": "history",
+     "favoured": "Amir Albazi",
+     "verdict": "mixed",
+     "note": "Albazi won again, this time on the ground."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Amir Albazi",
+     "verdict": "mixed",
+     "note": "Albazi lasted and finished, but was the one hurt."
+    }
+   ]
+  },
+  "tahir-abdullayev-jake-matthews": {
+   "summary": "Abdullayev, who missed weight by a pound, stung Matthews with a right hand in round 1 and took over on the mat, dropping elbows from side control and half guard. He took Matthews down in every round, landed a knee as Matthews stood in round 2, and shut down his triangle and kimura attempts. All three Sherdog scorers had it 30-27; the judges 30-27, 30-27, 29-28.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Abdullayev",
+       "10-9 Abdullayev",
+       "10-9 Abdullayev"
+      ],
+      [
+       1,
+       "10-9 Abdullayev",
+       "10-9 Abdullayev",
+       "10-9 Abdullayev"
+      ],
+      [
+       3,
+       "10-9 Abdullayev",
+       "10-9 Abdullayev",
+       "10-9 Abdullayev"
+      ],
+      [
+       1,
+       "10-9 Albazi",
+       "10-9 Albazi",
+       "10-9 Albazi"
+      ],
+      [
+       2,
+       "10-8 Tudor",
+       "10-8 Mike"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Abdullayev's record thin and inconsistent by source; Matthews grinds out rounds with jiu-jitsu",
+     "tag": "experience",
+     "favoured": "Jake Matthews",
+     "verdict": "failed",
+     "note": "Abdullayev out-grappled him from the first exchange."
+    },
+    {
+     "by": "read",
+     "claim": "Abdullayev's thin UFC data",
+     "tag": "data",
+     "favoured": "Jake Matthews",
+     "verdict": "failed",
+     "note": "The regional record the model trusted was right."
+    },
+    {
+     "by": "read",
+     "claim": "Matthews's experience",
+     "tag": "experience",
+     "favoured": "Jake Matthews",
+     "verdict": "failed",
+     "note": "Never got going."
+    },
+    {
+     "by": "read",
+     "claim": "Matthews's late fades (against)",
+     "tag": "cardio",
+     "favoured": "Tahir Abdullayev",
+     "verdict": "untested",
+     "note": "He was losing from round 1; both were tired by round 3."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Tahir Abdullayev",
+     "verdict": "held",
+     "note": "Kept up the takedowns for three rounds."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Jake Matthews",
+     "verdict": "failed",
+     "note": "Taken down in every round."
+    }
+   ]
+  },
+  "dom-mar-fan-nikolas-motta": {
+   "summary": "Fan took Motta down inside 20 seconds and beat him up from top position for all of round 1. Motta dropped him with a left hook early in round 2, but Fan recovered and hurt him repeatedly with jabs, hooks and a clean head kick that Motta somehow walked through. The doctor checked Motta before round 3; Fan won 30-26, 29-27, 29-27.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Fan",
+       "10-9 Fan",
+       "10-9 Fan"
+      ],
+      [
+       2,
+       "10-9 Fan",
+       "10-9 Fan",
+       "10-9 Fan"
+      ],
+      [
+       3,
+       "10-9 Fan",
+       "10-9 Fan",
+       "10-9 Fan"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Motta 17 months out after a broken jaw, little ground game; Fan's grappling controls him; a decision",
+     "tag": "grappling",
+     "favoured": "Dom Mar Fan",
+     "verdict": "held",
+     "note": "A takedown in 20 seconds and a whole round of ground and pound."
+    },
+    {
+     "by": "read",
+     "claim": "Motta's layoff and jaw injury",
+     "tag": "inactivity",
+     "favoured": "Dom Mar Fan",
+     "verdict": "mixed",
+     "note": "His chin held up remarkably; the rust showed in his defence."
+    },
+    {
+     "by": "read",
+     "claim": "Fan's grappling",
+     "tag": "grappling",
+     "favoured": "Dom Mar Fan",
+     "verdict": "held",
+     "note": "Controlled round 1 and duplexed him late in round 3."
+    },
+    {
+     "by": "read",
+     "claim": "Fan's submission defence (against)",
+     "tag": "grappling",
+     "favoured": "Nikolas Motta",
+     "verdict": "untested",
+     "note": "Motta never threatened one."
+    },
+    {
+     "by": "model",
+     "claim": "Fresher body",
+     "tag": "wear_and_tear",
+     "favoured": "Dom Mar Fan",
+     "verdict": "held",
+     "note": "Fan's pace never dropped much."
+    },
+    {
+     "by": "model",
+     "claim": "Striking rating",
+     "tag": "striking_rating",
+     "favoured": "Nikolas Motta",
+     "verdict": "mixed",
+     "note": "Motta's left hook dropped Fan, but Fan won the striking overall."
+    },
+    {
+     "by": "model",
+     "claim": "Height",
+     "tag": "height",
+     "favoured": "Dom Mar Fan",
+     "verdict": "held",
+     "note": "The jab was his best weapon all night."
+    }
+   ]
+  },
+  "diyar-nurgozhay-alik-lorenz": {
+   "summary": "Nurgozhay swept the debutant off his feet in the opening seconds, traded evenly for a while, then took him down with a single leg and landed elbows until late in round 1. Twenty-four seconds into round 2 a left head kick dropped Lorenz, and hammerfists finished it.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707",
+     "round_scores": [
+      [
+       1,
+       "10-9 Nurgozhay",
+       "10-9 Nurgozhay",
+       "10-9 Nurgozhay"
+      ]
+     ]
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "right, partly for our reasons",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "An early finish, Nurgozhay's way, in R1",
+     "tag": "finishing",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "mixed",
+     "note": "The finish came 24 seconds into round 2, not round 1."
+    },
+    {
+     "by": "read",
+     "claim": "Lorenz's debut",
+     "tag": "debut",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "held",
+     "note": "Overmatched on the mat and on the feet."
+    },
+    {
+     "by": "read",
+     "claim": "Nurgozhay's submission defence (against)",
+     "tag": "grappling",
+     "favoured": "Alik Lorenz",
+     "verdict": "untested",
+     "note": "Lorenz flirted with a triangle once."
+    },
+    {
+     "by": "model",
+     "claim": "Power vs chin",
+     "tag": "power_vs_chin",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "held",
+     "note": "One head kick ended it."
+    },
+    {
+     "by": "model",
+     "claim": "Fight Matrix rating",
+     "tag": "outside_rating",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "held",
+     "note": "Clearly the better fighter."
+    },
+    {
+     "by": "model",
+     "claim": "Wrestling rating",
+     "tag": "wrestling_rating",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "held",
+     "note": "Two takedowns at will in round 1."
+    },
+    {
+     "by": "model",
+     "claim": "Submission threat",
+     "tag": "submission_threat",
+     "favoured": "Alik Lorenz",
+     "verdict": "untested",
+     "note": "Never threatened."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Diyar Nurgozhay",
+     "verdict": "held",
+     "note": "Won every exchange that mattered."
+    }
+   ]
+  },
+  "john-mitchell-shoaib-yousaf": {
+   "summary": "Two debutants on three days' notice. Yousaf controlled the centre and rocked Mitchell with winging punches, but walked into knees; when Yousaf clinched, Mitchell turned him, landed an elbow and then a knee to the face that dropped him, and finished with punches at 3:50 of round 1.",
+   "turning_point": "Mitchell's knee off the separation from the clinch, just as Yousaf seemed to be on top.",
+   "sources": [
+    {
+     "outlet": "Sherdog",
+     "url": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    }
+   ],
+   "written": "2026-11-22",
+   "verdict": "wrong, claim failed",
+   "checks": [
+    {
+     "by": "pick",
+     "claim": "Yousaf never stopped, all losses on the cards; a decision",
+     "tag": "durability",
+     "favoured": "Shoaib Yousaf",
+     "verdict": "failed",
+     "note": "Knocked out in round 1, his first stoppage loss."
+    },
+    {
+     "by": "read",
+     "claim": "Both on short notice",
+     "tag": "short_notice",
+     "favoured": "John Mitchell",
+     "verdict": "untested",
+     "note": "Ended too early to show."
+    },
+    {
+     "by": "read",
+     "claim": "Yousaf's early power (against)",
+     "tag": "power",
+     "favoured": "Shoaib Yousaf",
+     "verdict": "mixed",
+     "note": "He hurt Mitchell early but was finished first."
+    },
+    {
+     "by": "model",
+     "claim": "Overall rating",
+     "tag": "overall",
+     "favoured": "Shoaib Yousaf",
+     "verdict": "failed",
+     "note": "Lost inside four minutes."
+    }
+   ]
+  }
+ },
  "coverage": {
   "navajo-stirling-jiri-prochazka": {
    "a": "Navajo Stirling",
@@ -22,9 +1126,19 @@
      "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
     },
     {
-     "outlet": "MMA Fighting",
+     "outlet": "MMA Mania",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/522605/ufc-qatar-results-prochazka-vs-stirling"
+     "url": "https://www.mmamania.com/ufc-results/488141/jiri-prochazka-reacts-to-second-straight-knockout-loss-at-ufc-qatar-no-more-like-this"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-results/488071/ufc-qatar-results-biggest-winners-and-losers-from-jiri-vs-stirling-yesterday"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/jiri-prochazka-reacts-knockout-loss-022118117.html"
     }
    ],
    "round_scores": [
@@ -57,7 +1171,17 @@
     {
      "outlet": "MMA Fighting",
      "kind": "recap",
-     "url": "https://www.mmafighting.com/ufc/521924/kevin-vallejos-expects-title-shot-with-ufc-qatar-win-over-aljamain-sterling-im-next"
+     "url": "https://www.mmafighting.com/ufc/522835/aljamain-sterling-reacts-to-controversial-loss-to-kevin-vallejos-at-ufc-qatar-what-can-you-do"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/522768/robbery-pros-react-to-kevin-vallejos-narrow-win-over-aljamain-sterling-at-ufc-qatar"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/522743/ufc-qatar-results-kevin-vallejos-calls-for-title-shot-after-winning-decision-over-aljamain-sterling"
     }
    ],
    "round_scores": [
@@ -98,6 +1222,21 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Mania",
+     "kind": "recap",
+     "url": "https://www.mmamania.com/ufc-videos/488044/video-dan-hooker-wildly-celebrates-navajo-stirlings-ufc-qatar-win-hurls-chairs-backstage-its-a-bad-day-to-be-a-beverage"
+    },
+    {
+     "outlet": "MMA Fighting",
+     "kind": "recap",
+     "url": "https://www.mmafighting.com/ufc/522721/ufc-qatar-results-dan-hooker-calls-out-max-holloway-after-winning-brian-ortega-announces-his-retirement"
+    },
+    {
+     "outlet": "BJPenn.com",
+     "kind": "recap",
+     "url": "https://www.bjpenn.com/mma-news/dan-hooker/ufc-qatar-results-dan-hooker-defeats-brian-ortega-highlights/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ufc-qatar-results-dan-hooker-defeats-brian-ortega-highlights"
     }
    ],
    "round_scores": [
@@ -138,6 +1277,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-results-kyoji-horiguchi-192028448.html"
     }
    ],
    "round_scores": [
@@ -178,6 +1322,16 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "LowKick MMA",
+     "kind": "recap",
+     "url": "https://www.lowkickmma.com/ikram-aliskerov-takes-down-jared-cannonier-repeatedly-at-ufc-qatar-to-secure-fourth-straight-win/"
+    },
+    {
+     "outlet": "Cageside Press",
+     "kind": "recap",
+     "url": "https://cagesidepress.com/2026/11/21/ufc-qatar-ikram-aliskerov-looks-solid-in-win-over-jared-cannonier/"
     },
     {
      "outlet": "Cageside Press",
@@ -303,6 +1457,11 @@
      "outlet": "MMA Junkie",
      "kind": "play-by-play",
      "url": "https://sports.yahoo.com/articles/ufc-qatar-live-updates-jiri-130212410.html"
+    },
+    {
+     "outlet": "MMA Junkie",
+     "kind": "recap",
+     "url": "https://sports.yahoo.com/articles/ufc-qatar-video-amir-albazi-171758962.html"
     },
     {
      "outlet": "Cageside Press",

@@ -1,6 +1,6 @@
 {
  "name": "Tahir Abdullayev",
- "updated": "2026-11-10T18:00:00+00:00",
+ "updated": "2026-11-22T19:00:00+00:00",
  "event": "UFC Fight Night: Procházka vs. Stirling",
  "summary": "An Azerbaijani welterweight nicknamed 'Tank' (20-3 in our data; LowKick lists 22-3; age 30) who debuted in the UFC in June in Baku with a R3 TKO of the previously unbeaten Jefferson Nascimento. A stoppage-heavy regional record: 18 of his 20 wins are finishes. He replaced Akbar Abdullaev as Jake Matthews's opponent after a reported matchmaking mix-up.",
  "how_they_fight": {
@@ -14,13 +14,15 @@
   "Pressure forward, then shoots when the opponent opens up",
   "Heavy ground-and-pound from top",
   "18 of 20 wins by stoppage; 10 in R1",
-  "Lost both of his five-round fights on points"
+  "Lost both of his five-round fights on points",
+  "Takedowns in every round and heavy top control against a veteran grappler (Matthews)"
  ],
  "concerns": [
   "Only one UFC fight, and its stoppage was disputed",
   "Struggled to cut off a mobile opponent and bit on feints",
   "Record differs by source (20-3 in our data, 22-3 per LowKick)",
-  "Short build-up: booked in place of Akbar Abdullaev"
+  "Short build-up: booked in place of Akbar Abdullaev",
+  "Missed weight by a pound for his second UFC fight"
  ],
  "keys_to_beat": [
   "Move and counter as he walks in; he has trouble cutting off the cage",
@@ -37,6 +39,11 @@
    "date": "2026-06-27",
    "text": "UFC debut in Baku: TKO of Jefferson Nascimento at 4:28 of R3 after takedowns and hammerfists; Cageside called the stoppage early.",
    "source": "https://cagesidepress.com/2026/06/27/tahir-abdullayev-stops-jefferson-nascimento-in-controversial-ufc-baku-debut/"
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Beat Jake Matthews by unanimous decision (30-27, 30-27, 29-28) after missing weight by a pound: hurt him with a right hand in R1 and took him down in every round, with elbows from side control.",
+   "source": "https://www.sherdog.com/news/news/UFC-Qatar-Prochazka-vs-Stirling-playbyplay-results-round-scoring-203707"
   }
  ],
  "sources": [
