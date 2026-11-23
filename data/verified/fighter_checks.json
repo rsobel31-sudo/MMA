@@ -458,7 +458,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
-"stats_official": "2"
+"stats_official": "3"
 },
 "Alen Amedovski": {
 "dob": "Sherdog + UFCStats agree",
@@ -471,7 +471,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "4",
+"stats_official": "5",
 "stats_verified": "5"
 },
 "Alessandro Ricci": {
@@ -777,7 +777,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (196 cm), not used until a second source confirms it",
-"stats_official": "1"
+"stats_official": "2"
 },
 "Alistair Overeem": {
 "dob": "Sherdog + UFCStats agree",
@@ -789,7 +789,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "19",
+"stats_official": "20",
 "stats_verified": "3"
 },
 "Allan Begosso": {
@@ -914,7 +914,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "4",
+"stats_official": "5",
 "stats_verified": "3"
 },
 "Amir Rahnavardi": {
@@ -1048,6 +1048,8 @@
 "stats_official": "4"
 },
 "Andreas Stahl": {
+"dob": "Sherdog + UFCStats agree",
+"height": "disputed: Sherdog 185 cm, UFCStats 180 cm",
 "stats_official": "2"
 },
 "Andrei Arlovski": {
@@ -1584,7 +1586,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (165 cm), not used until a second source confirms it",
-"stats_official": "4",
+"stats_official": "5",
 "stats_verified": "4"
 },
 "Ateba Abega Gautier": {
@@ -2449,7 +2451,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (175 cm), not used until a second source confirms it",
-"stats_official": "14"
+"stats_official": "15"
 },
 "Brian Rogers": {
 "dob": "Sherdog + UFCStats agree",
@@ -4244,7 +4246,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "22",
+"stats_official": "23",
 "stats_verified": "3"
 },
 "Dan Ige": {
@@ -5121,7 +5123,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "3",
+"stats_official": "4",
 "stats_verified": "2"
 },
 "Djani Barbir": {
@@ -5152,7 +5154,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (190 cm), not used until a second source confirms it",
-"stats_official": "4"
+"stats_official": "5"
 },
 "Domingo Pilarte": {
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
@@ -7415,7 +7417,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "2",
+"stats_official": "3",
 "stats_verified": "5"
 },
 "Ikuhisa Minowa": {
@@ -7901,7 +7903,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "19",
+"stats_official": "20",
 "stats_verified": "5"
 },
 "Jake O'Brien": {
@@ -8158,7 +8160,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "18",
+"stats_official": "19",
 "stats_verified": "3"
 },
 "Jared Gooden": {
@@ -8877,7 +8879,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "5",
+"stats_official": "6",
 "stats_verified": "4"
 },
 "Joachim Christensen": {
@@ -9259,6 +9261,9 @@
 "reach": "UFCStats + StatsFight agree",
 "stats_official": "19",
 "stats_verified": "1"
+},
+"John Mitchell": {
+"stats_official": "1"
 },
 "John Moraga": {
 "dob": "Sherdog + UFCStats agree",
@@ -10891,7 +10896,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (173 cm), not used until a second source confirms it",
-"stats_official": "6"
+"stats_official": "7"
 },
 "Khabib Nurmagomedov": {
 "dob": "Sherdog + UFCStats agree",
@@ -11216,7 +11221,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "disputed: UFCStats 160 cm, StatsFight 165 cm (not used)",
-"stats_official": "10",
+"stats_official": "11",
 "stats_verified": "1"
 },
 "Kyosuke Sasaki": {
@@ -11948,6 +11953,8 @@
 "stats_official": "32"
 },
 "Mabelly Lima": {
+"dob": "Sherdog + UFCStats agree",
+"height": "Sherdog + UFCStats agree",
 "stats_official": "1"
 },
 "Mac Danzig": {
@@ -14143,7 +14150,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "disputed: UFCStats 201 cm, StatsFight 210 cm (not used)",
-"stats_official": "3",
+"stats_official": "4",
 "stats_verified": "4"
 },
 "Nayara Maia": {
@@ -14385,7 +14392,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "3",
+"stats_official": "4",
 "stats_verified": "4"
 },
 "Nikolay Veretennikov": {
@@ -16755,6 +16762,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
+"stats_official": "1",
 "stats_verified": "3"
 },
 "Santiago Ponzinibbio": {
@@ -17125,7 +17133,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats + StatsFight agree",
-"stats_official": "4",
+"stats_official": "5",
 "stats_verified": "4"
 },
 "Shana Dobson": {
@@ -17330,6 +17338,10 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "stats_official": "31"
+},
+"Shoaib Yousaf": {
+"dob": "Sherdog + UFCStats agree",
+"stats_official": "1"
 },
 "Shogo Sato": {
 "dob": "Sherdog + UFCStats agree",
@@ -17756,6 +17768,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (185 cm), not used until a second source confirms it",
+"stats_official": "1",
 "stats_verified": "1"
 },
 "Tai Tuivasa": {
@@ -17854,7 +17867,7 @@
 "dob": "Sherdog + UFCStats agree",
 "height": "Sherdog + UFCStats agree",
 "reach": "UFCStats only (211 cm), not used until a second source confirms it",
-"stats_official": "3",
+"stats_official": "4",
 "stats_verified": "2"
 },
 "Tamdan McCrory": {
