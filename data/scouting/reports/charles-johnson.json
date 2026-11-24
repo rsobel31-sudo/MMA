@@ -1,0 +1,48 @@
+{
+ "name": "Charles Johnson",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American flyweight (20-9, age 35), 5-4 in his last nine UFC fights. He was knocked out by Alex Perez (R1) and submitted by Asu Almabayev (R3) this year, but beat Bruno Silva (split) and submitted Eduardo Henrique (R3) in August.",
+ "how_they_fight": {
+  "Striking": "Long, busy boxer; nine knockouts, spread across R1 to R5.",
+  "Grappling": "Opportunistic: four submissions, two of them late.",
+  "Defense": "Stopped twice recently (Perez R1 KO, Almabayev R3 submission); six decision losses.",
+  "Pace & cardio": "Goes the distance often and has late finishes (R3, R5).",
+  "Fight IQ": "Volume over power."
+ },
+ "patterns": [
+  "Late finishes (R3 and later)",
+  "Wins close decisions on volume"
+ ],
+ "concerns": [
+  "Stopped twice in 2026",
+  "Age 35"
+ ],
+ "keys_to_beat": [
+  "Wrestle and control him; take his back"
+ ],
+ "news": [
+  {
+   "date": "2026-10-13",
+   "text": "Booked against Brandon Moreno at UFC 335.",
+   "source": "https://cagesidepress.com/2026/10/13/brandon-moreno-lands-charles-johnson-at-ufc-335/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Brandon Moreno Lands Charles Johnson at UFC 335",
+   "url": "https://cagesidepress.com/2026/10/13/brandon-moreno-lands-charles-johnson-at-ufc-335/",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

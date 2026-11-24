@@ -1,0 +1,397 @@
+{
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "date": "2026-12-05",
+ "locks_at": "2026-12-05T13:00:00+00:00",
+ "fetched_at": "2026-11-24T17:07:54+00:00",
+ "book": "FanDuel",
+ "odds_url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Adesanya_vs._Magomedov",
+ "bouts": [
+  {
+   "bout": "Israel Adesanya vs Shara Magomedov",
+   "a": "Israel Adesanya",
+   "b": "Shara Magomedov",
+   "rounds": 5,
+   "title": false
+  },
+  {
+   "bout": "Ian Machado Garry vs Yaroslav Amosov",
+   "a": "Ian Machado Garry",
+   "b": "Yaroslav Amosov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Islam Dulatov vs Levan Chokheli",
+   "a": "Islam Dulatov",
+   "b": "Levan Chokheli",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Mario Pinto vs Serghei Spivac",
+   "a": "Mario Pinto",
+   "b": "Serghei Spivac",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Akbar Abdullaev vs Mairon Santos",
+   "a": "Akbar Abdullaev",
+   "b": "Mairon Santos",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ion Cutelaba vs Magomed Tuchalov",
+   "a": "Ion Cutelaba",
+   "b": "Magomed Tuchalov",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Gabriel Santos vs Luke Riley",
+   "a": "Gabriel Santos",
+   "b": "Luke Riley",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Bruno Silva vs Jafel Filho",
+   "a": "Bruno Silva",
+   "b": "Jafel Filho",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Ivan Gnizditskiy vs Uran Satybaldiev",
+   "a": "Ivan Gnizditskiy",
+   "b": "Uran Satybaldiev",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Junyong Park vs Marco Tulio",
+   "a": "Junyong Park",
+   "b": "Marco Tulio",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Mahammadali Osmanli vs Pavel Andrusca",
+   "a": "Mahammadali Osmanli",
+   "b": "Pavel Andrusca",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Matthieu Duclos vs Modestino Rodrigues",
+   "a": "Matthieu Duclos",
+   "b": "Modestino Rodrigues",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Abdul Hussein vs Hecher Sosa",
+   "a": "Abdul Hussein",
+   "b": "Hecher Sosa",
+   "rounds": 3,
+   "title": false
+  },
+  {
+   "bout": "Elves Brener vs Mateusz Rebecki",
+   "a": "Elves Brener",
+   "b": "Mateusz Rebecki",
+   "rounds": 3,
+   "title": false
+  }
+ ],
+ "markets": [
+  {
+   "id": "45677:ml:a",
+   "bout": "Israel Adesanya vs Shara Magomedov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Israel Adesanya to win",
+   "odds": -184,
+   "p_fanduel": 0.6106
+  },
+  {
+   "id": "45677:ml:b",
+   "bout": "Israel Adesanya vs Shara Magomedov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Shara Magomedov to win",
+   "odds": 142,
+   "p_fanduel": 0.3894
+  },
+  {
+   "id": "45678:ml:a",
+   "bout": "Ian Machado Garry vs Yaroslav Amosov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ian Machado Garry to win",
+   "odds": -192,
+   "p_fanduel": 0.6199
+  },
+  {
+   "id": "45678:ml:b",
+   "bout": "Ian Machado Garry vs Yaroslav Amosov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Yaroslav Amosov to win",
+   "odds": 148,
+   "p_fanduel": 0.3801
+  },
+  {
+   "id": "45872:ml:a",
+   "bout": "Islam Dulatov vs Levan Chokheli",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Islam Dulatov to win",
+   "odds": -225,
+   "p_fanduel": 0.6531
+  },
+  {
+   "id": "45872:ml:b",
+   "bout": "Islam Dulatov vs Levan Chokheli",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Levan Chokheli to win",
+   "odds": 172,
+   "p_fanduel": 0.3469
+  },
+  {
+   "id": "45871:ml:a",
+   "bout": "Mario Pinto vs Serghei Spivac",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Mario Pinto to win",
+   "odds": -360,
+   "p_fanduel": 0.738
+  },
+  {
+   "id": "45871:ml:b",
+   "bout": "Mario Pinto vs Serghei Spivac",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Serghei Spivac to win",
+   "odds": 260,
+   "p_fanduel": 0.262
+  },
+  {
+   "id": "45878:ml:a",
+   "bout": "Akbar Abdullaev vs Mairon Santos",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Akbar Abdullaev to win",
+   "odds": -330,
+   "p_fanduel": 0.7229
+  },
+  {
+   "id": "45878:ml:b",
+   "bout": "Akbar Abdullaev vs Mairon Santos",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mairon Santos to win",
+   "odds": 240,
+   "p_fanduel": 0.2771
+  },
+  {
+   "id": "45876:ml:a",
+   "bout": "Ion Cutelaba vs Magomed Tuchalov",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ion Cutelaba to win",
+   "odds": 146,
+   "p_fanduel": 0.3838
+  },
+  {
+   "id": "45876:ml:b",
+   "bout": "Ion Cutelaba vs Magomed Tuchalov",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Magomed Tuchalov to win",
+   "odds": -188,
+   "p_fanduel": 0.6162
+  },
+  {
+   "id": "45873:ml:a",
+   "bout": "Gabriel Santos vs Luke Riley",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Gabriel Santos to win",
+   "odds": 124,
+   "p_fanduel": 0.4204
+  },
+  {
+   "id": "45873:ml:b",
+   "bout": "Gabriel Santos vs Luke Riley",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Luke Riley to win",
+   "odds": -160,
+   "p_fanduel": 0.5796
+  },
+  {
+   "id": "45877:ml:a",
+   "bout": "Bruno Silva vs Jafel Filho",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Bruno Silva to win",
+   "odds": 126,
+   "p_fanduel": 0.4171
+  },
+  {
+   "id": "45877:ml:b",
+   "bout": "Bruno Silva vs Jafel Filho",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Jafel Filho to win",
+   "odds": -162,
+   "p_fanduel": 0.5829
+  },
+  {
+   "id": "45879:ml:a",
+   "bout": "Ivan Gnizditskiy vs Uran Satybaldiev",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Ivan Gnizditskiy to win",
+   "odds": -113,
+   "p_fanduel": 0.5
+  },
+  {
+   "id": "45879:ml:b",
+   "bout": "Ivan Gnizditskiy vs Uran Satybaldiev",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Uran Satybaldiev to win",
+   "odds": -113,
+   "p_fanduel": 0.5
+  },
+  {
+   "id": "45880:ml:a",
+   "bout": "Junyong Park vs Marco Tulio",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Junyong Park to win",
+   "odds": 146,
+   "p_fanduel": 0.3838
+  },
+  {
+   "id": "45880:ml:b",
+   "bout": "Junyong Park vs Marco Tulio",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Marco Tulio to win",
+   "odds": -188,
+   "p_fanduel": 0.6162
+  },
+  {
+   "id": "45882:ml:a",
+   "bout": "Matthieu Duclos vs Modestino Rodrigues",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Matthieu Duclos to win",
+   "odds": -162,
+   "p_fanduel": 0.5829
+  },
+  {
+   "id": "45882:ml:b",
+   "bout": "Matthieu Duclos vs Modestino Rodrigues",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Modestino Rodrigues to win",
+   "odds": 126,
+   "p_fanduel": 0.4171
+  },
+  {
+   "id": "45875:ml:a",
+   "bout": "Abdul Hussein vs Hecher Sosa",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Abdul Hussein to win",
+   "odds": -178,
+   "p_fanduel": 0.6038
+  },
+  {
+   "id": "45875:ml:b",
+   "bout": "Abdul Hussein vs Hecher Sosa",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Hecher Sosa to win",
+   "odds": 138,
+   "p_fanduel": 0.3962
+  },
+  {
+   "id": "45874:ml:a",
+   "bout": "Elves Brener vs Mateusz Rebecki",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Elves Brener to win",
+   "odds": 122,
+   "p_fanduel": 0.425
+  },
+  {
+   "id": "45874:ml:b",
+   "bout": "Elves Brener vs Mateusz Rebecki",
+   "market": [
+    "ml",
+    "b"
+   ],
+   "selection": "Mateusz Rebecki to win",
+   "odds": -156,
+   "p_fanduel": 0.575
+  }
+ ]
+}

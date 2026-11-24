@@ -1,0 +1,46 @@
+{
+ "name": "Angela Hill",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A 30-fight UFC strawweight veteran (19-16, age 41) who beat Jingnan Xiong by decision in May after two decision losses. Twelve of her last fourteen fights went the distance.",
+ "how_they_fight": {
+  "Striking": "Muay Thai volume; five knockouts, none recent.",
+  "Grappling": "One submission; defends well.",
+  "Defense": "Never knocked out; two submission losses, both in R1, early career.",
+  "Pace & cardio": "Elite pace over three and five rounds.",
+  "Fight IQ": "Veteran, technical."
+ },
+ "patterns": [
+  "Decisions both ways"
+ ],
+ "concerns": [
+  "Age 41"
+ ],
+ "keys_to_beat": [
+  "Out-work her with power and takedowns"
+ ],
+ "news": [
+  {
+   "date": "2026-10-29",
+   "text": "Added to UFC 335 against Shanelle Dyer.",
+   "source": "https://bloodyelbow.com/2026/10/29/30-fight-ufc-veteran-added-to-charles-oliveira-and-alex-pereiras-ufc-335-undercard/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "30-fight UFC veteran added to Charles Oliveira and Alex Pereira's UFC 335 undercard",
+   "url": "https://bloodyelbow.com/2026/10/29/30-fight-ufc-veteran-added-to-charles-oliveira-and-alex-pereiras-ufc-335-undercard/",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

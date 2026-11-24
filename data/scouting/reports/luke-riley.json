@@ -1,0 +1,46 @@
+{
+ "name": "Luke Riley",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "An unbeaten English featherweight from Next Generation Liverpool (14-0, age 27), a Paddy Pimblett teammate. 3-0 in the UFC: a R2 knockout of Bogdan Grad (bonus), a decision over Michael Aswell and a R1 knockout of Kai Kamaka III in July. Added two weeks out.",
+ "how_they_fight": {
+  "Striking": "Ten knockouts: five in R1, four in R2, one in R3.",
+  "Grappling": "No submissions; a striker first.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Four decision wins; can go three rounds.",
+  "Fight IQ": "Aggressive, entertaining striker."
+ },
+ "patterns": [
+  "R1-R2 knockouts"
+ ],
+ "concerns": [
+  "Short notice (two weeks)"
+ ],
+ "keys_to_beat": [
+  "Grapple with him"
+ ],
+ "news": [
+  {
+   "date": "2026-11-22",
+   "text": "Added to UFC Saudi Arabia two weeks out against Gabriel Santos.",
+   "source": "https://sports.yahoo.com/articles/ufc-saudi-arabia-addition-could-151328484.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "Late UFC Saudi Arabia Addition Could Steal \"Fight of the Night\" Honors",
+   "url": "https://sports.yahoo.com/articles/ufc-saudi-arabia-addition-could-151328484.html",
+   "date": "2026-11-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

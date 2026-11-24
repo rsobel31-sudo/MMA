@@ -1,0 +1,257 @@
+{
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "date": "2026-12-05",
+ "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Adesanya_vs._Magomedov",
+ "bouts": [
+  {
+   "a": "Israel Adesanya",
+   "b": "Sharabutdin Magomedov",
+   "favours": "Israel Adesanya",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "The model has Magomedov at 63% on Adesanya's four straight losses and age; the market has Adesanya at 61% on class and the new camp. Magomedov has never fought a former champion or gone five rounds. No lean until fight week.",
+   "factors": [
+    "Adesanya's four-fight skid and reduced durability (against)",
+    "Magomedov's first five-rounder",
+    "Adesanya's new camp"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.37,
+   "p_market": 0.611,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Ian Garry",
+   "b": "Yaroslav Amosov",
+   "favours": "Ian Garry",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Garry's range and volume against Amosov's wrestling; Amosov is unbeaten but inactive and 33. The model has a coin flip, the market Garry at 62%. No lean yet.",
+   "factors": [
+    "Amosov's wrestling (against)",
+    "Garry's volume at range",
+    "Amosov's activity"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.48,
+   "p_market": 0.62,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Islam Dulatov",
+   "b": "Levan Chokheli",
+   "favours": "Islam Dulatov",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Dulatov.",
+   "factors": [
+    "Dulatov's power"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.6,
+   "p_market": 0.653,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Mario Pinto",
+   "b": "Serghei Spivac",
+   "favours": "Mario Pinto",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on the unbeaten Pinto against Spivac's wrestling.",
+   "factors": [
+    "Spivac's wrestling (against)",
+    "Pinto's power"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.78,
+   "p_market": 0.738,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Akbar Abdullaev",
+   "b": "Mairon Santos",
+   "favours": "Akbar Abdullaev",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Abdullaev in his UFC debut.",
+   "factors": [
+    "Abdullaev's debut"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.63,
+   "p_market": 0.723,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Ion Cutelaba",
+   "b": "Magomed Tuchalov",
+   "favours": "Magomed Tuchalov",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Tuchalov; Cutelaba fades after R1.",
+   "factors": [
+    "Cutelaba's cardio"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.41,
+   "p_market": 0.384,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Gabriel Santos",
+   "b": "Luke Riley",
+   "favours": "Luke Riley",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Riley is unbeaten and active, though on two weeks' notice; Santos has been out nearly 22 months. The model and market both favour Riley; no lean yet.",
+   "factors": [
+    "Santos's 22-month layoff",
+    "Riley on short notice (against)",
+    "Santos's submissions (against)"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.35,
+   "p_market": 0.42,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Bruno Gustavo da Silva",
+   "b": "Jafel Filho",
+   "favours": "Bruno Gustavo da Silva",
+   "logit": 0.25,
+   "confidence": "low",
+   "reasoning": "The model's 12% for Silva comes from records that merge several Brazilian 'Bruno Silva's; the market has him at 42%. The read moves part of the way back toward the market until his record is fixed.",
+   "factors": [
+    "Merged records in our data",
+    "Jafel Filho's grappling (against)"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.12,
+   "p_market": 0.417,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Ivan Gnizditskiy",
+   "b": "Uran Satybaldiev",
+   "favours": "Ivan Gnizditskiy",
+   "logit": 0.15,
+   "confidence": "low",
+   "reasoning": "Our data has one of Gnizditskiy's seven pro fights (all finishes), so the model's 33% rests on almost nothing; the market has a coin flip.",
+   "factors": [
+    "Thin data on Gnizditskiy",
+    "Gnizditskiy's finishing record"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.33,
+   "p_market": 0.5,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Park Jun-yong",
+   "b": "Marco Tulio",
+   "favours": "Marco Tulio",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "The model has Park at 55% on his UFC experience; the market has Tulio at 62%. No lean until fight week.",
+   "factors": [
+    "Park's experience",
+    "Tulio's power (against)"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.55,
+   "p_market": 0.384,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Matthieu Letho Duclos",
+   "b": "Modestino Rodrigues",
+   "favours": "Matthieu Letho Duclos",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Duclos.",
+   "factors": [
+    "Duclos's form"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.62,
+   "p_market": 0.583,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Abdul Hussein",
+   "b": "Hecher Sosa",
+   "favours": "Abdul Hussein",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Hussein.",
+   "factors": [
+    "Hussein's form"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.55,
+   "p_market": 0.604,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Elves Brener",
+   "b": "Mateusz Rebecki",
+   "favours": "Mateusz Rebecki",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "Model and market agree on Rebecki; Brener's R1 submissions are the danger.",
+   "factors": [
+    "Rebecki's pressure",
+    "Brener's submissions (against)"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": 0.39,
+   "p_market": 0.425,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  },
+  {
+   "a": "Mehemmedeli Osmanli",
+   "b": "Pavel Andrusca",
+   "favours": "Pavel Andrusca",
+   "logit": 0.0,
+   "confidence": "low",
+   "reasoning": "The model can't price Osmanli. Andrusca is unbeaten and beat Nathaniel Wood; Osmanli is 22 and lost the TUF final by disqualification. No lean.",
+   "factors": [
+    "Osmanli's thin data",
+    "Andrusca's win over Wood"
+   ],
+   "event": "UFC Fight Night: Adesanya vs. Magomedov",
+   "date": "2026-12-05",
+   "p_model": null,
+   "p_market": null,
+   "created": "2026-11-24T21:00:00+00:00",
+   "pundits": []
+  }
+ ]
+}

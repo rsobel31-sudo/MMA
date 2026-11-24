@@ -1,0 +1,53 @@
+{
+ "name": "Jacqueline Cavalcanti",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A Brazilian bantamweight from Syndicate MMA (10-2, age 29), 6-1 in the UFC. She lost a decision to Ketlen Vieira in May. This fight was moved from UFC Qatar to UFC 335.",
+ "how_they_fight": {
+  "Striking": "Long, busy boxer; three knockouts (two in R1).",
+  "Grappling": "No submissions; defends takedowns well.",
+  "Defense": "Never stopped: both losses on the cards.",
+  "Pace & cardio": "Seven decision wins.",
+  "Fight IQ": "Volume and distance."
+ },
+ "patterns": [
+  "Decisions"
+ ],
+ "concerns": [
+  "Close decisions both ways"
+ ],
+ "keys_to_beat": [
+  "Take her down and hold her"
+ ],
+ "news": [
+  {
+   "date": "2026-11-02",
+   "text": "Her fight with Michelle Montague moved from UFC Qatar to UFC 335.",
+   "source": "https://sports.yahoo.com/articles/ufc-pushes-major-qatar-fight-180105863.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "UFC Pushes Major Qatar Fight Back Several Weeks to UFC 335 in Las Vegas",
+   "url": "https://sports.yahoo.com/articles/ufc-pushes-major-qatar-fight-180105863.html",
+   "date": "2026-11-02"
+  },
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Undefeated Michelle Montague to face Jacqueline Cavalcanti at UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Undefeated-Michelle-Montague-to-face-Jacqueline-Cavalcanti-at-UFC-Qatar-203418",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

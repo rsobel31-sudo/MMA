@@ -1,0 +1,46 @@
+{
+ "name": "Nikolay Veretennikov",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A Kazakh welterweight from Kings MMA (14-8, age 36), 2-3 in the UFC: he knocked out Niko Price (R1) in February, then was knocked out by Kalinn Williams (R1) in May.",
+ "how_they_fight": {
+  "Striking": "Ten knockouts, six in R1.",
+  "Grappling": "One submission.",
+  "Defense": "Stopped three times by knockout, two of them recent (Vanderford R2, Williams R1).",
+  "Pace & cardio": "Goes the distance with fellow strikers.",
+  "Fight IQ": "Kickboxer."
+ },
+ "patterns": [
+  "R1 knockouts"
+ ],
+ "concerns": [
+  "Age 36; knocked out twice in his last four"
+ ],
+ "keys_to_beat": [
+  "Pressure him and test his chin"
+ ],
+ "news": [
+  {
+   "date": "2026-10-22",
+   "text": "Booked against Contender Series winner Ronald Humphrey.",
+   "source": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Contender Series standout books Octagon debut for UFC 335",
+   "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

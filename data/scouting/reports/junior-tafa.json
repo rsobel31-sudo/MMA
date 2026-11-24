@@ -1,0 +1,35 @@
+{
+ "name": "Junior Tafa",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A New Zealand heavyweight/light heavyweight from NTG (7-6, age 30), 3-6 in the UFC. He knocked out Kevin Christian (R1) in May, then was knocked out by Iwo Baraniewski (R1) in June.",
+ "how_they_fight": {
+  "Striking": "A kickboxer with power: all seven wins are knockouts (five in R1).",
+  "Grappling": "Weak: submitted three times (Walker R1, Tokkos R2, Elekana R2).",
+  "Defense": "Stopped five times, two of them by knockout.",
+  "Pace & cardio": "Fades when the fight goes to the ground.",
+  "Fight IQ": "Striker only."
+ },
+ "patterns": [
+  "R1 knockouts",
+  "Submitted when taken down (three times)"
+ ],
+ "concerns": [
+  "Lost five of his last seven",
+  "No ground defence"
+ ],
+ "keys_to_beat": [
+  "Take him down: three submission losses"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

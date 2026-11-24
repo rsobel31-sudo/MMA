@@ -1,0 +1,56 @@
+{
+ "name": "Diego Lopes",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A Brazilian featherweight from Lobo Gym in Mexico (28-8, age 31), moving up to lightweight. He lost two five-round decisions to Alexander Volkanovski for the featherweight title (April 2025 and January 2026), and in between and since knocked out Jean Silva (R2) and Steve Garcia (R2, June).",
+ "how_they_fight": {
+  "Striking": "Wild, powerful and creative: spinning attacks and heavy hooks. Twelve knockouts, six in R1 and five in R2.",
+  "Grappling": "A real submission threat: twelve submissions, nine in R1, often off scrambles and from his back.",
+  "Defense": "Stopped twice, both in R2 (early career). Gets hit in exchanges but recovers.",
+  "Pace & cardio": "Kept pace over five rounds twice with Volkanovski but lost both on the cards.",
+  "Fight IQ": "Takes risks to finish; can be out-pointed by technical boxers."
+ },
+ "patterns": [
+  "Fast finisher: R1-R2 knockouts and submissions",
+  "Dangerous in scrambles"
+ ],
+ "concerns": [
+  "First fight at 155 against a bigger, elite grappler",
+  "Lost both five-round decisions to Volkanovski"
+ ],
+ "keys_to_beat": [
+  "Out-point him with clean, disciplined boxing",
+  "Beat him in the scrambles he invites"
+ ],
+ "news": [
+  {
+   "date": "2026-10-16",
+   "text": "Discussed the logistics of moving up to lightweight for this fight.",
+   "source": "https://www.bjpenn.com/mma-news/diego-lopes/diego-lopes-discusses-the-logistics-of-his-upcoming-lightweight-move/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 335 main card confirmed, Charles Oliveira vs Diego Lopes officially headlines",
+   "url": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/",
+   "date": "2026-11-15"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Diego Lopes discusses the logistics of his upcoming lightweight move",
+   "url": "https://www.bjpenn.com/mma-news/diego-lopes/diego-lopes-discusses-the-logistics-of-his-upcoming-lightweight-move/",
+   "date": "2026-10-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

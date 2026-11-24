@@ -1,0 +1,46 @@
+{
+ "name": "Gabriel Santos",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC Fight Night: Adesanya vs. Magomedov",
+ "summary": "A Brazilian featherweight from Chute Boxe Diego Lima (10-0 before the UFC), 2-2 in the UFC: a split loss to Lerone Murphy, a R2 knockout by David Onama, then a decision over Zha Yi and a R3 submission of Jack Jenkins (UFC 312, February 2025). He has not fought since, nearly 22 months.",
+ "how_they_fight": {
+  "Striking": "Three knockouts.",
+  "Grappling": "Five submissions, four in R1.",
+  "Defense": "Stopped by Onama (R2) and submitted once (early career).",
+  "Pace & cardio": "Late finishes (R3 submission of Jenkins).",
+  "Fight IQ": "Well-rounded."
+ },
+ "patterns": [
+  "R1 submissions; late finishes"
+ ],
+ "concerns": [
+  "Nearly two years out"
+ ],
+ "keys_to_beat": [
+  "Pressure him early after the layoff"
+ ],
+ "news": [
+  {
+   "date": "2026-11-22",
+   "text": "Returns against Luke Riley at UFC Saudi Arabia.",
+   "source": "https://sports.yahoo.com/articles/ufc-saudi-arabia-addition-could-151328484.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "Late UFC Saudi Arabia Addition Could Steal \"Fight of the Night\" Honors",
+   "url": "https://sports.yahoo.com/articles/ufc-saudi-arabia-addition-could-151328484.html",
+   "date": "2026-11-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

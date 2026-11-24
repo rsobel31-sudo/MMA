@@ -1,0 +1,68 @@
+{
+ "name": "Charles Oliveira",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "The former lightweight champion (age 37), a Chute Boxe Diego Lima veteran with the UFC records for submissions and finishes. Since losing to Ilia Topuria by R1 knockout in June 2025 he has submitted Mateusz Gamrot (R2) and out-pointed Max Holloway over five rounds for the BMF belt in March. He defends it against Diego Lopes and expects a title shot afterwards.",
+ "how_they_fight": {
+  "Striking": "Aggressive Muay Thai: knees, elbows and long combinations behind pressure. Eleven knockouts, seven of them in R1, in our UFC-era data.",
+  "Grappling": "Elite: 23 submission wins, 12 of them in R1, from guard pulls, scrambles and the back. The threat shapes every exchange.",
+  "Defense": "Hittable early: stopped in R1 by Topuria (2025) and Makhachev (submission, R2, 2022), and he often survives early knockdowns. His chin has been tested many times.",
+  "Pace & cardio": "Has gone five rounds twice recently (Chandler, Holloway), winning both clearly.",
+  "Fight IQ": "Takes risks; dangerous off his back and in scrambles."
+ },
+ "patterns": [
+  "Finishes early: most of his submissions come in R1-R2",
+  "Five-round decision wins over Chandler and Holloway"
+ ],
+ "concerns": [
+  "Age 37; stopped quickly by Topuria in 2025",
+  "Hurt early in many fights"
+ ],
+ "keys_to_beat": [
+  "Hurt him early on the feet, but stay out of scrambles",
+  "Do not follow him to the ground"
+ ],
+ "news": [
+  {
+   "date": "2026-10-15",
+   "text": "Says he expects a lightweight title shot after UFC 335 and sells more than Arman Tsarukyan.",
+   "source": "https://bloodyelbow.com/2026/10/15/charles-oliveira-expects-155lb-title-shot-after-ufc-335-i-sell-a-lot-more-than-arman-tsarukyan/"
+  },
+  {
+   "date": "2026-10-17",
+   "text": "Says the BMF belt should not be about pure brawls.",
+   "source": "https://www.mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 335 main card confirmed, Charles Oliveira vs Diego Lopes officially headlines",
+   "url": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/",
+   "date": "2026-11-15"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Charles Oliveira expects 155lb title shot after UFC 335: 'I sell a lot more than Arman Tsarukyan'",
+   "url": "https://bloodyelbow.com/2026/10/15/charles-oliveira-expects-155lb-title-shot-after-ufc-335-i-sell-a-lot-more-than-arman-tsarukyan/",
+   "date": "2026-10-15"
+  },
+  {
+   "outlet": "MMA Fighting",
+   "author": "",
+   "title": "Charles Oliveira: If the BMF belt is about rock 'em sock 'em robots, 'take it somewhere else'",
+   "url": "https://www.mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+   "date": "2026-10-17"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

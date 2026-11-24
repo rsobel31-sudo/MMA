@@ -1,0 +1,55 @@
+{
+ "name": "Brandon Moreno",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "The former flyweight champion from Mexico (24-12, age 32). Since 2025 he has lost to Tatsuro Taira (R2 TKO) and Lone'er Kavanagh (five-round decision), then won a split decision over Joseph Morales at Noche UFC in September.",
+ "how_they_fight": {
+  "Striking": "Busy boxer with good head movement; six knockouts, three of them in R3.",
+  "Grappling": "Strong: eleven submissions, seven of them in R1, mostly from the back.",
+  "Defense": "Stopped once since 2018 (Taira, R2). Many of his losses are decisions (seven, plus two split five-rounders).",
+  "Pace & cardio": "Built for five rounds; often slow to start and stronger late.",
+  "Fight IQ": "Experienced, adaptable; very close fights."
+ },
+ "patterns": [
+  "Close decisions; stronger as the fight goes on",
+  "Late stoppages (R3 knockouts of Kara-France and Figueiredo)"
+ ],
+ "concerns": [
+  "Two losses in his last three; a split win over Morales",
+  "Taira stopped him in R2"
+ ],
+ "keys_to_beat": [
+  "Win early rounds with volume; deny his back takes"
+ ],
+ "news": [
+  {
+   "date": "2026-10-13",
+   "text": "Booked against Charles Johnson at UFC 335.",
+   "source": "https://www.mmamania.com/ufc-news/478748/brandon-moreno-vs-charles-johnson-set-for-ufc-335"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Brandon Moreno vs. Charles Johnson set for UFC 335",
+   "url": "https://www.mmamania.com/ufc-news/478748/brandon-moreno-vs-charles-johnson-set-for-ufc-335",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Cageside Press",
+   "author": "",
+   "title": "Brandon Moreno Lands Charles Johnson at UFC 335",
+   "url": "https://cagesidepress.com/2026/10/13/brandon-moreno-lands-charles-johnson-at-ufc-335/",
+   "date": "2026-10-13"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

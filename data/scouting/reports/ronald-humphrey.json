@@ -1,0 +1,47 @@
+{
+ "name": "Ronald Humphrey",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An unbeaten American welterweight from ATT Atlanta (5-0, age 26) who won his contract on the Contender Series in August with a R1 submission. UFC debut.",
+ "how_they_fight": {
+  "Striking": "Four knockouts, three in R1.",
+  "Grappling": "R1 submission on the Contender Series.",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Has not been past R2 as a pro.",
+  "Fight IQ": "Five pro fights."
+ },
+ "patterns": [
+  "Every win a finish, four in R1"
+ ],
+ "concerns": [
+  "Untested past R2",
+  "UFC debut"
+ ],
+ "keys_to_beat": [
+  "Drag him into R3"
+ ],
+ "news": [
+  {
+   "date": "2026-10-22",
+   "text": "Booked for his UFC debut against Nikolay Veretennikov.",
+   "source": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Mania",
+   "author": "",
+   "title": "Contender Series standout books Octagon debut for UFC 335",
+   "url": "https://www.mmamania.com/ufc-fight-announcements/480986/contender-series-standout-ronald-humphrey-books-octagon-debut-for-ufc-335",
+   "date": "2026-10-22"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "thin"
+}

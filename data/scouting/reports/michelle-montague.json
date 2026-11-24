@@ -1,0 +1,53 @@
+{
+ "name": "Michelle Montague",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An unbeaten New Zealand bantamweight from ATT (8-0, age 33), 2-0 in the UFC with decisions over Luana Carolina and Mayra Bueno Silva. Six of her eight wins are submissions.",
+ "how_they_fight": {
+  "Striking": "Functional.",
+  "Grappling": "Six submissions (three in R1).",
+  "Defense": "Never beaten.",
+  "Pace & cardio": "Both UFC wins went the distance.",
+  "Fight IQ": "Grappler."
+ },
+ "patterns": [
+  "Submissions; decisions in the UFC"
+ ],
+ "concerns": [
+  "UFC opponents have survived her grappling"
+ ],
+ "keys_to_beat": [
+  "Stuff her takedowns and win at range"
+ ],
+ "news": [
+  {
+   "date": "2026-10-30",
+   "text": "Booked against Jacqueline Cavalcanti.",
+   "source": "https://www.sherdog.com/news/news/Undefeated-Michelle-Montague-to-face-Jacqueline-Cavalcanti-at-UFC-Qatar-203418"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Sherdog",
+   "author": "",
+   "title": "Undefeated Michelle Montague to face Jacqueline Cavalcanti at UFC Qatar",
+   "url": "https://www.sherdog.com/news/news/Undefeated-Michelle-Montague-to-face-Jacqueline-Cavalcanti-at-UFC-Qatar-203418",
+   "date": "2026-10-30"
+  },
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "UFC Pushes Major Qatar Fight Back Several Weeks to UFC 335 in Las Vegas",
+   "url": "https://sports.yahoo.com/articles/ufc-pushes-major-qatar-fight-180105863.html",
+   "date": "2026-11-02"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

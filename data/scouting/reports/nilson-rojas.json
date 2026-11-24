@@ -1,0 +1,34 @@
+{
+ "name": "Nilson Rojas",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A Peruvian flyweight from Pitbull MAC (9-1, age 27). He lost his UFC debut to Bilal Hasan by R2 TKO in August.",
+ "how_they_fight": {
+  "Striking": "Seven knockouts, four in R1.",
+  "Grappling": "No submissions in our data.",
+  "Defense": "Stopped once (Hasan, R2).",
+  "Pace & cardio": "One decision win in his last two.",
+  "Fight IQ": "Striker."
+ },
+ "patterns": [
+  "R1 knockouts on the regional scene"
+ ],
+ "concerns": [
+  "Stopped in his UFC debut",
+  "No submission game"
+ ],
+ "keys_to_beat": [
+  "Take him down"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "thin"
+}

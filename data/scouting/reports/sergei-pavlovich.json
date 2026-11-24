@@ -1,0 +1,55 @@
+{
+ "name": "Sergei Pavlovich",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "A Russian heavyweight from Eagles MMA (21-3, age 34) with one of the division's hardest right hands. After losing to Tom Aspinall (R1 KO) and Alexander Volkov (decision), he won decisions over Rozenstruik and Cortes-Acosta and knocked out Tallison Teixeira in 39 seconds in May. He has promised Alex Pereira 'surprises'.",
+ "how_they_fight": {
+  "Striking": "Explosive overhand rights and blitzes. All 16 of his knockouts came in R1.",
+  "Grappling": "Rarely wrestles; strong enough to defend takedowns.",
+  "Defense": "Stopped once (Aspinall, R1). Volkov out-pointed him at range.",
+  "Pace & cardio": "Five decision wins, three of them recent: he can go three rounds, but his danger is early.",
+  "Fight IQ": "Blitz puncher; fights in bursts."
+ },
+ "patterns": [
+  "R1 knockouts (all 16 finishes)",
+  "Decision wins when the early blitz doesn't land"
+ ],
+ "concerns": [
+  "Out-pointed at range (Volkov)",
+  "Knocked out in R1 by a faster heavyweight (Aspinall)"
+ ],
+ "keys_to_beat": [
+  "Survive the first five minutes and work him at range"
+ ],
+ "news": [
+  {
+   "date": "2026-10-16",
+   "text": "Teased 'surprises' for Alex Pereira and released a training video.",
+   "source": "https://www.bjpenn.com/mma-news/sergey-pavlovich/sergei-pavlovich-teases-surprises-alex-pereira-ufc-335/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Sergei Pavlovich teases 'surprises' for Alex Pereira in UFC 335 co-main fight",
+   "url": "https://www.bjpenn.com/mma-news/sergey-pavlovich/sergei-pavlovich-teases-surprises-alex-pereira-ufc-335/",
+   "date": "2026-10-16"
+  },
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Alex Pereira allegedly considered leaving heavyweight before booking UFC 335 matchup",
+   "url": "https://bloodyelbow.com/2026/10/20/alex-pereira-allegedly-considered-leaving-heavyweight-before-booking-ufc-335-matchup/",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

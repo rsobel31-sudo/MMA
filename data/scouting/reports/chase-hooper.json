@@ -1,0 +1,34 @@
+{
+ "name": "Chase Hooper",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American lightweight grappler (17-6, age 27). He was knocked out in R1 twice in a row (Alexander Hernandez, Lance Gibson Jr.) before submitting Mitch Ramirez (R1) in July.",
+ "how_they_fight": {
+  "Striking": "Improved but limited; three knockouts.",
+  "Grappling": "Excellent: nine submissions, six of them in R1 (Leavitt, Guida, Ramirez).",
+  "Defense": "Three R1 knockout losses (Garcia, Hernandez, Gibson).",
+  "Pace & cardio": "Fine over three rounds (decision wins over Fiore and Miller).",
+  "Fight IQ": "Lives on the mat."
+ },
+ "patterns": [
+  "R1 submissions",
+  "Knocked out early by powerful strikers"
+ ],
+ "concerns": [
+  "Three R1 knockout losses"
+ ],
+ "keys_to_beat": [
+  "Keep it standing and hit him early"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

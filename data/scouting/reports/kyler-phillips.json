@@ -1,0 +1,47 @@
+{
+ "name": "Kyler Phillips",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American bantamweight from MMA Lab (12-5, age 31) on a three-fight losing streak, all decisions: Rob Font, Vinicius Oliveira and Charles Jourdain (April).",
+ "how_they_fight": {
+  "Striking": "Long, creative kickboxer with spinning attacks; five knockouts, four in R1.",
+  "Grappling": "Two submissions; good wrestling for the division.",
+  "Defense": "Never stopped: all five losses are decisions (two split).",
+  "Pace & cardio": "Goes three rounds comfortably.",
+  "Fight IQ": "Technical; struggles to separate himself on the cards."
+ },
+ "patterns": [
+  "Decisions both ways (five decision wins, five decision losses)",
+  "Early knockouts when he lands"
+ ],
+ "concerns": [
+  "Three straight decision losses"
+ ],
+ "keys_to_beat": [
+  "Out-work him on the cards"
+ ],
+ "news": [
+  {
+   "date": "2026-11-15",
+   "text": "Added to the UFC 335 main card against Ethyn Ewing.",
+   "source": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 335 main card confirmed, Charles Oliveira vs Diego Lopes officially headlines",
+   "url": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/",
+   "date": "2026-11-15"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

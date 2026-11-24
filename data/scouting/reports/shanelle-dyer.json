@@ -1,0 +1,46 @@
+{
+ "name": "Shanelle Dyer",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An English strawweight from Great Britain Top Team (8-1, age 25), 2-0 in the UFC with knockouts of Ravena Oliveira (R2) and Elise Reed (R3). Her only loss was a decision on the Contender Series.",
+ "how_they_fight": {
+  "Striking": "Six knockouts, including two in R3.",
+  "Grappling": "No submissions.",
+  "Defense": "Never stopped.",
+  "Pace & cardio": "Finishes late (two R3 knockouts).",
+  "Fight IQ": "Aggressive striker."
+ },
+ "patterns": [
+  "Late knockouts"
+ ],
+ "concerns": [
+  "First veteran opponent"
+ ],
+ "keys_to_beat": [
+  "Out-point her with volume"
+ ],
+ "news": [
+  {
+   "date": "2026-10-30",
+   "text": "Booked against Angela Hill.",
+   "source": "https://bloodyelbow.com/2026/10/29/30-fight-ufc-veteran-added-to-charles-oliveira-and-alex-pereiras-ufc-335-undercard/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "30-fight UFC veteran added to Charles Oliveira and Alex Pereira's UFC 335 undercard",
+   "url": "https://bloodyelbow.com/2026/10/29/30-fight-ufc-veteran-added-to-charles-oliveira-and-alex-pereiras-ufc-335-undercard/",
+   "date": "2026-10-29"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

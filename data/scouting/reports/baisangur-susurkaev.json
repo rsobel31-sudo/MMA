@@ -1,0 +1,54 @@
+{
+ "name": "Baisangur Susurkaev",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An unbeaten Chechen middleweight from Kill Cliff FC (12-0, age 25), a Khamzat Chimaev teammate. 3-0 in the UFC since his Contender Series win: a R2 submission of Eric Nolan, a R3 TKO of Eric McConico and a R3 submission of Djorden Santos in May.",
+ "how_they_fight": {
+  "Striking": "Nine knockouts, seven of them in R1 (mostly regional).",
+  "Grappling": "Two submissions, both in the UFC (R2, R3).",
+  "Defense": "Never stopped or beaten.",
+  "Pace & cardio": "His UFC finishes all came in R2-R3: he wears opponents down.",
+  "Fight IQ": "Pressure fighter."
+ },
+ "patterns": [
+  "Late finishes in the UFC (R2, R3, R3)",
+  "Early knockouts on the regional scene"
+ ],
+ "concerns": [
+  "Untested against a power puncher like Pinas"
+ ],
+ "keys_to_beat": [
+  "Hurt him early, before his pressure builds"
+ ],
+ "news": [
+  {
+   "date": "2026-11-04",
+   "text": "Booked against Damian Pinas, who called him an 'easy' fight.",
+   "source": "https://sports.yahoo.com/articles/damian-pinas-gets-wish-meets-183030816.html"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "MMA Junkie (via Yahoo)",
+   "author": "",
+   "title": "Damian Pinas gets his wish, meets Baisangur Susurkaev at UFC 335",
+   "url": "https://sports.yahoo.com/articles/damian-pinas-gets-wish-meets-183030816.html",
+   "date": "2026-11-04"
+  },
+  {
+   "outlet": "MMA Knockout (via Yahoo)",
+   "author": "",
+   "title": "UFC Knockout Artist Meets Undefeated Finishing Machine in Massive UFC 335 Fight",
+   "url": "https://sports.yahoo.com/articles/ufc-knockout-artist-meets-undefeated-175731315.html",
+   "date": "2026-11-04"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

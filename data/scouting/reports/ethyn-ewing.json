@@ -1,0 +1,46 @@
+{
+ "name": "Ethyn Ewing",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American bantamweight (10-2, age 28), 2-0 in the UFC: a decision over Malcolm Wellmaker (November 2025) and a R3 TKO of Rafael Estevam (April). This is his biggest step up.",
+ "how_they_fight": {
+  "Striking": "Seven knockouts, spread across all three rounds (three in R1, two in R2, two in R3).",
+  "Grappling": "One submission; mostly a striker.",
+  "Defense": "Stopped once (submission, R1, early career).",
+  "Pace & cardio": "Late finishes: knockouts in R3 against Estevam and Carrillo.",
+  "Fight IQ": "Patient, builds through the fight."
+ },
+ "patterns": [
+  "Finishes late as well as early (two R3 knockouts)"
+ ],
+ "concerns": [
+  "First ranked-level opponent"
+ ],
+ "keys_to_beat": [
+  "Out-class him technically and on the cards"
+ ],
+ "news": [
+  {
+   "date": "2026-11-15",
+   "text": "Added to the UFC 335 main card against Kyler Phillips.",
+   "source": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "UFC 335 main card confirmed, Charles Oliveira vs Diego Lopes officially headlines",
+   "url": "https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/",
+   "date": "2026-11-15"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

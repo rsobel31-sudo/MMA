@@ -1,0 +1,46 @@
+{
+ "name": "Carli Judice",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American flyweight from Headkicks MMA (7-2, age 27), 4-1 in the UFC with knockouts of Duben (R1), Caliari (R3) and Chaves (R1, August). Maycee Barber withdrew from their UFC 335 fight; her new opponent is not yet named.",
+ "how_they_fight": {
+  "Striking": "Six knockouts, five in R1.",
+  "Grappling": "No submissions.",
+  "Defense": "Never stopped: both losses are split decisions.",
+  "Pace & cardio": "Has gone three rounds four times.",
+  "Fight IQ": "Power striker."
+ },
+ "patterns": [
+  "R1 knockouts"
+ ],
+ "concerns": [
+  "Split-decision losses to grapplers"
+ ],
+ "keys_to_beat": [
+  "Wrestle her"
+ ],
+ "news": [
+  {
+   "date": "2026-11-07",
+   "text": "Maycee Barber withdrew from their fight; the UFC is looking for a replacement.",
+   "source": "https://bloodyelbow.com/2026/11/07/ufc-335-down-a-fight-with-promotion-looking-to-reschedule-maycee-barbers-return-according-to-report/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "UFC 335 down a fight with promotion looking to reschedule Maycee Barber's return according to report",
+   "url": "https://bloodyelbow.com/2026/11/07/ufc-335-down-a-fight-with-promotion-looking-to-reschedule-maycee-barbers-return-according-to-report/",
+   "date": "2026-11-07"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

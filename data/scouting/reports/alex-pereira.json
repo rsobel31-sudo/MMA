@@ -1,0 +1,56 @@
+{
+ "name": "Alex Pereira",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "The former two-division champion (age 39), a kickboxer who won the middleweight and light heavyweight titles. He moved to heavyweight in 2026 and was knocked out by Ciryl Gane in R2 in June. Bloody Elbow reported he considered leaving heavyweight before this booking.",
+ "how_they_fight": {
+  "Striking": "Elite left hook, calf kicks and counters. Twelve knockouts in our data, nine of them in R1-R2.",
+  "Grappling": "A defensive grappler; Adesanya and Ankalaev beat him by pressure and control.",
+  "Defense": "Stopped three times: twice in R2 (Adesanya, Gane) and once by submission (R3, early career).",
+  "Pace & cardio": "Has finished in R4 and R5; slows when pressed.",
+  "Fight IQ": "Patient, waits for counters; dangerous at any moment."
+ },
+ "patterns": [
+  "Left hook counters; knockouts in R1-R2",
+  "Late knockouts in title fights (R4, R5)"
+ ],
+ "concerns": [
+  "Age 39; second heavyweight fight after being knocked out by Gane",
+  "Smaller than most heavyweights"
+ ],
+ "keys_to_beat": [
+  "Pressure him and test him early with power",
+  "Make him carry heavyweight size for three rounds"
+ ],
+ "news": [
+  {
+   "date": "2026-10-20",
+   "text": "Reportedly considered leaving heavyweight before this fight was booked.",
+   "source": "https://bloodyelbow.com/2026/10/20/alex-pereira-allegedly-considered-leaving-heavyweight-before-booking-ufc-335-matchup/"
+  }
+ ],
+ "sources": [
+  {
+   "outlet": "Bloody Elbow",
+   "author": "",
+   "title": "Alex Pereira allegedly considered leaving heavyweight before booking UFC 335 matchup",
+   "url": "https://bloodyelbow.com/2026/10/20/alex-pereira-allegedly-considered-leaving-heavyweight-before-booking-ufc-335-matchup/",
+   "date": "2026-10-20"
+  },
+  {
+   "outlet": "BJPenn.com",
+   "author": "",
+   "title": "Sergei Pavlovich teases 'surprises' for Alex Pereira in UFC 335 co-main fight",
+   "url": "https://www.bjpenn.com/mma-news/sergey-pavlovich/sergei-pavlovich-teases-surprises-alex-pereira-ufc-335/",
+   "date": "2026-10-16"
+  },
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}

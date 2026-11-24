@@ -1,0 +1,33 @@
+{
+ "name": "Chris Padilla",
+ "updated": "2026-11-24T21:00:00+00:00",
+ "event": "UFC 335: Oliveira vs. Lopes",
+ "summary": "An American lightweight (18-7, age 31), 5-0-1 in his last six UFC fights. He drew with MarQuel Mederos in April and submitted Nasrat Haqparast with a second left in R3 in August.",
+ "how_they_fight": {
+  "Striking": "Long and powerful: nine knockouts (six in R1).",
+  "Grappling": "Six submissions, including a R3 finish of Haqparast.",
+  "Defense": "Stopped three times (one KO, two submissions) in his early career.",
+  "Pace & cardio": "Finishes late as well as early.",
+  "Fight IQ": "Well-rounded, aggressive."
+ },
+ "patterns": [
+  "R1 knockouts; late submissions"
+ ],
+ "concerns": [
+  "Has been submitted twice"
+ ],
+ "keys_to_beat": [
+  "Drag him into a grappling match"
+ ],
+ "news": [],
+ "sources": [
+  {
+   "outlet": "Fight Lab verified records",
+   "author": "",
+   "title": "data/verified/fights.csv (Sherdog, UFCStats and Wikipedia, cross-checked)",
+   "url": "https://www.sherdog.com/",
+   "date": "2026-11-24"
+  }
+ ],
+ "depth": "moderate"
+}
