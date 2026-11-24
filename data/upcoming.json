@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-23",
+ "fetched": "2026-11-24",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -690,6 +690,28 @@
      "weight_class": "Middleweight",
      "a": "Marc-Andr\u00e9 Barriault",
      "b": "Tresean Gore",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 7,
+     "segment": "Announced",
+     "weight_class": "Heavyweight",
+     "a": "Tanner Boser",
+     "b": "Jos\u00e9 Montanha",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 8,
+     "segment": "Announced",
+     "weight_class": "Middleweight",
+     "a": "Julien Leblanc",
+     "b": "Vlasto \u010cepo",
      "title": false,
      "result": "",
      "rounds": 3,

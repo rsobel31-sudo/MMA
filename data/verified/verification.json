@@ -731,6 +731,12 @@
    "fightmatrix": null
   },
   {
+   "name": "Nicdali Rivera",
+   "sherdog": "1987-06-12",
+   "ufcstats": "1985-06-12",
+   "fightmatrix": null
+  },
+  {
    "name": "Brian Houston",
    "sherdog": "1987-04-26",
    "ufcstats": "1981-04-26",
@@ -972,13 +978,13 @@
   }
  ],
  "dob": {
-  "agree": 2501,
-  "differ, unresolved (Sherdog kept)": 108,
+  "agree": 2508,
+  "differ, unresolved (Sherdog kept)": 109,
   "differ, Fight Matrix sides with Sherdog": 66
  },
  "height": {
-  "agree": 2495,
-  "differ": 185
+  "agree": 2502,
+  "differ": 186
  },
  "reach": {
   "no second source": 1738,
