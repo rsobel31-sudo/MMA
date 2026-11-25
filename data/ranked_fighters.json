@@ -297,8 +297,8 @@
    "system": "meta",
    "division": "Heavyweight",
    "rank": "15",
-   "name": "Anthony Wint",
-   "wiki": "https://en.wikipedia.org/wiki/Anthony_Wint"
+   "name": "Tallison Teixeira",
+   "wiki": "https://en.wikipedia.org/wiki/Tallison_Teixeira"
   },
   {
    "system": "meta",
@@ -325,15 +325,15 @@
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "3",
-   "name": "Jiří Procházka",
-   "wiki": "https://en.wikipedia.org/wiki/Jiří_Procházka"
+   "name": "Navajo Stirling",
+   "wiki": "https://en.wikipedia.org/wiki/Navajo_Stirling"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "4",
-   "name": "Dominick Reyes",
-   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
+   "name": "Jiří Procházka",
+   "wiki": "https://en.wikipedia.org/wiki/Jiří_Procházka"
   },
   {
    "system": "meta",
@@ -346,15 +346,15 @@
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "6",
-   "name": "Khalil Rountree Jr.",
-   "wiki": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
+   "name": "Dominick Reyes",
+   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
   },
   {
    "system": "meta",
    "division": "Light Heavyweight",
    "rank": "7",
-   "name": "Navajo Stirling",
-   "wiki": "https://en.wikipedia.org/wiki/Navajo_Stirling"
+   "name": "Khalil Rountree Jr.",
+   "wiki": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
   },
   {
    "system": "meta",
@@ -472,22 +472,22 @@
    "system": "meta",
    "division": "Middleweight",
    "rank": "9",
+   "name": "Ikram Aliskerov",
+   "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
+  },
+  {
+   "system": "meta",
+   "division": "Middleweight",
+   "rank": "10",
    "name": "Abusupiyan Magomedov",
    "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
   },
   {
    "system": "meta",
    "division": "Middleweight",
-   "rank": "10",
+   "rank": "11",
    "name": "Israel Adesanya",
    "wiki": "https://en.wikipedia.org/wiki/Israel_Adesanya"
-  },
-  {
-   "system": "meta",
-   "division": "Middleweight",
-   "rank": "11",
-   "name": "Ikram Aliskerov",
-   "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
   },
   {
    "system": "meta",
@@ -584,15 +584,15 @@
    "system": "meta",
    "division": "Welterweight",
    "rank": "9",
-   "name": "Kevin Holland",
-   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
+   "name": "Uroš Medić",
+   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
   },
   {
    "system": "meta",
    "division": "Welterweight",
    "rank": "10",
-   "name": "Uroš Medić",
-   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
+   "name": "Kevin Holland",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Holland"
   },
   {
    "system": "meta",
@@ -759,15 +759,15 @@
    "system": "meta",
    "division": "Featherweight",
    "rank": "3",
-   "name": "Lerone Murphy",
-   "wiki": "https://en.wikipedia.org/wiki/Lerone_Murphy"
+   "name": "Kevin Vallejos",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
   },
   {
    "system": "meta",
    "division": "Featherweight",
    "rank": "4",
-   "name": "Aljamain Sterling",
-   "wiki": "https://en.wikipedia.org/wiki/Aljamain_Sterling"
+   "name": "Lerone Murphy",
+   "wiki": "https://en.wikipedia.org/wiki/Lerone_Murphy"
   },
   {
    "system": "meta",
@@ -780,36 +780,36 @@
    "system": "meta",
    "division": "Featherweight",
    "rank": "6",
+   "name": "Aljamain Sterling",
+   "wiki": "https://en.wikipedia.org/wiki/Aljamain_Sterling"
+  },
+  {
+   "system": "meta",
+   "division": "Featherweight",
+   "rank": "7",
    "name": "Arnold Allen",
    "wiki": "https://en.wikipedia.org/wiki/Arnold_Allen"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "7",
+   "rank": "8",
    "name": "Pat Sabatini",
    "wiki": "https://en.wikipedia.org/wiki/Pat_Sabatini"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "8",
+   "rank": "9",
    "name": "Youssef Zalal",
    "wiki": "https://en.wikipedia.org/wiki/Youssef_Zalal"
   },
   {
    "system": "meta",
    "division": "Featherweight",
-   "rank": "9",
+   "rank": "10",
    "name": "Aaron Pico",
    "wiki": "https://en.wikipedia.org/wiki/Aaron_Pico"
-  },
-  {
-   "system": "meta",
-   "division": "Featherweight",
-   "rank": "10",
-   "name": "Kevin Vallejos",
-   "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
   },
   {
    "system": "meta",
@@ -1004,22 +1004,22 @@
    "system": "meta",
    "division": "Flyweight",
    "rank": "6",
-   "name": "Asu Almabayev",
-   "wiki": "https://en.wikipedia.org/wiki/Asu_Almabayev"
-  },
-  {
-   "system": "meta",
-   "division": "Flyweight",
-   "rank": "7",
    "name": "Kyoji Horiguchi",
    "wiki": "https://en.wikipedia.org/wiki/Kyoji_Horiguchi"
   },
   {
    "system": "meta",
    "division": "Flyweight",
-   "rank": "8",
+   "rank": "7",
    "name": "Amir Albazi",
    "wiki": "https://en.wikipedia.org/wiki/Amir_Albazi"
+  },
+  {
+   "system": "meta",
+   "division": "Flyweight",
+   "rank": "8",
+   "name": "Asu Almabayev",
+   "wiki": "https://en.wikipedia.org/wiki/Asu_Almabayev"
   },
   {
    "system": "meta",
@@ -1263,85 +1263,85 @@
    "system": "meta",
    "division": "Women's Strawweight",
    "rank": "3",
-   "name": "Virna Jandiroba",
-   "wiki": "https://en.wikipedia.org/wiki/Virna_Jandiroba"
-  },
-  {
-   "system": "meta",
-   "division": "Women's Strawweight",
-   "rank": "4",
    "name": "Denise Gomes",
    "wiki": "https://en.wikipedia.org/wiki/Denise_Gomes"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "5",
+   "rank": "4",
    "name": "Gillian Robertson",
    "wiki": "https://en.wikipedia.org/wiki/Gillian_Robertson"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "6",
+   "rank": "5",
    "name": "Fatima Kline",
    "wiki": "https://en.wikipedia.org/wiki/Fatima_Kline"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "7",
+   "rank": "6",
    "name": "Piera Rodríguez",
    "wiki": "https://en.wikipedia.org/wiki/Piera_Rodríguez"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "8",
+   "rank": "7",
    "name": "Iasmin Lucindo",
    "wiki": "https://en.wikipedia.org/wiki/Iasmin_Lucindo"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "10",
+   "rank": "9",
    "name": "Loopy Godínez",
    "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "11",
+   "rank": "10",
    "name": "Yan Xiaonan",
    "wiki": "https://en.wikipedia.org/wiki/Yan_Xiaonan"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "12",
+   "rank": "11",
    "name": "Mizuki Inoue",
    "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "13",
+   "rank": "12",
    "name": "Tabatha Ricci",
    "wiki": "https://en.wikipedia.org/wiki/Tabatha_Ricci"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Amanda Lemos",
    "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
   },
   {
    "system": "meta",
    "division": "Women's Strawweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Sam Hughes",
    "wiki": "https://en.wikipedia.org/wiki/Sam_Hughes_(fighter)"
+  },
+  {
+   "system": "meta",
+   "division": "Women's Strawweight",
+   "rank": "15",
+   "name": "Talita Alencar",
+   "wiki": "https://en.wikipedia.org/wiki/Talita_Alencar"
   },
   {
    "system": "media",
@@ -1473,43 +1473,43 @@
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "2",
-   "name": "Jiří Procházka",
-   "wiki": "https://en.wikipedia.org/wiki/Jiří_Procházka"
-  },
-  {
-   "system": "media",
-   "division": "Light Heavyweight",
-   "rank": "3",
-   "name": "Alex Pereira",
-   "wiki": "https://en.wikipedia.org/wiki/Alex_Pereira"
-  },
-  {
-   "system": "media",
-   "division": "Light Heavyweight",
-   "rank": "4",
-   "name": "Khalil Rountree Jr.",
-   "wiki": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
-  },
-  {
-   "system": "media",
-   "division": "Light Heavyweight",
-   "rank": "5",
    "name": "Navajo Stirling",
    "wiki": "https://en.wikipedia.org/wiki/Navajo_Stirling"
   },
   {
    "system": "media",
    "division": "Light Heavyweight",
+   "rank": "3",
+   "name": "Jiří Procházka",
+   "wiki": "https://en.wikipedia.org/wiki/Jiří_Procházka"
+  },
+  {
+   "system": "media",
+   "division": "Light Heavyweight",
+   "rank": "4",
+   "name": "Alex Pereira",
+   "wiki": "https://en.wikipedia.org/wiki/Alex_Pereira"
+  },
+  {
+   "system": "media",
+   "division": "Light Heavyweight",
+   "rank": "5",
+   "name": "Khalil Rountree Jr.",
+   "wiki": "https://en.wikipedia.org/wiki/Khalil_Rountree_Jr."
+  },
+  {
+   "system": "media",
+   "division": "Light Heavyweight",
    "rank": "6",
-   "name": "Paulo Costa",
-   "wiki": "https://en.wikipedia.org/wiki/Paulo_Costa"
+   "name": "Dominick Reyes",
+   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
   },
   {
    "system": "media",
    "division": "Light Heavyweight",
    "rank": "7",
-   "name": "Dominick Reyes",
-   "wiki": "https://en.wikipedia.org/wiki/Dominick_Reyes"
+   "name": "Paulo Costa",
+   "wiki": "https://en.wikipedia.org/wiki/Paulo_Costa"
   },
   {
    "system": "media",
@@ -1648,36 +1648,36 @@
    "system": "media",
    "division": "Middleweight",
    "rank": "11",
-   "name": "Abusupiyan Magomedov",
-   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
-  },
-  {
-   "system": "media",
-   "division": "Middleweight",
-   "rank": "12",
-   "name": "Jared Cannonier",
-   "wiki": "https://en.wikipedia.org/wiki/Jared_Cannonier"
-  },
-  {
-   "system": "media",
-   "division": "Middleweight",
-   "rank": "13",
    "name": "Ikram Aliskerov",
    "wiki": "https://en.wikipedia.org/wiki/Ikram_Aliskerov"
   },
   {
    "system": "media",
    "division": "Middleweight",
-   "rank": "14",
+   "rank": "12",
+   "name": "Abusupiyan Magomedov",
+   "wiki": "https://en.wikipedia.org/wiki/Abusupiyan_Magomedov"
+  },
+  {
+   "system": "media",
+   "division": "Middleweight",
+   "rank": "13",
    "name": "Bo Nickal",
    "wiki": "https://en.wikipedia.org/wiki/Bo_Nickal"
   },
   {
    "system": "media",
    "division": "Middleweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Sharabutdin Magomedov",
    "wiki": "https://en.wikipedia.org/wiki/Sharabutdin_Magomedov"
+  },
+  {
+   "system": "media",
+   "division": "Middleweight",
+   "rank": "15",
+   "name": "Jared Cannonier",
+   "wiki": "https://en.wikipedia.org/wiki/Jared_Cannonier"
   },
   {
    "system": "media",
@@ -1760,15 +1760,15 @@
    "system": "media",
    "division": "Welterweight",
    "rank": "11",
-   "name": "Yaroslav Amosov",
-   "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
+   "name": "Uroš Medić",
+   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
   },
   {
    "system": "media",
    "division": "Welterweight",
    "rank": "12",
-   "name": "Uroš Medić",
-   "wiki": "https://en.wikipedia.org/wiki/Uroš_Medić"
+   "name": "Yaroslav Amosov",
+   "wiki": "https://en.wikipedia.org/wiki/Yaroslav_Amosov"
   },
   {
    "system": "media",
@@ -1913,20 +1913,6 @@
   {
    "system": "media",
    "division": "Featherweight",
-   "rank": "1",
-   "name": "Movsar Evloev",
-   "wiki": "https://en.wikipedia.org/wiki/Movsar_Evloev"
-  },
-  {
-   "system": "media",
-   "division": "Featherweight",
-   "rank": "2",
-   "name": "Diego Lopes",
-   "wiki": "https://en.wikipedia.org/wiki/Diego_Lopes_(fighter)"
-  },
-  {
-   "system": "media",
-   "division": "Featherweight",
    "rank": "3",
    "name": "Lerone Murphy",
    "wiki": "https://en.wikipedia.org/wiki/Lerone_Murphy"
@@ -1935,43 +1921,43 @@
    "system": "media",
    "division": "Featherweight",
    "rank": "4",
-   "name": "Aljamain Sterling",
-   "wiki": "https://en.wikipedia.org/wiki/Aljamain_Sterling"
-  },
-  {
-   "system": "media",
-   "division": "Featherweight",
-   "rank": "5",
    "name": "Jean Silva",
    "wiki": "https://en.wikipedia.org/wiki/Jean_Silva"
   },
   {
    "system": "media",
    "division": "Featherweight",
+   "rank": "5",
+   "name": "Kevin Vallejos",
+   "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
+  },
+  {
+   "system": "media",
+   "division": "Featherweight",
    "rank": "6",
+   "name": "Aljamain Sterling",
+   "wiki": "https://en.wikipedia.org/wiki/Aljamain_Sterling"
+  },
+  {
+   "system": "media",
+   "division": "Featherweight",
+   "rank": "7",
    "name": "Arnold Allen",
    "wiki": "https://en.wikipedia.org/wiki/Arnold_Allen"
   },
   {
    "system": "media",
    "division": "Featherweight",
-   "rank": "7",
+   "rank": "8",
    "name": "Yair Rodríguez",
    "wiki": "https://en.wikipedia.org/wiki/Yair_Rodríguez"
   },
   {
    "system": "media",
    "division": "Featherweight",
-   "rank": "8",
+   "rank": "9",
    "name": "Youssef Zalal",
    "wiki": "https://en.wikipedia.org/wiki/Youssef_Zalal"
-  },
-  {
-   "system": "media",
-   "division": "Featherweight",
-   "rank": "9",
-   "name": "Kevin Vallejos",
-   "wiki": "https://en.wikipedia.org/wiki/Kevin_Vallejos"
   },
   {
    "system": "media",
@@ -1998,8 +1984,8 @@
    "system": "media",
    "division": "Featherweight",
    "rank": "13",
-   "name": "Brian Ortega",
-   "wiki": "https://en.wikipedia.org/wiki/Brian_Ortega"
+   "name": "Pat Sabatini",
+   "wiki": "https://en.wikipedia.org/wiki/Pat_Sabatini"
   },
   {
    "system": "media",
@@ -2012,8 +1998,8 @@
    "system": "media",
    "division": "Featherweight",
    "rank": "15",
-   "name": "Pat Sabatini",
-   "wiki": "https://en.wikipedia.org/wiki/Pat_Sabatini"
+   "name": "Josh Emmett",
+   "wiki": "https://en.wikipedia.org/wiki/Josh_Emmett"
   },
   {
    "system": "media",
@@ -2102,20 +2088,6 @@
   {
    "system": "media",
    "division": "Bantamweight",
-   "rank": "12",
-   "name": "Deiveson Figueiredo",
-   "wiki": "https://en.wikipedia.org/wiki/Deiveson_Figueiredo"
-  },
-  {
-   "system": "media",
-   "division": "Bantamweight",
-   "rank": "13",
-   "name": "Marcus McGhee",
-   "wiki": "https://en.wikipedia.org/wiki/Marcus_McGhee"
-  },
-  {
-   "system": "media",
-   "division": "Bantamweight",
    "rank": "14",
    "name": "Raoni Barcelos",
    "wiki": "https://en.wikipedia.org/wiki/Raoni_Barcelos"
@@ -2133,20 +2105,6 @@
    "rank": "C",
    "name": "Joshua Van",
    "wiki": "https://en.wikipedia.org/wiki/Joshua_Van"
-  },
-  {
-   "system": "media",
-   "division": "Flyweight",
-   "rank": "1",
-   "name": "Alexandre Pantoja",
-   "wiki": "https://en.wikipedia.org/wiki/Alexandre_Pantoja"
-  },
-  {
-   "system": "media",
-   "division": "Flyweight",
-   "rank": "2",
-   "name": "Manel Kape",
-   "wiki": "https://en.wikipedia.org/wiki/Manel_Kape"
   },
   {
    "system": "media",
@@ -2264,15 +2222,15 @@
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "7",
-   "name": "Raquel Pennington",
-   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
+   "name": "Beatriz Mesquita",
+   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
   },
   {
    "system": "media",
    "division": "Women's Bantamweight",
    "rank": "8",
-   "name": "Beatriz Mesquita",
-   "wiki": "https://en.wikipedia.org/wiki/Beatriz_Mesquita"
+   "name": "Raquel Pennington",
+   "wiki": "https://en.wikipedia.org/wiki/Raquel_Pennington"
   },
   {
    "system": "media",
@@ -2425,87 +2383,87 @@
    "system": "media",
    "division": "Women's Strawweight",
    "rank": "3",
-   "name": "Virna Jandiroba",
-   "wiki": "https://en.wikipedia.org/wiki/Virna_Jandiroba"
-  },
-  {
-   "system": "media",
-   "division": "Women's Strawweight",
-   "rank": "4",
    "name": "Denise Gomes",
    "wiki": "https://en.wikipedia.org/wiki/Denise_Gomes"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "5",
+   "rank": "4",
    "name": "Gillian Robertson",
    "wiki": "https://en.wikipedia.org/wiki/Gillian_Robertson"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "6",
+   "rank": "5",
    "name": "Fatima Kline",
    "wiki": "https://en.wikipedia.org/wiki/Fatima_Kline"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "7",
+   "rank": "6",
    "name": "Yan Xiaonan",
    "wiki": "https://en.wikipedia.org/wiki/Yan_Xiaonan"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "8",
+   "rank": "7",
    "name": "Loopy Godínez",
    "wiki": "https://en.wikipedia.org/wiki/Loopy_Godínez"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "10",
+   "rank": "9",
    "name": "Tabatha Ricci",
    "wiki": "https://en.wikipedia.org/wiki/Tabatha_Ricci"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "11",
+   "rank": "10",
    "name": "Amanda Lemos",
    "wiki": "https://en.wikipedia.org/wiki/Amanda_Lemos"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "12",
+   "rank": "11",
    "name": "Jéssica Andrade",
    "wiki": "https://en.wikipedia.org/wiki/Jéssica_Andrade"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "13",
+   "rank": "12",
    "name": "Amanda Ribas",
    "wiki": "https://en.wikipedia.org/wiki/Amanda_Ribas"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "14",
+   "rank": "13",
    "name": "Piera Rodríguez",
    "wiki": "https://en.wikipedia.org/wiki/Piera_Rodríguez"
   },
   {
    "system": "media",
    "division": "Women's Strawweight",
-   "rank": "15",
+   "rank": "14",
    "name": "Angela Hill",
    "wiki": "https://en.wikipedia.org/wiki/Angela_Hill"
+  },
+  {
+   "system": "media",
+   "division": "Women's Strawweight",
+   "rank": "15",
+   "name": "Mizuki Inoue",
+   "wiki": "https://en.wikipedia.org/wiki/Mizuki_Inoue"
   }
  ],
- "fetched": "2026-11-24",
+ "fetched": "2026-11-25",
  "source": "https://en.wikipedia.org/wiki/UFC_rankings"
 }

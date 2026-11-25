@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-24T12:20:33+00:00",
+ "fetched": "2026-11-25T12:18:14+00:00",
  "source": "https://en.wikipedia.org/wiki/List_of_current_UFC_fighters",
  "signings": [
   {
@@ -18,9 +18,9 @@
    "date": "2025-08-19",
    "division": "Featherweight",
    "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/04/noche-ufc-adds-matchup-newcomers-nine-days-notice/91608854007/"
+    "https://www.mmafighting.com/ufc/523204/gabriel-bonfim-vs-sean-brady-fight-night-event-adds-slew-of-undercard-fights"
    ],
-   "info": "(September 4, 2026) – Vera's visa issues – Bout cancelled – UFC Fight Night 288 (Glendale) – Rodrigo Vera",
+   "info": "UFC Fight Night 297 (Las Vegas) – Jamall Emmers",
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2025/08/20/dwcs-ramiro-jimenez-selfie/"
@@ -46,9 +46,9 @@
    "date": "2025-10-01",
    "division": "Welterweight",
    "refs": [
-    "https://dia0.com.ar/contenido/5368/francisco-prado-define-su-destino-en-miami-el-guerrero-de-san-lorenzo-regresa-en"
+    "https://www.mmafighting.com/ufc/523204/gabriel-bonfim-vs-sean-brady-fight-night-event-adds-slew-of-undercard-fights"
    ],
-   "info": "(March 28, 2026) – Unknown reasons – No longer scheduled for UFC 327 (Miami) – Francisco Prado",
+   "info": "UFC Fight Night 297 (Las Vegas) – Ty Miller",
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2025/10/01/dwcs-christopher-alvidrez-family/"
@@ -85,9 +85,9 @@
    "date": "2026-08-18",
    "division": "Featherweight",
    "refs": [
-    "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
+    "https://www.mmafighting.com/ufc/523204/gabriel-bonfim-vs-sean-brady-fight-night-event-adds-slew-of-undercard-fights"
    ],
-   "info": "",
+   "info": "UFC Fight Night 297 (Las Vegas) – Ramon Taveras",
    "confirmed_by": {
     "source": "mmafighting.com",
     "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
@@ -113,9 +113,9 @@
    "date": "2026-08-18",
    "division": "Middleweight",
    "refs": [
-    "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
+    "https://www.mmafighting.com/ufc/523204/gabriel-bonfim-vs-sean-brady-fight-night-event-adds-slew-of-undercard-fights"
    ],
-   "info": "",
+   "info": "UFC Fight Night 297 (Las Vegas) – Nick Klein",
    "confirmed_by": {
     "source": "mmafighting.com",
     "url": "https://www.mmafighting.com/ufc/505789/dwcs-season-10-week-2-results-kaik-brito-starches-namo-fazil-with-brutal-knockout-punch"
@@ -267,9 +267,9 @@
    "date": "2026-09-08",
    "division": "Middleweight",
    "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/09/08/dana-whites-contender-series-91-live-updates-round-by-round-coverage--live/91653604007/"
+    "https://sport.aktuality.sk/mma-fanatik/martin-kozak-ma-supera-na-debut-v-ufc-bude-to-american-s-bilanciou-10-4-1/"
    ],
-   "info": "",
+   "info": "UFC Fight Night 297 (Las Vegas) – Tre'ston Vines",
    "confirmed_by": {
     "source": "Cageside Press",
     "url": "https://cagesidepress.com/2026/09/08/dana-whites-contender-series-season-10-week-5-results/"
@@ -560,9 +560,9 @@
    "date": "2026-10-13",
    "division": "Women's Bantamweight",
    "refs": [
-    "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/13/dana-whites-contender-series-96-live-updates-results--live/92238352007/"
+    "https://www.mmafighting.com/ufc/523204/gabriel-bonfim-vs-sean-brady-fight-night-event-adds-slew-of-undercard-fights"
    ],
-   "info": "",
+   "info": "UFC Fight Night 297 (Las Vegas) – Melissa Mullins",
    "confirmed_by": {
     "source": "LowKick MMA",
     "url": "https://www.lowkickmma.com/smilla-sundell-dominates-aline-pereira-to-earn-ufc-contract-in-dwcs-season-10-finale/"
@@ -687,6 +687,17 @@
     "url": "https://www.mmafighting.com/ufc/520949/mike-perry-re-signs-with-ufc"
    },
    "first_seen": "2026-11-14"
+  },
+  {
+   "name": "Anvarbek Daniyalbekov",
+   "date": "2026-11-24",
+   "division": "Middleweight",
+   "refs": [
+    "https://mma.pl/ufc-szykuje-kolejna-walke-polaka-chodzi-o-grudniowa-gale/"
+   ],
+   "info": "UFC Fight Night 295 (Riyadh) – Robert Bryczek",
+   "confirmed_by": null,
+   "first_seen": "2026-11-25"
   },
   {
    "name": "Alik Lorenz",

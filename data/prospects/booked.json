@@ -83,6 +83,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Buckley_vs._Malott"
  },
+ "https://www.sherdog.com/fighter/Martin-Kozak-438012": {
+  "date": "2027-01-23",
+  "event": "UFC Fight Night 297 - Bonfim vs. Brady",
+  "name": "Martin Kozak",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-297-Bonfim-vs-Brady-115358",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
+ },
  "https://www.sherdog.com/fighter/Modestino-Rodrigues-397486": {
   "date": "2026-12-05",
   "event": "UFC Fight Night 295 - Adesanya vs. Magomedov",
@@ -119,6 +131,18 @@
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_335"
  },
+ "https://www.sherdog.com/fighter/Ramiro-Jimenez-244693": {
+  "date": "2027-01-23",
+  "event": "UFC Fight Night 297 - Bonfim vs. Brady",
+  "name": "Ramiro Jimenez",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-297-Bonfim-vs-Brady-115358",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
+ },
  "https://www.sherdog.com/fighter/Ronald-Humphrey-400469": {
   "date": "2026-12-12",
   "event": "UFC 335 - Oliveira vs. Lopes",
@@ -154,5 +178,17 @@
    "Wikipedia"
   ],
   "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_336"
+ },
+ "https://www.sherdog.com/fighter/Smilla-Sundell-432096": {
+  "date": "2027-01-23",
+  "event": "UFC Fight Night 297 - Bonfim vs. Brady",
+  "name": "Smilla Sundell",
+  "promotion": "UFC",
+  "sherdog_event": "https://www.sherdog.com/events/UFC-Fight-Night-297-Bonfim-vs-Brady-115358",
+  "sources": [
+   "Sherdog",
+   "Wikipedia"
+  ],
+  "wikipedia_event": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bonfim_vs._Brady"
  }
 }
