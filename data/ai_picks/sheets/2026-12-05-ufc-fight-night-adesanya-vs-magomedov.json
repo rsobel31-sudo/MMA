@@ -4,7 +4,7 @@
  "results_url": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Adesanya_vs._Magomedov",
  "odds_url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
  "book": "FanDuel",
- "fetched_at": "2026-11-25T18:14:26+00:00",
+ "fetched_at": "2026-11-26T18:14:18+00:00",
  "event_starts": "2026-12-05T13:00:00+00:00",
  "odds_urls": [
   "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453"
@@ -13,8 +13,8 @@
   "Anvarbek Daniyalbekov vs Robert Bryczek"
  ],
  "blend_weights": {
-  "model": 0.20017483804314062,
-  "market": 0.9949197447237653
+  "model": 0.20106538771257207,
+  "market": 0.9941017803506913
  },
  "dec_cal": [
   0.426126,
@@ -33,12 +33,12 @@
    ],
    "rounds": 5,
    "title": false,
-   "p_model_a": 0.3678,
-   "p_stats_a": 0.3678,
+   "p_model_a": 0.3681,
+   "p_stats_a": 0.3681,
    "read_a": 0.0,
    "ml": {
-    "a": -184,
-    "b": 142
+    "a": -178,
+    "b": 138
    },
    "markets": 2
   },
@@ -52,12 +52,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4772,
-   "p_stats_a": 0.4772,
+   "p_model_a": 0.4794,
+   "p_stats_a": 0.4794,
    "read_a": 0.0,
    "ml": {
-    "a": -192,
-    "b": 148
+    "a": -178,
+    "b": 138
    },
    "markets": 2
   },
@@ -71,12 +71,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.5985,
-   "p_stats_a": 0.5985,
+   "p_model_a": 0.5994,
+   "p_stats_a": 0.5994,
    "read_a": 0.0,
    "ml": {
-    "a": -215,
-    "b": 164
+    "a": -192,
+    "b": 148
    },
    "markets": 2
   },
@@ -90,8 +90,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.784,
-   "p_stats_a": 0.784,
+   "p_model_a": 0.7861,
+   "p_stats_a": 0.7861,
    "read_a": 0.0,
    "ml": {
     "a": -360,
@@ -109,12 +109,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6235,
-   "p_stats_a": 0.6235,
+   "p_model_a": 0.6236,
+   "p_stats_a": 0.6236,
    "read_a": 0.0,
    "ml": {
-    "a": -330,
-    "b": 240
+    "a": -310,
+    "b": 230
    },
    "markets": 2
   },
@@ -128,8 +128,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4225,
-   "p_stats_a": 0.4225,
+   "p_model_a": 0.4245,
+   "p_stats_a": 0.4245,
    "read_a": -0.0,
    "ml": {
     "a": 146,
@@ -147,12 +147,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3483,
-   "p_stats_a": 0.3483,
+   "p_model_a": 0.3481,
+   "p_stats_a": 0.3481,
    "read_a": -0.0,
    "ml": {
-    "a": 124,
-    "b": -160
+    "a": 116,
+    "b": -148
    },
    "markets": 2
   },
@@ -166,8 +166,8 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.1216,
-   "p_stats_a": 0.1216,
+   "p_model_a": 0.1206,
+   "p_stats_a": 0.1206,
    "read_a": 0.0,
    "ml": {
     "a": 118,
@@ -185,12 +185,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.4004,
-   "p_stats_a": 0.365,
+   "p_model_a": 0.3985,
+   "p_stats_a": 0.3631,
    "read_a": 0.15,
    "ml": {
-    "a": -104,
-    "b": -120
+    "a": 102,
+    "b": -130
    },
    "markets": 2
   },
@@ -204,12 +204,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.5494,
-   "p_stats_a": 0.5494,
+   "p_model_a": 0.5475,
+   "p_stats_a": 0.5475,
    "read_a": 0.0,
    "ml": {
-    "a": 146,
-    "b": -188
+    "a": 142,
+    "b": -184
    },
    "markets": 2
   },
@@ -223,12 +223,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.6164,
-   "p_stats_a": 0.6164,
+   "p_model_a": 0.6209,
+   "p_stats_a": 0.6209,
    "read_a": 0.0,
    "ml": {
-    "a": -156,
-    "b": 122
+    "a": -148,
+    "b": 116
    },
    "markets": 2
   },
@@ -242,12 +242,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.5495,
-   "p_stats_a": 0.5495,
+   "p_model_a": 0.5501,
+   "p_stats_a": 0.5501,
    "read_a": 0.0,
    "ml": {
-    "a": -156,
-    "b": 122
+    "a": -184,
+    "b": 142
    },
    "markets": 2
   },
@@ -261,12 +261,12 @@
    ],
    "rounds": 3,
    "title": false,
-   "p_model_a": 0.3896,
-   "p_stats_a": 0.3896,
+   "p_model_a": 0.3898,
+   "p_stats_a": 0.3898,
    "read_a": -0.0,
    "ml": {
-    "a": 122,
-    "b": -156
+    "a": 116,
+    "b": -148
    },
    "markets": 2
   }
@@ -392,12 +392,12 @@
    "selection": "Jafel Filho to win",
    "odds": -150,
    "decimal": 1.6667,
-   "p_model": 0.6599,
+   "p_model": 0.6607,
    "p_fanduel": 0.5667,
-   "p": 0.6599,
-   "edge": 0.0932,
-   "ev": 0.0999,
-   "kelly": 0.1498
+   "p": 0.6607,
+   "edge": 0.094,
+   "ev": 0.1011,
+   "kelly": 0.1517
   },
   {
    "id": "45677:ml:b",
@@ -407,14 +407,14 @@
     "b"
    ],
    "selection": "Shara Magomedov to win",
-   "odds": 142,
-   "decimal": 2.42,
-   "p_model": 0.416,
-   "p_fanduel": 0.3894,
-   "p": 0.416,
-   "edge": 0.0266,
-   "ev": 0.0068,
-   "kelly": 0.0048
+   "odds": 138,
+   "decimal": 2.38,
+   "p_model": 0.4231,
+   "p_fanduel": 0.3962,
+   "p": 0.4231,
+   "edge": 0.0269,
+   "ev": 0.0069,
+   "kelly": 0.005
   },
   {
    "id": "45871:ml:a",
@@ -426,12 +426,12 @@
    "selection": "Mario Pinto to win",
    "odds": -360,
    "decimal": 1.2778,
-   "p_model": 0.7839,
+   "p_model": 0.7844,
    "p_fanduel": 0.738,
-   "p": 0.7839,
-   "edge": 0.0459,
-   "ev": 0.0017,
-   "kelly": 0.006
+   "p": 0.7844,
+   "edge": 0.0463,
+   "ev": 0.0023,
+   "kelly": 0.0081
   },
   {
    "id": "45873:ml:b",
@@ -441,30 +441,13 @@
     "b"
    ],
    "selection": "Luke Riley to win",
-   "odds": -160,
-   "decimal": 1.625,
-   "p_model": 0.6094,
-   "p_fanduel": 0.5796,
-   "p": 0.6094,
-   "edge": 0.0298,
-   "ev": -0.0097,
-   "kelly": 0.0
-  },
-  {
-   "id": "45879:ml:b",
-   "bout": "Ivan Gnizditskiy vs Uran Satybaldiev",
-   "market": [
-    "ml",
-    "b"
-   ],
-   "selection": "Uran Satybaldiev to win",
-   "odds": -120,
-   "decimal": 1.8333,
-   "p_model": 0.537,
-   "p_fanduel": 0.5169,
-   "p": 0.537,
-   "edge": 0.0201,
-   "ev": -0.0156,
+   "odds": -148,
+   "decimal": 1.6757,
+   "p_model": 0.5935,
+   "p_fanduel": 0.5631,
+   "p": 0.5935,
+   "edge": 0.0304,
+   "ev": -0.0055,
    "kelly": 0.0
   },
   {
@@ -475,13 +458,13 @@
     "a"
    ],
    "selection": "Matthieu Duclos to win",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.5976,
-   "p_fanduel": 0.575,
-   "p": 0.5976,
-   "edge": 0.0227,
-   "ev": -0.0193,
+   "odds": -148,
+   "decimal": 1.6757,
+   "p_model": 0.587,
+   "p_fanduel": 0.5631,
+   "p": 0.587,
+   "edge": 0.0239,
+   "ev": -0.0164,
    "kelly": 0.0
   },
   {
@@ -492,30 +475,30 @@
     "b"
    ],
    "selection": "Mateusz Rebecki to win",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.5964,
-   "p_fanduel": 0.575,
-   "p": 0.5964,
-   "edge": 0.0214,
-   "ev": -0.0213,
+   "odds": -148,
+   "decimal": 1.6757,
+   "p_model": 0.5848,
+   "p_fanduel": 0.5631,
+   "p": 0.5848,
+   "edge": 0.0217,
+   "ev": -0.0201,
    "kelly": 0.0
   },
   {
-   "id": "45880:ml:a",
-   "bout": "Junyong Park vs Marco Tulio",
+   "id": "45879:ml:b",
+   "bout": "Ivan Gnizditskiy vs Uran Satybaldiev",
    "market": [
     "ml",
-    "a"
+    "b"
    ],
-   "selection": "Junyong Park to win",
-   "odds": 146,
-   "decimal": 2.46,
-   "p_model": 0.3938,
-   "p_fanduel": 0.3838,
-   "p": 0.3938,
-   "edge": 0.01,
-   "ev": -0.0313,
+   "selection": "Uran Satybaldiev to win",
+   "odds": -130,
+   "decimal": 1.7692,
+   "p_model": 0.5534,
+   "p_fanduel": 0.5331,
+   "p": 0.5534,
+   "edge": 0.0203,
+   "ev": -0.0208,
    "kelly": 0.0
   },
   {
@@ -526,13 +509,13 @@
     "a"
    ],
    "selection": "Islam Dulatov to win",
-   "odds": -215,
-   "decimal": 1.4651,
-   "p_model": 0.6606,
-   "p_fanduel": 0.6431,
-   "p": 0.6606,
-   "edge": 0.0175,
-   "ev": -0.0322,
+   "odds": -192,
+   "decimal": 1.5208,
+   "p_model": 0.6381,
+   "p_fanduel": 0.6199,
+   "p": 0.6381,
+   "edge": 0.0182,
+   "ev": -0.0296,
    "kelly": 0.0
   },
   {
@@ -543,13 +526,30 @@
     "a"
    ],
    "selection": "Akbar Abdullaev to win",
-   "odds": -330,
-   "decimal": 1.303,
-   "p_model": 0.7418,
-   "p_fanduel": 0.7229,
-   "p": 0.7418,
-   "edge": 0.0188,
-   "ev": -0.0334,
+   "odds": -310,
+   "decimal": 1.3226,
+   "p_model": 0.7331,
+   "p_fanduel": 0.7139,
+   "p": 0.7331,
+   "edge": 0.0192,
+   "ev": -0.0304,
+   "kelly": 0.0
+  },
+  {
+   "id": "45880:ml:a",
+   "bout": "Junyong Park vs Marco Tulio",
+   "market": [
+    "ml",
+    "a"
+   ],
+   "selection": "Junyong Park to win",
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.3992,
+   "p_fanduel": 0.3894,
+   "p": 0.3992,
+   "edge": 0.0098,
+   "ev": -0.0339,
    "kelly": 0.0
   },
   {
@@ -562,11 +562,11 @@
    "selection": "Magomed Tuchalov to win",
    "odds": -188,
    "decimal": 1.5319,
-   "p_model": 0.6304,
+   "p_model": 0.63,
    "p_fanduel": 0.6162,
-   "p": 0.6304,
-   "edge": 0.0141,
-   "ev": -0.0343,
+   "p": 0.63,
+   "edge": 0.0137,
+   "ev": -0.0349,
    "kelly": 0.0
   },
   {
@@ -577,13 +577,13 @@
     "a"
    ],
    "selection": "Abdul Hussein to win",
-   "odds": -156,
-   "decimal": 1.641,
-   "p_model": 0.5843,
-   "p_fanduel": 0.575,
-   "p": 0.5843,
-   "edge": 0.0093,
-   "ev": -0.0412,
+   "odds": -184,
+   "decimal": 1.5435,
+   "p_model": 0.6195,
+   "p_fanduel": 0.6106,
+   "p": 0.6195,
+   "edge": 0.0089,
+   "ev": -0.0438,
    "kelly": 0.0
   },
   {
@@ -594,13 +594,13 @@
     "b"
    ],
    "selection": "Yaroslav Amosov to win",
-   "odds": 148,
-   "decimal": 2.48,
-   "p_model": 0.385,
-   "p_fanduel": 0.3801,
-   "p": 0.385,
-   "edge": 0.0049,
-   "ev": -0.0451,
+   "odds": 138,
+   "decimal": 2.38,
+   "p_model": 0.4008,
+   "p_fanduel": 0.3962,
+   "p": 0.4008,
+   "edge": 0.0046,
+   "ev": -0.0461,
    "kelly": 0.0
   },
   {
@@ -611,13 +611,13 @@
     "a"
    ],
    "selection": "Ian Machado Garry to win",
-   "odds": -192,
-   "decimal": 1.5208,
-   "p_model": 0.615,
-   "p_fanduel": 0.6199,
-   "p": 0.615,
-   "edge": -0.0049,
-   "ev": -0.0647,
+   "odds": -178,
+   "decimal": 1.5618,
+   "p_model": 0.5992,
+   "p_fanduel": 0.6038,
+   "p": 0.5992,
+   "edge": -0.0046,
+   "ev": -0.0642,
    "kelly": 0.0
   },
   {
@@ -628,13 +628,13 @@
     "b"
    ],
    "selection": "Marco Tulio to win",
-   "odds": -188,
-   "decimal": 1.5319,
-   "p_model": 0.6062,
-   "p_fanduel": 0.6162,
-   "p": 0.6062,
-   "edge": -0.01,
-   "ev": -0.0713,
+   "odds": -184,
+   "decimal": 1.5435,
+   "p_model": 0.6008,
+   "p_fanduel": 0.6106,
+   "p": 0.6008,
+   "edge": -0.0098,
+   "ev": -0.0727,
    "kelly": 0.0
   },
   {
@@ -645,13 +645,13 @@
     "b"
    ],
    "selection": "Hecher Sosa to win",
-   "odds": 122,
-   "decimal": 2.22,
-   "p_model": 0.4157,
-   "p_fanduel": 0.425,
-   "p": 0.4157,
-   "edge": -0.0093,
-   "ev": -0.0771,
+   "odds": 142,
+   "decimal": 2.42,
+   "p_model": 0.3805,
+   "p_fanduel": 0.3894,
+   "p": 0.3805,
+   "edge": -0.0089,
+   "ev": -0.0792,
    "kelly": 0.0
   },
   {
@@ -664,11 +664,11 @@
    "selection": "Ion Cutelaba to win",
    "odds": 146,
    "decimal": 2.46,
-   "p_model": 0.3696,
+   "p_model": 0.37,
    "p_fanduel": 0.3838,
-   "p": 0.3696,
-   "edge": -0.0141,
-   "ev": -0.0907,
+   "p": 0.37,
+   "edge": -0.0137,
+   "ev": -0.0897,
    "kelly": 0.0
   },
   {
@@ -679,13 +679,13 @@
     "a"
    ],
    "selection": "Ivan Gnizditskiy to win",
-   "odds": -104,
-   "decimal": 1.9615,
-   "p_model": 0.463,
-   "p_fanduel": 0.4831,
-   "p": 0.463,
-   "edge": -0.0201,
-   "ev": -0.0917,
+   "odds": 102,
+   "decimal": 2.02,
+   "p_model": 0.4466,
+   "p_fanduel": 0.4669,
+   "p": 0.4466,
+   "edge": -0.0203,
+   "ev": -0.0979,
    "kelly": 0.0
   },
   {
@@ -696,13 +696,13 @@
     "a"
    ],
    "selection": "Israel Adesanya to win",
-   "odds": -184,
-   "decimal": 1.5435,
-   "p_model": 0.584,
-   "p_fanduel": 0.6106,
-   "p": 0.584,
-   "edge": -0.0266,
-   "ev": -0.0987,
+   "odds": -178,
+   "decimal": 1.5618,
+   "p_model": 0.5769,
+   "p_fanduel": 0.6038,
+   "p": 0.5769,
+   "edge": -0.0269,
+   "ev": -0.099,
    "kelly": 0.0
   },
   {
@@ -713,13 +713,13 @@
     "b"
    ],
    "selection": "Levan Chokheli to win",
-   "odds": 164,
-   "decimal": 2.64,
-   "p_model": 0.3394,
-   "p_fanduel": 0.3569,
-   "p": 0.3394,
-   "edge": -0.0175,
-   "ev": -0.1039,
+   "odds": 148,
+   "decimal": 2.48,
+   "p_model": 0.3619,
+   "p_fanduel": 0.3801,
+   "p": 0.3619,
+   "edge": -0.0182,
+   "ev": -0.1025,
    "kelly": 0.0
   },
   {
@@ -730,13 +730,13 @@
     "a"
    ],
    "selection": "Elves Brener to win",
-   "odds": 122,
-   "decimal": 2.22,
-   "p_model": 0.4036,
-   "p_fanduel": 0.425,
-   "p": 0.4036,
-   "edge": -0.0214,
-   "ev": -0.104,
+   "odds": 116,
+   "decimal": 2.16,
+   "p_model": 0.4152,
+   "p_fanduel": 0.4369,
+   "p": 0.4152,
+   "edge": -0.0217,
+   "ev": -0.1032,
    "kelly": 0.0
   },
   {
@@ -747,13 +747,13 @@
     "b"
    ],
    "selection": "Modestino Rodrigues to win",
-   "odds": 122,
-   "decimal": 2.22,
-   "p_model": 0.4024,
-   "p_fanduel": 0.425,
-   "p": 0.4024,
-   "edge": -0.0227,
-   "ev": -0.1067,
+   "odds": 116,
+   "decimal": 2.16,
+   "p_model": 0.413,
+   "p_fanduel": 0.4369,
+   "p": 0.413,
+   "edge": -0.0239,
+   "ev": -0.1079,
    "kelly": 0.0
   },
   {
@@ -764,13 +764,13 @@
     "b"
    ],
    "selection": "Mairon Santos to win",
-   "odds": 240,
-   "decimal": 3.4,
-   "p_model": 0.2582,
-   "p_fanduel": 0.2771,
-   "p": 0.2582,
-   "edge": -0.0188,
-   "ev": -0.122,
+   "odds": 230,
+   "decimal": 3.3,
+   "p_model": 0.2669,
+   "p_fanduel": 0.2861,
+   "p": 0.2669,
+   "edge": -0.0192,
+   "ev": -0.1193,
    "kelly": 0.0
   },
   {
@@ -781,13 +781,13 @@
     "a"
    ],
    "selection": "Gabriel Santos to win",
-   "odds": 124,
-   "decimal": 2.24,
-   "p_model": 0.3906,
-   "p_fanduel": 0.4204,
-   "p": 0.3906,
-   "edge": -0.0298,
-   "ev": -0.125,
+   "odds": 116,
+   "decimal": 2.16,
+   "p_model": 0.4065,
+   "p_fanduel": 0.4369,
+   "p": 0.4065,
+   "edge": -0.0304,
+   "ev": -0.122,
    "kelly": 0.0
   },
   {
@@ -800,11 +800,11 @@
    "selection": "Serghei Spivac to win",
    "odds": 260,
    "decimal": 3.6,
-   "p_model": 0.2161,
+   "p_model": 0.2156,
    "p_fanduel": 0.262,
-   "p": 0.2161,
-   "edge": -0.0459,
-   "ev": -0.2221,
+   "p": 0.2156,
+   "edge": -0.0463,
+   "ev": -0.2238,
    "kelly": 0.0
   },
   {
@@ -817,11 +817,11 @@
    "selection": "Bruno Silva to win",
    "odds": 118,
    "decimal": 2.18,
-   "p_model": 0.3401,
+   "p_model": 0.3393,
    "p_fanduel": 0.4333,
-   "p": 0.3401,
-   "edge": -0.0932,
-   "ev": -0.2587,
+   "p": 0.3393,
+   "edge": -0.094,
+   "ev": -0.2603,
    "kelly": 0.0
   }
  ]
