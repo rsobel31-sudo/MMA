@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-26",
+ "fetched": "2026-11-27",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -376,17 +376,6 @@
      "weight_class": "Women's Flyweight",
      "a": "Carli Judice",
      "b": "TBD",
-     "title": false,
-     "result": "",
-     "rounds": 3,
-     "main_event": false
-    },
-    {
-     "order": 12,
-     "segment": "Announced",
-     "weight_class": "Bantamweight",
-     "a": "Chris Haddon",
-     "b": "Chris Gutierrez [ citation needed ]",
      "title": false,
      "result": "",
      "rounds": 3,
