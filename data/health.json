@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-27T17:01:28+00:00",
+ "checked": "2026-11-28T11:55:03+00:00",
  "ok": true,
  "failed": [],
  "sources": [
@@ -8,56 +8,56 @@
    "used_by": "fight records, prospects, refresh",
    "ok": true,
    "detail": "18 bouts on a known fighter page",
-   "seconds": 0.8,
-   "last_ok": "2026-11-27"
+   "seconds": 0.5,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Sherdog event listings",
    "used_by": "prospect fights this week",
    "ok": true,
-   "detail": "322 upcoming events listed",
-   "seconds": 9.1,
-   "last_ok": "2026-11-27"
+   "detail": "346 upcoming events listed",
+   "seconds": 2.0,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Sherdog UFC events",
    "used_by": "weekly refresh",
    "ok": true,
    "detail": "6 UFC events in the last 45 days",
-   "seconds": 1.2,
-   "last_ok": "2026-11-27"
+   "seconds": 9.3,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Fight Matrix rankings",
    "used_by": "prospects crawl",
    "ok": true,
    "detail": "25 ranked lightweights",
-   "seconds": 1.1,
-   "last_ok": "2026-11-27"
+   "seconds": 1.2,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Fight Matrix profiles",
    "used_by": "ratings, prospects",
    "ok": true,
    "detail": "18 bouts with ratings",
-   "seconds": 1.8,
-   "last_ok": "2026-11-27"
+   "seconds": 1.7,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "BestFightOdds events",
    "used_by": "betting sheet (FanDuel)",
    "ok": true,
-   "detail": "9 events; UFC Saudi Arabia: 14 bouts, 14 with FanDuel moneylines",
-   "seconds": 2.2,
-   "last_ok": "2026-11-27"
+   "detail": "7 events; UFC Saudi Arabia: 14 bouts, 14 with FanDuel moneylines",
+   "seconds": 2.3,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "BestFightOdds fighters",
    "used_by": "closing lines, signings",
    "ok": true,
    "detail": "17 bouts with lines",
-   "seconds": 2.7,
-   "last_ok": "2026-11-27"
+   "seconds": 2.9,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Wikipedia UFC events",
@@ -65,7 +65,7 @@
    "ok": true,
    "detail": "8 scheduled UFC events",
    "seconds": 0.7,
-   "last_ok": "2026-11-27"
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Wikipedia UFC roster",
@@ -73,31 +73,31 @@
    "ok": true,
    "detail": "647 fighters on the UFC roster",
    "seconds": 1.5,
-   "last_ok": "2026-11-27"
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Wikipedia UFC rankings",
    "used_by": "rankings comparison",
    "ok": true,
    "detail": "325 ranked fighters",
-   "seconds": 1.2,
-   "last_ok": "2026-11-27"
+   "seconds": 1.1,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Kaggle UFCStats dump",
    "used_by": "per-fight stats",
    "ok": true,
    "detail": "HTTP 206, zip archive",
-   "seconds": 0.4,
-   "last_ok": "2026-11-27"
+   "seconds": 0.3,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: MMA Fighting",
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.5,
-   "last_ok": "2026-11-27"
+   "seconds": 0.6,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: Sherdog",
@@ -105,7 +105,7 @@
    "ok": true,
    "detail": "50 items, 50 from the last 14 days",
    "seconds": 0.2,
-   "last_ok": "2026-11-27"
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: Bloody Elbow",
@@ -113,87 +113,87 @@
    "ok": true,
    "detail": "20 items, 20 from the last 14 days",
    "seconds": 0.4,
-   "last_ok": "2026-11-27"
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: Cageside Press",
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.2,
-   "last_ok": "2026-11-27"
+   "seconds": 2.2,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: MMA Mania",
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 0.5,
-   "last_ok": "2026-11-27"
+   "seconds": 0.6,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: BJPenn.com",
    "used_by": "scouting",
    "ok": true,
    "detail": "25 items, 25 from the last 14 days",
-   "seconds": 1.6,
-   "last_ok": "2026-11-27"
+   "seconds": 1.2,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: MMA Weekly",
    "used_by": "scouting",
    "ok": true,
-   "detail": "50 items, 36 from the last 14 days",
-   "seconds": 1.5,
-   "last_ok": "2026-11-27"
+   "detail": "50 items, 29 from the last 14 days",
+   "seconds": 1.3,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: LowKick MMA",
    "used_by": "scouting",
    "ok": true,
    "detail": "10 items, 10 from the last 14 days",
-   "seconds": 1.5,
-   "last_ok": "2026-11-27"
+   "seconds": 1.3,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: ESPN",
    "used_by": "scouting",
    "ok": true,
-   "detail": "19 items, 18 from the last 14 days",
+   "detail": "20 items, 15 from the last 14 days",
    "seconds": 0.2,
-   "last_ok": "2026-11-27"
+   "last_ok": "2026-11-28"
   },
   {
    "source": "News: Yahoo Sports",
    "used_by": "scouting",
    "ok": true,
-   "detail": "34 items, 34 from the last 14 days",
-   "seconds": 0.6,
-   "last_ok": "2026-11-27"
+   "detail": "37 items, 37 from the last 14 days",
+   "seconds": 0.5,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Search: Cageside Press",
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 1.6,
-   "last_ok": "2026-11-27"
+   "seconds": 1.5,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Search: BJPenn.com",
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 4.1,
-   "last_ok": "2026-11-27"
+   "seconds": 4.0,
+   "last_ok": "2026-11-28"
   },
   {
    "source": "Search: LowKick MMA",
    "used_by": "scouting",
    "ok": true,
    "detail": "20 search results",
-   "seconds": 5.5,
-   "last_ok": "2026-11-27"
+   "seconds": 3.6,
+   "last_ok": "2026-11-28"
   }
  ]
 }
