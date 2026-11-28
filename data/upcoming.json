@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-27",
+ "fetched": "2026-11-28",
  "source": "https://en.wikipedia.org/wiki/List_of_UFC_events",
  "events": [
   {
@@ -243,8 +243,8 @@
      "order": 1,
      "segment": "Main card",
      "weight_class": "Heavyweight",
-     "a": "Sergei Pavlovich",
-     "b": "Alex Pereira",
+     "a": "Alex Pereira",
+     "b": "Sergei Pavlovich",
      "title": false,
      "result": "",
      "decided": false,
@@ -376,6 +376,17 @@
      "weight_class": "Women's Flyweight",
      "a": "Carli Judice",
      "b": "TBD",
+     "title": false,
+     "result": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 12,
+     "segment": "Announced",
+     "weight_class": "Bantamweight",
+     "a": "Chris Guti\u00e9rrez",
+     "b": "Cody Haddon",
      "title": false,
      "result": "",
      "rounds": 3,
@@ -878,6 +889,17 @@
      "decided": false,
      "round": "",
      "time": "",
+     "rounds": 3,
+     "main_event": false
+    },
+    {
+     "order": 9,
+     "segment": "Announced",
+     "weight_class": "Heavyweight",
+     "a": "RJ Harris",
+     "b": "Javad Mahjoub",
+     "title": false,
+     "result": "",
      "rounds": 3,
      "main_event": false
     }
